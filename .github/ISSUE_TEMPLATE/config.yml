@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: TypeSafe documentation
+    url: https://docs.typesafe.ai
+    about: Questions about Jev or the TypeSafe API itself belong with the official docs and support channels.

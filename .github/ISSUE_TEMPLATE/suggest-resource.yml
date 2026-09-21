@@ -1,0 +1,64 @@
+name: Suggest a resource
+description: Propose a project, article, talk, or recipe for the list.
+title: "Add: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the suggestion. Please read the [contribution guidelines](https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md) first.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Ticket router
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: The canonical link. For GitHub projects, the repository.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Getting Started or Official Resources
+        - Patterns or Recipes by Use Case
+        - Integrations
+        - Projects by Use Case
+        - Open Models and Compatible Servers
+        - Articles and Talks
+        - Related Lists
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: One-sentence description
+      description: Starts with a capital letter, ends with a period, and does not repeat the name.
+      placeholder: Routes support tickets with one Choice and sends low-confidence ones to a human.
+    validations:
+      required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Are you affiliated with this resource?
+      options:
+        - "No"
+        - Yes, I made it or work on it
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the list and open issues, and this is not already there.
+          required: true
+        - label: The resource works with a current Jev model or states which version it targets.
+          required: true

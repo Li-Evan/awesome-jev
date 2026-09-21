@@ -1,0 +1,5 @@
+# Sites that block automated requests or require a login
+^https://(www\.)?x\.com/
+^https://(www\.)?twitter\.com/
+^https://discord\.com/invite/
+^https://console\.typesafe\.ai/
