@@ -1035,8 +1035,6 @@ entries:
   metrics:
     repo_stars: 1110
   date: '2023-09-30'
-  links:
-    app: https://www.berylliumsec.com
   tags:
   - pentesting
   - tool-ranking
@@ -1429,7 +1427,6 @@ entries:
   date: '2026-09-20'
   links:
     demo: https://www.reddit.com/r/typesafe_ai/comments/1wmpv3n/jev_helps_clean_your_sloppy_linkedin_feed/
-    app: https://slopmop-iota.vercel.app
   tags:
   - ai-slop
   - linkedin

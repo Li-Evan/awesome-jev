@@ -2,7 +2,7 @@
 
 > [Jev](https://typesafe.ai) is TypeSafe's System One model. It answers typed questions about text with calibrated probabilities instead of generating prose, so code can branch, sort, and route on its judgments.
 
-The most complete collection of what people build with Jev: **3,426 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
+The most complete collection of what people build with Jev: **3,425 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
 
 This list is community-maintained and not affiliated with TypeSafe. The official sites are `typesafe.ai` and `docs.typesafe.ai`, and the official GitHub organization is `typesafe-ai`. Be careful with look-alike domains that claim to be official.
 
@@ -62,7 +62,7 @@ Highlights are ranked by community traction (stars, likes, points, and views). O
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md">💰 Finance and Trading</a> <sub>89</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md">💻 Coding and Developer Tools</a> <sub>515</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/browser.md">🌐 Browser and Computer Use</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md">🤖 Agents and Orchestration</a> <sub>246</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md">🎮 Games and Interactive</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/robotics.md">🦾 Robotics and Simulation</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md">🔎 Search and RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md">🛡️ Safety and Moderation</a> <sub>128</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md">📊 Data and Evaluation</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md">🎧 Customer Support and Sales</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md">⚖️ Legal, Health, and Science</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md">🛍️ Commerce and Marketing</a> <sub>45</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">✍️ Writing, Media, and Creative</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🗣️ Voice and Real-Time Interfaces</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">✍️ Writing, Media, and Creative</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🗣️ Voice and Real-Time Interfaces</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/other.md">🧪 Other Experiments</a> <sub>46</sub></td></tr>
 </table>
 
@@ -349,7 +349,7 @@ Email, notes, calendars, browsing, and everyday automation.
 </tr>
 </table>
 
-**[Browse all 128 in Personal Productivity →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md)**
+**[Browse all 127 in Personal Productivity →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md)**
 
 ### 🎓 Education
 

@@ -101,7 +101,7 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/croit/aiplane"><img src="https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg" alt="croit AIplane" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/croit/aiplane">croit AIplane</a></b><br><sub>croit · GitHub · ⭐ 23 · 2026-06-17</sub><br>Self-hosted AI gateway with a TypeSafe System One-compatible /v1/systemone endpoint, so the official SDK can use it as base URL, plus System One-based automatic model routing and a GDPR/NDA content guard.<br><sub>Also: <a href="https://www.croit.io/solutions/aiplane">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/croit/aiplane">croit AIplane</a></b><br><sub>croit · GitHub · ⭐ 23 · 2026-06-17</sub><br>Self-hosted AI gateway with a TypeSafe System One-compatible /v1/systemone endpoint, so the official SDK can use it as base URL, plus System One-based automatic model routing and a GDPR/NDA content guard.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/unorouter/new-api-sync"><img src="https://opengraph.githubassets.com/1/unorouter/new-api-sync" alt="new-api-sync TypeSafe provider" width="240"></a></td>
@@ -269,7 +269,7 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 </tr>
 <tr>
 <td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://docs.typesafe.ai/api">System One API</a></b><br><sub>TypeSafe AI · Docs</sub><br>Official HTTP endpoint for Jev: POST a state and typed questions to /v1/systemone and get typed answers with probabilities and confidence back.<br><sub>Also: <a href="https://api.typesafe.ai/v1/systemone">endpoint</a></sub></td>
+<td valign="top"><b><a href="https://docs.typesafe.ai/api">System One API</a></b><br><sub>TypeSafe AI · Docs</sub><br>Official HTTP endpoint for Jev: POST a state and typed questions to /v1/systemone and get typed answers with probabilities and confidence back.</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>

@@ -685,7 +685,7 @@ entries:
   date: '2026-09-20'
   links:
     repo: https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/advanced_llm_apps/needle
-    project: https://github.com/shubhamsaboo/awesome-llm-apps/advanced_llm_apps/needle
+    project: https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/advanced_llm_apps/needle
   tags:
   - semantic-search
   - chrome-extension
@@ -854,7 +854,7 @@ entries:
   - site-search
   - choice
 - name: SearchBoost Jev evidence loop
-  url: https://github.com/Mr-remon219/search-boost/tree/main/lib/jev
+  url: https://github.com/Mr-remon219/search-boost/tree/master/lib/jev
   kind: repo
   author: Mr-remon219
   description: Multi-engine web search and evidence synthesis for coding agents (MCP server, Pi extension, DeepSeek Harness bundle) with an experimental adaptive_search loop that uses Jev to research targets in batches.

@@ -257,7 +257,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=d9lCIVc5AyU"><img src="https://i.ytimg.com/vi/d9lCIVc5AyU/hqdefault.jpg" alt="Jev: Full Tutorial with Demos" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=d9lCIVc5AyU">Jev: Full Tutorial with Demos</a></b><br><sub>Mayank Aggarwal · YouTube · ♥ 277 · 2026-09-20</sub><br>Tutorial that compares Jev with LLMs on an LLM router, support-ticket triage, an inbox sorter, a live slop filter, and a browser agent, with the demo code on GitHub.<br><sub>Also: <a href="https://github.com/mayank953/Jev">repo</a> · <a href="https://jev-demos-hazel.vercel.app">app</a></sub></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=d9lCIVc5AyU">Jev: Full Tutorial with Demos</a></b><br><sub>Mayank Aggarwal · YouTube · ♥ 277 · 2026-09-20</sub><br>Tutorial that compares Jev with LLMs on an LLM router, support-ticket triage, an inbox sorter, a live slop filter, and a browser agent, with the demo code on GitHub.<br><sub>Also: <a href="https://github.com/mayank953/Jev">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=xD41x2mlM3M"><img src="https://i.ytimg.com/vi/xD41x2mlM3M/hqdefault.jpg" alt="Jev explained in 7 minutes" width="240"></a></td>

@@ -1,6 +1,6 @@
 # 🧰 Personal Productivity
 
-Email, notes, calendars, browsing, and everyday automation. 128 entries, ranked by community traction.
+Email, notes, calendars, browsing, and everyday automation. 127 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -443,7 +443,7 @@ Email, notes, calendars, browsing, and everyday automation. 128 entries, ranked 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/human-bee/PRESENT/blob/main/src/lib/fairy-intent/jev-router.ts"><img src="https://opengraph.githubassets.com/1/human-bee/PRESENT" alt="PRESENT Jev canvas router" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/human-bee/PRESENT/blob/main/src/lib/fairy-intent/jev-router.ts">PRESENT Jev canvas router</a></b><br><sub>human-bee · GitHub · ⭐ 5 repo · 2025-05-18</sub><br>Intent router in PRESENT, a real-time meeting producer and Codex mission-control workspace, that asks Jev whether a message is a single canvas drawing or layout request it can execute directly, or should be deferred.<br><sub><b>How it uses Jev:</b> One canvas/defer Choice with a 300 ms timeout; only answers at 0.95 or more take the fast canvas path.</sub><br><sub>Also: <a href="https://app.present.best">app</a> · <a href="https://github.com/human-bee/PRESENT">repo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/human-bee/PRESENT/blob/main/src/lib/fairy-intent/jev-router.ts">PRESENT Jev canvas router</a></b><br><sub>human-bee · GitHub · ⭐ 5 repo · 2025-05-18</sub><br>Intent router in PRESENT, a real-time meeting producer and Codex mission-control workspace, that asks Jev whether a message is a single canvas drawing or layout request it can execute directly, or should be deferred.<br><sub><b>How it uses Jev:</b> One canvas/defer Choice with a 300 ms timeout; only answers at 0.95 or more take the fast canvas path.</sub><br><sub>Also: <a href="https://github.com/human-bee/PRESENT">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/vikramlingam/excelpilot"><img src="https://opengraph.githubassets.com/1/vikramlingam/excelpilot" alt="ExcelPilot" width="240"></a></td>
@@ -464,10 +464,6 @@ Email, notes, calendars, browsing, and everyday automation. 128 entries, ranked 
 <tr>
 <td width="260" valign="top"><a href="https://github.com/allenporter/home-assistant-typesafe"><img src="https://opengraph.githubassets.com/1/allenporter/home-assistant-typesafe" alt="home-assistant-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/allenporter/home-assistant-typesafe">home-assistant-typesafe</a></b><br><sub>allenporter · GitHub · 2026-09-20</sub><br>Home Assistant conversation agent that maps commands to intents and devices with Jev and hands low-confidence or compound requests to an LLM fallback.<br><sub><b>How it uses Jev:</b> Choice and Noul questions over registered intents and exposed entities, targeting sub-200ms routing.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/classifier/typesafe.ts"><img src="https://opengraph.githubassets.com/1/elie222/inbox-zero" alt="Inbox Zero classifier" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/classifier/typesafe.ts">Inbox Zero classifier</a></b><br><sub>GitHub</sub><br>Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/awun8191/jev-resume-analyzer"><img src="https://opengraph.githubassets.com/1/awun8191/jev-resume-analyzer" alt="JEV Resume Analyzer" width="240"></a></td>

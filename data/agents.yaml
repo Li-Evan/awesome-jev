@@ -188,9 +188,6 @@ entries:
     likes: 311
     views: 59185
   date: '2026-09-18'
-  links:
-    app: https://agent.run
-    project: https://agent.run
   tags:
   - harness
   - workflows
@@ -206,9 +203,7 @@ entries:
     views: 190844
   date: '2026-09-21'
   links:
-    app: https://agent.run
     article: https://x.com/MiguelriosEN/status/2100840456200581120
-    project: https://agent.run
   tags:
   - agent-harness
   - compliance

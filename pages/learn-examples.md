@@ -81,7 +81,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mayank953/Jev"><img src="https://raw.githubusercontent.com/mayank953/Jev/main/docs/screenshot.png" alt="Jev demos" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev demos</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>Six local side-by-side demos where Jev makes the decision and a switchable Claude or Kimi LLM writes the words, showing prices and pipeline steps per tab, with a simulated mode that needs no keys.<br><sub>Also: <a href="https://jev-demos-hazel.vercel.app">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev demos</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>Six local side-by-side demos where Jev makes the decision and a switchable Claude or Kimi LLM writes the words, showing prices and pipeline steps per tab, with a simulated mode that needs no keys.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/GiesN/typesafe-jev-workflow"><img src="https://opengraph.githubassets.com/1/GiesN/typesafe-jev-workflow" alt="Jev email intent workflow" width="240"></a></td>

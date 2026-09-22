@@ -199,8 +199,6 @@ subsections:
     metrics:
       stars: 23
     date: '2026-06-17'
-    links:
-      app: https://www.croit.io/solutions/aiplane
     tags:
     - gateway
     - self-hosted
@@ -750,8 +748,6 @@ subsections:
     kind: docs
     author: TypeSafe AI
     description: 'Official HTTP endpoint for Jev: POST a state and typed questions to /v1/systemone and get typed answers with probabilities and confidence back.'
-    links:
-      endpoint: https://api.typesafe.ai/v1/systemone
     tags:
     - official
     - api
@@ -3927,7 +3923,7 @@ subsections:
     - rust
     - sdk
   - name: octolib evaluation
-    url: https://github.com/Muvon/octolib/blob/main/src/evaluation/providers/typesafe.rs
+    url: https://github.com/Muvon/octolib/blob/master/src/evaluation/providers/typesafe.rs
     kind: repo
     author: Muvon
     description: Rust library that puts 30+ AI providers behind one provider:model string and adds a structured evaluation module for TypeSafe Jev, callable directly or billed through Cloudflare AI Gateway.

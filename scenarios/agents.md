@@ -15,7 +15,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/_aj/status/2102061534956662818"><img src="https://pbs.twimg.com/media/HSwFAsyawAA4tst.jpg?name=orig" alt="AgentRun" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/_aj/status/2102061534956662818">AgentRun</a></b><br><sub>_aj · X · ♥ 1.6k · 2026-09-21</sub><br>Harness from Grep.ai for repetitive knowledge work that learns the job as it runs, moving steps from LLM calls to code; 100,000 compliance alerts cost under $26K versus over $290K on Opus 5.<br><sub>Also: <a href="https://agent.run">app</a> · <a href="https://x.com/MiguelriosEN/status/2100840456200581120">article</a> · <a href="https://agent.run">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/_aj/status/2102061534956662818">AgentRun</a></b><br><sub>_aj · X · ♥ 1.6k · 2026-09-21</sub><br>Harness from Grep.ai for repetitive knowledge work that learns the job as it runs, moving steps from LLM calls to code; 100,000 compliance alerts cost under $26K versus over $290K on Opus 5.<br><sub>Also: <a href="https://x.com/MiguelriosEN/status/2100840456200581120">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/BerriAI/litellm/blob/main/litellm/router_strategy/complexity_router/jev_classifier.py"><img src="https://opengraph.githubassets.com/1/BerriAI/litellm" alt="LiteLLM Jev complexity router" width="240"></a></td>
@@ -51,7 +51,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/MiguelriosEN/status/2101033282414768456"><img src="https://pbs.twimg.com/amplify_video_thumb/2101032781270917120/img/8tGv1qWQd8M9mEec.jpg" alt="AgentRun" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MiguelriosEN/status/2101033282414768456">AgentRun</a></b><br><sub>MiguelriosEN · X · ♥ 311 · 2026-09-18</sub><br>Agent harness built with pi and Jev in which an agent learns how to do a job, writes itself a general reusable solution, and then gets out of the way.<br><sub>Also: <a href="https://agent.run">app</a> · <a href="https://agent.run">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/MiguelriosEN/status/2101033282414768456">AgentRun</a></b><br><sub>MiguelriosEN · X · ♥ 311 · 2026-09-18</sub><br>Agent harness built with pi and Jev in which an agent learns how to do a job, writes itself a general reusable solution, and then gets out of the way.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/omarsar0/status/2101443311454036477"><img src="https://pbs.twimg.com/amplify_video_thumb/2101443076828925952/img/zVy7_B-F8UmXFdKK.jpg" alt="Goal-completion verifier" width="240"></a></td>

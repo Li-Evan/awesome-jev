@@ -247,7 +247,7 @@ entries:
   links:
     repo: https://github.com/swedishembedded/brain/tree/main/samples/decision/doom
     game-server: https://github.com/mkschreder/restful-doom
-    project: https://github.com/swedishembedded/brain/samples/decision/doom
+    project: https://github.com/swedishembedded/brain/tree/main/samples/decision/doom
   tags:
   - open-model
   - doom
@@ -2251,8 +2251,6 @@ entries:
     likes: 13
     downloads: 167
   date: '2026-09-20'
-  links:
-    project: https://github.com/zefan-cai/open-jev-dev
   tags:
   - dataset
   - open-jev

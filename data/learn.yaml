@@ -765,8 +765,6 @@ subsections:
     metrics:
       stars: 15
     date: '2026-09-20'
-    links:
-      app: https://jev-demos-hazel.vercel.app
     tags:
     - demos
     - examples
@@ -7410,7 +7408,6 @@ subsections:
     date: '2026-09-20'
     links:
       repo: https://github.com/mayank953/Jev
-      app: https://jev-demos-hazel.vercel.app
     tags:
     - tutorial
     - demos

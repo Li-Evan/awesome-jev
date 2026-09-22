@@ -3462,7 +3462,7 @@ entries:
   - ci
   - pre-commit
 - name: jev-stop-guard
-  url: https://github.com/coil398/dotfiles/tree/master/etc/jev_stop_guard
+  url: https://github.com/coil398/dotfiles/blob/master/etc/jev-stop-guard-codex-hook.py
   kind: repo
   author: coil398
   description: Stop hook for Codex, Cursor and Devin CLI that asks Jev whether the main agent is stopping with requested work still undone, and blocks the stop when the evidence is strong.
@@ -6406,7 +6406,7 @@ entries:
   - command-guard
   - approvals
 - name: SpecWeave sw:jev
-  url: https://github.com/anton-abyzov/specweave/tree/main/src/core/jev
+  url: https://github.com/anton-abyzov/specweave/blob/develop/docs-site/docs/guides/jev-system-one.md
   kind: repo
   author: anton-abyzov
   description: Spec-first AI development toolkit for Claude Code, Codex and Cursor that ships an sw:jev skill for closed-set decisions in about 250 ms via Jev.

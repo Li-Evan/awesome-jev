@@ -123,7 +123,7 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/LocalLLM/comments/1wjv46i/i_have_created_open_source_jev_and_trained_it_to/"><img src="https://external-preview.redd.it/M3RzbGFlaGwyYnFoMXuP6V8vNBO5_YLg7eGU503KPrTQWjhN5GEpCDWeUnnY.png?format=pjpg&amp;auto=webp&amp;s=e22eb092e7b5afa83d5188c0b5e8e92e3dca3b1d" alt="Brain DOOM decision policy" width="240"></a></td>
-<td valign="top"><b><a href="https://www.reddit.com/r/LocalLLM/comments/1wjv46i/i_have_created_open_source_jev_and_trained_it_to/">Brain DOOM decision policy</a></b><br><sub>mkschreder2 · Reddit · ▲ 119 · 2026-09-18</sub><br>Local Jev-style policy that plays DOOM in real time: a frozen MiniLM encoder reads the observation text and a small trained head picks actions, at 58.3 ms per decision.<br><sub>Also: <a href="https://github.com/swedishembedded/brain/tree/main/samples/decision/doom">repo</a> · <a href="https://github.com/mkschreder/restful-doom">game-server</a> · <a href="https://github.com/swedishembedded/brain/samples/decision/doom">project</a></sub></td>
+<td valign="top"><b><a href="https://www.reddit.com/r/LocalLLM/comments/1wjv46i/i_have_created_open_source_jev_and_trained_it_to/">Brain DOOM decision policy</a></b><br><sub>mkschreder2 · Reddit · ▲ 119 · 2026-09-18</sub><br>Local Jev-style policy that plays DOOM in real time: a frozen MiniLM encoder reads the observation text and a small trained head picks actions, at 58.3 ms per decision.<br><sub>Also: <a href="https://github.com/swedishembedded/brain/tree/main/samples/decision/doom">repo</a> · <a href="https://github.com/mkschreder/restful-doom">game-server</a> · <a href="https://github.com/swedishembedded/brain/tree/main/samples/decision/doom">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xLogicrw/status/2101545266507551141"><img src="https://pbs.twimg.com/media/HSowRg-W4AAdElX.jpg?name=orig" alt="Four schools of OpenJEV" width="240"></a></td>
@@ -431,7 +431,7 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://huggingface.co/datasets/ZefanCai/Open-Jev"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/ZefanCai/Open-Jev.png" alt="Open-Jev datasets" width="240"></a></td>
-<td valign="top"><b><a href="https://huggingface.co/datasets/ZefanCai/Open-Jev">Open-Jev datasets</a></b><br><sub>ZefanCai · Hugging Face · ♥ 13 · 2026-09-20</sub><br>Twelve frozen, mostly synthetic typed-decision data configs (yes/no, choice, multi-label, numeric and ordinal) with manifests, raw records and reconstruction code from the independent Open-Jev project.<br><sub>Also: <a href="https://github.com/zefan-cai/open-jev-dev">project</a></sub></td>
+<td valign="top"><b><a href="https://huggingface.co/datasets/ZefanCai/Open-Jev">Open-Jev datasets</a></b><br><sub>ZefanCai · Hugging Face · ♥ 13 · 2026-09-20</sub><br>Twelve frozen, mostly synthetic typed-decision data configs (yes/no, choice, multi-label, numeric and ordinal) with manifests, raw records and reconstruction code from the independent Open-Jev project.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/genai-craft/openvons"><img src="https://opengraph.githubassets.com/1/genai-craft/openvons" alt="openvons" width="240"></a></td>

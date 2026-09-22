@@ -155,7 +155,7 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/minghanminghan/jev-demo"><img src="https://opengraph.githubassets.com/1/minghanminghan/jev-demo" alt="jev demo" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/minghanminghan/jev-demo">jev demo</a></b><br><sub>minghanminghan · GitHub · 2026-09-17</sub><br>Customer-service chatbot routed by Jev that asks every level of its routing tree in one call per turn and hands off to a human on request, frustration or low confidence.<br><sub><b>How it uses Jev:</b> Speculative fan-out over all tree levels plus a wants-human Noul and a frustration Score in the same request.</sub><br><sub>Also: <a href="https://jev-demo-mu.vercel.app">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/minghanminghan/jev-demo">jev demo</a></b><br><sub>minghanminghan · GitHub · 2026-09-17</sub><br>Customer-service chatbot routed by Jev that asks every level of its routing tree in one call per turn and hands off to a human on request, frustration or low confidence.<br><sub><b>How it uses Jev:</b> Speculative fan-out over all tree levels plus a wants-human Noul and a frustration Score in the same request.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/SaaS/comments/1wlcpq3/jev_is_insane_for_outbound/"><img src="https://external-preview.redd.it/MDV4czc2Z3JibnFoMWrhC3ZnxXXVSY4h_1Pyuu4bCsFhZrPnFj7vZea_6f45.png?format=pjpg&amp;auto=webp&amp;s=92f8c2805fba08f7d164b31a7d9ed7cb61b0c450" alt="Jev outbound lead triage" width="240"></a></td>

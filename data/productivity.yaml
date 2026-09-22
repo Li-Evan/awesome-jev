@@ -368,10 +368,6 @@ entries:
   tags:
   - email
   - classification
-- name: Inbox Zero classifier
-  url: https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/classifier/typesafe.ts
-  kind: repo
-  description: Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.
 - name: Instant calorie tracking
   url: https://x.com/thekitze/status/2100857642566758849
   kind: post
@@ -1216,7 +1212,6 @@ entries:
     repo_stars: 5
   date: '2025-05-18'
   links:
-    app: https://app.present.best
     repo: https://github.com/human-bee/PRESENT
   tags:
   - meetings

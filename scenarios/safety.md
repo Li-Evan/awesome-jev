@@ -91,7 +91,7 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py"><img src="https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png" alt="Nebula Jev tool suggestions" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula Jev tool suggestions</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k repo · 2023-09-30</sub><br>Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.<br><sub><b>How it uses Jev:</b> One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.</sub><br><sub>Also: <a href="https://www.berylliumsec.com">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula Jev tool suggestions</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k repo · 2023-09-30</sub><br>Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.<br><sub><b>How it uses Jev:</b> One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/NorbertBodziony/guard-jev"><img src="https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg" alt="Moderation Guard" width="240"></a></td>
@@ -499,7 +499,7 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tomfrazier/slopmop"><img src="https://raw.githubusercontent.com/tomfrazier/slopmop/main/docs/images/slopmop-1.png" alt="Slop Mop" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tomfrazier/slopmop">Slop Mop</a></b><br><sub>tomfrazier · GitHub · 2026-09-20</sub><br>Chrome extension plus Vercel server that has Jev judge the writing quality of LinkedIn posts before you see them, folding or outlining suspected slop with the score and reasons, which you can overrule.<br><sub>Also: <a href="https://www.reddit.com/r/typesafe_ai/comments/1wmpv3n/jev_helps_clean_your_sloppy_linkedin_feed/">demo</a> · <a href="https://slopmop-iota.vercel.app">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/tomfrazier/slopmop">Slop Mop</a></b><br><sub>tomfrazier · GitHub · 2026-09-20</sub><br>Chrome extension plus Vercel server that has Jev judge the writing quality of LinkedIn posts before you see them, folding or outlining suspected slop with the score and reasons, which you can overrule.<br><sub>Also: <a href="https://www.reddit.com/r/typesafe_ai/comments/1wmpv3n/jev_helps_clean_your_sloppy_linkedin_feed/">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/neddes/sloppy-jevs-extension"><img src="https://opengraph.githubassets.com/1/neddes/sloppy-jevs-extension" alt="Sloppy Jev&#x27;s" width="240"></a></td>

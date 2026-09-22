@@ -178,8 +178,6 @@ entries:
   description: Customer-service chatbot routed by Jev that asks every level of its routing tree in one call per turn and hands off to a human on request, frustration or low confidence.
   jev: Speculative fan-out over all tree levels plus a wants-human Noul and a frustration Score in the same request.
   date: '2026-09-17'
-  links:
-    app: https://jev-demo-mu.vercel.app
   tags:
   - routing
   - chatbot
