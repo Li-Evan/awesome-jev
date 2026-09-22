@@ -1,5 +1,7 @@
 # 🌐 Browser and Computer Use
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/browser.md)
+
 Agents that click, type, and navigate real browsers, desktops, and phones. 128 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

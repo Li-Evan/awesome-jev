@@ -1,14 +1,19 @@
 title: Education
+title_zh: 教育
 emoji: 🎓
 layout: gallery
 description: Tutoring, grading, quizzes, and learning tools.
+description_zh: 辅导、批改、测验和学习工具。
 entries:
 - name: Exam question predictor
+  name_zh: 考题预测器
   url: https://x.com/hametgholizadeh/status/2101289895624917076
   kind: post
   author: hametgholizadeh
   description: Ranks 80 real exam questions and 297 practice questions by how likely each is to appear on the actual exam, done in 80 seconds for $0.0256.
+  description_zh: 按出现在真实考试中的可能性，给 80 道真题和 297 道练习题排序，用时 80 秒，花费 $0.0256。
   jev: Scores each practice question against the real exam set.
+  jev_zh: 对照真题集给每道练习题打分。
   image: https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg
   metrics:
     likes: 83
@@ -18,11 +23,14 @@ entries:
   - exams
   - ranking
 - name: Keating Jev teaching judge
+  name_zh: Keating 的 Jev 教学评委
   url: https://github.com/Diogenesoftoronto/keating/blob/main/scripts/training/benchmark_judge_systemone.py
   kind: repo
   author: Diogenesoftoronto
   description: 'Typed-judgment reviewer for the Keating AI tutor''s teaching rubric: Jev scores each dimension and selects evidence spans enumerated by code, so quotes cannot be invented, plus a harness comparing it with the incumbent LLM judge.'
+  description_zh: 针对 AI 导师 Keating 教学评分细则的类型化判断审阅器：Jev 给每个维度打分，并从代码枚举出的片段中选取证据，因此引文无法凭空编造；另附一个 harness，与现役 LLM 评委做对比。
   jev: 'Per rubric dimension: a 0/1/2 Score, a judgeability Noul, a Choice over candidate spans (max 64, narrowed in stages) and a Choice over support values.'
+  jev_zh: 每个评分维度包含：一个 0/1/2 的 Score、一个判断可评性的 Noul、一个在候选片段（最多 64 个，分阶段缩小）中选择的 Choice，以及一个在支持程度取值中选择的 Choice。
   metrics:
     repo_stars: 36
   date: '2026-04-01'
@@ -34,11 +42,14 @@ entries:
   - llm-judge
   - evidence
 - name: Leximory Jev evaluation
+  name_zh: Leximory 的 Jev 评估
   url: https://github.com/NarixHine/leximory/blob/main/apps/leximory/server/ai/evaluate.ts
   kind: repo
   author: NarixHine
   description: Language-learning app for English and Japanese readers that runs Jev through the AI SDK evaluate API, for example to detect whether a looked-up term names a place and what kind.
+  description_zh: 面向英语和日语阅读者的语言学习应用，通过 AI SDK 的 evaluate API 运行 Jev，比如判断用户查询的词是不是地名、属于哪类地点。
   jev: A Noul for 'has a location' gated at a threshold plus a Choice for the location kind, billed against the user's monthly quota.
+  jev_zh: 一个判断“是否包含地点”的 Noul，经阈值把关，再加一个判断地点类型的 Choice，费用计入用户的月度额度。
   metrics:
     repo_stars: 10
   date: '2024-09-08'
@@ -54,6 +65,7 @@ entries:
   kind: repo
   author: wquguru
   description: English read-aloud trainer where the R2T2 streaming ASR transcribes your speech, Jev judges whether each mismatched word was misread and how, and code turns those judgments into a score.
+  description_zh: 英语朗读训练工具：R2T2 流式 ASR 转写你的朗读，Jev 判断每个对不上的词是否读错、怎么读错的，再由代码把这些判断换算成分数。
   metrics:
     stars: 122
   date: '2026-09-20'
@@ -62,11 +74,14 @@ entries:
   - asr
   - language-learning
 - name: SkellySpeak Jev assessment study
+  name_zh: SkellySpeak 的 Jev 评估研究
   url: https://github.com/freemocap/skellyspeak/tree/main/tools/benchmarks/conversation-prompts/assessment
   kind: repo
   author: freemocap
   description: Benchmark in the SkellySpeak language-learning app that assesses learner messages against 45 coaching skills with Jev and compares it to a dense Gemini control in a 648-request Spanish factorial study with a dedicated dashboard.
+  description_zh: 语言学习应用 SkellySpeak 中的基准测试：用 Jev 按 45 项辅导技能评估学习者的消息，并在一项 648 次请求的西班牙语析因研究中与 dense 模式的 Gemini 对照组比较，配有专门的看板。
   jev: 45 independent Choice questions per learner message over five coaching-outcome labels, plus a binary Noul arm with 90 questions.
+  jev_zh: 每条学习者消息 45 个独立的 Choice 问题，在五个辅导结果标签中选择；另有一个二元 Noul 实验组，共 90 个问题。
   metrics:
     repo_stars: 35
   date: '2025-01-24'
@@ -77,11 +92,14 @@ entries:
   - assessment
   - benchmark
 - name: Střední školy news classifier
+  name_zh: Střední školy 新闻分类器
   url: https://github.com/tangero/stredniskoly/blob/main/scripts/novinky_jev.py
   kind: repo
   author: tangero
   description: Script behind a Czech site of secondary-school admission results that uses Jev to classify schools' news posts and decide which date in an announcement, such as an open day, is the event date.
+  description_zh: 一个捷克中学升学录取结果网站背后的脚本，用 Jev 给各校新闻分类，并判断公告里的哪个日期才是活动日期（比如开放日）。
   jev: Per-date questions built from the post text, capped in number because accuracy drops as context grows; dates without a year are never asked.
+  jev_zh: 根据帖子文本为每个日期构造问题，数量设有上限，因为上下文越长准确率越低；没写年份的日期从不提问。
   metrics:
     repo_stars: 5
   date: '2026-01-24'
@@ -97,6 +115,7 @@ entries:
   kind: post
   author: 0xaniol
   description: Speaking-practice app that gives you a topic, records 30 seconds of speech and has Jev score pauses, filler words, repetition, confidence and clarity with feedback.
+  description_zh: 口语练习应用：给你一个话题，录下 30 秒发言，由 Jev 给停顿、口头禅、重复、自信度和清晰度打分并给出反馈。
   image: https://pbs.twimg.com/amplify_video_thumb/2101074153407422464/img/fzFh7BZaZCmGdh8v.jpg
   metrics:
     likes: 111
@@ -106,10 +125,12 @@ entries:
   - speaking
   - feedback
 - name: TeachAny PBL Jev recall
+  name_zh: TeachAny 的 PBL Jev 召回
   url: https://github.com/weponusa/teachany-courseware/blob/main/scripts/pbl-jev-recall-flow.mjs
   kind: repo
   author: weponusa
   description: Recall step in the TeachAny courseware site's project-based-learning pipeline that asks Jev an independent Noul per curriculum item and drops candidates below 0.20 before the incumbent LLM judge picks the top 16.
+  description_zh: TeachAny 课件网站项目式学习（PBL）流水线中的召回步骤：对每个课程条目向 Jev 问一个独立的 Noul，先剔除低于 0.20 的候选，再由现役 LLM 评委挑出前 16 个。
   metrics:
     repo_stars: 17
   date: '2026-05-09'
@@ -120,11 +141,14 @@ entries:
   - pbl
   - filtering
 - name: Universal History Simulator chronicle review
+  name_zh: Universal History Simulator 的编年史审查
   url: https://github.com/benjaminbreen/UHS/blob/main/src/chronicle/review.ts
   kind: repo
   author: benjaminbreen
   description: Playthrough grader in the Universal History Simulator, an educational procedural history game, that asks Jev whether each recorded turn is anachronistic, uses outside knowledge, fits the character's role and what purpose it serves.
+  description_zh: 教育类程序生成历史游戏 Universal History Simulator 中的通关记录评分器：就每个记录下来的回合询问 Jev 是否时代错置、是否用了游戏外的知识、是否符合角色身份，以及起什么作用。
   jev: 'Atomic questions per turn in parallel: anachronism and outside-knowledge Nouls, a 5-level plausibility Score and a purpose Choice.'
+  jev_zh: 每个回合并行提一组原子问题：时代错置和外部知识两个 Noul、一个 5 级合理性 Score 和一个用途 Choice。
   metrics:
     repo_stars: 19
   date: '2025-08-01'
@@ -140,7 +164,9 @@ entries:
   kind: repo
   author: AustinAWay
   description: Experimental local teaching aid that shows educators where an instructional passage may ask learners to hold too many ideas or relationships at once as the text unfolds.
+  description_zh: 实验性的本地教学辅助工具，向教师展示一篇教学文章在展开过程中，哪些地方可能要求学习者同时记住过多的概念或关系。
   jev: Jev proposes active idea groups, source connections, and changes in demand; the estimates are not validated measurements.
+  jev_zh: Jev 提出活跃的概念组、来源关联和认知负荷变化；这些估计并非经过验证的测量结果。
   image: https://raw.githubusercontent.com/AustinAWay/Working-Memory-Jev/main/docs/provisional-estimates-live.png
   metrics:
     stars: 39

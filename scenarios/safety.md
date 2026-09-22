@@ -1,5 +1,7 @@
 # 🛡️ Safety and Moderation
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md)
+
 Guardrails, jailbreak and injection screening, content moderation, and policy checks. 128 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

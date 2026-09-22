@@ -1,5 +1,7 @@
 # 💻 Coding and Developer Tools
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md)
+
 Code review, model routing for coding agents, context compaction, semantic search over code, and CI checks. 515 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

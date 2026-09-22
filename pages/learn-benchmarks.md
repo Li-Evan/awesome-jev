@@ -1,5 +1,7 @@
 # 📚 Learn: Benchmarks and Case Studies
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 173 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#benchmarks-and-case-studies)

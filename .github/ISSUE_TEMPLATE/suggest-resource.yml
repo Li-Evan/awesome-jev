@@ -1,23 +1,26 @@
-name: Suggest a resource
-description: Propose a project, article, talk, or recipe for the list.
+name: Suggest a resource / 提交资源
+description: Propose a project, demo, post, article, or video for the list. 提交一个项目、演示、帖子、文章或视频。
 title: 'Add: '
 labels:
 - suggestion
 body:
 - type: markdown
   attributes:
-    value: Thanks for the suggestion. Please read the [contribution guidelines](https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md) first.
+    value: 'Thanks for the suggestion. Please read the [contribution guidelines](https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md) first.
+
+
+      感谢提交！可以用中文填写。请先看一下[贡献指南](https://github.com/Li-Evan/awesome-jev/blob/main/contributing.zh-CN.md)。'
 - type: input
   id: name
   attributes:
-    label: Name
+    label: Name / 名称
     placeholder: Ticket router
   validations:
     required: true
 - type: input
   id: url
   attributes:
-    label: URL
+    label: Original link / 原始链接
     description: 'The original source: the project''s own repository, app, post, article, or video. Not another list or directory.'
     placeholder: https://github.com/owner/repo
   validations:
@@ -25,7 +28,7 @@ body:
 - type: dropdown
   id: section
   attributes:
-    label: Scenario or section
+    label: Scenario or section / 场景或分类
     options:
     - Finance and Trading
     - Coding and Developer Tools
@@ -53,15 +56,15 @@ body:
 - type: input
   id: description
   attributes:
-    label: One-sentence description
-    description: Starts with a capital letter, ends with a period, and does not repeat the name.
+    label: What does it do? / 它做了什么？
+    description: One or two sentences in English or Chinese. 用一两句话说明，中英文都可以。
     placeholder: Routes support tickets with one Choice and sends low-confidence ones to a human.
   validations:
     required: true
 - type: dropdown
   id: affiliation
   attributes:
-    label: Are you affiliated with this resource?
+    label: Are you affiliated with this resource? / 这是你做的吗？
     options:
     - 'No'
     - Yes, I made it or work on it
@@ -70,7 +73,7 @@ body:
 - type: checkboxes
   id: checks
   attributes:
-    label: Checklist
+    label: Checklist / 确认事项
     options:
     - label: I searched the list and open issues, and this is not already there.
       required: true

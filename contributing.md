@@ -1,5 +1,7 @@
 # Contribution Guidelines
 
+**English** · [简体中文](contributing.zh-CN.md)
+
 Thanks for helping make this the most complete collection of what people build with Jev. By contributing you agree to follow the [Code of Conduct](code-of-conduct.md).
 
 ## What belongs here
@@ -23,7 +25,7 @@ Not accepted:
 
 ## How to add an entry
 
-The README and the scenario pages are generated. Do not edit `README.md` or `scenarios/*.md` by hand.
+The READMEs and all gallery pages are generated. Do not edit `README.md`, `README.zh-CN.md`, `scenarios/`, `pages/`, or `zh-CN/` by hand.
 
 1. Pick the scenario file in `data/`, for example `data/finance.yaml` or `data/coding.yaml`. Use `data/other.yaml` if nothing fits.
 2. Add an entry:
@@ -46,6 +48,8 @@ The README and the scenario pages are generated. Do not edit `README.md` or `sce
    ```bash
    uv run scripts/build.py
    ```
+
+   `description_zh` (a Chinese description) is optional; the Chinese pages fall back to the English text.
 
 4. Open a pull request. One project per pull request is easiest to review.
 

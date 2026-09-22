@@ -1,5 +1,7 @@
 # 🛍️ Commerce and Marketing
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md)
+
 Product catalogs, ads, reviews, pricing, and marketing workflows. 45 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

@@ -1,5 +1,7 @@
 # 🎮 Games and Interactive
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md)
+
 Game-playing agents, real-time decisions, and playful interactive demos. 276 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

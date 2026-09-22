@@ -1,5 +1,7 @@
 # 🤖 Agents and Orchestration
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md)
+
 Tool and skill selection, approvals, planning, memory, and harness decisions for general-purpose agents. 246 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

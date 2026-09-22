@@ -1,14 +1,18 @@
 title: Legal, Health, and Science
+title_zh: 法律、医疗与科研
 emoji: ⚖️
 layout: gallery
 description: Compliance checks, medical and scientific screening, and research workflows.
+description_zh: 合规检查、医学与科学筛查，以及科研工作流。
 entries:
 - name: 1kpapers
   url: https://1kpapers.com
   kind: app
   author: nutlope
   description: Site mapping 1,018 AI research papers from 2025-2026 by topic, where each paper is summarized by DeepSeek V4 Flash and then classified into 24 topics by Jev for $0.08 total.
+  description_zh: 按主题梳理 2025-2026 年 1,018 篇 AI 研究论文的网站，每篇论文先由 DeepSeek V4 Flash 总结，再由 Jev 分到 24 个主题中，总花费 $0.08。
   jev: Title plus summary plus 24 topic options in one Choice per paper, at 256ms median latency.
+  jev_zh: 每篇论文一个 Choice，输入标题加摘要加 24 个主题选项，中位延迟 256 毫秒。
   image: https://www.1kpapers.com/opengraph-image.png?opengraph-image.1mk7bn86uhq5h.png
   metrics:
     likes: 1977
@@ -21,10 +25,12 @@ entries:
   - research-papers
   - classification
 - name: Adverse drug effect detection with GEPA
+  name_zh: 结合 GEPA 检测药物不良反应
   url: https://x.com/Paiky16/status/2101628198928982219
   kind: post
   author: Paiky16
   description: Uses Jev to flag sentences reporting suspected adverse drug effects in medical literature, then GEPA prompt optimization raised F1 from 69.1% to 79.7% and cut false positives from 47 to 22.
+  description_zh: 用 Jev 标记医学文献中报告疑似药物不良反应的句子，再用 GEPA 提示词优化把 F1 从 69.1% 提升到 79.7%，误报从 47 个降到 22 个。
   image: https://praneeth16.github.io/jev/og.png
   metrics:
     likes: 138
@@ -37,11 +43,14 @@ entries:
   - gepa
   - medical
 - name: Citation Verifier Jev experiments
+  name_zh: Citation Verifier 中的 Jev 实验
   url: https://github.com/rlfordon/citation-verifier/tree/main/scratch/jev
   kind: repo
   author: rlfordon
   description: Experiments in a legal citation verifier that test whether Jev can pre-screen whether cited court opinions support a brief's propositions, measuring cost and time on 95 human-labelled claims.
+  description_zh: 在一个法律引文核查工具中做的实验，测试 Jev 能否预筛被引用的法院判决是否支持诉状中的论点，并在 95 条人工标注的论断上测量成本和耗时。
   jev: Seven atomic questions per claim over the proposition, brief sentence and whole opinion; used as a shadow rubric and an auto-green gate.
+  jev_zh: 每条论断针对论点、诉状原句和整份判决提出七个原子问题；用作影子评分标准和自动放行（auto-green）关卡。
   metrics:
     repo_stars: 6
   date: '2026-02-07'
@@ -56,6 +65,7 @@ entries:
   kind: repo
   author: longkou1988
   description: Optional extension to a CNKI literature-workflow skill pack for Codex and Claude Code that uses Jev to pre-screen papers against inclusion criteria, handing complex judgments back to the LLM or a human reviewer.
+  description_zh: 面向 Codex 和 Claude Code 的知网（CNKI）文献工作流 skill 包的可选扩展，用 Jev 按纳入标准预筛论文，把复杂判断交回给 LLM 或人工复核者。
   metrics:
     repo_stars: 16
   date: '2026-09-09'
@@ -66,11 +76,14 @@ entries:
   - cnki
   - screening
 - name: Fight Health Insurance appeal scoring
+  name_zh: Fight Health Insurance 申诉打分
   url: https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py
   kind: repo
   author: fighthealthinsurance
   description: Django app that helps people appeal health insurance denials, ordering generated appeal drafts by a TypeSafe quality score and tracking scoring health per backend.
+  description_zh: 帮助人们对医疗保险拒赔提出申诉的 Django 应用，按 TypeSafe 质量分给生成的申诉草稿排序，并按后端追踪打分的健康状况。
   jev: Redacted appeal documents are sent over https only; error bodies are never read.
+  jev_zh: 脱敏后的申诉文件只通过 https 发送；从不读取错误响应体。
   metrics:
     repo_stars: 156
   date: '2023-03-16'
@@ -83,6 +96,7 @@ entries:
   kind: repo
   author: bnistor4
   description: Static site that reads all 5,082 amendments filed in the Italian Chamber on the 2025 budget law, finds identical or rewritten-equivalent texts and shows who signed them; the Jev analysis took 12,206 calls for $0.84.
+  description_zh: 静态网站，读取意大利众议院就 2025 年预算法提交的全部 5,082 条修正案，找出完全相同或改写后等价的文本，并展示是谁签署的；Jev 分析共调用 12,206 次，花费 $0.84。
   date: '2026-09-21'
   links:
     app: https://fotocopiatrice.vercel.app/
@@ -95,6 +109,7 @@ entries:
   kind: repo
   author: doitrous
   description: 'Self-ticking checklist for clinical histories, examinations and operative notes: it opens the questions a note calls for, ticks them against what the doctor wrote using Jev, and shows what is still undocumented.'
+  description_zh: 面向病史、体格检查和手术记录的自动打勾清单：按病历需要展开相应问题，用 Jev 对照医生写下的内容逐项打勾，并显示哪些还没记录。
   metrics:
     stars: 3
   date: '2026-09-20'
@@ -105,10 +120,12 @@ entries:
   - healthcare
   - checklist
 - name: IPFS Datasets TypeSafe formula lint
+  name_zh: IPFS Datasets 的 TypeSafe 公式检查
   url: https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py
   kind: repo
   author: endomorphosis
   description: Advisory TypeSafe lint in the IPFS Datasets logic module that scores whether a formula autoformalized from legal text captures its source clause and checks citations, without rewriting or admitting proofs.
+  description_zh: 建议性的 TypeSafe lint，位于 IPFS Datasets 逻辑模块中，给从法律文本自动形式化得到的公式打分，判断它是否准确表达了原条款，并检查引用，但不会改写公式，也不会认定证明成立。
   metrics:
     repo_stars: 23
   date: '2024-04-07'
@@ -119,10 +136,12 @@ entries:
   - legal
   - logic
 - name: Jev court-ruling annotation
+  name_zh: Jev 法院判决标注
   url: https://github.com/lab-dados/jev-anotacao-sentencas
   kind: repo
   author: lab-dados
   description: 'FGV Direito SP experiment annotating 12 variables in 120 São Paulo civil court rulings: Jev scored 96.6% accuracy at 0.32 s and $0.25 per thousand rulings, versus 98.8% for Gemini 3.8 Flash at $6.56.'
+  description_zh: FGV Direito SP 的实验，对 120 份圣保罗民事法院判决标注 12 个变量：Jev 准确率 96.6%，耗时 0.32 s，每千份判决 $0.25；Gemini 3.8 Flash 准确率 98.8%，花费 $6.56。
   date: '2026-09-16'
   links:
     report: https://lab-dados.github.io/jev-anotacao-sentencas/
@@ -132,10 +151,12 @@ entries:
   - annotation
   - portuguese
 - name: Jev on a Spanish legal corpus
+  name_zh: 在西班牙法律语料上测试 Jev
   url: https://x.com/juanmacias/status/2100463318209048850
   kind: article
   author: juanmacias
   description: Day-long field test of Jev on a Spanish legal corpus, replacing a hand-built regex classifier with a probability and reporting what held up, what broke and where the team's own labels were wrong.
+  description_zh: 为期一天的实地测试，在西班牙法律语料上用 Jev 给出的概率替换手工搭建的正则分类器，并报告哪些站得住、哪些出了问题，以及团队自己的标签哪里错了。
   metrics:
     likes: 87
     views: 18150
@@ -149,6 +170,7 @@ entries:
   kind: repo
   author: JacobLinCool
   description: Upload a research paper PDF and get a structured judgment of understandability and completeness within seconds, plus mechanical checks such as undefined acronyms and unreferenced figures.
+  description_zh: 上传研究论文 PDF，几秒内就能得到关于可读性和完整性的结构化评判，另有未定义缩写、未被引用的图表等机械检查。
   image: https://jev-paper-judge.jacob.workers.dev/og.png
   date: '2026-09-17'
   links:
@@ -158,11 +180,14 @@ entries:
   - research-papers
   - writing-feedback
 - name: Jev reads every AI paper
+  name_zh: 让 Jev 读完每一篇 AI 论文
   url: https://x.com/DevaiahShrithan/status/2102097862805053950
   kind: article
   author: DevaiahShrithan
   description: Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.
+  description_zh: 把 1993 到 2026 年的 464,720 篇 arXiv AI 摘要交给 Jev，每篇问五个问题（是否声称达到 SOTA、是否发布代码、是否像 LLM 写的、论文类型、炒作程度），描绘 AI 论文的变化。
   jev: Two Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call.
+  jev_zh: 每篇摘要两个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案。
   image: https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg
   metrics:
     likes: 6
@@ -177,7 +202,9 @@ entries:
   kind: repo
   author: choxos
   description: In-browser data extraction tool for systematic reviews that answers extraction-form or RoB 2, ROBINS-I, QUADAS-2, and TIDieR template questions with verbatim quotes and page locations from trial reports.
+  description_zh: 用于系统综述的浏览器内数据提取工具，回答提取表单或 RoB 2、ROBINS-I、QUADAS-2、TIDieR 模板中的问题，并给出来自试验报告的原文引述和页码位置。
   jev: Jev selects candidate line IDs; code copies the original text so every answer is a checkable quote.
+  jev_zh: Jev 选出候选行 ID，再由代码复制原文，所以每个答案都是可核对的引文。
   image: https://raw.githubusercontent.com/choxos/jev-reviewer/main/documentation/tour.gif
   metrics:
     stars: 32
@@ -191,11 +218,14 @@ entries:
   - clinical-trials
   - pdf
 - name: Jev × Cohen ADHD Abstract Triage
+  name_zh: Jev × Cohen ADHD 摘要筛选
   url: https://github.com/PistachioAIHQ/jev-synergy-screening
   kind: repo
   author: PistachioAIHQ
   description: Systematic-review screening demo that asks Jev to include or exclude MEDLINE titles and abstracts for an ADHD drug review, scored against Cohen et al. 2006 labels; 92.0% accuracy and 80.0% recall on a 200-abstract set.
+  description_zh: 系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 标题和摘要的纳入或排除，并以 Cohen et al. 2006 的标签评分；在 200 篇摘要的集合上准确率 92.0%、召回率 80.0%。
   jev: Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.
+  jev_zh: 把 Choice 和 Noul 资格问题合成纳入/排除决策，每次调用约 523 毫秒。
   metrics:
     stars: 1
   date: '2026-09-16'
@@ -207,6 +237,7 @@ entries:
   kind: repo
   author: mttrbrts
   description: Classifier that walks OCR'd legal agreements down the FOLIO Document Types ontology with one Jev Choice per level, a beam of candidate paths, and confidence-gated stopping at leaves.
+  description_zh: 分类器，把 OCR 后的法律协议沿 FOLIO 文档类型本体逐层向下归类，每层一个 Jev Choice，用 beam 保留多条候选路径，并按置信度决定是否在叶节点停止。
   date: '2026-09-19'
   tags:
   - legal
@@ -217,6 +248,7 @@ entries:
   kind: post
   author: rothken
   description: Free beta construction set from a law firm's AI lab for building legal-analysis applets on Jev, with reusable JSON and Jev code outputs that lawyers and students can save and adapt.
+  description_zh: 一家律所 AI 实验室推出的免费测试版构建套件，用于在 Jev 上搭建法律分析小程序，输出可复用的 JSON 和 Jev 代码，律师和学生可以保存并改编。
   image: https://lawanalyzer.com/social-card.png
   metrics:
     likes: 51
@@ -234,7 +266,9 @@ entries:
   kind: repo
   author: sboghossian
   description: Claude Code skills that recommend which LLM to use for legal drafting, extraction, research, review or translation, with an optional Jev classifier that measures the task's vertical, stakes and whether it is legal work.
+  description_zh: 一组 Claude Code skill，为法律起草、信息提取、法律研究、审阅或翻译推荐该用哪个 LLM，并可选接入 Jev 分类器，判断任务所属的垂直领域、风险高低以及是否属于法律工作。
   jev: About $0.00002 and ~700 ms per call; 11/11 on the fixture set, with Arabic, French and English at parity. Optional, never a dependency.
+  jev_zh: 每次调用约 $0.00002、约 700 毫秒；在固定测试集上 11/11，阿拉伯语、法语和英语表现相当。只是可选组件，从不作为依赖。
   metrics:
     stars: 5
   date: '2026-07-14'
@@ -243,11 +277,14 @@ entries:
   - model-routing
   - claude-code
 - name: LegalForecastBench Jev mode
+  name_zh: LegalForecastBench 的 Jev 模式
   url: https://github.com/johnhughes3/LegalForecastBench/blob/main/docs/jev-mode.md
   kind: repo
   author: johnhughes3
   description: 'Official Jev condition in a benchmark that forecasts federal motion-to-dismiss rulings: Jev gets one case record, full text or LLM summaries, and is scored with claim-defendant micro-Brier metrics.'
+  description_zh: 一个预测联邦驳回起诉动议（motion to dismiss）裁决的基准测试中的官方 Jev 条件：Jev 拿到一份案件记录（全文或 LLM 摘要），并用按诉求-被告计算的 micro-Brier 指标评分。
   jev: One Boolean question per prediction unit; the native yes probability becomes probability_fully_dismissed.
+  jev_zh: 每个预测单元一个 Boolean 问题；原生的 yes 概率即为 probability_fully_dismissed。
   metrics:
     repo_stars: 5
   date: '2026-09-17'
@@ -258,11 +295,14 @@ entries:
   - forecasting
   - benchmark
 - name: lit-search Jev screening
+  name_zh: lit-search 的 Jev 筛选
   url: https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch
   kind: repo
   author: luwill
   description: The lit-search skill in this research-skills collection compiles literature inclusion/exclusion criteria into Jev questions and screens each record into a single verdict.
+  description_zh: 这个 research-skills 合集中的 lit-search skill 把文献纳入/排除标准编译成 Jev 问题，并给每条记录筛出一个结论。
   jev: One request and one Verdict per record, scored once into jev_scores.jsonl so thresholds, triage and evaluation re-route the same scores with no new network calls.
+  jev_zh: 每条记录一次请求、一个 Verdict，只打分一次并写入 jev_scores.jsonl，之后调整阈值、分拣和评测都复用同一批分数，无需新的网络调用。
   metrics:
     repo_stars: 844
   date: '2026-01-13'
@@ -271,10 +311,12 @@ entries:
   - screening
   - research
 - name: Live clinical consultation classifier
+  name_zh: 实时临床问诊分类器
   url: https://x.com/rheum_ai/status/2100454043361722798
   kind: post
   author: rheum_ai
   description: Prototype that feeds an ambient-scribe transcript to Jev during a clinical consultation to traverse a medical ontology, classify symptoms, update the differential diagnosis and flag red flags in real time.
+  description_zh: 原型：在临床问诊过程中把环境记录（ambient scribe）的转录稿喂给 Jev，实时遍历医学本体、分类症状、更新鉴别诊断并标出危险信号。
   image: https://pbs.twimg.com/amplify_video_thumb/2100452479016321024/img/nAyq81QFzA6UzPqM.jpg
   metrics:
     likes: 432
@@ -285,10 +327,12 @@ entries:
   - diagnosis
   - ontology
 - name: Medical MCP JEV ranker
+  name_zh: Medical MCP 的 JEV 重排器
   url: https://github.com/JamesANZ/medical-mcp/tree/main/src/rank
   kind: repo
   author: JamesANZ
   description: MCP server for FDA, WHO, PubMed and RxNorm data that can rerank literature hits with Jev, judging each abstract against the question and keeping, demoting or dropping it.
+  description_zh: 提供 FDA、WHO、PubMed 和 RxNorm 数据的 MCP 服务器，可以用 Jev 重排文献检索结果，根据问题判断每篇摘要是保留、降级还是丢弃。
   metrics:
     repo_stars: 113
   date: '2025-07-14'
@@ -301,7 +345,9 @@ entries:
   kind: repo
   author: JunMa11
   description: Jev-like model built on the open Kev code that extracts table-ready clinical variables from free-text notes on one consumer GPU inside a hospital, with a local app comparing it against hosted Jev and base Qwen3.5-0.8B.
+  description_zh: 基于开放的 Kev 代码构建的类 Jev 模型，在医院内部用一张消费级 GPU 从自由文本病历中提取可直接入表的临床变量，并附一个本地应用，将其与托管版 Jev 和基础版 Qwen3.5-0.8B 对比。
   jev: Noul, Choice and Score fields per note (admission, diagnostic modality, symptom severity); hosted Jev serves as a baseline.
+  jev_zh: 每份病历包含 Noul、Choice 和 Score 字段（入院、诊断方式、症状严重程度）；托管版 Jev 作为基线。
   metrics:
     stars: 11
   date: '2026-09-22'
@@ -314,7 +360,9 @@ entries:
   kind: repo
   author: LYchoon
   description: Python CLI that fetches recent arXiv papers, scores their relevance to a configurable research profile, and writes daily Markdown and JSON rankings.
+  description_zh: Python CLI，抓取最新的 arXiv 论文，按可配置的研究画像给相关性打分，并每天输出 Markdown 和 JSON 格式的排名。
   jev: Relevance scored as P(True) from a Noul per paper.
+  jev_zh: 每篇论文用一个 Noul，以 P(True) 作为相关性分数。
   date: '2026-09-20'
   tags:
   - arxiv
@@ -325,6 +373,7 @@ entries:
   kind: repo
   author: MarissaFamularo
   description: Tool for peer reviewers and authors that pairs each citing sentence in a manuscript with the cited paper, has Claude locate the supporting passage and Jev score whether it supports the claim, then records a human verdict.
+  description_zh: 面向同行评审者和作者的工具，把稿件中的每个引用句与被引论文配对，由 Claude 找出支持段落、Jev 评估它是否支持该论断，最后记录人工结论。
   metrics:
     stars: 5
   date: '2026-09-17'
@@ -340,6 +389,7 @@ entries:
   kind: repo
   author: thenewpotato
   description: Web app that turns a pasted privacy policy URL or text into a nutrition-style label of plain-language answers, each with a Jev confidence score and expandable source excerpts.
+  description_zh: Web 应用，把粘贴进来的隐私政策 URL 或文本变成类似营养成分表的标签，用大白话回答问题，每条都附 Jev 置信度分数和可展开的原文摘录。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -349,10 +399,12 @@ entries:
   - privacy
   - compliance
 - name: PRomop Jev concept ranking
+  name_zh: PRomop 的 Jev 概念排序
   url: https://github.com/healthkey-ai/promop/blob/dev/omop_core/mapping/suggestions.py
   kind: repo
   author: healthkey-ai
   description: OMOP-based oncology patient record platform that can rank candidate standard vocabulary concepts (for example LOINC codes) with Jev when mapping source terms, instead of or alongside Anthropic.
+  description_zh: 基于 OMOP 的肿瘤患者病历平台，在映射源术语时可以用 Jev 给候选标准词表概念（例如 LOINC 编码）排序，替代 Anthropic 或与其并用。
   metrics:
     repo_stars: 9
   date: '2025-09-16'
@@ -367,6 +419,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Clinic intake triage demo that assigns ESI-style acuity from the chief complaint and vitals, picks the service line, and flags red-flag emergencies, interpreter needs and isolation precautions.
+  description_zh: 诊所接诊分诊演示，根据主诉和生命体征给出 ESI 式的急迫程度分级，选择服务科室，并标出危险急症、口译需求和隔离防护措施。
   date: '2026-09-17'
   links:
     app: https://pulselane-topaz.vercel.app
@@ -375,10 +428,12 @@ entries:
   - clinical-triage
   - healthcare
 - name: stella System One decisions
+  name_zh: stella 的 System One 决策
   url: https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts
   kind: repo
   author: stella
   description: Open-source legal workspace that asks Jev only for judgments code cannot make, such as how a citing court treats a decision, which option a passage settles, and which extracted date a question names.
+  description_zh: 开源法律工作台，只在代码做不了判断时才问 Jev，比如引用法院如何对待某个判决、某段文字确定了哪个选项、某个问题指的是哪个提取出的日期。
   metrics:
     repo_stars: 250
   date: '2026-05-03'

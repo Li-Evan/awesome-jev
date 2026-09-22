@@ -1,5 +1,7 @@
 # 📚 Learn: Guides
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 76 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#guides)

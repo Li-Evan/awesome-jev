@@ -1,5 +1,7 @@
 # 💰 Finance and Trading
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md)
+
 Trading agents, market signals, fraud and risk checks, and financial document processing. 89 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

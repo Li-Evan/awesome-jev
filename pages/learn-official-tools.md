@@ -1,5 +1,7 @@
 # 📚 Learn: Official SDKs and Tools
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 3 entries.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#official-sdks-and-tools)

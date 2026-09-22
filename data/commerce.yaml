@@ -1,13 +1,17 @@
 title: Commerce and Marketing
+title_zh: 电商与营销
 emoji: 🛍️
 layout: gallery
 description: Product catalogs, ads, reviews, pricing, and marketing workflows.
+description_zh: 商品目录、广告、评论、定价和营销工作流。
 entries:
 - name: aesty outfit picker
+  name_zh: aesty 穿搭挑选
   url: https://x.com/nestymee/status/2102077670788042844
   kind: post
   author: nestymee
   description: Test of Jev as the final outfit-picking layer in the closet app aesty, catching toe shoes hidden in a party look and swapping in items the user owns, in 3 seconds for $0.0015.
+  description_zh: 在衣橱应用 aesty 里把 Jev 用作最终穿搭挑选层的测试：它发现派对造型里藏着一双五趾鞋，并换成用户自己拥有的单品，用时 3 秒，花费 $0.0015。
   image: https://pbs.twimg.com/amplify_video_thumb/2102075661582209025/img/fFBkX6WEflfiQFfX.jpg
   metrics:
     likes: 71
@@ -21,11 +25,14 @@ entries:
   - outfits
   - consumer-app
 - name: Agent402 wish classifier
+  name_zh: Agent402 的心愿分类器
   url: https://github.com/MikeyPetrillo/Agent402/blob/main/src/wish-classify.js
   kind: repo
   author: MikeyPetrillo
   description: Operator-side classifier in the Agent402 pay-per-call tool marketplace that asks Jev whether a wish-board row requests a capability or advertises a seller's endpoint. On 16 labeled rows adverts scored 0.84-0.95 and wishes 0.03-0.53.
+  description_zh: 按次付费工具市场 Agent402 中运营方使用的分类器，询问 Jev 心愿板上的某一行是在求某项能力，还是卖家在推销自己的端点。在 16 条已标注的行上，广告得分 0.84-0.95，心愿得分 0.03-0.53。
   jev: One narrow Noul per row with a 0.75 threshold; it annotates rows only and never changes counts or qualification.
+  jev_zh: 每行一个范围很窄的 Noul，阈值 0.75；只给行加注释，从不改变计数或资格判定。
   image: https://repository-images.githubusercontent.com/1265675993/fb79f516-99c4-4681-8716-4748f4bcbed3
   metrics:
     repo_stars: 34
@@ -38,10 +45,12 @@ entries:
   - classification
   - mcp
 - name: Agentcard hypershopping
+  name_zh: Agentcard 极速购物
   url: https://x.com/PipeAbellos/status/2101035136867569838
   kind: post
   author: PipeAbellos
   description: 'Shopping agent built on Agentcard, Jev and Kernel browsers: Jev drives checkout quickly and cheaply, while the Agentcard vault fills in card details so neither the agent nor the browser sees them.'
+  description_zh: 基于 Agentcard、Jev 和 Kernel 浏览器构建的购物 agent：Jev 又快又便宜地完成结账流程，卡片信息则由 Agentcard 保险库填写，agent 和浏览器都看不到。
   image: https://pbs.twimg.com/amplify_video_thumb/2101031659164643328/img/knYNnC9HXaG_v8IW.jpg
   metrics:
     likes: 26
@@ -52,11 +61,14 @@ entries:
   - payments
   - shopping-agent
 - name: AI Wardrobe App
+  name_zh: AI 衣橱应用
   url: https://www.youtube.com/watch?v=IeiSdVRMc-U
   kind: video
   author: Sonny Sangha
   description: Multi-hour live build of an AI wardrobe app with virtual try-on, where Jev is added to the AI stylist to rank outfits and compared with an LLM on speed and cost.
+  description_zh: 长达数小时的直播，现场搭建一个带虚拟试穿的 AI 衣橱应用，把 Jev 加进 AI 造型师来给穿搭排序，并与 LLM 比较速度和成本。
   jev: Ranks candidate outfits for the AI stylist.
+  jev_zh: 为 AI 造型师给候选穿搭排序。
   metrics:
     views: 301645
     likes: 268
@@ -70,6 +82,7 @@ entries:
   kind: repo
   author: prantikmedhi
   description: Internal-link auditor for built HTML sites that runs deterministic link checks plus an optional Jev pass on whether anchor text matches the destination and fits its context, with CI regression gates.
+  description_zh: 面向已构建 HTML 站点的内链审计工具，做确定性的链接检查，并可选用 Jev 判断锚文本是否与目标页面相符、是否贴合上下文，带有 CI 回归闸门。
   image: https://raw.githubusercontent.com/prantikmedhi/anchorlint/main/site/diagram.svg
   date: '2026-09-20'
   links:
@@ -79,10 +92,12 @@ entries:
   - links
   - static-site
 - name: App Store keyword finder
+  name_zh: App Store 关键词挖掘工具
   url: https://x.com/everton_dev/status/2101058122634666079
   kind: post
   author: everton_dev
   description: App Store keyword tool where Jev drops search queries nobody would type, rejects lookalike apps among ranked results, and mines keywords from the real competitor set.
+  description_zh: App Store 关键词工具，由 Jev 剔除没人会搜的查询词、在排名结果中排除只是看起来相似的应用，并从真正的竞品集合里挖掘关键词。
   image: https://pbs.twimg.com/amplify_video_thumb/2101054877472350208/img/jl8XbW30j1-nZajq.jpg
   metrics:
     likes: 13
@@ -93,22 +108,28 @@ entries:
   - app-store
   - keywords
 - name: BTK audit studies
+  name_zh: BTK 审计研究
   url: https://boringtoolskit.com/blog/seo-audit-cost-2026/
   kind: article
   author: Boring Tools Kit
   description: Compares 2026 technical SEO audit prices with a measured Jev pipeline that judged 1,204 pages for under $1 in model cost and ranked the fixes to deploy.
+  description_zh: 对比 2026 年技术 SEO 审计的市场价格与一条实测的 Jev 流水线：后者评判了 1,204 个页面，模型成本不到 $1，并给要上线的修复排好了优先级。
   jev: 'Striking-distance triage: 4,816 page judgments in under 3 minutes, $0.0048 per 12-query batch.'
+  jev_zh: 临门一脚关键词（striking-distance）分诊：不到 3 分钟完成 4,816 次页面判断，每批 12 个查询 $0.0048。
   image: https://boringtoolskit.com/assets/brand/social-preview.png?v=20260911-guard-v1
   date: '2026-09-19'
   tags:
   - seo
   - marketing
 - name: Careme ingredient grading
+  name_zh: Careme 食材评分
   url: https://github.com/paulgmiller/careme/blob/master/internal/ai/jev_grade.go
   kind: repo
   author: paulgmiller
   description: Meal planner that reads a local grocery store's inventory and uses Jev to grade each product from 1 to 10 on how useful it is as a cooking ingredient before generating recipes.
+  description_zh: 膳食规划工具，读取本地杂货店的库存，在生成菜谱前用 Jev 按作为烹饪食材的实用程度给每件商品打 1 到 10 分。
   jev: One Score question per product over brand, description and size, via the community Go SDK.
+  jev_zh: 每件商品一个 Score 问题，依据品牌、描述和规格，通过社区版 Go SDK 调用。
   metrics:
     repo_stars: 12
   date: '2025-08-30'
@@ -120,11 +141,14 @@ entries:
   - recipes
   - go
 - name: Checkout form that notices
+  name_zh: 会察觉用户状态的结账表单
   url: https://openrouter.ai/labs/jev/notice
   kind: app
   author: OpenRouter
   description: 'OpenRouter Labs recipe for a checkout form that asks Jev eight questions after every click and reacts to what it notices: 8 answers in 300 ms for $0.0001 a check.'
+  description_zh: OpenRouter Labs 的示例配方：结账表单在每次点击后问 Jev 八个问题，并根据它察觉到的情况做出反应，每次检查 300 毫秒内给出 8 个答案，花费 $0.0001。
   jev: Eight questions over the checkout session state after each interaction.
+  jev_zh: 每次交互后，针对结账会话的 state 提八个问题。
   image: https://openrouter.ai/dynamic-og?title=Checkout+form+that+notices&description=Watch+a+checkout+session+and+react+to+what+Jev+notices.&v=2
   links:
     model: https://openrouter.ai/typesafe/jev
@@ -133,10 +157,12 @@ entries:
   - forms
   - openrouter-labs
 - name: Coffee bean detail extractor
+  name_zh: 咖啡豆信息提取器
   url: https://x.com/aravindballa/status/2100600122929504353
   kind: post
   author: aravindballa
   description: Uses Jev to pull coffee bean details from roasters' product pages for the caffeineletter bazaar, at about 1 cent for 20 coffees.
+  description_zh: 用 Jev 从烘焙商的商品页面提取咖啡豆信息，供 caffeineletter bazaar 使用，20 款咖啡约花 1 美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100599812022550528/img/P1al81TrmEcpFUBH.jpg
   metrics:
     likes: 40
@@ -149,10 +175,12 @@ entries:
   - product-catalog
   - coffee
 - name: Competitor ad breakdown
+  name_zh: 竞品广告拆解
   url: https://x.com/TheMattBerman/status/2100654891756589230
   kind: post
   author: TheMattBerman
   description: 'Breakdown of 724 live ads from 37 brands in 40 seconds for 9 cents: Jev tagged each ad''s hook, format, offer, CTA, awareness stage and landing-page mismatch.'
+  description_zh: 40 秒、9 美分拆解 37 个品牌的 724 条在投广告：Jev 为每条广告标注钩子、形式、优惠、CTA、认知阶段，以及与落地页是否脱节。
   image: https://pbs.twimg.com/amplify_video_thumb/2100654321792684032/img/cXvU50KmCe6QFu86.jpg
   metrics:
     likes: 6741
@@ -162,11 +190,14 @@ entries:
   - ads
   - marketing
 - name: Drape real-time try-on
+  name_zh: Drape 实时试穿
   url: https://x.com/nailthy62/status/2101388186916454439
   kind: post
   author: nailthy62
   description: 'Real-time virtual try-on experiment for Drape: Jev reads the speech transcript and the current outfit, picks an item from the closet and swaps the outfit live, at $0.0011 and ~620ms per decision.'
+  description_zh: Drape 的实时虚拟试穿实验：Jev 读取语音转写和当前穿搭，从衣橱里挑一件单品并实时换装，每次决策 $0.0011、约 620 毫秒。
   jev: One Choice over closet items per utterance.
+  jev_zh: 每句话在衣橱单品中做一个 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2101384523124740096/img/1Q6moTMdLcZ-mJ3r.jpg
   metrics:
     likes: 4292
@@ -177,10 +208,12 @@ entries:
   - try-on
   - voice
 - name: ego lite shopping agent
+  name_zh: ego lite 购物 agent
   url: https://x.com/ego_agent/status/2100970015977804008
   kind: post
   author: ego_agent
   description: Shopping agent pairing ego lite with Jev and DeepSeek Flash that made 20 Amazon product decisions in 3.71 seconds, versus 54.45 seconds for GPT-5.6 Sol, both scoring 10/10.
+  description_zh: 把 ego lite 与 Jev 和 DeepSeek Flash 搭配的购物 agent，3.71 秒内做完 20 个 Amazon 商品决策，GPT-5.6 Sol 需要 54.45 秒，两者得分都是 10/10。
   image: https://pbs.twimg.com/amplify_video_thumb/2100969567715790848/img/IXAgXZrtsLGyeYRA.jpg
   metrics:
     likes: 769
@@ -195,6 +228,7 @@ entries:
   kind: post
   author: raihankhan_rk
   description: Paste a public URL and Jev judges the first screen of the site, returning probability-backed verdicts on its promise, CTA, pricing and trust signals.
+  description_zh: 粘贴一个公开 URL，Jev 就评判网站的首屏，对其中的价值主张、CTA、定价和信任信号给出带概率的结论。
   image: https://pbs.twimg.com/amplify_video_thumb/2101331092364234752/img/rQAELz8y3-xQ16Wx.jpg
   metrics:
     likes: 35
@@ -208,10 +242,12 @@ entries:
   - landing-page
   - review
 - name: Forum Backlinks
+  name_zh: 论坛外链
   url: https://x.com/aleksey_ignatov/status/2102097024250446154
   kind: post
   author: aleksey_ignatov
   description: SEO tool that used Jev to find 151 of 50,000 forums in 40 seconds where a product can earn backlinks, matching each thread to the best page and building a daily publishing calendar.
+  description_zh: SEO 工具，用 Jev 在 40 秒内从 50,000 个论坛中找出 151 个能为产品带来外链的论坛，为每个帖子匹配最合适的页面，并排出每日发布日历。
   image: https://pbs.twimg.com/amplify_video_thumb/2102048143005388803/img/IMcWOqCIztbIF0zr.jpg
   metrics:
     views: 61
@@ -224,10 +260,12 @@ entries:
   - backlinks
   - marketing
 - name: Higgsfield ad creative pipeline
+  name_zh: Higgsfield 广告创意流水线
   url: https://x.com/higgsfield_ai/status/2101117855622463719
   kind: post
   author: higgsfield_ai
   description: Ad-creative pipeline where Jev filters content and selects assets, and DeepSeek plus Higgsfield turn the chosen assets into finished ads.
+  description_zh: 广告创意流水线：Jev 负责过滤内容、挑选素材，再由 DeepSeek 和 Higgsfield 把选中的素材做成成品广告。
   image: https://pbs.twimg.com/amplify_video_thumb/2101117486720765952/img/YAZCcLaZMni06S9c.jpg
   metrics:
     likes: 1303
@@ -237,11 +275,14 @@ entries:
   - ads
   - asset-selection
 - name: Internal-link SEO audit
+  name_zh: 站内链接 SEO 审计
   url: https://x.com/borjafat/status/2101018783976722479
   kind: post
   author: borjafat
   description: Reads all 586 pages of a site in 45.1 seconds and rebuilds the internal link map for $0.21, placing 584 links and refusing 139 pages with no honest fit; Claude Opus 5 got through 21 pages in the same time.
+  description_zh: 45.1 秒读完一个网站的全部 586 个页面，花 $0.21 重建内链图，放置了 584 条链接，并对 139 个找不到合理匹配的页面拒绝加链接；同样时间里 Claude Opus 5 只处理了 21 个页面。
   jev: 8,790 yes/no calls on whether a page has a real reason to link to another.
+  jev_zh: 8,790 次是非调用，判断一个页面是否有真实的理由链接到另一个页面。
   image: https://pbs.twimg.com/amplify_video_thumb/2101018477087592448/img/9YlAHKLLo_h6rgtK.jpg
   metrics:
     likes: 3923
@@ -251,10 +292,12 @@ entries:
   - seo
   - internal-links
 - name: Jev in aiseotracker, linkdr and genppt
+  name_zh: 在 aiseotracker、linkdr 和 genppt 中使用 Jev
   url: https://x.com/illyism/status/2100489521557123265
   kind: post
   author: illyism
   description: Report from moving the hard-coded regex rules in aiseotracker, linkdr and genppt over to Jev, with ordinary LLM calls reported as around 10x faster and 50% cheaper.
+  description_zh: 把 aiseotracker、linkdr 和 genppt 里写死的正则规则迁移到 Jev 的经验报告，据称比普通 LLM 调用快约 10 倍、便宜 50%。
   image: https://pbs.twimg.com/media/HSZvqLmXwAAC2ag.jpg?name=orig
   metrics:
     likes: 108
@@ -267,10 +310,12 @@ entries:
   - regex
   - production
 - name: Jev SEO/GEO agent
+  name_zh: 基于 Jev 的 SEO/GEO agent
   url: https://x.com/HamonPaulm/status/2101623347910148511
   kind: article
   author: HamonPaulm
   description: Guide to an SEO and GEO audit agent built on Jev that judges page intent, answer placement and brand mentions in AI answers, cutting a ~$250 per-client agent run by about 90%.
+  description_zh: 介绍一个基于 Jev 的 SEO 与 GEO 审计 agent，判断页面意图、答案摆放位置以及品牌在 AI 回答中的提及情况，把每个客户约 $250 的 agent 运行成本降低约 90%。
   image: https://pbs.twimg.com/media/HSpy87laEAAxRaY.jpg
   metrics:
     likes: 110
@@ -281,10 +326,12 @@ entries:
   - geo
   - marketing
 - name: Jev SEO/GEO workflows
+  name_zh: 基于 Jev 的 SEO/GEO 工作流
   url: https://x.com/irabukht/status/2101375295152652372
   kind: post
   author: irabukht
   description: Seven SEO and GEO agent workflows built on Jev, such as scoring competitor pages on answer, depth, proof and freshness, and returning keep-or-change with confidence for each page's title, meta, H1, FAQ and schema.
+  description_zh: 七个基于 Jev 的 SEO 与 GEO agent 工作流，比如从答案、深度、证据和时效性给竞品页面打分，以及针对每个页面的 title、meta、H1、FAQ 和 schema 给出保留或修改的建议并附上置信度。
   image: https://pbs.twimg.com/amplify_video_thumb/2101374870701355008/img/MT8yWbjZl7NbAKro.jpg
   metrics:
     likes: 763
@@ -301,6 +348,7 @@ entries:
   kind: repo
   author: littlewindy123
   description: Chrome extension for Taobao and JD where Jev guesses from product, shop and brand clues whether a seller's staff get two-day weekends, stamping PASS on products that likely do not.
+  description_zh: 淘宝和京东的 Chrome 扩展，由 Jev 根据商品、店铺和品牌线索猜测卖家员工是否享有双休，给大概率没有双休的商品盖上 PASS 章。
   image: https://raw.githubusercontent.com/littlewindy123/jev-weekend-shopping-chrome/main/icons/icon-128.png
   metrics:
     stars: 6
@@ -314,7 +362,9 @@ entries:
   kind: repo
   author: stas4000
   description: Rebuilds a site's internal link map with Jev and races Claude Opus 5 on the same queue; the included run covers 566 pages and 8,460 link decisions, with a deep model rewriting the rubric from disagreements.
+  description_zh: 用 Jev 重建网站的内链图，并在同一队列上与 Claude Opus 5 比速度；附带的一次运行覆盖 566 个页面、8,460 个链接决策，并由一个深度模型根据分歧改写评分标准。
   jev: Yes/no link decisions over 15 candidate targets per page.
+  jev_zh: 每个页面在 15 个候选目标上做是非式的链接决策。
   image: https://raw.githubusercontent.com/stas4000/jev-linkmap/main/docs/report.png
   metrics:
     stars: 19
@@ -329,6 +379,7 @@ entries:
   kind: repo
   author: AkashPriyadarshii
   description: Rust CLI and MCP server for SEO and generative-engine optimization that combines local page checks and DuckDuckGo queries with optional Jev scoring of search intent, direct answers, content gaps and citation likelihood.
+  description_zh: 面向 SEO 和生成式引擎优化的 Rust CLI 兼 MCP 服务器，把本地页面检查和 DuckDuckGo 查询结合起来，并可选用 Jev 给搜索意图、直接答案、内容缺口和被引用的可能性打分。
   image: https://jevseo.vercel.app/assets/og-image.png
   metrics:
     stars: 32
@@ -345,6 +396,7 @@ entries:
   kind: post
   author: bseanvt
   description: Pay-to-play board of 9 sites where buyers pick one question and Jev reranks the sites by it; the top spot stays on the board forever.
+  description_zh: 付费上榜的 9 个网站展示板：买家挑一个问题，Jev 按这个问题给网站重新排序；排在第一的位置会永久留在榜上。
   image: https://jevons.lol/og/home-7f6593836f.png
   metrics:
     views: 31
@@ -361,6 +413,7 @@ entries:
   kind: repo
   author: epergaboni
   description: 'Scores a page for search, answer engines and generative engines: code checks fixed rules, Jev answers the judgment questions, and you get three scores and ranked fixes in about two seconds and £0.0001 per page.'
+  description_zh: 从搜索、答案引擎和生成式引擎三个角度给页面打分：代码检查固定规则，Jev 回答需要判断的问题，大约两秒、每页 £0.0001 就能拿到三个分数和排好序的修复建议。
   metrics:
     stars: 3
   date: '2026-09-21'
@@ -372,10 +425,12 @@ entries:
   - geo
   - marketing
 - name: Maxfusion ad classification
+  name_zh: Maxfusion 广告分类
   url: https://x.com/aresotik/status/2100949805573030378
   kind: post
   author: aresotik
   description: Maxfusion ran Jev over a brand's entire ad library, classifying 1,891 ads by funnel stage and creative style in 19 seconds for $0.12, headed for the Maxfusion MCP.
+  description_zh: 在一个品牌的整个广告库上跑 Jev：19 秒、$0.12，按漏斗阶段和创意风格分类了 1,891 条广告，这项能力即将进入 Maxfusion MCP。
   image: https://pbs.twimg.com/amplify_video_thumb/2100949769858478080/img/VXs1HGHyqEXK0_oP.jpg
   metrics:
     likes: 153
@@ -390,10 +445,12 @@ entries:
   - competitor-research
   - mcp
 - name: Maxfusion competitor-ad research
+  name_zh: Maxfusion 竞品广告研究
   url: https://x.com/mightyking/status/2100939189869002819
   kind: post
   author: mightyking
   description: Competitor research that classified 1,891 ads from Resilia's ad library by customer-journey step and ad style in 19 seconds for $0.12, planned for the Maxfusion MCP.
+  description_zh: 竞品研究：19 秒、$0.12 把 Resilia 广告库中的 1,891 条广告按客户旅程步骤和广告风格分类，计划加入 Maxfusion MCP。
   image: https://pbs.twimg.com/amplify_video_thumb/2100939073330249728/img/FJpGgq0rD53tUWiv.jpg
   metrics:
     likes: 436
@@ -406,10 +463,12 @@ entries:
   - ads
   - classification
 - name: Maxfusion competitor-ad research
+  name_zh: Maxfusion 竞品广告研究
   url: https://x.com/OriSilver/status/2100941251478458871
   kind: post
   author: OriSilver
   description: Competitor research that classified 1,891 ads from Resilia's ad library by customer-journey stage and ad style in 19 seconds for $0.12, with a full account deep dive, coming to the Maxfusion MCP.
+  description_zh: 竞品研究：19 秒、$0.12 把 Resilia 广告库中的 1,891 条广告按客户旅程阶段和广告风格分类，并附有完整的账户深度分析，即将上线 Maxfusion MCP。
   image: https://pbs.twimg.com/amplify_video_thumb/2100940464870301696/img/g-uzVt-FDP21an26.jpg
   metrics:
     likes: 582
@@ -426,6 +485,7 @@ entries:
   kind: repo
   author: elvisun
   description: Demo in the Newsjack PR-agent repo that has Jev and Claude Opus 5 judge the same Google News headlines side by side for desk, story type and newsworthiness scores; live Jev ran about 190 ms per call versus 4 to 6 s for Opus.
+  description_zh: Newsjack PR agent 仓库中的演示，让 Jev 和 Claude Opus 5 并排评判同一批 Google News 标题，给出版面、报道类型和新闻价值评分；实测 Jev 每次调用约 190 毫秒，Opus 要 4 到 6 秒。
   image: https://repository-images.githubusercontent.com/1243618131/31c6d55a-1dd4-4fff-be6b-d43ac5f53fe5
   metrics:
     repo_stars: 1295
@@ -442,6 +502,7 @@ entries:
   kind: post
   author: elvissun
   description: Open-source PR agent skills whose Jev mode judges every monitored headline before expensive steps run, handling ~200 signals in 8 seconds for about a cent with zero dropped stories in their eval.
+  description_zh: 开源的 PR agent skill 集，其 Jev 模式会在昂贵步骤运行前先评判每条被监控的标题，8 秒处理约 200 条信号，花费约一美分，在他们的评测中没有漏掉任何一条新闻。
   image: https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg
   metrics:
     likes: 162
@@ -455,11 +516,14 @@ entries:
   - pr
   - media-monitoring
 - name: NewsJack brand news matching
+  name_zh: NewsJack 品牌新闻匹配
   url: https://x.com/elvissun/status/2100951347080421409
   kind: post
   author: elvissun
   description: Reads 384 morning news stories and tells 15 brands which ones to jump on, in 24.9 seconds for $0.19, while Claude Opus 5 got through 4 stories for $0.77; the demo ships with 30+ PR agent skills.
+  description_zh: 读完早上的 384 条新闻，告诉 15 个品牌各自该蹭哪几条，用时 24.9 秒、花费 $0.19，而 Claude Opus 5 花 $0.77 只处理了 4 条；演示附带 30+ 个 PR agent skill。
   jev: One relevance question per story-brand pair.
+  jev_zh: 每个新闻-品牌组合一个相关性问题。
   image: https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg
   metrics:
     likes: 3918
@@ -474,11 +538,14 @@ entries:
   - news
   - brands
 - name: No Sugar for Kids snack scoring
+  name_zh: No Sugar for Kids 零食评分
   url: https://x.com/nikunj/status/2101006585481073093
   kind: post
   author: nikunj
   description: Scores a catalog of 3,000 kids' snacks against multiple health criteria in 28 seconds for $0.11 on nosugarforkids.com.
+  description_zh: 在 nosugarforkids.com 上，28 秒、$0.11 按多项健康标准给 3,000 款儿童零食的目录打分。
   jev: One Score question per criterion per snack, aggregated into a table.
+  jev_zh: 每款零食的每项标准一个 Score 问题，汇总成一张表。
   image: https://pbs.twimg.com/amplify_video_thumb/2101005796603809792/img/19SyyiWW5wotfFfW.jpg
   metrics:
     likes: 742
@@ -492,11 +559,14 @@ entries:
   - food
   - scoring
 - name: Notra Jev classifiers
+  name_zh: Notra 的 Jev 分类器
   url: https://github.com/usenotra/notra/tree/main/packages/ai/src/evaluation
   kind: repo
   author: usenotra
   description: 'Jev integration in the Notra GEO platform: brand-mention, sentiment, list-position and chat-routing classifiers run as typed Jev questions instead of LLM calls, behind a NOTRA_JEV_CLASSIFIERS flag.'
+  description_zh: GEO 平台 Notra 中的 Jev 集成：品牌提及、情感倾向、列表位置和聊天路由等分类器都以带类型的 Jev 问题运行，取代 LLM 调用，由 NOTRA_JEV_CLASSIFIERS 开关控制。
   jev: Boolean answers thresholded at 0.5, a Choice for routing complexity, and a Score-like position question over list ranks; a 5 s timeout falls back to the LLM.
+  jev_zh: 布尔答案以 0.5 为阈值，路由复杂度用一个 Choice，列表排名用一个类似 Score 的位置问题；5 秒超时则回退到 LLM。
   metrics:
     repo_stars: 207
   date: '2025-12-13'
@@ -512,6 +582,7 @@ entries:
   kind: repo
   author: kitze
   description: WXT browser extension that grades the sections of a web page for clarity, writing and on-page SEO with Jev through Vercel AI Gateway.
+  description_zh: WXT 浏览器扩展，通过 Vercel AI Gateway 调用 Jev，从清晰度、文字质量和页面内 SEO 三方面给网页的各个区块打分。
   metrics:
     stars: 3
   date: '2026-09-17'
@@ -520,10 +591,12 @@ entries:
   - browser-extension
   - copywriting
 - name: Pokémon card deal finder
+  name_zh: 宝可梦卡牌捡漏工具
   url: https://x.com/luke0ritchie/status/2101053019391492500
   kind: post
   author: luke0ritchie
   description: Deal finder for Pokémon cards that pulls cards from the TCGdex API, searches eBay and filters listings with Jev, raising match accuracy from 58% to 98%.
+  description_zh: 从 TCGdex API 拉取宝可梦卡牌、在 eBay 上搜索，再用 Jev 过滤商品，把匹配准确率从 58% 提高到 98%。
   image: https://pbs.twimg.com/amplify_video_thumb/2101052140257198080/img/N1QCRwjYQq59wR_j.jpg
   metrics:
     views: 118
@@ -537,7 +610,9 @@ entries:
   kind: repo
   author: acoyfellow
   description: Small browser client and self-hostable Cloudflare Worker that asks Jev to pick a website's next useful action from site-defined outcomes, for example whether to show a plan comparison to a visitor confused by pricing.
+  description_zh: 小巧的浏览器客户端加可自托管的 Cloudflare Worker，让 Jev 从网站自定义的结果中挑出下一个有用的动作，比如是否给对定价感到困惑的访客展示方案对比。
   jev: One Choice over the supplied outcomes per prediction, returned with a confidence; the site records results in its own analytics.
+  jev_zh: 每次预测在给定结果之间做一个 Choice，并返回置信度；网站在自己的分析系统里记录结果。
   metrics:
     stars: 5
   date: '2026-09-19'
@@ -551,6 +626,7 @@ entries:
   kind: post
   author: anthonyriera
   description: Reddit SEO tool that added Jev to spot, in under 5 minutes, threads where a product can be promoted or Reddit posts that already rank on Google and ChatGPT for your keywords.
+  description_zh: Reddit SEO 工具，接入 Jev 后，5 分钟内就能找出适合推广产品的帖子，或者已经在 Google 和 ChatGPT 上针对你的关键词排上名的 Reddit 帖子。
   image: https://pbs.twimg.com/amplify_video_thumb/2100611237503496192/img/AoZJowUS3HpG16dP.jpg
   metrics:
     likes: 73
@@ -564,10 +640,12 @@ entries:
   - reddit
   - marketing
 - name: Reddit conversation finder
+  name_zh: Reddit 对话挖掘工具
   url: https://x.com/MargiShah_18/status/2102235854810775730
   kind: post
   author: MargiShah_18
   description: Tool that scans Reddit posts and comments from the last 48 hours and uses Jev to surface people actually asking for help a product could give, with skip and handled buttons.
+  description_zh: 扫描最近 48 小时 Reddit 帖子和评论的工具，用 Jev 找出那些真正在求助、而产品恰好能帮上忙的人，并提供“跳过”和“已处理”按钮。
   image: https://pbs.twimg.com/amplify_video_thumb/2102235794316382208/img/JTej8nCIM9mfjKMl.jpg
   metrics:
     likes: 3
@@ -584,7 +662,9 @@ entries:
   kind: repo
   author: oguzhankayan
   description: Local MCP server that turns a research question into market intelligence from thousands of Reddit posts, with Jev classifying posts and evidence behind every theme and lead. Jev matched human labels 73.5% of the time.
+  description_zh: 本地 MCP 服务器，把一个研究问题变成来自数千条 Reddit 帖子的市场情报，每个主题和潜在客户背后的帖子分类与证据都由 Jev 完成。Jev 与人工标注的一致率为 73.5%。
   jev: Stage 1/2 relevance classification of collected posts by Jev; DeepSeek handles plan compilation and cluster synthesis.
+  jev_zh: 由 Jev 对收集到的帖子做第 1/2 阶段的相关性分类；DeepSeek 负责编排计划和综合聚类。
   metrics:
     stars: 33
   date: '2026-09-20'
@@ -593,10 +673,12 @@ entries:
   - reddit
   - mcp
 - name: Ryze SEO/GEO agents on Jev
+  name_zh: 基于 Jev 的 Ryze SEO/GEO agent
   url: https://x.com/irabukht/status/2101090579127951694
   kind: post
   author: irabukht
   description: Account of SEO and GEO audit-and-fix agents whose per-client cost fell 90% from about $250 after moving analytics reads, citation scans and gap analysis to Jev.
+  description_zh: SEO 与 GEO 审计修复 agent 的实践记录：把分析数据读取、引用扫描和缺口分析迁移到 Jev 后，每个客户的成本从约 $250 下降了 90%。
   image: https://pbs.twimg.com/amplify_video_thumb/2101089408099516416/img/Smzn-jtE8prvdY90.jpg
   metrics:
     likes: 1537
@@ -607,10 +689,12 @@ entries:
   - geo
   - marketing
 - name: Second-hand shopping agent
+  name_zh: 二手购物 agent
   url: https://x.com/AlanDaitch/status/2100757989212754085
   kind: post
   author: AlanDaitch
   description: Playwright shopping agent where Jev reviews about 26 used listings per minute in 406 ms each, skipping poor fits, bidding on good ones and messaging sellers, for USD 0.00085 in total.
+  description_zh: 基于 Playwright 的购物 agent，由 Jev 每分钟审阅约 26 条二手商品，每条 406 毫秒，跳过不合适的、对合适的出价并给卖家发消息，总共花费 USD 0.00085。
   image: https://pbs.twimg.com/ext_tw_video_thumb/2100757808484438017/pu/img/bydnTNNexLUnwB63.jpg
   metrics:
     likes: 945
@@ -621,10 +705,12 @@ entries:
   - marketplace
   - playwright
 - name: SEO internal-link rebuild
+  name_zh: SEO 站内链接重建
   url: https://x.com/ai_xiaomu/status/2101447997318127897
   kind: post
   author: ai_xiaomu
   description: Site-wide SEO internal-link rebuild where Jev placed 584 relevant links and rejected 139 weak pages in 45.1 seconds for $0.21, while Opus 5 handled 21 pages in the same time.
+  description_zh: 全站 SEO 内链重建：Jev 在 45.1 秒内放置了 584 条相关链接，拒绝了 139 个质量不佳的页面，花费 $0.21，同样时间里 Opus 5 只处理了 21 个页面。
   image: https://pbs.twimg.com/amplify_video_thumb/2101354559318945792/img/RSuytcke10ZDhdP9.jpg
   metrics:
     likes: 459
@@ -635,11 +721,14 @@ entries:
   - internal-links
   - comparison
 - name: Synthetic ad focus group
+  name_zh: 合成广告焦点小组
   url: https://x.com/TheMattBerman/status/2101439340588974096
   kind: post
   author: TheMattBerman
   description: Synthetic focus group where Jev scrolled 723 ads as 30 buyer personas, making 21,690 stop-or-scroll decisions for 22 cents.
+  description_zh: 合成焦点小组：Jev 扮演 30 个买家画像刷了 723 条广告，做出 21,690 次“停下还是划走”的决定，花费 22 美分。
   jev: One stop/scroll decision per ad per persona.
+  jev_zh: 每个画像对每条广告做一次停下/划走决定。
   image: https://pbs.twimg.com/amplify_video_thumb/2101439290186051584/img/hHD8XIvbYFKj0Bdp.jpg
   metrics:
     likes: 1140
@@ -650,20 +739,24 @@ entries:
   - personas
   - marketing
 - name: Testimonial miner
+  name_zh: 用户好评挖掘器
   url: https://github.com/AppitStudio/testimonial-miner
   kind: repo
   author: AppitStudio
   description: Python CLI that fetches Gmail over IMAP, cleans each email and makes one Jev request per message (message kind, which app, whether the sender is a real user, and a Noul per sentence) to store verbatim praise quotes for review.
+  description_zh: Python CLI，通过 IMAP 拉取 Gmail，清洗每封邮件，并为每封邮件发一次 Jev 请求（邮件类型、涉及哪个应用、发件人是否真实用户，以及每句话一个 Noul），把原文好评摘录存下来待审阅。
   date: '2026-09-18'
   tags:
   - testimonials
   - gmail
   - marketing
 - name: Video ad shot scoring
+  name_zh: 视频广告镜头评分
   url: https://x.com/vladdubchak_x/status/2100870244004683886
   kind: post
   author: vladdubchak_x
   description: Tool that pulls an advertiser's live Meta video ads through Maxfusion and has Jev judge every shot and rate the whole ad; 50 judgments took 1.52 seconds for $0.00028.
+  description_zh: 通过 Maxfusion 拉取广告主正在投放的 Meta 视频广告，让 Jev 评判每个镜头并给整条广告打分；50 次判断耗时 1.52 秒，花费 $0.00028。
   image: https://pbs.twimg.com/amplify_video_thumb/2100856866427256833/img/C3ods4J011QCJLCP.jpg
   metrics:
     likes: 56

@@ -1,5 +1,7 @@
 # 📚 Learn: Discussions
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 20 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#discussions)

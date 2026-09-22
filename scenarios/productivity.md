@@ -1,5 +1,7 @@
 # 🧰 Personal Productivity
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md)
+
 Email, notes, calendars, browsing, and everyday automation. 127 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

@@ -1,5 +1,7 @@
 # 🗣️ Voice and Real-Time Interfaces
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md)
+
 Voice assistants and interfaces that react while you type or speak. 54 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

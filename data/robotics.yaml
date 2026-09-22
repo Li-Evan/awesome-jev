@@ -1,14 +1,19 @@
 title: Robotics and Simulation
+title_zh: 机器人与仿真
 emoji: 🦾
 layout: gallery
 description: Embodied control, driving simulators, and decisions in the physical world.
+description_zh: 具身控制、驾驶模拟器，以及物理世界中的决策。
 entries:
 - name: Adaptive traffic signal simulation
+  name_zh: 自适应交通信号灯仿真
   url: https://x.com/nishitkhalpada/status/2101755092177473858
   kind: post
   author: nishitkhalpada
   description: Traffic simulation comparing a fixed 8-second signal cycle with Jev deciding when to keep or switch the green light from queue sizes, wait times and arrivals; fixed timing wins in balanced traffic, Jev in uneven traffic.
+  description_zh: 交通仿真，把固定 8 秒的信号周期与由 Jev 根据排队长度、等待时间和来车情况决定保持还是切换绿灯做对比；车流均衡时固定配时更好，车流不均时 Jev 更好。
   jev: Keep-or-switch Choice per signal step from queue and wait-time state.
+  jev_zh: 每个信号步根据排队和等待时间 state 做一次保持或切换的 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2101755011676184576/img/Y5z-bgXbBRV0T49b.jpg
   metrics:
     views: 64
@@ -17,11 +22,14 @@ entries:
   - traffic
   - simulation
 - name: Askable arm
+  name_zh: 能直接下指令的机械臂
   url: https://github.com/TarunTomar122/jev-askable-arm
   kind: repo
   author: TarunTomar122
   description: Zero-shot plain-English goals on a simulated Franka arm in ManiSkill, where Jev chains hardcoded primitives one pick at a time, about 1 second per pick, with no training or demos.
+  description_zh: 在 ManiSkill 的模拟 Franka 机械臂上零样本执行纯英文目标，Jev 一次抓取一个地串联硬编码的基本动作，每次抓取约 1 秒，无需训练或演示。
   jev: One Choice per step over about thirty skills and targets from privileged object and gripper state.
+  jev_zh: 每一步根据特权物体和夹爪 state，在约三十个技能和目标中做一个 Choice。
   metrics:
     stars: 10
   date: '2026-09-17'
@@ -29,11 +37,14 @@ entries:
   - robot-arm
   - maniskill
 - name: Autonomous OS Jev support
+  name_zh: Autonomous OS 的 Jev 支持
   url: https://github.com/autonomous-ai/autonomous-os/tree/main/system/buddy/jev
   kind: repo
   author: autonomous-ai
   description: Open-source robot operating system that adds optional Jev decisions for resolving spoken intents among candidates, suggesting Buddy UI actions and routing Hermes skills.
+  description_zh: 开源机器人操作系统，新增可选的 Jev 决策，用于在候选中解析语音意图、建议 Buddy UI 操作以及路由 Hermes skill。
   jev: Choice over candidate intents or actions with a 350 ms default timeout and a cooldown after errors.
+  jev_zh: 在候选意图或动作上做 Choice，默认超时 350 毫秒，出错后有冷却期。
   image: https://raw.githubusercontent.com/autonomous-ai/autonomous-os/main/robots/intern-v2/images/intern-hero.webp
   metrics:
     repo_stars: 356
@@ -45,10 +56,12 @@ entries:
   - intent
   - routing
 - name: Bio-inspired robot with Jev
+  name_zh: 搭载 Jev 的仿生机器人
   url: https://x.com/rodenlab/status/2102154848053432443
   kind: post
   author: rodenlab
   description: Bio-inspired robot running on a simulated nervous system, where neural activity is fed to Jev and its rapid decisions are translated into physical movement.
+  description_zh: 运行在模拟神经系统上的仿生机器人，神经活动被输入 Jev，它的快速决策再被转化为身体动作。
   image: https://pbs.twimg.com/amplify_video_thumb/2102154117082734592/img/McNrTg7kpZShzeiX.jpg
   metrics:
     likes: 11
@@ -63,17 +76,22 @@ entries:
   kind: app
   author: jev-demo
   description: Robot companion in a 3D scene that reacts to what you say without generating a word, deciding each turn whether to act, ask or shrug.
+  description_zh: 3D 场景中的机器人伙伴，能对你说的话做出反应却不生成一个字，每一轮决定是行动、追问还是耸耸肩。
   jev: One call per turn with nine typed questions; code gates on confidence to act, ask or just react.
+  jev_zh: 每轮一次调用，包含九个类型化问题；由代码依据置信度决定行动、追问还是只做反应。
   tags:
   - robot
   - companion
   - confidence-gating
 - name: Crop Steering Jev check
+  name_zh: 作物调控灌溉的 Jev 检查
   url: https://github.com/JakeTheRabbit/HA-Irrigation-Strategy
   kind: repo
   author: JakeTheRabbit
   description: Home Assistant crop-steering irrigation controller whose optional Jev check via Cloudflare Workers AI can veto auto-setpoint changes that look like probe or delivery faults and nudge P2 shot size in small bounded steps.
+  description_zh: Home Assistant 作物调控（crop steering）灌溉控制器，可选的 Jev 检查通过 Cloudflare Workers AI 运行，能否决看似由探头或供水故障引起的自动设定点变更，并以有界的小步调整 P2 灌溉量。
   jev: Consulted when a ramp plateaus and hourly during P2; irrigation never waits on it and no answer means no change.
+  jev_zh: 在爬坡进入平台期时以及 P2 阶段每小时咨询一次；灌溉从不等待它，没有答案就不做改动。
   image: https://raw.githubusercontent.com/JakeTheRabbit/HA-Irrigation-Strategy/main/img/operator-dashboard.png
   metrics:
     stars: 19
@@ -85,10 +103,12 @@ entries:
   - irrigation
   - cloudflare
 - name: Dashcam driving stability check
+  name_zh: 行车记录仪驾驶稳定性检测
   url: https://x.com/queso_gato1354/status/2101305412876423459
   kind: post
   author: queso_gato1354
   description: Korean pipeline that judges driving stability from car dashcam footage with Jev, analyzing situations in near real time thanks to its low latency.
+  description_zh: 韩语项目：用 Jev 根据汽车行车记录仪画面判断驾驶稳定性，凭借低延迟近乎实时地分析路况。
   image: https://pbs.twimg.com/amplify_video_thumb/2101305211013001216/img/Dx4RNM5XUJsuyzKq.jpg
   metrics:
     likes: 7
@@ -103,6 +123,7 @@ entries:
   kind: repo
   author: arielweinberger
   description: Three.js drone simulator where Jev, via the AI SDK's @ai-sdk/typesafe-ai provider, flies from pad A across a random city to pad B while avoiding obstacles; a trip costs $0.01.
+  description_zh: Three.js 无人机模拟器，Jev 通过 AI SDK 的 @ai-sdk/typesafe-ai provider 驾驶无人机从停机坪 A 出发，穿过随机生成的城市飞到停机坪 B，同时避开障碍物；一趟花费 $0.01。
   image: https://raw.githubusercontent.com/arielweinberger/jev-autopilot/main/docs/demo.png
   metrics:
     stars: 8
@@ -116,6 +137,7 @@ entries:
   kind: repo
   author: FBddcz
   description: Browser workbench for a simulated MuJoCo Franka Panda arm where Jev, Claude, OpenAI-compatible APIs or a local MiniCPM5-2B choose bounded actions for pick, stack and obstacle tasks, with success checked by physics.
+  description_zh: 模拟 MuJoCo Franka Panda 机械臂的浏览器工作台，由 Jev、Claude、OpenAI 兼容 API 或本地 MiniCPM5-2B 为抓取、堆叠和避障任务选择受限动作，成功与否由物理引擎判定。
   image: https://raw.githubusercontent.com/FBddcz/embodied-jev/main/docs/workbench-desktop.png
   metrics:
     stars: 165
@@ -125,10 +147,12 @@ entries:
   - robot-arm
   - simulation
 - name: Humanoid cup-stack recovery
+  name_zh: 人形机器人叠杯纠错
   url: https://x.com/homebrewrobots/status/2102079871388201146
   kind: post
   author: homebrewrobots
   description: 'Humanoid robot stacking a cup pyramid recovers when a cup is moved: Jev picks from 6 recovery options (set down the held cup, replan, finish) with 65% confidence.'
+  description_zh: 人形机器人在叠杯子金字塔时，有杯子被挪动后能自行纠正：Jev 从 6 个恢复选项（放下手中的杯子、重新规划、完成）中做出选择，置信度 65%。
   image: https://pbs.twimg.com/amplify_video_thumb/2102078211416793089/img/w9GvS61PlfVN-yZc.jpg
   metrics:
     likes: 23
@@ -139,11 +163,14 @@ entries:
   - recovery
   - manipulation
 - name: Jev air traffic control at JFK
+  name_zh: Jev 在 JFK 机场做空管
   url: https://www.youtube.com/watch?v=MZgAj3OZVPo
   kind: video
   author: Agent Zero
   description: Agent Zero demo of a simulated JFK airport where realtime voice models talk to pilots and Jev makes the judgment behind every clearance.
+  description_zh: Agent Zero 的演示，模拟 JFK 机场：实时语音模型与飞行员通话，每一条放行许可背后的判断都由 Jev 做出。
   jev: Typed judgments per clearance inside a live control loop.
+  jev_zh: 在实时控制回路中，为每条放行许可做类型化判断。
   metrics:
     views: 5671
     likes: 71
@@ -160,6 +187,7 @@ entries:
   kind: repo
   author: YuanKJing
   description: 'MuJoCo studio that reproduces the Jev as Policy control structure: Jev turns a text state into an intent and motor choices for a Franka Panda that local IK executes to carry a block over a barrier.'
+  description_zh: 复现 Jev as Policy 控制结构的 MuJoCo 工作室：Jev 把文本 state 转成意图和电机选择，交给本地 IK 执行，让 Franka Panda 把方块搬过障碍。
   image: https://raw.githubusercontent.com/YuanKJing/Jev-as-Policy/main/media/jev-carry-block.png
   metrics:
     stars: 22
@@ -168,11 +196,14 @@ entries:
   - mujoco
   - robot-arm
 - name: Jev autonomous driving layer
+  name_zh: Jev 自动驾驶决策层
   url: https://www.reddit.com/r/developersIndia/comments/1wjqwg2/experimenting_with_the_new_jev_model_as_a_real/
   kind: reddit
   author: Admirable-Leek5672
   description: Driving simulation where Jev reads structured environment data and decides lane changes, braking, acceleration, or stopping around pedestrians, signals, and obstacles.
+  description_zh: 驾驶仿真，Jev 读取结构化的环境数据，在行人、信号灯和障碍物周围决定变道、刹车、加速或停车。
   jev: One Choice per tick over the driving actions from structured state.
+  jev_zh: 每个 tick 根据结构化 state 在驾驶动作中做一个 Choice。
   image: https://external-preview.redd.it/YnloMmNra3phYXFoMaCH-vwZSCX2hwQkWiNrTAK6JEGFvhs9LLeMHZLHmHVD.png?format=pjpg&auto=webp&s=822b9d622e88464e3874eb59484a4eb793323be9
   metrics:
     points: 32
@@ -182,11 +213,14 @@ entries:
   - simulation
   - real-time
 - name: Jev city driving game
+  name_zh: Jev 城市驾驶游戏
   url: https://x.com/fuzzzypan/status/2102056646281437577
   kind: post
   author: fuzzzypan
   description: Driving game with traffic where Jev makes the stop, yield, slow and proceed calls for pedestrians, crossing cars, corners and potholes while local code steers; a city drive cost $0.0208.
+  description_zh: 带交通流的驾驶游戏，Jev 针对行人、横穿车辆、弯道和坑洼做出停车、让行、减速和通行的决定，转向交给本地代码；一次城市驾驶花费 $0.0208。
   jev: Choice of stop/yield/slow/proceed each tick; steering and collision checks stay in code.
+  jev_zh: 每个 tick 在停车/让行/减速/通行中做 Choice；转向和碰撞检测留在代码里。
   image: https://pbs.twimg.com/amplify_video_thumb/2102053874660241408/img/PmXXJNePrSow-TEb.jpg
   metrics:
     likes: 1
@@ -196,10 +230,12 @@ entries:
   - driving-sim
   - traffic
 - name: Jev controls The Fly
+  name_zh: Jev 操控苍蝇
   url: https://x.com/eltokh7/status/2100971356691247377
   kind: post
   author: eltokh7
   description: Experiment where Jev steers a simulated fly.
+  description_zh: 让 Jev 操控一只模拟苍蝇的实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2100835422456737792/img/qB9WJb7Mdvq7HVkb.jpg
   metrics:
     likes: 16
@@ -209,10 +245,12 @@ entries:
   - simulation
   - embodied
 - name: Jev drives in real time
+  name_zh: Jev 实时驾驶
   url: https://x.com/SigGravitas/status/2100325221932958134
   kind: post
   author: SigGravitas
   description: Jev wired to the raw controls of a driving simulator that never pauses while it thinks, steering a moving vehicle in real time.
+  description_zh: 把 Jev 接到驾驶模拟器的原始控制上，模拟器不会因为它思考而暂停，Jev 实时操控一辆行驶中的车。
   image: https://pbs.twimg.com/amplify_video_thumb/2100323655389474816/img/LLOAJ3wie1phk45K.jpg
   metrics:
     likes: 288
@@ -222,10 +260,12 @@ entries:
   - driving-sim
   - real-time-control
 - name: Jev driving handoff
+  name_zh: Jev 驾驶交接
   url: https://x.com/hotragn/status/2101251578610974952
   kind: post
   author: hotragn
   description: Driving-simulator clip where Jev stalls choosing between forward and back and a human takes the wheel, illustrating a decide-when-it-can, hand-off-when-it-can't design.
+  description_zh: 驾驶模拟器片段：Jev 在前进和后退之间犹豫不决，于是由人接管方向盘，展示了“能决定时自己决定，不能时交给人”的设计。
   image: https://pbs.twimg.com/amplify_video_thumb/2101248543117701120/img/n1AWqrdoj_OtGSqW.jpg
   metrics:
     likes: 3
@@ -236,11 +276,14 @@ entries:
   - handoff
   - negative-result
 - name: Jev driving simulator
+  name_zh: Jev 驾驶模拟器
   url: https://x.com/cipherwrk/status/2100965547454374316
   kind: post
   author: cipherwrk
   description: Autonomous driving simulation where Jev receives real-time environment data and decides to change lanes, brake, accelerate or slow down around sudden obstacles, pedestrians, traffic and red lights.
+  description_zh: 自动驾驶仿真，Jev 接收实时环境数据，在突发障碍物、行人、车流和红灯面前决定变道、刹车、加速或减速。
   jev: One Choice per tick over lane change, brake, accelerate and slow down.
+  jev_zh: 每个 tick 在变道、刹车、加速和减速中做一个 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2100965500314615808/img/19kMbu9jghFUkaBs.jpg
   metrics:
     likes: 4
@@ -250,11 +293,14 @@ entries:
   - driving
   - simulation
 - name: Jev drone in an asteroid field
+  name_zh: Jev 驾驶无人机穿越小行星带
   url: https://x.com/MKhordoo/status/2100950317852455039
   kind: post
   author: MKhordoo
   description: Drone flown through an asteroid field by Jev with 300ms left/right/slow/accelerate decisions, handing control to a larger model only when its confidence is low; Jev flew on its own 99% of the time.
+  description_zh: 由 Jev 驾驶无人机穿越小行星带，每 300 毫秒 做一次左/右/减速/加速决策，只有置信度低时才把控制权交给更大的模型；99% 的时间都是 Jev 独立飞行。
   jev: Choice over four actions per step, with low confidence escalating to a larger model.
+  jev_zh: 每一步在四个动作中做 Choice，置信度低时升级给更大的模型。
   image: https://pbs.twimg.com/amplify_video_thumb/2100950290618867712/img/FY-SPST7ifK3ls5W.jpg
   metrics:
     likes: 12
@@ -265,10 +311,12 @@ entries:
   - control
   - escalation
 - name: Jev dual-arm robot control
+  name_zh: Jev 控制双臂机器人
   url: https://x.com/Raptor_zip/status/2101091398447505567
   kind: post
   author: Raptor_zip
   description: Dual-arm robot where Jev handles the decision layer of a three-layer controller while IK and physics stay in code, responding in 500ms at about 0.5 yen per trial.
+  description_zh: 双臂机器人，Jev 负责三层控制器中的决策层，IK 和物理计算留在代码中，响应时间 500 毫秒，每次试验约 0.5 日元。
   image: https://pbs.twimg.com/amplify_video_thumb/2101070240444772353/img/Ci_PCLcMigmoAdks.jpg
   metrics:
     likes: 432
@@ -283,7 +331,9 @@ entries:
   kind: repo
   author: kxzk
   description: Three.js drone simulation with a Python/FastAPI backend where Jev chooses each navigation action through four checkpoints, with its probabilities, latency and raw input shown beside the flight.
+  description_zh: Three.js 无人机模拟，后端为 Python/FastAPI，Jev 为穿越四个检查点的每个导航动作做选择，飞行画面旁显示其概率、延迟和原始输入。
   jev: A Choice over navigation actions plus an obstruction Noul; adding a barrier forces a fresh decision.
+  jev_zh: 对导航动作做一个 Choice，外加一个判断是否有遮挡的 Noul；加入障碍会迫使它重新决策。
   date: '2026-09-17'
   tags:
   - drone
@@ -293,6 +343,7 @@ entries:
   kind: repo
   author: robokrunch
   description: Reproducible warehouse-fleet incident triage demo using 300 Jev calls on simulated incidents, plus a cost comparison against self-hosted ModernBERT on edge CPUs, with raw results and stated caveats.
+  description_zh: 可复现的仓储车队事故分诊演示，对模拟事故调用 300 次 Jev，并与在边缘 CPU 上自托管 ModernBERT 做成本对比，附原始结果和注意事项说明。
   image: https://raw.githubusercontent.com/robokrunch/jev-physical-ai/main/assets/fleet-triage-demo-poster.png
   metrics:
     stars: 1
@@ -308,10 +359,12 @@ entries:
   - triage
   - edge-ai
 - name: Jev MuJoCo arm policy
+  name_zh: Jev 作为 MuJoCo 机械臂策略
   url: https://x.com/dimentary/status/2101018760371171420
   kind: post
   author: dimentary
   description: Test of Jev as a real-time robot-arm policy in MuJoCo, splitting each update into two calls (what to do next, then how to move arm and gripper) from text geometry and contacts.
+  description_zh: 在 MuJoCo 中测试把 Jev 当作实时机械臂策略，根据文本形式的几何和接触信息，把每次更新拆成两次调用（先决定下一步做什么，再决定机械臂和夹爪如何移动）。
   image: https://pbs.twimg.com/amplify_video_thumb/2101017646154366976/img/02bH3Hxy9l0qEffS.jpg
   metrics:
     likes: 624
@@ -322,10 +375,12 @@ entries:
   - robot-arm
   - simulation
 - name: Jev pick-and-place study
+  name_zh: Jev 抓取放置研究
   url: https://github.com/tryaksh/jev-pick-and-place-study
   kind: repo
   author: tryaksh
   description: Reproducible MuJoCo pilot comparing Jev 1.13.0, Claude Haiku 4.5 and reactive rules as pick-and-place controllers; Jev succeeded 10/10 in both settings at 146 ms median per decision, matching the rules exactly.
+  description_zh: 可复现的 MuJoCo 试点研究，对比 Jev 1.13.0、Claude Haiku 4.5 和反应式规则作为抓取放置控制器的表现；Jev 在两种设置下都 10/10 成功，每次决策中位耗时 146 毫秒，与规则结果完全一致。
   date: '2026-09-17'
   tags:
   - mujoco
@@ -336,7 +391,9 @@ entries:
   kind: repo
   author: khordoo
   description: Multi-drone simulation with up to fifteen drones steered by Jev as a System 1 reflex layer, optionally asking a slower OpenRouter planner for advice when confidence drops.
+  description_zh: 多无人机仿真，最多十五架无人机由 Jev 作为 System 1 反射层操控，置信度下降时可以向较慢的 OpenRouter 规划器求助。
   jev: Per-drone Jev decisions each tick; below a confidence threshold a System 2 model sends one-use guidance while Jev keeps steering.
+  jev_zh: 每个 tick 为每架无人机做 Jev 决策；低于置信度阈值时，System 2 模型发送一次性指导，Jev 仍继续操控。
   image: https://raw.githubusercontent.com/khordoo/jev-reflex-autonomy-lab/main/docs/media/reflex-dashboard.png
   metrics:
     stars: 15
@@ -347,10 +404,12 @@ entries:
   - drone
   - system-2
 - name: Jev robot arm pick-and-place
+  name_zh: Jev 机械臂抓取放置
   url: https://x.com/DaniiarAbdiev/status/2100851116498186415
   kind: post
   author: DaniiarAbdiev
   description: SO-101 robot arm with two USB cameras where Jev chooses the next move at ~2 decisions a second and, after a slip, retrieves a ball and drops it in a bowl.
+  description_zh: 配两个 USB 摄像头的 SO-101 机械臂，Jev 以每秒约 2 次决策的速度选择下一步动作，失手后还能把球捡回来放进碗里。
   image: https://pbs.twimg.com/amplify_video_thumb/2100849500084666368/img/PdH3lz3bR3uvw0kY.jpg
   metrics:
     likes: 30
@@ -360,10 +419,12 @@ entries:
   - robot-arm
   - so-101
 - name: Jev robot arm uses a hook
+  name_zh: Jev 让机械臂用上了钩子
   url: https://x.com/gabrycina/status/2100545285659480128
   kind: post
   author: gabrycina
   description: 'Robot arm told to put an out-of-reach red cube in a green box: Jev grabbed a hook, dragged the cube closer, set the hook down and finished, with no tool use programmed.'
+  description_zh: 让机械臂把够不着的红色方块放进绿色盒子：Jev 抓起一个钩子把方块拖近，放下钩子后完成任务，全程没有编写任何工具使用逻辑。
   image: https://pbs.twimg.com/amplify_video_thumb/2100540294093504512/img/zuv5OwJUB-Tv7f-j.jpg
   metrics:
     likes: 150
@@ -373,10 +434,12 @@ entries:
   - robot-arm
   - tool-use
 - name: Jev robot body control
+  name_zh: Jev 控制机器人身体
   url: https://x.com/DanielMizr43248/status/2100714507303829829
   kind: post
   author: DanielMizr43248
   description: Experiment having Jev control a robot body, which it manages with mixed success.
+  description_zh: 让 Jev 控制一具机器人身体的实验，效果时好时坏。
   image: https://pbs.twimg.com/amplify_video_thumb/2100714471065034752/img/Ef8YwVTFprkIeArZ.jpg
   metrics:
     likes: 1
@@ -387,10 +450,12 @@ entries:
   - control
   - experiment
 - name: Jev robot claw
+  name_zh: Jev 机械爪
   url: https://x.com/shuvam360/status/2101186415891734728
   kind: post
   author: shuvam360
   description: 'Older robot-claw experiment with Jev swapped in for Claude: after each movement of an object on the board, the model works out the route to reach the goal.'
+  description_zh: 一个较早的机械爪实验，把 Claude 换成了 Jev：每当板上的物体被移动，模型都会重新推算到达目标的路线。
   image: https://pbs.twimg.com/amplify_video_thumb/2101183715577847808/img/cZLEIxTpQV1HOWa4.jpg
   metrics:
     likes: 8
@@ -400,10 +465,12 @@ entries:
   - robot-claw
   - path-planning
 - name: Jev robot control
+  name_zh: Jev 机器人控制
   url: https://github.com/openroboto-ai/jev-robot-control
   kind: repo
   author: openroboto-ai
   description: MuJoCo run where Jev 1.13, GPT-6 Astra, and GPT-4.1 mini steer an xArm7 to put an apple on a plate by choosing motion directions and gripper commands; Jev placed it for $0.018825 versus $5.933624.
+  description_zh: MuJoCo 实验：Jev 1.13、GPT-6 Astra 和 GPT-4.1 mini 通过选择运动方向和夹爪指令，操控 xArm7 把苹果放到盘子上；Jev 完成任务花费 $0.018825，对比的是 $5.933624。
   image: https://raw.githubusercontent.com/openroboto-ai/jev-robot-control/main/media/final.png
   metrics:
     stars: 39
@@ -421,7 +488,9 @@ entries:
   kind: repo
   author: vinilana
   description: Top-down 2D car simulation in the browser that sends its sensor state to Jev every ~200 ms and executes the lane, speed, hazard and pedestrian-yield answers, with an optional chat-model comparison.
+  description_zh: 浏览器中的俯视 2D 汽车仿真，每约 200 毫秒 把传感器状态发给 Jev，并执行它给出的车道、速度、危险和礼让行人答案，可选与聊天模型对比。
   jev: Two Choices, a hazard Score and a pedestrian Noul in one call; confidence-gated rules override weak lane changes.
+  jev_zh: 一次调用包含两个 Choice、一个危险程度 Score 和一个行人 Noul；置信度门控的规则会覆盖把握不足的变道决定。
   metrics:
     stars: 15
   date: '2026-09-18'
@@ -429,10 +498,12 @@ entries:
   - driving
   - simulation
 - name: Jev self-driving test
+  name_zh: Jev 自动驾驶测试
   url: https://x.com/npceo_/status/2102154533971677481
   kind: post
   author: npceo_
   description: Experiment letting Jev drive a car inside an unreleased world model used to train self-driving cars, with a local segmentation model providing what it sees.
+  description_zh: 让 Jev 在一个用于训练自动驾驶汽车、尚未发布的世界模型中开车的实验，由本地分割模型提供它看到的画面。
   image: https://pbs.twimg.com/amplify_video_thumb/2102153758243495937/img/rYDhh2iFvXpWB9ZA.jpg
   metrics:
     likes: 83
@@ -447,6 +518,7 @@ entries:
   kind: repo
   author: skcache
   description: Interactive Chicago traffic simulator that runs the same trip under fixed-rotation signals, locally adaptive signals and a citywide Jev signal policy via Vercel AI Gateway, so you can compare the outcomes.
+  description_zh: 交互式芝加哥交通模拟器，同一段行程分别在固定轮换信号、本地自适应信号和通过 Vercel AI Gateway 运行的全城 Jev 信号策略下运行，方便对比结果。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -458,10 +530,12 @@ entries:
   - simulation
   - smart-city
 - name: Jev vs Astra on an AgileX arm
+  name_zh: AgileX 机械臂上的 Jev 对 Astra
   url: https://x.com/MarianPogran/status/2101179679319241076
   kind: post
   author: MarianPogran
   description: 'Real AgileX robot arm doing "put the red cube in the box": Jev finished in 27s versus 1m 11s for GPT-6 Astra, at much lower cost, with the arm capped at 10% speed.'
+  description_zh: 真实 AgileX 机械臂执行“把红色方块放进盒子”：Jev 用 27 秒完成，GPT-6 Astra 用了 1 分 11 秒，且成本低得多，机械臂速度限制在 10%。
   image: https://pbs.twimg.com/amplify_video_thumb/2101178753284014080/img/gtLhgbb1fSiGyTRY.jpg
   metrics:
     likes: 274
@@ -476,6 +550,7 @@ entries:
   kind: repo
   author: RomanSlack
   description: Camera-only autonomous quadrotor that flies a five-station MuJoCo obstacle course, with Jev deciding what each situation means at about 2.5 Hz from depth-derived scene features while time-critical control stays in code.
+  description_zh: 只靠摄像头的自主四旋翼，飞越 MuJoCo 中设有五个站点的障碍飞行场地，Jev 根据深度图提取的场景特征以约 2.5 Hz 判断每个情境意味着什么，时间敏感的控制留在代码中。
   image: https://raw.githubusercontent.com/RomanSlack/jev-drone/main/docs/climb.png
   metrics:
     stars: 119
@@ -492,7 +567,9 @@ entries:
   kind: repo
   author: Dimweaker
   description: Robot manipulation on LIBERO tasks such as closing a microwave or placing soup in a basket, with 27 fine-grained control inputs, local physics previews, and an interactive replay of each decision.
+  description_zh: 在 LIBERO 任务上做机器人操作，比如关微波炉或把汤放进篮子，提供 27 种细粒度控制输入、本地物理预演，以及每个决策的交互式回放。
   jev: Jev picks among previewed control inputs each step; 14 to 40 decisions per demo task.
+  jev_zh: Jev 每一步从预演过的控制输入中挑选；每个演示任务需要 14 到 40 次决策。
   image: https://raw.githubusercontent.com/Dimweaker/jev-libero/main/docs/media/banner.svg
   metrics:
     stars: 51
@@ -509,7 +586,9 @@ entries:
   kind: repo
   author: FazalAAli
   description: MuJoCo demo where a simulated Franka arm with an Allegro hand stacks a blue cube on a red one, driven once by Claude Opus 5 with low-level tools and once by Jev.
+  description_zh: MuJoCo 演示：带 Allegro 灵巧手的模拟 Franka 机械臂把蓝色方块叠到红色方块上，一次由使用底层工具的 Claude Opus 5 驱动，一次由 Jev 驱动。
   jev: Code proposes small moves and simulates each ahead; Jev picks the move, when to grasp and release, and when the task is done.
+  jev_zh: 代码提出小幅动作并逐个预先模拟；Jev 负责选动作、决定何时抓取和松开，以及判断任务何时完成。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -522,7 +601,9 @@ entries:
   kind: app
   author: JEVCITY
   description: Traffic simulation of a nine-intersection city grid where Jev runs every light about every 300 ms; switch it off and watch fixed timers choke the grid.
+  description_zh: 九个路口的城市网格交通仿真，Jev 大约每 300 毫秒 控制一次所有信号灯；把它关掉，就能看到固定配时让整个路网堵死。
   jev: Per-light decisions on phase with confidence and rationale, from the intersection state the program provides.
+  jev_zh: 根据程序提供的路口 state，对每个信号灯的相位做决策，并给出置信度和理由。
   tags:
   - traffic
   - simulation
@@ -532,6 +613,7 @@ entries:
   kind: repo
   author: standardagents
   description: Three.js driving simulator where Jev picks motion and direction as the autopilot.
+  description_zh: Three.js 驾驶模拟器，由 Jev 作为自动驾驶仪选择运动和方向。
   image: https://raw.githubusercontent.com/standardagents/jevpilot/main/docs/try-jevpilot.svg
   metrics:
     stars: 160
@@ -550,6 +632,7 @@ entries:
   kind: reddit
   author: jpschroeder
   description: Simulated self-driving demo in a 3D city where Jev steers the car and follows turn-by-turn directions, which Justin Schroeder says he built in under an hour.
+  description_zh: 3D 城市中的模拟自动驾驶演示，Jev 操控汽车并按逐向导航行驶，Justin Schroeder 称他不到一小时就做出来了。
   image: https://external-preview.redd.it/NnFjcHlrc2RmMHFoMWOYn9FxnzoyIXI3Fx4N6aO51f8iDw5FJT-WW_D6Hmfc.png?format=pjpg&auto=webp&s=ec0df8401debabb28f2f4bb0ee67fd44c0ea5411
   metrics:
     points: 182
@@ -564,6 +647,7 @@ entries:
   kind: repo
   author: andrewsilber
   description: Deterministic 3D restaurant simulator that replays the same dinner service to compare rule-based, camera-assisted, and Jev-planned waiters, logging each decision with its options, confidence, and latency.
+  description_zh: 确定性的 3D 餐厅模拟器，重放同一场晚餐服务，对比基于规则、摄像头辅助和由 Jev 规划的服务员，并记录每个决策的选项、置信度和延迟。
   image: https://raw.githubusercontent.com/andrewsilber/JevsBistro/main/docs/screenshots/dining-room.png
   metrics:
     stars: 1
@@ -576,6 +660,7 @@ entries:
   kind: repo
   author: Devonance
   description: Simulated Perseverance rover driving over real USGS Jezero Crater terrain, where Jev makes fast hazard and targeting calls as System One and Claude plans science as System Two, with each decision labelled on screen.
+  description_zh: 模拟毅力号火星车在真实 USGS 耶泽罗陨石坑地形上行驶，Jev 作为 System One 快速做出危险判断和目标选择，Claude 作为 System Two 规划科学任务，每个决策都在屏幕上标注。
   image: https://raw.githubusercontent.com/Devonance/rover-claude-jev-demo/main/docs/figs/coverage-map.jpg
   metrics:
     stars: 2
@@ -589,6 +674,7 @@ entries:
   kind: repo
   author: lbotinelly
   description: Toy archipelago flight simulator where each aircraft sees only itself and nearby traffic and Jev decides live whether to divert, declare an emergency, give way, hold or land first, in about 150 ms.
+  description_zh: 玩具级群岛飞行模拟器，每架飞机只能看到自己和附近的交通，Jev 实时决定是否改航、宣布紧急状态、避让、盘旋等待或优先降落，耗时约 150 毫秒。
   metrics:
     stars: 5
   date: '2026-09-17'
@@ -598,11 +684,14 @@ entries:
   - air-traffic
   - simulation
 - name: MakerMods arm in MuJoCo
+  name_zh: MuJoCo 中的 MakerMods 机械臂
   url: https://x.com/IsaacSin12/status/2100833538224668699
   kind: post
   author: IsaacSin12
   description: MakerMods Metal arm in MuJoCo where Jev reads the scene as JSON and picks bounded actions (hover, descend, grasp, lift, place), finishing tasks in 9 decisions at ~150 ms each.
+  description_zh: MuJoCo 中的 MakerMods Metal 机械臂，Jev 以 JSON 形式读取场景并选择受限动作（悬停、下降、抓取、抬起、放置），9 次决策完成任务，每次约 150 毫秒。
   jev: Typed Choice over bounded actions with a confidence score; refuses tasks it cannot map to the scene.
+  jev_zh: 在受限动作上做类型化 Choice 并给出置信度分数；无法映射到场景的任务会拒绝执行。
   image: https://pbs.twimg.com/amplify_video_thumb/2100829039040802816/img/74S2rGSiTL_J7C5V.jpg
   metrics:
     likes: 151
@@ -613,11 +702,14 @@ entries:
   - mujoco
   - simulation
 - name: MillOS Jev incident routing
+  name_zh: MillOS 的 Jev 事件路由
   url: https://github.com/NellInc/MillOS/blob/main/src/utils/jevClient.ts
   kind: repo
   author: NellInc
   description: Browser-based 3D grain-mill digital twin with simulated SCADA whose AI partner can ask Jev, on request, which operations queue an incident belongs to, such as equipment maintenance.
+  description_zh: 基于浏览器的 3D 谷物磨坊数字孪生，带模拟 SCADA，其 AI 搭档可按需询问 Jev 某个事件应归入哪个运维队列，比如设备维护。
   jev: One Choice over fixed incident queues through the OpenRouter Decisions API (typesafe/jev-1.13); advice is read-only and cached for 60 s.
+  jev_zh: 通过 OpenRouter Decisions API（typesafe/jev-1.13）在固定的事件队列上做一个 Choice；建议是只读的，缓存 60 s。
   image: https://raw.githubusercontent.com/NellInc/MillOS/main/src/0.10%20Archive/assets/Screenshot.png
   metrics:
     repo_stars: 8
@@ -634,6 +726,7 @@ entries:
   kind: repo
   author: metrox-eth
   description: Open, mostly 3D-printed litter-picking rover with a browser demo in which Jev chooses every step of a pickup (approach, align, grasp, lift, carry, release) on physics recorded in MuJoCo.
+  description_zh: 开放、基本靠 3D 打印的捡垃圾小车，附带浏览器演示，在 MuJoCo 录制的物理过程中由 Jev 选择捡拾的每一步（接近、对准、抓取、抬起、搬运、松开）。
   image: https://raw.githubusercontent.com/metrox-eth/moss/main/media/images/moss_exploded_turntable.gif
   metrics:
     stars: 10
@@ -645,10 +738,12 @@ entries:
   - mujoco
   - litter-picking
 - name: MOSS litter picking
+  name_zh: MOSS 捡垃圾
   url: https://x.com/metrox_eth/status/2101021471644733867
   kind: post
   author: metrox_eth
   description: 'Simulation replaying real Jev decisions for the MOSS robot: Jev picks the target from an instruction like "pick up the cans", then switches when told "pick up the bottles".'
+  description_zh: 为 MOSS 机器人回放真实 Jev 决策的仿真：Jev 根据“捡起易拉罐”这样的指令选择目标，收到“捡起瓶子”时随即切换。
   image: https://pbs.twimg.com/amplify_video_thumb/2101021391575457792/img/x227ubbFebYxck1p.jpg
   metrics:
     likes: 109
@@ -666,6 +761,7 @@ entries:
   kind: repo
   author: metrox-eth
   description: Browser 3D replay of the MOSS litter-picking rover where Jev chose each manipulation step in MuJoCo runs, such as picking up a can or retrying a missed grasp.
+  description_zh: MOSS 捡垃圾小车的浏览器 3D 回放，展示 Jev 在 MuJoCo 运行中选择的每个操作步骤，比如捡起易拉罐或在抓空后重试。
   date: '2026-09-18'
   links:
     app: https://metrox-eth.github.io/moss-jev/
@@ -679,7 +775,9 @@ entries:
   kind: repo
   author: shapsider
   description: Research project that brings camera images into Jev-style finite-choice decisions for robots, with an HTTP service, an SDK and a MuJoCo robot-arm workbench.
+  description_zh: 研究项目，把摄像头图像引入面向机器人的 Jev 风格有限选项决策，提供 HTTP 服务、SDK 和 MuJoCo 机械臂工作台。
   jev: Uses a Jev-like interface on Nemotron 3 Nano Omni; in skill mode the model picks preset skills, and it answers insufficient evidence on blank or unobservable inputs.
+  jev_zh: 在 Nemotron 3 Nano Omni 上使用类 Jev 接口；skill 模式下由模型挑选预设技能，遇到空白或无法观测的输入时会回答证据不足。
   image: https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-transfer.gif
   metrics:
     stars: 3
@@ -693,6 +791,7 @@ entries:
   kind: repo
   author: RobotKitAI
   description: Eight demo runs on a real AgileX PiPER robot arm comparing GPT-6 Astra seeing camera images with Jev as the decider over Grounding DINO or SAM 3 perception, up to sliding a pipe fitting over a standing box.
+  description_zh: 在真实 AgileX PiPER 机械臂上的八次演示运行，对比直接看摄像头画面的 GPT-6 Astra 与基于 Grounding DINO 或 SAM 3 感知做决策的 Jev，任务难度一直到把管件套到立着的盒子上。
   metrics:
     stars: 5
   date: '2026-09-19'
@@ -701,10 +800,12 @@ entries:
   - sam3
   - grounding-dino
 - name: quackd Jev stepper
+  name_zh: quackd 的 Jev 步进器
   url: https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py
   kind: repo
   author: rokbenko
   description: Optional Jev stepper in quackd, a CLI that orchestrates hobby and ROS robots with an LLM brain, where Jev picks among the permitted discrete calls for cheaper steps while the LLM still writes poses and safety gates apply.
+  description_zh: 用 LLM 大脑编排业余机器人和 ROS 机器人的 CLI quackd 中可选的 Jev 步进器：在允许的离散调用中做选择，让这类步骤更便宜，位姿仍由 LLM 编写，安全关卡照常生效。
   metrics:
     repo_stars: 225
   date: '2026-09-18'
@@ -720,6 +821,7 @@ entries:
   kind: repo
   author: grmkris
   description: SO-101 robot-arm agent workbench with a Bun/Effect coordinator, a React and Rerun workspace and a Python LeRobot motor owner, in which Jev picks bounded next arm actions from camera and sensor state.
+  description_zh: SO-101 机械臂 agent 工作台，包含 Bun/Effect 协调器、React 与 Rerun 工作区以及掌管电机的 Python LeRobot 进程，Jev 根据摄像头和传感器 state 选择受限的下一步机械臂动作。
   image: https://raw.githubusercontent.com/grmkris/robo-harness/main/docs/workbench-real.png
   metrics:
     stars: 2
@@ -733,7 +835,9 @@ entries:
   kind: repo
   author: lykycy123
   description: MuJoCo lab where Jev controls a Franka Panda arm from structured simulator state, first picking an intent and then X/Y/Z directions and a gripper command for pick-and-place, pushing and stacking.
+  description_zh: MuJoCo 实验室，Jev 根据结构化的模拟器 state 控制 Franka Panda 机械臂，先选意图，再选 X/Y/Z 方向和夹爪指令，完成抓取放置、推动和堆叠。
   jev: Two-stage Choices (intent, then motion and gripper); a Cartesian controller executes and physics checks, not the model, decide success.
+  jev_zh: 两阶段 Choice（先意图，再运动和夹爪）；由笛卡尔控制器执行，成败由物理检查判定，而不是由模型判定。
   image: https://raw.githubusercontent.com/lykycy123/RoboJEV/main/site/media/banner.svg
   metrics:
     stars: 29
@@ -749,16 +853,19 @@ entries:
   kind: repo
   author: juancamiloqhz
   description: Browser 3D planetary rover sandbox where you set a mission and environment, then compare a local baseline with a TypeSafe controller that picks actions via Choice probabilities, tracking energy and discoveries.
+  description_zh: 浏览器里的 3D 行星漫游车沙盒：设定任务和环境后，对比本地基线与 TypeSafe 控制器（按 Choice 概率选动作）的表现，同时追踪能耗和发现。
   date: '2026-09-17'
   tags:
   - rover
   - simulation
   - 3d
 - name: Spatial control without vision
+  name_zh: 无视觉的空间控制
   url: https://x.com/DXhusni/status/2100746693033816557
   kind: post
   author: DXhusni
   description: Loop that gives Jev the goal, current geometry and contacts, available controls with predicted effects, and the last outcome, and it zero-shots a spatial manipulation task with no vision.
+  description_zh: 一个循环：把目标、当前几何与接触状态、可用控制及其预测效果、上一步结果交给 Jev，它就能在没有视觉的情况下零样本完成空间操作任务。
   image: https://pbs.twimg.com/amplify_video_thumb/2100744327521824768/img/QudyKboQq-vCGHpy.jpg
   metrics:
     likes: 217
@@ -768,10 +875,12 @@ entries:
   - spatial-reasoning
   - control
 - name: System 1 + System 2 robot loop
+  name_zh: System 1 + System 2 机器人循环
   url: https://x.com/Jadfyd/status/2101302137884234221
   kind: post
   author: Jadfyd
   description: PyBullet cube-stacking robot where Claude writes the high-level plan and Jev acts as the reflex layer, evaluating simulation states in under 100ms to adapt.
+  description_zh: 基于 PyBullet 的叠方块机器人：Claude 写高层计划，Jev 充当反射层，在不到 100 毫秒 内评估仿真状态并随之调整。
   image: https://pbs.twimg.com/amplify_video_thumb/2101301804227325952/img/QjhHxPjGf3gQlVzy.jpg
   metrics:
     likes: 7
@@ -782,10 +891,12 @@ entries:
   - planning
   - neurosymbolic
 - name: Traffic-light control
+  name_zh: 红绿灯控制
   url: https://x.com/leojrr/status/2101161666410893328
   kind: post
   author: leojrr
   description: City simulation in which Jev controls every traffic light; turning it off raises the average wait time by more than 600%.
+  description_zh: 一个城市仿真，由 Jev 控制所有红绿灯；关掉 Jev 后，平均等待时间上升超过 600%。
   image: https://pbs.twimg.com/amplify_video_thumb/2101161072447180800/img/sRIOALT11TUpdAdU.jpg
   metrics:
     likes: 6961
@@ -800,7 +911,9 @@ entries:
   kind: repo
   author: using76
   description: Fire-evacuation simulator where each of 100 evacuees makes typed decisions about role, rescue and route over a simulated fire field, comparing a local Bonsai 2 27B engine with Jev.
+  description_zh: 火灾疏散模拟器：100 名疏散者在模拟火场中分别就角色、救援和路线做类型化决策，对比本地 Bonsai 2 27B 引擎与 Jev。
   jev: Rebuilds a Jev-style typed decision engine on local LLMs and runs it side by side with the TypeSafe Jev API; social-force movement handles walking.
+  jev_zh: 在本地 LLM 上重建了一个 Jev 风格的类型化决策引擎，与 TypeSafe Jev API 并排运行；行走由社会力模型处理。
   image: https://raw.githubusercontent.com/using76/TypeEvacSafe/main/results/hall/bonsai_vs_jev.gif
   metrics:
     stars: 1
@@ -814,7 +927,9 @@ entries:
   kind: repo
   author: kavehmz
   description: 'Interactive Jev experiments: a 3D driving lab where Jev picks lane and target speed from camera, radar and speed-sign readings, plus a support-message routing preview.'
+  description_zh: 一组交互式 Jev 实验：一个 3D 驾驶实验室，Jev 根据摄像头、雷达和限速牌读数选择车道和目标车速；另有一个客服消息路由预览。
   jev: 'Driving: Choices for lane and target speed from structured sensors; support demo splits a message into six independent judgments that code combines.'
+  jev_zh: 驾驶部分基于结构化传感器数据，用 Choice 选车道和目标车速；客服演示把一条消息拆成六个独立判断，再由代码组合。
   image: https://raw.githubusercontent.com/kavehmz/typesafe-playground/main/docs/images/demo03-fable.png
   metrics:
     stars: 11
@@ -823,10 +938,12 @@ entries:
   - driving
   - simulation
 - name: Voice-commanded robot arm
+  name_zh: 语音控制的机械臂
   url: https://x.com/crypto_dev_1/status/2102081831042416935
   kind: post
   author: crypto_dev_1
   description: Spanish demo of a robot arm that understands spoken commands like open your hand, go to the ceiling or stretch as far as you can, with Jev mapping phrases to arm actions.
+  description_zh: 西班牙语演示：机械臂能听懂“张开手”“伸向天花板”“尽量伸远”这类口头指令，由 Jev 把短语映射为机械臂动作。
   image: https://pbs.twimg.com/amplify_video_thumb/2102080818143244288/img/L59xykXX-_Xpa7Nh.jpg
   metrics:
     likes: 52
@@ -836,10 +953,12 @@ entries:
   - robot-arm
   - voice-commands
 - name: Zero-shot robot arm tasks
+  name_zh: 零样本机械臂任务
   url: https://x.com/tarat_211/status/2100625153109504483
   kind: post
   author: tarat_211
   description: Robot arm demo where you give a goal in plain English and Jev chains a set of hardcoded motion primitives to carry it out, with no training.
+  description_zh: 机械臂演示：用简单英语给出目标，Jev 把一组硬编码的运动原语串起来完成任务，无需训练。
   image: https://pbs.twimg.com/amplify_video_thumb/2100624434348294144/img/hJfPYVbpLtVQALI4.jpg
   metrics:
     likes: 9

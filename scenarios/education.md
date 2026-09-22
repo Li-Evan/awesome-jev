@@ -1,5 +1,7 @@
 # 🎓 Education
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/education.md)
+
 Tutoring, grading, quizzes, and learning tools. 10 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

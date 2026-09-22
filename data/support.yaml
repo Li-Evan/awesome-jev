@@ -1,13 +1,17 @@
 title: Customer Support and Sales
+title_zh: 客服与销售
 emoji: 🎧
 layout: gallery
 description: Ticket routing, email triage, lead scoring, and CRM automation.
+description_zh: 工单路由、邮件分拣、线索打分和 CRM 自动化。
 entries:
 - name: Alga PSA smart ticket search
+  name_zh: Alga PSA 智能工单搜索
   url: https://github.com/Nine-Minds/alga-psa/blob/main/ee/server/src/services/smartSearch/typesafeClient.ts
   kind: repo
   author: Nine-Minds
   description: Open-source MSP service desk whose smart search has Jev rerank the filtered Tickets and Projects lists, so "customer can't print" can surface "Xerox reports offline".
+  description_zh: 开源 MSP 服务台，其智能搜索让 Jev 重排过滤后的工单和项目列表，于是“客户无法打印”也能搜出“Xerox 报告离线”。
   image: https://www.nineminds.com/imported-media/Overview%20Dashboard.png
   metrics:
     repo_stars: 141
@@ -20,11 +24,14 @@ entries:
   - search
   - msp
 - name: Box incident triage
+  name_zh: Box 事件分诊
   url: https://x.com/Box/status/2100993278955188320
   kind: post
   author: Box
   description: Box workflow that pulls an incident report, asks Jev whether it is customer-facing and how severe it is, moves the file to Escalate, Monitor or Review, and sends low-confidence cases to a human.
+  description_zh: 一个 Box 工作流：拉取一份事件报告，询问 Jev 它是否影响客户、严重程度如何，把文件移到 Escalate、Monitor 或 Review，并把低置信度的情况交给人工。
   jev: A Noul for customer-facing plus a severity Score, with a confidence threshold for human review.
+  jev_zh: 一个判断是否影响客户的 Noul，加一个严重度 Score，并用置信度阈值决定是否转人工复核。
   image: https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg
   metrics:
     likes: 31
@@ -35,10 +42,12 @@ entries:
   - routing
   - documents
 - name: Calagopus bot support triage
+  name_zh: Calagopus 机器人的客服分诊
   url: https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs
   kind: repo
   author: calagopus
   description: AI support triage in the Rust Discord bot for the Calagopus community that uses Jev to decide whether a message needs an answer at all and whether a drafted answer holds anything worth posting.
+  description_zh: 为 Calagopus 社区打造的 Rust Discord 机器人中的 AI 客服分诊：用 Jev 判断一条消息是否需要回答，以及起草的回答是否有值得发出的内容。
   metrics:
     repo_stars: 17
   date: '2025-12-28'
@@ -53,6 +62,7 @@ entries:
   kind: repo
   author: ZeroGold
   description: Live sales-call assistant that sends the conversation to Jev after every sentence and shows the rep a suggested next action and buying stage with a confidence score, from a microphone or a sample call.
+  description_zh: 实时销售通话助手：每说完一句话就把对话发给 Jev，向销售代表显示建议的下一步动作和购买阶段，并附置信度分数；音源可以是麦克风或示例通话。
   image: https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab
   metrics:
     stars: 35
@@ -67,17 +77,21 @@ entries:
   kind: repo
   author: promptgtm-shared
   description: Agent skill and Python workflow that pulls people from Clay CLI with deterministic filters, then has Jev judge whether each person really fits the target role, such as current operating founders, before enrichment.
+  description_zh: agent skill 加 Python 工作流：先用确定性过滤条件从 Clay CLI 拉取人员，再在补全数据前让 Jev 判断每个人是否真正符合目标角色，比如目前仍在一线经营的创始人。
   date: '2026-09-21'
   tags:
   - lead-scoring
   - clay
   - b2b-sales
 - name: CowAgent ticket analysis tool
+  name_zh: CowAgent 工单分析工具
   url: https://x.com/zhayujie/status/2102009189765881894
   kind: post
   author: zhayujie
   description: Batch support-ticket analysis tool that CowAgent built on Jev, making one call per ticket that returns 7 judgments with probabilities in about 500ms.
+  description_zh: 基于 Jev 的批量客服工单分析工具，由 CowAgent 构建：每个工单一次调用，约 500 毫秒 返回 7 个带概率的判断。
   jev: Seven typed questions per ticket in one request.
+  jev_zh: 每个工单在一次请求中问七个类型化问题。
   image: https://pbs.twimg.com/amplify_video_thumb/2102007612569190400/img/Yv_-w6zdmBlVS5Mu.jpg
   metrics:
     likes: 1
@@ -88,10 +102,12 @@ entries:
   - batch
   - classification
 - name: customer-work Jev decisions
+  name_zh: customer-work 的 Jev 决策
   url: https://github.com/liulangjietou/customer_work/tree/main/customer-work-starter/src/main/java/com/richard/fyoung/customerwork/capability/typesafe
   kind: repo
   author: liulangjietou
   description: Enterprise customer-service agent platform on AgentScope Java that adds Jev structured decisions to the main conversation path and refund flow, with a circuit breaker and shadow display in the admin console.
+  description_zh: 基于 AgentScope Java 的企业客服 agent 平台，在主对话路径和退款流程中加入 Jev 结构化决策，带熔断器，并在管理后台中影子展示。
   image: https://github.com/user-attachments/assets/75a324d7-4e2e-4383-b049-c3cfc7802ee5
   metrics:
     repo_stars: 133
@@ -105,6 +121,7 @@ entries:
   kind: repo
   author: merefield
   description: RAG chatbot plugin for Discourse topics, chat and customer support that can use System One forum-scope judgments for blocked-question matching and tool selection, with embedding fallback.
+  description_zh: 用于 Discourse 话题、聊天和客户支持的 RAG 聊天机器人插件，可用 System One 做论坛范围内的判断，用于匹配被屏蔽的问题和选择工具，并以 embedding 作为兜底。
   image: https://raw.githubusercontent.com/merefield/discourse-chatbot/main/images/surety.webp
   metrics:
     stars: 84
@@ -114,11 +131,14 @@ entries:
   - chatbot
   - forum
 - name: Grok and Jev lead screener
+  name_zh: Grok 与 Jev 线索筛选器
   url: https://x.com/razeden0/status/2102119174466396250
   kind: post
   author: razeden0
   description: Lead-qualification pipeline where Jev answers 6 questions on each of 3,412 leads (20,472 decisions in 15.7 seconds for $0.41) and Grok 4.7 only drafts outreach for the leads worth reading.
+  description_zh: 线索资格判断管线：Jev 对 3,412 条线索每条回答 6 个问题（15.7 秒内完成 20,472 个决策，花费 $0.41），Grok 4.7 只为值得看的线索起草外联消息。
   jev: Six yes/no, pick-one or score questions per lead gate what the LLM reads.
+  jev_zh: 每条线索六个是/否、单选或打分问题，决定 LLM 要读哪些内容。
   image: https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg
   metrics:
     likes: 172
@@ -129,10 +149,12 @@ entries:
   - sales
   - grok
 - name: Inline Manual adaptive help
+  name_zh: Inline Manual 自适应帮助
   url: https://x.com/sotak/status/2100927660029247538
   kind: post
   author: sotak
   description: Real-time in-app support for InlineManual.com that detects where a user is struggling and adds explanations, suggestions or actions directly into the UI, with no chatbot.
+  description_zh: 为 InlineManual.com 做的实时应用内支持：检测用户在哪里卡住，直接在界面里加入解释、建议或操作，不需要聊天机器人。
   image: https://pbs.twimg.com/amplify_video_thumb/2100925956978294784/img/grFanN32FuhiSULl.jpg
   metrics:
     likes: 23
@@ -144,10 +166,12 @@ entries:
   - in-app-help
   - ux
 - name: Instant Clay workflows
+  name_zh: 即时生成 Clay 工作流
   url: https://x.com/ENowoslawski/status/2100999124099195377
   kind: post
   author: ENowoslawski
   description: Demo of Jev building Clay go-to-market workflows almost instantly.
+  description_zh: 演示 Jev 几乎瞬间搭建出 Clay 的市场拓展（go-to-market）工作流。
   image: https://pbs.twimg.com/amplify_video_thumb/2100998985074835456/img/3FY78J6we-v6cyXz.jpg
   metrics:
     likes: 65
@@ -158,10 +182,12 @@ entries:
   - gtm
   - workflows
 - name: IT Helpdesk judgment backend
+  name_zh: IT 服务台判断后端
   url: https://github.com/upasana1105/UP_Demos/blob/main/it-helpdesk-assistant/judgment_base_agent/backends/typesafe.py
   kind: repo
   author: upasana1105
   description: Enterprise IT helpdesk agent demo on the Gemini agent platform with a judgment layer that can run its Choice, Noul and Score primitives on TypeSafe System One.
+  description_zh: 基于 Gemini agent 平台的企业 IT 服务台 agent 演示，其判断层可以在 TypeSafe System One 上运行 Choice、Noul 和 Score 原语。
   metrics:
     repo_stars: 9
   date: '2026-02-02'
@@ -176,17 +202,22 @@ entries:
   kind: repo
   author: minghanminghan
   description: Customer-service chatbot routed by Jev that asks every level of its routing tree in one call per turn and hands off to a human on request, frustration or low confidence.
+  description_zh: 由 Jev 路由的客服聊天机器人，每轮用一次调用问遍路由树的所有层级，在用户要求、表现出不满或置信度低时转交人工。
   jev: Speculative fan-out over all tree levels plus a wants-human Noul and a frustration Score in the same request.
+  jev_zh: 对所有树层级做推测式扇出，同一请求里还包含一个“是否想找人工”的 Noul 和一个不满程度 Score。
   date: '2026-09-17'
   tags:
   - routing
   - chatbot
 - name: Jev in-app help for a Mac app
+  name_zh: Mac 应用里的 Jev 应用内帮助
   url: https://x.com/malekoo/status/2100439840575684910
   kind: post
   author: malekoo
   description: 'In-app help for a Mac app that works with no model loaded: Jev reads the question against the built-in manual and picks the matching article or none, scoring 42/42 with a median 0.93 s.'
+  description_zh: 无需加载任何模型就能用的 Mac 应用内帮助：Jev 对照内置手册理解问题，选出匹配的文章或判定没有匹配，测试 42/42 全对，中位耗时 0.93 秒。
   jev: Choice over manual articles plus a no-match option, with the whole manual as state.
+  jev_zh: 以整本手册作为 state，在手册文章加一个“无匹配”选项中做 Choice。
   image: https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig
   metrics:
     likes: 5
@@ -197,11 +228,14 @@ entries:
   - macos
   - docs
 - name: Jev outbound lead triage
+  name_zh: Jev 外联线索分诊
   url: https://www.reddit.com/r/SaaS/comments/1wlcpq3/jev_is_insane_for_outbound/
   kind: reddit
   author: adgrow
   description: Outbound experiment where Jev made 7,068 decisions on 462 leads in 47 seconds for about $0.06, choosing hook, angle, and CTA and skipping 190 leads not worth emailing.
+  description_zh: 外联实验：Jev 在 47 秒内对 462 条线索做了 7,068 个决策，花费约 $0.06，选定开场钩子、切入角度和 CTA，并跳过了 190 条不值得发邮件的线索。
   jev: ICP-fit and signal Nouls per lead, plus Choices over hooks and among four drafted messages.
+  jev_zh: 每条线索用 Noul 判断 ICP 匹配度和信号，再用 Choice 选钩子，并在四份起草好的消息中挑一份。
   image: https://external-preview.redd.it/MDV4czc2Z3JibnFoMWrhC3ZnxXXVSY4h_1Pyuu4bCsFhZrPnFj7vZea_6f45.png?format=pjpg&auto=webp&s=92f8c2805fba08f7d164b31a7d9ed7cb61b0c450
   date: '2026-09-20'
   tags:
@@ -209,10 +243,12 @@ entries:
   - lead-scoring
   - sales
 - name: Jev recipes on Treg
+  name_zh: Treg 上的 Jev 配方
   url: https://treg.to/jev
   kind: app
   author: Treg (superdesigndev)
   description: Interactive guide to Jev with a live LLM-versus-Jev race and copyable GTM automation recipes built on Treg, such as signup fraud screening, buying-signal triage, and viral content monitoring.
+  description_zh: Jev 的交互式指南，包含 LLM 与 Jev 的实时竞速，以及基于 Treg 构建、可复制的 GTM 自动化配方，如注册欺诈筛查、购买信号分诊和爆款内容监控。
   image: https://treg.to/media/og.png
   links:
     repo: https://github.com/superdesigndev/treg
@@ -227,6 +263,7 @@ entries:
   kind: repo
   author: EtienneLescot
   description: Browser demo where two Jev calls triage a support ticket (department, urgency, frustration) and size the task, and plain code routes it to an agent or a human and picks the model tier and reasoning depth.
+  description_zh: 浏览器演示：两次 Jev 调用分别对客服工单做分诊（部门、紧急程度、不满程度）并评估任务规模，再由普通代码将其路由给 agent 或人工，并选择模型档位和推理深度。
   image: https://raw.githubusercontent.com/EtienneLescot/jev-router/main/screenshot.png
   date: '2026-09-18'
   links:
@@ -240,6 +277,7 @@ entries:
   kind: post
   author: GoSailGlobal
   description: 'Chinese experiment labeling 170,400 2017 tweets to seven brands'' support accounts with Jev for $1.84: at equal false alarms it caught 17 outages about 4.1 hours before the brand admitted them, versus 10 for tweet volume.'
+  description_zh: 中文实验：用 Jev 给 170,400 条 2017 年发给七个品牌客服账号的推文打标签，花费 $1.84；在误报相同的情况下，它发现了 17 次故障，比品牌官方承认早约 4.1 小时，而按推文量只能发现 10 次。
   image: https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg
   metrics:
     likes: 6
@@ -257,6 +295,7 @@ entries:
   kind: repo
   author: GhrezaKh74
   description: Support-ticket triage app on .NET 10 and React 19 that asks Jev five batched questions about a Persian or English ticket, then lets a deterministic rule engine decide routing, escalation and redaction.
+  description_zh: 基于 .NET 10 和 React 19 的客服工单分诊应用，就一张波斯语或英语工单向 Jev 批量问五个问题，再由确定性规则引擎决定路由、升级和脱敏。
   image: https://raw.githubusercontent.com/GhrezaKh74/JevTicktRouter/master/docs/screenshots/00-architecture.png
   metrics:
     stars: 1
@@ -270,6 +309,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Support-ticket router that picks the owning team and priority, and flags refund intent, churn risk and tickets that should skip bots for a human.
+  description_zh: 客服工单路由器，选出负责的团队和优先级，并标记退款意图、流失风险，以及应跳过机器人直接交给人工的工单。
   date: '2026-09-17'
   links:
     app: https://lanebreak.vercel.app
@@ -278,10 +318,12 @@ entries:
   - ticket-routing
   - churn
 - name: Lead and outreach scoring
+  name_zh: 线索与外联消息评分
   url: https://x.com/romanbuildsaas/status/2100891604735099103
   kind: post
   author: romanbuildsaas
   description: Scoring of 700 high-intent leads and personalized outreach messages in 40 seconds for $0.09, predicting each message's performance with a confidence score and flagging lead-message mismatches.
+  description_zh: 在 40 秒内花 $0.09 为 700 条高意向线索和个性化外联消息打分，用置信度分数预测每条消息的效果，并标记线索与消息不匹配的情况。
   image: https://pbs.twimg.com/amplify_video_thumb/2100891566340501504/img/agvkcRfNWmnGbRI5.jpg
   metrics:
     likes: 3342
@@ -292,10 +334,12 @@ entries:
   - sales
   - outreach
 - name: LeadGen AI TypeSafe integration
+  name_zh: LeadGen AI 的 TypeSafe 集成
   url: https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py
   kind: repo
   author: sumitrevolt
   description: Experimental Jev layer in LeadGen AI, a marketing and voice-calling SaaS for small Indian businesses, that picks specialization labels for agent roles and validates worker outputs such as cold emails.
+  description_zh: 面向印度小企业的营销与语音外呼 SaaS LeadGen AI 中的实验性 Jev 层，为 agent 角色挑选专业方向标签，并校验冷邮件等工作产出。
   metrics:
     repo_stars: 1
   date: '2026-09-17'
@@ -309,7 +353,9 @@ entries:
   kind: repo
   author: getanyapi-com
   description: Self-hostable Reddit buyer-intent finder that infers what your product solves and has Jev judge every title, post and comment it scans against your product.
+  description_zh: 可自托管的 Reddit 购买意向发现工具：推断你的产品解决什么问题，让 Jev 针对你的产品评判扫描到的每个标题、帖子和评论。
   jev: Jev via OpenRouter or Vercel AI Gateway scores each item; an LLM handles product profiling and clustering.
+  jev_zh: 通过 OpenRouter 或 Vercel AI Gateway 调用 Jev 为每个条目打分；产品画像和聚类由 LLM 负责。
   metrics:
     stars: 97
     likes: 750
@@ -322,11 +368,14 @@ entries:
   - reddit
   - sales
 - name: n8n lead qualification with Jev
+  name_zh: 用 Jev 在 n8n 里做线索资格判断
   url: https://x.com/timbuildwithai/status/2102167332172767392
   kind: post
   author: timbuildwithai
   description: Lead-qualification workflow in n8n where Jev returns probabilities for need, budget, timing and buying intent, a JS step scores and routes each lead HOT/WARM/COLD, and OpenAI only writes the reply.
+  description_zh: 在 n8n 中搭建的线索资格判断工作流：Jev 返回需求、预算、时机和购买意向的概率，一个 JS 步骤为每条线索打分并按 HOT/WARM/COLD 路由，OpenAI 只负责写回复。
   jev: Four Nouls per lead turned into a deterministic score in code.
+  jev_zh: 每条线索四个 Noul，在代码中转换为确定性分数。
   image: https://pbs.twimg.com/media/HSxlNgsWMAAzwJr.jpg?name=orig
   metrics:
     likes: 1
@@ -341,6 +390,7 @@ entries:
   kind: repo
   author: DECRUX9812
   description: Local, zero-cost reimplementation of a Jev decision layer that answers seven typed questions about a job posting on your CPU, separating in-house IT requisitions from small businesses that are sales leads.
+  description_zh: 在本地零成本复刻的 Jev 决策层，在你的 CPU 上就一则招聘启事回答七个类型化问题，把企业内部 IT 招聘与可作为销售线索的小企业区分开。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -348,10 +398,12 @@ entries:
   - lead-scoring
   - local
 - name: Outreach signals that book demos
+  name_zh: 能约到演示的外联信号
   url: https://x.com/pierreeliottlal/status/2100912453999587657
   kind: post
   author: pierreeliottlal
   description: Sales analysis in which Jev read a dataset of thousands of outreach messages and found which intent signals generated the most booked demos, in 40 seconds for under $0.20.
+  description_zh: 销售分析：Jev 读完一个包含数千条外联消息的数据集，找出哪些意向信号带来的演示预约最多，用时 40 秒，花费不到 $0.20。
   image: https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg
   metrics:
     likes: 114
@@ -362,10 +414,12 @@ entries:
   - outreach
   - analytics
 - name: Real-time Clippy
+  name_zh: 实时 Clippy
   url: https://x.com/sotak/status/2100701152824185319
   kind: post
   author: sotak
   description: In-product Clippy that watches how someone uses an app and appears only when Jev judges they are hesitating, confused or stuck, with its reactions also chosen by Jev.
+  description_zh: 产品内的 Clippy，观察用户如何使用应用，只有在 Jev 判断用户犹豫、困惑或卡住时才出现，其反应也由 Jev 选择。
   image: https://pbs.twimg.com/amplify_video_thumb/2100700282434826240/img/H7dKngwXowyoEgJ6.jpg
   metrics:
     likes: 176
@@ -375,10 +429,12 @@ entries:
   - in-app-help
   - onboarding
 - name: RedReplier buying-signal scoring
+  name_zh: RedReplier 购买信号评分
   url: https://x.com/tarasshyn/status/2101043617649340678
   kind: post
   author: tarasshyn
   description: Scored 1,759,932 buying signals from 1.7 million mentions across Reddit, X, Bluesky, Hacker News and Facebook in 53 seconds for $0.65, ranking intent, product fit and competitor mentions.
+  description_zh: 在 53 秒内花 $0.65，为来自 Reddit、X、Bluesky、Hacker News 和 Facebook 的 170 万条提及中的 1,759,932 个购买信号打分，按意向、产品匹配度和竞品提及排序。
   image: https://pbs.twimg.com/amplify_video_thumb/2101043565207916544/img/jTZjaCWwP1d9sx6D.jpg
   metrics:
     likes: 463
@@ -388,11 +444,14 @@ entries:
   - lead-scoring
   - social-listening
 - name: Reflet feedback triage
+  name_zh: Reflet 反馈分诊
   url: https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts
   kind: repo
   author: damien-schneider
   description: 'Feedback triage in Reflet, an open-source product feedback and roadmap platform: Jev decides whether a submission is actionable, withholds junk from the public board, flags items for review and auto-tags them.'
+  description_zh: 开源产品反馈与路线图平台 Reflet 中的反馈分诊：Jev 判断一条提交是否可执行，把垃圾内容挡在公开看板之外，标记需复核的条目并自动打标签。
   jev: Boolean usefulness/junk/needsReview questions plus per-tag questions via the AI SDK evaluate call; junk >= 0.5 is withheld and tags need 0.65, max 3.
+  jev_zh: 通过 AI SDK 的 evaluate 调用问 usefulness/junk/needsReview 三个布尔问题，外加每个标签一个问题；junk >= 0.5 即隐藏，标签需达到 0.65，最多 3 个。
   metrics:
     repo_stars: 37
   date: '2026-01-17'
@@ -404,11 +463,14 @@ entries:
   - triage
   - tagging
 - name: Sales Copilot with Jev
+  name_zh: 用 Jev 做销售 Copilot
   url: https://www.youtube.com/watch?v=CupCEehe2OQ
   kind: video
   author: Kelvin Cleto
   description: Portuguese walkthrough of a sales-meeting copilot that tracks calls and playbook steps, where Jev answers cheap decision questions before any LLM call to cut costs.
+  description_zh: 葡萄牙语讲解视频：一个追踪通话和销售剧本步骤的销售会议 copilot，在调用任何 LLM 之前先让 Jev 回答低成本的决策问题，以降低成本。
   jev: Probability questions about the meeting state gate the expensive LLM calls.
+  jev_zh: 关于会议 state 的概率问题决定是否发起昂贵的 LLM 调用。
   metrics:
     views: 86013
     likes: 1863
@@ -418,10 +480,12 @@ entries:
   - copilot
   - portuguese
 - name: Self-sorting in-app feedback
+  name_zh: 自动分拣的应用内反馈
   url: https://x.com/abhegd/status/2102195682257854602
   kind: post
   author: abhegd
   description: Layoutstack demo where typed or spoken (ElevenLabs) in-app feedback is classified by Jev and filed into the right inbox, shipped with a cookbook to remix it with a coding agent.
+  description_zh: Layoutstack 演示：打字或语音（ElevenLabs）提交的应用内反馈由 Jev 分类并归入正确的收件箱，附带一份 cookbook，可以让编程 agent 改造复用。
   image: https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg
   metrics:
     views: 60
@@ -438,7 +502,9 @@ entries:
   kind: article
   author: nifinet
   description: Build guide for an open-source outbound bot where Claude Code pulls lead signals (job reposts, funding, tenders) and Jev ranks who to contact first, with judgments kept separate from a tunable policy file.
+  description_zh: 开源外联机器人的搭建指南：Claude Code 抓取线索信号（职位重新发布、融资、招标），Jev 排出优先联系的对象，判断与可调的策略文件分开存放。
   jev: judge.py asks Jev for probabilities per lead signal; policy.py turns them into a sort order without further calls.
+  jev_zh: judge.py 为每条线索信号向 Jev 请求概率；policy.py 无需再次调用，就把它们转成排序。
   image: https://pbs.twimg.com/media/HSwI_zwaQAA9uYF.jpg
   metrics:
     likes: 105
@@ -455,7 +521,9 @@ entries:
   kind: repo
   author: rszhd
   description: Open-source intent monitoring that searches Reddit, X, LinkedIn, YouTube, TikTok and Instagram for people describing a problem your product solves and scores each conversation for fit and buyer intent.
+  description_zh: 开源意向监控工具，在 Reddit、X、LinkedIn、YouTube、TikTok 和 Instagram 上搜索正在描述你的产品所解决问题的人，并为每段对话的匹配度和购买意向打分。
   jev: The AI SDK TypeSafe provider supplies an evaluation model (jev-latest, $0.042 per million input tokens) for the scoring questions.
+  jev_zh: AI SDK 的 TypeSafe provider 为评分问题提供评估模型（jev-latest，每百万输入 token $0.042）。
   metrics:
     repo_stars: 8
   date: '2026-09-08'
@@ -466,11 +534,14 @@ entries:
   - social-listening
   - ai-sdk
 - name: Spam and auto-reply detection in There There
+  name_zh: There There 中的垃圾与自动回复检测
   url: https://www.reddit.com/r/laravel/comments/1wjw2w1/detecting_spam_and_autoreplies_with_jev_and_the/
   kind: reddit
   author: freekmurze
   description: Walkthrough of using the Laravel AI SDK Jev support to flag spam and auto-replies in the There There help desk, with Noul, Choice, and Score examples in PHP.
+  description_zh: 讲解如何用 Laravel AI SDK 的 Jev 支持在 There There 客服系统中标记垃圾消息和自动回复，附 PHP 编写的 Noul、Choice 和 Score 示例。
   jev: Noul for spam and auto-reply probability on incoming messages.
+  jev_zh: 对收到的消息用 Noul 判断其为垃圾信息和自动回复的概率。
   image: https://external-preview.redd.it/Up6svHbkrdKcDREH0Bxoz5U1BdqUtnTWYrPaM5OkqBI.jpeg?auto=webp&s=a662330e21133bc799704e99bd9c97b2df961b97
   metrics:
     points: 30
@@ -483,11 +554,14 @@ entries:
   - php
   - spam
 - name: Support message triage
+  name_zh: 客服消息分诊
   url: https://openrouter.ai/labs/jev/triage
   kind: app
   author: OpenRouter
   description: 'OpenRouter Labs recipe that asks Jev five yes-or-no questions about each of 95 support messages (refund, angry, bug, needs a person) and races it against a chat model: 475 answers in 1.2 s for $0.0014 a run.'
+  description_zh: OpenRouter Labs 的配方：就 95 条客服消息每条向 Jev 问五个是/否问题（退款、愤怒、bug、需要人工），并与聊天模型赛跑：每次运行 1.2 秒得到 475 个答案，花费 $0.0014。
   jev: Five Nouls per message, batched in one run.
+  jev_zh: 每条消息五个 Noul，在一次运行中批量处理。
   image: https://openrouter.ai/dynamic-og?title=Support+message+triage&description=Classify+support+messages+with+structured+decisions.&v=2
   links:
     model: https://openrouter.ai/typesafe/jev
@@ -495,10 +569,12 @@ entries:
   - triage
   - openrouter-labs
 - name: Symfony support triage demo
+  name_zh: Symfony 客服分诊演示
   url: https://github.com/yoanbernabeu/demo-symfony-typesafe
   kind: repo
   author: yoanbernabeu
   description: 'French Symfony AI demo that qualifies real requests sent to French public services with one Jev call each: the requester''s intent among six, urgency, and whether it is a bug to forward to developers.'
+  description_zh: 法语的 Symfony AI 演示：对发给法国公共服务机构的真实请求，每条用一次 Jev 调用做判定，包括请求者属于六种意图中的哪一种、紧急程度，以及是否是需要转给开发者的 bug。
   image: https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg
   metrics:
     stars: 2
@@ -512,11 +588,14 @@ entries:
   - php
   - ticket-triage
 - name: Telemarketing AI with Jev
+  name_zh: 用 Jev 做电话营销 AI
   url: https://x.com/zeetakou/status/2101945022782284192
   kind: post
   author: zeetakou
   description: Outbound calling agent on the GPT Live API that dials a lead list and transfers promising prospects, now testing Jev for calls like whether a lead is promising, when to hand off, and redial priority.
+  description_zh: 基于 GPT Live API 的外呼 agent，按线索名单拨号并转接有潜力的潜在客户，目前正在测试用 Jev 判断线索是否有潜力、何时转接以及重拨优先级。
   jev: 'In-call and post-call judgments: prospect quality, hand-off now or not, redial priority.'
+  jev_zh: 通话中和通话后的判断：潜在客户质量、是否立即转接、重拨优先级。
   image: https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg
   metrics:
     likes: 2
@@ -531,6 +610,7 @@ entries:
   kind: repo
   author: brandonbryant12
   description: Proof of concept that replays a support call turn by turn and re-scores it against a weighted employee scorecard with a live evaluation per new turn, persisting evidence, confidence and score history in SQLite.
+  description_zh: 概念验证：逐轮回放一通客服电话，每新增一轮就实时评估一次，按加权的员工评分卡重新打分，并把证据、置信度和分数历史存入 SQLite。
   date: '2026-09-16'
   tags:
   - call-qa
@@ -541,6 +621,7 @@ entries:
   kind: repo
   author: TheEleventhAvatar
   description: Support-ticket bot where Jev routes each ticket to a general, account, billing or technical agent and decides whether a human should take over, then Cerebras drafts the reply; both calls are timed separately.
+  description_zh: 客服工单机器人：Jev 把每张工单路由给通用、账户、账单或技术 agent，并判断是否应由人工接手，然后由 Cerebras 起草回复；两次调用分别计时。
   image: https://github.com/user-attachments/assets/9912dc0f-2033-40c7-a149-58a14093dec8
   metrics:
     stars: 1
@@ -550,11 +631,14 @@ entries:
   - cerebras
   - escalation
 - name: Twenty Classify workflow action
+  name_zh: Twenty 的 Classify 工作流动作
   url: https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify
   kind: repo
   author: twentyhq
   description: Classify step in the open-source Twenty CRM's workflows that asks Jev choice, score or boolean questions about a record, so later steps can branch on the answers and probabilities.
+  description_zh: 开源 CRM Twenty 工作流中的 Classify 步骤，就一条记录向 Jev 问 choice、score 或布尔问题，让后续步骤根据答案和概率分支。
   jev: Jev is registered as the 'evaluation' model kind (jev-latest via @ai-sdk/typesafe-ai, 200 ms median latency listed).
+  jev_zh: Jev 注册为“evaluation”模型类型（通过 @ai-sdk/typesafe-ai 使用 jev-latest，标注的中位延迟为 200 毫秒）。
   image: https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b
   metrics:
     repo_stars: 57246
@@ -566,10 +650,12 @@ entries:
   - workflows
   - classification
 - name: UiPath ticket triage agent
+  name_zh: UiPath 工单分诊 agent
   url: https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent
   kind: repo
   author: UiPath
   description: Sample UiPath agent for two-tier support ticket triage where Jev routes each ticket fast, escalating to Action Center human review or an LLM-drafted auto-reply.
+  description_zh: 一个 UiPath 示例 agent，做两级客服工单分诊：Jev 快速路由每张工单，升级到 Action Center 人工复核，或由 LLM 起草自动回复。
   metrics:
     repo_stars: 98
   date: '2025-01-31'
@@ -580,10 +666,12 @@ entries:
   - rpa
   - system-2
 - name: Warmbly TypeSafe client
+  name_zh: Warmbly 的 TypeSafe 客户端
   url: https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe
   kind: repo
   author: warmbly
   description: Open-source cold outreach and email warmup platform that uses TypeSafe judgments for inbox tagging, reply intent classification, draft gating, bounce causes and form submission triage.
+  description_zh: 开源冷外联与邮箱预热平台，用 TypeSafe 判断做收件箱打标签、回复意图分类、草稿把关、退信原因分析和表单提交分诊。
   image: https://raw.githubusercontent.com/warmbly/warmbly/main/docs/assets/dashboard-campaigns.png
   metrics:
     repo_stars: 308
@@ -595,10 +683,12 @@ entries:
   - sales
   - inbox
 - name: WhatsApp customer group monitor
+  name_zh: WhatsApp 客户群监控
   url: https://x.com/t0t0_build/status/2101082444577567162
   kind: post
   author: t0t0_build
   description: Monitors 25+ WhatsApp groups with clients in real time, with Jev judging whether anything needs attention, such as urgent problems or unresolved orders, and only then asking an LLM to write a notification.
+  description_zh: 实时监控 25+ 个有客户在的 WhatsApp 群，由 Jev 判断是否有需要处理的事，比如紧急问题或未解决的订单，只有这时才让 LLM 写通知。
   metrics:
     likes: 280
     views: 13062
@@ -612,6 +702,7 @@ entries:
   kind: post
   author: AIsaOneHQ
   description: Takes a company's domain and finds X users already discussing the problems its product solves; on typesafe.ai it found 150 tweets and made 750 Jev decisions in 18.8s for $0.007.
+  description_zh: 输入一家公司的域名，找出已经在讨论其产品所解决问题的 X 用户；以 typesafe.ai 为例，它找到 150 条推文，在 18.8s 内做了 750 个 Jev 决策，花费 $0.007。
   image: https://pbs.twimg.com/amplify_video_thumb/2100886600880111616/img/Y6PwJ2mf_8-BWChg.jpg
   metrics:
     likes: 15

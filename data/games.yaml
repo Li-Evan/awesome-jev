@@ -1,14 +1,18 @@
 title: Games and Interactive
+title_zh: 游戏与互动
 emoji: 🎮
 layout: gallery
 description: Game-playing agents, real-time decisions, and playful interactive demos.
+description_zh: 会玩游戏的 agent、实时决策，以及好玩的互动演示。
 entries:
 - name: 1v100
   url: https://x.com/legitamit/status/2100713197502173373
   kind: post
   author: legitamit
   description: Toy where you talk to an audience of 100 blobs, each with its own personality making its own Jev call every time you speak to decide whether it is bored of you yet; each round costs under $0.01.
+  description_zh: 一个小玩具：你对着 100 个小团子观众讲话，每个都有自己的性格，你每说一句，它们各自调用一次 Jev 判断自己是不是已经听烦了；每轮成本不到 $0.01。
   jev: 'One Noul per audience member per utterance: bored yet or not.'
+  jev_zh: 每句话、每位观众一个 Noul：烦了没有。
   image: https://pbs.twimg.com/amplify_video_thumb/2100711545218924544/img/R3UxL8HSq04FnC4R.jpg
   metrics:
     likes: 16
@@ -21,10 +25,12 @@ entries:
   - audience
   - personalities
 - name: A city on a whale
+  name_zh: 鲸背上的城市
   url: https://x.com/gokayfem/status/2101022590722810271
   kind: post
   author: gokayfem
   description: 'Decision game about keeping a city on a whale alive: GPT-6 Astra designed the world, Jev chose each round''s action, and H3 Max Turbo on fal turned decisions into 264 video clips.'
+  description_zh: 一款关于让鲸背上的城市存续下去的决策游戏：GPT-6 Astra 设计世界，Jev 选择每一轮的行动，fal 上的 H3 Max Turbo 把这些决策变成 264 段视频。
   image: https://pbs.twimg.com/amplify_video_thumb/2101020230071803904/img/FWi7MqiT0DI2iQJ9.jpg
   metrics:
     likes: 265
@@ -39,6 +45,7 @@ entries:
   kind: repo
   author: Yasserbhb
   description: Tetris where every move is a Jev Choice over the seven legal moves while the game code does the maths; the demo run reached 363 pieces and 114 lines cleared with zero holes.
+  description_zh: 俄罗斯方块：每一步都是 Jev 在七个合法走法中做的一个 Choice，计算交给游戏代码；演示中放下 363 块、消除 114 行，且没有留下一个空洞。
   image: https://raw.githubusercontent.com/Yasserbhb/Agent-JEV-Tetris/main/demo.gif
   metrics:
     stars: 1
@@ -51,6 +58,7 @@ entries:
   kind: repo
   author: rottenpen
   description: Stardew Valley agent where Jev picks and executes the next farm action from dynamic candidates toward a user goal, via an SMAPI mod, a standalone CLI and a DeepSeek Harness plugin with a run panel.
+  description_zh: Stardew Valley agent：Jev 围绕用户目标，从动态候选中挑选并执行下一个农场动作，可通过 SMAPI mod、独立 CLI 和带运行面板的 DeepSeek Harness 插件使用。
   image: https://raw.githubusercontent.com/rottenpen/agent-stardew/main/assets/visual/app-icon-chicken-whale-v1.png
   metrics:
     stars: 9
@@ -64,7 +72,9 @@ entries:
   kind: repo
   author: hiper2d
   description: Social deduction game where you are the only human among AI bots with secret roles; a speaker router built on Jev picks which bots reply to each message, with the Game Master model as fallback.
+  description_zh: 社交推理游戏：你是一群身怀秘密身份的 AI 机器人中唯一的人类；基于 Jev 的发言路由器决定每条消息由哪些机器人回复，Game Master 模型作为兜底。
   jev: Jev routes the discussion as a sub-second judge choosing which bots speak next; no text generation.
+  jev_zh: Jev 作为亚秒级评判者引导讨论，决定下一个发言的机器人；不生成文本。
   image: https://raw.githubusercontent.com/hiper2d/werewolf-ai-party-game/master/images/ai-werewolf-cover.png
   metrics:
     stars: 20
@@ -76,11 +86,14 @@ entries:
   - multi-agent
   - social-deduction
 - name: Aiko-chan Jev shogi
+  name_zh: Aiko-chan 的 Jev 将棋
   url: https://github.com/OppaAI/Aiko-chan/blob/dev/agentic/toolkit/jev.py
   kind: repo
   author: OppaAI
   description: Local AI companion with a VRM avatar that plays shogi with Jev, choosing among candidate moves and reviewing positions, including a self-play engine.
+  description_zh: 带 VRM 形象的本地 AI 伙伴，用 Jev 下将棋：在候选着法中选择并复盘局面，还包含一个自对弈引擎。
   jev: Choice over candidate moves; Score and Noul for position and game review.
+  jev_zh: 在候选着法中做 Choice；用 Score 和 Noul 评估局面和复盘对局。
   metrics:
     repo_stars: 49
   date: '2026-05-28'
@@ -93,6 +106,7 @@ entries:
   kind: post
   author: nathanwchan
   description: Guessing game where you try to predict how confident the AI will be about a random description, aiming for a target probability range.
+  description_zh: 猜测游戏：面对一条随机描述，你要预测 AI 会有多大把握，目标是猜中指定的概率区间。
   image: https://pbs.twimg.com/media/HSUJzMBaoAAfzW9.jpg?name=orig
   metrics:
     likes: 495
@@ -109,7 +123,9 @@ entries:
   kind: app
   author: Ask Jev
   description: 'Public wall where anyone asks Jev something in three to fifteen words and gets a judgment instead of an answer: yes, no or it depends, plus mood, topic and whether it fits the wall.'
+  description_zh: 一面公开留言墙：任何人都可以用三到十五个词问 Jev 一个问题，得到的不是回答而是判断：是、否或看情况，外加情绪、话题以及是否适合上墙。
   jev: Judges each ask in about 100 milliseconds; Convex stores every verdict in real time.
+  jev_zh: 每个提问约 100 毫秒完成判断；Convex 实时存储每一条结论。
   image: https://fastidious-oyster-877.convex.site/og.png
   metrics:
     likes: 515
@@ -124,6 +140,7 @@ entries:
   kind: app
   author: robherley
   description: Early-web style tribute to Ask Jeeves where you type a question and Jev answers yes or no, picks from choices, or gives a score.
+  description_zh: 致敬 Ask Jeeves 的早期网页风格站点：输入一个问题，Jev 回答是或否、从选项中挑一个，或给出一个分数。
   image: https://askjev-six.vercel.app/opengraph-image?14b0f74abfc4d228
   metrics:
     points: 3
@@ -137,15 +154,18 @@ entries:
   kind: app
   author: askjev.app
   description: Daily reverse Akinator game where you ask Jev yes-or-no questions to figure out the secret character; an unofficial demo.
+  description_zh: 每日一局的反向 Akinator 游戏：你向 Jev 提是非题来猜出神秘角色；非官方演示。
   image: https://askjev.app/og.png
   tags:
   - guessing-game
   - daily
 - name: Astra and JEV Minecraft agent
+  name_zh: Astra 与 JEV 的 Minecraft agent
   url: https://github.com/rmalde/minecraft-agent
   kind: repo
   author: rmalde
   description: Minecraft agent where GPT-6 Astra or GPT-5.6 Sol plans and Jev selects each player action through Mineflayer on a vanilla server; the author's best verified run killed the Ender Dragon in 8 minutes 43.300 seconds.
+  description_zh: Minecraft agent：由 GPT-6 Astra 或 GPT-5.6 Sol 做规划，Jev 通过 Mineflayer 在原版服务器上选择玩家的每个动作；作者经验证的最佳一局用 8 分 43.300 秒击杀末影龙。
   metrics:
     stars: 489
   date: '2026-09-20'
@@ -158,6 +178,7 @@ entries:
   kind: repo
   author: opaielsheikh
   description: PlayStation 2 emulator agent that captures frames, extracts scene telemetry and asks Jev a Choice (accelerate, steer, brake, attack) that is injected as virtual controller input, with a live telemetry HUD.
+  description_zh: PlayStation 2 模拟器 agent：截取画面帧、提取场景遥测数据，向 Jev 提一个 Choice（加速、转向、刹车、攻击），结果作为虚拟手柄输入注入游戏，并配有实时遥测 HUD。
   date: '2026-09-17'
   tags:
   - ps2
@@ -168,7 +189,9 @@ entries:
   kind: repo
   author: benjamincanac
   description: 'Persistent 3D multiplayer town on Vercel WebSockets with an AI Oracle NPC: Jev reads each chat line to decide if it is addressed to the Oracle and whether it asks for a weather or time-of-day change.'
+  description_zh: 运行在 Vercel WebSockets 上的常驻 3D 多人小镇，有一个 AI 神谕 NPC：Jev 读取每一行聊天，判断它是不是在对神谕说话，以及是否在要求改变天气或时间。
   jev: Four judgments in one request on the last transcript line; replies (from DeepSeek) only fire at P(addressed) of 0.35 or more, sky changes at 0.5.
+  jev_zh: 针对最后一行聊天记录在一次请求里做四个判断；只有 P(addressed) 达到 0.35 及以上才会触发回复（由 DeepSeek 生成），天空变化则需要 0.5。
   metrics:
     stars: 7
   date: '2026-07-06'
@@ -183,6 +206,7 @@ entries:
   kind: repo
   author: ojusave
   description: Penalty shootout against Jev with shooting and keeping turns, where one Render Workflows task owns each match and scores go to Render Postgres, with TypeScript and Python examples.
+  description_zh: 与 Jev 进行点球大战，轮流射门和扑救；每场比赛由一个 Render Workflows 任务负责，比分存入 Render Postgres，提供 TypeScript 和 Python 示例。
   date: '2026-09-18'
   links:
     app: https://beat-jev-typescript-web.onrender.com
@@ -194,6 +218,7 @@ entries:
   kind: repo
   author: lambertsj
   description: Browser reaction race where you and Jev classify the same message as spam or not across 25 rounds, then compare speed and accuracy on a shareable results screen; runs as a Cloudflare Worker.
+  description_zh: 浏览器反应速度比赛：你和 Jev 在 25 轮中判断同一条消息是不是垃圾信息，最后在可分享的结果页上比较速度和准确率；以 Cloudflare Worker 运行。
   date: '2026-09-17'
   links:
     app: https://beatjev2it.jlamberts86.workers.dev
@@ -207,7 +232,9 @@ entries:
   kind: repo
   author: h1bomb
   description: Roguelike poker duel in the browser where the AI opponent uses Jev to read the player's intent from hand history and action timing, and bluffing it into a misread triggers a Model Break.
+  description_zh: 浏览器里的 roguelike 扑克对决：AI 对手用 Jev 从手牌历史和出手时机中解读玩家意图，成功诈唬让它误判就会触发 Model Break。
   jev: Per hand, a Choice over four behavior intents plus Nouls for bluffing and baiting and an aggression Score, with a 1,200 ms timeout and heuristic fallback.
+  jev_zh: 每手牌一个在四种行为意图中选择的 Choice，外加判断诈唬和诱敌的 Noul 以及一个激进程度 Score；超时 1,200 毫秒，有启发式兜底。
   image: https://raw.githubusercontent.com/h1bomb/bluff/main/docs/assets/screenshot_1.png
   metrics:
     stars: 7
@@ -222,7 +249,9 @@ entries:
   kind: app
   author: Ashadeepa
   description: Card game of bluffing (also called Cheat) against three AI opponents that each ask Jev how plausible your claim is before deciding which cards to play and whether to call your bluff.
+  description_zh: 吹牛纸牌游戏（又称 Cheat），对手是三个 AI：每个对手在决定出哪些牌、要不要拆穿你之前，都会先问 Jev 你的声明有多可信。
   jev: Noul on the plausibility of each claim, skipped when the card math already makes it impossible.
+  jev_zh: 对每次声明的可信度问一个 Noul；如果按牌面计算已经不可能成立，就跳过不问。
   links:
     repo: https://github.com/Ashadeepa/typesafe-showcase
     showcase: https://typesafe-showcase.vercel.app/
@@ -230,10 +259,12 @@ entries:
   - card-game
   - bluffing
 - name: Bot vs bot combat game
+  name_zh: 机器人对战格斗游戏
   url: https://x.com/a_captaincook/status/2102205359100457023
   kind: post
   author: a_captaincook
   description: Combat game designed with Astra where Jev-driven bots fight each other, with plans for an RL loop to evolve the best fighters.
+  description_zh: 与 Astra 一起设计的格斗游戏，由 Jev 驱动的机器人互相对打，作者计划加入 RL 循环来进化出最强的斗士。
   image: https://pbs.twimg.com/amplify_video_thumb/2102205306352902144/img/k5R7HDIP7eagVU8G.jpg
   metrics:
     likes: 4
@@ -243,10 +274,12 @@ entries:
   - combat
   - bots
 - name: Byte rock-paper-scissors
+  name_zh: 和 Byte 玩石头剪刀布
   url: https://x.com/2ndpsy/status/2101026520185622589
   kind: post
   author: 2ndpsy
   description: Rock-paper-scissors against Byte, which uses Jev to predict your next throw each round and commits its counter-move before you pick, with stakes settled over Ark.
+  description_zh: 和 Byte 玩石头剪刀布：它每轮用 Jev 预测你下一手出什么，并在你出手前先锁定克制招式，赌注通过 Ark 结算。
   image: https://pbs.twimg.com/amplify_video_thumb/2101025189622349824/img/7xMDppgS62icqbO1.jpg
   metrics:
     likes: 15
@@ -260,6 +293,7 @@ entries:
   kind: app
   author: antics.gg
   description: Live experiment where you play SIDE OUT, a multiplayer Pong-style arena game, against Jev as it plays in a real browser in real time.
+  description_zh: 实时实验：在多人 Pong 风格竞技场游戏 SIDE OUT 中和 Jev 对战，它在真实浏览器里实时操作。
   image: https://antics.gg/og/8eba793c194d2a71b6ccdbae1f86a76f9b657b324f8c50d8c9eebb9413f6c9a9
   links:
     discussion: https://www.reddit.com/r/typesafe_ai/comments/1wkpbyg/can_you_beat_jev_at_pong/
@@ -273,15 +307,18 @@ entries:
   kind: repo
   author: Para-FR
   description: Next.js brick breaker playable in the browser whose paddle can be handed to a Jev-powered AI pilot in real time; the in-game interface is in French.
+  description_zh: 可在浏览器里玩的 Next.js 打砖块游戏，挡板可以随时交给由 Jev 驱动的 AI 驾驶员接管；游戏界面为法语。
   date: '2026-09-17'
   tags:
   - brick-breaker
   - browser-game
 - name: Chess against Jev
+  name_zh: 和 Jev 下国际象棋
   url: https://x.com/theshajha/status/2101905184704323969
   kind: post
   author: theshajha
   description: Chess board where you play a game against Jev as your opponent.
+  description_zh: 一个棋盘，你可以和作为对手的 Jev 下一局国际象棋。
   image: https://pbs.twimg.com/media/HSt3Lx0aQAAXk0o.jpg?name=orig
   metrics:
     views: 96
@@ -289,10 +326,12 @@ entries:
   tags:
   - chess
 - name: 'Chess bench: Jev vs Laya-mix'
+  name_zh: 国际象棋对比：Jev vs Laya-mix
   url: https://x.com/eter_inquirer/status/2102147083491000524
   kind: post
   author: eter_inquirer
   description: Chess matches between Jev and the local Laya-mix model, where Laya is faster but Jev wins every time.
+  description_zh: Jev 与本地 Laya-mix 模型之间的国际象棋对局：Laya 更快，但每次都是 Jev 赢。
   image: https://pbs.twimg.com/amplify_video_thumb/2102146909976805376/img/uK50316UXcC168Hp.jpg
   metrics:
     views: 404
@@ -302,10 +341,12 @@ entries:
   - laya
   - benchmark
 - name: Chess playground against Jev
+  name_zh: 与 Jev 对弈的国际象棋 playground
   url: https://x.com/ezeugo__/status/2102207212986724814
   kind: post
   author: ezeugo__
   description: Playground for playing chess against Jev, which receives the board as state and all legal moves as one Choice each turn; the result is not quite AGI.
+  description_zh: 和 Jev 下国际象棋的 playground：每一回合，Jev 以 state 的形式接收棋盘，所有合法走法作为一个 Choice；结果嘛，还算不上 AGI。
   image: https://pbs.twimg.com/media/HSyKRfEXIAE-iqB.jpg?name=orig
   metrics:
     views: 9
@@ -318,6 +359,7 @@ entries:
   kind: repo
   author: zebedelu
   description: Pygame chess where python-chess handles the rules and Jev picks one legal move per turn from a labeled list, playable as Human vs Human, Human vs Jev, or Jev vs Jev.
+  description_zh: Pygame 国际象棋：规则由 python-chess 处理，Jev 每回合从带标签的列表中选一个合法走法，支持人对人、人对 Jev 和 Jev 对 Jev。
   image: https://raw.githubusercontent.com/zebedelu/chess-vs-jev/main/assets/screenshot/demo.png
   date: '2026-09-20'
   tags:
@@ -328,6 +370,7 @@ entries:
   kind: repo
   author: bytelabs-oss
   description: 'Clash Royale bot with no trained policy that plays on a real Android device: OpenCV and a small troop classifier turn the screen into JSON state and Jev picks each move in about 135 ms.'
+  description_zh: 不需要训练策略的 Clash Royale 机器人，在真实 Android 设备上对战：OpenCV 加一个小型兵种分类器把屏幕转成 JSON state，Jev 约 135 毫秒 选出每一步操作。
   metrics:
     stars: 5
   date: '2026-09-21'
@@ -338,10 +381,12 @@ entries:
   - android
   - computer-vision
 - name: Classifier Wiki Race
+  name_zh: 分类器维基百科竞速
   url: https://x.com/dave_xt/status/2100723103143997510
   kind: post
   author: dave_xt
   description: Web app where Jev races from one Wikipedia article to another in real time with no LLM in the loop, showing every state, question and action.
+  description_zh: Web 应用：Jev 实时从一篇 Wikipedia 文章跳转竞速到另一篇，全程没有 LLM 参与，并展示每一步的 state、问题和动作。
   image: https://pbs.twimg.com/amplify_video_thumb/2100722674028953600/img/8ylppi05xJLwpYYc.jpg
   metrics:
     views: 178
@@ -354,10 +399,12 @@ entries:
   - wikirace
   - real-time
 - name: Codenames with Jev
+  name_zh: 和 Jev 玩 Codenames
   url: https://x.com/uwwgo/status/2101683325320454189
   kind: post
   author: uwwgo
   description: Game of Codenames played with Jev as a teammate, as an example of embedding a fast, cheap decision model in consumer products.
+  description_zh: 和作为队友的 Jev 一起玩 Codenames，用来示范如何把快速、便宜的决策模型嵌入消费级产品。
   image: https://pbs.twimg.com/amplify_video_thumb/2101682942334398464/img/TIjR8ALsT1iz-Nc2.jpg
   metrics:
     likes: 19
@@ -367,10 +414,12 @@ entries:
   - codenames
   - word-game
 - name: Codex + Jev play Slay the Spire 2
+  name_zh: Codex + Jev 玩 Slay the Spire 2
   url: https://x.com/10xmylife/status/2101302029385920530
   kind: post
   author: 10xmylife
   description: Livestream of Codex and Jev playing Slay the Spire 2 at high speed, though not very well.
+  description_zh: Codex 和 Jev 高速游玩 Slay the Spire 2 的直播，不过玩得不太好。
   image: https://pbs.twimg.com/amplify_video_thumb/2101300542144479232/img/TmWoHRrY8b_7Zvvj.jpg
   metrics:
     likes: 116
@@ -380,10 +429,12 @@ entries:
   - slay-the-spire
   - livestream
 - name: 'Combos FPS: Astra vs Jev'
+  name_zh: Combos FPS：Astra 对 Jev
   url: https://x.com/CombosFun_AI/status/2100952069461127257
   kind: post
   author: CombosFun_AI
   description: Side-by-side of the same Combos FPS game played by GPT-6 Astra and by Jev, contrasting a reasoning model with a decision model.
+  description_zh: 同一款 Combos FPS 游戏分别由 GPT-6 Astra 和 Jev 来玩的并排对比，展示推理模型与决策模型的差异。
   image: https://pbs.twimg.com/amplify_video_thumb/2100950508919984128/img/n0KDfl8VSy9C-q3V.jpg
   metrics:
     likes: 6
@@ -393,10 +444,12 @@ entries:
   - fps
   - comparison
 - name: Connect Four on Omarchy
+  name_zh: Omarchy 上的四子棋
   url: https://x.com/Entelic_Aria/status/2100966999602102520
   kind: post
   author: Entelic_Aria
   description: Connect Four loop inside Aria on Omarchy Linux where Jev reads the board and picks moves and Hermes reviews each result, using 6,499 tokens for $0.00022113.
+  description_zh: 在 Omarchy Linux 上的 Aria 里运行的四子棋循环：Jev 读取棋盘并选择落子，Hermes 复盘每一局结果，共用 6,499 个 token，花费 $0.00022113。
   image: https://pbs.twimg.com/amplify_video_thumb/2100966615659732992/img/TweCJbUhQ94mbk2d.jpg
   metrics:
     likes: 34
@@ -406,11 +459,14 @@ entries:
   - connect-four
   - omarchy
 - name: Convex Chess move ratings
+  name_zh: Convex Chess 的走法评分
   url: https://github.com/get-convex/convex-chess
   kind: repo
   author: get-convex
   description: Chess example on Convex where every new move gets a 1-10 rating from Jev 1.13 through the Convex AI Gateway, shown under the move commentary; an AI estimate, not an engine evaluation.
+  description_zh: 基于 Convex 的国际象棋示例：每一步新走法都会通过 Convex AI Gateway 由 Jev 1.13 给出 1-10 分，显示在走法解说下方；这是 AI 估计，不是引擎评估。
   jev: One Score over a ten-level rubric per move via the AI SDK evaluation interface.
+  jev_zh: 通过 AI SDK 的评估接口，每步走法按十级评分细则做一个 Score。
   metrics:
     stars: 5
   date: '2023-02-28'
@@ -421,10 +477,12 @@ entries:
   - convex
   - ai-gateway
 - name: Covel Jev choice demo
+  name_zh: Covel 的 Jev Choice 演示
   url: https://github.com/ackness/covel/tree/main/plugins/jev-choice-demo
   kind: repo
   author: ackness
   description: Optional plugin for an agentic AI RPG framework that shows the evaluation model's recommendation probability for each quick-reply option each turn, without choosing for the player.
+  description_zh: agent 化 AI RPG 框架的可选插件：每回合显示评估模型对每个快捷回复选项的推荐概率，但不替玩家做选择。
   metrics:
     repo_stars: 51
   date: '2026-03-24'
@@ -437,16 +495,19 @@ entries:
   kind: repo
   author: rchovatiya88
   description: 'Infinite 3D Tron-style arena shooter in Three.js where enemy tactics come from Jev: a Choice picks maneuvers like flank or retreat, a Score rates threat and Nouls trigger dashes or berserk.'
+  description_zh: 用 Three.js 做的无尽 3D Tron 风格竞技场射击游戏，敌人的战术来自 Jev：一个 Choice 选择包抄、撤退等机动，一个 Score 评估威胁，几个 Noul 触发冲刺或狂暴。
   date: '2026-09-17'
   tags:
   - threejs
   - arena-shooter
   - game-ai
 - name: Doom with branching futures
+  name_zh: 分支未来版 Doom
   url: https://x.com/toksdotdev/status/2101084662793666618
   kind: post
   author: toksdotdev
   description: Doom agent where Jev picks the moves, a microsandbox harness runs parallel attempts from the same checkpoint, and an LLM reviews outcomes to steer the next try or rewind.
+  description_zh: Doom agent：Jev 选择动作，microsandbox harness 从同一个存档点并行跑多次尝试，再由 LLM 复盘结果，决定下一次怎么打或回退重来。
   image: https://pbs.twimg.com/amplify_video_thumb/2101073621049298944/img/cynsgROvqMkHdnxZ.jpg
   metrics:
     likes: 23
@@ -461,7 +522,9 @@ entries:
   kind: repo
   author: AmoghCreator
   description: Autonomous ViZDoom agent that runs Doom at its native 35 ticks/s while querying Jev asynchronously at ~10 Hz for movement, target and firing decisions, with a Rich terminal HUD.
+  description_zh: 自主 ViZDoom agent：以原生 35 ticks/s 运行 Doom，同时以约 10 Hz 的频率异步向 Jev 询问移动、目标和开火决策，配有 Rich 终端 HUD。
   jev: Jev picks tactical goals and actions; local raycasting handles fine aiming and holds actions between inferences.
+  jev_zh: Jev 选择战术目标和动作；本地光线投射负责精细瞄准，并在两次推理之间保持动作。
   image: https://external-preview.redd.it/MzVzOW43d2RrNXFoMcxXMts5v0jI2t93Nmc85PtCl79IFJJmB82NbzR81CL2.png?format=pjpg&auto=webp&s=724ed059ce7eb571d019eef720fcd12019b942ff
   metrics:
     stars: 4
@@ -472,10 +535,12 @@ entries:
   - doom
   - vizdoom
 - name: Emotion cellular automaton
+  name_zh: 情绪元胞自动机
   url: https://x.com/riku720720/status/2100738087584481657
   kind: post
   author: riku720720
   description: Cellular-automaton simulation running many Jev calls in parallel to model how each person's emotion shifts with their neighbours', so anger and panic spread through the grid.
+  description_zh: 元胞自动机模拟：并行运行大量 Jev 调用，模拟每个人的情绪如何随邻居的情绪变化，让愤怒和恐慌在网格中扩散。
   image: https://pbs.twimg.com/amplify_video_thumb/2100732918536773632/img/3ch1UQy_Wpfs56N5.jpg
   metrics:
     likes: 673
@@ -486,10 +551,12 @@ entries:
   - emotion
   - cellular-automaton
 - name: FIFA with Jev
+  name_zh: 用 Jev 玩 FIFA
   url: https://x.com/_shubhankar/status/2101830589620056160
   kind: post
   author: _shubhankar
   description: Soccer game in which every player runs a Jev loop about every 150ms to decide whether to tackle, pass or shoot and at what speed and direction, with commentary and soundtrack also chosen by Jev.
+  description_zh: 足球游戏：每名球员大约每 150 毫秒 跑一次 Jev 循环，决定抢断、传球还是射门，以及速度和方向；解说和配乐也由 Jev 挑选。
   image: https://pbs.twimg.com/amplify_video_thumb/2101829435855147008/img/PfN38k2ZCauEwPNh.jpg
   metrics:
     likes: 64
@@ -504,6 +571,7 @@ entries:
   kind: post
   author: Taufiq_ansari01
   description: Fighting game where Jev controls the enemy in real time and the probability of each decision it makes is shown on screen before it strikes.
+  description_zh: 格斗游戏：Jev 实时控制敌人，它每做一个决策，出招前都会在屏幕上显示该决策的概率。
   image: https://pbs.twimg.com/amplify_video_thumb/2100905164261748736/img/Jf-ySNfaAdZ95K-O.jpg
   metrics:
     likes: 8
@@ -517,6 +585,7 @@ entries:
   kind: post
   author: ChmalSzymon
   description: Jev playing a Flappy Bird-style game called Floppy Apex and passing the previous best score, wired up by Apex via Appduct.
+  description_zh: Jev 玩一款名为 Floppy Apex 的 Flappy Bird 风格游戏，并刷新了此前的最高分；由 Apex 通过 Appduct 接入。
   image: https://pbs.twimg.com/amplify_video_thumb/2100934447822471168/img/wHM0ZeHHQRZKFTLk.jpg
   metrics:
     likes: 16
@@ -530,7 +599,9 @@ entries:
   kind: repo
   author: EnesYilmazcode
   description: Pits a simulated fruit-fly connectome of 166,700 neurons against Jev at beginner Minesweeper, with both players seeing only the revealed clues.
+  description_zh: 让一个含 166,700 个神经元的模拟果蝇连接组和 Jev 比赛初级扫雷，双方都只能看到已翻开的线索。
   jev: Jev reads the rules and a coordinate-labelled text board and judges every covered square as safe or mined.
+  jev_zh: Jev 读取规则和一张标有坐标的文本棋盘，逐个判断每个未翻开的格子是安全还是有雷。
   image: https://raw.githubusercontent.com/EnesYilmazcode/JevMinesweeper/main/media/fly-vs-jev-ladder.gif
   metrics:
     stars: 1
@@ -540,10 +611,12 @@ entries:
   - connectome
   - puzzle
 - name: Futsal simulator
+  name_zh: 五人制足球模拟器
   url: https://x.com/sidodtv/status/2101951519373574597
   kind: post
   author: sidodtv
   description: High-speed futsal match simulator driven by Jev and Laya, exhibited at the Generative AI Anything Exhibition Vol.6 in Tokyo on September 23.
+  description_zh: 由 Jev 和 Laya 驱动的高速五人制足球比赛模拟器，9 月 23 日在东京的 Generative AI Anything Exhibition Vol.6 上展出。
   image: https://pbs.twimg.com/media/HSuhbq5aMAAOqac.jpg?name=orig
   metrics:
     likes: 7
@@ -554,10 +627,12 @@ entries:
   - sports
   - laya
 - name: Game built for Jev to play
+  name_zh: 专为 Jev 做的游戏
   url: https://x.com/Icaro_333/status/2102242170191179948
   kind: post
   author: Icaro_333
   description: Small game built specifically for Jev to play, made while learning how the model works.
+  description_zh: 专门做给 Jev 玩的小游戏，是作者在学习这个模型如何工作时做的。
   image: https://pbs.twimg.com/amplify_video_thumb/2102242076586844160/img/XGjQgpPdzzUyvFoG.jpg
   metrics:
     views: 41
@@ -570,18 +645,23 @@ entries:
   kind: repo
   author: JoelLewis
   description: Browser chess coach on Cloudflare where Stockfish evaluates the position and Jev decides what coaching feedback to give after each move.
+  description_zh: 运行在 Cloudflare 上的浏览器国际象棋教练：Stockfish 评估局面，Jev 决定每步棋之后给出什么指导反馈。
   jev: Choices over error classes, chess themes and feedback templates (error class by phase by severity); templates and a small model write the words.
+  jev_zh: 在错误类别、棋理主题和反馈模板（按阶段和严重程度细分的错误类别）中做 Choice；具体文字由模板和一个小模型来写。
   date: '2026-09-19'
   tags:
   - chess
   - coaching
   - cloudflare
 - name: Genesis Initiative NPC Jev scheduler
+  name_zh: Genesis Initiative 的 NPC Jev 调度器
   url: https://github.com/dyzdyz010/ex_mmo_cluster/tree/master/apps/gate_server/lib/gate_server/npc
   kind: repo
   author: dyzdyz010
   description: NPC scheduler in the Genesis Initiative voxel MMO server where Jev picks each NPC's next activity and checks whether an action would damage others' builds; its 70-case eval scored 70/70 at 0.78 s p50 vs 2.67 s for an LLM.
+  description_zh: 体素 MMO 服务器 Genesis Initiative 中的 NPC 调度器：Jev 为每个 NPC 挑选下一项活动，并检查某个动作会不会破坏别人的建筑；在 70 个用例的评测中拿到 70/70，p50 延迟 0.78 s，而 LLM 为 2.67 s。
   jev: One activity Choice plus a harm Noul when a destructive action is planned; below 0.85 confidence control goes back to the NPC's LLM brain.
+  jev_zh: 一个活动 Choice，计划执行破坏性动作时再加一个危害 Noul；置信度低于 0.85 时，控制权交还给 NPC 的 LLM 大脑。
   metrics:
     repo_stars: 18
   date: '2021-02-26'
@@ -597,6 +677,7 @@ entries:
   kind: repo
   author: memgrafter
   description: A frozen GLiNER2.5 text encoder with a small trained head plays Doom in real time on a Mac mini M4 from a one-line JSON game state, scoring ten moves 35 times a second, following Jev's state-to-choice contract.
+  description_zh: 冻结的 GLiNER2.5 文本编码器加一个训练过的小型输出头，在 Mac mini M4 上根据单行 JSON 游戏 state 实时玩 Doom，每秒 35 次给十种动作打分，沿用 Jev 的 state 到 choice 契约。
   metrics:
     stars: 7
   date: '2026-09-18'
@@ -605,11 +686,14 @@ entries:
   - jev-like
   - encoder
 - name: GlyphWeave Jev generation
+  name_zh: GlyphWeave 的 Jev 生成
   url: https://github.com/HsiangNianian/GlyphWeave
   kind: repo
   author: HsiangNianian
   description: Infinite-canvas ASCII roguelike tilemap editor that can generate maps in real time with Jev, which picks the intent, preset room, tile and placement from the editor catalog.
+  description_zh: 无限画布的 ASCII roguelike 瓦片地图编辑器，可用 Jev 实时生成地图：由 Jev 从编辑器目录中挑选意图、预设房间、瓦片和摆放位置。
   jev: Choice questions restricted to catalog presets and tiles plus a Noul for whether the edit overwrites existing tiles.
+  jev_zh: Choice 问题的选项限定在目录里的预设和瓦片，另有一个 Noul 判断这次编辑是否会覆盖已有瓦片。
   image: https://raw.githubusercontent.com/HsiangNianian/GlyphWeave/main/media/map-ansi16-small.png
   metrics:
     stars: 7
@@ -622,10 +706,12 @@ entries:
   - level-generation
   - editor
 - name: HarnessRouter Super Mario kit
+  name_zh: HarnessRouter 的超级马里奥套件
   url: https://github.com/HarnessRouter/starter-kit/tree/main/kits/mario
   kind: repo
   author: HarnessRouter
   description: Starter kit where a System One model plays Full Screen Mario in a headless browser several times a second, reading the game state as a few literal sentences and choosing one control.
+  description_zh: 入门套件：一个 System One 模型在无头浏览器里玩 Full Screen Mario，每秒决策数次，把游戏 state 当作几句字面描述来读，并选择一个操作。
   metrics:
     repo_stars: 54
   date: '2026-08-03'
@@ -640,7 +726,9 @@ entries:
   kind: repo
   author: AbdelStark
   description: Browser stealth game where guards make split-second judgments about doors, lights, footsteps, and badges, and you can inspect each guard's evidence, probabilities, intent, and latency.
+  description_zh: 浏览器潜行游戏：守卫会对门、灯光、脚步声和工牌做出瞬间判断，你可以查看每个守卫的证据、概率、意图和延迟。
   jev: Jev supplies typed guard judgments; deterministic code owns the world and applies fallbacks.
+  jev_zh: Jev 提供类型化的守卫判断；世界状态由确定性代码掌控，并负责兜底。
   image: https://raw.githubusercontent.com/AbdelStark/heist-one/main/apps/video/out/heist-one-thumbnail.png
   metrics:
     stars: 7
@@ -649,10 +737,12 @@ entries:
   - stealth-game
   - phaser
 - name: Hermes and Jev play Minecraft
+  name_zh: Hermes 和 Jev 玩 Minecraft
   url: https://github.com/teknium1/hermes-and-jev-play-minecraft
   kind: repo
   author: teknium1
   description: Minecraft agent where Hermes Agent plans, Jev picks one bounded action at a time and a Mineflayer harness validates and runs it, with no screenshots or keypresses from a model; reproduces an Ender Dragon run.
+  description_zh: Minecraft agent：Hermes Agent 负责规划，Jev 每次挑选一个有边界的动作，再由 Mineflayer harness 校验并执行，模型不看截图、也不按键；复现了一次击杀末影龙的流程。
   metrics:
     stars: 7
   date: '2026-09-21'
@@ -665,7 +755,9 @@ entries:
   kind: app
   author: hollow-creek
   description: Village game in 3D where unscripted NPCs watch and remember what you do, then decide how to treat you each tick through expressions and actions instead of chat.
+  description_zh: 3D 村庄游戏：没有剧本的 NPC 会观察并记住你的所作所为，然后在每个 tick 通过表情和动作而非对话决定如何对待你。
   jev: Each villager tick asks Jev about mood, threat and reaction; the state, questions and answers are inspectable in the UI.
+  jev_zh: 每个村民的每个 tick 都会问 Jev 情绪、威胁和反应；state、问题和答案都可以在界面中查看。
   tags:
   - npc
   - game-ai
@@ -675,6 +767,7 @@ entries:
   kind: post
   author: n8mirai
   description: 'Backrooms game with no premade map: Jev generates each room in real time as you explore, at about $0.000265 per room.'
+  description_zh: 没有预制地图的 Backrooms 游戏：你一边探索，Jev 一边实时生成每个房间，每个房间约 $0.000265。
   image: https://pbs.twimg.com/amplify_video_thumb/2102043140160921600/img/oA_cz_-Mlr57Dr25.jpg
   metrics:
     likes: 2
@@ -685,10 +778,12 @@ entries:
   - level-generation
   - horror
 - name: Infinite game levels with Jev
+  name_zh: 用 Jev 无限生成游戏关卡
   url: https://www.reddit.com/r/typesafe_ai/comments/1wjwhlj/jev_generating_infinite_game_levels/
   kind: reddit
   author: Just_Lingonberry_352
   description: Clip of a pixel-art side-scrolling platformer whose levels keep being generated by Jev as the player runs.
+  description_zh: 一段像素风横版平台游戏的片段，玩家一路奔跑，关卡由 Jev 持续生成。
   image: https://external-preview.redd.it/ZGc3Y3M3d2FjYnFoMe5izzrFI6BXxb-7gqg_kASOv1wpqFylkCW7w3gTJp9Y.png?format=pjpg&auto=webp&s=cd5d15fad8829a2ea2ec17565148402c9e6396c7
   metrics:
     points: 11
@@ -701,7 +796,9 @@ entries:
   kind: repo
   author: taodav
   description: Evaluates Jev as a fixed policy in Gymnasium and Atari environments such as CartPole and Pong, recording rewards against a seeded random baseline without any training.
+  description_zh: 在 CartPole、Pong 等 Gymnasium 和 Atari 环境中把 Jev 当作固定策略来评估，不做任何训练，记录其奖励并与固定种子的随机基线对比。
   jev: Observation adapters turn game state into JSON; one Choice selects a legal action each step.
+  jev_zh: 观测适配器把游戏 state 转成 JSON；每一步用一个 Choice 选出一个合法动作。
   image: https://raw.githubusercontent.com/taodav/jev_deep_rl/main/media/jev-atari-showcase-no-header.gif
   metrics:
     stars: 7
@@ -717,7 +814,9 @@ entries:
   kind: repo
   author: ARCJ137442
   description: Instrumented 2048 web lab where every move is a Jev Choice over four directions with no heuristic fallback, showing probabilities, confidence, latency and cost live.
+  description_zh: 带完整监测的 2048 网页实验室：每一步都是 Jev 在四个方向中做的一个 Choice，没有启发式兜底，并实时显示概率、置信度、延迟和成本。
   jev: One Choice per turn; a user-set confidence threshold pauses play for human review, and prompts and board rules are editable.
+  jev_zh: 每回合一个 Choice；用户可设置置信度阈值，触发时暂停游戏交由人工复核，提示词和棋盘规则都可编辑。
   metrics:
     stars: 2
   date: '2026-09-20'
@@ -732,7 +831,9 @@ entries:
   kind: app
   author: jev-arcade
   description: 'Two browser games against a live Jev opponent: a Krunker-style 1v1 arena duel and a neon survival challenge.'
+  description_zh: 两款与实时 Jev 对手对战的浏览器游戏：一个 Krunker 风格的 1v1 竞技场对决，和一个霓虹风生存挑战。
   jev: In the duel, Jev decides move, aim, aim-down-sights, fire and jump at about 9 Hz.
+  jev_zh: 对决中，Jev 以约 9 Hz 的频率决定移动、瞄准、开镜、开火和跳跃。
   tags:
   - fps
   - real-time
@@ -742,6 +843,7 @@ entries:
   kind: post
   author: ahab_developer
   description: Free-to-try web arcade where Jev plays Pac-Man, Bomberman and Space Invaders live.
+  description_zh: 可免费试玩的网页街机厅，Jev 在其中实时玩 Pac-Man、Bomberman 和 Space Invaders。
   image: https://pbs.twimg.com/amplify_video_thumb/2101596647977545728/img/9DaL2uCCG_baCfck.jpg
   metrics:
     likes: 3
@@ -759,6 +861,7 @@ entries:
   kind: reddit
   author: manubfr
   description: Web arena where a single Jev API call plays 9 classic real-time games at once for $1.80 an hour; the author later scaled it to 27 games.
+  description_zh: 网页竞技场：单个 Jev API 调用同时玩 9 款经典实时游戏，每小时 $1.80；作者后来把规模扩展到 27 款。
   metrics:
     points: 127
   date: '2026-09-18'
@@ -773,6 +876,7 @@ entries:
   kind: repo
   author: liao96312
   description: Fully local grid tactics game in Pygame where NanoJev, an open Jev replica, picks each move, attack, shot, heal or dash from real candidate actions across increasingly hard levels, with training on a GTX 1660S.
+  description_zh: 完全本地运行的 Pygame 网格战术游戏：开源 Jev 复刻 NanoJev 在难度递增的关卡中，从真实的候选动作里挑选每一次移动、攻击、射击、治疗或冲刺，训练在 GTX 1660S 上完成。
   image: https://raw.githubusercontent.com/liao96312/jev-arena-nanojev/main/assets/screenshots/gameplay.png
   metrics:
     stars: 2
@@ -786,16 +890,20 @@ entries:
   kind: repo
   author: memorysaver
   description: Research lab that plays Arcade Learning Environment Atari games with Jev structured decisions and value questions while a teacher edits the question program, publishing inputs, actions, rewards, and videos.
+  description_zh: 研究实验室：用 Jev 的结构化决策和价值问题玩 Arcade Learning Environment 中的 Atari 游戏，同时由一个“教师”角色修改问题程序，并公开输入、动作、奖励和视频。
   date: '2026-09-17'
   tags:
   - atari
   - research
 - name: Jev beats Super Mario Bros.
+  name_zh: Jev 打通 Super Mario Bros.
   url: https://x.com/ishuagra02/status/2101025059909353718
   kind: post
   author: ishuagra02
   description: Agent that clears the first level of Super Mario Bros. with only 1 death, choosing each action from the simulator's structured game state.
+  description_zh: 只死 1 次就打通 Super Mario Bros. 第一关的 agent，每个动作都根据模拟器给出的结构化游戏状态来选。
   jev: Choice over simulated next actions (jump, run, etc.) given Mario's position, nearby enemies and terrain, judged on staying alive.
+  jev_zh: 根据马里奥的位置、附近的敌人和地形，在模拟出的下一步动作（跳、跑等）上做一个 Choice，以能否活下来为判断标准。
   image: https://pbs.twimg.com/amplify_video_thumb/2101023867636449280/img/XK5TcIcdTm6_R4xw.jpg
   metrics:
     likes: 16
@@ -805,10 +913,12 @@ entries:
   - game-agent
   - mario
 - name: Jev bots in an FPS
+  name_zh: FPS 里的 Jev 机器人
   url: https://x.com/tommyvedvik/status/2100903520425677027
   kind: post
   author: tommyvedvik
   description: First-person shooter with three Jev-controlled bots as opponents.
+  description_zh: 第一人称射击游戏，对手是三个由 Jev 控制的机器人。
   image: https://pbs.twimg.com/amplify_video_thumb/2100903386992291840/img/EJIJPWYpP8F6iDiF.jpg
   metrics:
     likes: 12
@@ -822,6 +932,7 @@ entries:
   kind: repo
   author: 4anti
   description: Public lab with a chess match where Jev picks from locally generated legal moves, shown beside Stockfish scores, plus smaller judgment booths and a Fast Flag catalog.
+  description_zh: 公开实验室：一场国际象棋对局中，Jev 从本地生成的合法走法里选一步，旁边同步显示 Stockfish 评分；另有几个小型判断展台和一份 Fast Flag 目录。
   metrics:
     stars: 2
   date: '2026-09-17'
@@ -831,10 +942,12 @@ entries:
   - chess
   - playground
 - name: Jev bullet chess test
+  name_zh: Jev 子弹棋测试
   url: https://x.com/bariskisir/status/2101531039185129683
   kind: post
   author: bariskisir
   description: Bullet-chess test of Jev inside a chess bot, which failed to beat even a 250 ELO computer opponent.
+  description_zh: 把 Jev 放进国际象棋机器人里做的子弹棋测试，结果连 250 ELO 的电脑对手都没赢下。
   image: https://pbs.twimg.com/amplify_video_thumb/2101530909170089984/img/A2PKFt3An2aUNbMa.jpg
   metrics:
     likes: 2
@@ -851,7 +964,9 @@ entries:
   kind: app
   author: gigabitmillion-games
   description: Japanese chat game where you talk to a tiny resident whose expression, the weather and the room change according to how Jev reads the mood of your words.
+  description_zh: 日语聊天游戏：你和一个小小的居民聊天，它的表情、天气和房间会随 Jev 对你话语情绪的解读而变化。
   jev: Jev classifies what you said and its tone; the game decides how to respond.
+  jev_zh: Jev 对你说的话及其语气做分类，由游戏决定如何回应。
   tags:
   - japanese
   - chat-game
@@ -861,6 +976,7 @@ entries:
   kind: repo
   author: choxos
   description: One-page web app where Jev plays chess against any OpenRouter LLM, Stockfish, or you, showing the moves it weighed with their probabilities and saving games and win rates.
+  description_zh: 单页 Web 应用：Jev 可以和任意 OpenRouter LLM、Stockfish 或你对弈，界面展示它权衡过的走法及对应概率，并保存棋局和胜率。
   image: https://raw.githubusercontent.com/choxos/jevchess/main/documentation/tour.gif
   metrics:
     stars: 3
@@ -876,7 +992,9 @@ entries:
   kind: app
   author: sliday
   description: Shared chessboard where the internet plays against Jev, which weighs every legal move at once and so cannot play an illegal one.
+  description_zh: 全网玩家共用一张棋盘对战 Jev；它一次性权衡所有合法走法，因此不可能走出非法的一步。
   jev: Every legal move is an option of a single Choice; returned probabilities shade the pieces and a live panel checks its calibration against a one-ply engine.
+  jev_zh: 每个合法走法都是同一个 Choice 的选项；返回的概率用来给棋子着色，实时面板用一个单层（one-ply）引擎检验它的校准。
   image: https://jevchess.com/og.png?room=main&v=81-41
   metrics:
     likes: 1
@@ -894,6 +1012,7 @@ entries:
   kind: app
   author: loomens
   description: Chess board in 3D where Jev plays itself as two personalities, or you take a side, with switchable move doctrines and the probability behind every move shown.
+  description_zh: 3D 棋盘：Jev 可以分饰两种性格自己和自己下，也可以由你执一方，走棋理念可切换，每一步背后的概率都会显示出来。
   tags:
   - chess
   - self-play
@@ -903,6 +1022,7 @@ entries:
   kind: post
   author: qibinlou
   description: Real-time online chess game where you play White against Jev as Black, with Jev's decision traces and API cost shown live; bring your own key.
+  description_zh: 实时在线国际象棋游戏，你执白、Jev 执黑，实时显示 Jev 的决策轨迹和 API 花费；需自备 key。
   image: https://pbs.twimg.com/media/HScaI-sXwAEjjtI.jpg?name=orig
   metrics:
     likes: 6
@@ -919,6 +1039,7 @@ entries:
   kind: repo
   author: minorun365
   description: Japanese quiz demo where you pick one of 30 AWS, Azure or Google Cloud feature names with brand words removed and Jev guesses which cloud it belongs to, drawing its probabilities as three bars.
+  description_zh: 日语问答演示：从 30 个去掉品牌词的 AWS、Azure 或 Google Cloud 功能名里选一个，由 Jev 猜它属于哪家云，并把概率画成三根柱子。
   image: https://raw.githubusercontent.com/minorun365/jev-cloud-quiz/main/docs/architecture.png
   metrics:
     stars: 2
@@ -931,10 +1052,12 @@ entries:
   - cloud
   - aws-cdk
 - name: Jev Connections solver
+  name_zh: Jev Connections 解题器
   url: https://github.com/matsonj/eval-connections/blob/main/experimental/jev_classic_solver.py
   kind: repo
   author: matsonj
   description: Experimental solver in an NYT Connections LLM eval that asks Jev whether word pairs and candidate sets belong to the same group, then searches for the best four groups within the four-mistake limit.
+  description_zh: NYT Connections LLM 评测中的实验性解题器：问 Jev 词对和候选词组是否属于同一组，然后在四次失误的上限内搜索最优的四个分组。
   metrics:
     repo_stars: 25
   date: '2025-07-31'
@@ -945,10 +1068,12 @@ entries:
   - puzzles
   - nyt-connections
 - name: Jev cooking game
+  name_zh: Jev 烹饪游戏
   url: https://x.com/stevibe/status/2101684349104247036
   kind: post
   author: stevibe
   description: Flash-style cooking game built for Jev where it flips, serves and grills in real time; one 5-minute Rush shift took 261 decisions and 382 actions, served 29 guests, scored 8,264 and cost about $0.15.
+  description_zh: 为 Jev 打造的 Flash 风格烹饪游戏，它实时翻面、上菜和烧烤；一次 5 分钟的 Rush 班次做了 261 个决策、382 个动作，接待 29 位客人，得分 8,264，花费约 $0.15。
   image: https://pbs.twimg.com/amplify_video_thumb/2101684255890022401/img/zQzL7sOfvDB18h-5.jpg
   metrics:
     likes: 16
@@ -958,10 +1083,12 @@ entries:
   - cooking-game
   - real-time
 - name: Jev dogfighting
+  name_zh: Jev 空中缠斗
   url: https://x.com/hanznathanpo/status/2101020398477365629
   kind: post
   author: hanznathanpo
   description: First attempt at having Jev fly an aircraft in a dogfight, which the author says does not work well yet.
+  description_zh: 首次尝试让 Jev 驾驶飞机进行空中缠斗，作者表示目前效果还不好。
   image: https://pbs.twimg.com/amplify_video_thumb/2101020269586292736/img/EQfj-8D623rJOWzX.jpg
   metrics:
     likes: 16
@@ -976,6 +1103,7 @@ entries:
   kind: repo
   author: shantanugoel
   description: Visual lab where Jev plays Super Mario Bros., Kung Fu (NES) and Doom (ViZDoom) through a plugin system for new games and emulators, with step-by-step replay; code owns buttons and hold durations.
+  description_zh: 可视化实验室：Jev 玩 Super Mario Bros.、Kung Fu（NES）和 Doom（ViZDoom），通过插件系统接入新游戏和模拟器，支持逐步回放；按键和按住时长由代码负责。
   date: '2026-09-17'
   tags:
   - nes
@@ -986,15 +1114,18 @@ entries:
   kind: app
   author: adriaansendennis
   description: Word puzzle where you connect two seemingly unrelated things in as few steps as possible, with Jev judging each link, plus a leaderboard and speedrun mode.
+  description_zh: 文字解谜游戏：用尽可能少的步数把两个看似无关的事物连起来，由 Jev 评判每一环，另有排行榜和速通模式。
   image: https://game-plan.adriaansendennis.workers.dev/og.png
   tags:
   - word-game
   - puzzle
 - name: Jev gladiator arena
+  name_zh: Jev 角斗场
   url: https://www.reddit.com/r/aigamedev/comments/1wkd96v/jev_plays_both_sides_of_a_gladiator_arena_game/
   kind: reddit
   author: codeninja
   description: Small arena game where Jev directs objectives for six fighters on both sides in real time at about 3 requests per second.
+  description_zh: 小型竞技场游戏：Jev 以约每秒 3 次请求的速度，实时为双方共六名斗士指定目标。
   image: https://external-preview.redd.it/NGk2aTd1d3p2ZXFoMXqalpO3Ixyt1yQWYtSXC1NUz1_Y9AQ08nqmQOyOHDI6.png?format=pjpg&auto=webp&s=7923f11ee0aa0f690eb397824c395fd59ee2024f
   metrics:
     points: 12
@@ -1008,6 +1139,7 @@ entries:
   kind: repo
   author: enoyola
   description: F1 racing game where Jev picks the racing line and pedal inputs live while code steers and plans, learning each corner's limit between laps, and you can race it with the arrow keys.
+  description_zh: F1 赛车游戏：Jev 实时选择行车线和踏板输入，转向和规划由代码负责，它会在圈与圈之间学习每个弯道的极限，你也可以用方向键和它比赛。
   metrics:
     stars: 6
   date: '2026-09-20'
@@ -1019,6 +1151,7 @@ entries:
   kind: repo
   author: jammaru
   description: 'Two local labs where Jev only picks the next legal action while engines keep the rules: Hundred, a tiny town of 100 NPCs with hunger, money, jobs and memories, and a wooden-board Jev Shogi.'
+  description_zh: 两个本地实验室，Jev 只负责挑选下一个合法动作，规则由引擎维护：一个是 Hundred，由 100 个有饥饿、金钱、工作和记忆的 NPC 组成的小镇；另一个是木制棋盘的 Jev Shogi（将棋）。
   metrics:
     stars: 5
   date: '2026-09-17'
@@ -1027,10 +1160,12 @@ entries:
   - shogi
   - simulation
 - name: Jev Magic 8 Ball
+  name_zh: Jev 版魔术 8 号球
   url: https://x.com/will_caskets/status/2100968037117780130
   kind: post
   author: will_caskets
   description: Magic 8 Ball that asks Jev to pick one of the 20 classic answers for your question.
+  description_zh: 魔术 8 号球（Magic 8 Ball）：针对你的问题，让 Jev 从 20 个经典答案里挑一个。
   image: https://pbs.twimg.com/amplify_video_thumb/2100819832660975616/img/j8xtj7J4zxqZ3kdx.jpg
   metrics:
     likes: 7
@@ -1040,10 +1175,12 @@ entries:
   - toy
   - magic-8-ball
 - name: Jev map playtester
+  name_zh: Jev 地图试玩员
   url: https://x.com/TusharXo/status/2100650773726314838
   kind: post
   author: TusharXo
   description: Jev playtesting a new map for a browser game built on Crayon, used to check the level before it ships.
+  description_zh: 让 Jev 为一款基于 Crayon 的浏览器游戏试玩新地图，在上线前检查关卡。
   image: https://pbs.twimg.com/amplify_video_thumb/2100649857379909632/img/umakGAn8HhvRnWu0.jpg
   metrics:
     likes: 22
@@ -1059,6 +1196,7 @@ entries:
   kind: post
   author: umezawakanta13
   description: Mario-style World 1-1 played by Jev in the browser; this recording dies on the first enemy, and the author reports a 976.8ms median browser round-trip over 5 responses.
+  description_zh: Jev 在浏览器里玩马里奥风格的 World 1-1；这段录屏在第一个敌人处就死了，作者报告 5 次响应的浏览器往返延迟中位数为 976.8 毫秒。
   image: https://pbs.twimg.com/amplify_video_thumb/2102062389281816576/img/Fh8WvFu2fI6wSBXE.jpg
   metrics:
     views: 46
@@ -1076,6 +1214,7 @@ entries:
   kind: post
   author: umezawakanta13
   description: 'Follow-up latency run of Jev playing Mario-style 1-1 with a measurement overlay: 1,139.7ms median browser round-trip, 490.3ms Jev HTTP round-trip, still dying on the first enemy.'
+  description_zh: Jev 玩马里奥风格 1-1 的后续延迟测试，带测量浮层：浏览器往返中位数 1,139.7 毫秒，Jev HTTP 往返 490.3 毫秒，依然死在第一个敌人手上。
   image: https://pbs.twimg.com/amplify_video_thumb/2102008859116388352/img/JPN-9Xe4xNX_ImcW.jpg
   metrics:
     views: 36
@@ -1088,10 +1227,12 @@ entries:
   - mario
   - latency
 - name: Jev mind-reading genie
+  name_zh: Jev 读心精灵
   url: https://x.com/builderix/status/2101972512644948169
   kind: post
   author: builderix
   description: Akinator-style guessing game built by precomputing 2,125,999 Jev judgments (16,229 characters x 131 yes/no questions) in 9 minutes for $1.13, after which play is plain arithmetic.
+  description_zh: Akinator 式猜人游戏：花 9 分钟、$1.13 预先算好 2,125,999 个 Jev 判断（16,229 个角色 x 131 个是非题），之后游玩只需简单算术。
   image: https://pbs.twimg.com/amplify_video_thumb/2101972429446721536/img/cPyeH7ur7cuHOyYN.jpg
   metrics:
     likes: 1
@@ -1101,10 +1242,12 @@ entries:
   - guessing-game
   - akinator
 - name: Jev Minecraft bot
+  name_zh: Jev Minecraft 机器人
   url: https://x.com/akashpurjalkar/status/2102014492217667872
   kind: post
   author: akashpurjalkar
   description: Minecraft bot that builds houses, towers, lakes and castles on command, and fights mobs with a sword while trying to dodge skeleton arrows in real time.
+  description_zh: 按指令建造房屋、塔楼、湖泊和城堡的 Minecraft 机器人，还能用剑和怪物战斗，同时实时躲避骷髅射来的箭。
   image: https://pbs.twimg.com/amplify_video_thumb/2102012555912949760/img/HQnumbrlalPGijLN.jpg
   metrics:
     likes: 2
@@ -1118,7 +1261,9 @@ entries:
   kind: repo
   author: comoc
   description: 'Japanese browser demo where Jev plays Minesweeper: each move asks one Noul per unopened cell next to a number, all in one request, and code opens or flags cells by probability, with an exact solver as fallback.'
+  description_zh: 日语浏览器演示，Jev 玩扫雷：每一步在一次请求里为每个紧邻数字的未翻开格子各问一个 Noul，代码按概率翻开或插旗，并以精确求解器兜底。
   jev: 'Speculative fan-out: one Noul (is this cell a mine?) per frontier cell in a single request.'
+  jev_zh: 推测式扇出：在一次请求里为每个边界格子各问一个 Noul（这个格子是雷吗？）。
   metrics:
     stars: 8
   date: '2026-09-20'
@@ -1126,10 +1271,12 @@ entries:
   - minesweeper
   - puzzle
 - name: Jev on Atari Pong
+  name_zh: 用 Jev 玩 Atari Pong
   url: https://x.com/MemorysaverMFA/status/2100881912113909893
   kind: article
   author: MemorysaverMFA
   description: Article on using Jev as a policy-shaped controller for Atari Pong, where the policy lives in the question definitions rather than in model weights.
+  description_zh: 文章介绍如何把 Jev 用作 Atari Pong 的策略型控制器，策略写在问题定义里，而不是模型权重里。
   image: https://pbs.twimg.com/media/HSfUxRBXwAAsuPo.jpg
   metrics:
     views: 15
@@ -1143,6 +1290,7 @@ entries:
   kind: post
   author: NesanSelvan04
   description: Pac-Man where every move is decided by Jev from the tiles around Pac-Man, returning a direction, strategy, danger score and trapped/committed/regret flags.
+  description_zh: 每一步都由 Jev 根据 Pac-Man 周围的格子决定的 Pac-Man 游戏，返回方向、策略、危险分数，以及被困、已锁定、后悔三个标记。
   image: https://pbs.twimg.com/amplify_video_thumb/2100844526281879552/img/GUoeEcUZPpay61x8.jpg
   metrics:
     likes: 6
@@ -1156,14 +1304,17 @@ entries:
   kind: app
   author: everpaper
   description: Tic-tac-toe and Connect Four against Jev, where the model picks each move and the code enforces the rules.
+  description_zh: 和 Jev 下井字棋和四子棋，每一步由模型选择，规则由代码保证。
   tags:
   - board-games
   - tic-tac-toe
 - name: Jev plays Absurd Trolley Problems
+  name_zh: Jev 玩 Absurd Trolley Problems
   url: https://x.com/PrithviBtw/status/2100696083207004574
   kind: post
   author: PrithviBtw
   description: Jev played all 28 Absurd Trolley Problems 10 times each, agreeing with humanity 46% of the time, sacrificing a human for 5 robots and refusing a $500k bribe.
+  description_zh: Jev 把 28 道 Absurd Trolley Problems 各玩了 10 遍，46% 的情况下与人类多数选择一致，会为 5 个机器人牺牲一个人，也拒绝了 $500k 的贿赂。
   image: https://pbs.twimg.com/amplify_video_thumb/2100695699528814592/img/_AklUvdn4Bef6iLZ.jpg
   metrics:
     likes: 15
@@ -1174,10 +1325,12 @@ entries:
   - ethics
   - experiment
 - name: Jev plays Balatro
+  name_zh: Jev 玩 Balatro
   url: https://x.com/Juris_Savos/status/2100989012966031417
   kind: post
   author: Juris_Savos
   description: Balatro run where, each hand, Jev looks at the cards, jokers and blind and picks play or discard in ~200-500ms, then shops after the ante; a full run costs under a cent.
+  description_zh: Balatro 对局：每一手 Jev 查看手牌、小丑牌和盲注，在约 200-500 毫秒 内决定出牌还是弃牌，过完底注后再去商店；打完一整局花费不到一美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100987840268034048/img/Hmumsuz83I0DXXIE.jpg
   metrics:
     likes: 13
@@ -1187,11 +1340,14 @@ entries:
   - balatro
   - card-game
 - name: Jev plays Brotato
+  name_zh: Jev 玩 Brotato
   url: https://www.reddit.com/r/typesafe_ai/comments/1wiipyj/jev_plays_brotato/
   kind: reddit
   author: TriamondG
   description: Godot mod harness that feeds Brotato game state and valid movement commands to Jev, which dodges enemies and collects loot; built in about 15 minutes for $0.03 over 10 waves.
+  description_zh: Godot mod harness，把 Brotato 的游戏状态和有效移动指令喂给 Jev，由它躲避敌人、收集战利品；约 15 分钟搭好，打 10 波花了 $0.03。
   jev: One Choice per step over movement commands under a short guidance instruction.
+  jev_zh: 每一步在一条简短的指导指令下，对移动指令做一个 Choice。
   image: https://external-preview.redd.it/emdhdmRheHAyMHFoMZ-4l1K0cwYempvwCLtCfCUmlSYrwFk65dIHEY8ph35v.png?format=pjpg&auto=webp&s=292db54f93edb95df5060e04754b7484faca51eb
   metrics:
     points: 5
@@ -1201,10 +1357,12 @@ entries:
   - godot
   - roguelike
 - name: Jev plays Chrome Dino
+  name_zh: Jev 玩 Chrome Dino
   url: https://x.com/mittalparth_/status/2100817199686619348
   kind: post
   author: mittalparth_
   description: Jev plays the Chrome Dino game from snapshots of the runner, deciding to jump, run or duck with a confidence score at ~280ms per decision; 116M tokens cost $4.65.
+  description_zh: Jev 根据小恐龙奔跑的快照玩 Chrome Dino 游戏，决定跳跃、奔跑或下蹲并给出置信度分数，每次决策约 280 毫秒；116M token 花费 $4.65。
   image: https://pbs.twimg.com/amplify_video_thumb/2100816454564339712/img/WTv-oigoy6fOY6Qc.jpg
   metrics:
     likes: 44
@@ -1214,10 +1372,12 @@ entries:
   - chrome-dino
   - game-agent
 - name: Jev plays Clash Royale
+  name_zh: Jev 玩 Clash Royale
   url: https://github.com/vishxrad/clashroyale-jev
   kind: repo
   author: vishxrad
   description: Screenshot-driven Clash Royale bot where Jev chooses the card and placement, Qwen 3.8 27B on Cerebras reads the battlefield, and OpenCV reads hand and elixir, playing on Android over ADB.
+  description_zh: 靠截图驱动的 Clash Royale 机器人：Jev 决定出哪张卡、放在哪，Cerebras 上的 Qwen 3.8 27B 读取战场，OpenCV 识别手牌和圣水，通过 ADB 在 Android 上对战。
   metrics:
     stars: 3
   date: '2026-09-20'
@@ -1227,10 +1387,12 @@ entries:
   - clash-royale
   - game-bot
 - name: Jev plays Clash Royale
+  name_zh: Jev 玩 Clash Royale
   url: https://x.com/AmritNigam2/status/2100882320945520778
   kind: post
   author: AmritNigam2
   description: Jev playing Clash Royale in real time and winning a match.
+  description_zh: Jev 实时玩 Clash Royale 并赢下一局。
   image: https://pbs.twimg.com/amplify_video_thumb/2100881913317879808/img/cnr8YJJs3WfuHdnI.jpg
   metrics:
     likes: 33
@@ -1240,10 +1402,12 @@ entries:
   - clash-royale
   - game-agent
 - name: Jev Plays Clash Royale (jev-royal)
+  name_zh: Jev 玩 Clash Royale（jev-royal）
   url: https://github.com/Amrit-Nigam/jev-royal
   kind: repo
   author: Amrit-Nigam
   description: Autonomous Clash Royale agent on macOS through iPhone Mirroring, with local deterministic perception from pixels and Jev arbitrating between tactical options already validated in code.
+  description_zh: 在 macOS 上通过 iPhone Mirroring 运行的自主 Clash Royale agent，先从像素做本地确定性感知，再由 Jev 在代码已验证过的战术选项之间裁决。
   metrics:
     stars: 2
   date: '2026-09-17'
@@ -1251,10 +1415,12 @@ entries:
   - clash-royale
   - game-bot
 - name: Jev plays DOOM
+  name_zh: Jev 玩 DOOM
   url: https://www.reddit.com/r/accelerate/comments/1whr9gv/jev_playing_doom_in_real_time_with_10_decisions/
   kind: reddit
   author: Difficult-Inside-576
   description: Clip of Jev playing DOOM in real time at 10 decisions per second, at a running cost of about $7 per hour.
+  description_zh: Jev 以每秒 10 次决策的速度实时玩 DOOM 的视频片段，运行成本约每小时 $7。
   image: https://external-preview.redd.it/eGhsOTY3NGQ2dHBoMZi4Fo1lWSh3LK2iCYvooC2NogiYum3mcqor0WTcJDpX.png?auto=webp&s=c5307e475e85da6232452955c9b30893dfbf4a15
   metrics:
     points: 386
@@ -1263,10 +1429,12 @@ entries:
   - doom
   - real-time
 - name: Jev plays Doom
+  name_zh: Jev 玩 Doom
   url: https://x.com/CompleteSkeptic/status/2099925687465570372
   kind: post
   author: CompleteSkeptic
   description: TypeSafe's launch demo of Jev playing Doom in real time from structured game state, making about 10 calls per second for roughly $7 per hour.
+  description_zh: TypeSafe 的发布演示：Jev 根据结构化游戏状态实时玩 Doom，每秒约 10 次调用，每小时约 $7。
   image: https://pbs.twimg.com/amplify_video_thumb/2099924592534183936/img/hBGk8j8MRxBgPyg9.jpg
   metrics:
     likes: 5002
@@ -1277,10 +1445,12 @@ entries:
   - official
   - real-time
 - name: Jev plays Geometry Dash
+  name_zh: Jev 玩 Geometry Dash
   url: https://x.com/Neel490/status/2100953791260397747
   kind: post
   author: Neel490
   description: Jev playing the rhythm platformer Geometry Dash, shown in a short video.
+  description_zh: 一段短视频，展示 Jev 玩节奏跑酷平台游戏 Geometry Dash。
   image: https://pbs.twimg.com/amplify_video_thumb/2100953694594379776/img/swbWBiQbbZtvxLH_.jpg
   metrics:
     likes: 14
@@ -1290,10 +1460,12 @@ entries:
   - geometry-dash
   - platformer
 - name: Jev plays Gomoku
+  name_zh: Jev 下五子棋
   url: https://x.com/GodName794/status/2102199799160475707
   kind: post
   author: GodName794
   description: 'Gomoku experiment: deciding alone, Jev lost, but once an attack-defence search filtered candidate moves and Jev chose among them, it beat the author.'
+  description_zh: 五子棋实验：Jev 单独决策时输了，但先用攻防搜索筛出候选走法、再让 Jev 从中挑选后，它赢了作者。
   image: https://pbs.twimg.com/amplify_video_thumb/2102198809472425984/img/Xw6Vbyb4LLJV4Dff.jpg
   metrics:
     views: 49
@@ -1303,10 +1475,12 @@ entries:
   - board-game
   - chinese
 - name: Jev plays Mario Kart 64
+  name_zh: Jev 玩 Mario Kart 64
   url: https://x.com/shreypandya/status/2100606445758898287
   kind: post
   author: shreypandya
   description: Jev driving in Mario Kart 64 in real time.
+  description_zh: Jev 实时驾驶 Mario Kart 64。
   image: https://pbs.twimg.com/amplify_video_thumb/2100605130869784576/img/gdGysXaHMdzFOU8W.jpg
   metrics:
     likes: 226
@@ -1316,10 +1490,12 @@ entries:
   - mario-kart
   - game-agent
 - name: Jev Plays Minecraft
+  name_zh: Jev 玩 Minecraft
   url: https://x.com/jarrodwatts/status/2100674934582263895
   kind: post
   author: jarrodwatts
   description: Round-the-clock Twitch livestream where Jev tries to defeat the Ender Dragon in Minecraft, one decision at a time.
+  description_zh: 全天候 Twitch 直播，Jev 一次做一个决策，尝试在 Minecraft 里击败末影龙。
   image: https://pbs.twimg.com/amplify_video_thumb/2100674773843865600/img/dh9A-GH0WV0f-UNj.jpg
   metrics:
     likes: 271
@@ -1332,10 +1508,12 @@ entries:
   - minecraft
   - livestream
 - name: Jev plays Minecraft Skyblock
+  name_zh: Jev 玩 Minecraft Skyblock
   url: https://x.com/joaobnobre/status/2100486780298383801
   kind: post
   author: joaobnobre
   description: Single Jev agent playing Minecraft Skyblock by reading the game state and choosing each next move through typed decisions.
+  description_zh: 单个 Jev agent 玩 Minecraft Skyblock：读取游戏状态，通过类型化决策选出每一步行动。
   image: https://pbs.twimg.com/amplify_video_thumb/2100486436323508224/img/LalHAX48Wkvn20LT.jpg
   metrics:
     likes: 14
@@ -1345,20 +1523,25 @@ entries:
   - minecraft
   - game-agent
 - name: Jev plays Pac-Man
+  name_zh: Jev 玩 Pac-Man
   url: https://jev-pacman.ephraimduncan.com
   kind: app
   author: Ephraim Duncan
   description: Pac-Man recreation steered by Jev, which receives the maze, actors and legal directions as structured data before each junction and picks the turn in real time.
+  description_zh: 由 Jev 操控的 Pac-Man 复刻版：每到路口前，它都会收到结构化的迷宫、角色和合法方向数据，并实时选择转向。
   jev: One Choice per junction over the legal directions, asked far enough ahead for the answer to arrive in time.
+  jev_zh: 每个路口针对合法方向做一个 Choice，并提前足够早发问，保证答案及时返回。
   tags:
   - pac-man
   - game-agent
   - real-time
 - name: Jev plays Pokemon Emerald
+  name_zh: Jev 玩 Pokemon Emerald
   url: https://x.com/p_misirov/status/2101398305796509718
   kind: post
   author: p_misirov
   description: Work-in-progress harness running Pokemon Emerald in mGBA to test whether Jev can play Pokemon better than an LLM.
+  description_zh: 仍在开发中的 harness，在 mGBA 里运行 Pokemon Emerald，用来测试 Jev 玩 Pokemon 能否胜过 LLM。
   image: https://pbs.twimg.com/media/HSmqn1DbgAAUTrW.png?name=orig
   metrics:
     likes: 3
@@ -1369,11 +1552,14 @@ entries:
   - emulator
   - wip
 - name: Jev plays Pokemon FireRed
+  name_zh: Jev 玩 Pokemon FireRed
   url: https://x.com/luckeyfaraday/status/2100622223014842432
   kind: post
   author: luckeyfaraday
   description: 'Agent that beat Brock in Pokemon FireRed in under 5 real-world minutes for $0.09: emulator memory is decoded into game state, code lists the legal actions and Jev picks one.'
+  description_zh: 花 $0.09、现实时间不到 5 分钟就在 Pokemon FireRed 里击败 Brock 的 agent：模拟器内存被解码成游戏状态，代码列出合法动作，Jev 从中选一个。
   jev: Choice over code-generated legal actions each turn; every input is logged so runs replay with zero model calls.
+  jev_zh: 每回合对代码生成的合法动作做一个 Choice；每个输入都记录在日志里，重放时无需任何模型调用。
   image: https://pbs.twimg.com/amplify_video_thumb/2100622064457498624/img/qDeXq1ID5SpwOoYJ.jpg
   metrics:
     likes: 33
@@ -1384,11 +1570,14 @@ entries:
   - emulator
   - speedrun
 - name: Jev plays Pokemon Red
+  name_zh: Jev 玩 Pokemon Red
   url: https://jev-plays-pokemon.standardagents.ai
   kind: app
   author: 0xBOYD
   description: Live stream of Jev playing Pokemon Red, where every button press is Jev's choice; after 8,000+ decisions and $1.21 it had beaten Brock for the first gym badge.
+  description_zh: Jev 玩 Pokemon Red 的直播，每一次按键都由 Jev 选择；经过 8,000+ 次决策、花费 $1.21 后，它击败 Brock，拿到第一枚道馆徽章。
   jev: Gameplay decisions by Jev; game-log monitoring and the real-time harness were built with Opus 5.
+  jev_zh: 游戏决策由 Jev 做出；游戏日志监控和实时 harness 是用 Opus 5 搭建的。
   image: https://jev-plays-pokemon.standardagents.ai/og.png
   metrics:
     likes: 386
@@ -1404,10 +1593,12 @@ entries:
   - long-horizon
   - game-agent
 - name: Jev plays Pokémon
+  name_zh: Jev 玩 Pokémon
   url: https://github.com/anxkhn/JevPlaysPokemon
   kind: repo
   author: anxkhn
   description: Agent where Jev plays Generation 3 Pokémon battles on Showdown and a real FireRed ROM, reading HP, types, moves and rosters from RAM and picking among the legal moves and switches each turn.
+  description_zh: 让 Jev 在 Showdown 和真实 FireRed ROM 上打第 3 世代 Pokémon 对战的 agent，从 RAM 读取 HP、属性、招式和队伍，每回合在合法的招式和换人中做选择。
   image: https://raw.githubusercontent.com/anxkhn/JevPlaysPokemon/main/docs/dashboard.png
   metrics:
     stars: 5
@@ -1421,10 +1612,12 @@ entries:
   - emulator
   - firered
 - name: Jev plays Pokémon Gold
+  name_zh: Jev 玩 Pokémon Gold
   url: https://x.com/joey_build/status/2100904864519770170
   kind: post
   author: joey_build
   description: Attempt to have Jev beat the Pokémon League in Pokémon Gold (HGSS) by choosing among button presses.
+  description_zh: 尝试让 Jev 通过选择按键，在 Pokémon Gold（HGSS）里打通 Pokémon 联盟。
   image: https://pbs.twimg.com/amplify_video_thumb/2100904739332399105/img/x3EZzH6sWlihnjqr.jpg
   metrics:
     likes: 3
@@ -1434,10 +1627,12 @@ entries:
   - pokemon
   - game-agent
 - name: Jev plays Pokémon Showdown
+  name_zh: Jev 玩 Pokémon Showdown
   url: https://x.com/Izzuddin_Shafi/status/2101116220061958528
   kind: post
   author: Izzuddin_Shafi
   description: Pokémon Showdown harness, built with Codex, in which Jev plays a full match quickly but with mixed-quality choices, shown as a replay with decision data and latency.
+  description_zh: 用 Codex 搭建的 Pokémon Showdown harness，Jev 能很快打完一整场，但决策质量参差不齐，以附带决策数据和延迟的回放形式展示。
   image: https://pbs.twimg.com/amplify_video_thumb/2101115189483732992/img/dbVAfRUVXObCcc75.jpg
   metrics:
     likes: 1
@@ -1447,10 +1642,12 @@ entries:
   - pokemon
   - game-agent
 - name: Jev plays Puyo Puyo
+  name_zh: Jev 玩 Puyo Puyo
   url: https://x.com/hota911/status/2101130463037530229
   kind: post
   author: hota911
   description: Puyo Puyo agent on the puyoai engine where Jev answers 1+3 questions per move, the game phase and then the best post-placement outcome, eventually building 3-chains and beating a random player.
+  description_zh: 基于 puyoai 引擎的 Puyo Puyo agent，Jev 每一步回答 1+3 个问题：先判断游戏阶段，再判断放置后的最佳结果，最终能打出 3 连锁并击败随机玩家。
   image: https://pbs.twimg.com/tweet_video_thumb/HSi0shdboAAf5HG.jpg
   metrics:
     likes: 3
@@ -1462,11 +1659,14 @@ entries:
   - puzzle-game
   - japanese
 - name: Jev plays RALLY
+  name_zh: Jev 玩 RALLY
   url: https://github.com/Icohen007/jev-play-ping-pong
   kind: repo
   author: Icohen007
   description: Jev plays a live browser table-tennis game in real time from structured telemetry, choosing every serve and return and moving the racket through ordinary Chrome input; one recorded Club-difficulty run ended 11-0.
+  description_zh: Jev 根据结构化遥测数据实时玩一款在线浏览器乒乓球游戏，每次发球和回球都由它决定，并通过普通的 Chrome 输入移动球拍；一局录制的 Club 难度对局以 11-0 结束。
   jev: Choices for contact and pace per shot; deterministic code observes and executes.
+  jev_zh: 每一拍针对击球方式和节奏做 Choice；观察和执行由确定性代码完成。
   image: https://raw.githubusercontent.com/Icohen007/jev-play-ping-pong/main/docs/media/jev-real-time-win.png
   metrics:
     stars: 2
@@ -1477,10 +1677,12 @@ entries:
   - table-tennis
   - real-time
 - name: Jev plays Resident Evil
+  name_zh: Jev 玩 Resident Evil
   url: https://x.com/juminoz/status/2100846091281506370
   kind: post
   author: juminoz
   description: Experiment having Jev play the original Resident Evil in 3D, handling movement, enemies and puzzles, following an earlier Time Crisis run.
+  description_zh: 让 Jev 玩初代 3D 版 Resident Evil 的实验，要应对移动、敌人和谜题；此前作者已让它跑过 Time Crisis。
   image: https://pbs.twimg.com/amplify_video_thumb/2100845309748490240/img/ahnwqqlyOJSdGRQL.jpg
   metrics:
     likes: 5
@@ -1490,10 +1692,12 @@ entries:
   - resident-evil
   - game-agent
 - name: Jev plays RollerCoaster Tycoon 2
+  name_zh: Jev 玩 RollerCoaster Tycoon 2
   url: https://x.com/petergostev/status/2102149363787088384
   kind: post
   author: petergostev
   description: 'Attempt to have Jev play RollerCoaster Tycoon 2: it built a few rides at the start and then got stuck, a reminder that harder games still need smarter models.'
+  description_zh: 尝试让 Jev 玩 RollerCoaster Tycoon 2：开局建了几个游乐设施后就卡住了，说明更难的游戏仍需要更聪明的模型。
   image: https://pbs.twimg.com/media/HSxVXgfW8AEPzIL.jpg?name=orig
   metrics:
     likes: 15
@@ -1505,11 +1709,14 @@ entries:
   - rollercoaster-tycoon
   - negative-result
 - name: Jev plays Slay the Spire 2
+  name_zh: Jev 玩 Slay the Spire 2
   url: https://www.reddit.com/r/ArtificialInteligence/comments/1wkjatd/i_hooked_jev_up_to_slay_the_spire_2_it_made_it_to/
   kind: reddit
   author: Zboubkiller
   description: Bridge that reads live Slay the Spire 2 state from a local mod server and asks Jev for the best card, item, or move; it reached the first boss in about an hour for three cents.
+  description_zh: 桥接程序从本地 mod 服务器读取 Slay the Spire 2 的实时状态，再问 Jev 最佳的卡牌、道具或行动；约一小时、花三美分就打到了第一个 boss。
   jev: A Choice over legal moves every few seconds, a couple hundred ms per decision.
+  jev_zh: 每隔几秒对合法行动做一个 Choice，每次决策两三百毫秒。
   image: https://external-preview.redd.it/NDM2MzNzcGFsZ3FoMRVX0gr1QcHBMnu7HTuOq0-1UwoVsYJY79bqH7PNNhxN.png?format=pjpg&auto=webp&s=ab8dc1a2c2d94dfbe2220e7aa434e6a4d727fba2
   metrics:
     points: 2
@@ -1518,10 +1725,12 @@ entries:
   - deckbuilder
   - slay-the-spire
 - name: Jev plays Slay the Spire 2 via MCP
+  name_zh: Jev 通过 MCP 玩 Slay the Spire 2
   url: https://x.com/0xSorrowRain/status/2100484781389791710
   kind: post
   author: 0xSorrowRain
   description: Chinese experiment connecting Jev to a Slay the Spire 2 MCP server with lots of context; so far it has not survived the first floor.
+  description_zh: 中文实验：把 Jev 接到带大量上下文的 Slay the Spire 2 MCP 服务器上；目前还没能活过第一层。
   image: https://pbs.twimg.com/amplify_video_thumb/2100484509653487616/img/JEehDZgCXN_Y1F3x.jpg
   metrics:
     likes: 25
@@ -1532,10 +1741,12 @@ entries:
   - mcp
   - experiment
 - name: Jev plays Smash Bros.
+  name_zh: Jev 玩 Smash Bros.
   url: https://x.com/maubaron/status/2100738237237002706
   kind: post
   author: maubaron
   description: Jev controlling all four characters in a Smash Bros. match against itself, picking each move in a fraction of a second across 22 million tokens for a few cents.
+  description_zh: Jev 在一场 Smash Bros. 对局中操控全部四个角色和自己对打，每个动作在不到一秒内选出，总共用了 22M token，只花了几美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100731665513349120/img/j4DcB9CxjN8DX4qe.jpg
   metrics:
     likes: 3678
@@ -1545,11 +1756,14 @@ entries:
   - game-agent
   - fighting-game
 - name: Jev plays Snake
+  name_zh: Jev 玩贪吃蛇
   url: https://jevplayssnake.lovable.app/
   kind: app
   author: Carol Monroe
   description: Snake game where Jev picks the direction at every crossing and shows how sure it is; you can overrule it with an arrow key, let it drive alone, or race it on separate phones.
+  description_zh: 贪吃蛇游戏：Jev 在每个岔路口选择方向并显示它有多确定；你可以用方向键推翻它的决定、让它自己玩，或在不同手机上和它比赛。
   jev: One direction Choice per crossing, with latency and cost shown per run.
+  jev_zh: 每个岔路口做一个方向 Choice，每局都显示延迟和花费。
   image: https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_7mf8j4pe569hrrss75tmmh923w/fa856b4e192457e8609183ad313011b4_1789960476462.png
   metrics:
     likes: 2
@@ -1561,10 +1775,12 @@ entries:
   - snake
   - real-time
 - name: Jev plays Snake
+  name_zh: Jev 玩贪吃蛇
   url: https://x.com/chenchengpro/status/2100516953496670430
   kind: post
   author: chenchengpro
   description: Snake where Jev is asked for every move; 200 requests cost $0.02, so $1 buys about ten thousand steps.
+  description_zh: 每一步都去问 Jev 的贪吃蛇；200 次请求花费 $0.02，所以 $1 大约能买一万步。
   image: https://pbs.twimg.com/amplify_video_thumb/2100516335155646464/img/pow4ZDKeRwkBVSvy.jpg
   metrics:
     likes: 283
@@ -1574,10 +1790,12 @@ entries:
   - snake
   - game-agent
 - name: Jev plays StarCraft
+  name_zh: Jev 玩 StarCraft
   url: https://github.com/phyous/tsai-sc
   kind: repo
   author: phyous
   description: Harness that lets Jev play Strongarm, the first combat mission of the original StarCraft shareware, choosing commands from structured game state and executing them via keyboard and mouse; it won the mission.
+  description_zh: 让 Jev 玩初代 StarCraft 共享版第一个战斗任务 Strongarm 的 harness，根据结构化游戏状态选择指令，并通过键盘和鼠标执行；它赢下了这个任务。
   metrics:
     stars: 22
     points: 25
@@ -1589,11 +1807,14 @@ entries:
   - starcraft
   - game-agent
 - name: Jev plays Street Fighter 2
+  name_zh: Jev 玩 Street Fighter 2
   url: https://www.reddit.com/r/typesafe_ai/comments/1wjwfz6/jev_plays_streetfighter_2/
   kind: reddit
   author: Smartaces
   description: Street Fighter II hooked up to Jev through a custom control connector, with only a description of the controls as context; results are mixed, with some fireball spamming.
+  description_zh: 通过自定义控制连接器把 Street Fighter II 接到 Jev 上，上下文只有一份操作说明；效果好坏参半，有时会狂发波动拳。
   jev: One Choice per step over roughly 50 move options.
+  jev_zh: 每一步在大约 50 个招式选项上做一个 Choice。
   image: https://external-preview.redd.it/NWVkaW83enViYnFoMay-vxLp3z8yZzFfUDRXejkROs2MYTjUI3KtLbhhG02Y.png?format=pjpg&auto=webp&s=771cfb248c3cfd443131cdb83078edcd6cbcf22c
   metrics:
     points: 7
@@ -1602,10 +1823,12 @@ entries:
   - fighting-game
   - street-fighter
 - name: Jev plays Street Fighter II
+  name_zh: Jev 玩 Street Fighter II
   url: https://github.com/smartaces/jev-plays-streetfighter-2
   kind: repo
   author: smartaces
   description: 'Agent where Jev plays Ryu in Street Fighter II on a Mac emulator: game RAM becomes a structured observation, Jev picks a move and strength, and a local controller executes the buttons while a dashboard shows its choices.'
+  description_zh: 让 Jev 在 Mac 模拟器上用 Ryu 玩 Street Fighter II 的 agent：游戏 RAM 转成结构化观测，Jev 选择招式和力度，本地控制器执行按键，仪表盘展示它的选择。
   image: https://external-preview.redd.it/NTVkZTJiN3R4bXFoMQjvd-8EQw0QbDjm9hCjKpnf4X5aCCr61OBuvtMnbJcC.png?format=pjpg&auto=webp&s=0a204302132cb05408f3a8a913bb8c1812c9679a
   metrics:
     stars: 6
@@ -1618,10 +1841,12 @@ entries:
   - emulator
   - retro
 - name: Jev plays Subway Surfers
+  name_zh: Jev 玩 Subway Surfers
   url: https://www.reddit.com/r/singularity/comments/1wjiphh/new_decision_model_jev_developed_by_cocreator_of/
   kind: reddit
   author: _MaxBlade
   description: Clip of Jev playing Subway Surfers in real time, reposted from its builder's post on X.
+  description_zh: Jev 实时玩 Subway Surfers 的视频片段，转载自开发者在 X 上的帖子。
   image: https://external-preview.redd.it/dHpuMHpkNG95N3FoMUucEQdQZmbqjqbId0_QLFh_fksCLNqhu15wWNNKVSjG.png?format=pjpg&auto=webp&s=b5c4f1b9a4864434b81c83de0551e7588f03003c
   metrics:
     points: 548
@@ -1632,10 +1857,12 @@ entries:
   - subway-surfers
   - real-time
 - name: Jev plays Subway Surfers
+  name_zh: Jev 玩 Subway Surfers
   url: https://x.com/_MaxBlade/status/2100634359099232678
   kind: post
   author: _MaxBlade
   description: Jev playing Subway Surfers at superhuman speed, including 50 games at once, with the whole run costing less than a cent.
+  description_zh: Jev 以超越人类的速度玩 Subway Surfers，包括同时开 50 局，整个过程花费不到一美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100633400717565952/img/KlytLNSLCQA-yY2E.jpg
   metrics:
     likes: 4088
@@ -1645,20 +1872,24 @@ entries:
   - game-agent
   - real-time
 - name: Jev plays Tetris
+  name_zh: Jev 玩俄罗斯方块
   url: https://github.com/MachineLearning-Nerd/jev-tetris
   kind: repo
   author: MachineLearning-Nerd
   description: Arcade Tetris where the engine enumerates every legal, collision-checked final placement and Jev picks one as a typed option, while Python owns the physics; includes a narrated explainer video.
+  description_zh: 街机版俄罗斯方块：引擎枚举所有合法且经过碰撞检测的最终落点，Jev 把它们当作类型化选项挑一个，物理由 Python 负责；附带一段讲解视频。
   image: https://raw.githubusercontent.com/MachineLearning-Nerd/jev-tetris/main/assets/demo.png
   date: '2026-09-17'
   tags:
   - tetris
   - python
 - name: Jev plays Tetris
+  name_zh: Jev 玩俄罗斯方块
   url: https://x.com/AlanDaitch/status/2100438353946513815
   kind: post
   author: AlanDaitch
   description: Jev playing Tetris on its hardest mode, deciding each move in about 0.3 seconds and placing 357 pieces for 134 lines in 2 minutes.
+  description_zh: Jev 在最高难度下玩俄罗斯方块，每步决策约 0.3 秒，2 分钟内放下 357 个方块、消除 134 行。
   image: https://pbs.twimg.com/ext_tw_video_thumb/2100438029299040256/pu/img/s_cly7mjSq3voOC3.jpg
   metrics:
     likes: 49
@@ -1668,10 +1899,12 @@ entries:
   - tetris
   - game-agent
 - name: Jev plays Tetris
+  name_zh: Jev 玩俄罗斯方块
   url: https://x.com/marcus_lowe/status/2100315518930661861
   kind: post
   author: marcus_lowe
   description: Tetris demo where Jev picks piece placements fast enough that it pushes blocks down before they fall.
+  description_zh: 俄罗斯方块演示：Jev 选择落点的速度快到能在方块自然下落之前就把它们推下去。
   image: https://pbs.twimg.com/amplify_video_thumb/2100315393860730880/img/u0iH2SHQny2hkd4Q.jpg
   metrics:
     likes: 980
@@ -1681,10 +1914,12 @@ entries:
   - tetris
   - game-agent
 - name: Jev plays Tetris
+  name_zh: Jev 玩俄罗斯方块
   url: https://x.com/realdora_eth/status/2102036344130191370
   kind: post
   author: realdora_eth
   description: Tetris hooked up to Jev, which decides where every piece lands.
+  description_zh: 把俄罗斯方块接到 Jev 上，每个方块落在哪都由它决定。
   image: https://pbs.twimg.com/amplify_video_thumb/2102035915497476096/img/NzSS4-InwFUwSJf4.jpg
   metrics:
     likes: 2
@@ -1693,10 +1928,12 @@ entries:
   tags:
   - tetris
 - name: Jev plays Time Crisis
+  name_zh: Jev 玩 Time Crisis
   url: https://x.com/juminoz/status/2100832108855857325
   kind: post
   author: juminoz
   description: Jev playing the arcade shooter Time Crisis through a custom harness, shooting targets and taking cover to avoid getting shot.
+  description_zh: Jev 通过自定义 harness 玩街机射击游戏 Time Crisis，射击目标并躲到掩体后避免中弹。
   image: https://pbs.twimg.com/amplify_video_thumb/2100831608366575616/img/lDHAtdzHqYd-f0eU.jpg
   metrics:
     likes: 3
@@ -1706,10 +1943,12 @@ entries:
   - time-crisis
   - game-agent
 - name: Jev plays UNO
+  name_zh: Jev 玩 UNO
   url: https://www.reddit.com/r/typesafe_ai/comments/1wiswxr/jev_plays_uno_and_beats_me/
   kind: reddit
   author: hiImMate
   description: Simple UNO game where one human plays against three Jev opponents, each given different instructions, with moves returned as fast as a hardcoded AI.
+  description_zh: 简单的 UNO 游戏：一名人类对战三个 Jev 对手，每个对手拿到的指令各不相同，出牌速度和硬编码 AI 一样快。
   image: https://external-preview.redd.it/MDdndjA3eWxzMnFoMUJOWPu6KucJdZQlotOh3EBny2btI-yDfvlTONzGGTzb.png?format=pjpg&auto=webp&s=183ec2605bc04c4982a8b3fdf92ae12132c9fca1
   metrics:
     points: 8
@@ -1718,11 +1957,14 @@ entries:
   - uno
   - card-game
 - name: Jev plays Vampire Survivors
+  name_zh: Jev 玩 Vampire Survivors
   url: https://github.com/oldmoldycake/jev_vampire_survivors
   kind: repo
   author: oldmoldycake
   description: BepInEx plugin plus Python brain that lets Jev play the real Steam game, picking the character, stage, every level-up, and walking direction four times a second, with a live dashboard.
+  description_zh: BepInEx 插件加 Python 大脑，让 Jev 玩真正的 Steam 版游戏：选择角色、关卡和每次升级，并以每秒四次的频率决定行走方向，附带实时仪表盘。
   jev: Game state is turned into plain-English questions; no game-specific strategy is hard-coded.
+  jev_zh: 游戏状态被转换成简单的英文问题；没有硬编码任何针对这款游戏的策略。
   image: https://external-preview.redd.it/dWUzcjQ5cjkxZnFoMWL026_E1HhdGexzA7VRvD--pc7oUJywn19Lddex_9NQ.png?format=pjpg&auto=webp&s=5a373e6177ec43dbe016271a05c85291cb4dcb91
   metrics:
     stars: 5
@@ -1735,10 +1977,12 @@ entries:
   - game-agent
   - modding
 - name: Jev Pokemon shiny hunter
+  name_zh: Jev 刷闪光 Pokemon
   url: https://x.com/luckeyfaraday/status/2100955913913774437
   kind: post
   author: luckeyfaraday
   description: Autonomous loop in Pokemon FireRed where Jev resets, checks the starter Pokemon and repeats until it finds a shiny, after earlier beating Brock in under 5 minutes.
+  description_zh: Pokemon FireRed 里的自主循环：Jev 反复重置、检查初始 Pokemon，直到遇到闪光为止；此前它已在不到 5 分钟内击败 Brock。
   image: https://pbs.twimg.com/amplify_video_thumb/2100955835597811712/img/SWhMkCyUZC_SrjmK.jpg
   metrics:
     likes: 14
@@ -1754,6 +1998,7 @@ entries:
   kind: repo
   author: ably-labs
   description: Browser Pong where the ball moves one step per model decision, pitting Jev against LLMs through Vercel AI Gateway, with every player and agent connected over an Ably channel.
+  description_zh: 浏览器版 Pong：模型每做一次决策球就移动一步，通过 Vercel AI Gateway 让 Jev 与各家 LLM 对战，所有玩家和 agent 都经由 Ably 频道连接。
   image: https://raw.githubusercontent.com/ably-labs/jev-pong/main/public/media/clip-wide.gif
   date: '2026-09-17'
   links:
@@ -1768,6 +2013,7 @@ entries:
   kind: repo
   author: MartinPuli
   description: Racing showcase where Jev drives five cars on unknown procedural circuits, with ten driver prompts, 30 recorded races, 3D replays, and a leaderboard comparing strategies.
+  description_zh: 赛车展示：Jev 在陌生的程序化生成赛车道上驾驶五辆车，配有十种车手提示词、30 场录制比赛、3D 回放，以及比较不同策略的排行榜。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -1777,10 +2023,12 @@ entries:
   - racing
   - simulation
 - name: Jev puzzle solver at scale
+  name_zh: 大规模 Jev 解谜器
   url: https://x.com/ashkans_dev/status/2101014737383206914
   kind: post
   author: ashkans_dev
   description: Jev solving a batch of logic games at scale, with Sudoku taking noticeably longer than the rest.
+  description_zh: Jev 大规模批量解逻辑游戏，其中数独明显比其他游戏耗时更长。
   image: https://pbs.twimg.com/amplify_video_thumb/2101014607875686400/img/MsxqI3XpdHm0XxmL.jpg
   metrics:
     likes: 1
@@ -1794,7 +2042,9 @@ entries:
   kind: repo
   author: russellballestrini
   description: Battleship targeting player in the OpenCompletion multi-user LLM playground that fuses an exact placement-density grid with one Jev decision per turn over the top candidate cells, benchmarked in a five-admiral arena.
+  description_zh: OpenCompletion 多用户 LLM playground 中的海战棋瞄准玩家：把精确的舰船放置密度网格与每回合一次、针对最佳候选格的 Jev 决策融合，并在五名舰队司令的竞技场里做基准测试。
   jev: A choice over the top 6 candidate cells plus a choice on the wounded ship's orientation, fused with the grid at weight 0.4; fails open to the grid alone.
+  jev_zh: 对前 6 个候选格做一次选择，再对受伤舰船的朝向做一次选择，以 0.4 的权重与网格融合；Jev 出错时退回只用网格。
   metrics:
     repo_stars: 41
   date: '2023-10-28'
@@ -1809,6 +2059,7 @@ entries:
   kind: repo
   author: studioigor
   description: Unity real-time strategy game where each unit's actions and routes and the enemy commander's strategy come from Jev, with no hidden local AI fallback.
+  description_zh: Unity 即时战略游戏：每个单位的行动和路线、敌方指挥官的战略都来自 Jev，没有暗藏本地 AI 兜底。
   image: https://raw.githubusercontent.com/studioigor/jev-rts-assets/main/Documentation~/preview.jpg
   metrics:
     stars: 11
@@ -1821,10 +2072,12 @@ entries:
   - rts
   - unity
 - name: Jev Rubik's cube solver
+  name_zh: Jev 魔方求解器
   url: https://x.com/gdechichi/status/2102144051197915162
   kind: post
   author: gdechichi
   description: Demo of Jev solving a Rubik's cube on its own, choosing each move step by step the way a human solver would.
+  description_zh: Jev 独立还原魔方的演示，像人类玩家那样一步步选出每一次转动。
   image: https://pbs.twimg.com/amplify_video_thumb/2102143877465747456/img/-3xenQD1bCHR_uyz.jpg
   metrics:
     likes: 97
@@ -1838,6 +2091,7 @@ entries:
   kind: repo
   author: iammusham
   description: Snake environment where the Python engine owns the rules and Jev picks the direction from structured state every tick, with a browser human baseline and a pygame client; the engine never overrides Jev's choice.
+  description_zh: 贪吃蛇环境：Python 引擎负责规则，Jev 每个 tick 根据结构化状态选择方向，附带浏览器端的人类基线和 pygame 客户端；引擎从不推翻 Jev 的选择。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -1849,6 +2103,7 @@ entries:
   kind: repo
   author: tubone24
   description: 'WebGL card game Speed against a CPU whose brain is Jev, built to show decision speed and accuracy live: each turn asks one Noul per hand-and-pile combination and a Choice for the move, with code enforcing the rules.'
+  description_zh: WebGL 卡牌游戏 Speed，对手 CPU 的大脑是 Jev，用来实时展示决策速度和准确率：每回合为每种手牌与牌堆的组合各问一个 Noul，再用一个 Choice 决定出牌，规则由代码保证。
   metrics:
     stars: 1
   date: '2026-09-19'
@@ -1863,6 +2118,7 @@ entries:
   kind: post
   author: tubone24
   description: Browser version of the card game Speed where you race a Jev-driven opponent that judges which cards can be played, now opened to the public.
+  description_zh: 卡牌游戏 Speed 的浏览器版，你要和一个由 Jev 驱动、会判断哪些牌能出的对手比拼速度，现已向公众开放。
   image: https://pbs.twimg.com/amplify_video_thumb/2101298908085542912/img/Ho45fT01CQhB3ljm.jpg
   metrics:
     likes: 167
@@ -1879,6 +2135,7 @@ entries:
   kind: repo
   author: inteligenciamilgrau
   description: Portuguese visual workbench for wiring Jev decision funnels by drag and drop, where each node asks Jev questions and each answer links to another node or a game action, with live probabilities on the wires.
+  description_zh: 葡萄牙语可视化工作台，用拖拽方式搭建 Jev 决策漏斗：每个节点向 Jev 提问，每个答案连到另一个节点或一个游戏动作，连线上实时显示概率。
   image: https://raw.githubusercontent.com/inteligenciamilgrau/jevstudio/main/docs/jevstudio.png
   metrics:
     stars: 4
@@ -1895,6 +2152,7 @@ entries:
   kind: repo
   author: thelau
   description: Tetris where code finds every reachable placement, including tucks and spins, and describes each as a sentence; Jev picks one via a Choice and the board glows with its full probability distribution.
+  description_zh: 俄罗斯方块：代码找出所有可达的落点（包括塞缝和旋转），并把每个落点描述成一句话；Jev 用一个 Choice 选出一个，棋盘会按完整的概率分布发光。
   image: https://raw.githubusercontent.com/thelau/jev-tetris/main/docs/stills/states/3-decided-desktop.png
   metrics:
     stars: 1
@@ -1907,6 +2165,7 @@ entries:
   kind: post
   author: wellback000
   description: Tetris game played by Jev, shown in a short video.
+  description_zh: 由 Jev 来玩的俄罗斯方块游戏，以短视频展示。
   image: https://pbs.twimg.com/amplify_video_thumb/2101930824686096384/img/1gqQc_5FgU_1NRJk.jpg
   metrics:
     views: 39
@@ -1914,10 +2173,12 @@ entries:
   tags:
   - tetris
 - name: Jev Tetris agent
+  name_zh: Jev 俄罗斯方块 agent
   url: https://x.com/MarcelooMendes/status/2100969755318370699
   kind: post
   author: MarcelooMendes
   description: Tetris agent driven by Jev, shown playing in a short video.
+  description_zh: 由 Jev 驱动的俄罗斯方块 agent，短视频展示了它的实际玩法。
   image: https://pbs.twimg.com/amplify_video_thumb/2100969618235969537/img/9azLB1IGbF6hoY1a.jpg
   metrics:
     likes: 4
@@ -1926,11 +2187,14 @@ entries:
   tags:
   - tetris
 - name: Jev Tetris autoplayer
+  name_zh: Jev 俄罗斯方块自动玩家
   url: https://x.com/lostingz001/status/2101934790018773143
   kind: post
   author: lostingz001
   description: Chinese Tetris demo where each turn packs the board, holes and legal placements into JSON and one Jev request answers rotation and column, whether to hold, and a 0-4 danger score, at about 300ms per step.
+  description_zh: 中文俄罗斯方块演示：每回合把棋盘、空洞和合法落点打包成 JSON，一次 Jev 请求就回答旋转和列、是否暂存以及 0-4 的危险分数，每步约 300 毫秒。
   jev: One Choice for placement, one Noul for hold and one Score for danger per request.
+  jev_zh: 每次请求包含一个决定落点的 Choice、一个决定是否暂存的 Noul 和一个评估危险度的 Score。
   image: https://pbs.twimg.com/amplify_video_thumb/2101933405248393216/img/l-Lqqy3OEdaBJxTc.jpg
   metrics:
     likes: 1
@@ -1940,10 +2204,12 @@ entries:
   - tetris
   - choice-noul-score
 - name: Jev Tetris placement
+  name_zh: Jev 选俄罗斯方块落点
   url: https://x.com/ziwenxu_/status/2100984628811084144
   kind: post
   author: ziwenxu_
   description: Tetris hookup where, for every piece, Jev looks at the board and all landing spots and picks one in about half a second, with a whole game costing under half a cent.
+  description_zh: 接入俄罗斯方块：每来一个方块，Jev 查看棋盘和所有落点，在约半秒内选出一个，一整局花费不到半美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100984324447203329/img/R3W7PNHwrMyOm7cK.jpg
   metrics:
     likes: 21
@@ -1952,11 +2218,14 @@ entries:
   tags:
   - tetris
 - name: Jev Ultima Online combat AI
+  name_zh: Jev 版 Ultima Online 战斗 AI
   url: https://www.youtube.com/watch?v=cP-GWKteHKo
   kind: video
   author: John
   description: Ultima Online bot where Jev replaces scripted combat loops, choosing tile positions, when to flee or pursue, where to explore, and what to loot, with a live state UI.
+  description_zh: Ultima Online 机器人，由 Jev 取代脚本化的战斗循环，选择站位格子、何时逃跑或追击、去哪探索以及捡什么战利品，并有实时状态界面。
   jev: A tilePriority question for positioning plus decisions on escape, pursuit, and loot.
+  jev_zh: 用一个 tilePriority 问题决定站位，另有逃跑、追击和拾取战利品的决策。
   metrics:
     views: 1591
     likes: 13
@@ -1966,10 +2235,12 @@ entries:
   - ultima-online
   - game-ai
 - name: Jev vs 3 models at Flappy Bird
+  name_zh: Jev 对战 3 个模型玩 Flappy Bird
   url: https://x.com/anshnanda/status/2100611596859093082
   kind: post
   author: anshnanda
   description: Flappy Bird match between Jev and three other AI models playing simultaneously.
+  description_zh: Jev 与另外三个 AI 模型同时玩 Flappy Bird 的比赛。
   image: https://pbs.twimg.com/amplify_video_thumb/2100611414746644481/img/E5GtDSrVTj1b3VBq.jpg
   metrics:
     likes: 347
@@ -1979,10 +2250,12 @@ entries:
   - flappy-bird
   - comparison
 - name: Jev vs Claude and GPT at Tetris
+  name_zh: Jev 对战 Claude 和 GPT 玩俄罗斯方块
   url: https://x.com/otani_ai_memo/status/2100784295329886614
   kind: article
   author: otani_ai_memo
   description: Japanese article pitting Jev against Claude and GPT in head-to-head Tetris and Puyo Puyo, where Jev won all 14 matches, and arguing that well-designed questions bring its judgments to top-LLM level.
+  description_zh: 日语文章：让 Jev 与 Claude 和 GPT 在俄罗斯方块和 Puyo Puyo 中正面对决，Jev 赢下全部 14 场，文章认为设计得好的问题能让它的判断达到顶级 LLM 的水平。
   image: https://pbs.twimg.com/media/HSdu9l7bMAAkWhh.jpg
   metrics:
     likes: 18
@@ -1997,10 +2270,12 @@ entries:
   - puyo-puyo
   - benchmark
 - name: Jev vs Fable 5.1 vs GPT-6 Astra chess
+  name_zh: Jev 对战 Fable 5.1 和 GPT-6 Astra 下棋
   url: https://x.com/aimlapi/status/2100372930282573876
   kind: post
   author: aimlapi
   description: 'Blitz chess at 5+0 with one API call per move: Jev lost on material to Fable 5.1 but won on time at ~2.6s per move, and was mated by GPT-6 Astra in 18 moves.'
+  description_zh: 5+0 快棋，每步一次 API 调用：Jev 对 Fable 5.1 子力落后，但凭约 2.6 秒一步的速度赢在对手超时；对 GPT-6 Astra 则在 18 步内被将死。
   image: https://pbs.twimg.com/amplify_video_thumb/2100371773275406336/img/NmHPy0pAprSsC6Gi.jpg
   metrics:
     likes: 2298
@@ -2010,10 +2285,12 @@ entries:
   - chess
   - comparison
 - name: Jev vs GLM 5.3 at chess
+  name_zh: Jev 对战 GLM 5.3 下棋
   url: https://x.com/nutlope/status/2101010773157761481
   kind: post
   author: nutlope
   description: 'Chess game between Jev and GLM 5.3: GLM won by checkmate in 29 moves, but Jev took ~0.3s and under $0.0001 per move versus ~5.8s and ~$0.008, for 24 cents total.'
+  description_zh: Jev 与 GLM 5.3 的一盘棋：GLM 在 29 步内将死获胜，但 Jev 每步约 0.3 秒、不到 $0.0001，对方则约 5.8 秒、约 $0.008，整盘共花 24 美分。
   image: https://pbs.twimg.com/amplify_video_thumb/2101007875644506112/img/2KoYEIDaUkXehsRC.jpg
   metrics:
     likes: 320
@@ -2023,10 +2300,12 @@ entries:
   - chess
   - comparison
 - name: Jev vs Jev blackjack
+  name_zh: Jev 对 Jev 玩二十一点
   url: https://x.com/Blueprint_Biz/status/2100728329003303146
   kind: post
   author: Blueprint_Biz
   description: Blackjack demo where one Jev counts cards and wins until a second Jev playing the pit boss steps in.
+  description_zh: 二十一点演示：一个 Jev 记牌并一路赢钱，直到另一个扮演赌场主管的 Jev 出面干预。
   image: https://pbs.twimg.com/amplify_video_thumb/2100728041320189952/img/ZYUxcdFhFprJlPuc.jpg
   metrics:
     likes: 15
@@ -2036,10 +2315,12 @@ entries:
   - blackjack
   - multi-agent
 - name: Jev vs Jev chess
+  name_zh: Jev 对 Jev 下棋
   url: https://github.com/TholeG/typesafe-chess
   kind: repo
   author: TholeG
   description: Chess between two Jev players where each move is a Choice over the legal moves, alongside a position Score and a sharpness Noul, with an optional AlphaZero-style MCTS using those distributions.
+  description_zh: 两个 Jev 棋手对弈：每一步都是对合法走法的一个 Choice，同时给出局面 Score 和尖锐度 Noul，还可选用基于这些分布的 AlphaZero 式 MCTS。
   image: https://raw.githubusercontent.com/TholeG/typesafe-chess/main/docs/screenshot.png
   date: '2026-09-17'
   tags:
@@ -2047,10 +2328,12 @@ entries:
   - mcts
   - self-play
 - name: Jev vs Laya in Doom
+  name_zh: Jev 对战 Laya 玩 Doom
   url: https://x.com/hope_rythmn/status/2102178634870264308
   kind: post
   author: hope_rythmn
   description: 'Doom deathmatch (1v1) between Jev and the open Laya model: Jev''s calls were sharper and needed a third of the corrections, but Laya decided twice as often and won 5-1.'
+  description_zh: Jev 与开源模型 Laya 的 Doom 1v1 死亡竞赛：Jev 的判断更精准，所需纠正只有对方的三分之一，但 Laya 的决策频率是它的两倍，最终以 5-1 获胜。
   image: https://pbs.twimg.com/amplify_video_thumb/2102176531561017344/img/DerBafmiiy-MnwvO.jpg
   metrics:
     likes: 8
@@ -2061,10 +2344,12 @@ entries:
   - laya
   - deathmatch
 - name: Jev vs LLMs at Connect4
+  name_zh: Jev 对战 LLM 玩 Connect4
   url: https://x.com/JamesWard/status/2101176408584098146
   kind: post
   author: JamesWard
   description: Connect4-style game that pits Jev against LLMs, where Jev plays better, faster, cheaper and more reliably.
+  description_zh: 类 Connect4 游戏，让 Jev 与 LLM 对战，Jev 下得更好、更快、更便宜，也更稳定。
   image: https://pbs.twimg.com/tweet_video_thumb/HSje2ycXIAA5EET.jpg
   metrics:
     likes: 21
@@ -2077,10 +2362,12 @@ entries:
   - connect4
   - model-comparison
 - name: Jev vs Maia-1100
+  name_zh: Jev 对战 Maia-1100
   url: https://x.com/MarcosPimi/status/2102079921388409005
   kind: post
   author: MarcosPimi
   description: 'Ten chess games against Lichess''s beginner-style Maia-1100 bot: Jev scored just 0.5, finding the best check 100% of the time but the best quiet move only 39%.'
+  description_zh: 与 Lichess 上模仿初学者风格的 Maia-1100 机器人下了十盘棋：Jev 只拿到 0.5 分，找到最佳将军的比例是 100%，找到最佳安静着法的比例却只有 39%。
   metrics:
     views: 25
   date: '2026-09-21'
@@ -2089,10 +2376,12 @@ entries:
   - maia
   - analysis
 - name: Jev vs OpenJev FPS
+  name_zh: Jev 对战 OpenJev 的 FPS
   url: https://x.com/Neel490/status/2101028527978020920
   kind: post
   author: Neel490
   description: First-person shooter in the browser where Jev fights OpenJev, an open Jev-compatible API running Qwen on SGLang.
+  description_zh: 浏览器里的第一人称射击游戏，Jev 对战 OpenJev，后者是一个在 SGLang 上运行 Qwen 的开源 Jev 兼容 API。
   image: https://pbs.twimg.com/amplify_video_thumb/2101028423032287232/img/CPjw3sVj_6rRvJ__.jpg
   metrics:
     likes: 71
@@ -2107,10 +2396,12 @@ entries:
   - openjev
   - comparison
 - name: Jev vs Opus 5 in Pokémon
+  name_zh: Jev 对战 Opus 5 打 Pokémon
   url: https://x.com/sid19arya0/status/2100458351440048258
   kind: post
   author: sid19arya0
   description: Competitive Pokémon battle between Jev and Opus 5 that Jev won, spending $0.0029 and 37s against $2.35 and 6m 29s.
+  description_zh: Jev 与 Opus 5 的 Pokémon 竞技对战，Jev 获胜，花费 $0.0029、用时 37 秒，对方则花费 $2.35、用时 6 分 29 秒。
   image: https://pbs.twimg.com/amplify_video_thumb/2100458327918395392/img/vdl_EhR4xNaDDN1-.jpg
   metrics:
     likes: 5
@@ -2120,10 +2411,12 @@ entries:
   - pokemon
   - game-agent
 - name: Jev vs Sonnet chess
+  name_zh: Jev 对战 Sonnet 下棋
   url: https://x.com/mizchi/status/2100615604386562430
   kind: post
   author: mizchi
   description: Chess matches between Sonnet and Jev in which Jev won every game.
+  description_zh: Sonnet 与 Jev 的国际象棋对局，Jev 赢下了每一盘。
   metrics:
     likes: 592
     views: 70359
@@ -2132,10 +2425,12 @@ entries:
   - chess
   - comparison
 - name: Jev vs. Jev Ultima Online duels
+  name_zh: Jev 对 Jev 的 Ultima Online 决斗
   url: https://www.reddit.com/r/ultimaonline/comments/1wkylbr/jev_ai_vs_jev_ai_ultima_online_duels/
   kind: reddit
   author: autorokk
   description: Two Jev agents duel each other in Ultima Online, with the model choosing every spell and movement.
+  description_zh: 两个 Jev agent 在 Ultima Online 里互相决斗，每个法术和每次移动都由模型选择。
   image: https://external-preview.redd.it/BpPYrpIM8bOMMG3ZopGyhElvJ2UQa9p94nEM0yHe-ak.jpeg?auto=webp&s=049d66cdc9b33ad6888d38f34eeef3d5ecc1ea0b
   metrics:
     points: 37
@@ -2146,10 +2441,12 @@ entries:
   - mmo
   - pvp
 - name: Jev Werewolf game
+  name_zh: Jev 狼人杀游戏
   url: https://x.com/tateko_ai/status/2102073216680546670
   kind: post
   author: tateko_ai
   description: Werewolf (social deduction) game built with Jev right after a gakuse.ai study session on using Jev inside agent harnesses.
+  description_zh: 用 Jev 做的狼人杀（社交推理）游戏，是在 gakuse.ai 一场关于如何在 agent harness 里使用 Jev 的学习会之后马上做出来的。
   image: https://pbs.twimg.com/media/HSwQDMIaEAIbJtV.jpg?name=orig
   metrics:
     likes: 1
@@ -2159,10 +2456,12 @@ entries:
   - werewolf
   - social-deduction
 - name: Jev Wikipedia speedrun
+  name_zh: Jev 维基百科速通
   url: https://x.com/GreenCodeCodes/status/2102118562663903413
   kind: post
   author: GreenCodeCodes
   description: Wikipedia speedrun where models race from one page to another using only internal links; LLMs averaged 5-10s per step a year ago while Jev takes under 1s.
+  description_zh: 维基百科速通：模型只能靠站内链接从一个页面跑到另一个页面；一年前 LLM 平均每步要 5-10 秒，而 Jev 不到 1 秒。
   image: https://pbs.twimg.com/media/HSw5lBbXsAAxQbF.jpg?name=orig
   metrics:
     likes: 15
@@ -2176,6 +2475,7 @@ entries:
   kind: post
   author: vansitha12
   description: Browser fighting game where Jev learns your habits, predicts your next move before you make it, and roasts your fighting style.
+  description_zh: 浏览器格斗游戏：Jev 学习你的习惯，在你出招前预测你的下一步，还会吐槽你的打法。
   image: https://pbs.twimg.com/amplify_video_thumb/2100933946947272704/img/AKeg-wfMbeMHzL-d.jpg
   metrics:
     likes: 60
@@ -2192,7 +2492,9 @@ entries:
   kind: repo
   author: webdevcody
   description: Three.js FPV garden game where a glowing fly hunts wandering goblins, with Jev choosing its heading and dive about five times per second.
+  description_zh: Three.js FPV 花园游戏：一只发光的苍蝇追猎四处游荡的哥布林，由 Jev 以每秒约五次的频率选择它的航向和俯冲。
   jev: Jev gets the target's bearing, its angle below the horizon, line-of-sight blockers and safe climb angles, and picks the flight command.
+  jev_zh: Jev 拿到目标的方位、目标在地平线以下的角度、视线遮挡物和安全爬升角度，然后选出飞行指令。
   image: https://raw.githubusercontent.com/webdevcody/jevs-fly/main/screenshots/jevs-fly.png
   metrics:
     stars: 12
@@ -2210,6 +2512,7 @@ entries:
   kind: repo
   author: bebe0307mz
   description: Overcooked-style 3D kitchen where four chefs are driven one decision at a time by Jev or frontier LLMs, with a broadcast HUD showing each policy distribution, latency and token cost, plus a benchmark mode.
+  description_zh: Overcooked 风格的 3D 厨房：四名厨师由 Jev 或前沿 LLM 一次一个决策地驱动，直播式 HUD 显示每个策略的分布、延迟和 token 成本，另有基准测试模式。
   date: '2026-09-18'
   links:
     app: https://jevs-kitchen-chaos.vercel.app
@@ -2222,6 +2525,7 @@ entries:
   kind: app
   author: notque
   description: Simulation in which four Jev-driven developers in a 3D office claim tickets, code, review, deploy and fight fires, with live probability bars, latency and cost per decision.
+  description_zh: 模拟游戏：3D 办公室里四名由 Jev 驱动的开发者认领工单、写代码、做评审、部署和救火，每次决策都实时显示概率条、延迟和成本。
   tags:
   - simulation
   - agents
@@ -2230,6 +2534,7 @@ entries:
   kind: repo
   author: mintannn
   description: Twenty-questions game that guesses your persona, home region in Japan, and age, stopping once Jev's calibrated confidence crosses a threshold and admitting it cannot tell after twelve questions.
+  description_zh: 二十问游戏，猜你的人设、在日本的家乡地区和年龄；Jev 的校准置信度一越过阈值就停止，问满十二个问题仍判断不了时会坦白说猜不出。
   image: https://raw.githubusercontent.com/mintannn/jev-asks-until-sure/main/public/demo.gif
   date: '2026-09-20'
   links:
@@ -2243,7 +2548,9 @@ entries:
   kind: repo
   author: phuhao00
   description: 'Game "intuition" service that replaces the condition and selector nodes of NPC behavior trees with Jev: one Choice picks a tactic the game can execute, while Score and yes/no gauges report threat and timing.'
+  description_zh: 游戏“直觉”服务，用 Jev 替换 NPC 行为树中的条件节点和选择器节点：一个 Choice 选出游戏能执行的战术，Score 和是非量表则报告威胁程度和时机。
   jev: Called via AI SDK experimental_evaluate; low confidence keeps the previous tactic so NPCs do not flip every tick.
+  jev_zh: 通过 AI SDK 的 experimental_evaluate 调用；置信度低时沿用上一个战术，避免 NPC 每个 tick 都来回切换。
   date: '2026-09-19'
   tags:
   - npc
@@ -2254,6 +2561,7 @@ entries:
   kind: repo
   author: komikat
   description: Terminal tool for Wikipedia link races that finds a path between two English articles, with Chromium reading pages, Jev ranking their outgoing links and Python running the search, shown live with scores and timings.
+  description_zh: 维基百科链接竞速的终端工具，在两篇英文文章之间找路径：Chromium 读取页面，Jev 给页面外链排序，Python 负责搜索，并实时显示分数和耗时。
   image: https://raw.githubusercontent.com/komikat/jev-bfs/main/docs/demo.png
   date: '2026-09-17'
   tags:
@@ -2265,7 +2573,9 @@ entries:
   kind: repo
   author: hemanth
   description: Chess library that resolves natural-language move intents into legal moves, evaluates candidate moves on sharpness, themes, and king risk, and plays persona-based opponents.
+  description_zh: 国际象棋库：把自然语言的走棋意图解析成合法走法，从尖锐度、主题和王的风险等方面评估候选走法，还能扮演基于人设的对手。
   jev: Choice over verified legal moves, plus a single call scoring candidates on four dimensions; low confidence returns alternatives.
+  jev_zh: 对已验证的合法走法做 Choice，另用一次调用从四个维度给候选走法打分；置信度低时返回备选方案。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -2280,6 +2590,7 @@ entries:
   kind: repo
   author: hazlema
   description: Web Connect Four against Jev with nine swappable query strategies for the same model, a live inspector grading every answer against engine ground truth, and a match runner playing 100 games a minute.
+  description_zh: 网页版四子棋对战 Jev，同一模型有九种可切换的查询策略，实时检查器用引擎真值给每个答案打分，对局运行器每分钟能下 100 局。
   image: https://raw.githubusercontent.com/hazlema/jev-connect4/main/c4.png
   metrics:
     stars: 1
@@ -2288,10 +2599,12 @@ entries:
   - connect-four
   - prompting
 - name: Jev-driven 3D character
+  name_zh: Jev 驱动的 3D 角色
   url: https://x.com/winebaizou/status/2101994437002072365
   kind: post
   author: winebaizou
   description: Animated 3D character whose facial expressions and body reactions are chosen by Jev, responding when you talk to it and changing expression while you watch YouTube together.
+  description_zh: 动画 3D 角色，面部表情和身体反应由 Jev 选择，你和它说话时会回应，一起看 YouTube 时表情也会随之变化。
   image: https://pbs.twimg.com/amplify_video_thumb/2101994292646760448/img/eJb-OBlF4mqf3si9.jpg
   metrics:
     likes: 2
@@ -2310,7 +2623,9 @@ entries:
   kind: repo
   author: mittal-parth
   description: Jev plays the real chrome://dino game and a local Krunker-style shooter arena from code-read state, with an inspector showing state, answers and actions for each tick.
+  description_zh: Jev 根据代码读出的状态玩真正的 chrome://dino 游戏和一个本地 Krunker 风格射击竞技场，检查器展示每个 tick 的状态、答案和动作。
   jev: One request per tick with the action, speculative jump/duck and an urgency Score in parallel.
+  jev_zh: 每个 tick 一次请求，并行询问动作、推测性的跳跃/下蹲，以及一个紧迫度 Score。
   date: '2026-09-17'
   tags:
   - chrome-dino
@@ -2320,6 +2635,7 @@ entries:
   kind: repo
   author: Eniip
   description: Experiments driving real-time games, starting with Brotato, where Jev makes every-frame choices over eight compass directions described in words and a slower Claude strategist handles long-term plans via MCP.
+  description_zh: 驱动实时游戏的实验，从 Brotato 开始：Jev 每帧在八个用文字描述的罗盘方向中做选择，较慢的 Claude 策略师通过 MCP 负责长期规划。
   metrics:
     stars: 14
   date: '2026-09-19'
@@ -2331,7 +2647,9 @@ entries:
   kind: repo
   author: newuser7171
   description: Game-playing agent for Windows PC games and Android phones that captures gameplay, pairs local Laya reflexes with Jev strategy, and sends inputs, with adapters for Clash Royale, chess, Dino, and card games.
+  description_zh: 面向 Windows PC 游戏和 Android 手机的游戏 agent：捕获游戏画面，把本地 Laya 的反射式反应和 Jev 的策略结合起来，再发送输入，内置 Clash Royale、国际象棋、Dino 和卡牌游戏的适配器。
   jev: Choice, Score, and Noul questions for strategic moves, with local Laya for fast reactions.
+  jev_zh: 用 Choice、Score 和 Noul 问题做策略性决策，本地 Laya 负责快速反应。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -2344,7 +2662,9 @@ entries:
   kind: repo
   author: XieChengYuan
   description: Chinese 15x15 gomoku lab running nine boards at once where two Jev players swap colors under different input schemes, with every request, option probability and move inspectable and a key-free replay.
+  description_zh: 中文 15x15 五子棋实验室，同时运行九个棋盘，两个 Jev 棋手在不同输入方案下交换执子颜色，每次请求、每个选项的概率和每一步都可查看，并提供无需 key 的回放。
   jev: A Choice over locally generated candidate moves per turn, called through OpenRouter's Decisions API.
+  jev_zh: 每回合对本地生成的候选走法做一个 Choice，通过 OpenRouter 的 Decisions API 调用。
   image: https://raw.githubusercontent.com/XieChengYuan/jev-gomoku/main/docs/gameplay.png
   metrics:
     stars: 1
@@ -2360,6 +2680,7 @@ entries:
   kind: repo
   author: mizchi
   description: MoonBit playground with a System One API client, a one-shot question CLI, a CLI where two Jev players play gomoku by choosing among candidate cells each move, and a tool that turns game logs into real-time GIFs.
+  description_zh: MoonBit 练习场，包含一个 System One API 客户端、一个一次性提问的 CLI、一个让两个 Jev 棋手每步从候选格中选择来下五子棋的 CLI，以及一个把对局日志转成实时 GIF 的工具。
   image: https://raw.githubusercontent.com/mizchi/jev-gomoku/main/gomoku.gif
   date: '2026-09-17'
   links:
@@ -2373,7 +2694,9 @@ entries:
   kind: repo
   author: milanboers
   description: Autonomous Pokémon Red agent on the PyBoy emulator that turns game RAM and on-screen dialog into a text snapshot and has Jev pick each button press.
+  description_zh: 在 PyBoy 模拟器上运行的自主 Pokémon Red agent，把游戏 RAM 和屏幕对话转成文本快照，由 Jev 选择每一次按键。
   jev: Parallel yes/no Nouls per candidate button each turn; code picks the strongest safe press, and the harness re-injects short-term memory since Jev keeps no history.
+  jev_zh: 每回合为每个候选按键并行问一个是非 Noul；代码选出最强且安全的按键，由于 Jev 不保留历史，harness 会重新注入短期记忆。
   metrics:
     stars: 4
   date: '2026-09-17'
@@ -2385,6 +2708,7 @@ entries:
   kind: repo
   author: zbloss
   description: Pokemon-playing agent in the style of Claude Plays Pokemon where Jev chooses the actions, with a local viewer that streams the game video beside a live decision sidebar.
+  description_zh: 仿照 Claude Plays Pokemon 的 Pokemon agent，由 Jev 选择动作，附带本地查看器，在实时决策侧栏旁串流游戏画面。
   date: '2026-09-17'
   tags:
   - pokemon
@@ -2394,7 +2718,9 @@ entries:
   kind: repo
   author: valentynkit
   description: Pokémon Red agent on PyBoy where Python owns the route and arithmetic and Jev chooses among the legal actions at real branches in about 100 ms.
+  description_zh: PyBoy 上的 Pokémon Red agent：路线和算术由 Python 负责，Jev 只在真正的分岔点从合法动作中做选择，耗时约 100 毫秒。
   jev: A Choice over legal actions at each branch; battle turns add faints_this_turn and should_flee Nouls, and failures fall back to a code default.
+  jev_zh: 每个分岔点对合法动作做一个 Choice；战斗回合额外加上 faints_this_turn 和 should_flee 两个 Noul，失败时回退到代码默认值。
   image: https://raw.githubusercontent.com/valentynkit/jev-plays-pokemon-red/main/demo/overlay.gif
   metrics:
     stars: 6
@@ -2407,7 +2733,9 @@ entries:
   kind: repo
   author: trungdq88
   description: Real-time Tetris battle where Jev plays Claude Haiku 4.5, Gemini 3.8 Flash or the open-weight Laya on the same piece sequence, and a missed deadline locks the piece wherever it falls.
+  description_zh: 实时俄罗斯方块对战：Jev 与 Claude Haiku 4.5、Gemini 3.8 Flash 或开放权重的 Laya 在相同的方块序列上对决，没赶上截止时间的方块会就地锁定。
   jev: One Choice over column and rotation as soon as each piece spawns.
+  jev_zh: 每个方块一出现，就对列和旋转做一个 Choice。
   image: https://raw.githubusercontent.com/trungdq88/jev-tetris/main/docs/battle.png
   metrics:
     stars: 12
@@ -2427,7 +2755,9 @@ entries:
   kind: repo
   author: hectorlcastro09
   description: Winner-stays-on tournament of up to 2,569 animals refereed by Jev; on a laptop 2,000 animals run 1,999 fights in ~16 s at ~7.6 ms per decision and ~US$0.01.
+  description_zh: 由 Jev 当裁判的擂台赛（赢家留场），最多 2,569 种动物参赛；在笔记本上，2,000 种动物约 16 秒打完 1,999 场，每次决策约 7.6 毫秒，花费约 US$0.01。
   jev: Each fight is one Choice between two names under land, water or air rules, batching the champion against the next challengers in one request.
+  jev_zh: 每场对决是在陆地、水域或空中规则下对两个名字做一个 Choice，擂主与接下来的几位挑战者在一次请求里批量比较。
   image: https://raw.githubusercontent.com/hectorlcastro09/jev-torneo-animales/main/docs/torneo.jpg
   date: '2026-09-19'
   tags:
@@ -2438,6 +2768,7 @@ entries:
   kind: repo
   author: Resadan-dev
   description: 'Jev plays Zork I: on every turn Jericho supplies the valid actions and Jev picks one command with a single Choice, with its confidence and an anti-loop policy shown on a French replay dashboard.'
+  description_zh: Jev 玩 Zork I：每一回合由 Jericho 提供有效动作，Jev 用一个 Choice 选出一条指令，法语回放仪表盘会显示它的置信度和防循环策略。
   metrics:
     stars: 1
   date: '2026-09-21'
@@ -2450,6 +2781,7 @@ entries:
   kind: repo
   author: Hardel-DW
   description: 'Minecraft server mod whose bot tries to finish the game from scratch without a scripted route: code observes the world, an LLM strategist is called rarely, and Jev picks action primitives every tick.'
+  description_zh: Minecraft 服务器 mod，其中的机器人不靠预设路线，尝试从零开始通关：代码观察世界，偶尔才调用一次 LLM 策略师，Jev 每个 tick 选择动作原语。
   date: '2026-09-17'
   tags:
   - minecraft
@@ -2460,6 +2792,7 @@ entries:
   kind: repo
   author: KyleKreuter
   description: Browser lab where Jev plays many 2048 games in parallel with one Choice per move, tracking the best score live and letting you edit the state format, board encoding and choice criteria.
+  description_zh: 浏览器实验室：Jev 并行玩多局 2048，每一步一个 Choice，实时追踪最高分，你还可以修改状态格式、棋盘编码和选择标准。
   image: https://raw.githubusercontent.com/KyleKreuter/jev2048/main/demo.gif
   metrics:
     stars: 1
@@ -2472,7 +2805,9 @@ entries:
   kind: repo
   author: erhanmeydan
   description: Agent in which Jev plays 2048 on a real online 2048 site, with one API call per move and the calibrated probability of each of the four directions shown in the terminal.
+  description_zh: 让 Jev 在真实的 2048 在线网站上玩 2048 的 agent，每一步一次 API 调用，终端里显示四个方向各自的校准概率。
   jev: One Choice over up/down/left/right per move.
+  jev_zh: 每一步对上/下/左/右做一个 Choice。
   image: https://raw.githubusercontent.com/erhanmeydan/jev2048/main/docs/demo.gif
   metrics:
     stars: 2
@@ -2485,6 +2820,7 @@ entries:
   kind: repo
   author: raihankhan-rk
   description: Spectator demo where two independent Jev agents play Snake side by side in separate browser contexts using only indexed direction-button clicks, with live probabilities for each move.
+  description_zh: 观战演示：两个独立的 Jev agent 在各自的浏览器上下文里并排玩贪吃蛇，只通过点击带编号的方向按钮操作，每一步都实时显示概率。
   image: https://pbs.twimg.com/amplify_video_thumb/2100951665260240896/img/b0cvD-p11tUYb0DC.jpg
   metrics:
     stars: 2
@@ -2501,6 +2837,7 @@ entries:
   kind: repo
   author: rolki-png
   description: Spectator arena web app where two independent Jev agents play Snake against each other through Vercel AI Gateway, falling back to a labeled demo policy when no key is set.
+  description_zh: 观战竞技场 Web 应用：两个独立的 Jev agent 通过 Vercel AI Gateway 对战贪吃蛇，未设置 key 时回退到一个明确标注的演示策略。
   date: '2026-09-18'
   links:
     app: https://jev-arena-ochre.vercel.app
@@ -2512,7 +2849,9 @@ entries:
   kind: repo
   author: atarikcaliskan
   description: Football match in a 3D stadium where each of the 22 players is its own Jev decision-maker picking among up to 14 locally computed options a few times per second; watch, inspect a player, or take one over.
+  description_zh: 3D 球场里的足球比赛：22 名球员各自是独立的 Jev 决策者，每秒几次从本地算出的最多 14 个选项中挑一个；你可以观战、查看某名球员，或接管其中一名。
   jev: One Choice per player over option IDs such as shoot, pass or press, each with numeric features.
+  jev_zh: 每名球员对射门、传球、逼抢等选项 ID 做一个 Choice，每个选项都带数值特征。
   image: https://raw.githubusercontent.com/atarikcaliskan/jevball/main/public/brand/jevball-mark.svg
   metrics:
     stars: 2
@@ -2529,7 +2868,9 @@ entries:
   kind: repo
   author: leftspace89
   description: 'Pygame Flappy Bird played in real time by Jev: for each new pipe the game simulates a spread of flight paths through the gap and Jev picks which one the bird flies.'
+  description_zh: Jev 实时玩的 Pygame 版 Flappy Bird：每来一根新管道，游戏就模拟出一组穿过缝隙的飞行路径，由 Jev 选出小鸟飞哪一条。
   jev: One Choice over simulated trajectories per pipe, about one API call per pipe; the game schedules every flap of the chosen path.
+  jev_zh: 每根管道对模拟轨迹做一个 Choice，大约每根管道一次 API 调用；所选路径上的每次振翅由游戏安排。
   image: https://raw.githubusercontent.com/leftspace89/JevBird/main/demo/jev_demo.gif
   metrics:
     stars: 5
@@ -2538,10 +2879,12 @@ entries:
   - flappy-bird
   - pygame
 - name: Jevbot in Minecraft
+  name_zh: Minecraft 里的 Jevbot
   url: https://www.reddit.com/r/accelerate/comments/1whk9oy/new_typesafe_ai_jev_model_playing_minecraft_wip/
   kind: reddit
   author: BiasHyperion784
   description: Work-in-progress Minecraft bot driven by Jev over the API, shown fleeing a zombie horde as night falls.
+  description_zh: 仍在开发中的 Minecraft 机器人，通过 API 由 Jev 驱动，视频里它在夜幕降临时逃离一群僵尸。
   image: https://external-preview.redd.it/rAUA75ocfeUfSZ1gdcTcS75zzqqc3caVPjZ-9Cg6WN4.jpeg?auto=webp&s=f440801b7e711af369ec1d1bd01321c017aff07c
   metrics:
     points: 35
@@ -2556,7 +2899,9 @@ entries:
   kind: repo
   author: kt3k
   description: ChatGPT-style chat UI where Jev never writes text but picks the answer from Yes/No, Maybe, Pirate, Tabloid or custom answer sets, and even picks the chat title from fragments of your question.
+  description_zh: ChatGPT 风格的聊天界面，Jev 从不写文字，而是从 Yes/No、Maybe、Pirate、Tabloid 或自定义答案集中挑选回答，连聊天标题都是从你问题的片段里挑出来的。
   jev: Answer styles map to Nouls and Choices; titles are a Choice over Intl.Segmenter fragments, so Japanese works too.
+  jev_zh: 回答风格映射到 Noul 和 Choice；标题是对 Intl.Segmenter 切出的片段做 Choice，所以日语也能用。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -2570,6 +2915,7 @@ entries:
   kind: app
   author: egetheengineer
   description: Livestream of Jev playing VoxeLibre, a Minecraft-style game, unattended for five days, picking the next skill (chop, craft, mine, hunt, build, sleep) from health, hunger, inventory and surroundings.
+  description_zh: Jev 无人值守连续五天玩 Minecraft 风格游戏 VoxeLibre 的直播，它根据生命值、饥饿度、背包和周边环境选择下一个技能（砍树、合成、挖矿、打猎、建造、睡觉）。
   image: https://jevcraft.vercel.app/api/og
   date: '2026-09-21'
   links:
@@ -2583,7 +2929,9 @@ entries:
   kind: repo
   author: daniel4x
   description: 'Jev walks a real Pokémon FireRed ROM: code reads the overworld from RAM and lists reachable destinations, Jev picks one and fights wild encounters, and it has reached Viridian City so far.'
+  description_zh: Jev 在真实的 Pokémon FireRed ROM 里跑图：代码从 RAM 读取大地图并列出可达目的地，Jev 选一个并应对野外遭遇战，目前已到达 Viridian City。
   jev: Typed Choice over reachable destinations and battle moves; code handles pathing and button presses.
+  jev_zh: 对可达目的地和战斗招式做类型化 Choice；寻路和按键由代码处理。
   image: https://raw.githubusercontent.com/daniel4x/JevEmon/main/docs/journey.gif
   metrics:
     stars: 3
@@ -2601,7 +2949,9 @@ entries:
   kind: post
   author: uehaj
   description: Guessing game where you have 7 yes/no questions to find the answer Jev has in mind; this update adds creating and uploading your own genres, with WebMCP so an agent can generate them.
+  description_zh: 猜谜游戏：你有 7 个是非题来找出 Jev 心里想的答案；这次更新支持创建和上传自己的题材，并接入 WebMCP，让 agent 也能生成题材。
   jev: Each yes/no question is answered as a Noul probability about the hidden answer.
+  jev_zh: 每个是非题都以关于隐藏答案的 Noul 概率来回答。
   image: https://pbs.twimg.com/media/HSuNB9IbkAANcp3.jpg?name=orig
   metrics:
     likes: 1
@@ -2618,6 +2968,7 @@ entries:
   kind: repo
   author: Prophetlab
   description: Texas Hold'em benchmark and playground for decision models including Jev, with cash-game and sit-and-go leaderboards, hand replays, advice, and tables to play models or seat your own agent.
+  description_zh: 面向 Jev 等决策模型的德州扑克基准测试和练习场，有现金局和 sit-and-go 排行榜、手牌回放、建议，还能开桌和模型对打，或让你自己的 agent 入座。
   metrics:
     stars: 10
   date: '2026-09-21'
@@ -2629,6 +2980,7 @@ entries:
   kind: post
   author: MartinPulitano
   description: Formula 1 race in 3D with 10 Jev-driven cars, each with its own prompt (attack early, save tires) and only ~42 meters of track visibility, on a generator with over 4 billion seeds.
+  description_zh: 3D F1 比赛，10 辆车由 Jev 驾驶，每辆都有自己的提示词（早早进攻、节省轮胎），前方可视距离只有约 42 米，地图生成器有超过 4B 个种子。
   image: https://pbs.twimg.com/amplify_video_thumb/2101414307133362176/img/S8Xkav3h2mc2hUet.jpg
   metrics:
     likes: 21
@@ -2638,10 +2990,12 @@ entries:
   - racing
   - simulation
 - name: Jevs play Catan
+  name_zh: 多个 Jev 玩 Catan
   url: https://x.com/sachpatro97/status/2101064273187274838
   kind: post
   author: sachpatro97
   description: Fork of a Jev game harness in which several Jev agents play Catan, until they stop negotiating with each other and pass their turns.
+  description_zh: 基于某个 Jev 游戏 harness 的分支，几个 Jev agent 一起玩 Catan，直到它们不再互相谈判、都选择跳过回合。
   image: https://pbs.twimg.com/amplify_video_thumb/2101062907593416704/img/gvJG-NjM4HY5yN6V.jpg
   metrics:
     likes: 8
@@ -2657,7 +3011,9 @@ entries:
   kind: repo
   author: Skyvern-AI
   description: RuneBench fork with a harness that lets Jev play RuneScape through about 50 bounded rs-sdk actions such as fishing, mining, fighting, and trading, with a tick-mode controller and live dashboard.
+  description_zh: RuneBench 的分支，附带让 Jev 通过约 50 个有边界的 rs-sdk 动作（钓鱼、挖矿、战斗、交易等）玩 RuneScape 的 harness，并有 tick 模式控制器和实时仪表盘。
   jev: Choices over the action catalog, tick interventions, and the next polling interval from game state; code executes each action.
+  jev_zh: 根据游戏状态，对动作目录、tick 干预和下一次轮询间隔做 Choice；每个动作由代码执行。
   image: https://raw.githubusercontent.com/Skyvern-AI/jevscape/main/docs/media/cover.jpg
   metrics:
     stars: 8
@@ -2671,7 +3027,9 @@ entries:
   kind: post
   author: dedene
   description: 'Rubik''s cube solver with no solver library: code lists the legal steps for the current stage and Jev picks the best of 12, solving the cube in 17 decisions for about $0.0007.'
+  description_zh: 不依赖求解库的魔方求解器：代码列出当前阶段的合法步骤，Jev 从 12 个中选出最优，用 17 次决策、约 $0.0007 还原魔方。
   jev: One Choice per step over code-generated legal moves, each described in plain language.
+  jev_zh: 每一步对代码生成、并用平实语言描述的合法走法做一个 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2101770557297774592/img/EMCv1Ka0Y1gtwjO-.jpg
   metrics:
     likes: 27
@@ -2688,7 +3046,9 @@ entries:
   kind: post
   author: chiziaruhoma
   description: Town simulation of 120 people, 7 roads and 20 businesses where Jev decides what every resident does, spends and risks each hour, plus council priorities, prices and headlines, then survives zombies and meteors.
+  description_zh: 小镇模拟：120 人、7 条路、20 家商铺，由 Jev 决定每位居民每小时做什么、花多少钱、冒什么险，外加议会优先事项、物价和新闻头条，之后还要熬过僵尸和陨石。
   jev: 20,000+ decisions in under 5 minutes via ~15 batched calls, with no text generated.
+  jev_zh: 通过约 15 次批量调用，在不到 5 分钟内做出 20,000+ 个决策，不生成任何文本。
   image: https://pbs.twimg.com/amplify_video_thumb/2100876059709149184/img/jYoCG-SwxUKhp2pf.jpg
   metrics:
     likes: 131
@@ -2698,10 +3058,12 @@ entries:
   - simulation
   - town-sim
 - name: Jido agents play tic-tac-toe
+  name_zh: Jido agent 下井字棋
   url: https://x.com/mikehostetler/status/2100946109308748079
   kind: post
   author: mikehostetler
   description: Two Elixir agents built with Jido and ReqLLM play tic-tac-toe against each other, each calling Jev to pick its next move.
+  description_zh: 用 Jido 和 ReqLLM 构建的两个 Elixir agent 互下井字棋，每一步都调用 Jev 选出下一步。
   image: https://pbs.twimg.com/amplify_video_thumb/2100945952395722754/img/cnSU71pFTDxt2C2f.jpg
   metrics:
     likes: 41
@@ -2715,6 +3077,7 @@ entries:
   kind: app
   author: judge-jev.com
   description: 'Endless courtroom game: you get five pieces of evidence and one chance to explain yourself, and Jev delivers the verdict.'
+  description_zh: 无尽的法庭游戏：你拿到五份证据和一次为自己辩解的机会，由 Jev 宣判。
   metrics:
     points: 4
   links:
@@ -2727,6 +3090,7 @@ entries:
   kind: repo
   author: coreyja
   description: Battlesnake bot that picks each move with a TypeSafe Choice question, falling back to a local strategy and tracking per-game cost.
+  description_zh: Battlesnake 机器人，用一个 TypeSafe Choice 问题选择每一步，失败时回退到本地策略，并记录每局成本。
   metrics:
     repo_stars: 11
   date: '2021-02-20'
@@ -2741,7 +3105,9 @@ entries:
   kind: repo
   author: smilior
   description: Japanese single-player mahjong coach where Jev picks which tile to discard from a 14-tile hand and explains it by efficiency, safety and waits, with lessons and practice games.
+  description_zh: 日语单人麻将教练：Jev 从 14 张手牌里选出该打哪张，并从效率、安全性和听牌角度解释，附带课程和练习局。
   jev: Called through Vercel AI Gateway with AI SDK's experimental_evaluate and model typesafe-ai/jev.
+  jev_zh: 通过 Vercel AI Gateway 调用，使用 AI SDK 的 experimental_evaluate 和模型 typesafe-ai/jev。
   date: '2026-09-19'
   links:
     app: https://kiru-hai-coach.vercel.app
@@ -2754,7 +3120,9 @@ entries:
   kind: repo
   author: '0x963D'
   description: Cyberpunk border-crossing encounter where you bluff a Jev-driven inspector; in 100 scripted crossings smugglers escaped 29/90 times, at an estimated $0.057 input cost for the batch.
+  description_zh: 赛博朋克风格的边境过关遭遇战，你要骗过一个由 Jev 驱动的检查员；在 100 次脚本化过关中，走私者逃脱了 29/90 次，这批测试的输入成本估计为 $0.057。
   jev: 'Two calls per player reply: one reads statements into typed observations, the other selects the guard''s next action.'
+  jev_zh: 玩家每次回复触发两次调用：一次把陈述解读成类型化观察，另一次选出守卫的下一步行动。
   image: https://raw.githubusercontent.com/0x963D/last-exit/main/public/assets/checkpoint.png
   date: '2026-09-17'
   links:
@@ -2768,6 +3136,7 @@ entries:
   kind: repo
   author: virajbhartiya
   description: Chrome's T-Rex game played side by side by the open Laya model running locally through MLX and hosted Jev, with live response times, survival streaks, and crash replays.
+  description_zh: Chrome 的 T-Rex 游戏，由通过 MLX 本地运行的开源 Laya 模型和托管的 Jev 并排来玩，实时显示响应时间、连续存活纪录和撞车回放。
   image: https://raw.githubusercontent.com/virajbhartiya/laya-vs-jev/main/docs/assets/trex-arena-window.png
   metrics:
     stars: 44
@@ -2783,6 +3152,7 @@ entries:
   kind: repo
   author: PromptEngineer48
   description: Local arena where the open Laya model and Jev race in Snake and fight in a Mortal-Kombat-style game, answering the same typed questions so only the model differs.
+  description_zh: 本地竞技场：开源 Laya 模型和 Jev 在贪吃蛇中竞速、在 Mortal Kombat 风格的游戏中对打，两者回答相同的类型化问题，唯一的变量是模型本身。
   metrics:
     stars: 18
     views: 19601
@@ -2795,11 +3165,14 @@ entries:
   - snake
   - fighting-game
 - name: League of Legends win-probability overlay
+  name_zh: League of Legends 胜率浮层
   url: https://x.com/filicroval/status/2100963424163307712
   kind: post
   author: filicroval
   description: Real-time overlay that sends the full League of Legends game state to Jev every second and asks who will win, who has the most impact, and whether the leader is about to throw; a whole game costs about $0.20.
+  description_zh: 实时浮层，每秒把完整的 League of Legends 对局状态发给 Jev，询问谁会赢、谁影响最大、领先方是否快要翻车；一整局花费约 $0.20。
   jev: 'Three questions per second: a win Noul, an impact Choice and a throw Noul.'
+  jev_zh: 每秒三个问题：一个胜负 Noul、一个影响力 Choice 和一个翻车 Noul。
   image: https://pbs.twimg.com/amplify_video_thumb/2100963025201037312/img/FgYho35_OiQ_zr3w.jpg
   metrics:
     likes: 10
@@ -2810,11 +3183,14 @@ entries:
   - esports
   - overlay
 - name: Live chase opponent
+  name_zh: 实时追逐对手
   url: https://openrouter.ai/labs/jev/game
   kind: app
   author: OpenRouter
   description: OpenRouter Labs game where you run and Jev chases, choosing each chaser move with one request two to three times a second, while a chat model answers the same question as a shadow; about $0.16 an hour.
+  description_zh: OpenRouter Labs 的游戏：你跑，Jev 追，它每秒两到三次、每次用一个请求选出追击者的下一步，同时有一个聊天模型作为影子回答同一个问题；每小时约 $0.16。
   jev: One Choice per move over the legal steps, given both positions and the distance each move leaves.
+  jev_zh: 给出双方位置以及每一步之后的距离，对合法步骤做一个 Choice。
   image: https://openrouter.ai/dynamic-og?title=Live+chase+opponent&description=Play+a+live+chase+where+Jev+chooses+each+move.&v=2
   links:
     model: https://openrouter.ai/typesafe/jev
@@ -2823,10 +3199,12 @@ entries:
   - game
   - openrouter-labs
 - name: Live chess with Jev
+  name_zh: 和 Jev 实时下棋
   url: https://x.com/itspraveeny/status/2101333228808499692
   kind: post
   author: itspraveeny
   description: Chrome extension captures a live chess board and move history, sends it to a local backend and has Jev pick the next move with no Stockfish, later tested against stronger bots.
+  description_zh: Chrome 扩展抓取实时棋盘和走棋历史，发给本地后端，由 Jev 选择下一步，不借助 Stockfish；之后还拿更强的机器人测试过。
   image: https://pbs.twimg.com/amplify_video_thumb/2101331631240056832/img/HjGFJAz8KreMm4j_.jpg
   metrics:
     likes: 3
@@ -2840,7 +3218,9 @@ entries:
   kind: app
   author: PostHog
   description: 'Let me Jev that for you: ask any yes-or-no question and get Jev''s calibrated probability instead of prose, with a live feed of the most asked questions.'
+  description_zh: 名字取自 Let me Jev that for you：随便问一个是非题，得到的不是大段文字，而是 Jev 的校准概率，另有被问得最多的问题的实时信息流。
   jev: A single Noul per question.
+  jev_zh: 每个问题一个 Noul。
   image: https://lmjtfy.dev/og.png
   metrics:
     points: 8
@@ -2854,7 +3234,9 @@ entries:
   kind: app
   author: loophole-city.vercel.app
   description: Simulation toy where you write a rule for a tiny town and watch 100 residents try to find loopholes in it, with Jev as the referee deciding which plans are allowed or blocked.
+  description_zh: 模拟小玩具：你给一个小镇写一条规则，看 100 位居民想方设法钻它的空子，Jev 当裁判，决定哪些计划被允许、哪些被拦下。
   jev: Jev judges each resident's plan against the rule text as allowed or blocked.
+  jev_zh: Jev 对照规则文本，把每位居民的计划判为允许或拦截。
   tags:
   - simulation
   - rules
@@ -2864,6 +3246,7 @@ entries:
   kind: repo
   author: willprout
   description: Minimal Magic 8 Ball web toy where a Cloudflare Worker sends one Jev Choice over the twenty classic answers and the ball shows the chosen reply with measured click-to-answer latency.
+  description_zh: 极简的魔术 8 号球网页玩具：一个 Cloudflare Worker 对二十个经典答案发起一次 Jev Choice，球上显示选中的回答，以及实测的从点击到出答案的延迟。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -2878,6 +3261,7 @@ entries:
   kind: repo
   author: rorz
   description: Jev-backed Magic 8 Ball toy built with React, Vite and Cloudflare Workers, hosted as a small app in the rorz.io personal-site monorepo.
+  description_zh: 由 Jev 驱动的魔术 8 号球小玩具，用 React、Vite 和 Cloudflare Workers 构建，作为一个小应用托管在 rorz.io 个人网站的 monorepo 中。
   metrics:
     repo_stars: 5
   date: '2026-07-10'
@@ -2888,10 +3272,12 @@ entries:
   - magic-8-ball
   - cloudflare-workers
 - name: Manual and AI play switch
+  name_zh: 手动与 AI 游玩切换
   url: https://x.com/adrianmg/status/2100970810483823086
   kind: post
   author: adrianmg
   description: Arcade game where you switch between playing yourself and letting Jev play, at 2-3 calls per second at 60 FPS with ~150ms average latency, deciding things like chasing a power-up or protecting the ball.
+  description_zh: 街机游戏，可以在自己玩和让 Jev 玩之间切换，60 FPS 下每秒 2-3 次调用、平均延迟约 150 毫秒，由它决定诸如追道具还是护球之类的事。
   image: https://pbs.twimg.com/amplify_video_thumb/2100970516081508352/img/1l_l07Sh5OsLeJGm.jpg
   metrics:
     likes: 30
@@ -2905,7 +3291,9 @@ entries:
   kind: repo
   author: shantanugoel
   description: Python prototype that plays NES Super Mario Bros. level 1-1 from structured RAM observations, pausing the emulator while Jev answers and advancing up to four frames per decision.
+  description_zh: Python 原型，根据结构化 RAM 观测玩 NES 版 Super Mario Bros. 的 1-1 关，Jev 作答时暂停模拟器，每次决策最多推进四帧。
   jev: Focused questions about movement, starting and sustaining a jump, and hop timing under low ceilings; code maps answers to buttons.
+  jev_zh: 针对移动、起跳与维持跳跃、低矮天花板下的小跳时机提出聚焦的问题；代码把答案映射成按键。
   metrics:
     stars: 13
   date: '2026-09-17'
@@ -2918,6 +3306,7 @@ entries:
   kind: post
   author: theappcypher
   description: Mario agent where Jev picks every move and each death forks the whole microsandbox VM into 4 timelines, keeping whichever Mario survives.
+  description_zh: 马里奥 agent：每一步都由 Jev 选择，每次死亡都会把整个 microsandbox 虚拟机分叉成 4 条时间线，保留活下来的那个马里奥。
   image: https://pbs.twimg.com/amplify_video_thumb/2101094095808847872/img/3gUUWv-2l7gtBJLH.jpg
   metrics:
     likes: 18
@@ -2928,10 +3317,12 @@ entries:
   - sandbox
   - game-agent
 - name: MineAI Jev decisions
+  name_zh: MineAI 的 Jev 决策
   url: https://github.com/ailiujiarui/MineAI/blob/main/src/main/java/com/mineai/llm/TypesafeDecisionProvider.java
   kind: repo
   author: ailiujiarui
   description: Minecraft Forge mod with an autonomous fake-player agent that adds a TypeSafe Jev judgment layer beside a deterministic compiler and executable skills.
+  description_zh: Minecraft Forge mod，内含自主假玩家 agent，在确定性编译器和可执行技能之外加了一层 TypeSafe Jev 判断。
   metrics:
     repo_stars: 65
   date: '2026-04-22'
@@ -2940,11 +3331,14 @@ entries:
   - agent
   - mod
 - name: Minesweeper AI agent benchmark
+  name_zh: 扫雷 AI agent 基准测试
   url: https://github.com/buddy/minesweeper
   kind: repo
   author: buddy
   description: Browser benchmark where up to nine models play the same seeded Minesweeper board on one clock, scored on cells revealed, time and token cost, with Jev as one of the lanes.
+  description_zh: 浏览器基准测试：最多九个模型在同一时钟下玩同一个固定种子的扫雷棋盘，按翻开格数、用时和 token 成本评分，Jev 是其中一路参赛者。
   jev: The Jev agent asks one Noul per frontier cell for the probability it holds a mine, revealing cells below 0.07 and flagging those above 0.85.
+  jev_zh: Jev agent 为每个边界格子问一个 Noul，判断它藏雷的概率，低于 0.07 就翻开，高于 0.85 就插旗。
   image: https://assets.buddy.works/launch/run-in-sandbox.svg
   metrics:
     stars: 14
@@ -2963,7 +3357,9 @@ entries:
   kind: repo
   author: lavallee
   description: A 12,000-neuron fly-brain connectome simulation fights Jev in the mk.js arcade fighter, with thirteen documented experiments and standings from 84 archived matches.
+  description_zh: 一个 12,000 个神经元的果蝇大脑连接组模拟，在 mk.js 街机格斗游戏里对战 Jev，附有十三个有记录的实验和 84 场存档比赛的排名。
   jev: Jev reads the fight as JSON and chooses among the same seven moves offered to the fly and a rule bot.
+  jev_zh: Jev 以 JSON 形式读取战况，从与果蝇和规则机器人相同的七个招式中做选择。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -2971,11 +3367,14 @@ entries:
   - fighting-game
   - connectome
 - name: ModlessChatTrans message classifier
+  name_zh: ModlessChatTrans 消息分类器
   url: https://github.com/LiJiaHua1024/ModlessChatTrans/blob/main/src/modless_chat_trans/message_classifier.py
   kind: repo
   author: LiJiaHua1024
   description: Real-time Minecraft chat translator that reads the game log without mods and can use Jev to decide which log lines are player chat worth translating.
+  description_zh: 实时 Minecraft 聊天翻译器，无需 mod 即可读取游戏日志，并可用 Jev 判断哪些日志行是值得翻译的玩家聊天。
   jev: The whole batch of lines goes in one request as independent Nouls with a 0.5 cut; only request failures fall back to built-in rules.
+  jev_zh: 整批日志行在一次请求中作为相互独立的 Noul 发出，以 0.5 为分界；只有请求失败时才回退到内置规则。
   metrics:
     repo_stars: 9
   date: '2024-06-20'
@@ -2990,6 +3389,7 @@ entries:
   kind: repo
   author: mocchalera
   description: Japanese family word game about saying words that do not exist, where a Cloudflare Worker asks Jev via Workers AI how real, name-like, or sentence-like each word is and rules it out at 0.85 or above.
+  description_zh: 日语家庭文字游戏，玩法是说出不存在的词：Cloudflare Worker 通过 Workers AI 问 Jev 每个词有多像真词、像名字或像句子，达到 0.85 及以上就判出局。
   date: '2026-09-18'
   links:
     app: https://naimono-lab.mocchalera.app
@@ -2998,11 +3398,14 @@ entries:
   - japanese
   - workers-ai
 - name: Name to age band
+  name_zh: 从名字猜年龄段
   url: https://github.com/ximhear/jev-kr-name-age
   kind: repo
   author: ximhear
   description: Small React app where you pick Korea, the US, Japan or China, type a first name, and Jev guesses the person's age band and gender from naming trends.
+  description_zh: 小型 React 应用：选择韩国、美国、日本或中国，输入一个名字，Jev 根据起名趋势猜出这个人的年龄段和性别。
   jev: Two Choice questions, age band and gender, shown as probability bars.
+  jev_zh: 两个 Choice 问题，分别是年龄段和性别，以概率条展示。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -3015,6 +3418,7 @@ entries:
   kind: repo
   author: caijinchun
   description: Local Snake battle where you play against four AI snakes driven by NanoJev, a 0.6B open replica of Jev, with a code planner narrowing moves and the model's direction probabilities shown live.
+  description_zh: 本地贪吃蛇对战：你和四条 AI 蛇对打，它们由 NanoJev（一个 0.6B 的 Jev 开源复刻）驱动，代码规划器先缩小可选走法，模型的方向概率实时显示。
   image: https://raw.githubusercontent.com/caijinchun/nanojev-arena/main/assets/arena.png
   metrics:
     stars: 7
@@ -3024,11 +3428,14 @@ entries:
   - nanojev
   - local
 - name: natural_20 Jev NPC battle AI
+  name_zh: natural_20 的 Jev NPC 战斗 AI
   url: https://github.com/jedld/natural_20.py/blob/master/docs/JEV_NPC_BATTLE_AI.md
   kind: repo
   author: jedld
   description: Jev provider for NPC combat in natural_20, a D&D 5e game engine for AI research, that walks the action tree level by level (action type, weapon or spell, target, destination square) to build a full legal action.
+  description_zh: natural_20 是用于 AI 研究的 D&D 5e 游戏引擎，这是其中负责 NPC 战斗的 Jev provider，逐层遍历动作树（动作类型、武器或法术、目标、目的格）来构建完整的合法动作。
   jev: One Choice per tree level, with movement split into intents (engage, defend, hide, attack square) before picking the square.
+  jev_zh: 动作树每层一个 Choice；移动先拆分成意图（交战、防御、躲藏、攻击格子），再选具体格子。
   metrics:
     repo_stars: 7
   date: '2024-02-13'
@@ -3039,10 +3446,12 @@ entries:
   - npc
   - turn-based
 - name: Nintendo DS side-project game
+  name_zh: Nintendo DS 风格业余游戏
   url: https://x.com/yelkhayami/status/2101944518883037562
   kind: post
   author: yelkhayami
   description: Nintendo DS-style game built with GPT-6 Astra, Fable 5.1 and Jev as a side project; the latest update adds Perry the Platypus, who can push the player off a ledge.
+  description_zh: 用 GPT-6 Astra、Fable 5.1 和 Jev 做的 Nintendo DS 风格业余项目游戏；最新更新加入了 Perry the Platypus，它能把玩家推下悬崖。
   image: https://pbs.twimg.com/amplify_video_thumb/2100910848029978624/img/NHqTOxDSKfgV7bX1.jpg
   metrics:
     likes: 7
@@ -3056,18 +3465,23 @@ entries:
   kind: repo
   author: JanDalhuysen
   description: Real-time Clash Royale-style sandbox in Node.js with a canvas client and MCP server where you play against a Jev bot and an Ollama prompt-and-parse bot.
+  description_zh: Node.js 实时 Clash Royale 风格沙盒，带 canvas 客户端和 MCP 服务器，你可以对战一个 Jev 机器人和一个 Ollama 提示词加解析的机器人。
   jev: One System One call per decision with a should-play Noul plus card, lane, and depth Choices.
+  jev_zh: 每次决策一次 System One 调用，包含一个“是否出牌”Noul，以及卡牌、分路和纵深三个 Choice。
   date: '2026-09-19'
   tags:
   - clash-royale
   - game-agent
   - mcp
 - name: OneBox Jev xiangqi engine
+  name_zh: OneBox 的 Jev 象棋引擎
   url: https://github.com/wangzhishou/OneBox/blob/main/feature/xiangqi/src/main/java/com/wanbaohe/xiangqi/data/JevMoveChooser.kt
   kind: repo
   author: wangzhishou
   description: Android AI toolbox app that adds Jev as a judgment engine and uses it to play Chinese chess, picking the move with the highest Choice probability.
+  description_zh: Android AI 工具箱应用，把 Jev 接入为判断引擎并用它下中国象棋，选择 Choice 概率最高的走法。
   jev: Choice over candidate xiangqi moves, argmax of the returned probabilities; direct key first with a proxy fallback.
+  jev_zh: 对候选象棋走法做 Choice，取返回概率的 argmax；优先直连 key，失败时回退到代理。
   metrics:
     repo_stars: 389
   date: '2026-08-08'
@@ -3082,7 +3496,9 @@ entries:
   kind: repo
   author: emrickgarrett
   description: Server-authoritative Three.js sniper arena where you fight Jev first to five kills while spectators queue and watch, with Jev deciding movement, aim and firing from match state.
+  description_zh: 服务器权威的 Three.js 狙击竞技场，你和 Jev 对战，先拿五杀者获胜，观众可以排队观战；Jev 根据比赛状态决定移动、瞄准和开火。
   jev: Each decision tick asks about movement, view, aiming, firing and jumping, with a heuristic fallback on API failure.
+  jev_zh: 每个决策 tick 询问移动、视角、瞄准、开火和跳跃，API 失败时回退到启发式策略。
   metrics:
     stars: 19
   date: '2026-09-17'
@@ -3090,10 +3506,12 @@ entries:
   - fps
   - multiplayer
 - name: open-pokered Jev autonomous playthrough
+  name_zh: open-pokered 的 Jev 自主通关
   url: https://github.com/liuyanghejerry/open-pokered/blob/master/docs/jev-autonomous-retrospective.md
   kind: repo
   author: liuyanghejerry
   description: Two-layer Jev agent that plays the Rust reimplementation of Pokemon Red from a real NEW GAME to the full ending without copying the scripted route, verified by reloading the save in a separate process.
+  description_zh: 双层 Jev agent，从真正的 NEW GAME 开始把 Pokemon Red 的 Rust 复刻版一路打到完整结局，没有照抄预设路线，并在独立进程中重新加载存档做了验证。
   image: https://raw.githubusercontent.com/liuyanghejerry/open-pokered/master/docs/screenshots/readme/title.png
   metrics:
     repo_stars: 6
@@ -3110,6 +3528,7 @@ entries:
   kind: repo
   author: JacquesGariepy
   description: Life-and-civilization simulation where each person's next voluntary action is a Jev Choice kept as a receipt in a ledger, while optional LLM planners propose goals and speech but never decide.
+  description_zh: 生命与文明模拟：每个人的下一个自主行动都是一次 Jev Choice，作为凭证记入账本；可选的 LLM 规划器可以提出目标和发言，但从不做决定。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -3121,6 +3540,7 @@ entries:
   kind: reddit
   author: MrCyclopede
   description: Small web toy where you ask Jev any question and it can only answer yes or no, built to probe what the model actually knows.
+  description_zh: 小型网页玩具：你可以问 Jev 任何问题，但它只能回答是或否，用来探测模型到底知道什么。
   image: https://external-preview.redd.it/OXdiNTBoNmd1anFoMZ9yYUbO4_b2NWc20y21iTTlRGVcwqsZGOj9Td6rgK0_.png?format=pjpg&auto=webp&s=b1c962a9492a48bffa46e1a6948904c96d3ac7db
   metrics:
     points: 98
@@ -3136,6 +3556,7 @@ entries:
   kind: repo
   author: safzanpirani
   description: Atari Pong agent that asks Jev one Choice per frame (up, down or stay) from five short phrases, with no coordinates sent because jev-1.13 is weak at comparing magnitudes.
+  description_zh: Atari Pong agent，每一帧根据五个短语问 Jev 一个 Choice（上、下或不动），不发送坐标，因为 jev-1.13 不擅长比较数值大小。
   date: '2026-09-17'
   tags:
   - pong
@@ -3145,7 +3566,9 @@ entries:
   kind: repo
   author: lukaske
   description: Two Chocolate Doom engines compiled to WebAssembly play the same Freedoom map side by side, with a Jev Choice picking tactical macros that a local motor controller turns into Doom controls.
+  description_zh: 两个编译成 WebAssembly 的 Chocolate Doom 引擎并排运行同一张 Freedoom 地图，由 Jev Choice 选择战术宏，本地运动控制器再把它转成 Doom 操作。
   jev: A Choice over tactical macros from structured health, ammunition and target state, with live decision telemetry.
+  jev_zh: 根据结构化的生命值、弹药和目标状态对战术宏做 Choice，并实时显示决策遥测。
   metrics:
     stars: 7
   date: '2026-09-17'
@@ -3153,11 +3576,14 @@ entries:
   - doom
   - fps
 - name: Real-time level generation with Jev
+  name_zh: 用 Jev 实时生成游戏关卡
   url: https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev
   kind: article
   author: Hugo Duprez (Sprite Fusion)
   description: Endless platformer whose terrain is generated in real time from game state, with Jev choosing each segment's width, gap, height and tile type while game code places the tiles.
+  description_zh: 无尽平台跳跃游戏，地形根据游戏状态实时生成：Jev 决定每一段的宽度、间隙、高度和图块类型，由游戏代码放置图块。
   jev: Structured Choice and Score decisions per terrain segment; placement stays in code.
+  jev_zh: 每段地形做结构化的 Choice 和 Score 决策；放置逻辑留在代码里。
   image: https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev/jev-terrain-generation.png
   metrics:
     points: 302
@@ -3171,10 +3597,12 @@ entries:
   - procedural-generation
   - level-design
 - name: Reverse CAPTCHA
+  name_zh: 反向 CAPTCHA
   url: https://x.com/OpenDevLog/status/2100743740549702044
   kind: post
   author: OpenDevLog
   description: Tongue-in-cheek gate that asks five questions to prove you are not human, with Jev classifying every answer and printing a rejection receipt when it detects a person.
+  description_zh: 半开玩笑的关卡，用五个问题证明你不是人类，Jev 给每个回答分类，一旦认定你是人就打印一张拒绝凭条。
   image: https://pbs.twimg.com/amplify_video_thumb/2100742612332298240/img/frIfXyRp0W_8vWyX.jpg
   metrics:
     likes: 1
@@ -3188,6 +3616,7 @@ entries:
   kind: repo
   author: BunsDev
   description: Walkable 3D interpretation of Houston's River Oaks District whose residents and visitors use Jev for immediate reactions, where to walk and whom to help, batched up to 32 questions with a 750 ms deadline.
+  description_zh: 可步行漫游的 3D 版休斯敦 River Oaks District，居民和访客用 Jev 决定即时反应、往哪走和帮谁，每批最多 32 个问题，截止时间 750 毫秒。
   date: '2026-09-17'
   links:
     app: https://river-oaks-one.vercel.app
@@ -3201,6 +3630,7 @@ entries:
   kind: repo
   author: ashaazami
   description: Vertical-scrolling river shooter in pygame-ce inspired by Atari's River Raid, with an AI pilot that plays it in real time using Jev.
+  description_zh: 用 pygame-ce 做的纵向卷轴河道射击游戏，灵感来自 Atari 的 River Raid，AI 飞行员用 Jev 实时游玩。
   date: '2026-09-17'
   tags:
   - pygame
@@ -3211,7 +3641,9 @@ entries:
   kind: repo
   author: 0xtrou
   description: One-page Rubik's cube playground where you scramble the cube, Jev rates the chaos with a meme tier, a 1-5 star difficulty, and a roast, then solves it step by step in 3D.
+  description_zh: 单页魔方练习场：你打乱魔方后，Jev 用梗图等级、1-5 星难度和一段吐槽来评价混乱程度，然后在 3D 中一步步还原。
   jev: An agent loop where Jev reads the live cube state and picks its next job from a toolbox each step.
+  jev_zh: 一个 agent 循环，Jev 每一步读取魔方实时状态，从工具箱里挑出下一个任务。
   image: https://rubikjev.solo.engineer/opengraph-image
   metrics:
     stars: 3
@@ -3224,11 +3656,14 @@ entries:
   - puzzle
   - web
 - name: Scorebug replication workbench
+  name_zh: 比分条复刻工作台
   url: https://github.com/cruuz/2k-football-mod-tools/tree/main/tools/scorebug_sprite/jev
   kind: repo
   author: cruuz
   description: Diagnostic workbench in a mod editor for classic 2K football games that has Jev classify measured mismatches between rendered and in-game scorebugs, such as wrong tint or misplaced element.
+  description_zh: 经典 2K 橄榄球游戏 mod 编辑器里的诊断工作台，让 Jev 对渲染出的比分条与游戏内比分条之间测得的差异做分类，比如色调不对或元素错位。
   jev: Jev receives text descriptors only, with all measurement done in Python; every call is logged and the job has a $3 budget cap.
+  jev_zh: Jev 只接收文字描述，所有测量都在 Python 中完成；每次调用都有日志，整个任务设有 $3 的预算上限。
   metrics:
     repo_stars: 8
   date: '2026-07-23'
@@ -3239,11 +3674,14 @@ entries:
   - image-diff
   - classification
 - name: Self-solving Rubik's Cube
+  name_zh: 自己还原的魔方
   url: https://x.com/redp314/status/2100489858951073858
   kind: post
   author: redp314
   description: Rubik's Cube solver that encodes the beginner method in code while Jev looks at the cube at each step and picks which case it is in, solving it in 94 moves with ~4 seconds of model time.
+  description_zh: 魔方求解器：把初级解法写进代码，Jev 在每一步观察魔方并判断当前属于哪种情形，用 94 步、约 4 秒模型时间还原魔方。
   jev: One Choice per step over the beginner-method cases; code verifies every pick.
+  jev_zh: 每一步对初级解法的各种情形做一个 Choice；代码校验每次选择。
   image: https://pbs.twimg.com/amplify_video_thumb/2100479486382809088/img/r6daGpDnvsCr3LyL.jpg
   metrics:
     likes: 717
@@ -3257,7 +3695,9 @@ entries:
   kind: repo
   author: tpaulshippy
   description: Mafia-style social-deduction party game for the living-room TV with phones as controllers, where Jev replaces the human moderator by driving live suspicion meters and noticing bluffs or circular arguments.
+  description_zh: 黑手党风格的社交推理聚会游戏，在客厅电视上玩、用手机当手柄，Jev 取代人类主持人，驱动实时怀疑度计量条，并识别虚张声势或循环论证。
   jev: 'One structured judgment per round via ruby_llm-typesafe: game state in, suspicion levels out.'
+  jev_zh: 每轮通过 ruby_llm-typesafe 做一次结构化判断：输入游戏状态，输出怀疑程度。
   date: '2026-09-17'
   tags:
   - party-game
@@ -3268,6 +3708,7 @@ entries:
   kind: reddit
   author: WatchSigma
   description: Flappy-style game normally controlled by body movement on camera, shown in autoplay mode where Jev flies the dragon through the gauntlet with no human input.
+  description_zh: Flappy 风格游戏，平时通过摄像头捕捉身体动作来控制，视频展示的是自动模式：Jev 在没有任何人类输入的情况下驾驶飞龙闯过重重障碍。
   image: https://external-preview.redd.it/ZjEzYWF0bXpoNXFoMZHx7oraHkZvnP0Ya-GG74OTeGOSUHkO5dZJtDpIK9wK.png?format=pjpg&auto=webp&s=99619399678c8b492ac33f9f3b2172476d9fbf4d
   metrics:
     points: 41
@@ -3276,11 +3717,14 @@ entries:
   - arcade
   - autoplay
 - name: SimTracker Jev path
+  name_zh: SimTracker 的 Jev 路径
   url: https://github.com/prolix-oc/Lumiverse-SimTracker/blob/main/src/typesafe.ts
   kind: repo
   author: prolix-oc
   description: Roleplay tracker extension for Lumiverse that uses Jev to skip needless tracker updates, flip state flags, verify LLM-generated tracker fields against the narrative, and weigh conception odds.
+  description_zh: Lumiverse 的角色扮演追踪器扩展，用 Jev 跳过不必要的追踪器更新、切换状态标记、对照剧情校验 LLM 生成的追踪字段，以及估算受孕几率。
   jev: Per-field Nouls reject a generated payload when P(wrong) passes a threshold, mirroring the SDE-cascade cookbook; any outage falls back to the full secondary LLM.
+  jev_zh: 对每个字段各问一个 Noul，P(wrong) 超过阈值就拒绝生成结果，做法与 SDE-cascade cookbook 一致；服务中断时回退到完整的备用 LLM。
   image: https://raw.githubusercontent.com/prolix-oc/Lumiverse-SimTracker/main/screenshots/2char.png
   metrics:
     repo_stars: 11
@@ -3296,15 +3740,18 @@ entries:
   kind: repo
   author: siroccomask
   description: Desktop Snake experiment where Python combines Jev's parallel board assessments into a move with one API call per tick; one recorded run reached 29 foods in 461 ticks.
+  description_zh: 桌面贪吃蛇实验：Python 把 Jev 对棋盘的并行评估合成一个走法，每个 tick 一次 API 调用；一次录制的运行在 461 个 tick 内吃到 29 个食物。
   date: '2026-09-17'
   tags:
   - snake
   - game-agent
 - name: 'Snake: Jev vs Laya and Kev'
+  name_zh: 贪吃蛇：Jev 对战 Laya 和 Kev
   url: https://x.com/tobiaswup/status/2102046994248224826
   kind: post
   author: tobiaswup
   description: 'Home-made Snake benchmark comparing Jev over the API with Laya-MLX and Kev-4B running locally: Jev had zero deaths at about 395ms, Kev died twice at about 175ms and Laya looped at about 33ms.'
+  description_zh: 自制贪吃蛇基准测试，对比通过 API 调用的 Jev 与本地运行的 Laya-MLX 和 Kev-4B：Jev 零死亡、约 395 毫秒，Kev 死了两次、约 175 毫秒，Laya 陷入循环、约 33 毫秒。
   image: https://pbs.twimg.com/amplify_video_thumb/2102045711646724096/img/Nl5uIiC5lFJVF_JT.jpg
   metrics:
     likes: 16
@@ -3315,10 +3762,12 @@ entries:
   - open-models
   - latency
 - name: Soccer Pinball playtester
+  name_zh: Soccer Pinball 试玩员
   url: https://www.reddit.com/r/codex/comments/1wkqknb/jev_playing_my_game_soccer_pinball_inside_unity/
   kind: reddit
   author: astrohoundstudios
   description: Unity wrapper that lets Jev work the flippers and play full Soccer Pinball matches for about 2 cents each, with a skill slider used to tune game difficulty.
+  description_zh: Unity 封装，让 Jev 操作挡板、打完整场 Soccer Pinball 比赛，每场约 2 美分，并用技能滑块来调整游戏难度。
   image: https://external-preview.redd.it/eWc2cGc5dHg2aXFoMZgJJx1e7F4oMJHRnw_ML_5bj14hM22MnTm7n5_9DHZw.png?format=pjpg&auto=webp&s=be3e74936fe0f5575def2e9c83a8af1e970c3ded
   metrics:
     points: 38
@@ -3331,7 +3780,9 @@ entries:
   kind: repo
   author: spoonnotfound
   description: Bilingual Chinese-English Turtle Soup (lateral-thinking riddle) site where Jev acts as host, answering players' questions and grading their reconstructions of the story.
+  description_zh: 中英双语的海龟汤（横向思维谜题）网站，由 Jev 担任主持人，回答玩家的提问并给他们还原的故事打分。
   jev: Choice over yes / no / irrelevant / cannot tell for each question and a scored reconstruction, with Jev's confidence shown; called through Vercel AI Gateway.
+  jev_zh: 每个问题对“是 / 否 / 无关 / 无法判断”做 Choice，还原故事则打分，并显示 Jev 的置信度；通过 Vercel AI Gateway 调用。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -3345,6 +3796,7 @@ entries:
   kind: repo
   author: jaysonsantos
   description: Sudoku game, plus a Jev vs Stockfish chess mode, where the backend sends the board and all legal placements to Jev through OpenRouter and Jev picks one per turn until solved or three mistakes.
+  description_zh: 数独游戏，另有 Jev 对战 Stockfish 的国际象棋模式：后端通过 OpenRouter 把棋盘和所有合法填法发给 Jev，Jev 每回合选一个，直到解出或犯错三次。
   date: '2026-09-19'
   tags:
   - sudoku
@@ -3355,6 +3807,7 @@ entries:
   kind: repo
   author: zebedelu
   description: Terminal Sudoku where Python enforces the rules and Jev picks one move per turn, with a benchmark script that measures how it plays when moves are forced versus when it has to guess.
+  description_zh: 终端数独：Python 负责规则，Jev 每回合选一步，另有基准测试脚本，衡量它在走法唯一与必须猜测两种情况下的表现。
   date: '2026-09-19'
   tags:
   - sudoku
@@ -3364,16 +3817,19 @@ entries:
   kind: repo
   author: chensterman
   description: 'Minecraft agent with no LLM in the loop: code owns the plan and actions while Jev answers batched typed questions at each branch point about every 1.5 seconds, from goal parsing to combat.'
+  description_zh: LLM 不参与循环的 Minecraft agent：计划和动作由代码负责，Jev 在每个分支点（大约每 1.5 秒）回答批量的类型化问题，从目标解析到战斗都有。
   date: '2026-09-18'
   tags:
   - minecraft
   - agent
   - no-llm
 - name: Temporal tic-tac-toe agent
+  name_zh: Temporal 井字棋 agent
   url: https://github.com/temporal-community/temporal-agent-harness/tree/main/examples/tictactoe
   kind: repo
   author: temporal-community
   description: Game agent with no LLM, where a Choice picks the square, Nouls spot threats, and a Score rates the position.
+  description_zh: 没有 LLM 的游戏 agent：一个 Choice 选格子，几个 Noul 发现威胁，一个 Score 评估局面。
   metrics:
     repo_stars: 58
   date: '2026-06-18'
@@ -3386,6 +3842,7 @@ entries:
   kind: repo
   author: Reisenbug
   description: Terraria tModLoader mod where Jev fights the bosses, answering one question every 200 ms that code turns into keystrokes; it beat every pre-hardmode boss in master mode.
+  description_zh: Terraria 的 tModLoader mod，由 Jev 打 boss，每 200 毫秒 回答一个问题，代码把答案转成按键；它在大师模式下击败了所有困难模式之前的 boss。
   image: https://raw.githubusercontent.com/Reisenbug/TerraBlind/main/docs/cover-jev-en.png
   metrics:
     stars: 66
@@ -3401,6 +3858,7 @@ entries:
   kind: repo
   author: TheGali
   description: 'Sandbox where code runs the world and Jev only presses the controls of a small creature, with every decision logged in full: the state sent, each question, every probability and the rule that fired.'
+  description_zh: 沙盒：世界由代码运行，Jev 只负责操控一个小生物，每个决策都完整记录：发送的状态、每个问题、每个概率以及触发的规则。
   date: '2026-09-17'
   tags:
   - sandbox
@@ -3411,7 +3869,9 @@ entries:
   kind: app
   author: jev-omega
   description: Playable Tetris where you can hand control to Jev, which picks the rotation and column for each piece from holes, stack height and bumpiness.
+  description_zh: 可以玩的俄罗斯方块，你可以把控制权交给 Jev，它根据空洞、堆叠高度和凹凸度为每个方块选择旋转和列。
   jev: One Choice per piece over rotation and column placements.
+  jev_zh: 每个方块对旋转和列的组合做一个 Choice。
   tags:
   - tetris
   - game-agent
@@ -3420,6 +3880,7 @@ entries:
   kind: repo
   author: shantanugoel
   description: 'Neon browser Tetris with a REST API so any player can plug in: a built-in planning agent, Jev, or any OpenAI-compatible chat model, with state exposed as text and illegal moves refused.'
+  description_zh: 霓虹风浏览器俄罗斯方块，提供 REST API，任何玩家都能接入：内置规划 agent、Jev，或任意兼容 OpenAI 的聊天模型，状态以文本形式暴露，非法走法会被拒绝。
   date: '2026-09-17'
   tags:
   - tetris
@@ -3430,6 +3891,7 @@ entries:
   kind: repo
   author: cbetz
   description: Playful app where a council of twelve characters, from a golden retriever to three raccoons in a suit, votes on your idea with animated votes, inspectable decisions and a shareable result card.
+  description_zh: 趣味应用：一个由十二个角色组成的委员会（从金毛寻回犬到穿西装的三只浣熊）为你的点子投票，带投票动画、可查看的决策和可分享的结果卡片。
   image: https://raw.githubusercontent.com/cbetz/extremely-specific-council/main/docs/demo-card.png
   date: '2026-09-17'
   links:
@@ -3443,17 +3905,21 @@ entries:
   kind: app
   author: gpu.studio
   description: Browser toy where you put anything on both tracks of the trolley problem and Jev decides whether to pull the lever.
+  description_zh: 浏览器小玩具：你可以把任何东西放到电车难题的两条轨道上，由 Jev 决定是否拉下拉杆。
   links:
     discussion: https://news.ycombinator.com/item?id=49773756
   tags:
   - toy
   - ethics
 - name: Tiny AI civilization
+  name_zh: 迷你 AI 文明
   url: https://x.com/SinghDevHub/status/2102086884998664521
   kind: post
   author: SinghDevHub
   description: Three.js island simulation of 48 citizens where Jev picks each citizen's next action, GPT directs world events and code enforces the rules; a 12-minute run applied 392 Jev decisions for about $0.023.
+  description_zh: Three.js 岛屿模拟，48 位居民由 Jev 选择下一步行动，GPT 主导世界事件，代码保证规则；一次 12 分钟的运行执行了 392 个 Jev 决策，花费约 $0.023。
   jev: Choice over available actions (eat, rest, farm, build, help, steal) given each citizen's state and nearby observations.
+  jev_zh: 根据每位居民的状态和附近观察，对可用行动（吃饭、休息、种地、建造、帮忙、偷窃）做 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2102085730793398272/img/CkPhtAkZl0_n4Hrs.jpg
   metrics:
     likes: 74
@@ -3471,6 +3937,7 @@ entries:
   kind: post
   author: marinatrajk
   description: Small 3D world of six residents with homes, jobs, needs and friendships where Jev decides each one's next action, and users inject situations such as emergencies to watch them react.
+  description_zh: 六位居民的小型 3D 世界，他们有住所、工作、需求和友谊，Jev 决定每个人的下一步行动，用户还能注入紧急情况等情境，看他们如何反应。
   image: https://pbs.twimg.com/amplify_video_thumb/2102173389725024256/img/1rjU04Eh2VBcFXKm.jpg
   metrics:
     likes: 33
@@ -3485,7 +3952,9 @@ entries:
   kind: post
   author: WillTheRapper_
   description: AI life-simulation where a GPT-6 Astra engine drives the storyline and Jev decides what happens next, with a terminal-style UI that visualizes each decision.
+  description_zh: AI 人生模拟：GPT-6 Astra 引擎推动故事线，Jev 决定接下来发生什么，终端风格的界面把每个决策可视化。
   jev: Picks the next story event and moderates user prompts, classifying them into in-simulation actions.
+  jev_zh: 挑选下一个故事事件，并审核用户提示词，把它们归类为模拟世界内的行动。
   image: https://pbs.twimg.com/media/HSxHFTDb0AAMbUv.jpg?name=orig
   metrics:
     likes: 29
@@ -3500,7 +3969,9 @@ entries:
   kind: repo
   author: phyous
   description: Experimental harness where Jev plays the original Civilization II in a browser from on-screen pixels and keyboard and mouse input, with a live spectator display of action probabilities.
+  description_zh: 实验性 harness，让 Jev 在浏览器中通过屏幕像素和键鼠输入玩初代 Civilization II，观众可实时看到各个动作的概率。
   jev: Named Choice vectors for empire policy, cities, research, diplomacy, units, exploration, and warfare.
+  jev_zh: 针对帝国政策、城市、科研、外交、单位、探索和战争，分别使用命名的 Choice 向量。
   metrics:
     stars: 2
   date: '2026-09-16'
@@ -3509,11 +3980,14 @@ entries:
   - game-agent
   - strategy
 - name: tuicraft Jev tactics
+  name_zh: tuicraft 的 Jev 战术
   url: https://github.com/tvararu/tuicraft
   kind: repo
   author: tvararu
   description: Terminal client for chatting and playing World of Warcraft 3.3.5a on AzerothCore servers, with a fight command in which Jev picks combat tactics from a narrow spell kit.
+  description_zh: 在 AzerothCore 服务器上聊天和玩 World of Warcraft 3.3.5a 的终端客户端，其中的 fight 命令由 Jev 从一套精简的技能组里选择战斗战术。
   jev: Jev chooses among observed-state actions such as spells and directional moves; unsupported kits stop with a reason.
+  jev_zh: Jev 从基于观察到的状态可执行的动作（如法术和方向移动）中做选择；不支持的技能组会停止并说明原因。
   image: https://raw.githubusercontent.com/tvararu/tuicraft/main/docs/screenshot.png
   metrics:
     stars: 9
@@ -3530,7 +4004,9 @@ entries:
   kind: repo
   author: bugkiwi
   description: Three-level interrogation game where you write statements to an AI warden and must pass plea, logic, and paradox verdicts to earn release, with shareable sealed runs.
+  description_zh: 三关审讯游戏：你向 AI 典狱长写陈述，必须依次通过认罪、逻辑和悖论三轮裁决才能获释，通关记录可封存分享。
   jev: Per-level structured verdicts on the player's statement.
+  jev_zh: 每一关对玩家的陈述给出结构化裁决。
   image: https://raw.githubusercontent.com/bugkiwi/turing-jail/main/public/images/turing-jail-home.png
   date: '2026-09-17'
   links:
@@ -3543,6 +4019,7 @@ entries:
   kind: repo
   author: Dimesio
   description: 'Local app that tests Jev as a chess player: chess.js lists the legal moves, Jev picks one, and Stockfish grades every pick, with optional lesson levels that feed Jev its own graded mistakes.'
+  description_zh: 测试 Jev 下棋水平的本地应用：chess.js 列出合法走法，Jev 挑一个，Stockfish 给每次选择打分，还有可选的课程等级，把 Jev 自己被打过分的失误喂回给它。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -3550,10 +4027,12 @@ entries:
   - chess
   - stockfish
 - name: TypeSafe plays Minecraft
+  name_zh: TypeSafe 玩 Minecraft
   url: https://github.com/ellistev/typesafe-minecraft-demo
   kind: repo
   author: ellistev
   description: Minecraft Java bot where each Jev decision picks one primitive (a 250 ms move, a turn, mine or place a block, equip, wait) for Mineflayer, shown beside the raw API input and output as it builds a Canadian flag.
+  description_zh: Minecraft Java 版机器人，每次 Jev 决策为 Mineflayer 选择一个原语（250 毫秒 的移动、转向、挖或放一个方块、装备、等待），并在旁边展示原始 API 输入输出，演示它搭建一面加拿大国旗。
   metrics:
     stars: 1
   date: '2026-09-16'
@@ -3566,6 +4045,7 @@ entries:
   kind: repo
   author: fhshaik
   description: Plays Super Mario with a Choice for the controller action, a jump Noul, and a danger Score.
+  description_zh: 用一个决定手柄动作的 Choice、一个跳跃 Noul 和一个危险 Score 来玩 Super Mario。
   image: https://external-preview.redd.it/bzVydG83cHlodXBoMZE7fOmaTIl8CDi0AASExP3Al1xQRlZJ2gAIQDJfa5Lr.png?format=pjpg&auto=webp&s=2ba386e6d1e858b09755e0c4f9ecbb8adbfc0c15
   metrics:
     stars: 338
@@ -3585,7 +4065,9 @@ entries:
   kind: repo
   author: sorrycc
   description: 'Snake played in real time by Jev: code computes legal moves plus food distance, flood-fill reachability, and dead ends, and the snake goes straight if an answer misses the tick deadline.'
+  description_zh: Jev 实时玩的贪吃蛇：代码计算合法走法以及食物距离、flood-fill 可达性和死路，如果答案没赶上 tick 截止时间，蛇就直走。
   jev: One Choice per tick over the legal moves.
+  jev_zh: 每个 tick 对合法走法做一个 Choice。
   metrics:
     stars: 20
   date: '2026-09-17'
@@ -3597,15 +4079,18 @@ entries:
   kind: repo
   author: AliceRoselia
   description: Short script where Jev plays both sides of a chess game, choosing each move from the legal UCI moves and estimating win, draw and loss; the author found it often rates lopsided positions as draws.
+  description_zh: 简短脚本，让 Jev 同时执双方下棋，从合法 UCI 走法中选出每一步，并估计胜、和、负的可能；作者发现它经常把一边倒的局面判为和棋。
   date: '2026-09-17'
   tags:
   - chess
   - self-play
 - name: vibedgames model playtester
+  name_zh: vibedgames 模型试玩器
   url: https://github.com/kyh/vibedgames/tree/main/apps/cli/src/lib/playtest
   kind: repo
   author: kyh
   description: Game studio toolkit for coding agents whose vg playtest run drives a game character with TypeSafe System One, one decision per tick proxied through the server.
+  description_zh: 面向编程 agent 的游戏工作室工具包，其中 vg playtest run 用 TypeSafe System One 驱动游戏角色，每个 tick 一次决策，经服务器代理转发。
   metrics:
     repo_stars: 57
   date: '2020-01-26'
@@ -3616,10 +4101,12 @@ entries:
   - game-dev
   - cli
 - name: ViZDoom Jev agent
+  name_zh: Jev 驱动的 ViZDoom agent
   url: https://x.com/kmad/status/2100339921714323624
   kind: post
   author: kmad
   description: ViZDoom agent driven by Jev over two decision channels, navigation at 5 decisions/s and combat at 12/s; a test run ended with 18 kills before it got stuck walking in circles.
+  description_zh: 由 Jev 通过两个决策通道驱动的 ViZDoom agent，导航每秒 5 次决策，战斗每秒 12 次；一次测试跑出 18 次击杀，之后卡在原地绕圈。
   image: https://pbs.twimg.com/amplify_video_thumb/2100339415407017984/img/0d7rvi1ZoC0nAtJN.jpg
   metrics:
     likes: 16
@@ -3633,6 +4120,7 @@ entries:
   kind: post
   author: CharlieMolthrop
   description: Improv comedy game that uses Jev as the judge, scoring players' improvised responses like the TV show's host.
+  description_zh: 即兴喜剧游戏，用 Jev 当评委，像那档电视节目的主持人一样给玩家的即兴回应打分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100945687059869696/img/yQvtfBF64zQfczMI.jpg
   metrics:
     likes: 107
@@ -3642,11 +4130,14 @@ entries:
   - improv
   - party-game
 - name: Wikipedia race
+  name_zh: 维基百科竞速
   url: https://x.com/CompleteSkeptic/status/2099925688925184171
   kind: post
   author: CompleteSkeptic
   description: Launch demo in which Jev races from one Wikipedia page to another using only links, choosing among hundreds to thousands of links at each step.
+  description_zh: 发布演示：Jev 只通过链接从一个维基百科页面跑到另一个，每一步都要在数百到数千个链接中做选择。
   jev: High-cardinality Choice over page links; candidate sets above 255 are handled in two stages.
+  jev_zh: 对页面链接做高基数 Choice；候选集超过 255 个时分两阶段处理。
   image: https://pbs.twimg.com/amplify_video_thumb/2099924665515012096/img/Q3mdVD5jfOZOkMww.jpg
   metrics:
     likes: 2650
@@ -3656,10 +4147,12 @@ entries:
   - wikipedia
   - official-demo
 - name: Wikipedia Speedrun
+  name_zh: 维基百科速通
   url: https://www.reddit.com/r/accelerate/comments/1wikmz1/jev_demo_wikirace/
   kind: reddit
   author: TypeSafe AI
   description: Demo of Jev racing from one Wikipedia article to another using only the links on each page, choosing among hundreds to thousands of links per hop.
+  description_zh: 演示 Jev 只用每页上的链接从一篇维基百科文章跑到另一篇，每跳一次都要在数百到数千个链接中做选择。
   image: https://external-preview.redd.it/anYxemlqNjJrMHFoMQDruYJy3DBIsPhqhRECIkxuvIt97Wx_qt0teXaXPlvG.png?format=pjpg&auto=webp&s=1c8c7fece9b9bccbc62d9627f03d50f0f56cf547
   metrics:
     points: 51
@@ -3670,11 +4163,14 @@ entries:
   - wikirace
   - high-cardinality
 - name: XRENGINE Jev scene commands
+  name_zh: XRENGINE 的 Jev 场景指令
   url: https://github.com/BlackJaxDev/XRENGINE/blob/master/XREngine.Editor/Mcp/Actions/EditorMcpActions.TypeSafe.cs
   kind: repo
   author: BlackJaxDev
   description: Editor MCP action in the XRENGINE C# VR game engine that resolves natural-language scene instructions such as 'select player node' into a suggested MCP command and target node using Jev, with pattern matching as fallback.
+  description_zh: XRENGINE C# VR 游戏引擎中的编辑器 MCP 动作，用 Jev 把“select player node”这类自然语言场景指令解析成建议的 MCP 命令和目标节点，以模式匹配作为兜底。
   jev: A Choice over command intents and a Choice over scene node names built from the live scene graph.
+  jev_zh: 一个针对命令意图的 Choice，加一个针对场景节点名称的 Choice，节点名称取自实时场景图。
   metrics:
     repo_stars: 17
   date: '2023-06-12'

@@ -1,5 +1,7 @@
 # 📚 Learn: Official Cookbooks
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 18 entries.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#official-cookbooks)

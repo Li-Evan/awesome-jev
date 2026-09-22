@@ -1,5 +1,7 @@
 # 🦾 Robotics and Simulation
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/robotics.md)
+
 Embodied control, driving simulators, and decisions in the physical world. 61 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

@@ -1,14 +1,18 @@
 title: Search and RAG
+title_zh: 搜索与 RAG
 emoji: 🔎
 layout: gallery
 description: Reranking, retrieval filtering, semantic search, and knowledge graphs.
+description_zh: 重排、检索过滤、语义搜索和知识图谱。
 entries:
 - name: av
   url: https://github.com/PixelML/av
   kind: repo
   author: PixelML
   description: Video memory CLI for agents that indexes captions and transcripts for search and Q&A; with a TypeSafe key, `av ask` has Jev filter and rank retrieved scenes and check whether the answer is supported.
+  description_zh: 面向 agent 的视频记忆 CLI，为字幕和转录建立索引，用于搜索和问答；配置 TypeSafe 密钥后，`av ask` 会让 Jev 过滤并排序检索到的场景，并检查答案是否有依据。
   jev: Per-hit relevance probability times retrieval score for ranking, plus a separate Noul on whether the answer is supported; falls back to raw retrieval if Jev fails.
+  jev_zh: 排序时用每条命中的相关性概率乘以检索分数，另用一个 Noul 判断答案是否有依据；Jev 失败时回退到原始检索结果。
   metrics:
     stars: 7
   date: '2026-02-14'
@@ -18,10 +22,12 @@ entries:
   - video-rag
   - cli
 - name: Boardy match reranking
+  name_zh: Boardy 的匹配重排
   url: https://x.com/owengretzinger/status/2101397416826053104
   kind: post
   author: owengretzinger
   description: Boardy, an AI superconnector, reports that Jev has already reranked over 1 million people-matches in production.
+  description_zh: AI 超级连接者 Boardy 称，Jev 已在生产环境中重排了超过 100 万次人脉匹配。
   image: https://www.boardy.ai/opengraph-image
   metrics:
     likes: 15
@@ -35,11 +41,14 @@ entries:
   - production
   - matching
 - name: Book Learning Jev retrieval gate
+  name_zh: Book Learning 的 Jev 检索闸门
   url: https://github.com/Zafer-Liu/book-learning/blob/main/study/jev_gate.py
   kind: repo
   author: Zafer-Liu
   description: 'Retrieval gate in the self-hosted BOOKNOTE textbook RAG study assistant: Jev scores each fused candidate chunk for relevance and screens it for prompt injection before it reaches the answer, failing open to the ungated results.'
+  description_zh: 自托管教材 RAG 学习助手 BOOKNOTE 中的检索闸门：在融合后的候选分块进入回答之前，Jev 为每块打相关性分并筛查提示词注入，出错时退回未经过滤的结果。
   jev: One fanned-out call per query with a 0-3 relevance Score and an injection Noul per chunk; keeps chunks with relevance >= 2.0 and injection < 0.5.
+  jev_zh: 每个查询一次扇出调用，每个分块一个 0-3 相关性 Score 和一个注入 Noul；保留相关性 >= 2.0 且注入 < 0.5 的分块。
   metrics:
     repo_stars: 43
   date: '2026-04-23'
@@ -54,6 +63,7 @@ entries:
   kind: post
   author: zaidmukaddam
   description: In-browser search bar where a 27K-parameter model parses queries like "open bugs from sam since last week" into typed filters in 0.25 ms and asks Jev only about words it is unsure of.
+  description_zh: 浏览器内搜索栏：一个 27K 参数的模型在 0.25 毫秒 内把“open bugs from sam since last week”这类查询解析成类型化过滤条件，只在拿不准的词上询问 Jev。
   image: https://pbs.twimg.com/amplify_video_thumb/2100910214530953216/img/pZDYHLcrOl_f0pWI.jpg
   metrics:
     likes: 95
@@ -70,7 +80,9 @@ entries:
   kind: repo
   author: zaidmukaddam
   description: 'In-browser search query parser: a 27,193-parameter model labels every word with a role and calibrated confidence in about 0.25 ms, and only the uncertain words are escalated to Jev.'
+  description_zh: 浏览器内的搜索查询解析器：一个 27,193 参数的模型在约 0.25 毫秒 内为每个词标注角色和校准置信度，只有不确定的词才升级给 Jev。
   jev: Both tiers feed one compiler so the app gets the same typed filter whichever tier answered; a separate cascade-search-jev package provides the escalation.
+  jev_zh: 两层都输出到同一个编译器，所以无论哪一层作答，应用拿到的都是同样的类型化过滤条件；升级功能由单独的 cascade-search-jev 包提供。
   image: https://raw.githubusercontent.com/zaidmukaddam/cascade-search/main/eval/results/m2.png
   metrics:
     stars: 8
@@ -82,11 +94,14 @@ entries:
   - cascade
   - browser
 - name: chia1104.dev Jev reranker
+  name_zh: chia1104.dev 的 Jev 重排器
   url: https://github.com/Chia1104/chia1104.dev/blob/develop/packages/ai/src/rerank/jev.ts
   kind: repo
   author: Chia1104
   description: 'Search reranker in the chia1104.dev personal site and CMS monorepo that makes one Jev call per query: a Choice over candidate posts and a Noul on whether any candidate actually answers it, working across languages.'
+  description_zh: 个人网站与 CMS monorepo chia1104.dev 中的搜索重排器，每个查询只调用一次 Jev：一个在候选文章中挑选的 Choice，加一个判断是否有候选真正回答了查询的 Noul，支持跨语言。
   jev: The Choice picks the best candidate id; the Noul separates a real answer from the closest irrelevant hit, since choice probabilities always sum to 1.
+  jev_zh: Choice 选出最佳候选 id；由于 Choice 的概率总和恒为 1，需要 Noul 把真正的答案与最接近但无关的命中区分开。
   image: https://repository-images.githubusercontent.com/485318015/26c450f3-6246-4b7d-b8a5-7a658a79989e
   metrics:
     repo_stars: 32
@@ -102,6 +117,7 @@ entries:
   kind: repo
   author: tedliou
   description: Local browser playground where Laya or Jev picks the best-matching vervecode.dev article for a question, showing every option's raw probability, a no-match option and load and inference timings.
+  description_zh: 本地浏览器试验场：由 Laya 或 Jev 为一个问题挑选最匹配的 vervecode.dev 文章，展示每个选项的原始概率、一个“无匹配”选项，以及加载和推理耗时。
   metrics:
     stars: 1
   date: '2026-09-19'
@@ -110,10 +126,12 @@ entries:
   - laya
   - comparison
 - name: docbank Jev reranking
+  name_zh: docbank 的 Jev 重排
   url: https://github.com/kenn-io/docbank/tree/main/document/typesafe
   kind: repo
   author: kenn-io
   description: Local-first document vault for people and agents that adds a TypeSafe Jev reranking provider for search over document names and extracted text.
+  description_zh: 面向人和 agent 的本地优先文档库，新增了 TypeSafe Jev 重排提供方，用于在文档名和提取出的文本上搜索。
   metrics:
     repo_stars: 101
   date: '2026-07-07'
@@ -124,11 +142,14 @@ entries:
   - reranking
   - go
 - name: Dodo Jev web tools
+  name_zh: Dodo 的 Jev 网页工具
   url: https://github.com/jonnyparris/dodo/blob/main/src/browser/web-fetch.ts
   kind: repo
   author: jonnyparris
   description: Coding agent on Cloudflare Workers whose read-only web tools use Jev to rank candidate URLs before fetching and to check whether a fetched page answers the query.
+  description_zh: 运行在 Cloudflare Workers 上的编程 agent，其只读网页工具用 Jev 在抓取前给候选 URL 排序，并检查抓取到的页面是否回答了查询。
   jev: browser_triage ranks URLs from metadata alone; browser_markdown returns a calibrated Noul verdict so the agent can decide whether to keep browsing.
+  jev_zh: browser_triage 只凭元数据给 URL 排序；browser_markdown 返回一个校准的 Noul 判定，让 agent 决定是否继续浏览。
   image: https://raw.githubusercontent.com/jonnyparris/dodo/main/assets/dodo.svg
   metrics:
     repo_stars: 13
@@ -140,10 +161,12 @@ entries:
   - web-fetch
   - triage
 - name: Embedded databases plus Jev reranking
+  name_zh: 嵌入式数据库搭配 Jev 重排
   url: https://x.com/rodydavis/status/2101802283256463699
   kind: article
   author: rodydavis
   description: Architecture write-up pairing SQLite, DuckDB and LadyBugDB for hybrid candidate retrieval with Jev as the reranker, aiming for sub-second RAG results instead of sending 20 to 50 passages to a frontier LLM.
+  description_zh: 架构文章：组合 SQLite、DuckDB 和 LadyBugDB 做混合候选检索，用 Jev 作重排器，目标是在一秒内给出 RAG 结果，而不是把 20 到 50 段文本发给前沿 LLM。
   image: https://pbs.twimg.com/media/HSsZnCSaMAABhjv.jpg
   metrics:
     likes: 27
@@ -158,6 +181,7 @@ entries:
   kind: repo
   author: jokull
   description: English-Icelandic dictionary on Cloudflare Workers that combines D1 full-text search and Vectorize semantic recall, then has Jev via Workers AI rerank the shortlist and decide whether any entry truly matches.
+  description_zh: 运行在 Cloudflare Workers 上的英语-冰岛语词典，结合 D1 全文搜索和 Vectorize 语义召回，再通过 Workers AI 调用 Jev 重排候选短名单，并判断是否有词条真正匹配。
   date: '2026-09-18'
   tags:
   - dictionary
@@ -168,6 +192,7 @@ entries:
   kind: repo
   author: byenzyme
   description: Local-first compile step for Markdown knowledge bases whose enzyme compile uses Jev via OpenRouter Decisions to scan the vault and write the program that decides where catalyst questions are learned from.
+  description_zh: Markdown 知识库的本地优先编译步骤：其 enzyme compile 通过 OpenRouter Decisions 调用 Jev 扫描整个知识库，写出一段程序，决定 catalyst 问题从哪里学习。
   image: https://repository-images.githubusercontent.com/920398699/6e344f34-0504-4959-b6ce-49b8d6cb5c20
   metrics:
     stars: 82
@@ -183,7 +208,9 @@ entries:
   kind: repo
   author: marc2332
   description: Rust CLI that finds a file or folder from a natural-language memory of it by walking the directory tree and asking Jev which entries at each level look most promising.
+  description_zh: Rust CLI，根据你对某个文件或文件夹的自然语言记忆找到它：沿目录树逐层遍历，每一层都询问 Jev 哪些条目最有希望。
   jev: Sends entry names and light metadata per level, keeps the highest-scoring directories and descends, respecting .gitignore.
+  jev_zh: 每一层发送条目名和少量元数据，保留得分最高的目录继续向下，并遵守 .gitignore。
   metrics:
     stars: 9
   date: '2026-09-19'
@@ -196,7 +223,9 @@ entries:
   kind: repo
   author: tornikegomareli
   description: 'Mac app for finding SF Symbols by plain description: on-device word vectors shortlist 48 symbols, then Jev answers 48 yes/no questions in one request and the scores drive a physics pile where good matches float up.'
+  description_zh: 用简单描述查找 SF Symbols 的 Mac 应用：设备端词向量先筛出 48 个符号，再由 Jev 在一次请求中回答 48 个是/否问题，分数驱动一个物理堆叠效果，匹配度高的会浮上来。
   jev: One Noul per shortlisted symbol in a single request; without a key the app uses on-device matching only.
+  jev_zh: 一次请求中为每个入围符号问一个 Noul；没有密钥时应用只使用设备端匹配。
   metrics:
     stars: 5
   date: '2026-09-20'
@@ -207,11 +236,14 @@ entries:
   - sf-symbols
   - semantic-search
 - name: Fuzzy content search
+  name_zh: 模糊内容搜索
   url: https://x.com/gigabit_million/status/2102200033307422821
   kind: post
   author: gigabit_million
   description: Search site over the author's own published content where Jev scores each item against a vague query and shows the scores, which makes the ranking easy to inspect.
+  description_zh: 作者为自己发布过的内容做的搜索站：Jev 针对模糊查询为每条内容打分并显示分数，排序依据一目了然。
   jev: Score per content item against the free-text query.
+  jev_zh: 针对自由文本查询，为每条内容给出一个 Score。
   image: https://pbs.twimg.com/amplify_video_thumb/2101941990254632960/img/gx4NHU9mxvfHKA3y.jpg
   metrics:
     likes: 1
@@ -228,7 +260,9 @@ entries:
   kind: repo
   author: raahelpie
   description: Personal Hacker News reader that screens new stories against your saved interests and shows only the relevant ones in an HN-style feed.
+  description_zh: 个人 Hacker News 阅读器，按你保存的兴趣筛选新文章，只在 HN 风格的信息流中显示相关内容。
   jev: Runs on Codiv's OpenJev model by default, with TypeSafe Jev as a switchable provider; thresholds of 0.7 for titles and 0.9 for article relevance.
+  jev_zh: 默认运行在 Codiv 的 OpenJev 模型上，TypeSafe Jev 可作为可切换的提供方；标题阈值 0.7，文章相关性阈值 0.9。
   image: https://external-preview.redd.it/cGZkd252YzFheXFoMeTpqXMSfpCE94rmVlGr8pZ7_z3kfZQqelwwzt-Id7ds.png?format=pjpg&auto=webp&s=e90f071fd20387c7898145a4feed6ca91dc9360f
   metrics:
     stars: 1
@@ -243,10 +277,12 @@ entries:
   - news-feed
   - openjev
 - name: Hacker News personal recommender
+  name_zh: Hacker News 个人推荐器
   url: https://x.com/snaga/status/2101901648184643707
   kind: post
   author: snaga
   description: Experiment that has Jev pick which Hacker News front-page stories match the author's interests each morning, with the composite-judgment design written up in a gist.
+  description_zh: 实验：每天早上让 Jev 挑出 Hacker News 首页中符合作者兴趣的文章，组合判断的设计写在一个 gist 里。
   image: https://pbs.twimg.com/media/HSt0LTabQAAACdr.jpg?name=orig
   metrics:
     views: 138
@@ -262,6 +298,7 @@ entries:
   kind: thread
   author: jrhey
   description: Hacker News reader that uses Jev to filter large discussion threads down to the comments worth reading.
+  description_zh: Hacker News 阅读器，用 Jev 把大型讨论串过滤到只剩值得读的评论。
   image: https://www.hazumi.news/hazumi-news-og.png
   metrics:
     points: 5
@@ -278,7 +315,9 @@ entries:
   kind: repo
   author: hev
   description: Recipe and 90-line Python wrapper that uses Jev as a calibrated reranker for up to 30 documents per call, with nDCG@10 results against hosted and open rerankers on BEIR shortlists.
+  description_zh: 一份教程加一个 90 行的 Python 封装，把 Jev 用作校准的重排器，每次调用最多处理 30 篇文档，并给出在 BEIR 候选列表上与托管和开源重排器对比的 nDCG@10 结果。
   jev: One Noul relevance question per document in a single request; the probability serves as both sort key and prune threshold.
+  jev_zh: 一次请求中每篇文档一个 Noul 相关性问题；概率既是排序键，也是剪枝阈值。
   metrics:
     stars: 9
   date: '2026-09-17'
@@ -287,11 +326,14 @@ entries:
   - rag
   - beir
 - name: Hindsight Jev reranker
+  name_zh: Hindsight 的 Jev 重排器
   url: https://github.com/vectorize-io/hindsight/blob/main/hindsight-api-slim/hindsight_api/engine/cross_encoder.py
   kind: repo
   author: vectorize-io
   description: Reranker provider in the Hindsight agent-memory system that asks Jev one question with every recall candidate as an option, so the answer is the ranking, in a single request.
+  description_zh: agent 记忆系统 Hindsight 中的重排提供方：只向 Jev 问一个问题，把每个召回候选都作为选项，答案本身就是排序，一次请求完成。
   jev: Enabled with HINDSIGHT_API_RERANKER_PROVIDER=typesafe (jev-latest by default) and can optionally cut the irrelevant tail; shipped in 0.10.1.
+  jev_zh: 通过 HINDSIGHT_API_RERANKER_PROVIDER=typesafe 启用（默认 jev-latest），可选择截掉不相关的尾部；已在 0.10.1 中发布。
   image: https://raw.githubusercontent.com/vectorize-io/hindsight/main/hindsight-docs/static/img/hindsight-github-banner.png
   metrics:
     repo_stars: 24855
@@ -303,10 +345,12 @@ entries:
   - agent-memory
   - recall
 - name: Intent-aware search in Replicas
+  name_zh: Replicas 中的意图感知搜索
   url: https://x.com/SaaiArora/status/2100807349363741132
   kind: post
   author: SaaiArora
   description: Experiment powering the global search in the Replicas app with Jev so results and actions follow what the user means.
+  description_zh: 实验：用 Jev 驱动 Replicas 应用的全局搜索，让结果和操作贴合用户的真实意图。
   image: https://pbs.twimg.com/amplify_video_thumb/2100806240406487040/img/CMyCF6BobyP4feED.jpg
   metrics:
     likes: 30
@@ -317,10 +361,12 @@ entries:
   - intent
   - ux
 - name: Jev and SerpApi fact checker
+  name_zh: Jev 与 SerpApi 事实核查器
   url: https://github.com/serpapi/tutorials/tree/master/python_projects/jev-serpapi-fact-checker
   kind: repo
   author: serpapi
   description: Tutorial CLI from SerpApi that checks a statement or yes/no question against up to five Google organic snippets and gets a verdict from Jev through OpenRouter's Decisions API.
+  description_zh: SerpApi 出的教程 CLI：用最多五条 Google 自然搜索摘要检验一个陈述或是/否问题，并通过 OpenRouter 的 Decisions API 从 Jev 获得结论。
   metrics:
     repo_stars: 6
   date: '2025-09-05'
@@ -335,6 +381,7 @@ entries:
   kind: repo
   author: Eliovp-BV
   description: Local research workspace where Jev steers an investigation over public sources, asking the same research questions across records to build an evidence-linked comparison with every decision inspectable.
+  description_zh: 本地研究工作区：Jev 引导基于公开来源的调查，在各条记录上问同一组研究问题，构建一份与证据关联的对比，每个决策都可检查。
   image: https://raw.githubusercontent.com/Eliovp-BV/Jev-Radar/main/docs/media/radar-demo.gif
   date: '2026-09-19'
   tags:
@@ -346,6 +393,7 @@ entries:
   kind: repo
   author: shinpr
   description: Rust CLI, installed from npm, that reads a JSON array of search results from stdin and uses Jev to rerank them, drop candidates with no usable evidence, or extract query-specific passages for your LLM.
+  description_zh: 通过 npm 安装的 Rust CLI，从 stdin 读取 JSON 数组形式的搜索结果，用 Jev 对其重排、剔除没有可用证据的候选，或为你的 LLM 抽取与查询相关的段落。
   image: https://raw.githubusercontent.com/shinpr/jev-reranker/main/assets/banner.jpg
   metrics:
     stars: 2
@@ -361,6 +409,7 @@ entries:
   kind: repo
   author: jh1373
   description: Obsidian plugin that searches the vault offline with BM25 and then, only after you approve what gets sent, reranks the top results with Jev.
+  description_zh: Obsidian 插件，先用 BM25 离线搜索笔记库，只有在你批准要发送的内容后，才用 Jev 重排靠前的结果。
   date: '2026-09-18'
   tags:
   - obsidian
@@ -371,6 +420,7 @@ entries:
   kind: repo
   author: sudeshkar
   description: Corrective RAG where the retrieve-or-not, chunk-grading and groundedness gates are Jev calls instead of LLM judges, averaging 0.75 LLM calls per query with 7x fewer LLM calls and 4x lower p50 latency.
+  description_zh: Corrective RAG 实现：是否检索、分块评级和依据检查这几道闸门都用 Jev 调用代替 LLM 裁判，平均每个查询 0.75 次 LLM 调用，LLM 调用次数少 7 倍，p50 延迟低 4 倍。
   date: '2026-09-20'
   tags:
   - rag
@@ -381,6 +431,7 @@ entries:
   kind: repo
   author: abhishekmamdapure
   description: Upload a PDF and ask questions such as the GST number or invoice total; Jev ranks the extracted text chunks that answer each one and the app shows each match, its probability and its location on the page.
+  description_zh: 上传一份 PDF，然后提问，比如 GST 号码或发票总额；Jev 对能回答每个问题的提取文本分块排序，应用显示每个匹配项、其概率和在页面上的位置。
   metrics:
     stars: 2
   date: '2026-09-20'
@@ -395,6 +446,7 @@ entries:
   kind: repo
   author: hotchpotch
   description: Python library that uses Jev to score retrieved documents for usefulness as answer evidence, rerank them and drop those under a threshold before generation, handling concurrency, long candidate lists and retries.
+  description_zh: Python 库，用 Jev 为检索到的文档作为答案证据的有用程度打分，在生成前重排并丢弃低于阈值的文档，并处理并发、长候选列表和重试。
   image: https://cdn-uploads.huggingface.co/production/uploads/627c91ff4d0858f003553787/uU_-MZJAuzixqmkxGVO24.webp
   metrics:
     stars: 10
@@ -413,7 +465,9 @@ entries:
   kind: repo
   author: kierandotai
   description: MCP server for agent web research that has Jev judge every query, search result, and fetched page for relevance and credibility, with session budgets, SSRF-guarded fetching, and a live decision dashboard.
+  description_zh: 面向 agent 网络调研的 MCP 服务器，让 Jev 评判每个查询、搜索结果和抓取页面的相关性与可信度，带会话预算、防 SSRF 的抓取和实时决策仪表盘。
   jev: One call per search result (relevance, credibility, worth fetching) and one per fetched page (answered, content class, steering risk); a hand-labeled 25-item study reports 88% relevance and 96% credibility.
+  jev_zh: 每条搜索结果一次调用（相关性、可信度、是否值得抓取），每个抓取页面一次调用（是否已回答、内容类别、操纵风险）；一项 25 条人工标注的研究报告相关性 88%、可信度 96%。
   date: '2026-09-19'
   links:
     study: https://github.com/kierandotai/jev-scout/blob/main/docs/accuracy/2026-09-19-jev-golden-set-study.md
@@ -425,6 +479,7 @@ entries:
   kind: repo
   author: superagents-lab
   description: Natural-language web search that picks the time range and query with Choices and keeps each source only if its Noul passes (needs a Search1API key).
+  description_zh: 自然语言网页搜索，用 Choice 选择时间范围和查询词，每个来源只有通过其 Noul 才保留（需要 Search1API 密钥）。
   image: https://raw.githubusercontent.com/superagents-lab/jev-search/main/public/og-home.png
   metrics:
     stars: 387
@@ -443,6 +498,7 @@ entries:
   kind: repo
   author: larguesa
   description: Dependency-free Python CLI for semantic line search over documents, notes, and knowledge bases via Jev on OpenRouter, meant to complement exact keyword search for agents.
+  description_zh: 零依赖的 Python CLI，通过 OpenRouter 上的 Jev 对文档、笔记和知识库做逐行语义搜索，用来补充 agent 的精确关键词搜索。
   metrics:
     stars: 6
   date: '2026-09-19'
@@ -455,6 +511,7 @@ entries:
   kind: repo
   author: mukiwu
   description: Claude Code plugin in the muki-ai-plugins marketplace that answers WebSearch with Jev-ranked results, where Jev chooses sources and time window, falling back to the built-in tool.
+  description_zh: muki-ai-plugins 市场中的 Claude Code 插件，用 Jev 排序的结果响应 WebSearch，由 Jev 选择来源和时间窗口，失败时回退到内置工具。
   metrics:
     stars: 59
   date: '2026-03-23'
@@ -469,6 +526,7 @@ entries:
   kind: repo
   author: kbhuw
   description: Agent plugin and MCP tool that sends batches of files, public web pages, text, or tool descriptions to Jev with a query and returns relevance probabilities, so the agent opens only items worth reading.
+  description_zh: agent 插件和 MCP 工具，把一批文件、公开网页、文本或工具描述连同查询发给 Jev，返回相关性概率，让 agent 只打开值得读的条目。
   metrics:
     stars: 45
   date: '2026-09-18'
@@ -482,6 +540,7 @@ entries:
   kind: repo
   author: ArielBubis
   description: Movie recommender that narrows 4,800 films to a shortlist with FAISS and BM25, then has Jev parse your constraints and pick one film, using its confidence to answer instantly or ask a follow-up.
+  description_zh: 电影推荐器：先用 FAISS 和 BM25 把 4,800 部电影缩到一份短名单，再让 Jev 解析你的限制条件并选出一部，依据其置信度决定立即回答还是追问。
   date: '2026-09-21'
   tags:
   - recommendation
@@ -492,6 +551,7 @@ entries:
   kind: repo
   author: chenmingtang830
   description: Document-to-graph pipeline that parses PDF, DOCX, PPTX, or text locally and asks Jev one closed-set relation question per candidate entity pair, exporting edges with probabilities and page evidence.
+  description_zh: 文档转图谱的管线，在本地解析 PDF、DOCX、PPTX 或文本，对每个候选实体对向 Jev 问一个封闭集合的关系问题，导出带概率和页面证据的边。
   image: https://raw.githubusercontent.com/chenmingtang830/jevgraph/main/docs/assets/jevgraph-overview.svg
   metrics:
     stars: 9
@@ -504,7 +564,9 @@ entries:
   kind: repo
   author: ajanm007
   description: Decision layer for RAG pipelines that replaces hardcoded thresholds with calibrated gates for evidence sufficiency, chunk boundaries, context selection, answer abstention, and cache trust, evaluated on HotpotQA.
+  description_zh: RAG 管线的决策层，用校准的闸门替换硬编码阈值，涵盖证据是否充分、分块边界、上下文选择、弃答和缓存可信度，在 HotpotQA 上评测。
   jev: Jev is the first swappable backend behind the five decision primitives.
+  jev_zh: Jev 是这五个决策原语背后第一个可替换的后端。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -517,6 +579,7 @@ entries:
   kind: repo
   author: kylemclaren
   description: Drop-in shadcn/ui block for site search that shows keyword hits on the first keystroke, then re-ranks them by the visitor's intent with Jev a moment later, keeping keyword order if the call fails.
+  description_zh: 可直接接入的 shadcn/ui 站内搜索组件：第一次按键就显示关键词命中，稍后用 Jev 按访客意图重排，调用失败时保留关键词顺序。
   metrics:
     stars: 1
   date: '2026-09-21'
@@ -527,11 +590,14 @@ entries:
   - reranking
   - shadcn
 - name: Job Seek Jev AI filter
+  name_zh: Job Seek 的 Jev AI 筛选
   url: https://github.com/colophon-group/jobseek/blob/main/apps/web/src/lib/ai-filter/jev-client.ts
   kind: repo
   author: colophon-group
   description: Open-source job search built from 5,300+ career sites that adds a Jev AI filter classifying each posting as accepted or rejected against a user's criteria.
+  description_zh: 基于 5,300+ 个招聘网站构建的开源求职搜索，新增了 Jev AI 筛选，按用户条件把每个职位归为接受或拒绝。
   jev: One Choice per job posting in a batched request, resistant to injected text in descriptions.
+  jev_zh: 批量请求中每个职位一个 Choice，能抵御职位描述里注入的文本。
   metrics:
     repo_stars: 199
   date: '2026-02-18'
@@ -545,6 +611,7 @@ entries:
   kind: repo
   author: keltokhy
   description: Python context selector that asks Jev whether each passage in your files or records is useful evidence for a task, then picks diverse verbatim passages with source links within a token budget.
+  description_zh: Python 上下文选择器，询问 Jev 你的文件或记录中每段文字是否是完成某项任务的有用证据，再在 token 预算内挑出多样的原文段落并附上来源链接。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -553,10 +620,12 @@ entries:
   - rag
   - python
 - name: keep.md search and tagging
+  name_zh: keep.md 的搜索与打标签
   url: https://x.com/iannuttall/status/2100884132272181594
   kind: post
   author: iannuttall
   description: 'Test of Jev on Cloudflare Workers inside keep.md: search reranking 7x faster than the current hybrid, and content tagging 50x faster than GLM 4.7 Flash with no failures.'
+  description_zh: 在 keep.md 中测试 Cloudflare Workers 上的 Jev：搜索重排比现有混合方案快 7 倍，内容打标签比 GLM 4.7 Flash 快 50 倍，且没有失败。
   image: https://pbs.twimg.com/media/HSfWoEQWcAAalX9.jpg?name=orig
   metrics:
     likes: 303
@@ -570,11 +639,14 @@ entries:
   - tagging
   - cloudflare-workers
 - name: Knowhere TOC anchor eval
+  name_zh: Knowhere 目录锚点评测
   url: https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py
   kind: repo
   author: Ontos-AI
   description: Offline eval in the Knowhere document-parsing system comparing Jev against the current model at confirming a table-of-contents start page during PDF parsing.
+  description_zh: 文档解析系统 Knowhere 中的离线评测，比较 Jev 与当前模型在 PDF 解析时确认目录起始页的表现。
   jev: A per-page Choice of true/false on cached page text; Jev cannot take screenshots, so both arms get the same text.
+  jev_zh: 基于缓存的页面文本，每页一个真/假 Choice；Jev 不能看截图，所以两组拿到的都是同样的文本。
   metrics:
     repo_stars: 3433
   date: '2026-04-30'
@@ -585,11 +657,14 @@ entries:
   - rag
   - evaluation
 - name: Kody Jev search rerank
+  name_zh: Kody 的 Jev 搜索重排
   url: https://github.com/kentcdodds/kody/blob/main/packages/worker/src/mcp/tools/search-jev-rerank.ts
   kind: repo
   author: kentcdodds
   description: Optional second stage for Kody's MCP search that widens hybrid lexical and vector recall on ambiguous queries, then reranks and filters candidates with Jev via Workers AI.
+  description_zh: 为 Kody 的 MCP 搜索增加的可选第二阶段：遇到含糊查询时扩大词法与向量的混合召回，再通过 Workers AI 用 Jev 对候选重排和过滤。
   jev: Score questions per candidate through Cloudflare AI Gateway, with an adaptive keep cutoff and fallback to hybrid order on low confidence.
+  jev_zh: 通过 Cloudflare AI Gateway 为每个候选问 Score 问题，保留截断点自适应调整，置信度低时回退到混合排序。
   metrics:
     repo_stars: 663
   date: '2026-09-18'
@@ -602,11 +677,14 @@ entries:
   - mcp
   - cloudflare
 - name: LanceDB reranker
+  name_zh: LanceDB 重排器
   url: https://github.com/lancedb/lancedb/blob/main/python/python/lancedb/rerankers/typesafe.py
   kind: repo
   author: lancedb
   description: Asks one Noul per query-document pair and stores an absolute relevance probability you can threshold.
+  description_zh: 对每个查询-文档对问一个 Noul，并存储一个可设阈值的绝对相关性概率。
   jev: Merged but not yet released at the time of curation.
+  jev_zh: 整理时已合并，尚未发布。
   image: https://github.com/user-attachments/assets/92dad0a2-2a37-4ce1-b783-0d1b4f30a00c
   metrics:
     repo_stars: 11496
@@ -618,10 +696,12 @@ entries:
   - vector-search
   - python
 - name: Lattice Jev reranker
+  name_zh: Lattice 的 Jev 重排器
   url: https://github.com/Zabaca/lattice
   kind: repo
   author: Zabaca
   description: Optional reranking stage in Lattice, a local-first retrieval engine for markdown knowledge bases, that sends the fused top hits to Jev in one request and scores each by the probability it answers the query.
+  description_zh: 本地优先的 markdown 知识库检索引擎 Lattice 中的可选重排阶段：把融合后的靠前命中一次性发给 Jev，按每条回答查询的概率打分。
   metrics:
     stars: 15
   date: '2025-11-27'
@@ -636,6 +716,7 @@ entries:
   kind: repo
   author: WiktorB2004
   description: LlamaIndex reranker and router; reranking lifts nDCG@5 on NFCorpus from 0.340 to 0.396.
+  description_zh: LlamaIndex 的重排器和路由器；重排把 NFCorpus 上的 nDCG@5 从 0.340 提升到 0.396。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -650,6 +731,7 @@ entries:
   kind: repo
   author: avshalomd
   description: Experimental wrapper with the same system_one(state, questions) call as Jev that accepts inputs beyond Jev's 32K-token limit by scoring every chunk, keeping the best ones and asking Jev over what remains.
+  description_zh: 实验性封装，调用方式与 Jev 相同，都是 system_one(state, questions)，能接受超过 Jev 32K token 上限的输入：先给每个分块打分，保留最好的几块，再就剩下的内容询问 Jev。
   image: https://raw.githubusercontent.com/avshalomd/longjev/main/results/social/longjev_pipeline.png
   metrics:
     stars: 1
@@ -663,7 +745,9 @@ entries:
   kind: post
   author: AYi_AInotes
   description: Tool that imports years of X bookmarks and lets you search them in plain language, with Jev scoring every saved tweet in parallel and returning a relevance-ranked list in seconds.
+  description_zh: 导入多年 X 书签后用自然语言搜索的工具，Jev 并行为每条收藏推文打分，几秒内返回按相关性排序的列表。
   jev: Scores each bookmarked tweet against the query.
+  jev_zh: 针对查询为每条收藏推文打分。
   image: https://pbs.twimg.com/amplify_video_thumb/2101673555813453825/img/nfWWuk_nW1mtGBW2.jpg
   metrics:
     likes: 29
@@ -680,7 +764,9 @@ entries:
   kind: article
   author: The Unwind AI (Shubham Saboo, Gargi Gupta)
   description: 'Open-source Chrome extension for searching by meaning instead of words: ask a question and Jev scores the page''s sentences and highlights the ones that match your intent, with no generated answer.'
+  description_zh: 开源 Chrome 扩展，按意思而不是字面搜索：提一个问题，Jev 为页面中的句子打分并高亮与你意图匹配的那些，不生成答案。
   jev: Jev scores each source sentence against the query and the top passages are highlighted in place.
+  jev_zh: Jev 针对查询为每个原文句子打分，得分最高的段落直接在原处高亮。
   image: https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9ff9d5e8-2f74-4ee2-b95f-2bacfdda1e77/ChatGPT_Image_Sep_20__2026__01_04_29_AM.png?t=1789891484
   date: '2026-09-20'
   links:
@@ -694,7 +780,9 @@ entries:
   kind: repo
   author: jexp
   description: Demo that navigates a Neo4j graph one hop at a time toward a natural-language goal, with Jev choosing which relationship to follow and a beam search keeping the best paths.
+  description_zh: 演示：朝着一个自然语言目标在 Neo4j 图上一跳一跳地导航，由 Jev 选择沿哪条关系走，并用集束搜索保留最佳路径。
   jev: A Choice over outgoing relationships plus a goal-reached Noul in the same call, so each hop is one round-trip.
+  jev_zh: 同一次调用里包含一个在出边关系中挑选的 Choice 和一个判断是否到达目标的 Noul，所以每一跳只需一次往返。
   metrics:
     stars: 81
   date: '2026-09-16'
@@ -702,11 +790,14 @@ entries:
   - knowledge-graph
   - neo4j
 - name: obsidian-tc Jev citation judge
+  name_zh: obsidian-tc 的 Jev 引用评判
   url: https://github.com/The-40-Thieves/obsidian-tc/blob/main/packages/server/src/gateway/typesafe.ts
   kind: repo
   author: The-40-Thieves
   description: Opt-in Jev judge provider in obsidian-tc, a governed Obsidian MCP server with fused retrieval and vault memory, used only to decide whether inferred citations between notes hold up.
+  description_zh: 带融合检索和笔记库记忆的受治理 Obsidian MCP 服务器 obsidian-tc 中的可选 Jev 评判提供方，只用于判断笔记之间推断出的引用是否成立。
   jev: One Noul with true/false criteria per citation, pinned to a versioned model, with bounded retries.
+  jev_zh: 每条引用一个带真/假标准的 Noul，固定到带版本号的模型，重试次数有上限。
   metrics:
     repo_stars: 5
   date: '2026-05-18'
@@ -717,11 +808,14 @@ entries:
   - mcp
   - citations
 - name: OpenViking reranker
+  name_zh: OpenViking 重排器
   url: https://github.com/volcengine/OpenViking/blob/main/openviking/models/rerank/jev_rerank.py
   kind: repo
   author: volcengine
   description: Rerank provider for a context database that scores every document with a Noul in one request.
+  description_zh: 上下文数据库的重排提供方，一次请求中用 Noul 为每篇文档打分。
   jev: Merged but not yet released at the time of curation.
+  jev_zh: 整理时已合并，尚未发布。
   image: https://raw.githubusercontent.com/volcengine/OpenViking/main/docs/images/ov-logo.png
   metrics:
     repo_stars: 38379
@@ -733,10 +827,12 @@ entries:
   - context-database
   - rag
 - name: Paper Breakdown recommendations
+  name_zh: Paper Breakdown 的推荐
   url: https://x.com/neural_avb/status/2100881974780993668
   kind: post
   author: neural_avb
   description: Adds Jev curation on top of the content-based and collaborative-filtering recommender in Paper Breakdown, at $0.0019 per user for ~70 recs.
+  description_zh: 在 Paper Breakdown 基于内容和协同过滤的推荐系统之上加一层 Jev 精选，每个用户约 70 条推荐，成本 $0.0019。
   image: https://pbs.twimg.com/amplify_video_thumb/2100879106078568449/img/nCefxS323PhF_n7f.jpg
   metrics:
     likes: 65
@@ -746,11 +842,14 @@ entries:
   - recommendations
   - research-papers
 - name: Patterns of Design search
+  name_zh: Patterns of Design 搜索
   url: https://github.com/Aias/pattern-languages/blob/master/src/lib/pattern-search.ts
   kind: repo
   author: Aias
   description: Search on the patternsof.design pattern-language site where Jev scores how much practical guidance each design pattern gives for what the user wants to build, directly or by analogy.
+  description_zh: 模式语言网站 patternsof.design 上的搜索：Jev 评估每个设计模式对用户想构建的东西能提供多少实际指导，无论是直接适用还是类比借鉴。
   jev: One Score per pattern against the query, 64 patterns per request, with a 0.5 match probability cut.
+  jev_zh: 针对查询为每个模式给一个 Score，每个请求 64 个模式，以 0.5 的匹配概率为切分点。
   metrics:
     repo_stars: 5
   date: '2019-09-05'
@@ -762,10 +861,12 @@ entries:
   - design-patterns
   - astro
 - name: Physical library index search
+  name_zh: 实体藏书索引搜索
   url: https://x.com/s3ththompson/status/2100975114753892550
   kind: post
   author: s3ththompson
   description: Searches the author's physical books by checking an entire book index in parallel in 300ms, e.g. pointing "Who invented photography?" to page 98 under Niepce.
+  description_zh: 搜索作者的实体藏书：在 300 毫秒 内并行检查一整本书的索引，比如把“谁发明了摄影？”指向 Niepce 条目下的第 98 页。
   image: https://pbs.twimg.com/amplify_video_thumb/2100974992653500416/img/7rTO_q-ntbWDGTuR.jpg
   metrics:
     likes: 171
@@ -780,6 +881,7 @@ entries:
   kind: repo
   author: komikat
   description: 'Web search CLI and MCP server for terminals and agents: Parallel Search seeds pages, local Chromium fetches them concurrently, and Jev scores the evidence and picks links for a breadth-first queue.'
+  description_zh: 面向终端和 agent 的网页搜索 CLI 与 MCP 服务器：Parallel Search 提供种子页面，本地 Chromium 并发抓取，Jev 评估证据并挑选链接加入广度优先队列。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -792,7 +894,9 @@ entries:
   kind: repo
   author: micahchoo
   description: Obsidian plugin that answers saved questions with original passages from your notes, then saves them into a note linked back to the sources, without generating an answer.
+  description_zh: Obsidian 插件，用笔记中的原文段落回答你保存的问题，再把它们存成一篇链接回来源的笔记，不生成答案。
   jev: Local search finds candidate passages and Jev scores which of them actually answer the question.
+  jev_zh: 本地搜索找出候选段落，Jev 评估其中哪些真正回答了问题。
   image: https://raw.githubusercontent.com/micahchoo/qualitative-query/main/docs/img/query-builder.png
   metrics:
     stars: 1
@@ -802,11 +906,14 @@ entries:
   - notes
   - passage-retrieval
 - name: RAGElo Jev evaluators
+  name_zh: RAGElo 的 Jev 评估器
   url: https://github.com/zetaalphavector/RAGElo
   kind: repo
   author: zetaalphavector
   description: Elo-based toolkit for evaluating RAG agents that can use Jev via TypeSafe or Vercel AI Gateway as a retrieval relevance judge and pairwise answer evaluator.
+  description_zh: 基于 Elo 的 RAG agent 评测工具包，可通过 TypeSafe 或 Vercel AI Gateway 把 Jev 用作检索相关性评判和答案两两比较评估器。
   jev: jev asks whether a document would be used in a report on the topic; jev_rdnam keeps the expected grade as a fractional score.
+  jev_zh: jev 评估器判断一篇文档是否会被用于该主题的报告；jev_rdnam 把期望等级保留为小数分数。
   image: https://raw.githubusercontent.com/zetaalphavector/RAGElo/master/docs/images/RAGElo_logo.png
   metrics:
     stars: 131
@@ -820,7 +927,9 @@ entries:
   kind: repo
   author: danielwanwx
   description: Evidence-first research runtime for AI agents that routes a question to research packs and read-only connectors; an optional `jev-triage` command asks Jev how relevant already-collected public evidence rows are.
+  description_zh: 面向 AI agent、证据优先的研究运行时，把问题路由到研究包和只读连接器；可选的 `jev-triage` 命令会询问 Jev 已收集的公开证据行有多相关。
   jev: Up to eight allowlisted public rows per request get advisory Noul relevance probabilities; Jev never adds or removes evidence.
+  jev_zh: 每个请求最多八条白名单内的公开数据行，获得仅供参考的 Noul 相关性概率；Jev 从不增删证据。
   metrics:
     stars: 5
   date: '2026-06-28'
@@ -829,10 +938,12 @@ entries:
   - evidence
   - agents
 - name: Sanity content agent without LLM queries
+  name_zh: 不调用 LLM 的 Sanity 内容 agent
   url: https://x.com/jreyesdev/status/2102218598668488983
   kind: post
   author: jreyesdev
   description: Demo pairing Jev with the Sanity CMS where answers are pre-written at ingest, so the agent selects an answer, skips retrieval when it can and responds in under a second instead of 4+.
+  description_zh: Jev 搭配 Sanity CMS 的演示：答案在入库时就预先写好，agent 只需选择答案，能跳过检索时就跳过，不到一秒即可响应，而不是 4 秒以上。
   image: https://pbs.twimg.com/media/HSyURXUaUAEVMKX.jpg?name=orig
   metrics:
     views: 60
@@ -846,6 +957,7 @@ entries:
   kind: repo
   author: Shifros
   description: Chat-style search prototype for a Q&A site of 825 articles on Australian business registration, where a Jev Choice picks the article that best answers the query, or none, across four shards.
+  description_zh: 对话式搜索原型，面向一个有 825 篇澳大利亚企业注册文章的问答网站：Jev 在四个分片上用 Choice 选出最能回答查询的文章，或选择“都不是”。
   date: '2026-09-17'
   links:
     app: https://search-function-test.vercel.app
@@ -854,10 +966,12 @@ entries:
   - site-search
   - choice
 - name: SearchBoost Jev evidence loop
+  name_zh: SearchBoost 的 Jev 证据循环
   url: https://github.com/Mr-remon219/search-boost/tree/master/lib/jev
   kind: repo
   author: Mr-remon219
   description: Multi-engine web search and evidence synthesis for coding agents (MCP server, Pi extension, DeepSeek Harness bundle) with an experimental adaptive_search loop that uses Jev to research targets in batches.
+  description_zh: 面向编程 agent 的多引擎网页搜索与证据综合工具（MCP 服务器、Pi 扩展、DeepSeek Harness 套件），带一个实验性的 adaptive_search 循环，用 Jev 分批研究目标。
   metrics:
     repo_stars: 9
   date: '2026-08-17'
@@ -868,11 +982,14 @@ entries:
   - mcp
   - research
 - name: second-brain Jev classifier
+  name_zh: second-brain 的 Jev 分类器
   url: https://github.com/baekenough/second-brain/tree/main/internal/jev
   kind: repo
   author: baekenough
   description: Ingestion classifier in second-brain, an LLM-curated private search engine over Slack, GitHub, Drive and personal messages, that asks Jev to assign each SMS, Gmail or call transcript a segment and a retention score.
+  description_zh: 由 LLM 整理、覆盖 Slack、GitHub、Drive 和个人消息的私人搜索引擎 second-brain 中的入库分类器：让 Jev 为每条短信、Gmail 邮件或通话转录分配一个分段和一个留存分数。
   jev: A segment Choice and a retention Score per document; request and response bodies are never logged.
+  jev_zh: 每个文档一个分段 Choice 和一个留存 Score；请求和响应内容从不写入日志。
   image: https://raw.githubusercontent.com/baekenough/second-brain/main/docs/diagrams/01-system-runtime-topology.png
   metrics:
     repo_stars: 15
@@ -884,10 +1001,12 @@ entries:
   - classification
   - go
 - name: Semantic Find (⌘F) extension
+  name_zh: 语义查找（⌘F）扩展
   url: https://x.com/Saboo_Shubham_/status/2101576462042366114
   kind: post
   author: Saboo_Shubham_
   description: Open-source Chrome extension that replaces Find on page with semantic matching, highlighting passages that mean what you typed in near real time.
+  description_zh: 开源 Chrome 扩展，用语义匹配替代页内查找，近乎实时地高亮与你输入意思一致的段落。
   image: https://pbs.twimg.com/amplify_video_thumb/2101576307352203264/img/THdpZUHOSRsSoTVr.jpg
   metrics:
     likes: 2262
@@ -897,10 +1016,12 @@ entries:
   - chrome-extension
   - semantic-search
 - name: Semantic object filter
+  name_zh: 语义物体筛选
   url: https://x.com/iAmAustinPiazza/status/2102112514846740749
   kind: post
   author: iAmAustinPiazza
   description: Small interactive demo where you type a phrase such as things you can wear in winter and Jev picks out the matching objects on screen.
+  description_zh: 小型交互演示：输入“冬天能穿的东西”这类短语，Jev 就从屏幕上挑出匹配的物体。
   image: https://pbs.twimg.com/amplify_video_thumb/2102112331350102016/img/G-DKU2luzlCVeboq.jpg
   metrics:
     likes: 1
@@ -914,16 +1035,19 @@ entries:
   kind: repo
   author: liou666
   description: Browser extension that searches the page you are reading by meaning from a Ctrl+F-style box and jumps to ranked passages, using your own Jev API key with no backend.
+  description_zh: 浏览器扩展，在类似 Ctrl+F 的输入框里按意思搜索你正在读的页面，并跳转到排好序的段落；使用你自己的 Jev API 密钥，无需后端。
   image: https://raw.githubusercontent.com/liou666/senseek/main/assets/senseek/senseek-logo.svg
   date: '2026-09-20'
   tags:
   - browser-extension
   - semantic-search
 - name: SF food permit map
+  name_zh: 旧金山餐饮许可地图
   url: https://x.com/bolau_/status/2102127429418360895
   kind: post
   author: bolau_
   description: Map of permit and health-inspection records for every food and beverage business in San Francisco, where Jev answers questions about the records in seconds.
+  description_zh: 旧金山每家餐饮企业的许可和卫生检查记录地图，Jev 能在几秒内回答关于这些记录的问题。
   image: https://pbs.twimg.com/media/HSw20LaXUAAI3w6.jpg?name=orig
   metrics:
     likes: 32
@@ -938,7 +1062,9 @@ entries:
   kind: repo
   author: tylergibbs1
   description: Chrome extension that re-ranks Google results so answers rise to the top and sales pages and SEO filler fold away.
+  description_zh: Chrome 扩展，重排 Google 搜索结果，让真正的答案浮到顶部，把销售页和 SEO 凑数内容折叠起来。
   jev: One parallel call per result with four Nouls (answers the query, promotional, SEO filler, discussion) and a depth Score, combined into a weighted rank.
+  jev_zh: 每条结果一次并行调用，含四个 Noul（是否回答查询、是否推广、是否 SEO 凑数、是否讨论）和一个深度 Score，合并成加权排名。
   date: '2026-09-17'
   tags:
   - reranking
@@ -949,6 +1075,7 @@ entries:
   kind: repo
   author: noperator
   description: CLI and agent skill for finding the most relevant items in large datasets by iterative ranking, which added a --provider jev option alongside Chat Completions APIs.
+  description_zh: 通过迭代排序在大数据集中找出最相关条目的 CLI 和 agent skill，在 Chat Completions API 之外新增了 --provider jev 选项。
   metrics:
     stars: 202
   date: '2025-02-13'
@@ -963,7 +1090,9 @@ entries:
   kind: repo
   author: magnus919
   description: Stateless meta search engine for AI agents and drop-in SearXNG replacement that asks Jev which specialist engines can add distinctive evidence for each query.
+  description_zh: 面向 AI agent 的无状态元搜索引擎，可直接替换 SearXNG，会询问 Jev 哪些专业引擎能为每个查询补充独特的证据。
   jev: Every specialist engine at or above a 0.65 threshold is added with no count cap; explicit scopes never call Jev, and failures keep the deterministic routing.
+  jev_zh: 所有达到 0.65 阈值的专业引擎都会加入，数量不设上限；显式指定范围时从不调用 Jev，失败时保留确定性路由。
   metrics:
     stars: 9
   date: '2026-06-09'
@@ -974,10 +1103,12 @@ entries:
   - searxng
   - routing
 - name: Smart Search Jev
+  name_zh: Smart Search 的 Jev 集成
   url: https://github.com/konbakuyomu/smartsearch/blob/main/src/smart_search/jev.py
   kind: repo
   author: konbakuyomu
   description: Smart Search, a desktop app that pulls current web information into AI conversations, uses Jev for typed judgments while keeping execution and the allowed action set in code.
+  description_zh: 把实时网络信息带入 AI 对话的桌面应用 Smart Search 用 Jev 做类型化判断，执行逻辑和允许的动作集合则保留在代码中。
   image: https://raw.githubusercontent.com/konbakuyomu/smartsearch/main/assets/branding/smart-search.png
   metrics:
     repo_stars: 838
@@ -991,7 +1122,9 @@ entries:
   kind: repo
   author: serverpod
   description: Serverpod's documentation chatbot where Jev picks the doc and website pages that answer a question, judges whether they contain the answer so vector search can be skipped, and rates whether the final answer resolved it.
+  description_zh: Serverpod 的文档聊天机器人：Jev 挑选能回答问题的文档和网站页面，判断其中是否包含答案以便跳过向量搜索，并评估最终回答是否解决了问题。
   jev: Pages are Choice options via the jev_dart package; two Nouls cover answer coverage and resolution.
+  jev_zh: 通过 jev_dart 包把页面作为 Choice 选项；两个 Noul 分别判断答案覆盖和问题是否解决。
   metrics:
     stars: 16
   date: '2025-05-27'
@@ -1002,10 +1135,12 @@ entries:
   - docs-chatbot
   - dart
 - name: TrainLCD Jev support
+  name_zh: TrainLCD 的 Jev 支持
   url: https://github.com/TrainLCD/Functions/blob/dev/src/agent/rerank.ts
   kind: repo
   author: TrainLCD
   description: 'Jev integration in the Cloudflare Worker behind the TrainLCD transit app: a per-candidate Noul reranks the stations its AI chat suggests, and a separate module triages user feedback by spam, category and priority.'
+  description_zh: 交通应用 TrainLCD 背后 Cloudflare Worker 中的 Jev 集成：每个候选一个 Noul，为其 AI 聊天推荐的车站重排；另有一个模块按垃圾信息、类别和优先级分诊用户反馈。
   date: '2026-09-17'
   links:
     pr: https://github.com/TrainLCD/Functions/pull/33
@@ -1019,6 +1154,7 @@ entries:
   kind: repo
   author: sensahin
   description: Next.js app with a Turkish interface for exploring YouTube transcripts by meaning, where Jev classifies each block without rewriting it to surface chapters, key passages, and topic mentions.
+  description_zh: 带土耳其语界面的 Next.js 应用，按意思浏览 YouTube 转录稿：Jev 为每个段落分类但不改写，从中提炼出章节、关键段落和话题提及。
   metrics:
     stars: 16
   date: '2026-09-19'
@@ -1027,10 +1163,12 @@ entries:
   - transcripts
   - turkish
 - name: Tripwire internet scanner
+  name_zh: Tripwire 互联网扫描器
   url: https://www.reddit.com/r/AI_Agents/comments/1wkusec/building_an_internet_scanner_with_jev/
   kind: reddit
   author: Calm_Apple7505
   description: Early-access tool that scans Reddit, X, and LinkedIn posts and filters them by concepts defined in natural language instead of keywords.
+  description_zh: 抢先体验阶段的工具，扫描 Reddit、X 和 LinkedIn 帖子，按自然语言定义的概念而非关键词进行过滤。
   metrics:
     points: 7
   date: '2026-09-19'
@@ -1045,7 +1183,9 @@ entries:
   kind: repo
   author: dabit3
   description: Search workspace demo that reranks 50 candidates in one ~170 ms Jev request, raising top-1 accuracy from 50% to 100% on a 40-query labeled benchmark.
+  description_zh: 搜索工作区演示：用一次约 170 毫秒 的 Jev 请求重排 50 个候选，在 40 个查询的标注基准上把 top-1 准确率从 50% 提到 100%。
   jev: One request judges every candidate against the query plus an answer-exists check, optionally split into parallel batches.
+  jev_zh: 一次请求针对查询评判每个候选，并检查答案是否存在，也可拆成并行批次。
   image: https://raw.githubusercontent.com/dabit3/macos-experiments/main/turbo-rerank/screenshots/turbo-rerank-home.jpg
   metrics:
     repo_stars: 8
@@ -1061,16 +1201,19 @@ entries:
   kind: repo
   author: TyrellD1
   description: Small router that asks Jev two yes/no questions per prompt to send it to a work store, a life store or both, with a 30-case hand-written eval where all 30 routed correctly.
+  description_zh: 小型路由器：对每条提示词向 Jev 问两个是/否问题，把它发往工作库、生活库或两者；附带 30 个用例的手写评测，30 个全部路由正确。
   date: '2026-09-17'
   tags:
   - routing
   - eval
   - memory
 - name: typesafe-tools Codex plugin
+  name_zh: typesafe-tools Codex 插件
   url: https://github.com/jialuohu/codex-toolbox/tree/main/plugins/typesafe-tools
   kind: repo
   author: jialuohu
   description: Codex plugin with an MCP server and skill that use bounded Jev evaluations to rank public research passages and check whether sources support a claim, behind spending caps and pilot gates.
+  description_zh: Codex 插件，含一个 MCP 服务器和 skill，用有限次数的 Jev 评估给公开研究段落排序，并检查来源是否支持某个论断，受支出上限和试点闸门约束。
   metrics:
     repo_stars: 9
   date: '2026-07-02'
@@ -1085,7 +1228,9 @@ entries:
   kind: post
   author: VisheshBaghell
   description: Hacker News front page you re-rank with six sliders (technical depth, drama, practical utility, AI slop, novelty, career relevance), with each story's Jev scores shown; Firecrawl does the reading.
+  description_zh: 可用六个滑块（技术深度、争议性、实用性、AI 水文、新颖度、职业相关性）重排的 Hacker News 首页，显示每篇文章的 Jev 分数；阅读原文由 Firecrawl 完成。
   jev: Six Score questions per story, combined locally by the slider weights.
+  jev_zh: 每篇文章六个 Score 问题，在本地按滑块权重合并。
   image: https://pbs.twimg.com/amplify_video_thumb/2100535993141239808/img/Q_giQHiIdU-aAvI6.jpg
   metrics:
     likes: 73
@@ -1099,11 +1244,14 @@ entries:
   - ranking
   - sliders
 - name: Web Search Plus Jev
+  name_zh: Web Search Plus 的 Jev 集成
   url: https://github.com/robbyczgw-cla/hermes-web-search-plus
   kind: repo
   author: robbyczgw-cla
   description: Web Search Plus, a Hermes agent plugin for multi-provider search and page extraction, adds optional Jev decisions at gated seams, off by default and confidence-thresholded.
+  description_zh: Hermes agent 的多提供方搜索与页面提取插件 Web Search Plus 在受控的接入点加入了可选的 Jev 决策，默认关闭，并设有置信度阈值。
   jev: Code runs first; Jev is consulted only for optional seams and falls back to unchanged behaviour without a key.
+  jev_zh: 先跑代码；只有在可选接入点才会咨询 Jev，没有密钥时回退为原有行为。
   image: https://raw.githubusercontent.com/robbyczgw-cla/hermes-web-search-plus/main/docs/assets/web-search-plus-v3-hero.jpg
   metrics:
     stars: 414
@@ -1119,6 +1267,7 @@ entries:
   kind: repo
   author: robbyczgw-cla
   description: MCP server that gives agents web search across 15 search and 9 extract providers with original sources; optional, off-by-default Jev confirms news-type searches, scores extracted bodies and fills in missing language.
+  description_zh: 为 agent 提供网页搜索的 MCP 服务器，接入 15 个搜索提供方和 9 个提取提供方，并保留原始来源；可选且默认关闭的 Jev 会确认新闻类搜索、为提取的正文打分并补全缺失的语言信息。
   image: https://raw.githubusercontent.com/robbyczgw-cla/web-search-plus-mcp/main/docs/assets/web-search-plus-logo.png
   metrics:
     stars: 5
@@ -1134,6 +1283,7 @@ entries:
   kind: repo
   author: dorkitude
   description: Web search CLI for agents that queries three search backends, has Jev score each result set against the query and goal, and dedupes the high-scoring subset so the agent reads far less.
+  description_zh: 面向 agent 的网页搜索 CLI：查询三个搜索后端，让 Jev 针对查询和目标为每组结果打分，再对高分子集去重，让 agent 少读很多内容。
   image: https://pbs.twimg.com/media/HSx-UqEaIAEjR4L.jpg?name=orig
   metrics:
     stars: 37
@@ -1149,7 +1299,9 @@ entries:
   kind: repo
   author: hraness
   description: Local Markdown knowledge base for coding agents with an optional Jev reranking lane; on SciFact it put a relevant result first for 161 of 300 queries versus 101 with exact search alone.
+  description_zh: 面向编程 agent 的本地 Markdown 知识库，带可选的 Jev 重排通道；在 SciFact 上，它让 300 个查询中的 161 个把相关结果排在第一，只用精确搜索时是 101 个。
   jev: Pinned jev-1.13.0 reranks a bounded window of search candidates; exact matches stay first and provider failures keep the baseline order.
+  jev_zh: 固定使用 jev-1.13.0，对有限窗口内的搜索候选重排；精确匹配始终排在最前，提供方失败时保留基线顺序。
   image: https://raw.githubusercontent.com/hraness/wordcell/main/assets/agent-skill.svg
   metrics:
     stars: 14
@@ -1162,11 +1314,14 @@ entries:
   - knowledge-base
   - agent-memory
 - name: XERJ systemone gate
+  name_zh: XERJ 的 systemone 验收闸门
   url: https://github.com/xerj-org/xerj/tree/main/benchmarks/systemone-gate
   kind: repo
   author: xerj-org
   description: XERJ, a local AI search engine, exposes a Jev-compatible /v1/systemone endpoint so the off-the-shelf jev-reranker client reranks a search index against it unmodified.
+  description_zh: 本地 AI 搜索引擎 XERJ 暴露了一个兼容 Jev 的 /v1/systemone 端点，现成的 jev-reranker 客户端无需修改就能用它重排搜索索引。
   jev: An acceptance gate runs jev-reranker's listwise and relevance presets over an SMS spam index on a XERJ node with no patches.
+  jev_zh: 一道验收闸门在 XERJ 节点上，对短信垃圾信息索引运行 jev-reranker 的 listwise 和 relevance 预设，无需任何补丁。
   image: https://raw.githubusercontent.com/xerj-org/xerj/main/docs/media/demo-poster.png
   metrics:
     repo_stars: 2272
@@ -1178,10 +1333,12 @@ entries:
   - rerank
   - jev-compatible
 - name: YC startup semantic search
+  name_zh: YC 创业公司语义搜索
   url: https://x.com/aaayandev/status/2102137061490794730
   kind: post
   author: aaayandev
   description: Search engine over 6000+ Y Combinator startups that answers free-form queries (color, niche, competitor, age, image) in under a second, built with Jev for $2.7 in total testing costs.
+  description_zh: 覆盖 6000+ 家 Y Combinator 创业公司的搜索引擎，能在一秒内回答自由形式的查询（颜色、细分领域、竞争对手、成立年限、图片），用 Jev 构建，测试总成本 $2.7。
   image: https://pbs.twimg.com/amplify_video_thumb/2102131502578290688/img/ygqNpGaKAhekXxH1.jpg
   metrics:
     likes: 230
@@ -1195,16 +1352,19 @@ entries:
   kind: app
   author: Coder AI
   description: Free, no-sign-up tool that answers any question with Yes, No or Maybe from a Jev Noul, pulling in live web search when current facts are needed.
+  description_zh: 免费、无需注册的工具，用 Jev 的一个 Noul 以“是”“否”或“也许”回答任何问题，需要最新事实时会接入实时网页搜索。
   image: https://yesno.coderai.dev/og-image.png
   tags:
   - noul
   - web-search
   - demo
 - name: Zillow natural-language search
+  name_zh: Zillow 自然语言搜索
   url: https://x.com/venturetwins/status/2101341075684434245
   kind: post
   author: venturetwins
   description: Scans thousands of Zillow listings and classifies them by things the site has no filter for, like architecture, renovation status or distance to freeways, in under 20 seconds for $0.18.
+  description_zh: 扫描数千条 Zillow 房源，按网站没有提供筛选项的属性分类，比如建筑风格、翻修状况或离高速公路的距离，用时不到 20 秒，花费 $0.18。
   image: https://pbs.twimg.com/amplify_video_thumb/2101339712464326656/img/A8yq5IoXQuhJAi32.jpg
   metrics:
     likes: 949

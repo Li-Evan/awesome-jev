@@ -1,5 +1,7 @@
 # 🧪 Other Experiments
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/other.md)
+
 Everything that does not fit a single scenario yet. 46 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

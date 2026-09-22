@@ -1,14 +1,19 @@
 title: Voice and Real-Time Interfaces
+title_zh: 语音与实时交互
 emoji: 🗣️
 layout: gallery
 description: Voice assistants and interfaces that react while you type or speak.
+description_zh: 语音助手，以及随你打字或说话实时反应的界面。
 entries:
 - name: AIAvatarKit Jev turn-end gate
+  name_zh: AIAvatarKit 的 Jev 话轮结束闸门
   url: https://github.com/uezo/aiavatarkit/blob/main/aiavatar/sts/vad/turn_end_gates/jev.py
   kind: repo
   author: uezo
   description: Turn-end gate for AIAvatarKit conversational avatars that asks Jev whether the user is yielding the floor or will keep speaking, adding a semantic signal to silence-based voice activity detection.
+  description_zh: 为 AIAvatarKit 对话式虚拟形象做的话轮结束闸门：询问 Jev 用户是在让出发言权还是还会继续说，为基于静音的语音活动检测补充一个语义信号。
   jev: A hold-the-turn Noul over the transcript, mapped to extra wait time by probability ranges.
+  jev_zh: 基于转录文本的“保持话轮”Noul，按概率区间映射为额外等待时间。
   image: https://raw.githubusercontent.com/uezo/aiavatarkit/main/documents/images/aiavatarkit_overview.png
   metrics:
     repo_stars: 678
@@ -19,11 +24,14 @@ entries:
   - turn-detection
   - avatars
 - name: AIAvatarKit turn-end gate
+  name_zh: AIAvatarKit 话轮结束闸门
   url: https://x.com/uezochan/status/2100608556823388486
   kind: post
   author: uezochan
   description: 'Voice-dialog turn-end detection: 0.5 s after speech stops, Jev scores whether the user finished speaking and the score sets an extra hold time, with Jev taking about 0.22 s.'
+  description_zh: 语音对话的话轮结束检测：语音停止 0.5 秒后，Jev 为用户是否说完打分，分数决定额外的保持时间，Jev 耗时约 0.22 秒。
   jev: Score of turn completion after each pause, mapped to an extra hold timeout.
+  jev_zh: 每次停顿后给话轮完成度打一个 Score，映射为额外的保持超时。
   image: https://pbs.twimg.com/amplify_video_thumb/2100607043837321217/img/mx7Fv1mctyBoigHx.jpg
   metrics:
     likes: 443
@@ -36,11 +44,14 @@ entries:
   - turn-taking
   - voice
 - name: aloud Jev judge
+  name_zh: aloud 的 Jev 评判
   url: https://github.com/akrusz/aloud/blob/main/ts/server/src/providers/typesafe.ts
   kind: repo
   author: akrusz
   description: Voice meditation facilitator that asks Jev yes/no questions about each utterance to detect when the speaker has finished and to recognize spoken commands, replacing a Haiku classifier.
+  description_zh: 语音冥想引导工具，就每段话语向 Jev 问是/否问题，检测说话人何时说完并识别口头命令，取代了原来的 Haiku 分类器。
   jev: Batches of Noul questions per utterance with a 1.2 s timeout; about $0.00003 per silence check and $0.00018 per 24-question command check.
+  jev_zh: 每段话语批量问 Noul 问题，超时 1.2 秒；每次静音检查约 $0.00003，每次 24 个问题的命令检查约 $0.00018。
   image: https://raw.githubusercontent.com/akrusz/aloud/main/docs/assets/aloud-screen-light.webp
   metrics:
     repo_stars: 14
@@ -53,10 +64,12 @@ entries:
   - turn-taking
   - voice
 - name: Always-on assistant without a wake word
+  name_zh: 无需唤醒词的常开助手
   url: https://x.com/_MaxBlade/status/2100967959879471519
   kind: post
   author: _MaxBlade
   description: Always-listening voice assistant with no wake word, where Jev decides from probabilities whether speech is a command for the computer or ordinary conversation.
+  description_zh: 持续监听、无需唤醒词的语音助手，由 Jev 根据概率判断一段语音是给电脑的命令还是普通对话。
   image: https://pbs.twimg.com/amplify_video_thumb/2100966551826444288/img/i2s52ZeMNTOO-IRD.jpg
   metrics:
     likes: 1586
@@ -66,10 +79,12 @@ entries:
   - voice-assistant
   - wake-word
 - name: Automatic IME mode switching
+  name_zh: 输入法模式自动切换
   url: https://x.com/kzkhykw/status/2102038395296022607
   kind: post
   author: kzkhykw
   description: Prototype that watches typing, uses Jev to judge Japanese versus English, switches the keyboard IME mode automatically, and converts already-typed romaji like "watashi" into Japanese.
+  description_zh: 原型：观察打字内容，用 Jev 判断是日语还是英语，自动切换键盘输入法模式，并把已经打出的罗马字（如“watashi”）转换成日语。
   image: https://pbs.twimg.com/amplify_video_thumb/2102036336782069760/img/1W3TI6lsT5IMkYDm.jpg
   metrics:
     likes: 683
@@ -84,6 +99,7 @@ entries:
   kind: repo
   author: jem-computer
   description: Persistent voice channel plugin for the BB workspace built on GPT-Live, with an experimental toggle that uses Jev to classify spoken requests before the intent model.
+  description_zh: 基于 GPT-Live 的 BB 工作区常驻语音频道插件，带一个实验性开关，在意图模型之前先用 Jev 对口头请求分类。
   metrics:
     stars: 8
   date: '2026-09-16'
@@ -92,11 +108,14 @@ entries:
   - webrtc
   - intent-routing
 - name: BiBi Keyboard Jev classifier
+  name_zh: BiBi 输入法的 Jev 分类器
   url: https://github.com/BryceWG/BiBi-Keyboard/blob/main/app/src/main/java/com/brycewg/asrkb/asr/JevClassifier.kt
   kind: repo
   author: BryceWG
   description: BiBi Keyboard, an Android LLM+ASR voice input method, uses Jev to pick which prompt to apply to your dictated text after speech recognition.
+  description_zh: Android 上的 LLM+ASR 语音输入法 BiBi Keyboard 在语音识别之后，用 Jev 选择对你口述的文本应用哪个提示词。
   jev: A choice over configured prompts via api.typesafe.ai, with a failure reason when no prompt is selected.
+  jev_zh: 通过 api.typesafe.ai 在配置好的提示词中做选择，没有选中任何提示词时给出失败原因。
   image: https://raw.githubusercontent.com/BryceWG/BiBi-Keyboard/main/images/icon_new.svg
   metrics:
     repo_stars: 800
@@ -108,11 +127,14 @@ entries:
   - android
   - keyboard
 - name: CharaDock Jev fast path
+  name_zh: CharaDock 的 Jev 快速路径
   url: https://github.com/ochisamu/CharaDock/blob/main/docs/jev.md
   kind: repo
   author: ochisamu
   description: Optional Jev fast path in CharaDock, a Windows desktop character companion that talks and works with Codex, deciding music controls from finished utterances and the character's expressions and reactions.
+  description_zh: 能说话、能配合 Codex 干活的 Windows 桌面角色伴侣 CharaDock 中的可选 Jev 快速路径，根据说完的话决定音乐控制，以及角色的表情和反应。
   jev: Choices over next/previous/pause/play and allowed emotion names, accepted at 0.75 probability within 1.5 s; failures fall back to the normal path.
+  jev_zh: 在 next/previous/pause/play 和允许的情绪名称中做 Choice，1.5 秒内概率达到 0.75 才采纳；失败时回退到常规路径。
   image: https://raw.githubusercontent.com/ochisamu/CharaDock/main/docs/images/charadock-hero.webp
   metrics:
     repo_stars: 6
@@ -124,11 +146,14 @@ entries:
   - media-control
   - codex
 - name: Cinderpaw Jev voice commands
+  name_zh: Cinderpaw 的 Jev 语音命令
   url: https://github.com/bloom500/cinderpaw/blob/main/frontend-react/src/components/chat/JevKeyRow.tsx
   kind: repo
   author: bloom500
   description: 'Local desktop AI assistant where Jev can act as the voice provider: speech is transcribed on device or in the cloud and Jev decides which command was meant.'
+  description_zh: 本地桌面 AI 助手，Jev 可作为语音提供方：语音在设备端或云端转录，由 Jev 判断用户想执行哪条命令。
   jev: Keys starting with sk-or- route to OpenRouter (typesafe/jev-1.13), others to TypeSafe (jev-latest).
+  jev_zh: 以 sk-or- 开头的密钥路由到 OpenRouter（typesafe/jev-1.13），其他密钥路由到 TypeSafe（jev-latest）。
   image: https://raw.githubusercontent.com/bloom500/cinderpaw/main/frontend-react/public/README%20banner.jpeg
   metrics:
     repo_stars: 9
@@ -140,10 +165,12 @@ entries:
   - desktop
   - assistant
 - name: Designing at the speed of voice
+  name_zh: 以说话的速度做设计
   url: https://x.com/Moore/status/2102078191758102998
   kind: post
   author: Moore
   description: 'Speaks UI layouts into existence: a local transcription model feeds Jev, which assembles shadcn components into the described layout.'
+  description_zh: 用嘴说出 UI 布局：本地转录模型把文字交给 Jev，由它把 shadcn 组件组装成所描述的布局。
   image: https://pbs.twimg.com/amplify_video_thumb/2102076539386937344/img/r7ia_XA8QLmSOMmt.jpg
   metrics:
     likes: 229
@@ -154,11 +181,14 @@ entries:
   - shadcn
   - ui-design
 - name: Directed-speech filter with Deepgram Flux
+  name_zh: 基于 Deepgram Flux 的定向语音过滤
   url: https://x.com/samgutentag/status/2102172336841777354
   kind: post
   author: samgutentag
   description: 'Voice setup where Deepgram Flux transcribes everything said in the room and Jev answers one question per utterance: whether any of it was meant for the assistant.'
+  description_zh: 语音方案：Deepgram Flux 转录房间里说的所有话，Jev 对每段话语只回答一个问题：其中是否有说给助手听的内容。
   jev: A single Noul per transcribed segment on whether it was addressed to the assistant.
+  jev_zh: 每段转录只问一个 Noul：它是否是对助手说的。
   image: https://pbs.twimg.com/amplify_video_thumb/2102172213717897216/img/bcJOTNcI17uA7C0j.jpg
   metrics:
     views: 149
@@ -172,6 +202,7 @@ entries:
   kind: repo
   author: jevgpt
   description: Discord voice bot that talks back in real time and runs 53 server tools behind a voice-based owner gate, using Jev to judge whether each spoken line was meant for the bot and dropping replies that were not.
+  description_zh: 能实时对话的 Discord 语音机器人，在基于声音的所有者验证之后可运行 53 个服务器工具，用 Jev 判断每句话是否是对机器人说的，不是就丢弃回复。
   metrics:
     stars: 6
   date: '2026-09-13'
@@ -183,6 +214,7 @@ entries:
   kind: repo
   author: colinmcdermott
   description: Emoji autocomplete that lights up a keyboard of up to 254 emojis as you type; each pause is one Jev call with eight parallel questions (emoji, emotion, mood, urgency, energy, sarcasm, joke, wants reply).
+  description_zh: emoji 自动补全：打字时点亮一个最多 254 个 emoji 的键盘；每次停顿就是一次 Jev 调用，并行问八个问题（emoji、情绪、心情、紧急程度、能量、讽刺、玩笑、是否希望回复）。
   image: https://external-preview.redd.it/cG9rNWZpa3RsMnFoMUDrazausqueruEJZS0yeip4Cc398o1nptVLkhdYM-Rj.png?format=pjpg&auto=webp&s=38306d2a67aebbd9764dbfa927498547e4069f2d
   metrics:
     stars: 2
@@ -198,10 +230,12 @@ entries:
   - as-you-type
   - emoji
 - name: Instant spreadsheet checks
+  name_zh: 即时表格检查
   url: https://x.com/ctnicholasdev/status/2100611346203353110
   kind: post
   author: ctnicholasdev
   description: Collaborative AI spreadsheet demo where Jev runs 20+ checks every time a cell is edited and shows warnings immediately, with no LLM in the loop.
+  description_zh: 协作式 AI 表格演示：每次编辑单元格时 Jev 都会运行 20+ 项检查并立即显示警告，整个过程没有 LLM 参与。
   image: https://pbs.twimg.com/amplify_video_thumb/2100611327580639232/img/ovA8ReDngJrB-BXf.jpg
   metrics:
     likes: 203
@@ -216,7 +250,9 @@ entries:
   kind: repo
   author: finetuningsingh
   description: Teleprompter of talking points that checks each point off once you have covered it in your own words; running on Jev costs at most about $0.50 an hour versus about $40 on LLMs.
+  description_zh: 要点提词器：当你用自己的话讲完某个要点时自动打勾；用 Jev 运行每小时最多约 $0.50，用 LLM 则约 $40。
   jev: Every open talking point is a Score question (0-3) against the transcript so far, all in one request; code checks a point off at a threshold.
+  jev_zh: 每个未完成的要点都是一个针对当前转录的 Score 问题（0-3），全部放在一次请求中；分数达到阈值时由代码打勾。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -227,10 +263,12 @@ entries:
   - teleprompter
   - speech
 - name: Jamcat voice-driven UI
+  name_zh: Jamcat 语音驱动界面
   url: https://x.com/JonPTaylor/status/2100736122502390211
   kind: post
   author: JonPTaylor
   description: Voice-driven music app where Pipecat hands off in real time between Jev, a command agent that drives the UI, and a voice agent that handles generation and conversation.
+  description_zh: 语音驱动的音乐应用，Pipecat 在三者之间实时交接：Jev、驱动 UI 的命令 agent，以及负责生成和对话的语音 agent。
   image: https://pbs.twimg.com/amplify_video_thumb/2100735915203137536/img/WZcElA5yjCZdLpQZ.jpg
   metrics:
     likes: 478
@@ -240,10 +278,12 @@ entries:
   - pipecat
   - voice-ui
 - name: Jev + Rime input method
+  name_zh: Jev + Rime 输入法
   url: https://x.com/nhciao/status/2101967227327267297
   kind: post
   author: nhciao
   description: Test pairing Jev with the open-source Rime (Squirrel) Chinese input method to rank the wanted character higher among candidates while typing.
+  description_zh: 测试把 Jev 与开源的 Rime（鼠须管）中文输入法搭配，在打字时把想要的字在候选中排得更靠前。
   image: https://pbs.twimg.com/media/HSuwDLga4AEkvLg.jpg?name=orig
   metrics:
     likes: 763
@@ -258,6 +298,7 @@ entries:
   kind: post
   author: zahlekhan
   description: Experimental keyboard that uses Jev for ambient, as-you-type intelligence in the interface, an exploration at the edges of generative UI.
+  description_zh: 实验性键盘，用 Jev 在界面中提供随打随现的环境式智能，是对生成式 UI 边界的一次探索。
   image: https://pbs.twimg.com/amplify_video_thumb/2100679218455789568/img/zy8kM6C3lA-2EyJa.jpg
   metrics:
     likes: 494
@@ -272,6 +313,7 @@ entries:
   kind: repo
   author: SuchintK
   description: Self-hosted Go call-screening backend that asks callers why they are calling, has Jev classify the transcript, and forwards or rejects the call via a Twilio adapter, failing open on errors or uncertainty.
+  description_zh: 自托管的 Go 来电筛选后端：询问来电者为什么打来，让 Jev 对转录分类，再通过 Twilio 适配器转接或拒接，出错或不确定时默认放行。
   date: '2026-09-20'
   tags:
   - call-screening
@@ -282,6 +324,7 @@ entries:
   kind: repo
   author: brudarko
   description: Electron app for full-duplex English voice control of macOS via OpenAI Realtime and a native Accessibility bridge, with an optional browser mode where Jev picks the action, target and completion check for Playwright.
+  description_zh: Electron 应用，通过 OpenAI Realtime 和原生辅助功能（Accessibility）桥接，用英语全双工语音控制 macOS；可选的浏览器模式中由 Jev 为 Playwright 选择动作、目标和完成检查。
   image: https://raw.githubusercontent.com/brudarko/jev-mac-voice/main/docs/app-preview.png
   metrics:
     stars: 20
@@ -291,11 +334,14 @@ entries:
   - voice-control
   - electron
 - name: Jev teleprompter
+  name_zh: Jev 提词器
   url: https://x.com/I_am_oil_oil/status/2102066556486427133
   kind: post
   author: I_am_oil_oil
   description: Chinese teleprompter demo where a speech model transcribes the speaker and Jev judges whether they are reading along, speeding up or going off script, then moves the prompt position.
+  description_zh: 中文提词器演示：语音模型转录演讲者的话，Jev 判断对方是在照着念、加快语速还是脱稿，再移动提词位置。
   jev: Choice over reading states (on track, too fast, off script) on each transcript update.
+  jev_zh: 每次转录更新时，在阅读状态（跟上、太快、脱稿）中做 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2102060857358479361/img/x7TlP7IUGFnSjj4E.jpg
   metrics:
     likes: 10
@@ -310,6 +356,7 @@ entries:
   kind: repo
   author: kevinbadi
   description: Hands-free macOS voice assistant that transcribes locally with whisper.cpp, then makes one ~250 ms Jev fan-out call to turn the transcript into a typed action and arguments such as opening apps, typing or scrolling.
+  description_zh: 免手动的 macOS 语音助手，用 whisper.cpp 在本地转录，再用一次约 250 毫秒 的 Jev 扇出调用把转录转成类型化动作和参数，比如打开应用、输入文字或滚动。
   metrics:
     stars: 66
   date: '2026-09-18'
@@ -322,6 +369,7 @@ entries:
   kind: repo
   author: chris-wozniczek
   description: Menu-bar Swift app for macOS where you hold a hotkey, speak a command such as "quit spotify" or "set volume to 30", and Jev turns it into a typed macOS action, optionally asking before running.
+  description_zh: macOS 菜单栏 Swift 应用：按住快捷键说出“quit spotify”或“set volume to 30”这样的命令，Jev 把它转成类型化的 macOS 动作，也可以在执行前先询问。
   image: https://pbs.twimg.com/amplify_video_thumb/2102151206814580736/img/-K8e6L15LWXjOqbm.jpg
   metrics:
     stars: 3
@@ -340,6 +388,7 @@ entries:
   kind: repo
   author: moritzkremb
   description: Voice control for a real browser that asks 9 to 11 questions per utterance, including a Noul for destructive actions.
+  description_zh: 用语音控制真实浏览器，每段话语问 9 到 11 个问题，其中包括一个判断是否为破坏性操作的 Noul。
   image: https://external-preview.redd.it/XTx7v-_vSl03MCXeIaWni70oyrcHah4ihVc3G0NpNNk.png?auto=webp&s=1d2ea4bbc8ba3ee1cf25c048225174a8c2a9d15d
   metrics:
     stars: 221
@@ -357,6 +406,7 @@ entries:
   kind: repo
   author: mstf-svndk
   description: Electron app that controls Windows 10/11 through natural Turkish or English speech, pairing OpenAI Realtime or local Whisper with Jev (via OpenRouter's Decisions API), UI Automation and Playwright.
+  description_zh: Electron 应用，用自然的土耳其语或英语语音控制 Windows 10/11，把 OpenAI Realtime 或本地 Whisper 与 Jev（通过 OpenRouter 的 Decisions API）、UI Automation 和 Playwright 结合起来。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -369,7 +419,9 @@ entries:
   kind: repo
   author: gaborishka
   description: Browser demo where you say commands like 'make a yellow circle here' while pointing at the webcam, and Jev decides action, shape, colour, target and place on a tldraw canvas in about 350 ms per spoken word.
+  description_zh: 浏览器演示：一边对着摄像头指点，一边说“在这里画一个黄色圆”之类的命令，Jev 在 tldraw 画布上决定动作、形状、颜色、目标和位置，每个口述词约 350 毫秒。
   jev: Eight typed questions on every partial transcript (is it a command, is it complete, action, shape, colour, target, place, size), gated by thresholds in code.
+  jev_zh: 每次得到部分转录时问八个类型化问题（是否是命令、是否说完、动作、形状、颜色、目标、位置、大小），由代码中的阈值把关。
   image: https://raw.githubusercontent.com/gaborishka/jev-canvas/main/docs/demo.gif
   metrics:
     stars: 2
@@ -383,7 +435,9 @@ entries:
   kind: post
   author: ChaseMc67
   description: Always-on voice input harness that runs streaming speech-to-text through a Jev directed-speech filter so ambient chatter no longer ends up in AI voice messages.
+  description_zh: 常开的语音输入 harness，让流式语音转文字先经过 Jev 的定向语音过滤，这样周围的闲聊就不会再混进 AI 语音消息里。
   jev: 'Noul on each transcribed clip: was this speech directed at the assistant?'
+  jev_zh: 对每段转录片段问一个 Noul：这段话是对助手说的吗？
   image: https://pbs.twimg.com/tweet_video_thumb/HSoKIIrbIAA04WP.jpg
   metrics:
     likes: 6
@@ -401,6 +455,7 @@ entries:
   kind: repo
   author: bottlebrushes
   description: Native macOS push-to-talk voice orb that transcribes spoken commands with local Metal Whisper and has Jev operate applications through macOS Accessibility.
+  description_zh: 原生 macOS 按住说话语音球，用本地 Metal Whisper 转录口头命令，再让 Jev 通过 macOS 辅助功能操作应用。
   date: '2026-09-18'
   tags:
   - voice-assistant
@@ -410,7 +465,9 @@ entries:
   kind: repo
   author: sypsyp97
   description: Windows hold-to-talk dictation app whose Auto modes ask Jev whether AI polish, screen context or web search is needed, keeping the original text when polishing is unnecessary.
+  description_zh: Windows 按住说话的听写应用，其 Auto 模式会询问 Jev 是否需要 AI 润色、屏幕上下文或网页搜索，不需要润色时保留原文。
   jev: TypeSafe, OpenRouter or Vercel; missing credentials, timeouts and uncertain answers fall back to the usual path.
+  jev_zh: 支持 TypeSafe、OpenRouter 或 Vercel；缺少凭证、超时或答案不确定时回退到常规路径。
   image: https://raw.githubusercontent.com/sypsyp97/light-whisper/main/assets/readme-hero.png
   metrics:
     stars: 64
@@ -420,10 +477,12 @@ entries:
   - speech-to-text
   - windows
 - name: Live slide selection while speaking
+  name_zh: 演讲时实时切换幻灯片
   url: https://x.com/zain_hoda/status/2100720719470494126
   kind: post
   author: zain_hoda
   description: Presentation demo where Jev decides in real time which slide to pull up based on what the speaker is saying.
+  description_zh: 演示：Jev 根据演讲者正在说的内容，实时决定调出哪一张幻灯片。
   image: https://pbs.twimg.com/amplify_video_thumb/2100720243693789185/img/TnF1XmT4r9kx3jSM.jpg
   metrics:
     likes: 160
@@ -437,6 +496,7 @@ entries:
   kind: repo
   author: timpratim
   description: 'Experimental hands-free macOS assistant: speak a command and Jev routes it in about 300 ms to AppleScript tools or a Chrome browser task, with Gradium speech in and out over LiveKit Agents and a safety policy.'
+  description_zh: 实验性的免手动 macOS 助手：说出命令后，Jev 在约 300 毫秒 内把它路由到 AppleScript 工具或 Chrome 浏览器任务，语音输入输出由 Gradium 通过 LiveKit Agents 完成，并带有安全策略。
   metrics:
     stars: 123
   date: '2026-09-18'
@@ -447,11 +507,14 @@ entries:
   - macos
   - livekit
 - name: MacParakeet Voice Control
+  name_zh: MacParakeet 语音控制
   url: https://github.com/moona3k/macparakeet/tree/main/Sources/MacParakeetCore/Services/VoiceControl
   kind: repo
   author: moona3k
   description: MacParakeet, a local-first voice app for Apple Silicon, adds a Voice Control feature where Jev decides the action to take from a spoken command, gated behind explicit consent.
+  description_zh: 面向 Apple Silicon 的本地优先语音应用 MacParakeet 新增了语音控制功能，由 Jev 根据口头命令决定要执行的动作，须经用户明确同意才启用。
   jev: A Jev decision client with consent and context-size guards; no action is taken on an invalid decision.
+  jev_zh: Jev 决策客户端带有同意检查和上下文大小保护；决策无效时不执行任何动作。
   image: https://raw.githubusercontent.com/moona3k/macparakeet/main/Assets/AppIcon-1024x1024.png
   metrics:
     repo_stars: 658
@@ -463,10 +526,12 @@ entries:
   - dictation
   - macos
 - name: OpenCues decision seam
+  name_zh: OpenCues 的决策接入点
   url: https://github.com/opencues/opencues/tree/master/packages/opencues-core/src/decisions
   kind: repo
   author: opencues
   description: Open standard that turns any text field into a two-way LLM channel, using a TypeSafe decision seam to select commands, sentences and candidates, or skip a generation call entirely.
+  description_zh: 把任意文本框变成双向 LLM 通道的开放标准，用 TypeSafe 决策接入点来选择命令、句子和候选，或者完全跳过生成调用。
   metrics:
     repo_stars: 53
   date: '2026-03-31'
@@ -478,11 +543,14 @@ entries:
   - text-fields
   - selection
 - name: Point-and-speak canvas
+  name_zh: 指点加语音的画布
   url: https://x.com/jackcheng/status/2100729670991802386
   kind: post
   author: jackcheng
   description: 'Whiteboard canvas controlled by pointing at a webcam and speaking: speech, finger position and canvas shapes go to Jev, which picks the action, target and location in about 167 ms.'
+  description_zh: 用摄像头指点加说话来控制的白板画布：语音、手指位置和画布形状都发给 Jev，由它在约 167 毫秒 内选出动作、目标和位置。
   jev: Seven questions per utterance covering action, target shape and region, with speech, finger and canvas as state.
+  jev_zh: 每段话语七个问题，覆盖动作、目标形状和区域，以语音、手指和画布作为 state。
   image: https://pbs.twimg.com/amplify_video_thumb/2100729243185324032/img/YNw8njfnSXu-Tbyr.jpg
   metrics:
     likes: 4952
@@ -493,10 +561,12 @@ entries:
   - gesture
   - speech
 - name: Real-time voice browser control
+  name_zh: 实时语音控制浏览器
   url: https://x.com/moritzkremb/status/2100577979021832365
   kind: post
   author: moritzkremb
   description: 'Voice control for the browser: the spoken transcript goes to Jev, which returns probabilities in ~300ms and triggers the click, at $0.0002 per decision.'
+  description_zh: 用语音控制浏览器：口述转录交给 Jev，它在约 300 毫秒 内返回概率并触发点击，每次决策 $0.0002。
   image: https://pbs.twimg.com/amplify_video_thumb/2100577954338373633/img/tbH43kHpUotE3hzK.jpg
   metrics:
     likes: 3797
@@ -510,7 +580,9 @@ entries:
   kind: repo
   author: Codemarchant
   description: Self-hosted anime voice companions with 3D VRM avatars on Grok Voice Realtime, where an optional Jev key drives expressive faces, background gestures and group-call turn-taking.
+  description_zh: 基于 Grok Voice Realtime 的自托管动漫语音伴侣，配有 3D VRM 形象；可选的 Jev 密钥用于驱动丰富的面部表情、背景手势和群聊通话中的轮流发言。
   jev: A per-sentence read in about 250 ms; without a key, gestures and turn-taking fall back to the xAI turn director.
+  jev_zh: 每句话一次判读，约 250 毫秒；没有密钥时，手势和轮流发言回退到 xAI 的 turn director。
   image: https://raw.githubusercontent.com/Codemarchant/rexclaw/main/docs/rexclaw_standalone_banner.jpg
   metrics:
     stars: 9
@@ -527,6 +599,7 @@ entries:
   kind: repo
   author: limboinf
   description: Real-time captioning page that streams speech through the open Confucius4-R2T2 ASR model while Jev annotates each sentence for key points, emotion and intent, with DeepSeek optionally proposing new labels.
+  description_zh: 实时字幕页面：用开放的 Confucius4-R2T2 ASR 模型流式识别语音，同时由 Jev 为每句话标注要点、情绪和意图，还可选用 DeepSeek 提出新标签。
   image: https://raw.githubusercontent.com/limboinf/semantic-live-caption/main/docs/images/cover.png
   metrics:
     stars: 7
@@ -540,7 +613,9 @@ entries:
   kind: repo
   author: harshil1712
   description: Experimental Slidev addon that listens to the presenter through a Cloudflare Agent and Workers AI transcription and advances the deck when the current slide's point is complete.
+  description_zh: 实验性 Slidev 插件，通过 Cloudflare Agent 和 Workers AI 转录收听演讲者的讲话，在当前幻灯片的要点讲完时自动翻页。
   jev: 'Four typed questions per utterance: does advancing feel natural, is the core idea complete, is the presenter continuing, is this a slide boundary; deterministic checks gate the advance.'
+  jev_zh: 每段话语四个类型化问题：此时翻页是否自然、核心意思是否讲完、演讲者是否还在继续、这里是否是幻灯片边界；由确定性检查决定是否翻页。
   metrics:
     stars: 4
   date: '2026-09-18'
@@ -549,10 +624,12 @@ entries:
   - cloudflare
   - speech
 - name: Speko Gateway Jev voice router
+  name_zh: Speko Gateway 的 Jev 语音路由器
   url: https://github.com/SpekoAI/gateway/blob/main/integrations/python/examples/jev_voice_router.py
   kind: repo
   author: SpekoAI
   description: Open customer-side data plane for real-time voice AI that relays evaluation models such as typesafe:jev-1.13.0, with an example that routes each finalized voice turn using one batched Jev evaluation.
+  description_zh: 面向实时语音 AI 的开放客户侧数据平面，可中转 typesafe:jev-1.13.0 等评估模型，附带一个示例：用一次批量 Jev 评估为每个定稿的语音轮次做路由。
   metrics:
     repo_stars: 8
   date: '2026-08-05'
@@ -568,7 +645,9 @@ entries:
   kind: post
   author: ashutoshpuro97
   description: Always-on voice assistant demo where Jev decides in real time whether what you say is directed at the AI or at someone else, so no wake word is needed.
+  description_zh: 常开语音助手演示：Jev 实时判断你说的话是对 AI 说的还是对别人说的，因此不需要唤醒词。
   jev: Several simultaneous judgments per utterance, such as topic continuation and whether an agent could help.
+  jev_zh: 每段话语同时做多项判断，比如是否延续当前话题、agent 能否帮上忙。
   image: https://pbs.twimg.com/amplify_video_thumb/2101659226607321089/img/iDIVp1YnUasEtGo9.jpg
   metrics:
     likes: 552
@@ -583,7 +662,9 @@ entries:
   kind: app
   author: Steve Krouse
   description: Val Town demo that re-scores a sentence on every keystroke, showing 16 calibrated judgments such as tone, urgency, passive-aggressiveness and AI-written move as you type.
+  description_zh: Val Town 演示：每敲一个键就重新给句子打分，边打字边显示语气、紧急程度、阴阳怪气、像 AI 写的等 16 项校准判断的变化。
   jev: 16 typed questions asked in one call, re-run per keystroke.
+  jev_zh: 一次调用问 16 个类型化问题，每次按键重新运行。
   links:
     demo: https://x.com/stevekrouse/status/2100287368221659289
   tags:
@@ -591,11 +672,14 @@ entries:
   - writing
   - val-town
 - name: Vellum voice judges
+  name_zh: Vellum 的语音评判
   url: https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev
   kind: repo
   author: vellum-ai
   description: 'Jev provider in the Vellum personal assistant used by live-voice judges: one decides whether a barged-in request should keep running in the background, another overrules the fast front door when a turn needs tools.'
+  description_zh: 个人助手 Vellum 中的 Jev 提供方，供实时语音评判使用：一个决定被插话打断的请求是否应在后台继续运行，另一个在某轮需要工具时推翻快速入口的判断。
   jev: One bounded yes/no Noul per judge; every failure falls back to the default behavior.
+  jev_zh: 每个评判一个有边界的是/否 Noul；任何失败都回退到默认行为。
   image: https://raw.githubusercontent.com/vellum-ai/vellum-assistant/main/assets/banner.png
   metrics:
     repo_stars: 1296
@@ -607,10 +691,12 @@ entries:
   - voice-assistant
   - barge-in
 - name: Voice commands for Autumn
+  name_zh: Autumn 的语音命令
   url: https://x.com/charlielamb/status/2100946207530955145
   kind: post
   author: charlielamb
   description: Dictation in the Autumn pricing dashboard that turns spoken requests into plan attaches, updates and schedules instead of manual edits.
+  description_zh: Autumn 定价仪表盘里的听写功能，把口头请求转成套餐挂载、更新和排期，不用手动编辑。
   image: https://pbs.twimg.com/amplify_video_thumb/2100944674567467008/img/w1tdGJtRZyRQ6TDt.jpg
   metrics:
     likes: 30
@@ -620,10 +706,12 @@ entries:
   - voice
   - billing
 - name: Voice commands for Fusion 360
+  name_zh: Fusion 360 的语音命令
   url: https://x.com/xyz04274951/status/2101053181589606584
   kind: post
   author: xyz04274951
   description: Voice control for Fusion 360 where you click, speak and Fusion runs the feature, with Jev only deciding whether the utterance is a command.
+  description_zh: Fusion 360 的语音控制：点一下、说一句，Fusion 就执行对应功能，Jev 只负责判断这句话是否是命令。
   image: https://pbs.twimg.com/amplify_video_thumb/2101053100513722368/img/r7M9adjEOeVW0EBn.jpg
   metrics:
     views: 79
@@ -632,11 +720,14 @@ entries:
   - cad
   - voice-commands
 - name: Voice computer assistant
+  name_zh: 语音电脑助手
   url: https://x.com/marckohlbrugge/status/2100930430690050336
   kind: post
   author: marckohlbrugge
   description: Early computer assistant where local Whisper transcribes everything the author says, and Jev classifies it into actions using the screen's accessibility tree from a small Swift app, all in real time.
+  description_zh: 早期的电脑助手：本地 Whisper 转录作者说的所有话，Jev 借助一个小型 Swift 应用获取的屏幕无障碍树，把话语实时归类为动作。
   jev: Classifies each utterance into an action over the clickable elements on screen.
+  jev_zh: 在屏幕上可点击的元素范围内，把每段话语归类为一个动作。
   image: https://pbs.twimg.com/media/HSgAtGCW8AABc-Z.jpg?name=orig
   metrics:
     likes: 110
@@ -647,10 +738,12 @@ entries:
   - macos
   - accessibility
 - name: Voice control for Mac, honest take
+  name_zh: 语音控制 Mac 的真实体验
   url: https://x.com/rishipatidarr/status/2101671534133961180
   kind: post
   author: rishipatidarr
   description: 'Day-long test of controlling a Mac by voice with Jev: actions land in about 700ms and refusals in 350ms, but results depend on well-separated options and it struggles once commands need reasoning.'
+  description_zh: 用 Jev 语音控制 Mac 的一整天测试：动作约 700 毫秒 落地，拒绝约 350 毫秒，但效果取决于选项之间是否区分清楚，一旦命令需要推理就很吃力。
   metrics:
     likes: 7
     views: 212
@@ -660,10 +753,12 @@ entries:
   - computer-use
   - lessons
 - name: Voice Cursor Jev demo
+  name_zh: Voice Cursor 的 Jev 演示
   url: https://x.com/LongChen8asr/status/2101904162447556648
   kind: post
   author: LongChen8asr
   description: Voice Cursor demo where Jev acts as the live decision layer for spoken edits, such as making an email warmer, keeping Wednesday and dropping the apology.
+  description_zh: 演示：在 Voice Cursor 中，Jev 作为口头编辑的实时决策层，比如让邮件语气更温和、保留周三、删掉道歉。
   image: https://pbs.twimg.com/amplify_video_thumb/2101903869345501184/img/zkRooacuKzJ9sjsz.jpg
   metrics:
     likes: 3
@@ -677,10 +772,12 @@ entries:
   - email
   - editing
 - name: Voice intent to tool calls
+  name_zh: 从语音意图到工具调用
   url: https://x.com/BhosalePratim/status/2100986774742765991
   kind: post
   author: BhosalePratim
   description: Voice-agent experiment that replaces the LLM's tool-choice step with Jev so decisions run on partial transcripts, letting the agent act before the user finishes the sentence.
+  description_zh: 语音 agent 实验：用 Jev 替换 LLM 的工具选择步骤，让决策在部分转录上就能进行，agent 在用户说完之前就能行动。
   image: https://pbs.twimg.com/amplify_video_thumb/2100986186219081728/img/LmAGU-0Pd5ZABGeb.jpg
   metrics:
     likes: 476
@@ -691,11 +788,14 @@ entries:
   - tool-calling
   - partials
 - name: Voice-controlled Chrome with Jev
+  name_zh: 用 Jev 语音控制 Chrome
   url: https://www.youtube.com/watch?v=rGNZxt8eUaI
   kind: video
   author: Prompt Engineer 48
   description: Explainer plus a build that drives Chrome by voice through a mic, Whisper, Jev, and Playwright pipeline, set up with the TypeSafe skill in Claude Code, with try-on and news-filter extras.
+  description_zh: 讲解加实操：通过麦克风、Whisper、Jev 和 Playwright 组成的管线用语音驱动 Chrome，借助 Claude Code 中的 TypeSafe skill 搭建，另有虚拟试穿和新闻过滤等附加功能。
   jev: Picks the browser intent and target from each transcript.
+  jev_zh: 从每段转录中选出浏览器意图和目标。
   metrics:
     views: 13651
     likes: 131
@@ -705,10 +805,12 @@ entries:
   - browser
   - playwright
 - name: Voice-controlled Figma
+  name_zh: 语音控制 Figma
   url: https://x.com/mikegee/status/2100845388655960112
   kind: post
   author: mikegee
   description: Controls Figma by speaking commands that Jev turns into design actions; total cost from first line of code to the demo video was $0.01.
+  description_zh: 说出命令，由 Jev 转成设计操作来控制 Figma；从写第一行代码到录好演示视频，总成本 $0.01。
   image: https://pbs.twimg.com/amplify_video_thumb/2100844622213959680/img/yPzf2Js8iJLezbtu.jpg
   metrics:
     likes: 164
@@ -719,10 +821,12 @@ entries:
   - voice
   - design
 - name: Voice-controlled Mac agent
+  name_zh: 语音控制 Mac 的 agent
   url: https://x.com/instantricecook/status/2100814590300889426
   kind: post
   author: instantricecook
   description: Voice-controlled computer use for the Mac that acts on spoken instructions as they arrive, opening Notes before the user finishes the sentence.
+  description_zh: Mac 上的语音控制电脑操控（computer use），指令一边说一边执行，用户话还没说完就已经打开了备忘录。
   image: https://pbs.twimg.com/amplify_video_thumb/2100809295809974272/img/_1rbvz04k6wjpcGW.jpg
   metrics:
     likes: 6063
@@ -733,10 +837,12 @@ entries:
   - computer-use
   - macos
 - name: Voice-driven computer use
+  name_zh: 语音驱动的电脑操控
   url: https://www.reddit.com/r/typesafe_ai/comments/1wjxif2/ultrafast_voice_to_computer_use_with_jev/
   kind: reddit
   author: Just_Lingonberry_352
   description: Video of spoken commands driving a Mac desktop in near real time, with Jev choosing the computer-use actions.
+  description_zh: 视频展示口头命令近乎实时地操控 Mac 桌面，由 Jev 选择电脑操控动作。
   image: https://external-preview.redd.it/MjVqaWFtM3lpYnFoMVF5AEaTiwB8DdPkl7eQInx6np9AOGrXdQTJ5e64DBEa.png?format=pjpg&auto=webp&s=23f6eb7cc214979ea6b784e685493490b29743e7
   metrics:
     points: 31
@@ -746,10 +852,12 @@ entries:
   - voice
   - macos
 - name: VoiceX llm-bench Jev judge
+  name_zh: VoiceX llm-bench 的 Jev 评判
   url: https://github.com/xuyungit/VoiceX/tree/main/tools/llm-bench
   kind: repo
   author: xuyungit
   description: Benchmark tool for the VoiceX desktop voice-input app that uses Jev as the judge of LLM post-processing, asking three fixed questions about each ASR correction to credit good edits and flag bad ones.
+  description_zh: 桌面语音输入应用 VoiceX 的基准测试工具，把 Jev 用作 LLM 后处理的评判，就每处 ASR 修正问三个固定问题，为好的修改记分、标记差的修改。
   metrics:
     repo_stars: 19
   date: '2026-03-27'
@@ -760,10 +868,12 @@ entries:
   - benchmark
   - dictation
 - name: Youform voice builder
+  name_zh: Youform 语音表单搭建
   url: https://x.com/themkmaker/status/2100961111319429403
   kind: post
   author: themkmaker
   description: Voice form builder in Youform where Jev turns spoken instructions into form-building actions quickly.
+  description_zh: 在 Youform 中用语音搭建表单，Jev 把口头指令快速转成搭建表单的操作。
   image: https://pbs.twimg.com/amplify_video_thumb/2100960961515704321/img/hmtKtXEbiikmLDlZ.jpg
   metrics:
     likes: 73

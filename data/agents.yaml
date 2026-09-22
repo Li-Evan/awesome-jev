@@ -1,13 +1,16 @@
 title: Agents and Orchestration
+title_zh: Agent 与编排
 emoji: 🤖
 layout: gallery
 description: Tool and skill selection, approvals, planning, memory, and harness decisions for general-purpose agents.
+description_zh: 通用 agent 的工具与 skill 选择、审批、规划、记忆和 harness 决策。
 entries:
 - name: '@maximem/jev-mcp'
   url: https://www.npmjs.com/package/@maximem/jev-mcp
   kind: package
   author: maximem-ai
   description: MCP server giving Claude Code, Codex and Cowork Jev-backed classify, score, check and rank tools, plus plan, action and verify gates over the agent's own work.
+  description_zh: MCP 服务器，为 Claude Code、Codex 和 Cowork 提供基于 Jev 的分类、打分、检查和排序工具，另有针对 agent 自身工作的计划、操作和验证关卡。
   metrics:
     downloads: 754
   date: '2026-09-20'
@@ -19,6 +22,7 @@ entries:
   kind: repo
   author: Das-rebel
   description: Adaptive multi-model LLM router across 80+ providers with pheromone-trail failover and ensemble merging, where model=jev-auto lets Jev route each request to a suitable provider in a single pass.
+  description_zh: 自适应多模型 LLM 路由器，覆盖 80+ 家提供商，支持信息素轨迹式故障切换和集成合并；设置 model=jev-auto 时，由 Jev 一次性把每个请求路由到合适的提供商。
   metrics:
     stars: 16
   date: '2026-05-15'
@@ -33,6 +37,7 @@ entries:
   kind: repo
   author: aksika
   description: Pluggable System One judgment provider in abmind, a persistent memory and RAG engine for AI agents, that sends recall and diagnostics questions to Jev or a locally served Laya model as advice to its combining code.
+  description_zh: 可插拔的 System One 判断提供器，属于面向 AI agent 的持久记忆与 RAG 引擎 abmind，把召回和诊断类问题发给 Jev 或本地部署的 Laya 模型，结果作为建议交给组合代码。
   metrics:
     repo_stars: 20
   date: '2026-04-13'
@@ -44,11 +49,14 @@ entries:
   - laya
   - recall
 - name: Agent action approval
+  name_zh: Agent 操作审批
   url: https://openrouter.ai/labs/jev/overseer
   kind: app
   author: OpenRouter
   description: 'OpenRouter Labs recipe that runs four checks (off task, could destroy, untrusted input, ask first) on each of 24 coding or ops agent tool calls in one request, so risky steps stop for a person: 96 answers in 0.5 s.'
+  description_zh: OpenRouter Labs 的示例：在一次请求中对 24 个编程或运维 agent 的工具调用各做四项检查（偏离任务、可能造成破坏、不可信输入、需先询问），让有风险的步骤停下来交给人：0.5 秒给出 96 个答案。
   jev: Four Nouls per tool call; any answer above 50% pauses the step.
+  jev_zh: 每个工具调用问四个 Noul；任一答案超过 50% 就暂停该步骤。
   image: https://openrouter.ai/dynamic-og?title=Agent+action+approval&description=Review+agent+actions+with+structured+decisions.&v=2
   links:
     model: https://openrouter.ai/typesafe/jev
@@ -57,11 +65,14 @@ entries:
   - tool-calls
   - openrouter-labs
 - name: Agent action approval at Weathernews
+  name_zh: Weathernews 的 agent 操作审批
   url: https://zenn.dev/weathernews/articles/jev-auto-approval-poc
   kind: article
   author: Weathernews (Sakamoto)
   description: Weathernews replaced the LLM that approved operations in its internal AI agent with Jev, keeping classification accuracy while cutting latency and cost, and shares the design and comparison.
+  description_zh: Weathernews 把内部 AI agent 中负责审批操作的 LLM 换成了 Jev，分类准确率保持不变，同时降低了延迟和成本，文中分享了设计和对比。
   jev: One Choice per requested agent operation, using the probability distribution and confidence to auto-approve or escalate.
+  jev_zh: agent 请求的每个操作用一个 Choice，根据概率分布和置信度决定自动批准还是升级处理。
   image: https://res.cloudinary.com/zenn/image/upload/s--qHPPckme--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BB%258A%25E8%25A9%25B1%25E9%25A1%258C%25E3%2581%25AEJev%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E6%259C%2580%25E9%25AB%2598%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E5%259D%2582%25E6%259C%25AC%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q5OTYyNThkZjkuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Weathernews%2520Tech%2520Blog%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMjVlOTVhNDMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE
   date: '2026-09-18'
   tags:
@@ -69,11 +80,14 @@ entries:
   - approvals
   - poc
 - name: Agent router test
+  name_zh: Agent 路由器测试
   url: https://www.reddit.com/r/LLMDevs/comments/1wihigc/tried_typesafes_new_decisiononly_model_jev_as_an/
   kind: reddit
   author: blackbarata
   description: Uses Jev as the router for a personal knowledge app's agents, correctly picking the recipe or scraper agent from an Instagram reel transcript in 145-271 ms.
+  description_zh: 把 Jev 用作个人知识应用里各个 agent 的路由器，能根据 Instagram Reel 的转录文本正确选出食谱 agent 或抓取 agent，耗时 145-271 毫秒。
   jev: One Choice over short agent descriptions, with confidence to decide when to fall back.
+  jev_zh: 在简短的 agent 描述上做一个 Choice，并用置信度决定何时回退。
   image: https://preview.redd.it/h90l7rcdszph1.png?width=1080&format=png&auto=webp&s=d1460cf34f1dcc1eb36f720f72be19077dcf6ba6
   metrics:
     points: 4
@@ -82,10 +96,12 @@ entries:
   - routing
   - multi-agent
 - name: Agent with a Jev model router
+  name_zh: 用 Jev 做模型路由的 agent
   url: https://x.com/rileybrown/status/2100607709317861879
   kind: post
   author: rileybrown
   description: Agent build in which Jev acts as the model router, choosing which model handles each request.
+  description_zh: 一个 agent 项目，由 Jev 充当模型路由器，决定每个请求交给哪个模型处理。
   image: https://pbs.twimg.com/amplify_video_thumb/2100607557995761664/img/a_foq8dIW_wwab7W.jpg
   metrics:
     likes: 283
@@ -99,7 +115,9 @@ entries:
   kind: repo
   author: AgentiLoop
   description: Jev advisor in Agent!, a native macOS agent app, that gives a second opinion on shell commands already passed by pattern rules and refuses those whose data-destruction probability exceeds a user-set threshold.
+  description_zh: 原生 macOS agent 应用 Agent! 中的 Jev 顾问：对已经通过模式规则的 shell 命令再给一次第二意见，数据销毁概率超过用户设定阈值的命令会被拒绝。
   jev: Uses the bundled TypeSafeKit Swift client and fails open so an outage never stalls the tool loop.
+  jev_zh: 使用内置的 TypeSafeKit Swift 客户端，并采用失败放行（fail open）策略，服务中断也不会卡住工具循环。
   image: https://raw.githubusercontent.com/AgentiLoop/Agent/main/agent-demo.gif
   metrics:
     repo_stars: 623
@@ -116,6 +134,7 @@ entries:
   kind: repo
   author: BuilderIO
   description: Ranks up to 128 tools and skills with a single Choice and preloads the top three within 750 ms.
+  description_zh: 用一个 Choice 为最多 128 个工具和 skill 排序，并在 750 毫秒内预加载排名前三的项。
   image: https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7628600bc10a4940b78f42c5df7628b0
   metrics:
     repo_stars: 6092
@@ -131,6 +150,7 @@ entries:
   kind: repo
   author: xudafeng
   description: Desktop AI agent runtime with MCP integration, task planning and persistent memory where optional Jev routing selects the relevant tools, falling back to the main model on low confidence, with each decision shown in an Activity panel.
+  description_zh: 桌面 AI agent 运行时，集成 MCP、任务规划和持久记忆；可选的 Jev 路由负责挑选相关工具，置信度低时回退到主模型，每次决策都显示在 Activity 面板里。
   image: https://raw.githubusercontent.com/xudafeng/agent0/main/docs/images/agent0-jev-demo.gif
   metrics:
     stars: 5
@@ -144,6 +164,7 @@ entries:
   kind: repo
   author: powerpuff-kitty
   description: Rust CLI for governing agent-native repositories whose decisions commands build Jev payloads for boolean, choice, and ordinal decisions, store answers as review-required receipts, and gate calibration regressions in CI.
+  description_zh: 用于治理 agent-native 仓库的 Rust CLI，其 decisions 命令为布尔型、选择型和有序型决策构建 Jev 请求体，把答案存为需要复核的回执，并在 CI 中拦截校准回归。
   date: '2026-09-03'
   tags:
   - rust
@@ -154,7 +175,9 @@ entries:
   kind: repo
   author: mishrasanjeev
   description: Enterprise agent orchestration platform with a Jev provider adapter, an offline evaluator and a shadow-mode hook that compares Jev tool-routing decisions with existing runtime outcomes.
+  description_zh: 企业级 agent 编排平台，带有 Jev 提供方适配器、离线评估器，以及一个影子模式 hook，用来把 Jev 的工具路由决策与现有运行时的实际结果做对比。
   jev: Advisory only, with an 0.8 s timeout, sampling caps and a circuit breaker; production stays off until a measured evaluation is approved.
+  jev_zh: 仅作参考，设有 0.8 秒超时、采样上限和熔断器；在经过量化评估并获批之前，生产环境保持关闭。
   metrics:
     stars: 11
   date: '2026-03-20'
@@ -169,6 +192,7 @@ entries:
   kind: repo
   author: DemonDamon
   description: Multi-agent platform whose group chat routes un-mentioned messages with Jev, dispatching by label when confident and falling back to an LLM, and shows a decision card each turn.
+  description_zh: 多 agent 平台，群聊中未被 @ 的消息由 Jev 路由：置信度高时按标签分派，否则回退到 LLM，并在每轮显示一张决策卡片。
   metrics:
     repo_stars: 233
   date: '2024-03-15'
@@ -183,6 +207,7 @@ entries:
   kind: post
   author: MiguelriosEN
   description: Agent harness built with pi and Jev in which an agent learns how to do a job, writes itself a general reusable solution, and then gets out of the way.
+  description_zh: 用 pi 和 Jev 搭建的 agent harness：agent 先学会如何完成一项工作，给自己写出一个通用、可复用的解决方案，然后就退出流程。
   image: https://pbs.twimg.com/amplify_video_thumb/2101032781270917120/img/8tGv1qWQd8M9mEec.jpg
   metrics:
     likes: 311
@@ -197,6 +222,7 @@ entries:
   kind: post
   author: _aj
   description: Harness from Grep.ai for repetitive knowledge work that learns the job as it runs, moving steps from LLM calls to code; 100,000 compliance alerts cost under $26K versus over $290K on Opus 5.
+  description_zh: Grep.ai 推出的 harness，面向重复性知识工作，在运行中学会这项工作，把步骤从 LLM 调用逐步转为代码；处理 100,000 条合规告警花费不到 $26K，而用 Opus 5 要超过 $290K。
   image: https://pbs.twimg.com/media/HSwFAsyawAA4tst.jpg?name=orig
   metrics:
     likes: 1585
@@ -213,7 +239,9 @@ entries:
   kind: repo
   author: anis-marrouchi
   description: Self-hosted AI agent mesh for small businesses whose decision layer can run Jev-style typed decisions on a local LLM or a simple-jev server, recomputing confidence as normalized entropy.
+  description_zh: 面向小企业的自托管 AI agent 网格，其决策层可以在本地 LLM 或 simple-jev 服务器上运行 Jev 风格的类型化决策，并把置信度重新计算为归一化熵。
   jev: simple-jev reads next-token logits over allowed labels; AgentX discards its max-probability confidence because it is not comparable across option counts.
+  jev_zh: simple-jev 读取允许标签上的下一个 token 的 logits；AgentX 丢弃它给出的最大概率置信度，因为这个值在选项数量不同时不可比。
   metrics:
     repo_stars: 8
   date: '2026-02-11'
@@ -229,6 +257,7 @@ entries:
   kind: repo
   author: Fei2-Labs
   description: AI C-Suite strategic debate skill that can use Jev to classify the decision topic and judge the executives' round-one positions, falling back to keyword logic without a key.
+  description_zh: AI C-Suite 战略辩论 skill，可以用 Jev 对决策议题分类，并评判各位高管的第一轮立场；没有 key 时回退到关键词逻辑。
   metrics:
     repo_stars: 12
   date: '2026-01-09'
@@ -243,6 +272,7 @@ entries:
   kind: repo
   author: tylerjharden
   description: 'OpenRouter-style model router with a single ailerix/auto slug: Jev classifies each request into a typed catalog route, then a cost-per-task Pareto chain picks the provider.'
+  description_zh: OpenRouter 风格的模型路由器，只提供一个 ailerix/auto slug：Jev 先把每个请求归入类型化目录中的某条路由，再由按单任务成本构建的帕累托链选择提供商。
   metrics:
     stars: 2
   date: '2026-09-16'
@@ -257,7 +287,9 @@ entries:
   kind: repo
   author: miikkij
   description: Federated, self-hosted AI operating system whose nodes carry Jev beside the text model, so apps and agents can ask closed triage, routing, scoring and pick-one questions via a JS library, MCP tools and a skill.
+  description_zh: 联邦式、自托管的 AI 操作系统，每个节点在文本模型旁搭载 Jev，应用和 agent 可以通过 JS 库、MCP 工具和一个 skill 提出封闭式的分诊、路由、打分和单选问题。
   jev: Personal data such as emails, phone numbers and Finnish identity codes are stripped before requests leave the node, and each decision is recorded with whether a person reviewed it.
+  jev_zh: 请求离开节点前会剔除电子邮件、电话号码、芬兰身份证号等个人数据，每次决策都会记录是否经过人工复核。
   image: https://raw.githubusercontent.com/miikkij/aimeat-protocol/main/assets/screenshots/portal-landing.png
   metrics:
     stars: 8
@@ -273,6 +305,7 @@ entries:
   kind: repo
   author: insciqq
   description: Jev integration in AIQSA, a self-hosted multi-provider AI workspace, that uses decision calls via OpenRouter for memory and knowledge-base relevance, tool discovery and skill suggestions, each enabled after its own qualification.
+  description_zh: 自托管多提供商 AI 工作空间 AIQSA 中的 Jev 集成，通过 OpenRouter 发起决策调用，用于记忆和知识库相关性判断、工具发现和 skill 推荐，每项功能都在单独验证合格后才启用。
   metrics:
     repo_stars: 6
   date: '2026-07-22'
@@ -287,7 +320,9 @@ entries:
   kind: repo
   author: hjxwz123
   description: Self-hosted AI chat platform that lets admins assign Jev to file routing, tool routing, memory dedup, memory conflict adjudication and content moderation, each with confidence fallbacks.
+  description_zh: 自托管 AI 聊天平台，管理员可以把文件路由、工具路由、记忆去重、记忆冲突裁决和内容审核分配给 Jev，每项都带置信度回退。
   jev: Moderation asks one Noul per category and blocks at 0.85; tool routing narrows tools only at 0.8 confidence.
+  jev_zh: 内容审核对每个类别问一个 Noul，达到 0.85 即拦截；工具路由只有在置信度达到 0.8 时才收窄工具范围。
   image: https://raw.githubusercontent.com/hjxwz123/Aivory/main/docs/brand/readme-header.svg
   metrics:
     repo_stars: 101
@@ -303,6 +338,7 @@ entries:
   kind: repo
   author: jmagly
   description: Decision framework in an AI-augmented dev toolkit where versioned rulesets and bindings let workflows switch between Jev and an LLM subagent, with a hardened Jev transport.
+  description_zh: AI 增强开发工具包中的决策框架，通过带版本的规则集和绑定，让工作流在 Jev 和 LLM 子 agent 之间切换，并配有加固过的 Jev 传输层。
   image: https://raw.githubusercontent.com/jmagly/aiwg/main/docs/.public/aiwg-readme-hero-v2.png
   metrics:
     repo_stars: 211
@@ -319,7 +355,9 @@ entries:
   kind: repo
   author: soul99soul-glitch
   description: Jev runtime in the AmberAgent Android AI workspace used for bounded phone-screen and web goals, model-council routing, memory reranking, semantic tool search and trimming long tool outputs before they reach the model.
+  description_zh: 安卓 AI 工作空间 AmberAgent 中的 Jev 运行时，用于有边界的手机屏幕和网页目标、模型议会路由、记忆重排、语义工具搜索，以及在过长的工具输出送达模型前做裁剪。
   jev: Per-purpose shadow/active modes with calibration and usage stores; low confidence, timeouts or shadow mode keep the default behavior.
+  jev_zh: 按用途分别设置影子/启用模式，并配有校准和用量存储；置信度低、超时或处于影子模式时保持默认行为。
   metrics:
     repo_stars: 26
   date: '2026-05-08'
@@ -334,6 +372,7 @@ entries:
   kind: repo
   author: Foxtailsss-Andy
   description: Governed local-first enterprise agent whose Crew feature suggests a person or worker for an unassigned task with Jev, which can abstain; it matched a DeepSeek judge on 22/22 cases at 85.23% lower p50 latency.
+  description_zh: 受治理、本地优先的企业 agent，其 Crew 功能用 Jev 为未分配的任务推荐一个人或 worker，Jev 也可以弃权；它在 22/22 个案例上与 DeepSeek 评判结果一致，p50 延迟低 85.23%。
   image: https://raw.githubusercontent.com/Foxtailsss-Andy/Anna-Agent/main/docs/public/assets/anna-readme-banner-v2.png
   metrics:
     stars: 149
@@ -347,7 +386,9 @@ entries:
   kind: repo
   author: unarbos
   description: Structured router in the Arbos file-system-native agent coordinator where Jev picks the next mechanical tool move from a situation card, while the LLM handles writing, planning and talking; act=llm hands the turn to the chat model.
+  description_zh: 文件系统原生的 agent 协调器 Arbos 中的结构化路由器：Jev 根据情境卡片选出下一步机械性的工具操作，写作、规划和对话交给 LLM；act=llm 会把这一轮交给聊天模型。
   jev: Typed questions via OpenRouter's Decisions API over a 24k-token card with a 1.5 s first-byte limit; failures end the turn with no chat fallback.
+  jev_zh: 通过 OpenRouter 的 Decisions API，在 24k token 的卡片上提出类型化问题，首字节时限 1.5 秒；失败时直接结束本轮，不回退到聊天模型。
   image: https://raw.githubusercontent.com/unarbos/arbos/main/docs/img/project-page.png
   metrics:
     repo_stars: 30
@@ -363,6 +404,7 @@ entries:
   kind: repo
   author: Flazer31
   description: Optional Jev selector and reviewer in Archive Center, a local-first memory backend for RisuAI chats, that picks which stored memories and source evidence to pass into the next request without ever writing memories.
+  description_zh: 本地优先的 RisuAI 聊天记忆后端 Archive Center 中可选的 Jev 选择器和审查器，负责挑选哪些已存记忆和来源证据传入下一次请求，但从不写入记忆。
   metrics:
     repo_stars: 15
   date: '2026-06-30'
@@ -374,10 +416,12 @@ entries:
   - roleplay
   - risuai
 - name: ask-jev gate for Grok bots
+  name_zh: Grok 机器人的 ask-jev 前置关卡
   url: https://x.com/ChuckHTF/status/2102187054381617367
   kind: post
   author: ChuckHTF
   description: Personal desk of Grok bots and assistants that now asks Jev first, via OpenRouter's Decisions API, for small yes/no, bucket and 1-5 score calls instead of waking Grok.
+  description_zh: 由一批 Grok 机器人和助手组成的个人工作台，现在遇到小型的是/否、分桶和 1-5 打分判断时，会先通过 OpenRouter 的 Decisions API 询问 Jev，而不是唤醒 Grok。
   image: https://pbs.twimg.com/media/HSx3--tWYAE8EN1.jpg?name=orig
   metrics:
     likes: 1
@@ -392,6 +436,7 @@ entries:
   kind: repo
   author: shantanugoel
   description: Hermes skill, usable by other agents, that calls Jev as a typed tiebreaker so the agent can act on a confident Choice, Score, or Noul answer or escalate.
+  description_zh: Hermes skill，也可供其他 agent 使用，把 Jev 当作类型化的裁决者来调用，让 agent 在拿到高置信度的 Choice、Score 或 Noul 答案时直接行动，否则升级处理。
   metrics:
     stars: 37
   date: '2026-09-17'
@@ -403,6 +448,7 @@ entries:
   kind: repo
   author: pZacca
   description: Unofficial MCP server, local over stdio or hosted on Cloudflare Workers, where an agent asks a plain question about material it holds and Jev picks yes/no, scale or choice and answers with calibrated probabilities.
+  description_zh: 非官方 MCP 服务器，可通过 stdio 在本地运行，也可托管在 Cloudflare Workers 上：agent 针对手头的材料提一个普通问题，Jev 自行选择是/否、量表或选择题形式，并给出校准的概率。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -415,6 +461,7 @@ entries:
   kind: repo
   author: cbruyndoncx
   description: MCP server built on the official @typesafe-ai/sdk that gives agents ask_choice, ask_noul, and ask_score tools returning Jev's selected option, per-option probabilities, and confidence.
+  description_zh: 基于官方 @typesafe-ai/sdk 构建的 MCP 服务器，为 agent 提供 ask_choice、ask_noul 和 ask_score 工具，返回 Jev 选中的选项、每个选项的概率和置信度。
   date: '2026-09-18'
   tags:
   - mcp
@@ -424,7 +471,9 @@ entries:
   kind: repo
   author: matrixorigin
   description: 'Self-hosted runtime for long-running enterprise agents with EXPLAIN ANALYZE for context and native Jev judgments at four decision points: memory filtering, lesson dismissal, request classification and skill selection.'
+  description_zh: 面向长时间运行企业 agent 的自托管运行时，为上下文提供 EXPLAIN ANALYZE，并在四个决策点原生使用 Jev 判断：记忆过滤、经验剔除、请求分类和 skill 选择。
   jev: Shared typed questions, validated responses, provider routing and usage accounting across callers; Jev is configured separately from the generation model.
+  jev_zh: 各调用方共享类型化问题、响应校验、提供方路由和用量统计；Jev 与生成模型分开配置。
   image: https://raw.githubusercontent.com/matrixorigin/Astra/main/docs/assets/explain-analyze-demo.gif
   metrics:
     stars: 32
@@ -438,7 +487,9 @@ entries:
   kind: repo
   author: Significant-Gravitas
   description: Seven no-code blocks, including a five-exit router, a yes, no, or unsure split, and a score filter.
+  description_zh: 七个无代码模块，包括一个五出口路由器、一个是/否/不确定三路分流，以及一个分数过滤器。
   jev: Blocks call the TypeSafe Python SDK's system_one, so visual agent workflows can branch on Choice, Noul and Score answers.
+  jev_zh: 模块调用 TypeSafe Python SDK 的 system_one，让可视化 agent 工作流能根据 Choice、Noul 和 Score 的答案分支。
   image: https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/master/docs/home/.gitbook/assets/Banner_image.png
   metrics:
     repo_stars: 187481
@@ -454,6 +505,7 @@ entries:
   kind: repo
   author: Asymptote-Labs
   description: Evaluation command in Beacon, a cross-harness memory layer for coding agents, that has Jev judge redacted session-trace projections against a rubric for reusable lessons, which a person reviews before saving.
+  description_zh: 编程 agent 跨 harness 记忆层 Beacon 中的评测命令，让 Jev 按评分标准判断脱敏后的会话轨迹投影里有没有可复用的经验，保存前由人工复核。
   metrics:
     repo_stars: 926
   date: '2026-09-21'
@@ -469,6 +521,7 @@ entries:
   kind: repo
   author: baldaworks
   description: Markdown- and YAML-defined agent workflows for ACP runtimes that mix coding models, shell checks and human steps with a native TypeSafeJev evaluator for typed decisions and routing.
+  description_zh: 用 Markdown 和 YAML 定义、运行在 ACP 运行时上的 agent 工作流，可混合编程模型、shell 检查和人工步骤，并内置 TypeSafeJev 评估器处理类型化决策和路由。
   metrics:
     stars: 74
   date: '2026-07-14'
@@ -483,6 +536,7 @@ entries:
   kind: repo
   author: Dharundp6
   description: MCP server that records facts during agent sessions in a per-project ledger and, at the start of a task, uses Jev via Vercel AI Gateway to recall only the facts that matter for it.
+  description_zh: MCP 服务器，在 agent 会话中把事实记录到按项目划分的账本里，并在任务开始时通过 Vercel AI Gateway 调用 Jev，只召回与该任务相关的事实。
   image: https://raw.githubusercontent.com/Dharundp6/jev-carryforward/main/assets/demo.svg
   metrics:
     stars: 1
@@ -498,6 +552,7 @@ entries:
   kind: repo
   author: chainlesschain
   description: Skill decision layer in a personal AI management CLI that can ask Jev which skill should handle a request, with an 800 ms timeout, metered usage and a benchmark harness.
+  description_zh: 个人 AI 管理 CLI 中的 skill 决策层，可以询问 Jev 该由哪个 skill 处理请求，带 800 毫秒超时、用量计量和一个基准测试 harness。
   metrics:
     repo_stars: 11
   date: '2025-12-01'
@@ -508,11 +563,14 @@ entries:
   - cli
   - decisions
 - name: Character memory that judges
+  name_zh: 会做判断的角色记忆
   url: https://x.com/john_bortotti/status/2102113996505518388
   kind: post
   author: john_bortotti
   description: Character memory system from Mutuals where one Jev call per message decides whether to keep it, which exact words, where it fits, what it makes outdated and what it recalls.
+  description_zh: Mutuals 的角色记忆系统，每条消息只用一次 Jev 调用来决定：是否保留、保留哪些原话、归到哪里、让哪些旧内容过时，以及它会唤起哪些记忆。
   jev: Several typed questions per incoming message answered in a single Jev call.
+  jev_zh: 每条收到的消息带多个类型化问题，在一次 Jev 调用中全部回答。
   image: https://pbs.twimg.com/amplify_video_thumb/2102112486837096449/img/-pAuYpFAhQmzM0uC.jpg
   metrics:
     likes: 88
@@ -525,11 +583,14 @@ entries:
   - companion
   - characters
 - name: Chat bot with no LLM
+  name_zh: 不用 LLM 的聊天机器人
   url: https://x.com/CodingGarden/status/2100665210419950031
   kind: post
   author: CodingGarden
   description: 'Chat assistant built without any LLM: Jev picks the tool and its arguments across web search, Wikipedia, weather, Todoist and Home Assistant, so cited answers arrive instantly.'
+  description_zh: 完全不用 LLM 构建的聊天助手：Jev 在网页搜索、Wikipedia、天气、Todoist 和 Home Assistant 之间挑选工具及其参数，带引用的回答即时返回。
   jev: Choice of tool plus argument selection per prompt.
+  jev_zh: 每个提示词做一次工具 Choice，外加参数选择。
   image: https://pbs.twimg.com/amplify_video_thumb/2100664410935332864/img/KPApgq0AysL_SFeg.jpg
   metrics:
     likes: 1182
@@ -543,6 +604,7 @@ entries:
   kind: repo
   author: masumi-network
   description: Promotion step in Citadel, self-hosted memory for engineering teams and their agents, where Jev decides whether a collected item is relevant and safe to promote into shared knowledge at a 0.7 threshold.
+  description_zh: 面向工程团队及其 agent 的自托管记忆系统 Citadel 中的晋升步骤：Jev 以 0.7 为阈值，判断收集到的条目是否相关、能否安全地晋升为共享知识。
   image: https://raw.githubusercontent.com/masumi-network/Citadel/main/docs/brand/readme-banner.svg
   metrics:
     repo_stars: 16
@@ -558,6 +620,7 @@ entries:
   kind: post
   author: 0xPaulius
   description: Agent orchestrator on a canvas where Jev instantly decides actions such as launching agents, instead of waiting on a slow LLM loop.
+  description_zh: 画布式 agent 编排器，由 Jev 即时决定启动 agent 等操作，不必等待缓慢的 LLM 循环。
   image: https://pbs.twimg.com/amplify_video_thumb/2101278375423737856/img/AcdfybGwO7dAi1Gu.jpg
   metrics:
     likes: 174
@@ -573,7 +636,9 @@ entries:
   kind: repo
   author: rohanarun
   description: OpenAI-compatible caching proxy that replays repeated computer-use and coding-agent requests. On an exact miss, Jev compares recent cached requests and picks a reusable response or none; anything uncertain goes upstream.
+  description_zh: 兼容 OpenAI 接口的缓存代理，用于重放重复的电脑操控（computer use）和编程 agent 请求。精确匹配未命中时，Jev 会比对最近的缓存请求，选出一个可复用的响应或判定都不行；任何不确定的请求都转发到上游。
   jev: 'One choice over up to 8 cached candidates plus none, accepted at 0.95 confidence; matches are tagged X-Computer-Use-Cache-Match: jev.'
+  jev_zh: '在最多 8 个缓存候选加“无”之间做一次 Choice，置信度达到 0.95 才接受；命中的响应带有 X-Computer-Use-Cache-Match: jev 标记。'
   image: https://storage.googleapis.com/cheatlayer/landing/computer-use-cache-super-api-hero.jpeg
   metrics:
     stars: 42
@@ -587,7 +652,9 @@ entries:
   kind: post
   author: corentAI
   description: Corent's router uses Jev to decide what each request needs across 1000+ models, how confident that call is, and whether to take the route or fall back, with stricter confidence for costly jobs like a $2 video clip.
+  description_zh: Corent 的路由器用 Jev 判断每个请求在 1000+ 个模型中需要什么、这个判断有多大把握，以及是走该路由还是回退；对一段 $2 的视频这类高成本任务，置信度要求更严格。
   jev: Routing Choice with a per-workload confidence threshold before falling back.
+  jev_zh: 路由用一个 Choice，按工作负载设置置信度阈值，达不到就回退。
   image: https://pbs.twimg.com/amplify_video_thumb/2100964784581525504/img/S0fJrRk_X0OFZhdh.jpg
   metrics:
     likes: 320
@@ -604,7 +671,9 @@ entries:
   kind: repo
   author: CoWork-OS
   description: CoWork OS, a local-first agentic everything-app, adds a TypeSafe decision provider so its agents can make typed judgments over /v1/systemone.
+  description_zh: 本地优先的 agent 型全能应用 CoWork OS 新增了 TypeSafe 决策提供方，让其中的 agent 可以通过 /v1/systemone 做类型化判断。
   jev: An HTTP decision provider defaulting to jev-latest.
+  jev_zh: 一个 HTTP 决策提供方，默认使用 jev-latest。
   image: https://raw.githubusercontent.com/CoWork-OS/CoWork-OS/main/screenshots/cowork-os-sl-color-logo.png
   metrics:
     repo_stars: 457
@@ -614,11 +683,14 @@ entries:
   - local-first
   - decisions
 - name: Criteria-based model routing in eve
+  name_zh: eve 中基于标准的模型路由
   url: https://x.com/eve/status/2100430918762832180
   kind: post
   author: eve
   description: Experimental autoModel option in the eve agent framework that uses Jev to route each request between models described by plain-language criteria.
+  description_zh: eve agent 框架中的实验性 autoModel 选项，用 Jev 在多个以自然语言标准描述的模型之间为每个请求做路由。
   jev: Choice between candidate models keyed by descriptions like "Complex reasoning and engineering tasks".
+  jev_zh: 在候选模型之间做 Choice，每个模型以一段描述为键，例如“Complex reasoning and engineering tasks”（复杂推理和工程任务）。
   image: https://pbs.twimg.com/media/HSY6yf5a8AA8NJi.jpg?name=orig
   metrics:
     likes: 910
@@ -632,6 +704,7 @@ entries:
   kind: repo
   author: neuralmagic
   description: Goal-directed research loop engine with an example domain where a decision role routes tickets through any POST /v1/systemone server, either hosted Jev or a vLLM DiffusionGemma server.
+  description_zh: 目标导向的研究循环引擎，附带一个示例领域：决策角色通过任意 POST /v1/systemone 服务器为工单做路由，可以是托管的 Jev，也可以是 vLLM DiffusionGemma 服务器。
   image: https://raw.githubusercontent.com/neuralmagic/crucible/main/docs/img/crucible-molten.gif
   metrics:
     repo_stars: 8
@@ -648,6 +721,7 @@ entries:
   kind: repo
   author: dakdevs
   description: Local MCP server that lets an agent hand off a decision with context and choices to Jev through AI Gateway by default, returning a recommended choice with percentages, with custom policies and bias-profile routing.
+  description_zh: 本地 MCP 服务器，让 agent 把带上下文和选项的决策交给 Jev（默认经由 AI Gateway），返回推荐选项及各项百分比，支持自定义策略和按偏差画像路由。
   date: '2026-09-17'
   tags:
   - mcp
@@ -657,6 +731,7 @@ entries:
   kind: repo
   author: numerous-com
   description: 'Open protocol for decision-based agents: apps expose immutable evidence frames, typed decisions and guarded actions, and a Jev adapter produces assessments while application code keeps control of effects.'
+  description_zh: 面向决策型 agent 的开放协议：应用暴露不可变的证据帧、类型化决策和受保护的操作，由 Jev 适配器给出评估，而副作用始终由应用代码掌控。
   date: '2026-09-19'
   tags:
   - protocol
@@ -667,7 +742,9 @@ entries:
   kind: repo
   author: decocms
   description: Agent control plane whose task board first asks Jev whether incoming tasks duplicate existing cards, falling back to a fast LLM when Jev is unavailable or unsure.
+  description_zh: agent 控制平面，其任务看板会先问 Jev 新任务是否与已有卡片重复，Jev 不可用或拿不准时回退到快速 LLM。
   jev: One shared state with one Choice per incoming task (including "none"); answers are accepted only if every choice has probability of at least 0.95.
+  jev_zh: 所有新任务共享一个 state，每个任务一个 Choice（含“none”选项）；只有每个 Choice 的概率都至少达到 0.95 时才采纳答案。
   metrics:
     repo_stars: 408
   date: '2025-03-14'
@@ -682,7 +759,9 @@ entries:
   kind: repo
   author: ThinkInAIXYZ
   description: DeepChat's desktop agent client adds Jev as a provider plus an opt-in judgment-model slot that reviews tool-permission requests through the System One protocol.
+  description_zh: 桌面 agent 客户端 DeepChat 新增 Jev 作为提供方，并提供一个可选启用的判断模型槽位，通过 System One 协议审核工具权限请求。
   jev: Chat entry points fail loudly for Jev by design; runtime files also cover Jev-based tool-result pruning.
+  jev_zh: 按设计，聊天入口使用 Jev 时会直接报错；运行时文件还包含基于 Jev 的工具结果裁剪。
   metrics:
     repo_stars: 6338
   date: '2025-02-14'
@@ -697,7 +776,9 @@ entries:
   kind: repo
   author: Arrmlet
   description: Client-side tool search for LLM APIs that lets a model use thousands of tools without sending every definition, matching tools with BM25, Jev, or both.
+  description_zh: 面向 LLM API 的客户端工具搜索，模型无需发送每一个工具定义就能使用数千个工具，可用 BM25、Jev 或两者结合来匹配工具。
   jev: Jev ranks tool definitions against the tool_search query by meaning; it needs no extra dependency beyond the standard library.
+  jev_zh: Jev 按语义把工具定义与 tool_search 查询做排序；除标准库外不需要额外依赖。
   metrics:
     stars: 10
   date: '2026-02-17'
@@ -710,7 +791,9 @@ entries:
   kind: repo
   author: cahaseler
   description: TypeScript agent library that treats LLMs as next-action predictors; its Jev decider picks the next valid tool and fills closed-set parameters, handing only free-text fields or low-confidence cases to the LLM.
+  description_zh: 把 LLM 当作下一步动作预测器的 TypeScript agent 库；其 Jev 决策器选出下一个合法工具并填好闭集参数，只有自由文本字段或低置信度的情况才交给 LLM。
   jev: One request per nextAction() asks which tool comes next plus each enum-like param; below minConfidence (0.6) the LLM decides. Works via TypeSafe or OpenRouter Decisions.
+  jev_zh: 每次 nextAction() 发一次请求，询问下一个工具以及每个类枚举参数；低于 minConfidence（0.6）时由 LLM 决定。可通过 TypeSafe 或 OpenRouter Decisions 使用。
   metrics:
     stars: 6
   date: '2026-03-11'
@@ -723,6 +806,7 @@ entries:
   kind: repo
   author: ctaxnagomi
   description: Self-hosted memory MCP server on Cloudflare Workers that fuses vector and full-text recall, then uses Jev to rerank memories, assign type and salience, and drop non-durable chatter.
+  description_zh: 部署在 Cloudflare Workers 上的自托管记忆 MCP 服务器，融合向量召回和全文召回，再用 Jev 对记忆重排、标注类型和显著度，并丢掉不值得长期保留的闲聊。
   metrics:
     stars: 1
   date: '2026-09-19'
@@ -737,7 +821,9 @@ entries:
   kind: repo
   author: SuInk
   description: Self-hosted group-chat agent for QQ, Telegram, DingTalk, Feishu and WeCom that can use Jev to decide whether to chime in and whether a message is addressed to the bot.
+  description_zh: 面向 QQ、Telegram、钉钉、飞书和企业微信的自托管群聊 agent，可以用 Jev 判断要不要插话，以及某条消息是不是在对机器人说。
   jev: Typed questions with probabilities replace one chat-model call and a round of JSON parsing for these reply decisions.
+  jev_zh: 在这些回复决策上，用带概率的类型化问题取代一次聊天模型调用和一轮 JSON 解析。
   image: https://raw.githubusercontent.com/SuInk/Diana/main/docs/assets/diana-webui-overview.png
   metrics:
     repo_stars: 8
@@ -754,7 +840,9 @@ entries:
   kind: repo
   author: lhemerly
   description: Autonomous agent that runs Monte Carlo Tree Search over actions proposed by harnesses like AGY or Pi, with a D3.js visualizer for replaying rollouts and value backpropagation.
+  description_zh: 自主 agent，对 AGY 或 Pi 等 harness 提出的动作运行蒙特卡洛树搜索，并配有 D3.js 可视化工具，用于回放 rollout 和价值反向传播过程。
   jev: Choice assigns action priors and dynamic branching, Score evaluates hypothetical states, Noul handles yes/no checks.
+  jev_zh: Choice 负责分配动作先验和动态分支，Score 评估假设状态，Noul 处理是/否检查。
   metrics:
     stars: 5
   date: '2026-09-16'
@@ -766,6 +854,7 @@ entries:
   kind: post
   author: AgorithmAg
   description: AI companion given a Jev-based developmental memory that records what it tried, how the user reacted and what it learned, keeping behavior consistent across the different models that run it.
+  description_zh: 给 AI 陪伴角色配上基于 Jev 的成长型记忆，记录它尝试过什么、用户如何反应、它学到了什么，让驱动它的不同模型之间保持行为一致。
   image: https://pbs.twimg.com/media/HSxnqknWEAAgfFK.jpg?name=orig
   metrics:
     likes: 15
@@ -782,6 +871,7 @@ entries:
   kind: repo
   author: buberlo
   description: Decision layer for the DeepSeek Harness agent loop where Jev narrows the relevant tools before each step, gates risky tool calls, and picks a model route, and can never widen a permission.
+  description_zh: DeepSeek Harness agent 循环的决策层：Jev 在每一步之前收窄相关工具、拦截高风险工具调用、选择模型路由，而且永远不会放宽权限。
   image: https://raw.githubusercontent.com/buberlo/dsh-jev/main/docs/assets/kubernetes-comparison.png
   metrics:
     stars: 13
@@ -794,6 +884,7 @@ entries:
   kind: repo
   author: cyberofficial
   description: Plugin for the DeepSeek Harness web GUI that gives the main agent and subagents a jev_ask tool for calibrated judgments under uncertainty, with per-chat usage tracking and a settings tab for the key and model.
+  description_zh: DeepSeek Harness 网页 GUI 的插件，为主 agent 和子 agent 提供 jev_ask 工具，用于在不确定的情况下做校准判断，带按会话统计的用量，以及设置 key 和模型的设置页。
   metrics:
     stars: 5
   date: '2026-09-19'
@@ -806,6 +897,7 @@ entries:
   kind: repo
   author: dzhng
   description: Model-routing layer in the duet-agent harness whose default classifier is Jev via AI Gateway, re-checking every 5 assistant steps which model tier should handle the work and switching when the task changes domain.
+  description_zh: duet-agent harness 中的模型路由层，默认分类器是经 AI Gateway 调用的 Jev，每 5 个助手步骤重新判断该由哪个模型档位处理，任务换领域时就切换。
   image: https://raw.githubusercontent.com/dzhng/duet-agent/main/assets/cover.png
   metrics:
     repo_stars: 44
@@ -820,7 +912,9 @@ entries:
   kind: repo
   author: bloodf
   description: Self-hosted AI gateway over 236 providers that can ask Jev to classify each request as simple, medium, complex or reasoning and route it to a combo member of matching task level.
+  description_zh: 覆盖 236 家提供商的自托管 AI 网关，可以让 Jev 把每个请求归为简单、中等、复杂或推理类，并路由到任务级别匹配的组合成员。
   jev: One Choice over four complexity tiers with default criteria, mapped to the gateway's existing task levels.
+  jev_zh: 用默认标准在四个复杂度档位上做一个 Choice，映射到网关现有的任务级别。
   image: https://raw.githubusercontent.com/bloodf/durindoor/main/assets/durindoor-banner.png
   metrics:
     repo_stars: 8
@@ -837,7 +931,9 @@ entries:
   kind: repo
   author: adityavardhansharma
   description: Per-turn Jev router in the EchoFlow privacy-first Android AI chat app that decides whether to recall or skip memory, force web search, or save a memory before the answering model runs, for cloud chats only.
+  description_zh: 注重隐私的安卓 AI 聊天应用 EchoFlow 中的逐轮 Jev 路由器，在回答模型运行前决定召回还是跳过记忆、是否强制网页搜索、是否保存记忆，仅用于云端对话。
   jev: One Jev call per turn with fixed act thresholds and a timeout; uncertainty defers to the answering model and failures fall back to legacy behavior.
+  jev_zh: 每轮一次 Jev 调用，使用固定的执行阈值和超时；不确定时交给回答模型决定，失败时回退到旧行为。
   image: https://raw.githubusercontent.com/adityavardhansharma/EchoFlow/main/logo1.png
   metrics:
     repo_stars: 48
@@ -854,6 +950,7 @@ entries:
   kind: repo
   author: hellozenstrategist-lab
   description: Standalone CLI-first agent harness for authorized security research, multi-agent swarms and long-running workflows, with Jev built into its decision loop for attention, candidate rubrics and research micro-steps.
+  description_zh: 独立的 CLI 优先 agent harness，用于经授权的安全研究、多 agent 集群和长时间运行的工作流，决策循环内置 Jev，负责注意力分配、候选评分标准和研究微步骤。
   image: https://raw.githubusercontent.com/hellozenstrategist-lab/eutrya/main/assets/eutrya-banner.webp
   metrics:
     stars: 11
@@ -867,6 +964,7 @@ entries:
   kind: repo
   author: evoke-build
   description: Rust CLI, git-based package manager and TypeScript SDK where a spoken or typed sentence becomes a call to an installed reflex program chosen by Jev with bounded arguments, gated to run, confirm, ask or abstain.
+  description_zh: 由 Rust CLI、基于 git 的包管理器和 TypeScript SDK 组成：一句说出或打出的话会变成对某个已安装 reflex 程序的调用，程序由 Jev 选定并带受限参数，再经关卡决定执行、确认、追问还是弃权。
   metrics:
     stars: 10
   date: '2026-09-21'
@@ -881,7 +979,9 @@ entries:
   kind: repo
   author: justsml
   description: Offensive-security research harness that uses Jev as a bounded decision specialist to pick tools and render formats, with a defer option and a persisted receipt for every call.
+  description_zh: 进攻性安全研究 harness，把 Jev 用作有边界的决策专家来挑选工具和渲染格式，提供 defer 选项，并为每次调用持久保存回执。
   jev: One Choice over up to 64 candidate options via the OpenRouter Decisions API with a pinned typesafe/jev model; low-confidence or deferred answers fall back.
+  jev_zh: 通过 OpenRouter Decisions API、固定使用 typesafe/jev 模型，在最多 64 个候选选项上做一个 Choice；低置信度或选择 defer 的答案会走回退。
   image: https://raw.githubusercontent.com/justsml/ExploitHunter.app/main/screenshots/readme-mockups/agent-security-social-preview.png
   metrics:
     repo_stars: 14
@@ -898,7 +998,9 @@ entries:
   kind: repo
   author: PrefectHQ
   description: 'Experimental FastMCP transform that ranks a server''s tool catalog with Jev: a wide Choice over one-line summaries, then a close read of a shortlist with full descriptions.'
+  description_zh: 实验性的 FastMCP 变换，用 Jev 给服务器的工具目录排序：先在一行摘要上做一次大范围 Choice，再结合完整描述细读入围名单。
   jev: A Choice orders the shortlist and one Noul per candidate checks it actually does what was asked, so a query nothing serves returns empty.
+  jev_zh: 一个 Choice 给入围名单排序，每个候选再用一个 Noul 确认它确实能完成请求，因此没有工具能满足的查询会返回空结果。
   image: https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f-watercolor-waves-2.png
   metrics:
     repo_stars: 27854
@@ -914,6 +1016,7 @@ entries:
   kind: repo
   author: finchtoys
   description: Mini tool for the Finch desktop agent that registers a finch_jev_evaluate tool, letting the agent send text plus Choice, Score and Noul questions to Jev.
+  description_zh: Finch 桌面 agent 的小工具，注册一个 finch_jev_evaluate 工具，让 agent 可以把文本连同 Choice、Score 和 Noul 问题一起发给 Jev。
   image: https://raw.githubusercontent.com/finchtoys/finch-releases/main/home.webp
   metrics:
     repo_stars: 57
@@ -929,16 +1032,19 @@ entries:
   kind: repo
   author: marcus
   description: Go CLI that takes a prompt or markdown doc and recommends a model, harness or API and effort level, using one Jev analysis request and then deterministic local selection of the cheapest profile meeting the quality floor.
+  description_zh: 用 Go 写的 CLI，输入提示词或 markdown 文档，推荐模型、harness 或 API 以及推理强度：先发一次 Jev 分析请求，再在本地确定性地选出满足质量底线的最便宜配置。
   date: '2026-09-17'
   tags:
   - model-routing
   - cli
   - go
 - name: Goal-completion verifier
+  name_zh: 目标完成验证器
   url: https://x.com/omarsar0/status/2101443311454036477
   kind: post
   author: omarsar0
   description: Custom verifier for the /goal feature in an agent harness that uses Jev to check after every turn whether the goal is actually complete, replacing an expensive reasoning model.
+  description_zh: 为某个 agent harness 的 /goal 功能定制的验证器，每轮结束后用 Jev 检查目标是否真的完成，取代了昂贵的推理模型。
   image: https://pbs.twimg.com/amplify_video_thumb/2101443076828925952/img/zVy7_B-F8UmXFdKK.jpg
   metrics:
     likes: 1005
@@ -952,7 +1058,9 @@ entries:
   kind: repo
   author: The-Vibe-Company
   description: Local-first markdown knowledge compiler and MCP server that serves as agent memory; its only model is Jev, which picks which candidate from a deterministically bounded set answers a question and judges every capture.
+  description_zh: 本地优先的 markdown 知识编译器兼 MCP 服务器，用作 agent 记忆；它唯一的模型就是 Jev，负责从确定性限定的候选集中选出能回答问题的那一项，并评判每次录入。
   jev: Jev returns a choice, score or probability over a set Granite chose; it never writes links, and Granite refuses to start without a key.
+  jev_zh: Jev 在 Granite 选定的集合上返回选择、分数或概率；它从不写链接，没有 key 时 Granite 拒绝启动。
   image: https://raw.githubusercontent.com/The-Vibe-Company/granite/main/docs/screenshots/granite-graph.png
   metrics:
     stars: 32
@@ -966,6 +1074,7 @@ entries:
   kind: repo
   author: Bodila51
   description: Reference router that puts Jev in front of Grok Bot to classify each request before costly research, browser, retry or subagent work, choosing actions like reusing a cached artifact, stopping a retry or asking a human.
+  description_zh: 参考实现的路由器，把 Jev 放在 Grok Bot 前面，在执行高成本的研究、浏览器、重试或子 agent 工作之前先给每个请求分类，选择复用缓存产物、停止重试或询问人类等动作。
   image: https://raw.githubusercontent.com/Bodila51/grok-bot-jev/main/media/jev-grok-bot-dashboard.png
   metrics:
     stars: 74
@@ -975,11 +1084,14 @@ entries:
   - usage-gates
   - grok
 - name: Group chat agent picker
+  name_zh: 群聊 agent 选择器
   url: https://x.com/vadimchoi/status/2101937206063780084
   kind: post
   author: vadimchoi
   description: 'Compares three ways to decide which agent in a group chat should answer: @mentions, an LLM orchestrator at 4-7s and $0.00046 per message, and Jev at 0.29s median and $0.00002.'
+  description_zh: 对比三种决定群聊中由哪个 agent 回答的方式：@提及；LLM 编排器，每条消息 4-7 秒、$0.00046；Jev，中位数 0.29 秒、$0.00002。
   jev: One Choice over the available agents per incoming message.
+  jev_zh: 每条收到的消息在可用 agent 上做一个 Choice。
   image: https://pbs.twimg.com/media/HSuUvltb0AAs3Qo.jpg?name=orig
   metrics:
     likes: 1
@@ -994,7 +1106,9 @@ entries:
   kind: repo
   author: fornhere
   description: Turkish-language second-brain system that keeps agent memory in a local Markdown vault for Claude Code, Codex and Antigravity, with Jev as an optional retrieval and review advisor.
+  description_zh: 土耳其语的第二大脑系统，把 agent 记忆存放在本地 Markdown 库中，供 Claude Code、Codex 和 Antigravity 使用，Jev 作为可选的检索和审查顾问。
   jev: Scores knowledge cards and memory-catalog candidates against the question on a 0-2 scale (threshold 1.5), in off, shadow or on modes.
+  jev_zh: 按 0-2 分给知识卡片和记忆目录候选与问题的相关性打分（阈值 1.5），支持 off、shadow、on 三种模式。
   metrics:
     stars: 12
   date: '2026-08-30'
@@ -1009,6 +1123,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Paste an agent step trace and get an ok, retry, escalate or stop decision for agent builders.
+  description_zh: 给 agent 开发者用的工具：粘贴一段 agent 步骤轨迹，得到通过、重试、升级或停止的决策。
   date: '2026-09-17'
   links:
     app: https://harnessjudge.vercel.app
@@ -1021,6 +1136,7 @@ entries:
   kind: post
   author: RoundtableSpace
   description: Open-source layer that runs Codex, Claude Code, Hermes, DeepSeek Harness, a Jev-powered System One harness and 9 more behind one interface, with a Unified Harness Protocol and an OpenAI Responses-compatible API.
+  description_zh: 开源层，把 Codex、Claude Code、Hermes、DeepSeek Harness、一个由 Jev 驱动的 System One harness 以及另外 9 个 harness 统一到一个接口背后，提供 Unified Harness Protocol 和兼容 OpenAI Responses 的 API。
   image: https://pbs.twimg.com/amplify_video_thumb/2102148770343407616/img/-rVahOyOBdklAAqC.jpg
   metrics:
     likes: 61
@@ -1039,7 +1155,9 @@ entries:
   kind: repo
   author: EasyMetaAu
   description: Request classifier in the Helm API self-hosted LLM routing gateway that sends Jev the last user message and gets task type and complexity choices, which pick the lane and provider for the request.
+  description_zh: 自托管 LLM 路由网关 Helm API 中的请求分类器，把最后一条用户消息发给 Jev，拿回任务类型和复杂度的选择，据此为请求挑选通道和提供方。
   jev: Two Choice questions (task_type, complexity) over minimal state via OpenRouter's Decisions API, about $0.00002 per call.
+  jev_zh: 通过 OpenRouter 的 Decisions API，在极简 state 上问两个 Choice（task_type、complexity），每次调用约 $0.00002。
   image: https://raw.githubusercontent.com/EasyMetaAu/helm-api/main/docs/assets/screenshots/01-dashboard.png
   metrics:
     repo_stars: 30
@@ -1054,6 +1172,7 @@ entries:
   kind: repo
   author: ussyverse
   description: Experimental Hermes plugin whose jev_route_plan tool uses Jev to assess task complexity, then policy picks an allowed model within cost, token, context, latency and capability limits; not yet run live.
+  description_zh: 实验性 Hermes 插件，其 jev_route_plan 工具用 Jev 评估任务复杂度，再由策略在成本、token、上下文、延迟和能力限制内挑选允许的模型；尚未在线上实际运行。
   metrics:
     stars: 1
   date: '2026-09-16'
@@ -1066,6 +1185,7 @@ entries:
   kind: repo
   author: kerpopule
   description: Routing, memory, skill-selection, and triage skills for Hermes, Claude Code, and Codex that start in shadow mode and publish their failures.
+  description_zh: 面向 Hermes、Claude Code 和 Codex 的路由、记忆、skill 选择和分诊 skill，先以影子模式启动，并公开自己的失败案例。
   image: https://raw.githubusercontent.com/kerpopule/hermes-jev-skills/main/docs/images/model-routing-dashboard.png
   metrics:
     stars: 405
@@ -1082,7 +1202,9 @@ entries:
   kind: repo
   author: keeltrace
   description: Asynchronous decision layer for Hermes Agent that runs turn admission, relevance routing, completion and recovery checks, and an opt-in tool gate in parallel without blocking execution.
+  description_zh: Hermes Agent 的异步决策层，并行运行轮次准入、相关性路由、完成度与恢复检查，以及可选启用的工具关卡，不阻塞执行。
   jev: Bounded Choice/Noul questions evaluated in the background around Jev's ~500 ms latency; only high-confidence challenges interrupt Hermes.
+  jev_zh: 有边界的 Choice/Noul 问题在后台评估，以消化 Jev 约 500 毫秒的延迟；只有高置信度的质疑才会打断 Hermes。
   metrics:
     stars: 12
   date: '2026-09-18'
@@ -1095,6 +1217,7 @@ entries:
   kind: repo
   author: anpicasso
   description: Provider for Hermes Agent's smart command approvals in which Jev returns APPROVE, DENY or ESCALATE from six typed questions in one request, measured 8.7x faster with 4.4x fewer prompts on 153 real commands.
+  description_zh: Hermes Agent 智能命令审批的提供方：Jev 在一次请求中根据六个类型化问题返回 APPROVE、DENY 或 ESCALATE，在 153 条真实命令上实测快 8.7 倍，确认提示少 4.4 倍。
   metrics:
     stars: 12
   date: '2026-09-17'
@@ -1106,7 +1229,9 @@ entries:
   kind: repo
   author: anpicasso
   description: Hermes Agent plugin that has Jev label each pair of agent-created skills as duplicate, subset, conflict, unrelated and so on, and turns the results into safe archive plans.
+  description_zh: Hermes Agent 插件，让 Jev 给 agent 创建的每对 skill 标注关系，如重复、子集、冲突、无关等，并把结果转成安全的归档计划。
   jev: An 8-way relation Choice per candidate skill pair; defaults to read-only observe mode.
+  jev_zh: 每对候选 skill 在 8 种关系中做一个 Choice；默认处于只读的观察模式。
   metrics:
     stars: 2
   date: '2026-09-21'
@@ -1119,7 +1244,9 @@ entries:
   kind: repo
   author: poponline63
   description: Hermes Agent skill that interviews the owner until a run has a checkable finish line, generates the run prompt, and gates completion with shell checks plus Jev for the requirements no script can decide.
+  description_zh: Hermes Agent skill，会反复询问所有者，直到这次运行有一条可检验的终点线，然后生成运行提示词，并用 shell 检查加 Jev 来把关完成度，Jev 负责脚本无法判定的需求。
   jev: Jev judges and ranks the fuzzy requirements that remain unproven after the machine-checkable ones pass.
+  jev_zh: 机器可检验的需求通过后，剩下尚未证实的模糊需求由 Jev 评判并排序。
   image: https://raw.githubusercontent.com/poponline63/hermes-jev-north-star/main/docs/hero.svg
   metrics:
     stars: 1
@@ -1132,6 +1259,7 @@ entries:
   kind: repo
   author: rsdkrasen
   description: Plugin for Hermes Agent that adds a Jev decision layer to compact tool results, suppress duplicate tool calls, and skip main-model calls that would only restate results.
+  description_zh: Hermes Agent 插件，增加一个 Jev 决策层，用来压缩工具结果、抑制重复的工具调用，并跳过只会复述结果的主模型调用。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -1143,6 +1271,7 @@ entries:
   kind: repo
   author: shiro-0x
   description: Persona attribute library for AI agents whose hersona decide command uses TypeSafe Jev to recommend reply, ask, search, use a tool or hold, with confidence, persona alignment and risk.
+  description_zh: 面向 AI agent 的人设属性库，其 hersona decide 命令用 TypeSafe Jev 推荐回复、追问、搜索、调用工具或暂缓，并给出置信度、人设一致度和风险。
   image: https://raw.githubusercontent.com/shiro-0x/hersona/main/docs/hersona-demo.gif
   metrics:
     repo_stars: 52
@@ -1158,6 +1287,7 @@ entries:
   kind: repo
   author: heymrun
   description: Heym, a self-hosted agent orchestration runtime, adds a decision-model service built on TypeSafe's /v1/systemone contract so workflows can answer typed questions with tracing and SSRF guards.
+  description_zh: 自托管 agent 编排运行时 Heym 新增了基于 TypeSafe /v1/systemone 协议的决策模型服务，让工作流可以回答类型化问题，并带有追踪和 SSRF 防护。
   image: https://raw.githubusercontent.com/heymrun/heym/main/docs/readme-assets/hero.svg
   metrics:
     repo_stars: 1245
@@ -1173,6 +1303,7 @@ entries:
   kind: repo
   author: kitfunso
   description: Opt-in reranker in the Hippo agent-memory system that batches Jev Noul judgments over the top 40 recalled memories and falls back to a local cross-encoder; the author's study found better ranking but no answer-quality gain.
+  description_zh: Hippo agent 记忆系统中可选启用的重排器，对召回的前 40 条记忆批量做 Jev Noul 判断，并以本地 cross-encoder 作回退；作者的研究发现排序变好了，但回答质量没有提升。
   image: https://raw.githubusercontent.com/kitfunso/hippo-memory/master/assets/hippo-init.svg
   metrics:
     repo_stars: 752
@@ -1188,7 +1319,9 @@ entries:
   kind: repo
   author: higress-group
   description: Reference decision service for the HiRoute local model router that makes one Jev call per agent-turn boundary to pick the next model branch and score how competently the previous segment went.
+  description_zh: HiRoute 本地模型路由器的参考决策服务，在每个 agent 轮次边界调用一次 Jev，选出下一个模型分支，并给上一段的完成质量打分。
   jev: Choice over allowed branches plus a competence Score; in rules mode it picks the cheap branch when P(simple) is at least 0.80 and competence at least 0.50.
+  jev_zh: 在允许的分支上做 Choice，外加一个能力 Score；rules 模式下，当 P(simple) 至少为 0.80 且能力分至少为 0.50 时选择便宜的分支。
   metrics:
     repo_stars: 8
   date: '2026-09-12'
@@ -1202,7 +1335,9 @@ entries:
   kind: repo
   author: DJLougen
   description: 'Jev backend for Hive, a CPU-side action router for AI agents: Jev picks the next tool and rates whether it is safe to run without the LLM. A calibration probe found the default 0.95 safety gate never fires.'
+  description_zh: 面向 AI agent 的 CPU 侧动作路由器 Hive 的 Jev 后端：Jev 选出下一个工具，并评估它能否不经 LLM 直接安全执行。一次校准探测发现，默认的 0.95 安全关卡从未触发。
   jev: A tool Choice plus safe_to_execute, requires_reasoning and needs_llm Nouls per agent-loop state; all four must clear thresholds or the step escalates to the LLM.
+  jev_zh: 每个 agent 循环 state 上做一个工具 Choice，外加 safe_to_execute、requires_reasoning 和 needs_llm 三个 Noul；四项都必须过阈值，否则该步骤升级给 LLM。
   metrics:
     repo_stars: 39
   date: '2026-06-01'
@@ -1218,6 +1353,7 @@ entries:
   kind: repo
   author: iii-hq
   description: Worker for the iii engine that searches registered functions, installed skills and triggers with Jev relevance judgments, falling back to hybrid search.
+  description_zh: iii 引擎的 worker，用 Jev 相关性判断搜索已注册的函数、已安装的 skill 和触发器，并可回退到混合搜索。
   metrics:
     repo_stars: 109
   date: '2026-03-18'
@@ -1232,7 +1368,9 @@ entries:
   kind: repo
   author: ima-jin
   description: Service connector in the reference implementation of the MJN trust protocol that lets identities call Jev with a sealed, kernel-held API key under a scoped typesafe:decide grant.
+  description_zh: MJN 信任协议参考实现中的服务连接器，让各个身份在受限的 typesafe:decide 授权下，用内核持有的密封 API key 调用 Jev。
   jev: Keys are resolved server-side for one call and never returned; calls use their own route namespace instead of the chat inference path.
+  jev_zh: key 只在服务端为单次调用解析，从不返回；调用走独立的路由命名空间，而不是聊天推理路径。
   metrics:
     repo_stars: 8
   date: '2026-02-11'
@@ -1248,6 +1386,7 @@ entries:
   kind: repo
   author: chopratejas
   description: Invalidation layer for agent memory that checks every stored fact against each new event with a Jev yes/no question (about 150 ms and $0.00006 per check), marking superseded memories and queuing unsure ones for a human.
+  description_zh: agent 记忆的失效层：每来一个新事件，就用一个 Jev 是/否问题逐条检查已存事实（每次检查约 150 毫秒、$0.00006），标记被取代的记忆，拿不准的排队交给人工。
   image: https://raw.githubusercontent.com/chopratejas/invalidate/main/docs/img/chat.png
   metrics:
     stars: 15
@@ -1264,7 +1403,9 @@ entries:
   kind: repo
   author: endomorphosis
   description: Model server and agent supervisor with advisory TypeSafe integrations that route task kinds, guard traces and calibrate decisions beside the project's own Intelligence Index.
+  description_zh: 模型服务器兼 agent 监管器，带有仅作参考的 TypeSafe 集成，在项目自有的 Intelligence Index 之外负责路由任务类型、守护执行轨迹和校准决策。
   jev: The task router may escalate a task kind with Choice, but downgrades only at high confidence; without a key the board kind is unchanged.
+  jev_zh: 任务路由器可以用 Choice 把任务类型往上升级，但只在高置信度时才降级；没有 key 时看板上的类型保持不变。
   metrics:
     repo_stars: 11
   date: '2024-05-18'
@@ -1279,6 +1420,7 @@ entries:
   kind: repo
   author: FirasSX914
   description: Router that sends each decision to Jev or a larger fallback model based on confidence, after measuring the threshold on your labeled dataset or decision log instead of shipping a default.
+  description_zh: 路由器，根据置信度把每个决策交给 Jev 或更大的回退模型；阈值先在你自己的标注数据集或决策日志上测出来，而不是直接套用默认值。
   image: https://raw.githubusercontent.com/FirasSX914/Janus/main/results/figures/janus_demo.gif
   metrics:
     stars: 2
@@ -1292,6 +1434,7 @@ entries:
   kind: repo
   author: Prescott-Data
   description: 'Native Jev support in the JarvisCore multi-agent runtime: agents ask typed Choice, Score and Noul questions through a decision client separate from the text model, and the kernel picks specialist subagents by Choice.'
+  description_zh: 多 agent 运行时 JarvisCore 原生支持 Jev：agent 通过独立于文本模型的决策客户端提出类型化的 Choice、Score 和 Noul 问题，内核则用 Choice 挑选专家子 agent。
   image: https://raw.githubusercontent.com/Prescott-Data/jarviscore-framework/main/jarviscore/docs/assets/combo-brand.svg
   metrics:
     repo_stars: 14
@@ -1307,6 +1450,7 @@ entries:
   kind: repo
   author: NiazMorshed2007
   description: Resolver that gives an agent one tool to find documented deterministic commands for a task, using Jev to search a nested capability tree and return only the selected operations' context.
+  description_zh: 解析器，只给 agent 一个工具，用来查找完成任务所需的、有文档的确定性命令：用 Jev 搜索嵌套的能力树，只返回被选中操作的上下文。
   image: https://raw.githubusercontent.com/NiazMorshed2007/jcr/main/web/src/app/opengraph-image.png
   metrics:
     stars: 15
@@ -1322,7 +1466,9 @@ entries:
   kind: repo
   author: iJ03l
   description: Rust client that routes requests across NEAR AI Cloud models and IronClaw agents by budget, quality and sensitivity, so users never pick a model or agent themselves.
+  description_zh: Rust 客户端，按预算、质量和敏感度把请求路由到 NEAR AI Cloud 模型和 IronClaw agent，用户永远不必自己挑模型或 agent。
   jev: Choice picks the agent, Score rates complexity and sensitivity, Noul flags whether a private TEE is needed or the request is risky or urgent.
+  jev_zh: Choice 选 agent，Score 评估复杂度和敏感度，Noul 标记是否需要私有 TEE，以及请求是否有风险或紧急。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -1335,6 +1481,7 @@ entries:
   kind: repo
   author: GodsBoy
   description: Routing layer that picks which Hermes Agent skill to load using confidence-aware Jev decisions and declines weak matches; it routed 68 of 72 synthetic requests correctly versus 51 for a lexical baseline.
+  description_zh: 路由层，用带置信度的 Jev 决策挑选要加载哪个 Hermes Agent skill，并拒绝弱匹配；在 72 个合成请求中路由正确 68 个，词法基线为 51 个。
   image: https://raw.githubusercontent.com/GodsBoy/jev-agent-skill-router/main/assets/jev-agent-skill-router-banner.png
   metrics:
     stars: 13
@@ -1344,11 +1491,14 @@ entries:
   - hermes-agent
   - benchmark
 - name: Jev as MCP workflow orchestrator
+  name_zh: 用 Jev 编排 MCP 工作流
   url: https://x.com/JamesWard/status/2100976393546772628
   kind: post
   author: JamesWard
   description: 'Two patterns for combining Jev, LLMs and MCP: Jev as an outer loop that chooses valid actions to build a workflow AST from MCP output schemas, with a single LLM call writing the final answer.'
+  description_zh: 结合 Jev、LLM 和 MCP 的两种模式：Jev 作为外层循环选择合法动作，依据 MCP 输出 schema 构建工作流 AST，最后只用一次 LLM 调用写出最终答案。
   jev: Choice over valid actions per step, then semantic filtering of MCP results.
+  jev_zh: 每一步在合法动作上做 Choice，然后对 MCP 结果做语义过滤。
   image: https://pbs.twimg.com/media/HSgovFqXoAAih_x.png?name=orig
   metrics:
     likes: 298
@@ -1363,6 +1513,7 @@ entries:
   kind: repo
   author: w3cj
   description: Chat-style command bar where Jev picks the intent, tool, argument values, confirmation, and reply shape each turn, and code calls MCP servers and builds the reply from their data, so no model writes text.
+  description_zh: 聊天式命令栏：每一轮由 Jev 选定意图、工具、参数值、是否确认以及回复形式，再由代码调用 MCP 服务器并用返回数据组装回复，全程没有模型生成文本。
   image: https://raw.githubusercontent.com/w3cj/jev-chat/main/screenshot.png
   metrics:
     stars: 85
@@ -1376,6 +1527,7 @@ entries:
   kind: repo
   author: ashishakkumar
   description: Local MCP server that turns an agent's bounded next-step decision, such as proceed, inspect callers or ask the user, into one Jev Choice and returns the route, probabilities and a thresholded recommendation.
+  description_zh: 本地 MCP 服务器，把 agent 有边界的下一步决策（例如继续、检查调用方或询问用户）转成一个 Jev Choice，返回路由、概率和按阈值给出的建议。
   date: '2026-09-21'
   tags:
   - mcp
@@ -1386,6 +1538,7 @@ entries:
   kind: repo
   author: bojansandhaus
   description: Plugin for Hermes and other agents that adds tools to review risky plans, recommend human approval, check answers against sources, assess whether a task is really finished, and keep a local decision journal.
+  description_zh: 面向 Hermes 及其他 agent 的插件，新增若干工具：审查高风险计划、建议人工审批、对照来源核查答案、评估任务是否真正完成，并维护本地决策日志。
   image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/bojansandhaus/jev-agent-decision-playground.png
   metrics:
     stars: 2
@@ -1401,7 +1554,9 @@ entries:
   kind: repo
   author: Devin-AXIS
   description: Agent-harness plugin that recommends which available tool, skill, or agent to use and rates output quality, running natively in DeepSeek Harness and via iPolloWork in OpenCode and Codex Harness.
+  description_zh: agent harness 插件，推荐该用哪个可用的工具、skill 或 agent，并评估输出质量；在 DeepSeek Harness 中原生运行，在 OpenCode 和 Codex Harness 中通过 iPolloWork 运行。
   jev: Structured judgments with probabilities; the host agent keeps planning and execution.
+  jev_zh: 带概率的结构化判断；规划和执行仍由宿主 agent 负责。
   image: https://raw.githubusercontent.com/Devin-AXIS/jev-dsh-decision/main/assets/jev.png
   metrics:
     stars: 82
@@ -1411,10 +1566,12 @@ entries:
   - deepseek
   - tool-selection
 - name: Jev in the elvex harness
+  name_zh: elvex harness 中的 Jev
   url: https://www.elvex.com/blog/early-experimentation-using-jev-to-rethink-harness-ux
   kind: article
   author: Doyle Irvin (elvex)
   description: Agent platform write-up on wiring Jev into an LLM harness as a callable tool for search, approvals and context, including 2,000 expense reports categorized in 20 seconds for 5 cents.
+  description_zh: 一家 agent 平台的实践文章，讲如何把 Jev 作为可调用工具接入 LLM harness，用于搜索、审批和上下文，其中包括用 20 秒、5 美分给 2,000 份报销单分类。
   image: https://cdn.prod.website-files.com/6866aba1d492c973444d9b24/6aad9db0d4b0c68d2079c47f_Blog%20Hero%20Image(6).png
   metrics:
     points: 7
@@ -1425,11 +1582,14 @@ entries:
   - harness
   - approvals
 - name: Jev judgment modality for agent-rdf-memory
+  name_zh: agent-rdf-memory 的 Jev 判断模式
   url: https://github.com/OpenLinkSoftware/ai-agent-skills/blob/main/agent-rdf-memory/howto/jev-judgment-modality.ttl
   kind: repo
   author: OpenLinkSoftware
   description: RDF HowTo in OpenLink's OPAL agent skills that adds an optional System One judgment mode (Jev, Laya or NanoJev) to its memory harness, gating HowTo candidates and ask-vs-act elicitation, run in shadow or active mode.
+  description_zh: OpenLink 的 OPAL agent skill 中的一份 RDF HowTo，为其记忆 harness 增加可选的 System One 判断模式（Jev、Laya 或 NanoJev），用于把关 HowTo 候选以及“追问还是直接行动”的引导，可在影子或启用模式下运行。
   jev: Typed Choice/Noul/Score gates over HowTo and session candidates via one system_one(state, questions) contract; fails open to the non-Jev path.
+  jev_zh: 通过统一的 system_one(state, questions) 契约，在 HowTo 和会话候选上设置类型化的 Choice/Noul/Score 关卡；失败时放行到不使用 Jev 的路径。
   metrics:
     repo_stars: 39
   date: '2025-12-19'
@@ -1444,6 +1604,7 @@ entries:
   kind: repo
   author: arunav25
   description: MCP server exposing Jev as a single evaluate tool for Claude Code, Claude Desktop and Codex, plus an evaluation harness that measures its accuracy against general-purpose LLMs on shared datasets.
+  description_zh: 把 Jev 暴露为单一 evaluate 工具的 MCP 服务器，供 Claude Code、Claude Desktop 和 Codex 使用，并附带评测 harness，在共享数据集上将其准确率与通用 LLM 对比。
   metrics:
     stars: 7
   date: '2026-09-17'
@@ -1455,6 +1616,7 @@ entries:
   kind: repo
   author: freepik-company
   description: Dependency-light Go MCP server with five tools for typed decisions (decide, classify, verify, rerank) via OpenRouter or TypeSafe, validating every provider answer and never retrying a paid call.
+  description_zh: 依赖极少的 Go MCP 服务器，通过 OpenRouter 或 TypeSafe 提供五个类型化决策工具（decide、classify、verify、rerank），校验提供方返回的每个答案，并且从不重试付费调用。
   metrics:
     stars: 2
   date: '2026-09-21'
@@ -1467,6 +1629,7 @@ entries:
   kind: repo
   author: MattiooFR
   description: MCP server that gives Codex, Claude, and other clients one generic tool for typed Jev decisions, with eight reproducible live scenarios from support triage to lead qualification and duplicates.
+  description_zh: MCP 服务器，为 Codex、Claude 等客户端提供一个用于类型化 Jev 决策的通用工具，并附带八个可复现的实时场景，从客服分诊到线索评估再到查重。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -1479,6 +1642,7 @@ entries:
   kind: repo
   author: podcctv
   description: Zero-dependency Python MCP server bundled with the Narwhal Cloud container watcher that gives agents such as Claude Code, Cursor or Antigravity jev_choice, jev_noul, jev_score, jev_gate and jev_batch tools.
+  description_zh: 随 Narwhal Cloud 容器监控工具附带的零依赖 Python MCP 服务器，为 Claude Code、Cursor 或 Antigravity 等 agent 提供 jev_choice、jev_noul、jev_score、jev_gate 和 jev_batch 工具。
   metrics:
     repo_stars: 6
   date: '2026-04-14'
@@ -1488,11 +1652,14 @@ entries:
   - mcp
   - python
 - name: Jev model router
+  name_zh: Jev 模型路由器
   url: https://x.com/ephraimduncan/status/2100454070536351824
   kind: post
   author: ephraimduncan
   description: Model router that asks Jev which language model best fits each incoming request and forwards the request to that model, shown in a demo video.
+  description_zh: 模型路由器，询问 Jev 哪个语言模型最适合每个传入请求，再把请求转发给该模型，附演示视频。
   jev: One Choice over the available models per request.
+  jev_zh: 每个请求在可用模型上做一个 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2100454021852954624/img/hqULLONlXw40573G.jpg
   metrics:
     likes: 1863
@@ -1506,6 +1673,7 @@ entries:
   kind: repo
   author: thezem
   description: Experimental TypeScript runtime where Jev picks from application-supplied vocabularies of words, places, tools or stop requests, and the app applies each choice and feeds the observation back until an objective is verified.
+  description_zh: 实验性 TypeScript 运行时：Jev 从应用提供的词汇表（词语、地点、工具或停止请求）中做选择，应用执行每个选择并把观察结果反馈回去，直到目标被验证达成。
   metrics:
     stars: 1
   date: '2026-09-19'
@@ -1514,10 +1682,12 @@ entries:
   - agent-loop
   - typescript
 - name: Jev plugin for Hermes Agent
+  name_zh: Hermes Agent 的 Jev 插件
   url: https://github.com/ajensenwaud/hermes-jev-plugin
   kind: repo
   author: ajensenwaud
   description: Hermes Agent plugin exposing Jev as four tools, jev_check, jev_route, jev_score, and jev_evaluate, with a bundled skill on writing good questions for coding-agent workflows.
+  description_zh: Hermes Agent 插件，把 Jev 暴露为 jev_check、jev_route、jev_score 和 jev_evaluate 四个工具，并附带一个 skill，讲如何为编程 agent 工作流写出好问题。
   metrics:
     stars: 3
   date: '2026-09-19'
@@ -1529,6 +1699,7 @@ entries:
   kind: repo
   author: Pinutss
   description: Cursor and Hermes plugin marketplace for four JEV Labs selectors, for memories, agents, models, and MCP tools, that filter candidates by task and budget, locally by default with Jev as an optional judge.
+  description_zh: Cursor 和 Hermes 插件市场，收录 JEV Labs 的四个选择器，分别针对记忆、agent、模型和 MCP 工具，按任务和预算筛选候选，默认在本地运行，Jev 作为可选的评判者。
   date: '2026-09-18'
   tags:
   - routing
@@ -1539,7 +1710,9 @@ entries:
   kind: repo
   author: samdotmak
   description: Memory retrieval for AI assistants that returns the memories actually relevant to a query rather than the ones that look similar, aiming for reranker quality at semantic-search cost and speed.
+  description_zh: 面向 AI 助手的记忆检索，返回与查询真正相关的记忆，而不是看起来相似的那些，目标是以语义搜索的成本和速度达到重排器的质量。
   jev: One calibrated Noul per memory in a single request.
+  jev_zh: 一次请求中每条记忆一个校准的 Noul。
   metrics:
     stars: 31
   date: '2026-09-19'
@@ -1556,6 +1729,7 @@ entries:
   kind: repo
   author: hugo-alves
   description: Playground where you build a pool of OpenRouter models with routing descriptions, give Jev a task, and compare its pick and probability distribution with the answer you judge best.
+  description_zh: 演练场：用带路由描述的 OpenRouter 模型组建模型池，交给 Jev 一个任务，再把它的选择和概率分布与你认为最好的答案做对比。
   image: https://raw.githubusercontent.com/hugo-alves/jev-router-playground/main/assets/preview.png
   metrics:
     stars: 2
@@ -1566,11 +1740,14 @@ entries:
   - model-routing
   - openrouter
 - name: Jev vs LLM model router
+  name_zh: Jev 与 LLM 模型路由对比
   url: https://www.reddit.com/r/AI_Agents/comments/1wl82fr/tried_typesafe_ais_jev_vs_a_regular_llm_for_model/
   kind: reddit
   author: TigerOk4538
   description: Smart model router that runs Jev and a structured-output LLM side by side on every message; Jev returns the routing decision in about 1 second vs 4-14 seconds for the LLM.
+  description_zh: 智能模型路由器，在每条消息上并排运行 Jev 和一个结构化输出 LLM；Jev 约 1 秒返回路由决策，LLM 则需要 4-14 秒。
   jev: All routing signals evaluated in a single call.
+  jev_zh: 所有路由信号在一次调用中评估完毕。
   metrics:
     points: 6
   date: '2026-09-20'
@@ -1578,10 +1755,12 @@ entries:
   - routing
   - latency
 - name: Jev x402 tool selection
+  name_zh: 用 Jev 选择 x402 工具
   url: https://x.com/trytenjin/status/2101817410307137937
   kind: post
   author: trytenjin
   description: Live demo from Tenjin of Jev choosing which paid x402 endpoint to call from a curated set of tools.
+  description_zh: Tenjin 的现场演示：Jev 从一组精选工具中决定调用哪个付费 x402 端点。
   image: https://pbs.twimg.com/amplify_video_thumb/2101816882080718849/img/i6lPMBe0BF-LOcae.jpg
   metrics:
     likes: 13
@@ -1596,6 +1775,7 @@ entries:
   kind: repo
   author: nandansrikrishna
   description: Bring-your-own-key CLI, Python API and local MCP server built on the official Python SDK, letting agents invent typed questions at runtime and get Jev decisions with probabilities.
+  description_zh: 基于官方 Python SDK 构建、自带 key 的 CLI、Python API 和本地 MCP 服务器，让 agent 在运行时自行设计类型化问题，并拿到带概率的 Jev 决策。
   date: '2026-09-19'
   tags:
   - mcp
@@ -1606,6 +1786,7 @@ entries:
   kind: repo
   author: picaye
   description: 'Context compaction for Hermes Agent sessions that never summarizes: Jev scores every tool call, stale calls and results are removed or truncated, and everything kept stays verbatim.'
+  description_zh: Hermes Agent 会话的上下文压缩，从不做摘要：Jev 给每个工具调用打分，过时的调用和结果被删除或截断，保留下来的内容一字不改。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -1617,6 +1798,7 @@ entries:
   kind: repo
   author: kuldeepsinh19
   description: 'Provider-agnostic gateway in front of expensive LLMs: Jev answers small continue, tool, relevance, and verification questions, and a policy layer calls a generative model only when generation is needed.'
+  description_zh: 挡在昂贵 LLM 前面、不绑定提供方的网关：Jev 回答是否继续、用哪个工具、是否相关、是否通过验证这类小问题，策略层只在确实需要生成时才调用生成模型。
   date: '2026-09-19'
   tags:
   - gateway
@@ -1627,6 +1809,7 @@ entries:
   kind: repo
   author: BYK
   description: Eval-first MCP server for Jev with tools to prototype a question, map a question set over many items, and measure question variants against labeled examples for accuracy, calibration and thresholds.
+  description_zh: 评测优先的 Jev MCP 服务器，提供的工具可以快速试写问题、把一组问题映射到大量条目上，并在标注样例上衡量问题变体的准确率、校准和阈值。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -1638,6 +1821,7 @@ entries:
   kind: repo
   author: novaleolin
   description: Agent framework where every branch is a typed Jev question and the policy text evolves from the agent's own mistakes, reporting how much of a gain is selection noise; one schema scored 0.188 or 0.542 depending on option order.
+  description_zh: 每个分支都是一个类型化 Jev 问题的 agent 框架，策略文本根据 agent 自己的错误不断演化，并报告收益中有多少来自选择噪声；同一个 schema 因选项顺序不同，得分分别为 0.188 或 0.542。
   image: https://raw.githubusercontent.com/novaleolin/jev-evolve/main/docs/options.png
   date: '2026-09-21'
   tags:
@@ -1649,6 +1833,7 @@ entries:
   kind: repo
   author: JoacoMarc
   description: Per-turn router for agent harnesses where one Jev call of about 350 ms sets the model tier, effort, tools and skill behind a hard deadline; it picks the right skill 90.0% of the time versus 59.4% for keywords.
+  description_zh: 面向 agent harness 的逐轮路由器：一次约 350 毫秒的 Jev 调用，在硬性截止时间内确定模型档位、推理强度、工具和 skill；选对 skill 的比例为 90.0%，关键词方法为 59.4%。
   image: https://raw.githubusercontent.com/JoacoMarc/jev-harness-router/main/docs/route-demo.gif
   metrics:
     stars: 1
@@ -1664,6 +1849,7 @@ entries:
   kind: repo
   author: typakon4
   description: Portable decision layer for agent harnesses such as Hermes, OMP, Codex and generic MCP that routes bounded choices through Jev and records receipts for replay, while the host keeps execution, permissions and approvals.
+  description_zh: 可移植的 agent harness 决策层，适用于 Hermes、OMP、Codex 和通用 MCP，把有边界的选择交给 Jev 并记录回执以便回放，执行、权限和审批仍由宿主掌握。
   image: https://raw.githubusercontent.com/typakon4/jev-layer/main/docs/jev-layer-banner.svg
   metrics:
     stars: 2
@@ -1679,6 +1865,7 @@ entries:
   kind: repo
   author: jkudish
   description: Ten MCP judgment tools for agents, including claim verification, injection screening, reranking, and gating.
+  description_zh: 十个面向 agent 的 MCP 判断工具，包括论断核查、注入筛查、重排和把关。
   metrics:
     stars: 247
   date: '2026-09-17'
@@ -1692,6 +1879,7 @@ entries:
   kind: repo
   author: blakestone-x
   description: Python MCP server that gives Claude Code, Codex, Cursor or any MCP client typed Jev classify, score, check, match and screen tools, each answer returned with a confidence.
+  description_zh: Python MCP 服务器，为 Claude Code、Codex、Cursor 或任意 MCP 客户端提供类型化的 Jev classify、score、check、match 和 screen 工具，每个答案都附带置信度。
   metrics:
     stars: 18
   date: '2026-09-16'
@@ -1704,6 +1892,7 @@ entries:
   kind: repo
   author: rashedInt32
   description: MCP server and Claude Code plugin exposing Jev as classify, score, check and batched ask tools that return the typed answer with its full probability distribution.
+  description_zh: MCP 服务器兼 Claude Code 插件，把 Jev 暴露为 classify、score、check 和批量 ask 工具，返回类型化答案及其完整概率分布。
   image: https://pbs.twimg.com/media/HSeMX0_bYAARs-3.jpg
   metrics:
     stars: 6
@@ -1721,6 +1910,7 @@ entries:
   kind: repo
   author: rajasekharponakala
   description: 'MCP server that gives agents such as Claude Code and OpenCode typed Jev tools: jev_evaluate for a map of parallel questions, plus jev_noul, jev_choice, jev_score, and jev_models.'
+  description_zh: MCP 服务器，为 Claude Code、OpenCode 等 agent 提供类型化 Jev 工具：jev_evaluate 用于一组并行问题，另有 jev_noul、jev_choice、jev_score 和 jev_models。
   image: https://external-preview.redd.it/PbioKRcq0xCJWCgwmAl45cEjLvDs5nxQCdmpvf2NylQ.png?auto=webp&s=ac4ff6f727d3bab17dbc1f6dcdee59f0005949cd
   metrics:
     stars: 2
@@ -1736,6 +1926,7 @@ entries:
   kind: repo
   author: codaaiteam
   description: MCP server that gives Claude Code, Codex, Cursor or Pi Jev-backed tools to classify, score, check yes/no and gate risky tool calls, each as one API call.
+  description_zh: MCP 服务器，为 Claude Code、Codex、Cursor 或 Pi 提供基于 Jev 的工具，可分类、打分、做是/否检查以及拦截高风险工具调用，每项都只需一次 API 调用。
   date: '2026-09-19'
   tags:
   - mcp
@@ -1746,6 +1937,7 @@ entries:
   kind: repo
   author: CodeIA-Academy
   description: Dependency-free local MCP server, documented in Spanish, that exposes ask_jev and list_jev_models to Claude Code, Codex, Cursor, Hermes, and other agents.
+  description_zh: 零依赖的本地 MCP 服务器，文档为西班牙语，向 Claude Code、Codex、Cursor、Hermes 等 agent 提供 ask_jev 和 list_jev_models。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -1757,7 +1949,9 @@ entries:
   kind: repo
   author: abhishekashokvkumar
   description: Proof-of-concept MCP tool dispatcher that discovers a simple MCP server's tool signatures at runtime and routes a natural-language command to the right tool and arguments with no general-purpose LLM.
+  description_zh: 概念验证性质的 MCP 工具分派器，在运行时发现简单 MCP 服务器的工具签名，把自然语言命令路由到正确的工具和参数，全程不用通用 LLM。
   jev: Choice picks the tool and extracts each argument value from the sentence; Noul handles yes/no checks.
+  jev_zh: Choice 选出工具，并从句子中提取每个参数值；Noul 处理是/否检查。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -1770,6 +1964,7 @@ entries:
   kind: repo
   author: jon-devlapaz
   description: Agent skill that grills a plan as a design-tree interview, printing every unlocked decision each round with a recommended answer, and calling Jev ad hoc when a typed judgment helps.
+  description_zh: agent skill，以设计树访谈的方式拷问一份计划，每轮列出所有已解锁的决策并给出推荐答案，需要类型化判断时临时调用 Jev。
   metrics:
     stars: 13
   date: '2026-09-17'
@@ -1782,6 +1977,7 @@ entries:
   kind: repo
   author: libingzheren
   description: Agent memory where Jev, as a System One controller, handles admission, multi-relational linking and retrieval while a language model answers; on LoCoMo with GPT-4o-mini the paper reports 11.0% higher answer quality.
+  description_zh: agent 记忆系统：Jev 作为 System One 控制器负责准入、多关系链接和检索，由语言模型负责作答；论文报告在 LoCoMo 上搭配 GPT-4o-mini 时回答质量提高 11.0%。
   image: https://raw.githubusercontent.com/libingzheren/Jev-Mem/main/docs/figures/overall_structure.png
   metrics:
     stars: 9
@@ -1798,7 +1994,9 @@ entries:
   kind: repo
   author: NicolasMontone
   description: Long-term memory layer for the Vercel AI SDK where Jev gates what gets written, retrieved and evicted, storing exact strings so memories are never summarized or rewritten.
+  description_zh: Vercel AI SDK 的长期记忆层，由 Jev 把关写入、检索和淘汰，存储原始字符串，因此记忆永远不会被摘要或改写。
   jev: Write, retrieve and evict gates are each a boolean, choice or score question to typesafe-ai/jev via the AI Gateway.
+  jev_zh: 写入、检索和淘汰关卡各是一个布尔、选择或打分问题，通过 AI Gateway 发给 typesafe-ai/jev。
   metrics:
     stars: 8
   date: '2026-09-18'
@@ -1811,6 +2009,7 @@ entries:
   kind: repo
   author: rajdhakad9826
   description: TypeScript router that sends each query to the cheapest capable model in a two-tier or three-tier cascade, using Jev to classify how demanding the query is instead of an LLM call.
+  description_zh: TypeScript 路由器，在两级或三级级联中把每个查询发给能胜任的最便宜模型，用 Jev 判断查询的难度，而不是调用 LLM。
   image: https://external-preview.redd.it/MYwHHpL0--RYjVWYB4u6LIjIKjKERfy3Z1jmJkPiIyE.png?auto=webp&s=71e8215cba4f41d7887ad24f3c98c27af60055a2
   metrics:
     stars: 8
@@ -1826,6 +2025,7 @@ entries:
   kind: repo
   author: az9713
   description: Web chat where Jev picks which LLM should answer each message and the chosen model replies, both through the Vercel AI Gateway, with a documented development journey and reliability evaluation.
+  description_zh: 网页聊天：Jev 为每条消息挑选由哪个 LLM 回答，再由选中的模型回复，二者都经由 Vercel AI Gateway，并附有开发过程记录和可靠性评估。
   image: https://raw.githubusercontent.com/az9713/jev-model-router/main/docs/jev_1.png
   metrics:
     stars: 1
@@ -1841,7 +2041,9 @@ entries:
   kind: repo
   author: lucianfialho
   description: Python router that classifies each request and picks the cheapest capable model from OpenRouter's live, full catalog on every decision instead of a hardcoded model list.
+  description_zh: Python 路由器，对每个请求分类，每次决策都从 OpenRouter 实时的完整模型目录中挑选能胜任的最便宜模型，而不是用写死的模型列表。
   jev: Jev classifies the request; a catalog scorer maps the result to models without Jev seeing the model list.
+  jev_zh: Jev 负责给请求分类；目录打分器再把结果映射到模型上，Jev 看不到模型列表。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -1853,7 +2055,9 @@ entries:
   kind: repo
   author: DanielKillenberger
   description: Host agent skill that predicts which closed verdict another skill would reach, such as SHIP or NEEDS_WORK, by handing its outcome set to Jev instead of running the skill.
+  description_zh: 宿主 agent skill，把另一个 skill 的结果集交给 Jev，预测它会得出哪个封闭结论（例如 SHIP 或 NEEDS_WORK），而不必真正运行那个 skill。
   jev: A Noul first checks whether a closed decision is possible, then a Choice picks among the target skill's outcomes.
+  jev_zh: 先用一个 Noul 检查能否做出封闭决策，再用一个 Choice 在目标 skill 的结果中选择。
   metrics:
     stars: 3
   date: '2026-09-16'
@@ -1865,7 +2069,9 @@ entries:
   kind: repo
   author: prismhq
   description: OpenAI-compatible LiteLLM proxy where clients request one model id and Jev picks which provider model serves each request, after filters for vision, output length and tool support.
+  description_zh: 兼容 OpenAI 接口的 LiteLLM 代理：客户端只请求一个模型 id，经过视觉、输出长度和工具支持的筛选后，由 Jev 挑选哪个提供方模型处理每个请求。
   jev: A Choice over the eligible models in router.yaml, built from a minimized summary of the request; without a key a cheapest-eligible baseline runs.
+  jev_zh: 基于请求的精简摘要，在 router.yaml 中的合格模型上做一个 Choice；没有 key 时运行“最便宜合格模型”基线。
   metrics:
     stars: 7
   date: '2026-09-17'
@@ -1878,7 +2084,9 @@ entries:
   kind: repo
   author: haseeb-heaven
   description: Terminal Q&A app where Jev sets the response policy and reviews drafts inside a LangGraph workflow while OpenAI only writes the wording, with a decision report beside each answer.
+  description_zh: 终端问答应用：在 LangGraph 工作流中由 Jev 设定回答策略并审查草稿，OpenAI 只负责措辞，每个答案旁附一份决策报告。
   jev: Jev judges response mode, depth, uncertainty and draft quality at two points per request.
+  jev_zh: 每个请求在两个节点上由 Jev 判断回答模式、深度、不确定性和草稿质量。
   image: https://raw.githubusercontent.com/haseeb-heaven/jev-system-one/develop/docs/tui-preview.png
   metrics:
     stars: 4
@@ -1891,7 +2099,9 @@ entries:
   kind: repo
   author: NicolasMontone
   description: Tool-permission layer for the Vercel AI SDK that uses Jev to auto-approve, ask a human or block each tool call and to prune irrelevant tool definitions before a turn.
+  description_zh: Vercel AI SDK 的工具权限层，用 Jev 对每个工具调用做自动批准、询问人工或拦截，并在每轮开始前剪掉无关的工具定义。
   jev: Runs after deterministic allow/deny rules; on errors the gate fails closed to ask-human.
+  jev_zh: 在确定性的允许/拒绝规则之后运行；出错时关卡按失败即关闭处理，转为询问人工。
   metrics:
     stars: 4
   date: '2026-09-18'
@@ -1903,6 +2113,7 @@ entries:
   kind: repo
   author: jbt95
   description: Effect-based MCP-first toolkit whose jev mcp server gives any harness Choice, Noul and Score judgments plus verify and review tools, with CLI triage, audit, label and route commands and Prometheus impact metrics.
+  description_zh: 基于 Effect、MCP 优先的工具包，其 jev mcp 服务器为任意 harness 提供 Choice、Noul 和 Score 判断以及 verify 和 review 工具，另有 CLI 的 triage、audit、label 和 route 命令，以及 Prometheus 影响指标。
   metrics:
     stars: 1
   date: '2026-09-21'
@@ -1915,7 +2126,9 @@ entries:
   kind: post
   author: 0xCodila
   description: 'Usage router for Grok Bot: before browsing, research, retries or spawning extra bots, a Jev Choice picks the route, with a shadow mode, logs and a kill switch before it goes active.'
+  description_zh: Grok Bot 的用量路由器：在浏览、研究、重试或额外启动机器人之前，由一个 Jev Choice 选择路由；正式启用前有影子模式、日志和紧急开关。
   jev: A Choice call before each costly agent action decides which route to take.
+  jev_zh: 每次高成本的 agent 操作前调用一次 Choice，决定走哪条路由。
   image: https://pbs.twimg.com/amplify_video_thumb/2101426271842349056/img/uEiR8K0UCaFoYsf-.jpg
   metrics:
     likes: 2367
@@ -1930,6 +2143,7 @@ entries:
   kind: repo
   author: hangarbay
   description: 'Go MCP server exposing Jev as five tools: classify, score, check, a mixed multi-question ask over one state, and model listing.'
+  description_zh: 用 Go 编写的 MCP 服务器，把 Jev 暴露为五个工具：classify、score、check、在同一 state 上混合提多个问题的 ask，以及模型列表。
   date: '2026-09-17'
   tags:
   - mcp
@@ -1940,6 +2154,7 @@ entries:
   kind: repo
   author: tacticocc
   description: ACP and MCP adapter plus CLI that puts Jev's typed decisions beside Codex, Claude, Grok and OpenCode for routing, gating, scoring and computer use, with an offline rule backend.
+  description_zh: ACP 和 MCP 适配器加 CLI，把 Jev 的类型化决策放在 Codex、Claude、Grok 和 OpenCode 旁边，用于路由、把关、打分和电脑操控（computer use），并带离线规则后端。
   metrics:
     stars: 37
   date: '2026-09-18'
@@ -1951,6 +2166,7 @@ entries:
   kind: repo
   author: doronp
   description: 'Compiler that turns natural-language agent rules and JSON Schemas into Jev programs: a few narrow typed evidence questions plus a code reducer that computes the verdict, so a rule like never commit unless asked becomes testable.'
+  description_zh: 编译器，把自然语言 agent 规则和 JSON Schema 转成 Jev 程序：几个窄而具体的类型化证据问题，加上一段计算结论的代码归约器，于是像“未经要求绝不提交”这样的规则也能测试了。
   image: https://raw.githubusercontent.com/doronp/jevc/main/docs/hero.svg
   metrics:
     stars: 5
@@ -1967,6 +2183,7 @@ entries:
   kind: repo
   author: kushals256
   description: Local OpenAI-compatible proxy that reuses a cached chat completion when Jev judges a new request to have the same intent as an earlier one, and fails open on Jev errors; one test went from 3244ms to 394ms.
+  description_zh: 本地的 OpenAI 兼容代理，当 Jev 判断新请求与之前某个请求意图相同时，复用缓存的对话补全结果，Jev 出错时直接放行；一次测试中耗时从 3244 毫秒降到 394 毫秒。
   image: https://raw.githubusercontent.com/kushals256/jevcache/main/docs/demo.gif
   metrics:
     stars: 9
@@ -1983,6 +2200,7 @@ entries:
   kind: repo
   author: PerryLink
   description: Decision layer that exposes Jev's noul, choice, and score questions to DeepSeek Harness, any MCP host, or plain Node through three packages, offline by default with network egress disclosed.
+  description_zh: 决策层，通过三个包把 Jev 的 noul、choice 和 score 问题提供给 DeepSeek Harness、任意 MCP 宿主或纯 Node，默认离线，并明示网络外发情况。
   metrics:
     stars: 8
   date: '2026-09-20'
@@ -1994,7 +2212,9 @@ entries:
   kind: repo
   author: jvsteiner
   description: Agent loop experiment where Jev picks each next action and approves the concrete call, a LangChain chat model fills arguments and the final reply, and three local MCP servers expose 12 tools.
+  description_zh: agent 循环实验：Jev 选出每一个下一步动作并批准具体调用，LangChain 聊天模型填写参数和最终回复，三个本地 MCP 服务器共提供 12 个工具。
   jev: Includes a research benchmark against native tool-calling LLM loops with measured tokens and latency.
+  jev_zh: 附带一个研究性基准测试，与原生工具调用的 LLM 循环对比，实测 token 和延迟。
   metrics:
     stars: 3
   date: '2026-09-17'
@@ -2006,6 +2226,7 @@ entries:
   kind: repo
   author: TianyuCodings
   description: Framework where a strong LLM writes a task-specific harness that turns observations into Jev questions and actions, then freezes it and optionally improves it from rewards and full execution traces with GEPA.
+  description_zh: 框架：由强 LLM 编写针对特定任务的 harness，把观察转成 Jev 问题和动作，然后将其冻结，并可选地用 GEPA 根据奖励和完整执行轨迹改进它。
   metrics:
     stars: 109
   date: '2026-09-21'
@@ -2021,6 +2242,7 @@ entries:
   kind: repo
   author: kevin9327
   description: 'Pre-execution gate for a single agent tool call: one mixed Jev request returns an allow/ask/deny verdict, irreversibility score and yes/no checks, and Python code turns them into execute, confirm or reject.'
+  description_zh: 针对单个 agent 工具调用的执行前关卡：一次混合 Jev 请求返回 allow/ask/deny 结论、不可逆程度分数和是/否检查，再由 Python 代码转为执行、确认或拒绝。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -2033,6 +2255,7 @@ entries:
   kind: repo
   author: walidboulanouar
   description: Zero-dependency CLI and MCP server with eleven Jev-backed tools such as route, triage, guard, grep, rank, compact and judge, plus six runnable use cases including a Claude Code guard hook and a PR ranker.
+  description_zh: 零依赖的 CLI 和 MCP 服务器，带有 route、triage、guard、grep、rank、compact、judge 等十一个基于 Jev 的工具，以及六个可运行的用例，包括 Claude Code 护栏 hook 和 PR 排序器。
   image: https://raw.githubusercontent.com/walidboulanouar/jev-agent-kit/main/assets/banner.png
   date: '2026-09-20'
   tags:
@@ -2044,6 +2267,7 @@ entries:
   kind: repo
   author: zjunlp
   description: Runnable agent harness that routes every fork in the loop, such as which tool, is it safe, am I done, to a decision model like Jev or Laya and keeps the LLM for writing, with a web UI and no dependencies.
+  description_zh: 可运行的 agent harness，把循环中的每个岔路口（用哪个工具、是否安全、是否完成）交给 Jev 或 Laya 这样的决策模型，LLM 只负责写作，带网页 UI，无任何依赖。
   metrics:
     stars: 11
   date: '2026-09-20'
@@ -2056,6 +2280,7 @@ entries:
   kind: repo
   author: dealerdefi
   description: Zero-dependency Python toolkit that pulls an agent's decisions out of prose into typed, confidence-scored answers behind a code gate, logged in a graded ledger, with a local rules brain or Jev behind one flag.
+  description_zh: 零依赖的 Python 工具包，把 agent 埋在文字里的决策提取成类型化、带置信度的答案，置于代码关卡之后，并记入分级账本；一个开关即可在本地规则大脑和 Jev 之间切换。
   image: https://raw.githubusercontent.com/dealerdefi/Jevmind/main/assets/banner.jpg
   metrics:
     stars: 164
@@ -2073,6 +2298,7 @@ entries:
   kind: repo
   author: BillionsBobby
   description: Treats models, subagents, skills, MCP servers, and CLIs as one candidate pool and routes with a two-stage Choice when the pool is large.
+  description_zh: 把模型、子 agent、skill、MCP 服务器和 CLI 放进同一个候选池，候选池很大时用两阶段 Choice 做路由。
   image: https://raw.githubusercontent.com/BillionsBobby/JevRouter/main/docs/assets/jev-api-router-comparison.png
   metrics:
     stars: 148
@@ -2087,7 +2313,9 @@ entries:
   kind: post
   author: 0xkaushik_k
   description: Watches an AI agent work and plots per-step judgments of task alignment, progress, repetition and being stuck, shown catching a coding agent looping on a race condition.
+  description_zh: 观察 AI agent 的工作过程，按步骤绘制任务对齐度、进展、重复和卡住程度的判断曲线，演示中抓到了一个在竞态条件上反复打转的编程 agent。
   jev: 'Per-step judgments over agent trace steps: aligned with task, progress, repeating, stuck.'
+  jev_zh: 对 agent 轨迹的每一步做判断：是否与任务一致、是否有进展、是否在重复、是否卡住。
   image: https://pbs.twimg.com/amplify_video_thumb/2100928298834374656/img/LvjSbqapVvdNdvrK.jpg
   metrics:
     likes: 10
@@ -2101,6 +2329,7 @@ entries:
   kind: repo
   author: Brainwires
   description: 'Jev decision layer for agent harnesses: an MCP server with seven tools (rank, pick, verify, evaluate, gate action, next step, list models), an embeddable DecisionModel library and an escalate-only Claude Code plugin.'
+  description_zh: 面向 agent harness 的 Jev 决策层：一个带七个工具（rank、pick、verify、evaluate、gate action、next step、list models）的 MCP 服务器、一个可嵌入的 DecisionModel 库，以及一个只负责升级的 Claude Code 插件。
   metrics:
     stars: 15
   date: '2026-09-17'
@@ -2112,6 +2341,7 @@ entries:
   kind: repo
   author: runta-dev
   description: General-purpose agent loop where Jev chooses tools and their arguments while Jot executes them, feeds real results back into context and asks again until Jev can reply, with every tool call visible.
+  description_zh: 通用 agent 循环：Jev 选择工具及参数，Jot 负责执行，把真实结果反馈进上下文后再问，直到 Jev 可以作答，每次工具调用都清晰可见。
   metrics:
     stars: 19
   date: '2026-09-18'
@@ -2119,10 +2349,12 @@ entries:
   - agent-loop
   - tool-use
 - name: Just-in-time model selection in Goose
+  name_zh: Goose 中的即时模型选择
   url: https://x.com/alexjhancock/status/2100932130196852896
   kind: post
   author: alexjhancock
   description: Prototype for the Goose agent harness that has Jev read each prompt and pick which model should run the turn just before it starts.
+  description_zh: Goose agent harness 的原型功能：让 Jev 读取每个提示词，在这一轮开始前挑选由哪个模型运行。
   image: https://pbs.twimg.com/amplify_video_thumb/2100932017512763392/img/Xe2wlgj78FcAayZ2.jpg
   metrics:
     likes: 22
@@ -2136,7 +2368,9 @@ entries:
   kind: repo
   author: ksenxx
   description: KISS Sorcar, a general-purpose agent framework for long-horizon tasks, gives the agent a decide tool that asks Jev typed questions to pick its next move.
+  description_zh: 面向长程任务的通用 agent 框架 KISS Sorcar 为 agent 提供一个 decide 工具，通过向 Jev 提类型化问题来决定下一步。
   jev: noul, choice and score questions through OpenRouter's ~typesafe/jev-latest, callable in parallel.
+  jev_zh: 通过 OpenRouter 的 ~typesafe/jev-latest 提出 noul、choice 和 score 问题，可以并行调用。
   image: https://raw.githubusercontent.com/ksenxx/kiss_ai/main/assets/KISS-Sorcar.png
   metrics:
     repo_stars: 553
@@ -2150,6 +2384,7 @@ entries:
   kind: repo
   author: krau
   description: Telegram bot agent that experimentally uses Jev to decide whether a follow-up group message is relevant enough for the bot to keep replying, with a configurable threshold.
+  description_zh: Telegram 机器人 agent，实验性地用 Jev 判断群里的后续消息是否足够相关、值得机器人继续回复，阈值可配置。
   image: https://repository-images.githubusercontent.com/573633729/31372b28-6155-40e6-ac96-6f7ed0b441ad
   metrics:
     repo_stars: 241
@@ -2163,6 +2398,7 @@ entries:
   kind: repo
   author: nbramia
   description: Six offline experiments in the self-hosted LifeOS personal assistant testing, on recorded real turns, whether Jev typed judgments would help its chat orchestrator with routing, in-loop decisions and latency.
+  description_zh: 自托管个人助手 LifeOS 中的六个离线实验，在录制的真实对话轮次上测试 Jev 的类型化判断能否在路由、循环内决策和延迟方面帮到其聊天编排器。
   metrics:
     repo_stars: 31
   date: '2026-01-07'
@@ -2177,7 +2413,9 @@ entries:
   kind: article
   author: LiteLLM
   description: Picks a model tier for each request with a Jev Choice.
+  description_zh: 用一个 Jev Choice 为每个请求挑选模型档位。
   note: release candidate
+  note_zh: 候选发布版
   tags:
   - litellm
   - model-routing
@@ -2186,7 +2424,9 @@ entries:
   kind: article
   author: LiteLLM
   description: Asks one Noul per finished tool exchange and clears results that are no longer needed before each call.
+  description_zh: 每完成一次工具交互就问一个 Noul，并在每次调用前清掉不再需要的结果。
   note: release candidate
+  note_zh: 候选发布版
   tags:
   - litellm
   - context-compaction
@@ -2196,7 +2436,9 @@ entries:
   kind: repo
   author: BerriAI
   description: LiteLLM's complexity-based router can use Jev to classify each request into configured tiers that pick the backend model; a separate guardrail blanks tool results Jev judges no longer needed.
+  description_zh: 在 LiteLLM 基于复杂度的路由器中，可以用 Jev 把每个请求归入配置好的档位，据此选择后端模型；另有一个护栏，会清空 Jev 判断为不再需要的工具结果。
   jev: A tier Choice per request for routing; the compaction guardrail asks one yes/no Noul per completed tool exchange.
+  jev_zh: 路由时每个请求做一个档位 Choice；压缩护栏对每次完成的工具交互问一个是/否 Noul。
   metrics:
     repo_stars: 59367
   date: '2026-09-17'
@@ -2211,7 +2453,9 @@ entries:
   kind: repo
   author: damianvtran
   description: Agent hub that runs a decision-model layer beside its heuristics once per message to recommend skills, MCP servers and roles; Jev scored 31/31 on labelled cases with the rubric in the options.
+  description_zh: agent 中枢，每条消息在启发式规则旁运行一次决策模型层，推荐 skill、MCP 服务器和角色；把评分标准写进选项后，Jev 在标注案例上得分 31/31。
   jev: Cascade over Radient, TypeSafe and OpenRouter with byte-identical bodies; p50 0.20 s per call in the evaluation.
+  jev_zh: 在 Radient、TypeSafe 和 OpenRouter 之间级联，请求体逐字节相同；评测中每次调用 p50 为 0.20 秒。
   image: https://repository-images.githubusercontent.com/922327641/359101c9-d089-4d2c-bb22-a62f973989de
   metrics:
     repo_stars: 214
@@ -2227,7 +2471,9 @@ entries:
   kind: repo
   author: wundercorp
   description: Jev Auto router in the Loki self-improving agent that picks a model for each new session from a bounded catalog on the already-selected gateway, plus optional Jev typed-judgment tools.
+  description_zh: 自我改进型 agent Loki 中的 Jev Auto 路由器，在已选定的网关上，从有限的模型目录中为每个新会话挑选模型，另有可选的 Jev 类型化判断工具。
   jev: One Choice before the first system prompt, kept sticky for the session to preserve the provider prompt cache.
+  jev_zh: 在第一条系统提示词之前做一个 Choice，并在整个会话中保持不变，以保留提供方的提示词缓存。
   image: https://external-preview.redd.it/bXFrM3pzYTliM3FoMY0lQBrPzyunrBkHI7vjHn7uS62MUkZrWYeyYKCFZonA.jpeg?format=pjpg&auto=webp&s=c91449dc6c654493adcc41510ae0d3daaf31804a
   metrics:
     repo_stars: 26
@@ -2244,6 +2490,7 @@ entries:
   kind: repo
   author: markus-global
   description: AI workforce platform that gives its agents a decision capability and a decide tool backed by Jev-style decision models, with a rule that all evidence must go into the state.
+  description_zh: AI 劳动力平台，为其 agent 提供决策能力和一个由 Jev 类决策模型支撑的 decide 工具，并规定所有证据都必须放进 state。
   image: https://raw.githubusercontent.com/markus-global/markus/main/docs/images/dashboard-preview.gif
   metrics:
     repo_stars: 195
@@ -2259,7 +2506,9 @@ entries:
   kind: repo
   author: prasanth263
   description: 'Local MCP gateway that connects your MCP servers once and shows agents just two tools: find_tool, which uses a Jev Choice to discover a capability, and execute_tool.'
+  description_zh: 本地 MCP 网关，你的 MCP 服务器只需连接一次，agent 只会看到两个工具：用 Jev Choice 发现能力的 find_tool，以及 execute_tool。
   jev: Jev is the gateway's only model; credentials stay in the OS keychain and planning and arguments stay with the calling agent.
+  jev_zh: Jev 是这个网关唯一的模型；凭据保存在系统钥匙串里，规划和参数由调用方 agent 负责。
   date: '2026-09-18'
   tags:
   - mcp
@@ -2270,7 +2519,9 @@ entries:
   kind: repo
   author: pedroknigge
   description: Local MCP server for Cursor and other agents that runs ready-made Jev question packs, with a typed run_questions tool for custom Choice, Noul and Score judgments.
+  description_zh: 面向 Cursor 等 agent 的本地 MCP 服务器，运行现成的 Jev 问题包，并提供类型化的 run_questions 工具，用于自定义 Choice、Noul 和 Score 判断。
   jev: No free-form ask tool by design; the user's own TypeSafe key is configured once and never pasted into host configs.
+  jev_zh: 按设计不提供自由提问工具；用户自己的 TypeSafe key 只配置一次，从不粘贴到宿主配置里。
   date: '2026-09-19'
   tags:
   - mcp
@@ -2281,6 +2532,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Web app that matches a user goal to the best MCP server or capability in a catalog, using a two-stage Jev pass when the catalog is large.
+  description_zh: 网页应用，把用户目标匹配到目录中最合适的 MCP 服务器或能力，目录很大时用两阶段 Jev 筛选。
   date: '2026-09-17'
   links:
     app: https://mcpmatch.vercel.app
@@ -2293,7 +2545,9 @@ entries:
   kind: repo
   author: ItIsCuthNotCup
   description: Metacognition loop where a small model branches into several thought paths and a System One judge, Jev or the open Reflex 4B, picks which one to continue; per-candidate Jev Nouls lifted HumanEval from 0.555 to 0.756.
+  description_zh: 元认知循环：小模型分出多条思路，再由 System One 评判者（Jev 或开源的 Reflex 4B）挑选继续哪一条；逐候选的 Jev Noul 把 HumanEval 从 0.555 提升到 0.756。
   jev: Per-candidate Noul judging beat one-shot Choice (0.756 vs 0.726 on HumanEval, 0.905 vs 0.869 on GSM8K).
+  jev_zh: 逐候选的 Noul 评判优于一次性 Choice（HumanEval 上 0.756 对 0.726，GSM8K 上 0.905 对 0.869）。
   metrics:
     stars: 9
   date: '2026-09-20'
@@ -2306,6 +2560,7 @@ entries:
   kind: repo
   author: AStheTECH
   description: MCP server exposing Jev's System One API so agents can grade text or structured state against mixed yes/no, single-choice and rubric questions in one call and list available model aliases.
+  description_zh: MCP 服务器，暴露 Jev 的 System One API，让 agent 在一次调用中用混合的是/否、单选和评分标准问题给文本或结构化 state 打分，并列出可用的模型别名。
   date: '2026-09-18'
   links:
     app: https://mewcp-jev.vercel.app
@@ -2318,7 +2573,9 @@ entries:
   kind: repo
   author: shivendrasoni
   description: TypeSafe integration in Mimir, a Rust recursive-language-model agent runtime, that selects the applicable skill and shortlists needed tools before a model call, rolled out through shadow, canary and acceptance benchmarks.
+  description_zh: Rust 递归语言模型 agent 运行时 Mimir 中的 TypeSafe 集成，在模型调用前选出适用的 skill 并列出所需工具的候选清单，经过影子、金丝雀和验收基准测试逐步上线。
   jev: A skill_applies Noul plus a best_skill Choice, and one tool_needed Noul per tool; falls back to the full pool when an omitted tool is uncertain.
+  jev_zh: 一个 skill_applies Noul 加一个 best_skill Choice，每个工具再问一个 tool_needed Noul；对被省略的工具拿不准时回退到完整工具池。
   metrics:
     repo_stars: 5
   date: '2026-08-13'
@@ -2333,6 +2590,7 @@ entries:
   kind: repo
   author: mindroom-ai
   description: Multi-agent runtime on Matrix where agents already in a thread decide whether to answer untagged messages, using an LLM or TypeSafe System One with a 0.8 threshold.
+  description_zh: 基于 Matrix 的多 agent 运行时，已在某个讨论串中的 agent 会用 LLM 或 TypeSafe System One（阈值 0.8）决定是否回复未标记的消息。
   image: https://repository-images.githubusercontent.com/1137843985/a7ad6a4c-9828-4e95-91b5-7d05e97c59fc
   metrics:
     repo_stars: 284
@@ -2348,7 +2606,9 @@ entries:
   kind: repo
   author: rShetty
   description: Rust AI gateway that has Jev classify every OpenAI-compatible prompt into a complexity tier from trivial to reasoning and routes it to the cheapest capable OpenRouter model; 90.5% exact accuracy on 116 held-out cases.
+  description_zh: Rust AI 网关，让 Jev 把每个 OpenAI 兼容的提示词按复杂度归入从 trivial 到 reasoning 的档位，再路由到能胜任的最便宜 OpenRouter 模型；在 116 个留出案例上精确准确率为 90.5%。
   jev: Tier plus task classification in about 340 ms; sessions never downgrade tiers, with heuristic fallback.
+  jev_zh: 约 340 毫秒完成档位和任务分类；会话中档位只升不降，并有启发式回退。
   metrics:
     stars: 5
   date: '2026-08-09'
@@ -2357,10 +2617,12 @@ entries:
   - gateway
   - openrouter
 - name: Monid tools with Jev
+  name_zh: 借助 Jev 使用 Monid 工具
   url: https://x.com/shengkunye/status/2102112693041938825
   kind: post
   author: shengkunye
   description: Monid integration that lets an agent use Jev through OpenRouter across 2,000 tools, for jobs like scoring 2,000 leads, scanning TikTok hooks, or sorting Reddit threads, with a claimed 30x speed-up.
+  description_zh: Monid 集成，让 agent 通过 OpenRouter 在 2,000 个工具上使用 Jev，完成给 2,000 条线索打分、扫描 TikTok 开头钩子、整理 Reddit 讨论帖等工作，号称提速 30 倍。
   image: https://pbs.twimg.com/amplify_video_thumb/2102112249112604672/img/3lR6gxILRYKTiMF_.jpg
   metrics:
     likes: 166
@@ -2378,7 +2640,9 @@ entries:
   kind: repo
   author: nebius
   description: Advisory model router in Nebius's Physical AI Workbench agent backend that asks Jev whether a request needs the fast Nemotron model or MiniMax-M3 for multi-step reasoning, selecting no model on abstention or failure.
+  description_zh: Nebius Physical AI Workbench agent 后端中仅作参考的模型路由器，询问 Jev 某个请求需要快速的 Nemotron 模型，还是能做多步推理的 MiniMax-M3，Jev 弃权或出错时不选任何模型。
   jev: One Choice over eligible model IDs with their criteria plus a none label, pinned to jev-1.13.0 with a 0.8 minimum confidence.
+  jev_zh: 在符合条件的模型 ID 及其标准加一个 none 标签上做一个 Choice，固定使用 jev-1.13.0，最低置信度 0.8。
   image: https://raw.githubusercontent.com/nebius/nebius-physical-ai/main/docs/assets/workbench-architecture.png
   metrics:
     repo_stars: 30
@@ -2393,7 +2657,9 @@ entries:
   kind: repo
   author: automateyournetwork
   description: Skill-audit sweeps in the NetClaw network agent that use Jev to flag ambiguous triggers, missing failure behavior, stale assumptions and injection smells, and to map skill overlap and coverage gaps.
+  description_zh: 网络 agent NetClaw 中的 skill 审计扫描，用 Jev 标记含糊的触发条件、缺失的失败处理、过时的假设和注入嫌疑，并梳理 skill 之间的重叠和覆盖缺口。
   jev: Noul-style questions per skill with collision and coverage thresholds, aggregated into a findings report.
+  jev_zh: 每个 skill 问若干 Noul 式问题，配合冲突和覆盖阈值，汇总成一份发现报告。
   image: https://raw.githubusercontent.com/automateyournetwork/netclaw/main/netclaw.jpg
   metrics:
     repo_stars: 664
@@ -2407,6 +2673,7 @@ entries:
   kind: repo
   author: supernovae-st
   description: Workflow language for repeatable AI work whose compiler can hand bounded decisions to TypeSafe System One, one Choice with a "none" option per question.
+  description_zh: 面向可重复 AI 工作的工作流语言，其编译器可以把有边界的决策交给 TypeSafe System One，每个问题是一个带“none”选项的 Choice。
   image: https://nika.sh/brand/nika-logo-light.svg
   metrics:
     repo_stars: 88
@@ -2422,7 +2689,9 @@ entries:
   kind: repo
   author: mas-bandwidth
   description: Typed-decision route in Nova Tools, a set of tools for AI agents on different models to message, wait and swarm together, where Jev answers small choice, score or yes/no judgments beside deterministic machinery.
+  description_zh: 类型化决策路由，属于让不同模型上的 AI agent 互发消息、等待和集群协作的工具集 Nova Tools：Jev 在确定性机制旁回答小型的选择、打分或是/否判断。
   jev: Decisions below a confidence floor are suggestions, never authorizations; used by swarm slots and pulse gates.
+  jev_zh: 低于置信度下限的决策只算建议，绝不算授权；供集群槽位和 pulse 关卡使用。
   image: https://raw.githubusercontent.com/mas-bandwidth/nova-tools/main/assets/nova-tools-workshop.png
   metrics:
     repo_stars: 5
@@ -2438,7 +2707,9 @@ entries:
   kind: repo
   author: ZYHUO
   description: Telegram group-chat agent that uses Jev to catch paraphrased repeats of its own messages and to block hallucinated facts that nobody in the chat mentioned or asked about.
+  description_zh: Telegram 群聊 agent，用 Jev 识别换了说法的自我重复消息，并拦截群里没人提过、也没人问过的幻觉事实。
   jev: One Noul for semantic duplicates (threshold 0.7) and two Nouls for topic presence and whether it was asked (both below 0.35 blocks); unreachable Jev fails open.
+  jev_zh: 用一个 Noul 判断语义重复（阈值 0.7），用两个 Noul 判断话题是否出现过、是否有人问过（两者都低于 0.35 即拦截）；Jev 无法访问时放行。
   metrics:
     repo_stars: 9
   date: '2026-04-10'
@@ -2453,7 +2724,9 @@ entries:
   kind: repo
   author: rlaope
   description: Module in the oh-my-hermes plugin that detects Jev-class Hermes plugins on a machine and reports what each declares about its tools, hooks and data flow, without claiming any ran.
+  description_zh: 插件 oh-my-hermes 中的模块，检测机器上装了哪些 Jev 类 Hermes 插件，并报告每个插件对其工具、hook 和数据流的声明，但不声称它们实际运行过。
   jev: Recognizes jev_-prefixed tools and known Jev credential env names, and routes a tool-approval question to Jev when a Jev-class plugin is present.
+  jev_zh: 识别以 jev_ 为前缀的工具和已知的 Jev 凭据环境变量名，存在 Jev 类插件时，把工具审批问题交给 Jev。
   image: https://raw.githubusercontent.com/rlaope/oh-my-hermes/main/assets/oh-my-hermes-wordmark.png
   metrics:
     repo_stars: 2854
@@ -2469,7 +2742,9 @@ entries:
   kind: repo
   author: aipoch
   description: Classification service in the AIPOCH Open-Science research workbench that uses Jev to select which skills a request needs and whether a document should be read in full.
+  description_zh: AIPOCH Open-Science 研究工作台中的分类服务，用 Jev 判断请求需要哪些 skill，以及某份文档是否应该全文阅读。
   jev: Runs on jev-latest via TypeSafe, OpenRouter or a custom endpoint, with a byte budget kept under TypeSafe's context limit even for CJK text.
+  jev_zh: 通过 TypeSafe、OpenRouter 或自定义端点运行 jev-latest，并设置字节预算，即便是 CJK 文本也能保持在 TypeSafe 的上下文上限之内。
   image: https://raw.githubusercontent.com/aipoch/open-science/main/docs/images/readme/open-science-banner.png
   metrics:
     repo_stars: 4897
@@ -2485,7 +2760,9 @@ entries:
   kind: repo
   author: openagentsinc
   description: OpenAgents builds general agent infrastructure where every turn starts with a Jev typed judgment that returns a choice and probabilities, foldable back into the round.
+  description_zh: 通用 agent 基础设施，每一轮都从一次 Jev 类型化判断开始，返回一个选择和概率，并可折回到这一轮中。
   jev: A Rust Jev SDK crate with typed Choice, Noul and Score answers powering the turn loop's respond/retry/stop verdicts.
+  jev_zh: 一个 Rust Jev SDK crate，提供类型化的 Choice、Noul 和 Score 答案，驱动轮次循环中 respond/retry/stop 的结论。
   metrics:
     repo_stars: 449
   date: '2023-11-07'
@@ -2500,6 +2777,7 @@ entries:
   kind: repo
   author: SqaaSSL
   description: Context engine for OpenClaw that asks Jev which tool calls and results a session still needs, drops the rest, and never summarizes, so what remains is the original text.
+  description_zh: OpenClaw 的上下文引擎，询问 Jev 会话还需要哪些工具调用和结果，丢掉其余部分，并且从不做摘要，因此留下的都是原文。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -2511,6 +2789,7 @@ entries:
   kind: repo
   author: jason-allen-oneal
   description: OpenClaw plugin that uses Jev for group-chat triage on whether to respond, tool-call safety checks, compaction curation and model routing, without modifying the OpenClaw core.
+  description_zh: OpenClaw 插件，用 Jev 做群聊分诊（是否回复）、工具调用安全检查、压缩内容筛选和模型路由，不修改 OpenClaw 核心。
   date: '2026-09-18'
   tags:
   - openclaw
@@ -2521,7 +2800,9 @@ entries:
   kind: repo
   author: tinyhumansai
   description: Agent hive for one-person businesses where Jev decides who a message needs and who picks up a broadcast, falling back to the desk lead without a key.
+  description_zh: 面向一人公司的 agent 蜂巢：Jev 决定一条消息需要找谁、广播由谁接手，没有 key 时回退到工位负责人。
   jev: Choice over desk members plus "none", sent through the TinyHumans proxy.
+  jev_zh: 在工位成员加“none”之间做 Choice，经 TinyHumans 代理发送。
   image: https://raw.githubusercontent.com/tinyhumansai/opencompany/main/docs/gitbooks/.gitbook/assets/opencompany-hero.png
   metrics:
     stars: 196
@@ -2537,7 +2818,9 @@ entries:
   kind: repo
   author: useopencompany
   description: Approval reviewer in the opencompany AI workspace where Jev auto-approves routine integration actions only when they match the user's request and look low-risk; destructive, metered or permission changes always ask.
+  description_zh: AI 工作空间 opencompany 中的审批复核器：只有当日常集成操作与用户请求一致且看起来低风险时，Jev 才会自动批准；破坏性操作、计费操作或权限变更一律询问用户。
   jev: Relevance and low-risk probabilities with thresholds of 0.55 and 0.75, called through the AI SDK evaluate API.
+  jev_zh: 判断相关性和低风险的概率，阈值分别为 0.55 和 0.75，通过 AI SDK 的 evaluate API 调用。
   metrics:
     repo_stars: 7
   date: '2026-05-20'
@@ -2552,7 +2835,9 @@ entries:
   kind: repo
   author: tinyhumansai
   description: Tool-search ranker for the OpenHuman agent harness that shortlists deferred tools with BM25 and lets one Jev Choice pick the right one, falling back to BM25 when signed out.
+  description_zh: OpenHuman agent harness 的工具搜索排序器，先用 BM25 为延迟加载的工具列出候选清单，再让一个 Jev Choice 选出正确的工具，未登录时回退到 BM25。
   jev: BM25 to 20 candidates, then one Choice with a 3 s deadline, routed through the backend's OpenRouter System One proxy.
+  jev_zh: BM25 先筛到 20 个候选，再做一个 3 秒时限的 Choice，经后端的 OpenRouter System One 代理转发。
   image: https://raw.githubusercontent.com/tinyhumansai/openhuman/main/gitbooks/.gitbook/assets/demo.png
   metrics:
     repo_stars: 40024
@@ -2568,6 +2853,7 @@ entries:
   kind: post
   author: milindlabs
   description: Multi-agent setup on OpenMausBot where Jev reads each task, wakes the right agents and assigns each one a model from the user's existing subscriptions.
+  description_zh: OpenMausBot 上的多 agent 配置：Jev 读取每个任务，唤醒合适的 agent，并从用户现有的订阅中为每个 agent 分配模型。
   image: https://pbs.twimg.com/amplify_video_thumb/2100515619712184320/img/LFrKN4XyJ024sGe_.jpg
   metrics:
     likes: 184
@@ -2581,6 +2867,7 @@ entries:
   kind: repo
   author: ctmx
   description: Python decision gateway and MCP server that exposes Jev through OpenRouter's decisions endpoint to Claude Code, Codex and Cursor as classify, score and check tools for the small bounded questions agents hit.
+  description_zh: Python 决策网关兼 MCP 服务器，通过 OpenRouter 的 decisions 端点，把 Jev 以 classify、score 和 check 工具的形式提供给 Claude Code、Codex 和 Cursor，处理 agent 常遇到的小型有边界问题。
   date: '2026-09-19'
   tags:
   - mcp
@@ -2591,7 +2878,9 @@ entries:
   kind: repo
   author: NeuralNexusPro
   description: 'Optional Jev decision mode for the perception rules of OriginOS, a local AI work system: when an event could go to several authorized projects, roles or skills, Jev picks the target and low-confidence cases go to the user.'
+  description_zh: 本地 AI 工作系统 OriginOS 感知规则的可选 Jev 决策模式：当一个事件可能交给多个已授权的项目、角色或 skill 时，由 Jev 选定目标，低置信度的情况交给用户。
   jev: A Choice over only the currently authorized targets; auto-continues only when route_target confidence is above 0.8, otherwise asks for a human pick.
+  jev_zh: 只在当前已授权的目标上做 Choice；route_target 置信度高于 0.8 才自动继续，否则请人工挑选。
   image: https://raw.githubusercontent.com/NeuralNexusPro/startupOS/main/docs/assets/readme/originos-banner.png
   metrics:
     repo_stars: 7
@@ -2607,7 +2896,9 @@ entries:
   kind: repo
   author: Papr-ai
   description: Mastra tool in the Paprwork local-first desktop agent app that lets agents, sub-agents and scheduled jobs ask Jev typed noul, choice or score questions, with input guardrails and Papr-proxy or bring-your-own-key auth.
+  description_zh: 本地优先的桌面 agent 应用 Paprwork 中的 Mastra 工具，让 agent、子 agent 和定时任务向 Jev 提出类型化的 noul、choice 或 score 问题，带输入护栏，支持 Papr 代理或自带 key 两种认证。
   jev: jev_decide posts state plus up to 20 typed questions to /v1/systemone; state is capped at 32k characters.
+  jev_zh: jev_decide 把 state 和最多 20 个类型化问题发到 /v1/systemone；state 上限为 32k 字符。
   metrics:
     repo_stars: 7
   date: '2026-01-27'
@@ -2622,6 +2913,7 @@ entries:
   kind: repo
   author: arslanr-com
   description: Agent memory for Hermes that has Jev check every stored memory against short criteria from the calling agent, with no embeddings; an earlier version cut LongMemEval-S answer errors from 62 to 17 of 120.
+  description_zh: Hermes 的 agent 记忆，让 Jev 根据调用方 agent 给出的简短标准逐条检查已存记忆，不用 embedding；早期版本把 LongMemEval-S 的回答错误从 120 道中的 62 道降到 17 道。
   metrics:
     stars: 1
   date: '2026-09-21'
@@ -2634,6 +2926,7 @@ entries:
   kind: repo
   author: JulesLiu390
   description: AI desktop pet with a social agent in QQ, Telegram and WhatsApp groups that uses Jev to tag message mood and read the group's atmosphere before replying.
+  description_zh: AI 桌面宠物，带一个在 QQ、Telegram 和 WhatsApp 群里活动的社交 agent，回复前用 Jev 标注消息情绪、判断群聊氛围。
   image: https://repository-images.githubusercontent.com/952838031/91883b7f-7f2b-412f-a048-8eae41b0de5a
   metrics:
     repo_stars: 107
@@ -2649,7 +2942,9 @@ entries:
   kind: repo
   author: phantomyard
   description: Persistent-identity AI assistant around terminal harnesses with long-term memory across PhantomChat, Telegram and editors; an optional Jev screener acts as a threat judge and routes each turn to the primary or coder model in ~300 ms.
+  description_zh: 围绕终端 harness 构建的持久身份 AI 助手，在 PhantomChat、Telegram 和编辑器之间共享长期记忆；可选的 Jev 筛查器充当威胁评判者，并在约 300 毫秒内把每轮路由到主模型或编程模型。
   jev: A typed primary|coder Choice replaces keyword scoring for brain-swap routing; errors fall back to the scorer and are reported by phantombot doctor.
+  jev_zh: 类型化的 primary|coder Choice 取代关键词打分来做换脑路由；出错时回退到打分器，并由 phantombot doctor 报告。
   metrics:
     stars: 16
   date: '2026-05-01'
@@ -2665,7 +2960,9 @@ entries:
   kind: repo
   author: ling-kong-ran
   description: Multi-agent desktop and mobile app that adds a Jev decision service for auto-approving tool permissions above a 0.9 threshold and verifying computer-use actions.
+  description_zh: 多 agent 桌面和移动应用，新增 Jev 决策服务，在高于 0.9 阈值时自动批准工具权限，并验证电脑操控（computer use）动作。
   jev: Calls TypeSafe /v1/systemone or OpenRouter decisions with Noul, Choice and Score questions; low-confidence cases fall back to manual approval.
+  jev_zh: 用 Noul、Choice 和 Score 问题调用 TypeSafe /v1/systemone 或 OpenRouter decisions；低置信度时回退到人工审批。
   image: https://raw.githubusercontent.com/ling-kong-ran/pisper/release/docs/brand/banner.svg
   metrics:
     repo_stars: 298
@@ -2681,15 +2978,18 @@ entries:
   kind: repo
   author: AshutoshVJTI
   description: Library that watches recent agent steps for semantic stagnation, where different actions keep chasing the same contradicted assumption; Jev reads the trajectory and a small deterministic policy decides what to do.
+  description_zh: 监测 agent 最近步骤中语义停滞的库，即不同的操作一直在追逐同一个已被推翻的假设；Jev 读取轨迹，再由一个小型确定性策略决定如何处理。
   date: '2026-09-18'
   tags:
   - agent-loops
   - monitoring
 - name: Prompt difficulty classifier
+  name_zh: 提示词难度分类器
   url: https://x.com/k_grajeda/status/2101021361351131464
   kind: post
   author: k_grajeda
   description: Chat UI check that classifies the difficulty of the prompt each time the user stops typing and, for simple prompts, offers a fast mode before they hit send.
+  description_zh: 聊天界面中的检查：用户每次停止输入时就对提示词难度分类，如果是简单提示词，就在用户点发送前提供快速模式。
   image: https://pbs.twimg.com/amplify_video_thumb/2101018655794331648/img/xm_XTf33FJqqEmIb.jpg
   metrics:
     likes: 47
@@ -2703,7 +3003,9 @@ entries:
   kind: repo
   author: professorpalmer
   description: Puppetmaster, a control plane for durable-state agent swarms, uses Jev for conflict, already-answered, admission and stop decisions across its worker stitching.
+  description_zh: 面向持久状态 agent 集群的控制平面 Puppetmaster，在其 worker 拼接流程中用 Jev 做冲突、已答复、准入和停止决策。
   jev: Questions and thresholds via OpenRouter's ~typesafe/jev-latest on a 2 second timeout.
+  jev_zh: 通过 OpenRouter 的 ~typesafe/jev-latest 发送问题和阈值，超时 2 秒。
   image: https://raw.githubusercontent.com/professorpalmer/Puppetmaster/main/docs/demo.gif
   metrics:
     repo_stars: 449
@@ -2717,7 +3019,9 @@ entries:
   kind: repo
   author: elie222
   description: Auto-review adapter in the open-source Rakazo AI-teammate platform that asks Jev whether a bot tool call should auto-pass or be sent to the user for approval.
+  description_zh: 开源 AI 队友平台 Rakazo 中的自动审查适配器，询问 Jev 某个机器人工具调用应该自动放行，还是发给用户审批。
   jev: A Choice of pass or ask against a confidence threshold; anything unexpected or high risk defaults to ask.
+  jev_zh: 在 pass 和 ask 之间做一个 Choice，对照置信度阈值；任何意外或高风险的情况默认为 ask。
   image: https://raw.githubusercontent.com/elie222/rakazo/main/docs/readme-hero.png
   metrics:
     repo_stars: 2826
@@ -2733,7 +3037,9 @@ entries:
   kind: repo
   author: identities-ai
   description: Reference LangChain gate for the Ratify delegated-authority protocol where Jev proposes which tool an agent should call and Ratify then verifies the signed authority on the receiver side.
+  description_zh: Ratify 委托授权协议的 LangChain 参考关卡：Jev 提议 agent 应调用哪个工具，Ratify 再在接收端验证签名授权。
   jev: One Choice over the named tools via the documented HTTP API; the proposal never replaces cryptographic verification.
+  jev_zh: 通过文档中的 HTTP API 在具名工具上做一个 Choice；这个提议永远不会取代密码学验证。
   image: https://raw.githubusercontent.com/identities-ai/ratify-protocol/main/assets/ratify-protocol-logo.png
   metrics:
     repo_stars: 9
@@ -2750,6 +3056,7 @@ entries:
   kind: repo
   author: RelayPlane
   description: Local LLM cost proxy with an optional Jev complexity classifier that rates each request to inform model routing, enabled by one env var and capped at a 500 ms timeout.
+  description_zh: 本地 LLM 成本代理，带可选的 Jev 复杂度分类器，为每个请求评级以辅助模型路由，只需一个环境变量即可启用，超时上限 500 毫秒。
   image: https://raw.githubusercontent.com/RelayPlane/proxy/main/docs/dashboard.png
   metrics:
     repo_stars: 203
@@ -2765,6 +3072,7 @@ entries:
   kind: repo
   author: writeitai
   description: Open memory infrastructure for AI agents that tracks claims, current beliefs and their sources, with a System One port whose TypeSafe adapter runs typed evaluations on Jev.
+  description_zh: 面向 AI agent 的开放记忆基础设施，追踪论断、当前信念及其来源，带一个 System One 端口，其 TypeSafe 适配器在 Jev 上运行类型化评估。
   image: https://raw.githubusercontent.com/writeitai/remember-stack/main/website/public/docs/diagrams/three-planes.jpg
   metrics:
     repo_stars: 8
@@ -2781,7 +3089,9 @@ entries:
   kind: repo
   author: MiaoWuNYA
   description: Android AI chat client and SillyTavern-compatible app that uses Jev to judge each memory's relevance to the conversation instead of embedding search, and gives the main model a Jev judge tool for yes/no, choice and score questions.
+  description_zh: 兼容 SillyTavern 的安卓 AI 聊天客户端，用 Jev 判断每条记忆与对话的相关性来取代 embedding 搜索，并为主模型提供一个 Jev 评判工具，用于是/否、选择和打分问题。
   jev: Memories are judged in parallel batches and injected above 0.5 relevance; all Jev paths fall back silently when unavailable.
+  jev_zh: 记忆以并行批次评判，相关性高于 0.5 才注入；Jev 不可用时，所有 Jev 路径都会静默回退。
   metrics:
     stars: 19
   date: '2026-09-20'
@@ -2794,6 +3104,7 @@ entries:
   kind: repo
   author: riteshverma
   description: Open-source agent runtime and orchestration API where query routing, skill matching and planner fast paths can use Jev decisions, falling back to built-in regex guards when Jev is unkeyed, unreachable or unsure.
+  description_zh: 开源 agent 运行时和编排 API，查询路由、skill 匹配和规划器快速路径都可以使用 Jev 决策；当 Jev 没配 key、无法访问或拿不准时，回退到内置的正则防护。
   metrics:
     stars: 7
   date: '2026-02-10'
@@ -2806,6 +3117,7 @@ entries:
   kind: repo
   author: stefanrossmeier
   description: Experimental routing advisor in Safeplane, a local-first control plane for bounded AI-agent workflows with CLI and Telegram connectors, that asks Jev via OpenRouter Decisions which workflow an operator request should go to.
+  description_zh: 实验性路由顾问，通过 OpenRouter Decisions 询问 Jev 操作员的请求该交给哪个工作流；所属的 Safeplane 是面向有边界 AI agent 工作流的本地优先控制平面，带 CLI 和 Telegram 连接器。
   metrics:
     repo_stars: 5
   date: '2026-07-22'
@@ -2820,7 +3132,9 @@ entries:
   kind: repo
   author: maha0525
   description: Reflex-judgment layer in the SAIVerse AI-persona world that returns probabilities instead of prose, first used to rerank auto-recalled memories. It can target TypeSafe Jev, OpenRouter, a self-hosted localjev or a structured-output LLM.
+  description_zh: AI 人设世界 SAIVerse 中的反射判断层，返回概率而不是文字，最初用于对自动召回的记忆重排。它可以对接 TypeSafe Jev、OpenRouter、自托管的 localjev 或结构化输出 LLM。
   jev: Typed noul/choice/score questions through a provider-agnostic jev_compat protocol with per-persona model overrides.
+  jev_zh: 通过与提供方无关的 jev_compat 协议提出类型化的 noul/choice/score 问题，可按人设覆盖模型。
   metrics:
     repo_stars: 43
   date: '2025-06-07'
@@ -2835,7 +3149,9 @@ entries:
   kind: repo
   author: truespar
   description: Multi-tenant Rust mail server that gives AI agents their own inboxes and can use Jev as a message classifier to label inbound mail without changing the spam score.
+  description_zh: 多租户 Rust 邮件服务器，给 AI agent 分配独立收件箱，并可用 Jev 作为邮件分类器给收到的邮件打标签，不改变垃圾邮件评分。
   jev: 'Implements only a MessageClassifier: Choice and Noul labels with calibrated confidence, no generated replies.'
+  jev_zh: 只实现了 MessageClassifier：带校准置信度的 Choice 和 Noul 标签，不生成回复。
   image: https://repository-images.githubusercontent.com/1344239263/60e2f09e-0eb6-419c-9533-ef350c19bbab
   metrics:
     stars: 246
@@ -2851,7 +3167,9 @@ entries:
   kind: repo
   author: medy17
   description: 'Jev integration in SilkChat, a TanStack Start and Convex AI chat app, that picks which skills to enable on a conversation''s opening turn: web search, code execution, memory, math or image generation.'
+  description_zh: 基于 TanStack Start 和 Convex 的 AI 聊天应用 SilkChat 中的 Jev 集成，在对话第一轮挑选要启用的 skill：网页搜索、代码执行、记忆、数学或图像生成。
   jev: Per-skill probabilities via OpenRouter with a 0.85 threshold for each skill.
+  jev_zh: 通过 OpenRouter 给出每个 skill 的概率，每个 skill 的阈值为 0.85。
   metrics:
     repo_stars: 5
   date: '2026-02-11'
@@ -2867,6 +3185,7 @@ entries:
   kind: repo
   author: kitze
   description: Self-hosted, versioned skills library for AI agents served over MCP with scoped clients, where Jev can optionally recommend which of the skills a client may access fit the current task.
+  description_zh: 自托管、带版本管理的 AI agent skill 库，通过 MCP 向权限受限的客户端提供服务，Jev 可选地从客户端有权访问的 skill 中推荐适合当前任务的那些。
   metrics:
     stars: 223
   date: '2026-09-17'
@@ -2879,6 +3198,7 @@ entries:
   kind: repo
   author: Dicklesworthstone
   description: Rust CLI that ranks skills for the current session with a wide Choice, then confirms a shortlist with one Noul each (custom license with usage restrictions).
+  description_zh: Rust CLI，先用一次大范围 Choice 为当前会话的 skill 排序，再对入围名单逐项用一个 Noul 确认（自定义许可证，有使用限制）。
   metrics:
     stars: 109
   date: '2026-09-17'
@@ -2891,6 +3211,7 @@ entries:
   kind: repo
   author: its-panzer
   description: Local-first website and MCP server that turns a collection of agent instructions into a navigable skill tree, with Jev making a visible typed choice at each level to pick the path.
+  description_zh: 本地优先的网站兼 MCP 服务器，把一批 agent 指令转成可浏览的 skill 树，Jev 在每一层做一个可见的类型化选择来决定路径。
   image: https://raw.githubusercontent.com/its-panzer/skilltree/main/docs/skilltree-screenshot.png
   date: '2026-09-17'
   tags:
@@ -2898,11 +3219,14 @@ entries:
   - mcp
   - skill-routing
 - name: Slack agent pre-routing
+  name_zh: Slack agent 预路由
   url: https://x.com/johnyeo_/status/2100987661926252737
   kind: post
   author: johnyeo_
   description: Slack agent made 2x faster by first asking Jev to pick the best skill, tool and parameters from the prompt before the agent runs.
+  description_zh: 在 agent 运行前先让 Jev 根据提示词挑出最合适的 skill、工具和参数，让一个 Slack agent 提速 2 倍。
   jev: Choice over skills and tools plus parameter picks, before handing off to the LLM agent.
+  jev_zh: 在 skill 和工具上做 Choice 并挑选参数，然后再交给 LLM agent。
   image: https://pbs.twimg.com/amplify_video_thumb/2100986453845028864/img/YknQ8SR5kudv19m-.jpg
   metrics:
     likes: 166
@@ -2916,7 +3240,9 @@ entries:
   kind: repo
   author: zeeshan8281
   description: OpenAI-compatible proxy that routes each request to the cheapest backend meeting its latency SLO, with optional Jev 1.13 semantic features; a live run found Jev changed no routes and raised p95 from 77.93 ms to 490.38 ms.
+  description_zh: 兼容 OpenAI 接口的代理，把每个请求路由到满足其延迟 SLO 的最便宜后端，可选启用 Jev 1.13 的语义特征；一次实测发现 Jev 没有改变任何路由，却把 p95 从 77.93 毫秒拉高到 490.38 毫秒。
   jev: Typed semantic features via the OpenRouter Decisions API, falling back to local features on missing key, timeout or invalid response.
+  jev_zh: 通过 OpenRouter Decisions API 获取类型化语义特征，缺少 key、超时或响应无效时回退到本地特征。
   metrics:
     stars: 8
   date: '2026-09-19'
@@ -2927,11 +3253,14 @@ entries:
   - latency
   - benchmark
 - name: Smriti with Jev
+  name_zh: Smriti 接入 Jev
   url: https://x.com/UnCorped/status/2101707226666893553
   kind: article
   author: UnCorped
   description: 'Case study of adding Jev to Smriti, a local SQLite memory layer for agents: Jev pulled more evidence into context but some answers got worse, improving only modestly after relabeling.'
+  description_zh: 给面向 agent 的本地 SQLite 记忆层 Smriti 加上 Jev 的案例研究：Jev 把更多证据拉进了上下文，但有些答案反而变差，重新标注后也只有小幅改善。
   jev: Labels retrieved memory evidence before it is passed to the answering model.
+  jev_zh: 在检索到的记忆证据传给回答模型之前给它们打标签。
   image: https://pbs.twimg.com/media/HSrBRezaEAEkcmz.jpg
   metrics:
     likes: 17
@@ -2949,7 +3278,9 @@ entries:
   kind: repo
   author: mirasoth
   description: Goal-driven orchestration framework for long-running agents that classifies intake intent and audits goal completion with typed decisions, plus a benchmark against hosted Jev, Laya or NanoJev servers.
+  description_zh: 面向长时间运行 agent 的目标驱动编排框架，用类型化决策对输入意图分类并审计目标完成情况，另有一个针对托管 Jev、Laya 或 NanoJev 服务器的基准测试。
   jev: A 4-way intake Choice with language detection and a coverage-audit decision via langchain-typesafe; the benchmark scores raw /v1/systemone responses.
+  jev_zh: 通过 langchain-typesafe 做一个带语言检测、有 4 个选项的输入 Choice 和一个覆盖度审计决策；基准测试直接对 /v1/systemone 的原始响应打分。
   image: https://raw.githubusercontent.com/mirasoth/soothe/main/docs/assets/soothe-logo.png
   metrics:
     repo_stars: 10
@@ -2966,6 +3297,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Budget brake for agent runs that reads the budget, spend so far and remaining plan, then decides continue, downgrade the model or stop, with a value-for-cost score and over-budget checks.
+  description_zh: agent 运行的预算刹车：读取预算、已花费金额和剩余计划，然后决定继续、降级模型还是停止，并给出性价比分数和超预算检查。
   date: '2026-09-17'
   links:
     app: https://spendbrake.vercel.app
@@ -2978,6 +3310,7 @@ entries:
   kind: repo
   author: machina-sports
   description: Opt-in evidence verifier in sportsclaw, a CLI and bot scaffold connecting LLMs to live sports data, that uses a typed JevDecisionClient for the final evidence check so high-confidence support skips the generative verification pass.
+  description_zh: 可选启用的证据验证器，属于把 LLM 接入实时体育数据的 CLI 和机器人脚手架 sportsclaw，用类型化的 JevDecisionClient 做最后的证据检查，高置信度支持时跳过生成式验证环节。
   metrics:
     repo_stars: 15
   date: '2026-02-22'
@@ -2992,7 +3325,9 @@ entries:
   kind: repo
   author: SREGym
   description: Opt-in Codex MCP tools for an SRE agent benchmark where Jev picks the most informative read-only diagnostic test and reviews Kubernetes evidence before a diagnosis or fix is submitted.
+  description_zh: 为 SRE agent 基准测试提供的可选 Codex MCP 工具：在提交诊断或修复前，由 Jev 挑选信息量最大的只读诊断测试，并审查 Kubernetes 证据。
   jev: Choice over proposed diagnostic tests (or "revise_tests"); Noul reviews for causal support, active failure and durable repair.
+  jev_zh: 在提议的诊断测试（或“revise_tests”）上做 Choice；Noul 审查是否有因果支撑、故障是否仍在发生、修复是否持久。
   image: https://raw.githubusercontent.com/SREGym/SREGym/main/assets/overview.png
   metrics:
     repo_stars: 290
@@ -3008,6 +3343,7 @@ entries:
   kind: post
   author: StarchildOnX
   description: LLM router in the Starchild app that classifies prompts in real time (avg 140ms), reported as a 20x cost decrease and 6x speedup for prompt classification.
+  description_zh: Starchild 应用中的 LLM 路由器，实时对提示词分类（平均 140 毫秒），据称提示词分类的成本降低 20 倍、速度提升 6 倍。
   image: https://pbs.twimg.com/amplify_video_thumb/2100926778047148032/img/RUW0O6LMX9L7TRzk.jpg
   metrics:
     likes: 29
@@ -3021,7 +3357,9 @@ entries:
   kind: repo
   author: divaltor
   description: Telegram bot that asks Jev, for each group message, whether to reply with text, react with an emoji, or stay silent, and which emoji fits the message.
+  description_zh: Telegram 机器人，对每条群消息询问 Jev：用文字回复、用表情回应还是保持沉默，以及哪个表情合适。
   jev: 'Two Choice questions via OpenRouter (typesafe/jev-1.13): action over text/reaction/silence and emoji over a labeled set of Telegram reactions.'
+  jev_zh: 通过 OpenRouter（typesafe/jev-1.13）问两个 Choice：在文字/表情/沉默中选动作，在一组带标签的 Telegram 表情回应中选表情。
   metrics:
     repo_stars: 10
   date: '2024-01-05'
@@ -3037,6 +3375,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Routes a task to a research, code, browser, support or writer agent with a confidence value, shown on a visual swarm map.
+  description_zh: 把任务路由给研究、编程、浏览器、客服或写作 agent，并给出置信度，在可视化的集群地图上展示。
   date: '2026-09-17'
   links:
     app: https://swarmrouter.vercel.app
@@ -3048,6 +3387,7 @@ entries:
   kind: repo
   author: aniruddh-krovvidi
   description: Stdlib-Python guardrail and model router for LLM gateways built on Jev, shipped with an independent evaluation of its accuracy, calibration and latency.
+  description_zh: 基于 Jev、只用 Python 标准库的 LLM 网关护栏和模型路由器，附带一份关于其准确率、校准和延迟的独立评测。
   date: '2026-09-17'
   tags:
   - model-routing
@@ -3058,6 +3398,7 @@ entries:
   kind: repo
   author: getsynkora
   description: 'Built-in Jev evaluation tools for agents on the self-hosted Synkora platform: generic state-and-question calls, named profiles such as recruiting, a report formatter and a playground.'
+  description_zh: 自托管 Synkora 平台上面向 agent 的内置 Jev 评估工具：通用的 state 加问题调用、招聘等具名配置、报告格式化器和演练场。
   image: https://raw.githubusercontent.com/getsynkora/synkora-ai/master/web/public/images/screenshot-hero.png
   metrics:
     repo_stars: 35
@@ -3073,6 +3414,7 @@ entries:
   kind: repo
   author: HarnessRouter
   description: Python controller that turns a System One model into an agent loop, compiling an environment's finite action space into typed Jev questions, gating each step by confidence, and recording the full trace.
+  description_zh: Python 控制器，把 System One 模型变成 agent 循环：把环境的有限动作空间编译成类型化 Jev 问题，按置信度把关每一步，并记录完整轨迹。
   metrics:
     stars: 95
   date: '2026-09-19'
@@ -3086,6 +3428,7 @@ entries:
   kind: repo
   author: clduab11
   description: Opt-in Jev layer in a self-hosted LiteLLM gateway reference build that picks model tiers and referees replies as answered, refused, or non-answer, moving to the next model after a confident decline.
+  description_zh: 自托管 LiteLLM 网关参考构建中可选启用的 Jev 层，负责挑选模型档位，并把回复裁定为已回答、拒绝或未作答，在高置信度判定拒答后换下一个模型。
   image: https://raw.githubusercontent.com/clduab11/the-array/main/docs/images/the-array-hero.jpg
   metrics:
     repo_stars: 1
@@ -3103,7 +3446,9 @@ entries:
   kind: repo
   author: tidepool-heavy-industries
   description: Agent harness built on a live Haskell notebook where agents write procedures that mix commands, delegation and Jev judgments, then install them as tools or hooks; 322 questions returned in 351 ms.
+  description_zh: 构建在实时 Haskell notebook 上的 agent harness，agent 编写混合命令、委派和 Jev 判断的过程，再把它们安装为工具或 hook；322 个问题在 351 毫秒内返回。
   jev: Reasoning LLMs design the procedure while Jev answers batched typed questions inside compiled code, such as whether evidence is relevant or which follow-up fits.
+  jev_zh: 由推理型 LLM 设计过程，Jev 在编译后的代码里回答批量类型化问题，例如证据是否相关、哪个后续动作合适。
   metrics:
     stars: 12
   date: '2026-02-17'
@@ -3116,7 +3461,9 @@ entries:
   kind: repo
   author: iamvatsalpatel
   description: Model router for TypeScript and Python that sends each LLM request to the cheapest capable tier and escalates on multi-step reasoning, difficulty, stakes, or safety, with policy in plain YAML.
+  description_zh: 面向 TypeScript 和 Python 的模型路由器，把每个 LLM 请求发给能胜任的最便宜档位，遇到多步推理、高难度、高风险或安全问题时升级，策略用纯 YAML 编写。
   jev: Routing judgments in about 180 ms at four cents per thousand routes; every decision prints its reason.
+  jev_zh: 路由判断约 180 毫秒，每千次路由四美分；每个决策都会打印理由。
   image: https://raw.githubusercontent.com/iamvatsalpatel/tiershift/main/bench/chart-light.svg
   metrics:
     stars: 3
@@ -3129,6 +3476,7 @@ entries:
   kind: repo
   author: jon-devlapaz
   description: Agent Skills router that keeps skill libraries offline and loads only the needed ones on demand through a two-stage Jev gate (a Noul on whether a skill is needed, then a Choice of which), avoiding per-turn prompt bloat.
+  description_zh: Agent Skills 路由器，skill 库平时保持离线，只通过两阶段 Jev 关卡（先用一个 Noul 判断是否需要 skill，再用一个 Choice 选哪个）按需加载需要的 skill，避免每轮提示词膨胀。
   metrics:
     stars: 4
   date: '2026-09-21'
@@ -3141,7 +3489,9 @@ entries:
   kind: repo
   author: tinyhumansai
   description: Rust crate that lets the TinyHiveMind multi-agent coordination library route handoffs with Jev, picking the best-placed teammate and also routing to any other option above 20%.
+  description_zh: Rust crate，让多 agent 协调库 TinyHiveMind 用 Jev 路由交接，选出最合适的队友，同时也路由给其他概率高于 20% 的选项。
   jev: Batched Choice and Noul questions converted to fixed-point routing evaluations; Nouls stay audit signals and never select recipients.
+  jev_zh: 批量的 Choice 和 Noul 问题被转换成定点数路由评估；Noul 只作为审计信号，从不用于选择接收方。
   image: https://raw.githubusercontent.com/tinyhumansai/tinyhivemind/main/docs/hero.png
   metrics:
     repo_stars: 11
@@ -3157,6 +3507,7 @@ entries:
   kind: repo
   author: maker-KK
   description: Task-routing experiment that classifies a request with Jev and recommends a local rule, a specialist skill or a foundation model, combining skill apply/exclude conditions with local environment checks.
+  description_zh: 任务路由实验，用 Jev 给请求分类，推荐本地规则、专业 skill 或基础模型，把 skill 的适用/排除条件与本地环境检查结合起来。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -3168,6 +3519,7 @@ entries:
   kind: repo
   author: tonone-ai
   description: Shared decision layer for a 426-skill AI company toolkit that answers yes/no, one-of-N and rubric questions with Jev, or a local TF-IDF scorer when no key is set, and gates skill manifests.
+  description_zh: 一个含 426 个 skill 的 AI 公司工具包的共享决策层，用 Jev 回答是/否、N 选一 和评分标准问题，没有 key 时改用本地 TF-IDF 打分器，并把关 skill 清单。
   metrics:
     repo_stars: 73
   date: '2026-03-16'
@@ -3182,7 +3534,9 @@ entries:
   kind: repo
   author: hemanth
   description: Zero-dependency tool selection and schema pruning for agents that cuts MCP tool schemas to the relevant few before an LLM call, running offline via TurboQuant or on Jev.
+  description_zh: 零依赖的 agent 工具选择和 schema 裁剪工具，在 LLM 调用前把 MCP 工具 schema 砍到少数相关的几个，可通过 TurboQuant 离线运行，也可在 Jev 上运行。
   jev: Jev engine reported 100.0% distractor Top-1 on BFCL v3 at 189 ms; confident picks can dispatch directly without the LLM.
+  jev_zh: Jev 引擎在 BFCL v3 上报告干扰项 Top-1 为 100.0%，耗时 189 毫秒；高置信度的选择可以不经 LLM 直接分派。
   metrics:
     stars: 5
   date: '2026-09-17'
@@ -3195,6 +3549,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Gate for planned agent tool or MCP calls that returns allow, ask a human or deny, with a five-level risk score and checks for data exfiltration, irreversibility and policy violations.
+  description_zh: 针对 agent 计划中的工具或 MCP 调用的关卡，返回允许、询问人工或拒绝，附五级风险评分，并检查数据外泄、不可逆性和违反策略的情况。
   metrics:
     stars: 2
   date: '2026-09-17'
@@ -3209,7 +3564,9 @@ entries:
   kind: repo
   author: vbcherepanov
   description: Local persistent memory for coding agents that can check retrieved facts for contradictions with Jev; median pass time fell from 3.1 s to 1.9 s with accuracy unchanged, costing $0.038 for 78 questions.
+  description_zh: 面向编程 agent 的本地持久记忆，可以用 Jev 检查检索到的事实之间是否矛盾；中位通过时间从 3.1 秒降到 1.9 秒，准确率不变，78 个问题花费 $0.038。
   jev: Every (supporting, opposing) fact pair becomes one Noul, all in a single request.
+  jev_zh: 每一对（支持，反对）事实变成一个 Noul，全部放在一次请求里。
   image: https://repository-images.githubusercontent.com/1159027243/9e951761-4a30-40e2-b32a-297ac9223ea7
   metrics:
     stars: 68
@@ -3221,10 +3578,12 @@ entries:
   - mcp
   - contradictions
 - name: Treg + Jev automation
+  name_zh: Treg + Jev 自动化
   url: https://www.youtube.com/watch?v=o4Vi5uBZYH0
   kind: video
   author: AI Jason
   description: Demo of pairing Jev with Treg, an OpenRouter-style registry of agent tools, to build automation workflows where Jev makes the quick decisions.
+  description_zh: 演示把 Jev 与 OpenRouter 风格的 agent 工具注册表 Treg 搭配，构建由 Jev 负责快速决策的自动化工作流。
   metrics:
     views: 61018
     likes: 856
@@ -3241,6 +3600,7 @@ entries:
   kind: repo
   author: anasbekheit
   description: Rust MCP server with one evaluate tool that lets Claude Code, Codex, OpenCode, Antigravity or Cursor send a state and typed questions to Jev and get noul, choice or score answers with probabilities.
+  description_zh: Rust MCP 服务器，只有一个 evaluate 工具，让 Claude Code、Codex、OpenCode、Antigravity 或 Cursor 把 state 和类型化问题发给 Jev，拿回带概率的 noul、choice 或 score 答案。
   image: https://external-preview.redd.it/54rMCBEfrJD5BgtjOptiPYcIohzh2G05VYK2L5eTwPE.png?auto=webp&s=24b80f78ba23e9b7f251c513be3bba289ec27df7
   metrics:
     stars: 2
@@ -3256,6 +3616,7 @@ entries:
   kind: repo
   author: itsmostafa
   description: Go MCP server that exposes one evaluate tool so Claude Code, Claude Desktop, Codex and pi can send state plus Choice, Score or Noul questions to Jev and branch on the probabilities.
+  description_zh: Go MCP 服务器，暴露一个 evaluate 工具，让 Claude Code、Claude Desktop、Codex 和 pi 把 state 连同 Choice、Score 或 Noul 问题发给 Jev，并根据概率分支。
   image: https://external-preview.redd.it/foplw_1lcxzLSY41H2Wc8jTRi55au8rxPSdCeT9nTBw.png?auto=webp&s=c9f26ce3c9d2b86f15dc4763a0a17436e965e121
   metrics:
     stars: 229
@@ -3271,6 +3632,7 @@ entries:
   kind: repo
   author: bestagentkits
   description: MCP server built on @typesafe-ai/sdk that exposes Choice, Score and Noul judgments and model listing as agent-callable tools, bundled with the official TypeSafe agent skill.
+  description_zh: 基于 @typesafe-ai/sdk 构建的 MCP 服务器，把 Choice、Score 和 Noul 判断以及模型列表暴露为 agent 可调用的工具，并附带官方 TypeSafe agent skill。
   date: '2026-09-17'
   tags:
   - mcp
@@ -3280,6 +3642,7 @@ entries:
   kind: repo
   author: DECRUX9812
   description: Opt-in Hermes Agent plugin that asks Jev which one installed skill fits a request before the model call and appends a single hint line, about $0.001 per routed turn, injecting nothing when none fits.
+  description_zh: 可选启用的 Hermes Agent 插件，在模型调用前询问 Jev 哪一个已安装的 skill 适合当前请求，并追加一行提示，每个路由轮次约 $0.001；没有合适的 skill 时什么也不注入。
   metrics:
     stars: 11
   date: '2026-09-16'
@@ -3291,6 +3654,7 @@ entries:
   kind: repo
   author: genlayerlabs
   description: Decision-model routing in unhardcoded-engine, a pure-Lua policy algebra for LLM provider selection, that partitions candidates by protocol so Jev-style decision requests only route and fail over among decision models.
+  description_zh: 纯 Lua 编写的 LLM 提供方选择策略代数 unhardcoded-engine 中的决策模型路由，按协议划分候选，让 Jev 风格的决策请求只在决策模型之间路由和故障切换。
   metrics:
     repo_stars: 6
   date: '2026-05-19'
@@ -3305,6 +3669,7 @@ entries:
   kind: repo
   author: cis2042
   description: Decision gate in an agent-operated product design harness that routes tasks and evaluates product decisions with Jev, returning continue, verify or stop-and-reframe verdicts plus task boundaries.
+  description_zh: 由 agent 操作的产品设计 harness 中的决策关卡，用 Jev 路由任务并评估产品决策，返回继续、验证或停下重新框定问题的结论，以及任务边界。
   image: https://raw.githubusercontent.com/cis2042/product-design-harness/main/assets/product-design-harness-cover.svg
   metrics:
     repo_stars: 17
@@ -3319,7 +3684,9 @@ entries:
   kind: repo
   author: lioensky
   description: VCPChat, the desktop terminal for the VCP AI-native engine, adds a global Jev service so its modules can make typed decisions through TypeSafe or OpenRouter.
+  description_zh: VCP AI 原生引擎的桌面终端 VCPChat 新增全局 Jev 服务，让各模块可以通过 TypeSafe 或 OpenRouter 做类型化决策。
   jev: Provider defaults for typesafe (jev-latest) and openrouter (~typesafe/jev-latest) over the shared jevClient.
+  jev_zh: 基于共享的 jevClient，为 typesafe（jev-latest）和 openrouter（~typesafe/jev-latest）设置了提供方默认值。
   image: https://raw.githubusercontent.com/lioensky/VCPChat/main/assets/E1-Vchat%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg
   metrics:
     repo_stars: 778
@@ -3333,7 +3700,9 @@ entries:
   kind: repo
   author: lioensky
   description: The VCP agent infrastructure adds Jev modules for context pruning, fold filtering, reranking and a semantic tool-call experiment, with multi-key rotation over TypeSafe or OpenRouter.
+  description_zh: VCP agent 基础设施新增 Jev 模块，用于上下文裁剪、折叠过滤、重排和一个语义工具调用实验，支持在 TypeSafe 或 OpenRouter 上轮换多个 key。
   jev: jevClient speaks Noul, Choice and Score with retry and key rotation; separate modules apply it to context management and tool selection.
+  jev_zh: jevClient 支持 Noul、Choice 和 Score，带重试和 key 轮换；各独立模块把它用于上下文管理和工具选择。
   image: https://raw.githubusercontent.com/lioensky/VCPToolBox/main/docs/image/VCPLogo.png
   metrics:
     repo_stars: 2323
@@ -3349,6 +3718,7 @@ entries:
   kind: repo
   author: virtual-context
   description: Virtual context memory layer for LLM agents that adds per-seam Jev judgment modes for reranking, intent and temporal checks; on 140 LongMemEval questions Jev cut the mean first-gold rank from 2.33 to 1.14.
+  description_zh: 面向 LLM agent 的虚拟上下文记忆层，在各个接缝处增加 Jev 判断模式，用于重排、意图和时间检查；在 140 道 LongMemEval 题上，Jev 把首个正确答案的平均排名从 2.33 降到 1.14。
   image: https://raw.githubusercontent.com/virtual-context/virtual-context/main/assets/dashboard.png
   metrics:
     repo_stars: 65
@@ -3364,6 +3734,7 @@ entries:
   kind: repo
   author: Huskyauto
   description: Bounded, advisory-only Jev client in the VisionClaw self-hosted multi-tenant agent workspace, exposed as an agent tool and used to score deliverables for evidence support, requirement coverage and need for human review.
+  description_zh: 自托管多租户 agent 工作空间 VisionClaw 中有边界、仅作参考的 Jev 客户端，作为 agent 工具暴露，用于评估交付物的证据支撑、需求覆盖以及是否需要人工复核。
   image: https://raw.githubusercontent.com/Huskyauto/VisionClaw-Agent-Public-Release/main/docs/assets/demo-poster.jpg
   metrics:
     repo_stars: 26
@@ -3379,7 +3750,9 @@ entries:
   kind: repo
   author: shitianfang
   description: Fail-open gate for long-running agents on Workers, Durable Objects and Node that asks Jev, before a sleeping agent's LLM is resumed by a timer or event, whether the wakeup matters given the agent's own sleep note.
+  description_zh: 失败放行的关卡，适用于运行在 Workers、Durable Objects 和 Node 上的长时间运行 agent：在休眠 agent 的 LLM 被定时器或事件唤醒前，结合 agent 自己的休眠备注询问 Jev 这次唤醒是否重要。
   jev: One Choice (wake, not yet, unrelated); code skips the wakeup only when the wake probability is below 0.2.
+  jev_zh: 一个 Choice（wake、not yet、unrelated）；只有唤醒概率低于 0.2 时，代码才跳过这次唤醒。
   date: '2026-09-18'
   tags:
   - long-running-agents

@@ -1,5 +1,7 @@
 # 📚 Learn: Techniques and Analysis
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)
+
 Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 102 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#techniques-and-analysis)

@@ -1,14 +1,19 @@
 title: Writing, Media, and Creative
+title_zh: 写作、媒体与创意
 emoji: ✍️
 layout: gallery
 description: Writing feedback, generative UI, music, art, and social media tools.
+description_zh: 写作反馈、生成式 UI、音乐、艺术和社交媒体工具。
 entries:
 - name: AI influencer script checker
+  name_zh: AI 网红脚本检查器
   url: https://x.com/gabcoin_/status/2101831051597259103
   kind: post
   author: gabcoin_
   description: Build-in-public pipeline for an AI UGC influencer that uses Jev via OpenRouter to classify video scripts against custom rules, catch errors before generation and score hook virality, at under $0.0001 per call.
+  description_zh: 一个 AI UGC 网红的公开构建流水线，通过 OpenRouter 用 Jev 按自定义规则给视频脚本分类，在生成前发现错误并给开头钩子的传播力打分，每次调用不到 $0.0001。
   jev: Classifies scripts against the author's rules and scores hooks on a virality scale before any video is generated.
+  jev_zh: 在生成任何视频之前，按作者的规则给脚本分类，并按传播力量表给钩子打分。
   image: https://pbs.twimg.com/media/HSsy6xOW0AAhV11.jpg?name=orig
   metrics:
     likes: 92
@@ -19,10 +24,12 @@ entries:
   - social-media
   - ugc
 - name: AI News Aggregator Jev shadow
+  name_zh: AI News Aggregator 的 Jev 影子实验
   url: https://github.com/flyryan/ai-news-aggregator/tree/main/shadow
   kind: repo
   author: flyryan
   description: Shadow experiment in a daily multi-agent AI news briefing pipeline where Jev judges each frozen article's relevance with a Choice and whether it is a critical story with a Noul, measured against the incumbent LLM curator.
+  description_zh: 每日多 agent AI 新闻简报流水线中的影子实验：Jev 用一个 Choice 判断每篇冻结文章的相关性，用一个 Noul 判断它是否属于重要新闻，并与现有的 LLM 编辑对比。
   image: https://raw.githubusercontent.com/flyryan/ai-news-aggregator/main/assets/pipeline-banner.webp
   metrics:
     repo_stars: 27
@@ -35,11 +42,14 @@ entries:
   - curation
   - shadow-eval
 - name: AI video editing skill
+  name_zh: AI 视频剪辑 skill
   url: https://www.youtube.com/watch?v=ZlICPWwgmmg
   kind: video
   author: Albert Olgaard
   description: Claude/Codex skill in plain Python that edits talking-head videos end to end, transcribing, planning scenes, adding zooms and captions and blurring secrets, with Jev making fast decisions.
+  description_zh: 纯 Python 写的 Claude/Codex skill，端到端剪辑口播视频：转写、规划场景、添加缩放和字幕、模糊敏感信息，快速决策交给 Jev。
   jev: Makes quick decisions over the transcript to plan scenes and speed up the editing pipeline.
+  jev_zh: 基于转写稿快速做决策，用来规划场景、加快剪辑流水线。
   metrics:
     views: 15655
     likes: 158
@@ -48,10 +58,12 @@ entries:
   - video-editing
   - skill
 - name: AI-cut Apple keynote video
+  name_zh: AI 剪辑的苹果发布会视频
   url: https://x.com/yz_chow/status/2102053854116483325
   kind: post
   author: yz_chow
   description: Chinese workflow combining Codex, Jev and CapCut that turned a 2-hour Apple keynote into an edited, voiced video with matched shots and music in 30 minutes.
+  description_zh: 一套结合 Codex、Jev 和 CapCut 的中文工作流，30 分钟就把 2 小时的苹果发布会剪成一条配好音、镜头和音乐都对得上的视频。
   image: https://pbs.twimg.com/amplify_video_thumb/2102053381183582208/img/00d00ZONouAnMBb6.jpg
   metrics:
     views: 50
@@ -65,7 +77,9 @@ entries:
   kind: repo
   author: zhaobenny
   description: Red-Discordbot cog that reacts to Discord messages with a fitting server emoji; with a TypeSafe or OpenRouter decisions endpoint it asks Jev to choose the emoji instead of prompting a chat model.
+  description_zh: Red-Discordbot 的 cog，用合适的服务器表情回应 Discord 消息；配上 TypeSafe 或 OpenRouter 的 decisions 端点后，会让 Jev 来选表情，而不是去提示聊天模型。
   jev: One Choice over the configured server and global emojis for the message content.
+  jev_zh: 根据消息内容，在配置好的服务器表情和全局表情中做一个 Choice。
   metrics:
     repo_stars: 31
   date: '2020-11-09'
@@ -76,11 +90,14 @@ entries:
   - bot
   - reactions
 - name: AITuber OnAir comment intelligence
+  name_zh: AITuber OnAir 评论智能
   url: https://github.com/shinshin86/aituber-onair/tree/main/packages/comment-intelligence/src/jev
   kind: repo
   author: shinshin86
   description: Optional Jev provider for an AI VTuber toolkit that triages live viewer comments by whether they fit the stream topic, ask the streamer something, or were already answered.
+  description_zh: AI VTuber 工具包的可选 Jev provider，对直播观众评论做分诊：是否切合直播主题、是否在向主播提问、是否已经回答过。
   jev: Three yes/no/uncertain Choice questions per comment, via the TypeSafe API or OpenRouter.
+  jev_zh: 每条评论三个“是/否/不确定”的 Choice 问题，通过 TypeSafe API 或 OpenRouter 调用。
   image: https://raw.githubusercontent.com/shinshin86/aituber-onair/main/images/aituber-onair-toolkit.png
   metrics:
     repo_stars: 210
@@ -94,6 +111,7 @@ entries:
   kind: repo
   author: dglazkov
   description: Design-mock tool that turns a text prompt into a clickable app-like mock styled by your DESIGN.md, where Jev chooses the information architecture and anatomy, Gemini writes the copy and code assembles A2UI-style screens.
+  description_zh: 设计样稿工具，把一段文字提示变成可点击、类似真实应用、按你的 DESIGN.md 设定风格的样稿：Jev 决定信息架构和页面结构，Gemini 写文案，代码拼装出 A2UI 风格的界面。
   metrics:
     stars: 1
   date: '2026-09-19'
@@ -102,11 +120,14 @@ entries:
   - a2ui
   - design
 - name: Archive Movie Browser poster matching
+  name_zh: Archive Movie Browser 海报匹配
   url: https://github.com/amponce/archive-movie-browser
   kind: repo
   author: amponce
   description: Movie browser for Internet Archive films that uses Jev to pick the right TMDB poster among candidates; on 80 hard cases it got 67 right with 0 wrong posters versus 43 right and 5 wrong for heuristics.
+  description_zh: 浏览 Internet Archive 电影的应用，用 Jev 从候选中挑出正确的 TMDB 海报；在 80 个疑难案例上，它答对 67 个、零错误海报，启发式方法则是答对 43 个、错 5 个。
   jev: One Choice over TMDB candidates; below 0.7 confidence the app shows a generated cover. 750 uploads cost about 3 cents.
+  jev_zh: 在 TMDB 候选中做一个 Choice；置信度低于 0.7 时应用显示生成的封面。750 个上传约花 3 美分。
   image: https://github.com/user-attachments/assets/cfe7ca9c-537c-4db3-9bb2-aebbffa3b083
   metrics:
     stars: 70
@@ -118,10 +139,12 @@ entries:
   - matching
   - posters
 - name: AstrBot sticker stealer
+  name_zh: AstrBot 偷表情包插件
   url: https://github.com/nagatoquin33/astrbot_plugin_stealer
   kind: repo
   author: nagatoquin33
   description: AstrBot chat plugin that collects group-chat stickers, classifies them with a vision model, and can let Jev pick the sticker to send from the top 10 candidates based on recent conversation.
+  description_zh: AstrBot 聊天插件，收集群聊里的表情包，用视觉模型分类，还可以让 Jev 根据最近的对话从前 10 个候选中挑出要发的表情包。
   metrics:
     stars: 71
   date: '2025-11-27'
@@ -130,10 +153,12 @@ entries:
   - stickers
   - memes
 - name: Automated survival video pipeline
+  name_zh: 自动化生存视频流水线
   url: https://x.com/ai_xiaomu/status/2101619124812357850
   kind: post
   author: ai_xiaomu
   description: Video-generation workflow where GPT-6 designs the world, Jev makes the survival decisions, and MiniMax H3 renders each decision into video frames.
+  description_zh: 视频生成工作流：GPT-6 设计世界，Jev 做生存决策，MiniMax H3 把每个决策渲染成视频画面。
   image: https://pbs.twimg.com/amplify_video_thumb/2101603811089653760/img/76aRIVVoQZOS3F1F.jpg
   metrics:
     likes: 481
@@ -147,7 +172,9 @@ entries:
   kind: repo
   author: elpumberto
   description: Chrome extension that labels X posts as bait, flame or signal, profiles an X account as automated, scam, maker or pro, and tags Hacker News comments as insight, snark or tangent.
+  description_zh: Chrome 扩展，把 X 帖子标为诱饵、引战或有料，把 X 账号归为自动化、诈骗、创作者或专业人士，并把 Hacker News 评论标为洞见、抬杠或跑题。
   jev: One call per item with nine yes/no questions per post or comment (seven for a profile); code combines them and stays quiet when unsure.
+  jev_zh: 每个条目调用一次，每条帖子或评论九个是非题（账号画像七个）；由代码组合结果，拿不准时不作标注。
   metrics:
     stars: 2
   date: '2026-09-17'
@@ -160,6 +187,7 @@ entries:
   kind: repo
   author: blockmatic
   description: API-first agentic TypeScript starter whose command bar composes generative UI with json-render's composeSpec and Jev via Vercel AI Gateway, selecting allowlisted elements.
+  description_zh: API 优先的 agent 化 TypeScript 起步模板，其命令栏借助 json-render 的 composeSpec 和经 Vercel AI Gateway 调用的 Jev 组合生成式 UI，只从白名单里挑选元素。
   metrics:
     repo_stars: 89
   date: '2020-04-28'
@@ -174,17 +202,21 @@ entries:
   kind: repo
   author: affirmitv
   description: Picks live-stream encoder settings (hold, step down, step up, drop to 720p) from telemetry and venue history with Jev inside a deterministic safety envelope, in 300 ms for $0.00005 per decision.
+  description_zh: 根据遥测数据和场馆历史，由 Jev 在确定性的安全边界内挑选直播编码器设置（保持、降一档、升一档、降到 720p），每次决策 300 毫秒、$0.00005。
   jev: Choice questions over uplink, RTT, loss, thermal and battery state plus aggregated priors, asked on every tick.
+  jev_zh: 每个 tick 都针对上行带宽、RTT、丢包、发热和电池状态以及汇总的先验提 Choice 问题。
   date: '2026-09-18'
   tags:
   - live-streaming
   - bitrate
   - edge
 - name: Bluesky emotion feed
+  name_zh: Bluesky 情绪信息流
   url: https://x.com/amagitakayosi/status/2100820581444980736
   kind: post
   author: amagitakayosi
   description: Live Bluesky feed with real-time emotion detection on each post and avatars matched to each user's profile.
+  description_zh: 实时的 Bluesky 信息流，对每条帖子做实时情绪识别，并为每位用户配上与其个人资料相匹配的头像。
   image: https://pbs.twimg.com/amplify_video_thumb/2100820470438481921/img/ZI7uuy-zv2Gm2Q3A.jpg
   metrics:
     likes: 17
@@ -199,7 +231,9 @@ entries:
   kind: repo
   author: dani1005
   description: Visualizer that sends every ~90-word passage of a novel to Jev with ten parallel questions (nine emotions plus intensity) and draws the book's emotional weather as an aurora strip you can save as a poster.
+  description_zh: 可视化工具，把小说每段约 90 词的文字发给 Jev，并行问十个问题（九种情绪外加强度），把整本书的情绪天气画成一条极光带，可以保存成海报。
   jev: Ten Score questions per passage, 0-3 per emotion; Jev never sees pixels or writes prose.
+  jev_zh: 每段十个 Score 问题，每种情绪 0-3 分；Jev 从不看像素，也不写文字。
   image: https://raw.githubusercontent.com/dani1005/book-aurora/main/examples/frankenstein-screen.png
   metrics:
     stars: 5
@@ -213,6 +247,7 @@ entries:
   kind: post
   author: bethanymarz
   description: Interactive page where you type a word and Jev ranks which colors it most likely evokes, and the cursor becomes a magnet that pulls colored bits by that ranking.
+  description_zh: 交互页面：输入一个词，Jev 给它最可能让人联想到的颜色排序，光标随即变成磁铁，按这个排序吸引彩色小方块。
   image: https://pbs.twimg.com/amplify_video_thumb/2102242647997906945/img/e9xhAv4-s41LHW66.jpg
   metrics:
     likes: 7
@@ -230,6 +265,7 @@ entries:
   kind: repo
   author: TypeSafeAI
   description: Writing checker that runs separate named Jev checks for hedging, em dash overuse, clarity, filler phrases, tone, passive voice, and actionability, each with its own verdict, confidence, and supporting sentence.
+  description_zh: 写作检查工具，分别运行多个具名的 Jev 检查：含糊其辞、破折号滥用、清晰度、填充短语、语气、被动语态和可执行性，每项都有自己的结论、置信度和佐证句。
   image: https://judge.jev.works/opengraph-image
   metrics:
     stars: 2
@@ -241,10 +277,12 @@ entries:
   - writing
   - feedback
 - name: Coaching and anti-slop checks
+  name_zh: 辅导与反 AI 水文检查
   url: https://x.com/krispuckett/status/2101006617223508022
   kind: post
   author: krispuckett
   description: 'Two quick experiments with Jev through Vercel: in-session coaching support, and a detector that finds and fixes AI slop in writing.'
+  description_zh: 通过 Vercel 调用 Jev 的两个小实验：会话中的辅导支持，以及一个找出并修正文章里 AI 水文的检测器。
   image: https://pbs.twimg.com/amplify_video_thumb/2101006446913888256/img/iX43by5-9fpjefMu.jpg
   metrics:
     likes: 20
@@ -255,10 +293,12 @@ entries:
   - slop
   - vercel
 - name: Colour understanding experiment
+  name_zh: 颜色理解实验
   url: https://x.com/mattdesl/status/2100899669802963060
   kind: post
   author: mattdesl
   description: Video experiment probing whether Jev understands colour, exploring fast, cheap judgments as a basis for new UI and UX paradigms.
+  description_zh: 视频实验，探究 Jev 是否理解颜色，并探索把快速、低成本的判断作为新 UI 和 UX 范式的基础。
   image: https://pbs.twimg.com/amplify_video_thumb/2100898643117068288/img/p9Jp61lJyiq-UoWK.jpg
   metrics:
     likes: 5625
@@ -268,10 +308,12 @@ entries:
   - colour
   - ui
 - name: Context-aware GIF replies
+  name_zh: 感知上下文的 GIF 回复
   url: https://x.com/abhi_s_tanwar/status/2102118723129843866
   kind: post
   author: abhi_s_tanwar
   description: Tool that attaches a context-aware GIF or emoji to every reply or post, with Jev picking the best match from 1,300+ indexed items in about 250ms for $0.0003.
+  description_zh: 给每条回复或帖子配上贴合上下文的 GIF 或表情的工具，由 Jev 从 1,300+ 个已索引条目中挑出最匹配的，约 250 毫秒、$0.0003。
   image: https://pbs.twimg.com/amplify_video_thumb/2102117153835245568/img/uhPrQbWY_G6CuyiQ.jpg
   metrics:
     likes: 5
@@ -282,10 +324,12 @@ entries:
   - social-media
   - memes
 - name: CopilotKit generative UI cookbook
+  name_zh: CopilotKit 生成式 UI 指南
   url: https://docs.copilotkit.ai/cookbook/jev-generative-ui
   kind: article
   author: CopilotKit
   description: A Choice decides which panel to show and per-candidate Scores order what goes in it.
+  description_zh: 由一个 Choice 决定展示哪个面板，再用针对每个候选的 Score 给面板里的内容排序。
   image: https://docs.copilotkit.ai/og/cookbook/jev-generative-ui/og.png
   links:
     repo: https://github.com/CopilotKit/CopilotKit
@@ -298,7 +342,9 @@ entries:
   kind: app
   author: crowdcheck-ai
   description: Tests a short social post on 10,000 persistent synthetic personas before it goes live, estimating how each persona group would react.
+  description_zh: 在短社交帖子发布前，先在 10,000 个持久存在的合成人格上测试，估算各个人群会如何反应。
   jev: Code decides who sees the post; batched Jev calls return read, like/dislike, agreement, repost, follow and block probabilities per persona group.
+  jev_zh: 由代码决定谁能看到帖子；批量 Jev 调用返回每个人群阅读、点赞/点踩、认同、转发、关注和拉黑的概率。
   tags:
   - social-media
   - simulation
@@ -308,16 +354,19 @@ entries:
   kind: repo
   author: lirantal
   description: CLI that fetches an artist's discography and lyrics, asks Jev five typed questions per song about theme, mood, complexity, explicit content and perspective, and draws a terminal dashboard.
+  description_zh: CLI，抓取某位艺人的全部作品和歌词，就每首歌向 Jev 提五个带类型的问题（主题、情绪、复杂度、露骨内容和叙事视角），并绘制一个终端仪表盘。
   date: '2026-09-20'
   tags:
   - music
   - lyrics
   - cli
 - name: Donkey Cut decision layer
+  name_zh: Donkey Cut 的决策层
   url: https://github.com/DonkeyCut/Donkey/blob/main/site/src/cut/lib/turnJudge.ts
   kind: repo
   author: DonkeyCut
   description: Open-source browser video editor whose AI assistant routes each chat turn with a Jev judgment, runs simple edits like "make it 16:9" with no model round, and scores transcript stretches for highlight clips.
+  description_zh: 开源浏览器视频编辑器，其 AI 助手用一次 Jev 判断为每轮对话选路，像“改成 16:9”这样的简单编辑无需模型往返就直接执行，还会给转写稿的各段打分来挑选精彩片段。
   metrics:
     repo_stars: 288
   date: '2026-05-18'
@@ -333,6 +382,7 @@ entries:
   kind: repo
   author: pekth
   description: Experimental live scorer for X post drafts that, after a ~500ms typing pause, returns a category plus hook, specificity, reply, share, dwell and slop-risk scores combined by weights.
+  description_zh: 实验性的 X 帖子草稿实时评分工具，停止输入约 500 毫秒后，返回一个类别，以及钩子、具体性、回复、分享、停留和 AI 水文风险等分数，并按权重合成。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -341,10 +391,12 @@ entries:
   - social-media
   - drafts
 - name: Emotions expressed in beeps
+  name_zh: 用哔哔声表达情绪
   url: https://x.com/yoheinakajima/status/2100945960671326482
   kind: post
   author: yoheinakajima
   description: Experiment that gives Jev a way to express emotion and chat back through beeping sounds.
+  description_zh: 让 Jev 通过哔哔声表达情绪并回话的实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2100945516154834946/img/cz768Iq_4P_AsFdQ.jpg
   metrics:
     likes: 267
@@ -354,10 +406,12 @@ entries:
   - sound
   - experiment
 - name: Essay scoring with Jev
+  name_zh: 用 Jev 给文章打分
   url: https://x.com/nicdunz/status/2101029238883164288
   kind: post
   author: nicdunz
   description: Demo that asks Jev to judge a frontier-AI essay by Dario Amodei and shows the scores it returns.
+  description_zh: 让 Jev 评判 Dario Amodei 一篇关于前沿 AI 的文章的演示，并展示它给出的分数。
   image: https://pbs.twimg.com/amplify_video_thumb/2101029060621086720/img/g2YuZK7OsJwJnzpo.jpg
   metrics:
     likes: 4
@@ -367,10 +421,12 @@ entries:
   - essay
   - scoring
 - name: Fancy prose as you type
+  name_zh: 边打字边变华丽文风
   url: https://x.com/fabianstelzer/status/2100955039455985933
   kind: post
   author: fabianstelzer
   description: Writing toy that turns plain English into over-the-top fancy prose automatically as you type.
+  description_zh: 写作小玩具，在你打字时自动把平实的英文变成浮夸华丽的文风。
   image: https://pbs.twimg.com/amplify_video_thumb/2100954266256953344/img/X5-bL85-y8IYgniw.jpg
   metrics:
     likes: 95
@@ -384,6 +440,7 @@ entries:
   kind: repo
   author: LamplighterPaul
   description: Design harness where Jev picks a page, screen, form, or diagram design in about a second from your description and an LLM, Luna, only fills in the words, with a switch to see Jev alone.
+  description_zh: 设计 harness：根据你的描述，Jev 在约一秒内选定页面、屏幕、表单或图表的设计，名为 Luna 的 LLM 只负责填写文字，还有一个开关可以单独查看 Jev 的效果。
   date: '2026-09-18'
   links:
     app: https://forma-experiment.zammitpaul.com
@@ -391,10 +448,12 @@ entries:
   - generative-ui
   - design
 - name: Fresh UI flow grabber
+  name_zh: 最新 UI 流程抓取工具
   url: https://x.com/omarjpeg/status/2101047036863037753
   kind: post
   author: omarjpeg
   description: Mobbin-style tool that uses Jev with browser automation to capture fresh app UI flows for whatever you are looking for, something browser agents used to be too slow for.
+  description_zh: 类似 Mobbin 的工具，把 Jev 和浏览器自动化结合，抓取你想找的最新应用 UI 流程，这在以前对浏览器 agent 来说太慢了。
   image: https://pbs.twimg.com/amplify_video_thumb/2101046478685007872/img/gR52RkPOJb99hnPD.jpg
   metrics:
     likes: 421
@@ -404,10 +463,12 @@ entries:
   - ui-design
   - browser-use
 - name: Girlfriend check
+  name_zh: 女朋友审查
   url: https://x.com/suna_gaku/status/2101912767922073870
   kind: post
   author: suna_gaku
   description: Joke app that checks, before you post on X, whether your girlfriend would be upset if she saw the post.
+  description_zh: 恶搞应用，在你发 X 帖子之前检查：女朋友看到这条帖子会不会不高兴。
   image: https://pbs.twimg.com/media/HSt-Yv3bMAAoDqv.jpg?name=orig
   metrics:
     likes: 25
@@ -425,7 +486,9 @@ entries:
   kind: repo
   author: duanebester
   description: Gooey, a GPU-accelerated Zig UI framework, includes a GenUI module that evaluates layout choices with Jev directly over TypeSafe, without a Vercel AI Gateway dependency.
+  description_zh: GPU 加速的 Zig UI 框架 Gooey 内置 GenUI 模块，直接通过 TypeSafe 调用 Jev 评估布局选择，不依赖 Vercel AI Gateway。
   jev: A Zig client, codec and evaluator for direct System One calls.
+  jev_zh: 一套用于直接调用 System One 的 Zig 客户端、编解码器和评估器。
   image: https://raw.githubusercontent.com/duanebester/gooey/main/assets/gooey-logo-final.png
   metrics:
     repo_stars: 631
@@ -435,11 +498,14 @@ entries:
   - zig
   - gpu
 - name: GPT Image Gallery prompt inspection
+  name_zh: GPT Image Gallery 的提示词检查
   url: https://github.com/KeKe-Li/gpt-2-image/blob/main/api/prompt/inspect.js
   kind: repo
   author: KeKe-Li
   description: Server-side prompt inspection in a GPT Image prompt and case library that asks Jev which visual direction an image prompt has, how complete and actionable it is, and whether a reference image would help.
+  description_zh: GPT Image 提示词与案例库中的服务端提示词检查，询问 Jev 一条图像提示词属于哪种视觉方向、完整和可执行程度如何，以及是否需要参考图。
   jev: A category Choice over seven directions, a 4-level completeness Score and a needs-reference Noul in one request.
+  jev_zh: 一次请求里包含一个在七种方向之间选择的类别 Choice、一个 4 级完整度 Score 和一个是否需要参考图的 Noul。
   image: https://raw.githubusercontent.com/KeKe-Li/gpt-2-image/main/data/images/banner.svg
   metrics:
     repo_stars: 17
@@ -450,10 +516,12 @@ entries:
   - image-prompts
   - prompt-feedback
 - name: HearItFresh song themes
+  name_zh: HearItFresh 歌曲主题
   url: https://github.com/Dun-sin/HearItFresh/blob/main/app/lib/themes/classify.ts
   kind: repo
   author: Dun-sin
   description: Personalized Spotify playlist generator that classifies each song's themes from its title, artist and lyrics with Jev.
+  description_zh: 个性化 Spotify 歌单生成器，用 Jev 根据歌名、艺人和歌词给每首歌的主题分类。
   image: https://user-images.githubusercontent.com/78784850/210045371-8f386335-88cf-4a65-9d00-6ac0e808269e.png
   metrics:
     repo_stars: 59
@@ -465,10 +533,12 @@ entries:
   - spotify
   - classification
 - name: Higgsfield GenAI model auto-routing
+  name_zh: Higgsfield 生成模型自动路由
   url: https://x.com/higgsfield_ai/status/2101022473248727177
   kind: post
   author: higgsfield_ai
   description: Uses Jev to pick the most cost-effective image and video generation model for each task on the Higgsfield API, balancing speed and quality.
+  description_zh: 在 Higgsfield API 上用 Jev 为每个任务挑选性价比最高的图像和视频生成模型，兼顾速度和质量。
   image: https://pbs.twimg.com/amplify_video_thumb/2101022326813048832/img/nXO2af62XPHg1H_c.jpg
   metrics:
     likes: 517
@@ -479,11 +549,14 @@ entries:
   - image-generation
   - video
 - name: Higgsfield model routing
+  name_zh: Higgsfield 模型路由
   url: https://x.com/higgsfield_ai/status/2101022133753430365
   kind: post
   author: higgsfield_ai
   description: Demo of Jev reading a prompt and picking the best-fitting image or video generation model on Higgsfield before the job runs.
+  description_zh: 演示 Jev 在任务运行前读取提示词，为其挑选 Higgsfield 上最合适的图像或视频生成模型。
   jev: Choice over available generation models per prompt.
+  jev_zh: 每条提示词在可用的生成模型中做一个 Choice。
   image: https://pbs.twimg.com/amplify_video_thumb/2101022052279058432/img/9UB9da_sc74S_NtV.jpg
   metrics:
     likes: 20
@@ -497,6 +570,7 @@ entries:
   kind: repo
   author: ehui1226
   description: Chrome extension that scores X and social-media drafts as you type, with Jev rating curiosity gap and emotional arousal, classifying the hook pattern, flagging clickbait risk and giving a short fix hint.
+  description_zh: Chrome 扩展，在你输入时给 X 和社交媒体草稿打分：Jev 评估好奇心缺口和情绪唤起度，识别钩子套路，标记标题党风险，并给出简短的修改提示。
   metrics:
     stars: 19
   date: '2026-09-21'
@@ -509,6 +583,7 @@ entries:
   kind: repo
   author: asfarsadewa
   description: 'Paste an email, Slack message or memo and get rustc-style diagnostics: code lexes the text, and one Jev request scores passive-aggression, urgency, information density and more.'
+  description_zh: 粘贴一封邮件、Slack 消息或备忘录，就能得到 rustc 风格的诊断信息：代码对文本做词法分析，一次 Jev 请求给阴阳怪气程度、紧迫感、信息密度等打分。
   image: https://human-compiler.asfarlab.fun/og.png
   date: '2026-09-17'
   links:
@@ -522,6 +597,7 @@ entries:
   kind: repo
   author: kevinbadi
   description: AI video editor on FFmpeg and Remotion where Jev picks the Director agent's workflow and reads media-search intent over an Obsidian B-roll vault, with keyword fallback.
+  description_zh: 基于 FFmpeg 和 Remotion 的 AI 视频编辑器，由 Jev 为 Director agent 选择工作流，并在 Obsidian B-roll 素材库上解读媒体搜索意图，带关键词回退。
   metrics:
     repo_stars: 178
   date: '2026-01-21'
@@ -534,6 +610,7 @@ entries:
   kind: video
   author: Kev Builds Apps
   description: Setup walkthrough for an open-source AI video editor that makes Jev its main decision maker, wired together with Claude Code.
+  description_zh: 一个开源 AI 视频编辑器的安装演示，它把 Jev 当作主要决策者，并用 Claude Code 串联起来。
   metrics:
     views: 3630
     likes: 68
@@ -545,10 +622,12 @@ entries:
   - video-editing
   - claude-code
 - name: Instant generative UI with shadcn
+  name_zh: 基于 shadcn 的即时生成式 UI
   url: https://x.com/hckmstrrahul/status/2102040278937055404
   kind: post
   author: hckmstrrahul
   description: Generative UI that has Jev compose fully responsive layouts from the shadcn library, a style file and Mobbin-derived UI rules in 1-2 seconds; adding an LLM pass takes 8-12 seconds.
+  description_zh: 生成式 UI：让 Jev 基于 shadcn 组件库、一份样式文件和从 Mobbin 提炼的 UI 规则，在 1-2 秒内组合出完全响应式的布局；再加一轮 LLM 则需要 8-12 秒。
   image: https://pbs.twimg.com/amplify_video_thumb/2102040241217695744/img/67mVyfZ4ACC7qYaB.jpg
   metrics:
     likes: 381
@@ -562,7 +641,9 @@ entries:
   kind: repo
   author: joevidev
   description: UI generator demo where you describe a screen in free text and Jev picks and configures real shadcn/ui components or page blocks from a bounded catalog, never writing code or copy.
+  description_zh: UI 生成器演示：用自由文本描述一个界面，Jev 就从有限的目录中挑选并配置真实的 shadcn/ui 组件或页面区块，从不写代码或文案。
   jev: Choice, Noul and Score questions over bounded component, field and style options.
+  jev_zh: 针对有限的组件、字段和样式选项提 Choice、Noul 和 Score 问题。
   metrics:
     stars: 7
   date: '2026-09-17'
@@ -577,16 +658,19 @@ entries:
   kind: repo
   author: pankona
   description: Go CLI (jjl) that asks Jev per sentence for the probability of typos, twisted subject-predicate structure, overlong sentences or repetition in Japanese text, with reviewdog and textlint output formats.
+  description_zh: Go 写的 CLI（jjl），逐句询问 Jev 日语文本中出现错别字、主谓结构扭曲、句子过长或重复的概率，支持 reviewdog 和 textlint 输出格式。
   date: '2026-09-21'
   tags:
   - japanese
   - linter
   - writing
 - name: Jev Adaptive VSA for MiniMax H3
+  name_zh: 面向 MiniMax H3 的 Jev 自适应 VSA
   url: https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa
   kind: repo
   author: sepiablue-ai
   description: Experimental ComfyUI branch where Jev controls attention sparsity for MiniMax H3 video generation layer by layer, choosing each step's keep rate; the adopted run went from 366.72 to 213.89 seconds.
+  description_zh: 实验性的 ComfyUI 分支，由 Jev 逐层控制 MiniMax H3 视频生成的注意力稀疏度，为每一步选择保留率；采用的那次运行从 366.72 秒降到 213.89 秒。
   metrics:
     repo_stars: 100
   date: '2026-09-09'
@@ -602,17 +686,21 @@ entries:
   kind: repo
   author: knowlet
   description: Fictional internet generated on the fly as you search, open pages and click links, where an LLM writes page content while Jev makes the bounded decisions on search intent, page policy and UI composition via json-render.
+  description_zh: 随你搜索、打开页面和点击链接而即时生成的虚构互联网：LLM 写页面内容，Jev 负责有界的决策，包括搜索意图、页面策略，以及通过 json-render 组合 UI。
   date: '2026-09-18'
   tags:
   - simulation
   - generative-ui
   - json-render
 - name: Jev at the piano
+  name_zh: 弹钢琴的 Jev
   url: https://github.com/LamplighterPaul/jev-piano
   kind: repo
   author: LamplighterPaul
   description: Experimental piano that improvises continuously from a described mood, such as a slow sad waltz, by asking Jev music-theory questions about what comes next.
+  description_zh: 实验性的钢琴程序，根据描述的情绪（比如一首缓慢忧伤的华尔兹）持续即兴演奏，方法是向 Jev 提关于接下来怎么走的乐理问题。
   jev: Jev never outputs notes; it answers typed questions about chords and direction, and code turns the answers into playing.
+  jev_zh: Jev 从不输出音符；它回答关于和弦和走向的类型化问题，由代码把答案变成演奏。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -623,11 +711,14 @@ entries:
   - piano
   - improvisation
 - name: Jev auto-clipping tool
+  name_zh: Jev 自动切片工具
   url: https://www.youtube.com/watch?v=WZzU1HN1sC8
   kind: video
   author: vogel
   description: Auto-clipping tool that transcribes a video with Grok speech-to-text and has Jev score and rank highlight candidates, finding 11 clips in about two seconds.
+  description_zh: 自动切片工具，用 Grok 语音转文字转写视频，再让 Jev 给精彩片段候选打分和排序，约两秒找出 11 个片段。
   jev: Score per transcript segment for highlight potential.
+  jev_zh: 给每段转写稿的精彩程度打一个 Score。
   metrics:
     views: 12910
     likes: 200
@@ -640,7 +731,9 @@ entries:
   kind: repo
   author: adammichaelwood
   description: One-day experiment testing Jev on undergraduate SATB part-writing and a theory quiz against Claude Haiku, Sonnet and Opus, plus an endless Rhodes piano stream driven by Jev chord choices.
+  description_zh: 为期一天的实验：拿 Jev 与 Claude Haiku、Sonnet 和 Opus 比较本科水平的 SATB 四部和声写作和一套乐理测验，外加一个由 Jev 选和弦驱动、永不停歇的 Rhodes 电钢琴直播流。
   jev: Part-writing uses Choices for voice, measure, beat, pitch, octave and duration; the piano makes three decisions per chord (root, quality, bass).
+  jev_zh: 声部写作用 Choice 选择声部、小节、拍、音高、八度和时值；钢琴每个和弦做三个决定（根音、性质、低音）。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -654,7 +747,9 @@ entries:
   kind: repo
   author: bhaig-de
   description: Turns a one-line prompt into a canvas of full UI screens assembled from real shadcn blocks, in about 1-2 seconds per generation and with no generated JSX.
+  description_zh: 把一行提示词变成一整张由真实 shadcn 区块拼成的 UI 界面画布，每次生成约 1-2 秒，不生成任何 JSX。
   jev: Jev returns a probability distribution over a fixed vocabulary of 18 page types and their slots; code samples it and renders real components.
+  jev_zh: Jev 返回在 18 种页面类型及其插槽组成的固定词表上的概率分布；代码据此采样并渲染真实组件。
   metrics:
     stars: 10
   date: '2026-09-21'
@@ -663,10 +758,12 @@ entries:
   - shadcn
   - design
 - name: Jev for authors
+  name_zh: 写给作者的 Jev
   url: https://writingbeginner.substack.com/p/jev-explained-for-authors
   kind: article
   author: Christopher Kokoski
   description: Tests Jev on author chores such as sorting beta-reader feedback, including a lab with 300 mock comments, and explains when a decision-only model helps a writer.
+  description_zh: 测试 Jev 处理作者日常杂务的效果，比如整理试读读者的反馈（包括一个含 300 条模拟评论的实验），并解释只做决策的模型什么时候能帮到写作者。
   image: https://substackcdn.com/image/fetch/$s_!MXxV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F84f38be3-44ad-4b87-a8ff-4ea1871915e1_1672x941.png
   date: '2026-09-20'
   tags:
@@ -674,11 +771,14 @@ entries:
   - beta-readers
   - feedback
 - name: Jev haiku generator
+  name_zh: Jev 俳句生成器
   url: https://x.com/yurinakanishi33/status/2101946125385437622
   kind: post
   author: yurinakanishi33
   description: Haiku experiment that asks Choice for each next character out of 73 kana, 17 times per poem; this follow-up corrects how the hackathon demo worked and shows the unconstrained version failing.
+  description_zh: 俳句实验：每首诗用 Choice 从 73 个假名中选下一个字，共选 17 次；这篇后续帖子纠正了黑客松演示的实际工作方式，并展示了不加约束的版本如何失败。
   jev: Choice over 73 kana per step, with probabilities renormalized and sampled in code.
+  jev_zh: 每一步在 73 个假名中做一个 Choice，概率在代码中重新归一化后采样。
   image: https://pbs.twimg.com/amplify_video_thumb/2101941849707761664/img/80vOcsRZ9JcYUlqC.jpg
   metrics:
     likes: 9
@@ -689,11 +789,14 @@ entries:
   - poetry
   - japanese
 - name: Jev in Blender
+  name_zh: Blender 里的 Jev
   url: https://github.com/kolibril13/jev-in-blender-experiment
   kind: repo
   author: kolibril13
   description: Blender 4.2+ extension that adds a sidebar where you type what you want to do in plain language and get Blender's ~2,500 operators ranked, then run or copy the matching bpy.ops call.
+  description_zh: Blender 4.2+ 扩展，加了一个侧边栏：用自然语言输入你想做的事，就能得到 Blender 约 2,500 个 operator 的排序，然后运行或复制对应的 bpy.ops 调用。
   jev: 'Hierarchical search in two requests: a Choice over operator modules, then over operators, since a Choice holds at most 255 options.'
+  jev_zh: 分两次请求做层级搜索：先在 operator 模块中做一个 Choice，再在 operator 中选，因为一个 Choice 最多只能容纳 255 个选项。
   metrics:
     stars: 5
   date: '2026-09-19'
@@ -708,6 +811,7 @@ entries:
   kind: repo
   author: ponyo877
   description: Camera app for macOS that adds Japanese variety-show captions, manga sound-effect words, speed lines and mood effects while you talk, with Jev alone deciding what appears and when from a closed set.
+  description_zh: macOS 相机应用，在你说话时加上日本综艺风格的字幕、漫画拟声词、速度线和氛围特效，出现什么、何时出现完全由 Jev 从一个封闭集合中决定。
   metrics:
     stars: 5
   date: '2026-09-18'
@@ -716,10 +820,12 @@ entries:
   - captions
   - japanese
 - name: Jev on the decks
+  name_zh: Jev 打碟
   url: https://x.com/joa/status/2102048409876099208
   kind: post
   author: joa
   description: DJ set where Jev drives all mixing parameters and decisions through a decision tree, similar to Jev playing Doom.
+  description_zh: 一场 DJ 表演，Jev 通过决策树掌控所有混音参数和决定，类似 Jev 玩 Doom 的做法。
   image: https://pbs.twimg.com/amplify_video_thumb/2102046369280118784/img/YaqzMYWWN-GhFnA3.jpg
   metrics:
     views: 107
@@ -729,10 +835,12 @@ entries:
   - dj
   - live
 - name: Jev pixel art
+  name_zh: Jev 像素画
   url: https://x.com/RealAstropulse/status/2101029816975663312
   kind: post
   author: RealAstropulse
   description: Pixel-art pipeline where DeepSeek plans a sketch from primitives and Jev renders and refines it by choosing pixel positions and colors.
+  description_zh: 像素画流水线：DeepSeek 用基本图元规划草图，Jev 通过选择像素位置和颜色来渲染并细化。
   image: https://pbs.twimg.com/amplify_video_thumb/2101028177355120640/img/fb-YUbHbdqWFSQUV.jpg
   metrics:
     likes: 163
@@ -742,10 +850,12 @@ entries:
   - pixel-art
   - deepseek
 - name: Jev pixel-art harness
+  name_zh: Jev 像素画 harness
   url: https://www.reddit.com/r/aigamedev/comments/1wk0aed/using_jev_to_generate_pixel_art/
   kind: reddit
   author: RealAstropulse
   description: Harness where DeepSeek plans an image and Jev renders and refines it pixel by pixel, a cheap if rough way to get pixel art from a model that never writes text.
+  description_zh: 一个 harness，由 DeepSeek 规划图像，Jev 逐像素渲染并细化；想从一个从不写文字的模型那里得到像素画，这种方法便宜但粗糙。
   image: https://external-preview.redd.it/eW1ldzF4b3owY3FoMRUOYtoieXqTEBVCoJNUizizypC7Di3FGR2HiIEQRS59.png?format=pjpg&auto=webp&s=91db0ef8c4326b6a5fb14fe283ec8b05bfed1b84
   metrics:
     points: 44
@@ -754,10 +864,12 @@ entries:
   - pixel-art
   - image
 - name: Jev Playground (music)
+  name_zh: Jev Playground（音乐）
   url: https://github.com/wustep/jev-playground
   kind: repo
   author: wustep
   description: Experiment in steering music composition where Jev picks only enum labels (form, key, meter, texture, tempo, instruments and per-slot harmony phrases) and code renders sheet music, audio and MIDI.
+  description_zh: 引导音乐创作的实验：Jev 只挑选枚举标签（曲式、调性、拍号、织体、速度、乐器以及每个槽位的和声短语），由代码渲染乐谱、音频和 MIDI。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -768,10 +880,12 @@ entries:
   - music
   - composition
 - name: Jev plays piano
+  name_zh: Jev 弹钢琴
   url: https://x.com/chandamamz/status/2101066294816920063
   kind: post
   author: chandamamz
   description: Jev controls both hands and every finger to play piano in real time from an on-screen note waterfall, built on jev-ultrafast with decision scheduling.
+  description_zh: Jev 根据屏幕上的音符瀑布流实时控制双手和每根手指弹钢琴，基于 jev-ultrafast 并加入了决策调度。
   image: https://pbs.twimg.com/amplify_video_thumb/2101064172700315648/img/QlrRDvfiThW4NWDr.jpg
   metrics:
     likes: 16
@@ -784,11 +898,14 @@ entries:
   - piano
   - real-time
 - name: Jev plays piano
+  name_zh: Jev 弹钢琴
   url: https://x.com/nickfromlater/status/2100963628484624670
   kind: post
   author: nickfromlater
   description: Melody generator where Jev picks each next note from all 88 piano keys given the key and the sequence so far, then adds chords in a second pass by choosing among 7 chords per bar.
+  description_zh: 旋律生成器：给定调性和已有序列，Jev 从全部 88 个琴键中挑选下一个音，第二轮再为每小节从 7 个和弦中选一个来配和弦。
   jev: Choice over 88 notes per step, then over 7 chords per bar.
+  jev_zh: 每一步在 88 个音中做一个 Choice，然后每小节在 7 个和弦中做选择。
   image: https://pbs.twimg.com/amplify_video_thumb/2100961148635844609/img/_gFn5XISSQRDaI7p.jpg
   metrics:
     likes: 15
@@ -802,7 +919,9 @@ entries:
   kind: repo
   author: buildfastwithai
   description: Chrome extension in this GenAI experiments collection that scores your X draft in real time, with Jev making the judgments and plain code doing the arithmetic and rule checks.
+  description_zh: 这个 GenAI 实验合集中的 Chrome 扩展，实时给你的 X 草稿打分，判断由 Jev 做，算术和规则检查交给普通代码。
   jev: Seven independent judgments in one request, such as forwardability, discussion pull and hook strength, mapped to weighted scores.
+  jev_zh: 一次请求里做七个独立判断，比如是否值得转发、能否引发讨论、钩子强度，再映射为加权分数。
   image: https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png
   metrics:
     repo_stars: 766
@@ -818,6 +937,7 @@ entries:
   kind: repo
   author: a-Fig
   description: Local CLI and web app that scores document drafts, such as a resume against a job posting, on your natural-language questions with Jev, so Claude Code or Codex can rewrite in a loop against the scores.
+  description_zh: 本地 CLI 和 Web 应用，用 Jev 按你用自然语言提的问题给文档草稿打分（比如对照职位描述给简历打分），让 Claude Code 或 Codex 能对着分数循环改写。
   image: https://raw.githubusercontent.com/a-Fig/jev-score/main/docs/assets/workspace.jpg
   metrics:
     stars: 1
@@ -833,6 +953,7 @@ entries:
   kind: repo
   author: socai-io
   description: Social media research tool for Instagram, TikTok and LinkedIn in which Jev picks each next read-only operation, such as search, open a post or read comments, that socai runs in your real Chrome, ending in a cited report.
+  description_zh: 面向 Instagram、TikTok 和 LinkedIn 的社交媒体研究工具，由 Jev 挑选下一个只读操作（比如搜索、打开帖子或读评论），socai 在你真实的 Chrome 里执行，最后产出一份带引用的报告。
   image: https://raw.githubusercontent.com/socai-io/jev-social/main/docs/banner.png
   metrics:
     stars: 46
@@ -846,10 +967,12 @@ entries:
   - research
   - browser-agent
 - name: Jev tries drawing on a pixel canvas
+  name_zh: Jev 尝试在像素画布上作画
   url: https://x.com/yoheinakajima/status/2100939102455751049
   kind: post
   author: yoheinakajima
   description: Experiment giving Jev a pixel canvas to see whether it can draw; the result shows it cannot.
+  description_zh: 给 Jev 一块像素画布，看它能不能画画的实验；结果表明它画不了。
   image: https://pbs.twimg.com/amplify_video_thumb/2100938916773986304/img/Si8JuuQvkP6UzTSD.jpg
   metrics:
     likes: 72
@@ -859,11 +982,14 @@ entries:
   - drawing
   - experiment
 - name: Jev UI compose demo
+  name_zh: Jev UI 组合演示
   url: https://github.com/fraineralex/fraineralex.dev/blob/main/src/app/api/jev-compose/route.ts
   kind: repo
   author: fraineralex
   description: Personal-site demo that builds a UI card from a short prompt, with Jev choosing each prebuilt json-render component step by step and the steps shown with timings.
+  description_zh: 个人网站上的演示，根据一句简短提示词构建一张 UI 卡片，由 Jev 一步步挑选预先做好的 json-render 组件，并显示每一步及其耗时。
   jev: json-render's experimental evaluator runs on typesafe-ai/jev, making one Choice per composition step over a catalog of candidate elements.
+  jev_zh: json-render 的实验性评估器运行在 typesafe-ai/jev 上，每个组合步骤在候选元素目录中做一个 Choice。
   image: https://raw.githubusercontent.com/fraineralex/fraineralex.dev/main/public/og.jpg
   metrics:
     repo_stars: 12
@@ -876,10 +1002,12 @@ entries:
   - json-render
   - nextjs
 - name: Jev viral hook analysis
+  name_zh: Jev 爆款钩子分析
   url: https://x.com/neil_xbt/status/2101678010185167056
   kind: article
   author: neil_xbt
   description: Experiment scoring 16 hook traits on the titles of 64 AI articles on X with 1,512 head-to-head Jev judgments, then checking which traits line up with actual view counts.
+  description_zh: 实验：用 1,512 次 Jev 两两对比判断，给 X 上 64 篇 AI 文章的标题按 16 种钩子特征打分，再检验哪些特征与实际浏览量对得上。
   image: https://pbs.twimg.com/media/HSqlLbiWcAAncyd.jpg
   metrics:
     likes: 82
@@ -890,11 +1018,14 @@ entries:
   - hooks
   - experiment
 - name: Jev X Viral Post Analyser
+  name_zh: Jev X 爆款帖子分析器
   url: https://x.com/0xMovez/status/2101325703635435523
   kind: post
   author: 0xMovez
   description: Runs 14 yes/no questions on each of 100,000 viral X posts in 20.4 seconds for $0.67, then compares hook types against the 1.22% top-1% baseline; Claude Opus 5 got through 214 posts in the same time.
+  description_zh: 20.4 秒、$0.67 对 100,000 条 X 爆款帖子各跑 14 个是非题，再把各类钩子与“进入前 1%”的 1.22% 基线对比；同样时间里 Claude Opus 5 只处理了 214 条。
   jev: Fourteen Noul questions per post, such as whether the hook opens a loop.
+  jev_zh: 每条帖子十四个 Noul 问题，比如钩子是否制造了悬念。
   image: https://pbs.twimg.com/amplify_video_thumb/2101325508373868544/img/-8QbPo6wgSvhz9hf.jpg
   metrics:
     likes: 406
@@ -909,6 +1040,7 @@ entries:
   kind: repo
   author: takusaotome
   description: Japanese-first bilingual agent skill that reviews documents, deliverables and messages for style friction such as stock phrasing, redundancy and assistant residue, plus missing context or unclear next actions, scored by Jev.
+  description_zh: 日语优先的双语 agent skill，审查文档、交付物和消息里的文风问题，比如套话、冗余和 AI 助手残留，以及缺失的上下文或不清楚的下一步，由 Jev 打分。
   metrics:
     repo_stars: 7
   date: '2025-11-09'
@@ -923,6 +1055,7 @@ entries:
   kind: repo
   author: bilune
   description: Experiment where Jev generates a dashboard console's whole design system at runtime from a one-sentence brief, choosing colors, type, shapes, chart fills, and icons that hold together across components.
+  description_zh: 实验：Jev 根据一句话的需求，在运行时为一个仪表盘控制台生成整套设计系统，选定颜色、字体、形状、图表填充和图标，并让它们在各组件之间保持协调。
   metrics:
     stars: 54
   date: '2026-09-20'
@@ -936,7 +1069,9 @@ entries:
   kind: repo
   author: phureewat29
   description: Game of Thrones roleplay as Jon Snow where a story model writes each scene and Jev labels it, with the location, mood, danger and soundtrack driving the page's art, music and next prompt.
+  description_zh: 《权力的游戏》角色扮演，你扮演琼恩·雪诺（Jon Snow）：故事模型写每一幕，Jev 给它打标签，地点、氛围、危险程度和配乐决定页面的插画、音乐和下一条提示。
   jev: 'Five questions per turn: a location Choice, scene type, a danger Score, music, and an in-fiction Noul.'
+  jev_zh: 每轮五个问题：一个地点 Choice、场景类型、一个危险程度 Score、音乐，以及一个关于故事内设定的 Noul。
   image: https://cdn.phureewat.com/jev/og.jpg
   metrics:
     stars: 2
@@ -952,7 +1087,9 @@ entries:
   kind: repo
   author: florian-hoenicke
   description: Experiment that generates text with a model that never writes text, by asking Jev to pick word type, WordNet category, word group, and word in turn, at about 400 calls, 90 seconds, and 2 cents per prompt.
+  description_zh: 用一个从不写文字的模型来生成文字的实验：依次让 Jev 挑选词性、WordNet 类别、词组和具体的词，每条提示词约 400 次调用、90 秒、2 美分。
   jev: Cascaded Choice questions down a word tree, plus one to rank candidate texts.
+  jev_zh: 沿着词树逐级向下的级联 Choice 问题，外加一个给候选文本排序的问题。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -964,6 +1101,7 @@ entries:
   kind: repo
   author: mossyfield
   description: SillyTavern extension that sends chat messages to Jev with questions you write, and rules that act on the answers by adding one instruction, rerolling a reply, updating a list, or running an STscript.
+  description_zh: SillyTavern 扩展，把聊天消息连同你写的问题发给 Jev，再由规则根据答案行动：追加一条指令、重新生成回复、更新列表或运行一段 STscript。
   image: https://preview.redd.it/3osngmkxsqqh1.png?width=832&format=png&auto=webp&s=21a92d77f6b621c9fba3bf819566eec5c4afbef0
   metrics:
     stars: 23
@@ -980,6 +1118,7 @@ entries:
   kind: app
   author: Spiritt
   description: Adaptive onboarding form that branches by meaning instead of if-then rules, asking one tailored question at a time based on what the person has said so far.
+  description_zh: 自适应的入门引导表单，按语义而不是 if-then 规则分支，根据对方到目前为止说过的话，一次只问一个量身定制的问题。
   image: https://jevform.spiritt.app/spiritt/og-image.png
   metrics:
     likes: 22
@@ -995,6 +1134,7 @@ entries:
   kind: repo
   author: sriganesh
   description: Chrome extension that labels Bluesky posts and your drafts for warmth, constructiveness, tension, sarcasm, clarity and intent, with custom classifiers and blur filters.
+  description_zh: Chrome 扩展，从温暖度、建设性、紧张感、讽刺、清晰度和意图等方面给 Bluesky 帖子和你的草稿打标签，支持自定义分类器和模糊过滤。
   image: https://raw.githubusercontent.com/sriganesh/jevibe-check/main/docs/screenshots/post-filter.png
   metrics:
     stars: 2
@@ -1008,6 +1148,7 @@ entries:
   kind: repo
   author: achimala
   description: Small local app that paints images from a prompt by having Jev predict every pixel's colour distribution in parallel, with the predicted confidence deciding how wide each stroke is drawn.
+  description_zh: 小型本地应用，根据提示词作画：让 Jev 并行预测每个像素的颜色分布，并用预测的置信度决定每一笔画多宽。
   metrics:
     stars: 49
   date: '2026-09-18'
@@ -1022,7 +1163,9 @@ entries:
   kind: app
   author: async-dime
   description: 'Text optimizer that uses full Jev probability distributions as a value function: a bandit picks which rubric axis to improve, deterministic edit operators propose changes, and it stops when Jev is sure.'
+  description_zh: 文本优化器，把 Jev 的完整概率分布当作价值函数：由 bandit 算法挑选要改进的评分维度，确定性的编辑算子提出修改，Jev 有把握时就停止。
   jev: Per-axis Score and Noul distributions guide a UCB1 bandit and a cross-entropy-method update at about $0.0004 per critique.
+  jev_zh: 各维度的 Score 和 Noul 分布引导一个 UCB1 bandit 和交叉熵方法更新，每次评审约 $0.0004。
   image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/async-dime/jevloop.png
   date: '2026-09-19'
   tags:
@@ -1033,7 +1176,9 @@ entries:
   kind: repo
   author: ChetasLua
   description: CLI that transcribes any video, has Jev score every sentence against a chosen rubric, such as dodging a debate question, and renders the scores as live meters in a 16:9 edit you can post.
+  description_zh: CLI，转写任意视频，让 Jev 按选定的评分标准（比如是否在辩论中回避问题）给每句话打分，并把分数渲染成 16:9 剪辑里的实时仪表，可以直接发布。
   jev: Preset Score questions per transcript sentence, aligned to the timeline.
+  jev_zh: 对转写稿的每句话提预设的 Score 问题，并与时间轴对齐。
   image: https://raw.githubusercontent.com/ChetasLua/jevmeter/main/docs/banner.jpg
   metrics:
     stars: 81
@@ -1051,6 +1196,7 @@ entries:
   kind: repo
   author: cheeaun
   description: Web app where you type up to 40 characters and Jev scores related emojis from 0 to 3 across emoji categories and a keyword shortlist, returning many matches rather than one.
+  description_zh: Web 应用：输入最多 40 个字符，Jev 在各个 emoji 类别和一份关键词候选清单中给相关 emoji 打 0 到 3 分，返回多个匹配而不只是一个。
   image: https://raw.githubusercontent.com/cheeaun/jevmoji/main/docs/screenshots/empty-state.png
   metrics:
     stars: 3
@@ -1066,7 +1212,9 @@ entries:
   kind: repo
   author: cocktailpeanut
   description: Prompt-first MIDI studio where one sentence becomes an editable multitrack composition, with Jev choosing the form, instruments, harmony, grooves and every bar pattern.
+  description_zh: 提示词优先的 MIDI 工作室，一句话就能变成可编辑的多轨作品，曲式、乐器、和声、律动和每一小节的模式都由 Jev 选择。
   jev: One Choice call per musical unit with a rolling context of recent bars, motif and harmony plan; code renders picks into notes.
+  jev_zh: 每个音乐单元调用一次 Choice，带上最近几小节、动机和和声规划的滚动上下文；代码把选择渲染成音符。
   image: https://raw.githubusercontent.com/cocktailpeanut/jevthoven/main/docs/decision-pipeline.jpg
   metrics:
     stars: 11
@@ -1084,7 +1232,9 @@ entries:
   kind: repo
   author: gaborishka
   description: Simulated social network of 10,000 personas where you post a text, listing or headline and watch Jev decide who sees it and how each persona reacts.
+  description_zh: 由 10,000 个人格组成的模拟社交网络：你发一段文字、一条商品信息或一个标题，就能看 Jev 决定谁能看到它、每个人格如何反应。
   jev: Jev scores the post against about 60 audience attributes to plan reach, then one batched Choice per persona picks the reaction (scroll past, like, repost, block, buy).
+  jev_zh: Jev 先对照约 60 个受众属性给帖子打分来规划触达范围，再对每个人格用一次批量 Choice 选出反应（划过、点赞、转发、拉黑、购买）。
   image: https://raw.githubusercontent.com/gaborishka/jevtown/main/docs/images/home.png
   metrics:
     stars: 2
@@ -1100,6 +1250,7 @@ entries:
   kind: post
   author: ArshanKhanifar
   description: Endless Debussy-inspired piano where you give Jev a mood and it chooses the music one live decision at a time.
+  description_zh: 受德彪西启发、永不停歇的钢琴曲：你给 Jev 一种情绪，它就一次一个实时决定地选择音乐。
   image: https://pbs.twimg.com/amplify_video_thumb/2102231997997309952/img/hyEwFUhGdJrtWQBF.jpg
   metrics:
     likes: 9
@@ -1118,6 +1269,7 @@ entries:
   kind: repo
   author: hawkyre
   description: Chrome and Firefox extension that keeps X posts matching your interests expanded and collapses the rest, and scores your reply drafts with Jev using your own TypeSafe key and no backend.
+  description_zh: Chrome 和 Firefox 扩展，让符合你兴趣的 X 帖子保持展开、其余折叠，并用你自己的 TypeSafe key 调用 Jev 给回复草稿打分，无需后端。
   image: https://raw.githubusercontent.com/hawkyre/jevx/main/assets/store/screenshot-1280x800.png
   date: '2026-09-21'
   tags:
@@ -1129,6 +1281,7 @@ entries:
   kind: article
   author: Vercel Labs
   description: Generative UI where Jev chooses the root, members, and layout from components the app provides.
+  description_zh: 生成式 UI：Jev 从应用提供的组件中选择根节点、成员和布局。
   image: https://json-render.dev/og/docs/jev
   links:
     repo: https://github.com/vercel-labs/json-render
@@ -1140,6 +1293,7 @@ entries:
   kind: post
   author: ctatedev
   description: Generative UI experiment where Jev chooses components and actions from your own design system and json-render draws the interface in milliseconds.
+  description_zh: 生成式 UI 实验：Jev 从你自己的设计系统中选择组件和动作，json-render 在几毫秒内绘制出界面。
   image: https://pbs.twimg.com/amplify_video_thumb/2101022081810911232/img/3tKdQ3Y2_ZGSg3Q7.jpg
   metrics:
     likes: 7690
@@ -1151,11 +1305,14 @@ entries:
   tags:
   - generative-ui
 - name: json-render Jev composer
+  name_zh: json-render 的 Jev 组件编排器
   url: https://github.com/vercel-labs/json-render/tree/main/apps/web/lib/jev
   kind: repo
   author: vercel-labs
   description: Experimental json-render playground mode where Jev composes and edits UI trees from a shadcn component catalog through batches of Choice questions on which elements to include, where they go and in what order.
+  description_zh: 一种实验性的 json-render playground 模式：Jev 通过成批的 Choice 问题决定包含哪些元素、放在哪里、按什么顺序，用 shadcn 组件目录组装和编辑 UI 树。
   jev: 'Two evaluations per build: component membership, then parent slots and sibling positions; code assembles and validates the JSON spec, with no generative-model calls.'
+  jev_zh: 每次构建做两轮评估：先定组件是否入选，再定父级插槽和兄弟节点位置；JSON spec 由代码组装和校验，不调用任何生成式模型。
   metrics:
     repo_stars: 17988
   date: '2026-01-14'
@@ -1170,7 +1327,9 @@ entries:
   kind: repo
   author: suidouble
   description: Experiment and Telegram bot that coaxes prose out of Jev by decoding one word at a time, each word a separate Choice over a vocabulary drawn from one of 28 domain packs.
+  description_zh: 一个实验兼 Telegram 机器人，通过逐词解码从 Jev 那里“哄”出成段文字：每个词都是一次单独的 Choice，候选词表取自 28 个领域词包之一。
   jev: One routing Choice picks the domain pack; the loop feeds its own output back as the prefix.
+  jev_zh: 先用一个路由 Choice 选定领域词包；循环把自己的输出作为前缀回喂。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -1181,11 +1340,14 @@ entries:
   - telegram
   - experiment
 - name: Live 3D character performance
+  name_zh: 实时 3D 角色表演
   url: https://x.com/john_bortotti/status/2101019513676345555
   kind: post
   author: john_bortotti
   description: Jev drives a 3D character's full reaction to each message, making ten decisions for mouth, brows, eyes, cheeks, gaze and body that combine live, with no preset expressions; built at Mutuals.
+  description_zh: 由 Jev 驱动 3D 角色对每条消息的完整反应：针对嘴、眉、眼、脸颊、视线和身体做出十个决策并实时组合，没有预设表情；出自 Mutuals。
   jev: Ten parallel Choice questions per message, one per facial or body channel.
+  jev_zh: 每条消息并行问十个 Choice 问题，每个面部或身体通道一个。
   image: https://pbs.twimg.com/amplify_video_thumb/2101017687044366336/img/i9QnHKeZumFnNMCB.jpg
   metrics:
     likes: 783
@@ -1196,10 +1358,12 @@ entries:
   - animation
   - avatar
 - name: Live AI director
+  name_zh: 实时 AI 导播
   url: https://x.com/kevinlysocial/status/2102216292573028422
   kind: post
   author: kevinlysocial
   description: Live video director that transcribes the presenter locally and has Jev choose between the camera, the screen or both as they talk; the uncut demo shows timing still lags.
+  description_zh: 实时视频导播工具：在本地转写演讲者的话，并让 Jev 在其讲话时选择切到摄像头、屏幕还是两者同框；未剪辑的演示显示切换时机仍有滞后。
   image: https://pbs.twimg.com/amplify_video_thumb/2102216042735075328/img/tWTXX440WyUyy0PY.jpg
   metrics:
     views: 53
@@ -1213,6 +1377,7 @@ entries:
   kind: repo
   author: okinaaudio
   description: Hotkey bar for Ableton Live on macOS where a short English or Japanese sentence, typed or dictated, becomes a mixer, device, or editing action chosen by Jev and applied through a Remote Script.
+  description_zh: macOS 上 Ableton Live 的快捷指令栏：输入或口述一句简短的英文或日文，由 Jev 选出对应的调音台、设备或编辑操作，再通过 Remote Script 执行。
   metrics:
     stars: 39
   date: '2026-09-19'
@@ -1220,10 +1385,12 @@ entries:
   - ableton
   - music-production
 - name: Live viral post analyzer
+  name_zh: 实时爆款帖分析器
   url: https://x.com/rileybrown/status/2100425868053008758
   kind: post
   author: rileybrown
   description: Draft-post analyzer that scores a tweet's viral potential and categorizes it half a second after you stop typing.
+  description_zh: 帖子草稿分析器：停止打字半秒后，就给推文的爆款潜力打分并完成分类。
   image: https://pbs.twimg.com/amplify_video_thumb/2100424897491070976/img/kKnsb68jNUZZzSBi.jpg
   metrics:
     likes: 919
@@ -1233,11 +1400,14 @@ entries:
   - social-media
   - as-you-type
 - name: Lynx GenUI Jev evaluator
+  name_zh: Lynx GenUI 的 Jev 评估器
   url: https://github.com/lynx-family/lynx-stack/blob/main/packages/genui/server/agent/common/jev-evaluator.ts
   kind: repo
   author: lynx-family
   description: The GenUI package of the Lynx frontend framework uses a Jev evaluator to make choice judgments across phases like component and property selection when generating UI.
+  description_zh: 生成 UI 时，Lynx 前端框架的 GenUI 包用 Jev 评估器在组件选择、属性选择等阶段做选择判断。
   jev: Choice questions via @ai-sdk/typesafe-ai across generative-UI phases, with a custom secured provider fetch.
+  jev_zh: 在生成式 UI 的各个阶段通过 @ai-sdk/typesafe-ai 提 Choice 问题，并使用自定义的安全 provider fetch。
   metrics:
     repo_stars: 735
   date: '2025-02-26'
@@ -1248,10 +1418,12 @@ entries:
   - lynx
   - frontend
 - name: Making beats by talking
+  name_zh: 动动嘴做节拍
   url: https://x.com/mahirb22/status/2101023899265692100
   kind: post
   author: mahirb22
   description: Voice-driven drum machine where spoken requests like "add a snare on the backbeat" or "make it darker" become a new beat in ~200ms.
+  description_zh: 语音驱动的鼓机：说出“在反拍加一个军鼓”或“让它更暗一点”这类要求，约 200 毫秒 就生成新的节拍。
   image: https://pbs.twimg.com/amplify_video_thumb/2101023732634427392/img/Lw8PZXdVXHBvuawd.jpg
   metrics:
     likes: 2
@@ -1261,11 +1433,14 @@ entries:
   - music
   - voice
 - name: MCP UI studio
+  name_zh: MCP UI 工作台
   url: https://github.com/iamadi11/mcp-ui-poc
   kind: repo
   author: iamadi11
   description: 'Chat-first studio that turns a message into a versioned, embeddable widget: Jev decides the layout and components, code builds them, and Claude Haiku fills copy or generates HTML when the catalog falls short.'
+  description_zh: 以聊天为入口的工作台，把一条消息变成带版本、可嵌入的小组件：Jev 决定布局和组件，代码负责构建，组件目录不够用时由 Claude Haiku 填写文案或生成 HTML。
   jev: One fan-out of typed questions per turn through the TypeSafe SDK; follow-ups such as "make it a bar chart" update the current widget.
+  jev_zh: 每轮通过 TypeSafe SDK 一次请求并行问多个类型化问题；“改成柱状图”这类追问会更新当前组件。
   metrics:
     stars: 8
   date: '2025-08-04'
@@ -1281,16 +1456,19 @@ entries:
   kind: repo
   author: jxucoder
   description: Local workspace and Chrome side panel for X that turns a rough opinion into a draft and rewrites it in your own voice from past samples, with a bounded TypeSafe loop that rates attempts and checks meaning is preserved.
+  description_zh: 面向 X 的本地工作区和 Chrome 侧边栏：把粗略的观点写成草稿，再参照你过去的样本用你自己的口吻改写；一个有次数上限的 TypeSafe 循环负责给每次尝试打分，并检查原意是否保留。
   date: '2026-09-13'
   tags:
   - writing
   - voice-matching
   - x
 - name: Music soul vs subversion audit
+  name_zh: 音乐“灵魂 vs 颠覆”评测
   url: https://x.com/CallmeSamridh/status/2102213990562885827
   kind: post
   author: CallmeSamridh
   description: Music intelligence platform that had Jev rate 3,274 songs across 114 genres on soul versus subversion, for about $0.0001 in total.
+  description_zh: 音乐智能平台让 Jev 给 114 个流派的 3,274 首歌按“灵魂感 vs 颠覆性”打分，总花费约 $0.0001。
   image: https://pbs.twimg.com/media/HSyQcWuWUAAAd-9.jpg?name=orig
   metrics:
     views: 19
@@ -1299,11 +1477,14 @@ entries:
   - music
   - scoring
 - name: music-dl Jev edition advice
+  name_zh: music-dl 的 Jev 版本建议
   url: https://github.com/alfdav/music-dl/blob/master/tidaldl-py/docs/djai-edition-advice.md
   kind: repo
   author: alfdav
   description: Optional module in the music-dl local Tidal library manager that scores duplicate groups during Clean Up with Jev, labeling each extra copy's edition relation and confidence before the user deletes anything.
+  description_zh: 本地 Tidal 曲库管理工具 music-dl 的可选模块：在 Clean Up 清理时用 Jev 给重复曲目组打分，在用户删除任何文件之前标出每个多余副本的版本关系及置信度。
   jev: Scores the relation of each extra to the kept track; only 0.95+ layout twins or true-duplicate candidates are pre-checked, and keep-both or unclear verdicts are refused.
+  jev_zh: 对每个多余副本与保留曲目的关系打分；只有 0.95+ 的同版式孪生或真重复候选才会被预先勾选，判定为“都保留”或不明确的一律拒绝处理。
   image: https://raw.githubusercontent.com/alfdav/music-dl/master/docs/screenshots/home.png
   metrics:
     repo_stars: 7
@@ -1314,11 +1495,14 @@ entries:
   - music
   - deduplication
 - name: Neovim Jev tag suggester
+  name_zh: Neovim 的 Jev 标签推荐器
   url: https://github.com/alxndr/dotfiles/blob/main/nvim/lua/jev.lua
   kind: repo
   author: alxndr
   description: Neovim command that asks Jev which of a blog's existing tags apply to the post in the current buffer.
+  description_zh: 一条 Neovim 命令：询问 Jev 博客已有的标签中哪些适用于当前 buffer 里的文章。
   jev: One Noul question per existing tag in the vocabulary rather than a single Choice, so several tags can apply.
+  jev_zh: 标签表里每个已有标签各问一个 Noul 问题，而不是用单个 Choice，这样可以同时命中多个标签。
   metrics:
     repo_stars: 12
   date: '2012-06-23'
@@ -1329,10 +1513,12 @@ entries:
   - blogging
   - tagging
 - name: No-code hook picker
+  name_zh: 零代码开头钩子挑选器
   url: https://x.com/defileo/status/2102140359690305783
   kind: article
   author: defileo
   description: No-code guide for creators on using Jev to choose which hooks, posts and DM replies to publish, at $0.42 per thousand decisions, including where the setup breaks.
+  description_zh: 写给创作者的零代码指南：用 Jev 决定发布哪些开头钩子、帖子和私信回复，每千次决策 $0.42，也讲了这套配置会在哪里出问题。
   image: https://pbs.twimg.com/media/HSxEtVMWAAAzJp4.jpg
   metrics:
     likes: 8
@@ -1343,11 +1529,14 @@ entries:
   - no-code
   - hooks
 - name: openflipbook decision layer
+  name_zh: openflipbook 决策层
   url: https://github.com/eren23/openflipbook/tree/main/apps/modal-backend/providers/decisions
   kind: repo
   author: eren23
   description: Illustrated world explorer that routes its ~110 per-session judgment calls, like accepting a render or re-rolling it, through Jev in shadow mode beside the existing threshold rules.
+  description_zh: 插画风格的世界探索应用，把每个会话约 110 次的判断（比如接受一张渲染图还是重新生成）以影子模式交给 Jev，与现有的阈值规则并行运行。
   jev: Off, shadow and live modes; shadow logs answers about 400 ms later, and live never applies a spend question.
+  jev_zh: 有关闭、影子和上线三种模式；影子模式约 400 毫秒 后记录答案，上线模式下涉及花钱的问题也从不自动生效。
   image: https://raw.githubusercontent.com/eren23/openflipbook/main/apps/modal-backend/tests/click_bench/fixtures/images/real/fishing_village.jpg
   metrics:
     repo_stars: 198
@@ -1356,10 +1545,12 @@ entries:
   - image-generation
   - shadow-mode
 - name: OpenQuok Jev draft routing
+  name_zh: OpenQuok 的 Jev 草稿路由
   url: https://github.com/Ratimon/openquok-monorepo/blob/main/sdk/examples/jev-route-draft.mjs
   kind: repo
   author: Ratimon
   description: Social media scheduling workspace example that runs Jev "what to post" checks for relevance, engagement and visuals, then routes a draft to a global or per-channel post.
+  description_zh: 社交媒体排期工作区的示例：用 Jev 对“该发什么”做相关性、互动潜力和视觉效果检查，再把草稿路由为全局帖子或单渠道帖子。
   image: https://repository-images.githubusercontent.com/1190404999/32f3cb95-a933-449e-89b7-280fe8e86657
   metrics:
     repo_stars: 69
@@ -1372,10 +1563,12 @@ entries:
   - scheduling
   - drafts
 - name: Painting the Golden Gate Bridge
+  name_zh: 画金门大桥
   url: https://x.com/_shubhankar/status/2100834561995493476
   kind: post
   author: _shubhankar
   description: Browser painting demo in which Codex (Astra), Jev, Stagehand and Browserbase paint the Golden Gate Bridge on a canvas.
+  description_zh: 浏览器绘画演示：Codex（Astra）、Jev、Stagehand 和 Browserbase 一起在画布上画出金门大桥。
   image: https://pbs.twimg.com/amplify_video_thumb/2100833848661790720/img/juGCJGK-gYuCJHS7.jpg
   metrics:
     likes: 17
@@ -1385,10 +1578,12 @@ entries:
   - painting
   - browser
 - name: Parallel pixel drawing
+  name_zh: 并行逐像素作画
   url: https://x.com/anshuc/status/2100246929611411501
   kind: post
   author: anshuc
   description: Experiment that has Jev draw a picture by predicting every pixel in parallel.
+  description_zh: 让 Jev 并行预测每一个像素来画出一幅图的实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2100245288183066624/img/ARkl8CTLZxp1KXSa.jpg
   metrics:
     likes: 1563
@@ -1403,6 +1598,7 @@ entries:
   kind: repo
   author: ThePatriczek
   description: Library that turns Playwright traces into narrated demo videos, with a Jev director that picks camera actions, emphasis and timing from bounded candidates based on sampled video evidence.
+  description_zh: 把 Playwright trace 转成带旁白演示视频的库；其中的 Jev 导演根据抽样的视频画面，从有限的候选中挑选镜头动作、强调点和时机。
   metrics:
     stars: 60
   date: '2026-03-25'
@@ -1417,7 +1613,9 @@ entries:
   kind: repo
   author: nicholasgriffintn
   description: 'Generative site builder in the Polychat AI platform: Jev classifies a one-line brief into a plan (kind, scope, tone, palette, model tier) and judges refinements and quality while a coding model streams the site as JSON Patch.'
+  description_zh: Polychat AI 平台里的生成式建站工具：Jev 把一句话需求归类成方案（类型、范围、语气、配色、模型档位），并在编程模型以 JSON Patch 流式输出网站时判断修改和质量。
   jev: Polychat also exposes a Decisions API and a decide function backed by Jev choice/score/noul answers.
+  jev_zh: Polychat 还开放了一个 Decisions API 和一个 decide 函数，底层是 Jev 的 choice/score/noul 答案。
   image: https://raw.githubusercontent.com/nicholasgriffintn/ai-platform/main/docs/images/chat.png
   metrics:
     repo_stars: 32
@@ -1433,6 +1631,7 @@ entries:
   kind: repo
   author: silky-x0
   description: Web app that reads a draft social post before you publish it and returns Jev scores for the tone it gives off, how far it might travel and how cringe it might feel, topped with a verdict stamp.
+  description_zh: 在你发布前先读一遍社交帖子草稿的 Web 应用：返回 Jev 对帖子透出的语气、可能传播多远、看起来有多尴尬的打分，最后盖上一个结论印章。
   image: https://raw.githubusercontent.com/silky-x0/Postmark/main/public/postmark.png
   metrics:
     stars: 1
@@ -1449,6 +1648,7 @@ entries:
   kind: repo
   author: lingengyuan
   description: Claude/Codex skill for preparing technical documents for publication with an optional Jev-assisted review pass before release.
+  description_zh: 帮技术文档做发布准备的 Claude/Codex skill，发布前可选加一轮 Jev 辅助审查。
   metrics:
     repo_stars: 9
   date: '2026-01-11'
@@ -1459,10 +1659,12 @@ entries:
   - agent-skill
   - review
 - name: Real-time 3D scene generator
+  name_zh: 实时 3D 场景生成器
   url: https://x.com/op7418/status/2101536330018918793
   kind: post
   author: op7418
   description: Real-time 3D interior generator where Jev makes hundreds of concurrent choices over prebuilt models and their shading, lighting, position and state to build a room from text in about a second.
+  description_zh: 实时 3D 室内场景生成器：Jev 针对预制模型及其着色、光照、位置和状态同时做出数百个选择，约一秒内根据文字搭出一个房间。
   image: https://pbs.twimg.com/amplify_video_thumb/2101535990846509056/img/hoBZPL8d08Ba7aPw.jpg
   metrics:
     likes: 780
@@ -1472,10 +1674,12 @@ entries:
   - 3d
   - scene-generation
 - name: Real-time orchestra conductor
+  name_zh: 实时指挥交响乐
   url: https://x.com/GulatiYajat/status/2100963005764919517
   kind: post
   author: GulatiYajat
   description: Experiment in which Jev conducts a musical orchestra in real time.
+  description_zh: 让 Jev 实时指挥一支管弦乐团的实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2100962127179833344/img/jE9CXLYpLwR5Rc9j.jpg
   metrics:
     likes: 40
@@ -1489,7 +1693,9 @@ entries:
   kind: repo
   author: AlbionaHoti
   description: Three-dimensional gallery that finds image and short-video references from one prompt across The Met, NASA, Cosmos and Prelinger Archives, with Jev picking search phrases and highlights in local Explore mode.
+  description_zh: 三维画廊：用一句提示词从 The Met、NASA、Cosmos 和 Prelinger Archives 中查找图片和短视频参考，在本地 Explore 模式下由 Jev 挑选搜索词和精选内容。
   jev: Works only from titles and descriptions; Jev never receives pixels, frames or audio.
+  jev_zh: 只依据标题和描述工作；Jev 从不接触像素、视频帧或音频。
   image: https://raw.githubusercontent.com/AlbionaHoti/refgarden/main/docs/assets/refgarden-cover.png
   metrics:
     stars: 27
@@ -1502,6 +1708,7 @@ entries:
   kind: repo
   author: scale-venture-partners
   description: 'Prose linter with ruff-style rule codes for Markdown, text, HTML, Word and PowerPoint files: static rules run locally in milliseconds, and each semantic rule is one Jev call returning a calibrated probability.'
+  description_zh: 带 ruff 风格规则编号的文字 linter，支持 Markdown、纯文本、HTML、Word 和 PowerPoint 文件：静态规则在本地毫秒级跑完，每条语义规则则是一次 Jev 调用，返回一个校准的概率。
   metrics:
     stars: 6
   date: '2026-09-17'
@@ -1514,7 +1721,9 @@ entries:
   kind: app
   author: SemanticSpace
   description: Interactive map that places any words or phrases on a 2D plane, using Jev's scores against two user-chosen concept axes as the coordinates.
+  description_zh: 交互式地图，把任意词语或短语放到 2D 平面上，坐标是 Jev 针对用户选定的两个概念轴给出的分数。
   jev: Each phrase is scored against the two axis concepts; the scores become its x/y position.
+  jev_zh: 每个短语分别对两个轴概念打分，分数就是它的 x/y 位置。
   image: https://semanticspace.dev/social-preview.png?v=c7da25ff63e2b620
   metrics:
     points: 2
@@ -1528,6 +1737,7 @@ entries:
   kind: post
   author: SimAudience
   description: Simulated A/B test that has Jev vote on two launch tweets as more than 4,000 real survey personas, returning results in twelve seconds.
+  description_zh: 模拟 A/B 测试：让 Jev 扮演 4,000 多个来自真实调查的用户画像，对两条发布推文投票，十二秒出结果。
   image: https://pbs.twimg.com/amplify_video_thumb/2101116639953801216/img/Kn5arhNpJl28uaKC.jpg
   metrics:
     likes: 4
@@ -1545,6 +1755,7 @@ entries:
   kind: repo
   author: fabricioctelles
   description: Agent skill collection where four skills, two AI-text humanizers, a design-slop evaluator, and a plugin reviewer, optionally ask Jev Score and Noul questions for quality judgments, with heuristic fallbacks.
+  description_zh: agent skill 合集，其中四个 skill（两个 AI 文本去 AI 味工具、一个粗制滥造设计评估器、一个插件审查器）可选地向 Jev 提 Score 和 Noul 问题做质量判断，并有启发式规则兜底。
   image: https://repository-images.githubusercontent.com/1163031925/fa13dab8-1745-4b60-836c-4729f8e76220
   metrics:
     stars: 89
@@ -1560,6 +1771,7 @@ entries:
   kind: repo
   author: lukstei
   description: CLI and agent skill that grades text and Markdown files line by line against rulesets for AI slop, grammar and technical-doc quality with Jev, then hands the flagged violations to an AI agent to fix.
+  description_zh: CLI 兼 agent skill：用 Jev 按 AI 水文、语法和技术文档质量等规则集逐行给文本和 Markdown 文件打分，再把标出的违规交给 AI agent 修复。
   image: https://raw.githubusercontent.com/lukstei/slop-grader/main/assets/terminal.png
   metrics:
     stars: 12
@@ -1578,7 +1790,9 @@ entries:
   kind: repo
   author: harshpuri84
   description: Prose linter, run as a Claude Code Stop hook, that reports which AI writing tells a passage contains with the line quoted; regex settles 18 tells and Jev judges the other 15.
+  description_zh: 以 Claude Code Stop hook 形式运行的文字 linter，报告一段文字里含有哪些 AI 写作痕迹并引用对应行；其中 18 种痕迹由正则判定，另外 15 种交给 Jev 判断。
   jev: 15 Nouls in one call at about 575-604 ms and $0.105 per 1,000 checks; code owns every threshold.
+  jev_zh: 一次调用问 15 个 Noul，耗时约 575-604 毫秒，每 1,000 次检查 $0.105；所有阈值都由代码掌控。
   date: '2026-09-19'
   tags:
   - writing
@@ -1589,6 +1803,7 @@ entries:
   kind: repo
   author: DanRWilloughby
   description: Prose linter for Markdown and plain text that runs countable regex rules locally and sends paragraphs to Jev for judgment rules such as restating closings, stacked hedges or clichés, one probability per rule.
+  description_zh: 面向 Markdown 和纯文本的文字 linter：可计数的正则规则在本地跑，需要判断的规则（比如复述式结尾、层层叠加的模糊措辞、陈词滥调）则把段落发给 Jev，每条规则返回一个概率。
   image: https://raw.githubusercontent.com/DanRWilloughby/snifftest/main/assets/nose/nose.gif
   metrics:
     stars: 27
@@ -1604,7 +1819,9 @@ entries:
   kind: repo
   author: nanlingyin
   description: Real-time Live2D expression and motion SDK for desktop companions whose optional JEV planner picks head motion, expression, gaze, gestures and intensity levels per keyframe, with code mapping them to model parameters.
+  description_zh: 面向桌面陪伴角色的实时 Live2D 表情与动作 SDK，可选的 JEV 规划器为每个关键帧挑选头部动作、表情、视线、手势和强度等级，再由代码映射到模型参数。
   jev: Choice for discrete gestures and Score or Choice over semantic intensity levels for continuous parameters.
+  jev_zh: 离散手势用 Choice，连续参数则在语义化的强度等级上用 Score 或 Choice。
   image: https://raw.githubusercontent.com/nanlingyin/soullink-emotion-sdk/main/docs/assets/soullink-emotion-demo-cover.jpg
   metrics:
     stars: 123
@@ -1616,10 +1833,12 @@ entries:
   - animation
   - companion
 - name: Speech-reactive particle slides
+  name_zh: 随语音变化的粒子幻灯片
   url: https://x.com/yoshifujidesign/status/2100959121868743086
   kind: post
   author: yoshifujidesign
   description: Design experiment in which countless particles change shape in real time in response to spoken words, pointing toward building slides just by talking.
+  description_zh: 设计实验：无数粒子随说出的话实时变换形状，指向一种只靠说话就能做幻灯片的可能。
   image: https://pbs.twimg.com/amplify_video_thumb/2100957513416056832/img/qsAGLJEDvUF8wE91.jpg
   metrics:
     likes: 462
@@ -1630,11 +1849,14 @@ entries:
   - slides
   - particles
 - name: SuperX post scorer
+  name_zh: SuperX 帖子评分器
   url: https://x.com/robj3d3/status/2100722975645598191
   kind: post
   author: robj3d3
   description: Post scorer for X that asks Jev 61 questions per draft in about 1 second for $0.0004, fitted on 9,481 posts from 207 creators and picking the viral post 2 in 3 times.
+  description_zh: X 帖子评分器：每份草稿向 Jev 问 61 个问题，约 1 秒、花费 $0.0004；模型基于 207 位创作者的 9,481 条帖子拟合，3 次里有 2 次能挑中爆款。
   jev: 61 questions per post, combined into a fitted virality score.
+  jev_zh: 每条帖子 61 个问题，合成一个拟合出的爆款分。
   image: https://pbs.twimg.com/amplify_video_thumb/2100722766362406912/img/pH0lahpfd-qTj_nE.jpg
   metrics:
     likes: 1372
@@ -1647,11 +1869,14 @@ entries:
   - writing
   - virality
 - name: Thinkroom compound writing
+  name_zh: Thinkroom 复合写作审阅
   url: https://github.com/kieranklaassen/thinkroom/blob/main/docs/compound-writing-packs.md
   kind: repo
   author: kieranklaassen
   description: Reviewer panel in Thinkroom, an agent-native workspace for human judgment, that turns skills from a Claude Code plugin pack into reviewer lenses whose yes/no questions Jev answers and paints into the text.
+  description_zh: 一个审阅面板，内置于 Thinkroom（agent 原生、服务于人类判断的工作区）：把 Claude Code 插件包里的 skill 变成审阅视角，由 Jev 回答其中的是非题并直接标注到文本上。
   jev: Each lens is a set of yes/no questions Jev answers over the document; results become inline highlights in Comment mode.
+  jev_zh: 每个视角是一组由 Jev 针对文档作答的是非题；结果在 Comment 模式下变成行内高亮。
   image: https://raw.githubusercontent.com/kieranklaassen/thinkroom/main/docs/images/thinkroom-editor.png
   metrics:
     repo_stars: 33
@@ -1663,10 +1888,12 @@ entries:
   - writing-feedback
   - reviewers
 - name: TikTok and Reels pattern dashboard
+  name_zh: TikTok 和 Reels 套路分析看板
   url: https://x.com/thisisclaireli/status/2101438195238162648
   kind: post
   author: thisisclaireli
   description: Dashboard that labels saved TikToks and Reels across 8 dimensions such as hook type, format and CTA placement, and scores new scripts against top formats; 1,004 videos cost about $0.07.
+  description_zh: 看板工具：按开头钩子类型、形式、CTA 位置等 8 个维度给收藏的 TikTok 和 Reels 视频打标签，并对照表现最好的形式给新脚本打分；1,004 条视频约花 $0.07。
   image: https://pbs.twimg.com/amplify_video_thumb/2101438104410456064/img/RBkCwaYYZw28IGsN.jpg
   metrics:
     likes: 10
@@ -1680,7 +1907,9 @@ entries:
   kind: repo
   author: cairodavila
   description: Terminal tool for asking questions about video shoot transcripts and organizing the matching clips, with Jev judging requests and transcripts, for example finding clips with incomplete sentences, while code moves files.
+  description_zh: 终端工具：可以针对视频拍摄的转写稿提问并整理匹配的片段，由 Jev 判断请求和转写内容（比如找出句子没说完的片段），文件移动交给代码。
   jev: Jev chooses among folders tisco actually found and judges against the whole workspace state, capped at 96 KB and split into batches.
+  jev_zh: Jev 只在 tisco 实际找到的文件夹中做选择，并基于整个工作区的 state 判断；state 上限 96 KB，分批发送。
   metrics:
     stars: 5
   date: '2026-09-21'
@@ -1689,11 +1918,14 @@ entries:
   - transcripts
   - cli
 - name: TOKIMEKI column icons
+  name_zh: TOKIMEKI 栏目图标
   url: https://github.com/spuithori/tokimekibluesky/blob/master/src/lib/server/columnIcon.ts
   kind: repo
   author: spuithori
   description: Multi-column Bluesky client that automatically picks an icon for each custom-feed column from the feed's name and description using Jev.
+  description_zh: 多栏 Bluesky 客户端，用 Jev 根据自定义 feed 的名称和描述，自动为每个 feed 栏挑选图标。
   jev: One Choice over about 40 icon topics plus "none" via AI SDK evaluate on Vercel AI Gateway.
+  jev_zh: 通过 Vercel AI Gateway 上的 AI SDK evaluate 发起一个 Choice，在约 40 个图标主题加“无”之间选择。
   image: https://raw.githubusercontent.com/spuithori/tokimekibluesky/master/static/ogp.jpg
   metrics:
     repo_stars: 304
@@ -1709,7 +1941,9 @@ entries:
   kind: repo
   author: superdesigndev
   description: Demo in the treg agent-tools gateway that pulls launch posts from X over the last 24 hours, runs engagement forensics, and has Jev deliver a verdict on each.
+  description_zh: agent 工具网关 treg 中的演示：抓取 X 上过去 24 小时的发布帖，做互动数据取证分析，并让 Jev 对每条给出结论。
   jev: Jev answers through Vercel AI Gateway; a visitor can also judge a single post by URL, and the page shows the real billing receipt.
+  jev_zh: Jev 通过 Vercel AI Gateway 作答；访客也可以输入 URL 评判单条帖子，页面会展示真实的计费凭据。
   image: https://raw.githubusercontent.com/superdesigndev/treg/main/docs/assets/treg-hero.png
   metrics:
     repo_stars: 1919
@@ -1725,6 +1959,7 @@ entries:
   kind: repo
   author: Wizhill05
   description: 'Pixel-art generator built from a classifier: 256 parallel Jev Choice questions, one per pixel of a 16x16 grid, each picking one of 16 palette colors from its position and the prompt, followed by refinement passes.'
+  description_zh: 用分类器搭出来的像素画生成器：并行发出 256 个 Jev Choice 问题，对应 16x16 网格的每个像素，各自根据位置和提示词从 16 色调色板中选一种颜色，之后再做几轮细化。
   image: https://raw.githubusercontent.com/Wizhill05/typesafe-image-diffusion/main/best_beach.jpg
   date: '2026-09-17'
   tags:
@@ -1736,6 +1971,7 @@ entries:
   kind: post
   author: LukasCantCode
   description: Web room whose light, color, type, sound and street view shift with the feeling of what you type, built with Claude Opus 5 and Jev.
+  description_zh: 一个网页房间，光线、颜色、字体、声音和街景会随你输入文字的情绪而变化，用 Claude Opus 5 和 Jev 打造。
   image: https://pbs.twimg.com/amplify_video_thumb/2102222551644827648/img/3X7lIy8ysYfnEfzC.jpg
   metrics:
     likes: 1
@@ -1753,7 +1989,9 @@ entries:
   kind: repo
   author: RafalWilinski
   description: Chrome and Firefox extension that scores a draft X post before you hit Post on virality, clarity, ragebait, cringe, sounding AI-written, and regret risk, with an overall send-or-sleep verdict.
+  description_zh: Chrome 和 Firefox 扩展：在你点击发布前，从传播力、清晰度、引战程度、尴尬度、AI 味和后悔风险几个方面给 X 帖子草稿打分，并给出“发还是先睡一觉”的总体结论。
   jev: Multiple Score and Choice questions over the draft plus the reply-to or quoted tweet as context.
+  jev_zh: 针对草稿提多个 Score 和 Choice 问题，并把被回复或被引用的推文作为上下文。
   image: https://pbs.twimg.com/amplify_video_thumb/2100958763528183808/img/nk6jusNPY3iy2CVq.jpg
   metrics:
     stars: 47
@@ -1767,10 +2005,12 @@ entries:
   - browser-extension
   - social-media
 - name: Virlo Jev for content marketing
+  name_zh: Virlo 用 Jev 做内容营销
   url: https://x.com/dsqjaffa/status/2101334774325428615
   kind: post
   author: dsqjaffa
   description: Virlo feature where Jev judges the hooks, formats and angles of every video in your niche from a database of 12.8M viral videos, then Claude turns the winners into a script; available free in Virlo and its MCP.
+  description_zh: 一项 Virlo 功能：Jev 基于 12.8M 条爆款视频的数据库，评判你所在细分领域每条视频的开头钩子、形式和切入角度，再由 Claude 把胜出者写成脚本；在 Virlo 及其 MCP 中免费可用。
   image: https://pbs.twimg.com/amplify_video_thumb/2101334467742699520/img/M8di9wJesyfhwVb9.jpg
   metrics:
     likes: 114
@@ -1784,10 +2024,12 @@ entries:
   - content-marketing
   - mcp
 - name: Visual reference finder
+  name_zh: 视觉参考查找器
   url: https://x.com/albicodes/status/2100720936852857271
   kind: post
   author: albicodes
   description: Tool for creative work that turns one prompt into 100 reference images drawn from Cosmos, NASA and The Met.
+  description_zh: 面向创意工作的工具，把一句提示词变成 100 张参考图，来源包括 Cosmos、NASA 和 The Met。
   image: https://pbs.twimg.com/amplify_video_thumb/2100720525739687936/img/2Kp3WYXT1muLjThU.jpg
   metrics:
     likes: 711
@@ -1798,10 +2040,12 @@ entries:
   - art
   - reference
 - name: What toxicity sounds like
+  name_zh: “有毒”听起来是什么样
   url: https://x.com/rrriviannn/status/2100807838566383819
   kind: post
   author: rrriviannn
   description: Sound experiment that uses Jev judgments to generate audio for a concept, here what "toxicity" sounds like, following an earlier sunflower image experiment.
+  description_zh: 声音实验：用 Jev 的判断为一个概念生成音频，这次是“有毒”听起来是什么样；此前作者还做过一个向日葵图像实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2100802203971997696/img/MKJ0b7d6hk5og9fw.jpg
   metrics:
     likes: 13
@@ -1811,10 +2055,12 @@ entries:
   - sound
   - experiment
 - name: X algorithm rebuilt with Jev
+  name_zh: 用 Jev 重建 X 推荐算法
   url: https://x.com/leojrr/status/2100470174130250127
   kind: post
   author: leojrr
   description: Recreation of the X ranking algorithm with Jev that simulates how far a post will reach, using the published weights and a global feed of everyone's posts.
+  description_zh: 用 Jev 复刻 X 的排序算法，基于公开的权重和由所有人帖子组成的全局信息流，模拟一条帖子能触达多远。
   image: https://pbs.twimg.com/amplify_video_thumb/2100467692117295104/img/01ZWSKAA75eSiFlc.jpg
   metrics:
     likes: 1177
@@ -1824,10 +2070,12 @@ entries:
   - social-media
   - virality
 - name: X growth analysis of 3,282 posts
+  name_zh: 3,282 条 X 帖子的增长分析
   url: https://x.com/iannuttall/status/2100668908227162567
   kind: post
   author: iannuttall
   description: 'Analysis of 3,282 of the author''s X posts, asking Jev 8 questions each about topic, hook and tone: 4,252,330 tokens for $0.1282, finding how-to posts drew 150 median likes versus 44.'
+  description_zh: 分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，其他帖子为 44。
   image: https://pbs.twimg.com/amplify_video_thumb/2100668725737213952/img/m210oIkCyuGX5Dqr.jpg
   metrics:
     likes: 745
@@ -1837,10 +2085,12 @@ entries:
   - social-media
   - content-analysis
 - name: X post research dashboard
+  name_zh: X 帖子研究看板
   url: https://x.com/yuhasbeentaken/status/2101231502038339798
   kind: post
   author: yuhasbeentaken
   description: Dashboard that labels a personal archive of 1,315 saved X posts across 8 dimensions such as topic, hook and writing style, for about $0.086, so patterns can be filtered and compared by engagement.
+  description_zh: 看板工具：按主题、开头钩子、写作风格等 8 个维度，给个人收藏的 1,315 条 X 帖子打标签，花费约 $0.086，便于按互动数据筛选和对比规律。
   image: https://pbs.twimg.com/amplify_video_thumb/2101230608009863168/img/Qp3f7hCV9K3A26Wf.jpg
   metrics:
     likes: 180
@@ -1855,6 +2105,7 @@ entries:
   kind: repo
   author: oso95
   description: Chrome extension that sends each X post nearing the viewport to Jev with six typed questions and shows behavioral labels in a chip under the post in about 150 ms, with a live cost counter (about 80 posts for $0.0027).
+  description_zh: Chrome 扩展：每条即将滚入视口的 X 帖子都会连同六个类型化问题发给 Jev，约 150 毫秒 后在帖子下方的小标签里显示行为标签，并附实时费用计数器（约 80 条帖子 $0.0027）。
   metrics:
     stars: 15
   date: '2026-09-18'
@@ -1867,6 +2118,7 @@ entries:
   kind: repo
   author: manifoldor
   description: Chrome extension and userscript that tags each post on your X timeline with what it wants you to do, shown as a one-word label plus a Jev probability, for personal local browsing.
+  description_zh: Chrome 扩展兼用户脚本：给 X 时间线上的每条帖子标出它想让你做什么，显示为一个单词标签加 Jev 给出的概率，供个人本地浏览使用。
   image: https://raw.githubusercontent.com/manifoldor/xtags/main/store/assets/screenshot-labels-original.png
   metrics:
     stars: 10

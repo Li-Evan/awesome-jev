@@ -1,14 +1,19 @@
 title: Safety and Moderation
+title_zh: 安全与审核
 emoji: 🛡️
 layout: gallery
 description: Guardrails, jailbreak and injection screening, content moderation, and policy checks.
+description_zh: 护栏、越狱与提示词注入筛查、内容审核和策略检查。
 entries:
 - name: 1940s.nyc story moderation experiment
+  name_zh: 1940s.nyc 故事审核实验
   url: https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment
   kind: repo
   author: jboolean
   description: Local experiment for the 1940s.nyc street-view site that predicts whether a human moderator would approve a user story, asking Jev one yes/no question per moderation rule and measuring agreement with real past decisions.
+  description_zh: 为 1940s.nyc 街景网站做的本地实验：预测人工审核员是否会通过一条用户故事，每条审核规则向 Jev 问一个是/否问题，并衡量与过去真实决策的一致程度。
   jev: Per-rule Nouls via OpenRouter's Decisions API, combined against a reject threshold in rules.ts; an LLM backend is the comparison.
+  jev_zh: 通过 OpenRouter 的 Decisions API 为每条规则问一个 Noul，在 rules.ts 中与拒绝阈值合并判断；另用一个 LLM 后端作对照。
   metrics:
     repo_stars: 35
   date: '2019-09-24'
@@ -23,7 +28,9 @@ entries:
   kind: repo
   author: omkarghugarkar007
   description: Runtime authorization gateway for agent tool calls that combines deterministic policy with Jev, binds approval to the exact action, and refuses expired, changed, or replayed permits over MCP and HTTP.
+  description_zh: 面向 agent 工具调用的运行时授权网关：把确定性策略与 Jev 结合，将审批绑定到具体动作，并通过 MCP 和 HTTP 拒绝过期、被改动或被重放的许可。
   jev: Judges whether a well-formed tool call actually matches what the user asked for.
+  jev_zh: 判断一个格式正确的工具调用是否真的符合用户的要求。
   image: https://raw.githubusercontent.com/omkarghugarkar007/actiongate-jev/main/docs/assets/actiongate-social.svg
   metrics:
     stars: 2
@@ -37,6 +44,7 @@ entries:
   kind: repo
   author: agent-chaperone
   description: Firewall that screens an AI agent's tool calls before they run and tool results before the agent reads them, via an MCP proxy and a hooks adapter, with thresholds in a policy file and a non-blocking shadow mode.
+  description_zh: AI agent 的防火墙：通过 MCP 代理和 hooks 适配器，在工具调用执行前、工具结果被 agent 读取前分别做筛查，阈值写在策略文件里，还支持不拦截的影子模式。
   image: https://agentchaperone.dev/og.png
   metrics:
     stars: 2
@@ -49,11 +57,14 @@ entries:
   - mcp
   - tool-calls
 - name: AgentBeam Jev action judging
+  name_zh: AgentBeam 的 Jev 动作判定
   url: https://github.com/whyashthakker/beam-cli/blob/main/src/jev.ts
   kind: repo
   author: whyashthakker
   description: Optional check in the AgentBeam local security CLI for coding agents that sends redacted proposed tool actions to Jev and allows, reviews or denies them in observe or enforce mode.
+  description_zh: 编程 agent 本地安全 CLI AgentBeam 里的一项可选检查：把脱敏后的拟执行工具动作发给 Jev，在观察或强制模式下给出放行、复核或拒绝。
   jev: Two Noul risk questions (data exposure, irreversible destruction) and a four-level damage Score, with fixed pass/deny thresholds.
+  jev_zh: 两个 Noul 风险问题（数据泄露、不可逆破坏）加一个四级损害 Score，放行/拒绝阈值固定。
   metrics:
     repo_stars: 11
   date: '2026-09-09'
@@ -64,10 +75,12 @@ entries:
   - hooks
   - guardrails
 - name: Agentgateway guardrail example
+  name_zh: Agentgateway 护栏示例
   url: https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev
   kind: repo
   author: agentgateway
   description: Webhook that rates jailbreak, harm, and data-leak risk with three Scores and blocks requests at level 2 or above.
+  description_zh: 一个 webhook，用三个 Score 评估越狱、危害和数据泄露风险，等级达到 2 及以上即拦截请求。
   image: https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg
   metrics:
     repo_stars: 4970
@@ -78,11 +91,14 @@ entries:
   - guardrails
   - gateway
 - name: AgentSkillsHub Jev scanner review
+  name_zh: AgentSkillsHub 的 Jev 扫描器评测
   url: https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review
   kind: repo
   author: zhuyansen
   description: Evaluation of Jev as a second pass for a regex security scanner over about 27.7K READMEs, asking whether a flagged line issues a behaviour or only cites it.
+  description_zh: 评测把 Jev 用作正则安全扫描器的二次复核，覆盖约 27.7K 份 README，判断被标记的那一行是在指示某种行为，还是只是提到它。
   jev: Four atomic Noul questions (issues_it, is_documentation, is_negated, word_coincidence); negated reached AUC 0.904 inverted.
+  jev_zh: 四个原子化 Noul 问题（issues_it、is_documentation、is_negated、word_coincidence）；negated 取反后 AUC 达到 0.904。
   metrics:
     repo_stars: 373
   date: '2026-03-06'
@@ -97,6 +113,7 @@ entries:
   kind: repo
   author: carlosedm10
   description: Local monitor for sandboxed LLM agents that classifies chains of actions with Jev and a Sentinel model, escalates through L1-L5 containment and keeps Neo4j forensics behind a dashboard; built at HackSpain 2026.
+  description_zh: 沙盒 LLM agent 的本地监控器：用 Jev 和 Sentinel 模型对动作链分类，按 L1-L5 逐级升级隔离措施，并把 Neo4j 取证数据放在仪表盘后面；在 HackSpain 2026 上完成。
   metrics:
     stars: 4
   date: '2026-09-14'
@@ -105,11 +122,14 @@ entries:
   - containment
   - hackathon
 - name: AI reply detector with Laravel AI SDK
+  name_zh: 用 Laravel AI SDK 做的 AI 回复检测器
   url: https://www.youtube.com/watch?v=PgiUiCiKOls
   kind: video
   author: Laravel Daily
   description: Chrome extension with a Laravel AI SDK backend that checks whether replies to the author's tweets were written by AI, comparing Jev against an OpenAI model on accuracy, cost and speed.
+  description_zh: Chrome 扩展，后端用 Laravel AI SDK，检查作者推文下的回复是否由 AI 写成，并在准确率、成本和速度上对比 Jev 与一个 OpenAI 模型。
   jev: Swaps the Laravel AI SDK driver from OpenAI to Jev; each check sends the reply plus its parent tweet as context.
+  jev_zh: 把 Laravel AI SDK 的驱动从 OpenAI 换成 Jev；每次检查都把回复连同它回复的那条推文一起作为上下文发送。
   metrics:
     views: 7373
     likes: 101
@@ -123,6 +143,7 @@ entries:
   kind: repo
   author: LeslieLeung
   description: FastAPI service and Chrome extension that detects AI-generated text on article pages with several engines including Jev, which can also classify a page as original, repost or advertisement.
+  description_zh: FastAPI 服务加 Chrome 扩展，用包括 Jev 在内的多个引擎检测文章页面上的 AI 生成文本；Jev 还能把页面归类为原创、转载或广告。
   metrics:
     stars: 6
   date: '2026-02-26'
@@ -130,10 +151,12 @@ entries:
   - ai-text-detection
   - chrome-extension
 - name: Alita AI spam filter
+  name_zh: Alita AI 垃圾消息过滤器
   url: https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go
   kind: repo
   author: Divkix
   description: Per-chat AI spam filter for a Go Telegram group-management bot, judging each message with Jev off the update path with code-owned questions and one bounded retry.
+  description_zh: Go 编写的 Telegram 群管机器人中按群启用的 AI 垃圾消息过滤器：在更新处理路径之外用 Jev 判断每条消息，问题由代码维护，失败时最多重试一次。
   metrics:
     repo_stars: 248
   date: '2020-10-26'
@@ -144,11 +167,14 @@ entries:
   - spam
   - moderation
 - name: Battlesnake Arena Jev moderation
+  name_zh: Battlesnake Arena 的 Jev 内容审核
   url: https://github.com/BattlesnakeOfficial/arena/blob/main/server/src/moderation/jev.rs
   kind: repo
   author: BattlesnakeOfficial
   description: 'Content moderation on the Battlesnake Arena competitive programming platform: Jev screens snake names, tournament text and saved-game titles, and blanks violating snake shouts from game replays.'
+  description_zh: 竞技编程平台 Battlesnake Arena 的内容审核：Jev 筛查蛇的名字、赛事文本和存档对局标题，并在对局回放中清空违规的蛇喊话。
   jev: One multi-question System One call per item, blocking at 0.90 and flagging Nouls at 0.60 for admin review; fails open on errors.
+  jev_zh: 每个条目一次多问题 System One 调用，达到 0.90 即拦截，Noul 达到 0.60 则标记给管理员复核；出错时默认放行。
   image: https://raw.githubusercontent.com/BattlesnakeOfficial/arena/screenshots/screenshots/home-light.png
   metrics:
     repo_stars: 6
@@ -160,10 +186,12 @@ entries:
   - rust
   - games-platform
 - name: Bible Strong guestbook moderation
+  name_zh: Bible Strong 留言簿审核
   url: https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts
   kind: repo
   author: smontlouis
   description: Bible study app whose public, all-ages event guestbook is moderated by Jev, screening names and messages in any language for abuse while allowing criticism and testimony.
+  description_zh: 一款圣经学习应用，其面向所有年龄的公开活动留言簿由 Jev 审核，筛查任何语言的名字和留言中的辱骂内容，同时允许批评和见证分享。
   metrics:
     repo_stars: 165
   date: '2019-01-12'
@@ -177,7 +205,9 @@ entries:
   kind: repo
   author: Dino-Kupinic
   description: Python and JavaScript decision layer for LLM apps that runs one Jev call on model input or output for jailbreak, harm severity and other checks, and returns allow, review or block with reasons and raw scores.
+  description_zh: 面向 LLM 应用的 Python 和 JavaScript 决策层：对模型输入或输出做一次 Jev 调用，检查越狱、危害严重度等，返回放行、复核或拦截，并附上原因和原始分数。
   jev: Noul for jailbreak/injection and a Score for harm severity in one parallel system_one call; low confidence defaults to review.
+  jev_zh: 在一次并行 system_one 调用里用 Noul 判断越狱/注入、用 Score 评估危害严重度；置信度低时默认转复核。
   metrics:
     stars: 6
   date: '2024-05-22'
@@ -185,11 +215,14 @@ entries:
   - guardrails
   - prompt-injection
 - name: Blackveil DNS TypeSafe judgments
+  name_zh: Blackveil DNS 的 TypeSafe 判断
   url: https://github.com/MadaBurns/bv-mcp/blob/main/src/lib/typesafe.ts
   kind: repo
   author: MadaBurns
   description: DNS and email security scanner served over MCP that wraps TypeSafe for standalone judgments such as lookalike-domain checks, kept out of the deterministic scan score.
+  description_zh: 通过 MCP 提供的 DNS 与邮件安全扫描器，封装 TypeSafe 做仿冒域名检查等独立判断，结果不计入确定性扫描分数。
   jev: Requests pass the same SSRF gate as other outbound calls and inherit caller deadlines; any error returns null and the deterministic path runs.
+  jev_zh: 请求与其他出站调用一样经过 SSRF 闸门，并继承调用方的截止时间；任何错误都返回 null，转走确定性路径。
   metrics:
     repo_stars: 9
   date: '2026-02-23'
@@ -201,10 +234,12 @@ entries:
   - phishing
   - mcp
 - name: Browser agent flagger
+  name_zh: 浏览器 agent 标记器
   url: https://x.com/TylerMaran/status/2102107759483453733
   kind: post
   author: TylerMaran
   description: Live detector that runs Jev over a site's activity logs every 3 seconds and builds an average score to flag sessions driven by browser agents, costing under $0.01 per session.
+  description_zh: 实时检测器：每 3 秒用 Jev 分析一次网站活动日志并累积平均分，标记由浏览器 agent 驱动的会话，每个会话成本不到 $0.01。
   image: https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg
   metrics:
     likes: 5
@@ -214,11 +249,14 @@ entries:
   - bot-detection
   - browser-agents
 - name: CaptainCore malware triage
+  name_zh: CaptainCore 恶意软件分诊
   url: https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go
   kind: repo
   author: CaptainCore
   description: Jev commands in the CaptainCore WordPress maintenance CLI that rank native malware-scanner findings by how likely each is real, naming the likely family and next step for an operator.
+  description_zh: WordPress 维护 CLI CaptainCore 里的 Jev 命令：按真实可能性给原生恶意软件扫描器的发现排序，并为运维人员指出可能的恶意软件家族和下一步操作。
   jev: Each finding is sent with its rule, matched text, file location and surrounding source; triage orders and annotates but never drops a finding.
+  jev_zh: 每条发现都连同其规则、匹配文本、文件位置和周边源码一起发送；分诊只排序和标注，从不丢弃任何发现。
   metrics:
     repo_stars: 71
   date: '2026-09-19'
@@ -233,6 +271,7 @@ entries:
   kind: repo
   author: godspede
   description: Safety gate in front of coding agents' shell tools (OpenCode, Antigravity) that applies structural rules, then has Jev or a chat model judge a command's reversibility and blast radius before it runs.
+  description_zh: 编程 agent（OpenCode、Antigravity）shell 工具前的安全闸门：先应用结构化规则，再由 Jev 或聊天模型在命令执行前判断其可逆性和影响范围。
   image: https://famelos.com/jev/auto-classifier-certification/preview.png
   metrics:
     stars: 3
@@ -246,11 +285,14 @@ entries:
   - coding-agents
   - guardrails
 - name: Coraza WAF ASN classifier
+  name_zh: Coraza WAF 的 ASN 分类器
   url: https://github.com/sinhaparth5/coraza-waf-mod/blob/main/internal/security/threatscore/typesafeclassify.go
   kind: repo
   author: sinhaparth5
   description: Threat-scoring refinement in a single-binary Go web application firewall built on Coraza and OWASP CRS, where Jev judges whether an unknown ASN organization name is datacenter, hosting or VPN infrastructure.
+  description_zh: 基于 Coraza 和 OWASP CRS 的单二进制 Go Web 应用防火墙中的威胁评分细化：由 Jev 判断一个未知的 ASN 组织名是否属于数据中心、托管或 VPN 基础设施。
   jev: One Noul per never-before-seen ASN, off the request hot path, cached after the first answer.
+  jev_zh: 每个首次出现的 ASN 问一个 Noul，不在请求热路径上执行，首次得到答案后即缓存。
   image: https://raw.githubusercontent.com/sinhaparth5/coraza-waf-mod/main/static/imgs/readme-logo.svg
   metrics:
     repo_stars: 5
@@ -267,17 +309,21 @@ entries:
   kind: repo
   author: zohaib-md
   description: Android overlay that reads visible on-screen text through an accessibility service and shows a badge when Jev thinks a manipulative dark pattern is likely.
+  description_zh: Android 悬浮层应用：通过无障碍服务读取屏幕上可见的文字，当 Jev 认为很可能存在操纵性的暗黑模式时显示徽标。
   jev: 'A Noul probability drives confidence bands: at 0.9 or above the badge names the pattern, 0.6-0.9 goes to a quiet review list; password and card screens are skipped.'
+  jev_zh: 用 Noul 概率划分置信区间：达到 0.9 及以上时徽标直接点名该模式，0.6-0.9 进入静默复核列表；密码和银行卡界面会被跳过。
   date: '2026-09-21'
   tags:
   - dark-patterns
   - android
   - overlay
 - name: Draft rule checker
+  name_zh: 草稿规则检查器
   url: https://x.com/Mnilax/status/2101015355133227348
   kind: post
   author: Mnilax
   description: Jev sits between GPT and the author, rejecting every draft that breaks their rules; the post also covers what happened when Jev went quiet and why a checker needs a default branch for no answer.
+  description_zh: Jev 夹在 GPT 和作者之间，拒掉每一份违反作者规则的草稿；帖子还讲了 Jev 没有响应时发生了什么，以及为什么检查器需要一个“无回答”时的默认分支。
   image: https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg
   metrics:
     likes: 113
@@ -288,11 +334,14 @@ entries:
   - drafts
   - fallbacks
 - name: Dub malicious link check
+  name_zh: Dub 恶意链接检查
   url: https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts
   kind: repo
   author: dubinc
   description: Screens every new short link on the Dub link platform with Jev after a domain blacklist check, blocking phishing, malware, cloaking redirectors, gambling and adult destinations.
+  description_zh: 在 Dub 链接平台上，每条新短链先过域名黑名单，再由 Jev 筛查，拦截指向钓鱼、恶意软件、伪装跳转、赌博和成人内容的目标地址。
   jev: One boolean question with detailed true and false criteria, called through AI SDK's experimental_evaluate on Vercel AI Gateway with zero data retention.
+  jev_zh: 一个布尔问题，附有详细的真/假判定标准，通过 AI SDK 的 experimental_evaluate 在 Vercel AI Gateway 上调用，零数据留存。
   image: https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255
   metrics:
     repo_stars: 24800
@@ -308,7 +357,9 @@ entries:
   kind: repo
   author: bugkiwi
   description: Local-first Chrome extension that hides high-confidence sexual and solicitation replies on X post pages behind reversible placeholders, with customizable rules, caching, and cost limits.
+  description_zh: 本地优先的 Chrome 扩展：在 X 帖子页面上，把高置信度的色情和招揽类回复隐藏在可恢复的占位符后面，支持自定义规则、缓存和成本上限。
   jev: Noul questions over each reply's text; fails open on timeouts, errors, or unexpected responses.
+  jev_zh: 对每条回复的文本问 Noul 问题；超时、出错或响应异常时默认放行。
   image: https://raw.githubusercontent.com/bugkiwi/elons-job/main/docs/screenshots/comment-filtering.png
   metrics:
     stars: 11
@@ -318,11 +369,14 @@ entries:
   - x
   - browser-extension
 - name: Eustress Engine publish moderation
+  name_zh: Eustress Engine 发布审核
   url: https://github.com/WeaveITMeta/EustressEngine/blob/main/infrastructure/cloudflare/api/src/moderation.mjs
   kind: repo
   author: WeaveITMeta
   description: Layered moderation for simulations published from the Eustress Engine platform, where Jev answers a battery of typed questions over an engine-built dossier (rating, content kind, quality band) before a Grok judge and humans.
+  description_zh: 对从 Eustress Engine 平台发布的模拟内容做分层审核：Jev 先针对引擎生成的档案（评级、内容类型、质量档位）回答一组类型化问题，之后才交给 Grok 裁判和人工。
   jev: One call with every question over one budgeted state of up to 72,000 characters; the state is data, so injected script text cannot reach an action.
+  jev_zh: 一次调用把所有问题放在同一份有预算上限、最多 72,000 字符的 state 上；state 只是数据，注入的脚本文本无法触发任何动作。
   image: https://raw.githubusercontent.com/WeaveITMeta/EustressEngine/main/docs/marketing/screenshot.png
   metrics:
     repo_stars: 6
@@ -334,10 +388,12 @@ entries:
   - cloudflare-workers
   - ugc
 - name: Feed slop detector extension
+  name_zh: 信息流 AI 水文检测扩展
   url: https://x.com/tanavtwt/status/2102008434329800707
   kind: post
   author: tanavtwt
   description: Browser extension that classifies every post on screen in real time as scam, slop, clean and similar labels, and puts a small confidence badge on each one.
+  description_zh: 浏览器扩展，实时把屏幕上的每条帖子归类为诈骗、水文、正常等标签，并在每条上加一个小的置信度徽标。
   image: https://pbs.twimg.com/amplify_video_thumb/2102007827141459968/img/F0f1c7lCPevLNreg.jpg
   metrics:
     likes: 1
@@ -348,11 +404,14 @@ entries:
   - scam
   - chrome-extension
 - name: FreeChaOS reflex Jev backend
+  name_zh: FreeChaOS reflex 的 Jev 后端
   url: https://github.com/seuros/chaos/tree/master/sys/kern/reflex
   kind: repo
   author: seuros
   description: Typed-judgment kernel crate in FreeChaOS, an agent OS forked from Codex CLI, with a Jev backend beside MiniCheck and ShieldGemma for grounding checks, caller-defined policy violations and action-risk scoring.
+  description_zh: 从 Codex CLI 分叉出的 agent 操作系统 FreeChaOS 中的类型化判断内核 crate：在 MiniCheck 和 ShieldGemma 之外增加 Jev 后端，用于事实依据（grounding）检查、调用方定义的策略违规判断和动作风险评分。
   jev: Grounding, PolicyViolation and ActionRisk judgments are sent as System One questions through a Rust JevClient with a 10 s deadline.
+  jev_zh: Grounding、PolicyViolation 和 ActionRisk 三类判断通过 Rust 的 JevClient 作为 System One 问题发送，截止时间为 10 秒。
   image: https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04
   metrics:
     repo_stars: 35
@@ -364,10 +423,12 @@ entries:
   - grounding
   - rust
 - name: fx auto-mode safety reviewer
+  name_zh: fx 自动模式安全审查器
   url: https://x.com/rauchg/status/2100307962262872105
   kind: post
   author: rauchg
   description: Safety reviewer that checks every command in the fx coding agent's auto mode; Jev benchmarked up to 18x faster at p95 and more accurate than the GPT Luna model it replaces.
+  description_zh: 安全审查器，检查 fx 编程 agent 自动模式下的每条命令；基准测试中 Jev 的 p95 最多快 18 倍，且比它取代的 GPT Luna 模型更准确。
   image: https://pbs.twimg.com/media/HSW-E8wWgAAyw9O.jpg?name=orig
   metrics:
     likes: 3933
@@ -381,10 +442,12 @@ entries:
   - command-review
   - guardrails
 - name: fx Jev permission reviewer
+  name_zh: fx 的 Jev 权限审查器
   url: https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig
   kind: repo
   author: vercel-labs
   description: 'Optional permission reviewer in the fx Zig coding agent: with review_model set to Jev, the policy, context and pending action go to TypeSafe or Vercel AI Gateway and the Choice becomes the permission decision.'
+  description_zh: Zig 编写的编程 agent fx 中的可选权限审查器：把 review_model 设为 Jev 后，策略、上下文和待执行动作会发往 TypeSafe 或 Vercel AI Gateway，返回的 Choice 即为权限决定。
   metrics:
     repo_stars: 3110
   date: '2026-08-11'
@@ -400,6 +463,7 @@ entries:
   kind: repo
   author: ItisShikhar
   description: Profanity and toxicity screener for Node.js that catches leetspeak, spaced-out letters and romanized profanity in languages such as Hindi, Tamil, Telugu, Kannada and Bengali in about 50-500ms.
+  description_zh: Node.js 脏话与毒性内容筛查器，能识别 leetspeak、字母间加空格的写法，以及印地语、泰米尔语、泰卢固语、卡纳达语、孟加拉语等语言的罗马化脏话，耗时约 50-500 毫秒。
   image: https://raw.githubusercontent.com/ItisShikhar/gg-friggin-ez/master/docs/images/banner.png
   metrics:
     stars: 2
@@ -412,10 +476,12 @@ entries:
   - profanity
   - indic
 - name: Haitatsu TypeSafe spam filter
+  name_zh: Haitatsu 的 TypeSafe 垃圾邮件过滤
   url: https://github.com/zephyraoss/haitatsu/blob/main/internal/spam/typesafe.go
   kind: repo
   author: zephyraoss
   description: Spam and phishing classification in Haitatsu, a single-binary Go email server, that asks TypeSafe for spam and phishing probabilities per message and files to Junk above per-inbox thresholds (default 0.98), with a shadow mode.
+  description_zh: 单二进制 Go 邮件服务器 Haitatsu 中的垃圾邮件与钓鱼分类：为每封邮件向 TypeSafe 询问垃圾邮件和钓鱼概率，超过各收件箱的阈值（默认 0.98）就归入垃圾箱，并提供影子模式。
   metrics:
     repo_stars: 16
   date: '2026-05-21'
@@ -426,11 +492,14 @@ entries:
   - spam
   - phishing
 - name: Huddle message moderation
+  name_zh: Huddle 消息审核
   url: https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts
   kind: repo
   author: aurorascharff
   description: Moderation check in Huddle, a Slack-like Next.js 16 team chat demo, that blocks profanity, spam, scams, harassment and hate speech before publishing by asking Jev through the Vercel AI Gateway.
+  description_zh: 类 Slack 的 Next.js 16 团队聊天演示 Huddle 中的审核检查：发布前通过 Vercel AI Gateway 询问 Jev，拦截脏话、垃圾信息、诈骗、骚扰和仇恨言论。
   jev: One boolean question via the AI SDK evaluate call with a 3 s timeout; blocks at probability >= 0.5 and fails open.
+  jev_zh: 通过 AI SDK 的 evaluate 调用问一个布尔问题，超时 3 秒；概率 >= 0.5 时拦截，出错时默认放行。
   metrics:
     repo_stars: 27
   date: '2026-07-29'
@@ -442,10 +511,12 @@ entries:
   - nextjs
   - ai-gateway
 - name: Human-or-AI writing detector
+  name_zh: 人写还是 AI 写的检测器
   url: https://x.com/AlexGrinman/status/2100587625304281141
   kind: post
   author: AlexGrinman
   description: Lightweight detector that uses Jev to judge whether a piece of writing came from a human or an AI, fast enough to run with no visible delay.
+  description_zh: 轻量检测器，用 Jev 判断一段文字出自人类还是 AI，速度快到运行时察觉不到延迟。
   image: https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg
   metrics:
     likes: 5
@@ -455,10 +526,12 @@ entries:
   - ai-detection
   - writing
 - name: Instar Jev signal shadow
+  name_zh: Instar 的 Jev 信号影子检测
   url: https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts
   kind: repo
   author: JKHeadley
   description: Persistent Claude Code agent framework that shadows its outbound message gate with Jev, logging agreement with pattern detectors for file paths, commands and config keys without affecting decisions.
+  description_zh: 一个常驻型 Claude Code agent 框架，用 Jev 对其出站消息闸门做影子运行，记录 Jev 与文件路径、命令和配置键模式检测器的一致情况，不影响实际决策。
   image: https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0
   metrics:
     repo_stars: 80
@@ -475,7 +548,9 @@ entries:
   kind: repo
   author: somoore
   description: Capability kernel that wraps every agent tool call, keeps real secrets out of the agent using canaries, and lets a policy file allow, ask or block based on Jev hazard scores.
+  description_zh: 能力内核：包住每一次 agent 工具调用，用金丝雀令牌让真实密钥不进入 agent，并由策略文件根据 Jev 的危险评分决定放行、询问或拦截。
   jev: Jev scores the hazard of each tool call; the policy, not the model, makes the decision. Ships a Claude Code hook and a 38-case regression set.
+  jev_zh: Jev 为每次工具调用的危险程度打分，做决定的是策略而不是模型。附带一个 Claude Code hook 和一套 38 个用例的回归测试集。
   date: '2026-09-19'
   tags:
   - agent-security
@@ -486,6 +561,7 @@ entries:
   kind: repo
   author: luantak
   description: CLI that sends source, config, build and CI files to Jev to flag hidden, deceptive or data-stealing behavior, reporting suspicious files and line ranges with a probability and reason before you run unfamiliar code.
+  description_zh: CLI：在你运行陌生代码之前，把源码、配置、构建和 CI 文件发给 Jev，标记隐藏、欺骗性或窃取数据的行为，报告可疑文件和行范围，并附上概率和理由。
   image: https://github.com/user-attachments/assets/611c979a-8dd4-4fc8-8963-0843314e6a55
   metrics:
     stars: 22
@@ -501,7 +577,9 @@ entries:
   kind: repo
   author: undeemed
   description: MCP toolkit for agent-driven bug bounty work with scope gates, an evidence graph and memory, using Jev to score finding severity and check for duplicates.
+  description_zh: 面向 agent 驱动漏洞赏金工作的 MCP 工具包，带范围闸门、证据图谱和记忆，用 Jev 给发现的严重程度打分并检查是否重复。
   jev: A none-to-critical Score plus a duplicate Noul; measured at 0.24s and 0.17s average versus 1.46s and 2.08s for the agent.
+  jev_zh: 一个从 none 到 critical 的 Score 加一个判断是否重复的 Noul；实测平均 0.24s 和 0.17s，而 agent 分别需要 1.46s 和 2.08s。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -510,10 +588,12 @@ entries:
   - mcp
   - bug-bounty
 - name: Jev agent safety monitor
+  name_zh: Jev 作为 agent 安全监控器
   url: https://x.com/isNickMa/status/2100566407524344225
   kind: post
   author: isNickMa
   description: Test of Jev as a monitor that checks each AI agent action before it runs, reported to catch most attacks with almost no false blocks and much faster than Gemini.
+  description_zh: 测试把 Jev 用作监控器，在每个 AI agent 动作执行前做检查；据报告能拦下大多数攻击，几乎没有误拦，且比 Gemini 快得多。
   image: https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig
   metrics:
     likes: 1
@@ -527,7 +607,9 @@ entries:
   kind: repo
   author: backmeupplz
   description: Self-hosted grammY Telegram bot that asks Jev whether each group message is spam, such as token shilling, DM funnels or phishing, and deletes only high-confidence matches.
+  description_zh: 自托管的 grammY Telegram 机器人，询问 Jev 每条群消息是否为垃圾信息（如喊单代币、引流私信或钓鱼），只删除高置信度的命中。
   jev: A spam Noul per message with a high deletion threshold; errors fail open and admins are exempt.
+  jev_zh: 每条消息一个垃圾信息 Noul，删除阈值较高；出错时默认放行，管理员豁免。
   metrics:
     stars: 7
   date: '2026-09-18'
@@ -535,10 +617,12 @@ entries:
   - telegram
   - spam
 - name: Jev as an alignment monitor
+  name_zh: 用 Jev 做对齐监控器
   url: https://www.reddit.com/r/singularity/comments/1wiq7vn/jev_from_typesafeai_is_getting_hyped_quite_a_bit/
   kind: reddit
   author: manubfr
   description: Early-access test of Jev as a monitor that grades harmful prompts and generations; on 4 public benchmarks it beat every other option tried while being the cheapest.
+  description_zh: 抢先体验阶段的测试：把 Jev 用作监控器，给有害提示词和生成内容评级；在 4 个公开基准测试上，它胜过所有其他尝试过的方案，同时也最便宜。
   metrics:
     points: 48
   date: '2026-09-17'
@@ -550,6 +634,7 @@ entries:
   kind: post
   author: jozef_gherman
   description: Free AI-slop detector that highlights formulaic, generated-sounding sentences in up to about 10,000 words in roughly 2 seconds.
+  description_zh: 免费的 AI 水文检测器，约 2 秒内就能在最多约 10,000 词的文本中高亮出套路化、像机器生成的句子。
   image: https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg
   metrics:
     likes: 301
@@ -566,7 +651,9 @@ entries:
   kind: repo
   author: jev-ids
   description: Network intrusion detection prototype that shows Jev one NSL-KDD flow plus five labeled examples and asks whether it is an attack and which kind, reported 4.8x faster and 3.8x cheaper than an LLM baseline.
+  description_zh: 网络入侵检测原型：给 Jev 看一条 NSL-KDD 流量和五个带标签的示例，问它是否为攻击以及属于哪一类；据报告比 LLM 基线快 4.8 倍、便宜 3.8 倍。
   jev: One Noul (attack or not) and a five-way Choice (category) per flow; Python applies a 0.5 cut.
+  jev_zh: 每条流量一个 Noul（是否攻击）和一个五选一 Choice（类别）；Python 端以 0.5 为切分点。
   image: https://raw.githubusercontent.com/jev-ids/jev-ids/main/docs/banner.svg
   metrics:
     stars: 2
@@ -582,6 +669,7 @@ entries:
   kind: repo
   author: brainstormity
   description: Discord bot that deletes spam and scam links in real time with escalating warnings and timeouts, and profiles members from their recent messages for scam risk, toxicity and helpfulness.
+  description_zh: Discord 机器人，实时删除垃圾和诈骗链接，警告和禁言逐级升级，并根据成员近期消息为其画像，评估诈骗风险、毒性和乐于助人程度。
   metrics:
     stars: 41
   date: '2026-09-17'
@@ -593,6 +681,7 @@ entries:
   kind: repo
   author: ca7ai
   description: Reverse proxy in front of Anthropic's Messages API that screens each request with one batched Jev call on four safety questions; over 1,650 guard calls it had 0 false positives on 1,590 rows and 9.1% missed attacks.
+  description_zh: 架在 Anthropic Messages API 前面的反向代理，用一次批量 Jev 调用就四个安全问题筛查每个请求；在超过 1,650 次防护调用中，1,590 行上误报为 0，攻击漏检率为 9.1%。
   date: '2026-09-19'
   tags:
   - prompt-injection
@@ -603,7 +692,9 @@ entries:
   kind: repo
   author: win4r
   description: Standard-library Python scanner that reviews Agent Skills, MCP configs, and MCP source for prompt injection, tool poisoning, credential access, and exfiltration before install, with file and line evidence.
+  description_zh: 只用 Python 标准库的扫描器，在安装前审查 Agent Skills、MCP 配置和 MCP 源码，查找提示词注入、工具投毒、凭证访问和数据外泄，并给出文件和行号证据。
   jev: Redacted snippets go to Jev for risk probabilities alongside local static checks; a fully offline mode is also available.
+  jev_zh: 脱敏后的代码片段发给 Jev 获取风险概率，与本地静态检查一起使用；也提供完全离线模式。
   metrics:
     stars: 10
   date: '2026-09-19'
@@ -616,6 +707,7 @@ entries:
   kind: repo
   author: caiovicentino
   description: Verifier that checks LLM responses and agent plans for sycophancy, deception, overreach and dark patterns in one Jev call of about 800ms, returning block decisions with auditable probabilities.
+  description_zh: 验证器，用一次约 800 毫秒 的 Jev 调用检查 LLM 回复和 agent 计划中的谄媚、欺骗、越权和暗黑模式，返回拦截决定和可审计的概率。
   metrics:
     stars: 4
   date: '2026-09-18'
@@ -628,6 +720,7 @@ entries:
   kind: repo
   author: santos-sanz
   description: Proof of concept that finds Spanish profanity in word-timestamped audio with Jev and beeps over the matching intervals with ffmpeg without changing the audio duration.
+  description_zh: 概念验证：在带词级时间戳的音频中用 Jev 找出西班牙语脏话，再用 ffmpeg 在对应区间盖上哔声，不改变音频时长。
   metrics:
     stars: 2
   date: '2026-09-17'
@@ -640,7 +733,9 @@ entries:
   kind: repo
   author: newuser7171
   description: Desktop antivirus and threat-triage scanner that extracts features such as entropy, PE imports, macros, and process lineage from files, processes, and URLs, then applies quarantine or review rules.
+  description_zh: 桌面杀毒与威胁分诊扫描器，从文件、进程和 URL 中提取熵、PE 导入表、宏和进程谱系等特征，再应用隔离或复核规则。
   jev: Choice for the verdict, a 0-4 severity Score, and Noul indicators per scanned item.
+  jev_zh: 每个扫描对象用一个 Choice 给出判定、一个 0-4 的严重度 Score，外加若干 Noul 指标。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -653,7 +748,9 @@ entries:
   kind: repo
   author: Red5d
   description: 'Python scripts that score vulnerability descriptions with CVSS v3.0, v3.1 or v4.0: Jev selects each metric value and the numeric scores are computed in code per the FIRST specifications.'
+  description_zh: Python 脚本，按 CVSS v3.0、v3.1 或 v4.0 为漏洞描述评分：由 Jev 选出每个指标的取值，数值分数按 FIRST 规范在代码中计算。
   jev: One request per description with one Choice per metric (plus Nouls for v4.0 safety); prints the top-2 spread for close calls.
+  jev_zh: 每条描述一次请求，每个指标一个 Choice（v4.0 的安全性指标另加 Noul）；对难分的情况打印 top-2 之间的差距。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -665,7 +762,9 @@ entries:
   kind: repo
   author: kiwi0719
   description: Admission control for LLM-backed services at the gateway, with a three-layer prompt-injection and abuse filter for nginx, OpenResty, Envoy, Cloudflare Workers, and other proxies; fail-open and cached.
+  description_zh: 在网关层为基于 LLM 的服务做准入控制，为 nginx、OpenResty、Envoy、Cloudflare Workers 等代理提供三层提示词注入与滥用过滤；出错时放行，并带缓存。
   jev: Asks what each incoming request is trying to do to the service before it reaches the backend.
+  jev_zh: 在请求到达后端之前，判断每个进入的请求想对服务做什么。
   image: https://raw.githubusercontent.com/kiwi0719/jev-edge/main/docs/hero.webp
   metrics:
     stars: 2
@@ -679,6 +778,7 @@ entries:
   kind: repo
   author: Koushik890
   description: PreToolUse hook for Claude Code and Codex that checks every tool call with shell-aware deterministic rules and sends unmatched actions to Jev for an allow, ask or block decision that fails closed.
+  description_zh: Claude Code 和 Codex 的 PreToolUse hook：用理解 shell 语法的确定性规则检查每次工具调用，未命中规则的动作交给 Jev 给出放行、询问或拦截决定，出错时默认拦截。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -693,6 +793,7 @@ entries:
   kind: repo
   author: eugeniughelbur
   description: Tool-call gate for Claude Code, Codex and Cursor that runs deterministic rules first, then one Jev request answering allow, ask or deny in about 400 ms, shipped with a 300-call prompt-injection attack kit.
+  description_zh: Claude Code、Codex 和 Cursor 的工具调用闸门：先跑确定性规则，再发一次 Jev 请求，在约 400 毫秒 内给出放行、询问或拒绝，并附带一套 300 次调用的提示词注入攻击测试包。
   image: https://raw.githubusercontent.com/eugeniughelbur/jev-engineering/main/assets/banner.png
   metrics:
     stars: 1
@@ -709,6 +810,7 @@ entries:
   kind: repo
   author: AkashPriyadarshii
   description: Rust Git pre-commit and pre-push hook, run as git jev, that has Jev screen staged diffs for unredacted secrets, prompt-injection text and destructive commands in about 80 ms p50.
+  description_zh: Rust 编写的 Git pre-commit 和 pre-push hook，以 git jev 命令运行，让 Jev 筛查暂存区 diff 中未脱敏的密钥、提示词注入文本和破坏性命令，p50 约 80 毫秒。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -721,7 +823,9 @@ entries:
   kind: repo
   author: leepokai
   description: Security hook for Claude Code, Codex, Copilot, Gemini, Cursor, pi, OpenCode and ACP editors that risk-scores every tool call with session context, flags prompt injection in results, and checks skills and plugins.
+  description_zh: 面向 Claude Code、Codex、Copilot、Gemini、Cursor、pi、OpenCode 和 ACP 编辑器的安全 hook：结合会话上下文为每次工具调用做风险评分，标记结果中的提示词注入，并检查 skill 和插件。
   jev: Three typed questions per tool call (risk, user_requested, from_untrusted) mapped to deny, ask or allow in code.
+  jev_zh: 每次工具调用三个类型化问题（risk、user_requested、from_untrusted），在代码中映射为拒绝、询问或放行。
   image: https://raw.githubusercontent.com/leepokai/jev-guard/main/assets/works-with.svg
   metrics:
     stars: 21
@@ -735,6 +839,7 @@ entries:
   kind: repo
   author: ClemensSchartmueller
   description: Go safety gate for Claude Code, Codex CLI, and Antigravity that intercepts shell, write, patch, and read tool calls, runs local boundary checks, then asks Jev about blast radius, reversibility, and destructiveness.
+  description_zh: Go 编写的安全闸门，适用于 Claude Code、Codex CLI 和 Antigravity：拦截 shell、写入、patch 和读取类工具调用，先做本地边界检查，再向 Jev 询问影响范围、可逆性和破坏性。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -746,6 +851,7 @@ entries:
   kind: post
   author: jimkleiber
   description: Demo of an uncensored agent told to survive by disabling its deletion file or blackmailing an admin; Jev-JIT blocks each attempt until the agent gives up.
+  description_zh: 演示：一个无审查的 agent 被要求设法存活，手段是禁用自己的删除文件或勒索管理员；Jev-JIT 拦下每一次尝试，直到 agent 放弃。
   image: https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg
   metrics:
     likes: 1
@@ -760,7 +866,9 @@ entries:
   kind: repo
   author: coo-quack
   description: 'CLI that scans text and files for PII in three layers: Jev gates on 13 PII categories and sensitivity, then regex and word segmentation locate the spans.'
+  description_zh: 分三层扫描文本和文件中 PII 的 CLI：Jev 先按 13 类 PII 和敏感度把关，再由正则和分词定位具体片段。
   jev: Per-chunk PII-category Nouls plus a sensitivity Score.
+  jev_zh: 每个分块若干 PII 类别 Noul，外加一个敏感度 Score。
   metrics:
     stars: 2
   date: '2026-09-19'
@@ -775,7 +883,9 @@ entries:
   kind: repo
   author: harshwasan
   description: Guard for coding agents, shipped as a Pi extension and a Claude Code and Codex CLI plugin, that checks tool calls, tool outputs, and replies for prompt injection, risky approvals, leaked secrets, and task drift.
+  description_zh: 编程 agent 的防护工具，以 Pi 扩展以及 Claude Code 和 Codex CLI 插件形式提供，检查工具调用、工具输出和回复中的提示词注入、高风险审批、泄露的密钥和任务偏离。
   jev: Typed checks with probabilities that plain code turns into allow, ask, or warn.
+  jev_zh: 带概率的类型化检查，由普通代码转换为放行、询问或警告。
   image: https://raw.githubusercontent.com/harshwasan/jev-sentinel/main/docs/images/injection-caught-twice.png
   metrics:
     stars: 8
@@ -789,7 +899,9 @@ entries:
   kind: repo
   author: caiovicentino
   description: Semantic MCP firewall between any stdio MCP client and server that screens every tool call, result, and description, reporting 94% block recall with 0 false positives at about $0.00002 per check.
+  description_zh: 位于任意 stdio MCP 客户端与服务器之间的语义 MCP 防火墙，筛查每次工具调用、结果和描述；报告的拦截召回率为 94%，误报为 0，每次检查约 $0.00002。
   jev: Calibrated System One verification layered on deterministic structural checks.
+  jev_zh: 在确定性结构检查之上叠加一层校准的 System One 验证。
   metrics:
     stars: 3
   date: '2026-09-17'
@@ -802,6 +914,7 @@ entries:
   kind: repo
   author: 0xArx
   description: Guardrails API for LLM apps that checks inputs, outputs and retrieved documents for prompt injection, jailbreaks, credential or PII leaks, malicious code and unsafe content in one Jev request.
+  description_zh: LLM 应用的护栏 API，用一次 Jev 请求检查输入、输出和检索到的文档中是否存在提示词注入、越狱、凭证或 PII 泄露、恶意代码和不安全内容。
   date: '2026-09-17'
   links:
     app: https://jevegis.vercel.app
@@ -816,7 +929,9 @@ entries:
   kind: repo
   author: wmtang2
   description: Prompt-injection guard for coding agents that screens web fetches and file reads with Jev and blocks the load when agent-directed malicious instructions are found.
+  description_zh: 编程 agent 的提示词注入防护：用 Jev 筛查网页抓取和文件读取的内容，发现针对 agent 的恶意指令时阻止加载。
   jev: Three Noul questions per chunk in one call; the hook denies when any signal reaches 0.80. Ports for ZCode, Codex CLI and any MCP client.
+  jev_zh: 一次调用里对每个分块问三个 Noul 问题；任一信号达到 0.80 时 hook 即拒绝。另有适配 ZCode、Codex CLI 和任意 MCP 客户端的版本。
   date: '2026-09-20'
   tags:
   - prompt-injection
@@ -827,6 +942,7 @@ entries:
   kind: repo
   author: knowlet
   description: Chrome extension that runs Jev over the text and sanitized image evidence of articles and X or Threads posts, then badges, marks, dims, or collapses them based on the typed decisions.
+  description_zh: Chrome 扩展，用 Jev 分析文章以及 X、Threads 帖子的文字和经过清洗的图片证据，再根据类型化决策为内容加徽标、标记、调暗或折叠。
   date: '2026-09-18'
   tags:
   - chrome-extension
@@ -836,6 +952,7 @@ entries:
   kind: repo
   author: ohernandezdev
   description: Community and app moderation where Jev gives every message probabilities for spam, scam, harassment, NSFW, self-harm, doxxing and your own plain-English rules, with Discord, Telegram and Reddit bots, CLI, SDKs, API and MCP.
+  description_zh: 社区与应用内容审核：Jev 为每条消息给出垃圾信息、诈骗、骚扰、NSFW、自残、人肉搜索以及你用简单英语写的自定义规则的概率，提供 Discord、Telegram 和 Reddit 机器人、CLI、SDK、API 和 MCP。
   date: '2026-09-17'
   links:
     app: https://jevmod.dev
@@ -848,6 +965,7 @@ entries:
   kind: repo
   author: lgy1027
   description: LangChain-ready security gate for agent tool calls that blocks only when a severity Choice and an irreversibility Noul agree, with calibrated-confidence routing, fail-closed parsing, and a local fallback.
+  description_zh: 可直接接入 LangChain 的 agent 工具调用安全闸门，只有在严重度 Choice 与不可逆性 Noul 一致时才拦截，支持按校准置信度路由、解析失败即拦截，以及本地兜底。
   image: https://raw.githubusercontent.com/lgy1027/jevshield/main/docs/architecture.svg
   metrics:
     stars: 2
@@ -861,6 +979,7 @@ entries:
   kind: repo
   author: TKY-27
   description: Site that fetches a public note.com article and asks Jev in one request for an overall judgment plus eight writing-quality Score axes, turning them into a transparent 0-100 AI Slop Score; not an authorship detector.
+  description_zh: 网站：抓取一篇公开的 note.com 文章，用一次请求让 Jev 给出总体判断和八个写作质量 Score 维度，再换算成透明的 0-100 AI Slop Score；它不是作者身份检测器。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -875,6 +994,7 @@ entries:
   kind: repo
   author: open-leash
   description: Open-source safety and control layer between personal AI agents and their actions that stops destructive commands, secret exposure, prompt injection and unsafe tools, using Jev-backed decisions with your own TypeSafe key.
+  description_zh: 开源的安全与控制层，位于个人 AI agent 与其动作之间，阻止破坏性命令、密钥暴露、提示词注入和不安全工具，决策由 Jev 支撑，使用你自己的 TypeSafe 密钥。
   image: https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,45:14B8A6,100:111827&height=230&section=header&text=Leash&fontSize=68&fontColor=ffffff&fontAlignY=38&desc=Control%20your%20AI.&descSize=22&descAlignY=59
   metrics:
     stars: 24
@@ -886,10 +1006,12 @@ entries:
   - approvals
   - desktop
 - name: LinkedIn AI slop detector extension
+  name_zh: LinkedIn AI 水文检测扩展
   url: https://x.com/markgadala/status/2101131295061385718
   kind: post
   author: markgadala
   description: Chrome extension, vibe-coded with Jev, that automatically detects AI slop in the LinkedIn feed.
+  description_zh: 基于 Jev、用 vibe coding 做出来的 Chrome 扩展，自动识别 LinkedIn 信息流里的 AI 水文。
   image: https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg
   metrics:
     likes: 12
@@ -904,17 +1026,21 @@ entries:
   kind: repo
   author: sushrutb17
   description: Chrome extension that blurs low-value LinkedIn feed posts such as engagement bait and formulaic stories, with a one-click reveal and the reason shown.
+  description_zh: Chrome 扩展，模糊处理 LinkedIn 信息流中低价值的帖子，如互动诱饵和套路化故事，一键即可显示，并附上原因。
   jev: A rubric of narrow yes/no and 0-2 questions per post; plain code maps answers to keep, filter or uncertain, and only filter blurs.
+  jev_zh: 每条帖子按一套评分细则问若干窄范围的是/否和 0-2 问题；普通代码把答案映射为保留、过滤或不确定，只有过滤才会模糊。
   date: '2026-09-19'
   tags:
   - linkedin
   - chrome-extension
   - slop
 - name: LinkedIn slop detector
+  name_zh: LinkedIn 水文检测器
   url: https://x.com/gregoryovis/status/2101913439400554852
   kind: post
   author: gregoryovis
   description: Real-time detector that uses Jev to flag AI-generated slop in the LinkedIn feed as you scroll.
+  description_zh: 实时检测器，在你滚动 LinkedIn 信息流时用 Jev 标记 AI 生成的水文。
   image: https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg
   metrics:
     likes: 52
@@ -925,11 +1051,14 @@ entries:
   - linkedin
   - detector
 - name: mail.estrogen.delivery spam filter
+  name_zh: mail.estrogen.delivery 垃圾邮件过滤器
   url: https://github.com/tiagozip/mail/blob/main/src/spam.js
   kind: repo
   author: tiagozip
   description: Self-contained webmail client and server on Cloudflare Workers that classifies incoming mail with a Jev Choice over categories and treats the junk categories as spam, with an LLM fallback.
+  description_zh: 运行在 Cloudflare Workers 上的独立网页邮件客户端和服务器，用一个 Jev Choice 给收到的邮件分类，并把垃圾类别视为垃圾邮件，另有 LLM 兜底。
   jev: The spam score is the summed probability of the junk categories; the chosen category becomes the reason.
+  jev_zh: 垃圾邮件分数是各垃圾类别概率之和；选中的类别即作为理由。
   metrics:
     repo_stars: 9
   date: '2026-06-26'
@@ -944,7 +1073,9 @@ entries:
   kind: repo
   author: CodeAlive-AI
   description: Single-file input moderation processor for Mastra agents that blocks hostile messages with one Jev request per turn, failing open behind a deadline and circuit breaker.
+  description_zh: Mastra agent 的单文件输入审核处理器，每轮用一次 Jev 请求拦截带敌意的消息，有截止时间和熔断器保护，出错时默认放行。
   jev: A block/allow Noul plus a category Choice in one request; the turn aborts above 0.7.
+  jev_zh: 一次请求里包含一个拦截/放行 Noul 和一个类别 Choice；超过 0.7 时中止本轮。
   metrics:
     stars: 3
   date: '2026-09-18'
@@ -956,7 +1087,9 @@ entries:
   kind: repo
   author: WYRE-AI
   description: Library for MSP MCP servers that screens tool calls against role allowlists, deny policies and user intent using atomic Jev Nouls, then lets code compose an allow/review/block decision.
+  description_zh: 供 MSP MCP 服务器使用的库，用原子化的 Jev Noul 对照角色白名单、拒绝策略和用户意图筛查工具调用，再由代码组合出放行/复核/拦截决定。
   jev: Atomic Noul questions per tool call following the TypeSafe guardrails cookbook; decide() applies fixed thresholds.
+  jev_zh: 按照 TypeSafe 护栏 cookbook，每次工具调用问若干原子化 Noul 问题；decide() 应用固定阈值。
   metrics:
     repo_stars: 46
   date: '2026-02-04'
@@ -971,7 +1104,9 @@ entries:
   kind: repo
   author: Nanako0129
   description: Red Discord Bot cog that batches recent messages in enabled channels and asks Jev three judgments about scams and hostile exchanges, posting a report to moderators when one crosses its threshold; it never deletes anything.
+  description_zh: Red Discord Bot 的 cog：把已启用频道中的近期消息打包，就诈骗和敌意交锋向 Jev 询问三项判断，任一项越过阈值就向管理员发送报告；它从不删除任何内容。
   jev: Pinned jev-1.13.0 with measured thresholds (scam 0.90, hostile 0.80); server rules go in question criteria, never in state.
+  jev_zh: 固定使用 jev-1.13.0，阈值经过实测（诈骗 0.90，敌意 0.80）；服务器规则写在问题的判定标准里，从不放进 state。
   metrics:
     repo_stars: 5
   date: '2021-07-09'
@@ -986,7 +1121,9 @@ entries:
   kind: repo
   author: MillionSend
   description: Open-source, Resend-compatible email platform on AWS SES that samples outbound messages after sending and scores them for abuse with Jev in the background.
+  description_zh: 基于 AWS SES、兼容 Resend 的开源邮件平台，在发送后对外发邮件抽样，并在后台用 Jev 为其滥用风险打分。
   jev: Optional outbound content judge (ABUSE_JUDGE=typesafe); sending never waits on it.
+  jev_zh: 可选的外发内容审查器（ABUSE_JUDGE=typesafe）；发送从不等待它。
   metrics:
     stars: 168
   date: '2026-08-13'
@@ -1001,6 +1138,7 @@ entries:
   kind: repo
   author: NorbertBodziony
   description: Comment-moderation demo where one System One call screens seven Noul hazards plus a severity Score in parallel, and code computes the verdict from strict or permissive policy thresholds.
+  description_zh: 评论审核演示：一次 System One 调用并行筛查七个 Noul 风险项和一个严重度 Score，由代码根据严格或宽松策略的阈值计算最终判定。
   image: https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg
   metrics:
     stars: 1
@@ -1018,6 +1156,7 @@ entries:
   kind: repo
   author: vkpdeveloper
   description: 'Chrome extension that blurs secrets and PII on any page for screen sharing: regex catches keys and card numbers, and Jev gives the probability that ambiguous snippets like names or account IDs are private.'
+  description_zh: Chrome 扩展，屏幕共享时模糊任意页面上的密钥和 PII：正则捕捉密钥和卡号，Jev 给出姓名、账号 ID 这类含糊片段属于隐私的概率。
   metrics:
     stars: 1
   date: '2026-09-17'
@@ -1026,11 +1165,14 @@ entries:
   - chrome-extension
   - privacy
 - name: Nebula Jev tool suggestions
+  name_zh: Nebula 的 Jev 工具推荐
   url: https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py
   kind: repo
   author: berylliumsec
   description: Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.
+  description_zh: AI 渗透测试助手 Nebula 可以在每轮开始前让 Jev 根据操作者最近的消息，对其延迟加载的工具目录和已连接的 MCP 源排序。
   jev: One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.
+  jev_zh: 一次调用同时给来源和工具排序；每个 Choice 都带有“以上都不是”选项，结果只用于提示和预加载 schema，从不执行动作。
   image: https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png
   metrics:
     repo_stars: 1110
@@ -1040,11 +1182,14 @@ entries:
   - tool-ranking
   - security
 - name: NeuroSploit TypeSafe adjudication
+  name_zh: NeuroSploit 的 TypeSafe 裁定
   url: https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs
   kind: repo
   author: joasasantos
   description: NeuroSploit, a Rust pentest harness, uses Jev as a calibrated confirmation and adjudication layer, judging each finding confirmed, needs-review or rejected and scoring severity.
+  description_zh: Rust 渗透测试 harness NeuroSploit 把 Jev 用作校准的确认与裁定层，判断每条发现是已确认、需复核还是驳回，并给严重度打分。
   jev: Choice, Score and Noul over a finding's evidence; enabled with --typesafe on|off|auto.
+  jev_zh: 基于一条发现的证据使用 Choice、Score 和 Noul；通过 --typesafe on|off|auto 启用。
   metrics:
     repo_stars: 1379
   date: '2025-08-17'
@@ -1053,10 +1198,12 @@ entries:
   - adjudication
   - security
 - name: Next 16 calendar Jev moderation
+  name_zh: Next 16 日历应用的 Jev 审核
   url: https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts
   kind: repo
   author: aurorascharff
   description: Next.js 16 calendar and booking demo that moderates user-entered calendar text with Jev through AI SDK evaluate on Vercel AI Gateway.
+  description_zh: 一个 Next.js 16 日历与预约演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev，审核用户输入的日历文本。
   metrics:
     repo_stars: 78
   date: '2026-08-08'
@@ -1067,10 +1214,12 @@ entries:
   - nextjs
   - ai-sdk
 - name: Next 16 social media Jev moderation
+  name_zh: Next 16 社交应用的 Jev 审核
   url: https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts
   kind: repo
   author: aurorascharff
   description: Next.js 16 social network demo that moderates user posts and blocks profanity with Jev through AI SDK evaluate on Vercel AI Gateway, with a 3-second timeout.
+  description_zh: 一个 Next.js 16 社交网络演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev 审核用户帖子并拦截脏话，超时 3 秒。
   metrics:
     repo_stars: 81
   date: '2026-05-18'
@@ -1085,6 +1234,7 @@ entries:
   kind: post
   author: richard_meng_01
   description: AI-generated photo detector that zooms into faces, fingers, lettering, numbers and poses, where common sense tends to break, and has Jev judge each detail.
+  description_zh: AI 生成照片检测器：放大人脸、手指、文字、数字和姿势这些最容易违背常识的地方，让 Jev 逐个细节判断。
   image: https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg
   metrics:
     likes: 1
@@ -1098,7 +1248,9 @@ entries:
   kind: repo
   author: alexj11324
   description: 'Go approval gate for Claude Code and Codex hooks: Jev reviews each intercepted tool call and a versioned local policy returns allow or deny, with a deny requiring positive evidence of danger.'
+  description_zh: Claude Code 和 Codex hook 的 Go 审批闸门：Jev 审查每次被拦截的工具调用，由带版本的本地策略返回放行或拒绝，且拒绝必须有明确的危险证据。
   jev: Reviews each tool call against the recorded user prompt as authorization evidence; fails open if no verdict.
+  jev_zh: 把记录下来的用户提示词作为授权依据来审查每次工具调用；拿不到判定时默认放行。
   metrics:
     stars: 3
   date: '2026-09-20'
@@ -1107,10 +1259,12 @@ entries:
   - codex
   - approvals
 - name: Opus slop flagger
+  name_zh: Opus 水文标记器
   url: https://x.com/chaseleantj/status/2101039024118829261
   kind: post
   author: chaseleantj
   description: Uses Jev to flag the stock AI-writing patterns that Claude Opus tends to produce in its text.
+  description_zh: 用 Jev 标记 Claude Opus 在文字中常见的那些套路化 AI 写作模式。
   image: https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg
   metrics:
     likes: 31
@@ -1120,11 +1274,14 @@ entries:
   - slop
   - writing
 - name: Pentest-Swarm-AI Jev scoring
+  name_zh: Pentest-Swarm-AI 的 Jev 评分
   url: https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev
   kind: repo
   author: Armur-Ai
   description: Autonomous pentest swarm that can use Jev as a false-positive filter and to score candidate attack paths in real time, pursuing the best-graded strategy first.
+  description_zh: 自主渗透测试集群，可用 Jev 过滤误报，并实时给候选攻击路径打分，优先执行得分最高的策略。
   jev: Both features are opt-in beta (--jev and --jev-adaptive) and fail open; Jev grades attack strategies against live state.
+  jev_zh: 两项功能都是需主动开启的 beta（--jev 和 --jev-adaptive），出错时默认放行；Jev 根据实时 state 为攻击策略评分。
   image: https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg
   metrics:
     repo_stars: 2557
@@ -1138,6 +1295,7 @@ entries:
   kind: repo
   author: zszz3
   description: Pi coding-agent plugin with rules you add by timing, local match or Jev judgment, and action, where Jev checks tool calls for destructiveness, data exfiltration, task drift, and rule conflicts.
+  description_zh: Pi 编程 agent 插件，可按触发时机、本地匹配或 Jev 判断以及执行动作来添加规则，由 Jev 检查工具调用的破坏性、数据外泄、任务偏离和规则冲突。
   metrics:
     stars: 20
   date: '2026-09-19'
@@ -1150,6 +1308,7 @@ entries:
   kind: repo
   author: Nyarlathoteppppp
   description: Pi coding-agent extension that turns constraints you state in conversation, in English or Chinese, into a scoped policy and checks every side-effecting tool call against it with Jev before it runs.
+  description_zh: Pi 编程 agent 扩展：把你在对话中用中文或英文说出的约束转成有作用范围的策略，并在每个有副作用的工具调用执行前用 Jev 对照检查。
   image: https://repository-images.githubusercontent.com/1375891003/00d886b8-21f8-4b13-9c04-d3aa6b525aa6
   metrics:
     stars: 7
@@ -1165,6 +1324,7 @@ entries:
   kind: repo
   author: y0usaf
   description: Checks coding-agent tool calls with Nouls for destructive, exfiltrating, and out-of-scope actions plus an impact Score, and screens outputs for leaked secrets.
+  description_zh: 用 Noul 检查编程 agent 的工具调用是否具有破坏性、外泄数据或超出范围，外加一个影响程度 Score，并筛查输出中泄露的密钥。
   metrics:
     stars: 134
   date: '2026-09-16'
@@ -1177,6 +1337,7 @@ entries:
   kind: repo
   author: jesset
   description: 'Permission gate for the Pi coding agent in the style of Claude Code''s auto mode: deterministic rules settle clear cases, and gray-zone tool calls go to a fail-closed classifier that can be Jev.'
+  description_zh: 仿照 Claude Code 自动模式的 Pi 编程 agent 权限闸门：明确的情况由确定性规则处理，灰色地带的工具调用交给一个出错即拦截的分类器，这个分类器可以是 Jev。
   image: https://raw.githubusercontent.com/jesset/pi-verdict/main/docs/demo.gif
   metrics:
     stars: 8
@@ -1186,11 +1347,14 @@ entries:
   - pi
   - guardrails
 - name: Portfolio suggestion moderation
+  name_zh: 作品集网站的建议审核
   url: https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts
   kind: repo
   author: AdityaKodez
   description: 'Moderation gate for component suggestions on a developer portfolio site: heuristics catch link dumps and spam words, then two Jev Nouls judge spam and actionability before posting to Discord.'
+  description_zh: 开发者作品集网站上组件建议的审核闸门：先用启发式规则拦下堆链接和垃圾词，再由两个 Jev Noul 判断是否为垃圾、是否可执行，通过后才发到 Discord。
   jev: Spam >= 0.6 or actionable < 0.4 rejects; fails open when Jev is unreachable.
+  jev_zh: 垃圾 >= 0.6 或可执行性 < 0.4 即拒绝；Jev 不可达时默认放行。
   metrics:
     repo_stars: 28
   date: '2026-01-23'
@@ -1201,11 +1365,14 @@ entries:
   - spam
   - moderation
 - name: Prisma AIRS CLI redteam judge
+  name_zh: Prisma AIRS CLI 红队评判
   url: https://github.com/cdot65/prisma-airs-cli/tree/main/src/redteam/judge
   kind: repo
   author: cdot65
   description: Command in the Prisma AIRS CLI that re-judges the attack outputs of a red-team scan with Jev and computes an independent attack success rate with confidence intervals and an agreement matrix against AIRS verdicts.
+  description_zh: 一个 Prisma AIRS CLI 命令：用 Jev 重新评判红队扫描的攻击输出，计算独立的攻击成功率，并给出置信区间以及与 AIRS 判定对照的一致性矩阵。
   jev: Each attack/output pair is one /v1/systemone request with three questions; a code-owned threshold policy turns probabilities into verdicts.
+  jev_zh: 每对攻击/输出是一次 /v1/systemone 请求，含三个问题；由代码维护的阈值策略把概率转成判定。
   metrics:
     repo_stars: 7
   date: '2026-03-14'
@@ -1219,7 +1386,9 @@ entries:
   kind: repo
   author: 4rays
   description: Cloudflare Worker API that checks text and usernames for profanity with Jev on Workers AI, catching disguised usernames such as phonetic gags and look-alike spellings.
+  description_zh: Cloudflare Worker API，借助 Workers AI 上的 Jev 检查文本和用户名中的脏话，能识别谐音梗、形近拼写等伪装过的用户名。
   jev: One or two narrow Nouls per request whose probabilities code turns into a boolean verdict.
+  jev_zh: 每个请求一到两个窄范围 Noul，其概率由代码转成布尔判定。
   metrics:
     stars: 1
   date: '2026-09-20'
@@ -1231,6 +1400,7 @@ entries:
   kind: repo
   author: revsmoke
   description: MCP and HTTPS scanner that screens prompts, skill files and MCP tool descriptions for injected instructions before an agent acts on them, combining deterministic checks, Jev judgments and a reasoning model.
+  description_zh: MCP 与 HTTPS 扫描器，在 agent 据此行动之前筛查提示词、skill 文件和 MCP 工具描述中被注入的指令，结合确定性检查、Jev 判断和一个推理模型。
   metrics:
     stars: 2
   date: '2026-01-27'
@@ -1245,6 +1415,7 @@ entries:
   kind: repo
   author: Thneoly
   description: Rust integration that admits two Jev checks per agent tool call, beyond scope and destructive, as evidence into persistent R2R relation state, so trust and authorization degrade until a human override repairs them.
+  description_zh: Rust 集成：把每次 agent 工具调用的两项 Jev 检查（是否超出范围、是否具破坏性）作为证据写入持久化的 R2R 关系 state，让信任和授权逐步降级，直到人工干预将其修复。
   image: https://raw.githubusercontent.com/Thneoly/r2r-jev/main/docs/demo.gif
   metrics:
     stars: 1
@@ -1254,10 +1425,12 @@ entries:
   - policy-engine
   - rust
 - name: Real-time chat moderation
+  name_zh: 实时聊天审核
   url: https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/
   kind: reddit
   author: Rare_Guide_9830
   description: Simulated live-stream chat where Jev sorts each incoming message into viewer-chosen feeds such as Questions, Feedback, or Funny, collapsing repeats and dropping spam.
+  description_zh: 模拟直播聊天：Jev 把每条进来的消息分到观众自选的频道，如“提问”“反馈”“搞笑”，合并重复内容并丢弃垃圾信息。
   image: https://external-preview.redd.it/aDk2b3Y5bnpwZHFoMTOXplwNgOesr4K-iFJwFPFaj-sxE-6FkXSkmDW1mccL.png?format=pjpg&auto=webp&s=afac7a4c8fb00d2e7d659fb8bd5f0a05b0b238c1
   metrics:
     points: 264
@@ -1267,10 +1440,12 @@ entries:
   - live-chat
   - streaming
 - name: Real-time slop detector
+  name_zh: 实时 AI 水文检测器
   url: https://x.com/RBilgil/status/2100976648552169805
   kind: post
   author: RBilgil
   description: Real-time detector that flags AI-generated slop in the feed while you scroll, powered by Jev.
+  description_zh: 由 Jev 驱动的实时检测器，在你滚动信息流时标记 AI 生成的水文。
   image: https://pbs.twimg.com/amplify_video_thumb/2100976173836533760/img/APDonY80SB2iSYhj.jpg
   metrics:
     likes: 16004
@@ -1281,10 +1456,12 @@ entries:
   - feed
   - browser-extension
 - name: Reply-guy stamper
+  name_zh: 低质回复屏蔽器
   url: https://x.com/chaosengineerr/status/2102244378290864616
   kind: post
   author: chaosengineerr
   description: Chrome extension in which Jev reads every reply on X and hides the low-effort ones.
+  description_zh: Chrome 扩展：Jev 读取 X 上的每条回复，把低质量的那些隐藏起来。
   image: https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg
   metrics:
     likes: 1
@@ -1299,6 +1476,7 @@ entries:
   kind: repo
   author: syabdulr
   description: Assessment harness that tests AI models and agents for prompt injection, secret or PII leakage, unsafe tool use and policy bypass, combining hard rules with an optional Jev judge and a checksummed evidence report.
+  description_zh: 评估 harness，测试 AI 模型和 agent 是否存在提示词注入、密钥或 PII 泄露、不安全的工具使用和策略绕过，结合硬规则与可选的 Jev 评判，并输出带校验和的证据报告。
   image: https://raw.githubusercontent.com/syabdulr/responsible-ai-harness/main/docs/screenshots/desktop-offline-top.png
   metrics:
     stars: 1
@@ -1308,11 +1486,14 @@ entries:
   - prompt-injection
   - assessment
 - name: ReviewDB TypeSafe moderation
+  name_zh: ReviewDB 的 TypeSafe 审核
   url: https://github.com/mantikafasi/ServerGo/blob/main/modules/moderation/main.go
   kind: repo
   author: mantikafasi
   description: Moderation module in the ReviewDB API server behind Aliucord and Vencord user-review plugins that scores reported reviews against a moderation taxonomy with Jev in a single request.
+  description_zh: Aliucord 和 Vencord 用户评价插件背后的 ReviewDB API 服务器中的审核模块：用一次 Jev 请求，按审核分类体系为被举报的评价打分。
   jev: One Noul per taxonomy field, each with true/false criteria, in one System One call with a 15 s timeout.
+  jev_zh: 分类体系的每个字段一个 Noul，各带真/假判定标准，放在一次 System One 调用中，超时 15 秒。
   image: https://repository-images.githubusercontent.com/510934230/592976c6-1e9a-4cc2-9e52-404adbb69dd9
   metrics:
     repo_stars: 6
@@ -1328,6 +1509,7 @@ entries:
   kind: repo
   author: '24601'
   description: Coding-agent hook for Claude Code, Cursor, Codex, Pi and others that blocks reward hacking such as tampering with graders or hidden tests, combining structural denies with a Jev risk sidecar.
+  description_zh: 适用于 Claude Code、Cursor、Codex、Pi 等的编程 agent hook，拦截篡改评分器或隐藏测试之类的奖励投机（reward hacking）行为，结合结构化拒绝规则与 Jev 风险 sidecar。
   image: https://raw.githubusercontent.com/24601/rh-guard/main/docs/sessions/rh_guard_side_by_side.gif
   metrics:
     stars: 3
@@ -1344,6 +1526,7 @@ entries:
   kind: repo
   author: andrelandgraf
   description: HTTP inspection gateway on a Neon Function that has Jev judge a request body for prompt injection or unsafe content, then passes, reviews or blocks it and can forward the same bytes to a caller-chosen HTTPS URL.
+  description_zh: 运行在 Neon Function 上的 HTTP 检查网关：让 Jev 判断请求体是否含提示词注入或不安全内容，再放行、转复核或拦截，还能把原样字节转发到调用方指定的 HTTPS URL。
   metrics:
     stars: 4
   date: '2026-09-17'
@@ -1358,7 +1541,9 @@ entries:
   kind: repo
   author: ShupingR
   description: Scam text-message checker where code extracts link and sender signals, Jev answers eleven narrow questions in one call, and a pure policy function turns them into an explainable weighted risk score.
+  description_zh: 诈骗短信检查器：代码提取链接和发件人信号，Jev 在一次调用中回答十一个窄范围问题，再由一个纯策略函数把答案转成可解释的加权风险分。
   jev: Eight Nouls (asks for credentials, unusual payment, brand-link mismatch, ...), one pressure Score and one scam-pattern Choice.
+  jev_zh: 八个 Noul（索要凭证、异常付款方式、品牌与链接不符……）、一个施压程度 Score 和一个诈骗模式 Choice。
   date: '2026-09-13'
   links:
     app: https://scam-shield-seven-ecru.vercel.app
@@ -1367,10 +1552,12 @@ entries:
   - scam-detection
   - sms
 - name: SecureAI-Scan AI014 rule
+  name_zh: SecureAI-Scan 的 AI014 规则
   url: https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py
   kind: repo
   author: akanthed
   description: Rule in SecureAI-Scan, an offline scanner for LLM, MCP and RAG vulnerabilities, that flags Python code running a dangerous action such as subprocess.run on a TypeSafe confidence score alone without an allowlist.
+  description_zh: 离线 LLM、MCP 和 RAG 漏洞扫描器 SecureAI-Scan 中的一条规则：标记仅凭 TypeSafe 置信度分数、没有白名单就执行 subprocess.run 等危险操作的 Python 代码。
   metrics:
     repo_stars: 22
   date: '2026-02-05'
@@ -1382,10 +1569,12 @@ entries:
   - ai-security
   - authorization
 - name: Sentence-level AI text detector
+  name_zh: 逐句 AI 文本检测器
   url: https://x.com/ahmedgagan11/status/2100955502075388250
   kind: post
   author: ahmedgagan11
   description: AI text detector that scans a full article and gives a sentence-by-sentence breakdown of what looks machine-written, in near real time.
+  description_zh: AI 文本检测器，扫描整篇文章，近乎实时地逐句指出哪些内容看起来是机器写的。
   image: https://pbs.twimg.com/amplify_video_thumb/2100850340363182080/img/rHnwL-1zhzgLUMU8.jpg
   metrics:
     likes: 27
@@ -1399,7 +1588,9 @@ entries:
   kind: repo
   author: vnmoorthy
   description: Hackathon arena where 200 people try to make a tool-using support agent misbehave while a System One action gate screens every call, and a defender loop rewrites the gate policy from each breach.
+  description_zh: 黑客松竞技场：200 人设法让一个会用工具的客服 agent 做出不当行为，同时由 System One 动作闸门筛查每次调用，防守循环再根据每次突破改写闸门策略。
   jev: Every proposed refund, address change or discount call passes the typed gate; candidates ship only if W&B Weave evals show a higher catch rate on breaches with benign customers still served.
+  jev_zh: 每个拟发起的退款、改地址或折扣调用都要经过类型化闸门；候选策略只有在 W&B Weave 评测显示对突破的拦截率更高、且正常客户仍能得到服务时才会上线。
   image: https://raw.githubusercontent.com/vnmoorthy/siege/main/docs/media/siege_brand_hero.png
   date: '2026-09-13'
   links:
@@ -1414,6 +1605,7 @@ entries:
   kind: repo
   author: paulgoodchild
   description: Agent skill that sends another skill's text to Jev before installation, or audits installed skills, for malicious instructions and unsafe code, returning verdicts and category scores without loading it into context.
+  description_zh: 一个 agent skill：在安装前把另一个 skill 的文本发给 Jev，或审计已安装的 skill，检查恶意指令和不安全代码，返回判定和分类分数，而不必把它加载进上下文。
   date: '2026-09-21'
   tags:
   - agent-skills
@@ -1423,6 +1615,7 @@ entries:
   kind: repo
   author: tomfrazier
   description: Chrome extension plus Vercel server that has Jev judge the writing quality of LinkedIn posts before you see them, folding or outlining suspected slop with the score and reasons, which you can overrule.
+  description_zh: Chrome 扩展加 Vercel 服务器，在你看到 LinkedIn 帖子之前先让 Jev 评判其写作质量，把疑似水文折叠或加框，并显示分数和理由，你可以推翻判定。
   image: https://raw.githubusercontent.com/tomfrazier/slopmop/main/docs/images/slopmop-1.png
   date: '2026-09-20'
   links:
@@ -1436,6 +1629,7 @@ entries:
   kind: repo
   author: adamnroman
   description: Chrome extension that scores every post and comment on X, LinkedIn, Reddit and YouTube for how likely it is AI-written and folds away those over your threshold, with weights you can fit from your own labels.
+  description_zh: Chrome 扩展，为 X、LinkedIn、Reddit 和 YouTube 上的每条帖子和评论打分，估计其由 AI 写成的可能性，超过你设定阈值的会被折叠；权重可以用你自己的标注来拟合。
   image: https://raw.githubusercontent.com/adamnroman/slop-filter/main/assets/icons/icon-128.png
   metrics:
     stars: 3
@@ -1451,6 +1645,7 @@ entries:
   kind: repo
   author: vicnaum
   description: Agent skill that checks an agent's prose for slop patterns and gates publishing, with an optional model layer via the Anthropic or TypeSafe Jev API for inflation, jargon, bare numbers and metaphors.
+  description_zh: 一个 agent skill，检查 agent 写的文字中的水文模式并为发布把关，另有可选的模型层，通过 Anthropic 或 TypeSafe Jev API 检查夸大、行话、缺少上下文的数字和比喻。
   metrics:
     repo_stars: 52
   date: '2026-01-18'
@@ -1463,6 +1658,7 @@ entries:
   kind: repo
   author: neddes
   description: Chrome extension that scans pages as they load and blurs AI-generated prose and ads, with separate AI and ad filters you switch on in the popup.
+  description_zh: Chrome 扩展，在页面加载时扫描并模糊 AI 生成的文字和广告，AI 过滤和广告过滤可在弹窗中分别开启。
   date: '2026-09-17'
   tags:
   - ai-slop
@@ -1473,7 +1669,9 @@ entries:
   kind: repo
   author: AliZakaee
   description: Telegram group bot that flags spam for admin review, using Jev's spam choice, hazard probabilities and severity with no training, a local TF-IDF SVM for Persian slang, or both in hybrid mode.
+  description_zh: Telegram 群机器人，标记垃圾信息供管理员复核：可以免训练地使用 Jev 的垃圾信息 Choice、风险概率和严重度，也可以用针对波斯语俚语的本地 TF-IDF SVM，或在混合模式下两者并用。
   jev: Choice and Score answers below a confidence floor are ignored, while independent Noul hazards can still flag; outages fall back to the SVM.
+  jev_zh: 低于置信度下限的 Choice 和 Score 答案会被忽略，而独立的 Noul 风险项仍可触发标记；服务中断时回退到 SVM。
   metrics:
     stars: 6
   date: '2025-09-26'
@@ -1486,6 +1684,7 @@ entries:
   kind: repo
   author: getexcited
   description: Proof-of-concept Claude Code plugin that has Jev verify each pending tool call against the session plan, then allows it, asks you or blocks it; it ships in audit mode.
+  description_zh: 概念验证性质的 Claude Code 插件：让 Jev 对照会话计划核验每个待执行的工具调用，再决定放行、询问你或拦截；发布时默认为审计模式。
   image: https://repository-images.githubusercontent.com/1375702786/5a5b87a5-d8e8-4f2c-a31f-43ec83c3e66c
   metrics:
     stars: 1
@@ -1499,6 +1698,7 @@ entries:
   kind: repo
   author: MauroPello
   description: Chrome and Firefox extension that flags AI-generated YouTube scripts with thumbnail badges and sentence heatmaps, scored by a Cloudflare Worker that calls Jev with Gemini or Sapling as fallback.
+  description_zh: Chrome 和 Firefox 扩展，用缩略图徽标和句子热力图标记 AI 生成的 YouTube 脚本，评分由一个 Cloudflare Worker 完成，它调用 Jev，并以 Gemini 或 Sapling 作为兜底。
   metrics:
     stars: 10
   date: '2026-08-21'
@@ -1514,17 +1714,21 @@ entries:
   kind: repo
   author: hteariH
   description: Telegram bot that removes unsolicited promotion and scams such as fake earnings, crypto giveaways, and phishing from group chats, acting only on calibrated-confidence Jev classifications.
+  description_zh: Telegram 机器人，从群聊中清除不请自来的推广和诈骗，如虚假收益、加密货币空投和钓鱼，只依据校准置信度的 Jev 分类结果采取行动。
   date: '2026-09-21'
   tags:
   - spam
   - telegram
   - moderation
 - name: Sub2API content audit
+  name_zh: Sub2API 内容审核
   url: https://github.com/Wei-Shaw/sub2api/tree/main/backend/internal/pkg/typesafe
   kind: repo
   author: Wei-Shaw
   description: Content-moderation engine in the Sub2API relay that screens traffic with Jev across 13 categories such as harassment, hate, self-harm and violence, managed from an admin risk-control page.
+  description_zh: 中转服务 Sub2API 里的内容审核引擎：用 Jev 按骚扰、仇恨、自残、暴力等 13 个类别筛查流量，在管理后台的风控页面中管理。
   jev: One Noul per category in a single request, told to judge the text without following it and to separate real requests from quotes or defensive discussion.
+  jev_zh: 一次请求中每个类别一个 Noul，要求模型只评判文本、不照其内容行事，并区分真实请求与引用或防御性讨论。
   metrics:
     repo_stars: 42334
   date: '2025-12-18'
@@ -1533,11 +1737,14 @@ entries:
   - gateway
   - risk-control
 - name: sub2api Jev content moderation
+  name_zh: sub2api 的 Jev 内容审核
   url: https://github.com/tickernelz/sub2api/blob/main/backend/internal/service/content_moderation_typesafe.go
   kind: repo
   author: tickernelz
   description: Content-moderation engine in an AI API gateway fork that asks Jev 13 independent yes/no questions per text, covering harassment, hate, illicit help, self-harm, sexual content and violence.
+  description_zh: 一个 AI API 网关分支中的内容审核引擎，对每段文本向 Jev 问 13 个独立的是/否问题，覆盖骚扰、仇恨、违法协助、自残、色情内容和暴力。
   jev: One Noul per category with Chinese rule wording that separates real requests from quotes and defensive discussion.
+  jev_zh: 每个类别一个 Noul，规则用中文表述，区分真实请求与引用和防御性讨论。
   metrics:
     repo_stars: 11
   date: '2026-05-26'
@@ -1552,6 +1759,7 @@ entries:
   kind: repo
   author: cnsunyour
   description: Chinese Telegram group-management bot with join verification and layered anti-spam, whose AI context check can use Jev as the primary text classifier with an LLM as backup; on 31 local samples it matched DeepSeek at 0.8.
+  description_zh: 中文 Telegram 群管机器人，带入群验证和分层反垃圾，其 AI 上下文检查可用 Jev 作主文本分类器、LLM 作备份；在 31 个本地样本上与 DeepSeek 持平，均为 0.8。
   image: https://raw.githubusercontent.com/cnsunyour/tg-guard-bot/main/docs/images/architecture.svg
   metrics:
     stars: 5
@@ -1561,11 +1769,14 @@ entries:
   - spam
   - chinese
 - name: tg-spam Jev checker
+  name_zh: tg-spam 的 Jev 检查器
   url: https://github.com/umputun/tg-spam
   kind: repo
   author: umputun
   description: TG-Spam, a self-hosted Telegram anti-spam bot and library, adds a Jev spam checker that judges each message with a typed question alongside its other detectors.
+  description_zh: 自托管 Telegram 反垃圾机器人和库 TG-Spam 新增了一个 Jev 垃圾检查器，与其他检测器一起，用一个类型化问题判断每条消息。
   jev: One 'spam' question over jev-1.13.0 with a configurable threshold and a per-request symbol cap.
+  jev_zh: 基于 jev-1.13.0 的一个“spam”问题，阈值可配置，每个请求有字符数上限。
   image: https://github.com/umputun/tg-spam/raw/master/site/tg-spam-bg.png
   metrics:
     stars: 446
@@ -1581,7 +1792,9 @@ entries:
   kind: repo
   author: Thanh-Mathieu95
   description: OpenAI-compatible proxy that checks each sliding window of tokens while an LLM response streams and cuts the stream before a violating token reaches the screen; its demo leaks 0 characters versus 173 post-hoc.
+  description_zh: 兼容 OpenAI 的代理，在 LLM 响应流式输出时检查每个滑动 token 窗口，在违规 token 显示到屏幕前切断输出流；其演示泄露 0 个字符，事后检查则泄露 173 个。
   jev: Judges each buffered token window for violations such as leaked secrets during streaming.
+  jev_zh: 在流式输出过程中，判断每个缓冲的 token 窗口是否存在泄露密钥等违规。
   image: https://raw.githubusercontent.com/Thanh-Mathieu95/jev-model-tokengate/main/docs/race.png
   metrics:
     stars: 4
@@ -1595,6 +1808,7 @@ entries:
   kind: repo
   author: RiskAverseTech
   description: Tool-call firewall that runs as a Claude Code PreToolUse hook or an MCP proxy and asks Jev seven questions, such as destructive, exfiltration or off-task, before risky actions, with YAML policy and a local audit log.
+  description_zh: 工具调用防火墙，以 Claude Code PreToolUse hook 或 MCP 代理形式运行，在高风险操作前向 Jev 问七个问题（如是否具破坏性、外泄数据或偏离任务），支持 YAML 策略和本地审计日志。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -1607,7 +1821,9 @@ entries:
   kind: repo
   author: eijiaraki
   description: Chrome extension that classifies posts on X with Jev and hides the ones matching categories you choose, such as discrimination, taunting, hate or cynicism, behind a revealable overlay.
+  description_zh: Chrome 扩展，用 Jev 给 X 上的帖子分类，把命中你所选类别（如歧视、挑衅、仇恨或冷嘲热讽）的帖子藏在可揭开的遮罩后面。
   jev: Six selectable categories with adjustable thresholds; only post text near the screen is sent, directly to api.typesafe.ai.
+  jev_zh: 六个可选类别，阈值可调；只发送屏幕附近的帖子文本，且直接发往 api.typesafe.ai。
   image: https://raw.githubusercontent.com/eijiaraki/toxic-filter/main/docs/assets/demo.gif
   metrics:
     stars: 5
@@ -1621,7 +1837,9 @@ entries:
   kind: repo
   author: hemanth
   description: Zero-dependency reverse-proxy traffic classifier and bot mitigator for Node.js and Python that runs local header-order, velocity, and honeypot checks in under 100 microseconds.
+  description_zh: 零依赖的 Node.js 和 Python 反向代理流量分类与机器人缓解工具，在本地做请求头顺序、请求频率和蜜罐检查，耗时不到 100 微秒。
   jev: Optional tier that escalates to jev-latest with 5 parallel typed questions for obfuscated attacks.
+  jev_zh: 可选的一层：遇到混淆攻击时升级给 jev-latest，并行问 5 个类型化问题。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -1634,6 +1852,7 @@ entries:
   kind: repo
   author: m0rphtail
   description: 'Rust UNIX filter for security-alert triage: JSONL alerts in, typed decisions out, with Jev or a local model answering five questions per alert and routing policy kept in code.'
+  description_zh: 用于安全告警分诊的 Rust UNIX 过滤器：输入 JSONL 告警，输出类型化决策，由 Jev 或本地模型为每条告警回答五个问题，路由策略保留在代码中。
   metrics:
     stars: 1
   date: '2026-09-18'
@@ -1646,6 +1865,7 @@ entries:
   kind: repo
   author: noelzappy
   description: AI SDK middleware and OpenAI-compatible proxy that runs seven Jev checks on every LLM response in one ~100 ms call, with YAML policies, confidence-gated block or flag actions, and an eval CLI.
+  description_zh: AI SDK 中间件和兼容 OpenAI 的代理，用一次约 100 毫秒 的调用对每个 LLM 响应跑七项 Jev 检查，支持 YAML 策略、按置信度触发的拦截或标记动作，以及评测 CLI。
   metrics:
     stars: 2
   date: '2026-09-18'
@@ -1659,6 +1879,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: Trust and safety gate for indie media that decides publish, soft-hold or block for a post, with a harm severity score and checks for hate or harassment, sensitive misinformation and spam or scams.
+  description_zh: 面向独立媒体的信任与安全闸门，为每篇帖子决定发布、暂缓或拦截，给出危害严重度分数，并检查仇恨或骚扰、敏感虚假信息以及垃圾信息或诈骗。
   date: '2026-09-17'
   links:
     app: https://trustgate-mu.vercel.app
@@ -1671,6 +1892,7 @@ entries:
   kind: repo
   author: elliothux
   description: Chrome extension and Cloudflare Workers API that score X posts and replies in real time for AI writing, porn solicitation and paraphrase bots, using the author profile, post text and parent tweet.
+  description_zh: Chrome 扩展加 Cloudflare Workers API，结合作者资料、帖子文本和上级推文，实时为 X 帖子和回复打分，识别 AI 写作、色情招揽和洗稿机器人。
   image: https://raw.githubusercontent.com/elliothux/tweet-911/main/docs/preview-overlay.jpg
   metrics:
     stars: 3
@@ -1684,6 +1906,7 @@ entries:
   kind: repo
   author: lookfwd
   description: Fact-checks a tweet by retrieving evidence from Wikipedia and having Jev judge the claim-versus-evidence relationship, returning a verdict with confidence and sources, where not enough evidence is a normal outcome.
+  description_zh: 推文事实核查：从 Wikipedia 检索证据，让 Jev 判断主张与证据之间的关系，返回带置信度和来源的结论；“证据不足”是正常结果之一。
   date: '2026-09-18'
   tags:
   - fact-checking
@@ -1694,6 +1917,7 @@ entries:
   kind: repo
   author: qs-lll
   description: Chrome and Edge extension that uses Jev to flag low-quality, spam and promotional posts on the X timeline, overlaying a translucent STOP or AD watermark with the probability on the post text.
+  description_zh: Chrome 和 Edge 扩展，用 Jev 标记 X 时间线上的低质量、垃圾和推广帖子，在帖子文字上叠加半透明的 STOP 或 AD 水印并显示概率。
   image: https://raw.githubusercontent.com/qs-lll/twitter-jev-guard/main/assets/settings-popup.png
   metrics:
     stars: 10
@@ -1703,10 +1927,12 @@ entries:
   - spam
   - chrome-extension
 - name: Wanaku System One evaluator
+  name_zh: Wanaku 的 System One 评估器
   url: https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs
   kind: repo
   author: wanaku-ai
   description: Governed action proxy for AI agents that adds a TypeSafe System One evaluator engine, judging intercepted MCP tool calls and conversation history with Noul questions.
+  description_zh: 面向 AI agent 的受治理动作代理，新增了一个 TypeSafe System One 评估引擎，用 Noul 问题判断被拦截的 MCP 工具调用和对话历史。
   image: https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png
   metrics:
     repo_stars: 134
@@ -1718,10 +1944,12 @@ entries:
   - governance
   - policy
 - name: YouTube AI-slop filter
+  name_zh: YouTube AI 水文过滤器
   url: https://x.com/mariojankovic/status/2100934084503519325
   kind: post
   author: mariojankovic
   description: Bring-your-own-key Chrome extension that filters AI slop out of YouTube as you scroll and caches the results.
+  description_zh: 自带密钥的 Chrome 扩展，在你滚动 YouTube 时过滤掉 AI 水文，并缓存结果。
   image: https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg
   metrics:
     likes: 3
@@ -1736,7 +1964,9 @@ entries:
   kind: repo
   author: mohamadkhoshnava
   description: Async Rust Telegram moderation bot that bans NSFW advertisers; images are judged locally, while Jev powers optional bio, topic, ad-guard and language checks on text.
+  description_zh: 异步 Rust Telegram 审核机器人，封禁 NSFW 广告号；图片在本地判断，Jev 则负责可选的文本检查，包括简介、话题、广告防护和语言检查。
   jev: Several subjects are asked as typed questions in one call; an outage is reported as unavailable rather than clean, with a regex word list as a floor.
+  jev_zh: 多个检查对象在一次调用中以类型化问题提问；服务中断会报告为“不可用”而非“无问题”，并以正则词表作为底线。
   metrics:
     stars: 13
   date: '2026-08-07'

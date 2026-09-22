@@ -1,5 +1,7 @@
 # 🔌 Build with Jev: Community SDKs
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-community-sdks.md)
+
 Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs. 107 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#community-sdks)

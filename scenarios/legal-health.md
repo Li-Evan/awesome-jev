@@ -1,5 +1,7 @@
 # ⚖️ Legal, Health, and Science
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md)
+
 Compliance checks, medical and scientific screening, and research workflows. 28 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

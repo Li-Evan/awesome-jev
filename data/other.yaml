@@ -1,13 +1,17 @@
 title: Other Experiments
+title_zh: 其他实验
 emoji: 🧪
 layout: gallery
 description: Everything that does not fit a single scenario yet.
+description_zh: 暂时还归不进单一场景的一切。
 entries:
 - name: 6502 emulator on Jev
+  name_zh: 用 Jev 模拟 6502
   url: https://x.com/TheBalkanHacker/status/2100962091498684848
   kind: post
   author: TheBalkanHacker
   description: Experiment that has Jev act as the computer itself, emulating a 6502 CPU in real time; it runs whole short programs but still diverges from a reference emulator now and then.
+  description_zh: 让 Jev 直接充当计算机本身、实时模拟 6502 CPU 的实验；能跑完整的短程序，但仍会不时与参考模拟器的结果出现偏差。
   image: https://pbs.twimg.com/amplify_video_thumb/2100960184327688192/img/7zn9b3VwndkLLzWa.jpg
   metrics:
     likes: 43
@@ -22,7 +26,9 @@ entries:
   kind: repo
   author: kingdsa
   description: Chinese chat-reply assistant for romantic relationships in which Jev reads a partner's message for emotion, intensity, intent, relationship state and urgency and picks a reply strategy for an LLM to phrase.
+  description_zh: 中文恋爱聊天回复助手：Jev 解读对方消息中的情绪、强度、意图、关系状态和紧急程度，并选出回复策略，交给 LLM 组织措辞。
   jev: Noul, Choice and Score decisions in the emotion and strategy engines; without an LLM key a local composer builds the reply from Jev's outputs.
+  jev_zh: 情绪引擎和策略引擎中使用 Noul、Choice 和 Score 决策；没有 LLM key 时，由本地组装器根据 Jev 的输出拼出回复。
   metrics:
     stars: 9
   date: '2026-09-20'
@@ -33,10 +39,12 @@ entries:
   - emotion
   - strategy
 - name: Anunix Jev route
+  name_zh: Anunix 的 Jev 路由
   url: https://github.com/AdamPippert/Anunix
   kind: repo
   author: AdamPippert
   description: AI-native operating system written in C and assembly whose shell can send an `ask` to hosted models including jev/jev-latest, using a sealed Jev credential object through a TLS companion.
+  description_zh: 用 C 和汇编编写的 AI 原生操作系统，其 shell 可以向包括 jev/jev-latest 在内的托管模型发送 `ask`，通过 TLS 辅助程序使用密封的 Jev 凭证对象。
   metrics:
     stars: 8
   date: '2026-04-12'
@@ -45,10 +53,12 @@ entries:
   - c
   - hosted-models
 - name: Candidate-company job matching
+  name_zh: 候选人与公司岗位匹配
   url: https://x.com/sarvagya_kul/status/2100980770206879849
   kind: post
   author: sarvagya_kul
   description: Matching of one candidate profile against 400 companies in 12 seconds for $0.0005, predicting which jobs they are most likely to land and flagging mismatches.
+  description_zh: 用 12 秒、$0.0005 把一份候选人档案与 400 家公司做匹配，预测最有可能拿到的职位，并标出不匹配项。
   image: https://pbs.twimg.com/amplify_video_thumb/2100980671640645632/img/19dyomYRhfAONg7S.jpg
   metrics:
     likes: 1767
@@ -58,11 +68,14 @@ entries:
   - jobs
   - matching
 - name: Classic Mini DIY Jev judgments
+  name_zh: Classic Mini DIY 中的 Jev 判断
   url: https://github.com/ClassicMiniDIY/classicminidiy/blob/main/server/utils/typesafe.ts
   kind: repo
   author: ClassicMiniDIY
   description: Reference archive for Classic Mini owners whose Nuxt server uses Jev for small judgments around its chat assistant, marketplace screening, search-miss triage and duplicate detection in its review queue.
+  description_zh: 面向 Classic Mini 车主的资料库，其 Nuxt 服务端用 Jev 做各种小判断，涉及聊天助手、市场信息筛查、搜索未命中分诊，以及审核队列中的重复检测。
   jev: Pinned exact model ids so upgrades are visible in stored judgments; every caller degrades to no judgment when the key is absent.
+  jev_zh: 固定精确的模型 id，让升级在存储的判断记录中可见；缺少 key 时，每个调用方都降级为不做判断。
   image: https://classicminidiy.s3.us-east-1.amazonaws.com/misc/CMDIY-Green.jpg
   metrics:
     repo_stars: 9
@@ -79,6 +92,7 @@ entries:
   kind: repo
   author: FerryCorleone
   description: Local WeChat-style chat analyzer that asks Jev for the top emotions and intents per message from 12 and 35 classes, scores the other person's affinity, and grades your replies from SSS to D.
+  description_zh: 本地的微信风格聊天分析器，让 Jev 从 12 类情绪和 35 类意图中找出每条消息最主要的情绪和意图，为对方的好感度打分，并把你的回复评为 SSS 到 D 级。
   metrics:
     stars: 129
   date: '2026-09-20'
@@ -91,6 +105,7 @@ entries:
   kind: repo
   author: gtaras7
   description: Local workbench that screens a CV or a folder of hundreds with a fixed set of typed Jev questions, then scores the answers with editable policy arithmetic that re-scores every candidate in about 20 ms.
+  description_zh: 本地工作台，用一组固定的 Jev 类型化问题筛查单份简历或包含数百份简历的文件夹，再用可编辑的策略算式给答案打分，重新给所有候选人打分只需约 20 毫秒。
   metrics:
     stars: 4
   date: '2026-09-17'
@@ -98,10 +113,12 @@ entries:
   - recruiting
   - screening
 - name: Fake Survey Generator survey analysis
+  name_zh: Fake Survey Generator 的问卷分析
   url: https://github.com/MarcelMichau/fake-survey-generator
   kind: repo
   author: MarcelMichau
   description: Full-stack .NET and React survey playground whose Analyse Survey button uses TypeSafe to flag leading questions, ambiguous choices, incomplete coverage and semantically duplicate options.
+  description_zh: 基于 .NET 和 React 的全栈问卷练习项目，其 Analyse Survey 按钮用 TypeSafe 标出诱导性问题、含糊的选项、覆盖不全以及语义重复的选项。
   metrics:
     stars: 85
   date: '2018-11-18'
@@ -116,6 +133,7 @@ entries:
   kind: repo
   author: mkotlikov
   description: Cave-chat experiment that makes Jev hold a conversation by repeatedly choosing its next word from a compact vocabulary, with a mock fallback when no key is set.
+  description_zh: 洞穴人聊天实验：让 Jev 反复从一个精简词表中选出下一个词来进行对话，未设置 key 时回退到 mock。
   metrics:
     stars: 4
     points: 5
@@ -133,6 +151,7 @@ entries:
   kind: repo
   author: tylerjharden
   description: Livestream decision board that sends eleven build-idea notes to Jev in one request, then code gates blocked ideas and weights fitness, shippability and Jev fit to print tonight's MVP.
+  description_zh: 直播用的决策看板，一次请求把十一条构建创意笔记发给 Jev，然后由代码拦下被否决的创意，并对适配度、可交付性和 Jev 契合度加权，打印出今晚要做的 MVP。
   metrics:
     stars: 1
   date: '2026-09-16'
@@ -144,6 +163,7 @@ entries:
   kind: repo
   author: ndolinschi
   description: First-pass resume screener that compares a resume with a job description and returns a fit score, an interview yes/no, inferred seniority and checks for missing must-haves and red flags.
+  description_zh: 简历初筛工具，把简历与职位描述对比，返回匹配分、是否面试、推断的职级，并检查缺失的硬性要求和危险信号。
   date: '2026-09-17'
   links:
     app: https://hiresignal-opal.vercel.app
@@ -156,6 +176,7 @@ entries:
   kind: repo
   author: wobsoriano
   description: Joke npm package that asks Jev whether a number is even.
+  description_zh: 玩笑性质的 npm 包，让 Jev 判断一个数字是不是偶数。
   metrics:
     stars: 9
   date: '2026-09-17'
@@ -167,7 +188,9 @@ entries:
   kind: repo
   author: alxcrt
   description: Deliberately over-engineered joke package that asks Jev whether a number is odd and returns the calibrated probability instead of a boolean.
+  description_zh: 故意过度设计的玩笑包，让 Jev 判断一个数字是不是奇数，返回的是校准概率而不是布尔值。
   jev: One Noul per number; the probability is the answer.
+  jev_zh: 每个数字一个 Noul；概率本身就是答案。
   metrics:
     stars: 4
   date: '2026-09-17'
@@ -177,10 +200,12 @@ entries:
   - humor
   - noul
 - name: Jev as a letter-by-letter LLM
+  name_zh: 把 Jev 变成逐字母输出的 LLM
   url: https://www.reddit.com/r/accelerate/comments/1wikgsu/lol_this_guy_make_jev_into_an_llm_by_making_it/
   kind: reddit
   author: princecaarlo
   description: Hack that makes Jev write text by choosing one letter at a time, which set off a debate about using decision models as generators.
+  description_zh: 让 Jev 每次选一个字母来写出文本的 hack，引发了关于把决策模型当生成器使用的争论。
   image: https://external-preview.redd.it/cGpuenlvaTdpMHFoMTdeezDR7UunXxOnTNPat0hOKvg0e0iyHixj9bc90YrA.png?format=pjpg&auto=webp&s=0d23944783b987e05de2a6063831a41d8d8c31d1
   metrics:
     points: 81
@@ -195,6 +220,7 @@ entries:
   kind: article
   author: paradax
   description: Chinese tongue-in-cheek hack that turns Jev into a text generator by asking it to pick the next character from 51 candidates, one step at a time.
+  description_zh: 带点戏谑的中文 hack：每一步让 Jev 从 51 个候选字符中选出下一个，把它变成文本生成器。
   image: https://pbs.twimg.com/media/HSp0G56aEAAIWCI.jpg
   metrics:
     likes: 4
@@ -209,6 +235,7 @@ entries:
   kind: repo
   author: skeptrunedev
   description: Local recruiting workspace where Jev, via Browser Use's Jev Ultrafast and Browser Harness, browses LinkedIn for a role, screens titles and checks profile excerpts against your hiring brief, saving matches with evidence.
+  description_zh: 本地招聘工作台：Jev 借助 Browser Use 的 Jev Ultrafast 和 Browser Harness 在 LinkedIn 上按岗位浏览，筛选职位名称，并对照你的招聘需求检查个人资料摘录，把匹配结果连同证据保存下来。
   image: https://raw.githubusercontent.com/skeptrunedev/jev-recruiter/main/docs/recruiter.png
   metrics:
     stars: 44
@@ -222,6 +249,7 @@ entries:
   kind: repo
   author: AiPersonacademy
   description: Local resume screening app that applies hard dealbreaker gates such as years of experience, work authorization and required licenses using date math in code and Jev judgments, and drafts EEOC-safe rejection notices.
+  description_zh: 本地简历筛选应用，用代码中的日期计算加 Jev 判断来执行一票否决的硬性条件，如工作年限、工作许可和必备执照，并起草符合 EEOC 要求的拒信。
   image: https://raw.githubusercontent.com/AiPersonacademy/jev-resume-disqualifier/main/assets/precision_hero_comp.jpg
   metrics:
     stars: 3
@@ -231,10 +259,12 @@ entries:
   - resume-screening
   - hr
 - name: Jev resume-JD screening
+  name_zh: 用 Jev 做简历与 JD 匹配筛选
   url: https://github.com/nanami-0713/jev-resume-screening
   kind: repo
   author: nanami-0713
   description: Resume-to-job-description screening experiment that asks Jev five Noul evidence gates, four Scores and one routing Choice in one request, with criteria hardened v1→v3 against negative-control and trap resumes.
+  description_zh: 简历与职位描述匹配的筛选实验，一次请求向 Jev 提出五个 Noul 证据关卡、四个 Score 和一个路由 Choice，并用阴性对照和陷阱简历把标准从 v1 加固到 v3。
   date: '2026-09-19'
   tags:
   - recruiting
@@ -245,6 +275,7 @@ entries:
   kind: post
   author: steventey
   description: Tongue-in-cheek npm package that checks whether a number is even or odd by asking Jev through the AI SDK.
+  description_zh: 玩笑性质的 npm 包，通过 AI SDK 询问 Jev 来判断一个数字是偶数还是奇数。
   image: https://pbs.twimg.com/media/HSsNY_ybUAEFIK_.jpg?name=orig
   metrics:
     likes: 2437
@@ -262,6 +293,7 @@ entries:
   kind: repo
   author: kesku
   description: Observable chat experiment that makes Jev generate text one character at a time by choosing among 98 options (printable ASCII, newline, tab and end of sequence) for each next reply prefix.
+  description_zh: 可观察的聊天实验，让 Jev 每次从 98 个选项（可打印 ASCII、换行、制表符和序列结束符）中为回复前缀选出下一个字符，从而逐字符生成文本。
   metrics:
     stars: 1
   date: '2026-09-16'
@@ -273,6 +305,7 @@ entries:
   kind: post
   author: hqmank
   description: Job-crawler skill that starts at a company homepage and has Jev find the Careers page, choose links, spot job pages and score roles against your profile, in about 20 seconds instead of 5 minutes.
+  description_zh: 求职爬虫 skill：从公司主页出发，由 Jev 找到招聘页面、选择链接、识别职位页面，并根据你的个人资料为岗位打分，耗时约 20 秒，而不是 5 分钟。
   image: https://pbs.twimg.com/amplify_video_thumb/2100932969602990080/img/VTABbHThpYgbpCjy.jpg
   metrics:
     likes: 75
@@ -287,6 +320,7 @@ entries:
   kind: repo
   author: uhhfeef
   description: 'Character-level language model built from a classifier: each step is a Jev Choice over 28 options (a-z, space and stop), phrased as the full candidate text, run in an ordinary autoregressive loop.'
+  description_zh: 由分类器搭成的字符级语言模型：每一步都是一个 Jev Choice，在 28 个选项（a-z、空格和终止符）中选择，每个选项都写成完整的候选文本，放在普通的自回归循环里运行。
   image: https://raw.githubusercontent.com/uhhfeef/jev-lm/main/docs/session-who-are-you.gif
   metrics:
     stars: 3
@@ -299,6 +333,7 @@ entries:
   kind: post
   author: neogoose_btw
   description: 'Satirical experiment that skips writing code: you give it a task and Jev predicts the next CPU instruction to execute at runtime.'
+  description_zh: 讽刺性实验，干脆不写代码：你给它一个任务，Jev 在运行时预测下一条要执行的 CPU 指令。
   image: https://pbs.twimg.com/amplify_video_thumb/2101427327746093056/img/LiNIpS9HMaBO00kW.jpg
   metrics:
     likes: 1505
@@ -312,6 +347,7 @@ entries:
   kind: repo
   author: kyle-pena-nlp
   description: Experiment that turns Jev into a chatbot by asking it at every step which symbol comes next from an alphabet plus a stop option, then sampling from the returned distribution.
+  description_zh: 把 Jev 变成聊天机器人的实验：每一步问它下一个符号是什么（从字母表加一个停止选项中选），再从返回的分布中采样。
   image: https://github.com/user-attachments/assets/8be3a47a-da3c-4df6-a617-d485c61a7db7
   metrics:
     stars: 80
@@ -326,6 +362,7 @@ entries:
   kind: post
   author: punit_arani
   description: Simulation engine for generative agent-based models driven mostly by Jev, pitched as cheaper and faster than LLM-based GABMs for long-running simulations.
+  description_zh: 主要由 Jev 驱动的生成式 agent 建模（GABM）仿真引擎，定位是在长时间运行的仿真中比基于 LLM 的 GABM 更便宜、更快。
   image: https://pbs.twimg.com/amplify_video_thumb/2101947212934901760/img/oVoIi7iIDwSPlJDc.jpg
   metrics:
     likes: 24
@@ -342,6 +379,7 @@ entries:
   kind: repo
   author: Adityakhalkar
   description: 'Lets you ask Jev about a photo: a CNN reports calibrated facts per image tile or abstains, and Jev reads that text fact sheet, picks which probes to run and draws the conclusion without seeing pixels.'
+  description_zh: 让你就一张照片向 Jev 提问：CNN 针对每个图像分块报告校准过的事实或选择弃权，Jev 读取这份文本事实表，决定运行哪些探测并得出结论，全程不看像素。
   image: https://raw.githubusercontent.com/Adityakhalkar/JevEye/main/docs/jeveye-flowers.png
   date: '2026-09-20'
   tags:
@@ -353,6 +391,7 @@ entries:
   kind: repo
   author: Bewinxed
   description: 'Joke chatbot built on a model that cannot generate text: the transcript is the state, the question is "Next word?" over a 20,000-word dictionary, and replies build one Choice at a time.'
+  description_zh: 玩笑聊天机器人，底层模型根本不会生成文本：对话记录就是 state，问题是在 20,000 词的词典上问“下一个词是什么？”，回复靠一个个 Choice 逐步拼出来。
   image: https://raw.githubusercontent.com/Bewinxed/jevgpt/master/assets/banner.png
   metrics:
     stars: 6
@@ -366,7 +405,9 @@ entries:
   kind: repo
   author: hqman
   description: Coding-agent skill and CLI that drives a visible Chrome over CDP from a company homepage to its job listings, screening AI and software roles and saving the results.
+  description_zh: 编程 agent 的 skill 和 CLI，通过 CDP 驱动一个可见的 Chrome，从公司主页一路走到职位列表，筛选 AI 和软件岗位并保存结果。
   jev: Jev scores every link and job posting; the host LLM never picks what to click.
+  jev_zh: 每个链接和职位发布都由 Jev 打分；宿主 LLM 从不决定点击什么。
   metrics:
     stars: 29
   date: '2026-09-18'
@@ -379,6 +420,7 @@ entries:
   kind: repo
   author: hamidfarmani
   description: Next.js resume review app that scores an uploaded resume against a target role and job description with Jev, showing an overall score, per-criterion and per-bullet scores and a suggested bullet order.
+  description_zh: 基于 Next.js 的简历审阅应用，用 Jev 按目标岗位和职位描述给上传的简历打分，显示总分、各项标准和每条要点的得分，以及建议的要点排序。
   metrics:
     stars: 2
   date: '2026-09-20'
@@ -392,6 +434,7 @@ entries:
   kind: repo
   author: WeSecureYou
   description: TypeScript CLI and REST API that rates an occupation's exposure to AI-driven layoffs, likely trajectory, need for human accountability and overall resilience.
+  description_zh: TypeScript CLI 和 REST API，评估某个职业受 AI 裁员冲击的程度、可能的走向、对人类问责的需求以及整体韧性。
   date: '2026-09-17'
   links:
     app: https://jev-test.vercel.app
@@ -404,7 +447,9 @@ entries:
   kind: repo
   author: monteduro
   description: Web app that judges a startup idea as KILL IT, FIX IT, or SHIP IT from one request of 10 parallel Jev questions, with local weights and gates computing the verdict.
+  description_zh: Web 应用，用一次请求并行问 Jev 10 个问题，把创业点子判为 KILL IT、FIX IT 或 SHIP IT，最终结论由本地权重和关卡计算得出。
   jev: 8 indie-hacker Score questions on a 0-4 scale, plus a category Choice and an is-it-understandable Noul.
+  jev_zh: 8 个独立开发者视角的 Score 问题（0-4 分），外加一个类别 Choice 和一个“是否易懂”的 Noul。
   image: https://killmyidea.stemonte.io/og.png
   metrics:
     stars: 76
@@ -417,10 +462,12 @@ entries:
   - startups
   - scoring
 - name: Lunar crisis decision demo
+  name_zh: 月球危机决策演示
   url: https://x.com/W3_Btc/status/2102148366691958868
   kind: post
   author: W3_Btc
   description: Toy experiment placing Jev in a fictional lunar-city crisis, answering 5 scenario decisions in one call with about 91.8 ms of model evaluation time.
+  description_zh: 玩具实验：把 Jev 放进一个虚构的月球城市危机里，一次调用回答 5 个情境决策，模型评估耗时约 91.8 毫秒。
   image: https://pbs.twimg.com/media/HSxUZJEWwAAKuZc.jpg?name=orig
   metrics:
     views: 11
@@ -434,6 +481,7 @@ entries:
   kind: post
   author: verbove
   description: Map of indie makers that uses Jev to find the makers near you that you should meet.
+  description_zh: 独立创作者地图，用 Jev 找出你附近值得见一见的创作者。
   image: https://pbs.twimg.com/amplify_video_thumb/2100989867370979328/img/d9ymhOh4c1pNvx4X.jpg
   metrics:
     likes: 5
@@ -446,10 +494,12 @@ entries:
   - networking
   - matching
 - name: Manhattan pathfinding
+  name_zh: 曼哈顿寻路
   url: https://x.com/BuilderShivam/status/2101014788575035689
   kind: post
   author: BuilderShivam
   description: Experiment pitting Jev against Dijkstra's algorithm and A* at finding routes across a Manhattan street map.
+  description_zh: 让 Jev 与 Dijkstra 算法和 A* 比拼在曼哈顿街道地图上寻路的实验。
   image: https://pbs.twimg.com/amplify_video_thumb/2101012936676483072/img/uOa464dc-IxxsOJZ.jpg
   metrics:
     likes: 9
@@ -464,6 +514,7 @@ entries:
   kind: repo
   author: narphorium
   description: Step-through logic interpreter that proves goals over plain-English facts and rules by SLD resolution as Prolog does, with Jev deciding when two sentences state the same fact so they unify.
+  description_zh: 可单步执行的逻辑解释器，像 Prolog 一样用 SLD 归结在纯英文事实和规则上证明目标，由 Jev 判断两句话是否陈述同一事实，从而完成合一。
   image: https://pbs.twimg.com/amplify_video_thumb/2100984200820121600/img/dXya52zCSiVBJVaF.jpg
   metrics:
     stars: 6
@@ -481,7 +532,9 @@ entries:
   kind: repo
   author: OskarLebuda
   description: Nuxt and Next.js modules that ask Jev which link a visitor is about to click and prefetch only that one, with an overlay that draws the guesses; its benchmark cut median navigation from 147 ms to 68 ms.
+  description_zh: Nuxt 和 Next.js 模块，让 Jev 预测访客接下来要点哪个链接，只预取那一个，并用浮层画出猜测结果；其基准测试把导航中位耗时从 147 毫秒 降到 68 毫秒。
   jev: One request per prediction with three questions (next, soon, exit) over candidate link IDs, built from scroll and pointer state.
+  jev_zh: 每次预测发一个请求，基于滚动和指针状态，针对候选链接 ID 问三个问题（下一个、即将、离开）。
   metrics:
     stars: 7
   date: '2026-09-19'
@@ -492,10 +545,12 @@ entries:
   - web-performance
   - nextjs
 - name: Proq plan-set classifier
+  name_zh: Proq 图纸集分类器
   url: https://x.com/hari_trinay/status/2101118529936519453
   kind: post
   author: hari_trinay
   description: 'Construction plan-set classifier for Proq''s bill-of-materials pipeline: Jev classified a 26-sheet set in 2.9 seconds for $0.0052, matching GPT-4.1 and GPT-6 Astra on 100% of sheets.'
+  description_zh: 用于 Proq 物料清单流水线的施工图纸集分类器：Jev 用 2.9 秒、$0.0052 完成一套 26 张图纸的分类，在 100% 的图纸上与 GPT-4.1 和 GPT-6 Astra 结果一致。
   image: https://pbs.twimg.com/amplify_video_thumb/2101118259076734976/img/JId8Xua4ypyd342R.jpg
   metrics:
     likes: 18
@@ -509,6 +564,7 @@ entries:
   kind: repo
   author: i2cjak
   description: Hack that runs compiled C on a simulated SERV RISC-V CPU whose logic gates are lookup tables built from Jev's answers to 22 Boolean gate/input combinations, with a trace of clock, signals, requests and cost.
+  description_zh: 在模拟的 SERV RISC-V CPU 上运行编译后 C 程序的 hack，CPU 的逻辑门是查找表，由 Jev 对 22 种布尔门/输入组合的回答构建而成，并附带时钟、信号、请求和成本的追踪记录。
   image: https://jev-riscv-production.up.railway.app/static/share.png
   metrics:
     stars: 1
@@ -524,6 +580,7 @@ entries:
   kind: repo
   author: hellogumbo
   description: Joke verdict page that feeds Jev the day's Florida Man, odd-news, politics, world and AI headlines every ten minutes and asks it, with a Choice, Score and Noul, whether AI should kill us all.
+  description_zh: 玩笑判决页面：每十分钟把当天的 Florida Man、奇闻、政治、国际和 AI 头条喂给 Jev，用一个 Choice、一个 Score 和一个 Noul 问它 AI 是否应该消灭人类。
   image: https://should-ai-kill-us-all.pages.dev/assets/og.jpg
   metrics:
     stars: 2
@@ -535,11 +592,14 @@ entries:
   - humor
   - news
 - name: Takohachi Jev features
+  name_zh: Takohachi 的 Jev 功能
   url: https://github.com/pistachiostudio/takohachi/blob/main/src/cogs/README.md
   kind: repo
   author: pistachiostudio
   description: Japanese community Discord bot that uses Jev to offer 'did you mean' matches for its custom-response dictionary and to fact-check Gemini-written daily trivia, regenerating it up to three times.
+  description_zh: 日本社区 Discord 机器人，用 Jev 为自定义回复词典提供“你是不是想找”式的匹配，并对 Gemini 写的每日冷知识做事实核查，最多重新生成三次。
   jev: A Choice over up to 254 registered triggers plus a none option for fuzzy lookup.
+  jev_zh: 在最多 254 个已注册触发词外加一个“都不是”选项上做一次 Choice，实现模糊查找。
   image: https://raw.githubusercontent.com/pistachiostudio/takohachi/main/images/takohachi_w_senjafuda.png
   metrics:
     repo_stars: 6
@@ -555,7 +615,9 @@ entries:
   kind: repo
   author: iethree
   description: Just-for-fun Rust Discord bot where Jev sees each @-mention first and decides in one call whether it is a yes/no question and what the answer is; confident answers are sent right away, everything else goes to Claude.
+  description_zh: 纯属娱乐的 Rust Discord 机器人：每条 @ 提及先交给 Jev，由它在一次调用中判断这是不是是非题以及答案是什么；有把握的答案立即发送，其余交给 Claude。
   jev: Two judgments per message (is it yes/no, is the answer yes) over the message, reply context and long-term memory digest.
+  jev_zh: 针对消息、回复上下文和长期记忆摘要，每条消息做两个判断（是不是是非题，答案是不是“是”）。
   metrics:
     stars: 5
   date: '2020-06-23'
@@ -567,6 +629,7 @@ entries:
   kind: repo
   author: shashwatc12
   description: 'Audits weekly program status updates: Jev reads the language while code parses dates and numbers, flagging updates labeled green whose own text describes blockers, with an eval report and live demo.'
+  description_zh: 审计每周的项目状态更新：Jev 解读文字，代码解析日期和数字，标出那些标记为绿色、正文却描述了阻塞问题的更新，附带评测报告和在线演示。
   image: https://raw.githubusercontent.com/shashwatc12/watermelon/main/docs/screenshot.png
   date: '2026-09-20'
   links:
@@ -580,7 +643,9 @@ entries:
   kind: repo
   author: Tokeii0
   description: Self-hosted QQ group-chat companion bot with long-term memory and a web admin panel, where Jev decides whether to join a conversation, tells jokes from real requests for help, and picks when and in which tone to send voice.
+  description_zh: 自托管的 QQ 群聊陪伴机器人，带长期记忆和 Web 管理后台，由 Jev 决定是否加入对话、区分玩笑和真实求助，并选择何时以何种语气发送语音。
   jev: Semantic judgments on each group message gate replies, memory writes and voice-message style; each sub-feature can be switched on separately.
+  jev_zh: 对每条群消息做语义判断，以此控制回复、记忆写入和语音消息风格；每个子功能都可以单独开启。
   metrics:
     stars: 7
   date: '2026-09-20'
@@ -593,7 +658,9 @@ entries:
   kind: repo
   author: Ayi1337
   description: Small web tool for everyday decisions that sends a question with yes/no or custom options to Jev and shows the chosen option with its probabilities, in Chinese and English.
+  description_zh: 日常决策小工具，把带有是/否或自定义选项的问题发给 Jev，显示选中的选项及其概率，支持中文和英文。
   jev: One Choice over the options plus a Choice classifying the input kind; the server validates that probabilities sum to 1 and the choice is the maximum.
+  jev_zh: 对选项做一个 Choice，另加一个判断输入类型的 Choice；服务端会校验概率之和为 1 且所选项概率最大。
   metrics:
     stars: 9
   date: '2026-09-20'
@@ -602,10 +669,12 @@ entries:
   - web-app
   - python
 - name: YouWare resume screener
+  name_zh: YouWare 简历筛选器
   url: https://x.com/YouWareAI/status/2100984559215247814
   kind: post
   author: YouWareAI
   description: Open-sourced resume screener on YouWare that gave 360 resumes typed scores and shortlist signals in 24.2 seconds for $0.0212.
+  description_zh: 在 YouWare 上开源的简历筛选器，用 24.2 秒、$0.0212 为 360 份简历给出类型化评分和入围信号。
   image: https://pbs.twimg.com/amplify_video_thumb/2100982412926992385/img/h9LjWj9F1kv3ESCd.jpg
   metrics:
     likes: 21
@@ -620,6 +689,7 @@ entries:
   kind: repo
   author: kijung4290
   description: Dashboard for senior-center programs that uses recent attendance records, uploaded as XLSX, to flag which participants staff should check on first, with Jev giving per-option risk probabilities.
+  description_zh: 老年中心项目的仪表盘，根据以 XLSX 上传的近期出勤记录，标出工作人员应优先关心的参与者，由 Jev 给出每个选项的风险概率。
   date: '2026-09-19'
   links:
     app: https://kijung4290.github.io/maeum-on-attendance-care/

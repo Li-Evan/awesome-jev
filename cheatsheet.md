@@ -1,5 +1,7 @@
 # Jev Cheatsheet
 
+**English** · [简体中文](cheatsheet.zh-CN.md)
+
 A one-page field guide to building with Jev, distilled from the [official TypeSafe docs](https://docs.typesafe.ai). When this page and the docs disagree, the docs win.
 
 Last checked on 2026-09-21 against `jev-1.13.0`, `typesafe-sdk` 0.7.0 (Python), and `@typesafe-ai/sdk` 0.6.0 (JavaScript).

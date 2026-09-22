@@ -1,5 +1,7 @@
 # 📊 Data and Evaluation
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md)
+
 Labeling, classification at scale, data pipelines, observability, and LLM evals. 135 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)

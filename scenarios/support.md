@@ -1,5 +1,7 @@
 # 🎧 Customer Support and Sales
 
+**English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md)
+
 Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
