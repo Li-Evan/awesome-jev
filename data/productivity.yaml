@@ -1,0 +1,1730 @@
+title: Personal Productivity
+emoji: 🧰
+layout: gallery
+description: Email, notes, calendars, browsing, and everyday automation.
+entries:
+- name: 500-email classification
+  url: https://x.com/rileybrown/status/2100404532119269426
+  kind: post
+  author: rileybrown
+  description: Demo of Jev classifying 500 emails in seconds for 3.5 cents.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100403183533125632/img/54ZFO-CHvDeC-rw-.jpg
+  metrics:
+    likes: 3876
+    views: 293917
+  date: '2026-09-17'
+  tags:
+  - email
+  - classification
+- name: 63,000-email sorter
+  url: https://x.com/NathanWilbanks_/status/2101035975694483914
+  kind: post
+  author: NathanWilbanks_
+  description: Sorted 63,045 emails into categories with Jev and agnt.gg in 2 minutes 54 seconds for an estimated $0.9841.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101033330556735488/img/RFhgnwDzVvm00XP9.jpg
+  metrics:
+    likes: 38
+    views: 1911
+  date: '2026-09-18'
+  tags:
+  - email
+  - bulk-classification
+- name: Android marketing notification filter
+  url: https://x.com/twitte_ethan/status/2100970832948580377
+  kind: post
+  author: twitte_ethan
+  description: Listens to Android app notifications and SMS, identifies advertising and marketing messages, and silences them without deleting anything.
+  image: https://pbs.twimg.com/media/HSgl0DYbAAATbny.jpg?name=orig
+  metrics:
+    likes: 9
+    views: 7796
+  date: '2026-09-18'
+  tags:
+  - android
+  - notifications
+  - spam
+- name: Anti-doomscroll extension
+  url: https://x.com/OccupyingM/status/2102130055786938798
+  kind: post
+  author: OccupyingM
+  description: Browser extension that takes a description of what you want to see and has Jev classify each X and YouTube item as skip or for you.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102129253903167488/img/lF_Hc6nMceMfQHXF.jpg
+  metrics:
+    likes: 22
+    views: 388
+  date: '2026-09-21'
+  tags:
+  - chrome-extension
+  - feed-filter
+  - focus
+- name: AnyFilter
+  url: https://github.com/anyfilter/anyfilter
+  kind: repo
+  author: anyfilter
+  description: Chrome extension that uses Jev to hide posts on X that match what you want gone, from ads and spam to rules you describe in a sentence.
+  jev: The user supplies a Jev key from Vercel AI Gateway or TypeSafe, stored only in the browser.
+  image: https://raw.githubusercontent.com/anyfilter/anyfilter/main/screenshots/panel.png
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49765427
+  tags:
+  - browser-extension
+  - x
+  - filtering
+- name: Ask Jev extension
+  url: https://x.com/joseherreraweb3/status/2101434169654182337
+  kind: post
+  author: joseherreraweb3
+  description: Chrome extension that opens with Command+J on any page so you can ask a question and get a probability for each answer.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101433880331038720/img/U-MhcXOme5lLNE7-.jpg
+  metrics:
+    likes: 1
+    views: 103
+  date: '2026-09-19'
+  tags:
+  - chrome-extension
+  - quick-decisions
+- name: avenoxbeyin
+  url: https://github.com/avenoxai/avenoxbeyin
+  kind: repo
+  author: avenoxai
+  description: Local second brain for Claude Code, Codex and Antigravity on Obsidian Markdown, with an optional Jev advisor for auto context, answers and memory evaluation that runs off, shadow or on.
+  metrics:
+    stars: 126
+  date: '2026-06-29'
+  links:
+    docs: https://github.com/avenoxai/avenoxbeyin/blob/main/docs/v3/JEV.md
+  tags:
+  - obsidian
+  - memory
+  - claude-code
+- name: BlueNoise Jev second pass
+  url: https://github.com/rokcso/bluenoise/blob/main/src/contracts/ai.ts
+  kind: repo
+  author: rokcso
+  description: Experimental Jev second pass in BlueNoise, a privacy-first extension that blurs or hides noisy X replies with local rules, judging replies the rules missed with your own TypeSafe key.
+  jev: Verdicts are cached per reply fingerprint behind a quota guard; local thresholds decide whether to hide.
+  metrics:
+    repo_stars: 90
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/rokcso/bluenoise
+    app: https://chrome.google.com/webstore/detail/ponbeiihcconklnlphjcnbfkghnimpid
+  tags:
+  - chrome-extension
+  - x
+- name: Cal.com team scheduling
+  url: https://x.com/peer_rich/status/2100902559313502602
+  kind: post
+  author: peer_rich
+  description: Combines Jev with the Cal.com API to find the best meeting overlap among team members almost instantly, with API round trips as the slowest step.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100902393894342656/img/22LO2K2E8E9JAhMB.jpg
+  metrics:
+    likes: 124
+    views: 8051
+  date: '2026-09-18'
+  tags:
+  - scheduling
+  - calendar
+- name: Capture
+  url: https://github.com/sgaabdu4/capture
+  kind: repo
+  author: sgaabdu4
+  description: 'Private Mac voice diary: press a shortcut and speak, Parakeet transcribes locally, Jev splits the transcript into separate thoughts and files them as notes, tasks and reminders in Notion after you approve.'
+  image: https://raw.githubusercontent.com/sgaabdu4/capture/main/docs/screenshots/home.png
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - voice-notes
+  - notion
+  - macos
+- name: Classifying all my emails with Jev
+  url: https://www.reddit.com/r/accelerate/comments/1wikz06/using_jev_to_classify_all_my_emails/
+  kind: reddit
+  author: stealthispost
+  description: Repost of a video where Ryan Vogel runs Jev over 100 and then 1,000 of his emails to predict category, priority, spam, and whether a reply is needed.
+  jev: Several Choice and Noul questions per email in one call.
+  image: https://external-preview.redd.it/PZmlKewYF-ScPv5W2LlKR_mMDU7H24sjyatGLF8GmN8.jpeg?auto=webp&s=af58557da979fd665844821799fb3ed17986230c
+  metrics:
+    points: 21
+  date: '2026-09-17'
+  links:
+    video: https://www.youtube.com/watch?v=9oWxrsRo4d8
+  tags:
+  - email
+  - classification
+- name: Cold Email Client
+  url: https://github.com/austinchennn/cold-email
+  kind: repo
+  author: austinchennn
+  description: LangGraph pipeline that finds professors in a research area, tailors a resume to each and sends personalized cold emails, using Jev for routing and intent decisions.
+  jev: Choice via langchain-typesafe with a 0.5 confidence floor; low-confidence answers, errors or a missing key fall back to the LLM.
+  image: https://raw.githubusercontent.com/austinchennn/cold-email/main/media/9e4decdd9a339a09d53083e4b1e750e9.jpg
+  metrics:
+    stars: 12
+  date: '2026-04-05'
+  links:
+    code: https://github.com/austinchennn/cold-email/blob/main/workflow/skills/decision_client.py
+  tags:
+  - outreach
+  - email
+  - langgraph
+- name: Contextual clipboard quick actions
+  url: https://x.com/marcelpociot/status/2100907261593829675
+  kind: post
+  author: marcelpociot
+  description: Mac utility that has Jev watch the clipboard and, when the copied text is a terminal command, offers a quick action to run it in the terminal.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100907154752282625/img/ymaN0AxIqCG4H4yU.jpg
+  metrics:
+    likes: 134
+    views: 14803
+  date: '2026-09-18'
+  tags:
+  - clipboard
+  - macos
+- name: dead-letter TypeSafe triage
+  url: https://github.com/BigCactusLabs/dead-letter/blob/main/src/dead_letter/analysis/providers/typesafe.py
+  kind: repo
+  author: BigCactusLabs
+  description: 'Tool that converts .eml exports into LLM-ready Markdown and can run an opt-in TypeSafe triage profile per email: reply requested, action, commitment and deadline Nouls plus an urgency Score.'
+  image: https://raw.githubusercontent.com/BigCactusLabs/dead-letter/main/docs/brand/production/readme-logo.png
+  metrics:
+    repo_stars: 8
+  date: '2026-03-26'
+  links:
+    repo: https://github.com/BigCactusLabs/dead-letter
+    pypi: https://pypi.org/project/dead-letter/
+  tags:
+  - email
+  - triage
+  - markdown
+- name: DMX
+  url: https://dmx.to
+  kind: app
+  author: Kitze
+  description: Native Mac app for X that caps timeline browsing; its next version adds Jev smart rules that filter the timeline by three levels of usefulness, tweet type and topic.
+  jev: Smart timeline rules call Jev with your own key or through Vercel AI Gateway.
+  image: https://dmx.to/opengraph-image.png
+  metrics:
+    likes: 7
+    views: 3278
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/thekitze/status/2100570975175877106
+  tags:
+  - x-client
+  - feed-filtering
+  - macos
+- name: Doomscroll Filter
+  url: https://superx.so/instead-of-doomscrolling?niche=jev
+  kind: app
+  author: SuperX
+  description: Free tool where you pick a niche and Jev reads the last few days of X posts and sorts them into Read, Skim, or Pass.
+  jev: Choice per post among Read, Skim and Pass.
+  image: https://superx.so/creators/assets/og-doomscroll-filter.png
+  metrics:
+    likes: 1698
+    views: 174295
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/robj3d3/status/2101074194260000982
+  tags:
+  - feed-filter
+  - twitter
+- name: DWIM
+  url: https://github.com/rohit9mehta/dwim
+  kind: repo
+  author: rohit9mehta
+  description: Command palette for macOS that reads the frontmost app's menu tree through the accessibility API, asks Jev one yes/no question per menu item against your plain-language request, and presses the best match.
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  tags:
+  - macos
+  - command-palette
+  - accessibility
+- name: ExcelPilot
+  url: https://github.com/vikramlingam/excelpilot
+  kind: repo
+  author: vikramlingam
+  description: Local Excel agent in an Office.js task pane that reads and writes the open workbook, with Qwen planning and Jev handling intent routing, tool gating and claim checks.
+  date: '2026-09-20'
+  tags:
+  - excel
+  - office-addin
+  - agent
+- name: Family LINE home bot
+  url: https://x.com/yo_ta_n/status/2101885032881365222
+  kind: post
+  author: yo_ta_n
+  description: Dify-built LINE bot that lets verified family members switch the home lights and air conditioner from chat, with Jev as the low-cost intent classifier and Luna handling replies.
+  jev: Classifies each chat message into a home-control intent before an LLM replies.
+  image: https://pbs.twimg.com/media/HStlLahaQAAk0uG.jpg?name=orig
+  metrics:
+    likes: 2
+    views: 159
+  date: '2026-09-21'
+  tags:
+  - home-automation
+  - line
+  - dify
+- name: Fast email classifier
+  url: https://x.com/zohaibtanwir/status/2101897187970171176
+  kind: post
+  author: zohaibtanwir
+  description: Email classifier that sorts 50 emails in under 2 seconds, even with Jev hosted in us-west and the author calling it from India.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101896594950066178/img/FA6bjTgb6HEh9hxQ.jpg
+  metrics:
+    likes: 1
+    views: 68
+  date: '2026-09-21'
+  tags:
+  - email
+  - classification
+- name: Feed filter in plain words
+  url: https://openrouter.ai/labs/jev/feed
+  kind: app
+  author: OpenRouter
+  description: 'OpenRouter Labs recipe where you write a feed rule in plain words, such as hide rage bait or only genuine questions, and Jev flags every matching post in one request: 40 posts in 0.5 s.'
+  jev: One Noul per post for the plain-language rule.
+  image: https://openrouter.ai/dynamic-og?title=Feed+filter+in+plain+words&description=Filter+sample+posts+with+a+plain-language+rule.&v=2
+  links:
+    model: https://openrouter.ai/typesafe/jev
+  tags:
+  - feed-filter
+  - openrouter-labs
+- name: Focus
+  url: https://github.com/bramtechs/Focus
+  kind: repo
+  author: bramtechs
+  description: Browser extension that asks Jev via OpenRouter's Decisions API whether each domain you navigate to is productive or distracting and redirects to a block page above a 0.6 probability threshold, with 7-day caching.
+  date: '2026-09-18'
+  tags:
+  - browser-extension
+  - focus
+  - openrouter
+- name: Fork-Cast
+  url: https://github.com/HaoxiangXia/fork-cast
+  kind: repo
+  author: HaoxiangXia
+  description: Meal picker that takes a plain-language mood, such as wanting hot soup after the rain, and chooses what to eat from a personal list without any dish tagging.
+  jev: A Choice over the candidate pool plus Noul checks for contradictory requests and for indifference, with meal time and recent history in the state.
+  metrics:
+    stars: 3
+  date: '2026-09-21'
+  tags:
+  - food
+  - decision
+  - personal
+- name: GitHub Star Organizer
+  url: https://github.com/yutkat/github-star-organizer-jev
+  kind: repo
+  author: yutkat
+  description: Python CLI that uses Jev to classify your GitHub stars into your existing GitHub Lists, writes a JSON classification report, and can apply the assignments.
+  date: '2026-09-18'
+  tags:
+  - github
+  - classification
+  - cli
+- name: home-assistant-typesafe
+  url: https://github.com/allenporter/home-assistant-typesafe
+  kind: repo
+  author: allenporter
+  description: Home Assistant conversation agent that maps commands to intents and devices with Jev and hands low-confidence or compound requests to an LLM fallback.
+  jev: Choice and Noul questions over registered intents and exposed entities, targeting sub-200ms routing.
+  date: '2026-09-20'
+  tags:
+  - home-assistant
+  - smart-home
+  - intent-routing
+- name: Inbox triage with Jev
+  url: https://www.youtube.com/watch?v=9oWxrsRo4d8
+  kind: video
+  author: vogel
+  description: Runs Jev over the creator's own inbox to predict category, priority, spam, and whether a reply is needed, first on 100 emails and then on 1,000, at about 200 ms per call.
+  jev: Category, priority, spam, and reply-needed questions asked for every email.
+  metrics:
+    views: 65696
+    likes: 591
+  date: '2026-09-16'
+  tags:
+  - email
+  - triage
+- name: Inbox Zero classifier
+  url: https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts
+  kind: repo
+  author: elie222
+  description: Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.
+  image: https://raw.githubusercontent.com/elie222/inbox-zero/main/apps/web/app/opengraph-image.jpg
+  metrics:
+    repo_stars: 12278
+  date: '2023-07-12'
+  links:
+    app: https://getinboxzero.com
+    repo: https://github.com/elie222/inbox-zero
+  tags:
+  - email
+  - classification
+- name: Inbox Zero classifier
+  url: https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/classifier/typesafe.ts
+  kind: repo
+  description: Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.
+- name: Instant calorie tracking
+  url: https://x.com/thekitze/status/2100857642566758849
+  kind: post
+  author: thekitze
+  description: Calorie tracking app that logs meals instantly by using Jev instead of a chat model.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100857416984477696/img/RAMEV-YddA05BR1X.jpg
+  metrics:
+    likes: 792
+    views: 72129
+  date: '2026-09-18'
+  tags:
+  - calories
+  - nutrition
+- name: Intern
+  url: https://github.com/dabit3/intern
+  kind: repo
+  author: dabit3
+  description: Native macOS launcher that finds files, apps and Chrome history the way you remember them, such as 'the pdf I just downloaded', with Jev judging which candidate you mean on every keystroke in about 100 ms.
+  jev: Ranks locally found candidates per keystroke; one clear winner is preselected, several can be opened together or saved as a workspace.
+  image: https://raw.githubusercontent.com/dabit3/intern/main/docs/homepage.png
+  metrics:
+    stars: 6
+  date: '2026-09-19'
+  tags:
+  - macos
+  - launcher
+  - search
+- name: Jaste
+  url: https://jaste.app/
+  kind: app
+  author: Marcus Lowe
+  description: Mac clipboard app whose Smart Paste mode uses Jev to pick the saved clipboard entry that fits the currently focused field; beta with BYOK and a local mode announced.
+  jev: Choice over saved clipboard values given the focused field as state.
+  image: https://jaste.app/og.png
+  metrics:
+    likes: 9706
+    views: 1050064
+  date: '2026-09-21'
+  links:
+    demo: https://x.com/marcus_lowe/status/2101886533146161275
+    demo 2: https://x.com/marcus_lowe/status/2101476399488160013
+  tags:
+  - clipboard
+  - macos
+  - smart-paste
+- name: Jev Assist
+  url: https://github.com/luxus/ha-conversation-jev
+  kind: repo
+  author: luxus
+  description: Home Assistant conversation agent where Jev classifies each utterance and either calls a light, climate or cover service directly or hands off to Grok.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  tags:
+  - home-assistant
+  - home-automation
+- name: Jev auto-fill buttons
+  url: https://x.com/ctnicholasdev/status/2100928133608472817
+  kind: post
+  author: ctnicholasdev
+  description: Issue-tracker demo with auto-fill buttons that let Jev set an issue's status, priority and labels in the background instead of through a chat box.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100928115648405506/img/1ddfEiaKJLPA4Xuh.jpg
+  metrics:
+    likes: 739
+    views: 41804
+  date: '2026-09-18'
+  tags:
+  - auto-fill
+  - ui
+  - liveblocks
+- name: Jev Calc
+  url: https://x.com/thekitze/status/2100873520951808403
+  kind: post
+  author: thekitze
+  description: Notebook-style smart calculator that uses Jev to interpret quantities and terms written in plain language.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100873465339498497/img/HtZVCu9bxlNK1G4n.jpg
+  metrics:
+    likes: 347
+    views: 40195
+  date: '2026-09-18'
+  tags:
+  - calculator
+  - notebook
+- name: Jev Chat Assistant
+  url: https://github.com/jev-chat/jev-chat-jarvis
+  kind: repo
+  author: jev-chat
+  description: Android overlay that reads visible WeChat, QQ and X chats through accessibility, has Jev judge the other person's intent, risk level and best action, ranks three DeepSeek-drafted replies and fills one in without sending.
+  image: https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/overlay.png
+  metrics:
+    stars: 1827
+    likes: 2503
+    views: 349866
+  date: '2026-09-21'
+  links:
+    demo: https://x.com/li9292/status/2102010259367678188
+  tags:
+  - android
+  - messaging
+  - wechat
+- name: Jev Chat for Twitch
+  url: https://github.com/ethanplusai/jev-chat-for-twitch
+  kind: repo
+  author: ethanplusai
+  description: Bring-your-own-key Chrome extension that adds a second Twitch chat column showing only messages matching a chosen intent, such as helpful, questions or funny.
+  jev: One category Choice per chat message, batched 20 at a time from the anonymous IRC WebSocket.
+  metrics:
+    stars: 10
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/vibecoding/comments/1wkqbq7/filter_twitch_livestream_chat_in_real_time_with/
+  tags:
+  - chrome-extension
+  - twitch
+- name: JEV Document Classification
+  url: https://github.com/Charlyhno-eng/jev-document-classification
+  kind: repo
+  author: Charlyhno-eng
+  description: Local-first app that files documents from a folder into category folders, routing low-confidence ones to review and suspected prompt injections to quarantine, with audit preview and undo.
+  jev: Category, confidentiality, prompt-injection risk and subject decisions via typesafe-ai/jev on Vercel AI Gateway.
+  image: https://raw.githubusercontent.com/Charlyhno-eng/jev-document-classification/main/assets/jev-doc-classification-banner.png
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  tags:
+  - document-filing
+  - local-first
+- name: Jev email classification test
+  url: https://x.com/ryanvogel/status/2100042788851101842
+  kind: post
+  author: ryanvogel
+  description: Test of Jev classifying 1,500 of the author's own emails, shown in a video of batch inbox labeling.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100042377339588608/img/2O56_xRC0r54ugfr.jpg
+  metrics:
+    likes: 3548
+    views: 447617
+  date: '2026-09-16'
+  tags:
+  - email
+  - classification
+- name: Jev feed filter extension
+  url: https://x.com/thibault_mthh/status/2100572184435417305
+  kind: post
+  author: thibault_mthh
+  description: Chrome extension that reads your social feed and hides posts matching your own filters, using Jev because it is cheap and fast enough to run on every post.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100567118844481536/img/_Fxwb7xtfdLcizvw.jpg
+  metrics:
+    likes: 4
+    views: 247
+  date: '2026-09-17'
+  tags:
+  - chrome-extension
+  - feed-filter
+- name: Jev for Home Assistant
+  url: https://github.com/AboveColin/HA-Jev
+  kind: repo
+  author: AboveColin
+  description: Home Assistant integration that turns typed Jev questions about entities, devices and areas into sensors, adds noul, choice, score and ask actions for automations, plus a conversation agent for Assist.
+  image: https://raw.githubusercontent.com/AboveColin/HA-Jev/main/docs/images/entities.png
+  metrics:
+    stars: 45
+  date: '2026-09-17'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49741371
+  tags:
+  - home-assistant
+  - home-automation
+- name: Jev form auto-filler
+  url: https://x.com/mitakamikata/status/2102000526489702733
+  kind: post
+  author: mitakamikata
+  description: Japanese Chrome extension, generated with an AI coding agent, that fills in every field of a web form automatically using Jev, at 0.024 yen per form and 245 to 460 ms per response.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101996169836818432/img/9KrYjAfNMJD2I-rX.jpg
+  metrics:
+    likes: 86
+    views: 13794
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/yu-rin-chi2/auto-form-filler-plugin
+    project: https://github.com/yu-rin-chi2/auto-form-filler-plugin
+  tags:
+  - chrome-extension
+  - forms
+  - autofill
+- name: Jev in the ICOR AI team
+  url: https://www.youtube.com/watch?v=aXt7c_IHptU
+  kind: video
+  author: ICOR with Tom & Paco
+  description: 'Episode showing Jev inside a personal knowledge folder and AI team: finding guidelines in the vault, ranking titles, picking models per agent, and choosing layouts for a slide deck built in 16 seconds.'
+  jev: Jev picks layouts and routes, Claude fills the content.
+  metrics:
+    views: 2177
+    likes: 30
+  date: '2026-09-21'
+  links:
+    site: https://www.myicor.com/
+  tags:
+  - knowledge-base
+  - slides
+  - claude
+- name: Jev inbox gate
+  url: https://www.youtube.com/watch?v=3lBmrYFREZU
+  kind: video
+  author: Creator Magic
+  description: Two-step Zapier workflow that has Jev sort 250 real emails for just over a cent, flagging spam, prompt injection, reply need, urgency, tone, and category, vs 14 minutes and $1.39 for Claude Opus 5.
+  jev: Noul for spam and needs-reply, Score for urgency and tone, Choice for category.
+  metrics:
+    views: 7458
+    likes: 43
+  date: '2026-09-21'
+  tags:
+  - email
+  - zapier
+  - triage
+- name: Jev job-application extension
+  url: https://x.com/vammu920/status/2100591409447174261
+  kind: post
+  author: vammu920
+  description: Browser extension that fills out a whole job application with Jev for $0.0013, putting 1,000 applications at under a dollar.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100591334474076160/img/hjDNUy7WtIa07suU.jpg
+  metrics:
+    likes: 6
+    views: 320
+  date: '2026-09-17'
+  tags:
+  - job-search
+  - chrome-extension
+  - autofill
+- name: Jev Mail
+  url: https://github.com/muhammedilyasy/jev-mail
+  kind: repo
+  author: muhammedilyasy
+  description: Read-only Chrome extension that badges each Gmail row with a Jev category, priority, spam % and reply %, plus an optional dashboard table of the whole inbox.
+  metrics:
+    stars: 4
+  date: '2026-09-19'
+  tags:
+  - email
+  - gmail
+  - chrome-extension
+- name: Jev note auto-tagger
+  url: https://x.com/gemama0/status/2102198046201086356
+  kind: post
+  author: gemama0
+  description: Automatic note-tagging system built for Obsidian users, with Jev choosing the tags for each note.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102197556138684416/img/VOAFvXpPpUMtUKYH.jpg
+  metrics:
+    likes: 36
+    views: 1946
+  date: '2026-09-22'
+  tags:
+  - obsidian
+  - notes
+  - tagging
+- name: JEV Resume Analyzer
+  url: https://github.com/awun8191/jev-resume-analyzer
+  kind: repo
+  author: awun8191
+  description: React and FastAPI app that reviews an uploaded CV, optionally against a job posting, with typed judgments on clarity, contribution and results, each showing its question, answer and probability distribution.
+  date: '2026-09-17'
+  tags:
+  - resume
+  - job-search
+- name: Jev Room
+  url: https://jev-room.moe136231.chatgpt.site
+  kind: app
+  author: moe136231
+  description: Interactive 3D room where one sentence sets six controls, including lighting, curtains, music, TV, volume and desk lamp, with per-call token cost shown.
+  jev: Jev chooses each room setting from the sentence; the app renders the result.
+  date: '2026-09-16'
+  tags:
+  - smart-home
+  - 3d
+- name: Jev Second Brain
+  url: https://github.com/fellowship-dev/jev-second-brain
+  kind: repo
+  author: fellowship-dev
+  description: Local-first CLI for a Markdown or Obsidian vault that indexes notes, finds a bounded set related to a new note and optionally has Jev judge each pair, leaving suggestions for human review.
+  date: '2026-09-21'
+  tags:
+  - obsidian
+  - notes
+  - local-first
+- name: Jev Shield
+  url: https://github.com/vmendes90/jev-shield
+  kind: repo
+  author: vmendes90
+  description: Manifest V3 Chrome extension that collapses native ads, sponsored feed cards and stealth promotions on sites like X, Reddit and LinkedIn by having Jev judge promotional intent in feed elements.
+  jev: Batches candidate DOM elements into one request and collapses those whose promotional Noul clears a threshold.
+  image: https://raw.githubusercontent.com/vmendes90/jev-shield/main/brag-output/brag.jpg
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - ad-blocker
+  - chrome-extension
+- name: Jev smart home control
+  url: https://x.com/damianoredem/status/2102134727238938740
+  kind: post
+  author: damianoredem
+  description: Smart-home controller built on the speculative fan-out pattern from TypeSafe's docs, asking many device questions in one Jev call and acting on the relevant answers.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102134385109499904/img/RkGhjO8xCWPkTm7t.jpg
+  metrics:
+    likes: 4
+    views: 328
+  date: '2026-09-21'
+  links:
+    docs: https://docs.typesafe.ai/patterns/fan-out
+  tags:
+  - smart-home
+  - fan-out
+- name: Jev the Janitor
+  url: https://github.com/kylehovance-ai/jev-the-janitor
+  kind: repo
+  author: kylehovance-ai
+  description: Markdown and Obsidian vault janitor where Jev votes on which bucket each note belongs in and code adds frontmatter or quarantines suspected secrets, never deleting or rewriting notes, with low-confidence notes left for review.
+  date: '2026-09-21'
+  tags:
+  - obsidian
+  - notes
+  - privacy
+- name: Jev Tweet Radar
+  url: https://github.com/DDnim/jev-tweet-radar
+  kind: repo
+  author: DDnim
+  description: Chrome extension that shows calibrated probabilities under each X post for worth engaging, buzz, backlash, misread, repost- or bookmark-worthy, and AI-ish, from one Jev call per post.
+  jev: One System One request of selected Noul questions per visible post, cached locally.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - x
+  - browser-extension
+- name: jev-chat-jarvis
+  url: https://github.com/jev-chat/jev-chat-jarvis-mac
+  kind: repo
+  author: jev-chat
+  description: Read-only macOS overlay that OCRs incoming WeChat messages, judges their intent and a 0-9 risk level, and drafts ranked reply options in several tones.
+  jev: The judgment layer runs on TypeSafe Jev when a key is set, otherwise on the local decider-2b model; reports 86.4% zero-shot on 8 intent classes.
+  image: https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis-mac/master/docs/demo.gif
+  metrics:
+    stars: 52
+  date: '2026-09-21'
+  tags:
+  - wechat
+  - macos
+  - messaging
+- name: jev-chat-windows
+  url: https://github.com/jev-chat/jev-chat-windows
+  kind: repo
+  author: jev-chat
+  description: Windows WeChat side panel that reads the conversation via window capture and offline OCR, has Jev judge the other person's intent and mood, and fills one of three candidate replies while sending stays manual.
+  image: https://raw.githubusercontent.com/jev-chat/jev-chat-windows/main/docs/ui_home.png
+  metrics:
+    stars: 72
+  date: '2026-09-21'
+  tags:
+  - wechat
+  - windows
+  - chat-assistant
+- name: jev-feedbin-filter
+  url: https://github.com/individual11/jev-feedbin-filter
+  kind: repo
+  author: individual11
+  description: Daily job that asks Jev whether each new unread Feedbin RSS entry matches a filter category such as ads or crypto, and marks matches as read.
+  jev: Categories live in filters.json, and a dry-run mode tests them against real unread entries without marking anything.
+  date: '2026-09-21'
+  tags:
+  - rss
+  - feedbin
+  - filtering
+- name: jev-lens
+  url: https://x.com/sahajamit/status/2101894950736793867
+  kind: post
+  author: sahajamit
+  description: Chrome extension that labels every post in the author's X feed READ, MAYBE or SKIP in about 300 ms before they scroll to it, with no scripted rules or selectors.
+  jev: One Choice per post over READ, MAYBE and SKIP against a personal interest profile.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101894658456723456/img/J_evBKCzAyQA47KH.jpg
+  metrics:
+    views: 66
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/sahajamit/jev-lens
+    project: https://github.com/sahajamit/jev-lens
+  tags:
+  - chrome-extension
+  - x-feed
+  - filtering
+- name: Jev-Mail
+  url: https://github.com/vynnlee/jev-mail
+  kind: repo
+  author: vynnlee
+  description: Gmail triage worker that runs around the clock on your own Google Apps Script, asking Jev for urgency, importance and category, then applying labels, stars and archiving, with uncertain mail sent to Review.
+  date: '2026-09-20'
+  tags:
+  - gmail
+  - email-triage
+  - apps-script
+- name: jev-mail-classifier
+  url: https://github.com/parth-kp/jev-mail-classifier
+  kind: repo
+  author: parth-kp
+  description: Config-driven IMAP inbox classifier with a Textual TUI and CLI that asks Jev yes/no questions about each email, then tags, moves, flags or notifies based on the returned probabilities.
+  image: https://raw.githubusercontent.com/parth-kp/jev-mail-classifier/master/media/screenshots/tui-1-credentials.png
+  metrics:
+    stars: 14
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/commandline/comments/1wkmk6i/your_inbox_judged_in_milliseconds_no_json_parsing/
+  tags:
+  - email
+  - imap
+  - tui
+- name: jev-mailroom
+  url: https://github.com/selcukusta/jev-mailroom
+  kind: repo
+  author: selcukusta
+  description: Mailbox triage proof of concept that reads mail over IMAP, asks Jev 11 narrow questions per email in one call and combines the answers into labels in plain Python, shown on a dashboard.
+  image: https://raw.githubusercontent.com/selcukusta/jev-mailroom/main/docs/dashboard.png
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  tags:
+  - email
+  - imap
+  - triage
+- name: jev-notion
+  url: https://github.com/jeffloo886/jev-notion
+  kind: repo
+  author: jeffloo886
+  description: Menu bar app for macOS and CLI that fills Notion database properties with Jev judgments within about 2 seconds of a row edit, at about $0.00004 per row, sending uncertain entries to a review queue.
+  image: https://raw.githubusercontent.com/jeffloo886/jev-notion/main/assets/hero-banner.png
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  tags:
+  - notion
+  - macos
+- name: jev-office-gate
+  url: https://github.com/pluviobyte/rnskill/tree/main/skills/jev-office-gate
+  kind: repo
+  author: pluviobyte
+  description: Agent skill that adds a Jev decision and release gate after an office assistant produces a report, proposal, spreadsheet or deck, with claim-to-evidence and requirement checks.
+  jev: Narrow predefined-choice questions for claim support, evidence disposition and overclaim risk, with explicit thresholds routing uncertain items to a human.
+  metrics:
+    repo_stars: 1592
+  date: '2026-07-04'
+  tags:
+  - office
+  - quality-gate
+  - skill
+- name: jev-palette
+  url: https://github.com/amycardoso/jev-palette
+  kind: repo
+  author: amycardoso
+  description: Ctrl+K command palette demo that ranks 77 commands by intent from Portuguese or English input, using one Jev Choice call per keystroke whose probability distribution is the ranking.
+  jev: Whole command catalog as Choice options; about 900 input tokens, roughly $0.00004 per keystroke.
+  image: https://raw.githubusercontent.com/amycardoso/jev-palette/main/docs/demo.gif
+  date: '2026-09-19'
+  tags:
+  - command-palette
+  - ui
+- name: jev-skip
+  url: https://github.com/valentynkit/jev-skip
+  kind: repo
+  author: valentynkit
+  description: Browser extension that has Jev classify YouTube caption segments at watch time, paints sponsor probabilities on the seek bar and auto-skips them; it caught 77% of SponsorBlock's sponsor seconds across 23 videos.
+  jev: One Choice per caption segment among five categories, split across requests when over budget; about $0.0008 a video.
+  image: https://raw.githubusercontent.com/valentynkit/jev-skip/main/demo/demo.gif
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - youtube
+  - sponsor-skipping
+  - browser-extension
+- name: jev-wechat-live
+  url: https://github.com/duckegg0623-create/jev-wechat-live
+  kind: repo
+  author: duckegg0623-create
+  description: Unfinished desktop overlay that reads a WeChat contact's new messages and has Jev guess their mood and real meaning, published with an honest write-up of why accuracy fell short.
+  jev: Seven quick-read questions per message at about $0.0001 and 1 second end to end; KNOWN_ISSUES.md compares 11 real messages and A/B prompt tests.
+  metrics:
+    stars: 4
+  date: '2026-09-21'
+  tags:
+  - wechat
+  - messaging
+  - post-mortem
+- name: Jevfill
+  url: https://github.com/imohitmayank/jevfill
+  kind: repo
+  author: imohitmayank
+  description: Chrome extension that autofills web forms from your details pasted once as plain notes, highlighting filled fields for review and never sending password or payment fields.
+  jev: Matches each form field to the best line from your notes.
+  image: https://raw.githubusercontent.com/imohitmayank/jevfill/main/assets/jevfill_demo.gif
+  metrics:
+    stars: 17
+  date: '2026-09-20'
+  links:
+    demo: https://x.com/imohitmayank/status/2101692174601703425
+  tags:
+  - autofill
+  - forms
+  - browser-extension
+- name: JevFilterForX
+  url: https://github.com/grayrepo-byte/jev_filter_for_x
+  kind: repo
+  author: grayrepo-byte
+  description: Browser extension that scores visible X posts from 0 to 100 on information signal, actionability, and originality, labels them, and folds low-value posts while keeping them expandable.
+  image: https://raw.githubusercontent.com/grayrepo-byte/jev_filter_for_x/main/assets/promo/jevfilterforx-promo-poster.png
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - x
+  - feed-filter
+  - browser-extension
+- name: Jevmail
+  url: https://github.com/fazlerocks/jevmail
+  kind: repo
+  author: fazlerocks
+  description: Read-only, local Gmail triage that sorts mail into Needs reply, Updates, Promos, Sales and Spam with a 1-5 urgency score via Vercel AI Gateway; 1,000 emails take about a minute and 3 cents.
+  metrics:
+    stars: 55
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/fazlerocks/status/2102007472290685186
+  tags:
+  - email
+  - gmail
+  - triage
+- name: jevMail
+  url: https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling
+  kind: repo
+  author: ilyamk
+  description: Self-hosted Gmail classifier that applies custom labels from plain-English rules by each email's meaning and intent, and archives high-confidence unwanted mail, with confidence and cost controls.
+  image: https://raw.githubusercontent.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling/main/assets/jevmail-banner.png
+  metrics:
+    stars: 15
+  date: '2026-09-19'
+  tags:
+  - email
+  - gmail
+  - spam
+- name: JevNoiseGate
+  url: https://github.com/ufec/jev-block-android-ad
+  kind: repo
+  author: ufec
+  description: Kotlin Android app that asks Jev whether each incoming notification or SMS is noise and suppresses only what it explicitly flags, matching verification codes on-device so they never reach the API.
+  jev: A category Choice per message; network errors, timeouts or unknown categories all fail open to allow.
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  tags:
+  - android
+  - notifications
+- name: jevsume
+  url: https://github.com/unownone/jevsume
+  kind: repo
+  author: unownone
+  description: ATS-style resume review that extracts text the way a parser would and has a Cloudflare Worker run typed Jev questions into a JevScore, in general mode or against a specific job description.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  links:
+    app: https://resume.ikr.one
+  tags:
+  - resume
+  - mcp
+- name: JevZero
+  url: https://github.com/jayozer/jevzero
+  kind: repo
+  author: jayozer
+  description: Local Gmail triage app where Jev assigns categories, priorities and reply, risk, newsletter and receipt signals, and you review proposed labels before applying them with receipts and undo.
+  image: https://raw.githubusercontent.com/jayozer/jevzero/main/frontend/public/quiet-zero.png
+  date: '2026-09-21'
+  tags:
+  - gmail
+  - email
+  - local-first
+- name: Job Finder
+  url: https://github.com/mauricedesaxe/job-finder
+  kind: repo
+  author: mauricedesaxe
+  description: Dagster pipeline that searches job boards, scrapes listings with Jina, evaluates each against your criteria and puts the strongest matches in a private review queue, with Jev as an evaluator.
+  jev: Per-criterion accept/reject judgments recorded with the model call and cost.
+  image: https://i.ytimg.com/vi/bO7vzA0xbWg/hqdefault.jpg
+  metrics:
+    stars: 8
+  date: '2026-03-27'
+  links:
+    demo: https://www.youtube.com/watch?v=bO7vzA0xbWg
+    code: https://github.com/mauricedesaxe/job-finder/blob/main/job_finder/evaluation/jev.py
+  tags:
+  - job-search
+  - dagster
+  - evaluation
+- name: kagemusha meeting-copilot
+  url: https://github.com/yohey-w/kagemusha/tree/main/templates/skills/meeting-copilot
+  kind: repo
+  author: yohey-w
+  description: Meeting copilot skill in a Markdown governance kit for coding agents that sends each utterance's judgment to Jev first, then a small LLM, then keyword rules, recording which backend answered.
+  jev: All questions for an utterance go in one REST round trip; in one measurement 1,754 of 2,077 utterances were answered by fallbacks, which is why the backend is logged.
+  metrics:
+    repo_stars: 12
+  date: '2026-07-26'
+  links:
+    repo: https://github.com/yohey-w/kagemusha
+  tags:
+  - meetings
+  - agent-skill
+  - fallback
+- name: Keystroke oracle launcher
+  url: https://x.com/hityyhz/status/2101017732913529326
+  kind: post
+  author: hityyhz
+  description: Predictive app launcher where Jev reads intent on every keystroke, so typing "the pdf I just downloaded" puts the newest PDF on top, in about 100 ms.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101017668916510720/img/q9Ih0gZz7B8YohVb.jpg
+  metrics:
+    likes: 41
+    views: 6093
+  date: '2026-09-18'
+  tags:
+  - launcher
+  - desktop
+- name: lkclean
+  url: https://github.com/stefw/lkclean
+  kind: repo
+  author: stefw
+  description: Chrome extension that sends each LinkedIn post to Jev and collapses engagement bait, self-promotion, sponsored and off-topic posts into a one-line bar, showing the reason and scores on every post.
+  image: https://github.com/user-attachments/assets/b9f92b7e-aad6-4287-830f-a625f586dd40
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  tags:
+  - linkedin
+  - feed-filter
+  - chrome-extension
+- name: Lucidos Jev judgment provider
+  url: https://github.com/lucidos-dev/lucidos/blob/main/crates/lucidos-engine/src/llm/judgment/jev.rs
+  kind: repo
+  author: lucidos-dev
+  description: Self-hosted tool that builds and runs apps and automations described in chat, with an opt-in judgment layer that answers closed classification questions through Jev instead of prompt-and-parse.
+  jev: Choice and Noul questions return the answer plus its distribution so tie-breaks live in Rust; Score is not used yet.
+  image: https://raw.githubusercontent.com/lucidos-dev/lucidos/main/docs/images/readme-banner-light.png
+  metrics:
+    repo_stars: 8
+  date: '2026-04-23'
+  links:
+    app: https://lucidos.dev
+    repo: https://github.com/lucidos-dev/lucidos
+  tags:
+  - automation
+  - self-hosted
+  - rust
+- name: lucidRESUME Jev parsing
+  url: https://github.com/scottgal/lucidRESUME/blob/main/docs/jev-parsing-experiment.md
+  kind: repo
+  author: scottgal
+  description: 'Optional Jev decision layer in the lucidRESUME evidence-backed resume editor that resolves parsing ambiguity: classifying sections when heading rules abstain and picking the owner''s name or employer from NER candidates.'
+  jev: Choice over 2-255 candidates supplied by the deterministic pipeline, with a none/other abstention option and probability and margin gates before acceptance.
+  image: https://raw.githubusercontent.com/scottgal/lucidRESUME/main/docs/screenshots/docx-preview.png
+  metrics:
+    repo_stars: 7
+  date: '2026-03-15'
+  links:
+    repo: https://github.com/scottgal/lucidRESUME
+  tags:
+  - resume
+  - parsing
+  - ner
+- name: Minority Report macOS interface
+  url: https://x.com/JesseWaites/status/2101781804566839800
+  kind: post
+  author: JesseWaites
+  description: Gesture-driven macOS interface in the style of Minority Report, with Jev interpreting what the user wants to do.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101781124561162240/img/conV761wtoCRwt3q.jpg
+  metrics:
+    views: 144
+  date: '2026-09-20'
+  tags:
+  - macos
+  - gestures
+- name: Morning Tech Briefing
+  url: https://github.com/pavy23/morning-tech-briefing
+  kind: repo
+  author: pavy23
+  description: GitHub Actions cron that gathers 20 AI, XR, space and robotics stories with Gemini search grounding each morning, has Jev drop repeats, duplicates, generic commentary and off-topic items, and emails the top 10.
+  jev: Optional filtering step at about $0.003 a day; the pipeline runs free without it.
+  metrics:
+    stars: 5
+  date: '2026-06-16'
+  tags:
+  - news
+  - email
+  - github-actions
+- name: Note Filer
+  url: https://github.com/someka-vrc/obsidian-note-filer
+  kind: repo
+  author: someka-vrc
+  description: Obsidian desktop plugin that has Jev infer a note's category from its filename and content under a standard taxonomy such as Thema or IAB, then moves it into the matching folder.
+  date: '2026-09-21'
+  tags:
+  - obsidian
+  - notes
+  - taxonomy
+- name: OCR + Jev image sorter
+  url: https://x.com/fayazara/status/2100953838891192789
+  kind: post
+  author: fayazara
+  description: Personal image classifier that reads each image with OCR and lets Jev sort it into a category, handling about 900 images in 40 seconds.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100953271238320128/img/vzUjAo15Bg8tVa_q.jpg
+  metrics:
+    likes: 437
+    views: 33664
+  date: '2026-09-18'
+  tags:
+  - images
+  - ocr
+  - classification
+- name: OpenWhisper fast judgments
+  url: https://github.com/Knuckles92/OpenWhisper/blob/main/docs/typesafe-fast-judgments.md
+  kind: repo
+  author: Knuckles92
+  description: Optional Jev judgments in the OpenWhisper dictation and meeting-notes app that detect semantic topic changes, spot spoken instructions to the note-taker and screen sensitive dictation before cloud cleanup.
+  jev: Narrow typed questions on short transcript text in about 0.2 s, with thresholds set from a human-label benchmark and deterministic fallbacks.
+  image: https://raw.githubusercontent.com/Knuckles92/OpenWhisper/main/docs/screenshots/01-quick-record-idle.png
+  metrics:
+    repo_stars: 187
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/Knuckles92/OpenWhisper
+    demo: https://x.com/dtfiori/status/2101121913590571398
+    app: https://openwhisper.fiorilabs.tech/
+  tags:
+  - meeting-notes
+  - dictation
+- name: OpenWorkBuddy
+  url: https://github.com/CatCatUncle/openworkbuddy
+  kind: repo
+  author: CatCatUncle
+  description: Local-first AI office agent that produces real PPT, Word and Excel files, with a Jev decide tool used for goal-mode acceptance checks, triage and flagging low-confidence answers.
+  jev: Up to 32 questions per call; each goal criterion is a yes/no Noul that must pass 70%.
+  image: https://raw.githubusercontent.com/CatCatUncle/openworkbuddy/main/docs/images/demo.gif
+  metrics:
+    stars: 175
+  date: '2026-08-10'
+  tags:
+  - office
+  - agent
+  - decide-tool
+- name: Pad decision provider
+  url: https://github.com/PerpetualSoftware/pad/blob/main/internal/decision/typesafe.go
+  kind: repo
+  author: PerpetualSoftware
+  description: Local-first project manager for the agent era that flags tasks needing a human decision with Jev; its eval on 140 items reached AUC 0.935 from title and body.
+  jev: One needs_human_decision Noul per item; the 32,000-token request budget was measured against jev-1.13.0.
+  image: https://raw.githubusercontent.com/PerpetualSoftware/pad/main/docs/screenshots/dashboard.png
+  metrics:
+    repo_stars: 182
+  date: '2026-03-26'
+  links:
+    eval: https://github.com/PerpetualSoftware/pad/blob/main/scripts/decision-eval/attention/RESULTS.md
+    app: https://getpad.dev
+  tags:
+  - project-management
+  - triage
+  - eval
+- name: Page Verdict
+  url: https://github.com/torumitsutake/jev-page-verdict
+  kind: repo
+  author: torumitsutake
+  description: Chrome extension that asks Jev whether the page you are on is selling something or reporting first-hand experience, and marks Google results with verdicts, staying quiet when confidence is low.
+  date: '2026-09-19'
+  tags:
+  - chrome-extension
+  - ads
+  - search-results
+- name: Plain-language X post filter
+  url: https://x.com/marcelpociot/status/2100520134481735729
+  kind: post
+  author: marcelpociot
+  description: Browser extension that hides or collapses posts on X based on rules written in plain language, fast enough that the filtering is not noticeable.
+  jev: Judges each post in the feed against the user's natural-language rule.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100519256425140224/img/-A44e4qCo8mVP8ws.jpg
+  metrics:
+    likes: 1104
+    views: 84529
+  date: '2026-09-17'
+  tags:
+  - browser-extension
+  - feed-filter
+- name: PlasmaLLM Decisions adapter
+  url: https://github.com/joshuaeroman/plasmallm/blob/master/package/contents/ui/adapters/decisions.js
+  kind: repo
+  author: joshuaeroman
+  description: Decisions adapter in PlasmaLLM, a KDE Plasma 6 assistant widget, that sends each message to Jev via TypeSafe or OpenRouter and renders a single-shot verdict bubble, and can validate shell commands.
+  image: https://github.com/user-attachments/assets/fd9f1c74-778d-44ff-b7dd-4b3870b4baad
+  metrics:
+    repo_stars: 29
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/joshuaeroman/plasmallm
+  tags:
+  - kde
+  - desktop-widget
+- name: PlotVeil
+  url: https://github.com/Dearest/plotveil
+  kind: repo
+  author: Dearest
+  description: Chrome extension that covers each YouTube comment until Jev, in batches of 20, judges whether it reveals a concrete plot event of the video or of another title you protect; comments stay covered if the check fails.
+  jev: One Noul per comment; the extension owns the 0.85 / 0.7 / 0.5 thresholds.
+  image: https://plotveil.app/og.png
+  date: '2026-09-21'
+  links:
+    app: https://plotveil.app
+    app 2: https://plotveil.app
+  tags:
+  - chrome-extension
+  - spoilers
+  - youtube
+- name: Polymorph
+  url: https://github.com/misty-step/polymorph
+  kind: repo
+  author: misty-step
+  description: Chrome extension that hides LinkedIn-style feed posts matching rules you write in plain English, as judged by Jev via OpenRouter, and replaces them with your own images or GIFs, with one-click restore.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - browser-extension
+  - feed-filter
+  - openrouter
+- name: PRESENT Jev canvas router
+  url: https://github.com/human-bee/PRESENT/blob/main/src/lib/fairy-intent/jev-router.ts
+  kind: repo
+  author: human-bee
+  description: Intent router in PRESENT, a real-time meeting producer and Codex mission-control workspace, that asks Jev whether a message is a single canvas drawing or layout request it can execute directly, or should be deferred.
+  jev: One canvas/defer Choice with a 300 ms timeout; only answers at 0.95 or more take the fast canvas path.
+  metrics:
+    repo_stars: 5
+  date: '2025-05-18'
+  links:
+    app: https://app.present.best
+    repo: https://github.com/human-bee/PRESENT
+  tags:
+  - meetings
+  - canvas
+  - tldraw
+- name: Quickinbox
+  url: https://github.com/DivinPrince/quickinbox
+  kind: repo
+  author: DivinPrince
+  description: Self-hosted web mail client on Cloudflare Workers that can sort incoming mail into Primary, Social, Promotions, Updates and Forums tabs plus spam using TypeSafe.
+  jev: Batches of 25 emails per call with Noul and Choice questions over sender, subject and body; enabled by an optional TYPESAFE_API_KEY.
+  metrics:
+    stars: 399
+  date: '2026-07-29'
+  links:
+    app: https://quickmail.divinprince.com
+  tags:
+  - email
+  - cloudflare
+  - classification
+- name: Real-time Jev ad blocker
+  url: https://x.com/iam_zachi/status/2100529273186472318
+  kind: post
+  author: iam_zachi
+  description: Browser extension that classifies every DOM element as ad or not with Jev and removes ads from the page in real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100529029761642496/img/OY0Ltm7v7lXv5-y6.jpg
+  metrics:
+    likes: 3887
+    views: 205213
+  date: '2026-09-17'
+  tags:
+  - ad-blocker
+  - browser-extension
+- name: Real-time X feed tagger
+  url: https://x.com/nateherk/status/2101330780702068969
+  kind: post
+  author: nateherk
+  description: Tags X posts in real time as breaking, golden nugget or slop while the author scrolls.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101330596077109249/img/rHj6drEozG36RhLy.jpg
+  metrics:
+    likes: 231
+    views: 21294
+  date: '2026-09-19'
+  tags:
+  - x-feed
+  - tagging
+- name: Red Cliff Record
+  url: https://github.com/Aias/red-cliff-record
+  kind: repo
+  author: Aias
+  description: Local-first personal knowledge repository that aggregates records from many services into Postgres and uses TypeSafe typed judgments to pick record types, choose merge fields and accept copyedits.
+  metrics:
+    stars: 9
+  date: '2024-10-31'
+  links:
+    code: https://github.com/Aias/red-cliff-record/blob/main/src/server/lib/typesafe.ts
+  tags:
+  - pkm
+  - knowledge-management
+  - postgres
+- name: Reply-guy filter for X
+  url: https://x.com/iannuttall/status/2100888635943883244
+  kind: post
+  author: iannuttall
+  description: Filter that uses Jev to remove low-value reply-guy comments on X that the platform misses, built in about five minutes with Astra, the docs and an API key.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100888448118759424/img/MafhEAfm3BlPst1X.jpg
+  metrics:
+    likes: 255
+    views: 17723
+  date: '2026-09-18'
+  tags:
+  - feed-filter
+  - x
+- name: resume-fit
+  url: https://x.com/kalyandechiraju/status/2101338153294635151
+  kind: post
+  author: kalyandechiraju
+  description: Open-source, bring-your-own-key Chrome extension that scores how well your resume matches a job posting with Jev, via a TypeSafe or Vercel AI Gateway key.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101337620911685632/img/CnS-n40rIw1vWwRm.jpg
+  metrics:
+    likes: 3
+    views: 364
+  date: '2026-09-19'
+  links:
+    repo: https://github.com/kalyandechiraju/resume-fit
+    project: https://github.com/kalyandechiraju/resume-fit
+  tags:
+  - resume
+  - job-search
+  - chrome-extension
+- name: Self-sorting Downloads folder
+  url: https://x.com/marcelpociot/status/2100906882365788167
+  kind: post
+  author: marcelpociot
+  description: Mac app that watches the Downloads folder and applies custom rules with Jev, such as moving invoices to a dedicated folder under the correct filename.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100906588626173952/img/1KnNI3B3aUJEwFvI.jpg
+  metrics:
+    likes: 1143
+    views: 137793
+  date: '2026-09-18'
+  tags:
+  - macos
+  - file-organization
+- name: Semantic Bookmark
+  url: https://github.com/acorn181/semantic-bookmark
+  kind: repo
+  author: acorn181
+  description: Chrome extension that files the current page into bookmark folders by categories you define in plain language, showing the probability before saving.
+  jev: A Choice over your category definitions using the page title, URL and visible text; Chrome bookmark actions stay deterministic.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - bookmarks
+  - chrome-extension
+  - classification
+- name: Semantic spreadsheet formatting
+  url: https://x.com/GuangyuRobert/status/2100601420395282695
+  kind: post
+  author: GuangyuRobert
+  description: Spreadsheet demo where Jev formats cells by what their contents mean, applied instantly, as a candidate feature for Shortcut.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100477859018272768/img/XiwQwp3fqCnc1ZYz.jpg
+  metrics:
+    likes: 145
+    views: 40242
+  date: '2026-09-17'
+  tags:
+  - spreadsheet
+  - formatting
+- name: Sharp
+  url: https://github.com/tshmieldev/sharp
+  kind: repo
+  author: tshmieldev
+  description: Browser extension that filters your X timeline by plain-language rules such as hiding engagement bait, with per-author rules, blocked words and corrections fed back as examples, using Jev or any LLM you pay for directly.
+  image: https://raw.githubusercontent.com/tshmieldev/sharp/main/icons/icon128.png
+  metrics:
+    stars: 30
+    likes: 5
+    views: 36
+  date: '2026-09-08'
+  links:
+    demo: https://x.com/tshmieldev/status/2102014401314254912
+  tags:
+  - x-twitter
+  - feed-filter
+  - browser-extension
+- name: Shiftroom
+  url: https://x.com/RussWonsley/status/2102193674285351210
+  kind: post
+  author: RussWonsley
+  description: Interactive experiment running the same scheduling requests through keyword rules and through Jev, so you can reword messages and see where Jev helps and where it does not.
+  image: https://pbs.twimg.com/media/HSx9jrnbIAAFx7S.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 94
+  date: '2026-09-22'
+  links:
+    app: https://shiftroom.russwonsley.com
+    project: https://shiftroom.russwonsley.com
+  tags:
+  - scheduling
+  - rules-vs-model
+- name: Sift
+  url: https://github.com/bohutang/sift
+  kind: repo
+  author: bohutang
+  description: Chrome extension that labels every post and reply on X as Substance, Humor, Chit-chat, Promo or Junk, flags AI-written and off-topic posts with Jev, and hides the labels you choose, about $0.00003 per post.
+  image: https://raw.githubusercontent.com/bohutang/sift/main/screenshots/timeline.png
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  tags:
+  - chrome-extension
+  - x
+  - feed-filter
+- name: Signal Group Summarizer
+  url: https://github.com/jooray/signal-summarizer
+  kind: repo
+  author: jooray
+  description: Summarizes Signal group chats, including images, links and voice notes, with an optional decision engine that uses Jev via Venice to score theme pairs before merging topics.
+  jev: Each theme pair is scored on a 0-4 rubric through Venice's /decisions endpoint (jev-latest); pairs above 2.4 are grouped, with LLM fallback on errors.
+  metrics:
+    stars: 14
+  date: '2025-05-22'
+  tags:
+  - signal
+  - summarization
+  - clustering
+- name: Smart drag and drop
+  url: https://x.com/MalayVasa/status/2101649868305653889
+  kind: post
+  author: MalayVasa
+  description: Desktop file-sorting demo where dragged files like receipts, boarding passes and notes are placed by Jev into folders such as Work, Travel and Receipts.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101649711174459392/img/gaBKkTYkZrk7BcXs.jpg
+  metrics:
+    likes: 811
+    views: 50518
+  date: '2026-09-20'
+  tags:
+  - file-sorting
+  - desktop
+  - ux
+- name: Smart Paste
+  url: https://github.com/nomanjack/smart-paste
+  kind: repo
+  author: nomanjack
+  description: Experimental Chrome extension that splits pasted text into candidate passages, reads a web form's field labels and uses Jev to insert only verified, confident matches into the right fields, with undo.
+  metrics:
+    stars: 35
+  date: '2026-09-18'
+  tags:
+  - forms
+  - copy-paste
+  - chrome-extension
+- name: SmartSwitch
+  url: https://github.com/reycn/smart-switch
+  kind: repo
+  author: reycn
+  description: Window switcher for macOS that, on a keystroke, asks Jev to choose among your 10 most recent apps from switching history, dwell times and time of day, then activates the likeliest within a 1 s timeout.
+  image: https://raw.githubusercontent.com/reycn/smart-switch/main/docs/banner.svg
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - macos
+  - window-switcher
+- name: Sorting 1,700 emails
+  url: https://x.com/startupideaspod/status/2101056417129959670
+  kind: post
+  author: startupideaspod
+  description: Sorting of 1,700 full emails where Jev returned category, priority, spam score and reply score for each, using 4.2 million input tokens for 18 cents in 12 seconds.
+  jev: 'Four questions per email: category Choice, priority Score, spam and reply probabilities.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101041355594285056/img/Ahyng_PZDedsNq0v.jpg
+  metrics:
+    likes: 94
+    views: 11449
+  date: '2026-09-18'
+  tags:
+  - email
+  - triage
+- name: Sponsor Skip
+  url: https://github.com/trungdq88/youtube-sponsor-detection
+  kind: repo
+  author: trungdq88
+  description: Chrome extension and small web app that find sponsor reads in YouTube videos from transcripts or live audio and skip past them while you watch.
+  jev: Jev only names a transcript line or answers yes/no about what it heard; code owns every timestamp.
+  image: https://raw.githubusercontent.com/trungdq88/youtube-sponsor-detection/main/docs/panel.png
+  metrics:
+    stars: 81
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/tdinh_me/status/2100793777103466615
+  tags:
+  - youtube
+  - browser-extension
+- name: Tab Bouncer
+  url: https://github.com/MANISH007700/tab-bouncer
+  kind: repo
+  author: MANISH007700
+  description: Chrome extension that rates every open tab against the task you type, such as planning a trip, in one Jev call in about a second, then closes the tabs you untick with an option to reopen them.
+  image: https://raw.githubusercontent.com/MANISH007700/tab-bouncer/main/docs/2-results.png
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - tabs
+  - chrome-extension
+  - focus
+- name: Tagvico Jev filing
+  url: https://github.com/arturict/tagvico-ai/blob/main/docs/providers/typesafe.md
+  kind: repo
+  author: arturict
+  description: 'TypeSafe Jev provider for Tagvico, a self-hosted action center for Paperless-ngx: closed-list filing picks only existing tags, correspondents and document types with a probability per field, at about USD 0.10 per 1,000 documents.'
+  jev: Choice over the archive's existing tags, correspondents and types; pair with a text model for titles and new senders.
+  image: https://raw.githubusercontent.com/arturict/tagvico-ai/main/website/versions/v3/public/screenshots/home-paper-pine-v3.png
+  metrics:
+    repo_stars: 34
+  date: '2026-05-31'
+  links:
+    app: https://tagvico.arturf.ch/
+    repo: https://github.com/arturict/tagvico-ai
+  tags:
+  - paperless-ngx
+  - documents
+  - self-hosted
+- name: Taskuary Jev routing judge
+  url: https://github.com/ldbumble/taskuary/blob/master/taskuary/jev.py
+  kind: repo
+  author: ldbumble
+  description: Routing judge in Taskuary, a local-first AI task hub for email, Teams and Slack, where Jev decides after each scheduled report run whether to post it, put it on the work rail, alert the owner or send it out.
+  jev: Four yes/no questions per run in one call, each criterion written by the owner; probabilities are logged.
+  image: https://raw.githubusercontent.com/ldbumble/taskuary/master/docs/hero.gif?v=workspace
+  metrics:
+    repo_stars: 116
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/ldbumble/taskuary
+    app: https://taskuary.com
+  tags:
+  - inbox
+  - routing
+- name: ToneBird reply finder
+  url: https://x.com/Tonebird_ai/status/2102190208498471368
+  kind: post
+  author: Tonebird_ai
+  description: Demo in ToneBird where you type what you mean and Jev narrows 18 candidate replies to 3 matches in 0.28 to 0.53s per call, reshuffling as you change your mind.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102189916071620608/img/G-iBvEdgIDnt-cai.jpg
+  metrics:
+    likes: 3
+    views: 74
+  date: '2026-09-22'
+  tags:
+  - messaging
+  - replies
+  - real-time
+- name: TypeSafe Conversation (Jev) for Home Assistant
+  url: https://github.com/JanOstrowka/typesafe-assist
+  kind: repo
+  author: JanOstrowka
+  description: Home Assistant Assist conversation agent that sends each command and the exposed entities to Jev as a fan-out of intent, target, device and room questions, then maps the answers onto built-in intents.
+  jev: Unsure, conversational or multi-action requests go to an optional fallback agent such as OpenAI, Anthropic or Ollama.
+  metrics:
+    stars: 3
+  date: '2026-09-16'
+  tags:
+  - home-assistant
+  - smart-home
+- name: TypeSafe Fun AdBlocker
+  url: https://github.com/realZachi/typesafe-adblock
+  kind: repo
+  author: realZachi
+  description: Experimental Chrome extension that finds ad-shaped DOM elements in code, batches their text, labels and links into Noul questions for Jev, and removes those over a threshold; bring your own key, no backend.
+  metrics:
+    stars: 68
+  date: '2026-09-17'
+  tags:
+  - chrome-extension
+  - ad-blocking
+- name: Unclutter
+  url: https://github.com/kitze/unclutter
+  kind: repo
+  author: kitze
+  description: Browser extension that classifies page elements with a Choice each and hides ads, cookie banners, and other clutter.
+  metrics:
+    stars: 178
+  date: '2026-09-17'
+  tags:
+  - browser-extension
+  - clutter-removal
+- name: watfile
+  url: https://github.com/jexp/watfile
+  kind: repo
+  author: jexp
+  description: CLI that sorts PDFs and text files into category folders with one Jev Choice per document, reporting per-category probabilities and confidence, with a pluggable backend for a local Laya model.
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    pypi: https://pypi.org/project/watfile/
+  tags:
+  - file-sorting
+  - cli
+  - pdf
+- name: WeFlow CLI
+  url: https://github.com/zhuobichen/weflow-cli
+  kind: repo
+  author: zhuobichen
+  description: Local-first WeChat data CLI for chat export, official-account daily digests and a personal knowledge base, which can use Jev to judge article topics and relevance instead of LLM parsing.
+  image: https://raw.githubusercontent.com/zhuobichen/weflow-cli/master/docs/images/weflow-architecture-gpt-image-2.png
+  metrics:
+    stars: 55
+  date: '2026-05-12'
+  tags:
+  - wechat
+  - digest
+  - knowledge-base
+- name: Winnow
+  url: https://github.com/ThinkyMiner/Winnow
+  kind: repo
+  author: ThinkyMiner
+  description: Chrome extension that reads an article or YouTube video ahead of you and says read now, skim, save or skip with a confidence, plus insight density, sales-pitch and AI-written signals tuned to your goals.
+  image: https://raw.githubusercontent.com/ThinkyMiner/Winnow/main/assets/screenshots/card-article.png
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    site: https://winnow-seven.vercel.app
+    app: https://winnow-seven.vercel.app
+  tags:
+  - chrome-extension
+  - reading
+- name: WIP todo filter
+  url: https://x.com/marckohlbrugge/status/2101344345857069558
+  kind: post
+  author: marckohlbrugge
+  description: Semantic filter over the author's WIP todo history that finds entries such as revenue increases, getting stuck or switching SaaS providers, which keyword search would miss.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101342625106202625/img/89dghzuOqjBT1MO_.jpg
+  metrics:
+    likes: 65
+    views: 5267
+  date: '2026-09-19'
+  tags:
+  - todos
+  - semantic-filter
+- name: Work with Jev
+  url: https://github.com/Adkid-Zephyr/work-with-jev
+  kind: repo
+  author: Adkid-Zephyr
+  description: Local-first classifier that sorts Feishu and WeCom work-chat messages into urgent, to-do, worth reading, and skip based on who you are, and keeps a cross-chat to-do list.
+  jev: One Choice over the four buckets per message, conditioned on your role; manual corrections keep the original text.
+  image: https://raw.githubusercontent.com/Adkid-Zephyr/work-with-jev/main/docs/assets/workflow.png
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  tags:
+  - feishu
+  - messages
+  - triage
+- name: X feed optimizer
+  url: https://x.com/redp314/status/2100915304062710263
+  kind: post
+  author: redp314
+  description: 'Feed filter tuned on your own bookmarks: one Jev call returns 9 probabilities per post (ragebait, ad, would I save this, etc.) that code maps to HIDE / SKIM / KEEP; 150 posts scored for $0.015.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100912374089711616/img/oz8fqgc_h1skgbWA.jpg
+  metrics:
+    likes: 5
+    views: 3113
+  date: '2026-09-18'
+  tags:
+  - feed-filter
+  - x
+  - personalization
+- name: X timeline labeler
+  url: https://x.com/the_cyw/status/2101020586931875932
+  kind: post
+  author: the_cyw
+  description: Open-source Chrome extension that labels every post on your X timeline as clean, engagement bait, promo, secondhand or filler, for $0.03 per 1000 posts.
+  jev: One Choice over five labels per post.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101016343181135872/img/HmWX3lyXUIbqDs-Q.jpg
+  metrics:
+    likes: 79
+    views: 6121
+  date: '2026-09-18'
+  tags:
+  - chrome-extension
+  - feed-filter
+- name: Your Signal
+  url: https://github.com/MithrilMan/your-signal
+  kind: repo
+  author: MithrilMan
+  description: Bring-your-own-key Chrome extension that scores visible X posts for relevance, substance, practical value, promotion and engagement bait with Jev, then highlights, dims, collapses or hides them per your settings.
+  image: https://raw.githubusercontent.com/MithrilMan/your-signal/master/artifacts/your-signal-demo-thumbnail-1280x688.jpg
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    discussion: https://www.reddit.com/r/SideProject/comments/1wjykoj/i_built_an_opensource_chrome_extension_that_uses/
+  tags:
+  - chrome-extension
+  - feed-filter
+- name: YouTube Sponsor Segment Skipper
+  url: https://github.com/iomiras/sponsor-skipper
+  kind: repo
+  author: iomiras
+  description: Chrome extension that reads a YouTube video's timed captions ahead of playback, has Jev classify caption segments as sponsor reads, then skips them automatically or shows a Skip sponsor button.
+  image: https://raw.githubusercontent.com/iomiras/sponsor-skipper/main/image.png
+  metrics:
+    stars: 6
+  date: '2026-09-18'
+  tags:
+  - chrome-extension
+  - youtube
+- name: YT Time Saver
+  url: https://github.com/jaibhasin/jev-yt-time-saver
+  kind: repo
+  author: jaibhasin
+  description: Chrome extension that covers YouTube videos that look more distracting than useful, with a show-anyway button.
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/typesafe_ai/comments/1wkv19h/built_a_chrome_extension_that_covers_distracting/
+  tags:
+  - youtube
+  - browser-extension
+  - focus
+- name: ZeroSweep
+  url: https://github.com/sysadarsh/zerosweep
+  kind: repo
+  author: sysadarsh
+  description: Inbox-zero webmail demo and benchmark that triages 50 to 1,000 generated emails with Jev, sending ambiguous items to human review based on calibrated confidence.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    app: https://sysadarsh-zerosweep.vercel.app/
+    app 2: https://sysadarsh-zerosweep.vercel.app
+  tags:
+  - email
+  - triage
+  - benchmark
+- name: 메일살핌 (gmail-mail-triage)
+  url: https://github.com/kijung4290/gmail-mail-triage
+  kind: repo
+  author: kijung4290
+  description: Local-only web app that pulls unread Gmail over read-only IMAP, masks personal data, and has Jev classify reply urgency, whether a mail is an ad and whether it needs a reply.
+  date: '2026-09-19'
+  tags:
+  - email
+  - triage
+  - local-first

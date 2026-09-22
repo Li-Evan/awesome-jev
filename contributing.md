@@ -1,58 +1,67 @@
 # Contribution Guidelines
 
-Thanks for helping make this list better. By contributing you agree to follow the [Code of Conduct](code-of-conduct.md).
+Thanks for helping make this the most complete collection of what people build with Jev. By contributing you agree to follow the [Code of Conduct](code-of-conduct.md).
 
 ## What belongs here
 
-Resources that help people **build with Jev**, TypeSafe's System One model:
+Anything real that uses Jev, TypeSafe's System One model, or helps people use it:
 
-- Projects, libraries, integrations, and tools that call Jev or the TypeSafe API.
-- Tutorials, articles, talks, and videos that teach something concrete.
-- Recipes and examples that show a use of Jev that is not already covered.
-- Benchmarks and comparisons that publish their method.
+- Projects, apps, demos, and experiments, including posts on X, Reddit, or Hacker News that show something built.
+- Integrations, SDKs, and open models that are compatible with Jev.
+- Tutorials, benchmarks, case studies, talks, and videos.
 
-What does not belong here:
+Not accepted:
 
-- General LLM resources that do not involve Jev.
-- Marketing pages with no technical content.
-- Anything that leaks API keys, private data, or copyrighted material.
+- Other people's lists and directories. Link the original project instead.
+- Pure news rewrites, marketing pages, and look-alike sites that pretend to be official.
+- Anything that leaks API keys or private data.
 
-## Quality bar
+## The two rules
 
-The ecosystem is young, so there is no star minimum. Instead, a resource should:
+1. **Link the original.** The link must point to the project's own repository, app, post, article, or video. Never link another awesome list or directory; the build fails if you do.
+2. **Say what it does.** One or two plain sentences: what it is, what it does, and, if you know, how it uses Jev (which primitive or pattern).
 
-- Work today with a current Jev model, or say clearly which version it targets.
-- Have a README or write-up that explains what it does and how to run it.
-- Have had at least one update after its first release, or be a finished article or talk.
-- Be in English, or have an English summary.
+## How to add an entry
 
-## How to add something
+The README and the scenario pages are generated. Do not edit `README.md` or `scenarios/*.md` by hand.
 
-1. Search the list and the open pull requests to make sure it is not already there.
-2. Either [open a suggestion issue](https://github.com/Li-Evan/awesome-jev/issues/new/choose), or edit `README.md` directly and open a pull request.
-3. Add **one resource per pull request**, at the bottom of the most fitting section.
-4. Use this format:
+1. Pick the scenario file in `data/`, for example `data/finance.yaml` or `data/coding.yaml`. Use `data/other.yaml` if nothing fits.
+2. Add an entry:
 
-   ```md
-   - [Name](https://link) - Description.
+   ```yaml
+   - name: jev-ultrafast
+     url: https://github.com/browser-use/jev-ultrafast
+     kind: repo            # repo, app, post, reddit, thread, video, article, model, package, docs
+     author: browser-use
+     description: Browser agent that picks each step's action from the page's element table in one request.
+     jev: One Choice per step with speculative targets per operation.   # optional
+     image: https://raw.githubusercontent.com/owner/repo/main/screenshot.png   # optional
+     metrics: {stars: 14484}   # optional: stars, likes, points, views, or downloads
+     date: 2026-09-16          # optional: when it was published
+     links: {demo: https://x.com/user/status/123}   # optional secondary links
    ```
 
-5. Write the description in your own words:
-   - Start with a capital letter and end with a period.
-   - Say what it does and why it is useful, not just its name again.
-   - Mention the primitive or pattern it uses when that helps (Choice, Score, Noul, fan-out, reranking).
-   - Keep numbers you quote identical to the source.
-6. Link to the canonical page. For GitHub projects, link the repository, not a mirror.
-7. Tag affiliation honestly. If you work on the project, say so in the pull request.
+3. Run the build and commit the result:
+
+   ```bash
+   uv run scripts/build.py
+   ```
+
+4. Open a pull request. One project per pull request is easiest to review.
+
+## Images
+
+- Use an image from the project's own pages: a screenshot in its README, its `og:image`, the media in the original post, or the video thumbnail.
+- Link the image where it lives; do not upload copies to this repository.
+- Prefer PNG, JPEG, or WebP. Skip animated GIFs larger than about 3 MB.
+- Without an image, GitHub repositories and YouTube videos fall back to their automatic preview card.
+
+## Description style
+
+- Start with a capital letter and end with a period.
+- Describe the thing, not the hype: "Classifies IRS form pages with two Choices" beats "Revolutionary AI tax tool".
+- Keep any number you quote identical to the source.
 
 ## Updating or removing
 
-If a link is broken, a project is abandoned, or a description is outdated, open an issue or a pull request with a short explanation.
-
-## Pull request checklist
-
-- [ ] One resource per pull request.
-- [ ] The link works and points to the canonical page.
-- [ ] The description is clear, starts with a capital letter, and ends with a period.
-- [ ] I checked that the resource is not already listed.
-- [ ] `npx awesome-lint` passes locally, or CI is green.
+If a link is broken, a project is gone, or a description is wrong, open an issue or a pull request with a short explanation.

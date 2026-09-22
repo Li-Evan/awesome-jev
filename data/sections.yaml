@@ -1,0 +1,27 @@
+# Order of sections in the README. Each slug has a matching data/<slug>.yaml.
+# layout: gallery = image cards (README shows featured, full gallery in scenarios/<slug>.md)
+# layout: list    = plain links in the README
+reference_top:
+  - getting-started
+scenarios:
+  - finance
+  - coding
+  - browser
+  - agents
+  - games
+  - robotics
+  - search
+  - safety
+  - data
+  - support
+  - legal-health
+  - commerce
+  - creative
+  - voice
+  - productivity
+  - education
+  - other
+reference_bottom:
+  - open-models
+  - build
+  - learn

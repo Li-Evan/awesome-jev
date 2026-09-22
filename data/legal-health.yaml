@@ -1,0 +1,390 @@
+title: Legal, Health, and Science
+emoji: ⚖️
+layout: gallery
+description: Compliance checks, medical and scientific screening, and research workflows.
+entries:
+- name: 1kpapers
+  url: https://1kpapers.com
+  kind: app
+  author: nutlope
+  description: Site mapping 1,018 AI research papers from 2025-2026 by topic, where each paper is summarized by DeepSeek V4 Flash and then classified into 24 topics by Jev for $0.08 total.
+  jev: Title plus summary plus 24 topic options in one Choice per paper, at 256ms median latency.
+  image: https://www.1kpapers.com/opengraph-image.png?opengraph-image.1mk7bn86uhq5h.png
+  metrics:
+    likes: 1977
+    views: 171075
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/nutlope/status/2100426999546184123
+    demo 2: https://x.com/nutlope/status/2100426999546184123
+  tags:
+  - research-papers
+  - classification
+- name: Adverse drug effect detection with GEPA
+  url: https://x.com/Paiky16/status/2101628198928982219
+  kind: post
+  author: Paiky16
+  description: Uses Jev to flag sentences reporting suspected adverse drug effects in medical literature, then GEPA prompt optimization raised F1 from 69.1% to 79.7% and cut false positives from 47 to 22.
+  image: https://praneeth16.github.io/jev/og.png
+  metrics:
+    likes: 138
+    views: 144564
+  date: '2026-09-20'
+  links:
+    article: https://praneeth16.github.io/blog/adapting-jev-with-gepa
+  tags:
+  - pharmacovigilance
+  - gepa
+  - medical
+- name: Citation Verifier Jev experiments
+  url: https://github.com/rlfordon/citation-verifier/tree/main/scratch/jev
+  kind: repo
+  author: rlfordon
+  description: Experiments in a legal citation verifier that test whether Jev can pre-screen whether cited court opinions support a brief's propositions, measuring cost and time on 95 human-labelled claims.
+  jev: Seven atomic questions per claim over the proposition, brief sentence and whole opinion; used as a shadow rubric and an auto-green gate.
+  metrics:
+    repo_stars: 6
+  date: '2026-02-07'
+  links:
+    repo: https://github.com/rlfordon/citation-verifier
+  tags:
+  - legal
+  - citations
+  - courtlistener
+- name: cnki-jev
+  url: https://github.com/longkou1988/cnki-skills/tree/main/skills/cnki-jev
+  kind: repo
+  author: longkou1988
+  description: Optional extension to a CNKI literature-workflow skill pack for Codex and Claude Code that uses Jev to pre-screen papers against inclusion criteria, handing complex judgments back to the LLM or a human reviewer.
+  metrics:
+    repo_stars: 16
+  date: '2026-09-09'
+  links:
+    repo: https://github.com/longkou1988/cnki-skills
+  tags:
+  - literature-review
+  - cnki
+  - screening
+- name: Fight Health Insurance appeal scoring
+  url: https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py
+  kind: repo
+  author: fighthealthinsurance
+  description: Django app that helps people appeal health insurance denials, ordering generated appeal drafts by a TypeSafe quality score and tracking scoring health per backend.
+  jev: Redacted appeal documents are sent over https only; error bodies are never read.
+  metrics:
+    repo_stars: 156
+  date: '2023-03-16'
+  tags:
+  - health-insurance
+  - appeals
+  - ranking
+- name: Fotocopiatrice
+  url: https://github.com/bnistor4/fotocopiatrice
+  kind: repo
+  author: bnistor4
+  description: Static site that reads all 5,082 amendments filed in the Italian Chamber on the 2025 budget law, finds identical or rewritten-equivalent texts and shows who signed them; the Jev analysis took 12,206 calls for $0.84.
+  date: '2026-09-21'
+  links:
+    app: https://fotocopiatrice.vercel.app/
+  tags:
+  - legislation
+  - open-data
+  - deduplication
+- name: Hx
+  url: https://github.com/doitrous/hx
+  kind: repo
+  author: doitrous
+  description: 'Self-ticking checklist for clinical histories, examinations and operative notes: it opens the questions a note calls for, ticks them against what the doctor wrote using Jev, and shows what is still undocumented.'
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  links:
+    app: https://hx.semicoded.com
+  tags:
+  - clinical-notes
+  - healthcare
+  - checklist
+- name: IPFS Datasets TypeSafe formula lint
+  url: https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py
+  kind: repo
+  author: endomorphosis
+  description: Advisory TypeSafe lint in the IPFS Datasets logic module that scores whether a formula autoformalized from legal text captures its source clause and checks citations, without rewriting or admitting proofs.
+  metrics:
+    repo_stars: 23
+  date: '2024-04-07'
+  links:
+    repo: https://github.com/endomorphosis/ipfs_datasets_py
+  tags:
+  - autoformalization
+  - legal
+  - logic
+- name: Jev court-ruling annotation
+  url: https://github.com/lab-dados/jev-anotacao-sentencas
+  kind: repo
+  author: lab-dados
+  description: 'FGV Direito SP experiment annotating 12 variables in 120 São Paulo civil court rulings: Jev scored 96.6% accuracy at 0.32 s and $0.25 per thousand rulings, versus 98.8% for Gemini 3.8 Flash at $6.56.'
+  date: '2026-09-16'
+  links:
+    report: https://lab-dados.github.io/jev-anotacao-sentencas/
+    write-up: https://lab-dados.github.io/jev-anotacao-sentencas
+  tags:
+  - legal
+  - annotation
+  - portuguese
+- name: Jev on a Spanish legal corpus
+  url: https://x.com/juanmacias/status/2100463318209048850
+  kind: article
+  author: juanmacias
+  description: Day-long field test of Jev on a Spanish legal corpus, replacing a hand-built regex classifier with a probability and reporting what held up, what broke and where the team's own labels were wrong.
+  metrics:
+    likes: 87
+    views: 18150
+  date: '2026-09-17'
+  tags:
+  - legal
+  - classification
+  - field-test
+- name: Jev Paper Judge
+  url: https://github.com/JacobLinCool/jev-paper-judge
+  kind: repo
+  author: JacobLinCool
+  description: Upload a research paper PDF and get a structured judgment of understandability and completeness within seconds, plus mechanical checks such as undefined acronyms and unreferenced figures.
+  image: https://jev-paper-judge.jacob.workers.dev/og.png
+  date: '2026-09-17'
+  links:
+    app: https://jev-paper-judge.jacob.workers.dev
+    app 2: https://jev-paper-judge.jacob.workers.dev
+  tags:
+  - research-papers
+  - writing-feedback
+- name: Jev reads every AI paper
+  url: https://x.com/DevaiahShrithan/status/2102097862805053950
+  kind: article
+  author: DevaiahShrithan
+  description: Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.
+  jev: Two Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call.
+  image: https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg
+  metrics:
+    likes: 6
+    views: 285
+  date: '2026-09-21'
+  tags:
+  - arxiv
+  - research
+  - meta-science
+- name: Jev Reviewer
+  url: https://github.com/choxos/jev-reviewer
+  kind: repo
+  author: choxos
+  description: In-browser data extraction tool for systematic reviews that answers extraction-form or RoB 2, ROBINS-I, QUADAS-2, and TIDieR template questions with verbatim quotes and page locations from trial reports.
+  jev: Jev selects candidate line IDs; code copies the original text so every answer is a checkable quote.
+  image: https://raw.githubusercontent.com/choxos/jev-reviewer/main/documentation/tour.gif
+  metrics:
+    stars: 32
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/ASofiMahmudi/status/2100985031703269425
+    app: https://jevreviewer.xera.ac
+    app 2: https://jevreviewer.xera.ac
+  tags:
+  - systematic-review
+  - clinical-trials
+  - pdf
+- name: Jev × Cohen ADHD Abstract Triage
+  url: https://github.com/PistachioAIHQ/jev-synergy-screening
+  kind: repo
+  author: PistachioAIHQ
+  description: Systematic-review screening demo that asks Jev to include or exclude MEDLINE titles and abstracts for an ADHD drug review, scored against Cohen et al. 2006 labels; 92.0% accuracy and 80.0% recall on a 200-abstract set.
+  jev: Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.
+  metrics:
+    stars: 1
+  date: '2026-09-16'
+  tags:
+  - systematic-review
+  - screening
+- name: jev-folio-recursive-classifier
+  url: https://github.com/mttrbrts/jev-folio-recursive-classifier
+  kind: repo
+  author: mttrbrts
+  description: Classifier that walks OCR'd legal agreements down the FOLIO Document Types ontology with one Jev Choice per level, a beam of candidate paths, and confidence-gated stopping at leaves.
+  date: '2026-09-19'
+  tags:
+  - legal
+  - ontology
+  - classification
+- name: LawAnalyzer
+  url: https://x.com/rothken/status/2102151333193363791
+  kind: post
+  author: rothken
+  description: Free beta construction set from a law firm's AI lab for building legal-analysis applets on Jev, with reusable JSON and Jev code outputs that lawyers and students can save and adapt.
+  image: https://lawanalyzer.com/social-card.png
+  metrics:
+    likes: 51
+    views: 3239
+  date: '2026-09-21'
+  links:
+    app: https://lawanalyzer.com/
+    project: https://lawanalyzer.com
+  tags:
+  - legal
+  - applets
+  - education
+- name: Legal AI Model Router
+  url: https://github.com/sboghossian/legal-ai-model-router
+  kind: repo
+  author: sboghossian
+  description: Claude Code skills that recommend which LLM to use for legal drafting, extraction, research, review or translation, with an optional Jev classifier that measures the task's vertical, stakes and whether it is legal work.
+  jev: About $0.00002 and ~700 ms per call; 11/11 on the fixture set, with Arabic, French and English at parity. Optional, never a dependency.
+  metrics:
+    stars: 5
+  date: '2026-07-14'
+  tags:
+  - legal
+  - model-routing
+  - claude-code
+- name: LegalForecastBench Jev mode
+  url: https://github.com/johnhughes3/LegalForecastBench/blob/main/docs/jev-mode.md
+  kind: repo
+  author: johnhughes3
+  description: 'Official Jev condition in a benchmark that forecasts federal motion-to-dismiss rulings: Jev gets one case record, full text or LLM summaries, and is scored with claim-defendant micro-Brier metrics.'
+  jev: One Boolean question per prediction unit; the native yes probability becomes probability_fully_dismissed.
+  metrics:
+    repo_stars: 5
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/johnhughes3/LegalForecastBench
+  tags:
+  - legal
+  - forecasting
+  - benchmark
+- name: lit-search Jev screening
+  url: https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch
+  kind: repo
+  author: luwill
+  description: The lit-search skill in this research-skills collection compiles literature inclusion/exclusion criteria into Jev questions and screens each record into a single verdict.
+  jev: One request and one Verdict per record, scored once into jev_scores.jsonl so thresholds, triage and evaluation re-route the same scores with no new network calls.
+  metrics:
+    repo_stars: 844
+  date: '2026-01-13'
+  tags:
+  - literature-review
+  - screening
+  - research
+- name: Live clinical consultation classifier
+  url: https://x.com/rheum_ai/status/2100454043361722798
+  kind: post
+  author: rheum_ai
+  description: Prototype that feeds an ambient-scribe transcript to Jev during a clinical consultation to traverse a medical ontology, classify symptoms, update the differential diagnosis and flag red flags in real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100452479016321024/img/nAyq81QFzA6UzPqM.jpg
+  metrics:
+    likes: 432
+    views: 56676
+  date: '2026-09-17'
+  tags:
+  - clinical
+  - diagnosis
+  - ontology
+- name: Medical MCP JEV ranker
+  url: https://github.com/JamesANZ/medical-mcp/tree/main/src/rank
+  kind: repo
+  author: JamesANZ
+  description: MCP server for FDA, WHO, PubMed and RxNorm data that can rerank literature hits with Jev, judging each abstract against the question and keeping, demoting or dropping it.
+  metrics:
+    repo_stars: 113
+  date: '2025-07-14'
+  tags:
+  - medical
+  - pubmed
+  - reranking
+- name: MedJev
+  url: https://github.com/JunMa11/MedJev
+  kind: repo
+  author: JunMa11
+  description: Jev-like model built on the open Kev code that extracts table-ready clinical variables from free-text notes on one consumer GPU inside a hospital, with a local app comparing it against hosted Jev and base Qwen3.5-0.8B.
+  jev: Noul, Choice and Score fields per note (admission, diagnostic modality, symptom severity); hosted Jev serves as a baseline.
+  metrics:
+    stars: 11
+  date: '2026-09-22'
+  tags:
+  - clinical-nlp
+  - jev-like
+  - extraction
+- name: Paper Radar
+  url: https://github.com/LYchoon/paper-radar-jev
+  kind: repo
+  author: LYchoon
+  description: Python CLI that fetches recent arXiv papers, scores their relevance to a configurable research profile, and writes daily Markdown and JSON rankings.
+  jev: Relevance scored as P(True) from a Noul per paper.
+  date: '2026-09-20'
+  tags:
+  - arxiv
+  - research
+  - literature
+- name: Paper Trellis Citation Verifier
+  url: https://github.com/MarissaFamularo/citation-verifier
+  kind: repo
+  author: MarissaFamularo
+  description: Tool for peer reviewers and authors that pairs each citing sentence in a manuscript with the cited paper, has Claude locate the supporting passage and Jev score whether it supports the claim, then records a human verdict.
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  links:
+    app: https://verify.papertrellis.com
+    app 2: https://verify.papertrellis.com
+  tags:
+  - citations
+  - peer-review
+  - research
+- name: Privacy Facts
+  url: https://github.com/thenewpotato/privacy-facts
+  kind: repo
+  author: thenewpotato
+  description: Web app that turns a pasted privacy policy URL or text into a nutrition-style label of plain-language answers, each with a Jev confidence score and expandable source excerpts.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    app: https://tigrw.com/privacy-facts/
+  tags:
+  - privacy
+  - compliance
+- name: PRomop Jev concept ranking
+  url: https://github.com/healthkey-ai/promop/blob/dev/omop_core/mapping/suggestions.py
+  kind: repo
+  author: healthkey-ai
+  description: OMOP-based oncology patient record platform that can rank candidate standard vocabulary concepts (for example LOINC codes) with Jev when mapping source terms, instead of or alongside Anthropic.
+  metrics:
+    repo_stars: 9
+  date: '2025-09-16'
+  links:
+    repo: https://github.com/healthkey-ai/promop
+  tags:
+  - omop
+  - terminology-mapping
+  - clinical
+- name: PulseLane
+  url: https://github.com/ndolinschi/pulselane
+  kind: repo
+  author: ndolinschi
+  description: Clinic intake triage demo that assigns ESI-style acuity from the chief complaint and vitals, picks the service line, and flags red-flag emergencies, interpreter needs and isolation precautions.
+  date: '2026-09-17'
+  links:
+    app: https://pulselane-topaz.vercel.app
+    app 2: https://pulselane-topaz.vercel.app
+  tags:
+  - clinical-triage
+  - healthcare
+- name: stella System One decisions
+  url: https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts
+  kind: repo
+  author: stella
+  description: Open-source legal workspace that asks Jev only for judgments code cannot make, such as how a citing court treats a decision, which option a passage settles, and which extracted date a question names.
+  metrics:
+    repo_stars: 250
+  date: '2026-05-03'
+  links:
+    app: https://stll.app
+  tags:
+  - legal
+  - case-law
+  - templates

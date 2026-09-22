@@ -1,0 +1,1215 @@
+title: Search and RAG
+emoji: 🔎
+layout: gallery
+description: Reranking, retrieval filtering, semantic search, and knowledge graphs.
+entries:
+- name: av
+  url: https://github.com/PixelML/av
+  kind: repo
+  author: PixelML
+  description: Video memory CLI for agents that indexes captions and transcripts for search and Q&A; with a TypeSafe key, `av ask` has Jev filter and rank retrieved scenes and check whether the answer is supported.
+  jev: Per-hit relevance probability times retrieval score for ranking, plus a separate Noul on whether the answer is supported; falls back to raw retrieval if Jev fails.
+  metrics:
+    stars: 7
+  date: '2026-02-14'
+  links:
+    app: https://agentic.video
+  tags:
+  - video-rag
+  - cli
+- name: Boardy match reranking
+  url: https://x.com/owengretzinger/status/2101397416826053104
+  kind: post
+  author: owengretzinger
+  description: Boardy, an AI superconnector, reports that Jev has already reranked over 1 million people-matches in production.
+  image: https://www.boardy.ai/opengraph-image
+  metrics:
+    likes: 15
+    views: 868
+  date: '2026-09-19'
+  links:
+    app: https://boardy.ai
+    project: https://boardy.ai
+  tags:
+  - reranking
+  - production
+  - matching
+- name: Book Learning Jev retrieval gate
+  url: https://github.com/Zafer-Liu/book-learning/blob/main/study/jev_gate.py
+  kind: repo
+  author: Zafer-Liu
+  description: 'Retrieval gate in the self-hosted BOOKNOTE textbook RAG study assistant: Jev scores each fused candidate chunk for relevance and screens it for prompt injection before it reaches the answer, failing open to the ungated results.'
+  jev: One fanned-out call per query with a 0-3 relevance Score and an injection Noul per chunk; keeps chunks with relevance >= 2.0 and injection < 0.5.
+  metrics:
+    repo_stars: 43
+  date: '2026-04-23'
+  links:
+    repo: https://github.com/Zafer-Liu/book-learning
+  tags:
+  - rag
+  - filtering
+  - education
+- name: Cascade Search
+  url: https://x.com/zaidmukaddam/status/2100910232255992032
+  kind: post
+  author: zaidmukaddam
+  description: In-browser search bar where a 27K-parameter model parses queries like "open bugs from sam since last week" into typed filters in 0.25 ms and asks Jev only about words it is unsure of.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100910214530953216/img/pZDYHLcrOl_f0pWI.jpg
+  metrics:
+    likes: 95
+    views: 5507
+  date: '2026-09-18'
+  links:
+    app: https://cascade.scira.ai
+    project: https://cascade.scira.ai
+  tags:
+  - query-parsing
+  - cascade
+- name: cascade-search
+  url: https://github.com/zaidmukaddam/cascade-search
+  kind: repo
+  author: zaidmukaddam
+  description: 'In-browser search query parser: a 27,193-parameter model labels every word with a role and calibrated confidence in about 0.25 ms, and only the uncertain words are escalated to Jev.'
+  jev: Both tiers feed one compiler so the app gets the same typed filter whichever tier answered; a separate cascade-search-jev package provides the escalation.
+  image: https://raw.githubusercontent.com/zaidmukaddam/cascade-search/main/eval/results/m2.png
+  metrics:
+    stars: 8
+  date: '2026-09-17'
+  links:
+    app: https://cascade.scira.ai
+  tags:
+  - query-parsing
+  - cascade
+  - browser
+- name: chia1104.dev Jev reranker
+  url: https://github.com/Chia1104/chia1104.dev/blob/develop/packages/ai/src/rerank/jev.ts
+  kind: repo
+  author: Chia1104
+  description: 'Search reranker in the chia1104.dev personal site and CMS monorepo that makes one Jev call per query: a Choice over candidate posts and a Noul on whether any candidate actually answers it, working across languages.'
+  jev: The Choice picks the best candidate id; the Noul separates a real answer from the closest irrelevant hit, since choice probabilities always sum to 1.
+  image: https://repository-images.githubusercontent.com/485318015/26c450f3-6246-4b7d-b8a5-7a658a79989e
+  metrics:
+    repo_stars: 32
+  date: '2022-04-25'
+  links:
+    app: https://chia1104.dev
+    repo: https://github.com/Chia1104/chia1104.dev
+  tags:
+  - reranking
+  - blog-search
+- name: decision-model-playground
+  url: https://github.com/tedliou/decision-model-playground
+  kind: repo
+  author: tedliou
+  description: Local browser playground where Laya or Jev picks the best-matching vervecode.dev article for a question, showing every option's raw probability, a no-match option and load and inference timings.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - recommendation
+  - laya
+  - comparison
+- name: docbank Jev reranking
+  url: https://github.com/kenn-io/docbank/tree/main/document/typesafe
+  kind: repo
+  author: kenn-io
+  description: Local-first document vault for people and agents that adds a TypeSafe Jev reranking provider for search over document names and extracted text.
+  metrics:
+    repo_stars: 101
+  date: '2026-07-07'
+  links:
+    app: https://docbank.ai
+  tags:
+  - documents
+  - reranking
+  - go
+- name: Dodo Jev web tools
+  url: https://github.com/jonnyparris/dodo/blob/main/src/browser/web-fetch.ts
+  kind: repo
+  author: jonnyparris
+  description: Coding agent on Cloudflare Workers whose read-only web tools use Jev to rank candidate URLs before fetching and to check whether a fetched page answers the query.
+  jev: browser_triage ranks URLs from metadata alone; browser_markdown returns a calibrated Noul verdict so the agent can decide whether to keep browsing.
+  image: https://raw.githubusercontent.com/jonnyparris/dodo/main/assets/dodo.svg
+  metrics:
+    repo_stars: 13
+  date: '2026-03-28'
+  links:
+    repo: https://github.com/jonnyparris/dodo
+  tags:
+  - cloudflare
+  - web-fetch
+  - triage
+- name: Embedded databases plus Jev reranking
+  url: https://x.com/rodydavis/status/2101802283256463699
+  kind: article
+  author: rodydavis
+  description: Architecture write-up pairing SQLite, DuckDB and LadyBugDB for hybrid candidate retrieval with Jev as the reranker, aiming for sub-second RAG results instead of sending 20 to 50 passages to a frontier LLM.
+  image: https://pbs.twimg.com/media/HSsZnCSaMAABhjv.jpg
+  metrics:
+    likes: 27
+    views: 1827
+  date: '2026-09-20'
+  tags:
+  - rag
+  - reranking
+  - sqlite
+- name: ensk
+  url: https://github.com/jokull/ensk
+  kind: repo
+  author: jokull
+  description: English-Icelandic dictionary on Cloudflare Workers that combines D1 full-text search and Vectorize semantic recall, then has Jev via Workers AI rerank the shortlist and decide whether any entry truly matches.
+  date: '2026-09-18'
+  tags:
+  - dictionary
+  - rerank
+  - cloudflare-workers
+- name: Enzyme
+  url: https://github.com/byenzyme/enzyme
+  kind: repo
+  author: byenzyme
+  description: Local-first compile step for Markdown knowledge bases whose enzyme compile uses Jev via OpenRouter Decisions to scan the vault and write the program that decides where catalyst questions are learned from.
+  image: https://repository-images.githubusercontent.com/920398699/6e344f34-0504-4959-b6ce-49b8d6cb5c20
+  metrics:
+    stars: 82
+  date: '2025-01-22'
+  links:
+    app: https://memory.enzyme.garden
+  tags:
+  - knowledge-base
+  - obsidian
+  - semantic-search
+- name: findme
+  url: https://github.com/marc2332/findme
+  kind: repo
+  author: marc2332
+  description: Rust CLI that finds a file or folder from a natural-language memory of it by walking the directory tree and asking Jev which entries at each level look most promising.
+  jev: Sends entry names and light metadata per level, keeps the highest-scoring directories and descends, respecting .gitignore.
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  tags:
+  - cli
+  - file-search
+  - rust
+- name: FindSFSymbols
+  url: https://github.com/tornikegomareli/FindSFSymbols
+  kind: repo
+  author: tornikegomareli
+  description: 'Mac app for finding SF Symbols by plain description: on-device word vectors shortlist 48 symbols, then Jev answers 48 yes/no questions in one request and the scores drive a physics pile where good matches float up.'
+  jev: One Noul per shortlisted symbol in a single request; without a key the app uses on-device matching only.
+  metrics:
+    stars: 5
+  date: '2026-09-20'
+  links:
+    app: https://tornikegomareli.github.io/FindSFSymbols/
+  tags:
+  - macos
+  - sf-symbols
+  - semantic-search
+- name: Fuzzy content search
+  url: https://x.com/gigabit_million/status/2102200033307422821
+  kind: post
+  author: gigabit_million
+  description: Search site over the author's own published content where Jev scores each item against a vague query and shows the scores, which makes the ranking easy to inspect.
+  jev: Score per content item against the free-text query.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101941990254632960/img/gx4NHU9mxvfHKA3y.jpg
+  metrics:
+    likes: 1
+    views: 386
+  date: '2026-09-22'
+  links:
+    app: https://gigabit-search.gigabitmillion-games.workers.dev/
+    project: https://gigabit-search.gigabitmillion-games.workers.dev
+  tags:
+  - fuzzy-search
+  - cloudflare-workers
+- name: Hacker News For Me
+  url: https://github.com/raahelpie/hn-for-me
+  kind: repo
+  author: raahelpie
+  description: Personal Hacker News reader that screens new stories against your saved interests and shows only the relevant ones in an HN-style feed.
+  jev: Runs on Codiv's OpenJev model by default, with TypeSafe Jev as a switchable provider; thresholds of 0.7 for titles and 0.9 for article relevance.
+  image: https://external-preview.redd.it/cGZkd252YzFheXFoMeTpqXMSfpCE94rmVlGr8pZ7_z3kfZQqelwwzt-Id7ds.png?format=pjpg&auto=webp&s=e90f071fd20387c7898145a4feed6ca91dc9360f
+  metrics:
+    stars: 1
+    views: 4
+  date: '2026-09-20'
+  links:
+    demo: https://news.ycombinator.com/item?id=49788260
+    discussion: https://www.reddit.com/r/SideProject/comments/1wmruft/hn_for_me_hacker_news_stories_curated_by_jev/
+    demo 2: https://x.com/RaahelSaidWhat/status/2102162969656475973
+  tags:
+  - hacker-news
+  - news-feed
+  - openjev
+- name: Hacker News personal recommender
+  url: https://x.com/snaga/status/2101901648184643707
+  kind: post
+  author: snaga
+  description: Experiment that has Jev pick which Hacker News front-page stories match the author's interests each morning, with the composite-judgment design written up in a gist.
+  image: https://pbs.twimg.com/media/HSt0LTabQAAACdr.jpg?name=orig
+  metrics:
+    views: 138
+  date: '2026-09-21'
+  links:
+    gist: https://gist.github.com/snaga/12c62ad587d59e4817e00d3ec1846f47
+    project: https://gist.github.com/snaga/12c62ad587d59e4817e00d3ec1846f47
+  tags:
+  - hacker-news
+  - recommendation
+- name: Hazumi News
+  url: https://news.ycombinator.com/item?id=49777691
+  kind: thread
+  author: jrhey
+  description: Hacker News reader that uses Jev to filter large discussion threads down to the comments worth reading.
+  image: https://www.hazumi.news/hazumi-news-og.png
+  metrics:
+    points: 5
+  date: '2026-09-20'
+  links:
+    app: https://www.hazumi.news/best
+    project: https://hazumi.news
+  tags:
+  - hacker-news
+  - filtering
+  - reader
+- name: hev reranker
+  url: https://github.com/hev/reranker
+  kind: repo
+  author: hev
+  description: Recipe and 90-line Python wrapper that uses Jev as a calibrated reranker for up to 30 documents per call, with nDCG@10 results against hosted and open rerankers on BEIR shortlists.
+  jev: One Noul relevance question per document in a single request; the probability serves as both sort key and prune threshold.
+  metrics:
+    stars: 9
+  date: '2026-09-17'
+  tags:
+  - reranking
+  - rag
+  - beir
+- name: Hindsight Jev reranker
+  url: https://github.com/vectorize-io/hindsight/blob/main/hindsight-api-slim/hindsight_api/engine/cross_encoder.py
+  kind: repo
+  author: vectorize-io
+  description: Reranker provider in the Hindsight agent-memory system that asks Jev one question with every recall candidate as an option, so the answer is the ranking, in a single request.
+  jev: Enabled with HINDSIGHT_API_RERANKER_PROVIDER=typesafe (jev-latest by default) and can optionally cut the irrelevant tail; shipped in 0.10.1.
+  image: https://raw.githubusercontent.com/vectorize-io/hindsight/main/hindsight-docs/static/img/hindsight-github-banner.png
+  metrics:
+    repo_stars: 24855
+  date: '2025-10-30'
+  links:
+    docs: https://github.com/vectorize-io/hindsight/blob/main/hindsight-docs/blog/2026-09-21-version-0-10-1.md
+  tags:
+  - rerank
+  - agent-memory
+  - recall
+- name: Intent-aware search in Replicas
+  url: https://x.com/SaaiArora/status/2100807349363741132
+  kind: post
+  author: SaaiArora
+  description: Experiment powering the global search in the Replicas app with Jev so results and actions follow what the user means.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100806240406487040/img/CMyCF6BobyP4feED.jpg
+  metrics:
+    likes: 30
+    views: 9975
+  date: '2026-09-18'
+  tags:
+  - app-search
+  - intent
+  - ux
+- name: Jev and SerpApi fact checker
+  url: https://github.com/serpapi/tutorials/tree/master/python_projects/jev-serpapi-fact-checker
+  kind: repo
+  author: serpapi
+  description: Tutorial CLI from SerpApi that checks a statement or yes/no question against up to five Google organic snippets and gets a verdict from Jev through OpenRouter's Decisions API.
+  metrics:
+    repo_stars: 6
+  date: '2025-09-05'
+  links:
+    repo: https://github.com/serpapi/tutorials
+  tags:
+  - fact-checking
+  - web-search
+  - tutorial
+- name: Jev Radar
+  url: https://github.com/Eliovp-BV/Jev-Radar
+  kind: repo
+  author: Eliovp-BV
+  description: Local research workspace where Jev steers an investigation over public sources, asking the same research questions across records to build an evidence-linked comparison with every decision inspectable.
+  image: https://raw.githubusercontent.com/Eliovp-BV/Jev-Radar/main/docs/media/radar-demo.gif
+  date: '2026-09-19'
+  tags:
+  - research
+  - evidence
+  - workspace
+- name: Jev Reranker
+  url: https://github.com/shinpr/jev-reranker
+  kind: repo
+  author: shinpr
+  description: Rust CLI, installed from npm, that reads a JSON array of search results from stdin and uses Jev to rerank them, drop candidates with no usable evidence, or extract query-specific passages for your LLM.
+  image: https://raw.githubusercontent.com/shinpr/jev-reranker/main/assets/banner.jpg
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    article: https://norsica.jp/blog/what-retrieval-still-hasnt-decided
+  tags:
+  - reranking
+  - rag
+  - cli
+- name: Jev Search for Obsidian
+  url: https://github.com/jh1373/jev-search
+  kind: repo
+  author: jh1373
+  description: Obsidian plugin that searches the vault offline with BM25 and then, only after you approve what gets sent, reranks the top results with Jev.
+  date: '2026-09-18'
+  tags:
+  - obsidian
+  - rerank
+  - local-first
+- name: jev-corrective-rag
+  url: https://github.com/sudeshkar/jev-corrective-rag
+  kind: repo
+  author: sudeshkar
+  description: Corrective RAG where the retrieve-or-not, chunk-grading and groundedness gates are Jev calls instead of LLM judges, averaging 0.75 LLM calls per query with 7x fewer LLM calls and 4x lower p50 latency.
+  date: '2026-09-20'
+  tags:
+  - rag
+  - grading
+  - groq
+- name: jev-information-extraction
+  url: https://github.com/abhishekmamdapure/jev-information-extraction
+  kind: repo
+  author: abhishekmamdapure
+  description: Upload a PDF and ask questions such as the GST number or invoice total; Jev ranks the extracted text chunks that answer each one and the app shows each match, its probability and its location on the page.
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    app: https://jev-information-extraction-fibby-prod-telegram.up.railway.app/
+    app 2: https://jev-information-extraction-fibby-prod-telegram.up.railway.app
+  tags:
+  - pdf
+  - extraction
+- name: jev-reranker
+  url: https://github.com/hotchpotch/jev-reranker
+  kind: repo
+  author: hotchpotch
+  description: Python library that uses Jev to score retrieved documents for usefulness as answer evidence, rerank them and drop those under a threshold before generation, handling concurrency, long candidate lists and retries.
+  image: https://cdn-uploads.huggingface.co/production/uploads/627c91ff4d0858f003553787/uU_-MZJAuzixqmkxGVO24.webp
+  metrics:
+    stars: 10
+    likes: 114
+    views: 9266
+  date: '2026-09-19'
+  links:
+    write-up: https://huggingface.co/blog/hotchpotch/introducing-jev-reranker
+    demo: https://x.com/hotchpotch/status/2101315373366906895
+  tags:
+  - reranking
+  - rag
+  - python
+- name: jev-scout
+  url: https://github.com/kierandotai/jev-scout
+  kind: repo
+  author: kierandotai
+  description: MCP server for agent web research that has Jev judge every query, search result, and fetched page for relevance and credibility, with session budgets, SSRF-guarded fetching, and a live decision dashboard.
+  jev: One call per search result (relevance, credibility, worth fetching) and one per fetched page (answered, content class, steering risk); a hand-labeled 25-item study reports 88% relevance and 96% credibility.
+  date: '2026-09-19'
+  links:
+    study: https://github.com/kierandotai/jev-scout/blob/main/docs/accuracy/2026-09-19-jev-golden-set-study.md
+  tags:
+  - mcp
+  - web-research
+- name: jev-search
+  url: https://github.com/superagents-lab/jev-search
+  kind: repo
+  author: superagents-lab
+  description: Natural-language web search that picks the time range and query with Choices and keeps each source only if its Noul passes (needs a Search1API key).
+  image: https://raw.githubusercontent.com/superagents-lab/jev-search/main/public/og-home.png
+  metrics:
+    stars: 387
+    likes: 331
+    views: 209677
+  date: '2026-09-17'
+  links:
+    app: https://jev.s1.dev
+    app 2: https://jev.s1.dev
+    demo: https://x.com/fatwang2ai/status/2100653998378516518
+  tags:
+  - web-search
+  - ranking
+- name: jev-search
+  url: https://github.com/larguesa/jev-search
+  kind: repo
+  author: larguesa
+  description: Dependency-free Python CLI for semantic line search over documents, notes, and knowledge bases via Jev on OpenRouter, meant to complement exact keyword search for agents.
+  metrics:
+    stars: 6
+  date: '2026-09-19'
+  tags:
+  - semantic-search
+  - cli
+  - openrouter
+- name: jev-search
+  url: https://github.com/mukiwu/jev-search-mcp
+  kind: repo
+  author: mukiwu
+  description: Claude Code plugin in the muki-ai-plugins marketplace that answers WebSearch with Jev-ranked results, where Jev chooses sources and time window, falling back to the built-in tool.
+  metrics:
+    stars: 59
+  date: '2026-03-23'
+  links:
+    marketplace: https://github.com/mukiwu/muki-ai-plugins
+  tags:
+  - web-search
+  - mcp
+  - claude-code
+- name: jev-sift
+  url: https://github.com/kbhuw/jev-sift
+  kind: repo
+  author: kbhuw
+  description: Agent plugin and MCP tool that sends batches of files, public web pages, text, or tool descriptions to Jev with a query and returns relevance probabilities, so the agent opens only items worth reading.
+  metrics:
+    stars: 45
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/kushbhuwalka/status/2101064922813895154
+  tags:
+  - mcp
+  - relevance-filtering
+- name: Jevflix
+  url: https://github.com/ArielBubis/Jevflix
+  kind: repo
+  author: ArielBubis
+  description: Movie recommender that narrows 4,800 films to a shortlist with FAISS and BM25, then has Jev parse your constraints and pick one film, using its confidence to answer instantly or ask a follow-up.
+  date: '2026-09-21'
+  tags:
+  - recommendation
+  - hybrid-search
+  - movies
+- name: JevGraph
+  url: https://github.com/chenmingtang830/jevgraph
+  kind: repo
+  author: chenmingtang830
+  description: Document-to-graph pipeline that parses PDF, DOCX, PPTX, or text locally and asks Jev one closed-set relation question per candidate entity pair, exporting edges with probabilities and page evidence.
+  image: https://raw.githubusercontent.com/chenmingtang830/jevgraph/main/docs/assets/jevgraph-overview.svg
+  metrics:
+    stars: 9
+  date: '2026-09-20'
+  tags:
+  - knowledge-graph
+  - relation-extraction
+- name: JevRAG
+  url: https://github.com/ajanm007/jevrag
+  kind: repo
+  author: ajanm007
+  description: Decision layer for RAG pipelines that replaces hardcoded thresholds with calibrated gates for evidence sufficiency, chunk boundaries, context selection, answer abstention, and cache trust, evaluated on HotpotQA.
+  jev: Jev is the first swappable backend behind the five decision primitives.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - rag
+  - calibration
+  - hotpotqa
+- name: jevsearch
+  url: https://github.com/kylemclaren/jevsearch
+  kind: repo
+  author: kylemclaren
+  description: Drop-in shadcn/ui block for site search that shows keyword hits on the first keystroke, then re-ranks them by the visitor's intent with Jev a moment later, keeping keyword order if the call fails.
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  links:
+    app: https://jevsearch.fly.dev
+  tags:
+  - site-search
+  - reranking
+  - shadcn
+- name: Job Seek Jev AI filter
+  url: https://github.com/colophon-group/jobseek/blob/main/apps/web/src/lib/ai-filter/jev-client.ts
+  kind: repo
+  author: colophon-group
+  description: Open-source job search built from 5,300+ career sites that adds a Jev AI filter classifying each posting as accepted or rejected against a user's criteria.
+  jev: One Choice per job posting in a batched request, resistant to injected text in descriptions.
+  metrics:
+    repo_stars: 199
+  date: '2026-02-18'
+  links:
+    app: https://jseek.co/
+  tags:
+  - jobs
+  - filtering
+- name: jselect
+  url: https://github.com/keltokhy/jselect
+  kind: repo
+  author: keltokhy
+  description: Python context selector that asks Jev whether each passage in your files or records is useful evidence for a task, then picks diverse verbatim passages with source links within a token budget.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - context-selection
+  - rag
+  - python
+- name: keep.md search and tagging
+  url: https://x.com/iannuttall/status/2100884132272181594
+  kind: post
+  author: iannuttall
+  description: 'Test of Jev on Cloudflare Workers inside keep.md: search reranking 7x faster than the current hybrid, and content tagging 50x faster than GLM 4.7 Flash with no failures.'
+  image: https://pbs.twimg.com/media/HSfWoEQWcAAalX9.jpg?name=orig
+  metrics:
+    likes: 303
+    views: 20058
+  date: '2026-09-18'
+  links:
+    app: https://keep.md
+    project: https://keep.md
+  tags:
+  - rerank
+  - tagging
+  - cloudflare-workers
+- name: Knowhere TOC anchor eval
+  url: https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py
+  kind: repo
+  author: Ontos-AI
+  description: Offline eval in the Knowhere document-parsing system comparing Jev against the current model at confirming a table-of-contents start page during PDF parsing.
+  jev: A per-page Choice of true/false on cached page text; Jev cannot take screenshots, so both arms get the same text.
+  metrics:
+    repo_stars: 3433
+  date: '2026-04-30'
+  links:
+    app: https://knowhereto.ai
+  tags:
+  - document-parsing
+  - rag
+  - evaluation
+- name: Kody Jev search rerank
+  url: https://github.com/kentcdodds/kody/blob/main/packages/worker/src/mcp/tools/search-jev-rerank.ts
+  kind: repo
+  author: kentcdodds
+  description: Optional second stage for Kody's MCP search that widens hybrid lexical and vector recall on ambiguous queries, then reranks and filters candidates with Jev via Workers AI.
+  jev: Score questions per candidate through Cloudflare AI Gateway, with an adaptive keep cutoff and fallback to hybrid order on low confidence.
+  metrics:
+    repo_stars: 663
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/kodykoala/status/2100943346575253515
+    repo: https://github.com/kentcdodds/kody
+    app: https://kody.codes
+  tags:
+  - reranking
+  - mcp
+  - cloudflare
+- name: LanceDB reranker
+  url: https://github.com/lancedb/lancedb/blob/main/python/python/lancedb/rerankers/typesafe.py
+  kind: repo
+  author: lancedb
+  description: Asks one Noul per query-document pair and stores an absolute relevance probability you can threshold.
+  jev: Merged but not yet released at the time of curation.
+  image: https://github.com/user-attachments/assets/92dad0a2-2a37-4ce1-b783-0d1b4f30a00c
+  metrics:
+    repo_stars: 11496
+  date: '2023-02-28'
+  links:
+    docs: https://lancedb.com/docs
+  tags:
+  - rerank
+  - vector-search
+  - python
+- name: Lattice Jev reranker
+  url: https://github.com/Zabaca/lattice
+  kind: repo
+  author: Zabaca
+  description: Optional reranking stage in Lattice, a local-first retrieval engine for markdown knowledge bases, that sends the fused top hits to Jev in one request and scores each by the probability it answers the query.
+  metrics:
+    stars: 15
+  date: '2025-11-27'
+  links:
+    app: https://zabaca.com/products/lattice/
+  tags:
+  - reranking
+  - markdown
+  - knowledge-base
+- name: llama-index-jev
+  url: https://github.com/WiktorB2004/llama-index-jev
+  kind: repo
+  author: WiktorB2004
+  description: LlamaIndex reranker and router; reranking lifts nDCG@5 on NFCorpus from 0.340 to 0.396.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  links:
+    docs: https://wiktorb2004.github.io/llama-index-jev
+  tags:
+  - llamaindex
+  - reranking
+  - rag
+- name: longjev
+  url: https://github.com/avshalomd/longjev
+  kind: repo
+  author: avshalomd
+  description: Experimental wrapper with the same system_one(state, questions) call as Jev that accepts inputs beyond Jev's 32K-token limit by scoring every chunk, keeping the best ones and asking Jev over what remains.
+  image: https://raw.githubusercontent.com/avshalomd/longjev/main/results/social/longjev_pipeline.png
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - long-context
+  - chunking
+  - retrieval
+- name: Margin
+  url: https://x.com/AYi_AInotes/status/2102198099498135812
+  kind: post
+  author: AYi_AInotes
+  description: Tool that imports years of X bookmarks and lets you search them in plain language, with Jev scoring every saved tweet in parallel and returning a relevance-ranked list in seconds.
+  jev: Scores each bookmarked tweet against the query.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101673555813453825/img/nfWWuk_nW1mtGBW2.jpg
+  metrics:
+    likes: 29
+    views: 3197
+  date: '2026-09-22'
+  links:
+    demo: https://x.com/alexchristou_/status/2101674202361221376
+  tags:
+  - bookmarks
+  - x
+  - ranking
+- name: Needle
+  url: https://www.theunwindai.com/p/get-started-with-jev-for-free
+  kind: article
+  author: The Unwind AI (Shubham Saboo, Gargi Gupta)
+  description: 'Open-source Chrome extension for searching by meaning instead of words: ask a question and Jev scores the page''s sentences and highlights the ones that match your intent, with no generated answer.'
+  jev: Jev scores each source sentence against the query and the top passages are highlighted in place.
+  image: https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9ff9d5e8-2f74-4ee2-b95f-2bacfdda1e77/ChatGPT_Image_Sep_20__2026__01_04_29_AM.png?t=1789891484
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/advanced_llm_apps/needle
+    project: https://github.com/shubhamsaboo/awesome-llm-apps/advanced_llm_apps/needle
+  tags:
+  - semantic-search
+  - chrome-extension
+- name: neo4jev
+  url: https://github.com/jexp/neo4jev
+  kind: repo
+  author: jexp
+  description: Demo that navigates a Neo4j graph one hop at a time toward a natural-language goal, with Jev choosing which relationship to follow and a beam search keeping the best paths.
+  jev: A Choice over outgoing relationships plus a goal-reached Noul in the same call, so each hop is one round-trip.
+  metrics:
+    stars: 81
+  date: '2026-09-16'
+  tags:
+  - knowledge-graph
+  - neo4j
+- name: obsidian-tc Jev citation judge
+  url: https://github.com/The-40-Thieves/obsidian-tc/blob/main/packages/server/src/gateway/typesafe.ts
+  kind: repo
+  author: The-40-Thieves
+  description: Opt-in Jev judge provider in obsidian-tc, a governed Obsidian MCP server with fused retrieval and vault memory, used only to decide whether inferred citations between notes hold up.
+  jev: One Noul with true/false criteria per citation, pinned to a versioned model, with bounded retries.
+  metrics:
+    repo_stars: 5
+  date: '2026-05-18'
+  links:
+    repo: https://github.com/The-40-Thieves/obsidian-tc
+  tags:
+  - obsidian
+  - mcp
+  - citations
+- name: OpenViking reranker
+  url: https://github.com/volcengine/OpenViking/blob/main/openviking/models/rerank/jev_rerank.py
+  kind: repo
+  author: volcengine
+  description: Rerank provider for a context database that scores every document with a Noul in one request.
+  jev: Merged but not yet released at the time of curation.
+  image: https://raw.githubusercontent.com/volcengine/OpenViking/main/docs/images/ov-logo.png
+  metrics:
+    repo_stars: 38379
+  date: '2026-01-05'
+  links:
+    app: https://openviking.ai
+  tags:
+  - rerank
+  - context-database
+  - rag
+- name: Paper Breakdown recommendations
+  url: https://x.com/neural_avb/status/2100881974780993668
+  kind: post
+  author: neural_avb
+  description: Adds Jev curation on top of the content-based and collaborative-filtering recommender in Paper Breakdown, at $0.0019 per user for ~70 recs.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100879106078568449/img/nCefxS323PhF_n7f.jpg
+  metrics:
+    likes: 65
+    views: 2315
+  date: '2026-09-18'
+  tags:
+  - recommendations
+  - research-papers
+- name: Patterns of Design search
+  url: https://github.com/Aias/pattern-languages/blob/master/src/lib/pattern-search.ts
+  kind: repo
+  author: Aias
+  description: Search on the patternsof.design pattern-language site where Jev scores how much practical guidance each design pattern gives for what the user wants to build, directly or by analogy.
+  jev: One Score per pattern against the query, 64 patterns per request, with a 0.5 match probability cut.
+  metrics:
+    repo_stars: 5
+  date: '2019-09-05'
+  links:
+    app: https://patternsof.design
+    repo: https://github.com/Aias/pattern-languages
+  tags:
+  - semantic-search
+  - design-patterns
+  - astro
+- name: Physical library index search
+  url: https://x.com/s3ththompson/status/2100975114753892550
+  kind: post
+  author: s3ththompson
+  description: Searches the author's physical books by checking an entire book index in parallel in 300ms, e.g. pointing "Who invented photography?" to page 98 under Niepce.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100974992653500416/img/7rTO_q-ntbWDGTuR.jpg
+  metrics:
+    likes: 171
+    views: 11244
+  date: '2026-09-18'
+  tags:
+  - books
+  - index
+  - search
+- name: psearch
+  url: https://github.com/komikat/psearch
+  kind: repo
+  author: komikat
+  description: 'Web search CLI and MCP server for terminals and agents: Parallel Search seeds pages, local Chromium fetches them concurrently, and Jev scores the evidence and picks links for a breadth-first queue.'
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - web-search
+  - mcp
+  - cli
+- name: Qualitative Query
+  url: https://github.com/micahchoo/qualitative-query
+  kind: repo
+  author: micahchoo
+  description: Obsidian plugin that answers saved questions with original passages from your notes, then saves them into a note linked back to the sources, without generating an answer.
+  jev: Local search finds candidate passages and Jev scores which of them actually answer the question.
+  image: https://raw.githubusercontent.com/micahchoo/qualitative-query/main/docs/img/query-builder.png
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - obsidian
+  - notes
+  - passage-retrieval
+- name: RAGElo Jev evaluators
+  url: https://github.com/zetaalphavector/RAGElo
+  kind: repo
+  author: zetaalphavector
+  description: Elo-based toolkit for evaluating RAG agents that can use Jev via TypeSafe or Vercel AI Gateway as a retrieval relevance judge and pairwise answer evaluator.
+  jev: jev asks whether a document would be used in a report on the topic; jev_rdnam keeps the expected grade as a fractional score.
+  image: https://raw.githubusercontent.com/zetaalphavector/RAGElo/master/docs/images/RAGElo_logo.png
+  metrics:
+    stars: 131
+  date: '2023-10-10'
+  tags:
+  - rag
+  - evals
+  - relevance
+- name: Research Engine
+  url: https://github.com/danielwanwx/research-engine
+  kind: repo
+  author: danielwanwx
+  description: Evidence-first research runtime for AI agents that routes a question to research packs and read-only connectors; an optional `jev-triage` command asks Jev how relevant already-collected public evidence rows are.
+  jev: Up to eight allowlisted public rows per request get advisory Noul relevance probabilities; Jev never adds or removes evidence.
+  metrics:
+    stars: 5
+  date: '2026-06-28'
+  tags:
+  - research
+  - evidence
+  - agents
+- name: Sanity content agent without LLM queries
+  url: https://x.com/jreyesdev/status/2102218598668488983
+  kind: post
+  author: jreyesdev
+  description: Demo pairing Jev with the Sanity CMS where answers are pre-written at ingest, so the agent selects an answer, skips retrieval when it can and responds in under a second instead of 4+.
+  image: https://pbs.twimg.com/media/HSyURXUaUAEVMKX.jpg?name=orig
+  metrics:
+    views: 60
+  date: '2026-09-22'
+  tags:
+  - cms
+  - rag
+  - answer-selection
+- name: Search-Function-Test
+  url: https://github.com/Shifros/Search-Function-Test
+  kind: repo
+  author: Shifros
+  description: Chat-style search prototype for a Q&A site of 825 articles on Australian business registration, where a Jev Choice picks the article that best answers the query, or none, across four shards.
+  date: '2026-09-17'
+  links:
+    app: https://search-function-test.vercel.app
+    app 2: https://search-function-test.vercel.app
+  tags:
+  - site-search
+  - choice
+- name: SearchBoost Jev evidence loop
+  url: https://github.com/Mr-remon219/search-boost/tree/main/lib/jev
+  kind: repo
+  author: Mr-remon219
+  description: Multi-engine web search and evidence synthesis for coding agents (MCP server, Pi extension, DeepSeek Harness bundle) with an experimental adaptive_search loop that uses Jev to research targets in batches.
+  metrics:
+    repo_stars: 9
+  date: '2026-08-17'
+  links:
+    repo: https://github.com/Mr-remon219/search-boost
+  tags:
+  - web-search
+  - mcp
+  - research
+- name: second-brain Jev classifier
+  url: https://github.com/baekenough/second-brain/tree/main/internal/jev
+  kind: repo
+  author: baekenough
+  description: Ingestion classifier in second-brain, an LLM-curated private search engine over Slack, GitHub, Drive and personal messages, that asks Jev to assign each SMS, Gmail or call transcript a segment and a retention score.
+  jev: A segment Choice and a retention Score per document; request and response bodies are never logged.
+  image: https://raw.githubusercontent.com/baekenough/second-brain/main/docs/diagrams/01-system-runtime-topology.png
+  metrics:
+    repo_stars: 15
+  date: '2026-04-14'
+  links:
+    repo: https://github.com/baekenough/second-brain
+  tags:
+  - private-search
+  - classification
+  - go
+- name: Semantic Find (⌘F) extension
+  url: https://x.com/Saboo_Shubham_/status/2101576462042366114
+  kind: post
+  author: Saboo_Shubham_
+  description: Open-source Chrome extension that replaces Find on page with semantic matching, highlighting passages that mean what you typed in near real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101576307352203264/img/THdpZUHOSRsSoTVr.jpg
+  metrics:
+    likes: 2262
+    views: 274124
+  date: '2026-09-20'
+  tags:
+  - chrome-extension
+  - semantic-search
+- name: Semantic object filter
+  url: https://x.com/iAmAustinPiazza/status/2102112514846740749
+  kind: post
+  author: iAmAustinPiazza
+  description: Small interactive demo where you type a phrase such as things you can wear in winter and Jev picks out the matching objects on screen.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102112331350102016/img/G-DKU2luzlCVeboq.jpg
+  metrics:
+    likes: 1
+    views: 186
+  date: '2026-09-21'
+  tags:
+  - semantic-filter
+  - interactive
+- name: Senseek
+  url: https://github.com/liou666/senseek
+  kind: repo
+  author: liou666
+  description: Browser extension that searches the page you are reading by meaning from a Ctrl+F-style box and jumps to ranked passages, using your own Jev API key with no backend.
+  image: https://raw.githubusercontent.com/liou666/senseek/main/assets/senseek/senseek-logo.svg
+  date: '2026-09-20'
+  tags:
+  - browser-extension
+  - semantic-search
+- name: SF food permit map
+  url: https://x.com/bolau_/status/2102127429418360895
+  kind: post
+  author: bolau_
+  description: Map of permit and health-inspection records for every food and beverage business in San Francisco, where Jev answers questions about the records in seconds.
+  image: https://pbs.twimg.com/media/HSw20LaXUAAI3w6.jpg?name=orig
+  metrics:
+    likes: 32
+    views: 1304
+  date: '2026-09-21'
+  tags:
+  - civic-data
+  - maps
+  - health-inspections
+- name: Sift
+  url: https://github.com/tylergibbs1/sift
+  kind: repo
+  author: tylergibbs1
+  description: Chrome extension that re-ranks Google results so answers rise to the top and sales pages and SEO filler fold away.
+  jev: One parallel call per result with four Nouls (answers the query, promotional, SEO filler, discussion) and a depth Score, combined into a weighted rank.
+  date: '2026-09-17'
+  tags:
+  - reranking
+  - chrome-extension
+  - google
+- name: SiftRank
+  url: https://github.com/noperator/siftrank
+  kind: repo
+  author: noperator
+  description: CLI and agent skill for finding the most relevant items in large datasets by iterative ranking, which added a --provider jev option alongside Chat Completions APIs.
+  metrics:
+    stars: 202
+  date: '2025-02-13'
+  links:
+    demo: https://x.com/noperator/status/2101538373546484216
+  tags:
+  - ranking
+  - cli
+  - go
+- name: SlopSearX
+  url: https://github.com/magnus919/SlopSearX
+  kind: repo
+  author: magnus919
+  description: Stateless meta search engine for AI agents and drop-in SearXNG replacement that asks Jev which specialist engines can add distinctive evidence for each query.
+  jev: Every specialist engine at or above a 0.65 threshold is added with no count cap; explicit scopes never call Jev, and failures keep the deterministic routing.
+  metrics:
+    stars: 9
+  date: '2026-06-09'
+  links:
+    docs: https://github.com/magnus919/SlopSearX/blob/main/docs/JEV_ROUTING.md
+  tags:
+  - meta-search
+  - searxng
+  - routing
+- name: Smart Search Jev
+  url: https://github.com/konbakuyomu/smartsearch/blob/main/src/smart_search/jev.py
+  kind: repo
+  author: konbakuyomu
+  description: Smart Search, a desktop app that pulls current web information into AI conversations, uses Jev for typed judgments while keeping execution and the allowed action set in code.
+  image: https://raw.githubusercontent.com/konbakuyomu/smartsearch/main/assets/branding/smart-search.png
+  metrics:
+    repo_stars: 838
+  date: '2026-05-10'
+  tags:
+  - web-search
+  - desktop
+  - filtering
+- name: Starguide
+  url: https://github.com/serverpod/starguide
+  kind: repo
+  author: serverpod
+  description: Serverpod's documentation chatbot where Jev picks the doc and website pages that answer a question, judges whether they contain the answer so vector search can be skipped, and rates whether the final answer resolved it.
+  jev: Pages are Choice options via the jev_dart package; two Nouls cover answer coverage and resolution.
+  metrics:
+    stars: 16
+  date: '2025-05-27'
+  links:
+    package: https://pub.dev/packages/jev_dart
+  tags:
+  - rag
+  - docs-chatbot
+  - dart
+- name: TrainLCD Jev support
+  url: https://github.com/TrainLCD/Functions/blob/dev/src/agent/rerank.ts
+  kind: repo
+  author: TrainLCD
+  description: 'Jev integration in the Cloudflare Worker behind the TrainLCD transit app: a per-candidate Noul reranks the stations its AI chat suggests, and a separate module triages user feedback by spam, category and priority.'
+  date: '2026-09-17'
+  links:
+    pr: https://github.com/TrainLCD/Functions/pull/33
+    repo: https://github.com/TrainLCD/Functions
+  tags:
+  - reranking
+  - transit
+  - cloudflare-workers
+- name: Transcript Lens
+  url: https://github.com/sensahin/transcript-lens
+  kind: repo
+  author: sensahin
+  description: Next.js app with a Turkish interface for exploring YouTube transcripts by meaning, where Jev classifies each block without rewriting it to surface chapters, key passages, and topic mentions.
+  metrics:
+    stars: 16
+  date: '2026-09-19'
+  tags:
+  - youtube
+  - transcripts
+  - turkish
+- name: Tripwire internet scanner
+  url: https://www.reddit.com/r/AI_Agents/comments/1wkusec/building_an_internet_scanner_with_jev/
+  kind: reddit
+  author: Calm_Apple7505
+  description: Early-access tool that scans Reddit, X, and LinkedIn posts and filters them by concepts defined in natural language instead of keywords.
+  metrics:
+    points: 7
+  date: '2026-09-19'
+  links:
+    app: https://tripwire.easytech-agency.net/
+    project: https://tripwire.easytech-agency.net
+  tags:
+  - social-listening
+  - filtering
+- name: Turbo Rerank
+  url: https://github.com/dabit3/macos-experiments/tree/main/turbo-rerank
+  kind: repo
+  author: dabit3
+  description: Search workspace demo that reranks 50 candidates in one ~170 ms Jev request, raising top-1 accuracy from 50% to 100% on a 40-query labeled benchmark.
+  jev: One request judges every candidate against the query plus an answer-exists check, optionally split into parallel batches.
+  image: https://raw.githubusercontent.com/dabit3/macos-experiments/main/turbo-rerank/screenshots/turbo-rerank-home.jpg
+  metrics:
+    repo_stars: 8
+  date: '2026-09-07'
+  links:
+    repo: https://github.com/dabit3/macos-experiments
+  tags:
+  - rerank
+  - search
+  - demo
+- name: typesafe-ai_smoke-test
+  url: https://github.com/TyrellD1/typesafe-ai_smoke-test
+  kind: repo
+  author: TyrellD1
+  description: Small router that asks Jev two yes/no questions per prompt to send it to a work store, a life store or both, with a 30-case hand-written eval where all 30 routed correctly.
+  date: '2026-09-17'
+  tags:
+  - routing
+  - eval
+  - memory
+- name: typesafe-tools Codex plugin
+  url: https://github.com/jialuohu/codex-toolbox/tree/main/plugins/typesafe-tools
+  kind: repo
+  author: jialuohu
+  description: Codex plugin with an MCP server and skill that use bounded Jev evaluations to rank public research passages and check whether sources support a claim, behind spending caps and pilot gates.
+  metrics:
+    repo_stars: 9
+  date: '2026-07-02'
+  links:
+    repo: https://github.com/jialuohu/codex-toolbox
+  tags:
+  - codex
+  - research
+  - claim-check
+- name: Upweight
+  url: https://x.com/VisheshBaghell/status/2100536228827496721
+  kind: post
+  author: VisheshBaghell
+  description: Hacker News front page you re-rank with six sliders (technical depth, drama, practical utility, AI slop, novelty, career relevance), with each story's Jev scores shown; Firecrawl does the reading.
+  jev: Six Score questions per story, combined locally by the slider weights.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100535993141239808/img/Q_giQHiIdU-aAvI6.jpg
+  metrics:
+    likes: 73
+    views: 33236
+  date: '2026-09-17'
+  links:
+    app: https://upweight.vercel.app
+    project: https://upweight.vercel.app
+  tags:
+  - hacker-news
+  - ranking
+  - sliders
+- name: Web Search Plus Jev
+  url: https://github.com/robbyczgw-cla/hermes-web-search-plus
+  kind: repo
+  author: robbyczgw-cla
+  description: Web Search Plus, a Hermes agent plugin for multi-provider search and page extraction, adds optional Jev decisions at gated seams, off by default and confidence-thresholded.
+  jev: Code runs first; Jev is consulted only for optional seams and falls back to unchanged behaviour without a key.
+  image: https://raw.githubusercontent.com/robbyczgw-cla/hermes-web-search-plus/main/docs/assets/web-search-plus-v3-hero.jpg
+  metrics:
+    stars: 414
+  date: '2026-03-17'
+  links:
+    app: https://websearchplus.xyz
+  tags:
+  - web-search
+  - hermes-agent
+  - extraction
+- name: web-search-plus-mcp
+  url: https://github.com/robbyczgw-cla/web-search-plus-mcp
+  kind: repo
+  author: robbyczgw-cla
+  description: MCP server that gives agents web search across 15 search and 9 extract providers with original sources; optional, off-by-default Jev confirms news-type searches, scores extracted bodies and fills in missing language.
+  image: https://raw.githubusercontent.com/robbyczgw-cla/web-search-plus-mcp/main/docs/assets/web-search-plus-logo.png
+  metrics:
+    stars: 5
+  date: '2026-03-13'
+  links:
+    app: https://websearchplus.xyz
+  tags:
+  - mcp
+  - web-search
+  - hermes
+- name: webctl
+  url: https://github.com/dorkitude/webctl
+  kind: repo
+  author: dorkitude
+  description: Web search CLI for agents that queries three search backends, has Jev score each result set against the query and goal, and dedupes the high-scoring subset so the agent reads far less.
+  image: https://pbs.twimg.com/media/HSx-UqEaIAEjR4L.jpg?name=orig
+  metrics:
+    stars: 37
+  date: '2026-09-20'
+  links:
+    demo: https://x.com/dorkitude/status/2102194028704092585
+  tags:
+  - web-search
+  - cli
+  - context
+- name: Wordcell
+  url: https://github.com/hraness/wordcell
+  kind: repo
+  author: hraness
+  description: Local Markdown knowledge base for coding agents with an optional Jev reranking lane; on SciFact it put a relevant result first for 161 of 300 queries versus 101 with exact search alone.
+  jev: Pinned jev-1.13.0 reranks a bounded window of search candidates; exact matches stay first and provider failures keep the baseline order.
+  image: https://raw.githubusercontent.com/hraness/wordcell/main/assets/agent-skill.svg
+  metrics:
+    stars: 14
+  date: '2026-07-22'
+  links:
+    app: https://wordcell.io
+    docs: https://github.com/hraness/wordcell/blob/main/docs/reranking.md
+  tags:
+  - rerank
+  - knowledge-base
+  - agent-memory
+- name: XERJ systemone gate
+  url: https://github.com/xerj-org/xerj/tree/main/benchmarks/systemone-gate
+  kind: repo
+  author: xerj-org
+  description: XERJ, a local AI search engine, exposes a Jev-compatible /v1/systemone endpoint so the off-the-shelf jev-reranker client reranks a search index against it unmodified.
+  jev: An acceptance gate runs jev-reranker's listwise and relevance presets over an SMS spam index on a XERJ node with no patches.
+  image: https://raw.githubusercontent.com/xerj-org/xerj/main/docs/media/demo-poster.png
+  metrics:
+    repo_stars: 2272
+  date: '2026-06-30'
+  links:
+    app: https://xerj.org
+  tags:
+  - search
+  - rerank
+  - jev-compatible
+- name: YC startup semantic search
+  url: https://x.com/aaayandev/status/2102137061490794730
+  kind: post
+  author: aaayandev
+  description: Search engine over 6000+ Y Combinator startups that answers free-form queries (color, niche, competitor, age, image) in under a second, built with Jev for $2.7 in total testing costs.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102131502578290688/img/ygqNpGaKAhekXxH1.jpg
+  metrics:
+    likes: 230
+    views: 12007
+  date: '2026-09-21'
+  tags:
+  - semantic-search
+  - startups
+- name: Yes / No
+  url: https://yesno.coderai.dev
+  kind: app
+  author: Coder AI
+  description: Free, no-sign-up tool that answers any question with Yes, No or Maybe from a Jev Noul, pulling in live web search when current facts are needed.
+  image: https://yesno.coderai.dev/og-image.png
+  tags:
+  - noul
+  - web-search
+  - demo
+- name: Zillow natural-language search
+  url: https://x.com/venturetwins/status/2101341075684434245
+  kind: post
+  author: venturetwins
+  description: Scans thousands of Zillow listings and classifies them by things the site has no filter for, like architecture, renovation status or distance to freeways, in under 20 seconds for $0.18.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101339712464326656/img/A8yq5IoXQuhJAi32.jpg
+  metrics:
+    likes: 949
+    views: 106032
+  date: '2026-09-19'
+  tags:
+  - real-estate
+  - natural-language-search

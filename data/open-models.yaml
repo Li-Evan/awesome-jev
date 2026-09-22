@@ -1,0 +1,3459 @@
+title: Open Models and Compatible Servers
+emoji: 🧬
+layout: gallery
+description: Community models and servers that imitate Jev's interface. Their accuracy and calibration are self-reported and generally below Jev's, so evaluate them on your own data.
+entries:
+- name: '@receptron/laya'
+  url: https://github.com/receptron/laya
+  kind: repo
+  author: receptron
+  description: Node.js and TypeScript package that runs Laya, the open Jev-compatible decision model by Convai Innovations, through ONNX Runtime and returns choice, score, and noul answers in one forward pass.
+  metrics:
+    stars: 205
+  date: '2026-09-19'
+  links:
+    npm: https://www.npmjs.com/package/@receptron/laya
+  tags:
+  - laya
+  - onnx
+  - typescript
+- name: '@ruvector/typesafe'
+  url: https://github.com/ruvnet/RuVector/tree/main/npm/packages/typesafe
+  kind: package
+  author: ruvnet
+  description: Local, network-free typed decisions over sentence embeddings that accept Jev's /v1/systemone request and response shape, returning calibrated confidence and an abstain mass.
+  jev: Native napi-rs core with a WASM fallback; release gates target p95 of 50 ms native and 150 ms WASM.
+  image: https://repository-images.githubusercontent.com/1099547803/948d2495-1db9-47f6-9ea1-f7f977343e5f
+  metrics:
+    repo_stars: 4507
+  date: '2025-11-19'
+  links:
+    npm: https://www.npmjs.com/package/@ruvector/typesafe
+  tags:
+  - jev-compatible
+  - local
+  - embeddings
+- name: AES
+  url: https://www.reddit.com/r/LocalLLaMA/comments/1wle746/a_local_jevstyle_decision_head_onto_qwen_25_15b/
+  kind: reddit
+  author: CryOrganic8886
+  description: Proof-of-concept decision head on Qwen2.5-1.5B-Instruct that runs one prefill pass and scores candidate answers via an FP32 SwiGLU probe and embedding similarity instead of generating tokens.
+  jev: Reimplements Noul, Choice, and Score style outputs locally on open weights.
+  image: https://external-preview.redd.it/Wnrv8UVeht99poU3UQZOPTnOFzLoeyTHKvwoGiakktY.png?auto=webp&s=8ff20f37c26e39ed193b6ae02021c976d1429eda
+  metrics:
+    points: 15
+  date: '2026-09-20'
+  links:
+    model: https://huggingface.co/Brinij/aes
+    project: https://huggingface.co/brinij/aes
+  tags:
+  - local
+  - qwen
+  - open-weights
+- name: AgentJev
+  url: https://huggingface.co/aimeigaoshou/agent-jev
+  kind: model
+  author: aimeigaoshou
+  description: Open 0.6B agent decision model with shared-prefix caching that returns distributions for questions like which tool is next; 79.25% top-1 on 2,000 Typed Decisions questions vs 72.7% for Jev 1.13.0.
+  image: https://huggingface.co/aimeigaoshou/agent-jev/resolve/main/assets/hero.webp
+  date: '2026-09-21'
+  links:
+    project: https://github.com/malevrigns/agent-jev
+  tags:
+  - agents
+  - small-model
+- name: AgentKthx JEV API mode
+  url: https://github.com/VTSTech/AgentKthx/blob/main/docs/JEV_API_MODE.md
+  kind: repo
+  author: VTSTech
+  description: Mode in the AgentKthx local-first agent framework that emulates Jev's System One decision shape with any chat LLM (Ollama, ZAI, OpenRouter, llama-server) by wrapping a constrained prompt and parsing a decision envelope.
+  image: https://github.com/user-attachments/assets/4eeb35d3-3db0-473c-a274-346a67e5468b
+  metrics:
+    repo_stars: 5
+  date: '2026-03-20'
+  links:
+    repo: https://github.com/VTSTech/AgentKthx
+  tags:
+  - emulation
+  - ollama
+  - agent-framework
+- name: AINode System One API
+  url: https://github.com/getainode/ainode/blob/main/ainode/api/systemone.py
+  kind: repo
+  author: getainode
+  description: 'System One-compatible decide API in AINode, a self-hosted AI platform for NVIDIA GPUs, benchmarked on 110 labeled decisions: hosted Jev scored 0.964 accuracy, Brier 0.024 and 0 of 80 wrong at a 0.9 gate vs a local 35B chat model.'
+  image: https://raw.githubusercontent.com/getainode/ainode/main/docs/images/ainode-logo.png
+  metrics:
+    repo_stars: 15
+  date: '2026-04-12'
+  links:
+    repo: https://github.com/getainode/ainode
+    app: https://ainode.dev
+    bench: https://github.com/getainode/ainode/tree/main/bench/decide
+  tags:
+  - self-hosted
+  - gpu
+  - calibration
+- name: any2jev
+  url: https://github.com/hwfengcs/any2jev
+  kind: repo
+  author: hwfengcs
+  description: Converter that trains any Hugging Face causal LM into a Jev-style decision model answering typed questions in one forward pass with calibrated probabilities and zero generated tokens, demoed on Qwen3-0.6B.
+  image: https://raw.githubusercontent.com/hwfengcs/any2jev/main/docs/vs.gif
+  metrics:
+    stars: 5
+  date: '2026-09-21'
+  tags:
+  - converter
+  - qwen
+  - decision-model
+- name: AnyJev
+  url: https://github.com/nokia-applied-research/AnyJev
+  kind: repo
+  author: nokia-applied-research
+  description: Library that turns any transformers or vLLM model into a Jev-style Choice, Score, and Noul decision model from one prefill with no training, fixing option-order flips via cyclic-shift marginalization.
+  image: https://raw.githubusercontent.com/nokia-applied-research/AnyJev/main/assets/banner.png
+  metrics:
+    stars: 12
+  date: '2026-09-21'
+  links:
+    pypi: https://pypi.org/project/anyjev/
+  tags:
+  - calibration
+  - vllm
+  - transformers
+- name: arbiter
+  url: https://github.com/0xBakeer/arbiter
+  kind: repo
+  author: 0xBakeer
+  description: Serving layer for typed-decision models such as Laya or your own on NVIDIA GPUs or Apple Silicon behind a Jev-compatible API, with coding-agent integrations and examples like a PR risk gate.
+  image: https://raw.githubusercontent.com/0xBakeer/arbiter/main/docs/media/how-it-works.gif
+  metrics:
+    stars: 19
+  date: '2026-09-20'
+  tags:
+  - serving
+  - laya
+  - self-hosted
+- name: Bespoke Nimble
+  url: https://github.com/bespokelabsai/nimble
+  kind: repo
+  author: bespokelabsai
+  description: Open data, recipe, and Qwen3.5-9B LoRA model for Jev-style typed decisions, trained on contrastive negatives made by flipping one fact; reports 90.1% agreement with Jev versus 66.4% for base Qwen.
+  image: https://raw.githubusercontent.com/bespokelabsai/nimble/main/assets/diagrams/nimble-infographic.svg
+  metrics:
+    stars: 1523
+    points: 6
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/madiator/status/2100990591215783946
+    model: https://huggingface.co/bespokelabs/bespoke-nimble-9b
+    discussion: https://news.ycombinator.com/item?id=49757009
+  tags:
+  - open-weights
+  - fine-tuning
+  - data-curation
+- name: bonzi-1.7b-v1-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-1.7b-v1-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Bonsai 1.7B GGUF as a Jev-style typed decision function that returns a probability per option from one forward pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-1.7b-v1-jev.png
+  metrics:
+    likes: 1
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - gguf
+  - recipe
+- name: bonzi-27b-v1-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-27b-v1-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Bonsai 1 27B GGUF as a Jev-style typed decision function that returns a probability per option from one forward pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-27b-v1-jev.png
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - gguf
+  - recipe
+- name: bonzi-27b-v2-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-27b-v2-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Ternary Bonsai 2 27B GGUF as a Jev-style typed decision function with one forward pass per decision.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-27b-v2-jev.png
+  metrics:
+    likes: 1
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - gguf
+  - recipe
+- name: bonzi-4b-v1-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-4b-v1-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Bonsai 1 4B GGUF as a Jev-style typed decision function that returns a probability per option from one forward pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-4b-v1-jev.png
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - gguf
+  - recipe
+- name: bonzi-8b-ternary-v1-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-8b-ternary-v1-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Ternary Bonsai 1 8B GGUF as a Jev-style typed decision function that returns a probability per option from one forward pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-8b-ternary-v1-jev.png
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - ternary
+  - recipe
+- name: bonzi-8b-v1-jev
+  url: https://huggingface.co/NicolaiMTLassen/bonzi-8b-v1-jev
+  kind: model
+  author: NicolaiMTLassen
+  description: Recipe and measurements (no weights) for running Bonsai 1 8B GGUF as a Jev-style typed decision function that returns a probability per option from one forward pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NicolaiMTLassen/bonzi-8b-v1-jev.png
+  date: '2026-09-20'
+  links:
+    project: https://github.com/nicolailassen/open-bonzi-jev
+  tags:
+  - bonsai
+  - gguf
+  - recipe
+- name: Brain DOOM decision policy
+  url: https://www.reddit.com/r/LocalLLM/comments/1wjv46i/i_have_created_open_source_jev_and_trained_it_to/
+  kind: reddit
+  author: mkschreder2
+  description: 'Local Jev-style policy that plays DOOM in real time: a frozen MiniLM encoder reads the observation text and a small trained head picks actions, at 58.3 ms per decision.'
+  image: https://external-preview.redd.it/M3RzbGFlaGwyYnFoMXuP6V8vNBO5_YLg7eGU503KPrTQWjhN5GEpCDWeUnnY.png?format=pjpg&auto=webp&s=e22eb092e7b5afa83d5188c0b5e8e92e3dca3b1d
+  metrics:
+    points: 119
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/swedishembedded/brain/tree/main/samples/decision/doom
+    game-server: https://github.com/mkschreder/restful-doom
+    project: https://github.com/swedishembedded/brain/samples/decision/doom
+  tags:
+  - open-model
+  - doom
+  - local
+- name: Build a Jev from scratch
+  url: https://huggingface.co/azharmo/build-jev-from-scratch
+  kind: model
+  author: azharmo
+  description: Toy 3.1M-parameter reconstruction of the System One interface with training, eval and serving code plus an article; accuracy is low by design but calibration reaches ECE 0.027.
+  image: https://huggingface.co/azharmo/build-jev-from-scratch/resolve/main/ARCHITECTURE.png
+  metrics:
+    likes: 1
+  date: '2026-09-20'
+  tags:
+  - toy-model
+  - tutorial
+- name: Cerebellum-2B
+  url: https://github.com/mkeco/Cerebellum-2B
+  kind: repo
+  author: mkeco
+  description: Open-weight 2B decision model built on Qwen3.5-2B that picks tool routes and DOM actions from a candidate set in a single forward pass, pitched as an open alternative to Jev, with BF16, FP8 and INT8 weights.
+  image: https://raw.githubusercontent.com/mkeco/Cerebellum-2B/main/assets/benchmark_pareto.svg
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  links:
+    huggingface: https://huggingface.co/mkzero/Cerebellum-2B-BF16
+  tags:
+  - open-weights
+  - qwen
+  - tool-routing
+- name: choosekit
+  url: https://github.com/NotXf1le/choosekit
+  kind: repo
+  author: NotXf1le
+  description: Library that scores a finite set of choices with llama.cpp, Ollama, or OpenRouter models and returns typed decisions with probability distributions, plus an MCP server and a SuperGPQA benchmark against Jev 1.13.
+  image: https://raw.githubusercontent.com/NotXf1le/choosekit/master/benchmarks/supergpqa-benchmark.svg
+  metrics:
+    stars: 18
+    points: 60
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/LLMDevs/comments/1wkc9hp/i_tried_jevstyle_decisions_with_local_qwen_same/
+  tags:
+  - llama-cpp
+  - mcp
+  - benchmark
+- name: cu-Jev
+  url: https://github.com/dtunai/cu-Jev
+  kind: repo
+  author: dtunai
+  description: C/CUDA decision engine that turns open Qwen3.5 checkpoints (0.8B to 9B) into a Jev-compatible /v1/systemone API with hand-written kernels and no PyTorch at runtime, plus reproducible benchmarks.
+  image: https://raw.githubusercontent.com/dtunai/cu-Jev/main/assets/cu-Jev-Repo-Header.png
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    writeup: https://dtunai.blog/blog/introducing-cu-jev
+    write-up: https://dtunai.blog/blog/introducing-cu-jev
+  tags:
+  - cuda
+  - qwen
+  - inference
+- name: cua-s1-forms
+  url: https://huggingface.co/cua-ai/cua-s1-forms
+  kind: model
+  author: cua-ai
+  description: Tiny Jev-like option scorer (706,048 parameters, 2.8 MB) that rates fill, check, click or skip for every form field in one parallel pass, built as the decision layer for cua-driver.
+  jev: Same input/output contract as Jev; reports 99.7% on its own form-filling eval against Jev's 83.6%.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/cua-ai/cua-s1-forms.png
+  metrics:
+    likes: 102
+    views: 52128
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/trycua/cua/tree/main/libs/cua-s1
+    demo: https://x.com/be_arsh/status/2101026864341164110
+  tags:
+  - jev-like
+  - computer-use
+  - forms
+- name: decider
+  url: https://github.com/Mapika/decider
+  kind: repo
+  author: Mapika
+  description: Open System One-style models fine-tuned from Qwen3.5, a 2B and a 35B mixture-of-experts, that return a probability distribution for every typed question in one forward pass, demoed on ten text games and Super Mario Bros.
+  metrics:
+    stars: 282
+  date: '2026-09-16'
+  links:
+    model: https://huggingface.co/mapika/decider-2b
+  tags:
+  - jev-like
+  - open-weights
+  - qwen
+- name: Decision 1.0
+  url: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
+  kind: model
+  author: vLLM Semantic Router
+  description: Apache-2.0 collection of open decision models from the vLLM Semantic Router team, 572M encoders and 1.88B to 4.21B decoders that answer Choice, Noul, and Score in one pass across 50 languages, plus a Studio Space.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9.png
+  metrics:
+    likes: 6
+  date: '2026-09-22'
+  links:
+    model: https://huggingface.co/llm-semantic-router/Decision-1.0-Kai
+    space: https://huggingface.co/spaces/llm-semantic-router/decision-studio
+  tags:
+  - open-weights
+  - multilingual
+  - jev-compatible
+- name: Decision Playground
+  url: https://github.com/thecodacus/decision-playground
+  kind: repo
+  author: thecodacus
+  description: Browser-only playground and arena game for llama-server's Jev-style /v1/decision endpoint, comparing one parallel decision pass with grammar-constrained chat on the same model and letting agents pick controls several times a second.
+  metrics:
+    stars: 7
+  date: '2026-09-19'
+  tags:
+  - llama.cpp
+  - playground
+  - local-models
+- name: decision-head-rlcd
+  url: https://github.com/Astro-Han/decision-head-rlcd
+  kind: repo
+  author: Astro-Han
+  description: Experiment training Qwen3.5-4B with a rank-8 LoRA and RLCD on 32,000 typed decisions to test where a Jev-like model's generalisation comes from; it finds generalisation tracks training-data coverage.
+  metrics:
+    stars: 6
+  date: '2026-09-20'
+  tags:
+  - rlcd
+  - qwen
+  - research
+- name: DecisionBridge
+  url: https://github.com/grishahq/decisionbridge
+  kind: repo
+  author: grishahq
+  description: Jev-inspired adapter that turns existing LLMs (OpenAI, Anthropic, OpenRouter, local MLX) into decision functions with explicit option scores, optional calibration on labeled examples and human-review thresholds.
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - jev-like
+  - calibration
+  - llm-adapter
+- name: DeepOpen
+  url: https://github.com/deepopen-com/deepopen
+  kind: repo
+  author: deepopen-com
+  description: Laya-based open System 1 decision engine with a Chinese technical whitepaper, a script/language router over English, multilingual and typed-decision checkpoints, and training experiments on CLINC150 and Banking77.
+  jev: Answers typed Choice/Score/Noul questions in one non-autoregressive pass; reports 33 ms per request on a T4.
+  image: https://raw.githubusercontent.com/deepopen-com/deepopen/main/%E6%89%93%E6%A6%9C.png
+  metrics:
+    stars: 59
+  date: '2026-09-21'
+  links:
+    app: https://deepopen.com
+  tags:
+  - laya
+  - multilingual
+  - intent-classification
+- name: DeepSeek-V4.1 A100 Jev Mode
+  url: https://github.com/shi3z/deepseekv4.1-A100-custom
+  kind: repo
+  author: shi3z
+  description: Custom DeepSeek-V4.1-Flash runtime for A100 GPUs with a Jev Mode that scores candidates in parallel instead of decoding JSON, reporting up to 2,854x speedup on 30-field extraction in 24 ms.
+  jev: Non-autoregressive candidate log-probability scoring with a persistent GPU prefix tree; includes a script comparing official Jev with the local mode.
+  image: https://raw.githubusercontent.com/shi3z/deepseekv4.1-A100-custom/main/assets/dashboard.jpg
+  metrics:
+    stars: 54
+  date: '2026-09-11'
+  tags:
+  - deepseek
+  - self-hosted
+  - structured-output
+- name: deepseek-v4.1-flash-jev
+  url: https://x.com/skeptrune/status/2101209390992994570
+  kind: post
+  author: skeptrune
+  description: Endpoint that makes DeepSeek V4.1 Flash behave like Jev by using SGLang's scoring API to return probabilities over a fixed answer set instead of generated text.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101204678604455936/img/-Sg1h83wAYEc959c.jpg
+  metrics:
+    likes: 1352
+    views: 100497
+  date: '2026-09-19'
+  tags:
+  - jev-like
+  - sglang
+  - inference
+- name: dev-0.4b
+  url: https://github.com/mpnikhil/dev-0.4b
+  kind: repo
+  author: mpnikhil
+  description: Open 399M-parameter decision model on ModernBERT-large for developer tools and coding agents, answering routing, yes/no and 1-5 rating questions in one forward pass (~28 ms on Apple Silicon).
+  jev: Follows Jev and Kev with a single universal choice head over pooled candidate spans; reports 91.33% on Banking77 and 85.20% on BoolQ.
+  metrics:
+    stars: 19
+  date: '2026-09-21'
+  tags:
+  - modernbert
+  - encoder
+  - calibration
+- name: Distilled 4B local decision model
+  url: https://x.com/taroleo/status/2101106887840370919
+  kind: post
+  author: taroleo
+  description: Distillation of DeepSeek V4 Flash judgments into a Jev-style 4B local model over 26 hours on a DGX Spark, beating the teacher's instant mode at 1/20 the size with about 22ms per decision.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101102823408807936/img/k_uNGVHacO6DG6mC.jpg
+  metrics:
+    likes: 3028
+    views: 486746
+  date: '2026-09-19'
+  tags:
+  - distillation
+  - local
+  - jev-like
+- name: djev
+  url: https://github.com/mmastrac/djev
+  kind: repo
+  author: mmastrac
+  description: Example server from a vLLM pull request that gets Jev-style structured decisions from DiffusionGemma by seeding the diffusion canvas with the answer template and reading slot distributions after one denoise step.
+  metrics:
+    stars: 20
+  date: '2026-09-21'
+  tags:
+  - diffusion
+  - vllm
+  - gemma
+- name: djev dev
+  url: https://github.com/Davipar/djev-dev
+  kind: repo
+  author: Davipar
+  description: Open implementation of typed decisions on DiffusionGemma and vLLM that reads label probabilities from denoised answer positions, with image inputs, image choices and live camera sampling.
+  image: https://raw.githubusercontent.com/Davipar/djev-dev/main/docs/assets/djev-dev-cover.png
+  metrics:
+    stars: 93
+  date: '2026-09-19'
+  tags:
+  - diffusion
+  - vllm
+  - multimodal
+- name: djev-run
+  url: https://github.com/taeold/djev-run
+  kind: repo
+  author: taeold
+  description: Deployment recipe that serves DiffusionGemma-Jev on Google Cloud Run with an RTX PRO 6000 Blackwell GPU behind a TypeSafe-compatible API, plus a zero-dependency Snake demo calling it from the browser.
+  image: https://github.com/user-attachments/assets/2e9a5321-f8a9-4734-b6f2-4d6f47193390
+  metrics:
+    stars: 32
+  date: '2026-09-20'
+  tags:
+  - cloud-run
+  - diffusion-lm
+- name: djev-spark
+  url: https://github.com/mmastrac/djev-spark
+  kind: repo
+  author: mmastrac
+  description: Container recipe that serves DiffusionGemma 26B-A4B in NVFP4 on a DGX Spark behind Jev's /v1/systemone API, pairing patched vLLM structured reads with a separate decision server.
+  image: https://raw.githubusercontent.com/mmastrac/djev-spark/main/docs/playground.jpg
+  metrics:
+    stars: 169
+  date: '2026-09-18'
+  tags:
+  - dgx-spark
+  - vllm
+  - diffusion-lm
+- name: Dohnuts
+  url: https://github.com/PsiACE/dohnuts
+  kind: repo
+  author: PsiACE
+  description: Small multimodal System One style models, with a 0.8B checkpoint that runs on a consumer GPU, answering choice, noul and score questions about text or images in one forward pass, plus training and eval toolkit.
+  image: https://raw.githubusercontent.com/PsiACE/dohnuts/main/assets/dohnuts-logo.png
+  metrics:
+    stars: 18
+  date: '2026-09-21'
+  links:
+    site: https://dohnuts.ai/
+  tags:
+  - multimodal
+  - small-models
+  - training
+- name: EdgeJev
+  url: https://github.com/yzfly/edgejev
+  kind: repo
+  author: yzfly
+  description: Offline CPU runtime that converts open Jev reimplementations such as laya, kev, NanoJev and PlayJev to ONNX with INT8 quantization behind a protocol-compatible local server; 15.6 ms per question on 4 CPU cores.
+  metrics:
+    stars: 5
+  date: '2026-09-20'
+  links:
+    pypi: https://pypi.org/project/edgejev/
+  tags:
+  - onnx
+  - cpu
+  - offline
+- name: Eugeniusz
+  url: https://github.com/komorra/Eugeniusz
+  kind: repo
+  author: komorra
+  description: MIT-licensed C++17 library with a C ABI that evaluates text locally and returns a choice, rubric score or truth probability, as an independent alternative to the Jev decision interface for C, C#, Python, Unity and Unreal.
+  jev: Mirrors the Choice/Score/Noul interface on local Qwen models; it does not reproduce Jev's training, latency or accuracy.
+  image: https://raw.githubusercontent.com/komorra/Eugeniusz/main/docs/assets/eugeniusz-banner.png
+  metrics:
+    stars: 9
+  date: '2026-09-17'
+  links:
+    demo: https://www.reddit.com/r/aigamedev/comments/1wjihg8/i_let_a_local_ai_play_hexen_eugeniusz_yolo/
+  tags:
+  - cpp
+  - local
+  - game-engines
+- name: eve-rlcd
+  url: https://github.com/anthony-maio/eve-rlcd
+  kind: repo
+  author: anthony-maio
+  description: Jev-inspired 0.6B decision model on Qwen3-0.6B-Base trained with RL from right/wrong feedback so its option probabilities match accuracy; includes training loop, ablation, eval and open weights.
+  jev: Answers typed Choice/Score/Noul-style questions over one state via a softmax over option letter tokens, no text generation.
+  image: https://raw.githubusercontent.com/anthony-maio/eve-rlcd/main/docs/img/reliability.png
+  metrics:
+    stars: 4
+    likes: 3
+    downloads: 149
+  date: '2026-09-18'
+  links:
+    model: https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision
+    model 2: https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision
+  tags:
+  - decision-model
+  - calibration
+  - rl
+- name: FastJev
+  url: https://github.com/chengyongru/fastjev
+  kind: repo
+  author: chengyongru
+  description: SDK-first, independently maintained fork of SemIf for self-hosting an open Jev implementation, running pinned open models for Choice, Boolean, and Score via Torch, vLLM, MLX, or llama.cpp.
+  image: https://raw.githubusercontent.com/chengyongru/fastjev/main/assets/fastjev-logo.svg
+  metrics:
+    stars: 8
+  date: '2026-09-20'
+  tags:
+  - self-hosted
+  - sdk
+- name: Foq
+  url: https://github.com/yohanargentina-oss/Foq
+  kind: repo
+  author: yohanargentina-oss
+  description: Local, open-source Jev alternative that returns calibrated probabilities on typed boolean, choice, score and Pydantic questions in one feed-forward pass, reported at about 25 ms, with benchmarks against Laya.
+  image: https://raw.githubusercontent.com/yohanargentina-oss/Foq/main/assets/chart_memory_paradox.png
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  links:
+    app: https://foq.fr
+  tags:
+  - local-models
+  - llama.cpp
+  - decision-engine
+- name: Four schools of OpenJEV
+  url: https://x.com/0xLogicrw/status/2101545266507551141
+  kind: post
+  author: 0xLogicrw
+  description: Chinese comparison of 8 open Jev-like projects (SemIf, Simple Jev, Laya, Von, Verdict, Kev, Nimble, OpenJev) grouped into four approaches, with reported accuracy and latency.
+  image: https://pbs.twimg.com/media/HSowRg-W4AAdElX.jpg?name=orig
+  metrics:
+    likes: 233
+    views: 17554
+  date: '2026-09-20'
+  tags:
+  - open-weights
+  - comparison
+  - chinese
+- name: ggmlc Laya engine
+  url: https://github.com/monatis/ggmlc/tree/main/examples/laya
+  kind: repo
+  author: monatis
+  description: Example in the ggmlc neural-network compiler that compiles the open Jev alternative Laya into a standalone C++ decision engine with GGUF weights and a TypeSafe-compatible /v1/systemone server; ~25 ms per decision on an RTX 4050 Laptop.
+  metrics:
+    repo_stars: 46
+  date: '2026-08-22'
+  links:
+    repo: https://github.com/monatis/ggmlc
+    model: https://huggingface.co/mys/laya-GGUF
+  tags:
+  - laya
+  - gguf
+  - c++
+- name: Glance
+  url: https://github.com/yoheinakajima/glance
+  kind: repo
+  author: yoheinakajima
+  description: Harness for asking an open vision-language model (Qwen3-VL-4B by default) typed yes/no, pick-one and rating questions about an image, reading calibrated probabilities from one forward pass, with Jev-style request shapes.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102213606414921728/img/cLKQS-9p31mko41V.jpg
+  metrics:
+    stars: 7
+    likes: 29
+    views: 6686
+  date: '2026-09-21'
+  links:
+    app: https://glance.yohei.me
+    demo: https://x.com/yoheinakajima/status/2102213665361690906
+  tags:
+  - vision
+  - calibration
+  - local-models
+- name: hearim
+  url: https://github.com/ziozzang/hearim
+  kind: repo
+  author: ziozzang
+  description: Go gateway that serves the Jev /v1/systemone contract on ordinary LLM backends like Ollama, llama.cpp and vLLM by scoring each question as a single-token choice from logprobs.
+  jev: Compiles Choice, Score and Noul questions into next-token scoring calls; ships papers on why this works and how to train a Jev-like model.
+  image: https://external-preview.redd.it/Ixn5IYmxfsg22v-yzMsgkXRqd3xNRCm6sIPXjdeXxC8.png?auto=webp&s=028220f5355be864b164305fadfdb29f8180325b
+  metrics:
+    stars: 4
+  date: '2026-09-21'
+  links:
+    demo: https://www.reddit.com/r/LocalLLaMA/comments/1wm6eri/hearim헤아림_maybe_you_dont_need_a_special_model_for/
+  tags:
+  - gateway
+  - go
+  - logprobs
+- name: hedos System One gateway
+  url: https://github.com/theiskaa/hedos/blob/main/gateway/src/handlers/systemone.rs
+  kind: repo
+  author: theiskaa
+  description: Headless local model engine whose gateway exposes TypeSafe's POST /v1/systemone, so a TypeSafe SDK pointed at it gets answers from a local judge-capable model.
+  jev: Requests must name a local model that declares the judge capability; asking for jev-latest is refused instead of silently answered by another model.
+  image: https://raw.githubusercontent.com/theiskaa/hedos/main/assets/banner-light.svg
+  metrics:
+    repo_stars: 14
+  date: '2026-07-05'
+  links:
+    app: https://hedos.ai
+    repo: https://github.com/theiskaa/hedos
+  tags:
+  - local
+  - gateway
+  - rust
+- name: HyprStream decision service
+  url: https://github.com/hyprstream/hyprstream/tree/main/crates/hyprstream-decision-stub
+  kind: repo
+  author: hyprstream
+  description: Self-improving AI runtime building its own System One decision service, with a decision head and a /v1/systemone facade that the stock TypeSafe Python and JS SDKs run against.
+  image: https://raw.githubusercontent.com/hyprstream/hyprstream/main/architecture.png
+  metrics:
+    repo_stars: 127
+  date: '2025-01-06'
+  tags:
+  - self-hosted
+  - compatible-api
+  - rust
+- name: I built Jev for free
+  url: https://www.youtube.com/watch?v=JsVM4vgspEU
+  kind: video
+  author: Micah
+  description: Builds a free Jev-style model by distilling Qwen3 0.6B from a 27B teacher on one RTX 5090, then plays Doom through ViZDoom; agreement with the teacher rose from 54% to 93%.
+  metrics:
+    views: 9628
+    likes: 129
+  date: '2026-09-19'
+  tags:
+  - distillation
+  - doom
+  - open-source
+- name: ifllm-learn
+  url: https://github.com/Yeachan-Heo/ifllm-learn
+  kind: repo
+  author: Yeachan-Heo
+  description: Research toolkit built on SemIf and MLX-LM that fine-tunes local LoRA adapters into typed decision models from labeled examples, with measured demos on support routing, out-of-scope detection and contract checklists.
+  jev: Jev-style typed decisions trained locally on Apple Silicon; independent of TypeSafe and not a reimplementation of Jev training.
+  image: https://raw.githubusercontent.com/Yeachan-Heo/ifllm-learn/main/docs/demo-overview.svg
+  metrics:
+    stars: 12
+  date: '2026-09-20'
+  tags:
+  - lora
+  - semif
+  - mlx
+- name: INSTRUCT_JEV
+  url: https://github.com/ctaxnagomi/instruct-jev
+  kind: repo
+  author: ctaxnagomi
+  description: Instruction corpus of 119 Choice, Noul and Score rows compiled from TypeSafe's public Jev documentation, published as a HuggingFace dataset.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  links:
+    huggingface: https://huggingface.co/datasets/ctaxnagomi/INSTRUCT_JEV
+  tags:
+  - dataset
+  - instruction-tuning
+- name: Jeff
+  url: https://github.com/logan-markewich/jeff
+  kind: repo
+  author: logan-markewich
+  description: Compatible server built on a 400M-parameter encoder, with benchmark comparisons against Jev.
+  metrics:
+    stars: 206
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/LoganMarkewich/status/2101142971223781587
+  tags:
+  - self-hosted
+  - gliformer
+  - compatible-api
+- name: Jev Distill Corpus v3
+  url: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
+  kind: model
+  author: SargeDev
+  description: Typed-decision corpus of 740,957 rows in the System One noul/choice/score schema, largely synthetic scenarios across 53 domains labeled by Jev 1.13 via OpenRouter, for training small local judges.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/SargeDev/jev-distill-corpus-v3.png
+  metrics:
+    likes: 2
+  date: '2026-09-21'
+  tags:
+  - dataset
+  - distillation
+- name: Jev Local
+  url: https://github.com/Argos1111/jev_local
+  kind: repo
+  author: Argos1111
+  description: Unofficial local /v1/systemone server for text, JSON and images that answers Choice, Score and Noul via first-token logprobs of LFM2.5 or Sarashina models, or a fine-tuned Japanese ModernBERT cross-encoder.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/argos1111/modernbert-ja-310m-jev.png
+  metrics:
+    stars: 20
+    likes: 11
+    downloads: 312
+  date: '2026-09-18'
+  links:
+    model: https://huggingface.co/argos1111/modernbert-ja-310m-jev
+    model 2: https://huggingface.co/argos1111/sarashina2.2-vision-3b-mmproj-jev-f16
+  tags:
+  - local-models
+  - japanese
+  - compatible-api
+- name: Jev mode for llama.cpp
+  url: https://www.youtube.com/watch?v=bcGO7xre46o
+  kind: video
+  author: Codacus
+  description: Fork of llama.cpp adding a llama-server endpoint that takes instructions, a schema, and state and returns every field with a confidence score; 17.3 ms per decision in bulk on a 2 GB model.
+  metrics:
+    views: 27352
+    likes: 1158
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/thecodacus/llama.cpp/tree/parallel-decision
+    playground: https://github.com/thecodacus/decision-playground
+    model: https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD
+    project: https://github.com/thecodacus/llama.cpp
+  tags:
+  - llama.cpp
+  - local
+  - server
+- name: Jev Quantum
+  url: https://github.com/karminski/Jev-Quantum
+  kind: repo
+  author: karminski
+  description: Jev-protocol-compatible random baseline in Rust that speaks noul, choice and score but ignores the prompt and answers from a fast pseudo-random generator, for use as a mock or a lower bound in agent-routing evals.
+  image: https://raw.githubusercontent.com/karminski/Jev-Quantum/main/assets/images/cover.png
+  metrics:
+    stars: 22
+  date: '2026-09-21'
+  links:
+    demo: https://x.com/karminski3/status/2101941770003361893
+  tags:
+  - mock
+  - baseline
+  - rust
+- name: Jev Visual
+  url: https://github.com/hr98w/jev-visual
+  kind: repo
+  author: hr98w
+  description: 'Educational Jev-like visual inference on Apple Silicon: Qwen3.5-0.8B on MLX answers choice, yes/no and score questions about one image from shared context and logits, with sorting-factory, Breakout and gesture demos.'
+  image: https://raw.githubusercontent.com/hr98w/jev-visual/main/docs/images/jev-visual-en.png
+  metrics:
+    stars: 224
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/hr98w/status/2100646513412292873
+  tags:
+  - mlx
+  - vision
+  - apple-silicon
+- name: jev-0.5b
+  url: https://huggingface.co/jaswanthsanjay88/jev-0.5b
+  kind: model
+  author: jaswanthsanjay88
+  description: 'Prefill-only Jev-style decision model on Qwen2.5-0.5B: a LoRA adapter plus pointer readout head with block-causal attention to answer several questions in one pass behind a /v1/systemone API.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/jaswanthsanjay88/jev-0.5b.png
+  metrics:
+    downloads: 22
+  date: '2026-09-19'
+  tags:
+  - qwen
+  - pointer-head
+- name: jev-agent-lab
+  url: https://github.com/michael54/jev-agent-lab
+  kind: repo
+  author: michael54
+  description: Reproducible Runpod deployment of the open Jev-style SemIf model alongside an official Jev client, with agent decision cases, latency measurements and a Jev vs SemIf comparison report.
+  date: '2026-09-19'
+  tags:
+  - semif
+  - runpod
+  - self-hosted
+- name: jev-browser-local
+  url: https://github.com/rorshopping/jev-browser-local
+  kind: repo
+  author: rorshopping
+  description: Runs jev-browser on a fully local Jev-style decision engine on an RTX 2060 SUPER, with Qwen2.5-1.5B for decisions and Qwen2.5-0.5B for typing, a warm-browser fork, VRAM guard, and run traces.
+  jev: Replaces the hosted Jev API with local parallel constrained decoding at $0 per decision.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - local
+  - browser-automation
+  - qwen
+- name: Jev-Compatible
+  url: https://github.com/David-Lolly/Jev-Compatible
+  kind: repo
+  author: David-Lolly
+  description: HTTP gateway that turns an existing SGLang or vLLM deployment into a Jev-compatible decision service by scoring candidate tokens for noul, choice, and score questions, with no training or model changes.
+  metrics:
+    stars: 4
+  date: '2026-09-21'
+  tags:
+  - vllm
+  - sglang
+  - gateway
+- name: JEV-CPU
+  url: https://github.com/leesk212/JEV-CPU
+  kind: repo
+  author: leesk212
+  description: CPU port of SemIf with a web UI that reads typed option probabilities from Qwen3-0.6B logits in about 1 s, covering eight domains such as moderation, incident severity and credit risk.
+  image: https://raw.githubusercontent.com/leesk212/JEV-CPU/main/assets/jev-cpu-demo.gif
+  metrics:
+    stars: 12
+    likes: 27
+  date: '2026-09-19'
+  links:
+    app: https://leesk212.github.io/JEV-CPU/
+    model: https://huggingface.co/Meanblock/JEV-CPU
+  tags:
+  - semif
+  - cpu
+  - qwen
+- name: Jev-Gate Student B
+  url: https://huggingface.co/SargeDev/jev-gate-student-b
+  kind: model
+  author: SargeDev
+  description: LoRA on Qwen2.5-0.5B distilled from Jev into a local memory-relevance judge that outputs a calibrated P(relevant) to decide which vector-recalled memories enter an agent context.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/SargeDev/jev-gate-student-b.png
+  metrics:
+    downloads: 111
+  date: '2026-09-21'
+  links:
+    model: https://huggingface.co/datasets/SargeDev/jev-distill-corpus
+    model 2: https://huggingface.co/SargeDev/jev-gate-student-b-merged
+  tags:
+  - distillation
+  - agent-memory
+- name: jev-gemma-4-E2B-it-choice-64
+  url: https://huggingface.co/ohtaman/jev-gemma-4-E2B-it-choice-64
+  kind: model
+  author: ohtaman
+  description: Browser-oriented ONNX artifact of Gemma 4 E2B with its output projection restricted to 64 fixed answer tokens, turning it into a text-only fixed-label scorer without fine-tuning.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ohtaman/jev-gemma-4-E2B-it-choice-64.png
+  date: '2026-09-22'
+  tags:
+  - onnx
+  - gemma
+  - browser
+- name: jev-lite
+  url: https://huggingface.co/vagmi/jev-lite
+  kind: model
+  author: vagmi
+  description: QLoRA adapter that turns Gemma 4 E4B into a System One decision model, reading answers from the logits at the option letters so it cannot answer outside the given options.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/vagmi/jev-lite.png
+  metrics:
+    likes: 5
+    downloads: 28
+  date: '2026-09-19'
+  links:
+    project: https://github.com/vagmi/jevlite
+  tags:
+  - gemma
+  - qlora
+- name: jev-local
+  url: https://github.com/us/jev-local
+  kind: repo
+  author: us
+  description: Local server compatible with the /v1/systemone API that answers typed noul, choice and score questions with probabilities from open weights, so the official SDK can point at it; the default scorer is a deterministic stub.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - jev-compatible
+  - server
+  - docker
+- name: jev-local-lab decision heads
+  url: https://huggingface.co/mchen04/jev-local-lab-decision-heads
+  kind: model
+  author: mchen04
+  description: Tiny trained heads (0.2 to 1.3M parameters) that read structured decisions from a 4-bit Qwen2.5-1.5B on a 24 GB Mac mini, released as a documented side project with honest limits.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mchen04/jev-local-lab-decision-heads.png
+  date: '2026-09-21'
+  links:
+    model: https://huggingface.co/mchen04/jevlite-decision-heads
+  tags:
+  - mlx
+  - heads
+- name: jev-my-bro
+  url: https://huggingface.co/JonusNattapong/jev-my-bro
+  kind: model
+  author: JonusNattapong
+  description: Self-hosted English/Thai decision model for agent and tool governance that decides whether to execute, ask for approval, reject or escalate an operation; v0.2 reports 73.78% accuracy.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/JonusNattapong/jev-my-bro.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/jonusnattapong/jev-my-bro
+  tags:
+  - governance
+  - thai
+  - agents
+- name: jev-my-bro governance dataset
+  url: https://huggingface.co/datasets/JonusNattapong/jev-my-bro-dataset
+  kind: model
+  author: JonusNattapong
+  description: English/Thai dataset of 8,508 cases and 34,032 typed decisions on whether an agent operation should execute, ask the user or be rejected, needs review, is prohibited, and how risky it is.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/JonusNattapong/jev-my-bro-dataset.png
+  metrics:
+    downloads: 17
+  date: '2026-09-21'
+  links:
+    project: https://github.com/jonusnattapong/jev-my-bro
+  tags:
+  - governance
+  - thai
+  - dataset
+- name: Jev-Omni
+  url: https://huggingface.co/akhilaaa3/Jev-Omni
+  kind: model
+  author: akhilaaa3
+  description: Multimodal decision classifier on Gemma 4 12B that returns a probability per option for text, image, audio and video questions; 87.57% on DecisionBench Medium and 86.15% on JevBench.
+  image: https://huggingface.co/akhilaaa3/Jev-Omni/resolve/main/assets/medium-accuracy.png
+  metrics:
+    likes: 1
+  date: '2026-09-20'
+  tags:
+  - multimodal
+  - gemma
+- name: jev-on-a-laptop
+  url: https://github.com/rorshopping/jev-on-a-laptop
+  kind: repo
+  author: rorshopping
+  description: Unofficial study reproducing Jev-style parallel constrained decoding on stock Qwen 1.5B-8B models on an Apple Silicon laptop, where 7B reached 73.8% agreement against Jev's 86.6% at 0.4-2 s per decision.
+  jev: Prefills once and evaluates all typed fields in one forward pass; finds confidence does not reliably flag errors.
+  metrics:
+    stars: 23
+  date: '2026-09-16'
+  links:
+    demo: https://huggingface.co/spaces/rorshopping/parallel-constrained-decisions
+  tags:
+  - qwen
+  - apple-silicon
+  - research
+- name: jev-qwen3.5-4b-legal-lora
+  url: https://huggingface.co/Nebulaw1/jev-qwen3.5-4b-legal-lora
+  kind: model
+  author: Nebulaw1
+  description: QLoRA adapter on Qwen3.5-4B-Base for finite-choice Chinese legal judgments that scores candidate letters in one forward pass instead of generating legal reasoning, with evaluation and inference scripts.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Nebulaw1/jev-qwen3.5-4b-legal-lora.png
+  metrics:
+    downloads: 1
+  date: '2026-09-20'
+  links:
+    model: https://huggingface.co/datasets/Nebulaw1/jev-legal-judgment-tests
+    model 2: https://huggingface.co/Nebulaw1/jev-qwen3.5-0.8b-legal-lora
+  tags:
+  - legal
+  - chinese
+  - qlora
+- name: jev-rs
+  url: https://github.com/yijunyu/jev-rs
+  kind: repo
+  author: yijunyu
+  description: Rust engine that answers Noul, Choice, and Score questions from any GGUF model behind llama-server in one prefill, wire-compatible with Jev's /v1/systemone and exposed as an MCP tool.
+  metrics:
+    stars: 4
+  date: '2026-09-21'
+  tags:
+  - rust
+  - llama-cpp
+  - jev-compatible
+- name: Jev-Style-Qwen3.5-2B-Decision (GGUF)
+  url: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
+  kind: model
+  author: chaoliangUNSW
+  description: GGUF builds of a Jev-style Qwen3.5-2B decision model for LM Studio and llama.cpp that reads calibrated option probabilities from one token position; Q4_K_M (1.3 GB) keeps 82.4% accuracy.
+  image: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF/resolve/main/calibration.png
+  metrics:
+    likes: 4
+  date: '2026-09-21'
+  links:
+    model: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
+  tags:
+  - gguf
+  - llama.cpp
+  - local
+- name: jev-typed-decisions-causal-0.6b
+  url: https://huggingface.co/abidlabs/jev-typed-decisions-causal-0.6b
+  kind: model
+  author: abidlabs
+  description: LoRA adapters on Qwen3-0.6B-Base trained with the arm-B cached causal typed scorer recipe from pngwn's typed-decisions experiment, a Jev-like reproduction with a frozen LM head.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/abidlabs/jev-typed-decisions-causal-0.6b.png
+  date: '2026-09-21'
+  links:
+    app: https://huggingface.co/spaces/abidlabs/jev-typed-decisions-demo
+  tags:
+  - qwen
+  - lora
+- name: Jev-Vision
+  url: https://huggingface.co/SeanLiu/Jev-Vision
+  kind: model
+  author: SeanLiu
+  description: Open-weight vision decision model (LoRA plus typed heads on Qwen3-VL-8B) that answers typed questions about screenshots and images through a Jev-compatible /v1/systemone API, 150-190 ms per screen step.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/SeanLiu/Jev-Vision.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/sseanliu/jev-vision
+  tags:
+  - vision
+  - screens
+  - qwen-vl
+- name: JevBERT (typed-decision-bert)
+  url: https://github.com/hawkymisc/typed-decision-bert
+  kind: repo
+  author: hawkymisc
+  description: Unofficial proof of concept of a BERT-style encoder decision engine behind a Jev-shaped /v1/systemone API for noul, choice, and score questions, with published results and a benchmark against real Jev.
+  metrics:
+    stars: 20
+  date: '2026-09-21'
+  links:
+    demo: https://x.com/hawkymisc/status/2102062149841588395
+  tags:
+  - bert
+  - encoder
+  - japanese
+- name: jevbetter
+  url: https://github.com/olanotolu/jevbetter
+  kind: repo
+  author: olanotolu
+  description: One-pass option scorer built from scratch with a hashed n-gram encoder, rival-aware attention, a gated head and temperature scaling, trained on the jevlike data format and benchmarked head-to-head against it.
+  image: https://raw.githubusercontent.com/olanotolu/jevbetter/main/docs/architecture.png
+  metrics:
+    stars: 14
+  date: '2026-09-16'
+  tags:
+  - jev-like
+  - option-scoring
+- name: JEVfire
+  url: https://github.com/kikoncuo/jevfire
+  kind: repo
+  author: kikoncuo
+  description: Jev-inspired parallel decisions for CUDA LLMs on vLLM that score single-token labels with the model's own head and assemble JSON in code, with game demos including in-browser Mario at 71 ms per action.
+  jev: No retraining or second model; the schema fixes keys and allowed values.
+  image: https://raw.githubusercontent.com/kikoncuo/jevfire/main/assets/hero.png
+  metrics:
+    stars: 13
+  date: '2026-09-16'
+  links:
+    site: https://kikoncuo.github.io/jevfire/learn.html
+    app: https://kikoncuo.github.io/jevfire
+  tags:
+  - vllm
+  - cuda
+  - structured-output
+- name: JevForge
+  url: https://github.com/zwliJay/jev-forge
+  kind: repo
+  author: zwliJay
+  description: 'End-to-end stack for Jev-style decision models: synthesizing decision data, training a calibrated Qwen3.5-0.8B candidate scorer, fixed Mind2Web and out-of-distribution evals, preliminary RLCD, and Jev-compatible serving.'
+  image: https://raw.githubusercontent.com/zwliJay/jev-forge/main/docs/assets/jevforge-demo.gif
+  metrics:
+    stars: 11
+    downloads: 46
+  date: '2026-09-19'
+  links:
+    app: https://jay-forge-web.vercel.app/
+    app 2: https://jev-forge.vercel.app
+    model: https://huggingface.co/datasets/AndeyTait/JevForge-Mind2Web
+    model 2: https://huggingface.co/AndeyTait/JevForge-0.8B
+  tags:
+  - jev-like
+  - training
+  - web-agents
+- name: jevify
+  url: https://github.com/Mintzs/jevify
+  kind: repo
+  author: Mintzs
+  description: Experimental inference engine that makes an existing LLM (Qwen2.5-1.5B-Instruct by default) answer Jev-style classification, yes/no and rubric questions by building JSON from model scores; probabilities are uncalibrated.
+  image: https://raw.githubusercontent.com/Mintzs/jevify/main/docs/media/jevify-banner.png
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - inference
+  - qwen
+  - local
+- name: jevify (fidecastro)
+  url: https://github.com/fidecastro/jevify
+  kind: repo
+  author: fidecastro
+  description: Adapter that serves any model with logprobs behind an OpenAI-compatible endpoint, or a small in-process model, as a Jev-like endpoint by reading typed answers off the next-token distribution in Jev's API shape.
+  metrics:
+    stars: 25
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/OpenSourceeAI/comments/1wl9m9n/jevify_super_simple_way_to_serve_llms_as_a/
+  tags:
+  - adapter
+  - logprobs
+  - local-inference
+- name: jevify-gemma4-26b-a4b
+  url: https://huggingface.co/kushalpatil/jevify-gemma4-26b-a4b
+  kind: model
+  author: kushalpatil
+  description: Gemma 4 26B-A4B fine-tuned (LoRA, merged) to give honest probabilities on typed questions; the model behind jevify, a local Jev-compatible /v1/systemone decision API.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/kushalpatil/jevify-gemma4-26b-a4b.png
+  metrics:
+    likes: 1
+    downloads: 30
+  date: '2026-09-20'
+  links:
+    project: https://github.com/kushalpatil07/jevify
+  tags:
+  - gemma
+  - local-api
+- name: jevify-gemma4-26b-a4b GGUF
+  url: https://huggingface.co/mradermacher/jevify-gemma4-26b-a4b-GGUF
+  kind: model
+  author: mradermacher
+  description: Static GGUF quantizations (Q2_K to Q8_0) of jevify-gemma4-26b-a4b, the Gemma 4 model behind the local Jev-compatible jevify decision API.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mradermacher/jevify-gemma4-26b-a4b-GGUF.png
+  metrics:
+    downloads: 803
+  date: '2026-09-20'
+  links:
+    project: https://github.com/kushalpatil07/jevify
+  tags:
+  - gguf
+  - quantization
+- name: jevify-gemma4-e4b
+  url: https://huggingface.co/kushalpatil/jevify-gemma4-e4b
+  kind: model
+  author: kushalpatil
+  description: Gemma 4 E4B fine-tuned (LoRA, merged) to give honest probabilities on typed questions, served by jevify as a local Jev-compatible /v1/systemone decision API.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/kushalpatil/jevify-gemma4-e4b.png
+  metrics:
+    downloads: 85
+  date: '2026-09-20'
+  links:
+    project: https://github.com/kushalpatil07/jevify
+  tags:
+  - gemma
+  - local-api
+- name: jevify-gemma4-e4b GGUF
+  url: https://huggingface.co/mradermacher/jevify-gemma4-e4b-GGUF
+  kind: model
+  author: mradermacher
+  description: Static GGUF quantizations (Q2_K to Q8_0) of jevify-gemma4-e4b, the Gemma 4 E4B model behind the local Jev-compatible jevify decision API.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mradermacher/jevify-gemma4-e4b-GGUF.png
+  metrics:
+    downloads: 506
+  date: '2026-09-20'
+  links:
+    project: https://github.com/kushalpatil07/jevify
+  tags:
+  - gguf
+  - quantization
+- name: jevify-qwen3-vl-2b (Tier 0)
+  url: https://huggingface.co/Praveenrajus/jevify-qwen3-vl-2b
+  kind: model
+  author: Praveenrajus
+  description: Training-free Jevify recipe that uses Qwen3-VL-2B to answer typed questions about images, reading every allowed answer from one position with a validation-fitted calibration.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Praveenrajus/jevify-qwen3-vl-2b.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/uspraveen/jevify
+  tags:
+  - vision
+  - recipe
+- name: jevify-qwen3-vl-2b-t2
+  url: https://huggingface.co/Praveenrajus/jevify-qwen3-vl-2b-t2
+  kind: model
+  author: Praveenrajus
+  description: 'Tier 2 Jevify vision model: Qwen3-VL-2B with a rank-16 decoder LoRA trained on the restricted answer readout with proper scoring rules on A-OKVQA, for typed questions about images.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Praveenrajus/jevify-qwen3-vl-2b-t2.png
+  date: '2026-09-22'
+  links:
+    project: https://github.com/uspraveen/jevify
+  tags:
+  - vision
+  - lora
+- name: jevify-qwen3.5-2b
+  url: https://huggingface.co/Praveenrajus/jevify-qwen3.5-2b
+  kind: model
+  author: Praveenrajus
+  description: Jevify decision heads for Qwen3.5-2B that answer choice, score and noul questions about a state with calibrated probability distributions, without generating text.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Praveenrajus/jevify-qwen3.5-2b.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/uspraveen/jevify
+  tags:
+  - qwen
+  - heads
+- name: jevify-qwen3.5-4b
+  url: https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b
+  kind: model
+  author: Praveenrajus
+  description: Jevify decision heads for Qwen3.5-4B that read a state, answer choice, score and noul questions and return calibrated distributions, shipping only the heads added on top of the base model.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Praveenrajus/jevify-qwen3.5-4b.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/uspraveen/jevify
+  tags:
+  - qwen
+  - heads
+- name: jevify-qwen3.5-4b-t2
+  url: https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b-t2
+  kind: model
+  author: Praveenrajus
+  description: Tier 2 Jevify model for Qwen3.5-4B that adds a LoRA adapter on top of the decision heads to return calibrated choice, score and noul distributions.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Praveenrajus/jevify-qwen3.5-4b-t2.png
+  date: '2026-09-22'
+  links:
+    project: https://github.com/uspraveen/jevify
+  tags:
+  - qwen
+  - lora
+- name: jevinf
+  url: https://github.com/zerodegress/jevinf
+  kind: repo
+  author: zerodegress
+  description: Inference engine for Jev-like decision models that runs each candidate path as segmented forwards with prefix reuse and serves the Jev wire contract, measured 2.57x faster on MPS with NanoJev.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - inference
+  - nanojev
+  - jev-compatible
+- name: Jevlike
+  url: https://github.com/vinnylarouge/jevlike
+  kind: repo
+  author: vinnylarouge
+  description: 'Independent starter model with the same shape as Jev: a small one-pass scorer mapping text plus N options to one probability per option, with Doom and chess vision demos and a Wikispeedia next-click example.'
+  image: https://raw.githubusercontent.com/vinnylarouge/jevlike/main/docs/architecture.svg
+  metrics:
+    stars: 1177
+  date: '2026-09-16'
+  links:
+    demo: https://x.com/vinnylarouge/status/2100170846346097083
+    discussion: https://news.ycombinator.com/item?id=49731282
+  tags:
+  - jev-like
+  - training
+  - option-scoring
+- name: jevlike-esp32
+  url: https://github.com/david-cermak/jevlike-esp32
+  kind: repo
+  author: david-cermak
+  description: Experiment that exports a jevlike text scorer, trained in Python, as ESP-IDF firmware with a C scorer and a host-side check, running one-pass option decisions on an ESP32 microcontroller.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - jev-like
+  - embedded
+  - esp32
+- name: jevlite dataset
+  url: https://huggingface.co/datasets/vagmi/jevlite_dataset
+  kind: model
+  author: vagmi
+  description: Synthetic set of 5,866 typed questions about 978 program states (tickets, SIEM alerts, invoices, agent transcripts, code reviews) with full teacher distributions, used to train jev-lite.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/vagmi/jevlite_dataset.png
+  metrics:
+    likes: 1
+    downloads: 31
+  date: '2026-09-20'
+  links:
+    project: https://github.com/vagmi/jevlite
+  tags:
+  - dataset
+  - soft-labels
+- name: jevmlx
+  url: https://github.com/bnsd55/jevmlx
+  kind: repo
+  author: bnsd55
+  description: Local Jev-style decision layer for Apple Silicon that scores every allowed option of boolean, enum and multi-select fields from MLX model logits in one prefill and returns schema-valid JSON with per-field probabilities.
+  jev: Offers a System One-compatible endpoint and a benchmark runner.
+  metrics:
+    stars: 54
+  date: '2026-09-17'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49743108
+  tags:
+  - mlx
+  - apple-silicon
+  - local-models
+- name: Jevon
+  url: https://huggingface.co/lewislululu/jevon
+  kind: model
+  author: lewislululu
+  description: Tiny 20M-parameter decision model that answers typed questions about a grid (which way to move, is north clear, how far is the goal) for maze and snake, rebuilt from NanoJev around planning depth.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/lewislululu/jevon.png
+  metrics:
+    likes: 6
+  date: '2026-09-19'
+  links:
+    project: https://github.com/lewislulu/jevon-arcade
+  tags:
+  - grid-games
+  - small-model
+- name: JevOne
+  url: https://huggingface.co/juspay/jev-one
+  kind: model
+  author: juspay
+  description: Typed decision model on Qwen3.6-35B-A3B served through a TypeSafe-compatible /v1/systemone API, with single-token candidate readout, forward and reverse option-order evaluation and calibration.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/juspay/jev-one.png
+  date: '2026-09-21'
+  tags:
+  - moe
+  - systemone-api
+- name: jevons-lfm25-1.2b-systemone
+  url: https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone
+  kind: model
+  author: gopalanj
+  description: Seed LoRA on LFM2.5-1.2B for jevons, a local System One server that scores allowed outcomes from logits and assembles choice, probabilities, confidence, noul and score in code.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/gopalanj/jevons-lfm25-1.2b-systemone.png
+  date: '2026-09-20'
+  links:
+    project: https://github.com/gopalanj/jevons
+  tags:
+  - lfm
+  - lora
+  - local-server
+- name: JevTuner
+  url: https://github.com/liushiliushi/JevTuner
+  kind: repo
+  author: liushiliushi
+  description: Training method for language models to make Jev-style closed-set decisions, scoring every candidate in one forward pass and tuning the full distribution with a tokenized Brier loss.
+  jev: Applies the ConfTuner idea of training token-logit probabilities to state-plus-question decision tasks.
+  image: https://raw.githubusercontent.com/liushiliushi/JevTuner/main/images/jevtuner_method_drawio.png
+  metrics:
+    stars: 9
+  date: '2026-09-21'
+  tags:
+  - training
+  - calibration
+  - fine-tuning
+- name: Jimothy
+  url: https://github.com/AndrewPrifer/jimothy
+  kind: repo
+  author: AndrewPrifer
+  description: Distills Jev answers into small, fast local classifiers that run in the browser or Node.js, with calibrated probabilities and a recommended cutoff.
+  jev: 'Jev via AI Gateway acts as the teacher: its cached answers on unlabeled rows become training data for MiniLM or TF-IDF student classifiers.'
+  image: https://github.com/user-attachments/assets/b0781bef-61ab-47e5-96c6-2c034ad5cae3
+  metrics:
+    stars: 24
+  date: '2026-09-20'
+  links:
+    demo: https://x.com/AndrewPrifer/status/2102162296739099126
+    app: https://jimothy-r63s.vercel.app
+  tags:
+  - distillation
+  - classifier
+  - local
+- name: jqv
+  url: https://github.com/Octalab-Inc/jqv
+  kind: repo
+  author: Octalab-Inc
+  description: Reconstruction of Jev's inference structure on stock Qwen3, with one shared state prefill, isolated question branches behind a block attention mask, and option-letter logits calibrated by temperature, behind /v1/systemone.
+  date: '2026-09-21'
+  links:
+    article: https://archerhume.com/posts/jevs-architecture-unmasked
+  tags:
+  - qwen3
+  - reproduction
+  - attention-mask
+- name: KaLM-Jev
+  url: https://github.com/KaLM-Embedding/KaLM-Jev
+  kind: repo
+  author: KaLM-Embedding
+  description: Local Choice, Score, and Noul judgment service built on KaLM-Reranker-V1-R2 checkpoints in Nano, Small, and Large sizes, returning structured judgments without generating answer text.
+  metrics:
+    stars: 28
+  date: '2026-09-21'
+  links:
+    app: https://huggingface.co/spaces/Yuki131/KaLM-Jev
+  tags:
+  - reranker
+  - local-inference
+- name: Kev
+  url: https://github.com/jaredpalmer/kev
+  kind: repo
+  author: jaredpalmer
+  description: Open 0.8B to 9B decision models on Qwen3.5 with released weights and a server compatible with `/v1/systemone`, so the official SDKs can point at it.
+  image: https://raw.githubusercontent.com/jaredpalmer/kev/main/docs/playground.png
+  metrics:
+    stars: 2709
+    points: 427
+    likes: 3
+    downloads: 242
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/jaredpalmer/status/2101028325472841920
+    discussion: https://news.ycombinator.com/item?id=49783999
+    model: https://huggingface.co/collections/jaredpalmer
+    discussion 2: https://news.ycombinator.com/item?id=49783999
+    model 2: https://huggingface.co/datasets/jaredpalmer/kev-suites
+  tags:
+  - jev-like
+  - open-weights
+  - qwen
+- name: kevMac
+  url: https://github.com/arinltte/kevMac
+  kind: repo
+  author: arinltte
+  description: 'Mac app that runs the open Kev decision models locally on Apple Silicon: paste a document, build yes/no, choice or score questions as forms and see calibrated probability bars; kev-0.6b answers in ~0.2 s on an M4.'
+  jev: Converts forms into the /v1/systemone contract of a local Kev server (kev-0.6b to kev-9b checkpoints).
+  image: https://external-preview.redd.it/ejRpYTBkYXN5cnFoMf6puSmljth1cgrGzuZwp2ZyyReZNPXgGD-ASmeljkJx.png?format=pjpg&auto=webp&s=6f4c1b33aa72bf2c5f1b0325b7e2e577be7bf2d8
+  metrics:
+    stars: 18
+  date: '2026-09-20'
+  links:
+    demo: https://www.reddit.com/r/vibecoding/comments/1wlyw27/experience_jev_locally_with_mac/
+  tags:
+  - kev
+  - macos
+  - local
+- name: Laya
+  url: https://github.com/NandhaKishorM/laya
+  kind: repo
+  author: NandhaKishorM
+  description: Open, local non-autoregressive decision models on ModernBERT-style encoders, from a 421M English checkpoint to multilingual ones, answering Choice, Score and Noul questions in 33 ms per question with a per-request router.
+  image: https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png
+  metrics:
+    stars: 12037
+    points: 745
+    views: 9878
+    likes: 67
+  date: '2026-09-18'
+  links:
+    discussion: https://www.reddit.com/r/accelerate/comments/1wk0yq7/laya_421m_open_source_and_local_model_takes_on/
+    app: https://huggingface.co/spaces/convaiinnovations/laya-demo
+    model: https://huggingface.co/convaiinnovations/laya
+    article: https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me
+    discussion 2: https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with/
+  tags:
+  - jev-like
+  - multilingual
+  - open-weights
+- name: Laya Go
+  url: https://github.com/neko233-com/laya-go
+  kind: repo
+  author: neko233-com
+  description: Go server with an admin dashboard, agent CLI and MCP tool for Laya, open System 1 decision models that score structured features and return ranked probabilities without generating text.
+  metrics:
+    stars: 3
+  date: '2026-09-21'
+  tags:
+  - laya
+  - go
+  - mcp
+- name: Laya MCP
+  url: https://github.com/NVentimiglia/laya-mcp
+  kind: repo
+  author: NVentimiglia
+  description: MCP server and agent plugin for Claude Code, Copilot CLI and Cursor that runs the open Laya decision model locally and gives agents five tools returning a label, probability or score in one forward pass.
+  jev: Jev-style typed decisions from the local convaiinnovations/laya checkpoint, with a 0.85 confidence threshold for automate versus escalate.
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  tags:
+  - laya
+  - mcp
+  - local-models
+- name: Laya MPS
+  url: https://github.com/afshinm/laya-mps
+  kind: repo
+  author: afshinm
+  description: Runs the open Laya model for Jev-style typed decisions on Apple Silicon via PyTorch MPS, at about 32 ms median latency and 2.1 GiB of RAM on an M5 Pro.
+  jev: Choice, Score and truth-probability decisions from an ~843 MB model tuned for customer service, invoices, security incidents and agent traces.
+  metrics:
+    stars: 5
+  date: '2026-09-21'
+  links:
+    demo: https://news.ycombinator.com/item?id=49787265
+    discussion: https://www.reddit.com/r/LocalLLM/comments/1wm64ih/run_jevstyle_typed_decisions_locally_on_apple/
+  tags:
+  - laya
+  - apple-silicon
+  - local
+- name: Laya on Mac M4 CoreML
+  url: https://news.ycombinator.com/item?id=49777106
+  kind: thread
+  author: putna
+  description: Recipe for running the multilingual Laya decision model offline on an M4 Mac through CoreML on the Neural Engine, with a snake demo, at about 45 decisions per second.
+  metrics:
+    points: 167
+  date: '2026-09-20'
+  links:
+    gist: https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0
+    project: https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0
+  tags:
+  - laya
+  - coreml
+  - apple-silicon
+- name: Laya playground
+  url: https://github.com/wdobry/laya-playground
+  kind: repo
+  author: wdobry
+  description: Local website with games, a benchmark and an agent skill for the open-source Laya decision model, comparing it with hosted Jev on the same 500 labelled examples.
+  jev: Jev is more accurate out of the box; Laya matches it on simple questions and answers several times faster from a laptop.
+  image: https://brainfunctioncollapse.com/laya/og.png
+  metrics:
+    stars: 71
+    likes: 2267
+    views: 252184
+  date: '2026-09-20'
+  links:
+    app: https://brainfunctioncollapse.com/laya
+    app 2: https://brainfunctioncollapse.com/laya
+  tags:
+  - laya
+  - benchmark
+  - games
+- name: Laya plays Doom
+  url: https://medium.com/@christian.graham_49279/laya-a-free-local-alternative-to-jev-and-it-can-even-play-doom-ish-42e2292e541e
+  kind: article
+  author: Christian Graham
+  description: Tests Laya, an open 421M-parameter Jev alternative, by having it play Doom locally, adding a dedicated shoot question and logged rule overrides to fix misfires and stuck loops.
+  image: https://cdn-images-1.medium.com/max/1024/1*62_PHILeAoTsOGHgigCtbg.png
+  date: '2026-09-18'
+  links:
+    model: https://github.com/NandhaKishorM/laya
+  tags:
+  - laya
+  - doom
+  - games
+- name: Laya Vision
+  url: https://github.com/r33drichards/laya-vision
+  kind: repo
+  author: r33drichards
+  description: Research fork of the open Laya model that swaps its text encoder for SmolVLM-256M, so typed choice, score, and noul decisions can be read from an image plus optional text in one forward pass.
+  metrics:
+    stars: 21
+  date: '2026-09-19'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49767430
+    model: https://huggingface.co/thaitea/laya-vision-smolvlm-256m
+    app: https://huggingface.co/spaces/thaitea/laya-vision-demo
+  tags:
+  - vision
+  - laya
+- name: Laya Vision
+  url: https://www.reddit.com/r/LocalLLM/comments/1wkrk48/laya_vision_is_open_source_jev_for_images/
+  kind: reddit
+  author: Fickle-Ad-866
+  description: Open Jev-style decision model for images built on SmolVLM 256M, returning probabilities over a fixed set of choices for screenshots, photos, and GUI elements.
+  image: https://external-preview.redd.it/UtFOem1Lybo3LMdOVLun0w9gD1TIz-RsVEPJK1E931Q.png?auto=webp&s=b4618d2ffc0db450df912f1f3046530e58b7384b
+  metrics:
+    points: 18
+  date: '2026-09-19'
+  links:
+    model: https://huggingface.co/thaitea/laya-vision-smolvlm-256m
+    project: https://huggingface.co/thaitea/laya-vision-smolvlm-256m
+  tags:
+  - laya
+  - vision
+  - open-weights
+- name: Laya vs Jev at Tetris
+  url: https://x.com/atomic_chat_hq/status/2102160983409955244
+  kind: post
+  author: atomic_chat_hq
+  description: Tetris showdown in which the open-weights Laya model, running locally on a 16GB MacBook Air, beats cloud Jev by making decisions 11 times faster.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102158998103363584/img/AStT6MxzhJzruHIE.jpg
+  metrics:
+    likes: 2798
+    views: 300693
+  date: '2026-09-21'
+  links:
+    app: https://atomic.chat
+  tags:
+  - laya
+  - local
+  - tetris
+- name: Laya vs Jev benchmark
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark
+  kind: model
+  author: Luni
+  description: 'Independent check of Laya against Jev''s published numbers on an RTX 5090: raw Laya sits near chance on PhishNChips phishing (0.505) but reaches 0.611 after Platt calibration, vs Jev''s 0.626.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/Luni/laya-jev-benchmark.png
+  metrics:
+    likes: 2
+    downloads: 57
+  date: '2026-09-19'
+  links:
+    model: https://github.com/NandhaKishorM/laya
+  tags:
+  - laya
+  - benchmark
+  - calibration
+- name: Laya vs Jev Snake battle
+  url: https://x.com/BystAnd3rs/status/2101648153984528700
+  kind: post
+  author: BystAnd3rs
+  description: 'Snake duel built with Codex between local Laya and the Jev API on an M5 Pro: median decision time 15.3 ms for Laya versus 298.1 ms for Jev.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101647092817305600/img/WGklbFZGYL0CnWBd.jpg
+  metrics:
+    likes: 158
+    views: 31327
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/mizorewww/laya-mlx
+  tags:
+  - laya
+  - snake
+  - latency
+- name: Laya-CoreML
+  url: https://github.com/mizorewww/laya-coreml
+  kind: repo
+  author: mizorewww
+  description: Open-weight port of the Jev-like Laya model to Apple Core ML and the Neural Engine, serving the System One contract locally, with a Snake demo playing on live probabilities.
+  jev: Implements system_one over Choice, Score and Noul; about 4.98 ms P50 for one short decision on an M3 Max with ANE FP16.
+  image: https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif
+  metrics:
+    stars: 989
+  date: '2026-09-19'
+  links:
+    pypi: https://pypi.org/project/laya-coreml/
+    repo: https://huggingface.co/aac6fef/laya-multilingual-coreml-ane
+  tags:
+  - laya
+  - coreml
+  - apple-silicon
+- name: Laya-MLX
+  url: https://github.com/mizorewww/laya-mlx
+  kind: repo
+  author: mizorewww
+  description: 'Native MLX runtime for the open Laya typed-decision checkpoints on Apple Silicon: 13.4 ms median per short English decision and 7.4 ms with the multilingual checkpoint, with no PyTorch or cloud API; demoed on Snake.'
+  image: https://raw.githubusercontent.com/mizorewww/laya-mlx/main/docs/assets/snake-demo.gif
+  metrics:
+    stars: 4320
+    likes: 380
+    views: 61060
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/mizorewww/status/2101473552956555427
+    pypi: https://pypi.org/project/laya-mlx/
+    demo 2: https://x.com/tdinh_me/status/2101919182824804560
+  tags:
+  - jev-like
+  - mlx
+  - apple-silicon
+- name: Laya-MLX vs Jev accuracy test
+  url: https://x.com/Lonely__MH/status/2101823975349244095
+  kind: post
+  author: Lonely__MH
+  description: 'Two rounds of 100 decision questions on an M2 Pro: local Laya-MLX answered in 13.7ms per question but at about 50% accuracy, while cloud Jev was slower but far more accurate.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101708973036785664/img/DgCMkHUOuz-yVIOi.jpg
+  metrics:
+    likes: 102
+    views: 47895
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/mizorewww/laya-mlx
+  tags:
+  - laya
+  - local
+  - accuracy
+- name: laya.cpp
+  url: https://github.com/lkarlslund/laya.cpp
+  kind: repo
+  author: lkarlslund
+  description: Standalone C++ inference for the Jev-style Laya typed-decision models using ggml, with optimized CUDA kernels for NVIDIA RTX GPUs and a Vulkan FP32 backend, covering the english, multilingual and typed-decisions checkpoints.
+  image: https://external-preview.redd.it/cuDWXinMwBubvEi2uiDGctxhmXkdqtLzEbHzFCRaYOE.png?auto=webp&s=f6c0009f9fb9794743802edd125c55efc41d42f3
+  metrics:
+    stars: 40
+  date: '2026-09-20'
+  links:
+    demo: https://www.reddit.com/r/LocalLLaMA/comments/1wlmkm9/layacpp_optimized_laya_nearinstant_decision_making/
+  tags:
+  - laya
+  - inference
+  - cuda
+- name: laya_ex
+  url: https://github.com/ChristianAlexander/laya_ex
+  kind: repo
+  author: ChristianAlexander
+  description: Elixir library that provides a native Nx and Bumblebee runtime for the open Laya decision model by Convai Innovations, downloading the official checkpoint on first load.
+  metrics:
+    stars: 13
+  date: '2026-09-20'
+  tags:
+  - elixir
+  - laya
+- name: layaForWeb
+  url: https://medium.com/@visrow/jev-vs-laya-live-demo-i-ran-a-421-million-parameter-ai-decision-model-inside-a-browser-tab-no-84b86bed1f10
+  kind: article
+  author: Vishal Mysore
+  description: Runs the open 421M-parameter Laya decision model inside a browser tab via ONNX Runtime Web and WebAssembly, shown next to Jev's playground; the browser build matched PyTorch's top answer on all 14 questions.
+  image: https://cdn-images-1.medium.com/max/952/1*-WtBbgZwFMamN56lKa8zAQ.png
+  date: '2026-09-21'
+  links:
+    app: https://vishalmysore.github.io/layaForWeb/
+    repo: https://github.com/vishalmysore/layaForWeb
+    project: https://github.com/vishalmysore/layaforweb
+  tags:
+  - laya
+  - onnx
+  - in-browser
+- name: leCore holographic System One
+  url: https://github.com/AnOversizedMooseWithSocks/leCore/blob/main/holographic/agents_and_reasoning/holographic_systemone.py
+  kind: repo
+  author: AnOversizedMooseWithSocks
+  description: Native implementation of Jev's state-plus-typed-questions contract inside a pure-NumPy vector engine, as a few-shot prototype classifier that abstains on ties and returns no probability until calibrated.
+  jev: Choice, Score and yes/no questions answered from labeled examples with ranked evidence per answer; a bench script compares it on your task.
+  image: https://raw.githubusercontent.com/AnOversizedMooseWithSocks/leCore/main/gallery/render_fur.png
+  metrics:
+    repo_stars: 11
+  date: '2026-06-08'
+  links:
+    app: https://discoverleos.com/
+    repo: https://github.com/AnOversizedMooseWithSocks/leCore
+  tags:
+  - numpy
+  - few-shot
+  - calibration
+- name: Lev
+  url: https://github.com/jlt-commons/lev
+  kind: repo
+  author: jlt-commons
+  description: System One decision engine in Clojure on Chez Scheme that serves Laya ModernBERT/mmBERT encoders at about 100 ms on a laptop CPU, plus a llama.cpp thinker whose answers are scored by token log probabilities.
+  jev: Serves typed questions over a state with calibrated probabilities; MiniCPM5-2B with thinking scored 95% on the adversarial authored144 set versus 61-67% for the encoders.
+  metrics:
+    stars: 7
+  date: '2026-09-19'
+  tags:
+  - laya
+  - clojure
+  - cpu-inference
+- name: LFM2.5-2.6B-RLCD
+  url: https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD
+  kind: model
+  author: monotykamary
+  description: Experimental parallel constrained decoding package on unchanged LFM2.5-2.6B weights, about 9.9x faster than autoregressive JSON on 12 dev cases but only 72.2% field accuracy on fresh audit cases.
+  jev: Targets Jev's fast finite-choice interaction pattern; explicitly uncalibrated and not a reproduction of RLCD training.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/monotykamary/LFM2.5-2.6B-RLCD.png
+  metrics:
+    likes: 6
+    downloads: 446
+  date: '2026-09-16'
+  links:
+    related: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD
+  tags:
+  - constrained-decoding
+  - liquid
+  - edge
+- name: LFM2.5-350M-RLCD
+  url: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD
+  kind: model
+  author: notnotsamuel
+  description: Inference-only parallel structured decoding on unchanged Liquid LFM2.5-350M weights, branching attention and convolution state to score allowed values in a batch, 8-63x faster with field accuracy around 60%.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/notnotsamuel/LFM2.5-350M-RLCD.png
+  metrics:
+    likes: 22
+    downloads: 337
+  date: '2026-09-16'
+  links:
+    related: https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD
+  tags:
+  - constrained-decoding
+  - liquid
+  - inference-only
+- name: LitJev
+  url: https://github.com/zhengxuyu/litjev
+  kind: repo
+  author: zhengxuyu
+  description: Hypothesis-based reproduction of the Jev decision layer that turns off-the-shelf Qwen checkpoints into typed Choice, Score and Noul endpoints by reading option scores from the output head, with an API and browser front end.
+  metrics:
+    stars: 37
+  date: '2026-09-17'
+  tags:
+  - jev-like
+  - qwen
+  - reproduction
+- name: LLM2Jev
+  url: https://github.com/Yinsongxu/LLM2Jev
+  kind: repo
+  author: Yinsongxu
+  description: Toolkit that turns local language models into Jev-style decision engines by reading Choice, Score and Noul answers from prefill logits via Transformers or SGLang, with a /v1/systemone endpoint and image input.
+  image: https://raw.githubusercontent.com/Yinsongxu/LLM2Jev/main/assets/llm2jev-banner.jpeg
+  metrics:
+    stars: 126
+  date: '2026-09-19'
+  tags:
+  - local-models
+  - sglang
+  - system-one-api
+- name: Local Decision Playground
+  url: https://github.com/wmoto-ai/local-decision-playground
+  kind: repo
+  author: wmoto-ai
+  description: 'Dependency-free web app, in Japanese, for trying a local vLLM model as a Jev-inspired classifier: it restricts generation to the declared options and normalizes their logprobs into relative probabilities, including for images.'
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  tags:
+  - vllm
+  - playground
+  - japanese
+- name: Local Jev experiment
+  url: https://x.com/wmoto_ai/status/2100454049359577516
+  kind: post
+  author: wmoto_ai
+  description: Demo of a homemade Jev-style decision setup running on a local LLM, with the author noting its speed still has room to improve.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100453978958118912/img/yOW2Lupx9RoG03zB.jpg
+  metrics:
+    likes: 388
+    views: 122847
+  date: '2026-09-17'
+  tags:
+  - local
+  - jev-like
+- name: local-jev
+  url: https://github.com/amithgc/local-jev
+  kind: repo
+  author: amithgc
+  description: Offline server that speaks TypeSafe's System One wire format so the official SDK works unchanged, answering typed questions with small open models; reports 80.5% on JevBench's 231 public items.
+  image: https://raw.githubusercontent.com/amithgc/local-jev/main/docs/assets/hero.png
+  metrics:
+    stars: 3
+  date: '2026-09-21'
+  tags:
+  - local-inference
+  - server
+- name: local-system-one-student
+  url: https://huggingface.co/Mannedood/local-system-one-student
+  kind: model
+  author: Mannedood
+  description: A 149M ModernBERT encoder distilled from local LLMs that reproduces Jev's interface for one fixed schema, a coding agent's next step, returning tool choice, urgency and destructive-action flags in 19 ms.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Mannedood/local-system-one-student.png
+  date: '2026-09-18'
+  links:
+    project: https://github.com/djhoomin/local-system-one
+  tags:
+  - coding-agents
+  - modernbert
+- name: LocalJev
+  url: https://github.com/githubnext/localjev
+  kind: repo
+  author: githubnext
+  description: Bun server from GitHub Next that exposes a local Jev-compatible /v1/systemone API backed by DiffusionGemma, prompting for JSON probabilities instead of reading logits, with a 1,200-request bake-off.
+  metrics:
+    stars: 707
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49766255
+    demo: https://x.com/GitHubNext/status/2101193436816920798
+  tags:
+  - local-inference
+  - diffusion-lm
+- name: Luce
+  url: https://github.com/scienthoon/luce
+  kind: repo
+  author: scienthoon
+  description: 'Recipe for task-specific calibrated decision models: describe the task, have an LLM teacher synthesize or annotate data, train a LoRA plus decision head on Qwen, evaluate calibration and serve typed probabilities.'
+  image: https://raw.githubusercontent.com/scienthoon/luce/main/media/live_triage.gif
+  metrics:
+    stars: 7
+  date: '2026-09-20'
+  tags:
+  - jev-like
+  - lora
+  - training
+- name: metask-jev
+  url: https://github.com/metask-ai/metask-jev
+  kind: repo
+  author: metask-ai
+  description: Open-weight Jev-class typed-decision models on Qwen3.5 that read calibrated per-option probabilities in one forward pass; metask-jev-4b reports 80.1% on JevBench versus 75.3% for Jev 1.13.0.
+  image: https://huggingface.co/Raymond1122/metask-jev-4b-policy-mix/resolve/main/eval/figs/fig2_jevbench_h2h.png
+  metrics:
+    stars: 2
+    downloads: 15
+  date: '2026-09-21'
+  links:
+    model: https://huggingface.co/Raymond1122/metask-jev-4b-policy-mix
+    model 2: https://huggingface.co/wayfind/metask-jev-4b-policy-mix
+  tags:
+  - open-weights
+  - jevbench
+- name: Mev
+  url: https://x.com/zhilinjerrywag/status/2101962974898397246
+  kind: article
+  author: zhilinjerrywag
+  description: Decision model with 0.4B parameters for job and candidate matching, fine-tuned from Laya in about 45 minutes; it ties Kev-4B (Spearman 0.733 vs 0.730) but Jev still ranks best at 0.818.
+  jev: 'Same interface as Jev: a Noul for recommend and a five-level Score for match strength, compared zero-shot against Jev.'
+  image: https://pbs.twimg.com/media/HSurH4YWYAESh8q.jpg
+  metrics:
+    likes: 38
+    views: 9853
+  date: '2026-09-21'
+  links:
+    base-model: https://github.com/NandhaKishorM/laya
+    company: https://metix.ai/
+  tags:
+  - recruiting
+  - fine-tuning
+  - laya
+- name: mini-Jev
+  url: https://github.com/r-ms/mini-jev
+  kind: repo
+  author: r-ms
+  description: Pre-registered experiment showing a Jev-style typed-decision interface on frozen Qwen3-4B by turning schema fields into lettered questions and reading option-letter logits in one pass, compared with grammar-constrained JSON.
+  image: https://raw.githubusercontent.com/r-ms/mini-jev/main/docs/figures/accuracy_by_k.svg
+  metrics:
+    stars: 42
+    downloads: 81
+  date: '2026-09-17'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49748643
+    model: https://huggingface.co/datasets/Mikhail/mini-jev-runs
+  tags:
+  - jev-like
+  - logits
+  - experiment
+- name: minojev
+  url: https://github.com/zeredy879/minojev
+  kind: repo
+  author: zeredy879
+  description: Library that freezes a language model and trains a small decision head to read typed, calibrated choice, boolean and score distributions from hidden states in one forward pass, reproducible on a laptop CPU.
+  image: https://raw.githubusercontent.com/zeredy879/minojev/main/assets/banner.svg
+  metrics:
+    stars: 25
+  date: '2026-09-18'
+  links:
+    docs: https://zeredy879.github.io/minojev/
+  tags:
+  - jev-like
+  - decision-head
+- name: mlx-omarchy Laya serving
+  url: https://github.com/joshuaswarren/mlx-omarchy/tree/main/serve/mlx_omarchy_laya
+  kind: repo
+  author: joshuaswarren
+  description: MLX GPU backend for Apple Silicon Linux that ports and serves the open Laya typed-decision model through its own decisions endpoint, qualified on an M1 Max with 6/6 numerical gates.
+  metrics:
+    repo_stars: 64
+  date: '2026-08-31'
+  links:
+    docs: https://github.com/joshuaswarren/mlx-omarchy/blob/main/docs/serve.md
+    demo: https://github.com/user-attachments/assets/7b2326f0-4679-4784-9622-e403b99be853
+  tags:
+  - laya
+  - mlx
+  - linux
+- name: NanoJev
+  url: https://github.com/TianyuCodings/NanoJev
+  kind: repo
+  author: TianyuCodings
+  description: Open 0.6B Jev replica trained for four specific games, with weights and data; not a general-purpose substitute.
+  metrics:
+    stars: 1872
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/QingQ77/status/2101125879766421755
+    model: https://huggingface.co/c-tianyu/nanojev
+  tags:
+  - jev-like
+  - games
+  - training
+- name: Nemotron Diffusion Decision Lab
+  url: https://github.com/pst2154/Nemotron_Jev
+  kind: repo
+  author: pst2154
+  description: Experimental container that serves the dense Nemotron-Labs-Diffusion-14B model behind a TypeSafe-shaped API, with a browser explorer for Choice, Noul and Score distributions.
+  metrics:
+    stars: 12
+  date: '2026-09-18'
+  tags:
+  - diffusion
+  - nemotron
+  - server
+- name: ODM Mini
+  url: https://huggingface.co/samatv256/mini-Jev
+  kind: model
+  author: samatv256
+  description: Open-weight Choice decision head on frozen Qwen3-0.6B that ranks candidate agent actions and returns probabilities, confidence and margin for tool selection (72.97% semantic Choice accuracy).
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/samatv256/mini-Jev.png
+  metrics:
+    likes: 5
+    downloads: 20
+  date: '2026-09-21'
+  tags:
+  - tool-selection
+  - agents
+- name: OmniStudio JEV judgments
+  url: https://github.com/kunpengtalk/OmniStudio
+  kind: repo
+  author: kunpengtalk
+  description: Local-first desktop LLM workbench with a JEV typed-judgment page that runs Laya locally via laya-mlx or connects to the cloud, exposing a TypeSafe-compatible endpoint for the official SDKs.
+  jev: Noul, Choice and Score answers with probability distributions; SDKs only need TYPESAFE_BASE_URL and TYPESAFE_API_KEY changed.
+  image: https://raw.githubusercontent.com/kunpengtalk/OmniStudio/main/docs/images/screenshot-jev.png
+  metrics:
+    stars: 147
+  date: '2026-09-09'
+  links:
+    app: https://omnilabs.vibeadmin.cn/#/omnistudio
+  tags:
+  - local
+  - laya
+  - desktop
+- name: omo-jevlike-router
+  url: https://github.com/islee23520/omo-jevlike-router
+  kind: repo
+  author: islee23520
+  description: Skill router for the OmO agent that scores the whole skill catalog in one forward pass with a frozen Qwen2.5-0.5B plus a small Jev-style option head, trimming the system prompt to the top-K skills.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - jev-like
+  - skill-routing
+  - local-model
+- name: Open Alternative to Jev
+  url: https://github.com/ikermoel/open-alternative-jev
+  kind: repo
+  author: ikermoel
+  description: Python library that reads option-token probabilities from open-weights models through Transformers or vLLM to give typed, calibrated Choice, Score and Noul decisions in one pass, with temperature scaling and benchmarks.
+  image: https://raw.githubusercontent.com/ikermoel/open-alternative-jev/main/benchmarks/figures/race.png
+  metrics:
+    stars: 47
+    likes: 1
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49750584
+    app: https://huggingface.co/spaces/IkerMoel/open-alternative-jev
+    app 2: https://huggingface.co/spaces/IkerMoel/open-alternative-jev
+  tags:
+  - jev-like
+  - vllm
+  - logprobs
+- name: Open JEV
+  url: https://github.com/zhihz/openjev
+  kind: repo
+  author: zhihz
+  description: Research preview inspired by Jev that makes local bilingual English and Chinese probability decisions over context, questions and candidate answers, currently on a frozen Qwen3-4B-Instruct backend with a web UI.
+  image: https://raw.githubusercontent.com/zhihz/openjev/main/docs/images/demo-en.png
+  metrics:
+    stars: 29
+  date: '2026-09-16'
+  tags:
+  - jev-like
+  - local
+  - bilingual
+- name: Open Jev
+  url: https://github.com/kyegomez/open-jev
+  kind: repo
+  author: kyegomez
+  description: 'Unofficial PyTorch reconstruction of the ideas behind Jev with random weights: the state is encoded once and every question is answered through small typed readout heads in one parallel forward pass.'
+  metrics:
+    stars: 7
+  date: '2026-09-21'
+  tags:
+  - pytorch
+  - architecture
+  - research
+- name: Open Jev
+  url: https://huggingface.co/spaces/pngwn/open-jev
+  kind: app
+  author: pngwn
+  description: Hugging Face Space for a Qwen3.5-4B LoRA scorer that answers typed questions with a temperature-scaled probability over the caller's options, encoding the state once and deciding in parallel.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/pngwn/open-jev.png
+  metrics:
+    likes: 35
+    downloads: 144
+  date: '2026-09-17'
+  links:
+    model: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer
+    model_v2b: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b
+    model 2: https://huggingface.co/datasets/pngwn/open-jev-laya-bench
+    model 3: https://huggingface.co/datasets/pngwn/typed-decisions-v2-system-one
+    model 4: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b
+  tags:
+  - qwen
+  - lora
+  - space
+- name: Open Jev typed decision engine
+  url: https://github.com/intikhab49/open-jev-typed-decision-engine
+  kind: repo
+  author: intikhab49
+  description: Open 150M-parameter encoder reproduction of Jev that answers noul, choice, and score questions in one non-autoregressive pass, scoring 0.697 against Jev's 0.727 and training on a Colab T4 in 30 minutes.
+  image: https://raw.githubusercontent.com/intikhab49/open-jev-typed-decision-engine/main/docs/header.svg
+  metrics:
+    stars: 39
+  date: '2026-09-19'
+  tags:
+  - reproduction
+  - encoder
+  - colab
+- name: Open Spark Jev
+  url: https://github.com/abhishek085/open-spark-jev
+  kind: repo
+  author: abhishek085
+  description: Open local decision model, spark-s1, inspired by Jev and built on Qwen3 for NVIDIA DGX Spark, with a Jev-compatible API, architecture notes, data generation and evaluation tooling.
+  image: https://raw.githubusercontent.com/abhishek085/open-spark-jev/main/docs/assets/nokast-logo.png
+  metrics:
+    stars: 14
+  date: '2026-09-20'
+  tags:
+  - dgx-spark
+  - qwen
+  - local
+- name: Open vision Jev alternatives
+  url: https://x.com/theAlexQuach/status/2101397697454649684
+  kind: post
+  author: theAlexQuach
+  description: Tests open-source Jev-like models that accept images, finding DiffusionGemma (via a vLLM PR) and reflex on the Pareto front for vision decisions.
+  image: https://pbs.twimg.com/media/HSmoWsEaQAEYMBV.jpg?name=orig
+  metrics:
+    likes: 177
+    views: 21278
+  date: '2026-09-19'
+  links:
+    vllm-pr: https://github.com/vllm-project/vllm/pull/57250
+    reflex: https://github.com/kshetrajna12/reflex
+  tags:
+  - vision
+  - open-weights
+  - diffusiongemma
+- name: Open-Jev
+  url: https://github.com/Zefan-Cai/Open-Jev
+  kind: repo
+  author: Zefan-Cai
+  description: Open probability-decision models on Qwen3.5-2B, Qwen3.5-9B, and Qwen3.8-27B that score supplied candidates without generation, released as LoRA adapters with a trained decision head, a dataset, and benchmarks.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ZefanCai/Open-Jev-9B.png
+  metrics:
+    stars: 118
+    likes: 23
+    views: 38261
+  date: '2026-09-20'
+  links:
+    site: https://zefan-cai.github.io/open-jev
+    model: https://huggingface.co/ZefanCai/Open-Jev-9B
+    model 2: https://huggingface.co/ZefanCai/Open-Jev-2B
+    demo: https://x.com/Zefan_Cai/status/2101782158658695388
+  tags:
+  - open-weights
+  - qwen
+- name: open-jev (DiffusionGemma)
+  url: https://github.com/JoshuaSP/open-jev
+  kind: repo
+  author: JoshuaSP
+  description: Experimental harness for typed JSON decisions with the DiffusionGemma 26B-A4B diffusion model that denoises freely and then picks the most likely allowed tokens, benchmarked on Every's TypeSafe lab tasks.
+  image: https://raw.githubusercontent.com/JoshuaSP/open-jev/main/assets/json-canvas.png
+  metrics:
+    stars: 21
+  date: '2026-09-16'
+  tags:
+  - diffusion
+  - gemma
+  - open-model
+- name: open-jev (nico-martin)
+  url: https://github.com/nico-martin/open-jev
+  kind: repo
+  author: nico-martin
+  description: Browser-focused TypeScript library that runs open Jev-shaped typed-decision models such as Kev on-device through Transformers.js, on WebGPU or WebAssembly, returning a calibrated distribution per question.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101924588837896193/img/vb3r7XPYfWQwfrBV.jpg
+  metrics:
+    stars: 19
+    likes: 142
+    views: 17084
+  date: '2026-09-20'
+  links:
+    npm: https://www.npmjs.com/package/open-jev
+    demo: https://x.com/nicodotdev/status/2101925770432008665
+  tags:
+  - transformers-js
+  - webgpu
+  - browser
+- name: Open-Jev datasets
+  url: https://huggingface.co/datasets/ZefanCai/Open-Jev
+  kind: model
+  author: ZefanCai
+  description: Twelve frozen, mostly synthetic typed-decision data configs (yes/no, choice, multi-label, numeric and ordinal) with manifests, raw records and reconstruction code from the independent Open-Jev project.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/ZefanCai/Open-Jev.png
+  metrics:
+    likes: 13
+    downloads: 167
+  date: '2026-09-20'
+  links:
+    project: https://github.com/zefan-cai/open-jev-dev
+  tags:
+  - dataset
+  - open-jev
+- name: open-jev demo
+  url: https://huggingface.co/spaces/nico-martin/open-jev-demo
+  kind: app
+  author: nico-martin
+  description: Browser demo of the open-jev npm package running typed decisions locally with Kev and open-jev ONNX models through Transformers.js, no server or API key.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/nico-martin/open-jev-demo.png
+  metrics:
+    likes: 3
+  date: '2026-09-21'
+  links:
+    npm: https://www.npmjs.com/package/open-jev
+    project: https://github.com/nico-martin/open-jev-demo
+  tags:
+  - transformers.js
+  - in-browser
+- name: open-jev-deberta-v3-large
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large
+  kind: model
+  author: com-kotobalabs
+  description: Open Jev-shaped model on DeBERTa-v3-large that answers any number of choice, score and noul questions about one state in a single pass; 0.854 in-domain and 0.690 out-of-domain accuracy, 28 ms for 10 questions.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/com-kotobalabs/open-jev-deberta-v3-large.png
+  metrics:
+    likes: 52
+    downloads: 920
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/kotoba-lang/typed-decisions
+    model: https://huggingface.co/onnx-community/open-jev-deberta-v3-large-ONNX
+    app: https://huggingface.co/spaces/hugging-apps/open-jev-deberta-v3-large-demo
+  tags:
+  - deberta
+  - encoder
+- name: open-system-one demo
+  url: https://huggingface.co/spaces/dylantom2012/open-system-one-demo
+  kind: app
+  author: dylantom2012
+  description: Demo comparing a 0.1 ms trained decision head with a zero-shot cross-encoder, from an independent benchmark of Jev against open CPU-only alternatives.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/dylantom2012/open-system-one-demo.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/zhlei07/open-system-one
+  tags:
+  - cpu
+  - demo
+- name: open-system-one results explorer
+  url: https://huggingface.co/spaces/dylantom2012/open-system-one
+  kind: app
+  author: dylantom2012
+  description: Interactive explorer for an independent benchmark of TypeSafe's Jev against open CPU-only stacks on 10,000 decisions.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/dylantom2012/open-system-one.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/zhlei07/open-system-one
+  tags:
+  - benchmark
+  - cpu
+- name: open-system-one-bench
+  url: https://huggingface.co/datasets/dylantom2012/open-system-one-bench
+  kind: model
+  author: dylantom2012
+  description: Per-item predictions for 10,000 classification and routing decisions from six stacks, including typesafe/jev and Laya on identical items, so significance tests can be rerun without API spend.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/dylantom2012/open-system-one-bench.png
+  metrics:
+    likes: 1
+  date: '2026-09-21'
+  links:
+    project: https://github.com/zhlei07/open-system-one
+  tags:
+  - benchmark
+  - predictions
+- name: OpenDecision
+  url: https://github.com/deepanwadhwa/OpenDecision
+  kind: repo
+  author: deepanwadhwa
+  description: Open-source local semantic decision engine modeled on Jev that answers Choice, Noul and Score questions plus a supports/contradicts Relation over structured state and documents, demoed playing Doom.
+  metrics:
+    stars: 52
+    points: 6
+  date: '2026-09-17'
+  links:
+    link: https://deepanwadhwa.github.io/OpenDecision/
+  tags:
+  - jev-like
+  - nli
+  - local
+- name: OpenJev
+  url: https://github.com/razorback16/openjev
+  kind: repo
+  author: razorback16
+  description: Open System One decision server that speaks Jev's wire API, so TypeSafe SDKs work unchanged, reading typed answers off DiffusionGemma 26B-A4B probabilities via vLLM or MLX, including questions about images.
+  image: https://external-preview.redd.it/vdZrJPXw6MSvl0ZZRNggdJnJjOT14qhqZDKUAr_MuuE.png?auto=webp&s=a01efcc5d87a9abbba518b4fcd3b7260501a06c4
+  metrics:
+    stars: 287
+    points: 83
+  date: '2026-09-18'
+  links:
+    app: https://codiv.ai
+    discussion: https://www.reddit.com/r/LocalLLaMA/comments/1wjlyzr/still_on_the_jev_waitlist_i_hosted_openjev_its/
+    app 2: https://codiv.ai
+  tags:
+  - open-source
+  - diffusiongemma
+  - self-hosted
+- name: OpenJev
+  url: https://github.com/xingwudao/OpenJev
+  kind: repo
+  author: xingwudao
+  description: Independent Jev-inspired decision API with Choice, Score and Noul primitives, a local mock server and Python and TypeScript SDKs; mock probabilities are synthetic and real inference is planned.
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  tags:
+  - mock-server
+  - sdk
+- name: openjev
+  url: https://huggingface.co/AlexWortega/openjev
+  kind: model
+  author: Alex Wortega
+  description: Qwen3.5 checkpoints trained as a single NLI cross-encoder whose argmax entailment picks the answer, used zero-shot for reranking, grading, guarding and playing Doom from text or pixels.
+  jev: Jev-like judgments via entailment over statements about the state; 4B v2 averages 10.4 Doom kills per episode from pixels, and 35B-A3B heads are included.
+  image: https://huggingface.co/AlexWortega/openjev/resolve/main/assets/radar_openjev.png
+  metrics:
+    likes: 431
+    points: 158
+  date: '2026-09-16'
+  links:
+    demo: https://x.com/justALEXWORTEGA/status/2100341039986798930
+    discussion: https://www.reddit.com/r/LocalLLaMA/comments/1wib9kj/openjev/
+  tags:
+  - jev-like
+  - nli
+  - qwen
+- name: OpenJev
+  url: https://x.com/theoleecj/status/2100212661619503176
+  kind: post
+  author: theoleecj
+  description: Open-source on-device inference for Jev-style typed decisions with probabilities, built on Qwen 3 4B, 0.6B and 0.8B, and able to run in Chrome.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100211213582143488/img/Bzldvxr0IbvhDHAw.jpg
+  metrics:
+    likes: 15
+    views: 3655
+  date: '2026-09-16'
+  links:
+    repo: https://github.com/theoleecj/openjev
+    app: https://openjev.com
+    project: https://github.com/theoleecj/openjev
+  tags:
+  - open-source
+  - on-device
+  - qwen
+- name: openjev (daseinlabs)
+  url: https://github.com/daseinlabs/open-jev
+  kind: repo
+  author: daseinlabs
+  description: One-pass option scorer with a local Gemma 3 4B on Apple Silicon via MLX that prefills the context once, scores every option in a single forward pass, and exposes a System One-compatible endpoint.
+  jev: Documents zero-shot overconfidence and offers optional per-task finetuning.
+  image: https://raw.githubusercontent.com/daseinlabs/open-jev/main/docs/media/doom-recording.gif
+  metrics:
+    stars: 94
+  date: '2026-09-17'
+  links:
+    demo: https://news.ycombinator.com/item?id=49737236
+  tags:
+  - gemma
+  - mlx
+  - open-model
+- name: OpenJev (GPT-AGI)
+  url: https://github.com/GPT-AGI/OpenJev
+  kind: repo
+  author: GPT-AGI
+  description: Open-source Jev-compatible decision engine that answers Choice, Score and Noul questions from open-weight models in one forward pass behind /v1/systemone, with a Claude Code style REPL and a maze demo.
+  image: https://raw.githubusercontent.com/GPT-AGI/OpenJev/main/docs/assets/tui-maze-concept.gif
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  tags:
+  - open-weights
+  - system-one-api
+  - repl
+- name: OpenJev (SiliconLabAI)
+  url: https://github.com/SiliconLabAI/OpenJev
+  kind: repo
+  author: SiliconLabAI
+  description: Open System One-style decision playground that answers a state and typed questions through LLM micro-scorers, one structured JSON call to an OpenAI-compatible model, or the open Mapika/decider weights.
+  metrics:
+    stars: 67
+    views: 22263
+    likes: 190
+  date: '2026-09-20'
+  links:
+    video: https://www.youtube.com/watch?v=xtXq279B4Go
+    video 2: https://www.youtube.com/watch?v=xtXq279B4Go
+  tags:
+  - playground
+  - open-weights
+- name: OpenJev (Verdict)
+  url: https://github.com/Heman10x-NGU/Verdict-open-jev
+  kind: repo
+  author: Heman10x-NGU
+  description: Open 151M-parameter ModernBERT decision engine inspired by Jev and RLCD that evaluates typed questions in one non-autoregressive pass in under 35 ms, with a JevBench audit and an in-browser WebGPU playground.
+  image: https://raw.githubusercontent.com/Heman10x-NGU/Verdict-open-jev/main/assets/v1.4/benchmark-leaderboard-chart.png
+  metrics:
+    stars: 67
+    likes: 25
+    downloads: 5401
+  date: '2026-09-17'
+  links:
+    huggingface: https://huggingface.co/heman10x/rlcd-modernbert-151m
+    model: https://huggingface.co/heman10x/rlcd-modernbert-151m
+  tags:
+  - modernbert
+  - open-model
+  - webgpu
+- name: openjev-experiments
+  url: https://github.com/zefir1990/openjev-experiments
+  kind: repo
+  author: zefir1990
+  description: Self-contained script that runs AlexWortega/openjev, a Qwen3.5-4B cross-encoder, locally for natural language inference, multiple-choice reranking and a CLI.
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - openjev
+  - nli
+  - local-models
+- name: openjev-sglang
+  url: https://github.com/ekzhang/openjev-sglang
+  kind: repo
+  author: ekzhang
+  description: Compatible endpoint that serves an open mixture-of-experts model on SGLang, with BoolQ and MMLU-Pro comparisons.
+  image: https://i.imgur.com/wHM3jxV.gif
+  metrics:
+    stars: 259
+  date: '2026-09-17'
+  links:
+    discussion: https://www.reddit.com/r/typesafe/comments/1wmhbuu/ekzhangopenjevsglang_jevcompatible_api_endpoint/
+    demo: https://x.com/ekzhang1/status/2100651678110515383
+  tags:
+  - sglang
+  - inference-server
+- name: openJev-verdict-2.0
+  url: https://github.com/Heman10x-NGU/openJev-verdict-2.0
+  kind: repo
+  author: Heman10x-NGU
+  description: ModernBERT-based 151M non-autoregressive decision model with separate distribution and confidence heads, public weights, saved evaluation artifacts and an in-browser WebGPU demo; its benchmark results are self-reported.
+  image: https://raw.githubusercontent.com/Heman10x-NGU/openJev-verdict-2.0/main/assets/v1.4/benchmark-leaderboard-chart.png
+  metrics:
+    stars: 249
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/typesafe/comments/1wm8avg/heman10xnguopenjevverdict20_calibrated_151m/
+    docs: https://heman10x-ngu.github.io/openJev-verdict-2.0/
+    app: https://heman10x-ngu.github.io/openJev-verdict-2.0
+  tags:
+  - jev-like
+  - modernbert
+  - calibration
+- name: OpenJev-Vision
+  url: https://github.com/IamBusy/OpenJev-Vision
+  kind: repo
+  author: IamBusy
+  description: Open research toolkit for visual probabilistic decisions that encodes an image once and answers several structured questions from shared probabilities, with synthetic, Oxford-IIIT Pet, and CLEVR data and trained weights.
+  image: https://raw.githubusercontent.com/IamBusy/OpenJev-Vision/main/reports/vision-v01/demo.png
+  metrics:
+    stars: 28
+  date: '2026-09-19'
+  tags:
+  - vision
+  - research
+- name: OpenJevPro
+  url: https://github.com/zhangcy122/OpenJev
+  kind: repo
+  author: zhangcy122
+  description: Framework that turns open-weight LLMs such as Qwen3, DeepSeek, Gemma and gpt-oss into typed Choice, Noul and Score decision services using constrained logprob calibration.
+  metrics:
+    stars: 18
+  date: '2026-09-20'
+  links:
+    site: https://openjev.pro
+  tags:
+  - open-weights
+  - calibration
+- name: OpenSourceJev
+  url: https://github.com/sabeel111/OpenSourceJev
+  kind: repo
+  author: sabeel111
+  description: Research experiment that runs a local System One-style decision engine on llama.cpp and Qwen, projecting next-token logits onto answer options for calibrated typed decisions on consumer hardware.
+  image: https://external-preview.redd.it/NGQzMnA1dW4yaHFoMfp6xNCARVGeYVpoP66WhgS8I5hNmzYWXyIRArIESs6K.png?format=pjpg&auto=webp&s=2d4092332a97f0aebb7b7e82f599bf681e05877f
+  metrics:
+    stars: 24
+    points: 35
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/LocalLLM/comments/1wkl8c9/my_version_of_jev_running_locally_playing_doom/
+  tags:
+  - llama-cpp
+  - local-inference
+- name: OpenThai-SystemOne
+  url: https://github.com/iapp-technology/openthai-systemone
+  kind: repo
+  author: iapp-technology
+  description: Open Thai and English System One model built from a Qwen3.5-0.8B tower with a 256-way slot head, answering choice, score, and noul questions in one pass behind TypeSafe's /v1/systemone contract.
+  image: https://raw.githubusercontent.com/iapp-technology/openthai-systemone/main/docs/assets/fb_launch_v3_1x1.png
+  metrics:
+    stars: 38
+    likes: 15
+    downloads: 1098
+  date: '2026-09-20'
+  links:
+    discussion: https://www.reddit.com/r/LocalLLM/comments/1wlkjk8/i_trained_an_open_08b_system_one_decision_model/
+    model: https://huggingface.co/iapp/OpenThai-SystemOne
+    model 2: https://huggingface.co/iapp/OpenThai-SystemOne
+    app: https://huggingface.co/spaces/hugging-apps/openthai-systemone-demo
+  tags:
+  - thai
+  - open-weights
+- name: openvons
+  url: https://github.com/genai-craft/openvons
+  kind: repo
+  author: genai-craft
+  description: Open decision layer that makes LLMs, VLMs, and ASR models pick from a finite option set with none-of-the-above, splitting calibrated probabilities into execute, confirm, and reject; includes Japanese voice commands.
+  metrics:
+    stars: 13
+  date: '2026-09-17'
+  tags:
+  - open-model
+  - japanese
+  - voice-commands
+- name: Parallel Constrained Decision Engine
+  url: https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding
+  kind: app
+  author: drinkmoonshine
+  description: Gradio demo of parallel constrained decoding that fills multi-field JSON decision schemas in one pass over Qwen2.5-1.5B on Apple Silicon, pitched as an open alternative to Jev.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/drinkmoonshine/parallel-constrained-decoding.png
+  metrics:
+    likes: 31
+    points: 2
+  date: '2026-09-16'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49734345
+  tags:
+  - open-source
+  - constrained-decoding
+  - mlx
+- name: parallelConstraintDecoding
+  url: https://github.com/stephanj/parallelConstraintDecoding
+  kind: repo
+  author: stephanj
+  description: Java and Python implementations of parallel constrained decoding that fill a JSON schema of booleans and enums in two forward passes on llama.cpp models, with per-field confidence and a benchmark web app.
+  image: https://external-preview.redd.it/IXd1hZpg6SpsXqnxAePniddWNOv3rlbrwQhwMZZfaig.png?auto=webp&s=3ce2634792342b174000165911a5fe4b774d8df9
+  metrics:
+    stars: 13
+  date: '2026-09-17'
+  links:
+    discussion: https://www.reddit.com/r/java/comments/1wjhn9h/parallel_constraint_decoding_using_java_and/
+  tags:
+  - java
+  - llama-cpp
+  - decoding
+- name: PCD Server
+  url: https://github.com/stephanj/pcdServer
+  kind: repo
+  author: stephanj
+  description: 'Native C++ REST server for Parallel Constrained Decoding with local GGUF models: give it text and bounded fields and it picks one allowed value per field, returning JSON plus each decision''s probabilities, Jev-style.'
+  image: https://raw.githubusercontent.com/stephanj/pcdServer/main/docs/images/pcd-playground.png
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  tags:
+  - llama.cpp
+  - gguf
+  - cpp
+- name: PlayJev
+  url: https://github.com/OmniJev/PlayJev
+  kind: repo
+  author: OmniJev
+  description: Qwen3.5-0.8B fine-tuned as a Jev-like multimodal model that plays ten browser games from raw pixels, one frame in and one move out with a probability per option, in 43 ms on an H200.
+  image: https://raw.githubusercontent.com/OmniJev/PlayJev/main/docs/assets/board.webp
+  metrics:
+    stars: 21
+  date: '2026-09-17'
+  links:
+    app: https://omnijev.github.io/PlayJev/
+    model: https://huggingface.co/omnijev/playjev-0.8b
+    app 2: https://omnijev.github.io/PlayJev
+  tags:
+  - vision
+  - games
+  - open-weights
+- name: PocketJev
+  url: https://github.com/NullPo-jp/PocketJev
+  kind: repo
+  author: NullPo-jp
+  description: Experimental iOS app that runs Qwen3-VL on-device via MLX and turns a camera frame, a question and 2-26 options into relative scores read from next-token logits in about a second, with no photos saved.
+  image: https://raw.githubusercontent.com/NullPo-jp/PocketJev/main/docs/images/pocketjev-demo-no.png
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - ios
+  - mlx
+  - vision
+- name: poorjev
+  url: https://github.com/rupeshpoojary9/poorjev
+  kind: repo
+  author: rupeshpoojary9
+  description: Local System One-style decision layer that implements Jev's typed Choice, Score and Noul interface on zero-shot NLI models, with temperature scaling and conformal abstention cutting ECE from 0.170 to 0.071.
+  image: https://raw.githubusercontent.com/rupeshpoojary9/poorjev/main/docs/reliability_before_after.png
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/learnmachinelearning/comments/1wksf4i/poorjev_an_open_local_system_one_decision_layer/
+  tags:
+  - jev-like
+  - calibration
+  - local
+- name: ProgramAsWeights
+  url: https://www.reddit.com/r/MachineLearning/comments/1wl13eu/programasweights_compile_english_function/
+  kind: reddit
+  author: yuntiandeng
+  description: Research project that compiles an English function description into a LoRA adapter for a frozen Qwen3-0.6B, giving local text classifiers that run on a CPU without an API.
+  image: https://preview.redd.it/a5zxim8w8kqh1.png?width=2122&format=png&auto=webp&s=c009655b083bddd316687c2fdef0365c9334c82e
+  metrics:
+    points: 74
+  date: '2026-09-19'
+  links:
+    repo: https://github.com/programasweights/programasweights-python
+    models: https://huggingface.co/programasweights/models
+    project: https://github.com/programasweights/programasweights-python
+  tags:
+  - open-model
+  - lora
+  - research
+- name: Qwen Choice
+  url: https://github.com/RJMSWD/QwenJev
+  kind: repo
+  author: RJMSWD
+  description: 'Local Jev-style visual judgment on Qwen3.5-4B: an image, a question and options go in, and one forward pass returns the choice with probabilities in about 169 ms on an RTX A6000.'
+  jev: Uses the original BF16 weights with thinking off and no training or quantization.
+  image: https://raw.githubusercontent.com/RJMSWD/QwenJev/main/examples/support_ticket.png
+  metrics:
+    stars: 7
+  date: '2026-09-21'
+  tags:
+  - qwen
+  - vision
+  - local
+- name: Qwen-2.5-1B-RLCD
+  url: https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD
+  kind: model
+  author: harshatheg
+  description: Parallel constrained decoding engine for Apple Silicon that answers multi-field decision schemas in one pass over stock Qwen2.5-1.5B, shipped as code only with no trained RLCD weights.
+  jev: 'Jev-style interface: KV-cache broadcast across fields and logit slicing over allowed values; reports 5.6x to 7.0x lower latency than autoregressive JSON on an M4 Max.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/harshatheg/Qwen-2.5-1B-RLCD.png
+  metrics:
+    likes: 524
+    views: 1282773
+  date: '2026-09-16'
+  links:
+    demo: https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding
+    post: https://x.com/TravisJChauvin/status/2101081157421121725
+    demo 2: https://x.com/harshagundal/status/2100044305536889015
+  tags:
+  - constrained-decoding
+  - mlx
+  - open-source
+- name: qwen-rlcd
+  url: https://github.com/shamazharikh/qwen-rlcd
+  kind: repo
+  author: shamazharikh
+  description: Prototype Jev-style decision model on Qwen3.5-0.8B-Base that prefills the state once, forks the cache per question-answer branch and reads calibrated distributions; inference works, training is on hold.
+  metrics:
+    stars: 4
+  date: '2026-09-16'
+  tags:
+  - qwen
+  - prefix-fork
+  - prototype
+- name: Qwen3.8 as Jev-compatible endpoint
+  url: https://github.com/PixelML/club-170hx/tree/main/results/2026-09-20-qwen3.8-27b-w4a16-jev-1card-vllm
+  kind: repo
+  author: PixelML
+  description: Benchmark recipe serving a stock Qwen3.8-27B W4A16 checkpoint as a no-train Jev-compatible /v1/systemone endpoint on one CMP 170HX card with vLLM, including calibration results.
+  image: https://raw.githubusercontent.com/PixelML/club-170hx/main/assets/four-cmp-170hx-cards.png
+  metrics:
+    repo_stars: 57
+  date: '2026-08-30'
+  links:
+    repo: https://github.com/PixelML/club-170hx
+  tags:
+  - self-hosted
+  - vllm
+  - calibration
+- name: RE Jev research project
+  url: https://github.com/leehanchung/SMILE-factory/tree/main/research/jev
+  kind: repo
+  author: leehanchung
+  description: Research handoff for building a Jev-like decision model, covering design criteria, architecture, a training data plan, GLiNER2 benchmark and calibration protocols; no model has been trained yet.
+  metrics:
+    repo_stars: 106
+  date: '2023-05-07'
+  tags:
+  - reimplementation
+  - calibration
+  - research
+- name: reflex
+  url: https://github.com/kshetrajna12/reflex
+  kind: repo
+  author: kshetrajna12
+  description: Open Jev re-creation on stock Qwen3.5 that answers Choice, Score and Noul questions in one batched pass behind a /v1/systemone server, with a WebGPU demo and a LoRA recipe for honest probabilities; ~200 ms per request.
+  metrics:
+    stars: 110
+  date: '2026-09-17'
+  links:
+    app: https://kshetrajna12.github.io/reflex
+  tags:
+  - qwen
+  - open-model
+  - calibration
+- name: ReflexGate
+  url: https://github.com/jagsan-cyber/reflex-gate
+  kind: repo
+  author: jagsan-cyber
+  description: Offline Go gateway for local agent loops with loop-exit, argument-extraction, and safety-scan endpoints plus a Jev-compatible /v1/systemone for typed noul and choice triage, with a Windows GUI.
+  metrics:
+    stars: 6
+  date: '2026-09-19'
+  tags:
+  - gateway
+  - local-inference
+  - go
+- name: Rizzo Flow
+  url: https://github.com/Rizzo-AI-Academy/rizzo-flow
+  kind: repo
+  author: Rizzo-AI-Academy
+  description: Local open-model decision server that reads answer-token probabilities instead of generating text, behind a Jev-compatible Choice, Score and Noul HTTP API plus a numeric primitive; no quality parity with Jev is claimed.
+  image: https://raw.githubusercontent.com/Rizzo-AI-Academy/rizzo-flow/main/assets/rizzo_flow_logo.png
+  metrics:
+    stars: 240
+  date: '2026-09-21'
+  links:
+    site: https://rizzo-ai-academy.github.io/rizzo-flow/
+  tags:
+  - local
+  - open-weights
+  - system-one-api
+- name: rlx-kev
+  url: https://github.com/MIT-RLX/rlx-models/tree/main/crates/rlx-kev
+  kind: repo
+  author: MIT-RLX
+  description: Rust port of Kev, a small Jev-like System One decision model with a Qwen3.5 backbone, merged LoRA and pointer head, running natively on the RLX multi-backend ML compiler and runtime.
+  metrics:
+    repo_stars: 34
+  date: '2026-05-22'
+  links:
+    repo: https://github.com/MIT-RLX/rlx-models
+  tags:
+  - kev
+  - rust
+  - inference
+- name: ruling
+  url: https://github.com/bradAGI/ruling
+  kind: repo
+  author: bradAGI
+  description: Open-weight recreation of Jev's typed-decision interface that runs on an Apple Silicon Mac with MLX and a 4-bit Qwen3.5 checkpoint, answering in about 119 ms; a 19 GB MoE model reaches Jev's accuracy on TypeSafe's evaluation rows.
+  image: https://raw.githubusercontent.com/bradAGI/ruling/main/assets/banner.png
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  tags:
+  - mlx
+  - qwen
+  - local-models
+- name: sarvam-jev
+  url: https://github.com/SAGAR-TAMANG/sarvam-jev
+  kind: repo
+  author: SAGAR-TAMANG
+  description: Open Jev-style inference engine on Sarvam's Indic sarvam-1 model that reads typed answers from lettered-option logits instead of generating JSON, reusing one state prefill across questions, in the browser.
+  metrics:
+    stars: 46
+  date: '2026-09-18'
+  links:
+    app: https://sarvam-jev.feynmanpi.com/
+  tags:
+  - indic
+  - logits
+  - browser
+- name: Schema-conditioned candidate scorer demo
+  url: https://huggingface.co/spaces/mobarmg/jev-schema-scorer
+  kind: app
+  author: mobarmg
+  description: Interactive demo of a DeBERTa-v3-large scalar-head scorer that reads your own choice, noul and score schema at inference time and decodes grouped logits into typed answers.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/mobarmg/jev-schema-scorer.png
+  metrics:
+    likes: 7
+    downloads: 306
+  date: '2026-09-17'
+  links:
+    model: https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large
+  tags:
+  - deberta
+  - demo
+- name: SemIf (formerly OpenJev)
+  url: https://github.com/TheoLeeCJ/SemIf
+  kind: repo
+  author: TheoLeeCJ
+  description: Independent Jev-like project that answers semantic if-questions by reading option logits from a frozen 4B open model on a home RTX 3090, with a browser demo and no text generation.
+  image: https://raw.githubusercontent.com/TheoLeeCJ/SemIf/master/demo/assets/semif-phase1-replay.gif
+  metrics:
+    stars: 3396
+    points: 53
+    likes: 2
+    views: 132
+  date: '2026-09-16'
+  links:
+    app: https://openjev.com
+    discussion: https://www.reddit.com/r/LocalLLaMA/comments/1whzy7j/qwen35_4b_grabbing_logits_is_almost_jev_or_even/
+    app 2: https://openjev.com
+    demo: https://x.com/mygtmhire/status/2100666488625734103
+  tags:
+  - local-inference
+  - logits
+- name: simple-jev
+  url: https://github.com/featherless-ai/simple-jev
+  kind: repo
+  author: featherless-ai
+  description: Turns any Hugging Face model into a decision endpoint with a `/v1/systemone` alias (probabilities are not calibrated).
+  image: https://raw.githubusercontent.com/featherless-ai/simple-jev/main/imgs/Simple-Jev-Logo.png
+  metrics:
+    stars: 461
+    likes: 1246
+    views: 103008
+  date: '2026-09-18'
+  links:
+    site: https://simple-jev.featherless.ai
+    demo: https://x.com/picocreator/status/2101006253829046539
+    demo 2: https://x.com/Richelle_Ji/status/2101064292242219407
+    demo 3: https://x.com/vintcessun/status/2101896965181395175
+  tags:
+  - open-model
+  - logits
+  - huggingface
+- name: Six Jev clones in two days
+  url: https://x.com/KUMAN_R/status/2101473262693994936
+  kind: post
+  author: KUMAN_R
+  description: 'Japanese summary comparing the architectures of six open Jev clones: Laya, DiffusionGemmaJev, Bespoke Nimble, SemIf (formerly OpenJev), Jevlike and Kev-0.5B.'
+  metrics:
+    likes: 756
+    views: 55411
+  date: '2026-09-20'
+  links:
+    article: https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in
+  tags:
+  - clones
+  - open-weights
+  - japanese
+- name: smalljev
+  url: https://github.com/isHeSatoshi/smalljev
+  kind: repo
+  author: isHeSatoshi
+  description: Open Jev-style decision model built on MiniCPM5-2B-Base with a LoRA adapter and native decision heads, about 2.5B parameters answering in one forward pass with no generated tokens, aimed at phones.
+  date: '2026-09-20'
+  links:
+    model: https://huggingface.co/isHeSatoshi/smalljev-semantic-v9
+  tags:
+  - open-weights
+  - on-device
+- name: snapjudge
+  url: https://github.com/Micha0827/snapjudge
+  kind: repo
+  author: Micha0827
+  description: TypeSafe-compatible server that reads Choice, Score, and Noul probabilities from the logits of local Qwen models on Apple Silicon via MLX; Qwen3.8-27B reaches 81.2% agreement with Jev on 20 public cases.
+  image: https://raw.githubusercontent.com/Micha0827/snapjudge/main/assets/snaprun.gif
+  metrics:
+    stars: 10
+  date: '2026-09-18'
+  links:
+    discussion: https://www.reddit.com/r/LocalLLM/comments/1wlr8sp/i_rebuilt_the_jev_interface_with_local_qwen/
+  tags:
+  - mlx
+  - apple-silicon
+  - qwen
+- name: solar-mini4-jev
+  url: https://github.com/hunkim/solar-mini4-jev
+  kind: repo
+  author: hunkim
+  description: Drop-in wrapper that serves Upstage Solar Mini4 through the Jev System One API shape, with a hosted bring-your-own-key endpoint and a head-to-head benchmark.
+  jev: Under a Grok 4.6 judge, Solar Mini4 missed 7 of 447 answer fields and Jev missed 26, while Jev was about 3.2x faster.
+  image: https://raw.githubusercontent.com/hunkim/solar-mini4-jev/main/bench/infographic_grok46_judge.png
+  metrics:
+    stars: 16
+  date: '2026-09-21'
+  links:
+    app: https://solar-mini4-jev.vercel.app
+    docs: https://hunkim.github.io/solar-mini4-jev/
+  tags:
+  - solar
+  - jev-compatible
+  - benchmark
+- name: Solomon
+  url: https://huggingface.co/DoccyHealth/Solomon
+  kind: model
+  author: Doccy (Archer Hume)
+  description: LoRA adapter and trained answer heads for Qwen3.8-27B that turn a document plus structured questions into one probability per decision, with pointers to supporting sentences and no text generation.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/DoccyHealth/Solomon.png
+  metrics:
+    likes: 42
+  date: '2026-09-21'
+  links:
+    post: https://archerhume.com/posts/jevs-architecture-unmasked
+  tags:
+  - open-weights
+  - documents
+  - calibration
+- name: SparkStation decision models
+  url: https://github.com/kshetrajna12/sparkstation/blob/main/supervisor/launchers/reflex_launcher.py
+  kind: repo
+  author: kshetrajna12
+  description: Model fleet manager for NVIDIA DGX Spark that serves decision models such as Reflex over a TypeSafe-Jev-compatible POST /v1/systemone endpoint next to its OpenAI-compatible gateway.
+  metrics:
+    repo_stars: 8
+  date: '2025-10-27'
+  links:
+    repo: https://github.com/kshetrajna12/sparkstation
+  tags:
+  - dgx-spark
+  - serving
+  - reflex
+- name: Splash
+  url: https://github.com/incoai/splash
+  kind: repo
+  author: incoai
+  description: Local Apple silicon inference engine for coding agents that also serves a TypeSafe-compatible /v1/systemone endpoint, answering noul, choice and score questions from logits and working with the official SDK.
+  metrics:
+    stars: 579
+  date: '2026-09-18'
+  links:
+    article: https://inco.ai/blog/splash/
+  tags:
+  - apple-silicon
+  - local-inference
+  - semif
+- name: System One
+  url: https://github.com/sgoedecke/system-one
+  kind: repo
+  author: sgoedecke
+  description: Minimal code that turns any open LLM into a Jev-style, typesafe-sdk-compatible classifier via batched single-token choice inference; with Qwen3-8B it plays Doom at 172 ms per action versus 600 ms with tool calls.
+  metrics:
+    stars: 25
+  date: '2026-09-17'
+  tags:
+  - qwen
+  - open-model
+  - doom
+- name: System One (distilled)
+  url: https://huggingface.co/shreyanbr/system-one-distilled
+  kind: model
+  author: shreyanbr
+  description: A 70.8M DeBERTa-v3-xsmall cross-encoder for the Jev /v1/systemone schema, trained on Claude Haiku 4.5's answers to compare distillation against gold labels.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/shreyanbr/system-one-distilled.png
+  metrics:
+    downloads: 25
+  date: '2026-09-19'
+  links:
+    project: https://github.com/shreyanbr/jev-haiku-benchmarking
+  tags:
+  - deberta
+  - distillation
+- name: System One (gold)
+  url: https://huggingface.co/shreyanbr/system-one-gold
+  kind: model
+  author: shreyanbr
+  description: A 70.8M DeBERTa-v3-xsmall cross-encoder for the Jev /v1/systemone schema trained on each dataset's own labels, the gold-supervised arm of a Jev versus Haiku benchmarking study.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/shreyanbr/system-one-gold.png
+  metrics:
+    downloads: 16
+  date: '2026-09-19'
+  links:
+    project: https://github.com/shreyanbr/jev-haiku-benchmarking
+  tags:
+  - deberta
+  - cross-encoder
+- name: System One (phase2 student)
+  url: https://huggingface.co/lafalce/system-one-model
+  kind: model
+  author: lafalce
+  description: Local decision model from ModernBERT-base with LoRA and a two-layer scoring head that takes JSON or text state and answers typed choice, score and noul questions in one pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/lafalce/system-one-model.png
+  date: '2026-09-19'
+  links:
+    project: https://github.com/mateolafalce/system-one-model
+  tags:
+  - modernbert
+  - student
+- name: System One (zeroshot)
+  url: https://huggingface.co/shreyanbr/system-one-zeroshot
+  kind: model
+  author: shreyanbr
+  description: Unsupervised baseline of a 70.8M DeBERTa-v3-xsmall cross-encoder implementing the Jev /v1/systemone schema, answering Choice, Score and Noul in one batched pass.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/shreyanbr/system-one-zeroshot.png
+  metrics:
+    downloads: 15
+  date: '2026-09-19'
+  links:
+    project: https://github.com/shreyanbr/jev-haiku-benchmarking
+  tags:
+  - deberta
+  - cross-encoder
+- name: System One Gemma
+  url: https://github.com/akash-kamat/system-one-gemma
+  kind: repo
+  author: akash-kamat
+  description: Open Jev-style decision model that puts a linear scoring head on Gemma 3 270M, scoring every option's sequence in one batched forward pass and softmaxing into calibrated Choice, Noul and Score answers.
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  tags:
+  - gemma
+  - scoring-head
+  - open-model
+- name: System One Lite
+  url: https://github.com/snellingio/system-one
+  kind: repo
+  author: snellingio
+  description: Proof-of-concept HTTP service for constrained decisions with a local language model that answers declared Choice, Score, and Noul questions by reading scores at a fixed answer position, with no generation.
+  image: https://raw.githubusercontent.com/snellingio/system-one/main/docs/assets/how-system-one-lite-works-v3.png
+  metrics:
+    stars: 41
+  date: '2026-09-16'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49727643
+  tags:
+  - local-inference
+  - mlx
+- name: System One Mini
+  url: https://huggingface.co/DavidHatley/system-one-mini
+  kind: model
+  author: David Hatley
+  description: Research prototype with a 69.3M-parameter DistilBERT encoder and five typed classification heads for fixed decisions over synthetic software-diagnosis summaries; explicitly not a Jev reproduction.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/DavidHatley/system-one-mini.png
+  metrics:
+    downloads: 151
+  date: '2026-09-16'
+  tags:
+  - jev-like
+  - distilbert
+  - prototype
+- name: System One training pairs
+  url: https://huggingface.co/datasets/shreyanbr/system-one-training-pairs
+  kind: model
+  author: shreyanbr
+  description: 'Training bundle for a DeBERTa System One cross-encoder: gold premise-hypothesis pairs, Claude Haiku 4.5 distillation labels, fixed Banking77 and tool-selection splits, and the fine-tuning code.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/shreyanbr/system-one-training-pairs.png
+  metrics:
+    downloads: 93
+  date: '2026-09-19'
+  links:
+    project: https://github.com/shreyanbr/jev-haiku-benchmarking
+  tags:
+  - dataset
+  - cross-encoder
+- name: System One vs Laya vs DeepSeek
+  url: https://huggingface.co/spaces/henrybit/jev-vs-deepseek
+  kind: app
+  author: henrybit
+  description: 'Chinese-language Space comparing three decision paths on the same state and typed questions: pngwn''s open System One scorer, Laya, and DeepSeek via chat completions returning JSON.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/henrybit/jev-vs-deepseek.png
+  date: '2026-09-22'
+  tags:
+  - laya
+  - comparison
+  - chinese
+- name: 'System One: encode once, decide in parallel'
+  url: https://huggingface.co/spaces/jasonkneen/open-jev
+  kind: app
+  author: jasonkneen
+  description: Space showing the inference path that makes pngwn's System One scorer cheap, encoding the state once and scoring all options in parallel, next to the instruct model generating the same answers.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/jasonkneen/open-jev.png
+  metrics:
+    likes: 1
+  date: '2026-09-18'
+  links:
+    model: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer
+  tags:
+  - kv-cache
+  - demo
+- name: system-one-270m
+  url: https://huggingface.co/kaivoss/system-one-270m
+  kind: model
+  author: kaivoss
+  description: Open System One reproduction on Gemma 3 270M that takes state plus a typed question with caller-supplied options and returns one option with a calibrated probability, never free text.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/kaivoss/system-one-270m.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/akicou/system-one-270m
+  tags:
+  - gemma
+  - small-model
+- name: system-one-270m-data
+  url: https://huggingface.co/datasets/kaivoss/system-one-270m-data
+  kind: model
+  author: kaivoss
+  description: Synthetic set of 25,002 typed decisions with soft target distributions over caller-supplied options, rendered as lettered prompts, for training the open system-one-270m model.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/kaivoss/system-one-270m-data.png
+  date: '2026-09-21'
+  links:
+    project: https://github.com/akicou/system-one-270m
+  tags:
+  - dataset
+  - soft-labels
+- name: system-one-adapter (Rust)
+  url: https://github.com/codeitlikemiley/system-one-adapter-rust
+  kind: repo
+  author: codeitlikemiley
+  description: 'Rust port of system-one-adapter: a drop-in replacement for TypeSafe''s system_one call backed by LLM APIs, with compatible question, answer, retry and error types for comparing cost, speed and quality.'
+  date: '2026-09-16'
+  tags:
+  - rust
+  - llm-adapter
+  - compatible-api
+- name: system-one-open
+  url: https://github.com/mithalouni/system-one-open
+  kind: repo
+  author: mithalouni
+  description: Open Jev-style decision model built on Gemma 4 E2B (attention LoRA) and Gemma 3 270M, trained and served on Modal; reports 76.7% on TypeSafe's public eval strict subset versus 86.9% for Jev.
+  metrics:
+    stars: 28
+  date: '2026-09-17'
+  tags:
+  - open-model
+  - gemma
+  - modal
+- name: system-one-qwen3.5-4b-scorer
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer
+  kind: model
+  author: pngwn
+  description: Open Jev-shaped decision model on Qwen3.5-4B-Base with a scoring head that returns a distribution over exactly the caller's options for yes/no, Choice and Score questions in one pass.
+  jev: Scores each (state, question, option) triple and softmaxes per question; training code included.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/pngwn/system-one-qwen3.5-4b-scorer.png
+  metrics:
+    likes: 13
+    downloads: 525
+  date: '2026-09-16'
+  tags:
+  - jev-like
+  - qwen
+  - scorer
+- name: systemANE
+  url: https://github.com/kerryrm/systemANE
+  kind: repo
+  author: kerryrm
+  description: Proof of concept of a System One-style engine on Apple's Neural Engine with Choice, Boolean, and Score primitives over a 22.6M-parameter encoder, escalating unsure cases to Apple's Foundation Models.
+  jev: Reports 93.3% accuracy and ECE 0.041 on CLINC150 at 1.4 ms per decision.
+  metrics:
+    stars: 8
+  date: '2026-09-20'
+  tags:
+  - apple-neural-engine
+  - on-device
+- name: systemone-lite
+  url: https://github.com/fritzprix/systemone-lite
+  kind: repo
+  author: fritzprix
+  description: Toy local approximation of the System One API backed by a small causal LM (Qwen2.5-0.5B by default), scoring only option tokens over a shared KV-cached state, with optional fine-tuned checkpoints.
+  image: https://pbs.twimg.com/tweet_video_thumb/HSkFKNobwAALLCJ.jpg
+  metrics:
+    stars: 3
+    downloads: 93
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/DwidLee/status/2101216386790154678
+    model: https://huggingface.co/datasets/dwidlee/systemone-lite-general
+    model 2: https://huggingface.co/dwidlee/systemone-lite-0.5b
+  tags:
+  - qwen
+  - local
+  - fine-tuning
+- name: tensai System One endpoint
+  url: https://github.com/mattn/tensai/blob/main/internal/llm/systemone.go
+  kind: repo
+  author: mattn
+  description: Tiny pure-Go neural-network framework that serves Jev-shaped System One requests from any loaded model by reading labeled logits after each question, so Jev API clients can point at it.
+  metrics:
+    repo_stars: 106
+  date: '2026-08-19'
+  links:
+    docs: https://mattn.github.io/tensai/
+  tags:
+  - go
+  - local
+  - gguf
+- name: tiny-jev
+  url: https://github.com/karimatayuta/tiny-jev
+  kind: repo
+  author: karimatayuta
+  description: Small local judgment model for Japanese text that returns choice, score, and noul answers from Qwen3 yes/no scores with LoRA training, abstaining until business data and calibration are in place.
+  date: '2026-09-18'
+  tags:
+  - japanese
+  - qwen3
+  - lora
+- name: Tiny-Jev
+  url: https://huggingface.co/lostargon/Tiny-Jev
+  kind: model
+  author: lostargon
+  description: 'Open 0.6B System One model on Qwen3-0.6B that answers typed questions with calibrated probabilities: 95.8% accuracy and 0.004 ECE on in-family tests, 93.5% out of distribution.'
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/models/lostargon/Tiny-Jev.png
+  metrics:
+    likes: 3
+  date: '2026-09-21'
+  tags:
+  - qwen
+  - small-model
+- name: Train your own Jev-like model
+  url: https://x.com/AstroHanRay/status/2101709185155231895
+  kind: post
+  author: AstroHanRay
+  description: Trains a Jev-style judgment model with RLCD on Qwen3.5-4B plus a rank-8 LoRA (32K questions, 9 GPU hours, about $42), tying Jev on the 120-question JevBench.
+  image: https://pbs.twimg.com/media/HSrFNeXbEAArB6H.jpg?name=orig
+  metrics:
+    likes: 132
+    views: 10851
+  date: '2026-09-20'
+  links:
+    model: https://huggingface.co/AstroHan/decision-head-qwen3.5-4b-rlcd-32k
+    project: https://huggingface.co/astrohan/decision-head-qwen3.5-4b-rlcd-32k
+  tags:
+  - rlcd
+  - lora
+  - training
+- name: TurboLLM Jev mode
+  url: https://github.com/mohitsoni48/TurboLLM/tree/main/turbollm/web/src/screens/jev
+  kind: repo
+  author: mohitsoni48
+  description: Local LLM runner that detects NLI cross-encoder models as local Jev models and serves them through /v1/systemone, /v1/classify and /v1/rerank, with a JSON-first playground.
+  metrics:
+    repo_stars: 275
+  date: '2026-06-12'
+  links:
+    app: https://turbollm.dev
+  tags:
+  - local
+  - self-hosted
+  - nli
+- name: typed-decisions
+  url: https://github.com/kotoba-lang/typed-decisions
+  kind: repo
+  author: kotoba-lang
+  description: Lightweight reproduction of the Jev shape, one state with many Choice, Score, and Noul questions answered in one pass, on ModernBERT, DeBERTa, and LLaDA-MoE with measured latency, calibration, and training cost.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - reproduction
+  - modernbert
+- name: TypeLLM
+  url: https://github.com/TypeLLM/TypeLLM
+  kind: repo
+  author: TypeLLM
+  description: Jev-inspired SGLang extension that gives open autoregressive LLMs typed outputs (string, integer, number, boolean, enum) from a JSON Schema, with single-token choices, shared-prefix KV reuse and dependency graphs.
+  image: https://github.com/user-attachments/assets/b1f2dbc6-21b7-4222-a0fb-dacfe1650797
+  metrics:
+    stars: 37
+  date: '2026-09-17'
+  links:
+    homepage: https://typellm.ai
+  tags:
+  - sglang
+  - typed-decoding
+  - open-models
+- name: typesafe-local
+  url: https://github.com/aabolfazl/typesafe-local
+  kind: repo
+  author: aabolfazl
+  description: Local MLX server with TypeSafe's API shape that encodes a document once, appends each question as a short suffix and reads logits instead of generating; four questions take ~200 ms on an M4 Pro.
+  jev: Measures how calibration and option order affect the answers; the API shape matches TypeSafe so the same client works against either.
+  image: https://raw.githubusercontent.com/aabolfazl/typesafe-local/main/docs/diagrams/03-encode-once-ask-many.png
+  metrics:
+    stars: 8
+  date: '2026-09-18'
+  tags:
+  - mlx
+  - local-models
+  - compatible-api
+- name: VEJI-V2
+  url: https://www.reddit.com/r/LocalLLM/comments/1wlf4sv/opensource_jevstyle_typed_decision_model_that/
+  kind: reddit
+  author: stopwwIII
+  description: 'MIT-licensed non-autoregressive typed decision model: a 3.3M-parameter head on a frozen multilingual MiniLM that scores options jointly, cites evidence spans, and can abstain.'
+  jev: Compiles long state once, then answers many typed questions against it; reports 82.95% test accuracy on 522 questions.
+  image: https://external-preview.redd.it/xjC6fykTq043HwezoQzDqEkNKkN-0dxncWqXwHYZK6s.png?auto=webp&s=3f997e52f1b20af5ea33ad2aaea3df6fbd79202d
+  metrics:
+    points: 5
+  date: '2026-09-20'
+  links:
+    model: https://huggingface.co/loaiabdalslam/VEJI-V2
+    project: https://huggingface.co/loaiabdalslam/veji-v2
+  tags:
+  - open-weights
+  - encoder
+  - local
+- name: verdict
+  url: https://github.com/khimaros/verdict
+  kind: repo
+  author: khimaros
+  description: Self-hosted server that turns any llama-server or llama-swap endpoint into a Jev-compatible System One API by reading the probability on each option label in one forward pass, so Jev clients only change the base URL.
+  metrics:
+    stars: 5
+  date: '2026-09-20'
+  links:
+    demo: https://news.ycombinator.com/item?id=49783288
+  tags:
+  - llama-cpp
+  - self-hosted
+  - system-one-api
+- name: Visual Jev
+  url: https://github.com/andrueandersoncs/visual-jev
+  kind: repo
+  author: andrueandersoncs
+  description: Open, local image-native typed decisions on a Qwen3-VL backbone, answering Choice, Score and Noul questions about images as calibrated distributions without generating text.
+  jev: Uses packed question branches, a learned pointer head, LoRA and held-out temperature calibration; fails closed without a verified checkpoint.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - vision
+  - qwen3-vl
+  - calibration
+- name: Visual-Jev
+  url: https://github.com/jiangxiluning/Visual-Jev
+  kind: repo
+  author: jiangxiluning
+  description: Copy of the SemIf (formerly OpenJev) open reimplementation of Jev's typed-decision interface that adds an optional image input, running Qwen3.5-4B as a vision-language model for direct, serial and shared scoring.
+  image: https://raw.githubusercontent.com/jiangxiluning/Visual-Jev/master/demo/assets/semif-phase1-replay.gif
+  metrics:
+    stars: 7
+  date: '2026-09-22'
+  links:
+    upstream: https://github.com/TheoLeeCJ/SemIf
+  tags:
+  - vision
+  - qwen
+  - semif
+- name: vLLM DiffusionGemma Jev mode
+  url: https://github.com/vllm-project/vllm/pull/57250
+  kind: repo
+  author: mmastrac
+  description: Open vLLM pull request adding a structured generation mode that turns DiffusionGemma into a Jev-like model, with a prototype server for the /v1/systemone endpoint.
+  jev: Fixes canvas positions in the output format and reads token logprobs to derive the answer and confidence, resampling when entropy is high.
+  metrics:
+    stars: 92393
+  date: '2026-09-16'
+  links:
+    demo: https://news.ycombinator.com/item?id=49734375
+  tags:
+  - vllm
+  - diffusion
+  - jev-compatible
+- name: vllm-jev-decison
+  url: https://github.com/siliconkernel/vllm-jev-decison
+  kind: repo
+  author: siliconkernel
+  description: Plugin for vLLM that adds a classification-only mode for Jev-like typed decisions, scoring candidate labels from a finite JSON Schema to return typed values, probabilities, and abstention with no generation.
+  image: https://raw.githubusercontent.com/siliconkernel/vllm-jev-decison/main/assets/en/architecture.svg
+  metrics:
+    stars: 8
+  date: '2026-09-18'
+  tags:
+  - vllm
+  - plugin
+- name: Von
+  url: https://github.com/wfzyx/von
+  kind: repo
+  author: wfzyx
+  description: Open non-autoregressive decision model of about 395M parameters with public weights, training code and a System One-shaped API, answering Choice, Noul and Score questions locally in tens of milliseconds.
+  image: https://external-preview.redd.it/VW75dC3ID5HFYYIWiSOP1LncNeZEjQCbaTdR9KcPGvI.png?auto=webp&s=bb6e8f3dc6956150a4710c2fe60ee80968b33d3f
+  metrics:
+    stars: 381
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49781612
+  tags:
+  - jev-like
+  - open-weights
+  - local
+- name: webml-kit
+  url: https://github.com/hemanth/webml-kit
+  kind: repo
+  author: hemanth
+  description: Framework-agnostic toolkit for running ML models in the browser over WebGPU/WASM that adds a Jev-style decision task, reading typed Choice, Noul and Score answers from local models such as Qwen or OpenJev GGUFs.
+  metrics:
+    stars: 6
+  date: '2026-04-20'
+  links:
+    app: https://hemanth.github.io/webml-kit/
+  tags:
+  - webgpu
+  - browser
+  - local-models

@@ -16,14 +16,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Check links
-        id: lychee
+      - name: Check links in hand-written docs
+        if: github.event_name == 'pull_request'
         uses: lycheeverse/lychee-action@v2.9.0
         with:
-          args: --no-progress --max-retries 3 --accept '200..=299,403,429' './**/*.md'
-          fail: ${{ github.event_name == 'pull_request' }}
-      - name: Open an issue for broken links
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+          args: --no-progress --max-retries 3 --accept '200..=299,403,429' README.md contributing.md cheatsheet.md code-of-conduct.md
+      - name: Check all links and images
+        id: lychee
+        if: github.event_name != 'pull_request'
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --no-progress --max-retries 3 --max-concurrency 16 --accept '200..=299,403,429' './**/*.md'
+          fail: false
+      - uses: astral-sh/setup-uv@v10.2.0
+        if: github.event_name != 'pull_request'
+      - name: Check hotlinked images
+        id: images
+        if: github.event_name != 'pull_request'
+        run: |
+          set +e
+          uv run scripts/check_images.py > images.txt
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat images.txt >> ./lychee/out.md
+      - name: Open an issue for broken links or images
+        if: github.event_name != 'pull_request' && (steps.lychee.outputs.exit_code != 0 || steps.images.outputs.exit_code != 0)
         uses: peter-evans/create-issue-from-file@v6
         with:
           title: Broken links report

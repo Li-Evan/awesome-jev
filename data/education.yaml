@@ -1,0 +1,153 @@
+title: Education
+emoji: 🎓
+layout: gallery
+description: Tutoring, grading, quizzes, and learning tools.
+entries:
+- name: Exam question predictor
+  url: https://x.com/hametgholizadeh/status/2101289895624917076
+  kind: post
+  author: hametgholizadeh
+  description: Ranks 80 real exam questions and 297 practice questions by how likely each is to appear on the actual exam, done in 80 seconds for $0.0256.
+  jev: Scores each practice question against the real exam set.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg
+  metrics:
+    likes: 83
+    views: 12258
+  date: '2026-09-19'
+  tags:
+  - exams
+  - ranking
+- name: Keating Jev teaching judge
+  url: https://github.com/Diogenesoftoronto/keating/blob/main/scripts/training/benchmark_judge_systemone.py
+  kind: repo
+  author: Diogenesoftoronto
+  description: 'Typed-judgment reviewer for the Keating AI tutor''s teaching rubric: Jev scores each dimension and selects evidence spans enumerated by code, so quotes cannot be invented, plus a harness comparing it with the incumbent LLM judge.'
+  jev: 'Per rubric dimension: a 0/1/2 Score, a judgeability Noul, a Choice over candidate spans (max 64, narrowed in stages) and a Choice over support values.'
+  metrics:
+    repo_stars: 36
+  date: '2026-04-01'
+  links:
+    repo: https://github.com/Diogenesoftoronto/keating
+    app: https://keating.help
+  tags:
+  - tutoring
+  - llm-judge
+  - evidence
+- name: Leximory Jev evaluation
+  url: https://github.com/NarixHine/leximory/blob/main/apps/leximory/server/ai/evaluate.ts
+  kind: repo
+  author: NarixHine
+  description: Language-learning app for English and Japanese readers that runs Jev through the AI SDK evaluate API, for example to detect whether a looked-up term names a place and what kind.
+  jev: A Noul for 'has a location' gated at a threshold plus a Choice for the location kind, billed against the user's monthly quota.
+  metrics:
+    repo_stars: 10
+  date: '2024-09-08'
+  links:
+    app: https://leximory.com
+    repo: https://github.com/NarixHine/leximory
+  tags:
+  - language-learning
+  - ai-sdk
+  - classification
+- name: ReadAloud (dasheng)
+  url: https://github.com/wquguru/dasheng
+  kind: repo
+  author: wquguru
+  description: English read-aloud trainer where the R2T2 streaming ASR transcribes your speech, Jev judges whether each mismatched word was misread and how, and code turns those judgments into a score.
+  metrics:
+    stars: 122
+  date: '2026-09-20'
+  tags:
+  - pronunciation
+  - asr
+  - language-learning
+- name: SkellySpeak Jev assessment study
+  url: https://github.com/freemocap/skellyspeak/tree/main/tools/benchmarks/conversation-prompts/assessment
+  kind: repo
+  author: freemocap
+  description: Benchmark in the SkellySpeak language-learning app that assesses learner messages against 45 coaching skills with Jev and compares it to a dense Gemini control in a 648-request Spanish factorial study with a dedicated dashboard.
+  jev: 45 independent Choice questions per learner message over five coaching-outcome labels, plus a binary Noul arm with 90 questions.
+  metrics:
+    repo_stars: 35
+  date: '2025-01-24'
+  links:
+    repo: https://github.com/freemocap/skellyspeak
+  tags:
+  - language-learning
+  - assessment
+  - benchmark
+- name: Střední školy news classifier
+  url: https://github.com/tangero/stredniskoly/blob/main/scripts/novinky_jev.py
+  kind: repo
+  author: tangero
+  description: Script behind a Czech site of secondary-school admission results that uses Jev to classify schools' news posts and decide which date in an announcement, such as an open day, is the event date.
+  jev: Per-date questions built from the post text, capped in number because accuracy drops as context grows; dates without a year are never asked.
+  metrics:
+    repo_stars: 5
+  date: '2026-01-24'
+  links:
+    app: https://stredniskoly.vercel.app
+    repo: https://github.com/tangero/stredniskoly
+  tags:
+  - czech
+  - schools
+  - classification
+- name: talkr
+  url: https://x.com/0xaniol/status/2101076982373191927
+  kind: post
+  author: 0xaniol
+  description: Speaking-practice app that gives you a topic, records 30 seconds of speech and has Jev score pauses, filler words, repetition, confidence and clarity with feedback.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101074153407422464/img/fzFh7BZaZCmGdh8v.jpg
+  metrics:
+    likes: 111
+    views: 5237
+  date: '2026-09-18'
+  tags:
+  - speaking
+  - feedback
+- name: TeachAny PBL Jev recall
+  url: https://github.com/weponusa/teachany-courseware/blob/main/scripts/pbl-jev-recall-flow.mjs
+  kind: repo
+  author: weponusa
+  description: Recall step in the TeachAny courseware site's project-based-learning pipeline that asks Jev an independent Noul per curriculum item and drops candidates below 0.20 before the incumbent LLM judge picks the top 16.
+  metrics:
+    repo_stars: 17
+  date: '2026-05-09'
+  links:
+    repo: https://github.com/weponusa/teachany-courseware
+  tags:
+  - curriculum
+  - pbl
+  - filtering
+- name: Universal History Simulator chronicle review
+  url: https://github.com/benjaminbreen/UHS/blob/main/src/chronicle/review.ts
+  kind: repo
+  author: benjaminbreen
+  description: Playthrough grader in the Universal History Simulator, an educational procedural history game, that asks Jev whether each recorded turn is anachronistic, uses outside knowledge, fits the character's role and what purpose it serves.
+  jev: 'Atomic questions per turn in parallel: anachronism and outside-knowledge Nouls, a 5-level plausibility Score and a purpose Choice.'
+  metrics:
+    repo_stars: 19
+  date: '2025-08-01'
+  links:
+    repo: https://github.com/benjaminbreen/UHS
+    app: https://historysimulator.vercel.app
+  tags:
+  - history
+  - educational-game
+  - grading
+- name: Working Memory Jev (Passage)
+  url: https://github.com/AustinAWay/Working-Memory-Jev
+  kind: repo
+  author: AustinAWay
+  description: Experimental local teaching aid that shows educators where an instructional passage may ask learners to hold too many ideas or relationships at once as the text unfolds.
+  jev: Jev proposes active idea groups, source connections, and changes in demand; the estimates are not validated measurements.
+  image: https://raw.githubusercontent.com/AustinAWay/Working-Memory-Jev/main/docs/provisional-estimates-live.png
+  metrics:
+    stars: 39
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/Austin_Way/status/2102131624921968704
+  tags:
+  - education
+  - reading
+  - cognitive-load

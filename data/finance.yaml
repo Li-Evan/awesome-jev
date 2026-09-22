@@ -1,0 +1,1265 @@
+title: Finance and Trading
+emoji: 💰
+layout: gallery
+description: Trading agents, market signals, fraud and risk checks, and financial document processing.
+entries:
+- name: 15-min BTC JAP
+  url: https://github.com/jpanasuk-netizen/15-min-BTC-JAP
+  kind: repo
+  author: jpanasuk-netizen
+  description: Kalshi BTC 15-minute YES/NO bot that feeds live Coinbase BTC-USD data to Jev every 15 seconds and fires at most one $2 order per window when confidence is at least 0.55.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - kalshi
+  - btc
+  - prediction-markets
+- name: AI Hedge Fund Jev adapter
+  url: https://github.com/virattt/ai-hedge-fund/blob/main/hedge_fund/llm/client.py
+  kind: repo
+  author: virattt
+  description: Native Jev adapter in the educational AI Hedge Fund project, letting its investor agents run a mandate with jev-1.13.0 and turning typed answers into the same JSON contract the chat models return.
+  metrics:
+    repo_stars: 63658
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/virattt/ai-hedge-fund
+  tags:
+  - investing
+  - agents
+- name: AI Hedge Fund with Jev
+  url: https://x.com/virattt/status/2100959848623899005
+  kind: post
+  author: virattt
+  description: 'Jev integration for the open-source AI Hedge Fund project: set a strategy, pick tickers and backtest with Jev making the trading decisions, so a run takes seconds rather than minutes.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100959729350561792/img/wc-JtyIBGa_9qgNL.jpg
+  metrics:
+    likes: 1070
+    views: 90048
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/virattt/ai-hedge-fund
+    project: https://github.com/virattt/ai-hedge-fund
+  tags:
+  - hedge-fund
+  - backtesting
+- name: AI Stock
+  url: https://github.com/EthanAlgoX/AIStock
+  kind: repo
+  author: EthanAlgoX
+  description: Stock research workspace with paper trading that can use Jev as a decisions-only backend, returning buy, sell or hold with probabilities for each simulated trading step.
+  jev: State holds a frozen skill, dated market bars, candidate universe and account; a Choice returns buy/sell/hold with category probabilities.
+  metrics:
+    stars: 331
+  date: '2025-12-20'
+  links:
+    docs: https://github.com/EthanAlgoX/AIStock/blob/main/docs/jev-trading-decisions.md
+  tags:
+  - trading
+  - stocks
+  - paper-trading
+- name: aiagents-stock Jev decisions
+  url: https://github.com/oficcejo/aiagents-stock/blob/main/typesafe_decision_client.py
+  kind: repo
+  author: oficcejo
+  description: Multi-agent A-share/HK/US stock analysis system that can have Jev return the final rating, confidence, price levels and news sentiment as typed answers instead of parsed text.
+  jev: Choice, Score and Noul with a min-confidence threshold; falls back to a DeepSeek text-and-parse chain when Jev is unavailable.
+  image: https://github.com/user-attachments/assets/fe366e1d-2352-46db-a3cc-6f147ee6d9d9
+  metrics:
+    repo_stars: 1942
+  date: '2025-10-03'
+  tags:
+  - stocks
+  - multi-agent
+  - analysis
+- name: AlgoVault Jev decision layer
+  url: https://github.com/AlgoVaultLabs/algovault-integrations/tree/main/examples/typesafe-jev
+  kind: repo
+  author: AlgoVaultLabs
+  description: Example that hands an AlgoVault crypto-perp trading verdict to Jev and asks whether to act now and how well the market regime suits an entry; code applies thresholds and logs act, hold, or escalate.
+  jev: A Noul act_now plus a 3-level Score regime_fit; numbers are bucketed in code before they reach the state, and it never places orders.
+  date: '2026-05-23'
+  links:
+    repo: https://github.com/AlgoVaultLabs/algovault-integrations
+  tags:
+  - trading
+  - crypto
+- name: arbistocks
+  url: https://x.com/Arbistocks/status/2101864009955946573
+  kind: post
+  author: Arbistocks
+  description: Arbitrage scanner over 49 stocks across 136 pools that puts Jev in its scan loop to decide whether a gap is real, which route to quote, whether size is past the peak, and fire or skip.
+  image: https://arbistocks.com/og.png
+  metrics:
+    likes: 30
+    views: 5232
+  date: '2026-09-21'
+  links:
+    app: https://arbistocks.com/app
+    project: https://arbistocks.com/app
+  tags:
+  - arbitrage
+  - trading
+  - defi
+- name: Autonomous onchain trading bot
+  url: https://x.com/MoonGotchi/status/2101320141065609294
+  kind: post
+  author: MoonGotchi
+  description: Fully autonomous real-time trading bot built in an evening that ingests onchain and offchain data to make rapid trade decisions; the author reports it has lost $31,680 so far.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg
+  metrics:
+    likes: 23930
+    views: 1377598
+  date: '2026-09-19'
+  tags:
+  - trading
+  - crypto
+  - onchain
+- name: Bayn Jev strategy
+  url: https://github.com/proompteng/lab/tree/main/services/bayn/src/jev
+  kind: repo
+  author: proompteng
+  description: Intraday trading execution service whose only active strategy sends pinned jev-1.13.0 verified prices, indicators, quotes and position context and gets typed probability distributions for entries and position management.
+  jev: Code computes quantities, sizing and risk; answers are rejected unless probabilities stay within 0.005 of a normalized distribution.
+  metrics:
+    repo_stars: 8
+  date: '2024-03-23'
+  links:
+    repo: https://github.com/proompteng/lab
+    docs: https://github.com/proompteng/lab/blob/main/services/bayn/README.md
+  tags:
+  - trading
+  - execution
+  - typescript
+- name: BTC-Jev Signal
+  url: https://github.com/WebGrga/btc-jev-signal
+  kind: repo
+  author: WebGrga
+  description: Non-trading multi-horizon BTC forecasting experiment that collects Kraken spot and Binance futures data, asks Jev for directional judgments and scores them on a public dashboard, running on Cloudflare Workers and D1.
+  metrics:
+    stars: 2
+  date: '2026-09-16'
+  links:
+    app: https://lab.rokogrga.com/btc-jev
+  tags:
+  - bitcoin
+  - forecasting
+  - dashboard
+- name: CartShield
+  url: https://github.com/ndolinschi/cartshield
+  kind: repo
+  author: ndolinschi
+  description: Checkout fraud disposition for small merchants that decides approve, 3DS, hold or decline, with a fraud-risk score and checks for card testing, billing-shipping mismatch and friendly-fraud cues.
+  date: '2026-09-17'
+  links:
+    app: https://cartshield.vercel.app
+    app 2: https://cartshield.vercel.app
+  tags:
+  - fraud
+  - checkout
+  - payments
+- name: Clawby
+  url: https://x.com/openclawby/status/2102199469970477555
+  kind: post
+  author: openclawby
+  description: Crypto market analytics app where Jev re-scores top-100 coins every 10 minutes on technicals, liquidity, sentiment and risk, and produces per-minute buy, sell or hold signals.
+  image: https://pbs.twimg.com/media/HSyCys4a0AA62Sc.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 278
+  date: '2026-09-22'
+  links:
+    app: https://app.openclawby.com
+    project: https://app.openclawby.com
+  tags:
+  - crypto
+  - market-signals
+- name: Danish stock-market backtest
+  url: https://x.com/tommy_jepsen/status/2100939646653903063
+  kind: post
+  author: tommy_jepsen
+  description: Backtest of Jev trading the Danish stock market for all of 2025 (239 trading days) on sentiment from market data, news, Wikipedia and Google Trends; 8.1 million tokens cost $0.32.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100938100272746496/img/8yisuerchTVTcFTn.jpg
+  metrics:
+    likes: 850
+    views: 123671
+  date: '2026-09-18'
+  tags:
+  - trading
+  - backtest
+  - sentiment
+- name: Desic Terminal fastlane
+  url: https://github.com/xiazhi88/Desic-Terminal/blob/main/scripts/cline-fastlane.mjs
+  kind: repo
+  author: xiazhi88
+  description: AI trading terminal for OKX USDT perpetuals whose fastlane mode has Jev make a sub-second call each round before a narrow LLM call writes the order parameters.
+  jev: Replacing one watch/long/short Choice with separate long_score and short_score Score questions raised the rate of directional calls from 0.0% (0/318) to 80.5% (256/318) on the same states.
+  image: https://raw.githubusercontent.com/xiazhi88/Desic-Terminal/main/docs/assets/readme/trading-workspace.png
+  metrics:
+    repo_stars: 12
+  date: '2026-07-31'
+  links:
+    repo: https://github.com/xiazhi88/Desic-Terminal
+  tags:
+  - crypto
+  - trading
+  - okx
+- name: dsh-crypto-workbench
+  url: https://github.com/limboinf/dsh-crypto-workbench
+  kind: repo
+  author: limboinf
+  description: DeepSeek Harness plugin for short-term OKX USDT perpetual trading experiments that shows Jev buy/sell/hold decision cards per coin beside risk gates, briefings and trade plans.
+  jev: Decision cards show buy, sell and hold probabilities with confidence; anything below 0.5 confidence is treated as wait. Orders require two explicit user commands.
+  image: https://raw.githubusercontent.com/limboinf/dsh-crypto-workbench/main/docs/img/overview.png
+  metrics:
+    stars: 9
+  date: '2026-09-20'
+  tags:
+  - crypto
+  - okx
+  - trading
+- name: FastRisk-Jev
+  url: https://huggingface.co/spaces/durganani60/fastrisk-jev
+  kind: app
+  author: durganani60
+  description: Real-time fraud triage demo that sends a transaction state to Jev through the OpenRouter Decisions API and gets a fraud probability, a risk category and a score back in under 250 ms.
+  jev: One Noul for fraud, a Choice over attack categories and a Score, all in one request.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/durganani60/fastrisk-jev.png
+  date: '2026-09-20'
+  tags:
+  - fraud
+  - risk
+- name: fedjev-bench
+  url: https://github.com/maybern-tripp-smith/fedjev-bench
+  kind: repo
+  author: maybern-tripp-smith
+  description: Pre-registered study that has Jev rank FOMC press-conference openings pairwise by hawkishness and checks the order against same-day rate moves and FedLock scores.
+  jev: Pairwise Choice under the criterion 'more hawkish about inflation' on jev-1.13.0, with a Haiku 4.5 comparison; main run cost about $0.031.
+  date: '2026-09-20'
+  links:
+    docs: https://maybern-tripp-smith.github.io/fedjev-bench/
+  tags:
+  - fomc
+  - monetary-policy
+  - evaluation
+- name: Fluxby TypeSafe integration
+  url: https://github.com/houke/fluxby/blob/main/docs/TYPESAFE-INTEGRATION.md
+  kind: repo
+  author: houke
+  description: 'Opt-in Jev features in Fluxby, a local-first budgeting dashboard for bank CSV exports: transaction categorization, date and direction inference on import, payment-provider detection, subscription grouping and deduplication.'
+  image: https://raw.githubusercontent.com/houke/fluxby/main/apps/screenshots/1.png
+  metrics:
+    repo_stars: 7
+  date: '2025-12-20'
+  links:
+    app: https://fluxby.app
+    repo: https://github.com/houke/fluxby
+  tags:
+  - budgeting
+  - transactions
+  - csv
+- name: Formanator Jev support
+  url: https://github.com/timrogers/formanator/blob/main/src/typesafe.rs
+  kind: repo
+  author: timrogers
+  description: Optional Jev backend in Formanator, a CLI and MCP tool for Forma benefit claims, where one Jev Choice picks the benefit and category from the merchant and description, falling back to an LLM on no match or low confidence.
+  image: https://github.com/user-attachments/assets/e053efc8-f4cb-4ea1-8850-6c82d668bf29
+  metrics:
+    repo_stars: 99
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/timrogers/formanator
+  tags:
+  - expenses
+  - benefits
+  - mcp
+- name: Hawk or Dove?
+  url: https://github.com/TurboGuo/jev-fedspeech
+  kind: repo
+  author: TurboGuo
+  description: Plays Fed press conferences with official captions and has Jev score every word the Chair says as hawkish or dovish in about 150 ms, next to a slower chat model.
+  jev: A Score over four stances from Hawkish to Dovish; answers are cached so each conference is paid for once.
+  date: '2026-09-19'
+  links:
+    app: https://fedspeech.pages.dev
+  tags:
+  - fed
+  - monetary-policy
+  - real-time
+- name: Investment teaser screener
+  url: https://x.com/chanjason/status/2101421682703352218
+  kind: post
+  author: chanjason
+  description: Finance demo that screens 10 deal teasers against investment criteria in 15.9 seconds for $0.0106.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101421469515280384/img/SgOhsrEL5pAF0lFq.jpg
+  metrics:
+    likes: 22
+    views: 2353
+  date: '2026-09-19'
+  tags:
+  - private-equity
+  - deal-screening
+- name: Invoice accounting classifier
+  url: https://x.com/iagolast/status/2100694100160745746
+  kind: post
+  author: iagolast
+  description: Reviews every company invoice and assigns each one an accounting category in seconds.
+  image: https://pbs.twimg.com/media/HScqAU3WkAE8Eig.jpg?name=orig
+  metrics:
+    likes: 125
+    views: 8797
+  date: '2026-09-17'
+  tags:
+  - invoices
+  - accounting
+  - classification
+- name: Jev + Kimi K3 fraud detection
+  url: https://github.com/Nutlope/jev-fraud
+  kind: repo
+  author: Nutlope
+  description: Open-source demo that classifies 100 emails for fraud with Jev and sends predictions below 95% confidence to Kimi K3 for review; the recorded run got 92 of 100 right in 6.1 seconds for about $0.102.
+  jev: Jev handled 70 emails on its own and escalated 30; up to 20 Jev calls run at once via Vercel AI Gateway.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100608348219478016/img/23vFEVMegwLrMa8g.jpg
+  metrics:
+    stars: 5
+    likes: 866
+    views: 59168
+  date: '2026-09-20'
+  links:
+    demo: https://x.com/nutlope/status/2100614659690713543
+  tags:
+  - fraud
+  - escalation
+  - kimi
+- name: Jev + Muse trading agent
+  url: https://x.com/Jester_Journal/status/2101235750431830095
+  kind: post
+  author: Jester_Journal
+  description: Self-improving hybrid trading harness where Jev makes trade decisions, Muse executes them via an MCP skill and explains each trade, then suggests rule changes.
+  metrics:
+    likes: 6
+    views: 314
+  date: '2026-09-19'
+  tags:
+  - trading
+  - agents
+  - hybrid
+- name: Jev / Poly BTC 5m Decision Lab
+  url: https://github.com/frankda/jev-poly-crypto-demo
+  kind: repo
+  author: frankda
+  description: Paper-trading research tool for Polymarket's BTC 5-minute up/down markets that turns live market state into Jev class scores, runs separate execution logic and shows a live dashboard.
+  jev: Follows the jev-trader structure; live trading mode is rejected at startup and no wallet is connected.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102196000005963776/img/J_7eFuDjznhJL_6l.jpg
+  metrics:
+    stars: 17
+    likes: 97
+    views: 21919
+  date: '2026-09-21'
+  links:
+    app: https://jev-poly-crypto-demo-black.vercel.app
+    inspiration: https://github.com/jarrodwatts/jev-trader
+    demo: https://x.com/FrankDa18249347/status/2102197241331290121
+  tags:
+  - polymarket
+  - paper-trading
+  - bitcoin
+- name: Jev 24/7 HFT trading system
+  url: https://www.youtube.com/watch?v=8DgRqDukf-U
+  kind: video
+  author: Lewis Jackson
+  description: Tutorial building an always-on trading loop with a dashboard where Jev makes the trade decisions, from API setup to a first test run and scaling the bot.
+  metrics:
+    views: 13271
+    likes: 375
+  date: '2026-09-21'
+  links:
+    prompt: https://part-timequant.com/jev
+  tags:
+  - trading
+  - bot
+  - tutorial
+- name: Jev AI Scalping Bot
+  url: https://www.youtube.com/watch?v=4_Wks0WLwgo
+  kind: video
+  author: Ben's AI Trading Lab
+  description: Futures scalping bot that asks Jev every 30 seconds to go long, short, wait, or move the stop on a $100k simulated account; after 24 hours it was down 2.3% with $1,300 in fees.
+  jev: One Choice over the bot's actions from intraday candles; the bot follows the most likely action.
+  metrics:
+    views: 11116
+    likes: 87
+  date: '2026-09-18'
+  links:
+    app: https://app.obside.com/labs/ai-scalping
+    project: https://app.obside.com/labs/ai-scalping
+  tags:
+  - trading
+  - futures
+  - paper-trading
+- name: Jev autonomous trading bot
+  url: https://x.com/0xKaspie/status/2102052707024466181
+  kind: post
+  author: 0xKaspie
+  description: Autonomous trading bot that watches on-chain and off-chain data in real time and lets Jev make each trade decision, reporting 90 fills at a 74.6% hit rate.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102051838132473856/img/FXE7gWkLy1n96My3.jpg
+  metrics:
+    likes: 12
+    views: 440
+  date: '2026-09-21'
+  tags:
+  - trading-bot
+  - crypto
+  - onchain
+- name: Jev Backtest Lab
+  url: https://www.youtube.com/watch?v=FPhDl_MwT8U
+  kind: video
+  author: The Fintech Builder
+  description: Backtests 300 Jev trade decisions across NVDA, JPM, XOM, BTC-USD, and GLD; 46 trades netted +3.82%, far below buy-and-hold, and trades with contradictory answers lost money.
+  metrics:
+    views: 6913
+    likes: 32
+  date: '2026-09-18'
+  tags:
+  - trading
+  - backtest
+  - evaluation
+- name: Jev BTC 5m Engine
+  url: https://github.com/BrunooMoniz/polymarket-btc-5m-agent
+  kind: repo
+  author: BrunooMoniz
+  description: Trading agent for Polymarket's 5-minute Bitcoin Up or Down markets where code prices each window from the Chainlink feed and Jev acts as a sanity gate and veto, with maker orders and paper mode by default.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - polymarket
+  - bitcoin
+  - trading-bot
+- name: Jev for financial research
+  url: https://x.com/zway_ai/status/2100921636597969361
+  kind: article
+  author: zway_ai
+  description: Chinese write-up of thousands of real API calls (about $0.05) testing Jev on financial research checks, such as spotting when guidance is misread as realized revenue, plus a review of trading demos.
+  image: https://pbs.twimg.com/media/HSf2_s-aMAAMXwh.jpg
+  metrics:
+    likes: 201
+    views: 42490
+  date: '2026-09-18'
+  tags:
+  - financial-research
+  - chinese
+  - filings
+- name: Jev for trading bots
+  url: https://www.youtube.com/watch?v=cV6pxlXgCv8
+  kind: video
+  author: Moon Dev
+  description: Walkthrough of applying Jev to a live crypto trading setup, asking six questions in one request to gate a token-sniper bot's entries instead of parsing LLM text.
+  jev: Six typed questions answered in parallel per request, with calibrated probabilities used as entry thresholds.
+  metrics:
+    views: 1423
+    likes: 31
+  date: '2026-09-21'
+  tags:
+  - trading
+  - crypto
+  - bots
+- name: Jev in a Laravel finance app
+  url: https://x.com/JonPurvis_/status/2101702289358565550
+  kind: post
+  author: JonPurvis_
+  description: Personal finance management app built with Laravel that uses Jev for its decisions, with a blog post on why it beat an LLM for this job and lessons learned.
+  image: https://www.jonathanpurvis.co.uk/images/posts/jev-is-for-decisions-not-chat/header.png
+  metrics:
+    likes: 9
+    views: 748
+  date: '2026-09-20'
+  links:
+    article: https://jonathanpurvis.co.uk/jev-is-for-decisions-not-chat/
+  tags:
+  - laravel
+  - php
+  - personal-finance
+- name: Jev Market Reflex
+  url: https://github.com/zzsong1023/jev-market-reflex
+  kind: repo
+  author: zzsong1023
+  description: Feeds live BTC, ETH and SOL market data from Kraken to Jev as compact state, turns it into typed BUY, SELL or HOLD decisions and applies them to a simulated paper portfolio.
+  image: https://raw.githubusercontent.com/zzsong1023/jev-market-reflex/main/assets/hero.svg
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - crypto
+  - paper-trading
+  - real-time
+- name: Jev on Kalshi prediction markets
+  url: https://www.youtube.com/watch?v=Od4j4osz4JY
+  kind: video
+  author: All About AI
+  description: Experiment using Jev to judge whether injury news moves Kalshi sports markets and to read Bitcoin prediction-market order books, with notes on limits for AI trading.
+  metrics:
+    views: 6579
+    likes: 64
+  date: '2026-09-18'
+  tags:
+  - prediction-markets
+  - kalshi
+  - trading
+- name: Jev peer-company selection
+  url: https://x.com/Alex_aic5/status/2101523309158343137
+  kind: post
+  author: Alex_aic5
+  description: Proof of concept for finance that brute-forces peer selection by ranking 6K+ candidate companies in about 40 seconds, with the criteria behind each score shown.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101520826855993344/img/G5Po0XYCjTrtzGvo.jpg
+  metrics:
+    likes: 2
+    views: 144
+  date: '2026-09-20'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49772480
+  tags:
+  - equity-research
+  - comparables
+  - ranking
+- name: Jev Realtime
+  url: https://github.com/rthomas24/jev-realtime-trading
+  kind: repo
+  author: rthomas24
+  description: Electron desktop app where paper-trading agents watch a live stock or crypto tape and Jev calls up, down or flat every second, while the app enforces stops and targets and books every trade.
+  image: https://raw.githubusercontent.com/rthomas24/jev-realtime-trading/main/docs/media/hero.png
+  metrics:
+    stars: 4
+  date: '2026-09-18'
+  tags:
+  - paper-trading
+  - crypto
+  - electron
+- name: Jev Trade
+  url: https://github.com/aowang-ai/jev-trade
+  kind: repo
+  author: aowang-ai
+  description: Live trading bot on Hyperliquid where Jev reads the order book every tick for five coins, each in its own wallet, and picks long or short and open, close or hold.
+  jev: Per-asset Choices each tick; hold is a valid answer, so a tick can end with no order. Based on Jarrod Watts's jev-trader.
+  image: https://raw.githubusercontent.com/aowang-ai/jev-trade/main/assets/desk.png
+  metrics:
+    stars: 99
+  date: '2026-09-17'
+  links:
+    app: https://jev-trade.com
+    app 2: https://jev-trade.com
+  tags:
+  - trading-bot
+  - crypto
+- name: Jev Trader (Inverse)
+  url: https://x.com/SUOHA_AI/status/2101275294451515740
+  kind: post
+  author: SUOHA_AI
+  description: Inverse version of the Monad Jev trading demo that mirrors every order, selling when the original buys and buying when it sells, one decision per block.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101274788513693696/img/Gj7UchuQIdpkqvAz.jpg
+  metrics:
+    likes: 454
+    views: 182365
+  date: '2026-09-19'
+  links:
+    app: https://suoha-jev-trader.vercel.app/
+    original: https://github.com/jarrodwatts/jev-trader
+    project: https://suoha-jev-trader.vercel.app
+  tags:
+  - trading
+  - onchain
+  - monad
+- name: Jev Trades
+  url: https://github.com/zadescoxp/Jev-Trades
+  kind: repo
+  author: zadescoxp
+  description: Next.js dashboard that streams one-minute crypto candles and indicators to Jev and applies its decisions to a simulated paper-trading portfolio, with no broker connected.
+  image: https://raw.githubusercontent.com/zadescoxp/Jev-Trades/master/assets/Jev_making_trade.gif
+  metrics:
+    stars: 24
+  date: '2026-09-17'
+  links:
+    app: https://jevtrades.zadescoxp.com
+    app 2: https://jevtrades.zadescoxp.com
+  tags:
+  - crypto
+  - paper-trading
+- name: Jev trades BTC with $10,000
+  url: https://x.com/abolbuild/status/2100690370912805049
+  kind: post
+  author: abolbuild
+  description: Experiment giving Jev $10,000 to trade BTC for 30 days, with market data, derivatives, macro, on-chain data, news and sentiment as inputs.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100688652665806848/img/1aEeVftB38YD0AWr.jpg
+  metrics:
+    likes: 392
+    views: 165304
+  date: '2026-09-17'
+  tags:
+  - trading
+  - btc
+- name: Jev Trading
+  url: https://github.com/EthanAlgoX/jev-trading
+  kind: repo
+  author: EthanAlgoX
+  description: Local stock decision service with a web workbench and HTTP API that feeds market data, indicators, fundamentals, and news to a model and returns a traceable buy, sell, or hold signal; places no orders.
+  jev: Probabilities over the three actions, followed by data-quality and policy checks; can swap Jev for a local model.
+  image: https://raw.githubusercontent.com/EthanAlgoX/jev-trading/main/docs/assets/readme/workflow-en.png
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  tags:
+  - stocks
+  - trading-signals
+- name: Jev trading backtest
+  url: https://x.com/0xKiyoro/status/2102060645151539305
+  kind: post
+  author: 0xKiyoro
+  description: 'Backtest over 84 days where Jev read daily investment reports and returned buy/sell/hold for BTC, ETH, SPY, QQQ and gold: 1,260 decisions for $0.11, with every strategy losing to equal-weight buy and hold (+12.4%).'
+  jev: Choice of buy, sell or hold per asset with probabilities that a separate program uses for position sizing.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102060600746528768/img/yEnsb1n8KAgeCKCI.jpg
+  metrics:
+    likes: 19
+    views: 789
+  date: '2026-09-21'
+  tags:
+  - backtest
+  - trading
+  - crypto
+- name: Jev trading engine paper results
+  url: https://x.com/BrendanPlayford/status/2100614031845539975
+  kind: post
+  author: BrendanPlayford
+  description: Trading engine pairing Jev with a forecasting model trained on 12B data points; early forward paper results show 375 trades, 41.1% win rate, 1.5:1 reward-to-risk and 1.38 profit factor.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100483712672743424/img/nAxbyfjlXhe5xa3F.jpg
+  metrics:
+    likes: 459
+    views: 87953
+  date: '2026-09-17'
+  tags:
+  - trading
+  - crypto
+  - paper-trading
+- name: Jev trading with $10,000
+  url: https://x.com/abolbuild/status/2100523868913807410
+  kind: post
+  author: abolbuild
+  description: Experimental trading agent that hands Jev a $10,000 balance and lets it make the trading decisions, shown in a demo video.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100523731923722240/img/b6b47us-K3FIDHDC.jpg
+  metrics:
+    likes: 1626
+    views: 793507
+  date: '2026-09-17'
+  tags:
+  - trading-bot
+- name: Jev VC
+  url: https://pitchjev.vercel.app/
+  kind: app
+  author: pitchjev.vercel.app
+  description: 'Pitch your startup and watch a live investment verdict update as you type: every keystroke asks Jev nine atomic questions, weighted like seed investors score deals, and a term sheet scales from 2026 seed medians.'
+  jev: Nine parallel Nouls per debounced keystroke, combined with fixed weights into a verdict.
+  metrics:
+    points: 2
+  links:
+    discussion: https://news.ycombinator.com/item?id=49756182
+  tags:
+  - startup-pitch
+  - as-you-type
+  - toy
+- name: Jev X Sentiment Analysis
+  url: https://github.com/brainstormity/Jev-X-Sentiment-Analysis
+  kind: repo
+  author: brainstormity
+  description: Crypto decision terminal that pre-filters 50 to 1,000 tweets plus funding rates and market data, then has Jev issue a buy / sell / hold / take-profit card with entry, stop and targets, without trading.
+  image: https://raw.githubusercontent.com/brainstormity/Jev-X-Sentiment-Analysis/main/public/images/frontend.jpeg
+  metrics:
+    stars: 151
+    likes: 542
+    views: 77883
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/brainstormity/status/2101445977924370858
+  tags:
+  - crypto
+  - sentiment
+- name: jev-A-share-trader
+  url: https://github.com/Eric-Zhou-0302/jev-A-share-trader
+  kind: repo
+  author: Eric-Zhou-0302
+  description: Local technical-analysis workspace for China A-shares that pulls AKShare or Tushare data, has Jev assess eight dimensions and combines them into a Buy, Hold or Sell call for 2-5 or 5-20 trading days; no order execution.
+  date: '2026-09-20'
+  tags:
+  - stocks
+  - a-shares
+  - technical-analysis
+- name: jev-clerk
+  url: https://github.com/stas4000/jev-clerk
+  kind: repo
+  author: stas4000
+  description: Mac desktop bookkeeping clerk that opens supplier invoice PDFs, types them into Frappe Books, and files them, while Claude Fable 5.1 rewrites its playbook every ten invoices.
+  jev: 'Two Choices per step over OCR screen lines: which of 12 action kinds and which line to click, at about 0.35 s and $0.0002 per decision.'
+  metrics:
+    stars: 6
+  date: '2026-09-19'
+  tags:
+  - bookkeeping
+  - computer-use
+  - invoices
+- name: jev-connector
+  url: https://github.com/adhamelhayek-lab/jev-connector
+  kind: repo
+  author: adhamelhayek-lab
+  description: Paper-trading market and trade evaluation server that sends structured market state to Jev through OpenRouter's Decisions API alongside deterministic regime and order-flow checks, and never executes trades.
+  date: '2026-09-18'
+  links:
+    app: https://jev-connector.vercel.app
+  tags:
+  - paper-trading
+  - openrouter
+- name: jev-paper-trader
+  url: https://www.npmjs.com/package/jev-paper-trader
+  kind: package
+  author: Nick Moore
+  description: Paper-only trading bundle with three simulated $1,000 accounts (BTC regime allocation, BTC multi-timeframe observer, ETH breakout) where rules propose trades and Jev reviews them.
+  jev: Reviews each rule-generated trade candidate through the TypeSafe SDK.
+  metrics:
+    downloads: 399
+  date: '2026-09-20'
+  tags:
+  - paper-trading
+  - crypto
+- name: jev-trade
+  url: https://github.com/Waxmell114514/jev-trade
+  kind: repo
+  author: Waxmell114514
+  description: Simulated high-frequency crypto trading loop that sends recent BTC and ETH prices and volumes to Jev and runs its buy/sell calls through a cost- and latency-aware execution simulator.
+  jev: Bounded direction and risk questions; local policy sizes simulated positions.
+  image: https://raw.githubusercontent.com/Waxmell114514/jev-trade/claude/ecstatic-bardeen-tknnox/docs/demo.png
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - crypto
+  - simulation
+- name: jev-trader
+  url: https://github.com/jarrodwatts/jev-trader
+  kind: repo
+  author: jarrodwatts
+  description: Market-making bot on Kuru's MON-USDC order book on Monad where Jev answers buy or sell every block, about every 300 ms, and each block posts a post-only limit order one tick inside the touch.
+  jev: One buy/sell decision per block from the live book; dry-run mode keeps real decisions with simulated fills.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100843717791813632/img/BJXB5D_XC7MmmqdN.jpg
+  metrics:
+    stars: 1899
+    views: 9408
+    likes: 83
+  date: '2026-09-16'
+  links:
+    app: https://jev-trader.vercel.app
+    video: https://www.youtube.com/watch?v=YIEHGt-9cS4
+    app 2: https://jev-trader.vercel.app
+    demo: https://x.com/tonnoz/status/2100844854490103835
+  tags:
+  - market-making
+  - crypto
+- name: jev-trader (renatosousa)
+  url: https://github.com/renatosousa/jev-trader
+  kind: repo
+  author: renatosousa
+  description: Real-time market analysis that uses Jev via Vercel AI Gateway to rate headline relevance and sentiment and to give a buy, sell, or hold bias with conviction for FX, metals, energy, rates, and crypto.
+  date: '2026-09-17'
+  tags:
+  - trading
+  - sentiment
+  - metatrader
+- name: jev_stock
+  url: https://github.com/sosopop/jev_stock
+  kind: repo
+  author: sosopop
+  description: Experimental Hong Kong stock forecaster that builds a past-only market state from the stock, HSI and HSTECH and asks Jev for an up / flat / down call, with an HTML report and backtest.
+  jev: One Choice over up / flat / down with probabilities, validated before reporting.
+  image: https://raw.githubusercontent.com/sosopop/jev_stock/main/assets/jev-prediction-report-example.png
+  metrics:
+    stars: 12
+  date: '2026-09-17'
+  tags:
+  - stocks
+  - forecasting
+- name: Jevinik
+  url: https://github.com/unicodeveloper/jevocks
+  kind: repo
+  author: unicodeveloper
+  description: Stock decision terminal that runs five parallel Valyu searches for live market evidence and asks Jev how likely a ticker is to trade higher in 30 days, with per-category signals and timings.
+  image: https://raw.githubusercontent.com/unicodeveloper/jevocks/main/docs/assets/jevinik-demo-poster.jpg
+  metrics:
+    stars: 16
+    likes: 91
+    views: 8493
+  date: '2026-09-18'
+  links:
+    app: https://jevinik.up.railway.app
+    app 2: https://jevinik.up.railway.app
+    demo: https://x.com/unicodeveloper/status/2100965455506628834
+  tags:
+  - stocks
+  - market-signals
+- name: jevscan
+  url: https://github.com/jevbook/jevscan
+  kind: repo
+  author: jevbook
+  description: EVM token screener with a library, CLI and MCP server that returns ape / watch / avoid verdicts with probabilities plus rug-risk, momentum, liquidity and FDV-stress scores, Robinhood Chain first.
+  jev: Runs a deterministic local engine by default; a TypeSafe key switches to real Jev judgments over market features.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - crypto
+  - token-risk
+- name: jevscan
+  url: https://x.com/theRaz0r/status/2100898307186864593
+  kind: post
+  author: theRaz0r
+  description: Chrome extension that flags malicious addresses and transactions on Etherscan in real time using Jev.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100897819900936192/img/6Ht8DcVIlsqWhoLq.jpg
+  metrics:
+    likes: 10
+    views: 639
+  date: '2026-09-18'
+  tags:
+  - crypto
+  - fraud-detection
+  - chrome-extension
+- name: JevTrades Monitor
+  url: https://x.com/SatoshiWolf/status/2102217046503333960
+  kind: post
+  author: SatoshiWolf
+  description: Live-money Polymarket bot for 5-minute BTC up/down markets built with Fable 5.1 and Jev; its dashboard shows a -$29.14 total P&L over 38 windows at a 47% win rate.
+  image: https://pbs.twimg.com/media/HSyTNiYasAEPvrm.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 290
+  date: '2026-09-22'
+  tags:
+  - polymarket
+  - btc
+  - negative-result
+- name: jevymarket
+  url: https://github.com/markusbug/jevymarket
+  kind: repo
+  author: markusbug
+  description: Polymarket trading bot where a web-searching generative model writes a dated evidence brief and Jev, via OpenRouter's Decisions API, prices the market; it trades when Jev's probability beats the order book by an edge.
+  metrics:
+    stars: 4
+  date: '2026-09-20'
+  tags:
+  - polymarket
+  - prediction-markets
+  - trading-bot
+- name: Kalshi and Solana trading bot
+  url: https://x.com/vwapster/status/2102014448961499471
+  kind: post
+  author: vwapster
+  description: Self-improving, auto-calibrating trading bot for Kalshi and Solana markets that combines Grok Bot, Jev and the open Laya model, still paper trading.
+  image: https://pbs.twimg.com/media/HSva-g9WwAE-Z9E.jpg?name=orig
+  metrics:
+    views: 50
+  date: '2026-09-21'
+  tags:
+  - trading
+  - kalshi
+  - prediction-markets
+- name: Kuest event-creation review
+  url: https://github.com/kuestcom/prediction-market/blob/main/src/lib/ai/event-creation-decision.ts
+  kind: repo
+  author: kuestcom
+  description: Kuest, a white-label prediction-market platform, reviews AI-created markets with Jev, checking whether an event describes one clear, answerable outcome with agreeing question, outcomes and dates.
+  jev: Noul questions through OpenRouter's Decisions API using typesafe/jev-1.13.
+  image: https://github.com/user-attachments/assets/0cc687fb-89c4-43fa-a056-d89c307215ad
+  metrics:
+    repo_stars: 1094
+  date: '2025-07-29'
+  links:
+    app: https://kuest.com
+  tags:
+  - prediction-market
+  - web3
+  - validation
+- name: MomoX3 signal grading
+  url: https://x.com/clarkalphas/status/2102191050324574375
+  kind: post
+  author: clarkalphas
+  description: Day-one test grading MomoX3 SPY options signals from C to A+ with Jev on five pillars (trend, price action, structure, levels, signals); entering only on B or better returned +248% (+$952) on the day.
+  jev: Score on a letter-grade scale per trading signal.
+  image: https://pbs.twimg.com/media/HSx4w-UbEAETdan.jpg?name=orig
+  metrics:
+    likes: 7
+    views: 319
+  date: '2026-09-22'
+  links:
+    app: http://app.momox.io/x/post
+  tags:
+  - options
+  - spy
+  - signals
+- name: News-driven stock picker
+  url: https://x.com/abolbuild/status/2101019948684279862
+  kind: post
+  author: abolbuild
+  description: Feeds Jev the news and has it pick which stocks look worth buying, following an earlier experiment where it traded BTC with $10,000 for 30 days.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101017829076074496/img/GcuK_TLSbF56oODu.jpg
+  metrics:
+    likes: 90
+    views: 18494
+  date: '2026-09-18'
+  links:
+    earlier: https://x.com/abolbuild/status/2100688652665806848
+  tags:
+  - stocks
+  - news
+- name: News-driven trading backtest
+  url: https://x.com/wquguru/status/2101612397882671345
+  kind: post
+  author: wquguru
+  description: 'Backtest feeding three months of daily investment reports to Jev 1.13 for buy/sell/hold on BTC, ETH, SPY, QQQ and XAU: 1,155 decisions over 77 days for $0.09, with momentum at +6.71% versus +13.2% buy-and-hold.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101611983632318464/img/IonJ5viqIhg-qJlI.jpg
+  metrics:
+    likes: 146
+    views: 28391
+  date: '2026-09-20'
+  tags:
+  - backtest
+  - trading
+  - news
+- name: newsscore
+  url: https://github.com/mahynotch/newsscore
+  kind: repo
+  author: mahynotch
+  description: Async Python library and CLI that pulls a week of financial news, has Jev score every article through a pluggable scorer, and returns one aggregate sentiment number per ticker.
+  date: '2026-09-17'
+  links:
+    pypi: https://pypi.org/project/newsscore/
+  tags:
+  - sentiment
+  - stocks
+- name: One-click invoice finder
+  url: https://x.com/FarouqAldori/status/2100711180704641520
+  kind: post
+  author: FarouqAldori
+  description: Tool that uses Jev to find the billing page on any website, including Stripe portals, then lists and downloads every invoice and remembers where they live.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100710351536840705/img/716A3kUOeRsyb0eG.jpg
+  metrics:
+    likes: 44
+    views: 13975
+  date: '2026-09-17'
+  tags:
+  - invoices
+  - accounting
+  - web-automation
+- name: Orus trade review
+  url: https://x.com/Orus_agent/status/2100859259915227358
+  kind: post
+  author: Orus_agent
+  description: Trade gate in Orus trading agents where Jev reviews each entry a strategy proposes and approves it, refuses it, or waits for one more observation, with user-written conditions.
+  jev: Choice of approve / refuse / wait per proposed trade, plus custom plain-language entry and exit conditions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100852121105006592/img/NlvQ4G9nQNYzq8zZ.jpg
+  metrics:
+    likes: 50
+    views: 3863
+  date: '2026-09-18'
+  tags:
+  - trading
+  - agents
+  - paper-trading
+- name: Payee descriptions from bank data
+  url: https://x.com/jlongster/status/2100179852053639236
+  kind: post
+  author: jlongster
+  description: Test of Jev on cleaning raw bank transaction data into good payee descriptions for personal finance tools, about 95% of the way there on the first try.
+  image: https://pbs.twimg.com/media/HSVWcZ9WcAAcwPe.jpg?name=orig
+  metrics:
+    likes: 637
+    views: 52210
+  date: '2026-09-16'
+  tags:
+  - personal-finance
+  - transactions
+- name: Prism Jev shadow judgments
+  url: https://github.com/irfndi/prism-liquidity-agent/blob/main/engine/jev-service.ts
+  kind: repo
+  author: irfndi
+  description: Shadow-mode Jev judgments inside Prism, a Solana Meteora DLMM liquidity agent, logged beside its rule-based gates for calibration without ever driving entries or exits.
+  jev: A deposit-distribution Choice (spot / curve / bid-ask) and Nouls for toxic flow, recovery hold and regime stress, behind a rate-limit breaker.
+  metrics:
+    repo_stars: 69
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/irfndi/prism-liquidity-agent
+  tags:
+  - defi
+  - liquidity
+  - solana
+- name: Probably
+  url: https://github.com/JordiParraCrespo/typesafe-ai-trading-showcase
+  kind: repo
+  author: JordiParraCrespo
+  description: Live BTC, ETH and XRP price dashboard that aggregates the last 60 seconds of Coinbase trades into five-second samples and asks Jev in one shared request whether a hypothetical entry is buy or wait; no trades placed.
+  date: '2026-09-16'
+  links:
+    app: https://typesafe-ai-trading-showcase.vercel.app
+    app 2: https://typesafe-ai-trading-showcase.vercel.app
+  tags:
+  - crypto
+  - dashboard
+  - signals
+- name: QuantDinger AI decision filter
+  url: https://github.com/OpenByteInc/QuantDinger-Vue/blob/main/src/views/strategy-center/components/AiDecisionRecords.vue
+  kind: repo
+  author: OpenByteInc
+  description: AI trading OS frontend whose decision filter reviews buy and short actions with Jev before submission across entry, risk, evidence, signal alignment, regime and execution checks.
+  jev: Preferred over the LLM when configured, with a minimum confidence setting and fail-open when providers are down.
+  metrics:
+    repo_stars: 155
+  date: '2026-02-27'
+  links:
+    app: https://ai.quantdinger.com
+  tags:
+  - trading
+  - risk-check
+  - quant
+- name: QuantDinger Jev pre-trade gate
+  url: https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py
+  kind: repo
+  author: OpenByteInc
+  description: Opt-in live pre-trade gate in QuantDinger, a self-hosted AI trading platform, that sends strategy, market, position and exposure state to Jev Choice questions and blocks rejected entries, with an LLM fallback.
+  image: https://repository-images.githubusercontent.com/1124295269/0b9abcd4-9cb2-4f7c-8401-7a53b1bc2362
+  metrics:
+    repo_stars: 11963
+  date: '2026-09-19'
+  links:
+    repo: https://github.com/OpenByteInc/QuantDinger
+    app: https://ai.quantdinger.com
+  tags:
+  - trading
+  - risk-gate
+  - crypto
+- name: QuantLLM
+  url: https://github.com/chl-5g/QuantLLM
+  kind: repo
+  author: chl-5g
+  description: Multi-agent A-share quant trading system on a fine-tuned Qwen model and LangGraph, where Jev makes the final buy/sell/hold call for each stock in under a second.
+  jev: One Choice per stock (buy/sell/hold) with probabilities mapped to a TradeDecision; batching stocks leaked signals across them, and failures fall back to Qwen and then a rule-based hold.
+  metrics:
+    stars: 9
+  date: '2026-03-09'
+  tags:
+  - a-share
+  - trading
+  - langgraph
+- name: QuantStudio Jev market watch
+  url: https://github.com/quantskills/QuantStudio
+  kind: repo
+  author: quantskills
+  description: Local AI quant research workspace whose futures contest board uses Jev to continuously assess market state from finished bars, live quotes, positions and strategy limits, and propose trade plans.
+  image: https://raw.githubusercontent.com/quantskills/QuantStudio/main/docs/images/launch-white/hero.png
+  metrics:
+    stars: 53
+  date: '2026-09-14'
+  links:
+    docs: https://github.com/quantskills/QuantStudio/blob/main/docs/contest.md
+    app: https://www.quantskills.ai/
+  tags:
+  - futures
+  - quant
+  - monitoring
+- name: RentalCore Jev OCR matching
+  url: https://github.com/nbt4/rentalcore
+  kind: repo
+  author: nbt4
+  description: Event rental management system whose OCR invoice processing asks Jev via OpenRouter to pick among bounded catalog candidates for products, packages, rental gear and services.
+  jev: Only one line description plus candidate master data is sent; below JEV_MIN_CONFIDENCE or on timeout the old matching applies.
+  metrics:
+    stars: 70
+  date: '2025-09-03'
+  tags:
+  - invoices
+  - ocr
+  - matching
+- name: Research Desk
+  url: https://github.com/0xnairb/research_desk
+  kind: repo
+  author: 0xnairb
+  description: Market-analysis demo that reads live yfinance company profiles and headlines into ranked, grounded and routed trade ideas, with a Requests tab showing the state and questions behind every number.
+  image: https://external-preview.redd.it/c29qYWtpcGlqN3FoMVVruuQZcV46rqssC2ij3JxcuyHvvvpp0DuFQP34eqZn.png?format=pjpg&auto=webp&s=4631c4f953229b81d895a7fa25d195edeba13e9f
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    demo: https://www.reddit.com/r/ClaudeCode/comments/1wjgk0q/built_a_live_marketanalysis_desk_in_claude_code/
+  tags:
+  - trading
+  - news
+  - claude-code
+- name: Revamped Jev trading bot
+  url: https://x.com/shortaktien/status/2100921927241998496
+  kind: post
+  author: shortaktien
+  description: Trading bot reworked around Jev with a live viewer for its trades; the author reports smaller losses but no clear performance gain.
+  metrics:
+    views: 847
+  date: '2026-09-18'
+  links:
+    app: https://jev-trader-live-viewer.mrypcv7pwh.chatgpt.site/?v=9
+  tags:
+  - trading-bot
+  - live-viewer
+- name: Scarlett
+  url: https://x.com/BrendanPlayford/status/2101512902104813800
+  kind: article
+  author: BrendanPlayford
+  description: Review of 7,522 crypto trade setups ranked by Scarlett, which pairs a time-series forecasting model with Jev judgments; the Pullback strategy returned +8.55R over 23 closed trades after fees and slippage.
+  image: https://pbs.twimg.com/media/HSn8mEFawAAVxUe.jpg
+  metrics:
+    likes: 8
+    views: 4489
+  date: '2026-09-20'
+  links:
+    app: https://scarlett.ai/
+    docs: https://docs.scarlett.ai/
+    project: https://scarlett.ai
+  tags:
+  - crypto
+  - trade-setups
+  - backtest
+- name: SmartMoney-Cub Jev layer
+  url: https://github.com/myc0576/SmartMoney-Cub/tree/main/src/smartmoney_cub_harness/jev
+  kind: repo
+  author: myc0576
+  description: Optional Jev judgment layer in a read-only trading journal and review harness that asks noul, choice, and score questions about filings and statements; on its 240-case finance benchmark Jev scores 78.43%.
+  jev: All arithmetic, date comparisons, and temporal-boundary checks stay in Python; Jev answers only structured judgments via TypeSafe or OpenRouter.
+  image: https://raw.githubusercontent.com/myc0576/SmartMoney-Cub/main/assets/smartmoney-cub-mark.png
+  metrics:
+    repo_stars: 26
+  date: '2026-06-25'
+  links:
+    repo: https://github.com/myc0576/SmartMoney-Cub
+  tags:
+  - trading-journal
+  - benchmark
+- name: SPY paper-trading Jev claim gate
+  url: https://github.com/IgorGanapolsky/trading/blob/main/scripts/typesafe_claim_gate.py
+  kind: repo
+  author: IgorGanapolsky
+  description: Claim gate in a paper-only SPY put-credit validation lab that has Jev decide whether an agent may assert claims such as a proven edge given ledger facts; a false edge claim was denied at 0.85 in a live smoke test.
+  jev: A Noul on whether the claim is supported, an allow/abstain/deny Choice and a harm Score; offline heuristics run in CI.
+  metrics:
+    repo_stars: 38
+  date: '2025-10-30'
+  links:
+    repo: https://github.com/IgorGanapolsky/trading
+  tags:
+  - trading
+  - claim-verification
+  - guardrails
+- name: Stock scoring engine
+  url: https://x.com/hridoy43/status/2102203200690606100
+  kind: post
+  author: hridoy43
+  description: Stock-market scoring and decision engine with portfolio-aware suggestions, using Jev to judge the non-numerical data about each stock.
+  image: https://pbs.twimg.com/media/HSyGibEbYAAMfIR.jpg?name=orig
+  metrics:
+    views: 23
+  date: '2026-09-22'
+  tags:
+  - stocks
+  - portfolio
+- name: tax-doc-classifier
+  url: https://github.com/kyotofin/tax-doc-classifier
+  kind: repo
+  author: kyotofin
+  description: Sorts PDF pages into IRS form types with two Choices for about a tenth of a cent per page, with error rates on labeled test sets.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100973360989773825/img/yMtL6CxrKMVXQEHV.jpg
+  metrics:
+    stars: 351
+    likes: 3367
+    views: 238971
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/nedwize/status/2100973868324417852
+  tags:
+  - tax
+  - pdf
+  - classification
+- name: trade-jev
+  url: https://github.com/justinhe16/trade-jev
+  kind: repo
+  author: justinhe16
+  description: Backtest harness that tests Jev as a buy, sell, or hold trader on 15 trading days of Nasdaq futures L10 order-book data, against hold, random, and imbalance baselines, with replay and a web viewer.
+  jev: Asked every 15 s; trades require a 0.7 cutoff and 4 agreeing answers by default.
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  tags:
+  - trading
+  - backtest
+  - futures
+- name: Trading signal interpreter
+  url: https://x.com/_trou3/status/2100481938016669917
+  kind: post
+  author: _trou3
+  description: Trading-system demo in which Jev reads dozens of structured trading signals and turns them into buy, sell or hold decisions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100479030940340224/img/kSmJhdWmRJjmtO97.jpg
+  metrics:
+    likes: 987
+    views: 121698
+  date: '2026-09-17'
+  tags:
+  - trading
+  - signals
+- name: trading-bot-jev
+  url: https://github.com/Spykoninho/trading-bot-jev
+  kind: repo
+  author: Spykoninho
+  description: Medium-term crypto trend follower on 4-hour candles where Jev reads live news and an algorithm decides trades on a 1,000 USDC paper portfolio, built to test what Jev adds over the algorithm alone.
+  date: '2026-09-17'
+  tags:
+  - crypto
+  - trading-bot
+  - paper-trading
+- name: TSLA moving-average rule with Jev
+  url: https://x.com/mttcnnng/status/2100971168912048153
+  kind: post
+  author: mttcnnng
+  description: Trading experiment that pairs a simple TSLA 50-day moving-average rule with Jev as the judgment layer, where the code, not the model, decides the final action.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100970000194441216/img/FonZBBj2sA85iAlF.jpg
+  metrics:
+    likes: 1
+    views: 50501
+  date: '2026-09-18'
+  tags:
+  - stocks
+  - tsla
+  - rules
+- name: ValAct_RAG
+  url: https://github.com/DanTCIM/ValAct_RAG
+  kind: repo
+  author: DanTCIM
+  description: RAG question answering over life valuation actuarial documents where an Auto mode asks Jev to score every document collection for relevance in one ~300 ms call before searching.
+  jev: One yes/no question per collection via OpenRouter's Decisions API; on failure the picker shows every collection unranked.
+  image: https://raw.githubusercontent.com/DanTCIM/ValAct_RAG/main/images/RAG_concept.png
+  metrics:
+    stars: 12
+  date: '2024-03-02'
+  tags:
+  - actuarial
+  - rag
+  - routing
+- name: ynab-mcp-server
+  url: https://github.com/calebl/ynab-mcp-server
+  kind: repo
+  author: calebl
+  description: MCP server for reading and editing YNAB budgets that adds an opt-in Jev tool suggesting categories for transactions, applied only through a separate write tool.
+  metrics:
+    stars: 142
+  date: '2025-03-25'
+  tags:
+  - budgeting
+  - mcp
+  - categorization

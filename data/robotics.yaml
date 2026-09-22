@@ -1,0 +1,850 @@
+title: Robotics and Simulation
+emoji: 🦾
+layout: gallery
+description: Embodied control, driving simulators, and decisions in the physical world.
+entries:
+- name: Adaptive traffic signal simulation
+  url: https://x.com/nishitkhalpada/status/2101755092177473858
+  kind: post
+  author: nishitkhalpada
+  description: Traffic simulation comparing a fixed 8-second signal cycle with Jev deciding when to keep or switch the green light from queue sizes, wait times and arrivals; fixed timing wins in balanced traffic, Jev in uneven traffic.
+  jev: Keep-or-switch Choice per signal step from queue and wait-time state.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101755011676184576/img/Y5z-bgXbBRV0T49b.jpg
+  metrics:
+    views: 64
+  date: '2026-09-20'
+  tags:
+  - traffic
+  - simulation
+- name: Askable arm
+  url: https://github.com/TarunTomar122/jev-askable-arm
+  kind: repo
+  author: TarunTomar122
+  description: Zero-shot plain-English goals on a simulated Franka arm in ManiSkill, where Jev chains hardcoded primitives one pick at a time, about 1 second per pick, with no training or demos.
+  jev: One Choice per step over about thirty skills and targets from privileged object and gripper state.
+  metrics:
+    stars: 10
+  date: '2026-09-17'
+  tags:
+  - robot-arm
+  - maniskill
+- name: Autonomous OS Jev support
+  url: https://github.com/autonomous-ai/autonomous-os/tree/main/system/buddy/jev
+  kind: repo
+  author: autonomous-ai
+  description: Open-source robot operating system that adds optional Jev decisions for resolving spoken intents among candidates, suggesting Buddy UI actions and routing Hermes skills.
+  jev: Choice over candidate intents or actions with a 350 ms default timeout and a cooldown after errors.
+  image: https://raw.githubusercontent.com/autonomous-ai/autonomous-os/main/robots/intern-v2/images/intern-hero.webp
+  metrics:
+    repo_stars: 356
+  date: '2026-06-04'
+  links:
+    app: https://www.autonomous.ai/lamp
+  tags:
+  - robots
+  - intent
+  - routing
+- name: Bio-inspired robot with Jev
+  url: https://x.com/rodenlab/status/2102154848053432443
+  kind: post
+  author: rodenlab
+  description: Bio-inspired robot running on a simulated nervous system, where neural activity is fed to Jev and its rapid decisions are translated into physical movement.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102154117082734592/img/McNrTg7kpZShzeiX.jpg
+  metrics:
+    likes: 11
+    views: 1552
+  date: '2026-09-21'
+  tags:
+  - neuro-inspired
+  - simulation
+  - control
+- name: Companion
+  url: https://jev-demo.vercel.app
+  kind: app
+  author: jev-demo
+  description: Robot companion in a 3D scene that reacts to what you say without generating a word, deciding each turn whether to act, ask or shrug.
+  jev: One call per turn with nine typed questions; code gates on confidence to act, ask or just react.
+  tags:
+  - robot
+  - companion
+  - confidence-gating
+- name: Crop Steering Jev check
+  url: https://github.com/JakeTheRabbit/HA-Irrigation-Strategy
+  kind: repo
+  author: JakeTheRabbit
+  description: Home Assistant crop-steering irrigation controller whose optional Jev check via Cloudflare Workers AI can veto auto-setpoint changes that look like probe or delivery faults and nudge P2 shot size in small bounded steps.
+  jev: Consulted when a ramp plateaus and hourly during P2; irrigation never waits on it and no answer means no change.
+  image: https://raw.githubusercontent.com/JakeTheRabbit/HA-Irrigation-Strategy/main/img/operator-dashboard.png
+  metrics:
+    stars: 19
+  date: '2025-04-24'
+  links:
+    app: https://jaketherabbit.github.io/HA-Irrigation-Strategy/dashboard.html?demo=1
+  tags:
+  - home-assistant
+  - irrigation
+  - cloudflare
+- name: Dashcam driving stability check
+  url: https://x.com/queso_gato1354/status/2101305412876423459
+  kind: post
+  author: queso_gato1354
+  description: Korean pipeline that judges driving stability from car dashcam footage with Jev, analyzing situations in near real time thanks to its low latency.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101305211013001216/img/Dx4RNM5XUJsuyzKq.jpg
+  metrics:
+    likes: 7
+    views: 501
+  date: '2026-09-19'
+  tags:
+  - dashcam
+  - driving
+  - video-analysis
+- name: Drone Sim · Jev Autopilot
+  url: https://github.com/arielweinberger/jev-autopilot
+  kind: repo
+  author: arielweinberger
+  description: Three.js drone simulator where Jev, via the AI SDK's @ai-sdk/typesafe-ai provider, flies from pad A across a random city to pad B while avoiding obstacles; a trip costs $0.01.
+  image: https://raw.githubusercontent.com/arielweinberger/jev-autopilot/main/docs/demo.png
+  metrics:
+    stars: 8
+  date: '2026-09-17'
+  tags:
+  - drone
+  - threejs
+  - ai-sdk
+- name: EmbodiedJev
+  url: https://github.com/FBddcz/embodied-jev
+  kind: repo
+  author: FBddcz
+  description: Browser workbench for a simulated MuJoCo Franka Panda arm where Jev, Claude, OpenAI-compatible APIs or a local MiniCPM5-2B choose bounded actions for pick, stack and obstacle tasks, with success checked by physics.
+  image: https://raw.githubusercontent.com/FBddcz/embodied-jev/main/docs/workbench-desktop.png
+  metrics:
+    stars: 165
+  date: '2026-09-20'
+  tags:
+  - mujoco
+  - robot-arm
+  - simulation
+- name: Humanoid cup-stack recovery
+  url: https://x.com/homebrewrobots/status/2102079871388201146
+  kind: post
+  author: homebrewrobots
+  description: 'Humanoid robot stacking a cup pyramid recovers when a cup is moved: Jev picks from 6 recovery options (set down the held cup, replan, finish) with 65% confidence.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102078211416793089/img/w9GvS61PlfVN-yZc.jpg
+  metrics:
+    likes: 23
+    views: 626
+  date: '2026-09-21'
+  tags:
+  - humanoid
+  - recovery
+  - manipulation
+- name: Jev air traffic control at JFK
+  url: https://www.youtube.com/watch?v=MZgAj3OZVPo
+  kind: video
+  author: Agent Zero
+  description: Agent Zero demo of a simulated JFK airport where realtime voice models talk to pilots and Jev makes the judgment behind every clearance.
+  jev: Typed judgments per clearance inside a live control loop.
+  metrics:
+    views: 5671
+    likes: 71
+  date: '2026-09-19'
+  links:
+    site: https://agent-zero.ai
+    repo: https://github.com/agent0ai/agent-zero
+  tags:
+  - air-traffic
+  - simulation
+  - voice
+- name: Jev as Policy
+  url: https://github.com/YuanKJing/Jev-as-Policy
+  kind: repo
+  author: YuanKJing
+  description: 'MuJoCo studio that reproduces the Jev as Policy control structure: Jev turns a text state into an intent and motor choices for a Franka Panda that local IK executes to carry a block over a barrier.'
+  image: https://raw.githubusercontent.com/YuanKJing/Jev-as-Policy/main/media/jev-carry-block.png
+  metrics:
+    stars: 22
+  date: '2026-09-21'
+  tags:
+  - mujoco
+  - robot-arm
+- name: Jev autonomous driving layer
+  url: https://www.reddit.com/r/developersIndia/comments/1wjqwg2/experimenting_with_the_new_jev_model_as_a_real/
+  kind: reddit
+  author: Admirable-Leek5672
+  description: Driving simulation where Jev reads structured environment data and decides lane changes, braking, acceleration, or stopping around pedestrians, signals, and obstacles.
+  jev: One Choice per tick over the driving actions from structured state.
+  image: https://external-preview.redd.it/YnloMmNra3phYXFoMaCH-vwZSCX2hwQkWiNrTAK6JEGFvhs9LLeMHZLHmHVD.png?format=pjpg&auto=webp&s=822b9d622e88464e3874eb59484a4eb793323be9
+  metrics:
+    points: 32
+  date: '2026-09-18'
+  tags:
+  - driving
+  - simulation
+  - real-time
+- name: Jev city driving game
+  url: https://x.com/fuzzzypan/status/2102056646281437577
+  kind: post
+  author: fuzzzypan
+  description: Driving game with traffic where Jev makes the stop, yield, slow and proceed calls for pedestrians, crossing cars, corners and potholes while local code steers; a city drive cost $0.0208.
+  jev: Choice of stop/yield/slow/proceed each tick; steering and collision checks stay in code.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102053874660241408/img/PmXXJNePrSow-TEb.jpg
+  metrics:
+    likes: 1
+    views: 78
+  date: '2026-09-21'
+  tags:
+  - driving-sim
+  - traffic
+- name: Jev controls The Fly
+  url: https://x.com/eltokh7/status/2100971356691247377
+  kind: post
+  author: eltokh7
+  description: Experiment where Jev steers a simulated fly.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100835422456737792/img/qB9WJb7Mdvq7HVkb.jpg
+  metrics:
+    likes: 16
+    views: 1700
+  date: '2026-09-18'
+  tags:
+  - simulation
+  - embodied
+- name: Jev drives in real time
+  url: https://x.com/SigGravitas/status/2100325221932958134
+  kind: post
+  author: SigGravitas
+  description: Jev wired to the raw controls of a driving simulator that never pauses while it thinks, steering a moving vehicle in real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100323655389474816/img/LLOAJ3wie1phk45K.jpg
+  metrics:
+    likes: 288
+    views: 49619
+  date: '2026-09-16'
+  tags:
+  - driving-sim
+  - real-time-control
+- name: Jev driving handoff
+  url: https://x.com/hotragn/status/2101251578610974952
+  kind: post
+  author: hotragn
+  description: Driving-simulator clip where Jev stalls choosing between forward and back and a human takes the wheel, illustrating a decide-when-it-can, hand-off-when-it-can't design.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101248543117701120/img/n1AWqrdoj_OtGSqW.jpg
+  metrics:
+    likes: 3
+    views: 116
+  date: '2026-09-19'
+  tags:
+  - driving-sim
+  - handoff
+  - negative-result
+- name: Jev driving simulator
+  url: https://x.com/cipherwrk/status/2100965547454374316
+  kind: post
+  author: cipherwrk
+  description: Autonomous driving simulation where Jev receives real-time environment data and decides to change lanes, brake, accelerate or slow down around sudden obstacles, pedestrians, traffic and red lights.
+  jev: One Choice per tick over lane change, brake, accelerate and slow down.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100965500314615808/img/19kMbu9jghFUkaBs.jpg
+  metrics:
+    likes: 4
+    views: 5687
+  date: '2026-09-18'
+  tags:
+  - driving
+  - simulation
+- name: Jev drone in an asteroid field
+  url: https://x.com/MKhordoo/status/2100950317852455039
+  kind: post
+  author: MKhordoo
+  description: Drone flown through an asteroid field by Jev with 300ms left/right/slow/accelerate decisions, handing control to a larger model only when its confidence is low; Jev flew on its own 99% of the time.
+  jev: Choice over four actions per step, with low confidence escalating to a larger model.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100950290618867712/img/FY-SPST7ifK3ls5W.jpg
+  metrics:
+    likes: 12
+    views: 1839
+  date: '2026-09-18'
+  tags:
+  - drone
+  - control
+  - escalation
+- name: Jev dual-arm robot control
+  url: https://x.com/Raptor_zip/status/2101091398447505567
+  kind: post
+  author: Raptor_zip
+  description: Dual-arm robot where Jev handles the decision layer of a three-layer controller while IK and physics stay in code, responding in 500ms at about 0.5 yen per trial.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101070240444772353/img/Ci_PCLcMigmoAdks.jpg
+  metrics:
+    likes: 432
+    views: 67664
+  date: '2026-09-18'
+  tags:
+  - robot-arm
+  - control
+  - japanese
+- name: Jev Flight Lab
+  url: https://github.com/kxzk/typesafe-jev-drone-demo
+  kind: repo
+  author: kxzk
+  description: Three.js drone simulation with a Python/FastAPI backend where Jev chooses each navigation action through four checkpoints, with its probabilities, latency and raw input shown beside the flight.
+  jev: A Choice over navigation actions plus an obstruction Noul; adding a barrier forces a fresh decision.
+  date: '2026-09-17'
+  tags:
+  - drone
+  - simulation
+- name: Jev for Physical AI
+  url: https://github.com/robokrunch/jev-physical-ai
+  kind: repo
+  author: robokrunch
+  description: Reproducible warehouse-fleet incident triage demo using 300 Jev calls on simulated incidents, plus a cost comparison against self-hosted ModernBERT on edge CPUs, with raw results and stated caveats.
+  image: https://raw.githubusercontent.com/robokrunch/jev-physical-ai/main/assets/fleet-triage-demo-poster.png
+  metrics:
+    stars: 1
+    likes: 1
+    views: 31
+  date: '2026-09-19'
+  links:
+    demo: https://news.ycombinator.com/item?id=49776827
+    site: https://robokrunch.com
+    demo 2: https://x.com/SimeonLi82/status/2101694996563026404
+  tags:
+  - fleet
+  - triage
+  - edge-ai
+- name: Jev MuJoCo arm policy
+  url: https://x.com/dimentary/status/2101018760371171420
+  kind: post
+  author: dimentary
+  description: Test of Jev as a real-time robot-arm policy in MuJoCo, splitting each update into two calls (what to do next, then how to move arm and gripper) from text geometry and contacts.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101017646154366976/img/02bH3Hxy9l0qEffS.jpg
+  metrics:
+    likes: 624
+    views: 43533
+  date: '2026-09-18'
+  tags:
+  - mujoco
+  - robot-arm
+  - simulation
+- name: Jev pick-and-place study
+  url: https://github.com/tryaksh/jev-pick-and-place-study
+  kind: repo
+  author: tryaksh
+  description: Reproducible MuJoCo pilot comparing Jev 1.13.0, Claude Haiku 4.5 and reactive rules as pick-and-place controllers; Jev succeeded 10/10 in both settings at 146 ms median per decision, matching the rules exactly.
+  date: '2026-09-17'
+  tags:
+  - mujoco
+  - robot-arm
+  - study
+- name: Jev Reflex Autonomy Lab
+  url: https://github.com/khordoo/jev-reflex-autonomy-lab
+  kind: repo
+  author: khordoo
+  description: Multi-drone simulation with up to fifteen drones steered by Jev as a System 1 reflex layer, optionally asking a slower OpenRouter planner for advice when confidence drops.
+  jev: Per-drone Jev decisions each tick; below a confidence threshold a System 2 model sends one-use guidance while Jev keeps steering.
+  image: https://raw.githubusercontent.com/khordoo/jev-reflex-autonomy-lab/main/docs/media/reflex-dashboard.png
+  metrics:
+    stars: 15
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49759706
+  tags:
+  - drone
+  - system-2
+- name: Jev robot arm pick-and-place
+  url: https://x.com/DaniiarAbdiev/status/2100851116498186415
+  kind: post
+  author: DaniiarAbdiev
+  description: SO-101 robot arm with two USB cameras where Jev chooses the next move at ~2 decisions a second and, after a slip, retrieves a ball and drops it in a bowl.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100849500084666368/img/PdH3lz3bR3uvw0kY.jpg
+  metrics:
+    likes: 30
+    views: 18821
+  date: '2026-09-18'
+  tags:
+  - robot-arm
+  - so-101
+- name: Jev robot arm uses a hook
+  url: https://x.com/gabrycina/status/2100545285659480128
+  kind: post
+  author: gabrycina
+  description: 'Robot arm told to put an out-of-reach red cube in a green box: Jev grabbed a hook, dragged the cube closer, set the hook down and finished, with no tool use programmed.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100540294093504512/img/zuv5OwJUB-Tv7f-j.jpg
+  metrics:
+    likes: 150
+    views: 8604
+  date: '2026-09-17'
+  tags:
+  - robot-arm
+  - tool-use
+- name: Jev robot body control
+  url: https://x.com/DanielMizr43248/status/2100714507303829829
+  kind: post
+  author: DanielMizr43248
+  description: Experiment having Jev control a robot body, which it manages with mixed success.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100714471065034752/img/Ef8YwVTFprkIeArZ.jpg
+  metrics:
+    likes: 1
+    views: 166
+  date: '2026-09-17'
+  tags:
+  - robot
+  - control
+  - experiment
+- name: Jev robot claw
+  url: https://x.com/shuvam360/status/2101186415891734728
+  kind: post
+  author: shuvam360
+  description: 'Older robot-claw experiment with Jev swapped in for Claude: after each movement of an object on the board, the model works out the route to reach the goal.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101183715577847808/img/cZLEIxTpQV1HOWa4.jpg
+  metrics:
+    likes: 8
+    views: 1447
+  date: '2026-09-19'
+  tags:
+  - robot-claw
+  - path-planning
+- name: Jev robot control
+  url: https://github.com/openroboto-ai/jev-robot-control
+  kind: repo
+  author: openroboto-ai
+  description: MuJoCo run where Jev 1.13, GPT-6 Astra, and GPT-4.1 mini steer an xArm7 to put an apple on a plate by choosing motion directions and gripper commands; Jev placed it for $0.018825 versus $5.933624.
+  image: https://raw.githubusercontent.com/openroboto-ai/jev-robot-control/main/media/final.png
+  metrics:
+    stars: 39
+    likes: 547
+    views: 46922
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/openroboto/status/2101310974359941332
+  tags:
+  - mujoco
+  - robot-arm
+  - benchmark
+- name: Jev Self-Driving Sim
+  url: https://github.com/vinilana/live-jev
+  kind: repo
+  author: vinilana
+  description: Top-down 2D car simulation in the browser that sends its sensor state to Jev every ~200 ms and executes the lane, speed, hazard and pedestrian-yield answers, with an optional chat-model comparison.
+  jev: Two Choices, a hazard Score and a pedestrian Noul in one call; confidence-gated rules override weak lane changes.
+  metrics:
+    stars: 15
+  date: '2026-09-18'
+  tags:
+  - driving
+  - simulation
+- name: Jev self-driving test
+  url: https://x.com/npceo_/status/2102154533971677481
+  kind: post
+  author: npceo_
+  description: Experiment letting Jev drive a car inside an unreleased world model used to train self-driving cars, with a local segmentation model providing what it sees.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102153758243495937/img/rYDhh2iFvXpWB9ZA.jpg
+  metrics:
+    likes: 83
+    views: 12947
+  date: '2026-09-21'
+  tags:
+  - driving
+  - world-model
+  - simulation
+- name: Jev Traffic Sim
+  url: https://github.com/skcache/jevtrafficsim
+  kind: repo
+  author: skcache
+  description: Interactive Chicago traffic simulator that runs the same trip under fixed-rotation signals, locally adaptive signals and a citywide Jev signal policy via Vercel AI Gateway, so you can compare the outcomes.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    app: https://jevtrafficsim.vercel.app
+    app 2: https://jevtrafficsim.vercel.app
+  tags:
+  - traffic
+  - simulation
+  - smart-city
+- name: Jev vs Astra on an AgileX arm
+  url: https://x.com/MarianPogran/status/2101179679319241076
+  kind: post
+  author: MarianPogran
+  description: 'Real AgileX robot arm doing "put the red cube in the box": Jev finished in 27s versus 1m 11s for GPT-6 Astra, at much lower cost, with the arm capped at 10% speed.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101178753284014080/img/gtLhgbb1fSiGyTRY.jpg
+  metrics:
+    likes: 274
+    views: 26327
+  date: '2026-09-19'
+  tags:
+  - robot-arm
+  - agilex
+  - comparison
+- name: jev-drone
+  url: https://github.com/RomanSlack/jev-drone
+  kind: repo
+  author: RomanSlack
+  description: Camera-only autonomous quadrotor that flies a five-station MuJoCo obstacle course, with Jev deciding what each situation means at about 2.5 Hz from depth-derived scene features while time-critical control stays in code.
+  image: https://raw.githubusercontent.com/RomanSlack/jev-drone/main/docs/climb.png
+  metrics:
+    stars: 119
+  date: '2026-09-16'
+  links:
+    demo: https://x.com/RomanSlack1/status/2100335978229690683
+    app: https://jev-drone.vercel.app
+  tags:
+  - drone
+  - mujoco
+  - simulation
+- name: jev-libero
+  url: https://github.com/Dimweaker/jev-libero
+  kind: repo
+  author: Dimweaker
+  description: Robot manipulation on LIBERO tasks such as closing a microwave or placing soup in a basket, with 27 fine-grained control inputs, local physics previews, and an interactive replay of each decision.
+  jev: Jev picks among previewed control inputs each step; 14 to 40 decisions per demo task.
+  image: https://raw.githubusercontent.com/Dimweaker/jev-libero/main/docs/media/banner.svg
+  metrics:
+    stars: 51
+  date: '2026-09-19'
+  links:
+    app: https://dimweaker.github.io/jev-libero/
+    app 2: https://dimweaker.github.io/jev-libero
+  tags:
+  - libero
+  - mujoco
+  - manipulation
+- name: jev-robotics-demo
+  url: https://github.com/FazalAAli/jev-robotics-demo
+  kind: repo
+  author: FazalAAli
+  description: MuJoCo demo where a simulated Franka arm with an Allegro hand stacks a blue cube on a red one, driven once by Claude Opus 5 with low-level tools and once by Jev.
+  jev: Code proposes small moves and simulates each ahead; Jev picks the move, when to grasp and release, and when the task is done.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - mujoco
+  - robot-arm
+  - simulation
+- name: JEVCITY
+  url: https://01a0b7a9-5619-7ec6-a0d8-fb357ed42aa3.skydive.app/
+  kind: app
+  author: JEVCITY
+  description: Traffic simulation of a nine-intersection city grid where Jev runs every light about every 300 ms; switch it off and watch fixed timers choke the grid.
+  jev: Per-light decisions on phase with confidence and rationale, from the intersection state the program provides.
+  tags:
+  - traffic
+  - simulation
+  - control
+- name: JevPilot
+  url: https://github.com/standardagents/jevpilot
+  kind: repo
+  author: standardagents
+  description: Three.js driving simulator where Jev picks motion and direction as the autopilot.
+  image: https://raw.githubusercontent.com/standardagents/jevpilot/main/docs/try-jevpilot.svg
+  metrics:
+    stars: 160
+    likes: 358
+    views: 66218
+  date: '2026-09-17'
+  links:
+    app: https://jevpilot.standardagents.ai
+    app 2: https://jevpilot.standardagents.ai
+    demo: https://x.com/jpschroeder/status/2100698502531514761
+  tags:
+  - driving
+  - simulation
+- name: Jevpilot
+  url: https://www.reddit.com/r/accelerate/comments/1wik4t9/i_rebuilt_tesla_full_self_driving_with_jev_in/
+  kind: reddit
+  author: jpschroeder
+  description: Simulated self-driving demo in a 3D city where Jev steers the car and follows turn-by-turn directions, which Justin Schroeder says he built in under an hour.
+  image: https://external-preview.redd.it/NnFjcHlrc2RmMHFoMWOYn9FxnzoyIXI3Fx4N6aO51f8iDw5FJT-WW_D6Hmfc.png?format=pjpg&auto=webp&s=ec0df8401debabb28f2f4bb0ee67fd44c0ea5411
+  metrics:
+    points: 182
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/jpschroeder/status/2100347770867458384
+  tags:
+  - driving
+  - simulator
+- name: JevsBistro
+  url: https://github.com/andrewsilber/JevsBistro
+  kind: repo
+  author: andrewsilber
+  description: Deterministic 3D restaurant simulator that replays the same dinner service to compare rule-based, camera-assisted, and Jev-planned waiters, logging each decision with its options, confidence, and latency.
+  image: https://raw.githubusercontent.com/andrewsilber/JevsBistro/main/docs/screenshots/dining-room.png
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - simulation
+  - planning
+- name: Jezero Ops
+  url: https://github.com/Devonance/rover-claude-jev-demo
+  kind: repo
+  author: Devonance
+  description: Simulated Perseverance rover driving over real USGS Jezero Crater terrain, where Jev makes fast hazard and targeting calls as System One and Claude plans science as System Two, with each decision labelled on screen.
+  image: https://raw.githubusercontent.com/Devonance/rover-claude-jev-demo/main/docs/figs/coverage-map.jpg
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  tags:
+  - rover
+  - simulation
+  - system-two
+- name: Little Airways
+  url: https://github.com/lbotinelly/jev-little-airways
+  kind: repo
+  author: lbotinelly
+  description: Toy archipelago flight simulator where each aircraft sees only itself and nearby traffic and Jev decides live whether to divert, declare an emergency, give way, hold or land first, in about 150 ms.
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  links:
+    video: https://github.com/user-attachments/assets/3edd2a58-b86f-4e79-9756-282cd60ce3c3
+  tags:
+  - air-traffic
+  - simulation
+- name: MakerMods arm in MuJoCo
+  url: https://x.com/IsaacSin12/status/2100833538224668699
+  kind: post
+  author: IsaacSin12
+  description: MakerMods Metal arm in MuJoCo where Jev reads the scene as JSON and picks bounded actions (hover, descend, grasp, lift, place), finishing tasks in 9 decisions at ~150 ms each.
+  jev: Typed Choice over bounded actions with a confidence score; refuses tasks it cannot map to the scene.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100829039040802816/img/74S2rGSiTL_J7C5V.jpg
+  metrics:
+    likes: 151
+    views: 8559
+  date: '2026-09-18'
+  tags:
+  - robot-arm
+  - mujoco
+  - simulation
+- name: MillOS Jev incident routing
+  url: https://github.com/NellInc/MillOS/blob/main/src/utils/jevClient.ts
+  kind: repo
+  author: NellInc
+  description: Browser-based 3D grain-mill digital twin with simulated SCADA whose AI partner can ask Jev, on request, which operations queue an incident belongs to, such as equipment maintenance.
+  jev: One Choice over fixed incident queues through the OpenRouter Decisions API (typesafe/jev-1.13); advice is read-only and cached for 60 s.
+  image: https://raw.githubusercontent.com/NellInc/MillOS/main/src/0.10%20Archive/assets/Screenshot.png
+  metrics:
+    repo_stars: 8
+  date: '2025-12-03'
+  links:
+    app: http://www.millos.net/
+    repo: https://github.com/NellInc/MillOS
+  tags:
+  - digital-twin
+  - scada
+  - incident-triage
+- name: MOSS
+  url: https://github.com/metrox-eth/moss
+  kind: repo
+  author: metrox-eth
+  description: Open, mostly 3D-printed litter-picking rover with a browser demo in which Jev chooses every step of a pickup (approach, align, grasp, lift, carry, release) on physics recorded in MuJoCo.
+  image: https://raw.githubusercontent.com/metrox-eth/moss/main/media/images/moss_exploded_turntable.gif
+  metrics:
+    stars: 10
+  date: '2026-09-17'
+  links:
+    demo: https://www.showrobotics.ai/moss-jev/
+  tags:
+  - rover
+  - mujoco
+  - litter-picking
+- name: MOSS litter picking
+  url: https://x.com/metrox_eth/status/2101021471644733867
+  kind: post
+  author: metrox_eth
+  description: 'Simulation replaying real Jev decisions for the MOSS robot: Jev picks the target from an instruction like "pick up the cans", then switches when told "pick up the bottles".'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101021391575457792/img/x227ubbFebYxck1p.jpg
+  metrics:
+    likes: 109
+    views: 35835
+  date: '2026-09-18'
+  links:
+    page: https://www.showrobotics.ai/moss-jev/
+    project: https://showrobotics.ai/moss-jev
+  tags:
+  - litter-picking
+  - simulation
+  - manipulation
+- name: MOSS × Jev
+  url: https://github.com/metrox-eth/moss-jev
+  kind: repo
+  author: metrox-eth
+  description: Browser 3D replay of the MOSS litter-picking rover where Jev chose each manipulation step in MuJoCo runs, such as picking up a can or retrying a missed grasp.
+  date: '2026-09-18'
+  links:
+    app: https://metrox-eth.github.io/moss-jev/
+    project: https://github.com/metrox-eth/moss
+  tags:
+  - rover
+  - mujoco
+  - manipulation
+- name: OmniJev
+  url: https://github.com/shapsider/OmniJev
+  kind: repo
+  author: shapsider
+  description: Research project that brings camera images into Jev-style finite-choice decisions for robots, with an HTTP service, an SDK and a MuJoCo robot-arm workbench.
+  jev: Uses a Jev-like interface on Nemotron 3 Nano Omni; in skill mode the model picks preset skills, and it answers insufficient evidence on blank or unobservable inputs.
+  image: https://raw.githubusercontent.com/shapsider/OmniJev/main/docs/media/omnijev-transfer.gif
+  metrics:
+    stars: 3
+  date: '2026-09-21'
+  tags:
+  - robotics
+  - multimodal
+  - mujoco
+- name: piper-astra-jev
+  url: https://github.com/RobotKitAI/piper-astra-jev
+  kind: repo
+  author: RobotKitAI
+  description: Eight demo runs on a real AgileX PiPER robot arm comparing GPT-6 Astra seeing camera images with Jev as the decider over Grounding DINO or SAM 3 perception, up to sliding a pipe fitting over a standing box.
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  tags:
+  - robot-arm
+  - sam3
+  - grounding-dino
+- name: quackd Jev stepper
+  url: https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py
+  kind: repo
+  author: rokbenko
+  description: Optional Jev stepper in quackd, a CLI that orchestrates hobby and ROS robots with an LLM brain, where Jev picks among the permitted discrete calls for cheaper steps while the LLM still writes poses and safety gates apply.
+  metrics:
+    repo_stars: 225
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/rokbenko/quackd
+    site: https://www.quackd.org
+  tags:
+  - robots
+  - ros
+  - lerobot
+- name: Robo Harness
+  url: https://github.com/grmkris/robo-harness
+  kind: repo
+  author: grmkris
+  description: SO-101 robot-arm agent workbench with a Bun/Effect coordinator, a React and Rerun workspace and a Python LeRobot motor owner, in which Jev picks bounded next arm actions from camera and sensor state.
+  image: https://raw.githubusercontent.com/grmkris/robo-harness/main/docs/workbench-real.png
+  metrics:
+    stars: 2
+  date: '2026-09-07'
+  tags:
+  - robot-arm
+  - lerobot
+  - so-101
+- name: RoboJEV
+  url: https://github.com/lykycy123/RoboJEV
+  kind: repo
+  author: lykycy123
+  description: MuJoCo lab where Jev controls a Franka Panda arm from structured simulator state, first picking an intent and then X/Y/Z directions and a gripper command for pick-and-place, pushing and stacking.
+  jev: Two-stage Choices (intent, then motion and gripper); a Cartesian controller executes and physics checks, not the model, decide success.
+  image: https://raw.githubusercontent.com/lykycy123/RoboJEV/main/site/media/banner.svg
+  metrics:
+    stars: 29
+  date: '2026-09-20'
+  links:
+    app: https://lykycy123.github.io/RoboJEV/
+    app 2: https://lykycy123.github.io/RoboJEV
+  tags:
+  - robot-arm
+  - mujoco
+- name: RoverLab
+  url: https://github.com/juancamiloqhz/roverlab
+  kind: repo
+  author: juancamiloqhz
+  description: Browser 3D planetary rover sandbox where you set a mission and environment, then compare a local baseline with a TypeSafe controller that picks actions via Choice probabilities, tracking energy and discoveries.
+  date: '2026-09-17'
+  tags:
+  - rover
+  - simulation
+  - 3d
+- name: Spatial control without vision
+  url: https://x.com/DXhusni/status/2100746693033816557
+  kind: post
+  author: DXhusni
+  description: Loop that gives Jev the goal, current geometry and contacts, available controls with predicted effects, and the last outcome, and it zero-shots a spatial manipulation task with no vision.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100744327521824768/img/QudyKboQq-vCGHpy.jpg
+  metrics:
+    likes: 217
+    views: 17646
+  date: '2026-09-18'
+  tags:
+  - spatial-reasoning
+  - control
+- name: System 1 + System 2 robot loop
+  url: https://x.com/Jadfyd/status/2101302137884234221
+  kind: post
+  author: Jadfyd
+  description: PyBullet cube-stacking robot where Claude writes the high-level plan and Jev acts as the reflex layer, evaluating simulation states in under 100ms to adapt.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101301804227325952/img/QjhHxPjGf3gQlVzy.jpg
+  metrics:
+    likes: 7
+    views: 1564
+  date: '2026-09-19'
+  tags:
+  - pybullet
+  - planning
+  - neurosymbolic
+- name: Traffic-light control
+  url: https://x.com/leojrr/status/2101161666410893328
+  kind: post
+  author: leojrr
+  description: City simulation in which Jev controls every traffic light; turning it off raises the average wait time by more than 600%.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101161072447180800/img/sRIOALT11TUpdAdU.jpg
+  metrics:
+    likes: 6961
+    views: 512470
+  date: '2026-09-19'
+  tags:
+  - traffic
+  - simulation
+  - control
+- name: TypeEvacSafe
+  url: https://github.com/using76/TypeEvacSafe
+  kind: repo
+  author: using76
+  description: Fire-evacuation simulator where each of 100 evacuees makes typed decisions about role, rescue and route over a simulated fire field, comparing a local Bonsai 2 27B engine with Jev.
+  jev: Rebuilds a Jev-style typed decision engine on local LLMs and runs it side by side with the TypeSafe Jev API; social-force movement handles walking.
+  image: https://raw.githubusercontent.com/using76/TypeEvacSafe/main/results/hall/bonsai_vs_jev.gif
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - evacuation
+  - simulation
+  - fire-safety
+- name: typesafe-playground
+  url: https://github.com/kavehmz/typesafe-playground
+  kind: repo
+  author: kavehmz
+  description: 'Interactive Jev experiments: a 3D driving lab where Jev picks lane and target speed from camera, radar and speed-sign readings, plus a support-message routing preview.'
+  jev: 'Driving: Choices for lane and target speed from structured sensors; support demo splits a message into six independent judgments that code combines.'
+  image: https://raw.githubusercontent.com/kavehmz/typesafe-playground/main/docs/images/demo03-fable.png
+  metrics:
+    stars: 11
+  date: '2026-09-17'
+  tags:
+  - driving
+  - simulation
+- name: Voice-commanded robot arm
+  url: https://x.com/crypto_dev_1/status/2102081831042416935
+  kind: post
+  author: crypto_dev_1
+  description: Spanish demo of a robot arm that understands spoken commands like open your hand, go to the ceiling or stretch as far as you can, with Jev mapping phrases to arm actions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102080818143244288/img/L59xykXX-_Xpa7Nh.jpg
+  metrics:
+    likes: 52
+    views: 4299
+  date: '2026-09-21'
+  tags:
+  - robot-arm
+  - voice-commands
+- name: Zero-shot robot arm tasks
+  url: https://x.com/tarat_211/status/2100625153109504483
+  kind: post
+  author: tarat_211
+  description: Robot arm demo where you give a goal in plain English and Jev chains a set of hardcoded motion primitives to carry it out, with no training.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100624434348294144/img/hJfPYVbpLtVQALI4.jpg
+  metrics:
+    likes: 9
+    views: 336
+  date: '2026-09-17'
+  tags:
+  - robot-arm
+  - zero-shot

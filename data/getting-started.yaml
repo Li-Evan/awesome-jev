@@ -1,0 +1,51 @@
+title: Getting Started
+emoji: 🚀
+layout: list
+entries:
+- name: Jev Cheatsheet
+  url: https://github.com/Li-Evan/awesome-jev/blob/main/cheatsheet.md
+  kind: repo
+  description: One-page field guide to primitives, question design, confidence handling, limits, and tested SDK snippets.
+  pinned: true
+- name: Quick start
+  url: https://docs.typesafe.ai/introduction/quickstart
+  kind: docs
+  author: TypeSafe AI
+  description: First request through the Playground, cURL, the Python SDK, or a coding agent.
+  image: https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DIntroduction%26title%3DQuick%2Bstart%26description%3DPrefer%2Bto%2Bjust%2Bdive%2Bin%253F%2BHere%2527s%2Beverything%2Byou%2Bneed%2Bto%2Bget%2Bstarted%2Bimmediately.%26theme%3Df0580ae664a0195833f0555d&w=1200&q=100
+  tags:
+  - official
+  - quickstart
+  pinned: true
+- name: Playground
+  url: https://console.typesafe.ai/playground
+  kind: app
+  author: TypeSafe AI
+  description: Try a state and a set of questions in the browser before writing code (sign-in required).
+  tags:
+  - official
+  - playground
+  pinned: true
+- name: How to build with TypeSafe
+  url: https://docs.typesafe.ai/concepts/how-to-build-with-system-one
+  kind: docs
+  author: TypeSafe AI
+  description: Core design guide on keeping control flow in code and breaking judgments into atomic questions.
+  image: https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DTypeSafe%2Bfoundations%26title%3DHow%2Bto%2Bbuild%2Bwith%2BTypeSafe%26description%3DDesign%2BAI-powered%2Bsoftware%2Bby%2Bkeeping%2Bcode%2Bin%2Bcontrol%2Band%2Bgiving%2BSystem%2BOne%2Bnarrow%252C%2Bstructured%2Bdecisions.%26theme%3Df0580ae664a0195833f0555d&w=1200&q=100
+  tags:
+  - official
+  - design
+  pinned: true
+- name: Agent skill
+  url: https://docs.typesafe.ai/agent-skill
+  kind: docs
+  author: TypeSafe AI
+  description: Teaches Claude Code, Codex, and other coding agents to design TypeSafe workflows from the live docs.
+  image: https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DReference%26title%3DAgent%2Bskill%26description%3DDrop-in%2Bskill%2Bfor%2BClaude%2BCode%252C%2BCodex%252C%2Band%2Bother%2Bagent%2Benvironments.%26theme%3Df0580ae664a0195833f0555d&w=1200&q=100
+  links:
+    repo: https://github.com/typesafe-ai/skills
+  tags:
+  - official
+  - agent-skill
+  - coding-agents
+  pinned: true

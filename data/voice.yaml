@@ -1,0 +1,774 @@
+title: Voice and Real-Time Interfaces
+emoji: 🗣️
+layout: gallery
+description: Voice assistants and interfaces that react while you type or speak.
+entries:
+- name: AIAvatarKit Jev turn-end gate
+  url: https://github.com/uezo/aiavatarkit/blob/main/aiavatar/sts/vad/turn_end_gates/jev.py
+  kind: repo
+  author: uezo
+  description: Turn-end gate for AIAvatarKit conversational avatars that asks Jev whether the user is yielding the floor or will keep speaking, adding a semantic signal to silence-based voice activity detection.
+  jev: A hold-the-turn Noul over the transcript, mapped to extra wait time by probability ranges.
+  image: https://raw.githubusercontent.com/uezo/aiavatarkit/main/documents/images/aiavatarkit_overview.png
+  metrics:
+    repo_stars: 678
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/uezo/aiavatarkit
+  tags:
+  - turn-detection
+  - avatars
+- name: AIAvatarKit turn-end gate
+  url: https://x.com/uezochan/status/2100608556823388486
+  kind: post
+  author: uezochan
+  description: 'Voice-dialog turn-end detection: 0.5 s after speech stops, Jev scores whether the user finished speaking and the score sets an extra hold time, with Jev taking about 0.22 s.'
+  jev: Score of turn completion after each pause, mapped to an extra hold timeout.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100607043837321217/img/mx7Fv1mctyBoigHx.jpg
+  metrics:
+    likes: 443
+    views: 39184
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/uezo/aiavatarkit
+    project: https://github.com/uezo/aiavatarkit
+  tags:
+  - turn-taking
+  - voice
+- name: aloud Jev judge
+  url: https://github.com/akrusz/aloud/blob/main/ts/server/src/providers/typesafe.ts
+  kind: repo
+  author: akrusz
+  description: Voice meditation facilitator that asks Jev yes/no questions about each utterance to detect when the speaker has finished and to recognize spoken commands, replacing a Haiku classifier.
+  jev: Batches of Noul questions per utterance with a 1.2 s timeout; about $0.00003 per silence check and $0.00018 per 24-question command check.
+  image: https://raw.githubusercontent.com/akrusz/aloud/main/docs/assets/aloud-screen-light.webp
+  metrics:
+    repo_stars: 14
+  date: '2026-01-31'
+  links:
+    repo: https://github.com/akrusz/aloud
+    app: https://aloud.rest
+  tags:
+  - meditation
+  - turn-taking
+  - voice
+- name: Always-on assistant without a wake word
+  url: https://x.com/_MaxBlade/status/2100967959879471519
+  kind: post
+  author: _MaxBlade
+  description: Always-listening voice assistant with no wake word, where Jev decides from probabilities whether speech is a command for the computer or ordinary conversation.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100966551826444288/img/i2s52ZeMNTOO-IRD.jpg
+  metrics:
+    likes: 1586
+    views: 67426
+  date: '2026-09-18'
+  tags:
+  - voice-assistant
+  - wake-word
+- name: Automatic IME mode switching
+  url: https://x.com/kzkhykw/status/2102038395296022607
+  kind: post
+  author: kzkhykw
+  description: Prototype that watches typing, uses Jev to judge Japanese versus English, switches the keyboard IME mode automatically, and converts already-typed romaji like "watashi" into Japanese.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102036336782069760/img/1W3TI6lsT5IMkYDm.jpg
+  metrics:
+    likes: 683
+    views: 44345
+  date: '2026-09-21'
+  tags:
+  - ime
+  - japanese
+  - as-you-type
+- name: BB Live
+  url: https://github.com/jem-computer/bb-live
+  kind: repo
+  author: jem-computer
+  description: Persistent voice channel plugin for the BB workspace built on GPT-Live, with an experimental toggle that uses Jev to classify spoken requests before the intent model.
+  metrics:
+    stars: 8
+  date: '2026-09-16'
+  tags:
+  - voice
+  - webrtc
+  - intent-routing
+- name: BiBi Keyboard Jev classifier
+  url: https://github.com/BryceWG/BiBi-Keyboard/blob/main/app/src/main/java/com/brycewg/asrkb/asr/JevClassifier.kt
+  kind: repo
+  author: BryceWG
+  description: BiBi Keyboard, an Android LLM+ASR voice input method, uses Jev to pick which prompt to apply to your dictated text after speech recognition.
+  jev: A choice over configured prompts via api.typesafe.ai, with a failure reason when no prompt is selected.
+  image: https://raw.githubusercontent.com/BryceWG/BiBi-Keyboard/main/images/icon_new.svg
+  metrics:
+    repo_stars: 800
+  date: '2025-10-06'
+  links:
+    app: https://bibi.brycewg.com
+  tags:
+  - voice-input
+  - android
+  - keyboard
+- name: CharaDock Jev fast path
+  url: https://github.com/ochisamu/CharaDock/blob/main/docs/jev.md
+  kind: repo
+  author: ochisamu
+  description: Optional Jev fast path in CharaDock, a Windows desktop character companion that talks and works with Codex, deciding music controls from finished utterances and the character's expressions and reactions.
+  jev: Choices over next/previous/pause/play and allowed emotion names, accepted at 0.75 probability within 1.5 s; failures fall back to the normal path.
+  image: https://raw.githubusercontent.com/ochisamu/CharaDock/main/docs/images/charadock-hero.webp
+  metrics:
+    repo_stars: 6
+  date: '2026-07-29'
+  links:
+    repo: https://github.com/ochisamu/CharaDock
+  tags:
+  - desktop-companion
+  - media-control
+  - codex
+- name: Cinderpaw Jev voice commands
+  url: https://github.com/bloom500/cinderpaw/blob/main/frontend-react/src/components/chat/JevKeyRow.tsx
+  kind: repo
+  author: bloom500
+  description: 'Local desktop AI assistant where Jev can act as the voice provider: speech is transcribed on device or in the cloud and Jev decides which command was meant.'
+  jev: Keys starting with sk-or- route to OpenRouter (typesafe/jev-1.13), others to TypeSafe (jev-latest).
+  image: https://raw.githubusercontent.com/bloom500/cinderpaw/main/frontend-react/public/README%20banner.jpeg
+  metrics:
+    repo_stars: 9
+  date: '2026-05-24'
+  links:
+    repo: https://github.com/bloom500/cinderpaw
+  tags:
+  - voice-commands
+  - desktop
+  - assistant
+- name: Designing at the speed of voice
+  url: https://x.com/Moore/status/2102078191758102998
+  kind: post
+  author: Moore
+  description: 'Speaks UI layouts into existence: a local transcription model feeds Jev, which assembles shadcn components into the described layout.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102076539386937344/img/r7ia_XA8QLmSOMmt.jpg
+  metrics:
+    likes: 229
+    views: 56428
+  date: '2026-09-21'
+  tags:
+  - voice
+  - shadcn
+  - ui-design
+- name: Directed-speech filter with Deepgram Flux
+  url: https://x.com/samgutentag/status/2102172336841777354
+  kind: post
+  author: samgutentag
+  description: 'Voice setup where Deepgram Flux transcribes everything said in the room and Jev answers one question per utterance: whether any of it was meant for the assistant.'
+  jev: A single Noul per transcribed segment on whether it was addressed to the assistant.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102172213717897216/img/bcJOTNcI17uA7C0j.jpg
+  metrics:
+    views: 149
+  date: '2026-09-21'
+  tags:
+  - speech
+  - deepgram
+  - wake-filter
+- name: Discord Live Voice Bot
+  url: https://github.com/jevgpt/discord-live-voice-bot
+  kind: repo
+  author: jevgpt
+  description: Discord voice bot that talks back in real time and runs 53 server tools behind a voice-based owner gate, using Jev to judge whether each spoken line was meant for the bot and dropping replies that were not.
+  metrics:
+    stars: 6
+  date: '2026-09-13'
+  tags:
+  - discord
+  - realtime-voice
+- name: Emoji Jev
+  url: https://github.com/colinmcdermott/emoji-jev
+  kind: repo
+  author: colinmcdermott
+  description: Emoji autocomplete that lights up a keyboard of up to 254 emojis as you type; each pause is one Jev call with eight parallel questions (emoji, emotion, mood, urgency, energy, sarcasm, joke, wants reply).
+  image: https://external-preview.redd.it/cG9rNWZpa3RsMnFoMUDrazausqueruEJZS0yeip4Cc398o1nptVLkhdYM-Rj.png?format=pjpg&auto=webp&s=38306d2a67aebbd9764dbfa927498547e4069f2d
+  metrics:
+    stars: 2
+    points: 13
+    likes: 15
+    views: 3386
+  date: '2026-09-17'
+  links:
+    app: https://emoji-jev.whop.site
+    discussion: https://www.reddit.com/r/typesafe_ai/comments/1wis1mb/sentiment_emoji_jev_demo/
+    demo: https://x.com/ColinMcDermott/status/2100535744775242012
+  tags:
+  - as-you-type
+  - emoji
+- name: Instant spreadsheet checks
+  url: https://x.com/ctnicholasdev/status/2100611346203353110
+  kind: post
+  author: ctnicholasdev
+  description: Collaborative AI spreadsheet demo where Jev runs 20+ checks every time a cell is edited and shows warnings immediately, with no LLM in the loop.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100611327580639232/img/ovA8ReDngJrB-BXf.jpg
+  metrics:
+    likes: 203
+    views: 31939
+  date: '2026-09-17'
+  tags:
+  - spreadsheet
+  - real-time
+  - liveblocks
+- name: IntelliPrompter
+  url: https://github.com/finetuningsingh/intelliprompter
+  kind: repo
+  author: finetuningsingh
+  description: Teleprompter of talking points that checks each point off once you have covered it in your own words; running on Jev costs at most about $0.50 an hour versus about $40 on LLMs.
+  jev: Every open talking point is a Score question (0-3) against the transcript so far, all in one request; code checks a point off at a threshold.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    app: https://finetuningsingh.github.io/intelliprompter/
+    app 2: https://finetuningsingh.github.io/intelliprompter
+  tags:
+  - teleprompter
+  - speech
+- name: Jamcat voice-driven UI
+  url: https://x.com/JonPTaylor/status/2100736122502390211
+  kind: post
+  author: JonPTaylor
+  description: Voice-driven music app where Pipecat hands off in real time between Jev, a command agent that drives the UI, and a voice agent that handles generation and conversation.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100735915203137536/img/WZcElA5yjCZdLpQZ.jpg
+  metrics:
+    likes: 478
+    views: 46850
+  date: '2026-09-17'
+  tags:
+  - pipecat
+  - voice-ui
+- name: Jev + Rime input method
+  url: https://x.com/nhciao/status/2101967227327267297
+  kind: post
+  author: nhciao
+  description: Test pairing Jev with the open-source Rime (Squirrel) Chinese input method to rank the wanted character higher among candidates while typing.
+  image: https://pbs.twimg.com/media/HSuwDLga4AEkvLg.jpg?name=orig
+  metrics:
+    likes: 763
+    views: 135465
+  date: '2026-09-21'
+  tags:
+  - input-method
+  - chinese
+  - as-you-type
+- name: jev board
+  url: https://x.com/zahlekhan/status/2100681083176226921
+  kind: post
+  author: zahlekhan
+  description: Experimental keyboard that uses Jev for ambient, as-you-type intelligence in the interface, an exploration at the edges of generative UI.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100679218455789568/img/zy8kM6C3lA-2EyJa.jpg
+  metrics:
+    likes: 494
+    views: 33093
+  date: '2026-09-17'
+  tags:
+  - keyboard
+  - genui
+  - as-you-type
+- name: JEV Call Screener
+  url: https://github.com/SuchintK/jev-call-screener
+  kind: repo
+  author: SuchintK
+  description: Self-hosted Go call-screening backend that asks callers why they are calling, has Jev classify the transcript, and forwards or rejects the call via a Twilio adapter, failing open on errors or uncertainty.
+  date: '2026-09-20'
+  tags:
+  - call-screening
+  - twilio
+  - go
+- name: Jev Mac Voice
+  url: https://github.com/brudarko/jev-mac-voice
+  kind: repo
+  author: brudarko
+  description: Electron app for full-duplex English voice control of macOS via OpenAI Realtime and a native Accessibility bridge, with an optional browser mode where Jev picks the action, target and completion check for Playwright.
+  image: https://raw.githubusercontent.com/brudarko/jev-mac-voice/main/docs/app-preview.png
+  metrics:
+    stars: 20
+  date: '2026-09-19'
+  tags:
+  - macos
+  - voice-control
+  - electron
+- name: Jev teleprompter
+  url: https://x.com/I_am_oil_oil/status/2102066556486427133
+  kind: post
+  author: I_am_oil_oil
+  description: Chinese teleprompter demo where a speech model transcribes the speaker and Jev judges whether they are reading along, speeding up or going off script, then moves the prompt position.
+  jev: Choice over reading states (on track, too fast, off script) on each transcript update.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102060857358479361/img/x7TlP7IUGFnSjj4E.jpg
+  metrics:
+    likes: 10
+    views: 866
+  date: '2026-09-21'
+  tags:
+  - teleprompter
+  - speech
+  - real-time
+- name: Jev Voice
+  url: https://github.com/kevinbadi/jev-voice
+  kind: repo
+  author: kevinbadi
+  description: Hands-free macOS voice assistant that transcribes locally with whisper.cpp, then makes one ~250 ms Jev fan-out call to turn the transcript into a typed action and arguments such as opening apps, typing or scrolling.
+  metrics:
+    stars: 66
+  date: '2026-09-18'
+  tags:
+  - macos
+  - whisper
+  - voice-assistant
+- name: Jev Voice
+  url: https://github.com/chris-wozniczek/jev-voice-control
+  kind: repo
+  author: chris-wozniczek
+  description: Menu-bar Swift app for macOS where you hold a hotkey, speak a command such as "quit spotify" or "set volume to 30", and Jev turns it into a typed macOS action, optionally asking before running.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102151206814580736/img/-K8e6L15LWXjOqbm.jpg
+  metrics:
+    stars: 3
+    likes: 8
+    views: 538
+  date: '2026-09-18'
+  links:
+    site: https://chris-wozniczek.github.io/jev-voice-control/
+    demo: https://x.com/Chris_Wozniczek/status/2102155264195760352
+  tags:
+  - macos
+  - voice-control
+  - swift
+- name: Jev voice browser
+  url: https://github.com/moritzkremb/jev-voice-browser
+  kind: repo
+  author: moritzkremb
+  description: Voice control for a real browser that asks 9 to 11 questions per utterance, including a Noul for destructive actions.
+  image: https://external-preview.redd.it/XTx7v-_vSl03MCXeIaWni70oyrcHah4ihVc3G0NpNNk.png?auto=webp&s=1d2ea4bbc8ba3ee1cf25c048225174a8c2a9d15d
+  metrics:
+    stars: 221
+    likes: 86
+    views: 7873
+  date: '2026-09-17'
+  links:
+    discussion: https://www.reddit.com/r/typesafe/comments/1wlkq29/jevvoicebrowser_you_talk_to_the_browser_jev_picks/
+    demo: https://x.com/moritzkremb/status/2102031209018634312
+  tags:
+  - voice-control
+  - playwright
+- name: Jev Windows Voice
+  url: https://github.com/mstf-svndk/jev-windows-voice
+  kind: repo
+  author: mstf-svndk
+  description: Electron app that controls Windows 10/11 through natural Turkish or English speech, pairing OpenAI Realtime or local Whisper with Jev (via OpenRouter's Decisions API), UI Automation and Playwright.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - windows
+  - computer-use
+  - electron
+- name: jev-canvas
+  url: https://github.com/gaborishka/jev-canvas
+  kind: repo
+  author: gaborishka
+  description: Browser demo where you say commands like 'make a yellow circle here' while pointing at the webcam, and Jev decides action, shape, colour, target and place on a tldraw canvas in about 350 ms per spoken word.
+  jev: Eight typed questions on every partial transcript (is it a command, is it complete, action, shape, colour, target, place, size), gated by thresholds in code.
+  image: https://raw.githubusercontent.com/gaborishka/jev-canvas/main/docs/demo.gif
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - voice-control
+  - hand-tracking
+  - tldraw
+- name: jevis
+  url: https://x.com/ChaseMc67/status/2101507919506489482
+  kind: post
+  author: ChaseMc67
+  description: Always-on voice input harness that runs streaming speech-to-text through a Jev directed-speech filter so ambient chatter no longer ends up in AI voice messages.
+  jev: 'Noul on each transcribed clip: was this speech directed at the assistant?'
+  image: https://pbs.twimg.com/tweet_video_thumb/HSoKIIrbIAA04WP.jpg
+  metrics:
+    likes: 6
+    views: 23950
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/chasemc67/jevis
+    project: https://github.com/chasemc67/jevis
+  tags:
+  - speech-to-text
+  - filter
+  - voice
+- name: JevOrb
+  url: https://github.com/bottlebrushes/jev-orb
+  kind: repo
+  author: bottlebrushes
+  description: Native macOS push-to-talk voice orb that transcribes spoken commands with local Metal Whisper and has Jev operate applications through macOS Accessibility.
+  date: '2026-09-18'
+  tags:
+  - voice-assistant
+  - macos
+- name: Light-Whisper
+  url: https://github.com/sypsyp97/light-whisper
+  kind: repo
+  author: sypsyp97
+  description: Windows hold-to-talk dictation app whose Auto modes ask Jev whether AI polish, screen context or web search is needed, keeping the original text when polishing is unnecessary.
+  jev: TypeSafe, OpenRouter or Vercel; missing credentials, timeouts and uncertain answers fall back to the usual path.
+  image: https://raw.githubusercontent.com/sypsyp97/light-whisper/main/assets/readme-hero.png
+  metrics:
+    stars: 64
+  date: '2026-02-05'
+  tags:
+  - dictation
+  - speech-to-text
+  - windows
+- name: Live slide selection while speaking
+  url: https://x.com/zain_hoda/status/2100720719470494126
+  kind: post
+  author: zain_hoda
+  description: Presentation demo where Jev decides in real time which slide to pull up based on what the speaker is saying.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100720243693789185/img/TnF1XmT4r9kx3jSM.jpg
+  metrics:
+    likes: 160
+    views: 58648
+  date: '2026-09-17'
+  tags:
+  - presentations
+  - speech
+- name: macbrow
+  url: https://github.com/timpratim/macbrow
+  kind: repo
+  author: timpratim
+  description: 'Experimental hands-free macOS assistant: speak a command and Jev routes it in about 300 ms to AppleScript tools or a Chrome browser task, with Gradium speech in and out over LiveKit Agents and a safety policy.'
+  metrics:
+    stars: 123
+  date: '2026-09-18'
+  links:
+    demo: https://www.youtube.com/watch?v=cPBlb1neXiI
+  tags:
+  - voice
+  - macos
+  - livekit
+- name: MacParakeet Voice Control
+  url: https://github.com/moona3k/macparakeet/tree/main/Sources/MacParakeetCore/Services/VoiceControl
+  kind: repo
+  author: moona3k
+  description: MacParakeet, a local-first voice app for Apple Silicon, adds a Voice Control feature where Jev decides the action to take from a spoken command, gated behind explicit consent.
+  jev: A Jev decision client with consent and context-size guards; no action is taken on an invalid decision.
+  image: https://raw.githubusercontent.com/moona3k/macparakeet/main/Assets/AppIcon-1024x1024.png
+  metrics:
+    repo_stars: 658
+  date: '2026-02-10'
+  links:
+    app: https://macparakeet.com
+  tags:
+  - voice-control
+  - dictation
+  - macos
+- name: OpenCues decision seam
+  url: https://github.com/opencues/opencues/tree/master/packages/opencues-core/src/decisions
+  kind: repo
+  author: opencues
+  description: Open standard that turns any text field into a two-way LLM channel, using a TypeSafe decision seam to select commands, sentences and candidates, or skip a generation call entirely.
+  metrics:
+    repo_stars: 53
+  date: '2026-03-31'
+  links:
+    docs: https://github.com/opencues/opencues/blob/master/docs/architecture/decisions.md
+    app: https://www.opencues.com
+  tags:
+  - as-you-type
+  - text-fields
+  - selection
+- name: Point-and-speak canvas
+  url: https://x.com/jackcheng/status/2100729670991802386
+  kind: post
+  author: jackcheng
+  description: 'Whiteboard canvas controlled by pointing at a webcam and speaking: speech, finger position and canvas shapes go to Jev, which picks the action, target and location in about 167 ms.'
+  jev: Seven questions per utterance covering action, target shape and region, with speech, finger and canvas as state.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100729243185324032/img/YNw8njfnSXu-Tbyr.jpg
+  metrics:
+    likes: 4952
+    views: 1107458
+  date: '2026-09-17'
+  tags:
+  - canvas
+  - gesture
+  - speech
+- name: Real-time voice browser control
+  url: https://x.com/moritzkremb/status/2100577979021832365
+  kind: post
+  author: moritzkremb
+  description: 'Voice control for the browser: the spoken transcript goes to Jev, which returns probabilities in ~300ms and triggers the click, at $0.0002 per decision.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100577954338373633/img/tbH43kHpUotE3hzK.jpg
+  metrics:
+    likes: 3797
+    views: 360875
+  date: '2026-09-17'
+  tags:
+  - voice
+  - browser
+- name: Rexclaw Companions
+  url: https://github.com/Codemarchant/rexclaw
+  kind: repo
+  author: Codemarchant
+  description: Self-hosted anime voice companions with 3D VRM avatars on Grok Voice Realtime, where an optional Jev key drives expressive faces, background gestures and group-call turn-taking.
+  jev: A per-sentence read in about 250 ms; without a key, gestures and turn-taking fall back to the xAI turn director.
+  image: https://raw.githubusercontent.com/Codemarchant/rexclaw/main/docs/rexclaw_standalone_banner.jpg
+  metrics:
+    stars: 9
+  date: '2026-06-06'
+  links:
+    app: https://codemarchant.com
+    code: https://github.com/Codemarchant/rexclaw/blob/main/server/jev.py
+  tags:
+  - voice
+  - avatar
+  - turn-taking
+- name: Semantic Live Caption
+  url: https://github.com/limboinf/semantic-live-caption
+  kind: repo
+  author: limboinf
+  description: Real-time captioning page that streams speech through the open Confucius4-R2T2 ASR model while Jev annotates each sentence for key points, emotion and intent, with DeepSeek optionally proposing new labels.
+  image: https://raw.githubusercontent.com/limboinf/semantic-live-caption/main/docs/images/cover.png
+  metrics:
+    stars: 7
+  date: '2026-09-20'
+  tags:
+  - captions
+  - asr
+  - real-time
+- name: SlidePilot
+  url: https://github.com/harshil1712/slidepilot
+  kind: repo
+  author: harshil1712
+  description: Experimental Slidev addon that listens to the presenter through a Cloudflare Agent and Workers AI transcription and advances the deck when the current slide's point is complete.
+  jev: 'Four typed questions per utterance: does advancing feel natural, is the core idea complete, is the presenter continuing, is this a slide boundary; deterministic checks gate the advance.'
+  metrics:
+    stars: 4
+  date: '2026-09-18'
+  tags:
+  - slidev
+  - cloudflare
+  - speech
+- name: Speko Gateway Jev voice router
+  url: https://github.com/SpekoAI/gateway/blob/main/integrations/python/examples/jev_voice_router.py
+  kind: repo
+  author: SpekoAI
+  description: Open customer-side data plane for real-time voice AI that relays evaluation models such as typesafe:jev-1.13.0, with an example that routes each finalized voice turn using one batched Jev evaluation.
+  metrics:
+    repo_stars: 8
+  date: '2026-08-05'
+  links:
+    app: https://speko.ai
+    repo: https://github.com/SpekoAI/gateway
+  tags:
+  - voice-ai
+  - gateway
+  - routing
+- name: Toothless
+  url: https://x.com/ashutoshpuro97/status/2101660362882085299
+  kind: post
+  author: ashutoshpuro97
+  description: Always-on voice assistant demo where Jev decides in real time whether what you say is directed at the AI or at someone else, so no wake word is needed.
+  jev: Several simultaneous judgments per utterance, such as topic continuation and whether an agent could help.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101659226607321089/img/iDIVp1YnUasEtGo9.jpg
+  metrics:
+    likes: 552
+    views: 54906
+  date: '2026-09-20'
+  tags:
+  - ambient-ai
+  - voice
+  - addressee-detection
+- name: TypeSafe Typewriter
+  url: https://typesafe-demo.val.run/
+  kind: app
+  author: Steve Krouse
+  description: Val Town demo that re-scores a sentence on every keystroke, showing 16 calibrated judgments such as tone, urgency, passive-aggressiveness and AI-written move as you type.
+  jev: 16 typed questions asked in one call, re-run per keystroke.
+  links:
+    demo: https://x.com/stevekrouse/status/2100287368221659289
+  tags:
+  - as-you-type
+  - writing
+  - val-town
+- name: Vellum voice judges
+  url: https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev
+  kind: repo
+  author: vellum-ai
+  description: 'Jev provider in the Vellum personal assistant used by live-voice judges: one decides whether a barged-in request should keep running in the background, another overrules the fast front door when a turn needs tools.'
+  jev: One bounded yes/no Noul per judge; every failure falls back to the default behavior.
+  image: https://raw.githubusercontent.com/vellum-ai/vellum-assistant/main/assets/banner.png
+  metrics:
+    repo_stars: 1296
+  date: '2026-09-16'
+  links:
+    repo: https://github.com/vellum-ai/vellum-assistant
+    app: https://vellum.ai
+  tags:
+  - voice-assistant
+  - barge-in
+- name: Voice commands for Autumn
+  url: https://x.com/charlielamb/status/2100946207530955145
+  kind: post
+  author: charlielamb
+  description: Dictation in the Autumn pricing dashboard that turns spoken requests into plan attaches, updates and schedules instead of manual edits.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100944674567467008/img/w1tdGJtRZyRQ6TDt.jpg
+  metrics:
+    likes: 30
+    views: 3647
+  date: '2026-09-18'
+  tags:
+  - voice
+  - billing
+- name: Voice commands for Fusion 360
+  url: https://x.com/xyz04274951/status/2101053181589606584
+  kind: post
+  author: xyz04274951
+  description: Voice control for Fusion 360 where you click, speak and Fusion runs the feature, with Jev only deciding whether the utterance is a command.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101053100513722368/img/r7M9adjEOeVW0EBn.jpg
+  metrics:
+    views: 79
+  date: '2026-09-18'
+  tags:
+  - cad
+  - voice-commands
+- name: Voice computer assistant
+  url: https://x.com/marckohlbrugge/status/2100930430690050336
+  kind: post
+  author: marckohlbrugge
+  description: Early computer assistant where local Whisper transcribes everything the author says, and Jev classifies it into actions using the screen's accessibility tree from a small Swift app, all in real time.
+  jev: Classifies each utterance into an action over the clickable elements on screen.
+  image: https://pbs.twimg.com/media/HSgAtGCW8AABc-Z.jpg?name=orig
+  metrics:
+    likes: 110
+    views: 7482
+  date: '2026-09-18'
+  tags:
+  - whisper
+  - macos
+  - accessibility
+- name: Voice control for Mac, honest take
+  url: https://x.com/rishipatidarr/status/2101671534133961180
+  kind: post
+  author: rishipatidarr
+  description: 'Day-long test of controlling a Mac by voice with Jev: actions land in about 700ms and refusals in 350ms, but results depend on well-separated options and it struggles once commands need reasoning.'
+  metrics:
+    likes: 7
+    views: 212
+  date: '2026-09-20'
+  tags:
+  - voice
+  - computer-use
+  - lessons
+- name: Voice Cursor Jev demo
+  url: https://x.com/LongChen8asr/status/2101904162447556648
+  kind: post
+  author: LongChen8asr
+  description: Voice Cursor demo where Jev acts as the live decision layer for spoken edits, such as making an email warmer, keeping Wednesday and dropping the apology.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101903869345501184/img/zkRooacuKzJ9sjsz.jpg
+  metrics:
+    likes: 3
+    views: 303
+  date: '2026-09-21'
+  links:
+    app: https://www.voicecursor.ai
+    project: https://voicecursor.ai
+  tags:
+  - voice-input
+  - email
+  - editing
+- name: Voice intent to tool calls
+  url: https://x.com/BhosalePratim/status/2100986774742765991
+  kind: post
+  author: BhosalePratim
+  description: Voice-agent experiment that replaces the LLM's tool-choice step with Jev so decisions run on partial transcripts, letting the agent act before the user finishes the sentence.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100986186219081728/img/LmAGU-0Pd5ZABGeb.jpg
+  metrics:
+    likes: 476
+    views: 111741
+  date: '2026-09-18'
+  tags:
+  - voice-agent
+  - tool-calling
+  - partials
+- name: Voice-controlled Chrome with Jev
+  url: https://www.youtube.com/watch?v=rGNZxt8eUaI
+  kind: video
+  author: Prompt Engineer 48
+  description: Explainer plus a build that drives Chrome by voice through a mic, Whisper, Jev, and Playwright pipeline, set up with the TypeSafe skill in Claude Code, with try-on and news-filter extras.
+  jev: Picks the browser intent and target from each transcript.
+  metrics:
+    views: 13651
+    likes: 131
+  date: '2026-09-20'
+  tags:
+  - voice
+  - browser
+  - playwright
+- name: Voice-controlled Figma
+  url: https://x.com/mikegee/status/2100845388655960112
+  kind: post
+  author: mikegee
+  description: Controls Figma by speaking commands that Jev turns into design actions; total cost from first line of code to the demo video was $0.01.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100844622213959680/img/yPzf2Js8iJLezbtu.jpg
+  metrics:
+    likes: 164
+    views: 15157
+  date: '2026-09-18'
+  tags:
+  - figma
+  - voice
+  - design
+- name: Voice-controlled Mac agent
+  url: https://x.com/instantricecook/status/2100814590300889426
+  kind: post
+  author: instantricecook
+  description: Voice-controlled computer use for the Mac that acts on spoken instructions as they arrive, opening Notes before the user finishes the sentence.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100809295809974272/img/_1rbvz04k6wjpcGW.jpg
+  metrics:
+    likes: 6063
+    views: 636439
+  date: '2026-09-18'
+  tags:
+  - voice
+  - computer-use
+  - macos
+- name: Voice-driven computer use
+  url: https://www.reddit.com/r/typesafe_ai/comments/1wjxif2/ultrafast_voice_to_computer_use_with_jev/
+  kind: reddit
+  author: Just_Lingonberry_352
+  description: Video of spoken commands driving a Mac desktop in near real time, with Jev choosing the computer-use actions.
+  image: https://external-preview.redd.it/MjVqaWFtM3lpYnFoMVF5AEaTiwB8DdPkl7eQInx6np9AOGrXdQTJ5e64DBEa.png?format=pjpg&auto=webp&s=23f6eb7cc214979ea6b784e685493490b29743e7
+  metrics:
+    points: 31
+  date: '2026-09-18'
+  tags:
+  - computer-use
+  - voice
+  - macos
+- name: VoiceX llm-bench Jev judge
+  url: https://github.com/xuyungit/VoiceX/tree/main/tools/llm-bench
+  kind: repo
+  author: xuyungit
+  description: Benchmark tool for the VoiceX desktop voice-input app that uses Jev as the judge of LLM post-processing, asking three fixed questions about each ASR correction to credit good edits and flag bad ones.
+  metrics:
+    repo_stars: 19
+  date: '2026-03-27'
+  links:
+    repo: https://github.com/xuyungit/VoiceX
+  tags:
+  - asr
+  - benchmark
+  - dictation
+- name: Youform voice builder
+  url: https://x.com/themkmaker/status/2100961111319429403
+  kind: post
+  author: themkmaker
+  description: Voice form builder in Youform where Jev turns spoken instructions into form-building actions quickly.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100960961515704321/img/hmtKtXEbiikmLDlZ.jpg
+  metrics:
+    likes: 73
+    views: 5518
+  date: '2026-09-18'
+  tags:
+  - forms
+  - voice

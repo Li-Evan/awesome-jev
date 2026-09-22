@@ -1,0 +1,4777 @@
+title: Build with Jev
+emoji: 🔌
+layout: list
+description: 'Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs.'
+subsections:
+- slug: model-access
+  title: Model Access
+  entries:
+  - name: 0G Serving Broker decisions
+    url: https://github.com/0gfoundation/0g-serving-broker/blob/main/api/inference/internal/ctrl/decisions.go
+    kind: repo
+    author: 0gfoundation
+    description: Provider broker for the 0G Compute Network with a decisions handler that proxies OpenRouter Decisions-style requests such as typesafe/jev-1.13 and bills them from the usage block.
+    metrics:
+      repo_stars: 7
+    date: '2024-06-25'
+    links:
+      repo: https://github.com/0gfoundation/0g-serving-broker
+    tags:
+    - gateway
+    - billing
+    - go
+  - name: Agent Router TypeSafe schema
+    url: https://github.com/theagentrouter/agent-router/tree/main/internal/apischema/typesafe
+    kind: repo
+    author: theagentrouter
+    description: Agent Router, the Envoy-based AI gateway formerly Envoy AI Gateway, adds TypeSafe System One request and response schema so Jev's /v1/systemone can be routed through it.
+    jev: State, instructions and criteria are kept as raw JSON and never reshaped by the gateway.
+    image: https://raw.githubusercontent.com/theagentrouter/agent-router/main/site/static/img/brand/ar-horizontal-primary.svg
+    metrics:
+      repo_stars: 2127
+    date: '2024-10-21'
+    links:
+      app: https://theagentrouter.ai/
+    tags:
+    - gateway
+    - envoy
+    - schema
+  - name: AI Store
+    url: https://github.com/AgentsDanceAI/AIStore
+    kind: repo
+    author: AgentsDanceAI
+    description: Accounts, credits and workspace layer for thirty hosted open-source AI products that offers both a self-hosted Laya decision model and TypeSafe's hosted Jev as metered slots.
+    metrics:
+      stars: 7
+    date: '2026-08-21'
+    links:
+      app: https://aistore.best
+    tags:
+    - hosting
+    - credits
+    - laya
+  - name: AI/ML API Jev
+    url: https://docs.aimlapi.com/api-references/decision-models/typesafe/jev
+    kind: docs
+    author: AI/ML API
+    description: AI/ML API documentation for serving TypeSafe Jev as typesafe/jev under its decision-models API, with a playground and Python/Node.js snippets for state-plus-questions requests.
+    metrics:
+      stars: 28
+    date: '2024-05-28'
+    links:
+      repo: https://github.com/aimlapi/api-docs/tree/main/docs/api-references/decision-models/TypeSafe
+      app: https://aimlapi.com/app/typesafe/jev
+    tags:
+    - provider
+    - api
+  - name: aio-proxy System One route
+    url: https://github.com/aio-proxy/aio-proxy/tree/main/packages/server/src/routes/systemone
+    kind: repo
+    author: aio-proxy
+    description: Self-hosted multi-provider API proxy that exposes a TypeSafe System One route (POST /v1/systemone) alongside its OpenAI-style endpoints.
+    metrics:
+      repo_stars: 9
+    date: '2026-07-02'
+    links:
+      app: https://aioproxy.dev
+      repo: https://github.com/aio-proxy/aio-proxy
+    tags:
+    - proxy
+    - gateway
+    - typescript
+  - name: AntSeed TypeSafe provider
+    url: https://github.com/AntSeed/antseed/tree/main/plugins/provider-typesafe
+    kind: repo
+    author: AntSeed
+    description: Peer-to-peer AI inference market where providers can offer TypeSafe System One decisions through a provider-typesafe plugin, discovered by buyers over DHT.
+    metrics:
+      repo_stars: 57
+    date: '2026-02-24'
+    links:
+      app: https://antseed.com
+    tags:
+    - p2p
+    - marketplace
+    - provider
+  - name: Beam managed System One endpoint
+    url: https://github.com/beam-cloud/beta9/blob/main/sdk/src/beta9/abstractions/managed_endpoint.py
+    kind: repo
+    author: beam-cloud
+    description: Beam's serverless GPU runtime can host a decision-kind managed endpoint that serves a System One model on TypeSafe's /v1/systemone contract.
+    jev: The endpoint's decision kind picks the /v1/systemone routes; the model name is what callers send.
+    image: https://raw.githubusercontent.com/beam-cloud/beta9/main/static/beam-logo-white.png
+    metrics:
+      repo_stars: 1784
+    date: '2023-11-15'
+    links:
+      app: https://beam.cloud
+    tags:
+    - serverless
+    - gpu
+    - hosting
+  - name: Bifrost TypeSafe provider
+    url: https://github.com/maximhq/bifrost/tree/dev/core/providers/typesafe
+    kind: repo
+    author: maximhq
+    description: TypeSafe provider in the Bifrost AI gateway that exposes a drop-in /typesafe prefix, so clients written for api.typesafe.ai, including the official SDK, work through Bifrost unchanged.
+    jev: Covers Noul, Choice and Score, jev-latest alias resolution and model listing, with a decisions quickstart for the gateway and Go SDK.
+    metrics:
+      repo_stars: 8229
+    date: '2025-03-19'
+    links:
+      app: https://www.getmaxim.ai/bifrost
+    tags:
+    - gateway
+    - go
+    - drop-in
+  - name: Braintrust AI Proxy TypeSafe provider
+    url: https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts
+    kind: repo
+    author: braintrustdata
+    description: Adds TypeSafe as a provider in the Braintrust AI proxy, with a script that syncs Jev model IDs, aliases and per-token pricing from the TypeSafe models API and docs.
+    metrics:
+      repo_stars: 410
+    date: '2023-11-22'
+    links:
+      docs: https://www.braintrustdata.com/docs/guides/proxy
+    tags:
+    - gateway
+    - pricing
+    - proxy
+  - name: ChatBotKit platform decisions
+    url: https://github.com/chatbotkit/platform/blob/main/platform/lib/model.provider.typesafe.ts
+    kind: repo
+    author: chatbotkit
+    description: Decision API in the open-source ChatBotKit AI backend (/api/v1/decision/create) that serves typed questions through TypeSafe, OpenRouter or Vercel AI Gateway providers with bounded timeouts and retries.
+    metrics:
+      repo_stars: 26
+    date: '2026-09-03'
+    links:
+      app: https://cbk.ai
+      repo: https://github.com/chatbotkit/platform
+    tags:
+    - ai-platform
+    - decision-api
+  - name: Cloudflare Jev model catalog
+    url: https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/catalog-models/typesafe-jev.json
+    kind: docs
+    author: cloudflare
+    description: Cloudflare's model catalog entry for typesafe/jev, listing Jev for Noul, Choice and Score evaluation at $0.042 per million input tokens and free output, with a worked example.
+    metrics:
+      repo_stars: 5239
+    date: '2020-09-03'
+    links:
+      docs: https://developers.cloudflare.com
+    tags:
+    - cloudflare
+    - workers-ai
+    - catalog
+  - name: Cloudflare Workers AI
+    url: https://developers.cloudflare.com/ai/models/typesafe/jev/
+    kind: docs
+    author: Cloudflare
+    description: Calls Jev from a Worker with `env.AI.run`, with examples for refund review, department routing, and risk scoring.
+    image: https://developers.cloudflare.com/og-docs.png
+    tags:
+    - cloudflare
+    - workers
+  - name: Convex AI Gateway Jev support
+    url: https://github.com/get-convex/convex-backend/blob/main/npm-packages/docs/docs/ai-gateway/api.mdx
+    kind: docs
+    author: get-convex
+    description: Convex's AI Gateway serves Jev as typesafe/jev-1.13 through a decisions endpoint, callable from Convex actions via AI SDK's evaluate and the @convex-dev/ai-sdk-provider package.
+    jev: Authentication uses a short-lived deployment token, and the dollar cost of each decision is returned in provider metadata.
+    metrics:
+      repo_stars: 12595
+    date: '2024-03-08'
+    links:
+      repo: https://github.com/get-convex/convex-backend/tree/main/npm-packages/@convex-dev/ai-sdk-provider
+    tags:
+    - gateway
+    - convex
+    - ai-sdk
+  - name: croit AIplane
+    url: https://github.com/croit/aiplane
+    kind: repo
+    author: croit
+    description: Self-hosted AI gateway with a TypeSafe System One-compatible /v1/systemone endpoint, so the official SDK can use it as base URL, plus System One-based automatic model routing and a GDPR/NDA content guard.
+    image: https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg
+    metrics:
+      stars: 23
+    date: '2026-06-17'
+    links:
+      app: https://www.croit.io/solutions/aiplane
+    tags:
+    - gateway
+    - self-hosted
+    - model-routing
+  - name: Experiential TypeSafe provider
+    url: https://github.com/experientiallabs/experiential/blob/main/exp/runtime/models/providers/typesafe.py
+    kind: repo
+    author: experientiallabs
+    description: TypeSafe provider in the Experiential open-source model gateway that dispatches Jev decisions natively and refuses to treat Jev as a chat model.
+    image: https://raw.githubusercontent.com/experientiallabs/experiential/main/assets/experiential-workflow.png
+    metrics:
+      repo_stars: 5416
+    date: '2026-06-24'
+    links:
+      app: https://experientiallabs.ai
+    tags:
+    - gateway
+    - router
+    - python
+  - name: GPT-Load Jev channel
+    url: https://github.com/tbphp/gpt-load/blob/main/internal/channel/modules/jev.go
+    kind: repo
+    author: tbphp
+    description: Jev channel module for the self-hosted GPT-Load AI gateway, adding TypeSafe's official API as a provider with batch key import, scheduling and failover.
+    image: https://repository-images.githubusercontent.com/997490512/48207872-b9e0-4e70-8006-0becdc6507ff
+    metrics:
+      repo_stars: 6946
+    date: '2025-06-06'
+    links:
+      app: https://www.gpt-load.com
+    tags:
+    - gateway
+    - self-hosted
+    - go
+  - name: Hack Club AI Jev endpoint
+    url: https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts
+    kind: repo
+    author: hackclub
+    description: Jev forwarding route in Hack Club's free AI proxy for teens, reusing its Hack Club auth, API keys, spending limits and usage logging.
+    metrics:
+      repo_stars: 133
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/hackclub/ai
+      app: https://ai.hackclub.com
+    tags:
+    - proxy
+    - students
+  - name: HarnessRouter systemone base
+    url: https://github.com/HarnessRouter/harnessrouter/blob/main/runner/systemone_driver.py
+    kind: repo
+    author: HarnessRouter
+    description: HarnessRouter, a self-hosted unified interface for agent harnesses, runs a systemone base that serves Jev through either TypeSafe's API or OpenRouter under their own model ids.
+    jev: The catalog's systemone base is the only place jev ids are listed, and a turn is served through one of the two wirings.
+    image: https://raw.githubusercontent.com/HarnessRouter/harnessrouter/main/docs/images/github-readme-star-cta-desktop.svg
+    metrics:
+      repo_stars: 2048
+    date: '2026-08-09'
+    links:
+      app: https://harnessrouter.ai/
+    tags:
+    - harness
+    - gateway
+    - self-hosted
+  - name: Jev on DGrid
+    url: https://x.com/dgrid_ai/status/2102231668040040687
+    kind: post
+    author: dgrid_ai
+    description: DGrid added Jev 1.13 to its model catalog, serving routing, classification and scoring requests with multiple typed questions per call.
+    image: https://pbs.twimg.com/media/HSyghV2bQAAKh8Q.jpg?name=orig
+    metrics:
+      likes: 17
+      views: 5798
+    date: '2026-09-22'
+    links:
+      app: https://dgrid.ai/models/typesafe/jev-1.13
+      project: https://dgrid.ai/models/typesafe/jev-1.13
+    tags:
+    - provider
+    - gateway
+  - name: Jev on Fly.io Sprites
+    url: https://x.com/flydotio/status/2102076230183035081
+    kind: post
+    author: flydotio
+    description: Fly.io's TypeSafe connector for Sprites, which injects your Jev API key at a gateway so agents running inside hardware-isolated Sprites can call Jev without the key entering the sandbox.
+    image: https://pbs.twimg.com/media/HSwTDxlaEAMHET8.jpg?name=orig
+    metrics:
+      likes: 81
+      views: 6543
+    date: '2026-09-21'
+    links:
+      docs: https://fly.io/sprites/jev
+      project: https://fly.io/sprites/jev
+    tags:
+    - gateway
+    - sandbox
+    - fly-io
+  - name: Jev on OpenRouter
+    url: https://openrouter.ai/typesafe/jev
+    kind: model
+    author: OpenRouter
+    description: OpenRouter's model page for typesafe/jev, which serves Jev through OpenRouter's Decisions API alongside its other models.
+    image: https://openrouter.ai/en-US/typesafe/jev/opengraph-image-vc0va0?221bbfd60a40d134
+    tags:
+    - gateway
+    - openrouter
+  - name: Jev on OpenRouter
+    url: https://x.com/OpenRouter/status/2100744709589316009
+    kind: post
+    author: OpenRouter
+    description: OpenRouter's announcement that Jev is available in beta through its API, returning a typed decision with a probability instead of generated text.
+    image: https://pbs.twimg.com/amplify_video_thumb/2100744692048818176/img/lnRQ8fZbTFSI0YuV.jpg
+    metrics:
+      likes: 3859
+      views: 544729
+    date: '2026-09-18'
+    tags:
+    - gateway
+    - openrouter
+  - name: Jev on Requesty
+    url: https://www.requesty.ai/blog/typesafe-jev-explained
+    kind: article
+    author: Requesty (Thibault Jaigu)
+    description: Practical guide to Jev that shows how to call it through Requesty's OpenAI-compatible router as typesafe/jev-latest, using the questions response format, with pricing math and caveats.
+    image: https://www.requesty.ai/blog/typesafe-jev-explained/01-jev-vs-llms.png
+    date: '2026-09-19'
+    tags:
+    - gateway
+    - requesty
+  - name: Jev on the Venice API
+    url: https://x.com/sabrinaesaquino/status/2101102660997017747
+    kind: post
+    author: sabrinaesaquino
+    description: Demo marking Jev's beta launch on the Venice API, classifying 24,000 Hacker News posts into 12 categories in about 2 minutes.
+    image: https://pbs.twimg.com/amplify_video_thumb/2101101845225865216/img/cubmkjzFZ8i2sPKp.jpg
+    metrics:
+      likes: 221
+      views: 13606
+    date: '2026-09-19'
+    links:
+      announcement: https://x.com/AskVenice/status/2101095644467511578
+    tags:
+    - gateway
+    - venice
+  - name: Jev on Venice
+    url: https://docs.venice.ai/models/overview
+    kind: model
+    author: Venice
+    description: Venice API lists Jev (System One) as a beta model under the id jev-latest, so it can be called through Venice's private-inference API.
+    image: https://venice.ai/social.webp
+    links:
+      site: https://venice.ai
+    tags:
+    - gateway
+    - venice
+  - name: Jev on Vercel AI Gateway
+    url: https://vercel.com/ai-gateway/models/jev
+    kind: model
+    author: Vercel
+    description: Vercel AI Gateway model page for typesafe-ai/jev with pricing and a playground; the gateway also supports TypeSafe clients and an HTTP API for Jev.
+    image: https://vercel.com/api/model-og?name=Jev&subtitle=typesafe-ai%2Fjev
+    links:
+      gateway: https://vercel.com/ai-gateway
+    tags:
+    - gateway
+    - vercel
+  - name: LiteLLM pass-through
+    url: https://docs.litellm.ai/docs/pass_through/typesafe
+    kind: docs
+    author: LiteLLM
+    description: Routes the System One evaluate endpoint through a LiteLLM proxy for key management, logging and cost tracking priced from response usage; streaming is unsupported since TypeSafe offers none.
+    tags:
+    - proxy
+    - cost-tracking
+  - name: LLM Gateway System One endpoint
+    url: https://github.com/sxueck/llm-gateway/blob/main/packages/backend/src/routes/openai/decisions-handler.ts
+    kind: repo
+    author: sxueck
+    description: Self-hosted distributed LLM gateway with a web UI that adds a decisions proxy handler so System One requests to Jev pass through its routing, keys and usage logging.
+    image: https://github.com/user-attachments/assets/a69d7e89-5225-4c2e-bae3-d11faddc9b56
+    metrics:
+      repo_stars: 52
+    date: '2025-10-05'
+    tags:
+    - gateway
+    - proxy
+    - self-hosted
+  - name: LLM Gateway TypeSafe model
+    url: https://github.com/theopenco/llmgateway/blob/main/packages/models/src/models/typesafe.ts
+    kind: repo
+    author: theopenco
+    description: LLM Gateway registers Jev 1.13 as a TypeSafe decision model, routing state-plus-questions requests to the /v1/systemone endpoint through its unified gateway.
+    metrics:
+      repo_stars: 1651
+    date: '2025-04-12'
+    links:
+      app: https://llmgateway.io
+    tags:
+    - gateway
+    - routing
+    - decision-model
+  - name: Netlify AI Gateway
+    url: https://www.netlify.com/changelog/typesafe-jev-ai-gateway/
+    kind: article
+    author: Netlify
+    description: 'Zero-configuration Jev access on Netlify''s AI Gateway: Functions call it through @typesafe-ai/sdk with no API keys, while Netlify handles credentials and billing.'
+    tags:
+    - gateway
+    - netlify
+  - name: Netlify AI Gateway skill
+    url: https://github.com/netlify/context-and-tools/tree/main/skills/netlify-ai-gateway
+    kind: repo
+    author: netlify
+    description: Netlify's official agent skill for its AI Gateway, which lists TypeSafe Jev as a provider with injected credentials and shows a Netlify Function routing contact-form submissions to sales, support or spam with one Choice.
+    metrics:
+      repo_stars: 37
+    date: '2025-11-26'
+    links:
+      repo: https://github.com/netlify/context-and-tools
+    tags:
+    - netlify
+    - gateway
+    - skill
+  - name: New API Jev plugin
+    url: https://x.com/t0ng7u/status/2102062876819374482
+    kind: post
+    author: t0ng7u
+    description: Plugin that exposes Jev's Choice, Score and Noul through a self-hosted New API gateway, so the official TypeSafe SDK can point at the gateway without code changes.
+    image: https://pbs.twimg.com/amplify_video_thumb/2102062812709449728/img/SVBMGP0wAoKqO6J1.jpg
+    metrics:
+      likes: 3
+      views: 65
+    date: '2026-09-21'
+    links:
+      plugins: https://newapi.pro/zh/plugins
+    tags:
+    - gateway
+    - new-api
+  - name: new-api TypeSafe plugin
+    url: https://github.com/QuantumNous/new-api-plugins/tree/main/plugins/tasks/typesafe
+    kind: repo
+    author: QuantumNous
+    description: Official task plugin for the new-api gateway that serves Jev at POST /typesafe/v1/systemone (jev-1.13.0, jev-latest, jev-preview), billing actual input tokens with free output, directly or through another new-api gateway.
+    metrics:
+      repo_stars: 16
+    date: '2026-08-19'
+    links:
+      repo: https://github.com/QuantumNous/new-api-plugins
+    tags:
+    - gateway
+    - plugin
+    - billing
+  - name: new-api-plugin-typesafe
+    url: https://github.com/FFatTiger/new-api-plugin-typesafe
+    kind: repo
+    author: FFatTiger
+    description: Task plugin for the self-hosted QuantumNous new-api gateway that serves Jev over the native /v1/systemone protocol with token billing, using TypeSafe or Vercel AI Gateway as the upstream.
+    metrics:
+      stars: 3
+    date: '2026-09-18'
+    tags:
+    - gateway
+    - new-api
+    - billing
+  - name: new-api-sync TypeSafe provider
+    url: https://github.com/unorouter/new-api-sync
+    kind: repo
+    author: unorouter
+    description: Sync engine for new-api gateways (used by UnoRouter) with a typesafe provider type that syncs Jev from OpenRouter's decisions route into the gateway with its own sell price and 32,000-token context.
+    metrics:
+      stars: 21
+    date: '2026-01-15'
+    links:
+      app: https://unorouter.com
+    tags:
+    - gateway
+    - pricing
+    - new-api
+  - name: OctoHub
+    url: https://github.com/Muvon/octohub
+    kind: repo
+    author: Muvon
+    description: Rust LLM proxy with one OpenAI-style API over 20+ providers, multi-tenant keys and request logging, whose config can map an evaluation model "jev" to TypeSafe or Cloudflare.
+    metrics:
+      stars: 7
+    date: '2026-03-19'
+    links:
+      app: https://octomind.run/product/octohub/
+    tags:
+    - proxy
+    - gateway
+    - rust
+  - name: OpenCode Zen
+    url: https://opencode.ai/docs/zen/#jev
+    kind: article
+    author: OpenCode
+    description: Hosts Jev on a TypeSafe-compatible endpoint, including a free variant.
+    tags:
+    - opencode
+    - gateway
+  - name: OpenCode Zen Jev endpoint
+    url: https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx
+    kind: docs
+    author: anomalyco
+    description: OpenCode's Zen gateway serves Jev 1.13 at a /v1/systemone endpoint with the Zen API key, plus a limited-time free jev-1.13-free model.
+    image: https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/src/assets/lander/screenshot.png
+    metrics:
+      repo_stars: 209220
+    date: '2025-04-30'
+    links:
+      docs: https://opencode.ai/docs/zen
+    tags:
+    - gateway
+    - opencode
+    - free-tier
+  - name: opencode2api System One proxy
+    url: https://github.com/6Kmfi6HP/opencode2api/blob/main/internal/app/systemone.go
+    kind: repo
+    author: 6Kmfi6HP
+    description: Local proxy that exposes OpenCode Zen and Go models as OpenAI and Anthropic APIs, adding a System One route for Jev decision requests.
+    metrics:
+      repo_stars: 49
+    date: '2026-06-04'
+    tags:
+    - proxy
+    - opencode
+    - go
+  - name: openproxy decision engine
+    url: https://github.com/soyelmismo/openproxy/blob/master/docs/decision-engine.md
+    kind: repo
+    author: soyelmismo
+    description: Self-hosted LLM gateway whose decision engine routes prompts with System One models, either Jev as an HTTP upstream or local Laya ONNX in process, and exposes its own /v1/systemone endpoint.
+    image: https://raw.githubusercontent.com/soyelmismo/openproxy/master/docs/dashboard-hero.png
+    metrics:
+      repo_stars: 7
+    date: '2026-06-21'
+    links:
+      repo: https://github.com/soyelmismo/openproxy
+    tags:
+    - gateway
+    - routing
+    - laya
+  - name: OpenRouter
+    url: https://openrouter.ai/typesafe/jev-1.13
+    kind: app
+    author: OpenRouter
+    description: Offers Jev through a separate Decisions API rather than chat completions.
+    image: https://openrouter.ai/en-US/typesafe/jev-1.13/opengraph-image-vc0va0?221bbfd60a40d134
+    tags:
+    - openrouter
+    - gateway
+  - name: OpenRouter Go SDK System One
+    url: https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go
+    kind: repo
+    author: OpenRouterTeam
+    description: Official OpenRouter Go SDK support for sending state and typed questions to System One models like Jev through OpenRouter.
+    image: https://raw.githubusercontent.com/OpenRouterTeam/go-sdk/main/assets/banner.png
+    metrics:
+      repo_stars: 70
+    date: '2025-11-13'
+    tags:
+    - openrouter
+    - sdk
+    - go
+  - name: OpenRouter Jev Lab
+    url: https://openrouter.ai/labs/jev
+    kind: article
+    author: OpenRouter
+    description: Runnable recipes for ticket triage, agent action approval, candidate extraction, feed filtering, and more.
+    image: https://openrouter.ai/dynamic-og?title=Jev+Lab&description=Run+structured+decisions+with+TypeSafe+Jev+through+OpenRouter.&v=2
+    tags:
+    - openrouter
+    - recipes
+  - name: OpenRouter Python SDK System One
+    url: https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py
+    kind: repo
+    author: OpenRouterTeam
+    description: Official OpenRouter Python SDK module for sending state and typed questions to System One models like Jev through OpenRouter.
+    image: https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/assets/banner.png
+    metrics:
+      repo_stars: 160
+    date: '2025-08-22'
+    tags:
+    - openrouter
+    - sdk
+    - python
+  - name: OpenRouter TypeSafe SDK guide
+    url: https://github.com/OpenRouterTeam/docs/blob/main/guides/community/typesafe-sdk.mdx
+    kind: docs
+    author: OpenRouter
+    description: Documentation page from OpenRouter on pointing the official TypeSafe JavaScript or Python SDK at OpenRouter's base URL to run Jev through the System One API with OpenRouter billing.
+    metrics:
+      repo_stars: 8
+    date: '2026-03-26'
+    links:
+      repo: https://github.com/OpenRouterTeam/docs
+    tags:
+    - openrouter
+    - sdk
+    - docs
+  - name: OpenRouter TypeScript SDK System One
+    url: https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx
+    kind: repo
+    author: OpenRouterTeam
+    description: Official OpenRouter TypeScript SDK resource that sends state and typed questions to System One models such as Jev, mapping bare IDs like jev-latest onto the typesafe/ namespace.
+    image: https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/main/assets/banner.png
+    metrics:
+      repo_stars: 254
+    date: '2025-08-21'
+    links:
+      code: https://github.com/OpenRouterTeam/typescript-sdk/blob/main/src/sdk/systemone.ts
+    tags:
+    - openrouter
+    - sdk
+    - typescript
+  - name: orq.ai classify API
+    url: https://github.com/orq-ai/orq-node/blob/main/src/sdk/classify.ts
+    kind: repo
+    author: orq-ai
+    description: TypeScript SDK for the orq.ai gateway whose beta classify resource runs typed noul, choice and score questions against classify models such as typesafe/jev-latest.
+    metrics:
+      repo_stars: 11
+    date: '2023-12-27'
+    links:
+      app: https://orq.ai
+      repo: https://github.com/orq-ai/orq-node
+    tags:
+    - gateway
+    - sdk
+    - typescript
+  - name: orq.ai classify API (Python)
+    url: https://github.com/orq-ai/orq-python/blob/main/src/orq_ai_sdk/classify.py
+    kind: repo
+    author: orq-ai
+    description: Python SDK for the orq.ai gateway with a classify resource that runs typed noul, choice and score questions against classify models such as typesafe/jev.
+    metrics:
+      repo_stars: 9
+    date: '2022-05-25'
+    links:
+      app: https://orq.ai
+      repo: https://github.com/orq-ai/orq-python
+    tags:
+    - gateway
+    - sdk
+    - python
+  - name: Phaseo TypeSafe System One support
+    url: https://github.com/phaseoteam/Phaseo/tree/main/apps/api/src/protocols/typesafe-systemone
+    kind: repo
+    author: phaseoteam
+    description: System One protocol and executor in Phaseo, an OpenAI-compatible AI gateway with health-aware routing and cost and latency telemetry, so Jev decision requests can be sent through the gateway.
+    image: https://repository-images.githubusercontent.com/1000745244/8fe6f157-a60f-48a6-9517-4d27e549c7e7
+    metrics:
+      repo_stars: 7
+    date: '2025-06-12'
+    links:
+      app: https://phaseo.app
+      repo: https://github.com/phaseoteam/Phaseo
+    tags:
+    - gateway
+    - routing
+  - name: Plexus decisions gateway
+    url: https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts
+    kind: repo
+    author: mcowger
+    description: Unified LLM API gateway that adds a Jev-style decisions endpoint, routing state-plus-questions requests to TypeSafe /v1/systemone or OpenRouter's decisions API.
+    image: https://raw.githubusercontent.com/mcowger/plexus/main/assets/readme/hero.svg
+    metrics:
+      repo_stars: 234
+    date: '2025-12-01'
+    tags:
+    - gateway
+    - routing
+    - openrouter
+  - name: Pollinations Jev API
+    url: https://github.com/pollinations/pollinations/blob/main/gen.pollinations.ai/src/text/systemOneClient.ts
+    kind: repo
+    author: pollinations
+    description: The Pollinations gen API serves Jev as typesafe/jev-1.13 through a typed POST /alpha/decisions endpoint and Chat Completions, plus an Ask Jev MCP server with a jev_decide tool.
+    image: https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/lockup-horizontal-black.svg
+    metrics:
+      repo_stars: 5104
+    date: '2021-04-15'
+    links:
+      docs: https://gen.pollinations.ai/docs
+      app: https://pollinations.ai
+    tags:
+    - gateway
+    - mcp
+    - api
+  - name: rotom
+    url: https://github.com/RyanKung/rotom
+    kind: repo
+    author: RyanKung
+    description: Local OpenAI- and Anthropic-compatible API gateway in Rust that reuses Codex, Grok, Kiro or Vercel AI Gateway logins for any client, and also carries Jev through its model catalog and evaluation endpoint.
+    image: https://raw.githubusercontent.com/RyanKung/rotom/master/demos/claude-grok-4.3.gif
+    metrics:
+      stars: 5
+    date: '2026-04-27'
+    tags:
+    - gateway
+    - rust
+    - local
+  - name: Routstr TypeSafe upstream
+    url: https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py
+    kind: repo
+    author: Routstr
+    description: Decentralized pay-per-request AI inference proxy, paid with Cashu Bitcoin micropayments, that adds a TypeSafe System One decision endpoint and Jev model catalog.
+    metrics:
+      repo_stars: 81
+    date: '2025-04-08'
+    links:
+      docs: http://docs.routstr.com/
+    tags:
+    - gateway
+    - nostr
+    - proxy
+  - name: routstrd System One pass-through
+    url: https://github.com/Routstr/routstrd/blob/main/src/daemon/http/request-body.ts
+    kind: repo
+    author: Routstr
+    description: Local daemon for the Routstr provider network that forwards TypeSafe /v1/systemone request bodies verbatim, since the strict endpoint rejects the chat-completion fields it adds elsewhere.
+    metrics:
+      repo_stars: 9
+    date: '2026-03-02'
+    links:
+      repo: https://github.com/Routstr/routstrd
+    tags:
+    - gateway
+    - routing
+    - cashu
+  - name: Sapiom llm.decide
+    url: https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts
+    kind: repo
+    author: sapiom
+    description: The llm.decide capability in the Sapiom agent SDK routes Jev through Sapiom's Capability Router and returns calibrated probabilities over caller-defined answers for typed Noul, Choice and Score questions.
+    metrics:
+      repo_stars: 20
+    date: '2025-11-11'
+    links:
+      repo: https://github.com/sapiom/sapiom-js
+    tags:
+    - sdk
+    - agents
+    - capability-router
+  - name: System One API
+    url: https://docs.typesafe.ai/api
+    kind: docs
+    author: TypeSafe AI
+    description: 'Official HTTP endpoint for Jev: POST a state and typed questions to /v1/systemone and get typed answers with probabilities and confidence back.'
+    links:
+      endpoint: https://api.typesafe.ai/v1/systemone
+    tags:
+    - official
+    - api
+  - name: ThinkAI decision API
+    url: https://github.com/top-think/think-ai
+    kind: repo
+    author: top-think
+    description: PHP SDK for the ThinkAI model aggregation service whose decision() resource evaluates Jev noul and choice questions (model jev-latest) next to chat, image and voice APIs.
+    metrics:
+      stars: 9
+    date: '2023-12-28'
+    tags:
+    - php
+    - gateway
+    - sdk
+  - name: TokenHub Jev semantic routing
+    url: https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md
+    kind: repo
+    author: astaxie
+    description: TokenHub, an enterprise AI gateway, can use Jev to choose the provider and upstream model for eligible Chat Completions requests among the candidates its base routing produced.
+    jev: One Choice per request returning a candidate or no_preference; observe and enforce modes with a 0.65 confidence threshold, called at most once per request.
+    image: https://raw.githubusercontent.com/astaxie/TokenHub/main/frontend/public/brand/tokenhub-logo.png
+    metrics:
+      repo_stars: 1323
+    date: '2026-06-10'
+    links:
+      app: https://thinkinai-labs.github.io/tokenhome/
+    tags:
+    - gateway
+    - model-routing
+    - enterprise
+  - name: TrustedRouter Jev
+    url: https://github.com/Lore-Hex/quill-router/blob/main/src/trusted_router/data/provider_models/typesafe.json
+    kind: repo
+    author: Lore-Hex
+    description: TrustedRouter, an end-to-end encrypted LLM gateway running in hardware enclaves, lists TypeSafe AI Jev as typesafe-ai/jev on a decide endpoint, with input pricing refreshed hourly from TypeSafe's models page.
+    metrics:
+      repo_stars: 23
+    date: '2026-05-02'
+    links:
+      repo: https://github.com/Lore-Hex/quill-router
+      app: https://trustedrouter.com
+    tags:
+    - gateway
+    - privacy
+  - name: TypeSafe console
+    url: https://console.typesafe.ai/
+    kind: app
+    author: TypeSafe AI
+    description: Official console for creating API keys, trying Jev in the playground and inspecting live requests.
+    links:
+      announcement: https://x.com/typesafeai/status/2101786156572823624
+    tags:
+    - official
+    - playground
+  - name: TypeSafe Jev on LiteLLM
+    url: https://docs.litellm.ai/blog/typesafe_jev
+    kind: article
+    author: LiteLLM
+    description: LiteLLM announcement that its proxy (v1.103.0-rc) passes through TypeSafe's /v1/systemone endpoint with logging and cost tracking, so clients call Jev with a LiteLLM virtual key.
+    metrics:
+      stars: 32
+    date: '2026-09-20'
+    links:
+      repo: https://github.com/BerriAI/litellm-docs/tree/main/blog/typesafe_jev
+    tags:
+    - litellm
+    - proxy
+    - gateway
+  - name: unhardcoded
+    url: https://github.com/genlayerlabs/unhardcoded
+    kind: repo
+    author: genlayerlabs
+    description: OpenAI-compatible LLM router that picks a model per request from a caller-supplied policy, and serves decision models including Jev through POST /v1/decisions with the same selection and fallback.
+    metrics:
+      stars: 8
+    date: '2026-06-22'
+    links:
+      docs: https://github.com/genlayerlabs/unhardcoded/blob/main/docs/DECISION-MODELS.md
+    tags:
+    - router
+    - gateway
+    - policy
+  - name: uni-api TypeSafe backend
+    url: https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py
+    kind: repo
+    author: yym68686
+    description: Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.
+    metrics:
+      repo_stars: 1261
+    date: '2024-07-04'
+    links:
+      app: https://0-0.pro/r/uniapi
+    tags:
+    - gateway
+    - load-balancing
+    - provider
+  - name: uni-api TypeSafe channel
+    url: https://github.com/yym68686/uni-api-web
+    kind: repo
+    author: yym68686
+    description: Web console for the self-hosted uni-api LLM gateway that can add a typesafe engine channel, proxying POST /v1/systemone so Jev's Choice, Noul and Score questions go through the gateway.
+    metrics:
+      stars: 26
+    date: '2025-03-11'
+    tags:
+    - gateway
+    - self-hosted
+  - name: Venice System One compatibility
+    url: https://docs.venice.ai/api-reference/endpoint/decisions/systemone
+    kind: docs
+    author: Venice
+    description: API reference for Venice's TypeSafe-compatible POST /systemone alias of its Decisions API, letting System One clients call Jev through Venice.
+    metrics:
+      stars: 65
+    date: '2026-09-18'
+    links:
+      repo: https://github.com/veniceai/api-docs/blob/main/api-reference/endpoint/decisions/systemone.mdx
+    tags:
+    - gateway
+    - venice
+    - docs
+  - name: Vercel AI Gateway
+    url: https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway
+    kind: article
+    author: Vercel
+    description: Serves typesafe-ai/jev on Vercel's AI Gateway through the AI SDK's experimental evaluate interface, where the Boolean primitive maps to TypeSafe's Noul.
+    image: https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/69YLGxKpc3pTIH8tHrLFgo/51d3f9dc460bf3e7b1c4fdd7a4d757f1/image__104_.png
+    links:
+      announcement: https://x.com/vercel_dev/status/2100378959653507175
+    tags:
+    - gateway
+    - vercel
+    - ai-sdk
+  - name: YoMo TypeSafe System One provider
+    url: https://github.com/yomorun/yomo/blob/main/src/model_api_provider/providers/typesafe_systemone.rs
+    kind: repo
+    author: yomorun
+    description: YoMo, a serverless edge AI agent framework, adds a TypeSafe System One provider that proxies Jev decision requests through its geo-distributed model API layer.
+    image: https://user-images.githubusercontent.com/65603/162367572-5a0417fa-e2b2-4d35-8c92-2c95d461706d.png
+    metrics:
+      repo_stars: 1927
+    date: '2020-07-01'
+    links:
+      app: https://yomo.run
+    tags:
+    - edge
+    - serverless
+    - provider
+  - name: ZenMux TypeSafe System One API
+    url: https://zenmux.ai/docs/api/typesafe/systemone
+    kind: docs
+    author: ZenMux
+    description: API reference for calling TypeSafe System One evaluation requests with Jev through the ZenMux model gateway.
+    image: https://cdn.marmot-cloud.com/storage/zenmux/2025/09/16/lAK3vlZ/banner.png
+    metrics:
+      stars: 75
+    date: '2026-09-20'
+    links:
+      repo: https://github.com/ZenMux/zenmux-doc/blob/main/docs_source/en/api/typesafe/systemone.md
+    tags:
+    - gateway
+    - docs
+- slug: frameworks
+  title: Framework Adapters
+  entries:
+  - name: '@dxos/ai-typesafe'
+    url: https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe
+    kind: repo
+    author: dxos
+    description: Experimental Effect client in the DXOS monorepo for TypeSafe's System One model, where a schema is both the request and response and each struct field compiles to one Jev question.
+    jev: DecisionModel service mirroring Effect's LanguageModel; all fields ride a single call and decode back to the declared type.
+    image: https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png
+    metrics:
+      repo_stars: 522
+    date: '2021-04-07'
+    links:
+      app: https://dxos.org
+    tags:
+    - effect
+    - decision-model
+    - sdk
+  - name: '@effect-uai/typesafe-ai'
+    url: https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai
+    kind: repo
+    author: betalyra
+    description: Effect-based building blocks for AI agents with a TypeSafe Jev DecisionModel provider for typed classify, rate and probability questions answered in one call.
+    image: https://raw.githubusercontent.com/betalyra/effect-uai/main/webpage/src/assets/effect-uai-logo-bg.png
+    metrics:
+      repo_stars: 63
+    date: '2026-04-26'
+    links:
+      docs: https://effect-uai.betalyra.com
+    tags:
+    - effect
+    - typescript
+    - provider
+  - name: '@effect/ai-typesafe'
+    url: https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe
+    kind: repo
+    author: Effect-TS
+    description: Effect's DecisionModel provider for TypeSafe's System One API, supporting classification, ordered ratings and probabilities through Effect HttpClient, with provider distributions preserved rather than normalized.
+    metrics:
+      repo_stars: 16168
+    date: '2026-09-18'
+    links:
+      mirror: https://github.com/lootlog/monorepo/tree/main/repos/effect/packages/ai/typesafe
+    tags:
+    - effect
+    - typescript
+  - name: '@swamp/typesafe-ai'
+    url: https://github.com/swamp-club/swamp-extensions/tree/main/typesafe-ai
+    kind: repo
+    author: swamp-club
+    description: Extension for the swamp automation tool that asks Jev typed Noul, Choice and Score questions and lets workflows branch on the calibrated answers, stored as swamp resources.
+    metrics:
+      repo_stars: 8
+    date: '2026-03-17'
+    links:
+      repo: https://github.com/swamp-club/swamp-extensions
+    tags:
+    - workflow
+    - extension
+    - typescript
+  - name: '@typia/jev'
+    url: https://github.com/samchon/typia/tree/master/packages/jev
+    kind: package
+    author: samchon
+    description: Typia package that turns a TypeScript interface into Jev questions via typia.llm.evaluation<T>(), so booleans and string unions become typed Noul and Choice questions.
+    jev: Converts to the wire format shared by TypeSafe's API and SDK and OpenRouter's Decisions API.
+    image: https://repository-images.githubusercontent.com/482949726/ac595228-a409-4c77-99d8-d134b125281d
+    metrics:
+      repo_stars: 5913
+    date: '2022-04-18'
+    links:
+      npm: https://www.npmjs.com/package/@typia/jev
+    tags:
+    - typescript
+    - validation
+    - sdk-adapter
+  - name: '@workglow/typesafeai'
+    url: https://github.com/workglow-dev/libs/tree/main/providers/typesafeai
+    kind: repo
+    author: workglow-dev
+    description: TypeSafe provider for the Workglow workflow library that exposes Jev as a SystemOneTask plus zero-shot text classification and per-candidate reranking tasks.
+    jev: Classification is one Choice over candidate labels; reranking sends one Noul per candidate, 8 at a time by default, to keep scores independent.
+    image: https://raw.githubusercontent.com/workglow-dev/libs/main/docs/developers/img/cli.png
+    metrics:
+      repo_stars: 14
+    date: '2024-01-04'
+    links:
+      app: https://workglow.dev
+      repo: https://github.com/workglow-dev/libs
+    tags:
+    - workflow
+    - provider
+    - typescript
+  - name: Advocaat
+    url: https://github.com/pithings/advocaat
+    kind: repo
+    author: pithings
+    description: Small TypeScript client for asking Jev several yes/no, option and score questions about the same data in one request and reading typed values back, with an agent skill that teaches question design.
+    metrics:
+      stars: 89
+    date: '2026-09-16'
+    tags:
+    - typescript
+    - client
+    - agent-skills
+  - name: Agentium Jev toolkit
+    url: https://github.com/agentiumOS/agentium/blob/main/packages/core/src/toolkits/jev.ts
+    kind: repo
+    author: agentiumOS
+    description: TypeScript agent framework whose JevToolkit exposes TypeSafe System One judgments as tools on a chat agent, including named question packs for a jev_evaluate tool.
+    metrics:
+      repo_stars: 8
+    date: '2026-05-22'
+    links:
+      app: https://agentium.in
+      repo: https://github.com/agentiumOS/agentium
+    tags:
+    - agent-framework
+    - tools
+    - typescript
+  - name: AI Backends
+    url: https://github.com/donvito/ai-backends
+    kind: repo
+    author: donvito
+    description: Self-hostable API server for common AI tasks that adds a /api/evaluate decision endpoint backed by Jev for Choice, Score and Noul questions.
+    metrics:
+      stars: 146
+    date: '2025-05-21'
+    links:
+      app: https://aibackends.com
+    tags:
+    - api-server
+    - self-hosted
+  - name: AI Provider for Jev
+    url: https://github.com/soderlind/ai-provider-for-jev
+    kind: repo
+    author: soderlind
+    description: WordPress plugin that connects a site to Jev, with a settings page, PHP helpers and REST endpoints for Choice, Score and Noul questions.
+    image: https://repository-images.githubusercontent.com/1375771750/d0ec3827-1a39-44d6-83e5-85a31e8a15eb
+    metrics:
+      stars: 3
+    date: '2026-09-18'
+    tags:
+    - wordpress
+    - php
+  - name: AI SDK for Python evaluate
+    url: https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py
+    kind: repo
+    author: vercel-labs
+    description: Experimental evaluate operation in Vercel's public-beta AI SDK for Python that asks typed Choice, Score and Boolean questions of Jev through AI Gateway, shown in a runnable example.
+    metrics:
+      repo_stars: 184
+    date: '2026-01-16'
+    links:
+      repo: https://github.com/vercel-labs/ai-python
+      website: https://ai-python.dev
+    tags:
+    - python
+    - ai-gateway
+    - sdk
+  - name: AI SDK TypeSafe provider
+    url: https://github.com/vercel/ai/tree/main/packages/typesafe-ai
+    kind: repo
+    author: vercel
+    description: Official AI SDK provider package @ai-sdk/typesafe-ai that runs Choice, Score and Boolean questions against Jev through the experimental evaluate API.
+    image: https://repository-images.githubusercontent.com/644461337/ed2df190-2452-4a24-8529-fbf4871e0c4b
+    metrics:
+      repo_stars: 26889
+    date: '2026-09-16'
+    links:
+      repo: https://github.com/vercel/ai
+      examples: https://github.com/vercel/ai/tree/main/examples/ai-functions/src/evaluate/typesafe-ai
+      npm: https://www.npmjs.com/package/@ai-sdk/typesafe-ai
+    tags:
+    - ai-sdk
+    - typescript
+  - name: ai-cli
+    url: https://ai-cli.dev
+    kind: app
+    author: Vercel Labs
+    description: Terminal CLI for the AI SDK whose evaluate command pipes text into typed boolean, choice, and score questions and returns probabilities for use in shell scripts.
+    jev: '`ai evaluate` sends typed questions to evaluation models such as Jev through the AI SDK.'
+    image: https://ai-cli.dev/og
+    links:
+      repo: https://github.com/vercel-labs/ai-cli
+      project: https://github.com/vercel-labs/ai-cli
+    tags:
+    - cli
+    - ai-sdk
+    - vercel
+  - name: ai-cli
+    url: https://x.com/ctatedev/status/2100584917092409479
+    kind: post
+    author: ctatedev
+    description: Vercel Labs' terminal AI tool, installed with npm, that lets any agent harness ask Jev yes/no questions, choose between options, and score against criteria from the command line.
+    image: https://pbs.twimg.com/media/HSbG2YLWkAAPqmU.jpg?name=orig
+    metrics:
+      likes: 1239
+      views: 116616
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/vercel-labs/ai-cli
+      site: https://ai-cli.dev
+      project: https://github.com/vercel-labs/ai-cli
+    tags:
+    - cli
+    - agent-harness
+    - vercel
+  - name: ai-cli evaluate
+    url: https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts
+    kind: repo
+    author: vercel-labs
+    description: Evaluate command in the ai-cli terminal tool that sends a state and typed questions from flags, files or stdin to an AI Gateway evaluation model such as Jev and prints the typed answers.
+    metrics:
+      repo_stars: 810
+    date: '2025-07-28'
+    links:
+      repo: https://github.com/vercel-labs/ai-cli
+      website: https://ai-cli.dev
+    tags:
+    - cli
+    - ai-gateway
+  - name: ai-parrot-client-jev
+    url: https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev
+    kind: repo
+    author: phenobarbital
+    description: Jev client package for the AI-Parrot async agent framework that maps System One onto its client interface and turns Pydantic models into questions (bool to Noul, Literal/Enum to Choice, leveled numbers to Score).
+    metrics:
+      repo_stars: 30
+    date: '2024-08-12'
+    links:
+      repo: https://github.com/phenobarbital/ai-parrot
+    tags:
+    - python
+    - agent-framework
+    - pydantic
+  - name: ai4j System One
+    url: https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone
+    kind: repo
+    author: lnyo-cly
+    description: Adds System One support to ai4j, a Java 8+ agentic SDK, so JVM apps can call TypeSafe's Jev for typed decisions alongside its unified LLM, tool-calling and RAG features.
+    metrics:
+      repo_stars: 429
+    date: '2024-08-17'
+    links:
+      docs: https://lnyo-cly.github.io/ai4j/
+    tags:
+    - java
+    - sdk
+    - system-one
+  - name: AIO Hub System One channel
+    url: https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts
+    kind: repo
+    author: miaotouy
+    description: Local-first desktop and mobile AI hub that adds TypeSafe System One as a dedicated decision channel, with Jev models listed only where a decision operation is needed.
+    image: https://raw.githubusercontent.com/miaotouy/aio-hub/dev/docs/public/assets/产品概念图-1.jpg
+    metrics:
+      repo_stars: 144
+    date: '2025-10-28'
+    links:
+      app: http://aiohub-app.com
+    tags:
+    - desktop
+    - provider
+    - tauri
+  - name: AnyDecisionModel
+    url: https://github.com/mattt/AnyDecisionModel
+    kind: repo
+    author: mattt
+    description: Swift package for typed decisions (probabilities, enum-backed choices, ordinal scores) in the Foundation Models session style, backed either by Jev's System One API or a local MLX model on Apple silicon.
+    metrics:
+      stars: 7
+    date: '2026-09-21'
+    tags:
+    - swift
+    - mlx
+    - apple
+  - name: Ash AI evaluate
+    url: https://github.com/ash-project/ash_ai
+    kind: repo
+    author: ash-project
+    description: Elixir Ash framework extension whose evaluate/2 maps an Ash action onto typed questions for evaluation models like Jev, returning typed answers with probabilities and confidence.
+    jev: run evaluate("typesafe:jev-latest") inside an action, with Noul, Choice and Score question builders.
+    metrics:
+      stars: 189
+    date: '2024-08-29'
+    links:
+      docs: https://ash-hq.org
+    tags:
+    - elixir
+    - ash
+    - framework
+  - name: Ax TypeSafe provider
+    url: https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe
+    kind: repo
+    author: ax-llm
+    description: TypeSafe provider in Ax, the DSPy-style TypeScript framework, mapping boolean and finite-class signatures to Jev questions or native System One requests, also ported to its generated Python, Go, Java, C++ and Rust libraries.
+    metrics:
+      repo_stars: 2943
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/ax-llm/ax
+    tags:
+    - dspy
+    - typescript
+  - name: BAML
+    url: https://boundaryml.com/blog/typesafe-ai-jev
+    kind: article
+    author: BoundaryML
+    description: Derives Jev questions from a function's return type, turning booleans and floats into Nouls and enums into Choices.
+    image: https://boundaryml.com/api/og?slug=typesafe-ai-jev
+    date: '2026-09-17'
+    tags:
+    - baml
+    - structured-outputs
+  - name: BAML Jev support
+    url: https://github.com/BoundaryML/baml/tree/canary/baml_language/crates/baml_builtins2/baml_std/typesafeai
+    kind: repo
+    author: BoundaryML
+    description: Nightly v1 integration in BAML, the programming language for agents, that maps typed function return values to Jev questions; not yet in the stable release line.
+    metrics:
+      repo_stars: 9251
+    date: '2026-09-19'
+    links:
+      repo: https://github.com/BoundaryML/baml
+    tags:
+    - baml
+    - language
+    - typed-functions
+  - name: bareagent Jev provider
+    url: https://github.com/hamr0/bareagent/blob/main/src/provider-jev.js
+    kind: repo
+    author: hamr0
+    description: Zero-dependency agent orchestration library whose refine loop can use Jev as a cheap calibrated classifier tier for evaluating generated work, alongside predicate, rubric and agentic graders.
+    metrics:
+      repo_stars: 9
+    date: '2026-02-17'
+    links:
+      repo: https://github.com/hamr0/bareagent
+    tags:
+    - agent-library
+    - evaluation
+    - javascript
+  - name: BeamWeaver
+    url: https://github.com/caudena/beam_weaver
+    kind: repo
+    author: caudena
+    description: Elixir-native take on LangChain, LangGraph and Deep Agents that adds TypeSafe Jev decision models for Choice, Score and Noul alongside its chat providers.
+    image: https://raw.githubusercontent.com/caudena/beam_weaver/master/docs/assets/weavescope-tracing.png
+    metrics:
+      stars: 54
+    date: '2026-06-12'
+    links:
+      docs: https://github.com/caudena/beam_weaver/blob/master/docs/partners/typesafe.md
+      discussion: https://www.reddit.com/r/elixir/comments/1wmflss/added_jev_support_to_beamweaver/
+    tags:
+    - elixir
+    - langchain
+    - provider
+  - name: Cambium decision mode
+    url: https://github.com/redwood-labs-ai/cambium/blob/main/packages/cambium-runner/src/providers/typesafe.ts
+    kind: repo
+    author: redwood-labs-ai
+    description: Decision mode in Cambium, a Ruby DSL for LLM programs compiled to auditable JSON, that sends forced-choice and yes/no gens to Jev through a built-in typesafe provider, using the returns block as the question set.
+    metrics:
+      repo_stars: 5
+    date: '2026-04-20'
+    links:
+      repo: https://github.com/redwood-labs-ai/cambium
+    tags:
+    - ruby
+    - dsl
+    - llm-programs
+  - name: cargo-ai TypeSafe provider
+    url: https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md
+    kind: repo
+    author: cargo-ai
+    description: 'TypeSafe provider for cargo-ai, a Rust framework for lightweight AI agents declared in JSON, that maps an agent''s output schema to Jev questions: string enums become Choices and bounded numbers become Scores.'
+    metrics:
+      repo_stars: 5
+    date: '2025-07-21'
+    links:
+      app: https://cargo-ai.org
+      repo: https://github.com/cargo-ai/cargo-ai
+    tags:
+    - rust
+    - agent-framework
+    - json-schema
+  - name: Cayu TypeSafeProvider
+    url: https://github.com/cayu-dev/cayu
+    kind: repo
+    author: cayu-dev
+    description: Production runtime for long-horizon Python agents with an experimental TypeSafeProvider for native Choice, Score and Noul decisions through Cayu sessions and events.
+    metrics:
+      stars: 69
+    date: '2026-07-16'
+    links:
+      app: https://cayu.dev/
+    tags:
+    - agent-runtime
+    - python
+    - provider
+  - name: ComfyUI-Jev
+    url: https://github.com/hndrr/ComfyUI-Jev
+    kind: repo
+    author: hndrr
+    description: Work-in-progress ComfyUI custom nodes that select candidates, evaluate conditions, score text, extract numbers, or pick local skills with Jev and pass the results to other nodes.
+    metrics:
+      stars: 5
+    date: '2026-09-19'
+    links:
+      registry: https://registry.comfy.org/ja/nodes/comfyui-jev
+    tags:
+    - comfyui
+    - nodes
+  - name: Composio
+    url: https://github.com/ComposioHQ/composio/tree/next/ts/packages/providers/typesafe
+    kind: repo
+    author: ComposioHQ
+    description: TypeScript provider that picks and gates tool calls with a Choice and binds closed-set arguments before execution.
+    metrics:
+      repo_stars: 30279
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/ComposioHQ/composio
+    tags:
+    - tool-calling
+    - provider
+  - name: Connector for TypeSafe Jev
+    url: https://github.com/juanlentino/jev-connector
+    kind: repo
+    author: juanlentino
+    description: WordPress plugin that lets themes and plugins ask typed questions about content and branch on a probability, named choice or score, with the API key managed by core's Connectors API.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - wordpress
+    - php
+  - name: daf-jev
+    url: https://github.com/docxology/daf-jev
+    kind: repo
+    author: docxology
+    description: Composable Python toolkit for the Jev API with question builders, sync and async clients with retries, confidence gates, a batch evaluator, calibration tools, a CLI and an MCP server.
+    metrics:
+      stars: 5
+    date: '2026-09-17'
+    tags:
+    - python
+    - toolkit
+  - name: decide
+    url: https://github.com/obie/decide
+    kind: repo
+    author: obie
+    description: Backend-agnostic Ruby layer that turns decision-model answers into named policy verdicts with explicit fail-open or fail-closed handling, with Jev via OpenRouter as the first answer source.
+    metrics:
+      stars: 6
+    date: '2026-09-18'
+    tags:
+    - ruby
+    - policy
+  - name: Decido
+    url: https://github.com/yairshy/decido
+    kind: repo
+    author: yairshy
+    description: Python library for typed questions about evidence that keeps every probability, adding validated distributions, batching, request budgets, ranking and exportable decision records around a pluggable provider.
+    jev: Also ships optional Playwright crawling and local MCP tools.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - python
+    - decision-records
+  - name: DeepClause + Jev
+    url: https://deepclause.substack.com/p/jev-prolog-pi-and-the-dream-of-probabilistic
+    kind: article
+    author: Andreas (DeepClause)
+    description: Announces Jev support in DeepClause and its Pi extension, mapping Jev judgments onto Prolog-style DML predicates for fast, deterministic agent decisions, and asks if this revives probabilistic logic programming.
+    jev: A judge/2 predicate batches Jev questions over a state; deterministic Prolog relations then select and annotate.
+    image: https://substackcdn.com/image/fetch/$s_!HKv7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c7a3019-d2dc-4963-86b0-5e1bb06225d4_1220x364.png
+    metrics:
+      points: 21
+    date: '2026-09-21'
+    links:
+      repo: https://github.com/deepclause/deepclause-sdk
+      npm: https://www.npmjs.com/package/deepclause-pi
+      discussion: https://news.ycombinator.com/item?id=49781694
+      project: https://github.com/deepclause/deepclause-sdk
+    tags:
+    - prolog
+    - pi
+    - logic-programming
+  - name: DeepClause Jev judge backend
+    url: https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts
+    kind: repo
+    author: deepclause
+    description: SDK that compiles Markdown specs into executable logic programs, adding generic judgment primitives with interchangeable LLM, Jev and mock backends.
+    image: https://raw.githubusercontent.com/deepclause/deepclause-sdk/main/docs/DeepClause_AI_Logic_Framework_Overview.png
+    metrics:
+      repo_stars: 64
+    date: '2026-01-29'
+    tags:
+    - dml
+    - logic
+    - judge
+  - name: Dify classifier node with Jev
+    url: https://x.com/beautyyuyanli/status/2100913383143026873
+    kind: post
+    author: beautyyuyanli
+    description: Dify's classifier node now supports Jev as the model, so workflow builders can route inputs with Jev's typed decisions.
+    image: https://pbs.twimg.com/media/HSfxfsSasAAvv2h.jpg?name=orig
+    metrics:
+      likes: 29
+      views: 12863
+    date: '2026-09-18'
+    tags:
+    - dify
+    - workflow
+    - no-code
+  - name: Dify TypeSafe AI plugin
+    url: https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai
+    kind: repo
+    author: langgenius
+    description: Official Dify plugin that adds TypeSafe AI as a model provider, letting a Dify Question Classifier node route categories through Jev while branches stay unchanged.
+    jev: Exposes jev-1.13.0 to the classifier node over a constrained six-message text template, returning category_id and category_name.
+    metrics:
+      repo_stars: 635
+    date: '2024-12-18'
+    tags:
+    - dify
+    - classifier
+    - plugin
+  - name: Discern
+    url: https://github.com/doeixd/discern
+    kind: repo
+    author: doeixd
+    description: TypeScript library of uncertainty-aware semantic pattern matching, policies and routable procedures over Effect's Decision and DecisionModel, where a maybe result is an explicit branch, with Jev as one provider.
+    image: https://raw.githubusercontent.com/doeixd/discern/main/docs/assets/discern-explainer-silent.gif
+    metrics:
+      stars: 10
+    date: '2026-09-21'
+    tags:
+    - effect-ts
+    - pattern-matching
+    - control-flow
+  - name: DriftlessAF systemone executor
+    url: https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone
+    kind: repo
+    author: driftlessaf
+    description: Go package in Chainguard's DriftlessAF agent framework that calls TypeSafe's System One API with typed Noul, Choice and Score questions, validates every answer and reuses the framework's retries and GenAI metrics.
+    metrics:
+      repo_stars: 40
+    date: '2026-01-26'
+    links:
+      repo: https://github.com/driftlessaf/go-driftlessaf
+    tags:
+    - go
+    - agent-framework
+    - telemetry
+  - name: dsh-jev
+    url: https://github.com/noetion/dsh-jev
+    kind: repo
+    author: noetion
+    description: DeepSeek Harness plugin that registers a jev_ask tool and a bundled skill so a DSH agent can send mixed noul, choice and score questions about one state to Jev.
+    metrics:
+      stars: 3
+    date: '2026-09-17'
+    tags:
+    - deepseek-harness
+    - plugin
+    - tool
+  - name: dsh-jev-verify
+    url: https://github.com/xienda/dsh-jev-verify
+    kind: repo
+    author: xienda
+    description: DeepSeek Harness plugin exposing a jev_decision tool for mixed Choice, Score and Noul questions, an opt-in risk and loop auto-guard, and a jev_verify tool that runs a 23-case labeled benchmark against live Jev.
+    metrics:
+      stars: 1
+    date: '2026-09-21'
+    links:
+      npm: https://www.npmjs.com/package/dsh-jev-verify
+    tags:
+    - deepseek-harness
+    - plugin
+    - verification
+  - name: dspy-typesafeify
+    url: https://github.com/typesafeainate/dspy-typesafeify
+    kind: repo
+    author: typesafeainate
+    description: Proof-of-concept DSPy fork with a @typesafeify decorator that routes a Signature's pure-decision outputs to Jev through a hybrid plan while application code keeps calling dspy.Predict as before.
+    image: https://raw.githubusercontent.com/typesafeainate/dspy-typesafeify/main/examples/typesafe_dspy_ticket_triage/benchmark.svg
+    metrics:
+      stars: 61
+    date: '2026-09-15'
+    tags:
+    - dspy
+    - decorator
+  - name: Effect Agent AutoModel
+    url: https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision
+    kind: repo
+    author: danieljvdm
+    description: AutoModel package for Effect Agent that picks a native language model once per thread from an app-approved catalog using a DecisionModel such as TypeSafeDecisionModel with jev-latest.
+    metrics:
+      repo_stars: 121
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/danieljvdm/effect-agent
+    tags:
+    - effect
+    - model-routing
+  - name: effect-questions
+    url: https://github.com/saiashirwad/effect-questions
+    kind: repo
+    author: saiashirwad
+    description: Effect library that turns semantic judgment into typed Effect operations such as is, choose, rank and branch, failing with UncertainDecision when the model is not confident enough.
+    jev: Jev is the first QuestionModel provider; Decision adds confidence gates, expected loss and dispatch over evidence.
+    metrics:
+      stars: 14
+    date: '2026-09-16'
+    tags:
+    - effect
+    - typescript
+    - library
+  - name: elizaOS TypeSafe adapter
+    url: https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe
+    kind: repo
+    author: elizaOS
+    description: Opt-in server-side TypeSafe client in the elizaOS agent package that validates Choice, Score and Noul requests with Zod and sends them only on an explicit systemOne call; it is not registered with the runtime by default.
+    image: https://raw.githubusercontent.com/elizaOS/eliza/develop/packages/shared/assets/banners/elizaos_banner.svg
+    metrics:
+      repo_stars: 19406
+    date: '2026-09-16'
+    links:
+      repo: https://github.com/elizaOS/eliza
+    tags:
+    - elizaos
+    - adapter
+  - name: Emergent jev-handler
+    url: https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md
+    kind: repo
+    author: Govcraft
+    description: Handler primitive for Emergent, an event-driven workflow engine that composes CLI tools, that asks Jev a fixed set of typed questions about every event payload and publishes the calibrated answers downstream.
+    image: https://raw.githubusercontent.com/Govcraft/emergent/main/docs/images/system-monitor.png
+    metrics:
+      repo_stars: 23
+    date: '2026-01-06'
+    links:
+      repo: https://github.com/Govcraft/emergent
+    tags:
+    - workflows
+    - event-driven
+    - rust
+  - name: eve Jev support
+    url: https://github.com/vercel/eve/blob/main/packages/eve/src/ai/evaluate.ts
+    kind: repo
+    author: vercel
+    description: 'Jev support in Vercel''s eve agent framework: an evaluate helper that asks typed Choice, Score and Boolean questions inside tools, and an auto model router that defaults to Jev through Vercel AI Gateway.'
+    metrics:
+      repo_stars: 5299
+    date: '2026-06-16'
+    links:
+      repo: https://github.com/vercel/eve
+      website: https://eve.dev
+    tags:
+    - agent-framework
+    - ai-gateway
+    - model-routing
+  - name: everruns-integrations-typesafe
+    url: https://github.com/everruns/everruns/tree/main/integrations/typesafe
+    kind: repo
+    author: everruns
+    description: 'Rust crate that adds a jev capability to the Everruns durable agent harness: one jev_evaluate tool lets an agent ask typed Noul, Score and Choice questions to verify, rate, route or classify content.'
+    image: https://raw.githubusercontent.com/everruns/everruns/main/assets/readme/banner.png
+    metrics:
+      repo_stars: 48
+    date: '2025-12-14'
+    links:
+      repo: https://github.com/everruns/everruns
+      crate: https://crates.io/crates/everruns-integrations-typesafe
+    tags:
+    - rust
+    - agent-framework
+  - name: feelings
+    url: https://github.com/BoundaryML/feelings
+    kind: repo
+    author: BoundaryML
+    description: About 20 lines of BAML that add .feels(), .how() and .matches() methods to any value, turning Jev probabilities into typed AI if-statements inside ordinary BAML code, with an LLM doing any writing.
+    metrics:
+      stars: 13
+    date: '2026-09-19'
+    links:
+      article: https://boundaryml.com/blog/typesafe-ai-jev
+    tags:
+    - baml
+    - ai-if
+    - language
+  - name: feelings
+    url: https://github.com/obie/feelings
+    kind: repo
+    author: obie
+    description: Ruby gem for probabilistic conditionals such as Feelings(message).like?("genuinely urgent"), with yes/maybe/no branches, label picking via most_like and a YAML registry of descriptions, backed by Jev.
+    jev: like? is a yes/no question with a calibrated probability, most_like a Choice over labels; runs via OpenRouter or TypeSafe's API.
+    metrics:
+      stars: 49
+    date: '2026-09-18'
+    tags:
+    - ruby
+    - dsl
+    - conditionals
+  - name: Filament Flow Jev node
+    url: https://github.com/packstub/filament-flow/blob/main/src/Support/Jev.php
+    kind: repo
+    author: packstub
+    description: Visual workflow builder for Laravel Filament panels with a Jev node that evaluates a record state against typed noul, choice or score questions and branches on the answers.
+    image: https://raw.githubusercontent.com/packstub/art/main/filament-flow/banner.jpg
+    metrics:
+      repo_stars: 14
+    date: '2026-09-02'
+    links:
+      app: https://packstub.dev/plugins/filament-flow
+      repo: https://github.com/packstub/filament-flow
+    tags:
+    - laravel
+    - workflow
+    - no-code
+  - name: Flue + Jev
+    url: https://github.com/matthewp/flue-jev-demo
+    kind: repo
+    author: matthewp
+    description: Cloudflare Worker example where a Flue support agent gets a route_with_jev tool built from a typed question map, calling Jev through the Worker AI binding and AI Gateway with no app API keys.
+    metrics:
+      stars: 9
+    date: '2026-09-18'
+    tags:
+    - flue
+    - cloudflare
+    - agents
+  - name: goodall typesafe package
+    url: https://github.com/bensyverson/goodall/tree/main/typesafe
+    kind: repo
+    author: bensyverson
+    description: Optional typesafe package in goodall, a small Go agent-loop library, that uses Jev as a tool or turn-routing judge alongside chat models, with a mail-triage example.
+    metrics:
+      repo_stars: 2
+    date: '2026-09-15'
+    links:
+      repo: https://github.com/bensyverson/goodall
+    tags:
+    - go
+    - agent-loop
+  - name: Gou TypeSafe connector
+    url: https://github.com/YaoApp/gou/tree/main/connector/typesafe
+    kind: repo
+    author: YaoApp
+    description: Low-code Go app engine framework that adds a TypeSafe connector with a Decide capability for calling Jev from Yao apps.
+    metrics:
+      repo_stars: 51
+    date: '2021-08-24'
+    links:
+      docs: https://yaoapps.com
+    tags:
+    - go
+    - low-code
+    - connector
+  - name: Guren AI evaluation models
+    url: https://github.com/gurenjs/guren/tree/main/examples/agents
+    kind: repo
+    author: gurenjs
+    description: Evaluation-model support in the Guren Bun fullstack framework's AI plugin, where Jev via the AI SDK is the default evaluation provider; the agents example triages support tickets through POST /tickets/:id/triage.
+    metrics:
+      repo_stars: 29
+    date: '2025-11-01'
+    links:
+      repo: https://github.com/gurenjs/guren
+      app: https://guren.dev
+    tags:
+    - typescript
+    - framework
+    - ai-sdk
+  - name: hono-jev-router
+    url: https://github.com/yusukebe/hono-jev-router
+    kind: repo
+    author: yusukebe
+    description: Experimental router for the Hono web framework that routes HTTP requests by plain-language descriptions instead of method and path, with Jev scoring which description fits each incoming request.
+    image: https://hono-jev-router.yusuke.run/og.png
+    metrics:
+      stars: 45
+    date: '2026-09-18'
+    links:
+      app: https://hono-jev-router.yusuke.run
+      app 2: https://hono-jev-router.yusuke.run
+    tags:
+    - hono
+    - http-routing
+    - semantic-routing
+  - name: huncho
+    url: https://github.com/edgardcham/huncho
+    kind: repo
+    author: edgardcham
+    description: Dependency-free TypeScript SDK that turns Jev answers into named decisions with hysteresis thresholds, nested decisions settled in one call, a JSONL journal, replay of policy changes without inference, and calibration.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - typescript
+    - decisions-as-code
+    - calibration
+  - name: Instructor PHP TypeSafe driver
+    url: https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe
+    kind: repo
+    author: cognesy
+    description: TypeSafe decision driver in Polyglot, the unified LLM API of Instructor for PHP, that turns application state and typed questions into Jev requests and maps answers to PHP decision objects.
+    image: https://raw.githubusercontent.com/cognesy/instructor-php/main/docs/images/concept.png
+    metrics:
+      repo_stars: 327
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/cognesy/instructor-php
+    tags:
+    - php
+    - provider
+  - name: J++
+    url: https://github.com/Towow-ai/jpp
+    kind: repo
+    author: Towow-ai
+    description: Experimental programming language with a Rust runtime where semantic questions and decision methods are composable values, executed through one shared kernel with Jev as a supported provider.
+    image: https://raw.githubusercontent.com/Towow-ai/jpp/main/assets/social-card.svg
+    metrics:
+      stars: 8
+    date: '2026-09-20'
+    tags:
+    - programming-language
+    - rust
+  - name: jev
+    url: https://github.com/shaharia-lab/jev-cli
+    kind: repo
+    author: shaharia-lab
+    description: Rust command-line tool that asks yes/no, multiple-choice and rubric questions about any text and returns calibrated probabilities as exit codes for shells and CI, JSON for scripts, or MCP tools for agents.
+    image: https://raw.githubusercontent.com/shaharia-lab/jev-cli/main/assets/banner.png
+    metrics:
+      stars: 11
+    date: '2026-09-19'
+    tags:
+    - cli
+    - rust
+    - mcp
+  - name: jev
+    url: https://pypi.org/project/jev/
+    kind: package
+    description: Python decorator that compiles a function's signature, docstring and Pydantic return type into a Jev request, mapping bool, Literal/Enum and bounded number fields to Noul, Choice and Score.
+    metrics:
+      downloads: 640
+    date: '2026-09-18'
+    tags:
+    - python
+    - decorator
+    - pydantic
+  - name: jev (aaazzam)
+    url: https://github.com/aaazzam/jev
+    kind: repo
+    author: aaazzam
+    description: Python decorator, @jev.fn, that compiles a function's parameters, docstring, and Pydantic return annotation into a Jev state and typed questions, and returns a validated instance when called.
+    metrics:
+      stars: 9
+    date: '2026-09-18'
+    tags:
+    - python
+    - decorator
+    - pydantic
+  - name: Jev CLI
+    url: https://x.com/hijaidev/status/2101679778801893685
+    kind: post
+    author: hijaidev
+    description: Command-line tool that exposes Jev as verify, screen, classify, extract, match, route, rerank and ask commands, returning verdicts with probabilities for scripts and agents.
+    image: https://pbs.twimg.com/amplify_video_thumb/2101679740520390656/img/McXbM1E9CZgvK-MZ.jpg
+    metrics:
+      likes: 4
+      views: 409
+    date: '2026-09-20'
+    tags:
+    - cli
+    - wrapper
+  - name: Jev Console
+    url: https://github.com/wenchenxi/jev-console
+    kind: repo
+    author: wenchenxi
+    description: 'Small Tkinter desktop console and CLI for using the Jev API by hand: paste a state, add Noul, Choice, or Score questions, and read the calibrated probabilities without writing code.'
+    image: https://raw.githubusercontent.com/wenchenxi/jev-console/main/assets/screenshot.png
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    tags:
+    - desktop
+    - cli
+    - playground
+  - name: JEV core
+    url: https://github.com/litshing/jevcore
+    kind: repo
+    author: litshing
+    description: Standard-library Python primitive for asking N items times K typed questions in bounded, fail-open requests, plus a harness that refuses any answer outside the enumerated set before code consumes it.
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    tags:
+    - python
+    - harness
+  - name: Jev for Apple Foundation Models
+    url: https://github.com/peterfriese/jev-foundation-models
+    kind: repo
+    author: peterfriese
+    description: Swift 6 bridge that maps Apple Foundation Models @Generable Boolean, enum and bounded score fields to one Jev question set and decodes the typed answers through LanguageModelSession.
+    image: https://pbs.twimg.com/media/HSwjl81bkAAlliY.jpg?name=orig
+    metrics:
+      stars: 10
+      likes: 99
+      views: 4487
+    date: '2026-09-21'
+    links:
+      demo: https://x.com/peterfriese/status/2102094265702821993
+    tags:
+    - swift
+    - foundation-models
+    - apple
+  - name: JEV Language
+    url: https://github.com/Nolane-x/JEV-language
+    kind: repo
+    author: Nolane-x
+    description: Work-in-progress runtime that composes bounded typed Jev judgments into broader expression through explicit semantic representations, deterministic compilation and verification, with zero generative-LLM calls in the core.
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    links:
+      site: https://nolane-x.github.io/JEV-language/
+      app: https://nolane-x.github.io/JEV-language
+    tags:
+    - runtime
+    - semantics
+    - experimental
+  - name: Jev Playground
+    url: https://github.com/Little-Planet-Labs/jev-playground
+    kind: repo
+    author: Little-Planet-Labs
+    description: Small Next.js playground where you paste a state, build any mix of Noul, Choice and Score questions and see the typed answers, distributions and confidence from one request.
+    image: https://raw.githubusercontent.com/Little-Planet-Labs/jev-playground/main/docs/screenshot.png
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    links:
+      app: https://jev-playground-zeta.vercel.app
+      app 2: https://jev-playground-zeta.vercel.app
+    tags:
+    - playground
+    - nextjs
+  - name: Jev Playground
+    url: https://github.com/terryds/jevplayground
+    kind: repo
+    author: terryds
+    description: Browser-only playground for Jev over Vercel AI Gateway where you build boolean, choice and score questions against text or JSON state and see verdicts, probability bars, latency, tokens and cost.
+    metrics:
+      stars: 1
+      points: 2
+    date: '2026-09-19'
+    links:
+      app: https://jevplayground.terrydjony.com
+      app 2: https://jevplayground.terrydjony.com/
+    tags:
+    - playground
+    - vercel-ai-gateway
+  - name: Jev Spring Boot Starter
+    url: https://github.com/danvega/jev-spring-boot-starter
+    kind: repo
+    author: danvega
+    description: Community Spring Boot 4 starter that auto-configures an injectable JevClient on Spring MVC and RestClient, so a Java service can ask Jev typed questions after adding one dependency and an API key.
+    metrics:
+      stars: 30
+      views: 5871
+      likes: 76
+    date: '2026-09-20'
+    links:
+      video: https://www.youtube.com/watch?v=fq_nYo4BnrY
+    tags:
+    - spring-boot
+    - java
+  - name: Jev Symfony Bundle
+    url: https://github.com/vbcherepanov/jev-symfony-bundle
+    kind: repo
+    author: vbcherepanov
+    description: 'Unofficial Symfony bundle for Jev with a typed HttpClient-based client, #[JevNoul] and #[JevChoice] validator constraints, background Messenger evaluation, Workflow guards and a profiler panel.'
+    date: '2026-09-21'
+    tags:
+    - symfony
+    - php
+    - validation
+  - name: Jev Workbench
+    url: https://github.com/molis-ai/jev-workbench
+    kind: repo
+    author: molis-ai
+    description: Local service for defining, testing and publishing versioned Jev judgment functions in a browser UI, then calling the same pinned version from backends over HTTP and from coding agents over MCP.
+    jev: Each function encodes a classification or evidence check as Noul, Choice or Score questions; callers get scoped tokens while the vendor key stays local.
+    image: https://raw.githubusercontent.com/molis-ai/jev-workbench/main/docs/images/workbench.png
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - judgment-functions
+    - mcp
+  - name: Jev workflow builder
+    url: https://github.com/CTNicholas/jev-workflow-builder
+    kind: repo
+    author: CTNicholas
+    description: Liveblocks demo of a multiplayer visual workflow builder that wires Jev and LLM nodes together, runs workflows through a REST API, and shows test-run previews and live cursors.
+    image: https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg
+    metrics:
+      stars: 78
+      likes: 383
+      views: 19667
+    date: '2026-09-21'
+    links:
+      demo: https://x.com/ctnicholasdev/status/2102070640589279318
+    tags:
+    - workflows
+    - liveblocks
+    - starter
+  - name: jev-acp
+    url: https://github.com/formulahendry/jev-acp
+    kind: repo
+    author: formulahendry
+    description: Standalone Agent Client Protocol agent that lets any ACP client or IDE, such as JetBrains, ask Jev Choice, Score and Noul questions with guided input, reusable templates and probability displays.
+    image: https://raw.githubusercontent.com/formulahendry/jev-acp/main/docs/images/jev-choice-jetbrains.png
+    date: '2026-09-21'
+    tags:
+    - acp
+    - ide
+    - jetbrains
+  - name: jev-builder
+    url: https://github.com/collapseindex/jev-builder
+    kind: repo
+    author: collapseindex
+    description: Static browser form for writing Jev requests from templates or from scratch without hand-escaping JSON, then running them several times to see whether the answer holds.
+    image: https://raw.githubusercontent.com/collapseindex/jev-builder/main/docs/preview.png
+    metrics:
+      stars: 3
+    date: '2026-09-19'
+    links:
+      app: https://collapseindex.github.io/jev-builder/
+      app 2: https://collapseindex.github.io/jev-builder
+    tags:
+    - request-builder
+    - no-build
+  - name: jev-cli
+    url: https://github.com/tumf/jev-cli
+    kind: repo
+    author: tumf
+    description: Small dependency-free Python CLI and stdio MCP server that sends text or JSON state from files or stdin to Jev with noul, choice or score questions and prints machine-readable answers for scripts and MCP hosts.
+    image: https://raw.githubusercontent.com/tumf/jev-cli/main/assets/jev-cli-thumbnail.png
+    metrics:
+      stars: 12
+    date: '2026-09-17'
+    tags:
+    - cli
+    - mcp
+  - name: jev-cli
+    url: https://github.com/jtsang4/jev-cli
+    kind: repo
+    author: jtsang4
+    description: Command-line client for Jev that takes a state and typed questions from files or stdin and prints structured JSON answers, calling TypeSafe directly or through Vercel AI Gateway.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - cli
+    - typescript
+  - name: jev-cli (jevctl)
+    url: https://github.com/Nasrallah-AL/jev-cli
+    kind: repo
+    author: Nasrallah-AL
+    description: 'TypeScript CLI installed as jevctl that turns Jev judgments into pipeable, exit-code-gated commands: verify claims, screen for prompt injection, classify, extract, match, route, rerank and compact transcripts.'
+    image: https://jevcli.vectorz.app/og.png
+    metrics:
+      stars: 18
+    date: '2026-09-18'
+    links:
+      app: https://jevcli.vectorz.app/
+      app 2: https://jevcli.vectorz.app
+    tags:
+    - cli
+    - ci
+  - name: jev-eyes
+    url: https://github.com/LeddoEngano/jev-eyes
+    kind: repo
+    author: LeddoEngano
+    description: 'Local image perception for text-only Jev: OCR and spatial layout turn an image into the exact text state Jev decides over, available as a Python library, CLI, MCP server, and agent skill.'
+    image: https://raw.githubusercontent.com/LeddoEngano/jev-eyes/main/docs/demo.gif
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    tags:
+    - ocr
+    - vision
+    - mcp
+  - name: jev-feels
+    url: https://github.com/Qew7/jev-feels
+    kind: repo
+    author: Qew7
+    description: 'Ruby gem that turns Jev judgments into ordinary Ruby: feels?, decide and score on model fields, Rails validations such as validates_feeling, and pattern matching.'
+    image: https://external-preview.redd.it/xMmQtp7gSWMuhtgjLSGOmgCl1tjR5re0ilOP9mc2miM.png?auto=webp&s=88bc162d3c91139ece8539bc8801af8fe9b1a44b
+    metrics:
+      stars: 8
+    date: '2026-09-20'
+    links:
+      demo: https://www.reddit.com/r/ruby/comments/1wm8u7z/i_made_a_jev_gem_with_an_api_that_feels_like_it/
+    tags:
+    - ruby
+    - rails
+    - gem
+  - name: jev-gates
+    url: https://github.com/carlchou0dailyfresh/jev-gates
+    kind: repo
+    author: carlchou0dailyfresh
+    description: Zero-dependency TypeScript library for composing Jev judgments and exact rules into three-valued TRUE/FALSE/UNKNOWN logic circuits defined in JSON, reusable inside larger circuits.
+    date: '2026-09-19'
+    tags:
+    - logic
+    - composition
+    - typescript
+  - name: jev-harness
+    url: https://github.com/AntonioCoppe/jev-harness
+    kind: repo
+    author: AntonioCoppe
+    description: TypeScript library that turns Jev answers into shippable actions with a policy map, confidence gate, shadow mode, recipes and an offline eval CLI; a row-filter job took 1.3 s versus 48.9 s with Claude CLI.
+    image: https://raw.githubusercontent.com/AntonioCoppe/jev-harness/main/docs/assets/marketing/proof/terminal/claude-cli.png
+    metrics:
+      stars: 9
+    date: '2026-09-18'
+    links:
+      demo: https://x.com/Antoniocoppe/status/2100954520356327577
+    tags:
+    - harness
+    - confidence-gates
+    - evals
+  - name: jev-judge
+    url: https://github.com/ohmyjiro/jev-judge
+    kind: repo
+    author: ohmyjiro
+    description: Dependency-free Python CLI and Codex skill that sends a JSON state with named Noul, Choice or Score questions to Jev and returns only the typed answers, so an agent reads a small answer instead of the full evidence.
+    date: '2026-09-20'
+    tags:
+    - cli
+    - codex
+    - context
+  - name: jev-router (carllippert)
+    url: https://github.com/carllippert/jev-router
+    kind: repo
+    author: carllippert
+    description: 'Express middleware with no route table: you register plain-English intents with named functions, and one Jev Choice over the method, path and body decides which handler runs.'
+    date: '2026-09-18'
+    tags:
+    - express
+    - http-routing
+    - openrouter
+  - name: jev-starter
+    url: https://github.com/hamakyo/jev-starter
+    kind: repo
+    author: hamakyo
+    description: 'Published npm package and GitHub template with TypeScript patterns around the TypeSafe SDK: decision contracts, confidence thresholds, fallbacks, human review, evaluation and RAG examples.'
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - starter
+    - typescript
+  - name: jev-studio
+    url: https://github.com/utk2103/jev-studio
+    kind: repo
+    author: utk2103
+    description: Python kit with a jev CLI for verify, screen, classify, extract, route, rerank and compact judgments over piped text, plus an MCP server for Choice, Noul and Score and slash commands for the cookbooks.
+    image: https://pbs.twimg.com/media/HSu0pXwbwAAGhJp.jpg?name=orig
+    metrics:
+      stars: 15
+      likes: 1
+      views: 61
+    date: '2026-09-19'
+    links:
+      demo: https://x.com/utk2103/status/2101972303387209821
+    tags:
+    - cli
+    - mcp
+    - python
+  - name: jev-tree
+    url: https://github.com/reachjalil/jev-tree
+    kind: repo
+    author: reachjalil
+    description: TypeScript library that classifies into catalogs larger than Jev's 255-option Choice limit by walking a taxonomy with one Choice per level, auto-bucketing oversized sibling lists.
+    image: https://huggingface.co/datasets/reachjalil/jev-tree-choice-cap/resolve/main/charts/accuracy.png
+    metrics:
+      stars: 3
+      downloads: 83
+    date: '2026-09-18'
+    links:
+      app: https://reachjalil.github.io/jev-tree/
+      app 2: https://reachjalil.github.io/jev-tree
+      model: https://huggingface.co/datasets/reachjalil/jev-tree-choice-cap
+    tags:
+    - classification
+    - taxonomy
+  - name: jev-ui
+    url: https://github.com/etweisberg/jev-ui
+    kind: repo
+    author: etweisberg
+    description: React components for Next.js that decide which component to render, how to order a list and whether to show an affordance from Jev judgments, while your code keeps thresholds, fallbacks and actions.
+    image: https://github.com/user-attachments/assets/ba3b7a4f-b800-49c0-b078-089ca332ff1d
+    metrics:
+      stars: 2
+    date: '2026-09-20'
+    links:
+      docs: https://docs.jev-ui.dev/
+      link: https://docs.jev-ui.dev
+    tags:
+    - react
+    - nextjs
+    - generative-ui
+  - name: Jev4Mellea
+    url: https://github.com/SoundBlaster/Jev4Mellea
+    kind: repo
+    author: SoundBlaster
+    description: Unofficial Python adapter that brings Jev checks into Mellea to verify requirements with Noul thresholds, classify with Choice, and score text, while Mellea keeps handling generation and repair.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - mellea
+    - python
+    - verification
+  - name: jev_jsonschema
+    url: https://github.com/Kiln-AI/jev_jsonschema
+    kind: repo
+    author: Kiln-AI
+    description: Python library that converts a JSON Schema into Jev questions and returns JSON that validates against the original schema, with sync and async clients.
+    metrics:
+      stars: 7
+    date: '2026-09-19'
+    links:
+      demo: https://news.ycombinator.com/item?id=49769277
+    tags:
+    - json-schema
+    - python
+    - structured-output
+  - name: Jevalyn
+    url: https://github.com/Ray-Hughes/jevalyn
+    kind: repo
+    author: Ray-Hughes
+    description: Rails-native wrapper that puts typed, calibrated Jev decisions into app control flow, with guardrails, a router, and testing helpers.
+    image: https://external-preview.redd.it/JABo279iPcc_xYA1_ytsE0l8wg3ThqOJG7hwAAMXtb0.png?auto=webp&s=0ac9aef2698ab0c8b844460c07b5ab091e5e73f2
+    metrics:
+      stars: 17
+    date: '2026-09-20'
+    links:
+      demo: https://www.reddit.com/r/rails/comments/1wl4psz/new_gem_wrapping_jev/
+    tags:
+    - rails
+    - ruby
+  - name: jevcache
+    url: https://github.com/hyperspaceai/jevcache
+    kind: repo
+    author: hyperspaceai
+    description: Local decision cache for Jev-class models, shipped as a 2 MB binary, that memoizes decisions over redacted and canonicalized state so repeats are free and CI can replay fixtures to catch model drift.
+    image: https://repository-images.githubusercontent.com/1375761817/b17d8cf2-457c-446a-82cf-4bd18e00bb47
+    metrics:
+      stars: 70
+    date: '2026-09-18'
+    links:
+      site: https://jevcache.sh
+      app: https://jevcache.sh
+    tags:
+    - cache
+    - cli
+    - ci
+  - name: JevFlow
+    url: https://github.com/Mawfyy/jevflow
+    kind: repo
+    author: Mawfyy
+    description: TypeScript backend library for defining typed noul, score and choice judgments with explicit thresholds and deterministic policy kept separate from the model, plus explainable workflows; Jev is the default provider.
+    metrics:
+      stars: 5
+    date: '2026-09-20'
+    tags:
+    - typescript
+    - workflows
+    - backend
+  - name: JevGuard
+    url: https://github.com/seb4ez/jevguard
+    kind: repo
+    author: seb4ez
+    description: Standard-library Python layer around Jev that caches decisions in SQLite by fingerprinted state, prunes state, injects a neutral escape option and flags poorly calibrated answers.
+    jev: Adds a neutral option so off-topic inputs are not forced into a bad Choice; ships a companion MCP server.
+    image: https://raw.githubusercontent.com/seb4ez/jevguard/main/benchmark_results.png
+    date: '2026-09-19'
+    links:
+      demo: https://www.reddit.com/r/typesafe_ai/comments/1wkzchc/got_tired_of_jev_forcing_bad_choices_on_offtopic/
+    tags:
+    - caching
+    - calibration
+    - python
+  - name: jevish
+    url: https://github.com/hemanth/jevish
+    kind: repo
+    author: hemanth
+    description: JavaScript library for semantic pattern matching and zero-shot classification that runs a local zero-dependency matcher first and escalates to Jev in the cloud when needed.
+    jev: Falls back to jev-latest via the System One endpoint when TYPESAFE_API_KEY is set.
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    links:
+      app: https://hemanth.github.io/jevish/
+    tags:
+    - javascript
+    - pattern-matching
+    - classification
+  - name: jevkit
+    url: https://github.com/ariel-frischer/jevkit
+    kind: repo
+    author: ariel-frischer
+    description: Rust CLI for Jev that takes Choice, Score and Noul question sets in terse YAML or JSON, lints them offline before any paid call, and prints parsed answers as JSON, with an agent skill for coding agents.
+    image: https://repository-images.githubusercontent.com/1376435020/cf19659b-38fb-4ba6-ba01-8d77363a7bad
+    metrics:
+      stars: 3
+    date: '2026-09-18'
+    tags:
+    - cli
+    - rust
+    - linting
+  - name: JevPlay
+    url: https://github.com/ndolinschi/jevplay
+    kind: repo
+    author: ndolinschi
+    description: Next.js playground where you enter a freeform state, invent custom Choice, Score and Noul questions and see the live probability distributions.
+    date: '2026-09-17'
+    links:
+      app: https://jevplay.vercel.app
+      app 2: https://jevplay.vercel.app
+    tags:
+    - playground
+    - nextjs
+  - name: JevTape
+    url: https://github.com/Hugo-DDT/JevTape
+    kind: repo
+    author: Hugo-DDT
+    description: Java record/replay tool with a CLI and local proxy that saves real Jev decisions as JSON cassettes, including state, question contract and model, so tests and CI replay them offline without an API key.
+    image: https://repository-images.githubusercontent.com/1378424135/cac21bab-bdcb-4dff-b67b-808fe5242923
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    tags:
+    - testing
+    - record-replay
+    - java
+  - name: jevtok
+    url: https://github.com/LabGuy94/jevtok
+    kind: repo
+    author: LabGuy94
+    description: Tiktoken-style encoder that reproduces Jev's tokenizer bit for bit, reconstructed from API usage counts, for exact token counting and request-cost prediction, verified on 20,034 strings with 0 mismatches.
+    date: '2026-09-21'
+    tags:
+    - tokenizer
+    - cost
+    - python
+  - name: jod
+    url: https://github.com/mateonunez/jod
+    kind: repo
+    author: mateonunez
+    description: TypeScript library that binds a Standard Schema state and a set of questions into one artifact, validates the state locally, then sends all questions in one parallel Jev request and returns typed domain values.
+    jev: Built on @typesafe-ai/sdk; adds validation, answer projection and fixtures.
+    metrics:
+      stars: 3
+    date: '2026-09-17'
+    links:
+      npm: https://npmjs.com/package/@mateonunez/jod
+    tags:
+    - typescript
+    - zod
+    - schemas
+  - name: judgekit
+    url: https://github.com/lexingtonhibiki/judgekit
+    kind: repo
+    author: lexingtonhibiki
+    description: Provider-agnostic engine that runs YAML-defined classify, score, route, and verify tasks natively on Jev or any OpenAI-compatible LLM with cost-accuracy benchmarking; reports 97.7% on 130 Chinese samples.
+    image: https://raw.githubusercontent.com/lexingtonhibiki/judgekit/main/docs/pareto.png
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    tags:
+    - yaml
+    - judges
+    - benchmark
+  - name: judging-with-typesafe
+    url: https://github.com/carlsonchik/judging-with-typesafe
+    kind: repo
+    author: carlsonchik
+    description: Skill for Letta agents that uses Jev as a fast external judge for texts and decisions against criteria, returning a number and distribution instead of text; reports 0.004-0.014 spread over 8 runs.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - letta
+    - agent-skill
+    - judge
+  - name: Kanvas TypeSafe connector
+    url: https://github.com/bakaphp/kanvas-ecosystem-api/tree/development/src/Domains/Connectors/TypeSafe
+    kind: repo
+    author: bakaphp
+    description: PHP connector for the Kanvas operations platform (Laravel) with typed Noul, Choice and Score DTOs and per-decision OFF/SHADOW/LIVE modes, so call sites can let Jev decide while the existing LLM stays as fallback.
+    image: https://cdn.prod.website-files.com/66c9f056ff6b7f7ba51cdf21/66ccb2a881e7036ab59136f2_Logo_Kanvas_3.png
+    metrics:
+      repo_stars: 15
+    date: '2022-07-13'
+    links:
+      repo: https://github.com/bakaphp/kanvas-ecosystem-api
+    tags:
+    - php
+    - laravel
+    - connector
+  - name: Kiln Jev provider
+    url: https://github.com/Kiln-AI/Kiln/tree/main/libs/core/kiln_ai/adapters/jev
+    kind: repo
+    author: Kiln-AI
+    description: Jev provider for the Kiln AI workbench that runs compatible single-turn tasks and evals on Jev by mapping JSON-schema enums, booleans and scores to Jev questions and back.
+    jev: 'Aimed at evals: Kiln''s 1-5 star and pass/fail schemas fit Jev''s question types, and native probabilities replace G-Eval''s logprob approximation.'
+    image: https://repository-images.githubusercontent.com/832879402/669449f8-c948-40a0-9f73-866e06cac97a
+    metrics:
+      repo_stars: 5078
+    date: '2024-07-23'
+    links:
+      app: https://kiln.tech
+    tags:
+    - evals
+    - provider
+    - json-schema
+  - name: Kyo TypeSafe decider
+    url: https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala
+    kind: repo
+    author: getkyo
+    description: Kyo, a Scala 3 toolkit, adds a TypeSafe decider backend for its AI module that answers every System One question kind with calibrated probabilities in one request.
+    image: https://raw.githubusercontent.com/getkyo/kyo/main/kyo.png
+    metrics:
+      repo_stars: 812
+    date: '2022-03-08'
+    links:
+      app: https://getkyo.io
+    tags:
+    - scala
+    - decider
+    - framework
+  - name: LangChain
+    url: https://docs.langchain.com/oss/python/integrations/providers/typesafe
+    kind: article
+    author: LangChain
+    description: Classifier runnable plus experimental middleware for per-request model routing and for stopping risky tool calls.
+    image: https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DDocumentation%26title%3DTypeSafe%2Bintegrations%26description%3DIntegrate%2Bwith%2BTypeSafe%2Busing%2BLangChain%26theme%3Dbf3bf8de8061f170aa09f116&w=1200&q=100
+    links:
+      pypi: https://pypi.org/project/langchain-typesafe/
+    note: alpha
+    tags:
+    - langchain
+    - python
+    - middleware
+  - name: LangChain Jev routing middleware
+    url: https://x.com/ndrezn/status/2102088289876418563
+    kind: post
+    author: ndrezn
+    description: LangChain middleware for managed deep agents that lets you define routes and has Jev pick the model for each request.
+    image: https://pbs.twimg.com/media/HSwd5SWW0AA97cu.jpg?name=orig
+    metrics:
+      likes: 16
+      views: 8420
+    date: '2026-09-21'
+    tags:
+    - langchain
+    - model-routing
+    - middleware
+  - name: LangChain TypeSafe integration
+    url: https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx
+    kind: docs
+    author: langchain-ai
+    description: LangChain's docs for the TypeSafe integration, where TypeSafeClassifier exposes Jev decisions as a Runnable you can invoke, batch or compose, including inside create_agent middleware.
+    metrics:
+      repo_stars: 418
+    date: '2025-05-15'
+    links:
+      docs: https://docs.langchain.com
+    tags:
+    - langchain
+    - runnable
+    - integration
+  - name: langchain-typesafe
+    url: https://github.com/langchain-ai/langchain/tree/master/libs/partners/typesafe
+    kind: repo
+    author: langchain-ai
+    description: LangChain partner package with a TypeSafeClassifier runnable for Choice, Noul and Score questions, plus experimental auto-mode and model-router middleware.
+    image: https://repository-images.githubusercontent.com/552661142/7392d590-2716-4261-b623-a0579df67e0d
+    metrics:
+      repo_stars: 146835
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/langchain-ai/langchain
+      pypi: https://pypi.org/project/langchain-typesafe/
+    tags:
+    - langchain
+    - python
+  - name: LangChain.js
+    url: https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe
+    kind: repo
+    author: langchain-ai
+    description: JavaScript version of the classifier and the routing and approval middleware.
+    image: https://repository-images.githubusercontent.com/598342280/41cd6da7-4afb-4b7f-b2dd-9fd52b1cc773
+    metrics:
+      repo_stars: 18214
+    date: '2026-09-18'
+    links:
+      repo: https://github.com/langchain-ai/langchainjs
+    tags:
+    - langchain
+    - typescript
+  - name: Laravel AI TypeSafe provider
+    url: https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php
+    kind: repo
+    author: laravel
+    description: TypeSafe gateway added to the Laravel AI SDK, giving Laravel apps typed classification backed by Jev's /systemone endpoint, with fake responses for testing.
+    image: https://pbs.twimg.com/media/HScwRSHXcAAmOGT.jpg
+    metrics:
+      repo_stars: 1183
+    date: '2026-09-17'
+    links:
+      demo: https://x.com/taylorotwell/status/2100700952923713641
+      repo: https://github.com/laravel/ai
+      pr: https://github.com/laravel/ai/pull/1010
+    tags:
+    - laravel
+    - php
+    - classification
+  - name: Laravel Jev
+    url: https://github.com/i-priyanshuverma/laravel-jev
+    kind: repo
+    author: i-priyanshuverma
+    description: PHP package for Laravel apps with one-line `Jev::is`, `choose` and `score` calls, batched questions, form-request validation rules, response caching and a `Jev::fake()` testing helper.
+    image: https://pbs.twimg.com/media/HSrapOOawAAdjuM.jpg?name=orig
+    metrics:
+      stars: 8
+    date: '2026-09-20'
+    links:
+      demo: https://x.com/ipriyanshuverma/status/2101736982745620878
+    tags:
+    - laravel
+    - php
+  - name: Laravel TypeSafe Jev
+    url: https://github.com/Butochnikov/laravel-typesafe-jev
+    kind: repo
+    author: Butochnikov
+    description: Unofficial Laravel integration for Jev built on a community PHP SDK, adding package discovery, scoped dependency injection, configuration, a facade and a request-recording test fake.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - laravel
+    - php
+  - name: liteflow-agent-jev
+    url: https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev
+    kind: repo
+    author: dromara
+    description: 'Jev switch component for the LiteFlow rule engine: JevSwitchComponent routes a flow to a target node id via a Jev Choice, wired into the DSL''s SWITCH().to().DEFAULT().'
+    jev: Configured with a min-confidence threshold; supports TypeSafe and OpenRouter's Decisions API.
+    image: https://raw.githubusercontent.com/dromara/liteflow/master/static/img/flow_e1.png
+    metrics:
+      repo_stars: 3863
+    date: '2020-03-25'
+    tags:
+    - rule-engine
+    - java
+    - routing
+  - name: liteflow-agent-jev
+    url: https://liteflow.cc/pages/agent-jev-switch/
+    kind: docs
+    author: LiteFlow
+    description: LiteFlow rule-engine module (from 2.16.2, JDK 17+) whose JevSwitchComponent lets Jev pick a SWITCH branch from candidate component IDs, falling to DEFAULT on low confidence; the docs include a customer-service routing demo.
+    metrics:
+      stars: 24
+    date: '2026-09-20'
+    links:
+      repo: https://github.com/bryan31/liteflow-homepage
+    tags:
+    - java
+    - workflow
+    - routing
+  - name: LLMtoJev
+    url: https://github.com/alexwestco/llm-to-jev
+    kind: repo
+    author: alexwestco
+    description: Converter that finds bounded decisions inside prompts written for GPT, Claude or Gemini and proposes Jev Choice, Score and Noul questions, separating them from generative work that must stay with an LLM.
+    metrics:
+      stars: 5
+    date: '2026-09-19'
+    tags:
+    - prompts
+    - migration
+    - converter
+  - name: lm15 typesafe provider
+    url: https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py
+    kind: repo
+    author: lm15-dev
+    description: 'TypeSafe provider for lm15, a stdlib-only, provider-neutral Python foundation for LLM APIs: messages become Jev''s state, judgment properties of a JSON schema become questions, and answers return as a data part with distributions.'
+    metrics:
+      repo_stars: 23
+    date: '2026-04-08'
+    links:
+      repo: https://github.com/lm15-dev/lm15-python
+      pypi: https://pypi.org/project/lm15/
+    tags:
+    - python
+    - llm-client
+  - name: n8n TypeSafe node
+    url: https://github.com/DomMonte/n8n-nodes-typesafe-ai
+    kind: repo
+    author: DomMonte
+    description: Community node with yes-or-no, choice, and score operations, usable as an AI Agent tool on self-hosted n8n.
+    date: '2026-09-17'
+    links:
+      npm: https://www.npmjs.com/package/n8n-nodes-typesafe-ai
+    tags:
+    - n8n
+    - no-code
+    - workflow
+  - name: n8n-nodes-agent-langfuse
+    url: https://community.n8n.io/t/jev-in-n8n-a-node-for-typesafes-decision-model-traced-in-langfuse/315249
+    kind: post
+    author: Diward
+    description: Community n8n node that sends a state plus yes/no, choice and score questions to Jev through OpenRouter and traces each call to Langfuse with the provider-reported cost.
+    jev: Answers, probabilities and confidence are flattened onto the item so a plain IF node can branch; the author measured 87 ms vs 2965 ms per decision on 31 real cases.
+    image: https://europe1.discourse-cdn.com/n8n/original/3X/8/d/8d234fc1daa7b11f33e605419e8e63aa14f1eb8c.png
+    date: '2026-09-21'
+    links:
+      repo: https://github.com/Diward/n8n-nodes-agent-langfuse
+      npm: https://www.npmjs.com/package/n8n-nodes-agent-langfuse
+      project: https://github.com/diward/n8n-nodes-agent-langfuse
+    tags:
+    - n8n
+    - langfuse
+    - observability
+  - name: n8n-nodes-jev
+    url: https://github.com/vibe-with-me-tools/n8n-nodes-jev
+    kind: repo
+    author: vibe-with-me-tools
+    description: Community node for n8n that classifies, routes and scores text with questions you define, returning a probability per answer so unsure items can be sent to a person.
+    image: https://raw.githubusercontent.com/vibe-with-me-tools/n8n-nodes-jev/main/docs/images/route-by-choice-workflow.png
+    metrics:
+      stars: 2
+    date: '2026-09-19'
+    links:
+      npm: https://www.npmjs.com/package/n8n-nodes-jev
+    tags:
+    - n8n
+    - workflow
+    - no-code
+  - name: n8n-nodes-jev-classification
+    url: https://github.com/khmuhtadin/n8n-nodes-jev-classification
+    kind: repo
+    author: khmuhtadin
+    description: Community node for n8n that classifies, scores and checks text with Jev like the built-in Text Classifier, with one branch per category plus Needs Review, parallel requests and multi-item batching.
+    image: https://raw.githubusercontent.com/khmuhtadin/n8n-nodes-jev-classification/main/docs/images/how-it-works.svg
+    date: '2026-09-21'
+    links:
+      demo: https://www.reddit.com/r/n8n/comments/1wm8g8o/i_built_an_n8n_node_that_classifies_text_with/
+      npm: https://www.npmjs.com/package/n8n-nodes-jev-classification
+    tags:
+    - n8n
+    - classification
+    - no-code
+  - name: n8n-nodes-typesafe
+    url: https://github.com/Biztactix/n8n-nodes-typesafe
+    kind: repo
+    author: Biztactix
+    description: Community node for n8n that sends workflow text or JSON with named noul, choice and score questions to the System One API and returns typed answers to route on, plus a List Models operation.
+    date: '2026-09-19'
+    tags:
+    - n8n
+    - no-code
+    - workflow
+  - name: n8n-nodes-typesafe-jev
+    url: https://github.com/n3ndor/n8n-nodes-typesafe-jev
+    kind: repo
+    author: n3ndor
+    description: Unofficial n8n community node that builds state and several typed questions from workflow items, calls Jev, and appends the calibrated answers for routing, classification, and scoring.
+    metrics:
+      stars: 2
+    date: '2026-09-18'
+    tags:
+    - n8n
+    - no-code
+  - name: NeoGraph OpenRouter Decisions schema
+    url: https://github.com/fox1245/NeoGraph/blob/master/schemas/openrouter_decisions.json
+    kind: repo
+    author: fox1245
+    description: Provider schema that lets NeoGraph, a C++ graph agent engine in the style of LangGraph, call Jev through OpenRouter's alpha Decisions endpoint.
+    image: https://raw.githubusercontent.com/fox1245/NeoGraph/master/docs/images/neograph-promo-v3.gif
+    metrics:
+      repo_stars: 11
+    date: '2026-04-02'
+    links:
+      app: https://fox1245.github.io/NeoGraph/
+      repo: https://github.com/fox1245/NeoGraph
+    tags:
+    - cpp
+    - agent-graph
+    - openrouter
+  - name: NeuroLink decide
+    url: https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts
+    kind: repo
+    author: juspay
+    description: Jev provider in Juspay's NeuroLink TypeScript SDK that adds decide, returning typed boolean, choice and score judgments, as a third inference type beside generate and stream, also used internally for routing and compaction.
+    image: https://repository-images.githubusercontent.com/993805781/24ad8594-ddb9-4c8d-a4f9-15c3f72f9390
+    metrics:
+      repo_stars: 137
+    date: '2025-05-31'
+    links:
+      repo: https://github.com/juspay/neurolink
+      website: https://neurolink.ink
+    tags:
+    - sdk
+    - typescript
+    - model-routing
+  - name: Neuron AI TypeSafe classifier
+    url: https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI
+    kind: repo
+    author: neuron-core
+    description: TypeSafe AI classifier for Neuron AI, the PHP agentic framework, mapping its Boolean, Choice and Score classification requests onto Jev's System One API.
+    image: https://repository-images.githubusercontent.com/941562247/8b2db3ba-ba3b-4a74-95cc-da8bbead2b8c
+    metrics:
+      repo_stars: 2103
+    date: '2025-03-02'
+    links:
+      docs: https://docs.neuron-ai.dev
+    tags:
+    - php
+    - classifier
+    - framework
+  - name: nf-jev
+    url: https://github.com/nextflow-io/nf-jev
+    kind: repo
+    author: nextflow-io
+    description: Beta Nextflow plugin that exposes Jev noul, choice and score judgments as ordinary pipeline functions, so a pipeline can build typed questions as values and gate on the returned probabilities.
+    date: '2026-09-20'
+    tags:
+    - nextflow
+    - pipelines
+    - groovy
+  - name: NPipeline Jev decisions extension
+    url: https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev
+    kind: repo
+    author: npipeline
+    description: NPipeline.Extensions.AI.Decisions.Jev package for the NPipeline .NET streaming data-pipeline library that plugs Jev Choice questions into typed routing, with Score and Noul available through a lower-level client.
+    metrics:
+      repo_stars: 5
+    date: '2025-09-02'
+    links:
+      app: https://www.npipeline.net
+      repo: https://github.com/npipeline/NPipeline
+    tags:
+    - dotnet
+    - data-pipelines
+    - routing
+  - name: nuxt-jev
+    url: https://github.com/harlan-zw/harlan-nuxt/tree/main/packages/nuxt-jev
+    kind: repo
+    author: harlan-zw
+    description: 'Nuxt module and framework-free base package for Jev: an HTTP client, question builders, a decision runner that reuses a journal of past answers, a Drizzle decisions table and eval replay math.'
+    metrics:
+      repo_stars: 11
+    date: '2026-08-10'
+    links:
+      repo: https://github.com/harlan-zw/harlan-nuxt
+      base: https://github.com/harlan-zw/harlan-nuxt/tree/main/packages/jev
+    tags:
+    - nuxt
+    - typescript
+    - drizzle
+  - name: octolib 0.39.0
+    url: https://x.com/muvonteam/status/2101175341498941935
+    kind: post
+    author: muvonteam
+    description: Rust library for 30+ AI providers adds evaluation as a fourth call type next to generate, embed and rerank, backed by Jev directly, through Cloudflare or through OctoHub.
+    image: https://muvon.io/blog/octolib-0-39-0-evaluation-models-jev/index.png
+    metrics:
+      likes: 2
+      views: 38
+    date: '2026-09-19'
+    links:
+      repo: https://github.com/muvon/octolib
+      article: https://muvon.io/blog/octolib-0-39-0-evaluation-models-jev
+      project: https://github.com/muvon/octolib
+    tags:
+    - rust
+    - multi-provider
+    - evaluation
+  - name: OpenClaw TypeSafe plugin
+    url: https://github.com/openclaw/openclaw/tree/main/extensions/typesafe
+    kind: repo
+    author: openclaw
+    description: Official OpenClaw plugin that plugs hosted Jev, or a local Kev server, into OpenClaw's decision-model API for Choice, Score and Boolean judgments, plus an optional typesafe_evaluate tool.
+    jev: Select typesafe/jev-latest as an agent's decisionModel, globally or per agent.
+    metrics:
+      repo_stars: 390232
+      stars: 75
+    date: '2025-11-24'
+    links:
+      docs: https://docs.openclaw.ai/plugins/typesafe
+      link: https://docs.openclaw.ai/plugins/typesafe
+    tags:
+    - openclaw
+    - plugin
+    - decision-model
+  - name: openclaw-typesafe-ai
+    url: https://github.com/Olli0103/openclaw-typesafe-ai
+    kind: repo
+    author: Olli0103
+    description: OpenClaw plugin that registers one explicitly invoked typesafe_decide tool sending text or JSON state and typed questions to Jev, with SecretRef credentials and no hooks or model provider.
+    date: '2026-09-18'
+    tags:
+    - openclaw
+    - plugin
+  - name: OpenConnector TypeSafe AI provider
+    url: https://github.com/oomol-lab/open-connector/tree/main/src/providers/typesafe_ai
+    kind: repo
+    author: oomol-lab
+    description: TypeSafe AI provider in the OpenConnector auth gateway, exposing Jev Noul, Choice and Score evaluation as prebuilt actions that agents can call through SDK, CLI, MCP or HTTP.
+    image: https://raw.githubusercontent.com/oomol-lab/open-connector/main/assets/openconnector-readme-banner.png
+    metrics:
+      repo_stars: 5862
+    date: '2026-06-29'
+    links:
+      app: https://oomol.com
+    tags:
+    - connectors
+    - mcp
+    - agents
+  - name: OpenRouter AI SDK evaluation
+    url: https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation
+    kind: repo
+    author: OpenRouterTeam
+    description: OpenRouter's Vercel AI SDK provider adds an evaluation model that speaks the Decisions API, so AI SDK's evaluate can call Jev through OpenRouter.
+    image: https://raw.githubusercontent.com/OpenRouterTeam/ai-sdk-provider/main/assets/banner.png
+    metrics:
+      repo_stars: 686
+    date: '2024-07-18'
+    links:
+      npm: https://www.npmjs.com/package/@openrouter/ai-sdk-provider
+    tags:
+    - ai-sdk
+    - openrouter
+    - decisions
+  - name: pi-typesafe
+    url: https://github.com/DevMortimer/pi-typesafe
+    kind: repo
+    author: DevMortimer
+    description: Pi extension that adds a batched typesafe_evaluate tool for the agent, terminal playground commands and a typed client API so other extensions such as pi-warden share one key and usage record.
+    image: https://raw.githubusercontent.com/DevMortimer/pi-typesafe/main/docs/preview.png
+    metrics:
+      stars: 40
+    date: '2026-09-16'
+    tags:
+    - pi
+    - extension
+  - name: pi-typesafe
+    url: https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe
+    kind: repo
+    author: narumiruna
+    description: Pi Coding Agent extension that gives Pi a typesafe_question tool for narrow typed decisions through TypeSafe's Jev API, with an opt-in OpenRouter fallback.
+    jev: Multiple Noul, Choice and Score questions per state in one call, validated before answers reach the model; bundles a typesafe-ai skill.
+    metrics:
+      repo_stars: 599
+    date: '2026-05-07'
+    links:
+      npm: https://www.npmjs.com/package/@narumitw/pi-typesafe
+    tags:
+    - pi
+    - extension
+    - tool
+  - name: pi-typesafe-jev
+    url: https://github.com/legacybridge-tech/pi-typesafe-jev
+    kind: repo
+    author: legacybridge-tech
+    description: Pi extension that exposes Jev as five narrow tools, for Noul, Choice, Score, multi-question evaluate and questions pinned in local YAML or JSON, while thresholds, weights and actions stay in host code.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - pi
+    - tools
+    - extension
+  - name: pizx
+    url: https://github.com/topce/pizx
+    kind: repo
+    author: topce
+    description: Fork of Google's zx for AI shell scripting with Pi agents that adds TypeSafe choice, score and noul as built-in letters, with JSONL run traces and a local result cache.
+    image: https://raw.githubusercontent.com/topce/pizx/main/github-social-banner.png
+    metrics:
+      stars: 5
+    date: '2026-06-08'
+    tags:
+    - zx
+    - shell-scripting
+    - pi
+  - name: PlayJev
+    url: https://github.com/MoeclubM/PlayJev
+    kind: repo
+    author: MoeclubM
+    description: Visual IDE for composing Jev requests, with a state editor, a question builder, JSON preview and validation, answers rendered as visual cards, and an LLM that drafts a whole request from one sentence.
+    image: https://raw.githubusercontent.com/MoeclubM/PlayJev/main/docs/images/screenshot-desktop.png
+    metrics:
+      stars: 7
+    date: '2026-09-19'
+    links:
+      app: https://playjev.telecom.moe
+    tags:
+    - playground
+    - developer-tools
+  - name: Probably
+    url: https://github.com/southpolesteve/probably
+    kind: repo
+    author: southpolesteve
+    description: Small experimental programming language for LLM workflows where Jev supplies the judgments and probabilities behind if statements and a text model writes prose, with a real parser, interpreter, CLI and playground.
+    metrics:
+      stars: 9
+      points: 4
+    date: '2026-09-19'
+    links:
+      app: https://probably-lang.southpolesteve.workers.dev
+      app 2: https://probably-lang.southpolesteve.workers.dev
+    tags:
+    - language
+    - interpreter
+    - typescript
+  - name: Pydantic AI
+    url: https://pydantic.dev/docs/ai/models/typesafe/
+    kind: docs
+    author: Pydantic
+    description: Runs an agent on Jev by mapping booleans to Nouls, enums to Choices, and integer rubrics to Scores, with an LLM fallback when unsure.
+    image: https://pydantic.dev/docs/og/ai/models/typesafe.png
+    tags:
+    - pydantic-ai
+    - python
+  - name: Pydantic AI TypeSafeModel
+    url: https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py
+    kind: repo
+    author: pydantic
+    description: 'Pydantic AI model class that runs decision agents on Jev: each field of the output_type becomes one question and the answers fill the output, so swapping the model name compares Jev with an LLM.'
+    image: https://pydantic.dev/docs/ai/img/pydantic-ai-light.svg
+    metrics:
+      repo_stars: 20109
+    date: '2026-09-18'
+    links:
+      repo: https://github.com/pydantic/pydantic-ai
+      docs: https://github.com/pydantic/pydantic-ai/blob/main/docs/models/typesafe.md
+    tags:
+    - pydantic-ai
+    - python
+  - name: qualm
+    url: https://github.com/qddegtya/qualm
+    kind: repo
+    author: qddegtya
+    description: TypeScript wrapper for Jev with tagged-template questions and literal-union answer types where every decision has an unsure branch the compiler forces you to handle.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - typescript
+    - uncertainty
+  - name: Questions
+    url: https://github.com/nitoba/questions
+    kind: repo
+    author: nitoba
+    description: TypeScript library for typed semantic decisions defined with Zod 4 schemas or native question batches, running on Jev by default with confidence gates, deadlines, retries, replay, and observability.
+    jev: Uses TypeSafe or Vercel evaluation for Jev, with an optional AI SDK adapter for generative models.
+    metrics:
+      stars: 5
+    date: '2026-09-17'
+    tags:
+    - typescript
+    - zod
+    - library
+  - name: ReqLLM TypeSafe provider
+    url: https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex
+    kind: repo
+    author: agentjido
+    description: TypeSafe provider for ReqLLM, the Elixir LLM library, that calls Jev through a separate evaluate interface, normalizes answers and keeps the raw provider response.
+    metrics:
+      repo_stars: 581
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/agentjido/req_llm
+    tags:
+    - elixir
+    - provider
+  - name: Rig
+    url: https://github.com/0xPlaygrounds/rig/tree/main/crates/rig-typesafeai
+    kind: repo
+    author: 0xPlaygrounds
+    description: Rust support that turns structs implementing a query trait into Jev requests.
+    image: https://raw.githubusercontent.com/0xPlaygrounds/rig/main/img/rig-rebranded-logo-white.svg
+    metrics:
+      repo_stars: 8693
+    date: '2026-09-18'
+    links:
+      repo: https://github.com/0xPlaygrounds/rig
+    note: merged, not yet on crates.io
+    tags:
+    - rust
+    - framework
+  - name: ruby_llm-typesafe
+    url: https://github.com/kieranklaassen/ruby_llm-typesafe
+    kind: repo
+    author: kieranklaassen
+    description: RubyLLM 2 provider that exposes Jev through RubyLLM's structured-output API, with a Schema builder for Noul, Choice, and Score questions.
+    metrics:
+      stars: 18
+    date: '2026-09-16'
+    tags:
+    - ruby
+    - rubyllm
+  - name: RubyLLM TypeSafe provider
+    url: https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb
+    kind: repo
+    author: crmne
+    description: TypeSafe provider in RubyLLM, the Ruby and Rails AI framework, connecting Jev judgment models through a dedicated System One protocol alongside the chat providers.
+    image: https://raw.githubusercontent.com/crmne/ruby_llm/main/docs/assets/images/logotype.svg
+    metrics:
+      repo_stars: 4396
+    date: '2025-01-30'
+    links:
+      docs: https://rubyllm.com/
+    tags:
+    - ruby
+    - rails
+    - provider
+  - name: RubyLLM::Judge
+    url: https://x.com/paolino/status/2102086504986169652
+    kind: post
+    author: paolino
+    description: Judgment API in the RubyLLM framework with support for Jev, for typed evaluations from Ruby and Rails apps.
+    image: https://pbs.twimg.com/media/HSwbKb7XwAAT9Wj.jpg?name=orig
+    metrics:
+      likes: 123
+      views: 3832
+    date: '2026-09-21'
+    links:
+      docs: https://rubyllm.com/next/judgments/
+      repo: https://github.com/crmne/ruby_llm
+      project: https://github.com/crmne/ruby_llm
+    tags:
+    - ruby
+    - framework
+    - judge
+  - name: RuleGo Jev nodes
+    url: https://github.com/rulego/rulego-components-ai/tree/main/jev
+    kind: repo
+    author: rulego
+    description: Nodes for the RuleGo declarative agent framework (ai/jev and ai/jevFilter) that route rule-chain messages by a Jev choice, noul or score answer, like a semantic switch or filter.
+    metrics:
+      repo_stars: 6
+    date: '2024-04-19'
+    links:
+      repo: https://github.com/rulego/rulego-components-ai
+    tags:
+    - go
+    - rule-engine
+    - workflow
+  - name: Runline TypeSafe plugin
+    url: https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe
+    kind: repo
+    author: Michaelliv
+    description: TypeSafe plugin for Runline, a code-mode runtime for agents, exposing evaluate, choice, score and noul as callable actions from agent JavaScript in its QuickJS sandbox.
+    metrics:
+      repo_stars: 163
+    date: '2026-09-17'
+    links:
+      repo: https://github.com/Michaelliv/runline
+    tags:
+    - code-mode
+    - plugin
+  - name: semgate
+    url: https://github.com/m-mizutani/semgate
+    kind: repo
+    author: m-mizutani
+    description: Go net/http middlewares that ask Jev typed questions about each incoming request and hand the answers to your function to pass it on, block it or route it to another handler.
+    date: '2026-09-19'
+    tags:
+    - go
+    - middleware
+    - http
+  - name: SEMOSS Jev model engine
+    url: https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts
+    kind: repo
+    author: SEMOSS
+    description: Model-import form in the SEMOSS platform UI that connects Jev by TypeSafe as an evaluation engine for classifying, scoring and evaluating text or structured data, with optional inference-log retention.
+    metrics:
+      repo_stars: 27
+    date: '2024-06-20'
+    links:
+      repo: https://github.com/SEMOSS/semoss-ui
+    tags:
+    - platform
+    - model-catalog
+  - name: SEMOSS TypeSafe client
+    url: https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe
+    kind: repo
+    author: SEMOSS
+    description: Low-code data and AI application platform that adds a TypeSafe Jev client to its GenAI layer, with a how-to guide for using Jev decisions.
+    metrics:
+      repo_stars: 54
+    date: '2013-05-30'
+    links:
+      docs: https://github.com/SEMOSS/Semoss/blob/dev/docs/how-to-guides/using_typesafe_jev.md
+    tags:
+    - low-code
+    - java
+    - python
+  - name: Spring AI TypeSafe
+    url: https://github.com/spring-ai-community/spring-ai-typesafe
+    kind: repo
+    author: spring-ai-community
+    description: Java client and Spring AI components for judging, guardrails, self-refinement, and RAG filtering and reranking.
+    image: https://pbs.twimg.com/media/HSvVraQWUAEukT5.jpg?name=orig
+    metrics:
+      stars: 19
+      likes: 85
+      views: 4161
+    date: '2026-09-20'
+    links:
+      docs: https://spring-ai-community.github.io/spring-ai-typesafe
+      demo: https://x.com/christzolov/status/2102009563083870575
+    tags:
+    - java
+    - spring-ai
+  - name: super-jev
+    url: https://github.com/Kevthetech143/super-jev
+    kind: repo
+    author: Kevthetech143
+    description: Domain-independent TypeScript harness that links evidence, Jev judgments, permitted tool actions and verified outcomes, with pluggable data sources and tools, argument checks and local JSONL traces.
+    metrics:
+      stars: 8
+    date: '2026-09-17'
+    tags:
+    - harness
+    - tool-actions
+    - typescript
+  - name: Symfony AI TypeSafe bridge
+    url: https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe
+    kind: repo
+    author: symfony
+    description: TypeSafe bridge for Symfony AI's Platform component, exposing the Jev model with Question, Answer and Evaluation types so PHP apps can make System One decisions.
+    metrics:
+      repo_stars: 1208
+    date: '2025-04-17'
+    links:
+      app: https://ai.symfony.com/
+    tags:
+    - php
+    - symfony
+    - bridge
+  - name: System One adapter
+    url: https://github.com/typesafe-ai/system-one-adapter-python
+    kind: repo
+    author: typesafe-ai
+    description: Drop-in `TypeSafeClient` replacement backed by LLM APIs, for comparing cost, speed, and quality with Jev on your own workflow.
+    metrics:
+      stars: 245
+    date: '2026-08-08'
+    tags:
+    - official
+    - adapter
+    - comparison
+  - name: System One Playground
+    url: https://github.com/DonaldMurillo/system-one-playground
+    kind: repo
+    author: DonaldMurillo
+    description: SysOneScript scripting language with a CLI and VS Code extension, a Go System One client, a Studio app and semlint semantic code checks, designed to run offline and add live Jev judgments when needed.
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    links:
+      app: https://donaldmurillo.github.io/system-one-playground/
+    tags:
+    - scripting
+    - go
+    - vscode
+  - name: system-one
+    url: https://x.com/lukerramsden/status/2101474124292047201
+    kind: post
+    author: lukerramsden
+    description: Generic TypeScript library for System 1 typed-decision models that works with Jev, Cloudflare AI Gateway and Laya, with Promise and Effect-native clients.
+    image: https://pbs.twimg.com/media/HSnvKhjboAAteyi.jpg?name=orig
+    metrics:
+      likes: 10
+      views: 1033
+    date: '2026-09-20'
+    links:
+      repo: https://github.com/lukeramsden/system-one
+      npm: https://www.npmjs.com/package/system-one
+      project: https://github.com/lukeramsden/system-one
+    tags:
+    - typescript
+    - effect
+    - library
+  - name: Tale Jev decisions connector
+    url: https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev
+    kind: repo
+    author: tale-project
+    description: Workflow connector for Tale, a self-hosted AI agent orchestrator and workspace, that exposes Jev via OpenRouter as a decide action for gating steps such as send, escalate or write on calibrated answers.
+    metrics:
+      repo_stars: 29
+    date: '2025-11-30'
+    links:
+      app: https://tale.dev
+      repo: https://github.com/tale-project/tale
+    tags:
+    - workflows
+    - connector
+  - name: TanStack AI
+    url: https://tanstack.com/ai/latest/docs/adapters/typesafe
+    kind: article
+    author: TanStack
+    description: Adapter for the `decide` API with choice, score, and boolean question helpers.
+    image: https://tanstack.com/api/og/ai.png?v=2&title=TypeSafe&description=Use+TypeSafe+Jev+with+TanStack+AI+via+%40tanstack%2Fai-typesafe%3A+typed+evaluate+decisions+with+decide%28%29%2C+choice%28%29%2C+score%28%29%2C+and+boolean%28%29.
+    links:
+      npm: https://www.npmjs.com/package/@tanstack/ai-typesafe
+    tags:
+    - tanstack
+    - adapter
+    - typescript
+  - name: TanStack AI Jev adapter
+    url: https://github.com/TanStack/ai/tree/main/packages/ai-typesafe
+    kind: repo
+    author: TanStack
+    description: Adapter package for TanStack AI that exposes Jev through a decide() call with typed Choice, Score, and yes/no questions, talking to the API over plain fetch with no TypeSafe SDK dependency.
+    image: https://tanstack.com/api/readme/ai.png
+    metrics:
+      repo_stars: 3129
+    date: '2025-10-08'
+    links:
+      repo: https://github.com/TanStack/ai
+      npm: https://www.npmjs.com/package/@tanstack/ai-typesafe
+      docs: https://tanstack.com/ai/latest
+    tags:
+    - typescript
+    - adapter
+  - name: term-llm classify
+    url: https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe
+    kind: repo
+    author: SamSaffron
+    description: Terminal AI runtime with a classify command backed by TypeSafe System One for intent routing, parallel safety checks and scoring structured state from the shell.
+    metrics:
+      repo_stars: 116
+    date: '2025-12-31'
+    links:
+      docs: https://term-llm.com/guides/classify/
+    tags:
+    - cli
+    - classification
+    - go
+  - name: tinystruct-typesafe
+    url: https://github.com/tinystruct/tinystruct-typesafe-sdk
+    kind: repo
+    author: tinystruct
+    description: Java integration that lets natural language invoke existing tinystruct @Action methods, with Jev acting as a semantic dispatcher and a confirmation workflow for pending calls.
+    jev: Arguments are only enum constants, booleans or verbatim spans of the user's input, since Jev only picks among supplied options.
+    metrics:
+      stars: 1
+    date: '2026-09-21'
+    links:
+      site: https://tinystruct.org
+    tags:
+    - java
+    - dispatcher
+    - framework
+  - name: Turn
+    url: https://github.com/ekizito96/Turn
+    kind: repo
+    author: ekizito96
+    description: Compiled language and runtime for AI agents where decide(state, questions) is a durable effect, with a bundled TypeSafe System One driver that runs Choice, Score and Noul workflows on Jev.
+    jev: Provider-neutral decide() with a mock driver for local runs; programs branch on answer confidence, for example sending tickets below 0.8 to a reviewer.
+    metrics:
+      stars: 11
+    date: '2026-02-17'
+    links:
+      code: https://github.com/ekizito96/Turn/tree/main/providers/turn-provider-typesafe
+    tags:
+    - language
+    - runtime
+    - rust
+  - name: TypeSafe AI for Agent Zero
+    url: https://github.com/3clyp50/a0-typesafe-ai
+    kind: repo
+    author: 3clyp50
+    description: Agent Zero plugin whose typesafe_query tool combines Choice, Noul and Score questions over the same evidence and renders probability cards in chat; bundles the official TypeSafe agent skill.
+    image: https://raw.githubusercontent.com/3clyp50/a0-typesafe-ai/main/docs/results.png
+    metrics:
+      stars: 5
+    date: '2026-09-17'
+    tags:
+    - agent-zero
+    - plugin
+  - name: TypeSafe UI
+    url: https://github.com/TypeSafeAI/typesafe-ui
+    kind: repo
+    author: TypeSafeAI
+    description: Community shadcn-style React components and interface blocks for TypeSafe projects, built on Base UI and Tailwind v4, with a Next.js component browser, source previews and an interactive Lab.
+    metrics:
+      stars: 4
+    date: '2026-09-17'
+    links:
+      app: https://ui.jev.works
+      app 2: https://typesafe-ui.vercel.app
+    tags:
+    - react
+    - shadcn
+    - components
+  - name: typesafe-ai-rails
+    url: https://github.com/GenieRobot/typesafe-ai-rails
+    kind: repo
+    author: GenieRobot
+    description: Rails integration built on the community Ruby SDK that adds configuration, persisted usage and cost telemetry, and an opt-in confidence policy for Choice and Score answers.
+    metrics:
+      stars: 2
+    date: '2026-09-16'
+    tags:
+    - rails
+    - ruby
+  - name: typesafe-jev-cli
+    url: https://www.npmjs.com/package/typesafe-jev-cli
+    kind: package
+    author: lbflow
+    description: Dependency-free Node.js CLI that sends Choice, Noul and Score evaluations to Jev through OpenRouter's decisions endpoint, including batch evaluation of many text files.
+    metrics:
+      downloads: 616
+    date: '2026-09-20'
+    tags:
+    - cli
+    - openrouter
+  - name: Vercel AI SDK
+    url: https://ai-sdk.dev/providers/ai-sdk-providers/typesafe-ai
+    kind: docs
+    author: Vercel
+    description: Provider for `experimental_evaluate` that maps choice, score, and boolean questions onto Jev's primitives.
+    image: https://ai-sdk.dev/og/docs?title=TypeSafe&description=Use%20TypeSafe%20System%20One%20models%20for%20typed%20evaluations%20with%20the%20AI%20SDK.
+    tags:
+    - ai-sdk
+    - typescript
+  - name: Yao decision role
+    url: https://github.com/YaoApp/yao/tree/main/agent/decision
+    kind: repo
+    author: YaoApp
+    description: Yao Agents adds a decision role connector for typed decision requests, with TypeSafe AI's jev-latest as a preset provider alongside the chat models.
+    image: https://raw.githubusercontent.com/YaoApp/yao/main/docs/how-it-works.png
+    metrics:
+      repo_stars: 7989
+    date: '2021-09-06'
+    links:
+      app: https://yaoagents.com
+    tags:
+    - agent-platform
+    - provider
+    - go
+  - name: zod-jev
+    url: https://github.com/jomatsu/zod-jev
+    kind: repo
+    author: jomatsu
+    description: Adds semantic checks to Zod 4 schemas, such as whether a body contains personal data or a price is plausible, while shape rules stay in Zod and results come back as ordinary Zod issues.
+    jev: All semantic rules in one parseAsync become Noul questions in a single request; thresholds map probabilities to issues.
+    metrics:
+      stars: 7
+    date: '2026-09-17'
+    tags:
+    - zod
+    - validation
+- slug: observability
+  title: Observability
+  entries:
+  - name: Arize Phoenix
+    url: https://arize.com/docs/phoenix/integrations/llm-providers/typesafe/typesafe-python
+    kind: article
+    author: Arize
+    description: OpenInference instrumentation for Python and TypeScript that records Jev inputs, outputs, and token counts.
+    image: https://arizeai-433a7140.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DTypeSafe%2BAI%26title%3DTypeSafe%2BAI%2BTracing%2B%2528Python%2529%26description%3DInstrument%2BTypeSafe%2BAI%2BSDK%2Bcalls%2Bin%2BPython%26theme%3D39bdea6277da2fa182a39f32&w=1200&q=100
+    links:
+      pypi: https://pypi.org/project/openinference-instrumentation-typesafe/
+      repo: https://github.com/Arize-ai/openinference/tree/main/python/instrumentation/openinference-instrumentation-typesafe
+    tags:
+    - phoenix
+    - tracing
+    - openinference
+  - name: Braintrust Python TypeSafe integration
+    url: https://github.com/braintrustdata/braintrust-sdk-python/tree/main/py/src/braintrust/integrations/typesafe
+    kind: repo
+    author: braintrustdata
+    description: Built-in integration in Braintrust's Python tracing and evals SDK that auto-instruments typesafe-sdk system_one calls so Jev requests and answers show up as Braintrust spans.
+    image: https://raw.githubusercontent.com/braintrustdata/braintrust-sdk-python/main/braintrust-logo.svg
+    metrics:
+      repo_stars: 19
+    date: '2026-02-20'
+    links:
+      repo: https://github.com/braintrustdata/braintrust-sdk-python
+      app: https://www.braintrust.dev
+    tags:
+    - tracing
+    - python
+  - name: Braintrust TypeSafe instrumentation
+    url: https://github.com/braintrustdata/braintrust-sdk-javascript/blob/main/js/src/wrappers/typesafe.ts
+    kind: repo
+    author: braintrustdata
+    description: 'Braintrust JavaScript SDK instrumentation for @typesafe-ai/sdk: wrapTypeSafe and auto-instrumentation trace every systemOne call into Braintrust spans, alongside tracing for the AI SDK evaluate call.'
+    image: https://raw.githubusercontent.com/braintrustdata/braintrust-sdk-javascript/main/braintrust-logo.svg
+    metrics:
+      repo_stars: 27
+    date: '2023-07-17'
+    links:
+      repo: https://github.com/braintrustdata/braintrust-sdk-javascript
+      app: https://www.braintrust.dev
+    tags:
+    - tracing
+    - evals
+  - name: Coolhand Ruby TypeSafe monitoring
+    url: https://github.com/Coolhand-Labs/coolhand-ruby/blob/main/lib/coolhand/default_intercept_addresses.yml
+    kind: repo
+    author: Coolhand-Labs
+    description: Ruby gem that logs LLM API calls to the Coolhand analytics platform and intercepts TypeSafe Jev System One requests by default alongside other providers.
+    metrics:
+      repo_stars: 10
+    date: '2025-09-30'
+    links:
+      app: https://coolhandlabs.com
+      repo: https://github.com/Coolhand-Labs/coolhand-ruby
+    tags:
+    - ruby
+    - monitoring
+    - logging
+  - name: genai-prices TypeSafe provider
+    url: https://github.com/pydantic/genai-prices/blob/main/prices/providers/typesafe.yml
+    kind: repo
+    author: pydantic
+    description: Pydantic library for calculating LLM API costs, extended with TypeSafe pricing so Jev calls to /v1/systemone are matched and billed per input token.
+    metrics:
+      repo_stars: 378
+    date: '2025-06-21'
+    tags:
+    - pricing
+    - cost-tracking
+  - name: Jeview
+    url: https://github.com/andududu/jeview
+    kind: repo
+    author: andududu
+    description: Unofficial local gateway that sits between your code and TypeSafe, forwards every Jev request, stores each call in SQLite, and draws calls on a live map as they happen.
+    image: https://raw.githubusercontent.com/andududu/jeview/main/docs/side-by-side.png
+    metrics:
+      stars: 21
+    date: '2026-09-21'
+    links:
+      demo: https://www.reddit.com/r/vibecoding/comments/1wmmjs5/i_built_a_free_jev_visualizer_after_burning_5bn/
+      discussion: https://www.reddit.com/r/typesafe_ai/comments/1wmmlj7/i_built_a_free_jev_visualizer_after_burning_5bn/
+    tags:
+    - visualizer
+    - gateway
+    - sqlite
+  - name: Laminar TypeSafe instrumentation
+    url: https://github.com/lmnr-ai/lmnr-python/tree/main/src/lmnr/opentelemetry_lib/opentelemetry/instrumentation/typesafe
+    kind: repo
+    author: lmnr-ai
+    description: OpenTelemetry instrumentation in the Laminar Python SDK that traces TypeSafe SDK system_one calls to Jev as spans alongside other LLM calls.
+    metrics:
+      repo_stars: 56
+    date: '2024-06-14'
+    tags:
+    - tracing
+    - opentelemetry
+    - laminar
+  - name: Laminar TypeSafe instrumentation
+    url: https://github.com/lmnr-ai/lmnr-ts/tree/main/packages/lmnr/src/opentelemetry-lib/instrumentation/typesafe
+    kind: repo
+    author: lmnr-ai
+    description: OpenTelemetry instrumentation in Laminar's TypeScript SDK that patches the TypeSafe SDK's systemOne calls to record Jev requests, responses and errors as spans.
+    metrics:
+      repo_stars: 12
+    date: '2024-06-22'
+    links:
+      repo: https://github.com/lmnr-ai/lmnr-ts
+    tags:
+    - tracing
+    - opentelemetry
+    - laminar
+  - name: Langfuse TypeSafe integration
+    url: https://langfuse.com/integrations/model-providers/typesafe
+    kind: docs
+    author: Langfuse
+    description: Integration guide and notebook for tracing Jev System One calls in Langfuse via OpenInference auto-instrumentation, with no client wrapper.
+    image: https://langfuse.com/api/og?title=Observability+for+TypeSafe+Jev+with+Langfuse&description=Trace+TypeSafe+Jev+System+One+decisions+with+Langfuse+using+OpenInference+auto-instrumentation.+No+client+wrapper+required.&section=Integrations
+    metrics:
+      stars: 244
+    date: '2026-09-19'
+    links:
+      repo: https://github.com/langfuse/langfuse-docs/blob/main/content/integrations/model-providers/typesafe.mdx
+      cookbook: https://github.com/langfuse/langfuse-docs/blob/main/cookbook/integration_typesafe.ipynb
+      blog: https://langfuse.com/blog/2026-09-18-using-typesafes-jev-for-evals
+    tags:
+    - tracing
+    - opentelemetry
+    - langfuse
+  - name: OpenInference TypeSafe instrumentation
+    url: https://github.com/Arize-ai/openinference/tree/main/python/instrumentation/openinference-instrumentation-typesafe
+    kind: repo
+    author: Arize-ai
+    description: OpenTelemetry instrumentation for the TypeSafe Python SDK that traces each Jev System One call's state, model, questions and typed answers, usable with any OTel backend.
+    metrics:
+      repo_stars: 1228
+    date: '2023-12-26'
+    links:
+      docs: https://arize-ai.github.io/openinference/
+      pypi: https://pypi.org/project/openinference-instrumentation-typesafe
+    tags:
+    - tracing
+    - opentelemetry
+    - instrumentation
+  - name: Opik TypeSafe integration
+    url: https://github.com/comet-ml/opik/tree/main/sdks/python/src/opik/integrations/typesafe
+    kind: repo
+    author: comet-ml
+    description: Opik Python SDK integration that wraps sync and async TypeSafe clients so every Jev call is traced in Opik's LLM observability and evaluation platform.
+    image: https://raw.githubusercontent.com/comet-ml/opik/refs/heads/main/apps/opik-documentation/documentation/static/img/opik-logo.svg
+    metrics:
+      repo_stars: 22188
+    date: '2023-05-10'
+    links:
+      docs: https://www.comet.com/docs/opik/
+    tags:
+    - tracing
+    - opik
+    - python
+  - name: Phoenix TypeSafe AI integration
+    url: https://arize.com/docs/phoenix/integrations/llm-providers/typesafe
+    kind: docs
+    author: Arize Phoenix
+    description: Arize Phoenix integration docs for tracing TypeSafe AI calls in Python and TypeScript, so each Jev decision is recorded as a trace with a line of setup code.
+    image: https://arizeai-433a7140.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DTypeSafe%2BAI%26title%3DTypeSafe%2BAI%26description%3DTypeSafe%2BAI%2Bis%2Ba%2Bmodel%2Bprovider%2Bthat%2Banswers%2Btyped%2Bquestions%2Babout%2Bstructured%2Bstate%252C%2Breturning%2Bschema-validated%2Bresults%2Binstead%2Bof%2Bfree-form%2Btext.%26theme%3D39bdea6277da2fa182a39f32&w=1200&q=100
+    links:
+      x: https://x.com/ArizePhoenix/status/2101068055782797731
+    tags:
+    - tracing
+    - phoenix
+  - name: Phoenix TypeSafe tracing
+    url: https://github.com/Arize-ai/phoenix/tree/main/docs/phoenix/integrations/llm-providers/typesafe
+    kind: docs
+    author: Arize-ai
+    description: OpenInference instrumentation for the TypeSafe Python and TypeScript SDKs that records each System One call's state, questions and typed answers as spans in Arize Phoenix.
+    image: https://repository-images.githubusercontent.com/564072810/f3666cdf-cb3e-4056-8a25-27cb3e6b5848
+    metrics:
+      repo_stars: 11567
+    date: '2022-11-09'
+    links:
+      pypi: https://pypi.org/project/openinference-instrumentation-typesafe
+    tags:
+    - tracing
+    - opentelemetry
+    - phoenix
+  - name: Vessel System One adapter
+    url: https://github.com/spenceclark/Vessel/blob/main/src/Vessel/Formats/TypeSafeSystemOneAdapter.cs
+    kind: repo
+    author: spenceclark
+    description: Adapter in Vessel, a local-first observability proxy for LLM traffic, that captures TypeSafe System One requests sent directly or via OpenRouter Decisions and shows their typed questions, answers and token usage.
+    image: https://raw.githubusercontent.com/spenceclark/Vessel/main/docs/assets/main_screen.png
+    metrics:
+      repo_stars: 6
+    date: '2026-08-27'
+    links:
+      app: https://vesselproxy.app/
+      repo: https://github.com/spenceclark/Vessel
+    tags:
+    - observability
+    - proxy
+- slug: community-sdks
+  title: Community SDKs
+  entries:
+  - name: '@lionlang/typesafe-ai'
+    url: https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai
+    kind: repo
+    author: andrueandersoncs
+    description: Bindings that expose every Jev question primitive plus the System One and models APIs as functions in Lion, a JSON-based Lisp whose evaluator runs on Effect v4.
+    metrics:
+      repo_stars: 16
+    date: '2025-12-11'
+    links:
+      repo: https://github.com/andrueandersoncs/lion
+    tags:
+    - lisp
+    - language-bindings
+  - name: AILANG decide_jev
+    url: https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail
+    kind: repo
+    author: sunholo-data
+    description: Runnable spike that calls Jev through OpenRouter's Decisions API from pure AILANG, the effect-typed language for AI-written code, modeling Noul, Choice and Score as typed questions and answers that keep full distributions.
+    image: https://repository-images.githubusercontent.com/1064514521/5c945465-b033-4839-9357-182fc39a2503
+    metrics:
+      repo_stars: 34
+    date: '2025-09-26'
+    links:
+      repo: https://github.com/sunholo-data/ailang
+    tags:
+    - ailang
+    - language
+    - openrouter
+  - name: Aquila
+    url: https://github.com/fbettag/aquila
+    kind: repo
+    author: fbettag
+    description: Elixir library for orchestrating OpenAI-compatible Responses and Chat Completions APIs that also asks TypeSafe System One typed choice, score and noul questions, with recorder/replay fixtures for deterministic tests.
+    metrics:
+      stars: 5
+    date: '2025-09-27'
+    tags:
+    - elixir
+    - phoenix
+  - name: genai typesafe provider
+    url: https://github.com/maruel/genai/tree/main/providers/typesafe
+    kind: repo
+    author: maruel
+    description: 'TypeSafe provider for maruel/genai, a Go AI package: Noul, Choice and Score questions are declared as Go struct fields and answers decode back into the same struct with confidence and full distributions.'
+    metrics:
+      repo_stars: 32
+    date: '2025-03-06'
+    links:
+      repo: https://github.com/maruel/genai
+    tags:
+    - go
+    - sdk
+  - name: Go SDK
+    url: https://github.com/Tangerg/typesafe-sdk-go
+    kind: repo
+    author: Tangerg
+    description: Community Go client for the System One endpoint.
+    metrics:
+      stars: 9
+    date: '2026-09-18'
+    tags:
+    - go
+    - sdk
+  - name: goai-kit jev
+    url: https://github.com/mhrlife/goai-kit/tree/master/jev
+    kind: repo
+    author: mhrlife
+    description: 'Standalone Go client for Jev inside the goai-kit LLM library, using only the standard library: typed Noul, Choice and Score questions and answers via OpenRouter or TypeSafe, with context cancellation and retry-classified HTTP errors.'
+    metrics:
+      repo_stars: 45
+    date: '2025-05-18'
+    links:
+      repo: https://github.com/mhrlife/goai-kit
+    tags:
+    - go
+    - sdk
+  - name: http4k TypeSafe connector
+    url: https://github.com/http4k/http4k/tree/master/connect/ai/typesafe
+    kind: repo
+    author: http4k
+    description: TypeSafe connector for the http4k Kotlin toolkit with a typed System One client and a fake, exposing Jev Noul, Choice and Score questions as http4k actions.
+    image: https://kotlin.link/awesome-kotlin.svg
+    metrics:
+      repo_stars: 2789
+    date: '2017-03-23'
+    links:
+      app: https://http4k.org
+    tags:
+    - kotlin
+    - connector
+    - client
+  - name: Hunch
+    url: https://github.com/carldaws/hunch
+    kind: repo
+    author: carldaws
+    description: Ruby and Rails gem for probabilistic control flow that turns Jev answers into Ruby values, with chance, pick and rate calls and graded predicates such as likely? for branching directly on a judgment.
+    metrics:
+      stars: 14
+    date: '2026-09-18'
+    tags:
+    - ruby
+    - rails
+    - sdk
+  - name: jev (Go)
+    url: https://github.com/anilsenay/jev
+    kind: repo
+    author: anilsenay
+    description: Unofficial Go client for the System One API where answers arrive as your own Go types, so a Choice over an Intent enum yields an Intent and unanswerable questions fail before the request is sent.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - go
+    - sdk
+  - name: jev (okooo5km)
+    url: https://github.com/okooo5km/jev
+    kind: repo
+    author: okooo5km
+    description: Single-file stdlib Python CLI and Agent Skill for yes, pick and score decisions from the shell via the TypeSafe API or OpenRouter, with calibrated probabilities, semantic grep and batch mode.
+    metrics:
+      stars: 7
+    date: '2026-09-18'
+    tags:
+    - cli
+    - agent-skill
+    - python
+  - name: jev (Ruby)
+    url: https://github.com/virolea/jev
+    kind: repo
+    author: virolea
+    description: Ruby gem for the Jev API with ask, choose, and score methods for Noul, Choice, and Score questions evaluated in parallel against one state.
+    metrics:
+      stars: 3
+    date: '2026-09-19'
+    tags:
+    - ruby
+    - sdk
+  - name: Jev CLI
+    url: https://github.com/model-clis/jev
+    kind: repo
+    author: model-clis
+    description: 'Stateless Rust CLI plus an agent skill that turns Jev judgments into shell primitives: stable JSON on stdout and exit codes to branch on in scripts and CI.'
+    date: '2026-09-18'
+    tags:
+    - cli
+    - rust
+    - ci
+  - name: Jev for OTP
+    url: https://github.com/dannote/jev
+    kind: repo
+    author: dannote
+    description: 'Elixir client that treats Jev as an OTP peer process: a GenServer sends state and typed questions, and each answer arrives as a message to pattern match on, with a hundred calls able to be in flight.'
+    metrics:
+      stars: 28
+    date: '2026-09-17'
+    links:
+      hex: https://hex.pm/packages/jev
+    tags:
+    - elixir
+    - otp
+    - sdk
+  - name: Jev Java
+    url: https://github.com/gudcks0305/jev-java
+    kind: repo
+    author: gudcks0305
+    description: Unofficial Java 17+ SDK for Jev through TypeSafe, OpenRouter, Vercel AI Gateway, or Cloudflare, with declarative record outputs and optional Spring Boot and WebClient support.
+    metrics:
+      stars: 3
+    date: '2026-09-19'
+    tags:
+    - java
+    - spring-boot
+    - sdk
+  - name: Jev Java SDK
+    url: https://github.com/Olti1947/jev-java
+    kind: repo
+    author: Olti1947
+    description: Idiomatic Java 17+ client for the System One API, available via Maven and Gradle, where every primitive accepts plain strings or structured instructions and criteria, with Rubric and ScoreLevel helpers.
+    metrics:
+      stars: 3
+    date: '2026-09-18'
+    tags:
+    - java
+    - sdk
+  - name: Jev SDK for PHP
+    url: https://github.com/mzainzulifqar/jev-php-sdk
+    kind: repo
+    author: mzainzulifqar
+    description: Framework-agnostic PHP 8.1+ client for the System One API that works with any PSR-18 HTTP client and Laravel 8-13, with Noul, Score and Choice question builders.
+    metrics:
+      stars: 2
+    date: '2026-09-18'
+    links:
+      packagist: https://packagist.org/packages/mzainzulifqar/jev-php-sdk
+    tags:
+    - php
+    - laravel
+    - sdk
+  - name: jev-cli (lhotwll217)
+    url: https://github.com/lhotwll217/jev-cli
+    kind: repo
+    author: lhotwll217
+    description: Thin CLI over the TypeSafe System One API that takes JSON in and prints typed decisions, for ad-hoc experiments, eval loops, and agent harnesses, with the key kept in the OS credential store.
+    date: '2026-09-18'
+    tags:
+    - cli
+    - typescript
+  - name: jev-dsl
+    url: https://github.com/inanna-malick/jev-dsl
+    kind: repo
+    author: inanna-malick
+    description: Early-alpha Haskell DSL that writes a packet of labeled Jev questions as one expression, infers its type, renders the exact request JSON, and decodes answers under the same labels.
+    jev: Choice answers are consumed through exhaustive labeled handlers that carry the offered payload.
+    metrics:
+      stars: 7
+    date: '2026-09-17'
+    tags:
+    - haskell
+    - dsl
+  - name: jev-go
+    url: https://github.com/Stumble/jev-go
+    kind: repo
+    author: Stumble
+    description: Community Go SDK and CLI for the Jev System One API, working with TypeSafe directly or through Vercel AI Gateway, with an adapter skill and an AGENTS.md guide for coding agents integrating it.
+    metrics:
+      stars: 4
+    date: '2026-09-17'
+    tags:
+    - go
+    - sdk
+    - cli
+  - name: jev-go
+    url: https://github.com/guillemus/jev-go
+    kind: repo
+    author: guillemus
+    description: Minimal unofficial Go SDK for the Jev API with Noul, Choice and Score questions, structured inputs, custom client config and model listing.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - go
+  - name: jev-go
+    url: https://github.com/kyledickey/jev-go
+    kind: repo
+    author: kyledickey
+    description: Go SDK for the Jev API with typed Noul, Choice and Score question and answer types, an APIError carrying status and raw body, and an examples/basic program.
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    links:
+      link: https://docs.typesafe.ai
+    tags:
+    - go
+    - sdk
+  - name: jev-go (Gaurav-Gosain)
+    url: https://github.com/Gaurav-Gosain/jev-go
+    kind: repo
+    author: Gaurav-Gosain
+    description: Go client for the System One API with typed Noul, Choice and Score questions and answers, constructors for common shapes and batching helpers.
+    metrics:
+      stars: 3
+    date: '2026-09-16'
+    tags:
+    - go
+  - name: jev-rs
+    url: https://github.com/abeldzan/jev-rs
+    kind: repo
+    author: abeldzan
+    description: Async-first Rust client for the TypeSafe API with typed System One questions and answers, model discovery, configurable retries, structured errors and an optional blocking client.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - rust
+    - sdk
+    - unofficial
+  - name: jev-sdk-java
+    url: https://github.com/luigivis/jev-sdk-java
+    kind: repo
+    author: luigivis
+    description: Unofficial Java 21 client for the Jev System One API that models requests with enums, sealed interfaces and records so a request that compiles is one the API accepts.
+    metrics:
+      stars: 1
+    date: '2026-09-21'
+    tags:
+    - java
+    - sdk
+    - unofficial
+  - name: jev.nu
+    url: https://github.com/cablehead/jev.nu
+    kind: repo
+    author: cablehead
+    description: 'Single-file Nushell module for the System One API: pipe in content, ask questions, and get numeric answers you can filter and sort on in the shell, with a step-by-step tutorial.'
+    metrics:
+      stars: 8
+    date: '2026-09-18'
+    tags:
+    - nushell
+    - shell
+  - name: jev4k
+    url: https://github.com/pambrose/jev4k
+    kind: repo
+    author: pambrose
+    description: Kotlin DSL and client that declares typed Jev questions, including enum-valued choices, sends them in one request and reads the answers back as typed values; published on Maven Central.
+    metrics:
+      stars: 4
+    date: '2026-09-20'
+    links:
+      site: https://jev4k.com
+      link: https://jev4k.com
+    tags:
+    - kotlin
+    - jvm
+    - dsl
+  - name: jev_dart
+    url: https://github.com/Solido/jev_dart
+    kind: repo
+    author: Solido
+    description: Pure Dart client for Jev usable from CLIs, servers, and Flutter apps, with pooled HTTP/2 transport on native platforms and HTTP/1.1 on the web.
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    tags:
+    - dart
+    - flutter
+    - sdk
+  - name: jev_elixir
+    url: https://github.com/elue-dev/jev_elixir
+    kind: repo
+    author: elue-dev
+    description: Small Elixir client for Jev with helpers like Jev.ask?/2 that return real booleans, supporting Noul, Choice and Score through TypeSafe or OpenRouter's Decisions API.
+    image: https://external-preview.redd.it/H7x1s1uO-DHxBlxVk8E9TndaY2laC_-actLTnK0i4f8.png?auto=webp&s=9b569bd26ace5f9fc499e5387541164e1efa6bac
+    metrics:
+      stars: 3
+    date: '2026-09-21'
+    links:
+      demo: https://www.reddit.com/r/elixir/comments/1wmnxzb/i_built_a_small_elixir_client_for_jev_with/
+    tags:
+    - elixir
+    - sdk
+    - openrouter
+  - name: jevclient
+    url: https://github.com/AboveColin/jevclient
+    kind: repo
+    author: AboveColin
+    description: Async aiohttp-based Python client for Jev that batches Noul, Choice and Score questions into one request; measured 3 questions at 712 ms and 100 questions at 714 ms.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    links:
+      pypi: https://pypi.org/project/jevclient/
+    tags:
+    - python
+    - async
+  - name: jevgo
+    url: https://github.com/fgn/jevgo
+    kind: repo
+    author: fgn
+    description: Dependency-free Go client for the System One API covering the same surface as the official SDKs, with functional options, context cancellation and optional Langfuse tracing.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - go
+    - langfuse
+  - name: jevgo
+    url: https://github.com/devbackend/jevgo
+    kind: repo
+    author: devbackend
+    description: Unofficial stdlib-only Go client for the System One API that sends a state and a map of typed Noul, Choice and Score questions in one call and returns model version, usage and request ID.
+    metrics:
+      stars: 5
+    date: '2026-09-21'
+    tags:
+    - go
+    - sdk
+    - unofficial
+  - name: jevr
+    url: https://github.com/simxnherrera/jevr
+    kind: repo
+    author: simxnherrera
+    description: R client that sends a state and typed questions to Jev through TypeSafe or OpenRouter and returns answers, probabilities, confidence, and usage as R objects.
+    metrics:
+      stars: 2
+    date: '2026-09-18'
+    tags:
+    - r
+    - sdk
+  - name: JevSharp
+    url: https://github.com/bariskisir/JevSharp
+    kind: repo
+    author: bariskisir
+    description: SDK for .NET 10 for Jev decisions through TypeSafe, OpenRouter, Vercel AI Gateway, and compatible endpoints, with dependency injection, failover, retries, and logging.
+    image: https://raw.githubusercontent.com/bariskisir/JevSharp/master/assets/jevsharp-logo.svg
+    date: '2026-09-21'
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: Karma Jev package
+    url: https://github.com/MelloB1989/karma/tree/main/ai/jev
+    kind: repo
+    author: MelloB1989
+    description: Go client for Jev inside the Karma utility library, with typed questions and answers, batching, retries, error types and a guard subpackage.
+    image: https://raw.githubusercontent.com/MelloB1989/karma/main/docs/karma.png
+    metrics:
+      repo_stars: 9
+    date: '2024-11-30'
+    links:
+      repo: https://github.com/MelloB1989/karma
+      docs: https://docs.mellob.in
+    tags:
+    - go
+    - sdk
+    - client
+  - name: kunobi-jev
+    url: https://github.com/kunobi-ninja/kunobi-jev
+    kind: repo
+    author: kunobi-ninja
+    description: Rust client for the System One API with noul, choice and score builders that enforce the 255-option and 2-10-level limits before sending, plus helpers to normalize scores and rank choices.
+    date: '2026-09-17'
+    tags:
+    - rust
+    - sdk
+  - name: octolib evaluation
+    url: https://github.com/Muvon/octolib/blob/main/src/evaluation/providers/typesafe.rs
+    kind: repo
+    author: Muvon
+    description: Rust library that puts 30+ AI providers behind one provider:model string and adds a structured evaluation module for TypeSafe Jev, callable directly or billed through Cloudflare AI Gateway.
+    jev: octolib::evaluate builds Noul and Choice questions over a state, e.g. urgency and department for a support message.
+    metrics:
+      repo_stars: 8
+    date: '2025-08-28'
+    links:
+      app: https://octomind.run/product/octolib
+      repo: https://github.com/Muvon/octolib
+    tags:
+    - rust
+    - multi-provider
+    - library
+  - name: openai-scala-client TypeSafe module
+    url: https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client
+    kind: repo
+    author: cequence-io
+    description: TypeSafe module in the async openai-scala-client that sends shared state and typed questions to Jev, with examples for confidence-gated routing, semantic find and an OpenAI-style adapter.
+    metrics:
+      repo_stars: 248
+    date: '2026-09-16'
+    links:
+      repo: https://github.com/cequence-io/openai-scala-client
+      examples: https://github.com/cequence-io/openai-scala-client/tree/master/openai-examples/src/main/scala/io/cequence/openaiscala/examples/typesafe
+    tags:
+    - scala
+    - client
+  - name: Roze System One client
+    url: https://github.com/roze-team/roze/blob/main/crates/roze-ai/src/typesafe_system_one.rs
+    kind: repo
+    author: roze-team
+    description: Typed Rust client for the TypeSafe System One API inside the roze-ai crate of the Roze Rust service framework, with Noul, Choice and Score question types and request validation.
+    metrics:
+      repo_stars: 7
+    date: '2026-06-06'
+    links:
+      repo: https://github.com/roze-team/roze
+    tags:
+    - rust
+    - client
+  - name: ruby_decision_model
+    url: https://github.com/obie/ruby_decision_model
+    kind: repo
+    author: obie
+    description: Standard-library-only Ruby client for decision models such as Jev, with one Client that talks to OpenRouter by default or TypeSafe’s native API and parses choices, probabilities, scores and usage.
+    metrics:
+      stars: 49
+    date: '2026-09-18'
+    tags:
+    - ruby
+    - sdk
+  - name: RubyLLM provider
+    url: https://github.com/javiergradiche/ruby_llm-providers-typesafe
+    kind: repo
+    author: javiergradiche
+    description: Adds Jev as a provider for the RubyLLM library.
+    metrics:
+      stars: 2
+    date: '2026-09-18'
+    links:
+      rubygems: https://rubygems.org/gems/ruby_llm-providers-typesafe
+    tags:
+    - ruby
+    - ruby-llm
+  - name: Rust client
+    url: https://gitlab.com/porky11/jev
+    kind: repo
+    author: porky11
+    description: Community Rust crate published as `jev`.
+    metrics:
+      downloads: 68
+    date: '2026-09-17'
+    links:
+      crates: https://crates.io/crates/jev
+    tags:
+    - rust
+    - sdk
+  - name: rust-sysone
+    url: https://github.com/zcoder-run/rust-sysone
+    kind: repo
+    author: zcoder-run
+    description: Early unofficial Rust client for the System One API from the author of the genai crate, with a fluent Request builder and typed Noul, Choice and Score questions.
+    metrics:
+      stars: 4
+      views: 9557
+      likes: 109
+    date: '2026-09-19'
+    links:
+      video: https://www.youtube.com/watch?v=pU73lYF7R1I
+    tags:
+    - rust
+    - sdk
+  - name: s1
+    url: https://github.com/AbdelStark/s1-rs
+    kind: repo
+    author: AbdelStark
+    description: Typed System One layer for Rust that derives Choice, Score and Noul questions from enums and structs, so adding an enum variant breaks the match until handled; ships a network-free fake client for tests.
+    metrics:
+      stars: 1
+    date: '2026-09-16'
+    tags:
+    - rust
+    - derive-macros
+    - sdk
+  - name: s1-ruby
+    url: https://github.com/innocentdiaz/s1_ruby
+    kind: repo
+    author: innocentdiaz
+    description: Ruby gem that makes System One measurement a language primitive, with noul, choice and score kinds, scales, batches and a TypeSafe provider behind its own spec suite, plus a companion Rails package.
+    image: https://raw.githubusercontent.com/innocentdiaz/s1_ruby/master/preview.png
+    metrics:
+      stars: 2
+    date: '2026-09-18'
+    tags:
+    - ruby
+    - rails
+    - sdk
+  - name: scala-jev-sdk
+    url: https://github.com/ticofab/scala-jev-sdk
+    kind: repo
+    author: ticofab
+    description: 'Scala 3 client for the System One API with no bundled effect system: hand it any sttp backend (Future, blocking, cats-effect, ZIO) and read typed Noul, Choice and Score answers.'
+    metrics:
+      stars: 6
+    date: '2026-09-19'
+    tags:
+    - scala
+    - sdk
+    - sttp
+  - name: Swift SDK
+    url: https://github.com/NSStudent/JevSwiftSDK
+    kind: repo
+    author: NSStudent
+    description: Community Swift client that defaults to `jev-latest`.
+    metrics:
+      stars: 8
+    date: '2026-09-19'
+    tags:
+    - swift
+    - ios
+    - sdk
+  - name: swift-typesafe
+    url: https://github.com/ainame/swift-typesafe
+    kind: repo
+    author: ainame
+    description: Unofficial Swift 6.4 SDK following the Python SDK's 0.7.0 API, with a @QuestionSet macro that generates typed answers, dynamic questions and Linux support.
+    metrics:
+      stars: 13
+    date: '2026-09-18'
+    tags:
+    - swift
+    - macros
+  - name: systemone
+    url: https://github.com/lu-zero/systemone
+    kind: repo
+    author: lu-zero
+    description: Runtime-agnostic Rust client for the TypeSafe systemone API, with a derive macro and a facet-reflection crate that build Choice labels and descriptions from Rust enums.
+    date: '2026-09-18'
+    tags:
+    - rust
+    - sdk
+    - macros
+  - name: TinyJevClient
+    url: https://github.com/tinyhumansai/tinyjevclient
+    kind: repo
+    author: tinyhumansai
+    description: Typed Rust client for the System One API that validates responses against the originating request and returns latency, attempts and usage alongside the answers; also works with OpenRouter.
+    date: '2026-09-17'
+    tags:
+    - rust
+    - sdk
+    - openrouter
+  - name: tsai
+    url: https://github.com/oceanByte/tsai-cli
+    kind: repo
+    author: oceanByte
+    description: Unofficial command-line wrapper for the TypeSafe System One API, meant for shell pipelines, scratch CI gates, pre-commit hooks and coding agents that need a Jev judgment without a client library.
+    date: '2026-09-17'
+    tags:
+    - cli
+    - unofficial
+  - name: TypeSafe (Elixir)
+    url: https://github.com/mattneel/typesafe
+    kind: repo
+    author: mattneel
+    description: Community Elixir client built on Req, Zoi and Telemetry that sends Choice, Noul and Score questions in one request and returns structs with probabilities, plus test helpers and a schema mix task.
+    metrics:
+      stars: 1
+    date: '2026-09-16'
+    tags:
+    - elixir
+    - sdk
+  - name: TypeSafe .NET SDK (Gravicode)
+    url: https://github.com/dotnetvibecoderz/vibe_sdk/tree/main/TypeSafeSDK
+    kind: repo
+    author: DotNetVibeCoderz
+    description: Strongly typed .NET 10 client for the System One API with a local simulator, CLI, REST API, Blazor app, notebooks, and a WPF board-games demo, documented in Indonesian and English.
+    date: '2026-09-19'
+    links:
+      repo: https://github.com/dotnetvibecoderz/vibe_sdk
+    tags:
+    - dotnet
+    - sdk
+  - name: TypeSafe AI Go SDK (sergeax)
+    url: https://github.com/SergeAx/typesafe-sdk-go
+    kind: repo
+    author: SergeAx
+    description: Go 1.23 client for the System One API with Noul, Choice and Score questions in one request, retries that honor Retry-After, errors.Is-matchable errors and slog logging.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - go
+    - sdk
+  - name: TypeSafe AI Kotlin SDK
+    url: https://github.com/ufec/typesafe-sdk-kotlin
+    kind: repo
+    author: ufec
+    description: Kotlin port of the official JavaScript SDK 0.6.0 for Android and the JVM, with answer types derived from the questions, upstream-matching retries and HTTP and SOCKS5 proxy support.
+    date: '2026-09-18'
+    tags:
+    - kotlin
+    - android
+    - sdk
+  - name: TypeSafe AI Swift SDK
+    url: https://github.com/alterhq/typesafe-sdk-swift
+    kind: repo
+    author: alterhq
+    description: Unofficial dependency-free Swift 6 client for Choice, Score and Noul questions on macOS, iOS, tvOS and watchOS, ported from the official SDKs, with strict concurrency, retries and a backend-proxy setup.
+    metrics:
+      stars: 4
+    date: '2026-09-15'
+    tags:
+    - swift
+    - ios
+    - sdk
+  - name: TypeSafe AI Swift SDK
+    url: https://github.com/InsaneArts/typesafe-sdk-swift
+    kind: repo
+    author: InsaneArts
+    description: Dependency-free Swift 6 community SDK for macOS 13 and iOS 16 where answer types are inferred from your questions and multiple answers come back as a typed tuple.
+    metrics:
+      stars: 3
+    date: '2026-09-17'
+    tags:
+    - swift
+    - ios
+    - sdk
+  - name: TypeSafe for Elixir
+    url: https://github.com/hfiguera/typesafe_ai
+    kind: repo
+    author: hfiguera
+    description: Elixir client for latency-sensitive apps built on Mint, with supervised HTTP/1 and HTTP/2 connections, bounded concurrency and queues, request deadlines, retries, telemetry and an optional connection pool.
+    date: '2026-09-16'
+    tags:
+    - elixir
+    - mint
+    - sdk
+  - name: TypeSafe Go
+    url: https://github.com/sd109/typesafe-go
+    kind: repo
+    author: sd109
+    description: Go toolkit with a standard-library-only TypeSafe client, qgrep (a grep-like CLI for natural-language questions over text) and a kubectl plugin that asks questions about Kubernetes pod logs.
+    metrics:
+      stars: 3
+    date: '2026-09-19'
+    tags:
+    - go
+    - kubectl
+    - cli
+  - name: TypeSafe Go (Stacklok)
+    url: https://github.com/stacklok/typesafe-go
+    kind: repo
+    author: stacklok
+    description: Security-focused, stdlib-only Go client for the System One API maintained by Stacklok, with explicit credential options and no implicit environment reads, logging or network calls on construction.
+    metrics:
+      stars: 1
+    date: '2026-09-21'
+    tags:
+    - go
+    - sdk
+    - security
+  - name: TypeSafe Go SDK (kisshan13)
+    url: https://github.com/kisshan13/typesafe-ai-go
+    kind: repo
+    author: kisshan13
+    description: Community Go client for the System One API with raw request structs, fluent question builders, retries and examples, defaulting to jev-latest.
+    metrics:
+      stars: 4
+    date: '2026-09-20'
+    tags:
+    - go
+    - sdk
+  - name: TypeSafe PHP SDK
+    url: https://github.com/binnash/typesafe-sdk
+    kind: repo
+    author: binnash
+    description: PHP 8.2+ SDK for the System One API with a PSR-18 HTTP client, Noul, Choice and Score questions, retries, logging and a Laravel integration.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - php
+    - laravel
+    - sdk
+  - name: TypeSafe SDK for Go
+    url: https://github.com/unimtx/typesafe-sdk-go
+    kind: repo
+    author: unimtx
+    description: Community Go client for the System One API using only the standard library, with typed Choice, Score and Noul questions, contexts, retries and structured errors.
+    metrics:
+      stars: 1
+    date: '2026-09-19'
+    tags:
+    - go
+    - sdk
+  - name: TypeSafe Swift SDK
+    url: https://github.com/krzyzanowskim/TypeSafe
+    kind: repo
+    author: krzyzanowskim
+    description: SwiftPM client for the TypeSafe System One API that follows the official JavaScript SDK's behavior for noul, choice, and score questions, with a small demo app.
+    image: https://pbs.twimg.com/media/HSmaEbYX0AAvCsn.png?name=orig
+    metrics:
+      stars: 27
+    date: '2026-09-19'
+    links:
+      demo: https://x.com/krzyzanowskim/status/2101380130752831644
+    tags:
+    - swift
+    - sdk
+  - name: typesafe-ai (Rust)
+    url: https://github.com/Twister915/typesafe-ai
+    kind: repo
+    author: Twister915
+    description: Typed Rust client for System One with an async reqwest or blocking ureq backend and observable retries, deserializing Noul, Choice and Score answers into Rust enums with usage data.
+    metrics:
+      stars: 11
+    date: '2026-09-16'
+    tags:
+    - rust
+  - name: typesafe-ai-java
+    url: https://dev.to/jamilxt/i-built-the-first-java-sdk-for-jev-typesafes-system-one-model-2m37
+    kind: article
+    author: jamilxt
+    description: Write-up on building an unofficial JVM client for Jev, published on Maven Central as a pure-Java core plus Kotlin and Spring starter modules, with results from live API tests.
+    image: https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fbel61ixedyfbdjbymetl.png
+    date: '2026-09-20'
+    links:
+      repo: https://github.com/jamilxt/typesafe-ai-java
+      project: https://github.com/jamilxt/typesafe-ai-java
+    tags:
+    - java
+    - kotlin
+    - spring
+  - name: typesafe-ai-rs
+    url: https://github.com/gilljon/typesafe-ai-rs
+    kind: repo
+    author: gilljon
+    description: Independent Rust client for the System One API with async and blocking clients, typed Noul, Choice, and Score questions, model discovery, retries, and cancellation.
+    metrics:
+      stars: 4
+    date: '2026-09-17'
+    links:
+      docs: https://docs.rs/typesafe-ai-rs
+    tags:
+    - rust
+    - sdk
+  - name: typesafe-ai-ruby
+    url: https://github.com/hnegishi/typesafe-ai-ruby
+    kind: repo
+    author: hnegishi
+    description: Ruby client for the System One API with no dependencies beyond the standard library, sending Choice, Score, and Noul questions and returning answers with probabilities and confidence.
+    date: '2026-09-19'
+    tags:
+    - ruby
+    - sdk
+  - name: typesafe-api (Rust)
+    url: https://github.com/noahbclarkson/typesafe-api-rs
+    kind: repo
+    author: noahbclarkson
+    description: Strongly typed Rust client for the System One API where a judgment described once as a Rust type is both the request and the parsed answer, with name-based, typed and derive layers.
+    date: '2026-09-20'
+    tags:
+    - rust
+    - sdk
+    - typed
+  - name: typesafe-cli
+    url: https://github.com/y0usaf/typesafe-cli
+    kind: repo
+    author: y0usaf
+    description: Shell command for Jev that takes a state and typed questions and prints Noul probabilities, Choice picks with confidence, and Score positions as numbers, asking several questions in one ~0.3 s round trip.
+    metrics:
+      stars: 4
+    date: '2026-09-16'
+    tags:
+    - cli
+    - shell
+    - typescript
+  - name: typesafe-cli (geilt)
+    url: https://github.com/geilt/typesafe-cli
+    kind: repo
+    author: geilt
+    description: Standard-library Python CLI and agent skill for Claude, Codex, and Grok that evaluates a state against typed Choice, Score, and Noul questions and prints structured answers.
+    metrics:
+      stars: 3
+    date: '2026-09-17'
+    tags:
+    - cli
+    - python
+    - skill
+  - name: typesafe-client
+    url: https://github.com/JedimEmO/typesafe-client
+    kind: repo
+    author: JedimEmO
+    description: Unofficial async Rust client for the System One API where each added question returns a typed key, so reading a Choice answer as a yes/no probability fails to compile.
+    metrics:
+      stars: 1
+    date: '2026-09-16'
+    tags:
+    - rust
+    - sdk
+  - name: typesafe-go
+    url: https://github.com/zhirschtritt/typesafe-go
+    kind: repo
+    author: zhirschtritt
+    description: Unofficial, dependency-free Go client for System One and model discovery, with configurable retries, base URL, default model, and per-request overrides.
+    metrics:
+      stars: 1
+    date: '2026-09-16'
+    links:
+      docs: https://pkg.go.dev/github.com/zhirschtritt/typesafe-go
+    tags:
+    - go
+    - sdk
+  - name: typesafe-go
+    url: https://github.com/Shubham510/typesafe-go
+    kind: repo
+    author: Shubham510
+    description: Unofficial zero-dependency Go client for the System One API so Go services can call Jev with Choice, Score and Noul questions, per-call retries and model listing without a Python or Node sidecar.
+    date: '2026-09-18'
+    tags:
+    - go
+    - sdk
+    - unofficial
+  - name: typesafe-go (2389-research)
+    url: https://github.com/2389-research/typesafe-go
+    kind: repo
+    author: 2389-research
+    description: Zero-dependency Go client for System One where each question is a typed handle you read the answer back through, so the compiler checks the answer shape.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - go
+  - name: typesafe-go (cole-gillespie)
+    url: https://github.com/cole-gillespie/typesafe-go
+    kind: repo
+    author: cole-gillespie
+    description: Unofficial dependency-free Go SDK modeled on the official TypeScript and Python clients, with typed answers, retries and context cancellation.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - go
+  - name: typesafe-java
+    url: https://github.com/dfa1/typesafe-java
+    kind: repo
+    author: dfa1
+    description: Java 21 client and CLI for the TypeSafe API that sends any JSON state with Noul, Choice, and Score questions, with typed-record mapping, a testkit module, and an uber-jar for CI checks.
+    date: '2026-09-19'
+    tags:
+    - java
+    - sdk
+    - cli
+  - name: typesafe-rs
+    url: https://github.com/AbdelStark/typesafe-rs
+    kind: repo
+    author: AbdelStark
+    description: Latency-first community Rust client for System One with async requests, an optional blocking interface and local mock testing, matching the official SDKs' env vars, retries and error kinds.
+    metrics:
+      stars: 1
+    date: '2026-09-16'
+    links:
+      docs: https://docs.rs/typesafe-rs/latest/typesafe_rs/
+    tags:
+    - rust
+  - name: typesafe-rs
+    url: https://github.com/nirgal-soft/typesafe-rs
+    kind: repo
+    author: nirgal-soft
+    description: Async Rust client plus a JSON-first CLI for the TypeSafe API that sends noul, choice and score questions and returns JSON with defined exit codes.
+    date: '2026-09-19'
+    tags:
+    - rust
+    - sdk
+    - cli
+  - name: typesafe-sdk (Ruby)
+    url: https://github.com/joshmn/typesafe-sdk
+    kind: repo
+    author: joshmn
+    description: Community Ruby client for the System One API that builds Noul, Choice, and Score questions with optional structured instructions and defaults to jev-latest.
+    metrics:
+      stars: 6
+    date: '2026-09-16'
+    tags:
+    - ruby
+    - sdk
+  - name: typesafe-sdk-cpp
+    url: https://github.com/yunusey/typesafe-sdk-cpp
+    kind: repo
+    author: yunusey
+    description: Unofficial C++23 client for the TypeSafe API, ported from the Rust SDK, that sends named questions about a state to /v1/systemone and returns typed answers.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - cpp
+    - sdk
+    - unofficial
+  - name: typesafe-sdk-go
+    url: https://github.com/valksor/typesafe-sdk-go
+    kind: repo
+    author: valksor
+    description: 'Idiomatic Go client for the System One API aiming for 1:1 parity with the official JS and Python SDKs: the same wire contract, environment configuration, retry semantics and typed errors.'
+    date: '2026-09-17'
+    tags:
+    - go
+    - sdk
+  - name: typesafe-sdk-go
+    url: https://github.com/RadixILS-Dev/typesafe-sdk-go
+    kind: repo
+    author: RadixILS-Dev
+    description: Go client for the TypeSafe API that follows the Python SDK v0.6.0 wire format and retry behavior with a smaller Go-native interface.
+    date: '2026-09-18'
+    tags:
+    - go
+    - sdk
+    - client
+  - name: typesafe-sdk-go
+    url: https://github.com/captain-corgi/typesafe-sdk-go
+    kind: repo
+    author: captain-corgi
+    description: Community Go SDK for the TypeSafe API with zero runtime dependencies and feature parity with the Python SDK v0.7.0, returning statically typed Noul, Choice and Score answers.
+    metrics:
+      stars: 8
+    date: '2026-09-20'
+    links:
+      app: https://captain-corgi.github.io/typesafe-sdk-go/
+    tags:
+    - go
+    - sdk
+    - community
+  - name: typesafe-sdk-go (atharvamhaske)
+    url: https://github.com/atharvamhaske/typesafe-sdk-go
+    kind: repo
+    author: atharvamhaske
+    description: Unofficial Go SDK built to the same wire contract as the official Python and JavaScript SDKs, with typed choice, score and noul questions, a typed answer union and model discovery.
+    image: https://raw.githubusercontent.com/atharvamhaske/typesafe-sdk-go/main/images/test.png
+    metrics:
+      stars: 12
+    date: '2026-09-18'
+    links:
+      demo: https://x.com/AtharvaXDevs/status/2102067600947834960
+      docs: https://typesafe-sdk-go.mintlify.site/
+    tags:
+    - go
+    - sdk
+  - name: typesafe-sdk-go (dwisiswant0)
+    url: https://github.com/dwisiswant0/typesafe-sdk-go
+    kind: repo
+    author: dwisiswant0
+    description: Go client for the TypeSafe API that sends named Noul, Choice and Score questions in one request, accepting strings, JSON objects or Go structs as state and criteria.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    links:
+      docs: https://go.dw1.io/typesafe-sdk-go?godoc=1
+    tags:
+    - go
+    - sdk
+  - name: typesafe-sdk-java
+    url: https://github.com/Premo-Cloud/typesafe-sdk-java
+    kind: repo
+    author: Premo-Cloud
+    description: Community Java 17+ client for the System One API that depends only on Jackson, with a Spring Boot starter that provides a TypeSafeClient bean.
+    metrics:
+      stars: 3
+    date: '2026-09-18'
+    tags:
+    - java
+    - spring-boot
+  - name: typesafe-sdk-php
+    url: https://github.com/Butochnikov/typesafe-sdk-php
+    kind: repo
+    author: Butochnikov
+    description: Community PHP 8.2+ client for System One with typed Noul, Choice and Score answers, synchronous calls and Guzzle-promise async requests, retries and PSR-3 logging.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    links:
+      laravel: https://github.com/butochnikov/laravel-typesafe-jev
+    tags:
+    - php
+  - name: typesafe-sdk-php
+    url: https://github.com/valksor/typesafe-sdk-php
+    kind: repo
+    author: valksor
+    description: Strictly typed PHP client for the System One API aiming for 1:1 parity with the official JS and Python SDKs, including retry semantics, request metadata and typed errors.
+    date: '2026-09-17'
+    links:
+      packagist: https://packagist.org/packages/valksor/typesafe-sdk-php
+    tags:
+    - php
+    - sdk
+  - name: typesafe-sdk-php
+    url: https://github.com/Fox-Islam/typesafe-sdk-php
+    kind: repo
+    author: Fox-Islam
+    description: PHP 8.3 client for the System One API with typed Noul, Choice and Score questions, a one-call switch between TypeSafe and OpenRouter's decisions endpoint, any PSR-18 transport and a Laravel service provider.
+    date: '2026-09-17'
+    tags:
+    - php
+    - laravel
+    - sdk
+  - name: typesafe-sdk-ruby
+    url: https://github.com/afurm/typesafe-sdk-ruby
+    kind: repo
+    author: afurm
+    description: Unofficial Ruby port of the official JavaScript SDK 0.6.0 with typed answer objects, retries, timeouts, cancellation and configurable logging.
+    image: https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg
+    metrics:
+      stars: 1
+    date: '2026-09-20'
+    links:
+      app: https://typesafe.ai
+    tags:
+    - ruby
+    - sdk
+  - name: typesafe-sdk-rust
+    url: https://github.com/codeitlikemiley/typesafe-sdk-rust
+    kind: repo
+    author: codeitlikemiley
+    description: Rust client matching the Python typesafe-sdk 0.6.0 contract, with async and optional blocking calls, typed question and answer wrappers and an AGENTS.md for coding agents.
+    metrics:
+      stars: 3
+    date: '2026-09-16'
+    tags:
+    - rust
+  - name: typesafe-sdk-swift
+    url: https://github.com/marandaneto/typesafe-sdk-swift
+    kind: repo
+    author: marandaneto
+    description: Experimental Swift 6 port of the official JS and Python SDKs using Swift Package Manager, async/await and URLSession, with no third-party runtime dependencies across Apple platforms.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - swift
+    - ios
+  - name: TypeSafe.AI (.NET SDK)
+    url: https://github.com/typesafe-sdk-csharp/typesafe-sdk
+    kind: repo
+    author: typesafe-sdk-csharp
+    description: Unofficial .NET SDK (NuGet TypeSafe.AI) for System One with NativeAOT-compatible source-generated JSON, a Questions.Build builder for Noul, Choice and Score, Polly-based resilience, dependency injection and OpenTelemetry.
+    metrics:
+      stars: 2
+    date: '2026-09-20'
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: TypeSafe.AI.Sdk (.NET)
+    url: https://github.com/hardkoded/typesafe-sdk-dotnet
+    kind: repo
+    author: hardkoded
+    description: Unofficial .NET port of the JavaScript TypeSafe SDK, targeting net10.0 and netstandard2.0, with Choice, Score and Noul question builders and typed answers.
+    image: https://external-preview.redd.it/tthHFZd6glTBd08_ONWbLfaWSCVKu5vk9pgLfdyltOo.png?auto=webp&s=c67973361c59a5979b398167925110122ecf1e52
+    metrics:
+      stars: 3
+    date: '2026-09-20'
+    links:
+      demo: https://www.reddit.com/r/dotnet/comments/1wlp12g/net_devs_should_also_join_the_jev_hype/
+      docs: https://hardkoded.github.io/typesafe-sdk-dotnet/
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: typesafe.zig
+    url: https://github.com/mattneel/typesafe.zig
+    kind: repo
+    author: mattneel
+    description: Unofficial Zig client where Noul, Choice and Score answers come back as a struct typed at compile time, so a Choice answer is your enum and a misspelled question id fails to compile.
+    date: '2026-09-17'
+    tags:
+    - zig
+    - sdk
+  - name: typesafe_api
+    url: https://github.com/typesend/typesafe_ai
+    kind: repo
+    author: typesend
+    description: Unofficial typed Elixir client for the System One API with offline test stubs that run every example without a key, concurrent fan-out and atom-keyed answers.
+    date: '2026-09-16'
+    links:
+      docs: https://typesafe-api.hexdocs.pm/readme.html
+    tags:
+    - elixir
+    - sdk
+  - name: typesafe_sdk (Elixir)
+    url: https://github.com/nshkrdotcom/typesafe_sdk
+    kind: repo
+    author: nshkrdotcom
+    description: Elixir SDK for Jev's typed questions and probabilistic answers whose final 0.4.1 release now points to the provider-neutral successor system_one_sdk for batching, telemetry and OTP integration.
+    image: https://raw.githubusercontent.com/nshkrdotcom/typesafe_sdk/main/assets/typesafe_sdk.svg
+    metrics:
+      stars: 5
+    date: '2026-09-17'
+    links:
+      successor: https://github.com/nshkrdotcom/system_one_sdk
+      hex: https://hex.pm/packages/typesafe_sdk
+    tags:
+    - elixir
+    - deprecated
+  - name: typesafe_sdk_ex
+    url: https://github.com/vinnie357/typesafe_sdk_ex
+    kind: repo
+    author: vinnie357
+    description: Elixir SDK built on Req and modeled on the official JS SDK, with noul, choice and score question helpers, system_one/3, model listing and typed error returns.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - elixir
+    - sdk
+  - name: TypeSafeAI (.NET, tryAGI)
+    url: https://github.com/tryAGI/TypeSafeAI
+    kind: repo
+    author: tryAGI
+    description: NativeAOT-ready .NET SDK with a transport generated from the official OpenAPI definition plus handwritten typed questions, batching, routing, dependency injection and Microsoft.Extensions.AI integration.
+    metrics:
+      stars: 1
+    date: '2026-09-21'
+    links:
+      docs: https://tryagi.github.io/TypeSafeAI/
+      link: https://tryagi.github.io/TypeSafeAI
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: typesafeai-cli
+    url: https://github.com/maddygoround/typesafeai-cli
+    kind: repo
+    author: maddygoround
+    description: Python CLI for Jev that humans or agents run to ask noul, choice and score questions over JSON state files, with decide, screen and verify flows, fail-closed answers and installable agent skills.
+    metrics:
+      stars: 1
+    date: '2026-09-18'
+    tags:
+    - cli
+    - python
+    - agents
+  - name: typesafeai-dotnet-sdk
+    url: https://github.com/saibimajdi/typesafeai-dotnet-sdk
+    kind: repo
+    author: saibimajdi
+    description: Community .NET SDK for the TypeSafe System One API that asks typed noul, choice, and score questions about text or JSON state and returns structured, probability-backed answers.
+    metrics:
+      stars: 6
+    date: '2026-09-16'
+    links:
+      docs: https://saibimajdi.github.io/typesafeai-dotnet-sdk/
+      link: https://saibimajdi.github.io/typesafeai-dotnet-sdk
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: typesafeai-go
+    url: https://github.com/chez-shanpu/typesafeai-go
+    kind: repo
+    author: chez-shanpu
+    description: Independent Go client for the TypeSafe AI API that sends Noul, Choice and Score questions and returns answers in the matching Go types.
+    metrics:
+      stars: 1
+    date: '2026-09-17'
+    tags:
+    - go
+    - sdk
+  - name: typesafeai-sdk-rust-community
+    url: https://github.com/community-ports/typesafeai-sdk-rust-community
+    kind: repo
+    author: community-ports
+    description: Rust port of the official Python SDK that adds derive macros for typed questions, typed function-call routing, composite scoring, a mock transport for tests and concurrent batch and rerank helpers.
+    image: https://repository-images.githubusercontent.com/1376724675/9e1b5e33-ff5f-4b1b-be8a-3795aca2701b
+    date: '2026-09-19'
+    tags:
+    - rust
+    - sdk
+    - community
+  - name: TypeSafeAI.Net
+    url: https://github.com/Hawxy/TypeSafeAI.Net
+    kind: repo
+    author: Hawxy
+    description: Community .NET SDK for the System One API with typed question sets, retries, HttpClientFactory and DI support, AOT safety, and Microsoft.Extensions.AI guardrail, routing, tool, and evaluator adapters.
+    metrics:
+      stars: 2
+    date: '2026-09-17'
+    tags:
+    - dotnet
+    - csharp
+    - sdk
+  - name: venice-py Decisions resource
+    url: https://github.com/sethbang/venice-py/blob/main/src/venice_ai/resources/decisions.py
+    kind: repo
+    author: sethbang
+    description: Unofficial async Python SDK for Venice.ai with a Decisions resource for Venice's System One models, returning validated noul, choice and score answers with probabilities.
+    image: https://raw.githubusercontent.com/sethbang/venice-py/main/website/static/img/venice-py-banner.png
+    metrics:
+      repo_stars: 13
+    date: '2025-06-02'
+    links:
+      repo: https://github.com/sethbang/venice-py
+      docs: https://venice-docs.sbang.dev/
+    tags:
+    - python
+    - venice
+    - sdk
+  - name: verdict (OCaml)
+    url: https://github.com/jonesmelton/verdict
+    kind: repo
+    author: jonesmelton
+    description: OCaml 5.2+ Eio client for the System One API where each question handle carries its answer type, with bounded requests, TLS and retries.
+    date: '2026-09-18'
+    tags:
+    - ocaml
+    - sdk
+  - name: zio-typesafe-ai
+    url: https://github.com/jamesward/zio-typesafe-ai
+    kind: repo
+    author: jamesward
+    description: Scala 3 and ZIO client for the Jev System One API that asks several typed Noul, Choice and Score questions in one round-trip and returns the answers as a NamedTuple shaped like the questions.
+    metrics:
+      stars: 3
+    date: '2026-09-17'
+    tags:
+    - scala
+    - zio
+    - sdk

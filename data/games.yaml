@@ -1,0 +1,3686 @@
+title: Games and Interactive
+emoji: 🎮
+layout: gallery
+description: Game-playing agents, real-time decisions, and playful interactive demos.
+entries:
+- name: 1v100
+  url: https://x.com/legitamit/status/2100713197502173373
+  kind: post
+  author: legitamit
+  description: Toy where you talk to an audience of 100 blobs, each with its own personality making its own Jev call every time you speak to decide whether it is bored of you yet; each round costs under $0.01.
+  jev: 'One Noul per audience member per utterance: bored yet or not.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100711545218924544/img/R3UxL8HSq04FnC4R.jpg
+  metrics:
+    likes: 16
+    views: 1595
+  date: '2026-09-17'
+  links:
+    app: https://1v100.fun
+    project: https://1v100.fun
+  tags:
+  - audience
+  - personalities
+- name: A city on a whale
+  url: https://x.com/gokayfem/status/2101022590722810271
+  kind: post
+  author: gokayfem
+  description: 'Decision game about keeping a city on a whale alive: GPT-6 Astra designed the world, Jev chose each round''s action, and H3 Max Turbo on fal turned decisions into 264 video clips.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101020230071803904/img/FWi7MqiT0DI2iQJ9.jpg
+  metrics:
+    likes: 265
+    views: 24088
+  date: '2026-09-18'
+  tags:
+  - game
+  - video-generation
+  - simulation
+- name: Agent JEV Tetris
+  url: https://github.com/Yasserbhb/Agent-JEV-Tetris
+  kind: repo
+  author: Yasserbhb
+  description: Tetris where every move is a Jev Choice over the seven legal moves while the game code does the maths; the demo run reached 363 pieces and 114 lines cleared with zero holes.
+  image: https://raw.githubusercontent.com/Yasserbhb/Agent-JEV-Tetris/main/demo.gif
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - tetris
+  - game-agent
+- name: agent-stardew
+  url: https://github.com/rottenpen/agent-stardew
+  kind: repo
+  author: rottenpen
+  description: Stardew Valley agent where Jev picks and executes the next farm action from dynamic candidates toward a user goal, via an SMAPI mod, a standalone CLI and a DeepSeek Harness plugin with a run panel.
+  image: https://raw.githubusercontent.com/rottenpen/agent-stardew/main/assets/visual/app-icon-chicken-whale-v1.png
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  tags:
+  - stardew-valley
+  - game-agent
+  - smapi
+- name: AI Werewolf
+  url: https://github.com/hiper2d/werewolf-ai-party-game
+  kind: repo
+  author: hiper2d
+  description: Social deduction game where you are the only human among AI bots with secret roles; a speaker router built on Jev picks which bots reply to each message, with the Game Master model as fallback.
+  jev: Jev routes the discussion as a sub-second judge choosing which bots speak next; no text generation.
+  image: https://raw.githubusercontent.com/hiper2d/werewolf-ai-party-game/master/images/ai-werewolf-cover.png
+  metrics:
+    stars: 20
+  date: '2024-02-19'
+  links:
+    app: https://aiwerewolf.net
+  tags:
+  - werewolf
+  - multi-agent
+  - social-deduction
+- name: Aiko-chan Jev shogi
+  url: https://github.com/OppaAI/Aiko-chan/blob/dev/agentic/toolkit/jev.py
+  kind: repo
+  author: OppaAI
+  description: Local AI companion with a VRM avatar that plays shogi with Jev, choosing among candidate moves and reviewing positions, including a self-play engine.
+  jev: Choice over candidate moves; Score and Noul for position and game review.
+  metrics:
+    repo_stars: 49
+  date: '2026-05-28'
+  tags:
+  - shogi
+  - companion
+  - self-play
+- name: Almost Certain
+  url: https://x.com/nathanwchan/status/2100096510436475293
+  kind: post
+  author: nathanwchan
+  description: Guessing game where you try to predict how confident the AI will be about a random description, aiming for a target probability range.
+  image: https://pbs.twimg.com/media/HSUJzMBaoAAfzW9.jpg?name=orig
+  metrics:
+    likes: 495
+    views: 119004
+  date: '2026-09-16'
+  links:
+    app: https://almost-certain.vercel.app
+    project: https://almost-certain.vercel.app
+  tags:
+  - guessing-game
+  - calibration
+- name: Ask Jev
+  url: https://askjev.ai
+  kind: app
+  author: Ask Jev
+  description: 'Public wall where anyone asks Jev something in three to fifteen words and gets a judgment instead of an answer: yes, no or it depends, plus mood, topic and whether it fits the wall.'
+  jev: Judges each ask in about 100 milliseconds; Convex stores every verdict in real time.
+  image: https://fastidious-oyster-877.convex.site/og.png
+  metrics:
+    likes: 515
+    views: 95962
+  links:
+    demo: https://x.com/waynesutton/status/2100487878992388279
+  tags:
+  - toy
+  - realtime
+- name: AskJev
+  url: https://askjev.net/
+  kind: app
+  author: robherley
+  description: Early-web style tribute to Ask Jeeves where you type a question and Jev answers yes or no, picks from choices, or gives a score.
+  image: https://askjev-six.vercel.app/opengraph-image?14b0f74abfc4d228
+  metrics:
+    points: 3
+  links:
+    discussion: https://news.ycombinator.com/item?id=49782388
+  tags:
+  - toy
+  - retro-web
+- name: AskJev (Reverse Akinator)
+  url: https://askjev.app/
+  kind: app
+  author: askjev.app
+  description: Daily reverse Akinator game where you ask Jev yes-or-no questions to figure out the secret character; an unofficial demo.
+  image: https://askjev.app/og.png
+  tags:
+  - guessing-game
+  - daily
+- name: Astra and JEV Minecraft agent
+  url: https://github.com/rmalde/minecraft-agent
+  kind: repo
+  author: rmalde
+  description: Minecraft agent where GPT-6 Astra or GPT-5.6 Sol plans and Jev selects each player action through Mineflayer on a vanilla server; the author's best verified run killed the Ender Dragon in 8 minutes 43.300 seconds.
+  metrics:
+    stars: 489
+  date: '2026-09-20'
+  tags:
+  - minecraft
+  - mineflayer
+  - speedrun
+- name: Autonomous PS2 AI Agent
+  url: https://github.com/opaielsheikh/ps2-ai-agent
+  kind: repo
+  author: opaielsheikh
+  description: PlayStation 2 emulator agent that captures frames, extracts scene telemetry and asks Jev a Choice (accelerate, steer, brake, attack) that is injected as virtual controller input, with a live telemetry HUD.
+  date: '2026-09-17'
+  tags:
+  - ps2
+  - emulator
+  - game-agent
+- name: Avelune
+  url: https://github.com/benjamincanac/avelune
+  kind: repo
+  author: benjamincanac
+  description: 'Persistent 3D multiplayer town on Vercel WebSockets with an AI Oracle NPC: Jev reads each chat line to decide if it is addressed to the Oracle and whether it asks for a weather or time-of-day change.'
+  jev: Four judgments in one request on the last transcript line; replies (from DeepSeek) only fire at P(addressed) of 0.35 or more, sky changes at 0.5.
+  metrics:
+    stars: 7
+  date: '2026-07-06'
+  links:
+    app: https://avelune-online.vercel.app
+  tags:
+  - multiplayer
+  - npc
+  - nuxt
+- name: Beat Jev
+  url: https://github.com/ojusave/beat-jev
+  kind: repo
+  author: ojusave
+  description: Penalty shootout against Jev with shooting and keeping turns, where one Render Workflows task owns each match and scores go to Render Postgres, with TypeScript and Python examples.
+  date: '2026-09-18'
+  links:
+    app: https://beat-jev-typescript-web.onrender.com
+  tags:
+  - game
+  - render
+- name: BeatJev
+  url: https://github.com/lambertsj/beatjev
+  kind: repo
+  author: lambertsj
+  description: Browser reaction race where you and Jev classify the same message as spam or not across 25 rounds, then compare speed and accuracy on a shareable results screen; runs as a Cloudflare Worker.
+  date: '2026-09-17'
+  links:
+    app: https://beatjev2it.jlamberts86.workers.dev
+    app 2: https://beatjev2it.jlamberts86.workers.dev
+  tags:
+  - human-vs-ai
+  - spam
+  - cloudflare-workers
+- name: BLUFF
+  url: https://github.com/h1bomb/bluff
+  kind: repo
+  author: h1bomb
+  description: Roguelike poker duel in the browser where the AI opponent uses Jev to read the player's intent from hand history and action timing, and bluffing it into a misread triggers a Model Break.
+  jev: Per hand, a Choice over four behavior intents plus Nouls for bluffing and baiting and an aggression Score, with a 1,200 ms timeout and heuristic fallback.
+  image: https://raw.githubusercontent.com/h1bomb/bluff/main/docs/assets/screenshot_1.png
+  metrics:
+    stars: 7
+  date: '2026-09-19'
+  links:
+    app: https://bluffai.vercel.app
+  tags:
+  - poker
+  - roguelike
+- name: Bluff
+  url: https://typesafe-showcase.vercel.app/bluff
+  kind: app
+  author: Ashadeepa
+  description: Card game of bluffing (also called Cheat) against three AI opponents that each ask Jev how plausible your claim is before deciding which cards to play and whether to call your bluff.
+  jev: Noul on the plausibility of each claim, skipped when the card math already makes it impossible.
+  links:
+    repo: https://github.com/Ashadeepa/typesafe-showcase
+    showcase: https://typesafe-showcase.vercel.app/
+  tags:
+  - card-game
+  - bluffing
+- name: Bot vs bot combat game
+  url: https://x.com/a_captaincook/status/2102205359100457023
+  kind: post
+  author: a_captaincook
+  description: Combat game designed with Astra where Jev-driven bots fight each other, with plans for an RL loop to evolve the best fighters.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102205306352902144/img/k5R7HDIP7eagVU8G.jpg
+  metrics:
+    likes: 4
+    views: 90
+  date: '2026-09-22'
+  tags:
+  - combat
+  - bots
+- name: Byte rock-paper-scissors
+  url: https://x.com/2ndpsy/status/2101026520185622589
+  kind: post
+  author: 2ndpsy
+  description: Rock-paper-scissors against Byte, which uses Jev to predict your next throw each round and commits its counter-move before you pick, with stakes settled over Ark.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101025189622349824/img/7xMDppgS62icqbO1.jpg
+  metrics:
+    likes: 15
+    views: 3513
+  date: '2026-09-18'
+  tags:
+  - rock-paper-scissors
+  - prediction
+- name: Can you beat Jev? (SIDE OUT)
+  url: https://antics.gg/can-you-beat-jev
+  kind: app
+  author: antics.gg
+  description: Live experiment where you play SIDE OUT, a multiplayer Pong-style arena game, against Jev as it plays in a real browser in real time.
+  image: https://antics.gg/og/8eba793c194d2a71b6ccdbae1f86a76f9b657b324f8c50d8c9eebb9413f6c9a9
+  links:
+    discussion: https://www.reddit.com/r/typesafe_ai/comments/1wkpbyg/can_you_beat_jev_at_pong/
+    hn: https://news.ycombinator.com/item?id=49781623
+  tags:
+  - real-time
+  - multiplayer
+  - pong
+- name: casse-brique-typesafe
+  url: https://github.com/Para-FR/casse-brique-typesafe
+  kind: repo
+  author: Para-FR
+  description: Next.js brick breaker playable in the browser whose paddle can be handed to a Jev-powered AI pilot in real time; the in-game interface is in French.
+  date: '2026-09-17'
+  tags:
+  - brick-breaker
+  - browser-game
+- name: Chess against Jev
+  url: https://x.com/theshajha/status/2101905184704323969
+  kind: post
+  author: theshajha
+  description: Chess board where you play a game against Jev as your opponent.
+  image: https://pbs.twimg.com/media/HSt3Lx0aQAAXk0o.jpg?name=orig
+  metrics:
+    views: 96
+  date: '2026-09-21'
+  tags:
+  - chess
+- name: 'Chess bench: Jev vs Laya-mix'
+  url: https://x.com/eter_inquirer/status/2102147083491000524
+  kind: post
+  author: eter_inquirer
+  description: Chess matches between Jev and the local Laya-mix model, where Laya is faster but Jev wins every time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102146909976805376/img/uK50316UXcC168Hp.jpg
+  metrics:
+    views: 404
+  date: '2026-09-21'
+  tags:
+  - chess
+  - laya
+  - benchmark
+- name: Chess playground against Jev
+  url: https://x.com/ezeugo__/status/2102207212986724814
+  kind: post
+  author: ezeugo__
+  description: Playground for playing chess against Jev, which receives the board as state and all legal moves as one Choice each turn; the result is not quite AGI.
+  image: https://pbs.twimg.com/media/HSyKRfEXIAE-iqB.jpg?name=orig
+  metrics:
+    views: 9
+  date: '2026-09-22'
+  tags:
+  - chess
+  - choice
+- name: chess-vs-jev
+  url: https://github.com/zebedelu/chess-vs-jev
+  kind: repo
+  author: zebedelu
+  description: Pygame chess where python-chess handles the rules and Jev picks one legal move per turn from a labeled list, playable as Human vs Human, Human vs Jev, or Jev vs Jev.
+  image: https://raw.githubusercontent.com/zebedelu/chess-vs-jev/main/assets/screenshot/demo.png
+  date: '2026-09-20'
+  tags:
+  - chess
+  - game
+- name: clash-jev
+  url: https://github.com/bytelabs-oss/clash-jev
+  kind: repo
+  author: bytelabs-oss
+  description: 'Clash Royale bot with no trained policy that plays on a real Android device: OpenCV and a small troop classifier turn the screen into JSON state and Jev picks each move in about 135 ms.'
+  metrics:
+    stars: 5
+  date: '2026-09-21'
+  links:
+    app: https://bytelabs-oss.github.io/clash-jev/
+  tags:
+  - clash-royale
+  - android
+  - computer-vision
+- name: Classifier Wiki Race
+  url: https://x.com/dave_xt/status/2100723103143997510
+  kind: post
+  author: dave_xt
+  description: Web app where Jev races from one Wikipedia article to another in real time with no LLM in the loop, showing every state, question and action.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100722674028953600/img/8ylppi05xJLwpYYc.jpg
+  metrics:
+    views: 178
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/davext/classifier-wiki-race
+    app: https://wikirace.xt.gy/
+    project: https://github.com/davext/classifier-wiki-race
+  tags:
+  - wikirace
+  - real-time
+- name: Codenames with Jev
+  url: https://x.com/uwwgo/status/2101683325320454189
+  kind: post
+  author: uwwgo
+  description: Game of Codenames played with Jev as a teammate, as an example of embedding a fast, cheap decision model in consumer products.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101682942334398464/img/TIjR8ALsT1iz-Nc2.jpg
+  metrics:
+    likes: 19
+    views: 2126
+  date: '2026-09-20'
+  tags:
+  - codenames
+  - word-game
+- name: Codex + Jev play Slay the Spire 2
+  url: https://x.com/10xmylife/status/2101302029385920530
+  kind: post
+  author: 10xmylife
+  description: Livestream of Codex and Jev playing Slay the Spire 2 at high speed, though not very well.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101300542144479232/img/TmWoHRrY8b_7Zvvj.jpg
+  metrics:
+    likes: 116
+    views: 44495
+  date: '2026-09-19'
+  tags:
+  - slay-the-spire
+  - livestream
+- name: 'Combos FPS: Astra vs Jev'
+  url: https://x.com/CombosFun_AI/status/2100952069461127257
+  kind: post
+  author: CombosFun_AI
+  description: Side-by-side of the same Combos FPS game played by GPT-6 Astra and by Jev, contrasting a reasoning model with a decision model.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100950508919984128/img/n0KDfl8VSy9C-q3V.jpg
+  metrics:
+    likes: 6
+    views: 4131
+  date: '2026-09-18'
+  tags:
+  - fps
+  - comparison
+- name: Connect Four on Omarchy
+  url: https://x.com/Entelic_Aria/status/2100966999602102520
+  kind: post
+  author: Entelic_Aria
+  description: Connect Four loop inside Aria on Omarchy Linux where Jev reads the board and picks moves and Hermes reviews each result, using 6,499 tokens for $0.00022113.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100966615659732992/img/TweCJbUhQ94mbk2d.jpg
+  metrics:
+    likes: 34
+    views: 1563
+  date: '2026-09-18'
+  tags:
+  - connect-four
+  - omarchy
+- name: Convex Chess move ratings
+  url: https://github.com/get-convex/convex-chess
+  kind: repo
+  author: get-convex
+  description: Chess example on Convex where every new move gets a 1-10 rating from Jev 1.13 through the Convex AI Gateway, shown under the move commentary; an AI estimate, not an engine evaluation.
+  jev: One Score over a ten-level rubric per move via the AI SDK evaluation interface.
+  metrics:
+    stars: 5
+  date: '2023-02-28'
+  links:
+    app: https://convex-chess.vercel.app
+  tags:
+  - chess
+  - convex
+  - ai-gateway
+- name: Covel Jev choice demo
+  url: https://github.com/ackness/covel/tree/main/plugins/jev-choice-demo
+  kind: repo
+  author: ackness
+  description: Optional plugin for an agentic AI RPG framework that shows the evaluation model's recommendation probability for each quick-reply option each turn, without choosing for the player.
+  metrics:
+    repo_stars: 51
+  date: '2026-03-24'
+  tags:
+  - rpg
+  - interactive-fiction
+  - plugin
+- name: 'Cyber-Breach: The Jev Protocol'
+  url: https://github.com/rchovatiya88/cyber-breach-jev
+  kind: repo
+  author: rchovatiya88
+  description: 'Infinite 3D Tron-style arena shooter in Three.js where enemy tactics come from Jev: a Choice picks maneuvers like flank or retreat, a Score rates threat and Nouls trigger dashes or berserk.'
+  date: '2026-09-17'
+  tags:
+  - threejs
+  - arena-shooter
+  - game-ai
+- name: Doom with branching futures
+  url: https://x.com/toksdotdev/status/2101084662793666618
+  kind: post
+  author: toksdotdev
+  description: Doom agent where Jev picks the moves, a microsandbox harness runs parallel attempts from the same checkpoint, and an LLM reviews outcomes to steer the next try or rewind.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101073621049298944/img/cynsgROvqMkHdnxZ.jpg
+  metrics:
+    likes: 23
+    views: 5225
+  date: '2026-09-18'
+  tags:
+  - doom
+  - sandbox
+  - search
+- name: DOOM-JEV
+  url: https://github.com/AmoghCreator/doom-jev
+  kind: repo
+  author: AmoghCreator
+  description: Autonomous ViZDoom agent that runs Doom at its native 35 ticks/s while querying Jev asynchronously at ~10 Hz for movement, target and firing decisions, with a Rich terminal HUD.
+  jev: Jev picks tactical goals and actions; local raycasting handles fine aiming and holds actions between inferences.
+  image: https://external-preview.redd.it/MzVzOW43d2RrNXFoMcxXMts5v0jI2t93Nmc85PtCl79IFJJmB82NbzR81CL2.png?format=pjpg&auto=webp&s=724ed059ce7eb571d019eef720fcd12019b942ff
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  links:
+    discussion: https://www.reddit.com/r/developersIndia/comments/1wj7q3n/playing_doom_using_jev_by_system_one_the_hottest/
+  tags:
+  - doom
+  - vizdoom
+- name: Emotion cellular automaton
+  url: https://x.com/riku720720/status/2100738087584481657
+  kind: post
+  author: riku720720
+  description: Cellular-automaton simulation running many Jev calls in parallel to model how each person's emotion shifts with their neighbours', so anger and panic spread through the grid.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100732918536773632/img/3ch1UQy_Wpfs56N5.jpg
+  metrics:
+    likes: 673
+    views: 307474
+  date: '2026-09-18'
+  tags:
+  - simulation
+  - emotion
+  - cellular-automaton
+- name: FIFA with Jev
+  url: https://x.com/_shubhankar/status/2101830589620056160
+  kind: post
+  author: _shubhankar
+  description: Soccer game in which every player runs a Jev loop about every 150ms to decide whether to tackle, pass or shoot and at what speed and direction, with commentary and soundtrack also chosen by Jev.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101829435855147008/img/PfN38k2ZCauEwPNh.jpg
+  metrics:
+    likes: 64
+    views: 11021
+  date: '2026-09-21'
+  tags:
+  - soccer
+  - game-ai
+  - real-time
+- name: Fight Jev
+  url: https://x.com/Taufiq_ansari01/status/2100906203396337686
+  kind: post
+  author: Taufiq_ansari01
+  description: Fighting game where Jev controls the enemy in real time and the probability of each decision it makes is shown on screen before it strikes.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100905164261748736/img/Jf-ySNfaAdZ95K-O.jpg
+  metrics:
+    likes: 8
+    views: 4911
+  date: '2026-09-18'
+  tags:
+  - fighting-game
+  - game-ai
+- name: Floppy Apex
+  url: https://x.com/ChmalSzymon/status/2100934588205851015
+  kind: post
+  author: ChmalSzymon
+  description: Jev playing a Flappy Bird-style game called Floppy Apex and passing the previous best score, wired up by Apex via Appduct.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100934447822471168/img/wHM0ZeHHQRZKFTLk.jpg
+  metrics:
+    likes: 16
+    views: 1471
+  date: '2026-09-18'
+  tags:
+  - flappy-bird
+  - game-agent
+- name: 'Fly vs Jev: Minesweeper'
+  url: https://github.com/EnesYilmazcode/JevMinesweeper
+  kind: repo
+  author: EnesYilmazcode
+  description: Pits a simulated fruit-fly connectome of 166,700 neurons against Jev at beginner Minesweeper, with both players seeing only the revealed clues.
+  jev: Jev reads the rules and a coordinate-labelled text board and judges every covered square as safe or mined.
+  image: https://raw.githubusercontent.com/EnesYilmazcode/JevMinesweeper/main/media/fly-vs-jev-ladder.gif
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - minesweeper
+  - connectome
+  - puzzle
+- name: Futsal simulator
+  url: https://x.com/sidodtv/status/2101951519373574597
+  kind: post
+  author: sidodtv
+  description: High-speed futsal match simulator driven by Jev and Laya, exhibited at the Generative AI Anything Exhibition Vol.6 in Tokyo on September 23.
+  image: https://pbs.twimg.com/media/HSuhbq5aMAAOqac.jpg?name=orig
+  metrics:
+    likes: 7
+    views: 481
+  date: '2026-09-21'
+  tags:
+  - simulation
+  - sports
+  - laya
+- name: Game built for Jev to play
+  url: https://x.com/Icaro_333/status/2102242170191179948
+  kind: post
+  author: Icaro_333
+  description: Small game built specifically for Jev to play, made while learning how the model works.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102242076586844160/img/XGjQgpPdzzUyvFoG.jpg
+  metrics:
+    views: 41
+  date: '2026-09-22'
+  tags:
+  - game-agent
+  - beginner
+- name: GameCoach
+  url: https://github.com/JoelLewis/game-coach
+  kind: repo
+  author: JoelLewis
+  description: Browser chess coach on Cloudflare where Stockfish evaluates the position and Jev decides what coaching feedback to give after each move.
+  jev: Choices over error classes, chess themes and feedback templates (error class by phase by severity); templates and a small model write the words.
+  date: '2026-09-19'
+  tags:
+  - chess
+  - coaching
+  - cloudflare
+- name: Genesis Initiative NPC Jev scheduler
+  url: https://github.com/dyzdyz010/ex_mmo_cluster/tree/master/apps/gate_server/lib/gate_server/npc
+  kind: repo
+  author: dyzdyz010
+  description: NPC scheduler in the Genesis Initiative voxel MMO server where Jev picks each NPC's next activity and checks whether an action would damage others' builds; its 70-case eval scored 70/70 at 0.78 s p50 vs 2.67 s for an LLM.
+  jev: One activity Choice plus a harm Noul when a destructive action is planned; below 0.85 confidence control goes back to the NPC's LLM brain.
+  metrics:
+    repo_stars: 18
+  date: '2021-02-26'
+  links:
+    repo: https://github.com/dyzdyz010/ex_mmo_cluster
+    eval: https://github.com/dyzdyz010/ex_mmo_cluster/tree/master/docs/10-active/cross-cutting/tools/jev
+  tags:
+  - mmo
+  - npc
+  - elixir
+- name: gliner2-doom
+  url: https://github.com/memgrafter/gliner2-doom
+  kind: repo
+  author: memgrafter
+  description: A frozen GLiNER2.5 text encoder with a small trained head plays Doom in real time on a Mac mini M4 from a one-line JSON game state, scoring ten moves 35 times a second, following Jev's state-to-choice contract.
+  metrics:
+    stars: 7
+  date: '2026-09-18'
+  tags:
+  - doom
+  - jev-like
+  - encoder
+- name: GlyphWeave Jev generation
+  url: https://github.com/HsiangNianian/GlyphWeave
+  kind: repo
+  author: HsiangNianian
+  description: Infinite-canvas ASCII roguelike tilemap editor that can generate maps in real time with Jev, which picks the intent, preset room, tile and placement from the editor catalog.
+  jev: Choice questions restricted to catalog presets and tiles plus a Noul for whether the edit overwrites existing tiles.
+  image: https://raw.githubusercontent.com/HsiangNianian/GlyphWeave/main/media/map-ansi16-small.png
+  metrics:
+    stars: 7
+  date: '2026-07-02'
+  links:
+    app: https://glyphweave.hydroroll.team
+    code: https://github.com/HsiangNianian/GlyphWeave/blob/main/server/gen-ui.test.mjs
+  tags:
+  - roguelike
+  - level-generation
+  - editor
+- name: HarnessRouter Super Mario kit
+  url: https://github.com/HarnessRouter/starter-kit/tree/main/kits/mario
+  kind: repo
+  author: HarnessRouter
+  description: Starter kit where a System One model plays Full Screen Mario in a headless browser several times a second, reading the game state as a few literal sentences and choosing one control.
+  metrics:
+    repo_stars: 54
+  date: '2026-08-03'
+  links:
+    app: https://harnessrouter.ai
+  tags:
+  - mario
+  - platformer
+  - browser
+- name: HEIST//ONE
+  url: https://github.com/AbdelStark/heist-one
+  kind: repo
+  author: AbdelStark
+  description: Browser stealth game where guards make split-second judgments about doors, lights, footsteps, and badges, and you can inspect each guard's evidence, probabilities, intent, and latency.
+  jev: Jev supplies typed guard judgments; deterministic code owns the world and applies fallbacks.
+  image: https://raw.githubusercontent.com/AbdelStark/heist-one/main/apps/video/out/heist-one-thumbnail.png
+  metrics:
+    stars: 7
+  date: '2026-09-17'
+  tags:
+  - stealth-game
+  - phaser
+- name: Hermes and Jev play Minecraft
+  url: https://github.com/teknium1/hermes-and-jev-play-minecraft
+  kind: repo
+  author: teknium1
+  description: Minecraft agent where Hermes Agent plans, Jev picks one bounded action at a time and a Mineflayer harness validates and runs it, with no screenshots or keypresses from a model; reproduces an Ender Dragon run.
+  metrics:
+    stars: 7
+  date: '2026-09-21'
+  tags:
+  - minecraft
+  - hermes-agent
+  - mineflayer
+- name: Hollow Creek
+  url: https://hollow-creek-sigma.vercel.app
+  kind: app
+  author: hollow-creek
+  description: Village game in 3D where unscripted NPCs watch and remember what you do, then decide how to treat you each tick through expressions and actions instead of chat.
+  jev: Each villager tick asks Jev about mood, threat and reaction; the state, questions and answers are inspectable in the UI.
+  tags:
+  - npc
+  - game-ai
+  - 3d
+- name: Infinite Backrooms
+  url: https://x.com/n8mirai/status/2102043190068920720
+  kind: post
+  author: n8mirai
+  description: 'Backrooms game with no premade map: Jev generates each room in real time as you explore, at about $0.000265 per room.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102043140160921600/img/oA_cz_-Mlr57Dr25.jpg
+  metrics:
+    likes: 2
+    views: 5444
+  date: '2026-09-21'
+  tags:
+  - procedural-generation
+  - level-generation
+  - horror
+- name: Infinite game levels with Jev
+  url: https://www.reddit.com/r/typesafe_ai/comments/1wjwhlj/jev_generating_infinite_game_levels/
+  kind: reddit
+  author: Just_Lingonberry_352
+  description: Clip of a pixel-art side-scrolling platformer whose levels keep being generated by Jev as the player runs.
+  image: https://external-preview.redd.it/ZGc3Y3M3d2FjYnFoMe5izzrFI6BXxb-7gqg_kASOv1wpqFylkCW7w3gTJp9Y.png?format=pjpg&auto=webp&s=cd5d15fad8829a2ea2ec17565148402c9e6396c7
+  metrics:
+    points: 11
+  date: '2026-09-18'
+  tags:
+  - level-generation
+  - platformer
+- name: Jev + Gymnasium
+  url: https://github.com/taodav/jev_deep_rl
+  kind: repo
+  author: taodav
+  description: Evaluates Jev as a fixed policy in Gymnasium and Atari environments such as CartPole and Pong, recording rewards against a seeded random baseline without any training.
+  jev: Observation adapters turn game state into JSON; one Choice selects a legal action each step.
+  image: https://raw.githubusercontent.com/taodav/jev_deep_rl/main/media/jev-atari-showcase-no-header.gif
+  metrics:
+    stars: 7
+  date: '2026-09-19'
+  links:
+    demo: https://news.ycombinator.com/item?id=49778273
+  tags:
+  - reinforcement-learning
+  - atari
+  - gymnasium
+- name: Jev 2048
+  url: https://github.com/ARCJ137442/jev-2048
+  kind: repo
+  author: ARCJ137442
+  description: Instrumented 2048 web lab where every move is a Jev Choice over four directions with no heuristic fallback, showing probabilities, confidence, latency and cost live.
+  jev: One Choice per turn; a user-set confidence threshold pauses play for human review, and prompts and board rules are editable.
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    app: https://jev-2048-ultra.vercel.app
+    app 2: https://jev-2048-ultra.vercel.app
+  tags:
+  - '2048'
+  - puzzle
+- name: Jev Arcade
+  url: https://jev-arcade.vercel.app/duel
+  kind: app
+  author: jev-arcade
+  description: 'Two browser games against a live Jev opponent: a Krunker-style 1v1 arena duel and a neon survival challenge.'
+  jev: In the duel, Jev decides move, aim, aim-down-sights, fire and jump at about 9 Hz.
+  tags:
+  - fps
+  - real-time
+  - game-ai
+- name: Jev Arcade
+  url: https://x.com/ahab_developer/status/2101605212108800348
+  kind: post
+  author: ahab_developer
+  description: Free-to-try web arcade where Jev plays Pac-Man, Bomberman and Space Invaders live.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101596647977545728/img/9DaL2uCCG_baCfck.jpg
+  metrics:
+    likes: 3
+    views: 2574
+  date: '2026-09-20'
+  links:
+    app: https://jev-arcade.ahab.cn/
+    project: https://jev-arcade.ahab.cn
+  tags:
+  - arcade
+  - pac-man
+  - browser-games
+- name: Jev Arena
+  url: https://www.reddit.com/r/singularity/comments/1wjv6hx/jev_playing_9_realtime_classic_games/
+  kind: reddit
+  author: manubfr
+  description: Web arena where a single Jev API call plays 9 classic real-time games at once for $1.80 an hour; the author later scaled it to 27 games.
+  metrics:
+    points: 127
+  date: '2026-09-18'
+  links:
+    app: https://jev-arena.vercel.app
+    project: https://jev-arena.vercel.app
+  tags:
+  - arcade
+  - multi-game
+- name: Jev Arena (NanoJev)
+  url: https://github.com/liao96312/jev-arena-nanojev
+  kind: repo
+  author: liao96312
+  description: Fully local grid tactics game in Pygame where NanoJev, an open Jev replica, picks each move, attack, shot, heal or dash from real candidate actions across increasingly hard levels, with training on a GTX 1660S.
+  image: https://raw.githubusercontent.com/liao96312/jev-arena-nanojev/main/assets/screenshots/gameplay.png
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - tactics
+  - nanojev
+  - pygame
+- name: Jev Atari Lab
+  url: https://github.com/memorysaver/jev-atari-lab
+  kind: repo
+  author: memorysaver
+  description: Research lab that plays Arcade Learning Environment Atari games with Jev structured decisions and value questions while a teacher edits the question program, publishing inputs, actions, rewards, and videos.
+  date: '2026-09-17'
+  tags:
+  - atari
+  - research
+- name: Jev beats Super Mario Bros.
+  url: https://x.com/ishuagra02/status/2101025059909353718
+  kind: post
+  author: ishuagra02
+  description: Agent that clears the first level of Super Mario Bros. with only 1 death, choosing each action from the simulator's structured game state.
+  jev: Choice over simulated next actions (jump, run, etc.) given Mario's position, nearby enemies and terrain, judged on staying alive.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101023867636449280/img/XK5TcIcdTm6_R4xw.jpg
+  metrics:
+    likes: 16
+    views: 1523
+  date: '2026-09-18'
+  tags:
+  - game-agent
+  - mario
+- name: Jev bots in an FPS
+  url: https://x.com/tommyvedvik/status/2100903520425677027
+  kind: post
+  author: tommyvedvik
+  description: First-person shooter with three Jev-controlled bots as opponents.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100903386992291840/img/EJIJPWYpP8F6iDiF.jpg
+  metrics:
+    likes: 12
+    views: 1280
+  date: '2026-09-18'
+  tags:
+  - fps
+  - game-ai
+- name: Jev Broadcast Lab
+  url: https://github.com/4anti/jev-broadcast-lab
+  kind: repo
+  author: 4anti
+  description: Public lab with a chess match where Jev picks from locally generated legal moves, shown beside Stockfish scores, plus smaller judgment booths and a Fast Flag catalog.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  links:
+    app: https://4anti.github.io/jev-broadcast-lab/
+  tags:
+  - chess
+  - playground
+- name: Jev bullet chess test
+  url: https://x.com/bariskisir/status/2101531039185129683
+  kind: post
+  author: bariskisir
+  description: Bullet-chess test of Jev inside a chess bot, which failed to beat even a 250 ELO computer opponent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101530909170089984/img/A2PKFt3An2aUNbMa.jpg
+  metrics:
+    likes: 2
+    views: 81
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/bariskisir/ChessBot/tree/feature/jev-test
+    project: https://github.com/bariskisir/chessbot/jev-test
+  tags:
+  - chess
+  - negative-result
+- name: Jev Chat
+  url: https://jev-chat.gigabitmillion-games.workers.dev/
+  kind: app
+  author: gigabitmillion-games
+  description: Japanese chat game where you talk to a tiny resident whose expression, the weather and the room change according to how Jev reads the mood of your words.
+  jev: Jev classifies what you said and its tone; the game decides how to respond.
+  tags:
+  - japanese
+  - chat-game
+  - sentiment
+- name: Jev Chess
+  url: https://github.com/choxos/jevchess
+  kind: repo
+  author: choxos
+  description: One-page web app where Jev plays chess against any OpenRouter LLM, Stockfish, or you, showing the moves it weighed with their probabilities and saving games and win rates.
+  image: https://raw.githubusercontent.com/choxos/jevchess/main/documentation/tour.gif
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  links:
+    app: https://jevchess.xera.ac
+    app 2: https://jevchess.xera.ac
+  tags:
+  - chess
+  - llm-comparison
+- name: Jev Chess
+  url: https://jevchess.com
+  kind: app
+  author: sliday
+  description: Shared chessboard where the internet plays against Jev, which weighs every legal move at once and so cannot play an illegal one.
+  jev: Every legal move is an option of a single Choice; returned probabilities shade the pieces and a live panel checks its calibration against a one-ply engine.
+  image: https://jevchess.com/og.png?room=main&v=81-41
+  metrics:
+    likes: 1
+    views: 209
+    points: 2
+  links:
+    demo: https://x.com/staskulesh/status/2102052244363317752
+    discussion: https://www.reddit.com/r/LLMDevs/comments/1wmf8wh/i_built_a_shared_chessboard_where_everyone_plays/
+    demo 2: https://x.com/staskulesh/status/2102062632517697652
+  tags:
+  - chess
+  - multiplayer
+- name: Jev Chess (loomens)
+  url: https://chess-jev.loomens.com
+  kind: app
+  author: loomens
+  description: Chess board in 3D where Jev plays itself as two personalities, or you take a side, with switchable move doctrines and the probability behind every move shown.
+  tags:
+  - chess
+  - self-play
+  - 3d
+- name: Jev Chess Master
+  url: https://x.com/qibinlou/status/2100676619815862464
+  kind: post
+  author: qibinlou
+  description: Real-time online chess game where you play White against Jev as Black, with Jev's decision traces and API cost shown live; bring your own key.
+  image: https://pbs.twimg.com/media/HScaI-sXwAEjjtI.jpg?name=orig
+  metrics:
+    likes: 6
+    views: 625
+  date: '2026-09-17'
+  links:
+    app: https://jev-chess-master.vercel.app
+    project: https://jev-chess-master.vercel.app
+  tags:
+  - chess
+  - byok
+- name: Jev cloud quiz
+  url: https://github.com/minorun365/jev-cloud-quiz
+  kind: repo
+  author: minorun365
+  description: Japanese quiz demo where you pick one of 30 AWS, Azure or Google Cloud feature names with brand words removed and Jev guesses which cloud it belongs to, drawing its probabilities as three bars.
+  image: https://raw.githubusercontent.com/minorun365/jev-cloud-quiz/main/docs/architecture.png
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    app: https://dxtmc35dbmyei.cloudfront.net/
+    app 2: https://dxtmc35dbmyei.cloudfront.net
+  tags:
+  - quiz
+  - cloud
+  - aws-cdk
+- name: Jev Connections solver
+  url: https://github.com/matsonj/eval-connections/blob/main/experimental/jev_classic_solver.py
+  kind: repo
+  author: matsonj
+  description: Experimental solver in an NYT Connections LLM eval that asks Jev whether word pairs and candidate sets belong to the same group, then searches for the best four groups within the four-mistake limit.
+  metrics:
+    repo_stars: 25
+  date: '2025-07-31'
+  links:
+    repo: https://github.com/matsonj/eval-connections
+    app: https://matsonj.github.io/eval-connections/
+  tags:
+  - puzzles
+  - nyt-connections
+- name: Jev cooking game
+  url: https://x.com/stevibe/status/2101684349104247036
+  kind: post
+  author: stevibe
+  description: Flash-style cooking game built for Jev where it flips, serves and grills in real time; one 5-minute Rush shift took 261 decisions and 382 actions, served 29 guests, scored 8,264 and cost about $0.15.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101684255890022401/img/zQzL7sOfvDB18h-5.jpg
+  metrics:
+    likes: 16
+    views: 1938
+  date: '2026-09-20'
+  tags:
+  - cooking-game
+  - real-time
+- name: Jev dogfighting
+  url: https://x.com/hanznathanpo/status/2101020398477365629
+  kind: post
+  author: hanznathanpo
+  description: First attempt at having Jev fly an aircraft in a dogfight, which the author says does not work well yet.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101020269586292736/img/EQfj-8D623rJOWzX.jpg
+  metrics:
+    likes: 16
+    views: 1470
+  date: '2026-09-18'
+  tags:
+  - dogfight
+  - flight
+  - experiment
+- name: Jev Games
+  url: https://github.com/shantanugoel/jev-games
+  kind: repo
+  author: shantanugoel
+  description: Visual lab where Jev plays Super Mario Bros., Kung Fu (NES) and Doom (ViZDoom) through a plugin system for new games and emulators, with step-by-step replay; code owns buttons and hold durations.
+  date: '2026-09-17'
+  tags:
+  - nes
+  - doom
+  - emulators
+- name: Jev Games
+  url: https://game-plan.adriaansendennis.workers.dev/play
+  kind: app
+  author: adriaansendennis
+  description: Word puzzle where you connect two seemingly unrelated things in as few steps as possible, with Jev judging each link, plus a leaderboard and speedrun mode.
+  image: https://game-plan.adriaansendennis.workers.dev/og.png
+  tags:
+  - word-game
+  - puzzle
+- name: Jev gladiator arena
+  url: https://www.reddit.com/r/aigamedev/comments/1wkd96v/jev_plays_both_sides_of_a_gladiator_arena_game/
+  kind: reddit
+  author: codeninja
+  description: Small arena game where Jev directs objectives for six fighters on both sides in real time at about 3 requests per second.
+  image: https://external-preview.redd.it/NGk2aTd1d3p2ZXFoMXqalpO3Ixyt1yQWYtSXC1NUz1_Y9AQ08nqmQOyOHDI6.png?format=pjpg&auto=webp&s=7923f11ee0aa0f690eb397824c395fd59ee2024f
+  metrics:
+    points: 12
+  date: '2026-09-19'
+  tags:
+  - arena
+  - multi-agent
+  - real-time
+- name: Jev Grand Prix
+  url: https://github.com/enoyola/jev-grand-prix
+  kind: repo
+  author: enoyola
+  description: F1 racing game where Jev picks the racing line and pedal inputs live while code steers and plans, learning each corner's limit between laps, and you can race it with the arrow keys.
+  metrics:
+    stars: 6
+  date: '2026-09-20'
+  tags:
+  - racing
+  - f1
+- name: Jev Lab
+  url: https://github.com/jammaru/jev-lab
+  kind: repo
+  author: jammaru
+  description: 'Two local labs where Jev only picks the next legal action while engines keep the rules: Hundred, a tiny town of 100 NPCs with hunger, money, jobs and memories, and a wooden-board Jev Shogi.'
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  tags:
+  - npcs
+  - shogi
+  - simulation
+- name: Jev Magic 8 Ball
+  url: https://x.com/will_caskets/status/2100968037117780130
+  kind: post
+  author: will_caskets
+  description: Magic 8 Ball that asks Jev to pick one of the 20 classic answers for your question.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100819832660975616/img/j8xtj7J4zxqZ3kdx.jpg
+  metrics:
+    likes: 7
+    views: 4589
+  date: '2026-09-18'
+  tags:
+  - toy
+  - magic-8-ball
+- name: Jev map playtester
+  url: https://x.com/TusharXo/status/2100650773726314838
+  kind: post
+  author: TusharXo
+  description: Jev playtesting a new map for a browser game built on Crayon, used to check the level before it ships.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100649857379909632/img/umakGAn8HhvRnWu0.jpg
+  metrics:
+    likes: 22
+    views: 1632
+  date: '2026-09-17'
+  links:
+    app: https://app.usecrayon.ai/play/a06744fc-3acb-41d9-8825-5c8bd9cbbafd
+  tags:
+  - playtesting
+  - level-design
+- name: Jev Mario Lab
+  url: https://x.com/umezawakanta13/status/2102062482991001689
+  kind: post
+  author: umezawakanta13
+  description: Mario-style World 1-1 played by Jev in the browser; this recording dies on the first enemy, and the author reports a 976.8ms median browser round-trip over 5 responses.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102062389281816576/img/Fh8WvFu2fI6wSBXE.jpg
+  metrics:
+    views: 46
+  date: '2026-09-21'
+  links:
+    app: https://my-web-app-b67f4.web.app/jev-mario-lab
+    article: https://zenn.dev/kanta13jp1/articles/jev-realtime-use-cases-deep-dive
+    project: https://my-web-app-b67f4.web.app/jev-mario-lab
+  tags:
+  - platformer
+  - mario
+  - latency
+- name: Jev Mario Lab
+  url: https://x.com/umezawakanta13/status/2102008904842658002
+  kind: post
+  author: umezawakanta13
+  description: 'Follow-up latency run of Jev playing Mario-style 1-1 with a measurement overlay: 1,139.7ms median browser round-trip, 490.3ms Jev HTTP round-trip, still dying on the first enemy.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102008859116388352/img/JPN-9Xe4xNX_ImcW.jpg
+  metrics:
+    views: 36
+  date: '2026-09-21'
+  links:
+    app: https://my-web-app-b67f4.web.app/jev-mario-lab
+    project: https://my-web-app-b67f4.web.app/jev-mario-lab
+  tags:
+  - platformer
+  - mario
+  - latency
+- name: Jev mind-reading genie
+  url: https://x.com/builderix/status/2101972512644948169
+  kind: post
+  author: builderix
+  description: Akinator-style guessing game built by precomputing 2,125,999 Jev judgments (16,229 characters x 131 yes/no questions) in 9 minutes for $1.13, after which play is plain arithmetic.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101972429446721536/img/cPyeH7ur7cuHOyYN.jpg
+  metrics:
+    likes: 1
+    views: 88
+  date: '2026-09-21'
+  tags:
+  - guessing-game
+  - akinator
+- name: Jev Minecraft bot
+  url: https://x.com/akashpurjalkar/status/2102014492217667872
+  kind: post
+  author: akashpurjalkar
+  description: Minecraft bot that builds houses, towers, lakes and castles on command, and fights mobs with a sword while trying to dodge skeleton arrows in real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102012555912949760/img/HQnumbrlalPGijLN.jpg
+  metrics:
+    likes: 2
+    views: 108
+  date: '2026-09-21'
+  tags:
+  - minecraft
+  - bot
+- name: Jev Minesweeper
+  url: https://github.com/comoc/jev-minesweeper
+  kind: repo
+  author: comoc
+  description: 'Japanese browser demo where Jev plays Minesweeper: each move asks one Noul per unopened cell next to a number, all in one request, and code opens or flags cells by probability, with an exact solver as fallback.'
+  jev: 'Speculative fan-out: one Noul (is this cell a mine?) per frontier cell in a single request.'
+  metrics:
+    stars: 8
+  date: '2026-09-20'
+  tags:
+  - minesweeper
+  - puzzle
+- name: Jev on Atari Pong
+  url: https://x.com/MemorysaverMFA/status/2100881912113909893
+  kind: article
+  author: MemorysaverMFA
+  description: Article on using Jev as a policy-shaped controller for Atari Pong, where the policy lives in the question definitions rather than in model weights.
+  image: https://pbs.twimg.com/media/HSfUxRBXwAAsuPo.jpg
+  metrics:
+    views: 15
+  date: '2026-09-18'
+  tags:
+  - pong
+  - atari
+  - control-loop
+- name: Jev Pac-Man
+  url: https://x.com/NesanSelvan04/status/2100844705588347238
+  kind: post
+  author: NesanSelvan04
+  description: Pac-Man where every move is decided by Jev from the tiles around Pac-Man, returning a direction, strategy, danger score and trapped/committed/regret flags.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100844526281879552/img/GUoeEcUZPpay61x8.jpg
+  metrics:
+    likes: 6
+    views: 1050
+  date: '2026-09-18'
+  tags:
+  - pac-man
+  - game-agent
+- name: Jev Plays
+  url: https://jevboardgames.everpaper.app/
+  kind: app
+  author: everpaper
+  description: Tic-tac-toe and Connect Four against Jev, where the model picks each move and the code enforces the rules.
+  tags:
+  - board-games
+  - tic-tac-toe
+- name: Jev plays Absurd Trolley Problems
+  url: https://x.com/PrithviBtw/status/2100696083207004574
+  kind: post
+  author: PrithviBtw
+  description: Jev played all 28 Absurd Trolley Problems 10 times each, agreeing with humanity 46% of the time, sacrificing a human for 5 robots and refusing a $500k bribe.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100695699528814592/img/_AklUvdn4Bef6iLZ.jpg
+  metrics:
+    likes: 15
+    views: 2050
+  date: '2026-09-17'
+  tags:
+  - trolley-problem
+  - ethics
+  - experiment
+- name: Jev plays Balatro
+  url: https://x.com/Juris_Savos/status/2100989012966031417
+  kind: post
+  author: Juris_Savos
+  description: Balatro run where, each hand, Jev looks at the cards, jokers and blind and picks play or discard in ~200-500ms, then shops after the ante; a full run costs under a cent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100987840268034048/img/Hmumsuz83I0DXXIE.jpg
+  metrics:
+    likes: 13
+    views: 31863
+  date: '2026-09-18'
+  tags:
+  - balatro
+  - card-game
+- name: Jev plays Brotato
+  url: https://www.reddit.com/r/typesafe_ai/comments/1wiipyj/jev_plays_brotato/
+  kind: reddit
+  author: TriamondG
+  description: Godot mod harness that feeds Brotato game state and valid movement commands to Jev, which dodges enemies and collects loot; built in about 15 minutes for $0.03 over 10 waves.
+  jev: One Choice per step over movement commands under a short guidance instruction.
+  image: https://external-preview.redd.it/emdhdmRheHAyMHFoMZ-4l1K0cwYempvwCLtCfCUmlSYrwFk65dIHEY8ph35v.png?format=pjpg&auto=webp&s=292db54f93edb95df5060e04754b7484faca51eb
+  metrics:
+    points: 5
+  date: '2026-09-17'
+  tags:
+  - brotato
+  - godot
+  - roguelike
+- name: Jev plays Chrome Dino
+  url: https://x.com/mittalparth_/status/2100817199686619348
+  kind: post
+  author: mittalparth_
+  description: Jev plays the Chrome Dino game from snapshots of the runner, deciding to jump, run or duck with a confidence score at ~280ms per decision; 116M tokens cost $4.65.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100816454564339712/img/WTv-oigoy6fOY6Qc.jpg
+  metrics:
+    likes: 44
+    views: 1796
+  date: '2026-09-18'
+  tags:
+  - chrome-dino
+  - game-agent
+- name: Jev plays Clash Royale
+  url: https://github.com/vishxrad/clashroyale-jev
+  kind: repo
+  author: vishxrad
+  description: Screenshot-driven Clash Royale bot where Jev chooses the card and placement, Qwen 3.8 27B on Cerebras reads the battlefield, and OpenCV reads hand and elixir, playing on Android over ADB.
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  links:
+    demo: https://x.com/KashyapVisharad/status/2101319684578795577
+  tags:
+  - clash-royale
+  - game-bot
+- name: Jev plays Clash Royale
+  url: https://x.com/AmritNigam2/status/2100882320945520778
+  kind: post
+  author: AmritNigam2
+  description: Jev playing Clash Royale in real time and winning a match.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100881913317879808/img/cnr8YJJs3WfuHdnI.jpg
+  metrics:
+    likes: 33
+    views: 2823
+  date: '2026-09-18'
+  tags:
+  - clash-royale
+  - game-agent
+- name: Jev Plays Clash Royale (jev-royal)
+  url: https://github.com/Amrit-Nigam/jev-royal
+  kind: repo
+  author: Amrit-Nigam
+  description: Autonomous Clash Royale agent on macOS through iPhone Mirroring, with local deterministic perception from pixels and Jev arbitrating between tactical options already validated in code.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  tags:
+  - clash-royale
+  - game-bot
+- name: Jev plays DOOM
+  url: https://www.reddit.com/r/accelerate/comments/1whr9gv/jev_playing_doom_in_real_time_with_10_decisions/
+  kind: reddit
+  author: Difficult-Inside-576
+  description: Clip of Jev playing DOOM in real time at 10 decisions per second, at a running cost of about $7 per hour.
+  image: https://external-preview.redd.it/eGhsOTY3NGQ2dHBoMZi4Fo1lWSh3LK2iCYvooC2NogiYum3mcqor0WTcJDpX.png?auto=webp&s=c5307e475e85da6232452955c9b30893dfbf4a15
+  metrics:
+    points: 386
+  date: '2026-09-16'
+  tags:
+  - doom
+  - real-time
+- name: Jev plays Doom
+  url: https://x.com/CompleteSkeptic/status/2099925687465570372
+  kind: post
+  author: CompleteSkeptic
+  description: TypeSafe's launch demo of Jev playing Doom in real time from structured game state, making about 10 calls per second for roughly $7 per hour.
+  image: https://pbs.twimg.com/amplify_video_thumb/2099924592534183936/img/hBGk8j8MRxBgPyg9.jpg
+  metrics:
+    likes: 5002
+    views: 1281223
+  date: '2026-09-15'
+  tags:
+  - doom
+  - official
+  - real-time
+- name: Jev plays Geometry Dash
+  url: https://x.com/Neel490/status/2100953791260397747
+  kind: post
+  author: Neel490
+  description: Jev playing the rhythm platformer Geometry Dash, shown in a short video.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100953694594379776/img/swbWBiQbbZtvxLH_.jpg
+  metrics:
+    likes: 14
+    views: 2149
+  date: '2026-09-18'
+  tags:
+  - geometry-dash
+  - platformer
+- name: Jev plays Gomoku
+  url: https://x.com/GodName794/status/2102199799160475707
+  kind: post
+  author: GodName794
+  description: 'Gomoku experiment: deciding alone, Jev lost, but once an attack-defence search filtered candidate moves and Jev chose among them, it beat the author.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102198809472425984/img/Xw6Vbyb4LLJV4Dff.jpg
+  metrics:
+    views: 49
+  date: '2026-09-22'
+  tags:
+  - gomoku
+  - board-game
+  - chinese
+- name: Jev plays Mario Kart 64
+  url: https://x.com/shreypandya/status/2100606445758898287
+  kind: post
+  author: shreypandya
+  description: Jev driving in Mario Kart 64 in real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100605130869784576/img/gdGysXaHMdzFOU8W.jpg
+  metrics:
+    likes: 226
+    views: 17661
+  date: '2026-09-17'
+  tags:
+  - mario-kart
+  - game-agent
+- name: Jev Plays Minecraft
+  url: https://x.com/jarrodwatts/status/2100674934582263895
+  kind: post
+  author: jarrodwatts
+  description: Round-the-clock Twitch livestream where Jev tries to defeat the Ender Dragon in Minecraft, one decision at a time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100674773843865600/img/dh9A-GH0WV0f-UNj.jpg
+  metrics:
+    likes: 271
+    views: 51116
+  date: '2026-09-17'
+  links:
+    stream: https://twitch.tv/jevplaysminecraft
+    project: https://twitch.tv/jevplaysminecraft
+  tags:
+  - minecraft
+  - livestream
+- name: Jev plays Minecraft Skyblock
+  url: https://x.com/joaobnobre/status/2100486780298383801
+  kind: post
+  author: joaobnobre
+  description: Single Jev agent playing Minecraft Skyblock by reading the game state and choosing each next move through typed decisions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100486436323508224/img/LalHAX48Wkvn20LT.jpg
+  metrics:
+    likes: 14
+    views: 1109
+  date: '2026-09-17'
+  tags:
+  - minecraft
+  - game-agent
+- name: Jev plays Pac-Man
+  url: https://jev-pacman.ephraimduncan.com
+  kind: app
+  author: Ephraim Duncan
+  description: Pac-Man recreation steered by Jev, which receives the maze, actors and legal directions as structured data before each junction and picks the turn in real time.
+  jev: One Choice per junction over the legal directions, asked far enough ahead for the answer to arrive in time.
+  tags:
+  - pac-man
+  - game-agent
+  - real-time
+- name: Jev plays Pokemon Emerald
+  url: https://x.com/p_misirov/status/2101398305796509718
+  kind: post
+  author: p_misirov
+  description: Work-in-progress harness running Pokemon Emerald in mGBA to test whether Jev can play Pokemon better than an LLM.
+  image: https://pbs.twimg.com/media/HSmqn1DbgAAUTrW.png?name=orig
+  metrics:
+    likes: 3
+    views: 367
+  date: '2026-09-19'
+  tags:
+  - pokemon
+  - emulator
+  - wip
+- name: Jev plays Pokemon FireRed
+  url: https://x.com/luckeyfaraday/status/2100622223014842432
+  kind: post
+  author: luckeyfaraday
+  description: 'Agent that beat Brock in Pokemon FireRed in under 5 real-world minutes for $0.09: emulator memory is decoded into game state, code lists the legal actions and Jev picks one.'
+  jev: Choice over code-generated legal actions each turn; every input is logged so runs replay with zero model calls.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100622064457498624/img/qDeXq1ID5SpwOoYJ.jpg
+  metrics:
+    likes: 33
+    views: 5289
+  date: '2026-09-17'
+  tags:
+  - pokemon
+  - emulator
+  - speedrun
+- name: Jev plays Pokemon Red
+  url: https://jev-plays-pokemon.standardagents.ai
+  kind: app
+  author: 0xBOYD
+  description: Live stream of Jev playing Pokemon Red, where every button press is Jev's choice; after 8,000+ decisions and $1.21 it had beaten Brock for the first gym badge.
+  jev: Gameplay decisions by Jev; game-log monitoring and the real-time harness were built with Opus 5.
+  image: https://jev-plays-pokemon.standardagents.ai/og.png
+  metrics:
+    likes: 386
+    views: 55617
+    points: 56
+    downloads: 604
+  links:
+    demo: https://x.com/0xBOYD/status/2100539883836018697
+    discussion: https://www.reddit.com/r/singularity/comments/1wjvh14/jev_is_amazing_im_letting_it_play_pokemon_red/
+    package: https://www.npmjs.com/package/jev-plays-pokemon
+  tags:
+  - pokemon
+  - long-horizon
+  - game-agent
+- name: Jev plays Pokémon
+  url: https://github.com/anxkhn/JevPlaysPokemon
+  kind: repo
+  author: anxkhn
+  description: Agent where Jev plays Generation 3 Pokémon battles on Showdown and a real FireRed ROM, reading HP, types, moves and rosters from RAM and picking among the legal moves and switches each turn.
+  image: https://raw.githubusercontent.com/anxkhn/JevPlaysPokemon/main/docs/dashboard.png
+  metrics:
+    stars: 5
+    likes: 28
+    views: 5641
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/AnxKhn/status/2100842364248178833
+  tags:
+  - pokemon
+  - emulator
+  - firered
+- name: Jev plays Pokémon Gold
+  url: https://x.com/joey_build/status/2100904864519770170
+  kind: post
+  author: joey_build
+  description: Attempt to have Jev beat the Pokémon League in Pokémon Gold (HGSS) by choosing among button presses.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100904739332399105/img/x3EZzH6sWlihnjqr.jpg
+  metrics:
+    likes: 3
+    views: 10178
+  date: '2026-09-18'
+  tags:
+  - pokemon
+  - game-agent
+- name: Jev plays Pokémon Showdown
+  url: https://x.com/Izzuddin_Shafi/status/2101116220061958528
+  kind: post
+  author: Izzuddin_Shafi
+  description: Pokémon Showdown harness, built with Codex, in which Jev plays a full match quickly but with mixed-quality choices, shown as a replay with decision data and latency.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101115189483732992/img/dbVAfRUVXObCcc75.jpg
+  metrics:
+    likes: 1
+    views: 132
+  date: '2026-09-19'
+  tags:
+  - pokemon
+  - game-agent
+- name: Jev plays Puyo Puyo
+  url: https://x.com/hota911/status/2101130463037530229
+  kind: post
+  author: hota911
+  description: Puyo Puyo agent on the puyoai engine where Jev answers 1+3 questions per move, the game phase and then the best post-placement outcome, eventually building 3-chains and beating a random player.
+  image: https://pbs.twimg.com/tweet_video_thumb/HSi0shdboAAf5HG.jpg
+  metrics:
+    likes: 3
+    views: 493
+  date: '2026-09-19'
+  links:
+    engine: https://github.com/puyoai/puyoai
+  tags:
+  - puzzle-game
+  - japanese
+- name: Jev plays RALLY
+  url: https://github.com/Icohen007/jev-play-ping-pong
+  kind: repo
+  author: Icohen007
+  description: Jev plays a live browser table-tennis game in real time from structured telemetry, choosing every serve and return and moving the racket through ordinary Chrome input; one recorded Club-difficulty run ended 11-0.
+  jev: Choices for contact and pace per shot; deterministic code observes and executes.
+  image: https://raw.githubusercontent.com/Icohen007/jev-play-ping-pong/main/docs/media/jev-real-time-win.png
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  links:
+    app: https://indispensable-lingonberry-hot.julius.site/
+  tags:
+  - table-tennis
+  - real-time
+- name: Jev plays Resident Evil
+  url: https://x.com/juminoz/status/2100846091281506370
+  kind: post
+  author: juminoz
+  description: Experiment having Jev play the original Resident Evil in 3D, handling movement, enemies and puzzles, following an earlier Time Crisis run.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100845309748490240/img/ahnwqqlyOJSdGRQL.jpg
+  metrics:
+    likes: 5
+    views: 2360
+  date: '2026-09-18'
+  tags:
+  - resident-evil
+  - game-agent
+- name: Jev plays RollerCoaster Tycoon 2
+  url: https://x.com/petergostev/status/2102149363787088384
+  kind: post
+  author: petergostev
+  description: 'Attempt to have Jev play RollerCoaster Tycoon 2: it built a few rides at the start and then got stuck, a reminder that harder games still need smarter models.'
+  image: https://pbs.twimg.com/media/HSxVXgfW8AEPzIL.jpg?name=orig
+  metrics:
+    likes: 15
+    views: 1967
+  date: '2026-09-21'
+  links:
+    stream: https://x.com/i/broadcasts/1DGleVdkbyoJL
+  tags:
+  - rollercoaster-tycoon
+  - negative-result
+- name: Jev plays Slay the Spire 2
+  url: https://www.reddit.com/r/ArtificialInteligence/comments/1wkjatd/i_hooked_jev_up_to_slay_the_spire_2_it_made_it_to/
+  kind: reddit
+  author: Zboubkiller
+  description: Bridge that reads live Slay the Spire 2 state from a local mod server and asks Jev for the best card, item, or move; it reached the first boss in about an hour for three cents.
+  jev: A Choice over legal moves every few seconds, a couple hundred ms per decision.
+  image: https://external-preview.redd.it/NDM2MzNzcGFsZ3FoMRVX0gr1QcHBMnu7HTuOq0-1UwoVsYJY79bqH7PNNhxN.png?format=pjpg&auto=webp&s=ab8dc1a2c2d94dfbe2220e7aa434e6a4d727fba2
+  metrics:
+    points: 2
+  date: '2026-09-19'
+  tags:
+  - deckbuilder
+  - slay-the-spire
+- name: Jev plays Slay the Spire 2 via MCP
+  url: https://x.com/0xSorrowRain/status/2100484781389791710
+  kind: post
+  author: 0xSorrowRain
+  description: Chinese experiment connecting Jev to a Slay the Spire 2 MCP server with lots of context; so far it has not survived the first floor.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100484509653487616/img/JEehDZgCXN_Y1F3x.jpg
+  metrics:
+    likes: 25
+    views: 5891
+  date: '2026-09-17'
+  tags:
+  - slay-the-spire
+  - mcp
+  - experiment
+- name: Jev plays Smash Bros.
+  url: https://x.com/maubaron/status/2100738237237002706
+  kind: post
+  author: maubaron
+  description: Jev controlling all four characters in a Smash Bros. match against itself, picking each move in a fraction of a second across 22 million tokens for a few cents.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100731665513349120/img/j4DcB9CxjN8DX4qe.jpg
+  metrics:
+    likes: 3678
+    views: 308293
+  date: '2026-09-18'
+  tags:
+  - game-agent
+  - fighting-game
+- name: Jev plays Snake
+  url: https://jevplayssnake.lovable.app/
+  kind: app
+  author: Carol Monroe
+  description: Snake game where Jev picks the direction at every crossing and shows how sure it is; you can overrule it with an arrow key, let it drive alone, or race it on separate phones.
+  jev: One direction Choice per crossing, with latency and cost shown per run.
+  image: https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_7mf8j4pe569hrrss75tmmh923w/fa856b4e192457e8609183ad313011b4_1789960476462.png
+  metrics:
+    likes: 2
+    views: 44
+  links:
+    demo: https://x.com/CarolMonroe/status/2101877994335977536
+    demo 2: https://x.com/shwetabjaj/status/2101914174553280639
+  tags:
+  - snake
+  - real-time
+- name: Jev plays Snake
+  url: https://x.com/chenchengpro/status/2100516953496670430
+  kind: post
+  author: chenchengpro
+  description: Snake where Jev is asked for every move; 200 requests cost $0.02, so $1 buys about ten thousand steps.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100516335155646464/img/pow4ZDKeRwkBVSvy.jpg
+  metrics:
+    likes: 283
+    views: 67271
+  date: '2026-09-17'
+  tags:
+  - snake
+  - game-agent
+- name: Jev plays StarCraft
+  url: https://github.com/phyous/tsai-sc
+  kind: repo
+  author: phyous
+  description: Harness that lets Jev play Strongarm, the first combat mission of the original StarCraft shareware, choosing commands from structured game state and executing them via keyboard and mouse; it won the mission.
+  metrics:
+    stars: 22
+    points: 25
+  date: '2026-09-16'
+  links:
+    discussion: https://www.reddit.com/r/singularity/comments/1whu7cr/jev_plays_starcraft/
+    discussion 2: https://www.reddit.com/r/typesafe_ai/comments/1wi2j4e/jev_playing_starcraft/
+  tags:
+  - starcraft
+  - game-agent
+- name: Jev plays Street Fighter 2
+  url: https://www.reddit.com/r/typesafe_ai/comments/1wjwfz6/jev_plays_streetfighter_2/
+  kind: reddit
+  author: Smartaces
+  description: Street Fighter II hooked up to Jev through a custom control connector, with only a description of the controls as context; results are mixed, with some fireball spamming.
+  jev: One Choice per step over roughly 50 move options.
+  image: https://external-preview.redd.it/NWVkaW83enViYnFoMay-vxLp3z8yZzFfUDRXejkROs2MYTjUI3KtLbhhG02Y.png?format=pjpg&auto=webp&s=771cfb248c3cfd443131cdb83078edcd6cbcf22c
+  metrics:
+    points: 7
+  date: '2026-09-18'
+  tags:
+  - fighting-game
+  - street-fighter
+- name: Jev plays Street Fighter II
+  url: https://github.com/smartaces/jev-plays-streetfighter-2
+  kind: repo
+  author: smartaces
+  description: 'Agent where Jev plays Ryu in Street Fighter II on a Mac emulator: game RAM becomes a structured observation, Jev picks a move and strength, and a local controller executes the buttons while a dashboard shows its choices.'
+  image: https://external-preview.redd.it/NTVkZTJiN3R4bXFoMQjvd-8EQw0QbDjm9hCjKpnf4X5aCCr61OBuvtMnbJcC.png?format=pjpg&auto=webp&s=0a204302132cb05408f3a8a913bb8c1812c9679a
+  metrics:
+    stars: 6
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/typesafe_ai/comments/1wlbfl2/updated_jev_plays_streetfighter_2_improved_play/
+    discussion: https://www.reddit.com/r/OpenAI/comments/1wlbji2/ai_plays_streetfighter_2_in_real_time/
+  tags:
+  - fighting-game
+  - emulator
+  - retro
+- name: Jev plays Subway Surfers
+  url: https://www.reddit.com/r/singularity/comments/1wjiphh/new_decision_model_jev_developed_by_cocreator_of/
+  kind: reddit
+  author: _MaxBlade
+  description: Clip of Jev playing Subway Surfers in real time, reposted from its builder's post on X.
+  image: https://external-preview.redd.it/dHpuMHpkNG95N3FoMUucEQdQZmbqjqbId0_QLFh_fksCLNqhu15wWNNKVSjG.png?format=pjpg&auto=webp&s=b5c4f1b9a4864434b81c83de0551e7588f03003c
+  metrics:
+    points: 548
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/_MaxBlade/status/2100634359099232678
+  tags:
+  - subway-surfers
+  - real-time
+- name: Jev plays Subway Surfers
+  url: https://x.com/_MaxBlade/status/2100634359099232678
+  kind: post
+  author: _MaxBlade
+  description: Jev playing Subway Surfers at superhuman speed, including 50 games at once, with the whole run costing less than a cent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100633400717565952/img/KlytLNSLCQA-yY2E.jpg
+  metrics:
+    likes: 4088
+    views: 353002
+  date: '2026-09-17'
+  tags:
+  - game-agent
+  - real-time
+- name: Jev plays Tetris
+  url: https://github.com/MachineLearning-Nerd/jev-tetris
+  kind: repo
+  author: MachineLearning-Nerd
+  description: Arcade Tetris where the engine enumerates every legal, collision-checked final placement and Jev picks one as a typed option, while Python owns the physics; includes a narrated explainer video.
+  image: https://raw.githubusercontent.com/MachineLearning-Nerd/jev-tetris/main/assets/demo.png
+  date: '2026-09-17'
+  tags:
+  - tetris
+  - python
+- name: Jev plays Tetris
+  url: https://x.com/AlanDaitch/status/2100438353946513815
+  kind: post
+  author: AlanDaitch
+  description: Jev playing Tetris on its hardest mode, deciding each move in about 0.3 seconds and placing 357 pieces for 134 lines in 2 minutes.
+  image: https://pbs.twimg.com/ext_tw_video_thumb/2100438029299040256/pu/img/s_cly7mjSq3voOC3.jpg
+  metrics:
+    likes: 49
+    views: 5937
+  date: '2026-09-17'
+  tags:
+  - tetris
+  - game-agent
+- name: Jev plays Tetris
+  url: https://x.com/marcus_lowe/status/2100315518930661861
+  kind: post
+  author: marcus_lowe
+  description: Tetris demo where Jev picks piece placements fast enough that it pushes blocks down before they fall.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100315393860730880/img/u0iH2SHQny2hkd4Q.jpg
+  metrics:
+    likes: 980
+    views: 79217
+  date: '2026-09-16'
+  tags:
+  - tetris
+  - game-agent
+- name: Jev plays Tetris
+  url: https://x.com/realdora_eth/status/2102036344130191370
+  kind: post
+  author: realdora_eth
+  description: Tetris hooked up to Jev, which decides where every piece lands.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102035915497476096/img/NzSS4-InwFUwSJf4.jpg
+  metrics:
+    likes: 2
+    views: 265
+  date: '2026-09-21'
+  tags:
+  - tetris
+- name: Jev plays Time Crisis
+  url: https://x.com/juminoz/status/2100832108855857325
+  kind: post
+  author: juminoz
+  description: Jev playing the arcade shooter Time Crisis through a custom harness, shooting targets and taking cover to avoid getting shot.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100831608366575616/img/lDHAtdzHqYd-f0eU.jpg
+  metrics:
+    likes: 3
+    views: 3011
+  date: '2026-09-18'
+  tags:
+  - time-crisis
+  - game-agent
+- name: Jev plays UNO
+  url: https://www.reddit.com/r/typesafe_ai/comments/1wiswxr/jev_plays_uno_and_beats_me/
+  kind: reddit
+  author: hiImMate
+  description: Simple UNO game where one human plays against three Jev opponents, each given different instructions, with moves returned as fast as a hardcoded AI.
+  image: https://external-preview.redd.it/MDdndjA3eWxzMnFoMUJOWPu6KucJdZQlotOh3EBny2btI-yDfvlTONzGGTzb.png?format=pjpg&auto=webp&s=183ec2605bc04c4982a8b3fdf92ae12132c9fca1
+  metrics:
+    points: 8
+  date: '2026-09-17'
+  tags:
+  - uno
+  - card-game
+- name: Jev plays Vampire Survivors
+  url: https://github.com/oldmoldycake/jev_vampire_survivors
+  kind: repo
+  author: oldmoldycake
+  description: BepInEx plugin plus Python brain that lets Jev play the real Steam game, picking the character, stage, every level-up, and walking direction four times a second, with a live dashboard.
+  jev: Game state is turned into plain-English questions; no game-specific strategy is hard-coded.
+  image: https://external-preview.redd.it/dWUzcjQ5cjkxZnFoMWL026_E1HhdGexzA7VRvD--pc7oUJywn19Lddex_9NQ.png?format=pjpg&auto=webp&s=5a373e6177ec43dbe016271a05c85291cb4dcb91
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  links:
+    demo: https://www.reddit.com/r/typesafe_ai/comments/1wkdukw/letting_jev_play_some_vampire_survivors/
+    discussion: https://www.reddit.com/r/ClaudeAI/comments/1wke35a/used_claude_to_help_jev_become_a_gamer/
+  tags:
+  - vampire-survivors
+  - game-agent
+  - modding
+- name: Jev Pokemon shiny hunter
+  url: https://x.com/luckeyfaraday/status/2100955913913774437
+  kind: post
+  author: luckeyfaraday
+  description: Autonomous loop in Pokemon FireRed where Jev resets, checks the starter Pokemon and repeats until it finds a shiny, after earlier beating Brock in under 5 minutes.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100955835597811712/img/SWhMkCyUZC_SrjmK.jpg
+  metrics:
+    likes: 14
+    views: 1424
+  date: '2026-09-18'
+  links:
+    earlier: https://x.com/luckeyfaraday/status/2100622223014842432
+  tags:
+  - pokemon
+  - emulator
+- name: Jev Pong
+  url: https://github.com/ably-labs/jev-pong
+  kind: repo
+  author: ably-labs
+  description: Browser Pong where the ball moves one step per model decision, pitting Jev against LLMs through Vercel AI Gateway, with every player and agent connected over an Ably channel.
+  image: https://raw.githubusercontent.com/ably-labs/jev-pong/main/public/media/clip-wide.gif
+  date: '2026-09-17'
+  links:
+    app: https://jev-pong.ably.dev
+    app 2: https://jev-pong.ably.dev/
+  tags:
+  - pong
+  - multiplayer
+  - model-comparison
+- name: JEV Prix
+  url: https://github.com/MartinPuli/f1
+  kind: repo
+  author: MartinPuli
+  description: Racing showcase where Jev drives five cars on unknown procedural circuits, with ten driver prompts, 30 recorded races, 3D replays, and a leaderboard comparing strategies.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    app: https://jevf1.vercel.app
+  tags:
+  - racing
+  - simulation
+- name: Jev puzzle solver at scale
+  url: https://x.com/ashkans_dev/status/2101014737383206914
+  kind: post
+  author: ashkans_dev
+  description: Jev solving a batch of logic games at scale, with Sudoku taking noticeably longer than the rest.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101014607875686400/img/MsxqI3XpdHm0XxmL.jpg
+  metrics:
+    likes: 1
+    views: 272
+  date: '2026-09-18'
+  tags:
+  - puzzles
+  - sudoku
+- name: Jev Reasoner Battleship
+  url: https://github.com/russellballestrini/opencompletion/blob/main/jev_hunter.py
+  kind: repo
+  author: russellballestrini
+  description: Battleship targeting player in the OpenCompletion multi-user LLM playground that fuses an exact placement-density grid with one Jev decision per turn over the top candidate cells, benchmarked in a five-admiral arena.
+  jev: A choice over the top 6 candidate cells plus a choice on the wounded ship's orientation, fused with the grid at weight 0.4; fails open to the grid alone.
+  metrics:
+    repo_stars: 41
+  date: '2023-10-28'
+  links:
+    repo: https://github.com/russellballestrini/opencompletion
+    app: https://demo.opencompletion.com
+  tags:
+  - battleship
+  - game-ai
+- name: JEV RTS
+  url: https://github.com/studioigor/jev-rts
+  kind: repo
+  author: studioigor
+  description: Unity real-time strategy game where each unit's actions and routes and the enemy commander's strategy come from Jev, with no hidden local AI fallback.
+  image: https://raw.githubusercontent.com/studioigor/jev-rts-assets/main/Documentation~/preview.jpg
+  metrics:
+    stars: 11
+    views: 68458
+    likes: 1537
+  date: '2026-09-20'
+  links:
+    video: https://www.youtube.com/watch?v=6_cCufO5c9U
+  tags:
+  - rts
+  - unity
+- name: Jev Rubik's cube solver
+  url: https://x.com/gdechichi/status/2102144051197915162
+  kind: post
+  author: gdechichi
+  description: Demo of Jev solving a Rubik's cube on its own, choosing each move step by step the way a human solver would.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102143877465747456/img/-3xenQD1bCHR_uyz.jpg
+  metrics:
+    likes: 97
+    views: 3019
+  date: '2026-09-21'
+  tags:
+  - rubiks-cube
+  - puzzle
+- name: Jev Snake
+  url: https://github.com/iammusham/jev-snake
+  kind: repo
+  author: iammusham
+  description: Snake environment where the Python engine owns the rules and Jev picks the direction from structured state every tick, with a browser human baseline and a pygame client; the engine never overrides Jev's choice.
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - snake
+  - pygame
+- name: JEV SPEED
+  url: https://github.com/tubone24/jev-practice-speed
+  kind: repo
+  author: tubone24
+  description: 'WebGL card game Speed against a CPU whose brain is Jev, built to show decision speed and accuracy live: each turn asks one Noul per hand-and-pile combination and a Choice for the move, with code enforcing the rules.'
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  links:
+    app: https://jev-speed.tubone24.workers.dev/
+    app 2: https://jev-speed.tubone24.workers.dev
+  tags:
+  - card-game
+  - webgl
+- name: Jev Speed
+  url: https://x.com/tubone24/status/2101895523674534374
+  kind: post
+  author: tubone24
+  description: Browser version of the card game Speed where you race a Jev-driven opponent that judges which cards can be played, now opened to the public.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101298908085542912/img/Ho45fT01CQhB3ljm.jpg
+  metrics:
+    likes: 167
+    views: 36537
+  date: '2026-09-21'
+  links:
+    app: https://jev-speed.tubone24.workers.dev/
+    project: https://jev-speed.tubone24.workers.dev
+  tags:
+  - card-game
+  - cloudflare-workers
+- name: Jev Studio (visual funnels)
+  url: https://github.com/inteligenciamilgrau/jevstudio
+  kind: repo
+  author: inteligenciamilgrau
+  description: Portuguese visual workbench for wiring Jev decision funnels by drag and drop, where each node asks Jev questions and each answer links to another node or a game action, with live probabilities on the wires.
+  image: https://raw.githubusercontent.com/inteligenciamilgrau/jevstudio/main/docs/jevstudio.png
+  metrics:
+    stars: 4
+    views: 30130
+    likes: 725
+  date: '2026-09-18'
+  links:
+    video: https://www.youtube.com/watch?v=ViHD9Li_Bqk
+  tags:
+  - visual-builder
+  - decision-funnels
+- name: JEV Tetris
+  url: https://github.com/thelau/jev-tetris
+  kind: repo
+  author: thelau
+  description: Tetris where code finds every reachable placement, including tucks and spins, and describes each as a sentence; Jev picks one via a Choice and the board glows with its full probability distribution.
+  image: https://raw.githubusercontent.com/thelau/jev-tetris/main/docs/stills/states/3-decided-desktop.png
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - tetris
+  - game
+- name: Jev Tetris
+  url: https://x.com/wellback000/status/2101931130731852088
+  kind: post
+  author: wellback000
+  description: Tetris game played by Jev, shown in a short video.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101930824686096384/img/1gqQc_5FgU_1NRJk.jpg
+  metrics:
+    views: 39
+  date: '2026-09-21'
+  tags:
+  - tetris
+- name: Jev Tetris agent
+  url: https://x.com/MarcelooMendes/status/2100969755318370699
+  kind: post
+  author: MarcelooMendes
+  description: Tetris agent driven by Jev, shown playing in a short video.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100969618235969537/img/9azLB1IGbF6hoY1a.jpg
+  metrics:
+    likes: 4
+    views: 2044
+  date: '2026-09-18'
+  tags:
+  - tetris
+- name: Jev Tetris autoplayer
+  url: https://x.com/lostingz001/status/2101934790018773143
+  kind: post
+  author: lostingz001
+  description: Chinese Tetris demo where each turn packs the board, holes and legal placements into JSON and one Jev request answers rotation and column, whether to hold, and a 0-4 danger score, at about 300ms per step.
+  jev: One Choice for placement, one Noul for hold and one Score for danger per request.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101933405248393216/img/l-Lqqy3OEdaBJxTc.jpg
+  metrics:
+    likes: 1
+    views: 121
+  date: '2026-09-21'
+  tags:
+  - tetris
+  - choice-noul-score
+- name: Jev Tetris placement
+  url: https://x.com/ziwenxu_/status/2100984628811084144
+  kind: post
+  author: ziwenxu_
+  description: Tetris hookup where, for every piece, Jev looks at the board and all landing spots and picks one in about half a second, with a whole game costing under half a cent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100984324447203329/img/R3W7PNHwrMyOm7cK.jpg
+  metrics:
+    likes: 21
+    views: 1299
+  date: '2026-09-18'
+  tags:
+  - tetris
+- name: Jev Ultima Online combat AI
+  url: https://www.youtube.com/watch?v=cP-GWKteHKo
+  kind: video
+  author: John
+  description: Ultima Online bot where Jev replaces scripted combat loops, choosing tile positions, when to flee or pursue, where to explore, and what to loot, with a live state UI.
+  jev: A tilePriority question for positioning plus decisions on escape, pursuit, and loot.
+  metrics:
+    views: 1591
+    likes: 13
+  date: '2026-09-17'
+  tags:
+  - mmorpg
+  - ultima-online
+  - game-ai
+- name: Jev vs 3 models at Flappy Bird
+  url: https://x.com/anshnanda/status/2100611596859093082
+  kind: post
+  author: anshnanda
+  description: Flappy Bird match between Jev and three other AI models playing simultaneously.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100611414746644481/img/E5GtDSrVTj1b3VBq.jpg
+  metrics:
+    likes: 347
+    views: 46384
+  date: '2026-09-17'
+  tags:
+  - flappy-bird
+  - comparison
+- name: Jev vs Claude and GPT at Tetris
+  url: https://x.com/otani_ai_memo/status/2100784295329886614
+  kind: article
+  author: otani_ai_memo
+  description: Japanese article pitting Jev against Claude and GPT in head-to-head Tetris and Puyo Puyo, where Jev won all 14 matches, and arguing that well-designed questions bring its judgments to top-LLM level.
+  image: https://pbs.twimg.com/media/HSdu9l7bMAAkWhh.jpg
+  metrics:
+    likes: 18
+    views: 3364
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/aieo-product/jev-gamebenchmark
+    guide: https://jev-guide.take-otani.workers.dev/
+    project: https://github.com/aieo-product/jev-gamebenchmark
+  tags:
+  - tetris
+  - puyo-puyo
+  - benchmark
+- name: Jev vs Fable 5.1 vs GPT-6 Astra chess
+  url: https://x.com/aimlapi/status/2100372930282573876
+  kind: post
+  author: aimlapi
+  description: 'Blitz chess at 5+0 with one API call per move: Jev lost on material to Fable 5.1 but won on time at ~2.6s per move, and was mated by GPT-6 Astra in 18 moves.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100371773275406336/img/NmHPy0pAprSsC6Gi.jpg
+  metrics:
+    likes: 2298
+    views: 551118
+  date: '2026-09-16'
+  tags:
+  - chess
+  - comparison
+- name: Jev vs GLM 5.3 at chess
+  url: https://x.com/nutlope/status/2101010773157761481
+  kind: post
+  author: nutlope
+  description: 'Chess game between Jev and GLM 5.3: GLM won by checkmate in 29 moves, but Jev took ~0.3s and under $0.0001 per move versus ~5.8s and ~$0.008, for 24 cents total.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101007875644506112/img/2KoYEIDaUkXehsRC.jpg
+  metrics:
+    likes: 320
+    views: 38515
+  date: '2026-09-18'
+  tags:
+  - chess
+  - comparison
+- name: Jev vs Jev blackjack
+  url: https://x.com/Blueprint_Biz/status/2100728329003303146
+  kind: post
+  author: Blueprint_Biz
+  description: Blackjack demo where one Jev counts cards and wins until a second Jev playing the pit boss steps in.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100728041320189952/img/ZYUxcdFhFprJlPuc.jpg
+  metrics:
+    likes: 15
+    views: 57241
+  date: '2026-09-17'
+  tags:
+  - blackjack
+  - multi-agent
+- name: Jev vs Jev chess
+  url: https://github.com/TholeG/typesafe-chess
+  kind: repo
+  author: TholeG
+  description: Chess between two Jev players where each move is a Choice over the legal moves, alongside a position Score and a sharpness Noul, with an optional AlphaZero-style MCTS using those distributions.
+  image: https://raw.githubusercontent.com/TholeG/typesafe-chess/main/docs/screenshot.png
+  date: '2026-09-17'
+  tags:
+  - chess
+  - mcts
+  - self-play
+- name: Jev vs Laya in Doom
+  url: https://x.com/hope_rythmn/status/2102178634870264308
+  kind: post
+  author: hope_rythmn
+  description: 'Doom deathmatch (1v1) between Jev and the open Laya model: Jev''s calls were sharper and needed a third of the corrections, but Laya decided twice as often and won 5-1.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102176531561017344/img/DerBafmiiy-MnwvO.jpg
+  metrics:
+    likes: 8
+    views: 119
+  date: '2026-09-21'
+  tags:
+  - doom
+  - laya
+  - deathmatch
+- name: Jev vs LLMs at Connect4
+  url: https://x.com/JamesWard/status/2101176408584098146
+  kind: post
+  author: JamesWard
+  description: Connect4-style game that pits Jev against LLMs, where Jev plays better, faster, cheaper and more reliably.
+  image: https://pbs.twimg.com/tweet_video_thumb/HSje2ycXIAA5EET.jpg
+  metrics:
+    likes: 21
+    views: 2163
+  date: '2026-09-19'
+  links:
+    repo: https://github.com/jamesward/jev-llm-c4
+    project: https://github.com/jamesward/jev-llm-c4
+  tags:
+  - connect4
+  - model-comparison
+- name: Jev vs Maia-1100
+  url: https://x.com/MarcosPimi/status/2102079921388409005
+  kind: post
+  author: MarcosPimi
+  description: 'Ten chess games against Lichess''s beginner-style Maia-1100 bot: Jev scored just 0.5, finding the best check 100% of the time but the best quiet move only 39%.'
+  metrics:
+    views: 25
+  date: '2026-09-21'
+  tags:
+  - chess
+  - maia
+  - analysis
+- name: Jev vs OpenJev FPS
+  url: https://x.com/Neel490/status/2101028527978020920
+  kind: post
+  author: Neel490
+  description: First-person shooter in the browser where Jev fights OpenJev, an open Jev-compatible API running Qwen on SGLang.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101028423032287232/img/CPjw3sVj_6rRvJ__.jpg
+  metrics:
+    likes: 71
+    views: 8889
+  date: '2026-09-18'
+  links:
+    app: https://jev-vs-openjev.vercel.app/
+    openjev: https://github.com/ekzhang/openjev-sglang
+    project: https://jev-vs-openjev.vercel.app
+  tags:
+  - fps
+  - openjev
+  - comparison
+- name: Jev vs Opus 5 in Pokémon
+  url: https://x.com/sid19arya0/status/2100458351440048258
+  kind: post
+  author: sid19arya0
+  description: Competitive Pokémon battle between Jev and Opus 5 that Jev won, spending $0.0029 and 37s against $2.35 and 6m 29s.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100458327918395392/img/vdl_EhR4xNaDDN1-.jpg
+  metrics:
+    likes: 5
+    views: 272
+  date: '2026-09-17'
+  tags:
+  - pokemon
+  - game-agent
+- name: Jev vs Sonnet chess
+  url: https://x.com/mizchi/status/2100615604386562430
+  kind: post
+  author: mizchi
+  description: Chess matches between Sonnet and Jev in which Jev won every game.
+  metrics:
+    likes: 592
+    views: 70359
+  date: '2026-09-17'
+  tags:
+  - chess
+  - comparison
+- name: Jev vs. Jev Ultima Online duels
+  url: https://www.reddit.com/r/ultimaonline/comments/1wkylbr/jev_ai_vs_jev_ai_ultima_online_duels/
+  kind: reddit
+  author: autorokk
+  description: Two Jev agents duel each other in Ultima Online, with the model choosing every spell and movement.
+  image: https://external-preview.redd.it/BpPYrpIM8bOMMG3ZopGyhElvJ2UQa9p94nEM0yHe-ak.jpeg?auto=webp&s=049d66cdc9b33ad6888d38f34eeef3d5ecc1ea0b
+  metrics:
+    points: 37
+  date: '2026-09-19'
+  links:
+    demo: https://www.youtube.com/watch?v=tjX3UoD7HPQ
+  tags:
+  - mmo
+  - pvp
+- name: Jev Werewolf game
+  url: https://x.com/tateko_ai/status/2102073216680546670
+  kind: post
+  author: tateko_ai
+  description: Werewolf (social deduction) game built with Jev right after a gakuse.ai study session on using Jev inside agent harnesses.
+  image: https://pbs.twimg.com/media/HSwQDMIaEAIbJtV.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 467
+  date: '2026-09-21'
+  tags:
+  - werewolf
+  - social-deduction
+- name: Jev Wikipedia speedrun
+  url: https://x.com/GreenCodeCodes/status/2102118562663903413
+  kind: post
+  author: GreenCodeCodes
+  description: Wikipedia speedrun where models race from one page to another using only internal links; LLMs averaged 5-10s per step a year ago while Jev takes under 1s.
+  image: https://pbs.twimg.com/media/HSw5lBbXsAAxQbF.jpg?name=orig
+  metrics:
+    likes: 15
+    views: 280
+  date: '2026-09-21'
+  tags:
+  - wikirace
+  - speedrun
+- name: Jev's Dojo
+  url: https://x.com/vansitha12/status/2100937772030927216
+  kind: post
+  author: vansitha12
+  description: Browser fighting game where Jev learns your habits, predicts your next move before you make it, and roasts your fighting style.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100933946947272704/img/AKeg-wfMbeMHzL-d.jpg
+  metrics:
+    likes: 60
+    views: 92722
+  date: '2026-09-18'
+  links:
+    app: https://www.jevsdojo.xyz/
+    project: https://jevsdojo.xyz
+  tags:
+  - fighting-game
+  - prediction
+- name: Jev's Fly
+  url: https://github.com/webdevcody/jevs-fly
+  kind: repo
+  author: webdevcody
+  description: Three.js FPV garden game where a glowing fly hunts wandering goblins, with Jev choosing its heading and dive about five times per second.
+  jev: Jev gets the target's bearing, its angle below the horizon, line-of-sight blockers and safe climb angles, and picks the flight command.
+  image: https://raw.githubusercontent.com/webdevcody/jevs-fly/main/screenshots/jevs-fly.png
+  metrics:
+    stars: 12
+    views: 9583
+    likes: 60
+  date: '2026-09-19'
+  links:
+    video: https://www.youtube.com/watch?v=NGTOgJRawUs
+  tags:
+  - threejs
+  - flight
+  - game
+- name: Jev's Kitchen Chaos
+  url: https://github.com/bebe0307mz/jevs-kitchen-chaos
+  kind: repo
+  author: bebe0307mz
+  description: Overcooked-style 3D kitchen where four chefs are driven one decision at a time by Jev or frontier LLMs, with a broadcast HUD showing each policy distribution, latency and token cost, plus a benchmark mode.
+  date: '2026-09-18'
+  links:
+    app: https://jevs-kitchen-chaos.vercel.app
+  tags:
+  - overcooked
+  - 3d
+  - benchmark
+- name: Jev's Sprint Planning
+  url: https://jevs-sprint-planning.vercel.app
+  kind: app
+  author: notque
+  description: Simulation in which four Jev-driven developers in a 3D office claim tickets, code, review, deploy and fight fires, with live probability bars, latency and cost per decision.
+  tags:
+  - simulation
+  - agents
+- name: jev-asks-until-sure
+  url: https://github.com/mintannn/jev-asks-until-sure
+  kind: repo
+  author: mintannn
+  description: Twenty-questions game that guesses your persona, home region in Japan, and age, stopping once Jev's calibrated confidence crosses a threshold and admitting it cannot tell after twelve questions.
+  image: https://raw.githubusercontent.com/mintannn/jev-asks-until-sure/main/public/demo.gif
+  date: '2026-09-20'
+  links:
+    app: https://jev.mintan.org
+    app 2: https://jev.mintan.org
+  tags:
+  - twenty-questions
+  - calibration
+- name: jev-behavior-tree
+  url: https://github.com/phuhao00/jev-behavior-tree
+  kind: repo
+  author: phuhao00
+  description: 'Game "intuition" service that replaces the condition and selector nodes of NPC behavior trees with Jev: one Choice picks a tactic the game can execute, while Score and yes/no gauges report threat and timing.'
+  jev: Called via AI SDK experimental_evaluate; low confidence keeps the previous tactic so NPCs do not flip every tick.
+  date: '2026-09-19'
+  tags:
+  - npc
+  - behavior-tree
+  - ai-sdk
+- name: jev-bfs
+  url: https://github.com/komikat/jev-bfs
+  kind: repo
+  author: komikat
+  description: Terminal tool for Wikipedia link races that finds a path between two English articles, with Chromium reading pages, Jev ranking their outgoing links and Python running the search, shown live with scores and timings.
+  image: https://raw.githubusercontent.com/komikat/jev-bfs/main/docs/demo.png
+  date: '2026-09-17'
+  tags:
+  - wikipedia
+  - graph-search
+  - cli
+- name: jev-chess
+  url: https://github.com/hemanth/jev-chess
+  kind: repo
+  author: hemanth
+  description: Chess library that resolves natural-language move intents into legal moves, evaluates candidate moves on sharpness, themes, and king risk, and plays persona-based opponents.
+  jev: Choice over verified legal moves, plus a single call scoring candidates on four dimensions; low confidence returns alternatives.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    app: https://h3manth.com/fun/jev-chess/
+    app 2: https://h3manth.com/fun/jev-chess
+  tags:
+  - chess
+  - game
+- name: jev-connect4
+  url: https://github.com/hazlema/jev-connect4
+  kind: repo
+  author: hazlema
+  description: Web Connect Four against Jev with nine swappable query strategies for the same model, a live inspector grading every answer against engine ground truth, and a match runner playing 100 games a minute.
+  image: https://raw.githubusercontent.com/hazlema/jev-connect4/main/c4.png
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  tags:
+  - connect-four
+  - prompting
+- name: Jev-driven 3D character
+  url: https://x.com/winebaizou/status/2101994437002072365
+  kind: post
+  author: winebaizou
+  description: Animated 3D character whose facial expressions and body reactions are chosen by Jev, responding when you talk to it and changing expression while you watch YouTube together.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101994292646760448/img/eJb-OBlF4mqf3si9.jpg
+  metrics:
+    likes: 2
+    views: 827
+  date: '2026-09-21'
+  links:
+    app: https://jev-character.winebaizou.workers.dev
+    inspired by: https://x.com/gigabit_million/status/2101285853859545263
+    project: https://jev-character.winebaizou.workers.dev
+  tags:
+  - character
+  - interactive
+  - japanese
+- name: jev-experiments
+  url: https://github.com/mittal-parth/jev-experiments
+  kind: repo
+  author: mittal-parth
+  description: Jev plays the real chrome://dino game and a local Krunker-style shooter arena from code-read state, with an inspector showing state, answers and actions for each tick.
+  jev: One request per tick with the action, speculative jump/duck and an urgency Score in parallel.
+  date: '2026-09-17'
+  tags:
+  - chrome-dino
+  - fps
+- name: jev-game-lab
+  url: https://github.com/Eniip/jev-game-tools
+  kind: repo
+  author: Eniip
+  description: Experiments driving real-time games, starting with Brotato, where Jev makes every-frame choices over eight compass directions described in words and a slower Claude strategist handles long-term plans via MCP.
+  metrics:
+    stars: 14
+  date: '2026-09-19'
+  tags:
+  - brotato
+  - real-time
+- name: Jev-GamePilot
+  url: https://github.com/newuser7171/jev-gamepilot
+  kind: repo
+  author: newuser7171
+  description: Game-playing agent for Windows PC games and Android phones that captures gameplay, pairs local Laya reflexes with Jev strategy, and sends inputs, with adapters for Clash Royale, chess, Dino, and card games.
+  jev: Choice, Score, and Noul questions for strategic moves, with local Laya for fast reactions.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - game-agent
+  - android
+  - laya
+- name: jev-gomoku
+  url: https://github.com/XieChengYuan/jev-gomoku
+  kind: repo
+  author: XieChengYuan
+  description: Chinese 15x15 gomoku lab running nine boards at once where two Jev players swap colors under different input schemes, with every request, option probability and move inspectable and a key-free replay.
+  jev: A Choice over locally generated candidate moves per turn, called through OpenRouter's Decisions API.
+  image: https://raw.githubusercontent.com/XieChengYuan/jev-gomoku/main/docs/gameplay.png
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    app: https://xiechengyuan.github.io/jev-gomoku/
+    app 2: https://xiechengyuan.github.io/jev-gomoku
+  tags:
+  - gomoku
+  - board-game
+- name: jev-gomoku
+  url: https://github.com/mizchi/jev-gomoku
+  kind: repo
+  author: mizchi
+  description: MoonBit playground with a System One API client, a one-shot question CLI, a CLI where two Jev players play gomoku by choosing among candidate cells each move, and a tool that turns game logs into real-time GIFs.
+  image: https://raw.githubusercontent.com/mizchi/jev-gomoku/main/gomoku.gif
+  date: '2026-09-17'
+  links:
+    article: https://zenn.dev/mizchi/articles/jev-plays-gomoku
+    write-up: https://zenn.dev/mizchi/articles/jev-plays-gomoku
+  tags:
+  - gomoku
+  - moonbit
+- name: jev-plays-pokemon
+  url: https://github.com/milanboers/jev-plays-pokemon
+  kind: repo
+  author: milanboers
+  description: Autonomous Pokémon Red agent on the PyBoy emulator that turns game RAM and on-screen dialog into a text snapshot and has Jev pick each button press.
+  jev: Parallel yes/no Nouls per candidate button each turn; code picks the strongest safe press, and the harness re-injects short-term memory since Jev keeps no history.
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  tags:
+  - pokemon
+  - emulator
+- name: jev-plays-pokemon
+  url: https://github.com/zbloss/jev-plays-pokemon
+  kind: repo
+  author: zbloss
+  description: Pokemon-playing agent in the style of Claude Plays Pokemon where Jev chooses the actions, with a local viewer that streams the game video beside a live decision sidebar.
+  date: '2026-09-17'
+  tags:
+  - pokemon
+  - game-agent
+- name: jev-plays-pokemon-red
+  url: https://github.com/valentynkit/jev-plays-pokemon-red
+  kind: repo
+  author: valentynkit
+  description: Pokémon Red agent on PyBoy where Python owns the route and arithmetic and Jev chooses among the legal actions at real branches in about 100 ms.
+  jev: A Choice over legal actions at each branch; battle turns add faints_this_turn and should_flee Nouls, and failures fall back to a code default.
+  image: https://raw.githubusercontent.com/valentynkit/jev-plays-pokemon-red/main/demo/overlay.gif
+  metrics:
+    stars: 6
+  date: '2026-09-18'
+  tags:
+  - pokemon
+  - emulator
+- name: jev-tetris
+  url: https://github.com/trungdq88/jev-tetris
+  kind: repo
+  author: trungdq88
+  description: Real-time Tetris battle where Jev plays Claude Haiku 4.5, Gemini 3.8 Flash or the open-weight Laya on the same piece sequence, and a missed deadline locks the piece wherever it falls.
+  jev: One Choice over column and rotation as soon as each piece spawns.
+  image: https://raw.githubusercontent.com/trungdq88/jev-tetris/main/docs/battle.png
+  metrics:
+    stars: 12
+    likes: 82
+    views: 21963
+  date: '2026-09-18'
+  links:
+    app: https://jev-tetris.vercel.app
+    app 2: https://jev-tetris.vercel.app
+    demo: https://x.com/tdinh_me/status/2101958041986068848
+  tags:
+  - tetris
+  - real-time
+  - vs-llm
+- name: jev-torneo-animales
+  url: https://github.com/hectorlcastro09/jev-torneo-animales
+  kind: repo
+  author: hectorlcastro09
+  description: Winner-stays-on tournament of up to 2,569 animals refereed by Jev; on a laptop 2,000 animals run 1,999 fights in ~16 s at ~7.6 ms per decision and ~US$0.01.
+  jev: Each fight is one Choice between two names under land, water or air rules, batching the champion against the next challengers in one request.
+  image: https://raw.githubusercontent.com/hectorlcastro09/jev-torneo-animales/main/docs/torneo.jpg
+  date: '2026-09-19'
+  tags:
+  - tournament
+  - spanish
+- name: jev-zork
+  url: https://github.com/Resadan-dev/jev-zork
+  kind: repo
+  author: Resadan-dev
+  description: 'Jev plays Zork I: on every turn Jericho supplies the valid actions and Jev picks one command with a single Choice, with its confidence and an anti-loop policy shown on a French replay dashboard.'
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  tags:
+  - zork
+  - text-adventure
+  - jericho
+- name: jev.mods
+  url: https://github.com/Hardel-DW/jev.mods
+  kind: repo
+  author: Hardel-DW
+  description: 'Minecraft server mod whose bot tries to finish the game from scratch without a scripted route: code observes the world, an LLM strategist is called rarely, and Jev picks action primitives every tick.'
+  date: '2026-09-17'
+  tags:
+  - minecraft
+  - java
+  - game-agent
+- name: Jev2048
+  url: https://github.com/KyleKreuter/jev2048
+  kind: repo
+  author: KyleKreuter
+  description: Browser lab where Jev plays many 2048 games in parallel with one Choice per move, tracking the best score live and letting you edit the state format, board encoding and choice criteria.
+  image: https://raw.githubusercontent.com/KyleKreuter/jev2048/main/demo.gif
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - '2048'
+  - parallel-runs
+- name: jev2048
+  url: https://github.com/erhanmeydan/jev2048
+  kind: repo
+  author: erhanmeydan
+  description: Agent in which Jev plays 2048 on a real online 2048 site, with one API call per move and the calibrated probability of each of the four directions shown in the terminal.
+  jev: One Choice over up/down/left/right per move.
+  image: https://raw.githubusercontent.com/erhanmeydan/jev2048/main/docs/demo.gif
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - '2048'
+  - playwright
+- name: JevArena
+  url: https://github.com/raihankhan-rk/jevarena
+  kind: repo
+  author: raihankhan-rk
+  description: Spectator demo where two independent Jev agents play Snake side by side in separate browser contexts using only indexed direction-button clicks, with live probabilities for each move.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100951665260240896/img/b0cvD-p11tUYb0DC.jpg
+  metrics:
+    stars: 2
+    likes: 37
+    views: 8743
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/raihankhan_rk/status/2100951738606035176
+  tags:
+  - snake
+  - browser-use
+- name: JevArena
+  url: https://github.com/rolki-png/JevArena
+  kind: repo
+  author: rolki-png
+  description: Spectator arena web app where two independent Jev agents play Snake against each other through Vercel AI Gateway, falling back to a labeled demo policy when no key is set.
+  date: '2026-09-18'
+  links:
+    app: https://jev-arena-ochre.vercel.app
+  tags:
+  - snake
+  - vercel-ai-gateway
+- name: JevBall
+  url: https://github.com/atarikcaliskan/jevball
+  kind: repo
+  author: atarikcaliskan
+  description: Football match in a 3D stadium where each of the 22 players is its own Jev decision-maker picking among up to 14 locally computed options a few times per second; watch, inspect a player, or take one over.
+  jev: One Choice per player over option IDs such as shoot, pass or press, each with numeric features.
+  image: https://raw.githubusercontent.com/atarikcaliskan/jevball/main/public/brand/jevball-mark.svg
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    app: https://jevball.online
+    app 2: https://jevball.online
+  tags:
+  - football
+  - simulation
+  - threejs
+- name: JevBird
+  url: https://github.com/leftspace89/JevBird
+  kind: repo
+  author: leftspace89
+  description: 'Pygame Flappy Bird played in real time by Jev: for each new pipe the game simulates a spread of flight paths through the gap and Jev picks which one the bird flies.'
+  jev: One Choice over simulated trajectories per pipe, about one API call per pipe; the game schedules every flap of the chosen path.
+  image: https://raw.githubusercontent.com/leftspace89/JevBird/main/demo/jev_demo.gif
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  tags:
+  - flappy-bird
+  - pygame
+- name: Jevbot in Minecraft
+  url: https://www.reddit.com/r/accelerate/comments/1whk9oy/new_typesafe_ai_jev_model_playing_minecraft_wip/
+  kind: reddit
+  author: BiasHyperion784
+  description: Work-in-progress Minecraft bot driven by Jev over the API, shown fleeing a zombie horde as night falls.
+  image: https://external-preview.redd.it/rAUA75ocfeUfSZ1gdcTcS75zzqqc3caVPjZ-9Cg6WN4.jpeg?auto=webp&s=f440801b7e711af369ec1d1bd01321c017aff07c
+  metrics:
+    points: 35
+  date: '2026-09-16'
+  links:
+    demo: https://www.youtube.com/watch?v=3G14OU00crI
+  tags:
+  - minecraft
+  - game-agent
+- name: jevchat
+  url: https://github.com/kt3k/jevchat
+  kind: repo
+  author: kt3k
+  description: ChatGPT-style chat UI where Jev never writes text but picks the answer from Yes/No, Maybe, Pirate, Tabloid or custom answer sets, and even picks the chat title from fragments of your question.
+  jev: Answer styles map to Nouls and Choices; titles are a Choice over Intl.Segmenter fragments, so Japanese works too.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    app: https://jevchat.kt3k.deno.net
+  tags:
+  - chat-ui
+  - toy
+- name: JevCraft
+  url: https://jevcraft.vercel.app
+  kind: app
+  author: egetheengineer
+  description: Livestream of Jev playing VoxeLibre, a Minecraft-style game, unattended for five days, picking the next skill (chop, craft, mine, hunt, build, sleep) from health, hunger, inventory and surroundings.
+  image: https://jevcraft.vercel.app/api/og
+  date: '2026-09-21'
+  links:
+    recordings: https://huggingface.co/datasets/egetheengineer/jevcraft
+  tags:
+  - minecraft
+  - game-agent
+  - livestream
+- name: JevEmon
+  url: https://github.com/daniel4x/JevEmon
+  kind: repo
+  author: daniel4x
+  description: 'Jev walks a real Pokémon FireRed ROM: code reads the overworld from RAM and lists reachable destinations, Jev picks one and fights wild encounters, and it has reached Viridian City so far.'
+  jev: Typed Choice over reachable destinations and battle moves; code handles pathing and button presses.
+  image: https://raw.githubusercontent.com/daniel4x/JevEmon/main/docs/journey.gif
+  metrics:
+    stars: 3
+    views: 41
+  date: '2026-09-21'
+  links:
+    demo: https://news.ycombinator.com/item?id=49787050
+    demo 2: https://x.com/alfasiii/status/2102022374140916149
+  tags:
+  - pokemon
+  - gba
+  - game-agent
+- name: Jeven Doors
+  url: https://x.com/uehaj/status/2101928834820165661
+  kind: post
+  author: uehaj
+  description: Guessing game where you have 7 yes/no questions to find the answer Jev has in mind; this update adds creating and uploading your own genres, with WebMCP so an agent can generate them.
+  jev: Each yes/no question is answered as a Noul probability about the hidden answer.
+  image: https://pbs.twimg.com/media/HSuNB9IbkAANcp3.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 237
+  date: '2026-09-21'
+  links:
+    app: https://jeven-doors.uehaj.workers.dev/
+    project: https://jeven-doors.uehaj.workers.dev
+  tags:
+  - guessing-game
+  - webmcp
+- name: JevPokerBench
+  url: https://github.com/Prophetlab/JevPokerBench
+  kind: repo
+  author: Prophetlab
+  description: Texas Hold'em benchmark and playground for decision models including Jev, with cash-game and sit-and-go leaderboards, hand replays, advice, and tables to play models or seat your own agent.
+  metrics:
+    stars: 10
+  date: '2026-09-21'
+  tags:
+  - poker
+  - benchmark
+- name: JEVRACE
+  url: https://x.com/MartinPulitano/status/2101414345096012228
+  kind: post
+  author: MartinPulitano
+  description: Formula 1 race in 3D with 10 Jev-driven cars, each with its own prompt (attack early, save tires) and only ~42 meters of track visibility, on a generator with over 4 billion seeds.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101414307133362176/img/S8Xkav3h2mc2hUet.jpg
+  metrics:
+    likes: 21
+    views: 998
+  date: '2026-09-19'
+  tags:
+  - racing
+  - simulation
+- name: Jevs play Catan
+  url: https://x.com/sachpatro97/status/2101064273187274838
+  kind: post
+  author: sachpatro97
+  description: Fork of a Jev game harness in which several Jev agents play Catan, until they stop negotiating with each other and pass their turns.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101062907593416704/img/gvJG-NjM4HY5yN6V.jpg
+  metrics:
+    likes: 8
+    views: 2463
+  date: '2026-09-18'
+  links:
+    based on: https://github.com/vtrivedy/jev-plays-games
+  tags:
+  - board-game
+  - multi-agent
+- name: jevscape
+  url: https://github.com/Skyvern-AI/jevscape
+  kind: repo
+  author: Skyvern-AI
+  description: RuneBench fork with a harness that lets Jev play RuneScape through about 50 bounded rs-sdk actions such as fishing, mining, fighting, and trading, with a tick-mode controller and live dashboard.
+  jev: Choices over the action catalog, tick interventions, and the next polling interval from game state; code executes each action.
+  image: https://raw.githubusercontent.com/Skyvern-AI/jevscape/main/docs/media/cover.jpg
+  metrics:
+    stars: 8
+  date: '2026-09-18'
+  tags:
+  - runescape
+  - game-agent
+  - benchmark
+- name: jevspin
+  url: https://x.com/dedene/status/2101770592055935114
+  kind: post
+  author: dedene
+  description: 'Rubik''s cube solver with no solver library: code lists the legal steps for the current stage and Jev picks the best of 12, solving the cube in 17 decisions for about $0.0007.'
+  jev: One Choice per step over code-generated legal moves, each described in plain language.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101770557297774592/img/EMCv1Ka0Y1gtwjO-.jpg
+  metrics:
+    likes: 27
+    views: 2082
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/dedene/jevspin
+    project: https://github.com/dedene/jevspin
+  tags:
+  - rubiks-cube
+  - puzzle
+- name: Jevton
+  url: https://x.com/chiziaruhoma/status/2100878555047514390
+  kind: post
+  author: chiziaruhoma
+  description: Town simulation of 120 people, 7 roads and 20 businesses where Jev decides what every resident does, spends and risks each hour, plus council priorities, prices and headlines, then survives zombies and meteors.
+  jev: 20,000+ decisions in under 5 minutes via ~15 batched calls, with no text generated.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100876059709149184/img/jYoCG-SwxUKhp2pf.jpg
+  metrics:
+    likes: 131
+    views: 7189
+  date: '2026-09-18'
+  tags:
+  - simulation
+  - town-sim
+- name: Jido agents play tic-tac-toe
+  url: https://x.com/mikehostetler/status/2100946109308748079
+  kind: post
+  author: mikehostetler
+  description: Two Elixir agents built with Jido and ReqLLM play tic-tac-toe against each other, each calling Jev to pick its next move.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100945952395722754/img/cnSU71pFTDxt2C2f.jpg
+  metrics:
+    likes: 41
+    views: 1620
+  date: '2026-09-18'
+  tags:
+  - elixir
+  - tic-tac-toe
+- name: Judge Jev
+  url: https://judge-jev.com/
+  kind: app
+  author: judge-jev.com
+  description: 'Endless courtroom game: you get five pieces of evidence and one chance to explain yourself, and Jev delivers the verdict.'
+  metrics:
+    points: 4
+  links:
+    discussion: https://news.ycombinator.com/item?id=49778268
+  tags:
+  - courtroom
+  - toy
+- name: Judicious Jev
+  url: https://github.com/coreyja/battlesnake-rs/tree/main/web-axum/src/judicious_jev
+  kind: repo
+  author: coreyja
+  description: Battlesnake bot that picks each move with a TypeSafe Choice question, falling back to a local strategy and tracking per-game cost.
+  metrics:
+    repo_stars: 11
+  date: '2021-02-20'
+  links:
+    repo: https://github.com/coreyja/battlesnake-rs
+  tags:
+  - battlesnake
+  - game-agent
+  - rust
+- name: Kiru Hai Coach
+  url: https://github.com/smilior/kiru-hai-coach
+  kind: repo
+  author: smilior
+  description: Japanese single-player mahjong coach where Jev picks which tile to discard from a 14-tile hand and explains it by efficiency, safety and waits, with lessons and practice games.
+  jev: Called through Vercel AI Gateway with AI SDK's experimental_evaluate and model typesafe-ai/jev.
+  date: '2026-09-19'
+  links:
+    app: https://kiru-hai-coach.vercel.app
+  tags:
+  - mahjong
+  - coaching
+  - japanese
+- name: Last Exit
+  url: https://github.com/0x963D/last-exit
+  kind: repo
+  author: '0x963D'
+  description: Cyberpunk border-crossing encounter where you bluff a Jev-driven inspector; in 100 scripted crossings smugglers escaped 29/90 times, at an estimated $0.057 input cost for the batch.
+  jev: 'Two calls per player reply: one reads statements into typed observations, the other selects the guard''s next action.'
+  image: https://raw.githubusercontent.com/0x963D/last-exit/main/public/assets/checkpoint.png
+  date: '2026-09-17'
+  links:
+    app: https://gate.fade.tools
+    app 2: https://gate.fade.tools
+  tags:
+  - narrative-game
+  - cyberpunk
+- name: Laya vs Jev
+  url: https://github.com/virajbhartiya/laya-vs-jev
+  kind: repo
+  author: virajbhartiya
+  description: Chrome's T-Rex game played side by side by the open Laya model running locally through MLX and hosted Jev, with live response times, survival streaks, and crash replays.
+  image: https://raw.githubusercontent.com/virajbhartiya/laya-vs-jev/main/docs/assets/trex-arena-window.png
+  metrics:
+    stars: 44
+  date: '2026-09-21'
+  links:
+    demo: https://x.com/heyxviraj/status/2102048070649405592
+  tags:
+  - t-rex
+  - laya
+  - comparison
+- name: Laya vs Jev Arena
+  url: https://github.com/PromptEngineer48/laya-vs-jev-arena
+  kind: repo
+  author: PromptEngineer48
+  description: Local arena where the open Laya model and Jev race in Snake and fight in a Mortal-Kombat-style game, answering the same typed questions so only the model differs.
+  metrics:
+    stars: 18
+    views: 19601
+    likes: 288
+  date: '2026-09-21'
+  links:
+    video: https://www.youtube.com/watch?v=x1GFo1eG8d0
+  tags:
+  - laya
+  - snake
+  - fighting-game
+- name: League of Legends win-probability overlay
+  url: https://x.com/filicroval/status/2100963424163307712
+  kind: post
+  author: filicroval
+  description: Real-time overlay that sends the full League of Legends game state to Jev every second and asks who will win, who has the most impact, and whether the leader is about to throw; a whole game costs about $0.20.
+  jev: 'Three questions per second: a win Noul, an impact Choice and a throw Noul.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100963025201037312/img/FgYho35_OiQ_zr3w.jpg
+  metrics:
+    likes: 10
+    views: 2926
+  date: '2026-09-18'
+  tags:
+  - league-of-legends
+  - esports
+  - overlay
+- name: Live chase opponent
+  url: https://openrouter.ai/labs/jev/game
+  kind: app
+  author: OpenRouter
+  description: OpenRouter Labs game where you run and Jev chases, choosing each chaser move with one request two to three times a second, while a chat model answers the same question as a shadow; about $0.16 an hour.
+  jev: One Choice per move over the legal steps, given both positions and the distance each move leaves.
+  image: https://openrouter.ai/dynamic-og?title=Live+chase+opponent&description=Play+a+live+chase+where+Jev+chooses+each+move.&v=2
+  links:
+    model: https://openrouter.ai/typesafe/jev
+  tags:
+  - real-time
+  - game
+  - openrouter-labs
+- name: Live chess with Jev
+  url: https://x.com/itspraveeny/status/2101333228808499692
+  kind: post
+  author: itspraveeny
+  description: Chrome extension captures a live chess board and move history, sends it to a local backend and has Jev pick the next move with no Stockfish, later tested against stronger bots.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101331631240056832/img/HjGFJAz8KreMm4j_.jpg
+  metrics:
+    likes: 3
+    views: 97
+  date: '2026-09-19'
+  tags:
+  - chess
+  - chrome-extension
+- name: lmjtfy
+  url: https://lmjtfy.dev/
+  kind: app
+  author: PostHog
+  description: 'Let me Jev that for you: ask any yes-or-no question and get Jev''s calibrated probability instead of prose, with a live feed of the most asked questions.'
+  jev: A single Noul per question.
+  image: https://lmjtfy.dev/og.png
+  metrics:
+    points: 8
+  links:
+    discussion: https://news.ycombinator.com/item?id=49758022
+  tags:
+  - toy
+  - yes-no
+- name: Loophole
+  url: https://loophole-city.vercel.app/
+  kind: app
+  author: loophole-city.vercel.app
+  description: Simulation toy where you write a rule for a tiny town and watch 100 residents try to find loopholes in it, with Jev as the referee deciding which plans are allowed or blocked.
+  jev: Jev judges each resident's plan against the rule text as allowed or blocked.
+  tags:
+  - simulation
+  - rules
+  - toy
+- name: Magic-8-Jev
+  url: https://github.com/willprout/magic-8-ball
+  kind: repo
+  author: willprout
+  description: Minimal Magic 8 Ball web toy where a Cloudflare Worker sends one Jev Choice over the twenty classic answers and the ball shows the chosen reply with measured click-to-answer latency.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    app: https://willprout.github.io/magic-8-ball/
+    app 2: https://willprout.github.io/magic-8-ball
+  tags:
+  - toy
+  - choice
+- name: Magic-Jev-Ball
+  url: https://github.com/rorz/rorz.io/tree/main/apps/jevball
+  kind: repo
+  author: rorz
+  description: Jev-backed Magic 8 Ball toy built with React, Vite and Cloudflare Workers, hosted as a small app in the rorz.io personal-site monorepo.
+  metrics:
+    repo_stars: 5
+  date: '2026-07-10'
+  links:
+    repo: https://github.com/rorz/rorz.io
+  tags:
+  - toy
+  - magic-8-ball
+  - cloudflare-workers
+- name: Manual and AI play switch
+  url: https://x.com/adrianmg/status/2100970810483823086
+  kind: post
+  author: adrianmg
+  description: Arcade game where you switch between playing yourself and letting Jev play, at 2-3 calls per second at 60 FPS with ~150ms average latency, deciding things like chasing a power-up or protecting the ball.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100970516081508352/img/1l_l07Sh5OsLeJGm.jpg
+  metrics:
+    likes: 30
+    views: 1987
+  date: '2026-09-18'
+  tags:
+  - arcade
+  - real-time
+- name: Mario + Jev
+  url: https://github.com/shantanugoel/mario-jev
+  kind: repo
+  author: shantanugoel
+  description: Python prototype that plays NES Super Mario Bros. level 1-1 from structured RAM observations, pausing the emulator while Jev answers and advancing up to four frames per decision.
+  jev: Focused questions about movement, starting and sustaining a jump, and hop timing under low ceilings; code maps answers to buttons.
+  metrics:
+    stars: 13
+  date: '2026-09-17'
+  tags:
+  - mario
+  - nes
+  - game-agent
+- name: Mario Never Dies
+  url: https://x.com/theappcypher/status/2101095181382721998
+  kind: post
+  author: theappcypher
+  description: Mario agent where Jev picks every move and each death forks the whole microsandbox VM into 4 timelines, keeping whichever Mario survives.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101094095808847872/img/3gUUWv-2l7gtBJLH.jpg
+  metrics:
+    likes: 18
+    views: 7226
+  date: '2026-09-18'
+  tags:
+  - mario
+  - sandbox
+  - game-agent
+- name: MineAI Jev decisions
+  url: https://github.com/ailiujiarui/MineAI/blob/main/src/main/java/com/mineai/llm/TypesafeDecisionProvider.java
+  kind: repo
+  author: ailiujiarui
+  description: Minecraft Forge mod with an autonomous fake-player agent that adds a TypeSafe Jev judgment layer beside a deterministic compiler and executable skills.
+  metrics:
+    repo_stars: 65
+  date: '2026-04-22'
+  tags:
+  - minecraft
+  - agent
+  - mod
+- name: Minesweeper AI agent benchmark
+  url: https://github.com/buddy/minesweeper
+  kind: repo
+  author: buddy
+  description: Browser benchmark where up to nine models play the same seeded Minesweeper board on one clock, scored on cells revealed, time and token cost, with Jev as one of the lanes.
+  jev: The Jev agent asks one Noul per frontier cell for the probability it holds a mine, revealing cells below 0.07 and flagging those above 0.85.
+  image: https://assets.buddy.works/launch/run-in-sandbox.svg
+  metrics:
+    stars: 14
+    likes: 34
+    views: 168985
+  date: '2026-09-21'
+  links:
+    code: https://github.com/buddy/minesweeper/blob/main/js/agents/jev-agent.js
+    demo: https://x.com/useBuddy/status/2102039447676014933
+  tags:
+  - minesweeper
+  - benchmark
+  - game-agent
+- name: Model Kombat
+  url: https://github.com/lavallee/mk-jev-fly-brain
+  kind: repo
+  author: lavallee
+  description: A 12,000-neuron fly-brain connectome simulation fights Jev in the mk.js arcade fighter, with thirteen documented experiments and standings from 84 archived matches.
+  jev: Jev reads the fight as JSON and chooses among the same seven moves offered to the fly and a rule bot.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - fighting-game
+  - connectome
+- name: ModlessChatTrans message classifier
+  url: https://github.com/LiJiaHua1024/ModlessChatTrans/blob/main/src/modless_chat_trans/message_classifier.py
+  kind: repo
+  author: LiJiaHua1024
+  description: Real-time Minecraft chat translator that reads the game log without mods and can use Jev to decide which log lines are player chat worth translating.
+  jev: The whole batch of lines goes in one request as independent Nouls with a 0.5 cut; only request failures fall back to built-in rules.
+  metrics:
+    repo_stars: 9
+  date: '2024-06-20'
+  links:
+    repo: https://github.com/LiJiaHua1024/ModlessChatTrans
+  tags:
+  - minecraft
+  - translation
+  - classification
+- name: Naimono Lab
+  url: https://github.com/mocchalera/naimono-lab
+  kind: repo
+  author: mocchalera
+  description: Japanese family word game about saying words that do not exist, where a Cloudflare Worker asks Jev via Workers AI how real, name-like, or sentence-like each word is and rules it out at 0.85 or above.
+  date: '2026-09-18'
+  links:
+    app: https://naimono-lab.mocchalera.app
+  tags:
+  - word-game
+  - japanese
+  - workers-ai
+- name: Name to age band
+  url: https://github.com/ximhear/jev-kr-name-age
+  kind: repo
+  author: ximhear
+  description: Small React app where you pick Korea, the US, Japan or China, type a first name, and Jev guesses the person's age band and gender from naming trends.
+  jev: Two Choice questions, age band and gender, shown as probability bars.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - toy
+  - names
+  - react
+- name: NanoJev Arena
+  url: https://github.com/caijinchun/nanojev-arena
+  kind: repo
+  author: caijinchun
+  description: Local Snake battle where you play against four AI snakes driven by NanoJev, a 0.6B open replica of Jev, with a code planner narrowing moves and the model's direction probabilities shown live.
+  image: https://raw.githubusercontent.com/caijinchun/nanojev-arena/main/assets/arena.png
+  metrics:
+    stars: 7
+  date: '2026-09-19'
+  tags:
+  - snake
+  - nanojev
+  - local
+- name: natural_20 Jev NPC battle AI
+  url: https://github.com/jedld/natural_20.py/blob/master/docs/JEV_NPC_BATTLE_AI.md
+  kind: repo
+  author: jedld
+  description: Jev provider for NPC combat in natural_20, a D&D 5e game engine for AI research, that walks the action tree level by level (action type, weapon or spell, target, destination square) to build a full legal action.
+  jev: One Choice per tree level, with movement split into intents (engage, defend, hide, attack square) before picking the square.
+  metrics:
+    repo_stars: 7
+  date: '2024-02-13'
+  links:
+    repo: https://github.com/jedld/natural_20.py
+  tags:
+  - dnd
+  - npc
+  - turn-based
+- name: Nintendo DS side-project game
+  url: https://x.com/yelkhayami/status/2101944518883037562
+  kind: post
+  author: yelkhayami
+  description: Nintendo DS-style game built with GPT-6 Astra, Fable 5.1 and Jev as a side project; the latest update adds Perry the Platypus, who can push the player off a ledge.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100910848029978624/img/NHqTOxDSKfgV7bX1.jpg
+  metrics:
+    likes: 7
+    views: 613
+  date: '2026-09-21'
+  tags:
+  - nintendo-ds
+  - platformer
+- name: Node Royale
+  url: https://github.com/JanDalhuysen/jev-clash-royale-test
+  kind: repo
+  author: JanDalhuysen
+  description: Real-time Clash Royale-style sandbox in Node.js with a canvas client and MCP server where you play against a Jev bot and an Ollama prompt-and-parse bot.
+  jev: One System One call per decision with a should-play Noul plus card, lane, and depth Choices.
+  date: '2026-09-19'
+  tags:
+  - clash-royale
+  - game-agent
+  - mcp
+- name: OneBox Jev xiangqi engine
+  url: https://github.com/wangzhishou/OneBox/blob/main/feature/xiangqi/src/main/java/com/wanbaohe/xiangqi/data/JevMoveChooser.kt
+  kind: repo
+  author: wangzhishou
+  description: Android AI toolbox app that adds Jev as a judgment engine and uses it to play Chinese chess, picking the move with the highest Choice probability.
+  jev: Choice over candidate xiangqi moves, argmax of the returned probabilities; direct key first with a proxy fallback.
+  metrics:
+    repo_stars: 389
+  date: '2026-08-08'
+  links:
+    app: https://www.oneboxable.com
+  tags:
+  - android
+  - xiangqi
+  - chess
+- name: OneVOneJev
+  url: https://github.com/emrickgarrett/OneVOneJev
+  kind: repo
+  author: emrickgarrett
+  description: Server-authoritative Three.js sniper arena where you fight Jev first to five kills while spectators queue and watch, with Jev deciding movement, aim and firing from match state.
+  jev: Each decision tick asks about movement, view, aiming, firing and jumping, with a heuristic fallback on API failure.
+  metrics:
+    stars: 19
+  date: '2026-09-17'
+  tags:
+  - fps
+  - multiplayer
+- name: open-pokered Jev autonomous playthrough
+  url: https://github.com/liuyanghejerry/open-pokered/blob/master/docs/jev-autonomous-retrospective.md
+  kind: repo
+  author: liuyanghejerry
+  description: Two-layer Jev agent that plays the Rust reimplementation of Pokemon Red from a real NEW GAME to the full ending without copying the scripted route, verified by reloading the save in a separate process.
+  image: https://raw.githubusercontent.com/liuyanghejerry/open-pokered/master/docs/screenshots/readme/title.png
+  metrics:
+    repo_stars: 6
+  date: '2026-08-09'
+  links:
+    app: https://liuyanghejerry.github.io/open-pokered/
+    repo: https://github.com/liuyanghejerry/open-pokered
+  tags:
+  - pokemon
+  - autonomous-play
+  - rust
+- name: ORIGIN / CIVILIZATION
+  url: https://github.com/JacquesGariepy/ORIGIN-CIVILIZATION
+  kind: repo
+  author: JacquesGariepy
+  description: Life-and-civilization simulation where each person's next voluntary action is a Jev Choice kept as a receipt in a ledger, while optional LLM planners propose goals and speech but never decide.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - simulation
+  - artificial-life
+- name: OuiJev
+  url: https://www.reddit.com/r/SideProject/comments/1wkzlsw/experiment_to_see_if_jev_is_smart/
+  kind: reddit
+  author: MrCyclopede
+  description: Small web toy where you ask Jev any question and it can only answer yes or no, built to probe what the model actually knows.
+  image: https://external-preview.redd.it/OXdiNTBoNmd1anFoMZ9yYUbO4_b2NWc20y21iTTlRGVcwqsZGOj9Td6rgK0_.png?format=pjpg&auto=webp&s=b1c962a9492a48bffa46e1a6948904c96d3ac7db
+  metrics:
+    points: 98
+  date: '2026-09-19'
+  links:
+    app: https://ouijev.com
+    project: https://ouijev.com
+  tags:
+  - toy
+  - yes-no
+- name: pong-jev
+  url: https://github.com/safzanpirani/pong-jev
+  kind: repo
+  author: safzanpirani
+  description: Atari Pong agent that asks Jev one Choice per frame (up, down or stay) from five short phrases, with no coordinates sent because jev-1.13 is weak at comparing magnitudes.
+  date: '2026-09-17'
+  tags:
+  - pong
+  - atari
+- name: PROMPT FPS
+  url: https://github.com/lukaske/jev-doom-agent
+  kind: repo
+  author: lukaske
+  description: Two Chocolate Doom engines compiled to WebAssembly play the same Freedoom map side by side, with a Jev Choice picking tactical macros that a local motor controller turns into Doom controls.
+  jev: A Choice over tactical macros from structured health, ammunition and target state, with live decision telemetry.
+  metrics:
+    stars: 7
+  date: '2026-09-17'
+  tags:
+  - doom
+  - fps
+- name: Real-time level generation with Jev
+  url: https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev
+  kind: article
+  author: Hugo Duprez (Sprite Fusion)
+  description: Endless platformer whose terrain is generated in real time from game state, with Jev choosing each segment's width, gap, height and tile type while game code places the tiles.
+  jev: Structured Choice and Score decisions per terrain segment; placement stays in code.
+  image: https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev/jev-terrain-generation.png
+  metrics:
+    points: 302
+    likes: 2807
+    views: 540734
+  date: '2026-09-18'
+  links:
+    discussion: https://www.reddit.com/r/aigamedev/comments/1wjrgs1/using_jev_to_generate_game_levels_in_real_time/
+    demo: https://x.com/HugoDuprez/status/2100953089003921543
+  tags:
+  - procedural-generation
+  - level-design
+- name: Reverse CAPTCHA
+  url: https://x.com/OpenDevLog/status/2100743740549702044
+  kind: post
+  author: OpenDevLog
+  description: Tongue-in-cheek gate that asks five questions to prove you are not human, with Jev classifying every answer and printing a rejection receipt when it detects a person.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100742612332298240/img/frIfXyRp0W_8vWyX.jpg
+  metrics:
+    likes: 1
+    views: 547
+  date: '2026-09-18'
+  tags:
+  - toy
+  - captcha
+- name: River Oaks District
+  url: https://github.com/BunsDev/river-oaks
+  kind: repo
+  author: BunsDev
+  description: Walkable 3D interpretation of Houston's River Oaks District whose residents and visitors use Jev for immediate reactions, where to walk and whom to help, batched up to 32 questions with a 750 ms deadline.
+  date: '2026-09-17'
+  links:
+    app: https://river-oaks-one.vercel.app
+    app 2: https://river-oaks-one.vercel.app
+  tags:
+  - npcs
+  - simulation
+  - 3d
+- name: River Run
+  url: https://github.com/ashaazami/river-run-typesafe
+  kind: repo
+  author: ashaazami
+  description: Vertical-scrolling river shooter in pygame-ce inspired by Atari's River Raid, with an AI pilot that plays it in real time using Jev.
+  date: '2026-09-17'
+  tags:
+  - pygame
+  - river-raid
+  - shooter
+- name: rubikjev
+  url: https://github.com/0xtrou/rubikjev
+  kind: repo
+  author: 0xtrou
+  description: One-page Rubik's cube playground where you scramble the cube, Jev rates the chaos with a meme tier, a 1-5 star difficulty, and a roast, then solves it step by step in 3D.
+  jev: An agent loop where Jev reads the live cube state and picks its next job from a toolbox each step.
+  image: https://rubikjev.solo.engineer/opengraph-image
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  links:
+    app: https://rubikjev.solo.engineer
+    app 2: https://rubikjev.solo.engineer
+  tags:
+  - rubiks-cube
+  - puzzle
+  - web
+- name: Scorebug replication workbench
+  url: https://github.com/cruuz/2k-football-mod-tools/tree/main/tools/scorebug_sprite/jev
+  kind: repo
+  author: cruuz
+  description: Diagnostic workbench in a mod editor for classic 2K football games that has Jev classify measured mismatches between rendered and in-game scorebugs, such as wrong tint or misplaced element.
+  jev: Jev receives text descriptors only, with all measurement done in Python; every call is logged and the job has a $3 budget cap.
+  metrics:
+    repo_stars: 8
+  date: '2026-07-23'
+  links:
+    repo: https://github.com/cruuz/2k-football-mod-tools
+  tags:
+  - game-modding
+  - image-diff
+  - classification
+- name: Self-solving Rubik's Cube
+  url: https://x.com/redp314/status/2100489858951073858
+  kind: post
+  author: redp314
+  description: Rubik's Cube solver that encodes the beginner method in code while Jev looks at the cube at each step and picks which case it is in, solving it in 94 moves with ~4 seconds of model time.
+  jev: One Choice per step over the beginner-method cases; code verifies every pick.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100479486382809088/img/r6daGpDnvsCr3LyL.jpg
+  metrics:
+    likes: 717
+    views: 206856
+  date: '2026-09-17'
+  tags:
+  - rubiks-cube
+  - puzzle
+- name: Shady Town
+  url: https://github.com/tpaulshippy/shady-town
+  kind: repo
+  author: tpaulshippy
+  description: Mafia-style social-deduction party game for the living-room TV with phones as controllers, where Jev replaces the human moderator by driving live suspicion meters and noticing bluffs or circular arguments.
+  jev: 'One structured judgment per round via ruby_llm-typesafe: game state in, suspicion levels out.'
+  date: '2026-09-17'
+  tags:
+  - party-game
+  - ruby
+  - social-deduction
+- name: Sigma Ups
+  url: https://www.reddit.com/r/vibecoding/comments/1wj7ch6/jev_will_kill_us_all/
+  kind: reddit
+  author: WatchSigma
+  description: Flappy-style game normally controlled by body movement on camera, shown in autoplay mode where Jev flies the dragon through the gauntlet with no human input.
+  image: https://external-preview.redd.it/ZjEzYWF0bXpoNXFoMZHx7oraHkZvnP0Ya-GG74OTeGOSUHkO5dZJtDpIK9wK.png?format=pjpg&auto=webp&s=99619399678c8b492ac33f9f3b2172476d9fbf4d
+  metrics:
+    points: 41
+  date: '2026-09-17'
+  tags:
+  - arcade
+  - autoplay
+- name: SimTracker Jev path
+  url: https://github.com/prolix-oc/Lumiverse-SimTracker/blob/main/src/typesafe.ts
+  kind: repo
+  author: prolix-oc
+  description: Roleplay tracker extension for Lumiverse that uses Jev to skip needless tracker updates, flip state flags, verify LLM-generated tracker fields against the narrative, and weigh conception odds.
+  jev: Per-field Nouls reject a generated payload when P(wrong) passes a threshold, mirroring the SDE-cascade cookbook; any outage falls back to the full secondary LLM.
+  image: https://raw.githubusercontent.com/prolix-oc/Lumiverse-SimTracker/main/screenshots/2char.png
+  metrics:
+    repo_stars: 11
+  date: '2026-03-08'
+  links:
+    repo: https://github.com/prolix-oc/Lumiverse-SimTracker
+  tags:
+  - roleplay
+  - verification
+  - extension
+- name: Snake Jev
+  url: https://github.com/siroccomask/snake-jev
+  kind: repo
+  author: siroccomask
+  description: Desktop Snake experiment where Python combines Jev's parallel board assessments into a move with one API call per tick; one recorded run reached 29 foods in 461 ticks.
+  date: '2026-09-17'
+  tags:
+  - snake
+  - game-agent
+- name: 'Snake: Jev vs Laya and Kev'
+  url: https://x.com/tobiaswup/status/2102046994248224826
+  kind: post
+  author: tobiaswup
+  description: 'Home-made Snake benchmark comparing Jev over the API with Laya-MLX and Kev-4B running locally: Jev had zero deaths at about 395ms, Kev died twice at about 175ms and Laya looped at about 33ms.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2102045711646724096/img/Nl5uIiC5lFJVF_JT.jpg
+  metrics:
+    likes: 16
+    views: 2051
+  date: '2026-09-21'
+  tags:
+  - snake
+  - open-models
+  - latency
+- name: Soccer Pinball playtester
+  url: https://www.reddit.com/r/codex/comments/1wkqknb/jev_playing_my_game_soccer_pinball_inside_unity/
+  kind: reddit
+  author: astrohoundstudios
+  description: Unity wrapper that lets Jev work the flippers and play full Soccer Pinball matches for about 2 cents each, with a skill slider used to tune game difficulty.
+  image: https://external-preview.redd.it/eWc2cGc5dHg2aXFoMZgJJx1e7F4oMJHRnw_ML_5bj14hM22MnTm7n5_9DHZw.png?format=pjpg&auto=webp&s=be3e74936fe0f5575def2e9c83a8af1e970c3ded
+  metrics:
+    points: 38
+  date: '2026-09-19'
+  tags:
+  - unity
+  - playtesting
+- name: Soupbase
+  url: https://github.com/spoonnotfound/soupbase
+  kind: repo
+  author: spoonnotfound
+  description: Bilingual Chinese-English Turtle Soup (lateral-thinking riddle) site where Jev acts as host, answering players' questions and grading their reconstructions of the story.
+  jev: Choice over yes / no / irrelevant / cannot tell for each question and a scored reconstruction, with Jev's confidence shown; called through Vercel AI Gateway.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  links:
+    app: https://soupbase.app
+  tags:
+  - puzzle
+  - riddles
+- name: sudoku-jev
+  url: https://github.com/jaysonsantos/sudoku-jev
+  kind: repo
+  author: jaysonsantos
+  description: Sudoku game, plus a Jev vs Stockfish chess mode, where the backend sends the board and all legal placements to Jev through OpenRouter and Jev picks one per turn until solved or three mistakes.
+  date: '2026-09-19'
+  tags:
+  - sudoku
+  - chess
+  - openrouter
+- name: sudoku-vs-jev
+  url: https://github.com/zebedelu/sudoku-vs-jev
+  kind: repo
+  author: zebedelu
+  description: Terminal Sudoku where Python enforces the rules and Jev picks one move per turn, with a benchmark script that measures how it plays when moves are forced versus when it has to guess.
+  date: '2026-09-19'
+  tags:
+  - sudoku
+  - puzzle
+- name: Talos
+  url: https://github.com/chensterman/talos
+  kind: repo
+  author: chensterman
+  description: 'Minecraft agent with no LLM in the loop: code owns the plan and actions while Jev answers batched typed questions at each branch point about every 1.5 seconds, from goal parsing to combat.'
+  date: '2026-09-18'
+  tags:
+  - minecraft
+  - agent
+  - no-llm
+- name: Temporal tic-tac-toe agent
+  url: https://github.com/temporal-community/temporal-agent-harness/tree/main/examples/tictactoe
+  kind: repo
+  author: temporal-community
+  description: Game agent with no LLM, where a Choice picks the square, Nouls spot threats, and a Score rates the position.
+  metrics:
+    repo_stars: 58
+  date: '2026-06-18'
+  tags:
+  - tic-tac-toe
+  - temporal
+  - no-llm
+- name: TerraBlind
+  url: https://github.com/Reisenbug/TerraBlind
+  kind: repo
+  author: Reisenbug
+  description: Terraria tModLoader mod where Jev fights the bosses, answering one question every 200 ms that code turns into keystrokes; it beat every pre-hardmode boss in master mode.
+  image: https://raw.githubusercontent.com/Reisenbug/TerraBlind/main/docs/cover-jev-en.png
+  metrics:
+    stars: 66
+  date: '2026-04-08'
+  links:
+    demo: https://www.youtube.com/watch?v=g6CADbjBhlk
+  tags:
+  - terraria
+  - boss-fights
+  - mod
+- name: Terrarium
+  url: https://github.com/TheGali/terrarium
+  kind: repo
+  author: TheGali
+  description: 'Sandbox where code runs the world and Jev only presses the controls of a small creature, with every decision logged in full: the state sent, each question, every probability and the rule that fired.'
+  date: '2026-09-17'
+  tags:
+  - sandbox
+  - creature
+  - simulation
+- name: Tetris x TypeSafe
+  url: https://jev-omega.vercel.app
+  kind: app
+  author: jev-omega
+  description: Playable Tetris where you can hand control to Jev, which picks the rotation and column for each piece from holes, stack height and bumpiness.
+  jev: One Choice per piece over rotation and column placements.
+  tags:
+  - tetris
+  - game-agent
+- name: tetris-ai
+  url: https://github.com/shantanugoel/tetris-ai
+  kind: repo
+  author: shantanugoel
+  description: 'Neon browser Tetris with a REST API so any player can plug in: a built-in planning agent, Jev, or any OpenAI-compatible chat model, with state exposed as text and illegal moves refused.'
+  date: '2026-09-17'
+  tags:
+  - tetris
+  - api
+  - agents
+- name: The Council of Extremely Specific Opinions
+  url: https://github.com/cbetz/extremely-specific-council
+  kind: repo
+  author: cbetz
+  description: Playful app where a council of twelve characters, from a golden retriever to three raccoons in a suit, votes on your idea with animated votes, inspectable decisions and a shareable result card.
+  image: https://raw.githubusercontent.com/cbetz/extremely-specific-council/main/docs/demo-card.png
+  date: '2026-09-17'
+  links:
+    app: https://extremely-specific-council-five.vercel.app
+    app 2: https://extremely-specific-council-five.vercel.app
+  tags:
+  - toy
+  - humor
+- name: The Trolley Problem
+  url: https://gpu.studio/trolley
+  kind: app
+  author: gpu.studio
+  description: Browser toy where you put anything on both tracks of the trolley problem and Jev decides whether to pull the lever.
+  links:
+    discussion: https://news.ycombinator.com/item?id=49773756
+  tags:
+  - toy
+  - ethics
+- name: Tiny AI civilization
+  url: https://x.com/SinghDevHub/status/2102086884998664521
+  kind: post
+  author: SinghDevHub
+  description: Three.js island simulation of 48 citizens where Jev picks each citizen's next action, GPT directs world events and code enforces the rules; a 12-minute run applied 392 Jev decisions for about $0.023.
+  jev: Choice over available actions (eat, rest, farm, build, help, steal) given each citizen's state and nearby observations.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102085730793398272/img/CkPhtAkZl0_n4Hrs.jpg
+  metrics:
+    likes: 74
+    views: 2453
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/singhdevhub-lovepreet/firstlight
+    project: https://github.com/singhdevhub-lovepreet/firstlight
+  tags:
+  - simulation
+  - multi-agent
+  - threejs
+- name: Tiny World
+  url: https://x.com/marinatrajk/status/2102173897676185658
+  kind: post
+  author: marinatrajk
+  description: Small 3D world of six residents with homes, jobs, needs and friendships where Jev decides each one's next action, and users inject situations such as emergencies to watch them react.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102173389725024256/img/1rjU04Eh2VBcFXKm.jpg
+  metrics:
+    likes: 33
+    views: 3134
+  date: '2026-09-21'
+  tags:
+  - simulation
+  - life-sim
+  - 3d
+- name: Truman World
+  url: https://x.com/WillTheRapper_/status/2102133645167272057
+  kind: post
+  author: WillTheRapper_
+  description: AI life-simulation where a GPT-6 Astra engine drives the storyline and Jev decides what happens next, with a terminal-style UI that visualizes each decision.
+  jev: Picks the next story event and moderates user prompts, classifying them into in-simulation actions.
+  image: https://pbs.twimg.com/media/HSxHFTDb0AAMbUv.jpg?name=orig
+  metrics:
+    likes: 29
+    views: 3163
+  date: '2026-09-21'
+  tags:
+  - simulation
+  - storytelling
+  - moderation
+- name: tsai-civ2
+  url: https://github.com/phyous/tsai-civ2
+  kind: repo
+  author: phyous
+  description: Experimental harness where Jev plays the original Civilization II in a browser from on-screen pixels and keyboard and mouse input, with a live spectator display of action probabilities.
+  jev: Named Choice vectors for empire policy, cities, research, diplomacy, units, exploration, and warfare.
+  metrics:
+    stars: 2
+  date: '2026-09-16'
+  tags:
+  - civilization
+  - game-agent
+  - strategy
+- name: tuicraft Jev tactics
+  url: https://github.com/tvararu/tuicraft
+  kind: repo
+  author: tvararu
+  description: Terminal client for chatting and playing World of Warcraft 3.3.5a on AzerothCore servers, with a fight command in which Jev picks combat tactics from a narrow spell kit.
+  jev: Jev chooses among observed-state actions such as spells and directional moves; unsupported kits stop with a reason.
+  image: https://raw.githubusercontent.com/tvararu/tuicraft/main/docs/screenshot.png
+  metrics:
+    stars: 9
+  date: '2026-02-17'
+  links:
+    app: https://tuicraft.vararu.org/
+    code: https://github.com/tvararu/tuicraft/blob/main/src/wow/jev.ts
+  tags:
+  - world-of-warcraft
+  - game-agent
+  - terminal
+- name: Turing Jail
+  url: https://github.com/bugkiwi/turing-jail
+  kind: repo
+  author: bugkiwi
+  description: Three-level interrogation game where you write statements to an AI warden and must pass plea, logic, and paradox verdicts to earn release, with shareable sealed runs.
+  jev: Per-level structured verdicts on the player's statement.
+  image: https://raw.githubusercontent.com/bugkiwi/turing-jail/main/public/images/turing-jail-home.png
+  date: '2026-09-17'
+  links:
+    app: https://turing-jail.vercel.app
+  tags:
+  - game
+  - web
+- name: TypeSafe Chess
+  url: https://github.com/Dimesio/typesafe-chess
+  kind: repo
+  author: Dimesio
+  description: 'Local app that tests Jev as a chess player: chess.js lists the legal moves, Jev picks one, and Stockfish grades every pick, with optional lesson levels that feed Jev its own graded mistakes.'
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - chess
+  - stockfish
+- name: TypeSafe plays Minecraft
+  url: https://github.com/ellistev/typesafe-minecraft-demo
+  kind: repo
+  author: ellistev
+  description: Minecraft Java bot where each Jev decision picks one primitive (a 250 ms move, a turn, mine or place a block, equip, wait) for Mineflayer, shown beside the raw API input and output as it builds a Canadian flag.
+  metrics:
+    stars: 1
+  date: '2026-09-16'
+  tags:
+  - minecraft
+  - mineflayer
+  - game-agent
+- name: typesafe-mario
+  url: https://github.com/fhshaik/typesafe-mario
+  kind: repo
+  author: fhshaik
+  description: Plays Super Mario with a Choice for the controller action, a jump Noul, and a danger Score.
+  image: https://external-preview.redd.it/bzVydG83cHlodXBoMZE7fOmaTIl8CDi0AASExP3Al1xQRlZJ2gAIQDJfa5Lr.png?format=pjpg&auto=webp&s=2ba386e6d1e858b09755e0c4f9ecbb8adbfc0c15
+  metrics:
+    stars: 338
+    points: 15
+    likes: 2901
+    views: 605745
+  date: '2026-09-16'
+  links:
+    discussion: https://www.reddit.com/r/typesafe_ai/comments/1whrm0q/jev_playing_mario_bros_no_prior_training_wow/
+    demo: https://x.com/faadilhshaik/status/2100086301894881578
+  tags:
+  - super-mario
+  - emulator
+  - game-agent
+- name: typesafe-snake
+  url: https://github.com/sorrycc/typesafe-snake
+  kind: repo
+  author: sorrycc
+  description: 'Snake played in real time by Jev: code computes legal moves plus food distance, flood-fill reachability, and dead ends, and the snake goes straight if an answer misses the tick deadline.'
+  jev: One Choice per tick over the legal moves.
+  metrics:
+    stars: 20
+  date: '2026-09-17'
+  tags:
+  - snake
+  - game-agent
+- name: Typesafe_chess_eval
+  url: https://github.com/AliceRoselia/Typesafe_chess_eval
+  kind: repo
+  author: AliceRoselia
+  description: Short script where Jev plays both sides of a chess game, choosing each move from the legal UCI moves and estimating win, draw and loss; the author found it often rates lopsided positions as draws.
+  date: '2026-09-17'
+  tags:
+  - chess
+  - self-play
+- name: vibedgames model playtester
+  url: https://github.com/kyh/vibedgames/tree/main/apps/cli/src/lib/playtest
+  kind: repo
+  author: kyh
+  description: Game studio toolkit for coding agents whose vg playtest run drives a game character with TypeSafe System One, one decision per tick proxied through the server.
+  metrics:
+    repo_stars: 57
+  date: '2020-01-26'
+  links:
+    app: https://vibedgames.com
+  tags:
+  - playtesting
+  - game-dev
+  - cli
+- name: ViZDoom Jev agent
+  url: https://x.com/kmad/status/2100339921714323624
+  kind: post
+  author: kmad
+  description: ViZDoom agent driven by Jev over two decision channels, navigation at 5 decisions/s and combat at 12/s; a test run ended with 18 kills before it got stuck walking in circles.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100339415407017984/img/0d7rvi1ZoC0nAtJN.jpg
+  metrics:
+    likes: 16
+    views: 10605
+  date: '2026-09-16'
+  tags:
+  - doom
+  - game-agent
+- name: Whose Jev Is It Anyway?
+  url: https://x.com/CharlieMolthrop/status/2100946286136406421
+  kind: post
+  author: CharlieMolthrop
+  description: Improv comedy game that uses Jev as the judge, scoring players' improvised responses like the TV show's host.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100945687059869696/img/yQvtfBF64zQfczMI.jpg
+  metrics:
+    likes: 107
+    views: 13583
+  date: '2026-09-18'
+  tags:
+  - improv
+  - party-game
+- name: Wikipedia race
+  url: https://x.com/CompleteSkeptic/status/2099925688925184171
+  kind: post
+  author: CompleteSkeptic
+  description: Launch demo in which Jev races from one Wikipedia page to another using only links, choosing among hundreds to thousands of links at each step.
+  jev: High-cardinality Choice over page links; candidate sets above 255 are handled in two stages.
+  image: https://pbs.twimg.com/amplify_video_thumb/2099924665515012096/img/Q3mdVD5jfOZOkMww.jpg
+  metrics:
+    likes: 2650
+    views: 634994
+  date: '2026-09-15'
+  tags:
+  - wikipedia
+  - official-demo
+- name: Wikipedia Speedrun
+  url: https://www.reddit.com/r/accelerate/comments/1wikmz1/jev_demo_wikirace/
+  kind: reddit
+  author: TypeSafe AI
+  description: Demo of Jev racing from one Wikipedia article to another using only the links on each page, choosing among hundreds to thousands of links per hop.
+  image: https://external-preview.redd.it/anYxemlqNjJrMHFoMQDruYJy3DBIsPhqhRECIkxuvIt97Wx_qt0teXaXPlvG.png?format=pjpg&auto=webp&s=1c8c7fece9b9bccbc62d9627f03d50f0f56cf547
+  metrics:
+    points: 51
+  date: '2026-09-17'
+  links:
+    source: https://x.com/CompleteSkeptic/status/2099925688925184171
+  tags:
+  - wikirace
+  - high-cardinality
+- name: XRENGINE Jev scene commands
+  url: https://github.com/BlackJaxDev/XRENGINE/blob/master/XREngine.Editor/Mcp/Actions/EditorMcpActions.TypeSafe.cs
+  kind: repo
+  author: BlackJaxDev
+  description: Editor MCP action in the XRENGINE C# VR game engine that resolves natural-language scene instructions such as 'select player node' into a suggested MCP command and target node using Jev, with pattern matching as fallback.
+  jev: A Choice over command intents and a Choice over scene node names built from the live scene graph.
+  metrics:
+    repo_stars: 17
+  date: '2023-06-12'
+  links:
+    repo: https://github.com/BlackJaxDev/XRENGINE
+  tags:
+  - game-engine
+  - mcp
+  - vr

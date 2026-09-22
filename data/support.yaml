@@ -1,0 +1,624 @@
+title: Customer Support and Sales
+emoji: 🎧
+layout: gallery
+description: Ticket routing, email triage, lead scoring, and CRM automation.
+entries:
+- name: Alga PSA smart ticket search
+  url: https://github.com/Nine-Minds/alga-psa/blob/main/ee/server/src/services/smartSearch/typesafeClient.ts
+  kind: repo
+  author: Nine-Minds
+  description: Open-source MSP service desk whose smart search has Jev rerank the filtered Tickets and Projects lists, so "customer can't print" can surface "Xerox reports offline".
+  image: https://www.nineminds.com/imported-media/Overview%20Dashboard.png
+  metrics:
+    repo_stars: 141
+  date: '2024-11-04'
+  links:
+    plan: https://github.com/Nine-Minds/alga-psa/blob/main/docs/plans/2026-09-20-jev-smart-ticket-search-plan.md
+    app: https://www.nineminds.com/alga-psa
+  tags:
+  - ticketing
+  - search
+  - msp
+- name: Box incident triage
+  url: https://x.com/Box/status/2100993278955188320
+  kind: post
+  author: Box
+  description: Box workflow that pulls an incident report, asks Jev whether it is customer-facing and how severe it is, moves the file to Escalate, Monitor or Review, and sends low-confidence cases to a human.
+  jev: A Noul for customer-facing plus a severity Score, with a confidence threshold for human review.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg
+  metrics:
+    likes: 31
+    views: 121822
+  date: '2026-09-18'
+  tags:
+  - incident-triage
+  - routing
+  - documents
+- name: Calagopus bot support triage
+  url: https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs
+  kind: repo
+  author: calagopus
+  description: AI support triage in the Rust Discord bot for the Calagopus community that uses Jev to decide whether a message needs an answer at all and whether a drafted answer holds anything worth posting.
+  metrics:
+    repo_stars: 17
+  date: '2025-12-28'
+  links:
+    repo: https://github.com/calagopus/bot
+  tags:
+  - discord
+  - support
+  - triage
+- name: Call Coach
+  url: https://github.com/ZeroGold/call-coach-ai
+  kind: repo
+  author: ZeroGold
+  description: Live sales-call assistant that sends the conversation to Jev after every sentence and shows the rep a suggested next action and buying stage with a confidence score, from a microphone or a sample call.
+  image: https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab
+  metrics:
+    stars: 35
+  date: '2026-09-20'
+  links:
+    discussion: https://www.reddit.com/r/LLMDevs/comments/1wltrsa/i_built_an_opensource_app_that_uses_jev_to_coach/
+  tags:
+  - sales
+  - live-coaching
+- name: clay-jev-people-ranker
+  url: https://github.com/promptgtm-shared/clay-jev-people-ranker
+  kind: repo
+  author: promptgtm-shared
+  description: Agent skill and Python workflow that pulls people from Clay CLI with deterministic filters, then has Jev judge whether each person really fits the target role, such as current operating founders, before enrichment.
+  date: '2026-09-21'
+  tags:
+  - lead-scoring
+  - clay
+  - b2b-sales
+- name: CowAgent ticket analysis tool
+  url: https://x.com/zhayujie/status/2102009189765881894
+  kind: post
+  author: zhayujie
+  description: Batch support-ticket analysis tool that CowAgent built on Jev, making one call per ticket that returns 7 judgments with probabilities in about 500ms.
+  jev: Seven typed questions per ticket in one request.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102007612569190400/img/Yv_-w6zdmBlVS5Mu.jpg
+  metrics:
+    likes: 1
+    views: 48
+  date: '2026-09-21'
+  tags:
+  - tickets
+  - batch
+  - classification
+- name: customer-work Jev decisions
+  url: https://github.com/liulangjietou/customer_work/tree/main/customer-work-starter/src/main/java/com/richard/fyoung/customerwork/capability/typesafe
+  kind: repo
+  author: liulangjietou
+  description: Enterprise customer-service agent platform on AgentScope Java that adds Jev structured decisions to the main conversation path and refund flow, with a circuit breaker and shadow display in the admin console.
+  image: https://github.com/user-attachments/assets/75a324d7-4e2e-4383-b049-c3cfc7802ee5
+  metrics:
+    repo_stars: 133
+  date: '2026-06-13'
+  tags:
+  - customer-service
+  - java
+  - refunds
+- name: discourse-chatbot
+  url: https://github.com/merefield/discourse-chatbot
+  kind: repo
+  author: merefield
+  description: RAG chatbot plugin for Discourse topics, chat and customer support that can use System One forum-scope judgments for blocked-question matching and tool selection, with embedding fallback.
+  image: https://raw.githubusercontent.com/merefield/discourse-chatbot/main/images/surety.webp
+  metrics:
+    stars: 84
+  date: '2023-02-06'
+  tags:
+  - discourse
+  - chatbot
+  - forum
+- name: Grok and Jev lead screener
+  url: https://x.com/razeden0/status/2102119174466396250
+  kind: post
+  author: razeden0
+  description: Lead-qualification pipeline where Jev answers 6 questions on each of 3,412 leads (20,472 decisions in 15.7 seconds for $0.41) and Grok 4.7 only drafts outreach for the leads worth reading.
+  jev: Six yes/no, pick-one or score questions per lead gate what the LLM reads.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg
+  metrics:
+    likes: 172
+    views: 27723
+  date: '2026-09-21'
+  tags:
+  - leads
+  - sales
+  - grok
+- name: Inline Manual adaptive help
+  url: https://x.com/sotak/status/2100927660029247538
+  kind: post
+  author: sotak
+  description: Real-time in-app support for InlineManual.com that detects where a user is struggling and adds explanations, suggestions or actions directly into the UI, with no chatbot.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100925956978294784/img/grFanN32FuhiSULl.jpg
+  metrics:
+    likes: 23
+    views: 2367
+  date: '2026-09-18'
+  links:
+    app: https://inlinemanual.com
+  tags:
+  - in-app-help
+  - ux
+- name: Instant Clay workflows
+  url: https://x.com/ENowoslawski/status/2100999124099195377
+  kind: post
+  author: ENowoslawski
+  description: Demo of Jev building Clay go-to-market workflows almost instantly.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100998985074835456/img/3FY78J6we-v6cyXz.jpg
+  metrics:
+    likes: 65
+    views: 3823
+  date: '2026-09-18'
+  tags:
+  - clay
+  - gtm
+  - workflows
+- name: IT Helpdesk judgment backend
+  url: https://github.com/upasana1105/UP_Demos/blob/main/it-helpdesk-assistant/judgment_base_agent/backends/typesafe.py
+  kind: repo
+  author: upasana1105
+  description: Enterprise IT helpdesk agent demo on the Gemini agent platform with a judgment layer that can run its Choice, Noul and Score primitives on TypeSafe System One.
+  metrics:
+    repo_stars: 9
+  date: '2026-02-02'
+  links:
+    repo: https://github.com/upasana1105/UP_Demos
+  tags:
+  - helpdesk
+  - gemini
+  - judgments
+- name: jev demo
+  url: https://github.com/minghanminghan/jev-demo
+  kind: repo
+  author: minghanminghan
+  description: Customer-service chatbot routed by Jev that asks every level of its routing tree in one call per turn and hands off to a human on request, frustration or low confidence.
+  jev: Speculative fan-out over all tree levels plus a wants-human Noul and a frustration Score in the same request.
+  date: '2026-09-17'
+  links:
+    app: https://jev-demo-mu.vercel.app
+  tags:
+  - routing
+  - chatbot
+- name: Jev in-app help for a Mac app
+  url: https://x.com/malekoo/status/2100439840575684910
+  kind: post
+  author: malekoo
+  description: 'In-app help for a Mac app that works with no model loaded: Jev reads the question against the built-in manual and picks the matching article or none, scoring 42/42 with a median 0.93 s.'
+  jev: Choice over manual articles plus a no-match option, with the whole manual as state.
+  image: https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig
+  metrics:
+    likes: 5
+    views: 513
+  date: '2026-09-17'
+  tags:
+  - support
+  - macos
+  - docs
+- name: Jev outbound lead triage
+  url: https://www.reddit.com/r/SaaS/comments/1wlcpq3/jev_is_insane_for_outbound/
+  kind: reddit
+  author: adgrow
+  description: Outbound experiment where Jev made 7,068 decisions on 462 leads in 47 seconds for about $0.06, choosing hook, angle, and CTA and skipping 190 leads not worth emailing.
+  jev: ICP-fit and signal Nouls per lead, plus Choices over hooks and among four drafted messages.
+  image: https://external-preview.redd.it/MDV4czc2Z3JibnFoMWrhC3ZnxXXVSY4h_1Pyuu4bCsFhZrPnFj7vZea_6f45.png?format=pjpg&auto=webp&s=92f8c2805fba08f7d164b31a7d9ed7cb61b0c450
+  date: '2026-09-20'
+  tags:
+  - outbound
+  - lead-scoring
+  - sales
+- name: Jev recipes on Treg
+  url: https://treg.to/jev
+  kind: app
+  author: Treg (superdesigndev)
+  description: Interactive guide to Jev with a live LLM-versus-Jev race and copyable GTM automation recipes built on Treg, such as signup fraud screening, buying-signal triage, and viral content monitoring.
+  image: https://treg.to/media/og.png
+  links:
+    repo: https://github.com/superdesigndev/treg
+    demo: https://x.com/jasonzhou1993/status/2101988970565603489
+    project: https://github.com/superdesigndev/treg
+  tags:
+  - gtm
+  - automation
+  - sales
+- name: Jev Router Demo
+  url: https://github.com/EtienneLescot/jev-router
+  kind: repo
+  author: EtienneLescot
+  description: Browser demo where two Jev calls triage a support ticket (department, urgency, frustration) and size the task, and plain code routes it to an agent or a human and picks the model tier and reasoning depth.
+  image: https://raw.githubusercontent.com/EtienneLescot/jev-router/main/screenshot.png
+  date: '2026-09-18'
+  links:
+    app: https://etiennelescot.github.io/jev-router/
+  tags:
+  - ticket-routing
+  - model-tiers
+  - demo
+- name: jev-support-pulse
+  url: https://x.com/GoSailGlobal/status/2100957577958097199
+  kind: post
+  author: GoSailGlobal
+  description: 'Chinese experiment labeling 170,400 2017 tweets to seven brands'' support accounts with Jev for $1.84: at equal false alarms it caught 17 outages about 4.1 hours before the brand admitted them, versus 10 for tweet volume.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg
+  metrics:
+    likes: 6
+    views: 1770
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/zhuyansen/jev-support-pulse
+    project: https://github.com/zhuyansen/jev-support-pulse
+  tags:
+  - outage-detection
+  - support
+  - tweets
+- name: JevTicketRouter
+  url: https://github.com/GhrezaKh74/JevTicktRouter
+  kind: repo
+  author: GhrezaKh74
+  description: Support-ticket triage app on .NET 10 and React 19 that asks Jev five batched questions about a Persian or English ticket, then lets a deterministic rule engine decide routing, escalation and redaction.
+  image: https://raw.githubusercontent.com/GhrezaKh74/JevTicktRouter/master/docs/screenshots/00-architecture.png
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - ticket-triage
+  - dotnet
+  - persian
+- name: LaneBreak
+  url: https://github.com/ndolinschi/lanebreak
+  kind: repo
+  author: ndolinschi
+  description: Support-ticket router that picks the owning team and priority, and flags refund intent, churn risk and tickets that should skip bots for a human.
+  date: '2026-09-17'
+  links:
+    app: https://lanebreak.vercel.app
+    app 2: https://lanebreak.vercel.app
+  tags:
+  - ticket-routing
+  - churn
+- name: Lead and outreach scoring
+  url: https://x.com/romanbuildsaas/status/2100891604735099103
+  kind: post
+  author: romanbuildsaas
+  description: Scoring of 700 high-intent leads and personalized outreach messages in 40 seconds for $0.09, predicting each message's performance with a confidence score and flagging lead-message mismatches.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100891566340501504/img/agvkcRfNWmnGbRI5.jpg
+  metrics:
+    likes: 3342
+    views: 466802
+  date: '2026-09-18'
+  tags:
+  - lead-scoring
+  - sales
+  - outreach
+- name: LeadGen AI TypeSafe integration
+  url: https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py
+  kind: repo
+  author: sumitrevolt
+  description: Experimental Jev layer in LeadGen AI, a marketing and voice-calling SaaS for small Indian businesses, that picks specialization labels for agent roles and validates worker outputs such as cold emails.
+  metrics:
+    repo_stars: 1
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/sumitrevolt/leadgenrationaivoiceagent
+  tags:
+  - lead-generation
+  - sales
+- name: lurk
+  url: https://github.com/getanyapi-com/lurk
+  kind: repo
+  author: getanyapi-com
+  description: Self-hostable Reddit buyer-intent finder that infers what your product solves and has Jev judge every title, post and comment it scans against your product.
+  jev: Jev via OpenRouter or Vercel AI Gateway scores each item; an LLM handles product profiling and clustering.
+  metrics:
+    stars: 97
+    likes: 750
+    views: 83056
+  date: '2026-09-10'
+  links:
+    demo: https://x.com/mxfp4/status/2101070906852298910
+  tags:
+  - lead-gen
+  - reddit
+  - sales
+- name: n8n lead qualification with Jev
+  url: https://x.com/timbuildwithai/status/2102167332172767392
+  kind: post
+  author: timbuildwithai
+  description: Lead-qualification workflow in n8n where Jev returns probabilities for need, budget, timing and buying intent, a JS step scores and routes each lead HOT/WARM/COLD, and OpenAI only writes the reply.
+  jev: Four Nouls per lead turned into a deterministic score in code.
+  image: https://pbs.twimg.com/media/HSxlNgsWMAAzwJr.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 48
+  date: '2026-09-21'
+  tags:
+  - n8n
+  - lead-scoring
+  - automation
+- name: open-Jev (DECRUX9812)
+  url: https://github.com/DECRUX9812/openjev
+  kind: repo
+  author: DECRUX9812
+  description: Local, zero-cost reimplementation of a Jev decision layer that answers seven typed questions about a job posting on your CPU, separating in-house IT requisitions from small businesses that are sales leads.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - lead-scoring
+  - local
+- name: Outreach signals that book demos
+  url: https://x.com/pierreeliottlal/status/2100912453999587657
+  kind: post
+  author: pierreeliottlal
+  description: Sales analysis in which Jev read a dataset of thousands of outreach messages and found which intent signals generated the most booked demos, in 40 seconds for under $0.20.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg
+  metrics:
+    likes: 114
+    views: 21634
+  date: '2026-09-18'
+  tags:
+  - sales
+  - outreach
+  - analytics
+- name: Real-time Clippy
+  url: https://x.com/sotak/status/2100701152824185319
+  kind: post
+  author: sotak
+  description: In-product Clippy that watches how someone uses an app and appears only when Jev judges they are hesitating, confused or stuck, with its reactions also chosen by Jev.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100700282434826240/img/H7dKngwXowyoEgJ6.jpg
+  metrics:
+    likes: 176
+    views: 21970
+  date: '2026-09-17'
+  tags:
+  - in-app-help
+  - onboarding
+- name: RedReplier buying-signal scoring
+  url: https://x.com/tarasshyn/status/2101043617649340678
+  kind: post
+  author: tarasshyn
+  description: Scored 1,759,932 buying signals from 1.7 million mentions across Reddit, X, Bluesky, Hacker News and Facebook in 53 seconds for $0.65, ranking intent, product fit and competitor mentions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101043565207916544/img/jTZjaCWwP1d9sx6D.jpg
+  metrics:
+    likes: 463
+    views: 44146
+  date: '2026-09-18'
+  tags:
+  - lead-scoring
+  - social-listening
+- name: Reflet feedback triage
+  url: https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts
+  kind: repo
+  author: damien-schneider
+  description: 'Feedback triage in Reflet, an open-source product feedback and roadmap platform: Jev decides whether a submission is actionable, withholds junk from the public board, flags items for review and auto-tags them.'
+  jev: Boolean usefulness/junk/needsReview questions plus per-tag questions via the AI SDK evaluate call; junk >= 0.5 is withheld and tags need 0.65, max 3.
+  metrics:
+    repo_stars: 37
+  date: '2026-01-17'
+  links:
+    app: https://www.reflet.app
+    repo: https://github.com/damien-schneider/reflet
+  tags:
+  - feedback
+  - triage
+  - tagging
+- name: Sales Copilot with Jev
+  url: https://www.youtube.com/watch?v=CupCEehe2OQ
+  kind: video
+  author: Kelvin Cleto
+  description: Portuguese walkthrough of a sales-meeting copilot that tracks calls and playbook steps, where Jev answers cheap decision questions before any LLM call to cut costs.
+  jev: Probability questions about the meeting state gate the expensive LLM calls.
+  metrics:
+    views: 86013
+    likes: 1863
+  date: '2026-09-20'
+  tags:
+  - sales
+  - copilot
+  - portuguese
+- name: Self-sorting in-app feedback
+  url: https://x.com/abhegd/status/2102195682257854602
+  kind: post
+  author: abhegd
+  description: Layoutstack demo where typed or spoken (ElevenLabs) in-app feedback is classified by Jev and filed into the right inbox, shipped with a cookbook to remix it with a coding agent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg
+  metrics:
+    views: 60
+  date: '2026-09-22'
+  links:
+    app: https://www.layoutstack.com/demo/in-appfeedback
+    project: https://layoutstack.com/demo/in-appfeedback
+  tags:
+  - feedback
+  - triage
+  - cookbook
+- name: signal-ranker
+  url: https://x.com/nifinet/status/2102065255694409940
+  kind: article
+  author: nifinet
+  description: Build guide for an open-source outbound bot where Claude Code pulls lead signals (job reposts, funding, tenders) and Jev ranks who to contact first, with judgments kept separate from a tunable policy file.
+  jev: judge.py asks Jev for probabilities per lead signal; policy.py turns them into a sort order without further calls.
+  image: https://pbs.twimg.com/media/HSwI_zwaQAA9uYF.jpg
+  metrics:
+    likes: 105
+    views: 8279
+  date: '2026-09-21'
+  links:
+    app: https://yourmax.ai/
+  tags:
+  - sales
+  - lead-scoring
+  - outbound
+- name: SignalScout
+  url: https://github.com/rszhd/signalscout/blob/dev/packages/engine/src/ai/provider.ts
+  kind: repo
+  author: rszhd
+  description: Open-source intent monitoring that searches Reddit, X, LinkedIn, YouTube, TikTok and Instagram for people describing a problem your product solves and scores each conversation for fit and buyer intent.
+  jev: The AI SDK TypeSafe provider supplies an evaluation model (jev-latest, $0.042 per million input tokens) for the scoring questions.
+  metrics:
+    repo_stars: 8
+  date: '2026-09-08'
+  links:
+    repo: https://github.com/rszhd/signalscout
+  tags:
+  - lead-generation
+  - social-listening
+  - ai-sdk
+- name: Spam and auto-reply detection in There There
+  url: https://www.reddit.com/r/laravel/comments/1wjw2w1/detecting_spam_and_autoreplies_with_jev_and_the/
+  kind: reddit
+  author: freekmurze
+  description: Walkthrough of using the Laravel AI SDK Jev support to flag spam and auto-replies in the There There help desk, with Noul, Choice, and Score examples in PHP.
+  jev: Noul for spam and auto-reply probability on incoming messages.
+  image: https://external-preview.redd.it/Up6svHbkrdKcDREH0Bxoz5U1BdqUtnTWYrPaM5OkqBI.jpeg?auto=webp&s=a662330e21133bc799704e99bd9c97b2df961b97
+  metrics:
+    points: 30
+  date: '2026-09-18'
+  links:
+    article: https://freek.dev/3194-detecting-spam-and-auto-replies-with-jev-and-the-laravel-ai-sdk
+    project: https://freek.dev/3194-detecting-spam-and-auto-replies-with-jev-and-the-laravel-ai-sdk
+  tags:
+  - laravel
+  - php
+  - spam
+- name: Support message triage
+  url: https://openrouter.ai/labs/jev/triage
+  kind: app
+  author: OpenRouter
+  description: 'OpenRouter Labs recipe that asks Jev five yes-or-no questions about each of 95 support messages (refund, angry, bug, needs a person) and races it against a chat model: 475 answers in 1.2 s for $0.0014 a run.'
+  jev: Five Nouls per message, batched in one run.
+  image: https://openrouter.ai/dynamic-og?title=Support+message+triage&description=Classify+support+messages+with+structured+decisions.&v=2
+  links:
+    model: https://openrouter.ai/typesafe/jev
+  tags:
+  - triage
+  - openrouter-labs
+- name: Symfony support triage demo
+  url: https://github.com/yoanbernabeu/demo-symfony-typesafe
+  kind: repo
+  author: yoanbernabeu
+  description: 'French Symfony AI demo that qualifies real requests sent to French public services with one Jev call each: the requester''s intent among six, urgency, and whether it is a bug to forward to developers.'
+  image: https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg
+  metrics:
+    stars: 2
+    likes: 12
+    views: 2736
+  date: '2026-09-19'
+  links:
+    demo: https://x.com/yOyO38/status/2101705862008001011
+  tags:
+  - symfony
+  - php
+  - ticket-triage
+- name: Telemarketing AI with Jev
+  url: https://x.com/zeetakou/status/2101945022782284192
+  kind: post
+  author: zeetakou
+  description: Outbound calling agent on the GPT Live API that dials a lead list and transfers promising prospects, now testing Jev for calls like whether a lead is promising, when to hand off, and redial priority.
+  jev: 'In-call and post-call judgments: prospect quality, hand-off now or not, redial priority.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg
+  metrics:
+    likes: 2
+    views: 516
+  date: '2026-09-21'
+  tags:
+  - telemarketing
+  - sales
+  - voice
+- name: Transcript Scorecard
+  url: https://github.com/brandonbryant12/transcript-scorecard
+  kind: repo
+  author: brandonbryant12
+  description: Proof of concept that replays a support call turn by turn and re-scores it against a weighted employee scorecard with a live evaluation per new turn, persisting evidence, confidence and score history in SQLite.
+  date: '2026-09-16'
+  tags:
+  - call-qa
+  - effect
+  - sqlite
+- name: triage-bot
+  url: https://github.com/TheEleventhAvatar/triage-bot
+  kind: repo
+  author: TheEleventhAvatar
+  description: Support-ticket bot where Jev routes each ticket to a general, account, billing or technical agent and decides whether a human should take over, then Cerebras drafts the reply; both calls are timed separately.
+  image: https://github.com/user-attachments/assets/9912dc0f-2033-40c7-a149-58a14093dec8
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - ticket-routing
+  - cerebras
+  - escalation
+- name: Twenty Classify workflow action
+  url: https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify
+  kind: repo
+  author: twentyhq
+  description: Classify step in the open-source Twenty CRM's workflows that asks Jev choice, score or boolean questions about a record, so later steps can branch on the answers and probabilities.
+  jev: Jev is registered as the 'evaluation' model kind (jev-latest via @ai-sdk/typesafe-ai, 200 ms median latency listed).
+  image: https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b
+  metrics:
+    repo_stars: 57246
+  date: '2022-12-01'
+  links:
+    app: https://twenty.com
+  tags:
+  - crm
+  - workflows
+  - classification
+- name: UiPath ticket triage agent
+  url: https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent
+  kind: repo
+  author: UiPath
+  description: Sample UiPath agent for two-tier support ticket triage where Jev routes each ticket fast, escalating to Action Center human review or an LLM-drafted auto-reply.
+  metrics:
+    repo_stars: 98
+  date: '2025-01-31'
+  links:
+    docs: https://uipath.github.io/uipath-python/
+  tags:
+  - ticket-triage
+  - rpa
+  - system-2
+- name: Warmbly TypeSafe client
+  url: https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe
+  kind: repo
+  author: warmbly
+  description: Open-source cold outreach and email warmup platform that uses TypeSafe judgments for inbox tagging, reply intent classification, draft gating, bounce causes and form submission triage.
+  image: https://raw.githubusercontent.com/warmbly/warmbly/main/docs/assets/dashboard-campaigns.png
+  metrics:
+    repo_stars: 308
+  date: '2026-01-17'
+  links:
+    app: https://warmbly.com
+  tags:
+  - cold-email
+  - sales
+  - inbox
+- name: WhatsApp customer group monitor
+  url: https://x.com/t0t0_build/status/2101082444577567162
+  kind: post
+  author: t0t0_build
+  description: Monitors 25+ WhatsApp groups with clients in real time, with Jev judging whether anything needs attention, such as urgent problems or unresolved orders, and only then asking an LLM to write a notification.
+  metrics:
+    likes: 280
+    views: 13062
+  date: '2026-09-18'
+  tags:
+  - whatsapp
+  - monitoring
+  - alerts
+- name: Worth Replying
+  url: https://x.com/AIsaOneHQ/status/2100894473085489510
+  kind: post
+  author: AIsaOneHQ
+  description: Takes a company's domain and finds X users already discussing the problems its product solves; on typesafe.ai it found 150 tweets and made 750 Jev decisions in 18.8s for $0.007.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100886600880111616/img/Y6PwJ2mf_8-BWChg.jpg
+  metrics:
+    likes: 15
+    views: 1963
+  date: '2026-09-18'
+  tags:
+  - social-listening
+  - marketing

@@ -1,0 +1,3391 @@
+title: Agents and Orchestration
+emoji: 🤖
+layout: gallery
+description: Tool and skill selection, approvals, planning, memory, and harness decisions for general-purpose agents.
+entries:
+- name: '@maximem/jev-mcp'
+  url: https://www.npmjs.com/package/@maximem/jev-mcp
+  kind: package
+  author: maximem-ai
+  description: MCP server giving Claude Code, Codex and Cowork Jev-backed classify, score, check and rank tools, plus plan, action and verify gates over the agent's own work.
+  metrics:
+    downloads: 754
+  date: '2026-09-20'
+  tags:
+  - mcp
+  - gates
+- name: A3M Router
+  url: https://github.com/Das-rebel/a3m-router
+  kind: repo
+  author: Das-rebel
+  description: Adaptive multi-model LLM router across 80+ providers with pheromone-trail failover and ensemble merging, where model=jev-auto lets Jev route each request to a suitable provider in a single pass.
+  metrics:
+    stars: 16
+  date: '2026-05-15'
+  links:
+    npm: https://www.npmjs.com/package/adaptive-memory-multi-model-router
+  tags:
+  - model-routing
+  - cost
+  - gateway
+- name: abmind System One judgments
+  url: https://github.com/aksika/abmind/blob/dev/src/judgment-provider.ts
+  kind: repo
+  author: aksika
+  description: Pluggable System One judgment provider in abmind, a persistent memory and RAG engine for AI agents, that sends recall and diagnostics questions to Jev or a locally served Laya model as advice to its combining code.
+  metrics:
+    repo_stars: 20
+  date: '2026-04-13'
+  links:
+    app: https://aksika.github.io/
+    repo: https://github.com/aksika/abmind
+  tags:
+  - agent-memory
+  - laya
+  - recall
+- name: Agent action approval
+  url: https://openrouter.ai/labs/jev/overseer
+  kind: app
+  author: OpenRouter
+  description: 'OpenRouter Labs recipe that runs four checks (off task, could destroy, untrusted input, ask first) on each of 24 coding or ops agent tool calls in one request, so risky steps stop for a person: 96 answers in 0.5 s.'
+  jev: Four Nouls per tool call; any answer above 50% pauses the step.
+  image: https://openrouter.ai/dynamic-og?title=Agent+action+approval&description=Review+agent+actions+with+structured+decisions.&v=2
+  links:
+    model: https://openrouter.ai/typesafe/jev
+  tags:
+  - approvals
+  - tool-calls
+  - openrouter-labs
+- name: Agent action approval at Weathernews
+  url: https://zenn.dev/weathernews/articles/jev-auto-approval-poc
+  kind: article
+  author: Weathernews (Sakamoto)
+  description: Weathernews replaced the LLM that approved operations in its internal AI agent with Jev, keeping classification accuracy while cutting latency and cost, and shares the design and comparison.
+  jev: One Choice per requested agent operation, using the probability distribution and confidence to auto-approve or escalate.
+  image: https://res.cloudinary.com/zenn/image/upload/s--qHPPckme--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BB%258A%25E8%25A9%25B1%25E9%25A1%258C%25E3%2581%25AEJev%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E6%259C%2580%25E9%25AB%2598%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E5%259D%2582%25E6%259C%25AC%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q5OTYyNThkZjkuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Weathernews%2520Tech%2520Blog%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMjVlOTVhNDMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE
+  date: '2026-09-18'
+  tags:
+  - japanese
+  - approvals
+  - poc
+- name: Agent router test
+  url: https://www.reddit.com/r/LLMDevs/comments/1wihigc/tried_typesafes_new_decisiononly_model_jev_as_an/
+  kind: reddit
+  author: blackbarata
+  description: Uses Jev as the router for a personal knowledge app's agents, correctly picking the recipe or scraper agent from an Instagram reel transcript in 145-271 ms.
+  jev: One Choice over short agent descriptions, with confidence to decide when to fall back.
+  image: https://preview.redd.it/h90l7rcdszph1.png?width=1080&format=png&auto=webp&s=d1460cf34f1dcc1eb36f720f72be19077dcf6ba6
+  metrics:
+    points: 4
+  date: '2026-09-17'
+  tags:
+  - routing
+  - multi-agent
+- name: Agent with a Jev model router
+  url: https://x.com/rileybrown/status/2100607709317861879
+  kind: post
+  author: rileybrown
+  description: Agent build in which Jev acts as the model router, choosing which model handles each request.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100607557995761664/img/a_foq8dIW_wwab7W.jpg
+  metrics:
+    likes: 283
+    views: 49910
+  date: '2026-09-17'
+  tags:
+  - model-router
+  - agents
+- name: Agent! Jev advisor
+  url: https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift
+  kind: repo
+  author: AgentiLoop
+  description: Jev advisor in Agent!, a native macOS agent app, that gives a second opinion on shell commands already passed by pattern rules and refuses those whose data-destruction probability exceeds a user-set threshold.
+  jev: Uses the bundled TypeSafeKit Swift client and fails open so an outage never stalls the tool loop.
+  image: https://raw.githubusercontent.com/AgentiLoop/Agent/main/agent-demo.gif
+  metrics:
+    repo_stars: 623
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/AgentiLoop/Agent
+    sdk: https://github.com/AgentiLoop/Agent/tree/main/TypeSafeKit
+    app: https://agentiloop.ai
+  tags:
+  - shell-safety
+  - macos
+- name: Agent-native tool prefetch
+  url: https://github.com/BuilderIO/agent-native/blob/main/packages/core/src/agent/jev-tool-prefetch.ts
+  kind: repo
+  author: BuilderIO
+  description: Ranks up to 128 tools and skills with a single Choice and preloads the top three within 750 ms.
+  image: https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7628600bc10a4940b78f42c5df7628b0
+  metrics:
+    repo_stars: 6092
+  date: '2026-03-12'
+  links:
+    app: https://www.agent-native.com
+  tags:
+  - tool-prefetch
+  - agent-framework
+  - typescript
+- name: agent0
+  url: https://github.com/xudafeng/agent0
+  kind: repo
+  author: xudafeng
+  description: Desktop AI agent runtime with MCP integration, task planning and persistent memory where optional Jev routing selects the relevant tools, falling back to the main model on low confidence, with each decision shown in an Activity panel.
+  image: https://raw.githubusercontent.com/xudafeng/agent0/main/docs/images/agent0-jev-demo.gif
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  tags:
+  - tool-routing
+  - desktop-agent
+  - mcp
+- name: agentic-harness-cli
+  url: https://github.com/powerpuff-kitty/agentic-harness-cli
+  kind: repo
+  author: powerpuff-kitty
+  description: Rust CLI for governing agent-native repositories whose decisions commands build Jev payloads for boolean, choice, and ordinal decisions, store answers as review-required receipts, and gate calibration regressions in CI.
+  date: '2026-09-03'
+  tags:
+  - rust
+  - cli
+  - decision-receipts
+- name: AgenticOrg Jev integration
+  url: https://github.com/mishrasanjeev/agentic-org
+  kind: repo
+  author: mishrasanjeev
+  description: Enterprise agent orchestration platform with a Jev provider adapter, an offline evaluator and a shadow-mode hook that compares Jev tool-routing decisions with existing runtime outcomes.
+  jev: Advisory only, with an 0.8 s timeout, sampling caps and a circuit breaker; production stays off until a measured evaluation is approved.
+  metrics:
+    stars: 11
+  date: '2026-03-20'
+  links:
+    docs: https://github.com/mishrasanjeev/agentic-org/blob/main/docs/jev-agenticorg-integration.md
+  tags:
+  - enterprise
+  - tool-routing
+  - shadow-mode
+- name: AgenticX Jev group routing
+  url: https://github.com/DemonDamon/AgenticX/blob/main/agenticx/runtime/jev_intent.py
+  kind: repo
+  author: DemonDamon
+  description: Multi-agent platform whose group chat routes un-mentioned messages with Jev, dispatching by label when confident and falling back to an LLM, and shows a decision card each turn.
+  metrics:
+    repo_stars: 233
+  date: '2024-03-15'
+  links:
+    app: https://www.agxbuilder.com/
+  tags:
+  - multi-agent
+  - routing
+  - group-chat
+- name: AgentRun
+  url: https://x.com/MiguelriosEN/status/2101033282414768456
+  kind: post
+  author: MiguelriosEN
+  description: Agent harness built with pi and Jev in which an agent learns how to do a job, writes itself a general reusable solution, and then gets out of the way.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101032781270917120/img/8tGv1qWQd8M9mEec.jpg
+  metrics:
+    likes: 311
+    views: 59185
+  date: '2026-09-18'
+  links:
+    app: https://agent.run
+    project: https://agent.run
+  tags:
+  - harness
+  - workflows
+  - pi
+- name: AgentRun
+  url: https://x.com/_aj/status/2102061534956662818
+  kind: post
+  author: _aj
+  description: Harness from Grep.ai for repetitive knowledge work that learns the job as it runs, moving steps from LLM calls to code; 100,000 compliance alerts cost under $26K versus over $290K on Opus 5.
+  image: https://pbs.twimg.com/media/HSwFAsyawAA4tst.jpg?name=orig
+  metrics:
+    likes: 1585
+    views: 190844
+  date: '2026-09-21'
+  links:
+    app: https://agent.run
+    article: https://x.com/MiguelriosEN/status/2100840456200581120
+    project: https://agent.run
+  tags:
+  - agent-harness
+  - compliance
+  - cost
+- name: AgentX decision backends
+  url: https://github.com/anis-marrouchi/agentx/blob/master/src/decisions/backends/simple-jev.ts
+  kind: repo
+  author: anis-marrouchi
+  description: Self-hosted AI agent mesh for small businesses whose decision layer can run Jev-style typed decisions on a local LLM or a simple-jev server, recomputing confidence as normalized entropy.
+  jev: simple-jev reads next-token logits over allowed labels; AgentX discards its max-probability confidence because it is not comparable across option counts.
+  metrics:
+    repo_stars: 8
+  date: '2026-02-11'
+  links:
+    app: https://agentx-docs.pages.dev/
+    repo: https://github.com/anis-marrouchi/agentx
+  tags:
+  - agent-mesh
+  - decisions
+  - simple-jev
+- name: ai-csuite Jev judgments
+  url: https://github.com/Fei2-Labs/skill-genie/blob/main/skills/ai-csuite/scripts/jev.py
+  kind: repo
+  author: Fei2-Labs
+  description: AI C-Suite strategic debate skill that can use Jev to classify the decision topic and judge the executives' round-one positions, falling back to keyword logic without a key.
+  metrics:
+    repo_stars: 12
+  date: '2026-01-09'
+  links:
+    repo: https://github.com/Fei2-Labs/skill-genie
+  tags:
+  - multi-agent
+  - debate
+  - agent-skill
+- name: Ailerix
+  url: https://github.com/tylerjharden/ailerix
+  kind: repo
+  author: tylerjharden
+  description: 'OpenRouter-style model router with a single ailerix/auto slug: Jev classifies each request into a typed catalog route, then a cost-per-task Pareto chain picks the provider.'
+  metrics:
+    stars: 2
+  date: '2026-09-16'
+  links:
+    app: https://ailerix.vercel.app
+    app 2: https://ailerix.vercel.app
+  tags:
+  - model-routing
+  - gateway
+- name: AIMEAT decide
+  url: https://github.com/miikkij/aimeat-protocol
+  kind: repo
+  author: miikkij
+  description: Federated, self-hosted AI operating system whose nodes carry Jev beside the text model, so apps and agents can ask closed triage, routing, scoring and pick-one questions via a JS library, MCP tools and a skill.
+  jev: Personal data such as emails, phone numbers and Finnish identity codes are stripped before requests leave the node, and each decision is recorded with whether a person reviewed it.
+  image: https://raw.githubusercontent.com/miikkij/aimeat-protocol/main/assets/screenshots/portal-landing.png
+  metrics:
+    stars: 8
+  date: '2026-04-28'
+  links:
+    app: https://aimeat.io
+  tags:
+  - federated
+  - mcp
+  - privacy
+- name: AIQSA Jev decision features
+  url: https://github.com/insciqq/AIQSA/blob/main/lib/domain/decisionModels.ts
+  kind: repo
+  author: insciqq
+  description: Jev integration in AIQSA, a self-hosted multi-provider AI workspace, that uses decision calls via OpenRouter for memory and knowledge-base relevance, tool discovery and skill suggestions, each enabled after its own qualification.
+  metrics:
+    repo_stars: 6
+  date: '2026-07-22'
+  links:
+    repo: https://github.com/insciqq/AIQSA
+  tags:
+  - memory
+  - tool-discovery
+  - openrouter
+- name: Aivory decision policies
+  url: https://github.com/hjxwz123/Aivory/tree/main/server/internal/typesafe
+  kind: repo
+  author: hjxwz123
+  description: Self-hosted AI chat platform that lets admins assign Jev to file routing, tool routing, memory dedup, memory conflict adjudication and content moderation, each with confidence fallbacks.
+  jev: Moderation asks one Noul per category and blocks at 0.85; tool routing narrows tools only at 0.8 confidence.
+  image: https://raw.githubusercontent.com/hjxwz123/Aivory/main/docs/brand/readme-header.svg
+  metrics:
+    repo_stars: 101
+  date: '2026-06-12'
+  links:
+    docs: https://github.com/hjxwz123/Aivory/blob/main/docs/typesafe-decisions.md
+  tags:
+  - chat-platform
+  - memory
+  - moderation
+- name: AIWG Jev decision adapter
+  url: https://github.com/jmagly/aiwg/blob/main/src/decision/adapters/jev.ts
+  kind: repo
+  author: jmagly
+  description: Decision framework in an AI-augmented dev toolkit where versioned rulesets and bindings let workflows switch between Jev and an LLM subagent, with a hardened Jev transport.
+  image: https://raw.githubusercontent.com/jmagly/aiwg/main/docs/.public/aiwg-readme-hero-v2.png
+  metrics:
+    repo_stars: 211
+  date: '2025-08-14'
+  links:
+    docs: https://github.com/jmagly/aiwg/blob/main/docs/decision/jev-transport.md
+    app: https://aiwg.io
+  tags:
+  - decisions
+  - workflows
+  - fallback
+- name: AmberAgent Jev runtime
+  url: https://github.com/soul99soul-glitch/AmberAgent/tree/main/app/src/main/java/app/amber/core/jev
+  kind: repo
+  author: soul99soul-glitch
+  description: Jev runtime in the AmberAgent Android AI workspace used for bounded phone-screen and web goals, model-council routing, memory reranking, semantic tool search and trimming long tool outputs before they reach the model.
+  jev: Per-purpose shadow/active modes with calibration and usage stores; low confidence, timeouts or shadow mode keep the default behavior.
+  metrics:
+    repo_stars: 26
+  date: '2026-05-08'
+  links:
+    repo: https://github.com/soul99soul-glitch/AmberAgent
+  tags:
+  - android
+  - memory
+  - phone-automation
+- name: Anna
+  url: https://github.com/Foxtailsss-Andy/Anna-Agent
+  kind: repo
+  author: Foxtailsss-Andy
+  description: Governed local-first enterprise agent whose Crew feature suggests a person or worker for an unassigned task with Jev, which can abstain; it matched a DeepSeek judge on 22/22 cases at 85.23% lower p50 latency.
+  image: https://raw.githubusercontent.com/Foxtailsss-Andy/Anna-Agent/main/docs/public/assets/anna-readme-banner-v2.png
+  metrics:
+    stars: 149
+  date: '2026-04-02'
+  tags:
+  - enterprise
+  - task-assignment
+  - mcp
+- name: Arbos Jev router
+  url: https://github.com/unarbos/arbos/blob/main/crates/arbos-engine/src/jev.rs
+  kind: repo
+  author: unarbos
+  description: Structured router in the Arbos file-system-native agent coordinator where Jev picks the next mechanical tool move from a situation card, while the LLM handles writing, planning and talking; act=llm hands the turn to the chat model.
+  jev: Typed questions via OpenRouter's Decisions API over a 24k-token card with a 1.5 s first-byte limit; failures end the turn with no chat fallback.
+  image: https://raw.githubusercontent.com/unarbos/arbos/main/docs/img/project-page.png
+  metrics:
+    repo_stars: 30
+  date: '2026-03-18'
+  links:
+    app: https://arbos.life
+    repo: https://github.com/unarbos/arbos
+  tags:
+  - agent-coordinator
+  - tool-routing
+- name: Archive Center Jev selector
+  url: https://github.com/Flazer31/archive-center/blob/main/go-service/internal/httpapi/prepare_turn_jev.go
+  kind: repo
+  author: Flazer31
+  description: Optional Jev selector and reviewer in Archive Center, a local-first memory backend for RisuAI chats, that picks which stored memories and source evidence to pass into the next request without ever writing memories.
+  metrics:
+    repo_stars: 15
+  date: '2026-06-30'
+  links:
+    app: https://archive-center.vercel.app
+    repo: https://github.com/Flazer31/archive-center
+  tags:
+  - memory
+  - roleplay
+  - risuai
+- name: ask-jev gate for Grok bots
+  url: https://x.com/ChuckHTF/status/2102187054381617367
+  kind: post
+  author: ChuckHTF
+  description: Personal desk of Grok bots and assistants that now asks Jev first, via OpenRouter's Decisions API, for small yes/no, bucket and 1-5 score calls instead of waking Grok.
+  image: https://pbs.twimg.com/media/HSx3--tWYAE8EN1.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 78
+  date: '2026-09-22'
+  tags:
+  - gating
+  - cost
+  - openrouter
+- name: askjev
+  url: https://github.com/shantanugoel/ask-jev-skill
+  kind: repo
+  author: shantanugoel
+  description: Hermes skill, usable by other agents, that calls Jev as a typed tiebreaker so the agent can act on a confident Choice, Score, or Noul answer or escalate.
+  metrics:
+    stars: 37
+  date: '2026-09-17'
+  tags:
+  - hermes
+  - skill
+- name: askjev
+  url: https://github.com/pZacca/askjev
+  kind: repo
+  author: pZacca
+  description: Unofficial MCP server, local over stdio or hosted on Cloudflare Workers, where an agent asks a plain question about material it holds and Jev picks yes/no, scale or choice and answers with calibrated probabilities.
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - cloudflare-workers
+  - second-opinion
+- name: AskJev MCP
+  url: https://github.com/cbruyndoncx/AskJev-MCP
+  kind: repo
+  author: cbruyndoncx
+  description: MCP server built on the official @typesafe-ai/sdk that gives agents ask_choice, ask_noul, and ask_score tools returning Jev's selected option, per-option probabilities, and confidence.
+  date: '2026-09-18'
+  tags:
+  - mcp
+  - server
+- name: Astra
+  url: https://github.com/matrixorigin/Astra
+  kind: repo
+  author: matrixorigin
+  description: 'Self-hosted runtime for long-running enterprise agents with EXPLAIN ANALYZE for context and native Jev judgments at four decision points: memory filtering, lesson dismissal, request classification and skill selection.'
+  jev: Shared typed questions, validated responses, provider routing and usage accounting across callers; Jev is configured separately from the generation model.
+  image: https://raw.githubusercontent.com/matrixorigin/Astra/main/docs/assets/explain-analyze-demo.gif
+  metrics:
+    stars: 32
+  date: '2026-02-09'
+  tags:
+  - agent-runtime
+  - memory
+  - skill-selection
+- name: AutoGPT TypeSafe blocks
+  url: https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpt_platform/backend/backend/blocks/typesafe
+  kind: repo
+  author: Significant-Gravitas
+  description: Seven no-code blocks, including a five-exit router, a yes, no, or unsure split, and a score filter.
+  jev: Blocks call the TypeSafe Python SDK's system_one, so visual agent workflows can branch on Choice, Noul and Score answers.
+  image: https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/master/docs/home/.gitbook/assets/Banner_image.png
+  metrics:
+    repo_stars: 187481
+  date: '2023-03-16'
+  links:
+    app: https://agpt.co
+  tags:
+  - no-code
+  - autogpt
+  - workflow-blocks
+- name: Beacon Jev memory evaluations
+  url: https://github.com/Asymptote-Labs/agent-beacon/tree/main/cli/beacon/internal/learning
+  kind: repo
+  author: Asymptote-Labs
+  description: Evaluation command in Beacon, a cross-harness memory layer for coding agents, that has Jev judge redacted session-trace projections against a rubric for reusable lessons, which a person reviews before saving.
+  metrics:
+    repo_stars: 926
+  date: '2026-09-21'
+  links:
+    site: https://beacon.sh
+    repo: https://github.com/Asymptote-Labs/agent-beacon
+  tags:
+  - memory
+  - coding-agents
+  - evaluation
+- name: Callee
+  url: https://github.com/baldaworks/callee
+  kind: repo
+  author: baldaworks
+  description: Markdown- and YAML-defined agent workflows for ACP runtimes that mix coding models, shell checks and human steps with a native TypeSafeJev evaluator for typed decisions and routing.
+  metrics:
+    stars: 74
+  date: '2026-07-14'
+  links:
+    docs: https://github.com/baldaworks/callee/blob/main/docs/agent-kinds/typesafe-jev.md
+  tags:
+  - workflows
+  - acp
+  - routing
+- name: carryforward
+  url: https://github.com/Dharundp6/jev-carryforward
+  kind: repo
+  author: Dharundp6
+  description: MCP server that records facts during agent sessions in a per-project ledger and, at the start of a task, uses Jev via Vercel AI Gateway to recall only the facts that matter for it.
+  image: https://raw.githubusercontent.com/Dharundp6/jev-carryforward/main/assets/demo.svg
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    npm: https://www.npmjs.com/package/carryforward
+  tags:
+  - memory
+  - mcp
+  - claude-code
+- name: ChainlessChain skill decision layer
+  url: https://github.com/chainlesschain/chainlesschain/blob/main/packages/cli/src/lib/decision-layer/typesafe-provider.js
+  kind: repo
+  author: chainlesschain
+  description: Skill decision layer in a personal AI management CLI that can ask Jev which skill should handle a request, with an 800 ms timeout, metered usage and a benchmark harness.
+  metrics:
+    repo_stars: 11
+  date: '2025-12-01'
+  links:
+    repo: https://github.com/chainlesschain/chainlesschain
+  tags:
+  - skill-routing
+  - cli
+  - decisions
+- name: Character memory that judges
+  url: https://x.com/john_bortotti/status/2102113996505518388
+  kind: post
+  author: john_bortotti
+  description: Character memory system from Mutuals where one Jev call per message decides whether to keep it, which exact words, where it fits, what it makes outdated and what it recalls.
+  jev: Several typed questions per incoming message answered in a single Jev call.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102112486837096449/img/-pAuYpFAhQmzM0uC.jpg
+  metrics:
+    likes: 88
+    views: 11162
+  date: '2026-09-21'
+  links:
+    company: https://mutuals.inc
+  tags:
+  - memory
+  - companion
+  - characters
+- name: Chat bot with no LLM
+  url: https://x.com/CodingGarden/status/2100665210419950031
+  kind: post
+  author: CodingGarden
+  description: 'Chat assistant built without any LLM: Jev picks the tool and its arguments across web search, Wikipedia, weather, Todoist and Home Assistant, so cited answers arrive instantly.'
+  jev: Choice of tool plus argument selection per prompt.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100664410935332864/img/KPApgq0AysL_SFeg.jpg
+  metrics:
+    likes: 1182
+    views: 112452
+  date: '2026-09-17'
+  tags:
+  - tool-routing
+  - chatbot
+- name: Citadel promotion decisions
+  url: https://github.com/masumi-network/Citadel/blob/main/kb/promotion.py
+  kind: repo
+  author: masumi-network
+  description: Promotion step in Citadel, self-hosted memory for engineering teams and their agents, where Jev decides whether a collected item is relevant and safe to promote into shared knowledge at a 0.7 threshold.
+  image: https://raw.githubusercontent.com/masumi-network/Citadel/main/docs/brand/readme-banner.svg
+  metrics:
+    repo_stars: 16
+  date: '2026-05-20'
+  links:
+    app: citadel.utxo.ag
+    repo: https://github.com/masumi-network/Citadel
+  tags:
+  - team-memory
+  - knowledge-graph
+- name: Clonk agent canvas
+  url: https://x.com/0xPaulius/status/2101312576252481785
+  kind: post
+  author: 0xPaulius
+  description: Agent orchestrator on a canvas where Jev instantly decides actions such as launching agents, instead of waiting on a slow LLM loop.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101278375423737856/img/AcdfybGwO7dAi1Gu.jpg
+  metrics:
+    likes: 174
+    views: 13026
+  date: '2026-09-19'
+  links:
+    app: https://clonk.ai
+  tags:
+  - orchestration
+  - canvas
+- name: computer-use-cache
+  url: https://github.com/rohanarun/computer-use-cache
+  kind: repo
+  author: rohanarun
+  description: OpenAI-compatible caching proxy that replays repeated computer-use and coding-agent requests. On an exact miss, Jev compares recent cached requests and picks a reusable response or none; anything uncertain goes upstream.
+  jev: 'One choice over up to 8 cached candidates plus none, accepted at 0.95 confidence; matches are tagged X-Computer-Use-Cache-Match: jev.'
+  image: https://storage.googleapis.com/cheatlayer/landing/computer-use-cache-super-api-hero.jpeg
+  metrics:
+    stars: 42
+  date: '2026-06-04'
+  tags:
+  - caching
+  - proxy
+  - cost
+- name: Corent model routing
+  url: https://x.com/corentAI/status/2100965880242770423
+  kind: post
+  author: corentAI
+  description: Corent's router uses Jev to decide what each request needs across 1000+ models, how confident that call is, and whether to take the route or fall back, with stricter confidence for costly jobs like a $2 video clip.
+  jev: Routing Choice with a per-workload confidence threshold before falling back.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100964784581525504/img/S0fJrRk_X0OFZhdh.jpg
+  metrics:
+    likes: 320
+    views: 109295
+  date: '2026-09-18'
+  links:
+    app: http://corent.tech
+    project: https://corent.tech
+  tags:
+  - model-routing
+  - media-generation
+- name: CoWork OS TypeSafe decisions
+  url: https://github.com/CoWork-OS/CoWork-OS/blob/main/src/electron/agent/decisions/typesafe-provider.ts
+  kind: repo
+  author: CoWork-OS
+  description: CoWork OS, a local-first agentic everything-app, adds a TypeSafe decision provider so its agents can make typed judgments over /v1/systemone.
+  jev: An HTTP decision provider defaulting to jev-latest.
+  image: https://raw.githubusercontent.com/CoWork-OS/CoWork-OS/main/screenshots/cowork-os-sl-color-logo.png
+  metrics:
+    repo_stars: 457
+  date: '2026-01-24'
+  tags:
+  - agent-os
+  - local-first
+  - decisions
+- name: Criteria-based model routing in eve
+  url: https://x.com/eve/status/2100430918762832180
+  kind: post
+  author: eve
+  description: Experimental autoModel option in the eve agent framework that uses Jev to route each request between models described by plain-language criteria.
+  jev: Choice between candidate models keyed by descriptions like "Complex reasoning and engineering tasks".
+  image: https://pbs.twimg.com/media/HSY6yf5a8AA8NJi.jpg?name=orig
+  metrics:
+    likes: 910
+    views: 115439
+  date: '2026-09-17'
+  tags:
+  - model-routing
+  - framework
+- name: Crucible system_one route
+  url: https://github.com/neuralmagic/crucible/blob/main/examples/route/crucible.toml
+  kind: repo
+  author: neuralmagic
+  description: Goal-directed research loop engine with an example domain where a decision role routes tickets through any POST /v1/systemone server, either hosted Jev or a vLLM DiffusionGemma server.
+  image: https://raw.githubusercontent.com/neuralmagic/crucible/main/docs/img/crucible-molten.gif
+  metrics:
+    repo_stars: 8
+  date: '2026-07-29'
+  links:
+    app: https://neuralmagic.github.io/crucible/
+    repo: https://github.com/neuralmagic/crucible
+  tags:
+  - research-loop
+  - routing
+  - vllm
+- name: decide-mcp
+  url: https://github.com/dakdevs/decide-mcp
+  kind: repo
+  author: dakdevs
+  description: Local MCP server that lets an agent hand off a decision with context and choices to Jev through AI Gateway by default, returning a recommended choice with percentages, with custom policies and bias-profile routing.
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - decisions
+- name: Decision Graph Protocol
+  url: https://github.com/numerous-com/dgp
+  kind: repo
+  author: numerous-com
+  description: 'Open protocol for decision-based agents: apps expose immutable evidence frames, typed decisions and guarded actions, and a Jev adapter produces assessments while application code keeps control of effects.'
+  date: '2026-09-19'
+  tags:
+  - protocol
+  - agents
+  - guarded-actions
+- name: Deco Studio Jev task dedupe
+  url: https://github.com/decocms/studio/blob/main/apps/api/src/tools/task-board/duplicate-decisions.ts
+  kind: repo
+  author: decocms
+  description: Agent control plane whose task board first asks Jev whether incoming tasks duplicate existing cards, falling back to a fast LLM when Jev is unavailable or unsure.
+  jev: One shared state with one Choice per incoming task (including "none"); answers are accepted only if every choice has probability of at least 0.95.
+  metrics:
+    repo_stars: 408
+  date: '2025-03-14'
+  links:
+    app: https://decocms.com/studio
+  tags:
+  - dedupe
+  - task-board
+  - openrouter
+- name: DeepChat Jev judgment model
+  url: https://github.com/ThinkInAIXYZ/deepchat/blob/dev/src/main/provider/providers/jevProvider.ts
+  kind: repo
+  author: ThinkInAIXYZ
+  description: DeepChat's desktop agent client adds Jev as a provider plus an opt-in judgment-model slot that reviews tool-permission requests through the System One protocol.
+  jev: Chat entry points fail loudly for Jev by design; runtime files also cover Jev-based tool-result pruning.
+  metrics:
+    repo_stars: 6338
+  date: '2025-02-14'
+  links:
+    docs: https://github.com/ThinkInAIXYZ/deepchat/blob/dev/docs/features/agent-judgment-model/spec.md
+  tags:
+  - tool-permissions
+  - desktop-agent
+  - provider
+- name: Dehydrator
+  url: https://github.com/Arrmlet/dehydrator
+  kind: repo
+  author: Arrmlet
+  description: Client-side tool search for LLM APIs that lets a model use thousands of tools without sending every definition, matching tools with BM25, Jev, or both.
+  jev: Jev ranks tool definitions against the tool_search query by meaning; it needs no extra dependency beyond the standard library.
+  metrics:
+    stars: 10
+  date: '2026-02-17'
+  tags:
+  - tool-search
+  - mcp
+  - python
+- name: determinate
+  url: https://github.com/cahaseler/determinate
+  kind: repo
+  author: cahaseler
+  description: TypeScript agent library that treats LLMs as next-action predictors; its Jev decider picks the next valid tool and fills closed-set parameters, handing only free-text fields or low-confidence cases to the LLM.
+  jev: One request per nextAction() asks which tool comes next plus each enum-like param; below minConfidence (0.6) the LLM decides. Works via TypeSafe or OpenRouter Decisions.
+  metrics:
+    stars: 6
+  date: '2026-03-11'
+  tags:
+  - tool-selection
+  - typescript
+  - agent-framework
+- name: DGUI-HyperMem
+  url: https://github.com/ctaxnagomi/dgui-hypermem
+  kind: repo
+  author: ctaxnagomi
+  description: Self-hosted memory MCP server on Cloudflare Workers that fuses vector and full-text recall, then uses Jev to rerank memories, assign type and salience, and drop non-durable chatter.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  links:
+    dataset: https://huggingface.co/datasets/ctaxnagomi/DGUI_HYPERMEM-JEV
+  tags:
+  - memory
+  - mcp
+  - cloudflare-workers
+- name: Diana TypeSafe client
+  url: https://github.com/SuInk/Diana/blob/main/model/llm/typesafe.go
+  kind: repo
+  author: SuInk
+  description: Self-hosted group-chat agent for QQ, Telegram, DingTalk, Feishu and WeCom that can use Jev to decide whether to chime in and whether a message is addressed to the bot.
+  jev: Typed questions with probabilities replace one chat-model call and a round of JSON parsing for these reply decisions.
+  image: https://raw.githubusercontent.com/SuInk/Diana/main/docs/assets/diana-webui-overview.png
+  metrics:
+    repo_stars: 8
+  date: '2026-07-02'
+  links:
+    app: https://suink.github.io/Diana/
+    repo: https://github.com/SuInk/Diana
+  tags:
+  - group-chat
+  - turn-taking
+  - go
+- name: Discriminative MCTS Agent
+  url: https://github.com/lhemerly/mcts-agent
+  kind: repo
+  author: lhemerly
+  description: Autonomous agent that runs Monte Carlo Tree Search over actions proposed by harnesses like AGY or Pi, with a D3.js visualizer for replaying rollouts and value backpropagation.
+  jev: Choice assigns action priors and dynamic branching, Score evaluates hypothetical states, Noul handles yes/no checks.
+  metrics:
+    stars: 5
+  date: '2026-09-16'
+  tags:
+  - mcts
+  - planning
+- name: Drift developmental memory
+  url: https://x.com/AgorithmAg/status/2102169114542301526
+  kind: post
+  author: AgorithmAg
+  description: AI companion given a Jev-based developmental memory that records what it tried, how the user reacted and what it learned, keeping behavior consistent across the different models that run it.
+  image: https://pbs.twimg.com/media/HSxnqknWEAAgfFK.jpg?name=orig
+  metrics:
+    likes: 15
+    views: 1055
+  date: '2026-09-21'
+  links:
+    spec: https://drift-riverbed.com/developmental-memory.html
+    project: https://drift-riverbed.com/developmental-memory.html
+  tags:
+  - companion
+  - memory
+- name: dsh-jev
+  url: https://github.com/buberlo/dsh-jev
+  kind: repo
+  author: buberlo
+  description: Decision layer for the DeepSeek Harness agent loop where Jev narrows the relevant tools before each step, gates risky tool calls, and picks a model route, and can never widen a permission.
+  image: https://raw.githubusercontent.com/buberlo/dsh-jev/main/docs/assets/kubernetes-comparison.png
+  metrics:
+    stars: 13
+  date: '2026-09-19'
+  tags:
+  - agent-harness
+  - tool-gating
+- name: dsh-plugin-jev
+  url: https://github.com/cyberofficial/dsh-plugin-jev
+  kind: repo
+  author: cyberofficial
+  description: Plugin for the DeepSeek Harness web GUI that gives the main agent and subagents a jev_ask tool for calibrated judgments under uncertainty, with per-chat usage tracking and a settings tab for the key and model.
+  metrics:
+    stars: 5
+  date: '2026-09-19'
+  tags:
+  - deepseek-harness
+  - agent-tools
+  - plugin
+- name: duet-agent Jev model routing
+  url: https://github.com/dzhng/duet-agent/tree/main/src/model-routing
+  kind: repo
+  author: dzhng
+  description: Model-routing layer in the duet-agent harness whose default classifier is Jev via AI Gateway, re-checking every 5 assistant steps which model tier should handle the work and switching when the task changes domain.
+  image: https://raw.githubusercontent.com/dzhng/duet-agent/main/assets/cover.png
+  metrics:
+    repo_stars: 44
+  date: '2026-04-10'
+  links:
+    repo: https://github.com/dzhng/duet-agent
+  tags:
+  - model-routing
+  - agent-harness
+- name: DurinDoor Jev routing classifier
+  url: https://github.com/bloodf/durindoor/blob/main/open-sse/config/jev.js
+  kind: repo
+  author: bloodf
+  description: Self-hosted AI gateway over 236 providers that can ask Jev to classify each request as simple, medium, complex or reasoning and route it to a combo member of matching task level.
+  jev: One Choice over four complexity tiers with default criteria, mapped to the gateway's existing task levels.
+  image: https://raw.githubusercontent.com/bloodf/durindoor/main/assets/durindoor-banner.png
+  metrics:
+    repo_stars: 8
+  date: '2026-07-03'
+  links:
+    app: https://durindoor.vercel.app/
+    repo: https://github.com/bloodf/durindoor
+  tags:
+  - gateway
+  - model-routing
+  - self-hosted
+- name: EchoFlow Jev router
+  url: https://github.com/adityavardhansharma/EchoFlow/tree/main/app/src/main/java/com/echoflow/data/jev
+  kind: repo
+  author: adityavardhansharma
+  description: Per-turn Jev router in the EchoFlow privacy-first Android AI chat app that decides whether to recall or skip memory, force web search, or save a memory before the answering model runs, for cloud chats only.
+  jev: One Jev call per turn with fixed act thresholds and a timeout; uncertainty defers to the answering model and failures fall back to legacy behavior.
+  image: https://raw.githubusercontent.com/adityavardhansharma/EchoFlow/main/logo1.png
+  metrics:
+    repo_stars: 48
+  date: '2026-05-29'
+  links:
+    app: https://echoflow.adityavs.tech/
+    repo: https://github.com/adityavardhansharma/EchoFlow
+  tags:
+  - android
+  - memory
+  - tool-routing
+- name: Eutrya
+  url: https://github.com/hellozenstrategist-lab/eutrya
+  kind: repo
+  author: hellozenstrategist-lab
+  description: Standalone CLI-first agent harness for authorized security research, multi-agent swarms and long-running workflows, with Jev built into its decision loop for attention, candidate rubrics and research micro-steps.
+  image: https://raw.githubusercontent.com/hellozenstrategist-lab/eutrya/main/assets/eutrya-banner.webp
+  metrics:
+    stars: 11
+  date: '2026-06-04'
+  tags:
+  - agent-harness
+  - security-research
+  - cli
+- name: evoke
+  url: https://github.com/evoke-build/evoke
+  kind: repo
+  author: evoke-build
+  description: Rust CLI, git-based package manager and TypeScript SDK where a spoken or typed sentence becomes a call to an installed reflex program chosen by Jev with bounded arguments, gated to run, confirm, ask or abstain.
+  metrics:
+    stars: 10
+  date: '2026-09-21'
+  links:
+    site: https://evoke.build
+  tags:
+  - cli
+  - tool-routing
+  - sdk
+- name: ExploitHunter Jev decision specialist
+  url: https://github.com/justsml/ExploitHunter.app/blob/main/src/server/research/jev-decision-specialist.ts
+  kind: repo
+  author: justsml
+  description: Offensive-security research harness that uses Jev as a bounded decision specialist to pick tools and render formats, with a defer option and a persisted receipt for every call.
+  jev: One Choice over up to 64 candidate options via the OpenRouter Decisions API with a pinned typesafe/jev model; low-confidence or deferred answers fall back.
+  image: https://raw.githubusercontent.com/justsml/ExploitHunter.app/main/screenshots/readme-mockups/agent-security-social-preview.png
+  metrics:
+    repo_stars: 14
+  date: '2026-05-21'
+  links:
+    app: https://justsml.github.io/ExploitHunter.app/
+    repo: https://github.com/justsml/ExploitHunter.app
+  tags:
+  - security
+  - tool-selection
+  - openrouter
+- name: FastMCP Jev tool search
+  url: https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/experimental/transforms/jev_search.py
+  kind: repo
+  author: PrefectHQ
+  description: 'Experimental FastMCP transform that ranks a server''s tool catalog with Jev: a wide Choice over one-line summaries, then a close read of a shortlist with full descriptions.'
+  jev: A Choice orders the shortlist and one Noul per candidate checks it actually does what was asked, so a query nothing serves returns empty.
+  image: https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f-watercolor-waves-2.png
+  metrics:
+    repo_stars: 27854
+  date: '2024-11-30'
+  links:
+    docs: https://gofastmcp.com
+  tags:
+  - mcp
+  - tool-search
+  - python
+- name: finch-jev
+  url: https://github.com/finchtoys/finch-releases/tree/main/extensions/jev
+  kind: repo
+  author: finchtoys
+  description: Mini tool for the Finch desktop agent that registers a finch_jev_evaluate tool, letting the agent send text plus Choice, Score and Noul questions to Jev.
+  image: https://raw.githubusercontent.com/finchtoys/finch-releases/main/home.webp
+  metrics:
+    repo_stars: 57
+  date: '2026-07-02'
+  links:
+    app: https://www.finchwork.app
+  tags:
+  - desktop-agent
+  - tool
+  - plugin
+- name: Frost
+  url: https://github.com/marcus/frost
+  kind: repo
+  author: marcus
+  description: Go CLI that takes a prompt or markdown doc and recommends a model, harness or API and effort level, using one Jev analysis request and then deterministic local selection of the cheapest profile meeting the quality floor.
+  date: '2026-09-17'
+  tags:
+  - model-routing
+  - cli
+  - go
+- name: Goal-completion verifier
+  url: https://x.com/omarsar0/status/2101443311454036477
+  kind: post
+  author: omarsar0
+  description: Custom verifier for the /goal feature in an agent harness that uses Jev to check after every turn whether the goal is actually complete, replacing an expensive reasoning model.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101443076828925952/img/zVy7_B-F8UmXFdKK.jpg
+  metrics:
+    likes: 1005
+    views: 57383
+  date: '2026-09-19'
+  tags:
+  - verification
+  - agent-harness
+- name: Granite
+  url: https://github.com/The-Vibe-Company/granite
+  kind: repo
+  author: The-Vibe-Company
+  description: Local-first markdown knowledge compiler and MCP server that serves as agent memory; its only model is Jev, which picks which candidate from a deterministically bounded set answers a question and judges every capture.
+  jev: Jev returns a choice, score or probability over a set Granite chose; it never writes links, and Granite refuses to start without a key.
+  image: https://raw.githubusercontent.com/The-Vibe-Company/granite/main/docs/screenshots/granite-graph.png
+  metrics:
+    stars: 32
+  date: '2026-03-30'
+  tags:
+  - agent-memory
+  - mcp
+  - markdown
+- name: Grok Bot Jev Router
+  url: https://github.com/Bodila51/grok-bot-jev
+  kind: repo
+  author: Bodila51
+  description: Reference router that puts Jev in front of Grok Bot to classify each request before costly research, browser, retry or subagent work, choosing actions like reusing a cached artifact, stopping a retry or asking a human.
+  image: https://raw.githubusercontent.com/Bodila51/grok-bot-jev/main/media/jev-grok-bot-dashboard.png
+  metrics:
+    stars: 74
+  date: '2026-09-19'
+  tags:
+  - routing
+  - usage-gates
+  - grok
+- name: Group chat agent picker
+  url: https://x.com/vadimchoi/status/2101937206063780084
+  kind: post
+  author: vadimchoi
+  description: 'Compares three ways to decide which agent in a group chat should answer: @mentions, an LLM orchestrator at 4-7s and $0.00046 per message, and Jev at 0.29s median and $0.00002.'
+  jev: One Choice over the available agents per incoming message.
+  image: https://pbs.twimg.com/media/HSuUvltb0AAs3Qo.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 36
+  date: '2026-09-21'
+  tags:
+  - multi-agent
+  - routing
+  - chat
+- name: Hafiza OS
+  url: https://github.com/fornhere/hafiza-os
+  kind: repo
+  author: fornhere
+  description: Turkish-language second-brain system that keeps agent memory in a local Markdown vault for Claude Code, Codex and Antigravity, with Jev as an optional retrieval and review advisor.
+  jev: Scores knowledge cards and memory-catalog candidates against the question on a 0-2 scale (threshold 1.5), in off, shadow or on modes.
+  metrics:
+    stars: 12
+  date: '2026-08-30'
+  links:
+    docs: https://github.com/fornhere/hafiza-os/blob/main/JEV.md
+  tags:
+  - agent-memory
+  - markdown
+  - retrieval
+- name: HarnessJudge
+  url: https://github.com/ndolinschi/harnessjudge
+  kind: repo
+  author: ndolinschi
+  description: Paste an agent step trace and get an ok, retry, escalate or stop decision for agent builders.
+  date: '2026-09-17'
+  links:
+    app: https://harnessjudge.vercel.app
+    app 2: https://harnessjudge.vercel.app
+  tags:
+  - agent-harness
+  - trace-judging
+- name: HarnessRouter
+  url: https://x.com/RoundtableSpace/status/2102167236714574280
+  kind: post
+  author: RoundtableSpace
+  description: Open-source layer that runs Codex, Claude Code, Hermes, DeepSeek Harness, a Jev-powered System One harness and 9 more behind one interface, with a Unified Harness Protocol and an OpenAI Responses-compatible API.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102148770343407616/img/-rVahOyOBdklAAqC.jpg
+  metrics:
+    likes: 61
+    views: 51624
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/harnessrouter/harnessrouter
+    app: https://harnessrouter.ai/
+    project: https://github.com/harnessrouter/harnessrouter
+  tags:
+  - harness
+  - agent-infra
+  - open-source
+- name: Helm API Jev classifier
+  url: https://github.com/EasyMetaAu/helm-api/tree/main/packages/core/src/classifier
+  kind: repo
+  author: EasyMetaAu
+  description: Request classifier in the Helm API self-hosted LLM routing gateway that sends Jev the last user message and gets task type and complexity choices, which pick the lane and provider for the request.
+  jev: Two Choice questions (task_type, complexity) over minimal state via OpenRouter's Decisions API, about $0.00002 per call.
+  image: https://raw.githubusercontent.com/EasyMetaAu/helm-api/main/docs/assets/screenshots/01-dashboard.png
+  metrics:
+    repo_stars: 30
+  date: '2026-05-29'
+  links:
+    repo: https://github.com/EasyMetaAu/helm-api
+  tags:
+  - model-routing
+  - gateway
+- name: Hermes Jev Router
+  url: https://github.com/ussyverse/hermes-jev-router
+  kind: repo
+  author: ussyverse
+  description: Experimental Hermes plugin whose jev_route_plan tool uses Jev to assess task complexity, then policy picks an allowed model within cost, token, context, latency and capability limits; not yet run live.
+  metrics:
+    stars: 1
+  date: '2026-09-16'
+  tags:
+  - hermes
+  - model-routing
+  - experimental
+- name: Hermes Jev skills
+  url: https://github.com/kerpopule/hermes-jev-skills
+  kind: repo
+  author: kerpopule
+  description: Routing, memory, skill-selection, and triage skills for Hermes, Claude Code, and Codex that start in shadow mode and publish their failures.
+  image: https://raw.githubusercontent.com/kerpopule/hermes-jev-skills/main/docs/images/model-routing-dashboard.png
+  metrics:
+    stars: 405
+  date: '2026-09-18'
+  links:
+    demo: https://x.com/StevenDarlow/status/2101115049280422332
+    post: https://x.com/StevenDarlow/status/2101526148228227519
+  tags:
+  - hermes
+  - model-routing
+  - skills
+- name: Hermes-Jev
+  url: https://github.com/keeltrace/hermes-jev
+  kind: repo
+  author: keeltrace
+  description: Asynchronous decision layer for Hermes Agent that runs turn admission, relevance routing, completion and recovery checks, and an opt-in tool gate in parallel without blocking execution.
+  jev: Bounded Choice/Noul questions evaluated in the background around Jev's ~500 ms latency; only high-confidence challenges interrupt Hermes.
+  metrics:
+    stars: 12
+  date: '2026-09-18'
+  tags:
+  - hermes
+  - agent-harness
+  - routing
+- name: hermes-jev-approvals
+  url: https://github.com/anpicasso/hermes-jev-approvals
+  kind: repo
+  author: anpicasso
+  description: Provider for Hermes Agent's smart command approvals in which Jev returns APPROVE, DENY or ESCALATE from six typed questions in one request, measured 8.7x faster with 4.4x fewer prompts on 153 real commands.
+  metrics:
+    stars: 12
+  date: '2026-09-17'
+  tags:
+  - approvals
+  - hermes-agent
+- name: hermes-jev-curator
+  url: https://github.com/anpicasso/hermes-jev-curator
+  kind: repo
+  author: anpicasso
+  description: Hermes Agent plugin that has Jev label each pair of agent-created skills as duplicate, subset, conflict, unrelated and so on, and turns the results into safe archive plans.
+  jev: An 8-way relation Choice per candidate skill pair; defaults to read-only observe mode.
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  tags:
+  - hermes-agent
+  - skills
+  - plugin
+- name: hermes-jev-north-star
+  url: https://github.com/poponline63/hermes-jev-north-star
+  kind: repo
+  author: poponline63
+  description: Hermes Agent skill that interviews the owner until a run has a checkable finish line, generates the run prompt, and gates completion with shell checks plus Jev for the requirements no script can decide.
+  jev: Jev judges and ranks the fuzzy requirements that remain unproven after the machine-checkable ones pass.
+  image: https://raw.githubusercontent.com/poponline63/hermes-jev-north-star/main/docs/hero.svg
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - definition-of-done
+  - hermes
+- name: hermes-jev-router
+  url: https://github.com/rsdkrasen/hermes-jev-router
+  kind: repo
+  author: rsdkrasen
+  description: Plugin for Hermes Agent that adds a Jev decision layer to compact tool results, suppress duplicate tool calls, and skip main-model calls that would only restate results.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - hermes-agent
+  - token-savings
+- name: Hersona decide
+  url: https://github.com/shiro-0x/hersona/blob/main/hersona/integrations/decision/typesafe.py
+  kind: repo
+  author: shiro-0x
+  description: Persona attribute library for AI agents whose hersona decide command uses TypeSafe Jev to recommend reply, ask, search, use a tool or hold, with confidence, persona alignment and risk.
+  image: https://raw.githubusercontent.com/shiro-0x/hersona/main/docs/hersona-demo.gif
+  metrics:
+    repo_stars: 52
+  date: '2026-06-04'
+  links:
+    docs: https://shiro-0x.github.io/hersona/
+  tags:
+  - persona
+  - agents
+  - decisions
+- name: Heym decision models
+  url: https://github.com/heymrun/heym/blob/main/backend/app/services/decision_models.py
+  kind: repo
+  author: heymrun
+  description: Heym, a self-hosted agent orchestration runtime, adds a decision-model service built on TypeSafe's /v1/systemone contract so workflows can answer typed questions with tracing and SSRF guards.
+  image: https://raw.githubusercontent.com/heymrun/heym/main/docs/readme-assets/hero.svg
+  metrics:
+    repo_stars: 1245
+  date: '2026-03-28'
+  links:
+    app: https://heym.run
+  tags:
+  - agent-orchestration
+  - self-hosted
+  - decisions
+- name: Hippo Jev reranker
+  url: https://github.com/kitfunso/hippo-memory/blob/master/src/rerankers/jev.ts
+  kind: repo
+  author: kitfunso
+  description: Opt-in reranker in the Hippo agent-memory system that batches Jev Noul judgments over the top 40 recalled memories and falls back to a local cross-encoder; the author's study found better ranking but no answer-quality gain.
+  image: https://raw.githubusercontent.com/kitfunso/hippo-memory/master/assets/hippo-init.svg
+  metrics:
+    repo_stars: 752
+  date: '2026-03-15'
+  links:
+    repo: https://github.com/kitfunso/hippo-memory
+    website: https://hippo-memory.com
+  tags:
+  - agent-memory
+  - reranking
+- name: HiRoute Jev decider
+  url: https://github.com/higress-group/HiRoute/tree/main/decision-extensions/extensions/jev-decider
+  kind: repo
+  author: higress-group
+  description: Reference decision service for the HiRoute local model router that makes one Jev call per agent-turn boundary to pick the next model branch and score how competently the previous segment went.
+  jev: Choice over allowed branches plus a competence Score; in rules mode it picks the cheap branch when P(simple) is at least 0.80 and competence at least 0.50.
+  metrics:
+    repo_stars: 8
+  date: '2026-09-12'
+  links:
+    repo: https://github.com/higress-group/HiRoute
+  tags:
+  - model-routing
+  - cost-saving
+- name: Hive Jev routing backend
+  url: https://github.com/DJLougen/hive/blob/main/hive/jev_backend.py
+  kind: repo
+  author: DJLougen
+  description: 'Jev backend for Hive, a CPU-side action router for AI agents: Jev picks the next tool and rates whether it is safe to run without the LLM. A calibration probe found the default 0.95 safety gate never fires.'
+  jev: A tool Choice plus safe_to_execute, requires_reasoning and needs_llm Nouls per agent-loop state; all four must clear thresholds or the step escalates to the LLM.
+  metrics:
+    repo_stars: 39
+  date: '2026-06-01'
+  links:
+    repo: https://github.com/DJLougen/hive
+    benchmark: https://github.com/DJLougen/hive/blob/main/docs/benchmarks/jev-calibration.md
+  tags:
+  - action-routing
+  - cost
+  - calibration
+- name: iii-directory Jev search
+  url: https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs
+  kind: repo
+  author: iii-hq
+  description: Worker for the iii engine that searches registered functions, installed skills and triggers with Jev relevance judgments, falling back to hybrid search.
+  metrics:
+    repo_stars: 109
+  date: '2026-03-18'
+  links:
+    app: https://workers.iii.dev/
+  tags:
+  - tool-search
+  - skills
+  - rust
+- name: Imajin TypeSafe connector
+  url: https://github.com/ima-jin/imajin-ai/tree/main/apps/kernel/src/lib/typesafe
+  kind: repo
+  author: ima-jin
+  description: Service connector in the reference implementation of the MJN trust protocol that lets identities call Jev with a sealed, kernel-held API key under a scoped typesafe:decide grant.
+  jev: Keys are resolved server-side for one call and never returned; calls use their own route namespace instead of the chat inference path.
+  metrics:
+    repo_stars: 8
+  date: '2026-02-11'
+  links:
+    app: https://www.imajin.ai
+    repo: https://github.com/ima-jin/imajin-ai
+  tags:
+  - connector
+  - identity
+  - key-custody
+- name: invalidate
+  url: https://github.com/chopratejas/invalidate
+  kind: repo
+  author: chopratejas
+  description: Invalidation layer for agent memory that checks every stored fact against each new event with a Jev yes/no question (about 150 ms and $0.00006 per check), marking superseded memories and queuing unsure ones for a human.
+  image: https://raw.githubusercontent.com/chopratejas/invalidate/main/docs/img/chat.png
+  metrics:
+    stars: 15
+  date: '2026-09-19'
+  links:
+    discussion: https://www.reddit.com/r/AIMemory/comments/1wkqj4i/making_memory_unremember_an_apache_20_oss_project/
+    app: https://invalidate-playground.vercel.app
+    app 2: https://invalidate-playground.vercel.app
+  tags:
+  - agent-memory
+  - invalidation
+- name: IPFS Accelerate TypeSafe advisor
+  url: https://github.com/endomorphosis/ipfs_accelerate_py/tree/main/ipfs_accelerate_py/agent_supervisor/integrations
+  kind: repo
+  author: endomorphosis
+  description: Model server and agent supervisor with advisory TypeSafe integrations that route task kinds, guard traces and calibrate decisions beside the project's own Intelligence Index.
+  jev: The task router may escalate a task kind with Choice, but downgrades only at high confidence; without a key the board kind is unchanged.
+  metrics:
+    repo_stars: 11
+  date: '2024-05-18'
+  links:
+    repo: https://github.com/endomorphosis/ipfs_accelerate_py
+  tags:
+  - task-routing
+  - supervisor
+  - python
+- name: Janus
+  url: https://github.com/FirasSX914/Janus
+  kind: repo
+  author: FirasSX914
+  description: Router that sends each decision to Jev or a larger fallback model based on confidence, after measuring the threshold on your labeled dataset or decision log instead of shipping a default.
+  image: https://raw.githubusercontent.com/FirasSX914/Janus/main/results/figures/janus_demo.gif
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  tags:
+  - routing
+  - calibration
+  - fallback
+- name: JarvisCore Jev decisions
+  url: https://github.com/Prescott-Data/jarviscore-framework/blob/main/jarviscore/execution/decisions.py
+  kind: repo
+  author: Prescott-Data
+  description: 'Native Jev support in the JarvisCore multi-agent runtime: agents ask typed Choice, Score and Noul questions through a decision client separate from the text model, and the kernel picks specialist subagents by Choice.'
+  image: https://raw.githubusercontent.com/Prescott-Data/jarviscore-framework/main/jarviscore/docs/assets/combo-brand.svg
+  metrics:
+    repo_stars: 14
+  date: '2026-01-07'
+  links:
+    repo: https://github.com/Prescott-Data/jarviscore-framework
+    website: https://jarviscore.developers.prescottdata.io/
+  tags:
+  - multi-agent
+  - agent-runtime
+- name: JCR (Jev Capability Resolver)
+  url: https://github.com/NiazMorshed2007/jcr
+  kind: repo
+  author: NiazMorshed2007
+  description: Resolver that gives an agent one tool to find documented deterministic commands for a task, using Jev to search a nested capability tree and return only the selected operations' context.
+  image: https://raw.githubusercontent.com/NiazMorshed2007/jcr/main/web/src/app/opengraph-image.png
+  metrics:
+    stars: 15
+  date: '2026-09-20'
+  links:
+    site: https://jcr.niazmorshed.dev
+  tags:
+  - capabilities
+  - mcp
+  - context
+- name: jear
+  url: https://github.com/iJ03l/jear
+  kind: repo
+  author: iJ03l
+  description: Rust client that routes requests across NEAR AI Cloud models and IronClaw agents by budget, quality and sensitivity, so users never pick a model or agent themselves.
+  jev: Choice picks the agent, Score rates complexity and sensitivity, Noul flags whether a private TEE is needed or the request is risky or urgent.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - routing
+  - near-ai
+  - rust
+- name: Jev Agent Skill Router
+  url: https://github.com/GodsBoy/jev-agent-skill-router
+  kind: repo
+  author: GodsBoy
+  description: Routing layer that picks which Hermes Agent skill to load using confidence-aware Jev decisions and declines weak matches; it routed 68 of 72 synthetic requests correctly versus 51 for a lexical baseline.
+  image: https://raw.githubusercontent.com/GodsBoy/jev-agent-skill-router/main/assets/jev-agent-skill-router-banner.png
+  metrics:
+    stars: 13
+  date: '2026-09-16'
+  tags:
+  - skill-routing
+  - hermes-agent
+  - benchmark
+- name: Jev as MCP workflow orchestrator
+  url: https://x.com/JamesWard/status/2100976393546772628
+  kind: post
+  author: JamesWard
+  description: 'Two patterns for combining Jev, LLMs and MCP: Jev as an outer loop that chooses valid actions to build a workflow AST from MCP output schemas, with a single LLM call writing the final answer.'
+  jev: Choice over valid actions per step, then semantic filtering of MCP results.
+  image: https://pbs.twimg.com/media/HSgovFqXoAAih_x.png?name=orig
+  metrics:
+    likes: 298
+    views: 14044
+  date: '2026-09-18'
+  tags:
+  - mcp
+  - orchestration
+  - workflow
+- name: Jev Chat
+  url: https://github.com/w3cj/jev-chat
+  kind: repo
+  author: w3cj
+  description: Chat-style command bar where Jev picks the intent, tool, argument values, confirmation, and reply shape each turn, and code calls MCP servers and builds the reply from their data, so no model writes text.
+  image: https://raw.githubusercontent.com/w3cj/jev-chat/main/screenshot.png
+  metrics:
+    stars: 85
+  date: '2026-09-18'
+  tags:
+  - tool-calling
+  - mcp
+  - no-llm
+- name: Jev Checkpoint
+  url: https://github.com/ashishakkumar/Jev-Checkpoint
+  kind: repo
+  author: ashishakkumar
+  description: Local MCP server that turns an agent's bounded next-step decision, such as proceed, inspect callers or ask the user, into one Jev Choice and returns the route, probabilities and a thresholded recommendation.
+  date: '2026-09-21'
+  tags:
+  - mcp
+  - confidence-gate
+  - routing
+- name: Jev Decisions
+  url: https://github.com/bojansandhaus/jev-decisions
+  kind: repo
+  author: bojansandhaus
+  description: Plugin for Hermes and other agents that adds tools to review risky plans, recommend human approval, check answers against sources, assess whether a task is really finished, and keep a local decision journal.
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/bojansandhaus/jev-agent-decision-playground.png
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    app: https://huggingface.co/spaces/bojansandhaus/jev-agent-decision-playground
+  tags:
+  - hermes
+  - human-in-the-loop
+  - verification
+- name: Jev DSH Decision Engine
+  url: https://github.com/Devin-AXIS/jev-dsh-decision
+  kind: repo
+  author: Devin-AXIS
+  description: Agent-harness plugin that recommends which available tool, skill, or agent to use and rates output quality, running natively in DeepSeek Harness and via iPolloWork in OpenCode and Codex Harness.
+  jev: Structured judgments with probabilities; the host agent keeps planning and execution.
+  image: https://raw.githubusercontent.com/Devin-AXIS/jev-dsh-decision/main/assets/jev.png
+  metrics:
+    stars: 82
+  date: '2026-09-20'
+  tags:
+  - agent-harness
+  - deepseek
+  - tool-selection
+- name: Jev in the elvex harness
+  url: https://www.elvex.com/blog/early-experimentation-using-jev-to-rethink-harness-ux
+  kind: article
+  author: Doyle Irvin (elvex)
+  description: Agent platform write-up on wiring Jev into an LLM harness as a callable tool for search, approvals and context, including 2,000 expense reports categorized in 20 seconds for 5 cents.
+  image: https://cdn.prod.website-files.com/6866aba1d492c973444d9b24/6aad9db0d4b0c68d2079c47f_Blog%20Hero%20Image(6).png
+  metrics:
+    points: 7
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49760264
+  tags:
+  - harness
+  - approvals
+- name: Jev judgment modality for agent-rdf-memory
+  url: https://github.com/OpenLinkSoftware/ai-agent-skills/blob/main/agent-rdf-memory/howto/jev-judgment-modality.ttl
+  kind: repo
+  author: OpenLinkSoftware
+  description: RDF HowTo in OpenLink's OPAL agent skills that adds an optional System One judgment mode (Jev, Laya or NanoJev) to its memory harness, gating HowTo candidates and ask-vs-act elicitation, run in shadow or active mode.
+  jev: Typed Choice/Noul/Score gates over HowTo and session candidates via one system_one(state, questions) contract; fails open to the non-Jev path.
+  metrics:
+    repo_stars: 39
+  date: '2025-12-19'
+  links:
+    repo: https://github.com/OpenLinkSoftware/ai-agent-skills
+  tags:
+  - skills
+  - memory
+  - rdf
+- name: JEV MCP
+  url: https://github.com/arunav25/jev-mcp
+  kind: repo
+  author: arunav25
+  description: MCP server exposing Jev as a single evaluate tool for Claude Code, Claude Desktop and Codex, plus an evaluation harness that measures its accuracy against general-purpose LLMs on shared datasets.
+  metrics:
+    stars: 7
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - evaluation
+- name: Jev MCP (Freepik)
+  url: https://github.com/freepik-company/jev-mcp
+  kind: repo
+  author: freepik-company
+  description: Dependency-light Go MCP server with five tools for typed decisions (decide, classify, verify, rerank) via OpenRouter or TypeSafe, validating every provider answer and never retrying a paid call.
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  tags:
+  - mcp
+  - go
+  - rerank
+- name: Jev MCP Server
+  url: https://github.com/MattiooFR/mcp-server-jev
+  kind: repo
+  author: MattiooFR
+  description: MCP server that gives Codex, Claude, and other clients one generic tool for typed Jev decisions, with eight reproducible live scenarios from support triage to lead qualification and duplicates.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - mcp
+  - codex
+  - claude
+- name: Jev MCP server
+  url: https://github.com/podcctv/Narwhal-Cloud-podman-watcher/blob/main/scripts/jev_mcp_server.py
+  kind: repo
+  author: podcctv
+  description: Zero-dependency Python MCP server bundled with the Narwhal Cloud container watcher that gives agents such as Claude Code, Cursor or Antigravity jev_choice, jev_noul, jev_score, jev_gate and jev_batch tools.
+  metrics:
+    repo_stars: 6
+  date: '2026-04-14'
+  links:
+    repo: https://github.com/podcctv/Narwhal-Cloud-podman-watcher
+  tags:
+  - mcp
+  - python
+- name: Jev model router
+  url: https://x.com/ephraimduncan/status/2100454070536351824
+  kind: post
+  author: ephraimduncan
+  description: Model router that asks Jev which language model best fits each incoming request and forwards the request to that model, shown in a demo video.
+  jev: One Choice over the available models per request.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100454021852954624/img/hqULLONlXw40573G.jpg
+  metrics:
+    likes: 1863
+    views: 113855
+  date: '2026-09-17'
+  tags:
+  - routing
+  - model-router
+- name: Jev One
+  url: https://github.com/thezem/jev-one
+  kind: repo
+  author: thezem
+  description: Experimental TypeScript runtime where Jev picks from application-supplied vocabularies of words, places, tools or stop requests, and the app applies each choice and feeds the observation back until an objective is verified.
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - runtime
+  - agent-loop
+  - typescript
+- name: Jev plugin for Hermes Agent
+  url: https://github.com/ajensenwaud/hermes-jev-plugin
+  kind: repo
+  author: ajensenwaud
+  description: Hermes Agent plugin exposing Jev as four tools, jev_check, jev_route, jev_score, and jev_evaluate, with a bundled skill on writing good questions for coding-agent workflows.
+  metrics:
+    stars: 3
+  date: '2026-09-19'
+  tags:
+  - hermes
+  - tools
+- name: JEV plugins
+  url: https://github.com/Pinutss/jev-plugins
+  kind: repo
+  author: Pinutss
+  description: Cursor and Hermes plugin marketplace for four JEV Labs selectors, for memories, agents, models, and MCP tools, that filter candidates by task and budget, locally by default with Jev as an optional judge.
+  date: '2026-09-18'
+  tags:
+  - routing
+  - cursor
+  - hermes-agent
+- name: Jev Recall
+  url: https://github.com/samdotmak/jev-recall
+  kind: repo
+  author: samdotmak
+  description: Memory retrieval for AI assistants that returns the memories actually relevant to a query rather than the ones that look similar, aiming for reranker quality at semantic-search cost and speed.
+  jev: One calibrated Noul per memory in a single request.
+  metrics:
+    stars: 31
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/MachineLearning/comments/1wl31tp/jev_to_retrieve_memories_is_a_game_changer_p/
+    discussion: https://www.reddit.com/r/LangChain/comments/1wl324b/jev_to_retrieve_memories_is_a_game_changer_p/
+    app: https://jev-recall.vercel.app
+  tags:
+  - memory
+  - retrieval
+  - rag
+- name: Jev Router Playground
+  url: https://github.com/hugo-alves/jev-router-playground
+  kind: repo
+  author: hugo-alves
+  description: Playground where you build a pool of OpenRouter models with routing descriptions, give Jev a task, and compare its pick and probability distribution with the answer you judge best.
+  image: https://raw.githubusercontent.com/hugo-alves/jev-router-playground/main/assets/preview.png
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    app: https://kvhx37ziab90c.space.minimax.io
+  tags:
+  - model-routing
+  - openrouter
+- name: Jev vs LLM model router
+  url: https://www.reddit.com/r/AI_Agents/comments/1wl82fr/tried_typesafe_ais_jev_vs_a_regular_llm_for_model/
+  kind: reddit
+  author: TigerOk4538
+  description: Smart model router that runs Jev and a structured-output LLM side by side on every message; Jev returns the routing decision in about 1 second vs 4-14 seconds for the LLM.
+  jev: All routing signals evaluated in a single call.
+  metrics:
+    points: 6
+  date: '2026-09-20'
+  tags:
+  - routing
+  - latency
+- name: Jev x402 tool selection
+  url: https://x.com/trytenjin/status/2101817410307137937
+  kind: post
+  author: trytenjin
+  description: Live demo from Tenjin of Jev choosing which paid x402 endpoint to call from a curated set of tools.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101816882080718849/img/i6lPMBe0BF-LOcae.jpg
+  metrics:
+    likes: 13
+    views: 1042
+  date: '2026-09-20'
+  tags:
+  - x402
+  - tool-selection
+  - payments
+- name: jev-agent-tool
+  url: https://github.com/nandansrikrishna/jev-agent-tool
+  kind: repo
+  author: nandansrikrishna
+  description: Bring-your-own-key CLI, Python API and local MCP server built on the official Python SDK, letting agents invent typed questions at runtime and get Jev decisions with probabilities.
+  date: '2026-09-19'
+  tags:
+  - mcp
+  - cli
+  - python
+- name: jev-compaction (picaye)
+  url: https://github.com/picaye/jev-compaction
+  kind: repo
+  author: picaye
+  description: 'Context compaction for Hermes Agent sessions that never summarizes: Jev scores every tool call, stale calls and results are removed or truncated, and everything kept stays verbatim.'
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - context-compaction
+  - hermes-agent
+- name: jev-decision-gateway
+  url: https://github.com/kuldeepsinh19/jev-decision-gateway
+  kind: repo
+  author: kuldeepsinh19
+  description: 'Provider-agnostic gateway in front of expensive LLMs: Jev answers small continue, tool, relevance, and verification questions, and a policy layer calls a generative model only when generation is needed.'
+  date: '2026-09-19'
+  tags:
+  - gateway
+  - routing
+  - cost
+- name: jev-eval-mcp
+  url: https://github.com/BYK/jev-mcp
+  kind: repo
+  author: BYK
+  description: Eval-first MCP server for Jev with tools to prototype a question, map a question set over many items, and measure question variants against labeled examples for accuracy, calibration and thresholds.
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - evals
+- name: Jev-Evolve
+  url: https://github.com/novaleolin/jev-evolve
+  kind: repo
+  author: novaleolin
+  description: Agent framework where every branch is a typed Jev question and the policy text evolves from the agent's own mistakes, reporting how much of a gain is selection noise; one schema scored 0.188 or 0.542 depending on option order.
+  image: https://raw.githubusercontent.com/novaleolin/jev-evolve/main/docs/options.png
+  date: '2026-09-21'
+  tags:
+  - self-improving
+  - prompt-optimization
+  - evaluation
+- name: jev-harness-router
+  url: https://github.com/JoacoMarc/jev-harness-router
+  kind: repo
+  author: JoacoMarc
+  description: Per-turn router for agent harnesses where one Jev call of about 350 ms sets the model tier, effort, tools and skill behind a hard deadline; it picks the right skill 90.0% of the time versus 59.4% for keywords.
+  image: https://raw.githubusercontent.com/JoacoMarc/jev-harness-router/main/docs/route-demo.gif
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  links:
+    npm: https://www.npmjs.com/package/jev-harness-router
+  tags:
+  - model-routing
+  - claude-agent-sdk
+  - skills
+- name: jev-layer
+  url: https://github.com/typakon4/jev-layer
+  kind: repo
+  author: typakon4
+  description: Portable decision layer for agent harnesses such as Hermes, OMP, Codex and generic MCP that routes bounded choices through Jev and records receipts for replay, while the host keeps execution, permissions and approvals.
+  image: https://raw.githubusercontent.com/typakon4/jev-layer/main/docs/jev-layer-banner.svg
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    npm: https://www.npmjs.com/package/jev-layer
+  tags:
+  - agent-harness
+  - routing
+  - mcp
+- name: jev-mcp
+  url: https://github.com/jkudish/jev-mcp
+  kind: repo
+  author: jkudish
+  description: Ten MCP judgment tools for agents, including claim verification, injection screening, reranking, and gating.
+  metrics:
+    stars: 247
+  date: '2026-09-17'
+  links:
+    demo: https://x.com/jkudish/status/2100413576284712999
+  tags:
+  - mcp
+  - judgment-tools
+- name: jev-mcp
+  url: https://github.com/blakestone-x/jev-mcp
+  kind: repo
+  author: blakestone-x
+  description: Python MCP server that gives Claude Code, Codex, Cursor or any MCP client typed Jev classify, score, check, match and screen tools, each answer returned with a confidence.
+  metrics:
+    stars: 18
+  date: '2026-09-16'
+  tags:
+  - mcp
+  - judgment-tools
+  - python
+- name: jev-mcp
+  url: https://github.com/rashedInt32/jev-mcp
+  kind: repo
+  author: rashedInt32
+  description: MCP server and Claude Code plugin exposing Jev as classify, score, check and batched ask tools that return the typed answer with its full probability distribution.
+  image: https://pbs.twimg.com/media/HSeMX0_bYAARs-3.jpg
+  metrics:
+    stars: 6
+    likes: 172
+    views: 33967
+  date: '2026-09-17'
+  links:
+    npm: https://www.npmjs.com/package/jev-mcp
+    write-up: https://x.com/takamasa045/status/2100809434587124208
+  tags:
+  - mcp
+  - claude-code
+- name: jev-mcp
+  url: https://github.com/rajasekharponakala/jev-mcp
+  kind: repo
+  author: rajasekharponakala
+  description: 'MCP server that gives agents such as Claude Code and OpenCode typed Jev tools: jev_evaluate for a map of parallel questions, plus jev_noul, jev_choice, jev_score, and jev_models.'
+  image: https://external-preview.redd.it/PbioKRcq0xCJWCgwmAl45cEjLvDs5nxQCdmpvf2NylQ.png?auto=webp&s=ac4ff6f727d3bab17dbc1f6dcdee59f0005949cd
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  links:
+    demo: https://www.reddit.com/r/opencodeCLI/comments/1wm3mg7/jev_mcp_in_opencode/
+    discussion: https://www.reddit.com/r/OpenSourceeAI/comments/1wm3n4z/jev_mcp_in_opencode/
+  tags:
+  - mcp
+  - opencode
+- name: jev-mcp (codaaiteam)
+  url: https://github.com/codaaiteam/jev-mcp
+  kind: repo
+  author: codaaiteam
+  description: MCP server that gives Claude Code, Codex, Cursor or Pi Jev-backed tools to classify, score, check yes/no and gate risky tool calls, each as one API call.
+  date: '2026-09-19'
+  tags:
+  - mcp
+  - guardrails
+  - tools
+- name: jev-mcp (CodeIA Academy)
+  url: https://github.com/CodeIA-Academy/jev-mcp
+  kind: repo
+  author: CodeIA-Academy
+  description: Dependency-free local MCP server, documented in Spanish, that exposes ask_jev and list_jev_models to Claude Code, Codex, Cursor, Hermes, and other agents.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - mcp
+  - spanish
+- name: jev-mcp-dispatcher
+  url: https://github.com/abhishekashokvkumar/jev-mcp-dispatcher
+  kind: repo
+  author: abhishekashokvkumar
+  description: Proof-of-concept MCP tool dispatcher that discovers a simple MCP server's tool signatures at runtime and routes a natural-language command to the right tool and arguments with no general-purpose LLM.
+  jev: Choice picks the tool and extracts each argument value from the sentence; Noul handles yes/no checks.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - mcp
+  - tool-routing
+  - python
+- name: jev-me
+  url: https://github.com/jon-devlapaz/jev-me
+  kind: repo
+  author: jon-devlapaz
+  description: Agent skill that grills a plan as a design-tree interview, printing every unlocked decision each round with a recommended answer, and calling Jev ad hoc when a typed judgment helps.
+  metrics:
+    stars: 13
+  date: '2026-09-17'
+  tags:
+  - skill
+  - planning
+  - interview
+- name: Jev-Mem
+  url: https://github.com/libingzheren/Jev-Mem
+  kind: repo
+  author: libingzheren
+  description: Agent memory where Jev, as a System One controller, handles admission, multi-relational linking and retrieval while a language model answers; on LoCoMo with GPT-4o-mini the paper reports 11.0% higher answer quality.
+  image: https://raw.githubusercontent.com/libingzheren/Jev-Mem/main/docs/figures/overall_structure.png
+  metrics:
+    stars: 9
+    likes: 3
+  date: '2026-09-20'
+  links:
+    app: https://huggingface.co/spaces/libingzheren/Jev-Mem
+  tags:
+  - memory
+  - research
+  - locomo
+- name: jev-memory
+  url: https://github.com/NicolasMontone/jev-memory
+  kind: repo
+  author: NicolasMontone
+  description: Long-term memory layer for the Vercel AI SDK where Jev gates what gets written, retrieved and evicted, storing exact strings so memories are never summarized or rewritten.
+  jev: Write, retrieve and evict gates are each a boolean, choice or score question to typesafe-ai/jev via the AI Gateway.
+  metrics:
+    stars: 8
+  date: '2026-09-18'
+  tags:
+  - agent-memory
+  - ai-sdk
+  - vercel
+- name: jev-model-router
+  url: https://github.com/rajdhakad9826/jev-router
+  kind: repo
+  author: rajdhakad9826
+  description: TypeScript router that sends each query to the cheapest capable model in a two-tier or three-tier cascade, using Jev to classify how demanding the query is instead of an LLM call.
+  image: https://external-preview.redd.it/MYwHHpL0--RYjVWYB4u6LIjIKjKERfy3Z1jmJkPiIyE.png?auto=webp&s=71e8215cba4f41d7887ad24f3c98c27af60055a2
+  metrics:
+    stars: 8
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/typesafe/comments/1wkrfos/github_rajdhakad9826jevrouter_costaware_llm/
+    discussion: https://www.reddit.com/r/typesafe/comments/1wkri7o/build_a_llm_router_using_jev/
+  tags:
+  - model-routing
+  - cost
+- name: jev-model-router
+  url: https://github.com/az9713/jev-model-router
+  kind: repo
+  author: az9713
+  description: Web chat where Jev picks which LLM should answer each message and the chosen model replies, both through the Vercel AI Gateway, with a documented development journey and reliability evaluation.
+  image: https://raw.githubusercontent.com/az9713/jev-model-router/main/docs/jev_1.png
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  links:
+    writeup: https://az9713.github.io/jev-model-router/
+    write-up: https://az9713.github.io/jev-model-router
+  tags:
+  - model-routing
+  - vercel-ai-gateway
+- name: jev-model-router (OpenRouter)
+  url: https://github.com/lucianfialho/jev-model-router
+  kind: repo
+  author: lucianfialho
+  description: Python router that classifies each request and picks the cheapest capable model from OpenRouter's live, full catalog on every decision instead of a hardcoded model list.
+  jev: Jev classifies the request; a catalog scorer maps the result to models without Jev seeing the model list.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - model-routing
+  - openrouter
+- name: jev-predict-skill
+  url: https://github.com/DanielKillenberger/jev-predict-skill
+  kind: repo
+  author: DanielKillenberger
+  description: Host agent skill that predicts which closed verdict another skill would reach, such as SHIP or NEEDS_WORK, by handing its outcome set to Jev instead of running the skill.
+  jev: A Noul first checks whether a closed decision is possible, then a Choice picks among the target skill's outcomes.
+  metrics:
+    stars: 3
+  date: '2026-09-16'
+  tags:
+  - skills
+  - prediction
+- name: jev-router
+  url: https://github.com/prismhq/jev-router
+  kind: repo
+  author: prismhq
+  description: OpenAI-compatible LiteLLM proxy where clients request one model id and Jev picks which provider model serves each request, after filters for vision, output length and tool support.
+  jev: A Choice over the eligible models in router.yaml, built from a minimized summary of the request; without a key a cheapest-eligible baseline runs.
+  metrics:
+    stars: 7
+  date: '2026-09-17'
+  tags:
+  - model-routing
+  - litellm
+  - proxy
+- name: jev-system-one
+  url: https://github.com/haseeb-heaven/jev-system-one
+  kind: repo
+  author: haseeb-heaven
+  description: Terminal Q&A app where Jev sets the response policy and reviews drafts inside a LangGraph workflow while OpenAI only writes the wording, with a decision report beside each answer.
+  jev: Jev judges response mode, depth, uncertainty and draft quality at two points per request.
+  image: https://raw.githubusercontent.com/haseeb-heaven/jev-system-one/develop/docs/tui-preview.png
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  tags:
+  - langgraph
+  - tui
+- name: jev-tool-permissions
+  url: https://github.com/NicolasMontone/jev-tool-permissions
+  kind: repo
+  author: NicolasMontone
+  description: Tool-permission layer for the Vercel AI SDK that uses Jev to auto-approve, ask a human or block each tool call and to prune irrelevant tool definitions before a turn.
+  jev: Runs after deterministic allow/deny rules; on errors the gate fails closed to ask-human.
+  metrics:
+    stars: 4
+  date: '2026-09-18'
+  tags:
+  - approvals
+  - ai-sdk
+- name: jev-toolkit
+  url: https://github.com/jbt95/jev-toolkit
+  kind: repo
+  author: jbt95
+  description: Effect-based MCP-first toolkit whose jev mcp server gives any harness Choice, Noul and Score judgments plus verify and review tools, with CLI triage, audit, label and route commands and Prometheus impact metrics.
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  tags:
+  - mcp
+  - effect-ts
+  - prometheus
+- name: jev-usage-router
+  url: https://x.com/0xCodila/status/2101433560796467348
+  kind: post
+  author: 0xCodila
+  description: 'Usage router for Grok Bot: before browsing, research, retries or spawning extra bots, a Jev Choice picks the route, with a shadow mode, logs and a kill switch before it goes active.'
+  jev: A Choice call before each costly agent action decides which route to take.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101426271842349056/img/uEiR8K0UCaFoYsf-.jpg
+  metrics:
+    likes: 2367
+    views: 364528
+  date: '2026-09-19'
+  tags:
+  - routing
+  - grok
+  - skill
+- name: jev.mcp
+  url: https://github.com/hangarbay/jev.mcp
+  kind: repo
+  author: hangarbay
+  description: 'Go MCP server exposing Jev as five tools: classify, score, check, a mixed multi-question ask over one state, and model listing.'
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - go
+  - tools
+- name: Jevbridge
+  url: https://github.com/tacticocc/Jevbridge
+  kind: repo
+  author: tacticocc
+  description: ACP and MCP adapter plus CLI that puts Jev's typed decisions beside Codex, Claude, Grok and OpenCode for routing, gating, scoring and computer use, with an offline rule backend.
+  metrics:
+    stars: 37
+  date: '2026-09-18'
+  tags:
+  - mcp
+  - acp
+- name: jevc
+  url: https://github.com/doronp/jevc
+  kind: repo
+  author: doronp
+  description: 'Compiler that turns natural-language agent rules and JSON Schemas into Jev programs: a few narrow typed evidence questions plus a code reducer that computes the verdict, so a rule like never commit unless asked becomes testable.'
+  image: https://raw.githubusercontent.com/doronp/jevc/main/docs/hero.svg
+  metrics:
+    stars: 5
+  date: '2026-09-18'
+  links:
+    demo: https://news.ycombinator.com/item?id=49777057
+    npm: https://www.npmjs.com/package/jev-compiler
+  tags:
+  - guardrails
+  - compiler
+  - hooks
+- name: jevcache (semantic cache)
+  url: https://github.com/kushals256/jevcache
+  kind: repo
+  author: kushals256
+  description: Local OpenAI-compatible proxy that reuses a cached chat completion when Jev judges a new request to have the same intent as an earlier one, and fails open on Jev errors; one test went from 3244ms to 394ms.
+  image: https://raw.githubusercontent.com/kushals256/jevcache/main/docs/demo.gif
+  metrics:
+    stars: 9
+  date: '2026-09-19'
+  links:
+    demo: https://www.reddit.com/r/LLM/comments/1wm3ijr/your_agent_asks_the_same_thing_twice_in_different/
+    npm: https://www.npmjs.com/package/@kushalicious/jevcache
+  tags:
+  - semantic-cache
+  - proxy
+  - openai-compatible
+- name: jevcore
+  url: https://github.com/PerryLink/jevcore
+  kind: repo
+  author: PerryLink
+  description: Decision layer that exposes Jev's noul, choice, and score questions to DeepSeek Harness, any MCP host, or plain Node through three packages, offline by default with network egress disclosed.
+  metrics:
+    stars: 8
+  date: '2026-09-20'
+  tags:
+  - mcp
+  - agent-harness
+- name: Jevex
+  url: https://github.com/jvsteiner/jevex
+  kind: repo
+  author: jvsteiner
+  description: Agent loop experiment where Jev picks each next action and approves the concrete call, a LangChain chat model fills arguments and the final reply, and three local MCP servers expose 12 tools.
+  jev: Includes a research benchmark against native tool-calling LLM loops with measured tokens and latency.
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  tags:
+  - tool-use
+  - mcp
+- name: JevHarness
+  url: https://github.com/TianyuCodings/JevHarness
+  kind: repo
+  author: TianyuCodings
+  description: Framework where a strong LLM writes a task-specific harness that turns observations into Jev questions and actions, then freezes it and optionally improves it from rewards and full execution traces with GEPA.
+  metrics:
+    stars: 109
+  date: '2026-09-21'
+  links:
+    site: https://jev-harness.tianyuchen99.chatgpt.site
+    app: https://jev-harness.tianyuchen99.chatgpt.site
+  tags:
+  - harness
+  - gepa
+  - agents
+- name: JevHarness
+  url: https://github.com/kevin9327/jev-harness
+  kind: repo
+  author: kevin9327
+  description: 'Pre-execution gate for a single agent tool call: one mixed Jev request returns an allow/ask/deny verdict, irreversibility score and yes/no checks, and Python code turns them into execute, confirm or reject.'
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - tool-gate
+  - approvals
+  - python
+- name: jevkit
+  url: https://github.com/walidboulanouar/jev-agent-kit
+  kind: repo
+  author: walidboulanouar
+  description: Zero-dependency CLI and MCP server with eleven Jev-backed tools such as route, triage, guard, grep, rank, compact and judge, plus six runnable use cases including a Claude Code guard hook and a PR ranker.
+  image: https://raw.githubusercontent.com/walidboulanouar/jev-agent-kit/main/assets/banner.png
+  date: '2026-09-20'
+  tags:
+  - mcp
+  - cli
+  - guardrails
+- name: JevLoop
+  url: https://github.com/zjunlp/JevLoop
+  kind: repo
+  author: zjunlp
+  description: Runnable agent harness that routes every fork in the loop, such as which tool, is it safe, am I done, to a decision model like Jev or Laya and keeps the LLM for writing, with a web UI and no dependencies.
+  metrics:
+    stars: 11
+  date: '2026-09-20'
+  tags:
+  - agent-loop
+  - harness
+  - laya
+- name: Jevmind
+  url: https://github.com/dealerdefi/Jevmind
+  kind: repo
+  author: dealerdefi
+  description: Zero-dependency Python toolkit that pulls an agent's decisions out of prose into typed, confidence-scored answers behind a code gate, logged in a graded ledger, with a local rules brain or Jev behind one flag.
+  image: https://raw.githubusercontent.com/dealerdefi/Jevmind/main/assets/banner.jpg
+  metrics:
+    stars: 164
+    likes: 3
+    views: 1012
+  date: '2026-09-15'
+  links:
+    demo: https://x.com/dealerdefi/status/2102167087309369731
+  tags:
+  - decision-ledger
+  - mcp
+  - claude-code
+- name: JevRouter
+  url: https://github.com/BillionsBobby/JevRouter
+  kind: repo
+  author: BillionsBobby
+  description: Treats models, subagents, skills, MCP servers, and CLIs as one candidate pool and routes with a two-stage Choice when the pool is large.
+  image: https://raw.githubusercontent.com/BillionsBobby/JevRouter/main/docs/assets/jev-api-router-comparison.png
+  metrics:
+    stars: 148
+  date: '2026-09-18'
+  links:
+    app: https://jevrouter.co
+  tags:
+  - routing
+  - agents
+- name: JevScope
+  url: https://x.com/0xkaushik_k/status/2100928490367230201
+  kind: post
+  author: 0xkaushik_k
+  description: Watches an AI agent work and plots per-step judgments of task alignment, progress, repetition and being stuck, shown catching a coding agent looping on a race condition.
+  jev: 'Per-step judgments over agent trace steps: aligned with task, progress, repeating, stuck.'
+  image: https://pbs.twimg.com/amplify_video_thumb/2100928298834374656/img/LvjSbqapVvdNdvrK.jpg
+  metrics:
+    likes: 10
+    views: 1665
+  date: '2026-09-18'
+  tags:
+  - agent-traces
+  - monitoring
+- name: jevwire
+  url: https://github.com/Brainwires/jevwire
+  kind: repo
+  author: Brainwires
+  description: 'Jev decision layer for agent harnesses: an MCP server with seven tools (rank, pick, verify, evaluate, gate action, next step, list models), an embeddable DecisionModel library and an escalate-only Claude Code plugin.'
+  metrics:
+    stars: 15
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - claude-code
+- name: Jot
+  url: https://github.com/runta-dev/jot
+  kind: repo
+  author: runta-dev
+  description: General-purpose agent loop where Jev chooses tools and their arguments while Jot executes them, feeds real results back into context and asks again until Jev can reply, with every tool call visible.
+  metrics:
+    stars: 19
+  date: '2026-09-18'
+  tags:
+  - agent-loop
+  - tool-use
+- name: Just-in-time model selection in Goose
+  url: https://x.com/alexjhancock/status/2100932130196852896
+  kind: post
+  author: alexjhancock
+  description: Prototype for the Goose agent harness that has Jev read each prompt and pick which model should run the turn just before it starts.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100932017512763392/img/Xe2wlgj78FcAayZ2.jpg
+  metrics:
+    likes: 22
+    views: 1711
+  date: '2026-09-18'
+  tags:
+  - model-routing
+  - goose
+- name: KISS Sorcar decide tool
+  url: https://github.com/ksenxx/kiss_ai/blob/main/src/kiss/agents/sorcar/decide_tool.py
+  kind: repo
+  author: ksenxx
+  description: KISS Sorcar, a general-purpose agent framework for long-horizon tasks, gives the agent a decide tool that asks Jev typed questions to pick its next move.
+  jev: noul, choice and score questions through OpenRouter's ~typesafe/jev-latest, callable in parallel.
+  image: https://raw.githubusercontent.com/ksenxx/kiss_ai/main/assets/KISS-Sorcar.png
+  metrics:
+    repo_stars: 553
+  date: '2026-01-09'
+  tags:
+  - agent-framework
+  - decisions
+  - long-horizon
+- name: kmua bot Jev follow-up check
+  url: https://github.com/krau/kmua-bot/blob/v2/kmua/plugins/agent/jev.py
+  kind: repo
+  author: krau
+  description: Telegram bot agent that experimentally uses Jev to decide whether a follow-up group message is relevant enough for the bot to keep replying, with a configurable threshold.
+  image: https://repository-images.githubusercontent.com/573633729/31372b28-6155-40e6-ac96-6f7ed0b441ad
+  metrics:
+    repo_stars: 241
+  date: '2022-12-03'
+  tags:
+  - telegram
+  - chatbot
+  - follow-up
+- name: LifeOS Jev orchestrator experiments
+  url: https://github.com/nbramia/LifeOS/tree/main/scripts/jev_eval
+  kind: repo
+  author: nbramia
+  description: Six offline experiments in the self-hosted LifeOS personal assistant testing, on recorded real turns, whether Jev typed judgments would help its chat orchestrator with routing, in-loop decisions and latency.
+  metrics:
+    repo_stars: 31
+  date: '2026-01-07'
+  links:
+    repo: https://github.com/nbramia/LifeOS
+  tags:
+  - orchestration
+  - evaluation
+  - personal-assistant
+- name: LiteLLM auto router
+  url: https://docs.litellm.ai/docs/proxy/auto_routing
+  kind: article
+  author: LiteLLM
+  description: Picks a model tier for each request with a Jev Choice.
+  note: release candidate
+  tags:
+  - litellm
+  - model-routing
+- name: LiteLLM guardrail
+  url: https://docs.litellm.ai/docs/proxy/guardrails/typesafe
+  kind: article
+  author: LiteLLM
+  description: Asks one Noul per finished tool exchange and clears results that are no longer needed before each call.
+  note: release candidate
+  tags:
+  - litellm
+  - context-compaction
+  - guardrail
+- name: LiteLLM Jev complexity router
+  url: https://github.com/BerriAI/litellm/blob/main/litellm/router_strategy/complexity_router/jev_classifier.py
+  kind: repo
+  author: BerriAI
+  description: LiteLLM's complexity-based router can use Jev to classify each request into configured tiers that pick the backend model; a separate guardrail blanks tool results Jev judges no longer needed.
+  jev: A tier Choice per request for routing; the compaction guardrail asks one yes/no Noul per completed tool exchange.
+  metrics:
+    repo_stars: 59367
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/BerriAI/litellm
+    guardrail: https://github.com/BerriAI/litellm/tree/main/litellm/proxy/guardrails/guardrail_hooks/typesafe
+  tags:
+  - model-routing
+  - ai-gateway
+- name: Local Operator classification layer
+  url: https://github.com/damianvtran/local-operator/tree/main/local_operator/classification
+  kind: repo
+  author: damianvtran
+  description: Agent hub that runs a decision-model layer beside its heuristics once per message to recommend skills, MCP servers and roles; Jev scored 31/31 on labelled cases with the rubric in the options.
+  jev: Cascade over Radient, TypeSafe and OpenRouter with byte-identical bodies; p50 0.20 s per call in the evaluation.
+  image: https://repository-images.githubusercontent.com/922327641/359101c9-d089-4d2c-bb22-a62f973989de
+  metrics:
+    repo_stars: 214
+  date: '2025-01-25'
+  links:
+    docs: https://github.com/damianvtran/local-operator/blob/main/docs/design/classification-layer.md
+  tags:
+  - skills
+  - mcp
+  - recommendation
+- name: Loki Jev Auto
+  url: https://github.com/wundercorp/loki/blob/main/agent/jev_auto_router.py
+  kind: repo
+  author: wundercorp
+  description: Jev Auto router in the Loki self-improving agent that picks a model for each new session from a bounded catalog on the already-selected gateway, plus optional Jev typed-judgment tools.
+  jev: One Choice before the first system prompt, kept sticky for the session to preserve the provider prompt cache.
+  image: https://external-preview.redd.it/bXFrM3pzYTliM3FoMY0lQBrPzyunrBkHI7vjHn7uS62MUkZrWYeyYKCFZonA.jpeg?format=pjpg&auto=webp&s=c91449dc6c654493adcc41510ae0d3daaf31804a
+  metrics:
+    repo_stars: 26
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/wundercorp/loki
+    discussion: https://www.reddit.com/r/typesafeai/comments/1wivgjq/jev_for_automodel_routing/
+    app: https://loki.computer
+  tags:
+  - model-routing
+  - agent
+- name: Markus decide tool
+  url: https://github.com/markus-global/markus/blob/main/packages/core/src/tools/multimodal.ts
+  kind: repo
+  author: markus-global
+  description: AI workforce platform that gives its agents a decision capability and a decide tool backed by Jev-style decision models, with a rule that all evidence must go into the state.
+  image: https://raw.githubusercontent.com/markus-global/markus/main/docs/images/dashboard-preview.gif
+  metrics:
+    repo_stars: 195
+  date: '2026-03-19'
+  links:
+    app: https://www.markus.global
+  tags:
+  - agent-teams
+  - decide-tool
+  - tools
+- name: Maza
+  url: https://github.com/prasanth263/maza
+  kind: repo
+  author: prasanth263
+  description: 'Local MCP gateway that connects your MCP servers once and shows agents just two tools: find_tool, which uses a Jev Choice to discover a capability, and execute_tool.'
+  jev: Jev is the gateway's only model; credentials stay in the OS keychain and planning and arguments stay with the calling agent.
+  date: '2026-09-18'
+  tags:
+  - mcp
+  - gateway
+  - tool-discovery
+- name: mcp_jev
+  url: https://github.com/pedroknigge/mcp_jev
+  kind: repo
+  author: pedroknigge
+  description: Local MCP server for Cursor and other agents that runs ready-made Jev question packs, with a typed run_questions tool for custom Choice, Noul and Score judgments.
+  jev: No free-form ask tool by design; the user's own TypeSafe key is configured once and never pasted into host configs.
+  date: '2026-09-19'
+  tags:
+  - mcp
+  - cursor
+  - question-packs
+- name: McpMatch
+  url: https://github.com/ndolinschi/mcpmatch
+  kind: repo
+  author: ndolinschi
+  description: Web app that matches a user goal to the best MCP server or capability in a catalog, using a two-stage Jev pass when the catalog is large.
+  date: '2026-09-17'
+  links:
+    app: https://mcpmatch.vercel.app
+    app 2: https://mcpmatch.vercel.app
+  tags:
+  - mcp
+  - tool-routing
+- name: MetaCog
+  url: https://github.com/ItIsCuthNotCup/MetaCog
+  kind: repo
+  author: ItIsCuthNotCup
+  description: Metacognition loop where a small model branches into several thought paths and a System One judge, Jev or the open Reflex 4B, picks which one to continue; per-candidate Jev Nouls lifted HumanEval from 0.555 to 0.756.
+  jev: Per-candidate Noul judging beat one-shot Choice (0.756 vs 0.726 on HumanEval, 0.905 vs 0.869 on GSM8K).
+  metrics:
+    stars: 9
+  date: '2026-09-20'
+  tags:
+  - reasoning
+  - judge
+  - test-time
+- name: mewcp-jev
+  url: https://github.com/AStheTECH/mewcp-jev
+  kind: repo
+  author: AStheTECH
+  description: MCP server exposing Jev's System One API so agents can grade text or structured state against mixed yes/no, single-choice and rubric questions in one call and list available model aliases.
+  date: '2026-09-18'
+  links:
+    app: https://mewcp-jev.vercel.app
+  tags:
+  - mcp
+  - evaluation
+  - grading
+- name: Mimir TypeSafe skill and tool selection
+  url: https://github.com/shivendrasoni/mimir/blob/main/src/typesafe.rs
+  kind: repo
+  author: shivendrasoni
+  description: TypeSafe integration in Mimir, a Rust recursive-language-model agent runtime, that selects the applicable skill and shortlists needed tools before a model call, rolled out through shadow, canary and acceptance benchmarks.
+  jev: A skill_applies Noul plus a best_skill Choice, and one tool_needed Noul per tool; falls back to the full pool when an omitted tool is uncertain.
+  metrics:
+    repo_stars: 5
+  date: '2026-08-13'
+  links:
+    repo: https://github.com/shivendrasoni/mimir
+  tags:
+  - rust
+  - tool-selection
+  - skills
+- name: MindRoom participation judgments
+  url: https://github.com/mindroom-ai/mindroom/blob/main/src/mindroom/judgment/evaluator.py
+  kind: repo
+  author: mindroom-ai
+  description: Multi-agent runtime on Matrix where agents already in a thread decide whether to answer untagged messages, using an LLM or TypeSafe System One with a 0.8 threshold.
+  image: https://repository-images.githubusercontent.com/1137843985/a7ad6a4c-9828-4e95-91b5-7d05e97c59fc
+  metrics:
+    repo_stars: 284
+  date: '2026-01-19'
+  links:
+    docs: https://docs.mindroom.chat
+  tags:
+  - matrix
+  - multi-agent
+  - chat
+- name: Miser
+  url: https://github.com/rShetty/miser
+  kind: repo
+  author: rShetty
+  description: Rust AI gateway that has Jev classify every OpenAI-compatible prompt into a complexity tier from trivial to reasoning and routes it to the cheapest capable OpenRouter model; 90.5% exact accuracy on 116 held-out cases.
+  jev: Tier plus task classification in about 340 ms; sessions never downgrade tiers, with heuristic fallback.
+  metrics:
+    stars: 5
+  date: '2026-08-09'
+  tags:
+  - model-routing
+  - gateway
+  - openrouter
+- name: Monid tools with Jev
+  url: https://x.com/shengkunye/status/2102112693041938825
+  kind: post
+  author: shengkunye
+  description: Monid integration that lets an agent use Jev through OpenRouter across 2,000 tools, for jobs like scoring 2,000 leads, scanning TikTok hooks, or sorting Reddit threads, with a claimed 30x speed-up.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102112249112604672/img/3lR6gxILRYKTiMF_.jpg
+  metrics:
+    likes: 166
+    views: 12431
+  date: '2026-09-21'
+  links:
+    app: https://monid.ai
+    project: https://monid.ai
+  tags:
+  - tools
+  - openrouter
+  - marketplace
+- name: Nebius Physical AI Jev model router
+  url: https://github.com/nebius/nebius-physical-ai/blob/main/npa/src/npa/agent_backend/model_router.py
+  kind: repo
+  author: nebius
+  description: Advisory model router in Nebius's Physical AI Workbench agent backend that asks Jev whether a request needs the fast Nemotron model or MiniMax-M3 for multi-step reasoning, selecting no model on abstention or failure.
+  jev: One Choice over eligible model IDs with their criteria plus a none label, pinned to jev-1.13.0 with a 0.8 minimum confidence.
+  image: https://raw.githubusercontent.com/nebius/nebius-physical-ai/main/docs/assets/workbench-architecture.png
+  metrics:
+    repo_stars: 30
+  date: '2026-04-07'
+  links:
+    repo: https://github.com/nebius/nebius-physical-ai
+  tags:
+  - model-routing
+  - physical-ai
+- name: NetClaw jev-audit
+  url: https://github.com/automateyournetwork/netclaw/tree/main/scripts/jev-audit
+  kind: repo
+  author: automateyournetwork
+  description: Skill-audit sweeps in the NetClaw network agent that use Jev to flag ambiguous triggers, missing failure behavior, stale assumptions and injection smells, and to map skill overlap and coverage gaps.
+  jev: Noul-style questions per skill with collision and coverage thresholds, aggregated into a findings report.
+  image: https://raw.githubusercontent.com/automateyournetwork/netclaw/main/netclaw.jpg
+  metrics:
+    repo_stars: 664
+  date: '2026-02-19'
+  tags:
+  - skill-audit
+  - network
+  - governance
+- name: Nika System One seat
+  url: https://github.com/supernovae-st/nika/blob/main/crates/nika-cli-host/src/compile/typesafe.rs
+  kind: repo
+  author: supernovae-st
+  description: Workflow language for repeatable AI work whose compiler can hand bounded decisions to TypeSafe System One, one Choice with a "none" option per question.
+  image: https://nika.sh/brand/nika-logo-light.svg
+  metrics:
+    repo_stars: 88
+  date: '2026-01-02'
+  links:
+    app: https://nika.sh
+  tags:
+  - workflow
+  - compiler
+  - rust
+- name: nova-decide
+  url: https://github.com/mas-bandwidth/nova-tools/blob/main/docs/SPEC-DECIDE.md
+  kind: repo
+  author: mas-bandwidth
+  description: Typed-decision route in Nova Tools, a set of tools for AI agents on different models to message, wait and swarm together, where Jev answers small choice, score or yes/no judgments beside deterministic machinery.
+  jev: Decisions below a confidence floor are suggestions, never authorizations; used by swarm slots and pulse gates.
+  image: https://raw.githubusercontent.com/mas-bandwidth/nova-tools/main/assets/nova-tools-workshop.png
+  metrics:
+    repo_stars: 5
+  date: '2026-08-07'
+  links:
+    repo: https://github.com/mas-bandwidth/nova-tools
+  tags:
+  - multi-agent
+  - go
+  - cli
+- name: NyatBot Jev guards
+  url: https://github.com/ZYHUO/nyat-bot/blob/nyatos/src/ai/jev.ts
+  kind: repo
+  author: ZYHUO
+  description: Telegram group-chat agent that uses Jev to catch paraphrased repeats of its own messages and to block hallucinated facts that nobody in the chat mentioned or asked about.
+  jev: One Noul for semantic duplicates (threshold 0.7) and two Nouls for topic presence and whether it was asked (both below 0.35 blocks); unreachable Jev fails open.
+  metrics:
+    repo_stars: 9
+  date: '2026-04-10'
+  links:
+    repo: https://github.com/ZYHUO/nyat-bot
+  tags:
+  - telegram
+  - hallucination
+  - dedupe
+- name: oh-my-hermes Jev posture
+  url: https://github.com/rlaope/oh-my-hermes/blob/main/src/plugin_bundle/omh/jev_sidekick.py
+  kind: repo
+  author: rlaope
+  description: Module in the oh-my-hermes plugin that detects Jev-class Hermes plugins on a machine and reports what each declares about its tools, hooks and data flow, without claiming any ran.
+  jev: Recognizes jev_-prefixed tools and known Jev credential env names, and routes a tool-approval question to Jev when a Jev-class plugin is present.
+  image: https://raw.githubusercontent.com/rlaope/oh-my-hermes/main/assets/oh-my-hermes-wordmark.png
+  metrics:
+    repo_stars: 2854
+  date: '2026-06-03'
+  links:
+    docs: https://rlaope.github.io/oh-my-hermes/
+  tags:
+  - hermes-agent
+  - governance
+  - plugin
+- name: Open-Science Jev classification
+  url: https://github.com/aipoch/open-science/blob/main/src/main/settings/classification-settings.ts
+  kind: repo
+  author: aipoch
+  description: Classification service in the AIPOCH Open-Science research workbench that uses Jev to select which skills a request needs and whether a document should be read in full.
+  jev: Runs on jev-latest via TypeSafe, OpenRouter or a custom endpoint, with a byte budget kept under TypeSafe's context limit even for CJK text.
+  image: https://raw.githubusercontent.com/aipoch/open-science/main/docs/images/readme/open-science-banner.png
+  metrics:
+    repo_stars: 4897
+  date: '2026-07-03'
+  links:
+    app: https://aipoch.com/open-science
+  tags:
+  - skill-routing
+  - research
+  - desktop-app
+- name: OpenAgents Jev
+  url: https://github.com/openagentsinc/openagents/tree/main/crates/jev
+  kind: repo
+  author: openagentsinc
+  description: OpenAgents builds general agent infrastructure where every turn starts with a Jev typed judgment that returns a choice and probabilities, foldable back into the round.
+  jev: A Rust Jev SDK crate with typed Choice, Noul and Score answers powering the turn loop's respond/retry/stop verdicts.
+  metrics:
+    repo_stars: 449
+  date: '2023-11-07'
+  links:
+    app: https://openagents.com
+  tags:
+  - agent-infrastructure
+  - rust
+  - typed-decisions
+- name: openclaw-jev-compaction
+  url: https://github.com/SqaaSSL/openclaw-jev-compaction
+  kind: repo
+  author: SqaaSSL
+  description: Context engine for OpenClaw that asks Jev which tool calls and results a session still needs, drops the rest, and never summarizes, so what remains is the original text.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - openclaw
+  - context-compaction
+- name: openclaw-plugin-typesafe-ai
+  url: https://github.com/jason-allen-oneal/openclaw-plugin-typesafe-ai
+  kind: repo
+  author: jason-allen-oneal
+  description: OpenClaw plugin that uses Jev for group-chat triage on whether to respond, tool-call safety checks, compaction curation and model routing, without modifying the OpenClaw core.
+  date: '2026-09-18'
+  tags:
+  - openclaw
+  - plugin
+  - guardrails
+- name: OpenCompany
+  url: https://github.com/tinyhumansai/opencompany
+  kind: repo
+  author: tinyhumansai
+  description: Agent hive for one-person businesses where Jev decides who a message needs and who picks up a broadcast, falling back to the desk lead without a key.
+  jev: Choice over desk members plus "none", sent through the TinyHumans proxy.
+  image: https://raw.githubusercontent.com/tinyhumansai/opencompany/main/docs/gitbooks/.gitbook/assets/opencompany-hero.png
+  metrics:
+    stars: 196
+  date: '2026-07-10'
+  links:
+    app: https://tinyhumans.ai/opencompany
+  tags:
+  - multi-agent
+  - routing
+  - rust
+- name: opencompany approval review
+  url: https://github.com/useopencompany/opencompany/blob/main/packages/agent/src/approval-review.ts
+  kind: repo
+  author: useopencompany
+  description: Approval reviewer in the opencompany AI workspace where Jev auto-approves routine integration actions only when they match the user's request and look low-risk; destructive, metered or permission changes always ask.
+  jev: Relevance and low-risk probabilities with thresholds of 0.55 and 0.75, called through the AI SDK evaluate API.
+  metrics:
+    repo_stars: 7
+  date: '2026-05-20'
+  links:
+    app: https://opencompany.cloud
+    repo: https://github.com/useopencompany/opencompany
+  tags:
+  - approvals
+  - agent-actions
+- name: OpenHuman Jev tool ranker
+  url: https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev
+  kind: repo
+  author: tinyhumansai
+  description: Tool-search ranker for the OpenHuman agent harness that shortlists deferred tools with BM25 and lets one Jev Choice pick the right one, falling back to BM25 when signed out.
+  jev: BM25 to 20 candidates, then one Choice with a 3 s deadline, routed through the backend's OpenRouter System One proxy.
+  image: https://raw.githubusercontent.com/tinyhumansai/openhuman/main/gitbooks/.gitbook/assets/demo.png
+  metrics:
+    repo_stars: 40024
+  date: '2026-02-18'
+  links:
+    app: https://tinyhumans.ai/openhuman
+  tags:
+  - tool-search
+  - rust
+  - agent-harness
+- name: OpenMausBot chief of staff
+  url: https://x.com/milindlabs/status/2100515910754750741
+  kind: post
+  author: milindlabs
+  description: Multi-agent setup on OpenMausBot where Jev reads each task, wakes the right agents and assigns each one a model from the user's existing subscriptions.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100515619712184320/img/LFrKN4XyJ024sGe_.jpg
+  metrics:
+    likes: 184
+    views: 13818
+  date: '2026-09-17'
+  tags:
+  - agent-routing
+  - model-routing
+- name: openrouter-jev-mcp
+  url: https://github.com/ctmx/openrouter-jev-mcp
+  kind: repo
+  author: ctmx
+  description: Python decision gateway and MCP server that exposes Jev through OpenRouter's decisions endpoint to Claude Code, Codex and Cursor as classify, score and check tools for the small bounded questions agents hit.
+  date: '2026-09-19'
+  tags:
+  - mcp
+  - openrouter
+  - python
+- name: OriginOS Jev perception decisions
+  url: https://github.com/NeuralNexusPro/startupOS/tree/main/packages/core/src/lib/integrations/jev
+  kind: repo
+  author: NeuralNexusPro
+  description: 'Optional Jev decision mode for the perception rules of OriginOS, a local AI work system: when an event could go to several authorized projects, roles or skills, Jev picks the target and low-confidence cases go to the user.'
+  jev: A Choice over only the currently authorized targets; auto-continues only when route_target confidence is above 0.8, otherwise asks for a human pick.
+  image: https://raw.githubusercontent.com/NeuralNexusPro/startupOS/main/docs/assets/readme/originos-banner.png
+  metrics:
+    repo_stars: 7
+  date: '2026-07-02'
+  links:
+    app: https://wolfgaze.cn/zh/originos
+    repo: https://github.com/NeuralNexusPro/startupOS
+  tags:
+  - routing
+  - human-in-the-loop
+- name: Paprwork jev_decide tool
+  url: https://github.com/Papr-ai/paprwork/blob/master/docs/JEV.md
+  kind: repo
+  author: Papr-ai
+  description: Mastra tool in the Paprwork local-first desktop agent app that lets agents, sub-agents and scheduled jobs ask Jev typed noul, choice or score questions, with input guardrails and Papr-proxy or bring-your-own-key auth.
+  jev: jev_decide posts state plus up to 20 typed questions to /v1/systemone; state is capped at 32k characters.
+  metrics:
+    repo_stars: 7
+  date: '2026-01-27'
+  links:
+    app: https://www.papr.ai/landing
+    repo: https://github.com/Papr-ai/paprwork
+  tags:
+  - agent-tools
+  - desktop-agent
+- name: PerfectRecall
+  url: https://github.com/arslanr-com/perfectrecall
+  kind: repo
+  author: arslanr-com
+  description: Agent memory for Hermes that has Jev check every stored memory against short criteria from the calling agent, with no embeddings; an earlier version cut LongMemEval-S answer errors from 62 to 17 of 120.
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  tags:
+  - memory
+  - hermes
+  - sqlite
+- name: PetGPT Jev social signals
+  url: https://github.com/JulesLiu390/PetGPT/blob/main/src/utils/social/jevClient.js
+  kind: repo
+  author: JulesLiu390
+  description: AI desktop pet with a social agent in QQ, Telegram and WhatsApp groups that uses Jev to tag message mood and read the group's atmosphere before replying.
+  image: https://repository-images.githubusercontent.com/952838031/91883b7f-7f2b-412f-a048-8eae41b0de5a
+  metrics:
+    repo_stars: 107
+  date: '2025-03-22'
+  links:
+    sandbox: https://github.com/JulesLiu390/PetGPT/tree/main/jev-test
+  tags:
+  - companion
+  - group-chat
+  - social-agent
+- name: Phantombot
+  url: https://github.com/phantomyard/phantombot
+  kind: repo
+  author: phantomyard
+  description: Persistent-identity AI assistant around terminal harnesses with long-term memory across PhantomChat, Telegram and editors; an optional Jev screener acts as a threat judge and routes each turn to the primary or coder model in ~300 ms.
+  jev: A typed primary|coder Choice replaces keyword scoring for brain-swap routing; errors fall back to the scorer and are reported by phantombot doctor.
+  metrics:
+    stars: 16
+  date: '2026-05-01'
+  links:
+    app: https://phantombot.bot/
+    docs: https://github.com/phantomyard/phantombot/blob/main/docs/jev.md
+  tags:
+  - assistant
+  - model-routing
+  - memory
+- name: Pisper decision service
+  url: https://github.com/ling-kong-ran/pisper/blob/release/runtime/services/decision-service.mjs
+  kind: repo
+  author: ling-kong-ran
+  description: Multi-agent desktop and mobile app that adds a Jev decision service for auto-approving tool permissions above a 0.9 threshold and verifying computer-use actions.
+  jev: Calls TypeSafe /v1/systemone or OpenRouter decisions with Noul, Choice and Score questions; low-confidence cases fall back to manual approval.
+  image: https://raw.githubusercontent.com/ling-kong-ran/pisper/release/docs/brand/banner.svg
+  metrics:
+    repo_stars: 298
+  date: '2026-07-19'
+  links:
+    app: https://pisper.cc
+  tags:
+  - approvals
+  - multi-agent
+  - permissions
+- name: ProgressGate
+  url: https://github.com/AshutoshVJTI/progressgate
+  kind: repo
+  author: AshutoshVJTI
+  description: Library that watches recent agent steps for semantic stagnation, where different actions keep chasing the same contradicted assumption; Jev reads the trajectory and a small deterministic policy decides what to do.
+  date: '2026-09-18'
+  tags:
+  - agent-loops
+  - monitoring
+- name: Prompt difficulty classifier
+  url: https://x.com/k_grajeda/status/2101021361351131464
+  kind: post
+  author: k_grajeda
+  description: Chat UI check that classifies the difficulty of the prompt each time the user stops typing and, for simple prompts, offers a fast mode before they hit send.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101018655794331648/img/xm_XTf33FJqqEmIb.jpg
+  metrics:
+    likes: 47
+    views: 5420
+  date: '2026-09-18'
+  tags:
+  - model-routing
+  - chat-ui
+- name: Puppetmaster Jev
+  url: https://github.com/professorpalmer/puppetmaster/tree/main/puppetmaster/jev
+  kind: repo
+  author: professorpalmer
+  description: Puppetmaster, a control plane for durable-state agent swarms, uses Jev for conflict, already-answered, admission and stop decisions across its worker stitching.
+  jev: Questions and thresholds via OpenRouter's ~typesafe/jev-latest on a 2 second timeout.
+  image: https://raw.githubusercontent.com/professorpalmer/Puppetmaster/main/docs/demo.gif
+  metrics:
+    repo_stars: 449
+  date: '2026-05-06'
+  tags:
+  - agent-swarms
+  - control-plane
+  - decisions
+- name: Rakazo Jev auto-review
+  url: https://github.com/elie222/rakazo/blob/main/packages/adapters/src/jev-auto-review.ts
+  kind: repo
+  author: elie222
+  description: Auto-review adapter in the open-source Rakazo AI-teammate platform that asks Jev whether a bot tool call should auto-pass or be sent to the user for approval.
+  jev: A Choice of pass or ask against a confidence threshold; anything unexpected or high risk defaults to ask.
+  image: https://raw.githubusercontent.com/elie222/rakazo/main/docs/readme-hero.png
+  metrics:
+    repo_stars: 2826
+  date: '2026-08-13'
+  links:
+    app: https://rakazo.com
+  tags:
+  - tool-approval
+  - self-hosted
+  - agents
+- name: Ratify Jev tool-selection adapter
+  url: https://github.com/identities-ai/ratify-protocol/blob/main/references/langchain/authority_reference/jev_adapter.py
+  kind: repo
+  author: identities-ai
+  description: Reference LangChain gate for the Ratify delegated-authority protocol where Jev proposes which tool an agent should call and Ratify then verifies the signed authority on the receiver side.
+  jev: One Choice over the named tools via the documented HTTP API; the proposal never replaces cryptographic verification.
+  image: https://raw.githubusercontent.com/identities-ai/ratify-protocol/main/assets/ratify-protocol-logo.png
+  metrics:
+    repo_stars: 9
+  date: '2026-04-19'
+  links:
+    app: https://ratifyprotocol.com
+    repo: https://github.com/identities-ai/ratify-protocol
+  tags:
+  - authorization
+  - tool-selection
+  - langchain
+- name: RelayPlane Jev classifier
+  url: https://github.com/RelayPlane/proxy/blob/main/src/classifier/jev_client.ts
+  kind: repo
+  author: RelayPlane
+  description: Local LLM cost proxy with an optional Jev complexity classifier that rates each request to inform model routing, enabled by one env var and capped at a 500 ms timeout.
+  image: https://raw.githubusercontent.com/RelayPlane/proxy/main/docs/dashboard.png
+  metrics:
+    repo_stars: 203
+  date: '2026-02-03'
+  links:
+    app: https://relayplane.com
+  tags:
+  - proxy
+  - routing
+  - cost
+- name: RememberStack TypeSafe adapter
+  url: https://github.com/writeitai/remember-stack/blob/main/src/rememberstack/adapters/typesafe.py
+  kind: repo
+  author: writeitai
+  description: Open memory infrastructure for AI agents that tracks claims, current beliefs and their sources, with a System One port whose TypeSafe adapter runs typed evaluations on Jev.
+  image: https://raw.githubusercontent.com/writeitai/remember-stack/main/website/public/docs/diagrams/three-planes.jpg
+  metrics:
+    repo_stars: 8
+  date: '2026-06-11'
+  links:
+    app: https://remember.dev/docs
+    repo: https://github.com/writeitai/remember-stack
+  tags:
+  - agent-memory
+  - claims
+  - python
+- name: RikkaHub Plus Jev decisions
+  url: https://github.com/MiaoWuNYA/rikkahub-sillytavern-android
+  kind: repo
+  author: MiaoWuNYA
+  description: Android AI chat client and SillyTavern-compatible app that uses Jev to judge each memory's relevance to the conversation instead of embedding search, and gives the main model a Jev judge tool for yes/no, choice and score questions.
+  jev: Memories are judged in parallel batches and injected above 0.5 relevance; all Jev paths fall back silently when unavailable.
+  metrics:
+    stars: 19
+  date: '2026-09-20'
+  tags:
+  - android
+  - memory
+  - roleplay
+- name: s18
+  url: https://github.com/riteshverma/s18
+  kind: repo
+  author: riteshverma
+  description: Open-source agent runtime and orchestration API where query routing, skill matching and planner fast paths can use Jev decisions, falling back to built-in regex guards when Jev is unkeyed, unreachable or unsure.
+  metrics:
+    stars: 7
+  date: '2026-02-10'
+  tags:
+  - agent-runtime
+  - routing
+  - mcp
+- name: Safeplane routing advisor
+  url: https://github.com/stefanrossmeier/safeplane/tree/main/experiments/routing_advisor
+  kind: repo
+  author: stefanrossmeier
+  description: Experimental routing advisor in Safeplane, a local-first control plane for bounded AI-agent workflows with CLI and Telegram connectors, that asks Jev via OpenRouter Decisions which workflow an operator request should go to.
+  metrics:
+    repo_stars: 5
+  date: '2026-07-22'
+  links:
+    repo: https://github.com/stefanrossmeier/safeplane
+  tags:
+  - agent-workflows
+  - routing
+  - telegram
+- name: SAIVerse reflex judgment
+  url: https://github.com/maha0525/SAIVerse/blob/main/docs/intent/reflex_judgment.md
+  kind: repo
+  author: maha0525
+  description: Reflex-judgment layer in the SAIVerse AI-persona world that returns probabilities instead of prose, first used to rerank auto-recalled memories. It can target TypeSafe Jev, OpenRouter, a self-hosted localjev or a structured-output LLM.
+  jev: Typed noul/choice/score questions through a provider-agnostic jev_compat protocol with per-persona model overrides.
+  metrics:
+    repo_stars: 43
+  date: '2025-06-07'
+  links:
+    repo: https://github.com/maha0525/SAIVerse
+  tags:
+  - memory
+  - reranking
+  - personas
+- name: Sentio SMTP
+  url: https://github.com/truespar/sentio
+  kind: repo
+  author: truespar
+  description: Multi-tenant Rust mail server that gives AI agents their own inboxes and can use Jev as a message classifier to label inbound mail without changing the spam score.
+  jev: 'Implements only a MessageClassifier: Choice and Noul labels with calibrated confidence, no generated replies.'
+  image: https://repository-images.githubusercontent.com/1344239263/60e2f09e-0eb6-419c-9533-ef350c19bbab
+  metrics:
+    stars: 246
+  date: '2026-08-23'
+  links:
+    app: https://truespar.com/sentio
+  tags:
+  - email
+  - agents
+  - rust
+- name: SilkChat Jev skill selection
+  url: https://github.com/medy17/SilkChat/blob/main/convex/lib/models/typesafe.ts
+  kind: repo
+  author: medy17
+  description: 'Jev integration in SilkChat, a TanStack Start and Convex AI chat app, that picks which skills to enable on a conversation''s opening turn: web search, code execution, memory, math or image generation.'
+  jev: Per-skill probabilities via OpenRouter with a 0.85 threshold for each skill.
+  metrics:
+    repo_stars: 5
+  date: '2026-02-11'
+  links:
+    app: https://silkchat.dev
+    repo: https://github.com/medy17/SilkChat
+  tags:
+  - chat-app
+  - tool-selection
+  - convex
+- name: skillbox
+  url: https://github.com/kitze/skillbox
+  kind: repo
+  author: kitze
+  description: Self-hosted, versioned skills library for AI agents served over MCP with scoped clients, where Jev can optionally recommend which of the skills a client may access fit the current task.
+  metrics:
+    stars: 223
+  date: '2026-09-17'
+  tags:
+  - agent-skills
+  - mcp
+  - self-hosted
+- name: skillranker
+  url: https://github.com/Dicklesworthstone/skillranker
+  kind: repo
+  author: Dicklesworthstone
+  description: Rust CLI that ranks skills for the current session with a wide Choice, then confirms a shortlist with one Noul each (custom license with usage restrictions).
+  metrics:
+    stars: 109
+  date: '2026-09-17'
+  tags:
+  - skill-routing
+  - claude-code
+  - rust
+- name: Skilltree
+  url: https://github.com/its-panzer/skilltree
+  kind: repo
+  author: its-panzer
+  description: Local-first website and MCP server that turns a collection of agent instructions into a navigable skill tree, with Jev making a visible typed choice at each level to pick the path.
+  image: https://raw.githubusercontent.com/its-panzer/skilltree/main/docs/skilltree-screenshot.png
+  date: '2026-09-17'
+  tags:
+  - skills
+  - mcp
+  - skill-routing
+- name: Slack agent pre-routing
+  url: https://x.com/johnyeo_/status/2100987661926252737
+  kind: post
+  author: johnyeo_
+  description: Slack agent made 2x faster by first asking Jev to pick the best skill, tool and parameters from the prompt before the agent runs.
+  jev: Choice over skills and tools plus parameter picks, before handing off to the LLM agent.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100986453845028864/img/YknQ8SR5kudv19m-.jpg
+  metrics:
+    likes: 166
+    views: 34772
+  date: '2026-09-18'
+  tags:
+  - skill-routing
+  - slack
+- name: SLO Router
+  url: https://github.com/zeeshan8281/slo-router
+  kind: repo
+  author: zeeshan8281
+  description: OpenAI-compatible proxy that routes each request to the cheapest backend meeting its latency SLO, with optional Jev 1.13 semantic features; a live run found Jev changed no routes and raised p95 from 77.93 ms to 490.38 ms.
+  jev: Typed semantic features via the OpenRouter Decisions API, falling back to local features on missing key, timeout or invalid response.
+  metrics:
+    stars: 8
+  date: '2026-09-19'
+  links:
+    results: https://github.com/zeeshan8281/slo-router/blob/main/results/live-jev-analysis.md
+  tags:
+  - model-routing
+  - latency
+  - benchmark
+- name: Smriti with Jev
+  url: https://x.com/UnCorped/status/2101707226666893553
+  kind: article
+  author: UnCorped
+  description: 'Case study of adding Jev to Smriti, a local SQLite memory layer for agents: Jev pulled more evidence into context but some answers got worse, improving only modestly after relabeling.'
+  jev: Labels retrieved memory evidence before it is passed to the answering model.
+  image: https://pbs.twimg.com/media/HSrBRezaEAEkcmz.jpg
+  metrics:
+    likes: 17
+    views: 10904
+  date: '2026-09-20'
+  links:
+    repo: https://github.com/vn-envy/Smriti
+    project: https://github.com/vn-envy/smriti
+  tags:
+  - memory
+  - case-study
+  - rag
+- name: Soothe TypeSafe decisions
+  url: https://github.com/mirasoth/soothe/blob/main/benchmarks/benchmark_typesafe_decisions.py
+  kind: repo
+  author: mirasoth
+  description: Goal-driven orchestration framework for long-running agents that classifies intake intent and audits goal completion with typed decisions, plus a benchmark against hosted Jev, Laya or NanoJev servers.
+  jev: A 4-way intake Choice with language detection and a coverage-audit decision via langchain-typesafe; the benchmark scores raw /v1/systemone responses.
+  image: https://raw.githubusercontent.com/mirasoth/soothe/main/docs/assets/soothe-logo.png
+  metrics:
+    repo_stars: 10
+  date: '2026-03-12'
+  links:
+    app: https://mirasoth.github.io/soothe/
+    repo: https://github.com/mirasoth/soothe
+  tags:
+  - orchestration
+  - intent
+  - benchmark
+- name: SpendBrake
+  url: https://github.com/ndolinschi/spendbrake
+  kind: repo
+  author: ndolinschi
+  description: Budget brake for agent runs that reads the budget, spend so far and remaining plan, then decides continue, downgrade the model or stop, with a value-for-cost score and over-budget checks.
+  date: '2026-09-17'
+  links:
+    app: https://spendbrake.vercel.app
+    app 2: https://spendbrake.vercel.app
+  tags:
+  - cost-control
+  - agent-harness
+- name: sportsclaw Jev evidence verifier
+  url: https://github.com/machina-sports/sportsclaw/blob/main/docs/guide/jev-evidence-verifier.md
+  kind: repo
+  author: machina-sports
+  description: Opt-in evidence verifier in sportsclaw, a CLI and bot scaffold connecting LLMs to live sports data, that uses a typed JevDecisionClient for the final evidence check so high-confidence support skips the generative verification pass.
+  metrics:
+    repo_stars: 15
+  date: '2026-02-22'
+  links:
+    repo: https://github.com/machina-sports/sportsclaw
+  tags:
+  - sports
+  - verification
+  - bots
+- name: SREGym Jev decision tool
+  url: https://github.com/SREGym/SREGym/tree/main/clients/jev
+  kind: repo
+  author: SREGym
+  description: Opt-in Codex MCP tools for an SRE agent benchmark where Jev picks the most informative read-only diagnostic test and reviews Kubernetes evidence before a diagnosis or fix is submitted.
+  jev: Choice over proposed diagnostic tests (or "revise_tests"); Noul reviews for causal support, active failure and durable repair.
+  image: https://raw.githubusercontent.com/SREGym/SREGym/main/assets/overview.png
+  metrics:
+    repo_stars: 290
+  date: '2025-05-19'
+  links:
+    app: https://sregym.com
+  tags:
+  - sre
+  - kubernetes
+  - mcp
+- name: Starchild prompt routing
+  url: https://x.com/StarchildOnX/status/2100936455401214327
+  kind: post
+  author: StarchildOnX
+  description: LLM router in the Starchild app that classifies prompts in real time (avg 140ms), reported as a 20x cost decrease and 6x speedup for prompt classification.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100926778047148032/img/RUW0O6LMX9L7TRzk.jpg
+  metrics:
+    likes: 29
+    views: 5995
+  date: '2026-09-18'
+  tags:
+  - model-routing
+  - classification
+- name: Starlight dialogue continuation
+  url: https://github.com/divaltor/starlight/blob/main/apps/starlight/src/ai/dialogue-continuation.ts
+  kind: repo
+  author: divaltor
+  description: Telegram bot that asks Jev, for each group message, whether to reply with text, react with an emoji, or stay silent, and which emoji fits the message.
+  jev: 'Two Choice questions via OpenRouter (typesafe/jev-1.13): action over text/reaction/silence and emoji over a labeled set of Telegram reactions.'
+  metrics:
+    repo_stars: 10
+  date: '2024-01-05'
+  links:
+    app: https://starlight.day
+    repo: https://github.com/divaltor/starlight
+  tags:
+  - telegram
+  - turn-taking
+  - chatbot
+- name: SwarmRouter
+  url: https://github.com/ndolinschi/swarmrouter
+  kind: repo
+  author: ndolinschi
+  description: Routes a task to a research, code, browser, support or writer agent with a confidence value, shown on a visual swarm map.
+  date: '2026-09-17'
+  links:
+    app: https://swarmrouter.vercel.app
+    app 2: https://swarmrouter.vercel.app
+  tags:
+  - agent-routing
+- name: switchboard
+  url: https://github.com/aniruddh-krovvidi/switchboard
+  kind: repo
+  author: aniruddh-krovvidi
+  description: Stdlib-Python guardrail and model router for LLM gateways built on Jev, shipped with an independent evaluation of its accuracy, calibration and latency.
+  date: '2026-09-17'
+  tags:
+  - model-routing
+  - guardrails
+  - gateway
+- name: Synkora TypeSafe tools
+  url: https://github.com/getsynkora/synkora-ai/blob/master/api/src/services/agents/internal_tools/typesafe_tools.py
+  kind: repo
+  author: getsynkora
+  description: 'Built-in Jev evaluation tools for agents on the self-hosted Synkora platform: generic state-and-question calls, named profiles such as recruiting, a report formatter and a playground.'
+  image: https://raw.githubusercontent.com/getsynkora/synkora-ai/master/web/public/images/screenshot-hero.png
+  metrics:
+    repo_stars: 35
+  date: '2026-09-18'
+  links:
+    repo: https://github.com/getsynkora/synkora-ai
+    app: https://synkora.ai
+  tags:
+  - agent-platform
+  - tools
+- name: System One Harness
+  url: https://github.com/HarnessRouter/SystemOneHarness
+  kind: repo
+  author: HarnessRouter
+  description: Python controller that turns a System One model into an agent loop, compiling an environment's finite action space into typed Jev questions, gating each step by confidence, and recording the full trace.
+  metrics:
+    stars: 95
+  date: '2026-09-19'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49778358
+  tags:
+  - agent-loop
+  - harness
+- name: the-array Jev decision layer
+  url: https://github.com/clduab11/the-array/blob/main/docs/jev-decision-layer.md
+  kind: repo
+  author: clduab11
+  description: Opt-in Jev layer in a self-hosted LiteLLM gateway reference build that picks model tiers and referees replies as answered, refused, or non-answer, moving to the next model after a confident decline.
+  image: https://raw.githubusercontent.com/clduab11/the-array/main/docs/images/the-array-hero.jpg
+  metrics:
+    repo_stars: 1
+  date: '2026-09-11'
+  links:
+    discussion: https://www.reddit.com/r/LocalLLaMA/comments/1wk0st3/routing_between_a_3b_a_4b_a_12b_and_a_26b_moe/
+    repo: https://github.com/clduab11/the-array
+    code: https://github.com/clduab11/the-array/blob/main/litellm/jev_gate.py
+  tags:
+  - llm-gateway
+  - litellm
+  - model-routing
+- name: Tidepool
+  url: https://github.com/tidepool-heavy-industries/tidepool
+  kind: repo
+  author: tidepool-heavy-industries
+  description: Agent harness built on a live Haskell notebook where agents write procedures that mix commands, delegation and Jev judgments, then install them as tools or hooks; 322 questions returned in 351 ms.
+  jev: Reasoning LLMs design the procedure while Jev answers batched typed questions inside compiled code, such as whether evidence is relevant or which follow-up fits.
+  metrics:
+    stars: 12
+  date: '2026-02-17'
+  tags:
+  - haskell
+  - harness
+  - procedures
+- name: tiershift
+  url: https://github.com/iamvatsalpatel/tiershift
+  kind: repo
+  author: iamvatsalpatel
+  description: Model router for TypeScript and Python that sends each LLM request to the cheapest capable tier and escalates on multi-step reasoning, difficulty, stakes, or safety, with policy in plain YAML.
+  jev: Routing judgments in about 180 ms at four cents per thousand routes; every decision prints its reason.
+  image: https://raw.githubusercontent.com/iamvatsalpatel/tiershift/main/bench/chart-light.svg
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  tags:
+  - model-routing
+  - cost
+- name: tink-route
+  url: https://github.com/jon-devlapaz/tink-route
+  kind: repo
+  author: jon-devlapaz
+  description: Agent Skills router that keeps skill libraries offline and loads only the needed ones on demand through a two-stage Jev gate (a Noul on whether a skill is needed, then a Choice of which), avoiding per-turn prompt bloat.
+  metrics:
+    stars: 4
+  date: '2026-09-21'
+  tags:
+  - skills
+  - routing
+  - context
+- name: tinyhivemind-typesafe
+  url: https://github.com/tinyhumansai/tinyhivemind/tree/main/crates/tinyhivemind-typesafe
+  kind: repo
+  author: tinyhumansai
+  description: Rust crate that lets the TinyHiveMind multi-agent coordination library route handoffs with Jev, picking the best-placed teammate and also routing to any other option above 20%.
+  jev: Batched Choice and Noul questions converted to fixed-point routing evaluations; Nouls stay audit signals and never select recipients.
+  image: https://raw.githubusercontent.com/tinyhumansai/tinyhivemind/main/docs/hero.png
+  metrics:
+    repo_stars: 11
+  date: '2026-08-31'
+  links:
+    repo: https://github.com/tinyhumansai/tinyhivemind
+  tags:
+  - multi-agent
+  - routing
+  - rust
+- name: todo-jev
+  url: https://github.com/maker-KK/todo-jev
+  kind: repo
+  author: maker-KK
+  description: Task-routing experiment that classifies a request with Jev and recommends a local rule, a specialist skill or a foundation model, combining skill apply/exclude conditions with local environment checks.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - routing
+  - skills
+- name: Tonone Jev decision layer
+  url: https://github.com/tonone-ai/tonone/tree/main/lib/jev
+  kind: repo
+  author: tonone-ai
+  description: Shared decision layer for a 426-skill AI company toolkit that answers yes/no, one-of-N and rubric questions with Jev, or a local TF-IDF scorer when no key is set, and gates skill manifests.
+  metrics:
+    repo_stars: 73
+  date: '2026-03-16'
+  links:
+    app: https://second.tonone.ai
+  tags:
+  - skills
+  - fallback
+  - routing
+- name: tool-prune
+  url: https://github.com/hemanth/tool-prune
+  kind: repo
+  author: hemanth
+  description: Zero-dependency tool selection and schema pruning for agents that cuts MCP tool schemas to the relevant few before an LLM call, running offline via TurboQuant or on Jev.
+  jev: Jev engine reported 100.0% distractor Top-1 on BFCL v3 at 189 ms; confident picks can dispatch directly without the LLM.
+  metrics:
+    stars: 5
+  date: '2026-09-17'
+  tags:
+  - tool-selection
+  - mcp
+  - pruning
+- name: ToolGate
+  url: https://github.com/ndolinschi/toolgate
+  kind: repo
+  author: ndolinschi
+  description: Gate for planned agent tool or MCP calls that returns allow, ask a human or deny, with a five-level risk score and checks for data exfiltration, irreversibility and policy violations.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  links:
+    app: https://toolgate.vercel.app
+    app 2: https://toolgate.vercel.app
+  tags:
+  - approvals
+  - tool-calls
+- name: total-agent-memory
+  url: https://github.com/vbcherepanov/total-agent-memory
+  kind: repo
+  author: vbcherepanov
+  description: Local persistent memory for coding agents that can check retrieved facts for contradictions with Jev; median pass time fell from 3.1 s to 1.9 s with accuracy unchanged, costing $0.038 for 78 questions.
+  jev: Every (supporting, opposing) fact pair becomes one Noul, all in a single request.
+  image: https://repository-images.githubusercontent.com/1159027243/9e951761-4a30-40e2-b32a-297ac9223ea7
+  metrics:
+    stars: 68
+  date: '2026-02-16'
+  links:
+    app: https://totalmemory.dev
+  tags:
+  - memory
+  - mcp
+  - contradictions
+- name: Treg + Jev automation
+  url: https://www.youtube.com/watch?v=o4Vi5uBZYH0
+  kind: video
+  author: AI Jason
+  description: Demo of pairing Jev with Treg, an OpenRouter-style registry of agent tools, to build automation workflows where Jev makes the quick decisions.
+  metrics:
+    views: 61018
+    likes: 856
+  date: '2026-09-21'
+  links:
+    repo: https://github.com/superdesigndev/treg
+    prompt: https://treg.to/jev
+    project: https://github.com/superdesigndev/treg
+  tags:
+  - automation
+  - tools
+- name: typesafe-jev-mcp
+  url: https://github.com/anasbekheit/typesafe-jev-mcp
+  kind: repo
+  author: anasbekheit
+  description: Rust MCP server with one evaluate tool that lets Claude Code, Codex, OpenCode, Antigravity or Cursor send a state and typed questions to Jev and get noul, choice or score answers with probabilities.
+  image: https://external-preview.redd.it/54rMCBEfrJD5BgtjOptiPYcIohzh2G05VYK2L5eTwPE.png?auto=webp&s=24b80f78ba23e9b7f251c513be3bba289ec27df7
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  links:
+    demo: https://www.reddit.com/r/JevAI/comments/1wlyvgl/unofficial_jev_mcp_server_in_rust/
+    crates: https://crates.io/crates/typesafe-jev-mcp
+  tags:
+  - mcp
+  - rust
+- name: typesafe-mcp
+  url: https://github.com/itsmostafa/typesafe-mcp
+  kind: repo
+  author: itsmostafa
+  description: Go MCP server that exposes one evaluate tool so Claude Code, Claude Desktop, Codex and pi can send state plus Choice, Score or Noul questions to Jev and branch on the probabilities.
+  image: https://external-preview.redd.it/foplw_1lcxzLSY41H2Wc8jTRi55au8rxPSdCeT9nTBw.png?auto=webp&s=c9f26ce3c9d2b86f15dc4763a0a17436e965e121
+  metrics:
+    stars: 229
+  date: '2026-09-17'
+  links:
+    discussion: https://www.reddit.com/r/mcp/comments/1wjfjn3/if_you_have_access_to_the_new_typesafe_ai_try/
+    demo: https://x.com/CindyTaylo82399/status/2101873521077157968
+  tags:
+  - mcp
+  - claude-code
+- name: typesafe-mcp-server
+  url: https://github.com/bestagentkits/typesafe-demo-mcp
+  kind: repo
+  author: bestagentkits
+  description: MCP server built on @typesafe-ai/sdk that exposes Choice, Score and Noul judgments and model listing as agent-callable tools, bundled with the official TypeSafe agent skill.
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - agent-tools
+- name: typesafe-skill-router
+  url: https://github.com/DECRUX9812/typesafe-skill-router
+  kind: repo
+  author: DECRUX9812
+  description: Opt-in Hermes Agent plugin that asks Jev which one installed skill fits a request before the model call and appends a single hint line, about $0.001 per routed turn, injecting nothing when none fits.
+  metrics:
+    stars: 11
+  date: '2026-09-16'
+  tags:
+  - skills
+  - hermes
+- name: unhardcoded-engine decision protocol
+  url: https://github.com/genlayerlabs/unhardcoded-engine/blob/main/docs/DECISION-PROTOCOL.md
+  kind: repo
+  author: genlayerlabs
+  description: Decision-model routing in unhardcoded-engine, a pure-Lua policy algebra for LLM provider selection, that partitions candidates by protocol so Jev-style decision requests only route and fail over among decision models.
+  metrics:
+    repo_stars: 6
+  date: '2026-05-19'
+  links:
+    repo: https://github.com/genlayerlabs/unhardcoded-engine
+  tags:
+  - lua
+  - provider-selection
+  - routing
+- name: UX3 Product Design Harness Jev gate
+  url: https://github.com/cis2042/product-design-harness/blob/main/scripts/jev_gate.py
+  kind: repo
+  author: cis2042
+  description: Decision gate in an agent-operated product design harness that routes tasks and evaluates product decisions with Jev, returning continue, verify or stop-and-reframe verdicts plus task boundaries.
+  image: https://raw.githubusercontent.com/cis2042/product-design-harness/main/assets/product-design-harness-cover.svg
+  metrics:
+    repo_stars: 17
+  date: '2026-07-11'
+  links:
+    repo: https://github.com/cis2042/product-design-harness
+  tags:
+  - product-design
+  - gating
+- name: VCPChat global Jev service
+  url: https://github.com/lioensky/VCPChat/blob/main/modules/services/globalJevService.js
+  kind: repo
+  author: lioensky
+  description: VCPChat, the desktop terminal for the VCP AI-native engine, adds a global Jev service so its modules can make typed decisions through TypeSafe or OpenRouter.
+  jev: Provider defaults for typesafe (jev-latest) and openrouter (~typesafe/jev-latest) over the shared jevClient.
+  image: https://raw.githubusercontent.com/lioensky/VCPChat/main/assets/E1-Vchat%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg
+  metrics:
+    repo_stars: 778
+  date: '2025-06-02'
+  tags:
+  - desktop
+  - agent-engine
+  - decisions
+- name: VCPToolBox Jev modules
+  url: https://github.com/lioensky/VCPToolBox/blob/main/modules/jevClient.js
+  kind: repo
+  author: lioensky
+  description: The VCP agent infrastructure adds Jev modules for context pruning, fold filtering, reranking and a semantic tool-call experiment, with multi-key rotation over TypeSafe or OpenRouter.
+  jev: jevClient speaks Noul, Choice and Score with retry and key rotation; separate modules apply it to context management and tool selection.
+  image: https://raw.githubusercontent.com/lioensky/VCPToolBox/main/docs/image/VCPLogo.png
+  metrics:
+    repo_stars: 2323
+  date: '2025-05-12'
+  links:
+    app: https://www.vcptoolbox.com
+  tags:
+  - agent-framework
+  - context-management
+  - tool-calls
+- name: virtual-context Jev judgment seams
+  url: https://github.com/virtual-context/virtual-context/tree/main/benchmarks/jev
+  kind: repo
+  author: virtual-context
+  description: Virtual context memory layer for LLM agents that adds per-seam Jev judgment modes for reranking, intent and temporal checks; on 140 LongMemEval questions Jev cut the mean first-gold rank from 2.33 to 1.14.
+  image: https://raw.githubusercontent.com/virtual-context/virtual-context/main/assets/dashboard.png
+  metrics:
+    repo_stars: 65
+  date: '2026-02-13'
+  links:
+    repo: https://github.com/virtual-context/virtual-context
+  tags:
+  - memory
+  - reranking
+  - longmemeval
+- name: VisionClaw Jev validation
+  url: https://github.com/Huskyauto/VisionClaw-Agent-Public-Release/blob/main/server/lib/typesafe-auto-validation.ts
+  kind: repo
+  author: Huskyauto
+  description: Bounded, advisory-only Jev client in the VisionClaw self-hosted multi-tenant agent workspace, exposed as an agent tool and used to score deliverables for evidence support, requirement coverage and need for human review.
+  image: https://raw.githubusercontent.com/Huskyauto/VisionClaw-Agent-Public-Release/main/docs/assets/demo-poster.jpg
+  metrics:
+    repo_stars: 26
+  date: '2026-04-15'
+  links:
+    app: https://agenticcorporation.net
+    repo: https://github.com/Huskyauto/VisionClaw-Agent-Public-Release
+  tags:
+  - validation
+  - agent-workspace
+- name: wakegate
+  url: https://github.com/shitianfang/wakegate
+  kind: repo
+  author: shitianfang
+  description: Fail-open gate for long-running agents on Workers, Durable Objects and Node that asks Jev, before a sleeping agent's LLM is resumed by a timer or event, whether the wakeup matters given the agent's own sleep note.
+  jev: One Choice (wake, not yet, unrelated); code skips the wakeup only when the wake probability is below 0.2.
+  date: '2026-09-18'
+  tags:
+  - long-running-agents
+  - cloudflare-workers

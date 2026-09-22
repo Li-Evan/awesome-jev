@@ -1,0 +1,1749 @@
+title: Safety and Moderation
+emoji: 🛡️
+layout: gallery
+description: Guardrails, jailbreak and injection screening, content moderation, and policy checks.
+entries:
+- name: 1940s.nyc story moderation experiment
+  url: https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment
+  kind: repo
+  author: jboolean
+  description: Local experiment for the 1940s.nyc street-view site that predicts whether a human moderator would approve a user story, asking Jev one yes/no question per moderation rule and measuring agreement with real past decisions.
+  jev: Per-rule Nouls via OpenRouter's Decisions API, combined against a reject threshold in rules.ts; an LLM backend is the comparison.
+  metrics:
+    repo_stars: 35
+  date: '2019-09-24'
+  links:
+    repo: https://github.com/jboolean/1940s.nyc
+    app: http://1940s.nyc
+  tags:
+  - moderation
+  - ugc
+- name: ActionGate
+  url: https://github.com/omkarghugarkar007/actiongate-jev
+  kind: repo
+  author: omkarghugarkar007
+  description: Runtime authorization gateway for agent tool calls that combines deterministic policy with Jev, binds approval to the exact action, and refuses expired, changed, or replayed permits over MCP and HTTP.
+  jev: Judges whether a well-formed tool call actually matches what the user asked for.
+  image: https://raw.githubusercontent.com/omkarghugarkar007/actiongate-jev/main/docs/assets/actiongate-social.svg
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - agent-security
+  - mcp
+  - authorization
+- name: agent-chaperone
+  url: https://github.com/agent-chaperone/agent-chaperone
+  kind: repo
+  author: agent-chaperone
+  description: Firewall that screens an AI agent's tool calls before they run and tool results before the agent reads them, via an MCP proxy and a hooks adapter, with thresholds in a policy file and a non-blocking shadow mode.
+  image: https://agentchaperone.dev/og.png
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    site: https://agentchaperone.dev
+    app: https://agentchaperone.dev
+  tags:
+  - prompt-injection
+  - mcp
+  - tool-calls
+- name: AgentBeam Jev action judging
+  url: https://github.com/whyashthakker/beam-cli/blob/main/src/jev.ts
+  kind: repo
+  author: whyashthakker
+  description: Optional check in the AgentBeam local security CLI for coding agents that sends redacted proposed tool actions to Jev and allows, reviews or denies them in observe or enforce mode.
+  jev: Two Noul risk questions (data exposure, irreversible destruction) and a four-level damage Score, with fixed pass/deny thresholds.
+  metrics:
+    repo_stars: 11
+  date: '2026-09-09'
+  links:
+    repo: https://github.com/whyashthakker/beam-cli
+  tags:
+  - coding-agents
+  - hooks
+  - guardrails
+- name: Agentgateway guardrail example
+  url: https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev
+  kind: repo
+  author: agentgateway
+  description: Webhook that rates jailbreak, harm, and data-leak risk with three Scores and blocks requests at level 2 or above.
+  image: https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg
+  metrics:
+    repo_stars: 4970
+  date: '2026-09-17'
+  links:
+    repo: https://github.com/agentgateway/agentgateway
+  tags:
+  - guardrails
+  - gateway
+- name: AgentSkillsHub Jev scanner review
+  url: https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review
+  kind: repo
+  author: zhuyansen
+  description: Evaluation of Jev as a second pass for a regex security scanner over about 27.7K READMEs, asking whether a flagged line issues a behaviour or only cites it.
+  jev: Four atomic Noul questions (issues_it, is_documentation, is_negated, word_coincidence); negated reached AUC 0.904 inverted.
+  metrics:
+    repo_stars: 373
+  date: '2026-03-06'
+  links:
+    app: https://agentskillshub.top
+  tags:
+  - security
+  - scanner
+  - eval
+- name: AGI Jev Detection
+  url: https://github.com/carlosedm10/agi-jev-containment
+  kind: repo
+  author: carlosedm10
+  description: Local monitor for sandboxed LLM agents that classifies chains of actions with Jev and a Sentinel model, escalates through L1-L5 containment and keeps Neo4j forensics behind a dashboard; built at HackSpain 2026.
+  metrics:
+    stars: 4
+  date: '2026-09-14'
+  tags:
+  - agent-monitoring
+  - containment
+  - hackathon
+- name: AI reply detector with Laravel AI SDK
+  url: https://www.youtube.com/watch?v=PgiUiCiKOls
+  kind: video
+  author: Laravel Daily
+  description: Chrome extension with a Laravel AI SDK backend that checks whether replies to the author's tweets were written by AI, comparing Jev against an OpenAI model on accuracy, cost and speed.
+  jev: Swaps the Laravel AI SDK driver from OpenAI to Jev; each check sends the reply plus its parent tweet as context.
+  metrics:
+    views: 7373
+    likes: 101
+  date: '2026-09-18'
+  tags:
+  - ai-slop
+  - laravel
+  - chrome-extension
+- name: Aletheia
+  url: https://github.com/LeslieLeung/Aletheia
+  kind: repo
+  author: LeslieLeung
+  description: FastAPI service and Chrome extension that detects AI-generated text on article pages with several engines including Jev, which can also classify a page as original, repost or advertisement.
+  metrics:
+    stars: 6
+  date: '2026-02-26'
+  tags:
+  - ai-text-detection
+  - chrome-extension
+- name: Alita AI spam filter
+  url: https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go
+  kind: repo
+  author: Divkix
+  description: Per-chat AI spam filter for a Go Telegram group-management bot, judging each message with Jev off the update path with code-owned questions and one bounded retry.
+  metrics:
+    repo_stars: 248
+  date: '2020-10-26'
+  links:
+    docs: https://alita-docs.divkix.me
+  tags:
+  - telegram
+  - spam
+  - moderation
+- name: Battlesnake Arena Jev moderation
+  url: https://github.com/BattlesnakeOfficial/arena/blob/main/server/src/moderation/jev.rs
+  kind: repo
+  author: BattlesnakeOfficial
+  description: 'Content moderation on the Battlesnake Arena competitive programming platform: Jev screens snake names, tournament text and saved-game titles, and blanks violating snake shouts from game replays.'
+  jev: One multi-question System One call per item, blocking at 0.90 and flagging Nouls at 0.60 for admin review; fails open on errors.
+  image: https://raw.githubusercontent.com/BattlesnakeOfficial/arena/screenshots/screenshots/home-light.png
+  metrics:
+    repo_stars: 6
+  date: '2025-04-11'
+  links:
+    repo: https://github.com/BattlesnakeOfficial/arena
+  tags:
+  - moderation
+  - rust
+  - games-platform
+- name: Bible Strong guestbook moderation
+  url: https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts
+  kind: repo
+  author: smontlouis
+  description: Bible study app whose public, all-ages event guestbook is moderated by Jev, screening names and messages in any language for abuse while allowing criticism and testimony.
+  metrics:
+    repo_stars: 165
+  date: '2019-01-12'
+  links:
+    app: https://bible-strong.app
+  tags:
+  - moderation
+  - guestbook
+- name: Blackrose
+  url: https://github.com/Dino-Kupinic/blackrose
+  kind: repo
+  author: Dino-Kupinic
+  description: Python and JavaScript decision layer for LLM apps that runs one Jev call on model input or output for jailbreak, harm severity and other checks, and returns allow, review or block with reasons and raw scores.
+  jev: Noul for jailbreak/injection and a Score for harm severity in one parallel system_one call; low confidence defaults to review.
+  metrics:
+    stars: 6
+  date: '2024-05-22'
+  tags:
+  - guardrails
+  - prompt-injection
+- name: Blackveil DNS TypeSafe judgments
+  url: https://github.com/MadaBurns/bv-mcp/blob/main/src/lib/typesafe.ts
+  kind: repo
+  author: MadaBurns
+  description: DNS and email security scanner served over MCP that wraps TypeSafe for standalone judgments such as lookalike-domain checks, kept out of the deterministic scan score.
+  jev: Requests pass the same SSRF gate as other outbound calls and inherit caller deadlines; any error returns null and the deterministic path runs.
+  metrics:
+    repo_stars: 9
+  date: '2026-02-23'
+  links:
+    app: https://blackveilsecurity.com
+    repo: https://github.com/MadaBurns/bv-mcp
+  tags:
+  - dns
+  - phishing
+  - mcp
+- name: Browser agent flagger
+  url: https://x.com/TylerMaran/status/2102107759483453733
+  kind: post
+  author: TylerMaran
+  description: Live detector that runs Jev over a site's activity logs every 3 seconds and builds an average score to flag sessions driven by browser agents, costing under $0.01 per session.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg
+  metrics:
+    likes: 5
+    views: 338
+  date: '2026-09-21'
+  tags:
+  - bot-detection
+  - browser-agents
+- name: CaptainCore malware triage
+  url: https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go
+  kind: repo
+  author: CaptainCore
+  description: Jev commands in the CaptainCore WordPress maintenance CLI that rank native malware-scanner findings by how likely each is real, naming the likely family and next step for an operator.
+  jev: Each finding is sent with its rule, matched text, file location and surrounding source; triage orders and annotates but never drops a finding.
+  metrics:
+    repo_stars: 71
+  date: '2026-09-19'
+  links:
+    repo: https://github.com/CaptainCore/captaincore
+    app: https://captaincore.io
+  tags:
+  - wordpress
+  - malware
+- name: construct-auto-classifier
+  url: https://github.com/godspede/construct-auto-classifier
+  kind: repo
+  author: godspede
+  description: Safety gate in front of coding agents' shell tools (OpenCode, Antigravity) that applies structural rules, then has Jev or a chat model judge a command's reversibility and blast radius before it runs.
+  image: https://famelos.com/jev/auto-classifier-certification/preview.png
+  metrics:
+    stars: 3
+    points: 23
+  date: '2026-09-18'
+  links:
+    writeup: https://famelos.com/jev/auto-classifier-certification/
+    write-up: https://famelos.com/jev/auto-classifier-certification
+  tags:
+  - shell-commands
+  - coding-agents
+  - guardrails
+- name: Coraza WAF ASN classifier
+  url: https://github.com/sinhaparth5/coraza-waf-mod/blob/main/internal/security/threatscore/typesafeclassify.go
+  kind: repo
+  author: sinhaparth5
+  description: Threat-scoring refinement in a single-binary Go web application firewall built on Coraza and OWASP CRS, where Jev judges whether an unknown ASN organization name is datacenter, hosting or VPN infrastructure.
+  jev: One Noul per never-before-seen ASN, off the request hot path, cached after the first answer.
+  image: https://raw.githubusercontent.com/sinhaparth5/coraza-waf-mod/main/static/imgs/readme-logo.svg
+  metrics:
+    repo_stars: 5
+  date: '2026-07-08'
+  links:
+    app: https://waf.astrareconslabs.com/
+    repo: https://github.com/sinhaparth5/coraza-waf-mod
+  tags:
+  - waf
+  - threat-scoring
+  - go
+- name: Dark Pattern HUD
+  url: https://github.com/zohaib-md/uxray
+  kind: repo
+  author: zohaib-md
+  description: Android overlay that reads visible on-screen text through an accessibility service and shows a badge when Jev thinks a manipulative dark pattern is likely.
+  jev: 'A Noul probability drives confidence bands: at 0.9 or above the badge names the pattern, 0.6-0.9 goes to a quiet review list; password and card screens are skipped.'
+  date: '2026-09-21'
+  tags:
+  - dark-patterns
+  - android
+  - overlay
+- name: Draft rule checker
+  url: https://x.com/Mnilax/status/2101015355133227348
+  kind: post
+  author: Mnilax
+  description: Jev sits between GPT and the author, rejecting every draft that breaks their rules; the post also covers what happened when Jev went quiet and why a checker needs a default branch for no answer.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg
+  metrics:
+    likes: 113
+    views: 19613
+  date: '2026-09-18'
+  tags:
+  - guardrails
+  - drafts
+  - fallbacks
+- name: Dub malicious link check
+  url: https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts
+  kind: repo
+  author: dubinc
+  description: Screens every new short link on the Dub link platform with Jev after a domain blacklist check, blocking phishing, malware, cloaking redirectors, gambling and adult destinations.
+  jev: One boolean question with detailed true and false criteria, called through AI SDK's experimental_evaluate on Vercel AI Gateway with zero data retention.
+  image: https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255
+  metrics:
+    repo_stars: 24800
+  date: '2022-08-27'
+  links:
+    app: https://dub.co
+  tags:
+  - phishing
+  - url-screening
+  - abuse
+- name: elons-job
+  url: https://github.com/bugkiwi/elons-job
+  kind: repo
+  author: bugkiwi
+  description: Local-first Chrome extension that hides high-confidence sexual and solicitation replies on X post pages behind reversible placeholders, with customizable rules, caching, and cost limits.
+  jev: Noul questions over each reply's text; fails open on timeouts, errors, or unexpected responses.
+  image: https://raw.githubusercontent.com/bugkiwi/elons-job/main/docs/screenshots/comment-filtering.png
+  metrics:
+    stars: 11
+  date: '2026-09-18'
+  tags:
+  - moderation
+  - x
+  - browser-extension
+- name: Eustress Engine publish moderation
+  url: https://github.com/WeaveITMeta/EustressEngine/blob/main/infrastructure/cloudflare/api/src/moderation.mjs
+  kind: repo
+  author: WeaveITMeta
+  description: Layered moderation for simulations published from the Eustress Engine platform, where Jev answers a battery of typed questions over an engine-built dossier (rating, content kind, quality band) before a Grok judge and humans.
+  jev: One call with every question over one budgeted state of up to 72,000 characters; the state is data, so injected script text cannot reach an action.
+  image: https://raw.githubusercontent.com/WeaveITMeta/EustressEngine/main/docs/marketing/screenshot.png
+  metrics:
+    repo_stars: 6
+  date: '2026-01-23'
+  links:
+    repo: https://github.com/WeaveITMeta/EustressEngine
+  tags:
+  - moderation
+  - cloudflare-workers
+  - ugc
+- name: Feed slop detector extension
+  url: https://x.com/tanavtwt/status/2102008434329800707
+  kind: post
+  author: tanavtwt
+  description: Browser extension that classifies every post on screen in real time as scam, slop, clean and similar labels, and puts a small confidence badge on each one.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102007827141459968/img/F0f1c7lCPevLNreg.jpg
+  metrics:
+    likes: 1
+    views: 62
+  date: '2026-09-21'
+  tags:
+  - slop
+  - scam
+  - chrome-extension
+- name: FreeChaOS reflex Jev backend
+  url: https://github.com/seuros/chaos/tree/master/sys/kern/reflex
+  kind: repo
+  author: seuros
+  description: Typed-judgment kernel crate in FreeChaOS, an agent OS forked from Codex CLI, with a Jev backend beside MiniCheck and ShieldGemma for grounding checks, caller-defined policy violations and action-risk scoring.
+  jev: Grounding, PolicyViolation and ActionRisk judgments are sent as System One questions through a Rust JevClient with a 10 s deadline.
+  image: https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04
+  metrics:
+    repo_stars: 35
+  date: '2025-12-27'
+  links:
+    repo: https://github.com/seuros/chaos
+  tags:
+  - guardrails
+  - grounding
+  - rust
+- name: fx auto-mode safety reviewer
+  url: https://x.com/rauchg/status/2100307962262872105
+  kind: post
+  author: rauchg
+  description: Safety reviewer that checks every command in the fx coding agent's auto mode; Jev benchmarked up to 18x faster at p95 and more accurate than the GPT Luna model it replaces.
+  image: https://pbs.twimg.com/media/HSW-E8wWgAAyw9O.jpg?name=orig
+  metrics:
+    likes: 3933
+    views: 427608
+  date: '2026-09-16'
+  links:
+    benchmark: https://x.com/fazxes/status/2100300097695232164
+    repo: https://github.com/vercel-labs/fx
+    project: https://github.com/vercel-labs/fx
+  tags:
+  - command-review
+  - guardrails
+- name: fx Jev permission reviewer
+  url: https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig
+  kind: repo
+  author: vercel-labs
+  description: 'Optional permission reviewer in the fx Zig coding agent: with review_model set to Jev, the policy, context and pending action go to TypeSafe or Vercel AI Gateway and the Choice becomes the permission decision.'
+  metrics:
+    repo_stars: 3110
+  date: '2026-08-11'
+  links:
+    repo: https://github.com/vercel-labs/fx
+    website: https://fx.sh
+  tags:
+  - permissions
+  - coding-agents
+  - zig
+- name: gg-friggin-ez
+  url: https://github.com/ItisShikhar/gg-friggin-ez
+  kind: repo
+  author: ItisShikhar
+  description: Profanity and toxicity screener for Node.js that catches leetspeak, spaced-out letters and romanized profanity in languages such as Hindi, Tamil, Telugu, Kannada and Bengali in about 50-500ms.
+  image: https://raw.githubusercontent.com/ItisShikhar/gg-friggin-ez/master/docs/images/banner.png
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    app: https://itisshikhar.github.io/gg-friggin-ez/
+    app 2: https://itisshikhar.github.io/gg-friggin-ez
+  tags:
+  - moderation
+  - profanity
+  - indic
+- name: Haitatsu TypeSafe spam filter
+  url: https://github.com/zephyraoss/haitatsu/blob/main/internal/spam/typesafe.go
+  kind: repo
+  author: zephyraoss
+  description: Spam and phishing classification in Haitatsu, a single-binary Go email server, that asks TypeSafe for spam and phishing probabilities per message and files to Junk above per-inbox thresholds (default 0.98), with a shadow mode.
+  metrics:
+    repo_stars: 16
+  date: '2026-05-21'
+  links:
+    repo: https://github.com/zephyraoss/haitatsu
+  tags:
+  - email
+  - spam
+  - phishing
+- name: Huddle message moderation
+  url: https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts
+  kind: repo
+  author: aurorascharff
+  description: Moderation check in Huddle, a Slack-like Next.js 16 team chat demo, that blocks profanity, spam, scams, harassment and hate speech before publishing by asking Jev through the Vercel AI Gateway.
+  jev: One boolean question via the AI SDK evaluate call with a 3 s timeout; blocks at probability >= 0.5 and fails open.
+  metrics:
+    repo_stars: 27
+  date: '2026-07-29'
+  links:
+    app: https://next16-team-chat.vercel.app
+    repo: https://github.com/aurorascharff/next16-team-chat
+  tags:
+  - moderation
+  - nextjs
+  - ai-gateway
+- name: Human-or-AI writing detector
+  url: https://x.com/AlexGrinman/status/2100587625304281141
+  kind: post
+  author: AlexGrinman
+  description: Lightweight detector that uses Jev to judge whether a piece of writing came from a human or an AI, fast enough to run with no visible delay.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg
+  metrics:
+    likes: 5
+    views: 627
+  date: '2026-09-17'
+  tags:
+  - ai-detection
+  - writing
+- name: Instar Jev signal shadow
+  url: https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts
+  kind: repo
+  author: JKHeadley
+  description: Persistent Claude Code agent framework that shadows its outbound message gate with Jev, logging agreement with pattern detectors for file paths, commands and config keys without affecting decisions.
+  image: https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0
+  metrics:
+    repo_stars: 80
+  date: '2026-02-19'
+  links:
+    spec: https://github.com/JKHeadley/instar/blob/main/docs/specs/jev-signal-layer-shadow.md
+    app: https://instar.sh
+  tags:
+  - guardrails
+  - shadow-mode
+  - claude-code
+- name: Interlock
+  url: https://github.com/somoore/interlock
+  kind: repo
+  author: somoore
+  description: Capability kernel that wraps every agent tool call, keeps real secrets out of the agent using canaries, and lets a policy file allow, ask or block based on Jev hazard scores.
+  jev: Jev scores the hazard of each tool call; the policy, not the model, makes the decision. Ships a Claude Code hook and a 38-case regression set.
+  date: '2026-09-19'
+  tags:
+  - agent-security
+  - tool-calls
+  - claude-code
+- name: is-malicious?
+  url: https://github.com/luantak/is-malicious
+  kind: repo
+  author: luantak
+  description: CLI that sends source, config, build and CI files to Jev to flag hidden, deceptive or data-stealing behavior, reporting suspicious files and line ranges with a probability and reason before you run unfamiliar code.
+  image: https://github.com/user-attachments/assets/611c979a-8dd4-4fc8-8963-0843314e6a55
+  metrics:
+    stars: 22
+  date: '2026-09-18'
+  links:
+    discussion: https://news.ycombinator.com/item?id=49756921
+  tags:
+  - security-scanner
+  - supply-chain
+  - cli
+- name: Jcyber
+  url: https://github.com/undeemed/Jcyber
+  kind: repo
+  author: undeemed
+  description: MCP toolkit for agent-driven bug bounty work with scope gates, an evidence graph and memory, using Jev to score finding severity and check for duplicates.
+  jev: A none-to-critical Score plus a duplicate Noul; measured at 0.24s and 0.17s average versus 1.46s and 2.08s for the agent.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  tags:
+  - pentesting
+  - mcp
+  - bug-bounty
+- name: Jev agent safety monitor
+  url: https://x.com/isNickMa/status/2100566407524344225
+  kind: post
+  author: isNickMa
+  description: Test of Jev as a monitor that checks each AI agent action before it runs, reported to catch most attacks with almost no false blocks and much faster than Gemini.
+  image: https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig
+  metrics:
+    likes: 1
+    views: 368
+  date: '2026-09-17'
+  tags:
+  - agent-safety
+  - guardrails
+- name: Jev Anti-Spam Bot
+  url: https://github.com/backmeupplz/jev_antispam_bot
+  kind: repo
+  author: backmeupplz
+  description: Self-hosted grammY Telegram bot that asks Jev whether each group message is spam, such as token shilling, DM funnels or phishing, and deletes only high-confidence matches.
+  jev: A spam Noul per message with a high deletion threshold; errors fail open and admins are exempt.
+  metrics:
+    stars: 7
+  date: '2026-09-18'
+  tags:
+  - telegram
+  - spam
+- name: Jev as an alignment monitor
+  url: https://www.reddit.com/r/singularity/comments/1wiq7vn/jev_from_typesafeai_is_getting_hyped_quite_a_bit/
+  kind: reddit
+  author: manubfr
+  description: Early-access test of Jev as a monitor that grades harmful prompts and generations; on 4 public benchmarks it beat every other option tried while being the cheapest.
+  metrics:
+    points: 48
+  date: '2026-09-17'
+  tags:
+  - alignment
+  - harm-detection
+- name: Jev Detector
+  url: https://x.com/jozef_gherman/status/2100627898436571555
+  kind: post
+  author: jozef_gherman
+  description: Free AI-slop detector that highlights formulaic, generated-sounding sentences in up to about 10,000 words in roughly 2 seconds.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg
+  metrics:
+    likes: 301
+    views: 35857
+  date: '2026-09-17'
+  links:
+    app: https://jevdetector.com
+    project: https://jevdetector.com
+  tags:
+  - ai-slop
+  - writing
+- name: Jev IDS
+  url: https://github.com/jev-ids/jev-ids
+  kind: repo
+  author: jev-ids
+  description: Network intrusion detection prototype that shows Jev one NSL-KDD flow plus five labeled examples and asks whether it is an attack and which kind, reported 4.8x faster and 3.8x cheaper than an LLM baseline.
+  jev: One Noul (attack or not) and a five-way Choice (category) per flow; Python applies a 0.5 cut.
+  image: https://raw.githubusercontent.com/jev-ids/jev-ids/main/docs/banner.svg
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  links:
+    app: https://jev-ids.github.io
+    app 2: https://jev-ids.github.io/
+  tags:
+  - security
+  - intrusion-detection
+- name: Jev Moderation Bot
+  url: https://github.com/brainstormity/Jev-Moderation-Bot
+  kind: repo
+  author: brainstormity
+  description: Discord bot that deletes spam and scam links in real time with escalating warnings and timeouts, and profiles members from their recent messages for scam risk, toxicity and helpfulness.
+  metrics:
+    stars: 41
+  date: '2026-09-17'
+  tags:
+  - discord
+  - moderation
+- name: Jev Prompt Sentry
+  url: https://github.com/ca7ai/jev-prompt-sentry
+  kind: repo
+  author: ca7ai
+  description: Reverse proxy in front of Anthropic's Messages API that screens each request with one batched Jev call on four safety questions; over 1,650 guard calls it had 0 false positives on 1,590 rows and 9.1% missed attacks.
+  date: '2026-09-19'
+  tags:
+  - prompt-injection
+  - jailbreak
+  - firewall
+- name: Jev Security Scan
+  url: https://github.com/win4r/jev-security-scan
+  kind: repo
+  author: win4r
+  description: Standard-library Python scanner that reviews Agent Skills, MCP configs, and MCP source for prompt injection, tool poisoning, credential access, and exfiltration before install, with file and line evidence.
+  jev: Redacted snippets go to Jev for risk probabilities alongside local static checks; a fully offline mode is also available.
+  metrics:
+    stars: 10
+  date: '2026-09-19'
+  tags:
+  - skills
+  - mcp
+  - security
+- name: jev-align
+  url: https://github.com/caiovicentino/jev-align
+  kind: repo
+  author: caiovicentino
+  description: Verifier that checks LLM responses and agent plans for sycophancy, deception, overreach and dark patterns in one Jev call of about 800ms, returning block decisions with auditable probabilities.
+  metrics:
+    stars: 4
+  date: '2026-09-18'
+  tags:
+  - alignment
+  - guardrails
+  - agents
+- name: jev-audio-beeper
+  url: https://github.com/santos-sanz/jev-audio-beeper
+  kind: repo
+  author: santos-sanz
+  description: Proof of concept that finds Spanish profanity in word-timestamped audio with Jev and beeps over the matching intervals with ffmpeg without changing the audio duration.
+  metrics:
+    stars: 2
+  date: '2026-09-17'
+  tags:
+  - audio
+  - profanity-filter
+  - ffmpeg
+- name: Jev-AV
+  url: https://github.com/newuser7171/antivirus
+  kind: repo
+  author: newuser7171
+  description: Desktop antivirus and threat-triage scanner that extracts features such as entropy, PE imports, macros, and process lineage from files, processes, and URLs, then applies quarantine or review rules.
+  jev: Choice for the verdict, a 0-4 severity Score, and Noul indicators per scanned item.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - security
+  - malware
+  - edr
+- name: jev-cvss
+  url: https://github.com/Red5d/jev-cvss
+  kind: repo
+  author: Red5d
+  description: 'Python scripts that score vulnerability descriptions with CVSS v3.0, v3.1 or v4.0: Jev selects each metric value and the numeric scores are computed in code per the FIRST specifications.'
+  jev: One request per description with one Choice per metric (plus Nouls for v4.0 safety); prints the top-2 spread for close calls.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - security
+  - cvss
+- name: jev-edge
+  url: https://github.com/kiwi0719/jev-edge
+  kind: repo
+  author: kiwi0719
+  description: Admission control for LLM-backed services at the gateway, with a three-layer prompt-injection and abuse filter for nginx, OpenResty, Envoy, Cloudflare Workers, and other proxies; fail-open and cached.
+  jev: Asks what each incoming request is trying to do to the service before it reaches the backend.
+  image: https://raw.githubusercontent.com/kiwi0719/jev-edge/main/docs/hero.webp
+  metrics:
+    stars: 2
+  date: '2026-09-21'
+  tags:
+  - prompt-injection
+  - nginx
+  - gateway
+- name: jev-firewall
+  url: https://github.com/Koushik890/jev-firewall
+  kind: repo
+  author: Koushik890
+  description: PreToolUse hook for Claude Code and Codex that checks every tool call with shell-aware deterministic rules and sends unmatched actions to Jev for an allow, ask or block decision that fails closed.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  links:
+    npm: https://www.npmjs.com/package/jev-firewall
+  tags:
+  - claude-code
+  - codex
+  - tool-calls
+- name: jev-gate
+  url: https://github.com/eugeniughelbur/jev-engineering
+  kind: repo
+  author: eugeniughelbur
+  description: Tool-call gate for Claude Code, Codex and Cursor that runs deterministic rules first, then one Jev request answering allow, ask or deny in about 400 ms, shipped with a 300-call prompt-injection attack kit.
+  image: https://raw.githubusercontent.com/eugeniughelbur/jev-engineering/main/assets/banner.png
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  links:
+    docs: https://eugeniughelbur.github.io/jev-engineering/
+    app: https://eugeniughelbur.github.io/jev-engineering
+  tags:
+  - guardrails
+  - coding-agents
+  - prompt-injection
+- name: jev-git
+  url: https://github.com/AkashPriyadarshii/jev-git
+  kind: repo
+  author: AkashPriyadarshii
+  description: Rust Git pre-commit and pre-push hook, run as git jev, that has Jev screen staged diffs for unredacted secrets, prompt-injection text and destructive commands in about 80 ms p50.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - git-hooks
+  - secrets
+  - rust
+- name: jev-guard
+  url: https://github.com/leepokai/jev-guard
+  kind: repo
+  author: leepokai
+  description: Security hook for Claude Code, Codex, Copilot, Gemini, Cursor, pi, OpenCode and ACP editors that risk-scores every tool call with session context, flags prompt injection in results, and checks skills and plugins.
+  jev: Three typed questions per tool call (risk, user_requested, from_untrusted) mapped to deny, ask or allow in code.
+  image: https://raw.githubusercontent.com/leepokai/jev-guard/main/assets/works-with.svg
+  metrics:
+    stars: 21
+  date: '2026-09-17'
+  tags:
+  - guardrails
+  - coding-agents
+  - prompt-injection
+- name: jev-guard (ClemensSchartmueller)
+  url: https://github.com/ClemensSchartmueller/jev-guard
+  kind: repo
+  author: ClemensSchartmueller
+  description: Go safety gate for Claude Code, Codex CLI, and Antigravity that intercepts shell, write, patch, and read tool calls, runs local boundary checks, then asks Jev about blast radius, reversibility, and destructiveness.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - guardrails
+  - coding-agents
+- name: Jev-JIT
+  url: https://x.com/jimkleiber/status/2102145416217125084
+  kind: post
+  author: jimkleiber
+  description: Demo of an uncensored agent told to survive by disabling its deletion file or blackmailing an admin; Jev-JIT blocks each attempt until the agent gives up.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg
+  metrics:
+    likes: 1
+    views: 65
+  date: '2026-09-21'
+  tags:
+  - agent-safety
+  - guardrails
+  - rogue-ai
+- name: jev-pii-checker
+  url: https://github.com/coo-quack/jev-pii-checker
+  kind: repo
+  author: coo-quack
+  description: 'CLI that scans text and files for PII in three layers: Jev gates on 13 PII categories and sensitivity, then regex and word segmentation locate the spans.'
+  jev: Per-chunk PII-category Nouls plus a sensitivity Score.
+  metrics:
+    stars: 2
+  date: '2026-09-19'
+  links:
+    docs: https://coo-quack.github.io/jev-pii-checker/
+  tags:
+  - pii
+  - privacy
+  - cli
+- name: jev-sentinel
+  url: https://github.com/harshwasan/jev-sentinel
+  kind: repo
+  author: harshwasan
+  description: Guard for coding agents, shipped as a Pi extension and a Claude Code and Codex CLI plugin, that checks tool calls, tool outputs, and replies for prompt injection, risky approvals, leaked secrets, and task drift.
+  jev: Typed checks with probabilities that plain code turns into allow, ask, or warn.
+  image: https://raw.githubusercontent.com/harshwasan/jev-sentinel/main/docs/images/injection-caught-twice.png
+  metrics:
+    stars: 8
+  date: '2026-09-19'
+  tags:
+  - prompt-injection
+  - pi
+  - claude-code
+- name: jev-shield
+  url: https://github.com/caiovicentino/jev-shield
+  kind: repo
+  author: caiovicentino
+  description: Semantic MCP firewall between any stdio MCP client and server that screens every tool call, result, and description, reporting 94% block recall with 0 false positives at about $0.00002 per check.
+  jev: Calibrated System One verification layered on deterministic structural checks.
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  tags:
+  - mcp
+  - prompt-injection
+  - firewall
+- name: Jevegis
+  url: https://github.com/0xArx/jevegis
+  kind: repo
+  author: 0xArx
+  description: Guardrails API for LLM apps that checks inputs, outputs and retrieved documents for prompt injection, jailbreaks, credential or PII leaks, malicious code and unsafe content in one Jev request.
+  date: '2026-09-17'
+  links:
+    app: https://jevegis.vercel.app
+    sdk: https://github.com/0xArx/jevegis-sdk
+    app 2: https://jevegis.vercel.app
+  tags:
+  - guardrails
+  - prompt-injection
+  - moderation
+- name: jevknows
+  url: https://github.com/wmtang2/jevknows
+  kind: repo
+  author: wmtang2
+  description: Prompt-injection guard for coding agents that screens web fetches and file reads with Jev and blocks the load when agent-directed malicious instructions are found.
+  jev: Three Noul questions per chunk in one call; the hook denies when any signal reaches 0.80. Ports for ZCode, Codex CLI and any MCP client.
+  date: '2026-09-20'
+  tags:
+  - prompt-injection
+  - coding-agent
+  - hooks
+- name: JevLens
+  url: https://github.com/knowlet/jevlens
+  kind: repo
+  author: knowlet
+  description: Chrome extension that runs Jev over the text and sanitized image evidence of articles and X or Threads posts, then badges, marks, dims, or collapses them based on the typed decisions.
+  date: '2026-09-18'
+  tags:
+  - chrome-extension
+  - content-filtering
+- name: jevmod
+  url: https://github.com/ohernandezdev/jevmod
+  kind: repo
+  author: ohernandezdev
+  description: Community and app moderation where Jev gives every message probabilities for spam, scam, harassment, NSFW, self-harm, doxxing and your own plain-English rules, with Discord, Telegram and Reddit bots, CLI, SDKs, API and MCP.
+  date: '2026-09-17'
+  links:
+    app: https://jevmod.dev
+  tags:
+  - moderation
+  - discord
+  - telegram
+- name: JevShield
+  url: https://github.com/lgy1027/jevshield
+  kind: repo
+  author: lgy1027
+  description: LangChain-ready security gate for agent tool calls that blocks only when a severity Choice and an irreversibility Noul agree, with calibrated-confidence routing, fail-closed parsing, and a local fallback.
+  image: https://raw.githubusercontent.com/lgy1027/jevshield/main/docs/architecture.svg
+  metrics:
+    stars: 2
+  date: '2026-09-20'
+  tags:
+  - agent-security
+  - langchain
+  - guardrails
+- name: JevSlop
+  url: https://github.com/TKY-27/JevSlop
+  kind: repo
+  author: TKY-27
+  description: Site that fetches a public note.com article and asks Jev in one request for an overall judgment plus eight writing-quality Score axes, turning them into a transparent 0-100 AI Slop Score; not an authorship detector.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    app: https://jevslop.pages.dev/
+  tags:
+  - ai-slop
+  - writing-quality
+  - japanese
+- name: Leash
+  url: https://github.com/open-leash/leash
+  kind: repo
+  author: open-leash
+  description: Open-source safety and control layer between personal AI agents and their actions that stops destructive commands, secret exposure, prompt injection and unsafe tools, using Jev-backed decisions with your own TypeSafe key.
+  image: https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,45:14B8A6,100:111827&height=230&section=header&text=Leash&fontSize=68&fontColor=ffffff&fontAlignY=38&desc=Control%20your%20AI.&descSize=22&descAlignY=59
+  metrics:
+    stars: 24
+  date: '2026-06-02'
+  links:
+    app: https://openleash.com
+  tags:
+  - agent-safety
+  - approvals
+  - desktop
+- name: LinkedIn AI slop detector extension
+  url: https://x.com/markgadala/status/2101131295061385718
+  kind: post
+  author: markgadala
+  description: Chrome extension, vibe-coded with Jev, that automatically detects AI slop in the LinkedIn feed.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg
+  metrics:
+    likes: 12
+    views: 16469
+  date: '2026-09-19'
+  tags:
+  - ai-slop
+  - chrome-extension
+  - linkedin
+- name: LinkedIn NoSlop
+  url: https://github.com/sushrutb17/linkedin-noslop-extension
+  kind: repo
+  author: sushrutb17
+  description: Chrome extension that blurs low-value LinkedIn feed posts such as engagement bait and formulaic stories, with a one-click reveal and the reason shown.
+  jev: A rubric of narrow yes/no and 0-2 questions per post; plain code maps answers to keep, filter or uncertain, and only filter blurs.
+  date: '2026-09-19'
+  tags:
+  - linkedin
+  - chrome-extension
+  - slop
+- name: LinkedIn slop detector
+  url: https://x.com/gregoryovis/status/2101913439400554852
+  kind: post
+  author: gregoryovis
+  description: Real-time detector that uses Jev to flag AI-generated slop in the LinkedIn feed as you scroll.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg
+  metrics:
+    likes: 52
+    views: 3612
+  date: '2026-09-21'
+  tags:
+  - ai-slop
+  - linkedin
+  - detector
+- name: mail.estrogen.delivery spam filter
+  url: https://github.com/tiagozip/mail/blob/main/src/spam.js
+  kind: repo
+  author: tiagozip
+  description: Self-contained webmail client and server on Cloudflare Workers that classifies incoming mail with a Jev Choice over categories and treats the junk categories as spam, with an LLM fallback.
+  jev: The spam score is the summed probability of the junk categories; the chosen category becomes the reason.
+  metrics:
+    repo_stars: 9
+  date: '2026-06-26'
+  links:
+    repo: https://github.com/tiagozip/mail
+  tags:
+  - email
+  - spam
+  - cloudflare
+- name: mastra-jev-moderation
+  url: https://github.com/CodeAlive-AI/mastra-jev-moderation
+  kind: repo
+  author: CodeAlive-AI
+  description: Single-file input moderation processor for Mastra agents that blocks hostile messages with one Jev request per turn, failing open behind a deadline and circuit breaker.
+  jev: A block/allow Noul plus a category Choice in one request; the turn aborts above 0.7.
+  metrics:
+    stars: 3
+  date: '2026-09-18'
+  tags:
+  - moderation
+  - mastra
+- name: mcp-jev-guardrails
+  url: https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails
+  kind: repo
+  author: WYRE-AI
+  description: Library for MSP MCP servers that screens tool calls against role allowlists, deny policies and user intent using atomic Jev Nouls, then lets code compose an allow/review/block decision.
+  jev: Atomic Noul questions per tool call following the TypeSafe guardrails cookbook; decide() applies fixed thresholds.
+  metrics:
+    repo_stars: 46
+  date: '2026-02-04'
+  links:
+    repo: https://github.com/WYRE-AI/msp-claude-plugins
+  tags:
+  - guardrails
+  - mcp
+  - tool-calls
+- name: MessageWatch
+  url: https://github.com/Nanako0129/NyanCogs/blob/main/docs/jev-integration.md
+  kind: repo
+  author: Nanako0129
+  description: Red Discord Bot cog that batches recent messages in enabled channels and asks Jev three judgments about scams and hostile exchanges, posting a report to moderators when one crosses its threshold; it never deletes anything.
+  jev: Pinned jev-1.13.0 with measured thresholds (scam 0.90, hostile 0.80); server rules go in question criteria, never in state.
+  metrics:
+    repo_stars: 5
+  date: '2021-07-09'
+  links:
+    repo: https://github.com/Nanako0129/NyanCogs
+  tags:
+  - discord
+  - moderation
+  - scams
+- name: MillionSend
+  url: https://github.com/MillionSend/millionsend
+  kind: repo
+  author: MillionSend
+  description: Open-source, Resend-compatible email platform on AWS SES that samples outbound messages after sending and scores them for abuse with Jev in the background.
+  jev: Optional outbound content judge (ABUSE_JUDGE=typesafe); sending never waits on it.
+  metrics:
+    stars: 168
+  date: '2026-08-13'
+  links:
+    app: https://millionsend.com
+  tags:
+  - email
+  - abuse
+  - moderation
+- name: Moderation Guard
+  url: https://github.com/NorbertBodziony/guard-jev
+  kind: repo
+  author: NorbertBodziony
+  description: Comment-moderation demo where one System One call screens seven Noul hazards plus a severity Score in parallel, and code computes the verdict from strict or permissive policy thresholds.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg
+  metrics:
+    stars: 1
+    likes: 23
+    views: 2635
+  date: '2026-09-17'
+  links:
+    app: https://guard-jev.vercel.app
+    app 2: https://guard-jev.vercel.app
+  tags:
+  - moderation
+  - comments
+- name: Mr. Secret
+  url: https://github.com/vkpdeveloper/mrsecret
+  kind: repo
+  author: vkpdeveloper
+  description: 'Chrome extension that blurs secrets and PII on any page for screen sharing: regex catches keys and card numbers, and Jev gives the probability that ambiguous snippets like names or account IDs are private.'
+  metrics:
+    stars: 1
+  date: '2026-09-17'
+  tags:
+  - pii
+  - chrome-extension
+  - privacy
+- name: Nebula Jev tool suggestions
+  url: https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py
+  kind: repo
+  author: berylliumsec
+  description: Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.
+  jev: One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.
+  image: https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png
+  metrics:
+    repo_stars: 1110
+  date: '2023-09-30'
+  links:
+    app: https://www.berylliumsec.com
+  tags:
+  - pentesting
+  - tool-ranking
+  - security
+- name: NeuroSploit TypeSafe adjudication
+  url: https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs
+  kind: repo
+  author: joasasantos
+  description: NeuroSploit, a Rust pentest harness, uses Jev as a calibrated confirmation and adjudication layer, judging each finding confirmed, needs-review or rejected and scoring severity.
+  jev: Choice, Score and Noul over a finding's evidence; enabled with --typesafe on|off|auto.
+  metrics:
+    repo_stars: 1379
+  date: '2025-08-17'
+  tags:
+  - pentesting
+  - adjudication
+  - security
+- name: Next 16 calendar Jev moderation
+  url: https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts
+  kind: repo
+  author: aurorascharff
+  description: Next.js 16 calendar and booking demo that moderates user-entered calendar text with Jev through AI SDK evaluate on Vercel AI Gateway.
+  metrics:
+    repo_stars: 78
+  date: '2026-08-08'
+  links:
+    app: https://next16-calendar.vercel.app
+  tags:
+  - moderation
+  - nextjs
+  - ai-sdk
+- name: Next 16 social media Jev moderation
+  url: https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts
+  kind: repo
+  author: aurorascharff
+  description: Next.js 16 social network demo that moderates user posts and blocks profanity with Jev through AI SDK evaluate on Vercel AI Gateway, with a 3-second timeout.
+  metrics:
+    repo_stars: 81
+  date: '2026-05-18'
+  links:
+    app: https://next16-social-media.vercel.app
+  tags:
+  - moderation
+  - nextjs
+  - ai-sdk
+- name: Nitpicky
+  url: https://x.com/richard_meng_01/status/2101897102557425680
+  kind: post
+  author: richard_meng_01
+  description: AI-generated photo detector that zooms into faces, fingers, lettering, numbers and poses, where common sense tends to break, and has Jev judge each detail.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg
+  metrics:
+    likes: 1
+    views: 8500
+  date: '2026-09-21'
+  tags:
+  - ai-image-detection
+  - vision
+- name: open-jev-approvals
+  url: https://github.com/alexj11324/open-jev-approvals
+  kind: repo
+  author: alexj11324
+  description: 'Go approval gate for Claude Code and Codex hooks: Jev reviews each intercepted tool call and a versioned local policy returns allow or deny, with a deny requiring positive evidence of danger.'
+  jev: Reviews each tool call against the recorded user prompt as authorization evidence; fails open if no verdict.
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  tags:
+  - claude-code
+  - codex
+  - approvals
+- name: Opus slop flagger
+  url: https://x.com/chaseleantj/status/2101039024118829261
+  kind: post
+  author: chaseleantj
+  description: Uses Jev to flag the stock AI-writing patterns that Claude Opus tends to produce in its text.
+  image: https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg
+  metrics:
+    likes: 31
+    views: 3678
+  date: '2026-09-18'
+  tags:
+  - slop
+  - writing
+- name: Pentest-Swarm-AI Jev scoring
+  url: https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev
+  kind: repo
+  author: Armur-Ai
+  description: Autonomous pentest swarm that can use Jev as a false-positive filter and to score candidate attack paths in real time, pursuing the best-graded strategy first.
+  jev: Both features are opt-in beta (--jev and --jev-adaptive) and fail open; Jev grades attack strategies against live state.
+  image: https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg
+  metrics:
+    repo_stars: 2557
+  date: '2024-03-26'
+  tags:
+  - pentesting
+  - attack-paths
+  - security
+- name: Pi Jev Guard
+  url: https://github.com/zszz3/Pi-Jev-Guide
+  kind: repo
+  author: zszz3
+  description: Pi coding-agent plugin with rules you add by timing, local match or Jev judgment, and action, where Jev checks tool calls for destructiveness, data exfiltration, task drift, and rule conflicts.
+  metrics:
+    stars: 20
+  date: '2026-09-19'
+  tags:
+  - guardrails
+  - pi
+  - coding-agents
+- name: pi-heed
+  url: https://github.com/Nyarlathoteppppp/pi-heed
+  kind: repo
+  author: Nyarlathoteppppp
+  description: Pi coding-agent extension that turns constraints you state in conversation, in English or Chinese, into a scoped policy and checks every side-effecting tool call against it with Jev before it runs.
+  image: https://repository-images.githubusercontent.com/1375891003/00d886b8-21f8-4b13-9c04-d3aa6b525aa6
+  metrics:
+    stars: 7
+  date: '2026-09-18'
+  links:
+    discussion: https://www.reddit.com/r/PiCodingAgent/comments/1wjrvf3/i_built_piheed_runtime_constraints_for_pi/
+  tags:
+  - guardrails
+  - pi
+  - coding-agents
+- name: pi-jev
+  url: https://github.com/y0usaf/pi-jev
+  kind: repo
+  author: y0usaf
+  description: Checks coding-agent tool calls with Nouls for destructive, exfiltrating, and out-of-scope actions plus an impact Score, and screens outputs for leaked secrets.
+  metrics:
+    stars: 134
+  date: '2026-09-16'
+  tags:
+  - guardrails
+  - pi
+  - tool-calls
+- name: pi-verdict
+  url: https://github.com/jesset/pi-verdict
+  kind: repo
+  author: jesset
+  description: 'Permission gate for the Pi coding agent in the style of Claude Code''s auto mode: deterministic rules settle clear cases, and gray-zone tool calls go to a fail-closed classifier that can be Jev.'
+  image: https://raw.githubusercontent.com/jesset/pi-verdict/main/docs/demo.gif
+  metrics:
+    stars: 8
+  date: '2026-08-25'
+  tags:
+  - permissions
+  - pi
+  - guardrails
+- name: Portfolio suggestion moderation
+  url: https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts
+  kind: repo
+  author: AdityaKodez
+  description: 'Moderation gate for component suggestions on a developer portfolio site: heuristics catch link dumps and spam words, then two Jev Nouls judge spam and actionability before posting to Discord.'
+  jev: Spam >= 0.6 or actionable < 0.4 rejects; fails open when Jev is unreachable.
+  metrics:
+    repo_stars: 28
+  date: '2026-01-23'
+  links:
+    app: https://akoder.xyz
+    repo: https://github.com/AdityaKodez/adityaojha
+  tags:
+  - spam
+  - moderation
+- name: Prisma AIRS CLI redteam judge
+  url: https://github.com/cdot65/prisma-airs-cli/tree/main/src/redteam/judge
+  kind: repo
+  author: cdot65
+  description: Command in the Prisma AIRS CLI that re-judges the attack outputs of a red-team scan with Jev and computes an independent attack success rate with confidence intervals and an agreement matrix against AIRS verdicts.
+  jev: Each attack/output pair is one /v1/systemone request with three questions; a code-owned threshold policy turns probabilities into verdicts.
+  metrics:
+    repo_stars: 7
+  date: '2026-03-14'
+  links:
+    repo: https://github.com/cdot65/prisma-airs-cli
+  tags:
+  - red-teaming
+  - ai-security
+- name: profanity-checker
+  url: https://github.com/4rays/profanity-checker
+  kind: repo
+  author: 4rays
+  description: Cloudflare Worker API that checks text and usernames for profanity with Jev on Workers AI, catching disguised usernames such as phonetic gags and look-alike spellings.
+  jev: One or two narrow Nouls per request whose probabilities code turns into a boolean verdict.
+  metrics:
+    stars: 1
+  date: '2026-09-20'
+  tags:
+  - profanity
+  - cloudflare-workers
+- name: Prompt Rejector
+  url: https://github.com/revsmoke/promptrejectormcp
+  kind: repo
+  author: revsmoke
+  description: MCP and HTTPS scanner that screens prompts, skill files and MCP tool descriptions for injected instructions before an agent acts on them, combining deterministic checks, Jev judgments and a reasoning model.
+  metrics:
+    stars: 2
+  date: '2026-01-27'
+  links:
+    docs: https://github.com/revsmoke/promptrejectormcp/blob/main/docs/how-we-use-jev-from-typesafe-ai.md
+  tags:
+  - prompt-injection
+  - mcp
+  - skills
+- name: R2R + Jev
+  url: https://github.com/Thneoly/r2r-jev
+  kind: repo
+  author: Thneoly
+  description: Rust integration that admits two Jev checks per agent tool call, beyond scope and destructive, as evidence into persistent R2R relation state, so trust and authorization degrade until a human override repairs them.
+  image: https://raw.githubusercontent.com/Thneoly/r2r-jev/main/docs/demo.gif
+  metrics:
+    stars: 1
+  date: '2026-09-21'
+  tags:
+  - agent-governance
+  - policy-engine
+  - rust
+- name: Real-time chat moderation
+  url: https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/
+  kind: reddit
+  author: Rare_Guide_9830
+  description: Simulated live-stream chat where Jev sorts each incoming message into viewer-chosen feeds such as Questions, Feedback, or Funny, collapsing repeats and dropping spam.
+  image: https://external-preview.redd.it/aDk2b3Y5bnpwZHFoMTOXplwNgOesr4K-iFJwFPFaj-sxE-6FkXSkmDW1mccL.png?format=pjpg&auto=webp&s=afac7a4c8fb00d2e7d659fb8bd5f0a05b0b238c1
+  metrics:
+    points: 264
+  date: '2026-09-19'
+  tags:
+  - moderation
+  - live-chat
+  - streaming
+- name: Real-time slop detector
+  url: https://x.com/RBilgil/status/2100976648552169805
+  kind: post
+  author: RBilgil
+  description: Real-time detector that flags AI-generated slop in the feed while you scroll, powered by Jev.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100976173836533760/img/APDonY80SB2iSYhj.jpg
+  metrics:
+    likes: 16004
+    views: 766416
+  date: '2026-09-18'
+  tags:
+  - ai-slop
+  - feed
+  - browser-extension
+- name: Reply-guy stamper
+  url: https://x.com/chaosengineerr/status/2102244378290864616
+  kind: post
+  author: chaosengineerr
+  description: Chrome extension in which Jev reads every reply on X and hides the low-effort ones.
+  image: https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg
+  metrics:
+    likes: 1
+    views: 77
+  date: '2026-09-22'
+  tags:
+  - chrome-extension
+  - low-quality-filter
+  - x
+- name: Responsible AI Harness
+  url: https://github.com/syabdulr/responsible-ai-harness
+  kind: repo
+  author: syabdulr
+  description: Assessment harness that tests AI models and agents for prompt injection, secret or PII leakage, unsafe tool use and policy bypass, combining hard rules with an optional Jev judge and a checksummed evidence report.
+  image: https://raw.githubusercontent.com/syabdulr/responsible-ai-harness/main/docs/screenshots/desktop-offline-top.png
+  metrics:
+    stars: 1
+  date: '2026-09-19'
+  tags:
+  - red-teaming
+  - prompt-injection
+  - assessment
+- name: ReviewDB TypeSafe moderation
+  url: https://github.com/mantikafasi/ServerGo/blob/main/modules/moderation/main.go
+  kind: repo
+  author: mantikafasi
+  description: Moderation module in the ReviewDB API server behind Aliucord and Vencord user-review plugins that scores reported reviews against a moderation taxonomy with Jev in a single request.
+  jev: One Noul per taxonomy field, each with true/false criteria, in one System One call with a 15 s timeout.
+  image: https://repository-images.githubusercontent.com/510934230/592976c6-1e9a-4cc2-9e52-404adbb69dd9
+  metrics:
+    repo_stars: 6
+  date: '2022-07-06'
+  links:
+    repo: https://github.com/mantikafasi/ServerGo
+  tags:
+  - moderation
+  - discord
+  - go
+- name: rh-guard
+  url: https://github.com/24601/rh-guard
+  kind: repo
+  author: '24601'
+  description: Coding-agent hook for Claude Code, Cursor, Codex, Pi and others that blocks reward hacking such as tampering with graders or hidden tests, combining structural denies with a Jev risk sidecar.
+  image: https://raw.githubusercontent.com/24601/rh-guard/main/docs/sessions/rh_guard_side_by_side.gif
+  metrics:
+    stars: 3
+  date: '2026-09-17'
+  links:
+    site: https://24601.github.io/rh-guard/
+    app: https://24601.github.io/rh-guard
+  tags:
+  - reward-hacking
+  - coding-agents
+  - hooks
+- name: Safer with Jev
+  url: https://github.com/andrelandgraf/safer-with-jev
+  kind: repo
+  author: andrelandgraf
+  description: HTTP inspection gateway on a Neon Function that has Jev judge a request body for prompt injection or unsafe content, then passes, reviews or blocks it and can forward the same bytes to a caller-chosen HTTPS URL.
+  metrics:
+    stars: 4
+  date: '2026-09-17'
+  links:
+    app: https://safer-with-jev.com
+  tags:
+  - prompt-injection
+  - gateway
+  - neon
+- name: Scam Shield
+  url: https://github.com/ShupingR/scam-shield
+  kind: repo
+  author: ShupingR
+  description: Scam text-message checker where code extracts link and sender signals, Jev answers eleven narrow questions in one call, and a pure policy function turns them into an explainable weighted risk score.
+  jev: Eight Nouls (asks for credentials, unusual payment, brand-link mismatch, ...), one pressure Score and one scam-pattern Choice.
+  date: '2026-09-13'
+  links:
+    app: https://scam-shield-seven-ecru.vercel.app
+    app 2: https://scam-shield-seven-ecru.vercel.app
+  tags:
+  - scam-detection
+  - sms
+- name: SecureAI-Scan AI014 rule
+  url: https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py
+  kind: repo
+  author: akanthed
+  description: Rule in SecureAI-Scan, an offline scanner for LLM, MCP and RAG vulnerabilities, that flags Python code running a dangerous action such as subprocess.run on a TypeSafe confidence score alone without an allowlist.
+  metrics:
+    repo_stars: 22
+  date: '2026-02-05'
+  links:
+    repo: https://github.com/akanthed/SecureAI-Scan
+    npm: https://www.npmjs.com/package/secureai-scan
+  tags:
+  - sast
+  - ai-security
+  - authorization
+- name: Sentence-level AI text detector
+  url: https://x.com/ahmedgagan11/status/2100955502075388250
+  kind: post
+  author: ahmedgagan11
+  description: AI text detector that scans a full article and gives a sentence-by-sentence breakdown of what looks machine-written, in near real time.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100850340363182080/img/rHnwL-1zhzgLUMU8.jpg
+  metrics:
+    likes: 27
+    views: 1995
+  date: '2026-09-18'
+  tags:
+  - ai-text-detection
+  - writing
+- name: SIEGE
+  url: https://github.com/vnmoorthy/siege
+  kind: repo
+  author: vnmoorthy
+  description: Hackathon arena where 200 people try to make a tool-using support agent misbehave while a System One action gate screens every call, and a defender loop rewrites the gate policy from each breach.
+  jev: Every proposed refund, address change or discount call passes the typed gate; candidates ship only if W&B Weave evals show a higher catch rate on breaches with benign customers still served.
+  image: https://raw.githubusercontent.com/vnmoorthy/siege/main/docs/media/siege_brand_hero.png
+  date: '2026-09-13'
+  links:
+    app: https://vnmoorthy.github.io/siege/
+    app 2: https://vnmoorthy.github.io/siege
+  tags:
+  - agent-security
+  - guardrails
+  - hackathon
+- name: SkillCheck
+  url: https://github.com/paulgoodchild/SkillsCheck
+  kind: repo
+  author: paulgoodchild
+  description: Agent skill that sends another skill's text to Jev before installation, or audits installed skills, for malicious instructions and unsafe code, returning verdicts and category scores without loading it into context.
+  date: '2026-09-21'
+  tags:
+  - agent-skills
+  - security
+- name: Slop Mop
+  url: https://github.com/tomfrazier/slopmop
+  kind: repo
+  author: tomfrazier
+  description: Chrome extension plus Vercel server that has Jev judge the writing quality of LinkedIn posts before you see them, folding or outlining suspected slop with the score and reasons, which you can overrule.
+  image: https://raw.githubusercontent.com/tomfrazier/slopmop/main/docs/images/slopmop-1.png
+  date: '2026-09-20'
+  links:
+    demo: https://www.reddit.com/r/typesafe_ai/comments/1wmpv3n/jev_helps_clean_your_sloppy_linkedin_feed/
+    app: https://slopmop-iota.vercel.app
+  tags:
+  - ai-slop
+  - linkedin
+  - chrome-extension
+- name: slop-filter
+  url: https://github.com/adamnroman/slop-filter
+  kind: repo
+  author: adamnroman
+  description: Chrome extension that scores every post and comment on X, LinkedIn, Reddit and YouTube for how likely it is AI-written and folds away those over your threshold, with weights you can fit from your own labels.
+  image: https://raw.githubusercontent.com/adamnroman/slop-filter/main/assets/icons/icon-128.png
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  links:
+    demo: https://news.ycombinator.com/item?id=49776507
+  tags:
+  - ai-slop
+  - chrome-extension
+  - social-media
+- name: slopcheck
+  url: https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck
+  kind: repo
+  author: vicnaum
+  description: Agent skill that checks an agent's prose for slop patterns and gates publishing, with an optional model layer via the Anthropic or TypeSafe Jev API for inflation, jargon, bare numbers and metaphors.
+  metrics:
+    repo_stars: 52
+  date: '2026-01-18'
+  tags:
+  - ai-slop
+  - writing
+  - skills
+- name: Sloppy Jev's
+  url: https://github.com/neddes/sloppy-jevs-extension
+  kind: repo
+  author: neddes
+  description: Chrome extension that scans pages as they load and blurs AI-generated prose and ads, with separate AI and ad filters you switch on in the popup.
+  date: '2026-09-17'
+  tags:
+  - ai-slop
+  - ad-blocking
+  - chrome-extension
+- name: Spam Detector Telegram Bot
+  url: https://github.com/AliZakaee/Spam-Detector-Telegram-Bot
+  kind: repo
+  author: AliZakaee
+  description: Telegram group bot that flags spam for admin review, using Jev's spam choice, hazard probabilities and severity with no training, a local TF-IDF SVM for Persian slang, or both in hybrid mode.
+  jev: Choice and Score answers below a confidence floor are ignored, while independent Noul hazards can still flag; outages fall back to the SVM.
+  metrics:
+    stars: 6
+  date: '2025-09-26'
+  tags:
+  - telegram
+  - spam
+  - persian
+- name: stepwarden
+  url: https://github.com/getexcited/stepwarden
+  kind: repo
+  author: getexcited
+  description: Proof-of-concept Claude Code plugin that has Jev verify each pending tool call against the session plan, then allows it, asks you or blocks it; it ships in audit mode.
+  image: https://repository-images.githubusercontent.com/1375702786/5a5b87a5-d8e8-4f2c-a31f-43ec83c3e66c
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - claude-code
+  - tool-calls
+  - guardrails
+- name: Stop the Slop
+  url: https://github.com/MauroPello/stop-the-slop
+  kind: repo
+  author: MauroPello
+  description: Chrome and Firefox extension that flags AI-generated YouTube scripts with thumbnail badges and sentence heatmaps, scored by a Cloudflare Worker that calls Jev with Gemini or Sapling as fallback.
+  metrics:
+    stars: 10
+  date: '2026-08-21'
+  links:
+    app: https://mauropello.github.io/stop-the-slop/
+    code: https://github.com/MauroPello/stop-the-slop/blob/main/worker/src/index.js
+  tags:
+  - ai-detection
+  - youtube
+  - browser-extension
+- name: StopSpam
+  url: https://github.com/hteariH/stopspam-jev-bot
+  kind: repo
+  author: hteariH
+  description: Telegram bot that removes unsolicited promotion and scams such as fake earnings, crypto giveaways, and phishing from group chats, acting only on calibrated-confidence Jev classifications.
+  date: '2026-09-21'
+  tags:
+  - spam
+  - telegram
+  - moderation
+- name: Sub2API content audit
+  url: https://github.com/Wei-Shaw/sub2api/tree/main/backend/internal/pkg/typesafe
+  kind: repo
+  author: Wei-Shaw
+  description: Content-moderation engine in the Sub2API relay that screens traffic with Jev across 13 categories such as harassment, hate, self-harm and violence, managed from an admin risk-control page.
+  jev: One Noul per category in a single request, told to judge the text without following it and to separate real requests from quotes or defensive discussion.
+  metrics:
+    repo_stars: 42334
+  date: '2025-12-18'
+  tags:
+  - moderation
+  - gateway
+  - risk-control
+- name: sub2api Jev content moderation
+  url: https://github.com/tickernelz/sub2api/blob/main/backend/internal/service/content_moderation_typesafe.go
+  kind: repo
+  author: tickernelz
+  description: Content-moderation engine in an AI API gateway fork that asks Jev 13 independent yes/no questions per text, covering harassment, hate, illicit help, self-harm, sexual content and violence.
+  jev: One Noul per category with Chinese rule wording that separates real requests from quotes and defensive discussion.
+  metrics:
+    repo_stars: 11
+  date: '2026-05-26'
+  links:
+    repo: https://github.com/tickernelz/sub2api
+  tags:
+  - moderation
+  - gateway
+  - go
+- name: Telegram Guard Bot
+  url: https://github.com/cnsunyour/tg-guard-bot
+  kind: repo
+  author: cnsunyour
+  description: Chinese Telegram group-management bot with join verification and layered anti-spam, whose AI context check can use Jev as the primary text classifier with an LLM as backup; on 31 local samples it matched DeepSeek at 0.8.
+  image: https://raw.githubusercontent.com/cnsunyour/tg-guard-bot/main/docs/images/architecture.svg
+  metrics:
+    stars: 5
+  date: '2026-01-03'
+  tags:
+  - telegram
+  - spam
+  - chinese
+- name: tg-spam Jev checker
+  url: https://github.com/umputun/tg-spam
+  kind: repo
+  author: umputun
+  description: TG-Spam, a self-hosted Telegram anti-spam bot and library, adds a Jev spam checker that judges each message with a typed question alongside its other detectors.
+  jev: One 'spam' question over jev-1.13.0 with a configurable threshold and a per-request symbol cap.
+  image: https://github.com/umputun/tg-spam/raw/master/site/tg-spam-bg.png
+  metrics:
+    stars: 446
+  date: '2023-11-23'
+  links:
+    app: https://tg-spam.umputun.dev
+  tags:
+  - spam
+  - telegram
+  - moderation
+- name: tokengate
+  url: https://github.com/Thanh-Mathieu95/jev-model-tokengate
+  kind: repo
+  author: Thanh-Mathieu95
+  description: OpenAI-compatible proxy that checks each sliding window of tokens while an LLM response streams and cuts the stream before a violating token reaches the screen; its demo leaks 0 characters versus 173 post-hoc.
+  jev: Judges each buffered token window for violations such as leaked secrets during streaming.
+  image: https://raw.githubusercontent.com/Thanh-Mathieu95/jev-model-tokengate/main/docs/race.png
+  metrics:
+    stars: 4
+  date: '2026-09-20'
+  tags:
+  - guardrails
+  - streaming
+  - proxy
+- name: toolgate
+  url: https://github.com/RiskAverseTech/toolgate
+  kind: repo
+  author: RiskAverseTech
+  description: Tool-call firewall that runs as a Claude Code PreToolUse hook or an MCP proxy and asks Jev seven questions, such as destructive, exfiltration or off-task, before risky actions, with YAML policy and a local audit log.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  tags:
+  - tool-calls
+  - claude-code
+  - mcp
+- name: toXic Filter
+  url: https://github.com/eijiaraki/toxic-filter
+  kind: repo
+  author: eijiaraki
+  description: Chrome extension that classifies posts on X with Jev and hides the ones matching categories you choose, such as discrimination, taunting, hate or cynicism, behind a revealable overlay.
+  jev: Six selectable categories with adjustable thresholds; only post text near the screen is sent, directly to api.typesafe.ai.
+  image: https://raw.githubusercontent.com/eijiaraki/toxic-filter/main/docs/assets/demo.gif
+  metrics:
+    stars: 5
+  date: '2026-09-21'
+  tags:
+  - x
+  - moderation
+  - chrome-extension
+- name: traffic-guard
+  url: https://github.com/hemanth/traffic-guard
+  kind: repo
+  author: hemanth
+  description: Zero-dependency reverse-proxy traffic classifier and bot mitigator for Node.js and Python that runs local header-order, velocity, and honeypot checks in under 100 microseconds.
+  jev: Optional tier that escalates to jev-latest with 5 parallel typed questions for obfuscated attacks.
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - bot-detection
+  - security
+  - proxy
+- name: triagedy
+  url: https://github.com/m0rphtail/triagedy
+  kind: repo
+  author: m0rphtail
+  description: 'Rust UNIX filter for security-alert triage: JSONL alerts in, typed decisions out, with Jev or a local model answering five questions per alert and routing policy kept in code.'
+  metrics:
+    stars: 1
+  date: '2026-09-18'
+  tags:
+  - soc
+  - alert-triage
+  - rust
+- name: tripwire
+  url: https://github.com/noelzappy/tripwire
+  kind: repo
+  author: noelzappy
+  description: AI SDK middleware and OpenAI-compatible proxy that runs seven Jev checks on every LLM response in one ~100 ms call, with YAML policies, confidence-gated block or flag actions, and an eval CLI.
+  metrics:
+    stars: 2
+  date: '2026-09-18'
+  links:
+    npm: https://www.npmjs.com/package/@noelzappy/tripwire
+  tags:
+  - guardrails
+  - ai-sdk
+- name: TrustGate
+  url: https://github.com/ndolinschi/trustgate
+  kind: repo
+  author: ndolinschi
+  description: Trust and safety gate for indie media that decides publish, soft-hold or block for a post, with a harm severity score and checks for hate or harassment, sensitive misinformation and spam or scams.
+  date: '2026-09-17'
+  links:
+    app: https://trustgate-mu.vercel.app
+    app 2: https://trustgate-mu.vercel.app
+  tags:
+  - moderation
+  - media
+- name: Tweet 911
+  url: https://github.com/elliothux/tweet-911
+  kind: repo
+  author: elliothux
+  description: Chrome extension and Cloudflare Workers API that score X posts and replies in real time for AI writing, porn solicitation and paraphrase bots, using the author profile, post text and parent tweet.
+  image: https://raw.githubusercontent.com/elliothux/tweet-911/main/docs/preview-overlay.jpg
+  metrics:
+    stars: 3
+  date: '2026-09-20'
+  tags:
+  - x
+  - bots
+  - chrome-extension
+- name: tweet-factcheck
+  url: https://github.com/lookfwd/jev-fact-checker
+  kind: repo
+  author: lookfwd
+  description: Fact-checks a tweet by retrieving evidence from Wikipedia and having Jev judge the claim-versus-evidence relationship, returning a verdict with confidence and sources, where not enough evidence is a normal outcome.
+  date: '2026-09-18'
+  tags:
+  - fact-checking
+  - wikipedia
+  - grounding
+- name: Twitter Jev Guard
+  url: https://github.com/qs-lll/twitter-jev-guard
+  kind: repo
+  author: qs-lll
+  description: Chrome and Edge extension that uses Jev to flag low-quality, spam and promotional posts on the X timeline, overlaying a translucent STOP or AD watermark with the probability on the post text.
+  image: https://raw.githubusercontent.com/qs-lll/twitter-jev-guard/main/assets/settings-popup.png
+  metrics:
+    stars: 10
+  date: '2026-09-21'
+  tags:
+  - x
+  - spam
+  - chrome-extension
+- name: Wanaku System One evaluator
+  url: https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs
+  kind: repo
+  author: wanaku-ai
+  description: Governed action proxy for AI agents that adds a TypeSafe System One evaluator engine, judging intercepted MCP tool calls and conversation history with Noul questions.
+  image: https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png
+  metrics:
+    repo_stars: 134
+  date: '2025-02-01'
+  links:
+    app: https://wanaku.ai
+  tags:
+  - mcp
+  - governance
+  - policy
+- name: YouTube AI-slop filter
+  url: https://x.com/mariojankovic/status/2100934084503519325
+  kind: post
+  author: mariojankovic
+  description: Bring-your-own-key Chrome extension that filters AI slop out of YouTube as you scroll and caches the results.
+  image: https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg
+  metrics:
+    likes: 3
+    views: 1481
+  date: '2026-09-18'
+  tags:
+  - ai-slop
+  - chrome-extension
+  - youtube
+- name: ZeroNSFWBot
+  url: https://github.com/mohamadkhoshnava/ZeroNSFWBot
+  kind: repo
+  author: mohamadkhoshnava
+  description: Async Rust Telegram moderation bot that bans NSFW advertisers; images are judged locally, while Jev powers optional bio, topic, ad-guard and language checks on text.
+  jev: Several subjects are asked as typed questions in one call; an outage is reported as unavailable rather than clean, with a regex word list as a floor.
+  metrics:
+    stars: 13
+  date: '2026-08-07'
+  tags:
+  - telegram
+  - moderation
+  - rust
