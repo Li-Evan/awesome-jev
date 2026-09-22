@@ -1,4 +1,4 @@
-# ✍️ 写作、媒体与创意
+# 🎨 写作、媒体与创意
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md) · **简体中文**
 

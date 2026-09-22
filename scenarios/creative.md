@@ -1,4 +1,4 @@
-# ✍️ Writing, Media, and Creative
+# 🎨 Writing, Media, and Creative
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md)
 

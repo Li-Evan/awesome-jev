@@ -1,4 +1,4 @@
-# 🛍️ 电商与营销
+# 🛒 电商与营销
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md) · **简体中文**
 

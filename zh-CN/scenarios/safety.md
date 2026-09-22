@@ -1,4 +1,4 @@
-# 🛡️ 安全与审核
+# 🔒 安全与审核
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md) · **简体中文**
 

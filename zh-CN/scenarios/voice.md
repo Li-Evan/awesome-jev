@@ -1,4 +1,4 @@
-# 🗣️ 语音与实时交互
+# 🎤 语音与实时交互
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md) · **简体中文**
 

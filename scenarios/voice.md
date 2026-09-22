@@ -1,4 +1,4 @@
-# 🗣️ Voice and Real-Time Interfaces
+# 🎤 Voice and Real-Time Interfaces
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md)
 

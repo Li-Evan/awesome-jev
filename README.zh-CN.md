@@ -19,13 +19,13 @@
   - [🎮 游戏与互动](#-游戏与互动)
   - [🦾 机器人与仿真](#-机器人与仿真)
   - [🔎 搜索与 RAG](#-搜索与-rag)
-  - [🛡️ 安全与审核](#-安全与审核)
+  - [🔒 安全与审核](#-安全与审核)
   - [📊 数据与评测](#-数据与评测)
   - [🎧 客服与销售](#-客服与销售)
-  - [⚖️ 法律、医疗与科研](#-法律医疗与科研)
-  - [🛍️ 电商与营销](#-电商与营销)
-  - [✍️ 写作、媒体与创意](#-写作媒体与创意)
-  - [🗣️ 语音与实时交互](#-语音与实时交互)
+  - [🔬 法律、医疗与科研](#-法律医疗与科研)
+  - [🛒 电商与营销](#-电商与营销)
+  - [🎨 写作、媒体与创意](#-写作媒体与创意)
+  - [🎤 语音与实时交互](#-语音与实时交互)
   - [🧰 个人效率](#-个人效率)
   - [🎓 教育](#-教育)
   - [🧪 其他实验](#-其他实验)
@@ -62,9 +62,9 @@
 
 <table>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md">💰 金融与交易</a> <sub>89</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md">💻 编程与开发工具</a> <sub>515</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/browser.md">🌐 浏览器与电脑操控</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md">🤖 Agent 与编排</a> <sub>246</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md">🎮 游戏与互动</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/robotics.md">🦾 机器人与仿真</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md">🔎 搜索与 RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md">🛡️ 安全与审核</a> <sub>128</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md">📊 数据与评测</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md">🎧 客服与销售</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md">⚖️ 法律、医疗与科研</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md">🛍️ 电商与营销</a> <sub>45</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md">✍️ 写作、媒体与创意</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md">🗣️ 语音与实时交互</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md">🧰 个人效率</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/education.md">🎓 教育</a> <sub>10</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md">🎮 游戏与互动</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/robotics.md">🦾 机器人与仿真</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md">🔎 搜索与 RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md">🔒 安全与审核</a> <sub>128</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md">📊 数据与评测</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md">🎧 客服与销售</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md">🔬 法律、医疗与科研</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md">🛒 电商与营销</a> <sub>45</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md">🎨 写作、媒体与创意</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md">🎤 语音与实时交互</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md">🧰 个人效率</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/education.md">🎓 教育</a> <sub>10</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/other.md">🧪 其他实验</a> <sub>46</sub></td></tr>
 </table>
 
@@ -201,7 +201,7 @@
 
 **[查看搜索与 RAG全部 86 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md)**
 
-### 🛡️ 安全与审核
+### 🔒 安全与审核
 
 护栏、越狱与提示词注入筛查、内容审核和策略检查。
 
@@ -258,7 +258,7 @@
 
 **[查看客服与销售全部 44 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md)**
 
-### ⚖️ 法律、医疗与科研
+### 🔬 法律、医疗与科研
 
 合规检查、医学与科学筛查，以及科研工作流。
 
@@ -277,7 +277,7 @@
 
 **[查看法律、医疗与科研全部 28 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md)**
 
-### 🛍️ 电商与营销
+### 🛒 电商与营销
 
 商品目录、广告、评论、定价和营销工作流。
 
@@ -296,7 +296,7 @@
 
 **[查看电商与营销全部 45 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md)**
 
-### ✍️ 写作、媒体与创意
+### 🎨 写作、媒体与创意
 
 写作反馈、生成式 UI、音乐、艺术和社交媒体工具。
 
@@ -315,7 +315,7 @@
 
 **[查看写作、媒体与创意全部 134 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md)**
 
-### 🗣️ 语音与实时交互
+### 🎤 语音与实时交互
 
 语音助手，以及随你打字或说话实时反应的界面。
 

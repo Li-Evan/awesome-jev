@@ -1,4 +1,4 @@
-# ⚖️ 法律、医疗与科研
+# 🔬 法律、医疗与科研
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md) · **简体中文**
 

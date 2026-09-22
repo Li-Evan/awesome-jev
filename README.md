@@ -19,13 +19,13 @@ This list is community-maintained and not affiliated with TypeSafe. The official
   - [🎮 Games and Interactive](#-games-and-interactive)
   - [🦾 Robotics and Simulation](#-robotics-and-simulation)
   - [🔎 Search and RAG](#-search-and-rag)
-  - [🛡️ Safety and Moderation](#-safety-and-moderation)
+  - [🔒 Safety and Moderation](#-safety-and-moderation)
   - [📊 Data and Evaluation](#-data-and-evaluation)
   - [🎧 Customer Support and Sales](#-customer-support-and-sales)
-  - [⚖️ Legal, Health, and Science](#-legal-health-and-science)
-  - [🛍️ Commerce and Marketing](#-commerce-and-marketing)
-  - [✍️ Writing, Media, and Creative](#-writing-media-and-creative)
-  - [🗣️ Voice and Real-Time Interfaces](#-voice-and-real-time-interfaces)
+  - [🔬 Legal, Health, and Science](#-legal-health-and-science)
+  - [🛒 Commerce and Marketing](#-commerce-and-marketing)
+  - [🎨 Writing, Media, and Creative](#-writing-media-and-creative)
+  - [🎤 Voice and Real-Time Interfaces](#-voice-and-real-time-interfaces)
   - [🧰 Personal Productivity](#-personal-productivity)
   - [🎓 Education](#-education)
   - [🧪 Other Experiments](#-other-experiments)
@@ -62,9 +62,9 @@ Highlights are ranked by community traction (stars, likes, points, and views). O
 
 <table>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md">💰 Finance and Trading</a> <sub>89</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md">💻 Coding and Developer Tools</a> <sub>515</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/browser.md">🌐 Browser and Computer Use</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md">🤖 Agents and Orchestration</a> <sub>246</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md">🎮 Games and Interactive</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/robotics.md">🦾 Robotics and Simulation</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md">🔎 Search and RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md">🛡️ Safety and Moderation</a> <sub>128</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md">📊 Data and Evaluation</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md">🎧 Customer Support and Sales</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md">⚖️ Legal, Health, and Science</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md">🛍️ Commerce and Marketing</a> <sub>45</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">✍️ Writing, Media, and Creative</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🗣️ Voice and Real-Time Interfaces</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md">🎮 Games and Interactive</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/robotics.md">🦾 Robotics and Simulation</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md">🔎 Search and RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md">🔒 Safety and Moderation</a> <sub>128</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md">📊 Data and Evaluation</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md">🎧 Customer Support and Sales</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md">🔬 Legal, Health, and Science</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md">🛒 Commerce and Marketing</a> <sub>45</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">🎨 Writing, Media, and Creative</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🎤 Voice and Real-Time Interfaces</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/other.md">🧪 Other Experiments</a> <sub>46</sub></td></tr>
 </table>
 
@@ -201,7 +201,7 @@ Reranking, retrieval filtering, semantic search, and knowledge graphs.
 
 **[Browse all 86 in Search and RAG →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md)**
 
-### 🛡️ Safety and Moderation
+### 🔒 Safety and Moderation
 
 Guardrails, jailbreak and injection screening, content moderation, and policy checks.
 
@@ -258,7 +258,7 @@ Ticket routing, email triage, lead scoring, and CRM automation.
 
 **[Browse all 44 in Customer Support and Sales →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md)**
 
-### ⚖️ Legal, Health, and Science
+### 🔬 Legal, Health, and Science
 
 Compliance checks, medical and scientific screening, and research workflows.
 
@@ -277,7 +277,7 @@ Compliance checks, medical and scientific screening, and research workflows.
 
 **[Browse all 28 in Legal, Health, and Science →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md)**
 
-### 🛍️ Commerce and Marketing
+### 🛒 Commerce and Marketing
 
 Product catalogs, ads, reviews, pricing, and marketing workflows.
 
@@ -296,7 +296,7 @@ Product catalogs, ads, reviews, pricing, and marketing workflows.
 
 **[Browse all 45 in Commerce and Marketing →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md)**
 
-### ✍️ Writing, Media, and Creative
+### 🎨 Writing, Media, and Creative
 
 Writing feedback, generative UI, music, art, and social media tools.
 
@@ -315,7 +315,7 @@ Writing feedback, generative UI, music, art, and social media tools.
 
 **[Browse all 134 in Writing, Media, and Creative →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md)**
 
-### 🗣️ Voice and Real-Time Interfaces
+### 🎤 Voice and Real-Time Interfaces
 
 Voice assistants and interfaces that react while you type or speak.
 

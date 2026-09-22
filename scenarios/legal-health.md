@@ -1,4 +1,4 @@
-# ⚖️ Legal, Health, and Science
+# 🔬 Legal, Health, and Science
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md)
 

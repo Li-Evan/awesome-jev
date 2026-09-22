@@ -1,4 +1,4 @@
-# 🛡️ Safety and Moderation
+# 🔒 Safety and Moderation
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md)
 

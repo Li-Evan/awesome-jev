@@ -11,6 +11,7 @@ Usage:
 
 import html
 import re
+import unicodedata
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -265,7 +266,9 @@ def page_url(sec, sub=None, lang="en"):
 
 
 def slugify(t):
-    return re.sub(r"[^\w\- ]", "", t.lower()).replace(" ", "-")
+    # Same rule as GitHub's heading anchors: keep letters, marks (such as emoji variation selectors), numbers, "_", "-", and spaces.
+    kept = (c for c in t.lower() if unicodedata.category(c)[0] in "LMN" or unicodedata.category(c) == "Pc" or c in " -")
+    return "".join(kept).replace(" ", "-")
 
 
 def list_item(e, lang):

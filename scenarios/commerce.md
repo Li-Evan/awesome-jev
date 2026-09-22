@@ -1,4 +1,4 @@
-# 🛍️ Commerce and Marketing
+# 🛒 Commerce and Marketing
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md)
 
