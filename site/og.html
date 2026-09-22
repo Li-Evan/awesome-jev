@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Source for site/og.png. Render with:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars --window-size=1200,630 --screenshot=site/og.png site/og.html -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: #121110; color: #f1ece1; font-family: "JetBrains Mono", monospace; position: relative; }
+  .glow { position: absolute; right: -160px; top: -180px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 90, 31, .55), transparent 68%); }
+  .inner { position: absolute; inset: 64px 72px; display: flex; flex-direction: column; }
+  .brand { font: italic 500 34px/1 "Fraunces", serif; }
+  .brand .dot { color: #ff5a1f; font-style: normal; font-weight: 700; }
+  .brand .jev { font: 600 26px/1 "JetBrains Mono", monospace; }
+  h1 { margin-top: 44px; font: 380 96px/.95 "Fraunces", serif; letter-spacing: -.035em; font-variation-settings: "opsz" 144; }
+  h1 em { color: #ff5a1f; font-style: italic; }
+  .zh { margin-top: 18px; font: 500 34px/1.2 "Songti SC", "STSong", serif; color: #c3bcad; }
+  .bar { margin-top: auto; display: flex; height: 44px; border-radius: 9px; overflow: hidden; }
+  .bar i { display: block; height: 100%; }
+  .row { margin-top: 18px; display: flex; justify-content: space-between; font-size: 20px; color: #c3bcad; }
+  .row b { color: #f1ece1; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="inner">
+    <div class="brand">awesome<span class="dot">·</span><span class="jev">jev</span></div>
+    <h1>What people <em>build</em><br>with Jev.</h1>
+    <div class="zh">大家用 Jev 做了什么 · 中英双语</div>
+    <div class="bar">
+      <i style="flex:89;background:#e4572e"></i><i style="flex:515;background:#2f4b7c"></i><i style="flex:128;background:#f2a541"></i>
+      <i style="flex:246;background:#4f86c6"></i><i style="flex:276;background:#6a994e"></i><i style="flex:61;background:#9d5c63"></i>
+      <i style="flex:86;background:#17a2a0"></i><i style="flex:128;background:#c44536"></i><i style="flex:135;background:#7d5ba6"></i>
+      <i style="flex:44;background:#d4a017"></i><i style="flex:28;background:#3a7d44"></i><i style="flex:45;background:#d1495b"></i>
+      <i style="flex:134;background:#00798c"></i><i style="flex:54;background:#b5838d"></i><i style="flex:127;background:#8e6c8a"></i>
+      <i style="flex:10;background:#4c956c"></i><i style="flex:46;background:#6d6875"></i>
+    </div>
+    <div class="row"><span><b>3,400+</b> projects, demos &amp; write-ups · <b>17</b> scenarios</span><span>li-evan.github.io/awesome-jev</span></div>
+  </div>
+</body>
+</html>

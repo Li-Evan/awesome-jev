@@ -18,10 +18,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2101037514945597645">Jev Clearly Explained</a></b><br><sub>akshay_pachaar · Article · ♥ 5k · 2026-09-18</sub><br>X article explaining Jev as a millisecond decision layer: how typed questions replace generate-parse-retry LLM calls, and where it sits next to an LLM in an application.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/0xSuman/status/2100030221189874015"><img src="https://pbs.twimg.com/media/HSTOW1GagAA0xlK.jpg?name=orig" alt="Generating text with Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xSuman/status/2100030221189874015">Generating text with Jev</a></b><br><sub>0xSuman · X · ♥ 4.2k · 2026-09-16</sub><br>Hack that makes Jev write text by asking one Choice question per character position, with a STOP option, and reading off the most likely letters.<br><sub><b>How it uses Jev:</b> One Choice per character over the alphabet plus STOP.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/NathanFlurry/status/2100036101809619314">Jev as a smart switch statement</a></b><br><sub>NathanFlurry · X · ♥ 7.5k · 2026-09-16</sub><br>Hype-free explainer arguing Jev is a very smart switch statement: it classifies, routes, scores and verifies over predefined options but cannot write code or text.</td>
 </tr>
@@ -30,12 +26,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/k_grajeda/status/2099952715430596710">LLM vs Jev at prompt difficulty</a></b><br><sub>k_grajeda · X · ♥ 5.7k · 2026-09-15</sub><br>Simplified side-by-side showing how an LLM and Jev classify a prompt's difficulty: token-by-token text versus probabilities for every option computed in parallel.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/theo/status/2100762304862384257"><img src="https://pbs.twimg.com/amplify_video_thumb/2100694537672998912/img/OF8vottg6-45ZgNl.jpg" alt="Critique of Jev compaction" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/theo/status/2100762304862384257">Critique of Jev compaction</a></b><br><sub>theo · X · ♥ 2.6k · 2026-09-18</sub><br>Critique arguing per-tool-call filtering with Jev is a poor compaction strategy, since compaction should reconstruct history and the model lacks context on what came before.<br><sub>Also: <a href="https://github.com/tamaratran/fast-jev-compaction">related</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/0xSuman/status/2100030221189874015"><img src="https://pbs.twimg.com/media/HSTOW1GagAA0xlK.jpg?name=orig" alt="Generating text with Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/0xSuman/status/2100030221189874015">Generating text with Jev</a></b><br><sub>0xSuman · X · ♥ 4.2k · 2026-09-16</sub><br>Hack that makes Jev write text by asking one Choice question per character position, with a STOP option, and reading off the most likely letters.<br><sub><b>How it uses Jev:</b> One Choice per character over the alphabet plus STOP.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/servasyy_ai/status/2101132667056185544"><img src="https://pbs.twimg.com/media/HSi3JD0bcAEhil0.jpg" alt="What Jev can really do" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/servasyy_ai/status/2101132667056185544">What Jev can really do</a></b><br><sub>servasyy_ai · Article · ♥ 779 · 2026-09-19</sub><br>Chinese-language reality check on Jev that explains what it is and is not, sorts demos that actually work by use case, and lays out the caveats behind the speed and accuracy claims.</td>
+<td width="260" valign="top"><a href="https://x.com/NielsRogge/status/2100239244501430438"><img src="https://pbs.twimg.com/media/HSWLYi3WcAAOPBs.jpg?name=orig" alt="How Jev-style decoding works" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/NielsRogge/status/2100239244501430438">How Jev-style decoding works</a></b><br><sub>NielsRogge · X · ♥ 3.8k · 2026-09-16</sub><br>Visual explanation, based on the open Qwen2.5-RLCD model, of reading field probabilities from a cached single decoder pass instead of generating JSON token by token.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/theo/status/2100762304862384257"><img src="https://pbs.twimg.com/amplify_video_thumb/2100694537672998912/img/OF8vottg6-45ZgNl.jpg" alt="Critique of Jev compaction" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/theo/status/2100762304862384257">Critique of Jev compaction</a></b><br><sub>theo · X · ♥ 2.6k · 2026-09-18</sub><br>Critique arguing per-tool-call filtering with Jev is a poor compaction strategy, since compaction should reconstruct history and the model lacks context on what came before.<br><sub>Also: <a href="https://github.com/tamaratran/fast-jev-compaction">related</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -46,16 +46,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2101309986156712025">LLMs vs. Jev, clearly explained</a></b><br><sub>akshay_pachaar · X · ♥ 2.9k · 2026-09-19</sub><br>Explains that Jev does not generate faster, it does not generate at all: independent Choice, Score and Noul questions, like urgency, owning team and command risk for a failed deploy, are evaluated in parallel.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/NielsRogge/status/2100239244501430438"><img src="https://pbs.twimg.com/media/HSWLYi3WcAAOPBs.jpg?name=orig" alt="How Jev-style decoding works" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/NielsRogge/status/2100239244501430438">How Jev-style decoding works</a></b><br><sub>NielsRogge · X · ♥ 3.8k · 2026-09-16</sub><br>Visual explanation, based on the open Qwen2.5-RLCD model, of reading field probabilities from a cached single decoder pass instead of generating JSON token by token.</td>
+<td width="260" valign="top"><a href="https://x.com/servasyy_ai/status/2101132667056185544"><img src="https://pbs.twimg.com/media/HSi3JD0bcAEhil0.jpg" alt="What Jev can really do" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/servasyy_ai/status/2101132667056185544">What Jev can really do</a></b><br><sub>servasyy_ai · Article · ♥ 779 · 2026-09-19</sub><br>Chinese-language reality check on Jev that explains what it is and is not, sorts demos that actually work by use case, and lays out the caveats behind the speed and accuracy claims.</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/paarangatrai/status/2100113737097367896">LLMs generate, Jev decides</a></b><br><sub>paarangatrai · X · ♥ 2.3k · 2026-09-16</sub><br>Explainer using a risky-account example: instead of prompting an LLM for a verdict, you declare risk levels and a manual-review flag up front and get back probabilities such as risk = high (96%).</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816"><img src="https://cdn.image.st-hatena.com/image/scale/5ed4f6e73205d082af7a8a0518536c4ad98d0eb3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyuu2634%2F20260918%2F20260918191032.png" alt="LayerX internal Jev study session" width="240"></a></td>
-<td valign="top"><b><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816">LayerX internal Jev study session</a></b><br><sub>LayerX (pon) · Article · ♥ 959 · 2026-09-18</sub><br>Japanese write-up of a 30-minute internal study session on Jev at LayerX that drew more than 50 engineers and produced more than 50 ideas for building it into their products.<br><sub>Also: <a href="https://x.com/hatebu100/status/2101094920778129466">x</a> · <a href="https://x.com/LayerX_tech/status/2100887864594895154">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/gregisenberg/status/2101018750916948237"><img src="https://pbs.twimg.com/amplify_video_thumb/2101018301409202176/img/HP2Ycx2G3KjqvxJw.jpg" alt="Businesses Jev unlocks" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/gregisenberg/status/2101018750916948237">Businesses Jev unlocks</a></b><br><sub>gregisenberg · X · ♥ 1.5k · 2026-09-18</sub><br>Plain-language explanation of Jev as a sorter (1,700 emails for 18 cents) plus startup ideas built on putting it at the front of expensive queues, such as instant quotes and lead scoring.<br><sub>Also: <a href="https://www.youtube.com/watch?v=4mTLpuQpB80">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -66,24 +66,20 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/0xMovez/status/2102049863449858053">Jev Harness blueprint summary</a></b><br><sub>0xMovez · X · ♥ 1.3k · 2026-09-21</sub><br>Thread summarizing a 12-page TypeSafe PDF on a Jev harness for coding agents, e.g. Opus to Sonnet to Opus hand-offs costing 6.19 vs 4.15 for pure Opus, and reading and search taking 56.2% of tool turns.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816"><img src="https://cdn.image.st-hatena.com/image/scale/5ed4f6e73205d082af7a8a0518536c4ad98d0eb3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyuu2634%2F20260918%2F20260918191032.png" alt="LayerX internal Jev study session" width="240"></a></td>
+<td valign="top"><b><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816">LayerX internal Jev study session</a></b><br><sub>LayerX (pon) · Article · ♥ 959 · 2026-09-18</sub><br>Japanese write-up of a 30-minute internal study session on Jev at LayerX that drew more than 50 engineers and produced more than 50 ideas for building it into their products.<br><sub>Also: <a href="https://x.com/hatebu100/status/2101094920778129466">x</a> · <a href="https://x.com/LayerX_tech/status/2100887864594895154">demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/ryanvogel/status/2100218045549412499"><img src="https://pbs.twimg.com/amplify_video_thumb/2100217973000617984/img/AFareJummI08B_QB.jpg" alt="An LLM from a classifier" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ryanvogel/status/2100218045549412499">An LLM from a classifier</a></b><br><sub>ryanvogel · X · ♥ 889 · 2026-09-16</sub><br>Builds an autoregressive text generator out of Jev: 29 yes/no questions per character pick the next key (a-z, space, comma, period), and the text is fed back in to repeat.<br><sub><b>How it uses Jev:</b> 29 Noul questions per character; the highest-probability key is appended.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/gregisenberg/status/2101018750916948237"><img src="https://pbs.twimg.com/amplify_video_thumb/2101018301409202176/img/HP2Ycx2G3KjqvxJw.jpg" alt="Businesses Jev unlocks" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/gregisenberg/status/2101018750916948237">Businesses Jev unlocks</a></b><br><sub>gregisenberg · X · ♥ 1.5k · 2026-09-18</sub><br>Plain-language explanation of Jev as a sorter (1,700 emails for 18 cents) plus startup ideas built on putting it at the front of expensive queues, such as instant quotes and lead scoring.<br><sub>Also: <a href="https://www.youtube.com/watch?v=4mTLpuQpB80">video</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/mvanhorn/status/2100788572316139655"><img src="https://pbs.twimg.com/media/HSdxN5LbUAAMq_w.png" alt="WTF is Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mvanhorn/status/2100788572316139655">WTF is Jev</a></b><br><sub>mvanhorn · X · ♥ 418 · 2026-09-18</sub><br>Explainer article framing Jev as multiple-choice rather than essay-writing AI, and cataloguing nine patterns developers built with it in the first 72 hours.<br><sub>Also: <a href="https://x.com/i/article/2100772231462961152">article</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/omarsar0/status/2100693601021997193"><img src="https://pbs.twimg.com/media/HScpisJbEAAMxZb.jpg?name=orig" alt="Things to try with Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/omarsar0/status/2100693601021997193">Things to try with Jev</a></b><br><sub>omarsar0 · X · ♥ 679 · 2026-09-17</sub><br>Practitioner list of promising Jev uses: LLM-as-a-judge evals, routing in agent harnesses, subagent creation, and dynamic harness generation, with the author using it as a router for a meta harness.</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/da_fant/status/2100659471257366766">How Jev makes agents cheaper</a></b><br><sub>da_fant · X · ♥ 634 · 2026-09-17</sub><br>Thread listing where Jev speeds agents up, from model routing, computer use and action-safety review to deciding whether each event should wake an expensive orchestrator, go to a subagent, or be queued.</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/jiayuan_jy/status/2100876273061102006">Skeptical notes after a day with Jev</a></b><br><sub>jiayuan_jy · X · ♥ 339 · 2026-09-18</sub><br>Chinese notes from a day of testing: Jev reads as a faster general classifier that suits bounded, low-latency choices like DOM actions or compaction, but cannot replace parameterized agent tool calls.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/anderslie/status/2100388704644919662"><img src="https://pbs.twimg.com/amplify_video_thumb/2100384704868601856/img/TSBG-jeFfuLlRSOS.jpg" alt="Jev-like API on open weights" width="240"></a></td>
@@ -94,40 +90,44 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/trycua/status/2101437979180904640">Jev and the future of computer use</a></b><br><sub>trycua · Article · ♥ 559 · 2026-09-19</sub><br>Cua's deep dive on which decisions inside a computer-use agent need a general LLM, turning screens into scored candidate actions for text-only decision models like Jev and their CUA-S1-FORMS.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Bewinxed/status/2100519569307640097"><img src="https://pbs.twimg.com/amplify_video_thumb/2100519508943228928/img/Vl5XWMF9MjLBasxD.jpg" alt="Making Jev generate text" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Bewinxed/status/2100519569307640097">Making Jev generate text</a></b><br><sub>Bewinxed · X · ♥ 320 · 2026-09-17</sub><br>Hack that makes Jev produce text despite being non-generative, managing up to 20 words for $0.5.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/JoshARosen/status/2101645894818857272"><img src="https://pbs.twimg.com/media/HSqLJdJWoAA4aNR.jpg" alt="Jev in the Wild" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/JoshARosen/status/2101645894818857272">Jev in the Wild</a></b><br><sub>JoshARosen · Article · ♥ 182 · 2026-09-20</sub><br>Survey of early architecture patterns in Jev projects, such as model, skill and tool routing, supervisors and security layers, all inserting Jev at one decision point in otherwise conventional software.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/annabellschfr/status/2100962787094597807"><img src="https://pbs.twimg.com/media/HSgRvklXgAA33Rx.jpg" alt="Jev the savant" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/annabellschfr/status/2100962787094597807">Jev the savant</a></b><br><sub>annabellschfr · Article · ♥ 64 · 2026-09-18</sub><br>Explainer on where Jev fits in pipelines and eval harnesses, walking through Choice, Score and Noul with a worked example that asks three judgments about a finished agent run in one request.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/omarsar0/status/2100693601021997193"><img src="https://pbs.twimg.com/media/HScpisJbEAAMxZb.jpg?name=orig" alt="Things to try with Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/omarsar0/status/2100693601021997193">Things to try with Jev</a></b><br><sub>omarsar0 · X · ♥ 679 · 2026-09-17</sub><br>Practitioner list of promising Jev uses: LLM-as-a-judge evals, routing in agent harnesses, subagent creation, and dynamic harness generation, with the author using it as a router for a meta harness.</td>
+<td width="260" valign="top"><a href="https://x.com/mvanhorn/status/2100788572316139655"><img src="https://pbs.twimg.com/media/HSdxN5LbUAAMq_w.png" alt="WTF is Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mvanhorn/status/2100788572316139655">WTF is Jev</a></b><br><sub>mvanhorn · X · ♥ 418 · 2026-09-18</sub><br>Explainer article framing Jev as multiple-choice rather than essay-writing AI, and cataloguing nine patterns developers built with it in the first 72 hours.<br><sub>Also: <a href="https://x.com/i/article/2100772231462961152">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://archerhume.com/posts/jevs-architecture-unmasked/"><img src="https://archerhume.com/og-image/jevs-architecture-unmasked.png" alt="Jev&#x27;s Architecture Unmasked" width="240"></a></td>
 <td valign="top"><b><a href="https://archerhume.com/posts/jevs-architecture-unmasked/">Jev's Architecture Unmasked</a></b><br><sub>Archer Hume · Article · ♥ 437 · 2026-09-17</sub><br>Architecture teardown that probes Jev with 10,000 API calls to infer how it is built, from shared state with isolated question branches to option interaction and confidence readout.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49766351">discussion</a> · <a href="https://x.com/iwashi86/status/2100713337436930288">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/jiayuan_jy/status/2100876273061102006">Skeptical notes after a day with Jev</a></b><br><sub>jiayuan_jy · X · ♥ 339 · 2026-09-18</sub><br>Chinese notes from a day of testing: Jev reads as a faster general classifier that suits bounded, low-latency choices like DOM actions or compaction, but cannot replace parameterized agent tool calls.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/Bewinxed/status/2100519569307640097"><img src="https://pbs.twimg.com/amplify_video_thumb/2100519508943228928/img/Vl5XWMF9MjLBasxD.jpg" alt="Making Jev generate text" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Bewinxed/status/2100519569307640097">Making Jev generate text</a></b><br><sub>Bewinxed · X · ♥ 320 · 2026-09-17</sub><br>Hack that makes Jev produce text despite being non-generative, managing up to 20 words for $0.5.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/Sumanth_077/status/2101639788961112279"><img src="https://pbs.twimg.com/media/HSqGNyCacAAhUYd.jpg" alt="Jev Clearly Explained" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/Sumanth_077/status/2101639788961112279">Jev Clearly Explained</a></b><br><sub>Sumanth_077 · Article · ♥ 324 · 2026-09-20</sub><br>Explainer on the many small decisions inside an agent run (model choice, risky tool calls, loops, completion) and how Jev answers them with typed probabilities instead of generated text.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/JoshARosen/status/2101645894818857272"><img src="https://pbs.twimg.com/media/HSqLJdJWoAA4aNR.jpg" alt="Jev in the Wild" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/JoshARosen/status/2101645894818857272">Jev in the Wild</a></b><br><sub>JoshARosen · Article · ♥ 182 · 2026-09-20</sub><br>Survey of early architecture patterns in Jev projects, such as model, skill and tool routing, supervisors and security layers, all inserting Jev at one decision point in otherwise conventional software.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/aparnadhinak/status/2100979688072224957"><img src="https://pbs.twimg.com/media/HSgtobXaEAAaDhD.jpg" alt="Will TypeSafe&#x27;s Jev change how we build AI applications?" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/aparnadhinak/status/2100979688072224957">Will TypeSafe's Jev change how we build AI applications?</a></b><br><sub>aparnadhinak · Article · ♥ 197 · 2026-09-18</sub><br>Arize AI analysis of what a decide-only model buys and costs you, with an eye on LLM-as-a-judge evaluations and the architecture choices it implies.</td>
 </tr>
 <tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/DalinHuang/status/2101839381589884965">Where Jev pays off in production</a></b><br><sub>DalinHuang · X · ♥ 27 · 2026-09-21</sub><br>Chinese field notes: swapping Gemini Flash or GPT Luna judgments for Jev cut cost 20 to 60x and latency by an order of magnitude, with a pattern of escalating answers below 80% confidence to a small generative model.</td>
+<td width="260" valign="top"><a href="https://x.com/annabellschfr/status/2100962787094597807"><img src="https://pbs.twimg.com/media/HSgRvklXgAA33Rx.jpg" alt="Jev the savant" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/annabellschfr/status/2100962787094597807">Jev the savant</a></b><br><sub>annabellschfr · Article · ♥ 64 · 2026-09-18</sub><br>Explainer on where Jev fits in pipelines and eval harnesses, walking through Choice, Score and Noul with a worked example that asks three judgments about a finished agent run in one request.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/Kedr_bit/status/2102132700119191832"><img src="https://pbs.twimg.com/media/HSxGi5rWgAAbZhF.jpg?name=orig" alt="Making Jev speak" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/Kedr_bit/status/2102132700119191832">Making Jev speak</a></b><br><sub>Kedr_bit · X · ♥ 151 · 2026-09-21</sub><br>Chat experiment that coaxes Jev into replying in words, producing short, garbled but amusing conversations.</td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/DalinHuang/status/2101839381589884965">Where Jev pays off in production</a></b><br><sub>DalinHuang · X · ♥ 27 · 2026-09-21</sub><br>Chinese field notes: swapping Gemini Flash or GPT Luna judgments for Jev cut cost 20 to 60x and latency by an order of magnitude, with a pattern of escalating answers below 80% confidence to a small generative model.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wkd1dz/digitlogitsbased_classifier_with_llamacpp/"><img src="https://external-preview.redd.it/WB3qVqzuW2bIGtkMVrOZ0TihcSnHaV-pareGCkJDiXs.png?auto=webp&amp;s=19b1cd738d385b0222b357df4dc720a2fdb24a88" alt="Digit-logits classifier with llama.cpp" width="240"></a></td>
@@ -166,10 +166,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://rajveerbachkaniwala.com/blog/2026/09/19/jev-is-to-tool-use-what-rag-is-to-context/">Jev is to tool use what RAG is to context</a></b><br><sub>Rajveer Bachkaniwala · Article · ▲ 4 · 2026-09-19</sub><br>Short essay framing Jev as the mirror image of RAG: the developer fixes up front which options, including tools, the model may pick, instead of which context it reads.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49770295">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact"><img src="https://opengraph.githubassets.com/1/Siddhant-K-code/distill" alt="Context Is a Build Artifact" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact">Context Is a Build Artifact</a></b><br><sub>Siddhant-K-code · GitHub · ⭐ 180 repo · 2025-12-31</sub><br>Preregistered study design, with an offline pilot harness and TypeSafe adapter, testing whether byte-stable context compilation improves Jev decision consistency, calibration and cost.<br><sub>Also: <a href="https://github.com/Siddhant-K-code/distill">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://inlevel9.com/en/issues/jev-judgment-not-writing"><img src="https://inlevel9.com/api/og/en/jev-judgment-not-writing?v=6-inlevel9-5" alt="Jev can&#x27;t write a line, but 13% of paid teams use it" width="240"></a></td>
 <td valign="top"><b><a href="https://inlevel9.com/en/issues/jev-judgment-not-writing">Jev can't write a line, but 13% of paid teams use it</a></b><br><sub>Oswarld (Kwangseob Ahn) · Article · ▲ 3 · 2026-09-21</sub><br>Newsletter essay on what pricing 'judgment' instead of text reveals about Jev, and why the author is building a model that does only five things.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49784782">discussion</a></sub></td>
 </tr>
@@ -206,16 +202,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://patmcguinness.substack.com/p/jev-makes-fast-and-cheap-decisions">Jev makes fast and cheap decisions</a></b><br><sub>Patrick McGuinness · Article · ♥ 6 · 2026-09-18</sub><br>Newsletter analysis framing Jev as a classifier-style production model rather than a general model, covering its design and early community builds such as a self-driving simulator and open rebuilds.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md"><img src="https://raw.githubusercontent.com/cookiespiggy/agentic-rl/main/assets/25-01-playground-overview.png" alt="When not to use RL after Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md">When not to use RL after Jev</a></b><br><sub>cookiespiggy · GitHub · ⭐ 107 repo · 2026-06-03</sub><br>Chapter of a Chinese agentic RL tutorial arguing that discriminative tasks can be outsourced to Jev while policy tasks still need RL, with gradient sweeps measuring its resolution.<br><sub>Also: <a href="https://github.com/cookiespiggy/agentic-rl">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/y0usaf/jev-lm"><img src="https://opengraph.githubassets.com/1/y0usaf/jev-lm" alt="jev-lm" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/y0usaf/jev-lm">jev-lm</a></b><br><sub>y0usaf · GitHub · ⭐ 5 · 2026-09-16</sub><br>Word-level language model that uses Jev as its output layer, with an n-gram drafter and Noul chunk verification; on held-out text Jev scored 6.92 bits/token against 6.18 for a unigram table.<br><sub><b>How it uses Jev:</b> A 229-option next-word Choice plus a done Noul per round trip, about 0.25 s median.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/sermakarevich/status/2101374291640213785">State-tone sensitivity test</a></b><br><sub>sermakarevich · X · ♥ 4 · 2026-09-19</sub><br>Shows Jev's answers depend heavily on the tone of the state: the same question about Python type annotations dropped from 0.97 to 0.07 confidence with a team-dislikes-them state.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/y0usaf/jev-lm"><img src="https://opengraph.githubassets.com/1/y0usaf/jev-lm" alt="jev-lm" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/y0usaf/jev-lm">jev-lm</a></b><br><sub>y0usaf · GitHub · ⭐ 5 · 2026-09-16</sub><br>Word-level language model that uses Jev as its output layer, with an n-gram drafter and Noul chunk verification; on held-out text Jev scored 6.92 bits/token against 6.18 for a unigram table.<br><sub><b>How it uses Jev:</b> A 229-option next-word Choice plus a done Noul per round trip, about 0.25 s median.</sub></td>
+<td width="260" valign="top"><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact"><img src="https://opengraph.githubassets.com/1/Siddhant-K-code/distill" alt="Context Is a Build Artifact" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact">Context Is a Build Artifact</a></b><br><sub>Siddhant-K-code · GitHub · ⭐ 180 repo · 2025-12-31</sub><br>Preregistered study design, with an offline pilot harness and TypeSafe adapter, testing whether byte-stable context compilation improves Jev decision consistency, calibration and cost.<br><sub>Also: <a href="https://github.com/Siddhant-K-code/distill">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://stacktoheap.com/blog/2026/09/21/the-state-machine-is-the-agent/"><img src="https://stacktoheap.com/images/jev-state-machine-hero.png" alt="Jev at the branches" width="240"></a></td>
@@ -224,6 +220,10 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/adhyaay-karnwal/jev-chat"><img src="https://opengraph.githubassets.com/1/adhyaay-karnwal/jev-chat" alt="jev-chat" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/adhyaay-karnwal/jev-chat">jev-chat</a></b><br><sub>adhyaay-karnwal · GitHub · ⭐ 3 · 2026-09-17</sub><br>Research decoder that builds a chatbot from Jev Choices over a hierarchical codebook of phrases and words, with a paper comparing stepwise decoding against selecting a complete reply.<br><sub><b>How it uses Jev:</b> Speculative fan-out asks for the next unit and hypothetical follow-ups in one state; naive autoregression loops, while selection stays grammatical.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md"><img src="https://raw.githubusercontent.com/cookiespiggy/agentic-rl/main/assets/25-01-playground-overview.png" alt="When not to use RL after Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md">When not to use RL after Jev</a></b><br><sub>cookiespiggy · GitHub · ⭐ 107 repo · 2026-06-03</sub><br>Chapter of a Chinese agentic RL tutorial arguing that discriminative tasks can be outsourced to Jev while policy tasks still need RL, with gradient sweeps measuring its resolution.<br><sub>Also: <a href="https://github.com/cookiespiggy/agentic-rl">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -246,16 +246,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/ranjankumar/status/2101953564834934999">Where Jev belongs in an agent harness</a></b><br><sub>ranjankumar · X · ▶ 47 · 2026-09-21</sub><br>Argues that Jev's ordering can be trusted but its confidence numbers cannot, so routing and ranking can use it directly while threshold gates such as approving a transfer need calibration first.<br><sub>Also: <a href="https://ranjankumar.in/jev-system-one-model-agent-harness-placement">article</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/0xthe0/status/2102213100174741995"><img src="https://pbs.twimg.com/media/HSrq8uWXoAAQ7FF.jpg" alt="Jev pruning is not memory" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xthe0/status/2102213100174741995">Jev pruning is not memory</a></b><br><sub>0xthe0 · X · ▶ 24 · 2026-09-22</sub><br>Critique of Jev-based context compaction for Claude Code: pruning a 1M-token session to 86K in a second is scoring and deleting, and one replay dropped 16 fragments that were needed later.<br><sub>Also: <a href="https://x.com/0xthe0/status/2101751238509400153">article</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/ZataZhang/ZataTree/tree/hugo/content/post/DeepLearning/models_and_strategies/Jev：不写字的决策模型，和它真正适合解决的问题"><img src="https://opengraph.githubassets.com/1/ZataZhang/ZataTree" alt="Jev: the decision model that does not write" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ZataZhang/ZataTree/tree/hugo/content/post/DeepLearning/models_and_strategies/Jev：不写字的决策模型，和它真正适合解决的问题">Jev: the decision model that does not write</a></b><br><sub>ZataZhang · Article · ⭐ 8 repo · 2026-09-20</sub><br>Chinese long-form explainer on a personal knowledge blog covering where the Jev and System One names come from, how its typed outputs differ from LLM generation, and which problems it actually fits.<br><sub>Also: <a href="https://github.com/ZataZhang/ZataTree">repo</a> · <a href="https://www.zata.cc/">site</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/shimo4228/contemplative-agent/blob/main/rfcs/0040-jev-system-one-local-decision-backend.md"><img src="https://opengraph.githubassets.com/1/shimo4228/contemplative-agent" alt="Jev as a local decision backend (RFC)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/shimo4228/contemplative-agent/blob/main/rfcs/0040-jev-system-one-local-decision-backend.md">Jev as a local decision backend (RFC)</a></b><br><sub>shimo4228 · GitHub · ⭐ 6 repo · 2026-03-08</sub><br>RFC and operator-run eval arm in the Contemplative Agent project on moving its judgment-only LLM calls to Jev or local Jev-like models, keeping Jev numbers out of the public tree under TypeSafe's customer agreement.<br><sub>Also: <a href="https://github.com/shimo4228/contemplative-agent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/0xthe0/status/2102213100174741995"><img src="https://pbs.twimg.com/media/HSrq8uWXoAAQ7FF.jpg" alt="Jev pruning is not memory" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/0xthe0/status/2102213100174741995">Jev pruning is not memory</a></b><br><sub>0xthe0 · X · ▶ 24 · 2026-09-22</sub><br>Critique of Jev-based context compaction for Claude Code: pruning a 1M-token session to 86K in a second is scoring and deleting, and one replay dropped 16 fragments that were needed later.<br><sub>Also: <a href="https://x.com/0xthe0/status/2101751238509400153">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>

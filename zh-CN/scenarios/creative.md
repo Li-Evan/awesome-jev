@@ -20,16 +20,28 @@
 <td valign="top"><b><a href="https://x.com/anshuc/status/2100246929611411501">并行逐像素作画</a></b><br><sub>anshuc · X · ♥ 1.6k · 2026-09-16</sub><br>让 Jev 并行预测每一个像素来画出一幅图的实验。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/robj3d3/status/2100722975645598191"><img src="https://pbs.twimg.com/amplify_video_thumb/2100722766362406912/img/pH0lahpfd-qTj_nE.jpg" alt="SuperX 帖子评分器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/robj3d3/status/2100722975645598191">SuperX 帖子评分器</a></b><br><sub>robj3d3 · X · ♥ 1.4k · 2026-09-17</sub><br>X 帖子评分器：每份草稿向 Jev 问 61 个问题，约 1 秒、花费 $0.0004；模型基于 207 位创作者的 9,481 条帖子拟合，3 次里有 2 次能挑中爆款。<br><sub><b>Jev 用法:</b> 每条帖子 61 个问题，合成一个拟合出的爆款分。</sub><br><sub>相关: <a href="https://x.com/robj3d3/status/2100631889585606959">earlier demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/ChetasLua/jevmeter"><img src="https://raw.githubusercontent.com/ChetasLua/jevmeter/main/docs/banner.jpg" alt="jevmeter" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ChetasLua/jevmeter">jevmeter</a></b><br><sub>ChetasLua · GitHub · ⭐ 81 · 2026-09-17</sub><br>CLI，转写任意视频，让 Jev 按选定的评分标准（比如是否在辩论中回避问题）给每句话打分，并把分数渲染成 16:9 剪辑里的实时仪表，可以直接发布。<br><sub><b>Jev 用法:</b> 对转写稿的每句话提预设的 Score 问题，并与时间轴对齐。</sub><br><sub>相关: <a href="https://x.com/chetaslua/status/2100602714204049588">demo</a> · <a href="https://x.com/chetaslua/status/2100473581251748216">demo 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/robj3d3/status/2100722975645598191"><img src="https://pbs.twimg.com/amplify_video_thumb/2100722766362406912/img/pH0lahpfd-qTj_nE.jpg" alt="SuperX 帖子评分器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/robj3d3/status/2100722975645598191">SuperX 帖子评分器</a></b><br><sub>robj3d3 · X · ♥ 1.4k · 2026-09-17</sub><br>X 帖子评分器：每份草稿向 Jev 问 61 个问题，约 1 秒、花费 $0.0004；模型基于 207 位创作者的 9,481 条帖子拟合，3 次里有 2 次能挑中爆款。<br><sub><b>Jev 用法:</b> 每条帖子 61 个问题，合成一个拟合出的爆款分。</sub><br><sub>相关: <a href="https://x.com/robj3d3/status/2100631889585606959">earlier demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/leojrr/status/2100470174130250127"><img src="https://pbs.twimg.com/amplify_video_thumb/2100467692117295104/img/01ZWSKAA75eSiFlc.jpg" alt="用 Jev 重建 X 推荐算法" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/leojrr/status/2100470174130250127">用 Jev 重建 X 推荐算法</a></b><br><sub>leojrr · X · ♥ 1.2k · 2026-09-17</sub><br>用 Jev 复刻 X 的排序算法，基于公开的权重和由所有人帖子组成的全局信息流，模拟一条帖子能触达多远。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/mossyfield/ST-jeved"><img src="https://preview.redd.it/3osngmkxsqqh1.png?width=832&amp;format=png&amp;auto=webp&amp;s=21a92d77f6b621c9fba3bf819566eec5c4afbef0" alt="Jeved" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mossyfield/ST-jeved">Jeved</a></b><br><sub>mossyfield · GitHub · ⭐ 23 · 2026-09-20</sub><br>SillyTavern 扩展，把聊天消息连同你写的问题发给 Jev，再由规则根据答案行动：追加一条指令、重新生成回复、更新列表或运行一段 STscript。<br><sub>相关: <a href="https://www.reddit.com/r/SillyTavernAI/comments/1wltedh/jeved_02/">discussion</a> · <a href="https://www.reddit.com/r/SillyTavernAI/comments/1wl7uje/jev_might_be_the_next_frontier_for_improving/">discussion 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/rileybrown/status/2100425868053008758"><img src="https://pbs.twimg.com/amplify_video_thumb/2100424897491070976/img/kKnsb68jNUZZzSBi.jpg" alt="实时爆款帖分析器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/rileybrown/status/2100425868053008758">实时爆款帖分析器</a></b><br><sub>rileybrown · X · ♥ 919 · 2026-09-17</sub><br>帖子草稿分析器：停止打字半秒后，就给推文的爆款潜力打分并完成分类。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/RafalWilinski/vibecheck"><img src="https://pbs.twimg.com/amplify_video_thumb/2100958763528183808/img/nk6jusNPY3iy2CVq.jpg" alt="Vibe Check for X" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/RafalWilinski/vibecheck">Vibe Check for X</a></b><br><sub>RafalWilinski · GitHub · ⭐ 47 · 2026-09-18</sub><br>Chrome 和 Firefox 扩展：在你点击发布前，从传播力、清晰度、引战程度、尴尬度、AI 味和后悔风险几个方面给 X 帖子草稿打分，并给出“发还是先睡一觉”的总体结论。<br><sub><b>Jev 用法:</b> 针对草稿提多个 Score 和 Choice 问题，并把被回复或被引用的推文作为上下文。</sub><br><sub>相关: <a href="https://x.com/rafalwilinski/status/2100959576682012988">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/op7418/status/2101536330018918793"><img src="https://pbs.twimg.com/amplify_video_thumb/2101535990846509056/img/hoBZPL8d08Ba7aPw.jpg" alt="实时 3D 场景生成器" width="240"></a></td>
@@ -44,88 +56,60 @@
 <td valign="top"><b><a href="https://x.com/iannuttall/status/2100668908227162567">3,282 条 X 帖子的增长分析</a></b><br><sub>iannuttall · X · ♥ 745 · 2026-09-17</sub><br>分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，其他帖子为 44。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/0xMovez/status/2101325703635435523"><img src="https://pbs.twimg.com/amplify_video_thumb/2101325508373868544/img/-8QbPo6wgSvhz9hf.jpg" alt="Jev X 爆款帖子分析器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xMovez/status/2101325703635435523">Jev X 爆款帖子分析器</a></b><br><sub>0xMovez · X · ♥ 406 · 2026-09-19</sub><br>20.4 秒、$0.67 对 100,000 条 X 爆款帖子各跑 14 个是非题，再把各类钩子与“进入前 1%”的 1.22% 基线对比；同样时间里 Claude Opus 5 只处理了 214 条。<br><sub><b>Jev 用法:</b> 每条帖子十四个 Noul 问题，比如钩子是否制造了悬念。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/yuhasbeentaken/status/2101231502038339798"><img src="https://pbs.twimg.com/amplify_video_thumb/2101230608009863168/img/Qp3f7hCV9K3A26Wf.jpg" alt="X 帖子研究看板" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yuhasbeentaken/status/2101231502038339798">X 帖子研究看板</a></b><br><sub>yuhasbeentaken · X · ♥ 180 · 2026-09-19</sub><br>看板工具：按主题、开头钩子、写作风格等 8 个维度，给个人收藏的 1,315 条 X 帖子打标签，花费约 $0.086，便于按互动数据筛选和对比规律。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/ai_xiaomu/status/2101619124812357850"><img src="https://pbs.twimg.com/amplify_video_thumb/2101603811089653760/img/76aRIVVoQZOS3F1F.jpg" alt="自动化生存视频流水线" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ai_xiaomu/status/2101619124812357850">自动化生存视频流水线</a></b><br><sub>ai_xiaomu · X · ♥ 481 · 2026-09-20</sub><br>视频生成工作流：GPT-6 设计世界，Jev 做生存决策，MiniMax H3 把每个决策渲染成视频画面。</td>
+<td width="260" valign="top"><a href="https://x.com/albicodes/status/2100720936852857271"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720525739687936/img/2Kp3WYXT1muLjThU.jpg" alt="视觉参考查找器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/albicodes/status/2100720936852857271">视觉参考查找器</a></b><br><sub>albicodes · X · ♥ 711 · 2026-09-17</sub><br>面向创意工作的工具，把一句提示词变成 100 张参考图，来源包括 Cosmos、NASA 和 The Met。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/higgsfield_ai/status/2101022473248727177"><img src="https://pbs.twimg.com/amplify_video_thumb/2101022326813048832/img/nXO2af62XPHg1H_c.jpg" alt="Higgsfield 生成模型自动路由" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/higgsfield_ai/status/2101022473248727177">Higgsfield 生成模型自动路由</a></b><br><sub>higgsfield_ai · X · ♥ 517 · 2026-09-18</sub><br>在 Higgsfield API 上用 Jev 为每个任务挑选性价比最高的图像和视频生成模型，兼顾速度和质量。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/rileybrown/status/2100425868053008758"><img src="https://pbs.twimg.com/amplify_video_thumb/2100424897491070976/img/kKnsb68jNUZZzSBi.jpg" alt="实时爆款帖分析器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/rileybrown/status/2100425868053008758">实时爆款帖分析器</a></b><br><sub>rileybrown · X · ♥ 919 · 2026-09-17</sub><br>帖子草稿分析器：停止打字半秒后，就给推文的爆款潜力打分并完成分类。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/albicodes/status/2100720936852857271"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720525739687936/img/2Kp3WYXT1muLjThU.jpg" alt="视觉参考查找器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/albicodes/status/2100720936852857271">视觉参考查找器</a></b><br><sub>albicodes · X · ♥ 711 · 2026-09-17</sub><br>面向创意工作的工具，把一句提示词变成 100 张参考图，来源包括 Cosmos、NASA 和 The Met。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/RafalWilinski/vibecheck"><img src="https://pbs.twimg.com/amplify_video_thumb/2100958763528183808/img/nk6jusNPY3iy2CVq.jpg" alt="Vibe Check for X" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/RafalWilinski/vibecheck">Vibe Check for X</a></b><br><sub>RafalWilinski · GitHub · ⭐ 47 · 2026-09-18</sub><br>Chrome 和 Firefox 扩展：在你点击发布前，从传播力、清晰度、引战程度、尴尬度、AI 味和后悔风险几个方面给 X 帖子草稿打分，并给出“发还是先睡一觉”的总体结论。<br><sub><b>Jev 用法:</b> 针对草稿提多个 Score 和 Choice 问题，并把被回复或被引用的推文作为上下文。</sub><br><sub>相关: <a href="https://x.com/rafalwilinski/status/2100959576682012988">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/omarjpeg/status/2101047036863037753"><img src="https://pbs.twimg.com/amplify_video_thumb/2101046478685007872/img/gR52RkPOJb99hnPD.jpg" alt="最新 UI 流程抓取工具" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/omarjpeg/status/2101047036863037753">最新 UI 流程抓取工具</a></b><br><sub>omarjpeg · X · ♥ 421 · 2026-09-18</sub><br>类似 Mobbin 的工具，把 Jev 和浏览器自动化结合，抓取你想找的最新应用 UI 流程，这在以前对浏览器 agent 来说太慢了。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/mossyfield/ST-jeved"><img src="https://preview.redd.it/3osngmkxsqqh1.png?width=832&amp;format=png&amp;auto=webp&amp;s=21a92d77f6b621c9fba3bf819566eec5c4afbef0" alt="Jeved" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mossyfield/ST-jeved">Jeved</a></b><br><sub>mossyfield · GitHub · ⭐ 23 · 2026-09-20</sub><br>SillyTavern 扩展，把聊天消息连同你写的问题发给 Jev，再由规则根据答案行动：追加一条指令、重新生成回复、更新列表或运行一段 STscript。<br><sub>相关: <a href="https://www.reddit.com/r/SillyTavernAI/comments/1wltedh/jeved_02/">discussion</a> · <a href="https://www.reddit.com/r/SillyTavernAI/comments/1wl7uje/jev_might_be_the_next_frontier_for_improving/">discussion 2</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/yoheinakajima/status/2100945960671326482"><img src="https://pbs.twimg.com/amplify_video_thumb/2100945516154834946/img/cz768Iq_4P_AsFdQ.jpg" alt="用哔哔声表达情绪" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yoheinakajima/status/2100945960671326482">用哔哔声表达情绪</a></b><br><sub>yoheinakajima · X · ♥ 267 · 2026-09-18</sub><br>让 Jev 通过哔哔声表达情绪并回话的实验。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/json-render/tree/main/apps/web/lib/jev"><img src="https://opengraph.githubassets.com/1/vercel-labs/json-render" alt="json-render 的 Jev 组件编排器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/json-render/tree/main/apps/web/lib/jev">json-render 的 Jev 组件编排器</a></b><br><sub>vercel-labs · GitHub · ⭐ 18k 仓库 · 2026-01-14</sub><br>一种实验性的 json-render playground 模式：Jev 通过成批的 Choice 问题决定包含哪些元素、放在哪里、按什么顺序，用 shadcn 组件目录组装和编辑 UI 树。<br><sub><b>Jev 用法:</b> 每次构建做两轮评估：先定组件是否入选，再定父级插槽和兄弟节点位置；JSON spec 由代码组装和校验，不调用任何生成式模型。</sub><br><sub>相关: <a href="https://github.com/vercel-labs/json-render">repo</a> · <a href="https://json-render.dev/docs/jev">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/ai_xiaomu/status/2101619124812357850"><img src="https://pbs.twimg.com/amplify_video_thumb/2101603811089653760/img/76aRIVVoQZOS3F1F.jpg" alt="自动化生存视频流水线" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ai_xiaomu/status/2101619124812357850">自动化生存视频流水线</a></b><br><sub>ai_xiaomu · X · ♥ 481 · 2026-09-20</sub><br>视频生成工作流：GPT-6 设计世界，Jev 做生存决策，MiniMax H3 把每个决策渲染成视频画面。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/yoshifujidesign/status/2100959121868743086"><img src="https://pbs.twimg.com/amplify_video_thumb/2100957513416056832/img/qsAGLJEDvUF8wE91.jpg" alt="随语音变化的粒子幻灯片" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/yoshifujidesign/status/2100959121868743086">随语音变化的粒子幻灯片</a></b><br><sub>yoshifujidesign · X · ♥ 462 · 2026-09-18</sub><br>设计实验：无数粒子随说出的话实时变换形状，指向一种只靠说话就能做幻灯片的可能。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/omarjpeg/status/2101047036863037753"><img src="https://pbs.twimg.com/amplify_video_thumb/2101046478685007872/img/gR52RkPOJb99hnPD.jpg" alt="最新 UI 流程抓取工具" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/omarjpeg/status/2101047036863037753">最新 UI 流程抓取工具</a></b><br><sub>omarjpeg · X · ♥ 421 · 2026-09-18</sub><br>类似 Mobbin 的工具，把 Jev 和浏览器自动化结合，抓取你想找的最新应用 UI 流程，这在以前对浏览器 agent 来说太慢了。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/0xMovez/status/2101325703635435523"><img src="https://pbs.twimg.com/amplify_video_thumb/2101325508373868544/img/-8QbPo6wgSvhz9hf.jpg" alt="Jev X 爆款帖子分析器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/0xMovez/status/2101325703635435523">Jev X 爆款帖子分析器</a></b><br><sub>0xMovez · X · ♥ 406 · 2026-09-19</sub><br>20.4 秒、$0.67 对 100,000 条 X 爆款帖子各跑 14 个是非题，再把各类钩子与“进入前 1%”的 1.22% 基线对比；同样时间里 Claude Opus 5 只处理了 214 条。<br><sub><b>Jev 用法:</b> 每条帖子十四个 Noul 问题，比如钩子是否制造了悬念。</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/hckmstrrahul/status/2102040278937055404"><img src="https://pbs.twimg.com/amplify_video_thumb/2102040241217695744/img/67mVyfZ4ACC7qYaB.jpg" alt="基于 shadcn 的即时生成式 UI" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/hckmstrrahul/status/2102040278937055404">基于 shadcn 的即时生成式 UI</a></b><br><sub>hckmstrrahul · X · ♥ 381 · 2026-09-21</sub><br>生成式 UI：让 Jev 基于 shadcn 组件库、一份样式文件和从 Mobbin 提炼的 UI 规则，在 1-2 秒内组合出完全响应式的布局；再加一轮 LLM 则需要 8-12 秒。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cocktailpeanut/jevthoven"><img src="https://raw.githubusercontent.com/cocktailpeanut/jevthoven/main/docs/decision-pipeline.jpg" alt="Jevthoven" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cocktailpeanut/jevthoven">Jevthoven</a></b><br><sub>cocktailpeanut · GitHub · ⭐ 11 · 2026-09-17</sub><br>提示词优先的 MIDI 工作室，一句话就能变成可编辑的多轨作品，曲式、乐器、和声、律动和每一小节的模式都由 Jev 选择。<br><sub><b>Jev 用法:</b> 每个音乐单元调用一次 Choice，带上最近几小节、动机和和声规划的滚动上下文；代码把选择渲染成音符。</sub><br><sub>相关: <a href="https://github.com/user-attachments/assets/176c69e4-501e-4b71-8517-957cc692882a">video</a> · <a href="https://x.com/cocktailpeanut/status/2101032641470386481">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/json-render/tree/main/apps/web/lib/jev"><img src="https://opengraph.githubassets.com/1/vercel-labs/json-render" alt="json-render 的 Jev 组件编排器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/json-render/tree/main/apps/web/lib/jev">json-render 的 Jev 组件编排器</a></b><br><sub>vercel-labs · GitHub · ⭐ 18k 仓库 · 2026-01-14</sub><br>一种实验性的 json-render playground 模式：Jev 通过成批的 Choice 问题决定包含哪些元素、放在哪里、按什么顺序，用 shadcn 组件目录组装和编辑 UI 树。<br><sub><b>Jev 用法:</b> 每次构建做两轮评估：先定组件是否入选，再定父级插槽和兄弟节点位置；JSON spec 由代码组装和校验，不调用任何生成式模型。</sub><br><sub>相关: <a href="https://github.com/vercel-labs/json-render">repo</a> · <a href="https://json-render.dev/docs/jev">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=ZlICPWwgmmg"><img src="https://i.ytimg.com/vi/ZlICPWwgmmg/hqdefault.jpg" alt="AI 视频剪辑 skill" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=ZlICPWwgmmg">AI 视频剪辑 skill</a></b><br><sub>Albert Olgaard · 视频 · ♥ 158 · 2026-09-20</sub><br>纯 Python 写的 Claude/Codex skill，端到端剪辑口播视频：转写、规划场景、添加缩放和字幕、模糊敏感信息，快速决策交给 Jev。<br><sub><b>Jev 用法:</b> 基于转写稿快速做决策，用来规划场景、加快剪辑流水线。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/yuhasbeentaken/status/2101231502038339798"><img src="https://pbs.twimg.com/amplify_video_thumb/2101230608009863168/img/Qp3f7hCV9K3A26Wf.jpg" alt="X 帖子研究看板" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yuhasbeentaken/status/2101231502038339798">X 帖子研究看板</a></b><br><sub>yuhasbeentaken · X · ♥ 180 · 2026-09-19</sub><br>看板工具：按主题、开头钩子、写作风格等 8 个维度，给个人收藏的 1,315 条 X 帖子打标签，花费约 $0.086，便于按互动数据筛选和对比规律。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/yoheinakajima/status/2100945960671326482"><img src="https://pbs.twimg.com/amplify_video_thumb/2100945516154834946/img/cz768Iq_4P_AsFdQ.jpg" alt="用哔哔声表达情绪" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yoheinakajima/status/2100945960671326482">用哔哔声表达情绪</a></b><br><sub>yoheinakajima · X · ♥ 267 · 2026-09-18</sub><br>让 Jev 通过哔哔声表达情绪并回话的实验。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=WZzU1HN1sC8"><img src="https://i.ytimg.com/vi/WZzU1HN1sC8/hqdefault.jpg" alt="Jev 自动切片工具" width="240"></a></td>
 <td valign="top"><b><a href="https://www.youtube.com/watch?v=WZzU1HN1sC8">Jev 自动切片工具</a></b><br><sub>vogel · 视频 · ♥ 200 · 2026-09-16</sub><br>自动切片工具，用 Grok 语音转文字转写视频，再让 Jev 给精彩片段候选打分和排序，约两秒找出 11 个片段。<br><sub><b>Jev 用法:</b> 给每段转写稿的精彩程度打一个 Score。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dsqjaffa/status/2101334774325428615"><img src="https://pbs.twimg.com/amplify_video_thumb/2101334467742699520/img/M8di9wJesyfhwVb9.jpg" alt="Virlo 用 Jev 做内容营销" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dsqjaffa/status/2101334774325428615">Virlo 用 Jev 做内容营销</a></b><br><sub>dsqjaffa · X · ♥ 114 · 2026-09-19</sub><br>一项 Virlo 功能：Jev 基于 12.8M 条爆款视频的数据库，评判你所在细分领域每条视频的开头钩子、形式和切入角度，再由 Claude 把胜出者写成脚本；在 Virlo 及其 MCP 中免费可用。<br><sub>相关: <a href="https://virlo.ai">app</a> · <a href="https://virlo.ai">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/yoheinakajima/status/2100939102455751049"><img src="https://pbs.twimg.com/amplify_video_thumb/2100938916773986304/img/Si8JuuQvkP6UzTSD.jpg" alt="Jev 尝试在像素画布上作画" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yoheinakajima/status/2100939102455751049">Jev 尝试在像素画布上作画</a></b><br><sub>yoheinakajima · X · ♥ 72 · 2026-09-18</sub><br>给 Jev 一块像素画布，看它能不能画画的实验；结果表明它画不了。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/neil_xbt/status/2101678010185167056"><img src="https://pbs.twimg.com/media/HSqlLbiWcAAncyd.jpg" alt="Jev 爆款钩子分析" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/neil_xbt/status/2101678010185167056">Jev 爆款钩子分析</a></b><br><sub>neil_xbt · 文章 · ♥ 82 · 2026-09-20</sub><br>实验：用 1,512 次 Jev 两两对比判断，给 X 上 64 篇 AI 文章的标题按 16 种钩子特征打分，再检验哪些特征与实际浏览量对得上。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/fabianstelzer/status/2100955039455985933"><img src="https://pbs.twimg.com/amplify_video_thumb/2100954266256953344/img/X5-bL85-y8IYgniw.jpg" alt="边打字边变华丽文风" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/fabianstelzer/status/2100955039455985933">边打字边变华丽文风</a></b><br><sub>fabianstelzer · X · ♥ 95 · 2026-09-18</sub><br>写作小玩具，在你打字时自动把平实的英文变成浮夸华丽的文风。</td>
+<td width="260" valign="top"><a href="https://github.com/cocktailpeanut/jevthoven"><img src="https://raw.githubusercontent.com/cocktailpeanut/jevthoven/main/docs/decision-pipeline.jpg" alt="Jevthoven" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cocktailpeanut/jevthoven">Jevthoven</a></b><br><sub>cocktailpeanut · GitHub · ⭐ 11 · 2026-09-17</sub><br>提示词优先的 MIDI 工作室，一句话就能变成可编辑的多轨作品，曲式、乐器、和声、律动和每一小节的模式都由 Jev 选择。<br><sub><b>Jev 用法:</b> 每个音乐单元调用一次 Choice，带上最近几小节、动机和和声规划的滚动上下文；代码把选择渲染成音符。</sub><br><sub>相关: <a href="https://github.com/user-attachments/assets/176c69e4-501e-4b71-8517-957cc692882a">video</a> · <a href="https://x.com/cocktailpeanut/status/2101032641470386481">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/RealAstropulse/status/2101029816975663312"><img src="https://pbs.twimg.com/amplify_video_thumb/2101028177355120640/img/fb-YUbHbdqWFSQUV.jpg" alt="Jev 像素画" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/RealAstropulse/status/2101029816975663312">Jev 像素画</a></b><br><sub>RealAstropulse · X · ♥ 163 · 2026-09-18</sub><br>像素画流水线：DeepSeek 用基本图元规划草图，Jev 通过选择像素位置和颜色来渲染并细化。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=ZlICPWwgmmg"><img src="https://i.ytimg.com/vi/ZlICPWwgmmg/hqdefault.jpg" alt="AI 视频剪辑 skill" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=ZlICPWwgmmg">AI 视频剪辑 skill</a></b><br><sub>Albert Olgaard · 视频 · ♥ 158 · 2026-09-20</sub><br>纯 Python 写的 Claude/Codex skill，端到端剪辑口播视频：转写、规划场景、添加缩放和字幕、模糊敏感信息，快速决策交给 Jev。<br><sub><b>Jev 用法:</b> 基于转写稿快速做决策，用来规划场景、加快剪辑流水线。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/aigamedev/comments/1wk0aed/using_jev_to_generate_pixel_art/"><img src="https://external-preview.redd.it/eW1ldzF4b3owY3FoMRUOYtoieXqTEBVCoJNUizizypC7Di3FGR2HiIEQRS59.png?format=pjpg&amp;auto=webp&amp;s=91db0ef8c4326b6a5fb14fe283ec8b05bfed1b84" alt="Jev 像素画 harness" width="240"></a></td>
@@ -136,32 +120,28 @@
 <td valign="top"><b><a href="https://github.com/nanlingyin/soullink-emotion-sdk">Soullink Emotion SDK</a></b><br><sub>nanlingyin · GitHub · ⭐ 123 · 2026-07-18</sub><br>面向桌面陪伴角色的实时 Live2D 表情与动作 SDK，可选的 JEV 规划器为每个关键帧挑选头部动作、表情、视线、手势和强度等级，再由代码映射到模型参数。<br><sub><b>Jev 用法:</b> 离散手势用 Choice，连续参数则在语义化的强度等级上用 Score 或 Choice。</sub><br><sub>相关: <a href="http://soullink.lynngnan.top/">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/dsqjaffa/status/2101334774325428615"><img src="https://pbs.twimg.com/amplify_video_thumb/2101334467742699520/img/M8di9wJesyfhwVb9.jpg" alt="Virlo 用 Jev 做内容营销" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dsqjaffa/status/2101334774325428615">Virlo 用 Jev 做内容营销</a></b><br><sub>dsqjaffa · X · ♥ 114 · 2026-09-19</sub><br>一项 Virlo 功能：Jev 基于 12.8M 条爆款视频的数据库，评判你所在细分领域每条视频的开头钩子、形式和切入角度，再由 Claude 把胜出者写成脚本；在 Virlo 及其 MCP 中免费可用。<br><sub>相关: <a href="https://virlo.ai">app</a> · <a href="https://virlo.ai">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/fabianstelzer/status/2100955039455985933"><img src="https://pbs.twimg.com/amplify_video_thumb/2100954266256953344/img/X5-bL85-y8IYgniw.jpg" alt="边打字边变华丽文风" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/fabianstelzer/status/2100955039455985933">边打字边变华丽文风</a></b><br><sub>fabianstelzer · X · ♥ 95 · 2026-09-18</sub><br>写作小玩具，在你打字时自动把平实的英文变成浮夸华丽的文风。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/gabcoin_/status/2101831051597259103"><img src="https://pbs.twimg.com/media/HSsy6xOW0AAhV11.jpg?name=orig" alt="AI 网红脚本检查器" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/gabcoin_/status/2101831051597259103">AI 网红脚本检查器</a></b><br><sub>gabcoin_ · X · ♥ 92 · 2026-09-21</sub><br>一个 AI UGC 网红的公开构建流水线，通过 OpenRouter 用 Jev 按自定义规则给视频脚本分类，在生成前发现错误并给开头钩子的传播力打分，每次调用不到 $0.0001。<br><sub><b>Jev 用法:</b> 在生成任何视频之前，按作者的规则给脚本分类，并按传播力量表给钩子打分。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://jevform.spiritt.app/"><img src="https://jevform.spiritt.app/spiritt/og-image.png" alt="Jevform" width="240"></a></td>
-<td valign="top"><b><a href="https://jevform.spiritt.app/">Jevform</a></b><br><sub>Spiritt · 应用 · ♥ 22</sub><br>自适应的入门引导表单，按语义而不是 if-then 规则分支，根据对方到目前为止说过的话，一次只问一个量身定制的问题。<br><sub>相关: <a href="https://x.com/TamirSPIRITT/status/2101079101997982037">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/higgsfield_ai/status/2101022133753430365"><img src="https://pbs.twimg.com/amplify_video_thumb/2101022052279058432/img/9UB9da_sc74S_NtV.jpg" alt="Higgsfield 模型路由" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/higgsfield_ai/status/2101022133753430365">Higgsfield 模型路由</a></b><br><sub>higgsfield_ai · X · ♥ 20 · 2026-09-18</sub><br>演示 Jev 在任务运行前读取提示词，为其挑选 Higgsfield 上最合适的图像或视频生成模型。<br><sub><b>Jev 用法:</b> 每条提示词在可用的生成模型中做一个 Choice。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/superdesigndev/treg/blob/main/src/treg/application/jev_xboost.py"><img src="https://raw.githubusercontent.com/superdesigndev/treg/main/docs/assets/treg-hero.png" alt="treg /jev xboost" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/superdesigndev/treg/blob/main/src/treg/application/jev_xboost.py">treg /jev xboost</a></b><br><sub>superdesigndev · GitHub · ⭐ 1.9k 仓库 · 2026-07-15</sub><br>agent 工具网关 treg 中的演示：抓取 X 上过去 24 小时的发布帖，做互动数据取证分析，并让 Jev 对每条给出结论。<br><sub><b>Jev 用法:</b> Jev 通过 Vercel AI Gateway 作答；访客也可以输入 URL 评判单条帖子，页面会展示真实的计费凭据。</sub><br><sub>相关: <a href="https://treg.to">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/fabricioctelles/skills"><img src="https://repository-images.githubusercontent.com/1163031925/fa13dab8-1745-4b60-836c-4729f8e76220" alt="skills (fabricioctelles)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/fabricioctelles/skills">skills (fabricioctelles)</a></b><br><sub>fabricioctelles · GitHub · ⭐ 89 · 2026-02-21</sub><br>agent skill 合集，其中四个 skill（两个 AI 文本去 AI 味工具、一个粗制滥造设计评估器、一个插件审查器）可选地向 Jev 提 Score 和 Noul 问题做质量判断，并有启发式规则兜底。<br><sub>相关: <a href="https://skilldev.pro">site</a> · <a href="https://github.com/fabricioctelles/skills/blob/main/skills/humanizar/references/jev-integration.md">jev-guide</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/suna_gaku/status/2101912767922073870"><img src="https://pbs.twimg.com/media/HSt-Yv3bMAAoDqv.jpg?name=orig" alt="女朋友审查" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/suna_gaku/status/2101912767922073870">女朋友审查</a></b><br><sub>suna_gaku · X · ♥ 25 · 2026-09-21</sub><br>恶搞应用，在你发 X 帖子之前检查：女朋友看到这条帖子会不会不高兴。<br><sub>相关: <a href="https://sunagaku.com/labs/kanojo-check/play/">app</a> · <a href="https://sunagaku.com/labs/kanojo-check/play">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/neil_xbt/status/2101678010185167056"><img src="https://pbs.twimg.com/media/HSqlLbiWcAAncyd.jpg" alt="Jev 爆款钩子分析" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/neil_xbt/status/2101678010185167056">Jev 爆款钩子分析</a></b><br><sub>neil_xbt · 文章 · ♥ 82 · 2026-09-20</sub><br>实验：用 1,512 次 Jev 两两对比判断，给 X 上 64 篇 AI 文章的标题按 16 种钩子特征打分，再检验哪些特征与实际浏览量对得上。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=xH2_VGvM8PI"><img src="https://i.ytimg.com/vi/xH2_VGvM8PI/hqdefault.jpg" alt="HyperEdit" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=xH2_VGvM8PI">HyperEdit</a></b><br><sub>Kev Builds Apps · 视频 · ♥ 68 · 2026-09-21</sub><br>一个开源 AI 视频编辑器的安装演示，它把 Jev 当作主要决策者，并用 Claude Code 串联起来。<br><sub>相关: <a href="https://github.com/kevinbadi/hyperedit">repo</a> · <a href="https://github.com/kevinbadi/hyperedit">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/yoheinakajima/status/2100939102455751049"><img src="https://pbs.twimg.com/amplify_video_thumb/2100938916773986304/img/Si8JuuQvkP6UzTSD.jpg" alt="Jev 尝试在像素画布上作画" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yoheinakajima/status/2100939102455751049">Jev 尝试在像素画布上作画</a></b><br><sub>yoheinakajima · X · ♥ 72 · 2026-09-18</sub><br>给 Jev 一块像素画布，看它能不能画画的实验；结果表明它画不了。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/nagatoquin33/astrbot_plugin_stealer"><img src="https://opengraph.githubassets.com/1/nagatoquin33/astrbot_plugin_stealer" alt="AstrBot 偷表情包插件" width="240"></a></td>
@@ -170,6 +150,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/amponce/archive-movie-browser"><img src="https://github.com/user-attachments/assets/cfe7ca9c-537c-4db3-9bb2-aebbffa3b083" alt="Archive Movie Browser 海报匹配" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/amponce/archive-movie-browser">Archive Movie Browser 海报匹配</a></b><br><sub>amponce · GitHub · ⭐ 70 · 2025-12-08</sub><br>浏览 Internet Archive 电影的应用，用 Jev 从候选中挑出正确的 TMDB 海报；在 80 个疑难案例上，它答对 67 个、零错误海报，启发式方法则是答对 43 个、错 5 个。<br><sub><b>Jev 用法:</b> 在 TMDB 候选中做一个 Choice；置信度低于 0.7 时应用显示生成的封面。750 个上传约花 3 美分。</sub><br><sub>相关: <a href="https://archive-movie-browser.vercel.app">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=xH2_VGvM8PI"><img src="https://i.ytimg.com/vi/xH2_VGvM8PI/hqdefault.jpg" alt="HyperEdit" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=xH2_VGvM8PI">HyperEdit</a></b><br><sub>Kev Builds Apps · 视频 · ♥ 68 · 2026-09-21</sub><br>一个开源 AI 视频编辑器的安装演示，它把 Jev 当作主要决策者，并用 Claude Code 串联起来。<br><sub>相关: <a href="https://github.com/kevinbadi/hyperedit">repo</a> · <a href="https://github.com/kevinbadi/hyperedit">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ThePatriczek/playwright-recast"><img src="https://opengraph.githubassets.com/1/ThePatriczek/playwright-recast" alt="playwright-recast" width="240"></a></td>
@@ -184,68 +168,28 @@
 <td valign="top"><b><a href="https://github.com/achimala/jev-paint">jevinci</a></b><br><sub>achimala · GitHub · ⭐ 49 · 2026-09-18</sub><br>小型本地应用，根据提示词作画：让 Jev 并行预测每个像素的颜色分布，并用预测的置信度决定每一笔画多宽。<br><sub>相关: <a href="https://x.com/anshuc/status/2101040309522121072">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/_shubhankar/status/2100834561995493476"><img src="https://pbs.twimg.com/amplify_video_thumb/2100833848661790720/img/juGCJGK-gYuCJHS7.jpg" alt="画金门大桥" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/_shubhankar/status/2100834561995493476">画金门大桥</a></b><br><sub>_shubhankar · X · ♥ 17 · 2026-09-18</sub><br>浏览器绘画演示：Codex（Astra）、Jev、Stagehand 和 Browserbase 一起在画布上画出金门大桥。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/socai-io/jev-social"><img src="https://raw.githubusercontent.com/socai-io/jev-social/main/docs/banner.png" alt="Jev Social" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/socai-io/jev-social">Jev Social</a></b><br><sub>socai-io · GitHub · ⭐ 46 · 2026-09-18</sub><br>面向 Instagram、TikTok 和 LinkedIn 的社交媒体研究工具，由 Jev 挑选下一个只读操作（比如搜索、打开帖子或读评论），socai 在你真实的 Chrome 里执行，最后产出一份带引用的报告。<br><sub>相关: <a href="https://socai-io.github.io/jev-social/">app</a> · <a href="https://socai.io/blog/jev-social-media-automation">write-up</a> · <a href="https://socai-io.github.io/jev-social/">app 2</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/chandamamz/status/2101066294816920063"><img src="https://pbs.twimg.com/amplify_video_thumb/2101064172700315648/img/QlrRDvfiThW4NWDr.jpg" alt="Jev 弹钢琴" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chandamamz/status/2101066294816920063">Jev 弹钢琴</a></b><br><sub>chandamamz · X · ♥ 16 · 2026-09-18</sub><br>Jev 根据屏幕上的音符瀑布流实时控制双手和每根手指弹钢琴，基于 jev-ultrafast 并加入了决策调度。<br><sub>相关: <a href="https://github.com/browser-use/jev-ultrafast">built on</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/nicdunz/status/2101029238883164288"><img src="https://pbs.twimg.com/amplify_video_thumb/2101029060621086720/img/g2YuZK7OsJwJnzpo.jpg" alt="用 Jev 给文章打分" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/nicdunz/status/2101029238883164288">用 Jev 给文章打分</a></b><br><sub>nicdunz · X · ♥ 4 · 2026-09-18</sub><br>让 Jev 评判 Dario Amodei 一篇关于前沿 AI 的文章的演示，并展示它给出的分数。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/GulatiYajat/status/2100963005764919517"><img src="https://pbs.twimg.com/amplify_video_thumb/2100962127179833344/img/jE9CXLYpLwR5Rc9j.jpg" alt="实时指挥交响乐" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/GulatiYajat/status/2100963005764919517">实时指挥交响乐</a></b><br><sub>GulatiYajat · X · ♥ 40 · 2026-09-18</sub><br>让 Jev 实时指挥一支管弦乐团的实验。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/defileo/status/2102140359690305783"><img src="https://pbs.twimg.com/media/HSxEtVMWAAAzJp4.jpg" alt="零代码开头钩子挑选器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/defileo/status/2102140359690305783">零代码开头钩子挑选器</a></b><br><sub>defileo · 文章 · ♥ 8 · 2026-09-21</sub><br>写给创作者的零代码指南：用 Jev 决定发布哪些开头钩子、帖子和私信回复，每千次决策 $0.42，也讲了这套配置会在哪里出问题。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/okinaaudio/live-jev"><img src="https://opengraph.githubassets.com/1/okinaaudio/live-jev" alt="Live Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/okinaaudio/live-jev">Live Jev</a></b><br><sub>okinaaudio · GitHub · ⭐ 39 · 2026-09-19</sub><br>macOS 上 Ableton Live 的快捷指令栏：输入或口述一句简短的英文或日文，由 Jev 选出对应的调音台、设备或编辑操作，再通过 Remote Script 执行。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/buildfastwithai/gen-ai-experiments/tree/main/browser-plugins/jev-x-scorer"><img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" alt="Jev Post Scorer for X" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/buildfastwithai/gen-ai-experiments/tree/main/browser-plugins/jev-x-scorer">Jev Post Scorer for X</a></b><br><sub>buildfastwithai · GitHub · ⭐ 766 仓库 · 2024-06-07</sub><br>这个 GenAI 实验合集中的 Chrome 扩展，实时给你的 X 草稿打分，判断由 Jev 做，算术和规则检查交给普通代码。<br><sub><b>Jev 用法:</b> 一次请求里做七个独立判断，比如是否值得转发、能否引发讨论、钩子强度，再映射为加权分数。</sub><br><sub>相关: <a href="https://www.buildfastwithai.com/genai-course">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/superdesigndev/treg/blob/main/src/treg/application/jev_xboost.py"><img src="https://raw.githubusercontent.com/superdesigndev/treg/main/docs/assets/treg-hero.png" alt="treg /jev xboost" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/superdesigndev/treg/blob/main/src/treg/application/jev_xboost.py">treg /jev xboost</a></b><br><sub>superdesigndev · GitHub · ⭐ 1.9k 仓库 · 2026-07-15</sub><br>agent 工具网关 treg 中的演示：抓取 X 上过去 24 小时的发布帖，做互动数据取证分析，并让 Jev 对每条给出结论。<br><sub><b>Jev 用法:</b> Jev 通过 Vercel AI Gateway 作答；访客也可以输入 URL 评判单条帖子，页面会展示真实的计费凭据。</sub><br><sub>相关: <a href="https://treg.to">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/krispuckett/status/2101006617223508022"><img src="https://pbs.twimg.com/amplify_video_thumb/2101006446913888256/img/iX43by5-9fpjefMu.jpg" alt="辅导与反 AI 水文检查" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/krispuckett/status/2101006617223508022">辅导与反 AI 水文检查</a></b><br><sub>krispuckett · X · ♥ 20 · 2026-09-18</sub><br>通过 Vercel 调用 Jev 的两个小实验：会话中的辅导支持，以及一个找出并修正文章里 AI 水文的检测器。</td>
+<td width="260" valign="top"><a href="https://jevform.spiritt.app/"><img src="https://jevform.spiritt.app/spiritt/og-image.png" alt="Jevform" width="240"></a></td>
+<td valign="top"><b><a href="https://jevform.spiritt.app/">Jevform</a></b><br><sub>Spiritt · 应用 · ♥ 22</sub><br>自适应的入门引导表单，按语义而不是 if-then 规则分支，根据对方到目前为止说过的话，一次只问一个量身定制的问题。<br><sub>相关: <a href="https://x.com/TamirSPIRITT/status/2101079101997982037">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/lynx-family/lynx-stack/blob/main/packages/genui/server/agent/common/jev-evaluator.ts"><img src="https://opengraph.githubassets.com/1/lynx-family/lynx-stack" alt="Lynx GenUI 的 Jev 评估器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lynx-family/lynx-stack/blob/main/packages/genui/server/agent/common/jev-evaluator.ts">Lynx GenUI 的 Jev 评估器</a></b><br><sub>lynx-family · GitHub · ⭐ 735 仓库 · 2025-02-26</sub><br>生成 UI 时，Lynx 前端框架的 GenUI 包用 Jev 评估器在组件选择、属性选择等阶段做选择判断。<br><sub><b>Jev 用法:</b> 在生成式 UI 的各个阶段通过 @ai-sdk/typesafe-ai 提 Choice 问题，并使用自定义的安全 provider fetch。</sub><br><sub>相关: <a href="https://lynxjs.org">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/rrriviannn/status/2100807838566383819"><img src="https://pbs.twimg.com/amplify_video_thumb/2100802203971997696/img/MKJ0b7d6hk5og9fw.jpg" alt="“有毒”听起来是什么样" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/rrriviannn/status/2100807838566383819">“有毒”听起来是什么样</a></b><br><sub>rrriviannn · X · ♥ 13 · 2026-09-18</sub><br>声音实验：用 Jev 的判断为一个概念生成音频，这次是“有毒”听起来是什么样；此前作者还做过一个向日葵图像实验。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/amagitakayosi/status/2100820581444980736"><img src="https://pbs.twimg.com/amplify_video_thumb/2100820470438481921/img/ZI7uuy-zv2Gm2Q3A.jpg" alt="Bluesky 情绪信息流" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/amagitakayosi/status/2100820581444980736">Bluesky 情绪信息流</a></b><br><sub>amagitakayosi · X · ♥ 17 · 2026-09-18</sub><br>实时的 Bluesky 信息流，对每条帖子做实时情绪识别，并为每位用户配上与其个人资料相匹配的头像。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/yurinakanishi33/status/2101946125385437622"><img src="https://pbs.twimg.com/amplify_video_thumb/2101941849707761664/img/80vOcsRZ9JcYUlqC.jpg" alt="Jev 俳句生成器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yurinakanishi33/status/2101946125385437622">Jev 俳句生成器</a></b><br><sub>yurinakanishi33 · X · ♥ 9 · 2026-09-21</sub><br>俳句实验：每首诗用 Choice 从 73 个假名中选下一个字，共选 17 次；这篇后续帖子纠正了黑客松演示的实际工作方式，并展示了不加约束的版本如何失败。<br><sub><b>Jev 用法:</b> 每一步在 73 个假名中做一个 Choice，概率在代码中重新归一化后采样。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/duanebester/gooey/tree/main/genui/src/jev"><img src="https://raw.githubusercontent.com/duanebester/gooey/main/assets/gooey-logo-final.png" alt="Gooey GenUI Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/duanebester/gooey/tree/main/genui/src/jev">Gooey GenUI Jev</a></b><br><sub>duanebester · GitHub · ⭐ 631 仓库 · 2025-12-07</sub><br>GPU 加速的 Zig UI 框架 Gooey 内置 GenUI 模块，直接通过 TypeSafe 调用 Jev 评估布局选择，不依赖 Vercel AI Gateway。<br><sub><b>Jev 用法:</b> 一套用于直接调用 System One 的 Zig 客户端、编解码器和评估器。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/nickfromlater/status/2100963628484624670"><img src="https://pbs.twimg.com/amplify_video_thumb/2100961148635844609/img/_gFn5XISSQRDaI7p.jpg" alt="Jev 弹钢琴" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/nickfromlater/status/2100963628484624670">Jev 弹钢琴</a></b><br><sub>nickfromlater · X · ♥ 15 · 2026-09-18</sub><br>旋律生成器：给定调性和已有序列，Jev 从全部 88 个琴键中挑选下一个音，第二轮再为每小节从 7 个和弦中选一个来配和弦。<br><sub><b>Jev 用法:</b> 每一步在 88 个音中做一个 Choice，然后每小节在 7 个和弦中做选择。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/SimAudience/status/2101117203060019431"><img src="https://pbs.twimg.com/amplify_video_thumb/2101116639953801216/img/Kn5arhNpJl28uaKC.jpg" alt="SimAudience" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SimAudience/status/2101117203060019431">SimAudience</a></b><br><sub>SimAudience · X · ♥ 4 · 2026-09-19</sub><br>模拟 A/B 测试：让 Jev 扮演 4,000 多个来自真实调查的用户画像，对两条发布推文投票，十二秒出结果。<br><sub>相关: <a href="https://simaudience.com">app</a> · <a href="https://simaudience.com">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/higgsfield_ai/status/2101022133753430365"><img src="https://pbs.twimg.com/amplify_video_thumb/2101022052279058432/img/9UB9da_sc74S_NtV.jpg" alt="Higgsfield 模型路由" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/higgsfield_ai/status/2101022133753430365">Higgsfield 模型路由</a></b><br><sub>higgsfield_ai · X · ♥ 20 · 2026-09-18</sub><br>演示 Jev 在任务运行前读取提示词，为其挑选 Higgsfield 上最合适的图像或视频生成模型。<br><sub><b>Jev 用法:</b> 每条提示词在可用的生成模型中做一个 Choice。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AlbionaHoti/refgarden"><img src="https://raw.githubusercontent.com/AlbionaHoti/refgarden/main/docs/assets/refgarden-cover.png" alt="RefGarden" width="240"></a></td>
@@ -256,36 +200,64 @@
 <td valign="top"><b><a href="https://github.com/DanRWilloughby/snifftest">Sniff Test</a></b><br><sub>DanRWilloughby · GitHub · ⭐ 27 · 2026-09-17</sub><br>面向 Markdown 和纯文本的文字 linter：可计数的正则规则在本地跑，需要判断的规则（比如复述式结尾、层层叠加的模糊措辞、陈词滥调）则把段落发给 Jev，每条规则返回一个概率。<br><sub>相关: <a href="https://www.npmjs.com/package/snifftest">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/mahirb22/status/2101023899265692100"><img src="https://pbs.twimg.com/amplify_video_thumb/2101023732634427392/img/Lw8PZXdVXHBvuawd.jpg" alt="动动嘴做节拍" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mahirb22/status/2101023899265692100">动动嘴做节拍</a></b><br><sub>mahirb22 · X · ♥ 2 · 2026-09-18</sub><br>语音驱动的鼓机：说出“在反拍加一个军鼓”或“让它更暗一点”这类要求，约 200 毫秒 就生成新的节拍。</td>
+<td width="260" valign="top"><a href="https://x.com/suna_gaku/status/2101912767922073870"><img src="https://pbs.twimg.com/media/HSt-Yv3bMAAoDqv.jpg?name=orig" alt="女朋友审查" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/suna_gaku/status/2101912767922073870">女朋友审查</a></b><br><sub>suna_gaku · X · ♥ 25 · 2026-09-21</sub><br>恶搞应用，在你发 X 帖子之前检查：女朋友看到这条帖子会不会不高兴。<br><sub>相关: <a href="https://sunagaku.com/labs/kanojo-check/play/">app</a> · <a href="https://sunagaku.com/labs/kanojo-check/play">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/krispuckett/status/2101006617223508022"><img src="https://pbs.twimg.com/amplify_video_thumb/2101006446913888256/img/iX43by5-9fpjefMu.jpg" alt="辅导与反 AI 水文检查" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/krispuckett/status/2101006617223508022">辅导与反 AI 水文检查</a></b><br><sub>krispuckett · X · ♥ 20 · 2026-09-18</sub><br>通过 Vercel 调用 Jev 的两个小实验：会话中的辅导支持，以及一个找出并修正文章里 AI 水文的检测器。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ehui1226/hookmeter-jev"><img src="https://opengraph.githubassets.com/1/ehui1226/hookmeter-jev" alt="HookMeter" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ehui1226/hookmeter-jev">HookMeter</a></b><br><sub>ehui1226 · GitHub · ⭐ 19 · 2026-09-21</sub><br>Chrome 扩展，在你输入时给 X 和社交媒体草稿打分：Jev 评估好奇心缺口和情绪唤起度，识别钩子套路，标记标题党风险，并给出简短的修改提示。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/spuithori/tokimekibluesky/blob/master/src/lib/server/columnIcon.ts"><img src="https://raw.githubusercontent.com/spuithori/tokimekibluesky/master/static/ogp.jpg" alt="TOKIMEKI 栏目图标" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/spuithori/tokimekibluesky/blob/master/src/lib/server/columnIcon.ts">TOKIMEKI 栏目图标</a></b><br><sub>spuithori · GitHub · ⭐ 304 仓库 · 2023-03-04</sub><br>多栏 Bluesky 客户端，用 Jev 根据自定义 feed 的名称和描述，自动为每个 feed 栏挑选图标。<br><sub><b>Jev 用法:</b> 通过 Vercel AI Gateway 上的 AI SDK evaluate 发起一个 Choice，在约 40 个图标主题加“无”之间选择。</sub><br><sub>相关: <a href="https://tokimeki.blue">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/amagitakayosi/status/2100820581444980736"><img src="https://pbs.twimg.com/amplify_video_thumb/2100820470438481921/img/ZI7uuy-zv2Gm2Q3A.jpg" alt="Bluesky 情绪信息流" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/amagitakayosi/status/2100820581444980736">Bluesky 情绪信息流</a></b><br><sub>amagitakayosi · X · ♥ 17 · 2026-09-18</sub><br>实时的 Bluesky 信息流，对每条帖子做实时情绪识别，并为每位用户配上与其个人资料相匹配的头像。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/_shubhankar/status/2100834561995493476"><img src="https://pbs.twimg.com/amplify_video_thumb/2100833848661790720/img/juGCJGK-gYuCJHS7.jpg" alt="画金门大桥" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/_shubhankar/status/2100834561995493476">画金门大桥</a></b><br><sub>_shubhankar · X · ♥ 17 · 2026-09-18</sub><br>浏览器绘画演示：Codex（Astra）、Jev、Stagehand 和 Browserbase 一起在画布上画出金门大桥。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/chandamamz/status/2101066294816920063"><img src="https://pbs.twimg.com/amplify_video_thumb/2101064172700315648/img/QlrRDvfiThW4NWDr.jpg" alt="Jev 弹钢琴" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chandamamz/status/2101066294816920063">Jev 弹钢琴</a></b><br><sub>chandamamz · X · ♥ 16 · 2026-09-18</sub><br>Jev 根据屏幕上的音符瀑布流实时控制双手和每根手指弹钢琴，基于 jev-ultrafast 并加入了决策调度。<br><sub>相关: <a href="https://github.com/browser-use/jev-ultrafast">built on</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/buildfastwithai/gen-ai-experiments/tree/main/browser-plugins/jev-x-scorer"><img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" alt="Jev Post Scorer for X" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/buildfastwithai/gen-ai-experiments/tree/main/browser-plugins/jev-x-scorer">Jev Post Scorer for X</a></b><br><sub>buildfastwithai · GitHub · ⭐ 766 仓库 · 2024-06-07</sub><br>这个 GenAI 实验合集中的 Chrome 扩展，实时给你的 X 草稿打分，判断由 Jev 做，算术和规则检查交给普通代码。<br><sub><b>Jev 用法:</b> 一次请求里做七个独立判断，比如是否值得转发、能否引发讨论、钩子强度，再映射为加权分数。</sub><br><sub>相关: <a href="https://www.buildfastwithai.com/genai-course">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/nickfromlater/status/2100963628484624670"><img src="https://pbs.twimg.com/amplify_video_thumb/2100961148635844609/img/_gFn5XISSQRDaI7p.jpg" alt="Jev 弹钢琴" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/nickfromlater/status/2100963628484624670">Jev 弹钢琴</a></b><br><sub>nickfromlater · X · ♥ 15 · 2026-09-18</sub><br>旋律生成器：给定调性和已有序列，Jev 从全部 88 个琴键中挑选下一个音，第二轮再为每小节从 7 个和弦中选一个来配和弦。<br><sub><b>Jev 用法:</b> 每一步在 88 个音中做一个 Choice，然后每小节在 7 个和弦中做选择。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/oso95/x-scanner"><img src="https://opengraph.githubassets.com/1/oso95/x-scanner" alt="x-scanner" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/oso95/x-scanner">x-scanner</a></b><br><sub>oso95 · GitHub · ⭐ 15 · 2026-09-18</sub><br>Chrome 扩展：每条即将滚入视口的 X 帖子都会连同六个类型化问题发给 Jev，约 150 毫秒 后在帖子下方的小标签里显示行为标签，并附实时费用计数器（约 80 条帖子 $0.0027）。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/DonkeyCut/Donkey/blob/main/site/src/cut/lib/turnJudge.ts"><img src="https://opengraph.githubassets.com/1/DonkeyCut/Donkey" alt="Donkey Cut 的决策层" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/DonkeyCut/Donkey/blob/main/site/src/cut/lib/turnJudge.ts">Donkey Cut 的决策层</a></b><br><sub>DonkeyCut · GitHub · ⭐ 288 仓库 · 2026-05-18</sub><br>开源浏览器视频编辑器，其 AI 助手用一次 Jev 判断为每轮对话选路，像“改成 16:9”这样的简单编辑无需模型往返就直接执行，还会给转写稿的各段打分来挑选精彩片段。<br><sub>相关: <a href="https://github.com/DonkeyCut/Donkey/blob/main/docs/guides/cut/ai-assistant.md">docs</a> · <a href="https://donkeycut.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/lynx-family/lynx-stack/blob/main/packages/genui/server/agent/common/jev-evaluator.ts"><img src="https://opengraph.githubassets.com/1/lynx-family/lynx-stack" alt="Lynx GenUI 的 Jev 评估器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lynx-family/lynx-stack/blob/main/packages/genui/server/agent/common/jev-evaluator.ts">Lynx GenUI 的 Jev 评估器</a></b><br><sub>lynx-family · GitHub · ⭐ 735 仓库 · 2025-02-26</sub><br>生成 UI 时，Lynx 前端框架的 GenUI 包用 Jev 评估器在组件选择、属性选择等阶段做选择判断。<br><sub><b>Jev 用法:</b> 在生成式 UI 的各个阶段通过 @ai-sdk/typesafe-ai 提 Choice 问题，并使用自定义的安全 provider fetch。</sub><br><sub>相关: <a href="https://lynxjs.org">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/bethanymarz/status/2102243184470294586"><img src="https://pbs.twimg.com/amplify_video_thumb/2102242647997906945/img/e9xhAv4-s41LHW66.jpg" alt="Build First bits" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/bethanymarz/status/2102243184470294586">Build First bits</a></b><br><sub>bethanymarz · X · ♥ 7 · 2026-09-22</sub><br>交互页面：输入一个词，Jev 给它最可能让人联想到的颜色排序，光标随即变成磁铁，按这个排序吸引彩色小方块。<br><sub>相关: <a href="https://buildfirst.ai">app</a> · <a href="https://buildfirst.ai">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/rrriviannn/status/2100807838566383819"><img src="https://pbs.twimg.com/amplify_video_thumb/2100802203971997696/img/MKJ0b7d6hk5og9fw.jpg" alt="“有毒”听起来是什么样" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/rrriviannn/status/2100807838566383819">“有毒”听起来是什么样</a></b><br><sub>rrriviannn · X · ♥ 13 · 2026-09-18</sub><br>声音实验：用 Jev 的判断为一个概念生成音频，这次是“有毒”听起来是什么样；此前作者还做过一个向日葵图像实验。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/duanebester/gooey/tree/main/genui/src/jev"><img src="https://raw.githubusercontent.com/duanebester/gooey/main/assets/gooey-logo-final.png" alt="Gooey GenUI Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/duanebester/gooey/tree/main/genui/src/jev">Gooey GenUI Jev</a></b><br><sub>duanebester · GitHub · ⭐ 631 仓库 · 2025-12-07</sub><br>GPU 加速的 Zig UI 框架 Gooey 内置 GenUI 模块，直接通过 TypeSafe 调用 Jev 评估布局选择，不依赖 Vercel AI Gateway。<br><sub><b>Jev 用法:</b> 一套用于直接调用 System One 的 Zig 客户端、编解码器和评估器。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/lukstei/slop-grader"><img src="https://raw.githubusercontent.com/lukstei/slop-grader/main/assets/terminal.png" alt="slop-grader" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/lukstei/slop-grader">slop-grader</a></b><br><sub>lukstei · GitHub · ⭐ 12 · 2026-09-20</sub><br>CLI 兼 agent skill：用 Jev 按 AI 水文、语法和技术文档质量等规则集逐行给文本和 Markdown 文件打分，再把标出的违规交给 AI agent 修复。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49784831">discussion</a> · <a href="https://www.npmjs.com/package/@lukstei/slop-grader">npm</a> · <a href="https://x.com/vintuxai/status/2101950741724160129">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/shinshin86/aituber-onair/tree/main/packages/comment-intelligence/src/jev"><img src="https://raw.githubusercontent.com/shinshin86/aituber-onair/main/images/aituber-onair-toolkit.png" alt="AITuber OnAir 评论智能" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/shinshin86/aituber-onair/tree/main/packages/comment-intelligence/src/jev">AITuber OnAir 评论智能</a></b><br><sub>shinshin86 · GitHub · ⭐ 210 仓库 · 2025-03-15</sub><br>AI VTuber 工具包的可选 Jev provider，对直播观众评论做分诊：是否切合直播主题、是否在向主播提问、是否已经回答过。<br><sub><b>Jev 用法:</b> 每条评论三个“是/否/不确定”的 Choice 问题，通过 TypeSafe API 或 OpenRouter 调用。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/nicdunz/status/2101029238883164288"><img src="https://pbs.twimg.com/amplify_video_thumb/2101029060621086720/img/g2YuZK7OsJwJnzpo.jpg" alt="用 Jev 给文章打分" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/nicdunz/status/2101029238883164288">用 Jev 给文章打分</a></b><br><sub>nicdunz · X · ♥ 4 · 2026-09-18</sub><br>让 Jev 评判 Dario Amodei 一篇关于前沿 AI 的文章的演示，并展示它给出的分数。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/defileo/status/2102140359690305783"><img src="https://pbs.twimg.com/media/HSxEtVMWAAAzJp4.jpg" alt="零代码开头钩子挑选器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/defileo/status/2102140359690305783">零代码开头钩子挑选器</a></b><br><sub>defileo · 文章 · ♥ 8 · 2026-09-21</sub><br>写给创作者的零代码指南：用 Jev 决定发布哪些开头钩子、帖子和私信回复，每千次决策 $0.42，也讲了这套配置会在哪里出问题。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bhaig-de/jev-design-test"><img src="https://opengraph.githubassets.com/1/bhaig-de/jev-design-test" alt="Jev Design Test" width="240"></a></td>
@@ -300,28 +272,36 @@
 <td valign="top"><b><a href="https://github.com/manifoldor/xtags">Xtags</a></b><br><sub>manifoldor · GitHub · ⭐ 10 · 2026-09-18</sub><br>Chrome 扩展兼用户脚本：给 X 时间线上的每条帖子标出它想让你做什么，显示为一个单词标签加 Jev 给出的概率，供个人本地浏览使用。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/eren23/openflipbook/tree/main/apps/modal-backend/providers/decisions"><img src="https://raw.githubusercontent.com/eren23/openflipbook/main/apps/modal-backend/tests/click_bench/fixtures/images/real/fishing_village.jpg" alt="openflipbook 决策层" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/eren23/openflipbook/tree/main/apps/modal-backend/providers/decisions">openflipbook 决策层</a></b><br><sub>eren23 · GitHub · ⭐ 198 仓库 · 2026-04-23</sub><br>插画风格的世界探索应用，把每个会话约 110 次的判断（比如接受一张渲染图还是重新生成）以影子模式交给 Jev，与现有的阈值规则并行运行。<br><sub><b>Jev 用法:</b> 有关闭、影子和上线三种模式；影子模式约 400 毫秒 后记录答案，上线模式下涉及花钱的问题也从不自动生效。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/yurinakanishi33/status/2101946125385437622"><img src="https://pbs.twimg.com/amplify_video_thumb/2101941849707761664/img/80vOcsRZ9JcYUlqC.jpg" alt="Jev 俳句生成器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yurinakanishi33/status/2101946125385437622">Jev 俳句生成器</a></b><br><sub>yurinakanishi33 · X · ♥ 9 · 2026-09-21</sub><br>俳句实验：每首诗用 Choice 从 73 个假名中选下一个字，共选 17 次；这篇后续帖子纠正了黑客松演示的实际工作方式，并展示了不加约束的版本如何失败。<br><sub><b>Jev 用法:</b> 每一步在 73 个假名中做一个 Choice，概率在代码中重新归一化后采样。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/ArshanKhanifar/status/2102232365929996359"><img src="https://pbs.twimg.com/amplify_video_thumb/2102231997997309952/img/hyEwFUhGdJrtWQBF.jpg" alt="Jevussy" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ArshanKhanifar/status/2102232365929996359">Jevussy</a></b><br><sub>ArshanKhanifar · X · ♥ 9 · 2026-09-22</sub><br>受德彪西启发、永不停歇的钢琴曲：你给 Jev 一种情绪，它就一次一个实时决定地选择音乐。<br><sub>相关: <a href="https://github.com/arshankhanifar/jevussy">repo</a> · <a href="https://jevussy.arshan.to/">app</a> · <a href="https://github.com/arshankhanifar/jevussy">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/kevinbadi/hyperedit/blob/main/scripts/jev.js"><img src="https://opengraph.githubassets.com/1/kevinbadi/hyperedit" alt="HyperEdit" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kevinbadi/hyperedit/blob/main/scripts/jev.js">HyperEdit</a></b><br><sub>kevinbadi · GitHub · ⭐ 178 仓库 · 2026-01-21</sub><br>基于 FFmpeg 和 Remotion 的 AI 视频编辑器，由 Jev 为 Director agent 选择工作流，并在 Obsidian B-roll 素材库上解读媒体搜索意图，带关键词回退。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/iamadi11/mcp-ui-poc"><img src="https://opengraph.githubassets.com/1/iamadi11/mcp-ui-poc" alt="MCP UI 工作台" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/iamadi11/mcp-ui-poc">MCP UI 工作台</a></b><br><sub>iamadi11 · GitHub · ⭐ 8 · 2025-08-04</sub><br>以聊天为入口的工作台，把一条消息变成带版本、可嵌入的小组件：Jev 决定布局和组件，代码负责构建，组件目录不够用时由 Claude Haiku 填写文案或生成 HTML。<br><sub><b>Jev 用法:</b> 每轮通过 TypeSafe SDK 一次请求并行问多个类型化问题；“改成柱状图”这类追问会更新当前组件。</sub><br><sub>相关: <a href="https://mcp-ui-poc.vercel.app/">app</a> · <a href="https://github.com/iamadi11/mcp-ui-poc/blob/main/packages/core/src/decisions/jev.js">code</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/abhi_s_tanwar/status/2102118723129843866"><img src="https://pbs.twimg.com/amplify_video_thumb/2102117153835245568/img/uhPrQbWY_G6CuyiQ.jpg" alt="感知上下文的 GIF 回复" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/abhi_s_tanwar/status/2102118723129843866">感知上下文的 GIF 回复</a></b><br><sub>abhi_s_tanwar · X · ♥ 5 · 2026-09-21</sub><br>给每条回复或帖子配上贴合上下文的 GIF 或表情的工具，由 Jev 从 1,300+ 个已索引条目中挑出最匹配的，约 250 毫秒、$0.0003。</td>
+<td width="260" valign="top"><a href="https://x.com/bethanymarz/status/2102243184470294586"><img src="https://pbs.twimg.com/amplify_video_thumb/2102242647997906945/img/e9xhAv4-s41LHW66.jpg" alt="Build First bits" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/bethanymarz/status/2102243184470294586">Build First bits</a></b><br><sub>bethanymarz · X · ♥ 7 · 2026-09-22</sub><br>交互页面：输入一个词，Jev 给它最可能让人联想到的颜色排序，光标随即变成磁铁，按这个排序吸引彩色小方块。<br><sub>相关: <a href="https://buildfirst.ai">app</a> · <a href="https://buildfirst.ai">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/joevidev/ui-generator-instinct-jev"><img src="https://opengraph.githubassets.com/1/joevidev/ui-generator-instinct-jev" alt="Instinct" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/joevidev/ui-generator-instinct-jev">Instinct</a></b><br><sub>joevidev · GitHub · ⭐ 7 · 2026-09-17</sub><br>UI 生成器演示：用自由文本描述一个界面，Jev 就从有限的目录中挑选并配置真实的 shadcn/ui 组件或页面区块，从不写代码或文案。<br><sub><b>Jev 用法:</b> 针对有限的组件、字段和样式选项提 Choice、Noul 和 Score 问题。</sub><br><sub>相关: <a href="https://ui-generator-instinct-jev.vercel.app">app</a> · <a href="https://ui-generator-instinct-jev.vercel.app">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/SimAudience/status/2101117203060019431"><img src="https://pbs.twimg.com/amplify_video_thumb/2101116639953801216/img/Kn5arhNpJl28uaKC.jpg" alt="SimAudience" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/SimAudience/status/2101117203060019431">SimAudience</a></b><br><sub>SimAudience · X · ♥ 4 · 2026-09-19</sub><br>模拟 A/B 测试：让 Jev 扮演 4,000 多个来自真实调查的用户画像，对两条发布推文投票，十二秒出结果。<br><sub>相关: <a href="https://simaudience.com">app</a> · <a href="https://simaudience.com">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/mahirb22/status/2101023899265692100"><img src="https://pbs.twimg.com/amplify_video_thumb/2101023732634427392/img/Lw8PZXdVXHBvuawd.jpg" alt="动动嘴做节拍" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mahirb22/status/2101023899265692100">动动嘴做节拍</a></b><br><sub>mahirb22 · X · ♥ 2 · 2026-09-18</sub><br>语音驱动的鼓机：说出“在反拍加一个军鼓”或“让它更暗一点”这类要求，约 200 毫秒 就生成新的节拍。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/spuithori/tokimekibluesky/blob/master/src/lib/server/columnIcon.ts"><img src="https://raw.githubusercontent.com/spuithori/tokimekibluesky/master/static/ogp.jpg" alt="TOKIMEKI 栏目图标" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/spuithori/tokimekibluesky/blob/master/src/lib/server/columnIcon.ts">TOKIMEKI 栏目图标</a></b><br><sub>spuithori · GitHub · ⭐ 304 仓库 · 2023-03-04</sub><br>多栏 Bluesky 客户端，用 Jev 根据自定义 feed 的名称和描述，自动为每个 feed 栏挑选图标。<br><sub><b>Jev 用法:</b> 通过 Vercel AI Gateway 上的 AI SDK evaluate 发起一个 Choice，在约 40 个图标主题加“无”之间选择。</sub><br><sub>相关: <a href="https://tokimeki.blue">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/scale-venture-partners/riff"><img src="https://opengraph.githubassets.com/1/scale-venture-partners/riff" alt="riff" width="240"></a></td>
@@ -332,12 +312,16 @@
 <td valign="top"><b><a href="https://semanticspace.dev/">SemanticSpace</a></b><br><sub>SemanticSpace · 应用 · ▲ 2</sub><br>交互式地图，把任意词语或短语放到 2D 平面上，坐标是 Jev 针对用户选定的两个概念轴给出的分数。<br><sub><b>Jev 用法:</b> 每个短语分别对两个轴概念打分，分数就是它的 x/y 位置。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49753667">discussion</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/DonkeyCut/Donkey/blob/main/site/src/cut/lib/turnJudge.ts"><img src="https://opengraph.githubassets.com/1/DonkeyCut/Donkey" alt="Donkey Cut 的决策层" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/DonkeyCut/Donkey/blob/main/site/src/cut/lib/turnJudge.ts">Donkey Cut 的决策层</a></b><br><sub>DonkeyCut · GitHub · ⭐ 288 仓库 · 2026-05-18</sub><br>开源浏览器视频编辑器，其 AI 助手用一次 Jev 判断为每轮对话选路，像“改成 16:9”这样的简单编辑无需模型往返就直接执行，还会给转写稿的各段打分来挑选精彩片段。<br><sub>相关: <a href="https://github.com/DonkeyCut/Donkey/blob/main/docs/guides/cut/ai-assistant.md">docs</a> · <a href="https://donkeycut.com">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/dani1005/book-aurora"><img src="https://raw.githubusercontent.com/dani1005/book-aurora/main/examples/frankenstein-screen.png" alt="Book Aurora" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/dani1005/book-aurora">Book Aurora</a></b><br><sub>dani1005 · GitHub · ⭐ 5 · 2026-09-18</sub><br>可视化工具，把小说每段约 90 词的文字发给 Jev，并行问十个问题（九种情绪外加强度），把整本书的情绪天气画成一条极光带，可以保存成海报。<br><sub><b>Jev 用法:</b> 每段十个 Score 问题，每种情绪 0-3 分；Jev 从不看像素，也不写文字。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa"><img src="https://opengraph.githubassets.com/1/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA" alt="面向 MiniMax H3 的 Jev 自适应 VSA" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa">面向 MiniMax H3 的 Jev 自适应 VSA</a></b><br><sub>sepiablue-ai · GitHub · ⭐ 100 仓库 · 2026-09-09</sub><br>实验性的 ComfyUI 分支，由 Jev 逐层控制 MiniMax H3 视频生成的注意力稀疏度，为每一步选择保留率；采用的那次运行从 366.72 秒降到 213.89 秒。<br><sub>相关: <a href="https://note.com/sepiablue/n/n0b19389703eb">article</a> · <a href="https://www.reddit.com/r/StableDiffusion/comments/1wm1mgy/integration_of_jev_into_minimax_h3_video/">discussion</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/abhi_s_tanwar/status/2102118723129843866"><img src="https://pbs.twimg.com/amplify_video_thumb/2102117153835245568/img/uhPrQbWY_G6CuyiQ.jpg" alt="感知上下文的 GIF 回复" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/abhi_s_tanwar/status/2102118723129843866">感知上下文的 GIF 回复</a></b><br><sub>abhi_s_tanwar · X · ♥ 5 · 2026-09-21</sub><br>给每条回复或帖子配上贴合上下文的 GIF 或表情的工具，由 Jev 从 1,300+ 个已索引条目中挑出最匹配的，约 250 毫秒、$0.0003。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kolibril13/jev-in-blender-experiment"><img src="https://opengraph.githubassets.com/1/kolibril13/jev-in-blender-experiment" alt="Blender 里的 Jev" width="240"></a></td>
@@ -352,12 +336,16 @@
 <td valign="top"><b><a href="https://github.com/cairodavila/tisco">tisco</a></b><br><sub>cairodavila · GitHub · ⭐ 5 · 2026-09-21</sub><br>终端工具：可以针对视频拍摄的转写稿提问并整理匹配的片段，由 Jev 判断请求和转写内容（比如找出句子没说完的片段），文件移动交给代码。<br><sub><b>Jev 用法:</b> Jev 只在 tisco 实际找到的文件夹中做选择，并基于整个工作区的 state 判断；state 上限 96 KB，分批发送。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/blockmatic/basilic/blob/main/apps/web/lib/genui/compose-run.ts"><img src="https://opengraph.githubassets.com/1/blockmatic/basilic" alt="Basilic Jev composeSpec" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/blockmatic/basilic/blob/main/apps/web/lib/genui/compose-run.ts">Basilic Jev composeSpec</a></b><br><sub>blockmatic · GitHub · ⭐ 89 仓库 · 2020-04-28</sub><br>API 优先的 agent 化 TypeScript 起步模板，其命令栏借助 json-render 的 composeSpec 和经 Vercel AI Gateway 调用的 Jev 组合生成式 UI，只从白名单里挑选元素。<br><sub>相关: <a href="https://basilic-docs.vercel.app">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/shinshin86/aituber-onair/tree/main/packages/comment-intelligence/src/jev"><img src="https://raw.githubusercontent.com/shinshin86/aituber-onair/main/images/aituber-onair-toolkit.png" alt="AITuber OnAir 评论智能" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/shinshin86/aituber-onair/tree/main/packages/comment-intelligence/src/jev">AITuber OnAir 评论智能</a></b><br><sub>shinshin86 · GitHub · ⭐ 210 仓库 · 2025-03-15</sub><br>AI VTuber 工具包的可选 Jev provider，对直播观众评论做分诊：是否切合直播主题、是否在向主播提问、是否已经回答过。<br><sub><b>Jev 用法:</b> 每条评论三个“是/否/不确定”的 Choice 问题，通过 TypeSafe API 或 OpenRouter 调用。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Ratimon/openquok-monorepo/blob/main/sdk/examples/jev-route-draft.mjs"><img src="https://repository-images.githubusercontent.com/1190404999/32f3cb95-a933-449e-89b7-280fe8e86657" alt="OpenQuok 的 Jev 草稿路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Ratimon/openquok-monorepo/blob/main/sdk/examples/jev-route-draft.mjs">OpenQuok 的 Jev 草稿路由</a></b><br><sub>Ratimon · GitHub · ⭐ 69 仓库 · 2026-03-24</sub><br>社交媒体排期工作区的示例：用 Jev 对“该发什么”做相关性、互动潜力和视觉效果检查，再把草稿路由为全局帖子或单渠道帖子。<br><sub>相关: <a href="https://github.com/Ratimon/openquok-monorepo/blob/main/web/src/content/docs/oauth2-for-apps/jev-decision-routing.md">guide</a> · <a href="https://www.openquok.com/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/eren23/openflipbook/tree/main/apps/modal-backend/providers/decisions"><img src="https://raw.githubusercontent.com/eren23/openflipbook/main/apps/modal-backend/tests/click_bench/fixtures/images/real/fishing_village.jpg" alt="openflipbook 决策层" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/eren23/openflipbook/tree/main/apps/modal-backend/providers/decisions">openflipbook 决策层</a></b><br><sub>eren23 · GitHub · ⭐ 198 仓库 · 2026-04-23</sub><br>插画风格的世界探索应用，把每个会话约 110 次的判断（比如接受一张渲染图还是重新生成）以影子模式交给 Jev，与现有的阈值规则并行运行。<br><sub><b>Jev 用法:</b> 有关闭、影子和上线三种模式；影子模式约 400 毫秒 后记录答案，上线模式下涉及花钱的问题也从不自动生效。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/kevinbadi/hyperedit/blob/main/scripts/jev.js"><img src="https://opengraph.githubassets.com/1/kevinbadi/hyperedit" alt="HyperEdit" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/kevinbadi/hyperedit/blob/main/scripts/jev.js">HyperEdit</a></b><br><sub>kevinbadi · GitHub · ⭐ 178 仓库 · 2026-01-21</sub><br>基于 FFmpeg 和 Remotion 的 AI 视频编辑器，由 Jev 为 Director agent 选择工作流，并在 Obsidian B-roll 素材库上解读媒体搜索意图，带关键词回退。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/LamplighterPaul/jev-piano"><img src="https://opengraph.githubassets.com/1/LamplighterPaul/jev-piano" alt="弹钢琴的 Jev" width="240"></a></td>
@@ -368,24 +356,16 @@
 <td valign="top"><b><a href="https://github.com/cheeaun/jevmoji">Jevmoji</a></b><br><sub>cheeaun · GitHub · ⭐ 3 · 2026-09-20</sub><br>Web 应用：输入最多 40 个字符，Jev 在各个 emoji 类别和一份关键词候选清单中给相关 emoji 打 0 到 3 分，返回多个匹配而不只是一个。<br><sub>相关: <a href="https://jevmoji.cheeaun.workers.dev">app</a> · <a href="https://jevmoji.cheeaun.workers.dev">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Dun-sin/HearItFresh/blob/main/app/lib/themes/classify.ts"><img src="https://user-images.githubusercontent.com/78784850/210045371-8f386335-88cf-4a65-9d00-6ac0e808269e.png" alt="HearItFresh 歌曲主题" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Dun-sin/HearItFresh/blob/main/app/lib/themes/classify.ts">HearItFresh 歌曲主题</a></b><br><sub>Dun-sin · GitHub · ⭐ 59 仓库 · 2022-12-27</sub><br>个性化 Spotify 歌单生成器，用 Jev 根据歌名、艺人和歌词给每首歌的主题分类。<br><sub>相关: <a href="https://hearitfresh.favour.dev">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/LukasCantCode/status/2102223232913055805"><img src="https://pbs.twimg.com/amplify_video_thumb/2102222551644827648/img/3X7lIy8ysYfnEfzC.jpg" alt="TypeSesame" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/LukasCantCode/status/2102223232913055805">TypeSesame</a></b><br><sub>LukasCantCode · X · ♥ 1 · 2026-09-22</sub><br>一个网页房间，光线、颜色、字体、声音和街景会随你输入文字的情绪而变化，用 Claude Opus 5 和 Jev 打造。<br><sub>相关: <a href="https://typesesame.com">app</a> · <a href="https://typesesame.com">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/joa/status/2102048409876099208"><img src="https://pbs.twimg.com/amplify_video_thumb/2102046369280118784/img/YaqzMYWWN-GhFnA3.jpg" alt="Jev 打碟" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/joa/status/2102048409876099208">Jev 打碟</a></b><br><sub>joa · X · ▶ 107 · 2026-09-21</sub><br>一场 DJ 表演，Jev 通过决策树掌控所有混音参数和决定，类似 Jev 玩 Doom 的做法。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/elpumberto/barrunto"><img src="https://opengraph.githubassets.com/1/elpumberto/barrunto" alt="Barrunto" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/elpumberto/barrunto">Barrunto</a></b><br><sub>elpumberto · GitHub · ⭐ 2 · 2026-09-17</sub><br>Chrome 扩展，把 X 帖子标为诱饵、引战或有料，把 X 账号归为自动化、诈骗、创作者或专业人士，并把 Hacker News 评论标为洞见、抬杠或跑题。<br><sub><b>Jev 用法:</b> 每个条目调用一次，每条帖子或评论九个是非题（账号画像七个）；由代码组合结果，拿不准时不作标注。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TypeSafeAI/clarity-judge"><img src="https://judge.jev.works/opengraph-image" alt="Clarity Judge" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TypeSafeAI/clarity-judge">Clarity Judge</a></b><br><sub>TypeSafeAI · GitHub · ⭐ 2 · 2026-09-16</sub><br>写作检查工具，分别运行多个具名的 Jev 检查：含糊其辞、破折号滥用、清晰度、填充短语、语气、被动语态和可执行性，每项都有自己的结论、置信度和佐证句。<br><sub>相关: <a href="https://judge.jev.works">app</a> · <a href="https://judge.jev.works">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa"><img src="https://opengraph.githubassets.com/1/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA" alt="面向 MiniMax H3 的 Jev 自适应 VSA" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sepiablue-ai/ComfyUI-MiniMax-H3-W4A4-VSA/tree/exp/jev-adaptive-vsa">面向 MiniMax H3 的 Jev 自适应 VSA</a></b><br><sub>sepiablue-ai · GitHub · ⭐ 100 仓库 · 2026-09-09</sub><br>实验性的 ComfyUI 分支，由 Jev 逐层控制 MiniMax H3 视频生成的注意力稀疏度，为每一步选择保留率；采用的那次运行从 366.72 秒降到 213.89 秒。<br><sub>相关: <a href="https://note.com/sepiablue/n/n0b19389703eb">article</a> · <a href="https://www.reddit.com/r/StableDiffusion/comments/1wm1mgy/integration_of_jev_into_minimax_h3_video/">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/phureewat29/jev-got"><img src="https://cdn.phureewat.com/jev/og.jpg" alt="jev-got" width="240"></a></td>
@@ -404,28 +384,16 @@
 <td valign="top"><b><a href="https://github.com/gaborishka/jevtown">Jevtown</a></b><br><sub>gaborishka · GitHub · ⭐ 2 · 2026-09-20</sub><br>由 10,000 个人格组成的模拟社交网络：你发一段文字、一条商品信息或一个标题，就能看 Jev 决定谁能看到它、每个人格如何反应。<br><sub><b>Jev 用法:</b> Jev 先对照约 60 个受众属性给帖子打分来规划触达范围，再对每个人格用一次批量 Choice 选出反应（划过、点赞、转发、拉黑、购买）。</sub><br><sub>相关: <a href="https://jevtown.ivanhabor.com">app</a> · <a href="https://jevtown.ivanhabor.com">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/kieranklaassen/thinkroom/blob/main/docs/compound-writing-packs.md"><img src="https://raw.githubusercontent.com/kieranklaassen/thinkroom/main/docs/images/thinkroom-editor.png" alt="Thinkroom 复合写作审阅" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kieranklaassen/thinkroom/blob/main/docs/compound-writing-packs.md">Thinkroom 复合写作审阅</a></b><br><sub>kieranklaassen · GitHub · ⭐ 33 仓库 · 2026-06-05</sub><br>一个审阅面板，内置于 Thinkroom（agent 原生、服务于人类判断的工作区）：把 Claude Code 插件包里的 skill 变成审阅视角，由 Jev 回答其中的是非题并直接标注到文本上。<br><sub><b>Jev 用法:</b> 每个视角是一组由 Jev 针对文档作答的是非题；结果在 Comment 模式下变成行内高亮。</sub><br><sub>相关: <a href="https://thinkroom.kieranklaassen.com">app</a> · <a href="https://github.com/kieranklaassen/thinkroom">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/blockmatic/basilic/blob/main/apps/web/lib/genui/compose-run.ts"><img src="https://opengraph.githubassets.com/1/blockmatic/basilic" alt="Basilic Jev composeSpec" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/blockmatic/basilic/blob/main/apps/web/lib/genui/compose-run.ts">Basilic Jev composeSpec</a></b><br><sub>blockmatic · GitHub · ⭐ 89 仓库 · 2020-04-28</sub><br>API 优先的 agent 化 TypeScript 起步模板，其命令栏借助 json-render 的 composeSpec 和经 Vercel AI Gateway 调用的 Jev 组合生成式 UI，只从白名单里挑选元素。<br><sub>相关: <a href="https://basilic-docs.vercel.app">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/nicholasgriffintn/ai-platform/tree/main/apps/api/src/modules/sites"><img src="https://raw.githubusercontent.com/nicholasgriffintn/ai-platform/main/docs/images/chat.png" alt="Polychat Sites" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/nicholasgriffintn/ai-platform/tree/main/apps/api/src/modules/sites">Polychat Sites</a></b><br><sub>nicholasgriffintn · GitHub · ⭐ 32 仓库 · 2024-11-10</sub><br>Polychat AI 平台里的生成式建站工具：Jev 把一句话需求归类成方案（类型、范围、语气、配色、模型档位），并在编程模型以 JSON Patch 流式输出网站时判断修改和质量。<br><sub><b>Jev 用法:</b> Polychat 还开放了一个 Decisions API 和一个 decide 函数，底层是 Jev 的 choice/score/noul 答案。</sub><br><sub>相关: <a href="https://polychat.app">app</a> · <a href="https://github.com/nicholasgriffintn/ai-platform">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Ratimon/openquok-monorepo/blob/main/sdk/examples/jev-route-draft.mjs"><img src="https://repository-images.githubusercontent.com/1190404999/32f3cb95-a933-449e-89b7-280fe8e86657" alt="OpenQuok 的 Jev 草稿路由" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Ratimon/openquok-monorepo/blob/main/sdk/examples/jev-route-draft.mjs">OpenQuok 的 Jev 草稿路由</a></b><br><sub>Ratimon · GitHub · ⭐ 69 仓库 · 2026-03-24</sub><br>社交媒体排期工作区的示例：用 Jev 对“该发什么”做相关性、互动潜力和视觉效果检查，再把草稿路由为全局帖子或单渠道帖子。<br><sub>相关: <a href="https://github.com/Ratimon/openquok-monorepo/blob/main/web/src/content/docs/oauth2-for-apps/jev-decision-routing.md">guide</a> · <a href="https://www.openquok.com/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/zhaobenny/bz-cogs/tree/main/aiemote"><img src="https://opengraph.githubassets.com/1/zhaobenny/bz-cogs" alt="aiemote" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zhaobenny/bz-cogs/tree/main/aiemote">aiemote</a></b><br><sub>zhaobenny · GitHub · ⭐ 31 仓库 · 2020-11-09</sub><br>Red-Discordbot 的 cog，用合适的服务器表情回应 Discord 消息；配上 TypeSafe 或 OpenRouter 的 decisions 端点后，会让 Jev 来选表情，而不是去提示聊天模型。<br><sub><b>Jev 用法:</b> 根据消息内容，在配置好的服务器表情和全局表情中做一个 Choice。</sub><br><sub>相关: <a href="https://github.com/zhaobenny/bz-cogs">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/flyryan/ai-news-aggregator/tree/main/shadow"><img src="https://raw.githubusercontent.com/flyryan/ai-news-aggregator/main/assets/pipeline-banner.webp" alt="AI News Aggregator 的 Jev 影子实验" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/flyryan/ai-news-aggregator/tree/main/shadow">AI News Aggregator 的 Jev 影子实验</a></b><br><sub>flyryan · GitHub · ⭐ 27 仓库 · 2026-01-07</sub><br>每日多 agent AI 新闻简报流水线中的影子实验：Jev 用一个 Choice 判断每篇冻结文章的相关性，用一个 Noul 判断它是否属于重要新闻，并与现有的 LLM 编辑对比。<br><sub>相关: <a href="https://github.com/flyryan/ai-news-aggregator">repo</a> · <a href="https://news.aatf.ai">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/kevinlysocial/status/2102216292573028422"><img src="https://pbs.twimg.com/amplify_video_thumb/2102216042735075328/img/tWTXX440WyUyy0PY.jpg" alt="实时 AI 导播" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kevinlysocial/status/2102216292573028422">实时 AI 导播</a></b><br><sub>kevinlysocial · X · ▶ 53 · 2026-09-22</sub><br>实时视频导播工具：在本地转写演讲者的话，并让 Jev 在其讲话时选择切到摄像头、屏幕还是两者同框；未剪辑的演示显示切换时机仍有滞后。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/yz_chow/status/2102053854116483325"><img src="https://pbs.twimg.com/amplify_video_thumb/2102053381183582208/img/00d00ZONouAnMBb6.jpg" alt="AI 剪辑的苹果发布会视频" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yz_chow/status/2102053854116483325">AI 剪辑的苹果发布会视频</a></b><br><sub>yz_chow · X · ▶ 50 · 2026-09-21</sub><br>一套结合 Codex、Jev 和 CapCut 的中文工作流，30 分钟就把 2 小时的苹果发布会剪成一条配好音、镜头和音乐都对得上的视频。</td>
+<td width="260" valign="top"><a href="https://github.com/Dun-sin/HearItFresh/blob/main/app/lib/themes/classify.ts"><img src="https://user-images.githubusercontent.com/78784850/210045371-8f386335-88cf-4a65-9d00-6ac0e808269e.png" alt="HearItFresh 歌曲主题" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Dun-sin/HearItFresh/blob/main/app/lib/themes/classify.ts">HearItFresh 歌曲主题</a></b><br><sub>Dun-sin · GitHub · ⭐ 59 仓库 · 2022-12-27</sub><br>个性化 Spotify 歌单生成器，用 Jev 根据歌名、艺人和歌词给每首歌的主题分类。<br><sub>相关: <a href="https://hearitfresh.favour.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/dglazkov/jev2ui"><img src="https://opengraph.githubassets.com/1/dglazkov/jev2ui" alt="Apparite" width="240"></a></td>
@@ -456,8 +424,40 @@
 <td valign="top"><b><a href="https://github.com/silky-x0/Postmark">Postmark</a></b><br><sub>silky-x0 · GitHub · ⭐ 1 · 2026-09-20</sub><br>在你发布前先读一遍社交帖子草稿的 Web 应用：返回 Jev 对帖子透出的语气、可能传播多远、看起来有多尴尬的打分，最后盖上一个结论印章。<br><sub>相关: <a href="https://postmark-rho.vercel.app/">app</a> · <a href="https://postmark-rho.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/LukasCantCode/status/2102223232913055805"><img src="https://pbs.twimg.com/amplify_video_thumb/2102222551644827648/img/3X7lIy8ysYfnEfzC.jpg" alt="TypeSesame" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/LukasCantCode/status/2102223232913055805">TypeSesame</a></b><br><sub>LukasCantCode · X · ♥ 1 · 2026-09-22</sub><br>一个网页房间，光线、颜色、字体、声音和街景会随你输入文字的情绪而变化，用 Claude Opus 5 和 Jev 打造。<br><sub>相关: <a href="https://typesesame.com">app</a> · <a href="https://typesesame.com">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/kieranklaassen/thinkroom/blob/main/docs/compound-writing-packs.md"><img src="https://raw.githubusercontent.com/kieranklaassen/thinkroom/main/docs/images/thinkroom-editor.png" alt="Thinkroom 复合写作审阅" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/kieranklaassen/thinkroom/blob/main/docs/compound-writing-packs.md">Thinkroom 复合写作审阅</a></b><br><sub>kieranklaassen · GitHub · ⭐ 33 仓库 · 2026-06-05</sub><br>一个审阅面板，内置于 Thinkroom（agent 原生、服务于人类判断的工作区）：把 Claude Code 插件包里的 skill 变成审阅视角，由 Jev 回答其中的是非题并直接标注到文本上。<br><sub><b>Jev 用法:</b> 每个视角是一组由 Jev 针对文档作答的是非题；结果在 Comment 模式下变成行内高亮。</sub><br><sub>相关: <a href="https://thinkroom.kieranklaassen.com">app</a> · <a href="https://github.com/kieranklaassen/thinkroom">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/nicholasgriffintn/ai-platform/tree/main/apps/api/src/modules/sites"><img src="https://raw.githubusercontent.com/nicholasgriffintn/ai-platform/main/docs/images/chat.png" alt="Polychat Sites" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/nicholasgriffintn/ai-platform/tree/main/apps/api/src/modules/sites">Polychat Sites</a></b><br><sub>nicholasgriffintn · GitHub · ⭐ 32 仓库 · 2024-11-10</sub><br>Polychat AI 平台里的生成式建站工具：Jev 把一句话需求归类成方案（类型、范围、语气、配色、模型档位），并在编程模型以 JSON Patch 流式输出网站时判断修改和质量。<br><sub><b>Jev 用法:</b> Polychat 还开放了一个 Decisions API 和一个 decide 函数，底层是 Jev 的 choice/score/noul 答案。</sub><br><sub>相关: <a href="https://polychat.app">app</a> · <a href="https://github.com/nicholasgriffintn/ai-platform">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/zhaobenny/bz-cogs/tree/main/aiemote"><img src="https://opengraph.githubassets.com/1/zhaobenny/bz-cogs" alt="aiemote" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zhaobenny/bz-cogs/tree/main/aiemote">aiemote</a></b><br><sub>zhaobenny · GitHub · ⭐ 31 仓库 · 2020-11-09</sub><br>Red-Discordbot 的 cog，用合适的服务器表情回应 Discord 消息；配上 TypeSafe 或 OpenRouter 的 decisions 端点后，会让 Jev 来选表情，而不是去提示聊天模型。<br><sub><b>Jev 用法:</b> 根据消息内容，在配置好的服务器表情和全局表情中做一个 Choice。</sub><br><sub>相关: <a href="https://github.com/zhaobenny/bz-cogs">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/flyryan/ai-news-aggregator/tree/main/shadow"><img src="https://raw.githubusercontent.com/flyryan/ai-news-aggregator/main/assets/pipeline-banner.webp" alt="AI News Aggregator 的 Jev 影子实验" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/flyryan/ai-news-aggregator/tree/main/shadow">AI News Aggregator 的 Jev 影子实验</a></b><br><sub>flyryan · GitHub · ⭐ 27 仓库 · 2026-01-07</sub><br>每日多 agent AI 新闻简报流水线中的影子实验：Jev 用一个 Choice 判断每篇冻结文章的相关性，用一个 Noul 判断它是否属于重要新闻，并与现有的 LLM 编辑对比。<br><sub>相关: <a href="https://github.com/flyryan/ai-news-aggregator">repo</a> · <a href="https://news.aatf.ai">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/joa/status/2102048409876099208"><img src="https://pbs.twimg.com/amplify_video_thumb/2102046369280118784/img/YaqzMYWWN-GhFnA3.jpg" alt="Jev 打碟" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/joa/status/2102048409876099208">Jev 打碟</a></b><br><sub>joa · X · ▶ 107 · 2026-09-21</sub><br>一场 DJ 表演，Jev 通过决策树掌控所有混音参数和决定，类似 Jev 玩 Doom 的做法。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/KeKe-Li/gpt-2-image/blob/main/api/prompt/inspect.js"><img src="https://raw.githubusercontent.com/KeKe-Li/gpt-2-image/main/data/images/banner.svg" alt="GPT Image Gallery 的提示词检查" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/KeKe-Li/gpt-2-image/blob/main/api/prompt/inspect.js">GPT Image Gallery 的提示词检查</a></b><br><sub>KeKe-Li · GitHub · ⭐ 17 仓库 · 2026-09-11</sub><br>GPT Image 提示词与案例库中的服务端提示词检查，询问 Jev 一条图像提示词属于哪种视觉方向、完整和可执行程度如何，以及是否需要参考图。<br><sub><b>Jev 用法:</b> 一次请求里包含一个在七种方向之间选择的类别 Choice、一个 4 级完整度 Score 和一个是否需要参考图的 Noul。</sub><br><sub>相关: <a href="https://github.com/KeKe-Li/gpt-2-image">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/kevinlysocial/status/2102216292573028422"><img src="https://pbs.twimg.com/amplify_video_thumb/2102216042735075328/img/tWTXX440WyUyy0PY.jpg" alt="实时 AI 导播" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kevinlysocial/status/2102216292573028422">实时 AI 导播</a></b><br><sub>kevinlysocial · X · ▶ 53 · 2026-09-22</sub><br>实时视频导播工具：在本地转写演讲者的话，并让 Jev 在其讲话时选择切到摄像头、屏幕还是两者同框；未剪辑的演示显示切换时机仍有滞后。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/yz_chow/status/2102053854116483325"><img src="https://pbs.twimg.com/amplify_video_thumb/2102053381183582208/img/00d00ZONouAnMBb6.jpg" alt="AI 剪辑的苹果发布会视频" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yz_chow/status/2102053854116483325">AI 剪辑的苹果发布会视频</a></b><br><sub>yz_chow · X · ▶ 50 · 2026-09-21</sub><br>一套结合 Codex、Jev 和 CapCut 的中文工作流，30 分钟就把 2 小时的苹果发布会剪成一条配好音、镜头和音乐都对得上的视频。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/fraineralex/fraineralex.dev/blob/main/src/app/api/jev-compose/route.ts"><img src="https://raw.githubusercontent.com/fraineralex/fraineralex.dev/main/public/og.jpg" alt="Jev UI 组合演示" width="240"></a></td>
@@ -472,16 +472,16 @@
 <td valign="top"><b><a href="https://github.com/lingengyuan/my-skills/tree/main/.claude/skills/publication-ready-docs-jev">publication-ready-docs-jev</a></b><br><sub>lingengyuan · GitHub · ⭐ 9 仓库 · 2026-01-11</sub><br>帮技术文档做发布准备的 Claude/Codex skill，发布前可选加一轮 Jev 辅助审查。<br><sub>相关: <a href="https://github.com/lingengyuan/my-skills">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/CallmeSamridh/status/2102213990562885827"><img src="https://pbs.twimg.com/media/HSyQcWuWUAAAd-9.jpg?name=orig" alt="音乐“灵魂 vs 颠覆”评测" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/CallmeSamridh/status/2102213990562885827">音乐“灵魂 vs 颠覆”评测</a></b><br><sub>CallmeSamridh · X · ▶ 19 · 2026-09-22</sub><br>音乐智能平台让 Jev 给 114 个流派的 3,274 首歌按“灵魂感 vs 颠覆性”打分，总花费约 $0.0001。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/takusaotome/claude-skills-library/tree/main/skills/jev-artifact-style-review"><img src="https://opengraph.githubassets.com/1/takusaotome/claude-skills-library" alt="jev-artifact-style-review" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/takusaotome/claude-skills-library/tree/main/skills/jev-artifact-style-review">jev-artifact-style-review</a></b><br><sub>takusaotome · GitHub · ⭐ 7 仓库 · 2025-11-09</sub><br>日语优先的双语 agent skill，审查文档、交付物和消息里的文风问题，比如套话、冗余和 AI 助手残留，以及缺失的上下文或不清楚的下一步，由 Jev 打分。<br><sub>相关: <a href="https://github.com/takusaotome/claude-skills-library">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/alfdav/music-dl/blob/master/tidaldl-py/docs/djai-edition-advice.md"><img src="https://raw.githubusercontent.com/alfdav/music-dl/master/docs/screenshots/home.png" alt="music-dl 的 Jev 版本建议" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/alfdav/music-dl/blob/master/tidaldl-py/docs/djai-edition-advice.md">music-dl 的 Jev 版本建议</a></b><br><sub>alfdav · GitHub · ⭐ 7 仓库 · 2026-03-12</sub><br>本地 Tidal 曲库管理工具 music-dl 的可选模块：在 Clean Up 清理时用 Jev 给重复曲目组打分，在用户删除任何文件之前标出每个多余副本的版本关系及置信度。<br><sub><b>Jev 用法:</b> 对每个多余副本与保留曲目的关系打分；只有 0.95+ 的同版式孪生或真重复候选才会被预先勾选，判定为“都保留”或不明确的一律拒绝处理。</sub><br><sub>相关: <a href="https://github.com/alfdav/music-dl">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/CallmeSamridh/status/2102213990562885827"><img src="https://pbs.twimg.com/media/HSyQcWuWUAAAd-9.jpg?name=orig" alt="音乐“灵魂 vs 颠覆”评测" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/CallmeSamridh/status/2102213990562885827">音乐“灵魂 vs 颠覆”评测</a></b><br><sub>CallmeSamridh · X · ▶ 19 · 2026-09-22</sub><br>音乐智能平台让 Jev 给 114 个流派的 3,274 首歌按“灵魂感 vs 颠覆性”打分，总花费约 $0.0001。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/affirmitv/bitrate-advisor"><img src="https://opengraph.githubassets.com/1/affirmitv/bitrate-advisor" alt="bitrate-advisor" width="240"></a></td>

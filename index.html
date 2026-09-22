@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Jev · 3,425 things people build with Jev</title>
+<meta name="description" content="The most complete gallery of what people build with Jev, TypeSafe's System One model: 3,425 projects, demos, posts, and write-ups across 17 scenarios, each linked to its original source. Bilingual English and Chinese.">
+<meta name="keywords" content="Jev,TypeSafe,System One,awesome list,AI agents,classification,routing,reranking,guardrails,Choice,Score,Noul">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://li-evan.github.io/awesome-jev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121110'/%3E%3Crect x='10' y='27' width='26' height='10' rx='2' fill='%23ff5a1f'/%3E%3Crect x='38' y='27' width='9' height='10' rx='2' fill='%23f3efe6'/%3E%3Crect x='49' y='27' width='5' height='10' rx='2' fill='%23f3efe6' opacity='.5'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Awesome Jev">
+<meta property="og:url" content="https://li-evan.github.io/awesome-jev/">
+<meta property="og:title" content="Awesome Jev · 3,425 things people build with Jev">
+<meta property="og:description" content="3,425 projects, demos, posts, and write-ups built with Jev, TypeSafe's System One model, organized by scenario. English and 中文.">
+<meta property="og:image" content="https://li-evan.github.io/awesome-jev/site/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Awesome Jev · 3,425 things people build with Jev">
+<meta name="twitter:description" content="The most complete gallery of what people build with Jev, organized by scenario. English and 中文.">
+<meta name="twitter:image" content="https://li-evan.github.io/awesome-jev/site/og.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Awesome Jev","url":"https://li-evan.github.io/awesome-jev/","description":"The most complete gallery of what people build with Jev, TypeSafe's System One model.","inLanguage":["en","zh-CN"],"isPartOf":{"@type":"WebSite","name":"Awesome Jev","url":"https://li-evan.github.io/awesome-jev/"}}
+</script>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("aj-theme");
+    var dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    if (dark) document.documentElement.classList.add("dark");
+    var q = new URLSearchParams(location.search).get("lang");
+    var l = q || localStorage.getItem("aj-lang");
+    if (l === "zh") document.documentElement.lang = "zh-CN";
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f3efe6;
+  --paper-2: #ebe5d8;
+  --card: #fbf9f4;
+  --ink: #16140f;
+  --ink-2: #4a453b;
+  --ink-3: #8a8374;
+  --rule: #d9d1bf;
+  --signal: #ff5a1f;
+  --signal-ink: #b83a0b;
+  --shadow: 0 1px 0 rgba(22, 20, 15, .06), 0 10px 30px -18px rgba(22, 20, 15, .35);
+  --serif: "Fraunces", "Songti SC", "STSong", "Noto Serif SC", Georgia, serif;
+  --sans: "Hanken Grotesk", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --mono: "JetBrains Mono", "SFMono-Regular", Menlo, "PingFang SC", monospace;
+  --radius: 14px;
+}
+html.dark {
+  --paper: #121110;
+  --paper-2: #1b1a17;
+  --card: #1a1916;
+  --ink: #f1ece1;
+  --ink-2: #c3bcad;
+  --ink-3: #847d6f;
+  --rule: #2f2c26;
+  --signal: #ff6a33;
+  --signal-ink: #ff8a5c;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 14px 34px -20px rgba(0, 0, 0, .9);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a { color: inherit; }
+.mono { font-family: var(--mono); font-feature-settings: "zero" 1; }
+.wrap { position: relative; z-index: 1; max-width: 1320px; margin: 0 auto; padding: 0 28px; }
+
+/* top bar */
+.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  backdrop-filter: saturate(1.4) blur(12px);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+.bar .wrap { display: flex; align-items: center; gap: 14px; height: 64px; }
+.brand { display: flex; align-items: baseline; gap: 2px; text-decoration: none; margin-right: auto; white-space: nowrap; }
+.brand .aw { font: italic 500 22px/1 var(--serif); letter-spacing: -.01em; }
+.brand .dot { color: var(--signal); font: 700 22px/1 var(--serif); }
+.brand .jev { font: 600 16px/1 var(--mono); letter-spacing: .02em; }
+.tbtn {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 36px; padding: 0 12px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: transparent; color: var(--ink);
+  font: 500 13px/1 var(--mono); cursor: pointer; text-decoration: none;
+  transition: border-color .15s, background .15s, transform .15s;
+}
+.tbtn:hover { border-color: var(--ink-3); }
+.tbtn:active { transform: translateY(1px); }
+.tbtn.cta { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.tbtn.cta:hover { background: var(--signal); border-color: var(--signal); color: #fff; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; height: 36px; }
+.seg button { border: 0; background: transparent; color: var(--ink-3); font: 600 12px/1 var(--mono); padding: 0 11px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.icon { width: 16px; height: 16px; }
+.tbtn, .seg button, .chip { white-space: nowrap; }
+.short { display: none; }
+
+/* hero */
+.hero { padding: 64px 0 28px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); display: flex; gap: 10px; align-items: center; }
+.eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--signal); }
+h1 {
+  font-family: var(--serif);
+  font-weight: 380;
+  font-size: clamp(44px, 7.4vw, 104px);
+  line-height: .95;
+  letter-spacing: -.035em;
+  margin: 22px 0 22px;
+  max-width: 13ch;
+  font-variation-settings: "opsz" 144;
+}
+html[lang="zh-CN"] h1 { letter-spacing: 0; line-height: 1.08; max-width: 12em; font-weight: 600; }
+h1 em { font-style: italic; color: var(--signal); font-weight: 420; }
+.lede { font-size: clamp(17px, 1.6vw, 20px); color: var(--ink-2); max-width: 60ch; margin: 0 0 26px; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px 28px; font: 500 13px/1.3 var(--mono); color: var(--ink-3); }
+.stats b { color: var(--ink); font-weight: 600; }
+
+/* distribution */
+.dist { margin: 42px 0 8px; }
+.dist-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; font: 500 12px/1 var(--mono); color: var(--ink-3); }
+.dist-head .fn { color: var(--ink); }
+.dist-bar { display: flex; height: 58px; border-radius: 10px; overflow: hidden; border: 1px solid var(--rule); background: var(--paper-2); }
+.dist-bar button {
+  position: relative; border: 0; padding: 0; min-width: 4px; cursor: pointer;
+  background: var(--c); transition: filter .15s, flex-grow .5s cubic-bezier(.2,.8,.2,1);
+  display: flex; align-items: flex-end; justify-content: flex-start; overflow: hidden;
+  animation: grow .9s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i) * 40ms);
+}
+.dist-bar button + button { border-left: 1px solid color-mix(in srgb, var(--paper) 55%, transparent); }
+.dist-bar button span { font: 600 11px/1 var(--mono); color: #fff; padding: 0 0 8px 8px; white-space: nowrap; opacity: .95; text-shadow: 0 1px 2px rgba(0,0,0,.25); }
+.dist-bar button:hover, .dist-bar button[aria-pressed="true"] { filter: brightness(1.12) saturate(1.1); }
+.dist-bar.has-active button:not([aria-pressed="true"]) { filter: grayscale(.8) opacity(.45); }
+@keyframes grow { from { transform: scaleY(0); transform-origin: bottom; } to { transform: scaleY(1); transform-origin: bottom; } }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 12px 7px 10px; border-radius: 999px;
+  border: 1px solid var(--rule); background: var(--card);
+  font: 500 13.5px/1 var(--sans); color: var(--ink); cursor: pointer;
+  transition: border-color .15s, background .15s, transform .15s;
+}
+.chip:hover { border-color: var(--ink-3); transform: translateY(-1px); }
+.chip .sw { width: 9px; height: 9px; border-radius: 2px; background: var(--c); }
+.chip .em { margin-right: 1px; }
+.chip .p { font: 500 11.5px/1 var(--mono); color: var(--ink-3); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip[aria-pressed="true"] .p { color: color-mix(in srgb, var(--paper) 70%, transparent); }
+.res-label { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 18px 0 8px; }
+
+/* controls */
+.controls { position: sticky; top: 64px; z-index: 15; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); margin-top: 28px; }
+.controls .wrap { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-top: 12px; padding-bottom: 12px; }
+.search { flex: 1 1 320px; position: relative; }
+.search input {
+  width: 100%; height: 44px; padding: 0 16px 0 42px;
+  border-radius: 12px; border: 1px solid var(--rule); background: var(--card);
+  color: var(--ink); font: 500 15px/1 var(--sans); outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.search input:focus { border-color: var(--signal); box-shadow: 0 0 0 4px color-mix(in srgb, var(--signal) 18%, transparent); }
+.search svg { position: absolute; left: 14px; top: 13px; color: var(--ink-3); }
+.search kbd { position: absolute; right: 12px; top: 12px; font: 500 11px/1 var(--mono); color: var(--ink-3); border: 1px solid var(--rule); border-radius: 5px; padding: 4px 6px; }
+select {
+  height: 44px; padding: 0 34px 0 12px; border-radius: 12px; border: 1px solid var(--rule);
+  background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a8374' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;
+  color: var(--ink); font: 500 13px/1 var(--mono); appearance: none; -webkit-appearance: none; cursor: pointer;
+}
+.summary { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 22px 0 14px; font: 500 13px/1.4 var(--mono); color: var(--ink-3); }
+.summary b { color: var(--ink); }
+.summary .desc { font: 400 15px/1.5 var(--sans); color: var(--ink-2); max-width: 70ch; }
+.clear { background: none; border: 0; color: var(--signal-ink); font: 600 13px/1 var(--mono); cursor: pointer; padding: 0; }
+
+/* grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; padding-bottom: 40px; }
+.card {
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+  transition: transform .2s cubic-bezier(.2,.8,.2,1), border-color .2s, box-shadow .2s;
+  animation: rise .5s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i, 0) * 18ms);
+}
+.card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--c) 60%, var(--rule)); }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.thumb { display: block; aspect-ratio: 16 / 9; background: var(--paper-2); position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.card:hover .thumb img { transform: scale(1.035); }
+.ph {
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;
+  background:
+    radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--c) 55%, transparent), transparent 60%),
+    linear-gradient(135deg, color-mix(in srgb, var(--c) 22%, var(--paper-2)), var(--paper-2));
+}
+.ph .e { font-size: 34px; line-height: 1; }
+.ph .t { font: italic 500 22px/1.1 var(--serif); color: var(--ink); letter-spacing: -.01em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.kind { position: absolute; left: 10px; top: 10px; font: 600 10.5px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; background: color-mix(in srgb, var(--paper) 88%, transparent); color: var(--ink); padding: 5px 7px; border-radius: 6px; backdrop-filter: blur(6px); }
+.cbody { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; font: 500 11.5px/1.3 var(--mono); color: var(--ink-3); }
+.meta .heat { color: var(--signal-ink); font-weight: 600; }
+.card h3 { margin: 0; font: 600 19px/1.22 var(--serif); letter-spacing: -.01em; font-variation-settings: "opsz" 40; }
+html[lang="zh-CN"] .card h3 { font-weight: 700; letter-spacing: 0; }
+.card h3 a { text-decoration: none; background-image: linear-gradient(var(--signal), var(--signal)); background-size: 0 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .25s; }
+.card h3 a:hover { background-size: 100% 2px; }
+.card p { margin: 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.55; }
+.jev { font: 400 12px/1.5 var(--mono) !important; color: var(--ink-2) !important; border-left: 2px solid var(--c); padding-left: 9px; }
+.jev b { color: var(--ink); font-weight: 600; }
+.foot { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; padding-top: 6px; }
+.sec { font: 500 12px/1 var(--sans); color: var(--ink-2); display: inline-flex; gap: 5px; align-items: center; background: none; border: 0; padding: 0; cursor: pointer; }
+.sec:hover { color: var(--signal-ink); }
+.lk { font: 500 11.5px/1 var(--mono); color: var(--ink-3); text-decoration: none; border: 1px solid var(--rule); border-radius: 999px; padding: 4px 8px; }
+.lk:hover { color: var(--ink); border-color: var(--ink-3); }
+.note { font: 500 11px/1 var(--mono); color: var(--signal-ink); }
+.more { display: flex; justify-content: center; padding: 10px 0 70px; }
+.empty { text-align: center; padding: 80px 0; color: var(--ink-3); font: 500 15px/1.6 var(--mono); }
+
+/* footer */
+footer { border-top: 1px solid var(--rule); padding: 44px 0 60px; color: var(--ink-3); font-size: 14px; }
+footer .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 30px; }
+footer h4 { margin: 0 0 8px; font: italic 500 22px/1.2 var(--serif); color: var(--ink); }
+footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font: 500 13px/1.3 var(--mono); }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--signal-ink); }
+.submit-band {
+  margin: 10px 0 50px; border-radius: 20px; padding: 34px 34px;
+  background: var(--ink); color: var(--paper);
+  display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  position: relative; overflow: hidden;
+}
+.submit-band::after { content: ""; position: absolute; right: -60px; top: -60px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, var(--signal), transparent 70%); opacity: .55; }
+.submit-band h2 { margin: 0 0 6px; font: 400 clamp(26px, 3vw, 38px)/1.1 var(--serif); letter-spacing: -.02em; }
+.submit-band p { margin: 0; color: color-mix(in srgb, var(--paper) 72%, transparent); max-width: 56ch; }
+.submit-band .tbtn { position: relative; z-index: 1; background: var(--signal); border-color: var(--signal); color: #fff; height: 44px; padding: 0 20px; font-size: 14px; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 12px; top: 12px; z-index: 99; background: var(--ink); color: var(--paper); padding: 8px 12px; border-radius: 8px; }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+
+@media (max-width: 760px) {
+  .wrap { padding: 0 16px; }
+  .bar .wrap { gap: 8px; }
+  .hide-sm { display: none !important; }
+  .hero { padding-top: 38px; }
+  .dist-bar { height: 42px; }
+  .dist-bar button span { display: none; }
+  footer .cols { grid-template-columns: 1fr; }
+  .search kbd { display: none; }
+  .legend { flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 2px 16px 6px; scrollbar-width: none; }
+  .legend::-webkit-scrollbar { display: none; }
+  .long { display: none; }
+  .short { display: inline; }
+  .brand .jev { font-size: 14px; }
+  .brand .aw, .brand .dot { font-size: 19px; }
+  .tbtn { padding: 0 10px; }
+  .submit-band { padding: 26px 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#grid" data-i18n="skip">Skip to entries</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Awesome Jev"><span class="aw">awesome</span><span class="dot">·</span><span class="jev">jev</span></a>
+    <div class="seg" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
+    <button class="tbtn" type="button" id="theme" aria-label="Toggle dark mode">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a class="tbtn hide-sm" id="gh" href="https://github.com/Li-Evan/awesome-jev" target="_blank" rel="noopener">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+      <span data-i18n="star">Star</span>
+    </a>
+    <a class="tbtn cta" href="https://github.com/Li-Evan/awesome-jev/issues/new/choose" target="_blank" rel="noopener"><span class="long" data-i18n="submit">Submit yours</span><span class="short" data-i18n="submitShort">+ Submit</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="eyebrow">Typed decisions · calibrated probabilities</div>
+      <h1 id="title">What people <em>build</em> with Jev.</h1>
+      <p class="lede" id="lede"></p>
+      <div class="stats" id="stats"></div>
+      <div class="dist">
+        <div class="dist-head"><span class="fn">p(scenario)</span><span data-i18n="distHint">share of entries · click to filter</span></div>
+        <div class="dist-bar" id="bar" role="group" aria-label="Scenarios"></div>
+        <div class="legend" id="legend"></div>
+        <div class="res-label" data-i18n="resources">Resources</div>
+        <div class="legend" id="resources"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <div class="wrap">
+      <label class="search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off" spellcheck="false" aria-label="Search">
+        <kbd>/</kbd>
+      </label>
+      <select id="kind" aria-label="Type"></select>
+      <select id="sort" aria-label="Sort"></select>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="summary"><div><span id="count"></span> <button class="clear" id="clear" hidden></button></div><div class="desc" id="secdesc"></div></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <div class="empty" id="empty" hidden></div>
+    <div class="more"><button class="tbtn" id="more" hidden></button></div>
+
+    <section class="submit-band">
+      <div>
+        <h2 data-i18n="bandTitle">Built something with Jev?</h2>
+        <p data-i18n="bandText">Add it in a minute. A demo post on X counts too. Entries show up here with a picture in their scenario.</p>
+      </div>
+      <a class="tbtn" href="https://github.com/Li-Evan/awesome-jev/issues/new/choose" target="_blank" rel="noopener" data-i18n="bandCta">Submit a project →</a>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4>awesome · jev</h4>
+      <p data-i18n="about">A community-maintained gallery, not affiliated with TypeSafe. The official sites are typesafe.ai and docs.typesafe.ai. Every entry links to its original source; images load from each project's own pages and belong to their owners. The list text is released under CC0.</p>
+    </div>
+    <ul>
+      <li><a href="https://github.com/Li-Evan/awesome-jev" target="_blank" rel="noopener" data-i18n="fRepo">GitHub repository</a></li>
+      <li><a id="fReadme" href="https://github.com/Li-Evan/awesome-jev#readme" target="_blank" rel="noopener" data-i18n="fReadme">README</a></li>
+      <li><a id="fCheat" href="https://github.com/Li-Evan/awesome-jev/blob/main/cheatsheet.md" target="_blank" rel="noopener" data-i18n="fCheat">Jev cheatsheet</a></li>
+      <li><a id="fContrib" href="https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md" target="_blank" rel="noopener" data-i18n="fContrib">Contribution guidelines</a></li>
+      <li><a href="https://docs.typesafe.ai" target="_blank" rel="noopener" data-i18n="fDocs">Official Jev docs</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var PAGE = 48;
+  var COLORS = ["#e4572e", "#2f4b7c", "#f2a541", "#4f86c6", "#6a994e", "#9d5c63", "#17a2a0", "#c44536", "#7d5ba6", "#d4a017",
+    "#3a7d44", "#d1495b", "#00798c", "#b5838d", "#8e6c8a", "#4c956c", "#6d6875", "#2b9348", "#e07a5f", "#577590", "#bc6c25"];
+  var KINDS = {
+    en: { all: "All types", repo: "GitHub", post: "X posts", video: "Videos", community: "Reddit & HN", article: "Articles & docs", app: "Apps", model: "Hugging Face", package: "Packages" },
+    zh: { all: "全部类型", repo: "GitHub", post: "X 帖子", video: "视频", community: "Reddit 与 HN", article: "文章与文档", app: "应用", model: "Hugging Face", package: "软件包" }
+  };
+  var KIND_LABEL = {
+    en: { repo: "GitHub", app: "App", post: "X", reddit: "Reddit", thread: "HN", video: "Video", article: "Article", model: "HF", package: "Package", docs: "Docs" },
+    zh: { repo: "GitHub", app: "应用", post: "X", reddit: "Reddit", thread: "HN", video: "视频", article: "文章", model: "HF", package: "软件包", docs: "文档" }
+  };
+  var KIND_GROUP = { repo: "repo", post: "post", video: "video", reddit: "community", thread: "community", article: "article", docs: "article", app: "app", model: "model", package: "package" };
+  var METRIC_ICON = { stars: "★", likes: "♥", points: "▲", views: "▶", downloads: "↓", repo_stars: "★" };
+  var T = {
+    en: {
+      skip: "Skip to entries", star: "Star", submit: "Submit yours", submitShort: "+ Submit", eyebrow: "Typed decisions · calibrated probabilities",
+      title: 'What people <em>build</em> with Jev.',
+      lede: "The most complete gallery of projects, demos, posts, and write-ups built with Jev, TypeSafe's System One model. Gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web; every entry links to its original source and says what it does.",
+      stats: "<span><b>{total}</b> entries</span><span><b>{scen}</b> scenarios</span><span><b>6</b> sources</span><span>latest <b>{latest}</b></span>",
+      distHint: "share of entries · click to filter", resources: "Resources", search: "Search projects, authors, techniques…",
+      sortHot: "Most popular", sortNew: "Newest", sortAz: "A → Z", count: "<b>{n}</b> of {total} entries", clear: "Clear filters ×",
+      more: "Show more ({n} left)", empty: "Nothing matches yet. Try another word, or submit it.",
+      how: "Jev", bandTitle: "Built something with Jev?", bandText: "Add it in a minute. A demo post on X counts too. Entries show up here with a picture in their scenario.",
+      bandCta: "Submit a project →", about: "A community-maintained gallery, not affiliated with TypeSafe. The official sites are typesafe.ai and docs.typesafe.ai. Every entry links to its original source; images load from each project's own pages and belong to their owners. The list text is released under CC0.",
+      fRepo: "GitHub repository", fReadme: "README", fCheat: "Jev cheatsheet", fContrib: "Contribution guidelines", fDocs: "Official Jev docs", all: "All"
+    },
+    zh: {
+      skip: "跳到条目", star: "Star", submit: "提交你的项目", submitShort: "+ 提交", eyebrow: "类型化判断 · 校准过的概率",
+      title: '大家用 Jev <em>做了</em>什么。',
+      lede: "最全的 Jev 用例合集：用 TypeSafe 的 System One 模型做出来的项目、演示、帖子和实测文章，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来。每一条都链接到原始出处，并说明它具体做了什么。",
+      stats: "<span><b>{total}</b> 条</span><span><b>{scen}</b> 个场景</span><span><b>6</b> 类来源</span><span>最新 <b>{latest}</b></span>",
+      distHint: "各场景占比 · 点击筛选", resources: "资源", search: "搜索项目、作者、技术……",
+      sortHot: "最热门", sortNew: "最新", sortAz: "按名称", count: "<b>{n}</b> / {total} 条", clear: "清除筛选 ×",
+      more: "显示更多（还有 {n} 条）", empty: "暂时没有匹配的条目。换个词试试，或者提交一个。",
+      how: "Jev 用法", bandTitle: "你也用 Jev 做过东西？", bandText: "一分钟就能提交，X 上的一条演示帖也算。收录后会带着截图出现在对应场景里。",
+      bandCta: "提交项目 →", about: "由社区维护，与 TypeSafe 官方无关。官方网站是 typesafe.ai 和 docs.typesafe.ai。每一条都链接到原始出处；图片直接加载自各项目自己的页面，版权归原作者所有。列表文字以 CC0 发布。",
+      fRepo: "GitHub 仓库", fReadme: "README（中文）", fCheat: "Jev 速查表", fContrib: "贡献指南", fDocs: "Jev 官方文档", all: "全部"
+    }
+  };
+
+  var state = { lang: "en", q: "", s: "", k: "all", sort: "hot", shown: PAGE };
+  var data, secBySlug = {}, colorOf = {}, filtered = [];
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var code = function (s) { return esc(s).replace(/`([^`]+)`/g, "<code>$1</code>"); };
+  var compact = function (n) { return n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 1e3 ? (n / 1e3).toFixed(1).replace(/\.0$/, "") + "k" : String(n); };
+  var fmt = function (s, o) { return s.replace(/\{(\w+)\}/g, function (_, k) { return o[k]; }); };
+  var tr = function (e, en, zh) { return state.lang === "zh" && e[zh] ? e[zh] : e[en]; };
+
+  function readUrl() {
+    var p = new URLSearchParams(location.search);
+    var saved = null;
+    try { saved = localStorage.getItem("aj-lang"); } catch (e) {}
+    state.lang = p.get("lang") === "zh" || (!p.get("lang") && saved === "zh") ? "zh" : "en";
+    state.q = p.get("q") || "";
+    state.s = p.get("s") || "";
+    state.k = p.get("k") || "all";
+    state.sort = p.get("sort") || "hot";
+    state.shown = PAGE;
+  }
+  function writeUrl() {
+    var p = new URLSearchParams();
+    if (state.lang === "zh") p.set("lang", "zh");
+    if (state.q) p.set("q", state.q);
+    if (state.s) p.set("s", state.s);
+    if (state.k !== "all") p.set("k", state.k);
+    if (state.sort !== "hot") p.set("sort", state.sort);
+    var qs = p.toString();
+    history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+  }
+
+  function applyLang() {
+    var t = T[state.lang];
+    document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
+    document.querySelectorAll("[data-i18n]").forEach(function (el) { var v = t[el.getAttribute("data-i18n")]; if (v) el.textContent = v; });
+    document.querySelectorAll("[data-lang]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === state.lang)); });
+    $("title").innerHTML = t.title;
+    $("lede").textContent = t.lede;
+    $("stats").innerHTML = fmt(t.stats, { total: data.total.toLocaleString("en-US"), scen: data.sections.filter(function (s) { return s.group === "scenario"; }).length, latest: esc(data.latest) });
+    $("q").placeholder = t.search;
+    $("sort").innerHTML = [["hot", t.sortHot], ["new", t.sortNew], ["az", t.sortAz]].map(function (o) { return '<option value="' + o[0] + '">' + o[1] + "</option>"; }).join("");
+    $("sort").value = state.sort;
+    var ks = KINDS[state.lang];
+    $("kind").innerHTML = Object.keys(ks).map(function (k) { return '<option value="' + k + '">' + ks[k] + "</option>"; }).join("");
+    $("kind").value = state.k;
+    var zh = state.lang === "zh";
+    $("fReadme").href = zh ? data.repo + "/blob/main/README.zh-CN.md" : data.repo + "#readme";
+    $("fCheat").href = data.repo + "/blob/main/" + (zh ? "cheatsheet.zh-CN.md" : "cheatsheet.md");
+    $("fContrib").href = data.repo + "/blob/main/" + (zh ? "contributing.zh-CN.md" : "contributing.md");
+    document.title = zh ? "Awesome Jev · " + data.total.toLocaleString("en-US") + " 个用 Jev 做的东西" : "Awesome Jev · " + data.total.toLocaleString("en-US") + " things people build with Jev";
+    renderFilters();
+  }
+
+  function secTitle(s) { return state.lang === "zh" ? s.title_zh : s.title; }
+
+  function renderFilters() {
+    var scen = data.sections.filter(function (s) { return s.group === "scenario"; });
+    var scenTotal = scen.reduce(function (a, s) { return a + s.count; }, 0);
+    $("bar").innerHTML = scen.map(function (s, i) {
+      var pv = (s.count / scenTotal).toFixed(3);
+      return '<button type="button" style="flex-grow:' + s.count + ";--c:" + colorOf[s.slug] + ";--i:" + i + '" data-s="' + s.slug + '" aria-pressed="' + (state.s === s.slug) + '" title="' + esc(s.emoji + " " + secTitle(s) + " · p=" + pv + " · " + s.count) + '"><span>' + (s.count / scenTotal > .045 ? s.emoji + " " + pv : "") + "</span></button>";
+    }).join("");
+    $("bar").classList.toggle("has-active", !!state.s && scen.some(function (s) { return s.slug === state.s; }));
+    var chip = function (s) {
+      var p = s.group === "scenario" ? "p=" + (s.count / scenTotal).toFixed(3) : String(s.count);
+      return '<button type="button" class="chip" style="--c:' + colorOf[s.slug] + '" data-s="' + s.slug + '" aria-pressed="' + (state.s === s.slug) + '"><span class="sw"></span><span class="em">' + s.emoji + "</span>" + esc(secTitle(s)) + ' <span class="p">' + p + "</span></button>";
+    };
+    $("legend").innerHTML = scen.map(chip).join("");
+    $("resources").innerHTML = data.sections.filter(function (s) { return s.group === "resource"; }).map(chip).join("");
+  }
+
+  function haystack(e) {
+    if (!e._h) e._h = [e.n, e.nz, e.d, e.dz, e.j, e.jz, e.a, e.u].join(" ").toLowerCase();
+    return e._h;
+  }
+
+  function compute() {
+    var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    filtered = data.entries.filter(function (e) {
+      if (state.s && e.s !== state.s) return false;
+      if (state.k !== "all" && KIND_GROUP[e.k] !== state.k) return false;
+      if (terms.length) { var h = haystack(e); for (var i = 0; i < terms.length; i++) if (h.indexOf(terms[i]) < 0) return false; }
+      return true;
+    });
+    var by = {
+      hot: function (a, b) { return b.h - a.h || a.n.localeCompare(b.n); },
+      "new": function (a, b) { return (b.t || "").localeCompare(a.t || "") || b.h - a.h; },
+      az: function (a, b) { return (tr(a, "n", "nz")).localeCompare(tr(b, "n", "nz"), state.lang === "zh" ? "zh" : "en"); }
+    };
+    filtered.sort(by[state.sort] || by.hot);
+  }
+
+  function card(e, i) {
+    var sec = secBySlug[e.s], c = colorOf[e.s];
+    var name = tr(e, "n", "nz"), url = state.lang === "zh" && e.uz ? e.uz : e.u;
+    var kl = KIND_LABEL[state.lang][e.k] || e.k;
+    var img = e.i
+      ? '<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="' + esc(e.i) + '" alt="' + esc(name) + '" data-e="' + esc(sec.emoji) + '">'
+      : '<div class="ph"><span class="e">' + sec.emoji + '</span><span class="t">' + esc(name) + "</span></div>";
+    var meta = [];
+    if (e.a) meta.push("<span>" + esc(e.a) + "</span>");
+    if (e.m) meta.push('<span class="heat">' + METRIC_ICON[e.m[0]] + " " + compact(e.m[1]) + (e.m[0] === "repo_stars" ? (state.lang === "zh" ? " 仓库" : " repo") : "") + "</span>");
+    if (e.t) meta.push("<span>" + e.t + "</span>");
+    var jev = tr(e, "j", "jz");
+    var note = tr(e, "no", "noz");
+    var links = e.l ? Object.keys(e.l).slice(0, 4).map(function (k) { return '<a class="lk" href="' + esc(e.l[k]) + '" target="_blank" rel="noopener">' + esc(k) + "</a>"; }).join("") : "";
+    return '<article class="card" style="--c:' + c + ";--i:" + (i % PAGE) + '">' +
+      '<a class="thumb" href="' + esc(url) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' + img + '<span class="kind">' + esc(kl) + "</span></a>" +
+      '<div class="cbody"><div class="meta">' + meta.join("") + "</div>" +
+      '<h3><a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(name) + "</a>" + (note ? ' <span class="note">(' + esc(note) + ")</span>" : "") + "</h3>" +
+      "<p>" + code(tr(e, "d", "dz")) + "</p>" +
+      (jev ? '<p class="jev"><b>' + T[state.lang].how + ":</b> " + code(jev) + "</p>" : "") +
+      '<div class="foot"><button type="button" class="sec" data-s="' + e.s + '"><span>' + sec.emoji + "</span>" + esc(secTitle(sec)) + "</button>" + links + "</div></div></article>";
+  }
+
+  function render() {
+    compute();
+    var t = T[state.lang];
+    var list = filtered.slice(0, state.shown);
+    $("grid").innerHTML = list.map(card).join("");
+    $("count").innerHTML = fmt(t.count, { n: filtered.length.toLocaleString("en-US"), total: data.total.toLocaleString("en-US") });
+    var active = state.q || state.s || state.k !== "all";
+    $("clear").hidden = !active;
+    $("clear").textContent = t.clear;
+    var sec = secBySlug[state.s];
+    $("secdesc").textContent = sec ? sec.emoji + " " + (state.lang === "zh" ? sec.description_zh : sec.description) : "";
+    $("empty").hidden = filtered.length > 0;
+    $("empty").textContent = t.empty;
+    var left = filtered.length - list.length;
+    $("more").hidden = left <= 0;
+    $("more").textContent = fmt(t.more, { n: left.toLocaleString("en-US") });
+  }
+
+  function update(patch, scroll) {
+    Object.assign(state, patch, { shown: PAGE });
+    writeUrl();
+    renderFilters();
+    render();
+    if (scroll) document.querySelector(".controls").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function bind() {
+    document.addEventListener("click", function (ev) {
+      var b = ev.target.closest("[data-s]");
+      if (b) { var s = b.getAttribute("data-s"); update({ s: state.s === s ? "" : s }, true); return; }
+      var l = ev.target.closest("[data-lang]");
+      if (l) {
+        state.lang = l.getAttribute("data-lang");
+        try { localStorage.setItem("aj-lang", state.lang); } catch (e) {}
+        writeUrl(); applyLang(); render();
+      }
+    });
+    var timer;
+    $("q").addEventListener("input", function () { clearTimeout(timer); var v = this.value.trim(); timer = setTimeout(function () { update({ q: v }); }, 120); });
+    $("kind").addEventListener("change", function () { update({ k: this.value }); });
+    $("sort").addEventListener("change", function () { update({ sort: this.value }); });
+    $("clear").addEventListener("click", function () { $("q").value = ""; update({ q: "", s: "", k: "all" }); });
+    $("more").addEventListener("click", function () { state.shown += PAGE * 2; render(); });
+    $("theme").addEventListener("click", function () {
+      var d = document.documentElement.classList.toggle("dark");
+      try { localStorage.setItem("aj-theme", d ? "dark" : "light"); } catch (e) {}
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "/" && document.activeElement !== $("q")) { ev.preventDefault(); $("q").focus(); }
+      if (ev.key === "Escape" && document.activeElement === $("q")) { $("q").value = ""; update({ q: "" }); }
+    });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting && !$("more").hidden && state.shown < 600) { state.shown += PAGE; render(); }
+      }, { rootMargin: "600px" }).observe($("more"));
+    }
+    document.addEventListener("error", function (ev) {
+      var img = ev.target;
+      if (img.tagName !== "IMG" || !img.closest(".thumb")) return;
+      var ph = document.createElement("div");
+      ph.className = "ph";
+      var e = document.createElement("span"); e.className = "e"; e.textContent = img.getAttribute("data-e") || "";
+      var t = document.createElement("span"); t.className = "t"; t.textContent = img.alt;
+      ph.append(e, t);
+      img.replaceWith(ph);
+    }, true);
+    window.addEventListener("popstate", function () { readUrl(); $("q").value = state.q; applyLang(); render(); });
+  }
+
+  readUrl();
+  fetch("site/data.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
+    data = d;
+    data.sections.forEach(function (s, i) { secBySlug[s.slug] = s; colorOf[s.slug] = COLORS[i % COLORS.length]; });
+    $("q").value = state.q;
+    applyLang();
+    bind();
+    render();
+  }).catch(function () {
+    $("grid").innerHTML = '<div class="empty">Could not load the gallery data. Open the <a href="https://github.com/Li-Evan/awesome-jev">GitHub README</a> instead.</div>';
+  });
+})();
+</script>
+</body>
+</html>

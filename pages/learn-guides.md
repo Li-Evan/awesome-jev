@@ -30,12 +30,24 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/MakeAI_CEO/status/2101924475814212065">Jev x Codex practical guide</a></b><br><sub>MakeAI_CEO · Article · ♥ 448 · 2026-09-21</sub><br>Japanese guide to installing the TypeSafe skill in Codex, separating generation from Jev judgments, published experiments, work applications, and ways to improve decision accuracy.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100925069765534024"><img src="https://pbs.twimg.com/media/HSf8FmcXMAAKnZ2.jpg" alt="How to master Jev (Full Guide)" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chddaniel/status/2100925069765534024">How to master Jev (Full Guide)</a></b><br><sub>chddaniel · Article · ♥ 1.1k · 2026-09-18</sub><br>Long guide covering what Jev is good at, using it beside existing LLMs, question patterns, confidence gates against bad decisions, and five money-making workflows.</td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/iannuttall/status/2100982108873191861">Getting started with the TypeSafe skill</a></b><br><sub>iannuttall · X · ♥ 2.6k · 2026-09-18</sub><br>Two-step starter: install the official typesafe-ai agent skill, then ask your coding agent to use /typesafe-ai to find slow, costly LLM calls that Jev could replace.<br><sub>Also: <a href="https://github.com/typesafe-ai/skills">skill</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/_avichawla/status/2101563610644496464"><img src="https://pbs.twimg.com/media/HSnaCbRbgAA0RG9.png" alt="Build your own Jev (100% local)" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/_avichawla/status/2101563610644496464">Build your own Jev (100% local)</a></b><br><sub>_avichawla · Article · ♥ 2.6k · 2026-09-20</sub><br>Tutorial on turning an open-source LLM into a local decision engine without retraining, using next-token scoring over fixed choices with SGLang, benchmarked against normal text generation.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/DataChaz/status/2101206777924858319"><img src="https://pbs.twimg.com/media/HSj8bdNa0AAPYPc.jpg?name=orig" alt="Jev Engineering roadmap, summarized" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/DataChaz/status/2101206777924858319">Jev Engineering roadmap, summarized</a></b><br><sub>DataChaz · X · ♥ 2.1k · 2026-09-19</sub><br>Thread condensing a 10-step Jev setup guide: turn agent forks into Choice, Score and probability, batch decisions (13 questions ran 10x faster and 12.2x cheaper in one test), and benchmark the whole loop.<br><sub>Also: <a href="https://x.com/0xCodila/status/2100984487802708306">source</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100925069765534024"><img src="https://pbs.twimg.com/media/HSf8FmcXMAAKnZ2.jpg" alt="How to master Jev (Full Guide)" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chddaniel/status/2100925069765534024">How to master Jev (Full Guide)</a></b><br><sub>chddaniel · Article · ♥ 1.1k · 2026-09-18</sub><br>Long guide covering what Jev is good at, using it beside existing LLMs, question patterns, confidence gates against bad decisions, and five money-making workflows.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101061688338575739"><img src="https://pbs.twimg.com/amplify_video_thumb/2101061589038477312/img/Jrat3MGWY4vtlsjL.jpg" alt="Decision models in practice" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101061688338575739">Decision models in practice</a></b><br><sub>OpenRouter · X · ♥ 1.7k · 2026-09-18</sub><br>OpenRouter thread explaining what a decision model is through practical software-development examples where Jev answers yes/no and multiple-choice questions with confidence.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xRicker/status/2101292455391809670"><img src="https://pbs.twimg.com/media/HSk1-arXgAAPiPp.jpg" alt="Giving your agents a decision brain" width="240"></a></td>
@@ -46,10 +58,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/mvanhorn/status/2100784142850097482">WTF Is Jev?</a></b><br><sub>mvanhorn · Article · ♥ 1.3k · 2026-09-18</sub><br>Plain-language explainer of Jev as multiple choice rather than essay writing, followed by nine things people are already building with it, checked against the live posts.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/DataChaz/status/2101206777924858319"><img src="https://pbs.twimg.com/media/HSj8bdNa0AAPYPc.jpg?name=orig" alt="Jev Engineering roadmap, summarized" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/DataChaz/status/2101206777924858319">Jev Engineering roadmap, summarized</a></b><br><sub>DataChaz · X · ♥ 2.1k · 2026-09-19</sub><br>Thread condensing a 10-step Jev setup guide: turn agent forks into Choice, Score and probability, batch decisions (13 questions ran 10x faster and 12.2x cheaper in one test), and benchmark the whole loop.<br><sub>Also: <a href="https://x.com/0xCodila/status/2100984487802708306">source</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/xmglab/status/2101932146416075073"><img src="https://pbs.twimg.com/media/HStmlB-aAAE0ixN.jpg" alt="Jev in Claude Code and Codex (Chinese)" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/xmglab/status/2101932146416075073">Jev in Claude Code and Codex (Chinese)</a></b><br><sub>xmglab · Article · ♥ 456 · 2026-09-21</sub><br>Chinese tutorial covering API keys, a first curl request to the System One endpoint, pricing, and installing the official TypeSafe skill in Claude Code and Codex.</td>
 </tr>
@@ -58,24 +66,12 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/29meat_ai/status/2101431162749264219">Codex x Jev textbook</a></b><br><sub>29meat_ai · Article · ♥ 239 · 2026-09-19</sub><br>Japanese guide to splitting decisions out of Codex into Jev, reviewing public routers and integrations for model choice, evidence checks and fallback behavior.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/kgsi/status/2100743044698112032"><img src="https://pbs.twimg.com/media/HSdWHhbaUAAGMVn.jpg" alt="Jev for non-engineers and designers" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kgsi/status/2100743044698112032">Jev for non-engineers and designers</a></b><br><sub>kgsi · Article · ♥ 340 · 2026-09-18</sub><br>Japanese introduction for non-engineers built around a demo that sorts live-stream comments into question, impression, request and other in 70-150 milliseconds.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101061688338575739"><img src="https://pbs.twimg.com/amplify_video_thumb/2101061589038477312/img/Jrat3MGWY4vtlsjL.jpg" alt="Decision models in practice" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101061688338575739">Decision models in practice</a></b><br><sub>OpenRouter · X · ♥ 1.7k · 2026-09-18</sub><br>OpenRouter thread explaining what a decision model is through practical software-development examples where Jev answers yes/no and multiple-choice questions with confidence.</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/iannuttall/status/2100982108873191861">Getting started with the TypeSafe skill</a></b><br><sub>iannuttall · X · ♥ 2.6k · 2026-09-18</sub><br>Two-step starter: install the official typesafe-ai agent skill, then ask your coding agent to use /typesafe-ai to find slow, costly LLM calls that Jev could replace.<br><sub>Also: <a href="https://github.com/typesafe-ai/skills">skill</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/omarsar0/status/2101774405521301681"><img src="https://pbs.twimg.com/media/HSr-innWsAEQPym.jpg" alt="A Beginner&#x27;s Guide to Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/omarsar0/status/2101774405521301681">A Beginner's Guide to Jev</a></b><br><sub>omarsar0 · Article · ♥ 889 · 2026-09-20</sub><br>Short beginner guide explaining Jev as a model for focused judgments, using a support ticket as the state and a decision sheet of typed questions, and where it fits in production.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/leaf_sanren/status/2101305166721098179"><img src="https://pbs.twimg.com/media/HSlVVQ8bcAAyk-G.jpg" alt="8 copyable Jev use cases (Chinese)" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/leaf_sanren/status/2101305166721098179">8 copyable Jev use cases (Chinese)</a></b><br><sub>leaf_sanren · Article · ♥ 259 · 2026-09-19</sub><br>Chinese study notes explaining what Jev is, four ways to get it running in 30 minutes, 8 real cases to copy, counterintuitive points, and when not to use it.</td>
+<td width="260" valign="top"><a href="https://x.com/kgsi/status/2100743044698112032"><img src="https://pbs.twimg.com/media/HSdWHhbaUAAGMVn.jpg" alt="Jev for non-engineers and designers" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kgsi/status/2100743044698112032">Jev for non-engineers and designers</a></b><br><sub>kgsi · Article · ♥ 340 · 2026-09-18</sub><br>Japanese introduction for non-engineers built around a demo that sorts live-stream comments into question, impression, request and other in 70-150 milliseconds.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/Mileson07/status/2101167448448004249"><img src="https://pbs.twimg.com/media/HSjXgp3bwAAxX95.jpg" alt="Jev beginner tutorial (Chinese)" width="240"></a></td>
@@ -86,16 +82,28 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/CopilotKit/CopilotKit/blob/main/showcase/shell-docs/src/content/docs/cookbook/jev-generative-ui.mdx">CopilotKit Jev generative UI recipe</a></b><br><sub>CopilotKit · Docs · ⭐ 37.5k repo · 2023-06-19</sub><br>Cookbook recipe for a Next.js workspace picker where Jev decides whether to ask a clarifying question or show options, ranks the rooms, and CopilotKit and AG-UI render the result.<br><sub><b>How it uses Jev:</b> Jev picks among prepared panels and ranks candidates; an OpenAI model only handles requests outside the two panels.</sub><br><sub>Also: <a href="https://docs.copilotkit.ai">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/AIMevzulari/status/2101362530241188066"><img src="https://pbs.twimg.com/media/HSlqviuW4AAM7G7.jpg" alt="JEV Nedir?" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/AIMevzulari/status/2101362530241188066">JEV Nedir?</a></b><br><sub>AIMevzulari · Article · ♥ 164 · 2026-09-19</sub><br>Turkish-language explainer of Jev as a decision engine rather than an LLM, with where it fits in agents, caveats about the claims, and setup steps for Claude Code and Codex.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/yibie/status/2100541283081023936"><img src="https://pbs.twimg.com/media/HSafHbiWYAAIM5j.jpg" alt="Three primitives and tiered thresholds" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/yibie/status/2100541283081023936">Three primitives and tiered thresholds</a></b><br><sub>yibie · Article · ♥ 608 · 2026-09-17</sub><br>Chinese guide to using Jev: the Noul, Choice and Score primitives and their return shapes, five ways to get started (playground, HTTP, SDKs), and setting tiered confidence thresholds.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/leaf_sanren/status/2101305166721098179"><img src="https://pbs.twimg.com/media/HSlVVQ8bcAAyk-G.jpg" alt="8 copyable Jev use cases (Chinese)" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/leaf_sanren/status/2101305166721098179">8 copyable Jev use cases (Chinese)</a></b><br><sub>leaf_sanren · Article · ♥ 259 · 2026-09-19</sub><br>Chinese study notes explaining what Jev is, four ways to get it running in 30 minutes, 8 real cases to copy, counterintuitive points, and when not to use it.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/masahirochaen/status/2101312078627659898"><img src="https://pbs.twimg.com/media/HSlHRjMXgAAGdig.jpg" alt="20 ways to use Jev at work" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/masahirochaen/status/2101312078627659898">20 ways to use Jev at work</a></b><br><sub>masahirochaen · Article · ♥ 531 · 2026-09-19</sub><br>Japanese guide to what Jev does, 20 published demos and API uses from browser control to support triage with work applications, and how to try it free through Vercel AI Gateway.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/AIMevzulari/status/2101362530241188066"><img src="https://pbs.twimg.com/media/HSlqviuW4AAM7G7.jpg" alt="JEV Nedir?" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/AIMevzulari/status/2101362530241188066">JEV Nedir?</a></b><br><sub>AIMevzulari · Article · ♥ 164 · 2026-09-19</sub><br>Turkish-language explainer of Jev as a decision engine rather than an LLM, with where it fits in agents, caveats about the claims, and setup steps for Claude Code and Codex.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://ruben.substack.com/p/jev"><img src="https://substackcdn.com/image/fetch/$s_!jina!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49573abc-65a6-4b90-87d6-04d5ec96eff3_2400x1260.png" alt="How to use Jev (Ruben Hassid)" width="240"></a></td>
+<td valign="top"><b><a href="https://ruben.substack.com/p/jev">How to use Jev (Ruben Hassid)</a></b><br><sub>Ruben Hassid · Article · ♥ 360 · 2026-09-20</sub><br>Non-developer guide to using Jev through the TypeSafe skill in Claude Code or Codex, with case studies for classifying LinkedIn, triaging Gmail, and screening research papers, each with a copy-paste prompt.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/akshay_pachaar/status/2102087107410002345"><img src="https://pbs.twimg.com/media/HSsB_z2bMAATp-F.jpg" alt="Build a Jev Judge" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2102087107410002345">Build a Jev Judge</a></b><br><sub>akshay_pachaar · Article · ♥ 332 · 2026-09-21</sub><br>Tutorial on replacing an LLM judge with Jev for agent evaluation, asking bounded questions such as whether an answer was grounded in policy and whether the claimed action actually happened.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/startupideaspod/status/2101029801821941933"><img src="https://pbs.twimg.com/media/HShbadGaAAAujgB.jpg" alt="Jev is here and how to use it" width="240"></a></td>
@@ -108,14 +116,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://x.com/yupi996/status/2101953504374042658"><img src="https://pbs.twimg.com/media/HSuiiggbAAAZdqO.jpg" alt="Jev hands-on review and tutorial (Chinese)" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/yupi996/status/2101953504374042658">Jev hands-on review and tutorial (Chinese)</a></b><br><sub>yupi996 · Article · ♥ 240 · 2026-09-21</sub><br>Chinese beginner guide and hands-on review explaining System One models, the Noul, Choice and Score primitives with request examples, and how to try Jev now that it is open.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/akshay_pachaar/status/2102087107410002345"><img src="https://pbs.twimg.com/media/HSsB_z2bMAATp-F.jpg" alt="Build a Jev Judge" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2102087107410002345">Build a Jev Judge</a></b><br><sub>akshay_pachaar · Article · ♥ 332 · 2026-09-21</sub><br>Tutorial on replacing an LLM judge with Jev for agent evaluation, asking bounded questions such as whether an answer was grounded in policy and whether the claimed action actually happened.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://ruben.substack.com/p/jev"><img src="https://substackcdn.com/image/fetch/$s_!jina!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49573abc-65a6-4b90-87d6-04d5ec96eff3_2400x1260.png" alt="How to use Jev (Ruben Hassid)" width="240"></a></td>
-<td valign="top"><b><a href="https://ruben.substack.com/p/jev">How to use Jev (Ruben Hassid)</a></b><br><sub>Ruben Hassid · Article · ♥ 360 · 2026-09-20</sub><br>Non-developer guide to using Jev through the TypeSafe skill in Claude Code or Codex, with case studies for classifying LinkedIn, triaging Gmail, and screening research papers, each with a copy-paste prompt.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/ericosiu/status/2101737133165924680"><img src="https://pbs.twimg.com/media/HSq8kZTbgAAZ-Q1.jpg" alt="Jev for Marketing" width="240"></a></td>
@@ -134,16 +134,12 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/davila7/jev-explained">Jev Explained</a></b><br><sub>davila7 · GitHub · ⭐ 23 · 2026-09-19</sub><br>Interactive playground that teaches how Jev makes typed, probabilistic decisions by running Noul, Choice, and Score questions step by step with your own TypeSafe or Vercel AI Gateway key.<br><sub>Also: <a href="https://x.com/dani_avila7/status/2101484241762603363">demo</a> · <a href="https://jev-explained-repo.vercel.app/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2102199407630500290"><img src="https://pbs.twimg.com/media/HSyBz3lagAAtzmj.jpg" alt="Jev for Devs" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MisbahSy/status/2102199407630500290">Jev for Devs</a></b><br><sub>MisbahSy · Article · ♥ 8 · 2026-09-22</sub><br>Illustrated developer guide to building with Jev: states, typed question dicts, SDK setup, LiteLLM routing and common patterns, written to be agent-friendly.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Five practical Jev agent scenarios" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/lgyv5/status/2101860029838303522">Five practical Jev agent scenarios</a></b><br><sub>lgyv5 · Article · ♥ 3 · 2026-09-21</sub><br>Chinese guide to five places Jev fits in agent pipelines: content cleaning, fixed-parameter selection, intent routing, RAG reranking and tool-call safety gating, introducing the open-source JevShield.<br><sub>Also: <a href="https://github.com/lgy1027/jevshield">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://vercel.com/i/what-is-jev"><img src="https://images.ctfassets.net/e5382hct74si/7x5CA1G7tDV7JSxt9iycsY/841a3891f316cf03bef4f76272a7276e/image.png" alt="What is Jev?" width="240"></a></td>
 <td valign="top"><b><a href="https://vercel.com/i/what-is-jev">What is Jev?</a></b><br><sub>Vercel (Ben Sabic) · Article · ▲ 3 · 2026-09-19</sub><br>Vercel explainer on what state and typed questions mean in Jev, how Choice, Score, and Noul answers come back, and where its type safety ends.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49787870">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2102199407630500290"><img src="https://pbs.twimg.com/media/HSyBz3lagAAtzmj.jpg" alt="Jev for Devs" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MisbahSy/status/2102199407630500290">Jev for Devs</a></b><br><sub>MisbahSy · Article · ♥ 8 · 2026-09-22</sub><br>Illustrated developer guide to building with Jev: states, typed question dicts, SDK setup, LiteLLM routing and common patterns, written to be agent-friendly.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk"><img src="https://vercel.com/api/docs-og?title=How%20to%20classify%2C%20route%2C%20and%20score%20with%20Jev%20and%20AI%20SDK&amp;format=kb&amp;sig=447fbc245d38ca20ca0f1ed58f4f6a66df9cd38071d9e75a9526310f6a4c072d" alt="How to classify, route, and score with Jev and AI SDK" width="240"></a></td>
@@ -154,8 +150,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>Unofficial Chinese translation of the official Jev documentation at docs.typesafe.ai, built into a static site.<br><sub>Also: <a href="https://bald0wang.github.io/jev-docs-zh/">site</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Five practical Jev agent scenarios" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/lgyv5/status/2101860029838303522">Five practical Jev agent scenarios</a></b><br><sub>lgyv5 · Article · ♥ 3 · 2026-09-21</sub><br>Chinese guide to five places Jev fits in agent pipelines: content cleaning, fixed-parameter selection, intent routing, RAG reranking and tool-call safety gating, introducing the open-source JevShield.<br><sub>Also: <a href="https://github.com/lgy1027/jevshield">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://www.jrzs.dev/blog/what-the-heck-is-jev/">What the heck is Jev?!</a></b><br><sub>James O&#x27;Reilly · Article · ▲ 1 · 2026-09-18</sub><br>Short beginner explainer of Jev as a sub-second decision model, with the Choice, Noul, and Score question types and a sample request and response.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49753818">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sherajdev/jev-research"><img src="https://opengraph.githubassets.com/1/sherajdev/jev-research" alt="Jev + Herdr" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sherajdev/jev-research">Jev + Herdr</a></b><br><sub>sherajdev · GitHub · ⭐ 1 · 2026-09-18</sub><br>Guide to orchestrating coding agents such as Claude, Codex and Hermes with Jev and Herdr, with a small routing prototype and a review of a Jev browser worker.<br><sub><b>How it uses Jev:</b> Jev chooses the executor for a task and scores risk and dispatch readiness from task and repository state.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/alarcon7a/youtube-tutorial-sources/blob/main/Notebooks/Typesafe/jev_tutorial.ipynb"><img src="https://opengraph.githubassets.com/1/alarcon7a/youtube-tutorial-sources" alt="Jev desde cero" width="240"></a></td>
@@ -164,10 +168,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/earlyaidopters/gumroad-resources/tree/main/resources/jev-starter-kit-explainer-live-playground"><img src="https://i.ytimg.com/vi/zZNm4zP_lEE/maxresdefault.jpg" alt="Jev Starter Kit" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/earlyaidopters/gumroad-resources/tree/main/resources/jev-starter-kit-explainer-live-playground">Jev Starter Kit</a></b><br><sub>earlyaidopters · GitHub · ⭐ 34 repo · 2026-08-10</sub><br>Free Early AI-dopters starter kit that pairs a YouTube walkthrough with an interactive Jev explainer, an Ask Jev playground and a coding-assistant guide including a hotel fine-print API example.<br><sub>Also: <a href="https://github.com/earlyaidopters/gumroad-resources">repo</a> · <a href="https://www.youtube.com/watch?v=zZNm4zP_lEE">video</a> · <a href="https://markkashef.gumroad.com/l/jev-starter-kit">gumroad</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sherajdev/jev-research"><img src="https://opengraph.githubassets.com/1/sherajdev/jev-research" alt="Jev + Herdr" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sherajdev/jev-research">Jev + Herdr</a></b><br><sub>sherajdev · GitHub · ⭐ 1 · 2026-09-18</sub><br>Guide to orchestrating coding agents such as Claude, Codex and Hermes with Jev and Herdr, with a small routing prototype and a review of a Jev browser worker.<br><sub><b>How it uses Jev:</b> Jev chooses the executor for a task and scores risk and dispatch readiness from task and repository state.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/howdeploy/deploychan_mcp/blob/main/content/tools/jev.md"><img src="https://opengraph.githubassets.com/1/howdeploy/deploychan_mcp" alt="deploychan Jev guides" width="240"></a></td>

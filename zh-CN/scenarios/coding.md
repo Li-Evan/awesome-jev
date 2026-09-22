@@ -12,44 +12,48 @@
 <td valign="top"><b><a href="https://github.com/tamaratran/fast-jev-compaction">fast-jev-compaction</a></b><br><sub>tamaratran · GitHub · ⭐ 6.1k · 2026-09-17</sub><br>Claude Code 插件，用针对每个工具调用的保留/丢弃 Noul 取代压缩摘要；请从 GitHub 安装，因为 npm 上同名的包来自另一个发布者。<br><sub>相关: <a href="https://x.com/Elizaium/status/2101081763812360471">demo</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wjjpk0/compaction_isnt_summarization_anymore_but/">discussion</a> · <a href="https://www.reddit.com/r/accelerate/comments/1wjt68i/found_the_perfect_use_case_for_typesafeai_jev/">discussion 2</a> · <a href="https://x.com/tamarajtran/status/2100694549362553153">demo 2</a> · <a href="https://x.com/altryne/status/2100739055923425589">demo 3</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Neriousy/status/2100287208166969746"><img src="https://pbs.twimg.com/amplify_video_thumb/2100286679386873857/img/vlw6EBlSVZ9uAoHc.jpg" alt="用 OpenCode 做 app 测试" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Neriousy/status/2100287208166969746">用 OpenCode 做 app 测试</a></b><br><sub>Neriousy · X · ♥ 1.3k · 2026-09-16</sub><br>把 Jev 与 OpenCode 编程 agent 搭配起来做快速 app 测试的演示。</td>
+<td width="260" valign="top"><a href="https://x.com/rafalwilinski/status/2100882207879434359"><img src="https://pbs.twimg.com/amplify_video_thumb/2100881920343105536/img/c1y4THiGwA2GfXGa.jpg" alt="对抗式浏览器发布测试" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/rafalwilinski/status/2100882207879434359">对抗式浏览器发布测试</a></b><br><sub>rafalwilinski · X · ♥ 5.4k · 2026-09-18</sub><br>大规模并行、基于浏览器的对抗式测试套件，专门尝试把每次软件发布搞坏，每跑一次只要几美分。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/miu21590/status/2101857866378362926"><img src="https://pbs.twimg.com/amplify_video_thumb/2101857791967178752/img/MiCcd9s5hrptUHqe.jpg" alt="Codex 推理强度路由器" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/miu21590/status/2101857866378362926">Codex 推理强度路由器</a></b><br><sub>miu21590 · X · ♥ 3k · 2026-09-21</sub><br>一套 Codex 配置，让 Jev 在任务过程中调整 GPT-6 的推理强度：卡住时加大思考，常规步骤时减少思考，在作者的测试中 Astra 成本降低了 50%。<br><sub><b>Jev 用法:</b> 每一步用 Score 评估难度并映射到推理强度等级，且不会破坏提示词缓存。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/rafalwilinski/status/2100882207879434359"><img src="https://pbs.twimg.com/amplify_video_thumb/2100881920343105536/img/c1y4THiGwA2GfXGa.jpg" alt="对抗式浏览器发布测试" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/rafalwilinski/status/2100882207879434359">对抗式浏览器发布测试</a></b><br><sub>rafalwilinski · X · ♥ 5.4k · 2026-09-18</sub><br>大规模并行、基于浏览器的对抗式测试套件，专门尝试把每次软件发布搞坏，每跑一次只要几美分。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/redp314/status/2100585126652481915"><img src="https://pbs.twimg.com/amplify_video_thumb/2100585029533372416/img/ZcrsntW2yWgtB_HD.jpg" alt="Jev PR 评审器" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/redp314/status/2100585126652481915">Jev PR 评审器</a></b><br><sub>redp314 · X · ♥ 2.8k · 2026-09-17</sub><br>PR 评审工具，一次调用把 diff 发给 Jev，拿回以概率表示的 14 项类型化检查，再映射为拦截、安全审查、小问题或合并，每个 PR 只要 $0.00007。<br><sub><b>Jev 用法:</b> 每个 diff 14 个 Noul 检查；关键检查结果不确定（0.35-0.65）时升级给人工或大模型。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dani_avila7/status/2101176629745561686"><img src="https://pbs.twimg.com/amplify_video_thumb/2101176234411425792/img/UgEWGdQPunczzXcv.jpg" alt="Claude Code 的 Jev 模型路由器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dani_avila7/status/2101176629745561686">Claude Code 的 Jev 模型路由器</a></b><br><sub>dani_avila7 · X · ♥ 1.4k · 2026-09-19</sub><br>Claude Code 的 mod，通过 TypeSafe API 或 Vercel AI Gateway，让 Jev 为每个请求判定子 agent 模型、主模型（只在会话开始时判定，以保住缓存）和推理强度等级。<br><sub>相关: <a href="https://aitmpl.com/component/mod/productivity/jev-model-router">docs</a> · <a href="https://aitmpl.com/component/mod/productivity/jev-model-router">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/Neriousy/status/2100287208166969746"><img src="https://pbs.twimg.com/amplify_video_thumb/2100286679386873857/img/vlw6EBlSVZ9uAoHc.jpg" alt="用 OpenCode 做 app 测试" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Neriousy/status/2100287208166969746">用 OpenCode 做 app 测试</a></b><br><sub>Neriousy · X · ♥ 1.3k · 2026-09-16</sub><br>把 Jev 与 OpenCode 编程 agent 搭配起来做快速 app 测试的演示。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mrnugget/jev-shell-history"><img src="https://raw.githubusercontent.com/mrnugget/jev-shell-history/main/demo/demo.gif" alt="jev-shell-history" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mrnugget/jev-shell-history">jev-shell-history</a></b><br><sub>mrnugget · GitHub · ⭐ 96 · 2026-09-18</sub><br>zsh 插件，通过询问 Jev 你最可能是在补全最近 100 条不重复历史记录中的哪一条，给出 fish 风格的自动补全建议，以灰色显示并附上分数。<br><sub><b>Jev 用法:</b> 针对当前输入，在最近的历史记录中做一个 Choice。</sub><br><sub>相关: <a href="https://x.com/thorstenball/status/2100858434904109099">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100919415554617537"><img src="https://pbs.twimg.com/amplify_video_thumb/2100919375989805057/img/-VScsutBqPF0D6Um.jpg" alt="Shipper 网站转应用" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chddaniel/status/2100919415554617537">Shipper 网站转应用</a></b><br><sub>chddaniel · X · ♥ 408 · 2026-09-18</sub><br>Shipper 里把网站变成应用的功能：Jev 决定如何把粘贴进来的网站重建为原生移动应用，再由 Shipper 提交到各应用商店。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/src/hooks/jev"><img src="https://repository-images.githubusercontent.com/1130809465/a41c9205-031c-4881-9dbb-2b2a7c4387e6" alt="oh-my-claudecode 的 Jev 判断点" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/src/hooks/jev">oh-my-claudecode 的 Jev 判断点</a></b><br><sub>Yeachan-Heo · GitHub · ⭐ 39.3k 仓库 · 2026-01-09</sub><br>在 oh-my-claudecode 的编排 hook 中设置判断点，由 Jev 决定 skill 触发、循环是否继续、委派任务用哪一档模型、上下文是否过时以及任务规模。<br><sub><b>Jev 用法:</b> 闸门型判断点会等待 Jev 的裁决，检测型判断点在后台完成；建议型判断点只在关闭或影子模式下运行。</sub><br><sub>相关: <a href="https://oh-my-claudecode.dev">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/dani_avila7/status/2101176629745561686"><img src="https://pbs.twimg.com/amplify_video_thumb/2101176234411425792/img/UgEWGdQPunczzXcv.jpg" alt="Claude Code 的 Jev 模型路由器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dani_avila7/status/2101176629745561686">Claude Code 的 Jev 模型路由器</a></b><br><sub>dani_avila7 · X · ♥ 1.4k · 2026-09-19</sub><br>Claude Code 的 mod，通过 TypeSafe API 或 Vercel AI Gateway，让 Jev 为每个请求判定子 agent 模型、主模型（只在会话开始时判定，以保住缓存）和推理强度等级。<br><sub>相关: <a href="https://aitmpl.com/component/mod/productivity/jev-model-router">docs</a> · <a href="https://aitmpl.com/component/mod/productivity/jev-model-router">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/ryanvogel/status/2100068006592123055"><img src="https://pbs.twimg.com/amplify_video_thumb/2100067392223076352/img/BqXd-11SCr3_ff8q.jpg" alt="代码库复杂度分类器" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ryanvogel/status/2100068006592123055">代码库复杂度分类器</a></b><br><sub>ryanvogel · X · ♥ 1.2k · 2026-09-16</sub><br>让 Jev 评判代码库中代码复杂度的分类器，目的是揪出 agent 常写出的过度工程代码。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://tester.army/e2e"><img src="https://tester.army/e2e/og-image.png" alt="Tester Army e2e" width="240"></a></td>
+<td valign="top"><b><a href="https://tester.army/e2e">Tester Army e2e</a></b><br><sub>TesterArmy · 应用 · ♥ 1.1k · 2026-09-18</sub><br>即将开源的 TypeScript 框架，用于由 agent 执行的 Web 和移动应用端到端测试，演示中由 Jev 在每一步选择下一个动作，断言仍写在代码里。<br><sub>相关: <a href="https://x.com/o_kwasniewski/status/2100966838905585687">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/src/hooks/jev"><img src="https://repository-images.githubusercontent.com/1130809465/a41c9205-031c-4881-9dbb-2b2a7c4387e6" alt="oh-my-claudecode 的 Jev 判断点" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/src/hooks/jev">oh-my-claudecode 的 Jev 判断点</a></b><br><sub>Yeachan-Heo · GitHub · ⭐ 39.3k 仓库 · 2026-01-09</sub><br>在 oh-my-claudecode 的编排 hook 中设置判断点，由 Jev 决定 skill 触发、循环是否继续、委派任务用哪一档模型、上下文是否过时以及任务规模。<br><sub><b>Jev 用法:</b> 闸门型判断点会等待 Jev 的裁决，检测型判断点在后台完成；建议型判断点只在关闭或影子模式下运行。</sub><br><sub>相关: <a href="https://oh-my-claudecode.dev">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/krzysztof_moch/status/2100513641556549700"><img src="https://pbs.twimg.com/amplify_video_thumb/2100512526303657985/img/-OQ-s3555Nrqr1M9.jpg" alt="Jev QA 测试员" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/krzysztof_moch/status/2100513641556549700">Jev QA 测试员</a></b><br><sub>krzysztof_moch · X · ♥ 781 · 2026-09-17</sub><br>Jev 充当 QA 测试员的演示，由命令行运行器驱动，在模拟器里按测试步骤操作一个 iOS app。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/dani_avila7/status/2101885477158547753"><img src="https://pbs.twimg.com/amplify_video_thumb/2101885207716474880/img/ndbx4dpA8M2NRlsJ.jpg" alt="Claude Code 的 Jev skill 推荐" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dani_avila7/status/2101885477158547753">Claude Code 的 Jev skill 推荐</a></b><br><sub>dani_avila7 · X · ♥ 713 · 2026-09-21</sub><br>Claude Code 的 mod，把 skill 挡在上下文窗口之外：每个请求都由 Jev 从列表中挑出最匹配的 skill，只注入这一个。<br><sub>相关: <a href="https://aitmpl.com/component/mod/productivity/jev-skill-suggestion">docs</a> · <a href="https://aitmpl.com/component/mod/productivity/jev-skill-suggestion">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/can1357/oh-my-pi/blob/main/packages/ai/src/judgment/typesafe.ts"><img src="https://raw.githubusercontent.com/can1357/oh-my-pi/main/assets/hero.png" alt="Oh My Pi 的 Jev 判断" width="240"></a></td>
@@ -60,68 +64,32 @@
 <td valign="top"><b><a href="https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/mods/productivity/jev-skill-suggestion">Claude Code 的 Jev skill 推荐</a></b><br><sub>davila7 · GitHub · ♥ 76 · 2026-09-19</sub><br>隐藏 skill 列表，让 Jev 为每条提示词最多附加一个 skill。<br><sub>相关: <a href="https://github.com/davila7/claude-code-templates">repo</a> · <a href="https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/mods/productivity/jev-model-router">model-router</a> · <a href="https://x.com/realfxw/status/2101942956567433395">demo</a> · <a href="https://x.com/shwetabjaj/status/2101917086469759060">demo 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dani_avila7/status/2101885477158547753"><img src="https://pbs.twimg.com/amplify_video_thumb/2101885207716474880/img/ndbx4dpA8M2NRlsJ.jpg" alt="Claude Code 的 Jev skill 推荐" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dani_avila7/status/2101885477158547753">Claude Code 的 Jev skill 推荐</a></b><br><sub>dani_avila7 · X · ♥ 713 · 2026-09-21</sub><br>Claude Code 的 mod，把 skill 挡在上下文窗口之外：每个请求都由 Jev 从列表中挑出最匹配的 skill，只注入这一个。<br><sub>相关: <a href="https://aitmpl.com/component/mod/productivity/jev-skill-suggestion">docs</a> · <a href="https://aitmpl.com/component/mod/productivity/jev-skill-suggestion">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://tester.army/e2e"><img src="https://tester.army/e2e/og-image.png" alt="Tester Army e2e" width="240"></a></td>
-<td valign="top"><b><a href="https://tester.army/e2e">Tester Army e2e</a></b><br><sub>TesterArmy · 应用 · ♥ 1.1k · 2026-09-18</sub><br>即将开源的 TypeScript 框架，用于由 agent 执行的 Web 和移动应用端到端测试，演示中由 Jev 在每一步选择下一个动作，断言仍写在代码里。<br><sub>相关: <a href="https://x.com/o_kwasniewski/status/2100966838905585687">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/1jehuang/jcode/blob/master/crates/jcode-base/src/jev.rs"><img src="https://opengraph.githubassets.com/1/1jehuang/jcode" alt="jcode 的 Jev 记忆与浏览器交接" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/1jehuang/jcode/blob/master/crates/jcode-base/src/jev.rs">jcode 的 Jev 记忆与浏览器交接</a></b><br><sub>1jehuang · GitHub · ⭐ 20k 仓库 · 2026-01-05</sub><br>jcode 编程 agent harness 用 Jev 判断记忆召回的相关性，并实现快速的浏览器交接：由 Jev 选择每一个可选操作，遇到需要写代码或文字时再交回主 LLM。<br><sub><b>Jev 用法:</b> 记忆召回会把本地记忆分批发送，获取每个候选的相关性概率，阈值为 0.8；浏览器每一步在操作 ID、done、hand_back、script_needed 或 text_needed 中做选择。</sub><br><sub>相关: <a href="https://jcode.sh">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/NiazMorshed2007/jev-review"><img src="https://pbs.twimg.com/amplify_video_thumb/2100465308519759872/img/2uIG43VFGvWzku0s.jpg" alt="Jev 评审 MCP" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/NiazMorshed2007/jev-review">Jev 评审 MCP</a></b><br><sub>NiazMorshed2007 · GitHub · ⭐ 197 · 2026-09-17</sub><br>MCP 服务器，从 19 个质量维度给 agent 的 diff 打分，每个维度都有一个判断是否适用的 Noul、一个 Score 和一个指出主要短板的 Choice。<br><sub>相关: <a href="https://github.com/user-attachments/assets/0ff9f873-0652-4826-af3d-6bb4f42c70b1">video</a> · <a href="https://x.com/niazmorshed_/status/2100465662867218857">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/theonedev/onedev/blob/main/server-core/src/main/java/io/onedev/server/web/component/symboltooltip/SymbolTooltipPanel.java"><img src="https://raw.githubusercontent.com/theonedev/onedev/main/doc/images/code-navigation.gif" alt="OneDev 的 Jev 符号跳转" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/theonedev/onedev/blob/main/server-core/src/main/java/io/onedev/server/web/component/symboltooltip/SymbolTooltipPanel.java">OneDev 的 Jev 符号跳转</a></b><br><sub>theonedev · GitHub · ⭐ 15.3k 仓库 · 2018-11-06</sub><br>在 OneDev 的代码导航里，当某个符号有多个可能的定义时，Jev 读取周围的源码、import 和作用域，直接跳到最可能的那个。<br><sub><b>Jev 用法:</b> 以 JSON 形式给出候选定义，用一个 Choice 从中选择，在管理员的 Jev 设置页里配置。</sub><br><sub>相关: <a href="https://onedev.io">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/tonhowtf/omniget/blob/main/src-tauri/omniget-core/src/core/llm/prune/jev.rs"><img src="https://raw.githubusercontent.com/tonhowtf/omniget/main/assets/readme/hero.gif" alt="OmniGet 的 Jev 上下文裁剪" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tonhowtf/omniget/blob/main/src-tauri/omniget-core/src/core/llm/prune/jev.rs">OmniGet 的 Jev 上下文裁剪</a></b><br><sub>tonhowtf · GitHub · ⭐ 14.1k 仓库 · 2026-02-11</sub><br>面向编程 agent 的桌面应用 OmniGet 中可选的上下文裁剪评判器，询问 Jev 每段上下文是否仍然需要，移植自 fast-jev-compaction 和 yoshi。<br><sub><b>Jev 用法:</b> 只用 Noul 问题，每次请求 16 个候选，上限 24,000 字节；默认关闭，选用时会给出隐私提示。</sub><br><sub>相关: <a href="https://tonho.wtf">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/tinacms/tinacms/blob/main/.github/scripts/dedupe-issue.mts"><img src="https://repository-images.githubusercontent.com/198488459/200ad980-a2be-11eb-8762-156abf2914f7" alt="TinaCMS 的 issue 去重器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tinacms/tinacms/blob/main/.github/scripts/dedupe-issue.mts">TinaCMS 的 issue 去重器</a></b><br><sub>tinacms · GitHub · ⭐ 13.8k 仓库 · 2019-07-23</sub><br>TinaCMS 仓库中的 GitHub Actions 脚本，用 Jev 把每个新 issue 与所有未关闭的 issue 比对，有把握时就发评论附上原 issue，并加上 Duplicate 标签。<br><sub><b>Jev 用法:</b> 先按页用 Choice 筛出候选，再做 Noul 检查，判定重复的阈值为 0.85，相关 issue 为 0.6。</sub><br><sub>相关: <a href="https://tina.io">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/daniel-farina/nitro"><img src="https://pbs.twimg.com/media/HSrhykQXYAAkMPS.jpg" alt="Nitro" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/daniel-farina/nitro">Nitro</a></b><br><sub>daniel-farina · GitHub · ⭐ 4 · 2026-09-20</sub><br>Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在相同任务上成本降低 22% 到 40%。<br><sub><b>Jev 用法:</b> 每个工具一个 Noul（完成这个请求是否需要该工具？），全部放在一次约 350 毫秒的请求里。</sub><br><sub>相关: <a href="https://x.com/Daniel_Farinax/status/2101749959980728575">write-up</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/nicobailon/pi-interactive-shell"><img src="https://raw.githubusercontent.com/nicobailon/pi-interactive-shell/main/banner.png" alt="Pi Interactive Shell" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nicobailon/pi-interactive-shell">Pi Interactive Shell</a></b><br><sub>nicobailon · GitHub · ⭐ 587 · 2026-01-18</sub><br>Pi 编程 agent 扩展，在一个可观察的浮层里自主操作交互式 CLI，并可选用 Jev 对终端输出做语义监督。<br><sub><b>Jev 用法:</b> 默认关闭，要过三道同意关卡才能开启；启用后，Jev 用 jev-1.13.0 评估捕获到的已完成日志块。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/openchamber/openchamber/blob/main/packages/web/server/lib/routing/jev.js"><img src="https://raw.githubusercontent.com/openchamber/openchamber/main/docs/references/chat_example.png" alt="OpenChamber 的 Jev 路由器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/openchamber/openchamber/blob/main/packages/web/server/lib/routing/jev.js">OpenChamber 的 Jev 路由器</a></b><br><sub>openchamber · GitHub · ⭐ 10.2k 仓库 · 2026-09-17</sub><br>OpenCode agent 工作区 OpenChamber 中可选的自动模型路由器：Jev 把每条消息归入一个任务类别，每个类别对应一个模型和推理档位，同时它也负责筛查工具权限。<br><sub><b>Jev 用法:</b> 在配置好的路由之间做一个类别 Choice；权限请求会得到一个“是否询问”的 Noul 和一个影响类型的 Choice。</sub><br><sub>相关: <a href="https://github.com/openchamber/openchamber">repo</a> · <a href="https://openchamber.dev/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/devagrawal09/jev-review"><img src="https://raw.githubusercontent.com/devagrawal09/jev-review/main/docs/dashboard.png" alt="jev-review" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/devagrawal09/jev-review">jev-review</a></b><br><sub>devagrawal09 · GitHub · ⭐ 507 · 2026-09-16</sub><br>分阶段的代码评审：先构建一个 Noul 风险矩阵，再用 Choice 和 Score 对每个问题做画像和评级。<br><sub>相关: <a href="https://x.com/devagrawal09/status/2100341005690298687">demo</a> · <a href="https://www.reddit.com/r/typesafe/comments/1wmb3n3/jevreview_a_staged_code_review_that_keeps_the/">discussion</a> · <a href="https://blink.review">app</a> · <a href="https://blink.review">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=7w8eRWnUUA8"><img src="https://i.ytimg.com/vi/7w8eRWnUUA8/hqdefault.jpg" alt="herdr 模型路由器" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=7w8eRWnUUA8">herdr 模型路由器</a></b><br><sub>Nidhi Singh · 视频 · ♥ 320 · 2026-09-17</sub><br>一套终端配置：由模型路由 CLI 询问 Jev 每个任务该交给哪个编程 agent（Claude Code、Codex 或 Cursor）、用哪个模型、给多少推理强度。</td>
+<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100919415554617537"><img src="https://pbs.twimg.com/amplify_video_thumb/2100919375989805057/img/-VScsutBqPF0D6Um.jpg" alt="Shipper 网站转应用" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chddaniel/status/2100919415554617537">Shipper 网站转应用</a></b><br><sub>chddaniel · X · ♥ 408 · 2026-09-18</sub><br>Shipper 里把网站变成应用的功能：Jev 决定如何把粘贴进来的网站重建为原生移动应用，再由 Shipper 提交到各应用商店。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/NiazMorshed2007/jev-review"><img src="https://pbs.twimg.com/amplify_video_thumb/2100465308519759872/img/2uIG43VFGvWzku0s.jpg" alt="Jev 评审 MCP" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/NiazMorshed2007/jev-review">Jev 评审 MCP</a></b><br><sub>NiazMorshed2007 · GitHub · ⭐ 197 · 2026-09-17</sub><br>MCP 服务器，从 19 个质量维度给 agent 的 diff 打分，每个维度都有一个判断是否适用的 Noul、一个 Score 和一个指出主要短板的 Choice。<br><sub>相关: <a href="https://github.com/user-attachments/assets/0ff9f873-0652-4826-af3d-6bb4f42c70b1">video</a> · <a href="https://x.com/niazmorshed_/status/2100465662867218857">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/thruwire/foreman"><img src="https://opengraph.githubassets.com/1/thruwire/foreman" alt="Foreman" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/thruwire/foreman">Foreman</a></b><br><sub>thruwire · GitHub · ⭐ 477 · 2026-09-17</sub><br>用十个 Noul 监管 Codex 和 OpenCode 的工人 agent，例如判断某个工人是否卡住或陷入循环。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/softwarecuddler/status/2100981707105284255"><img src="https://pbs.twimg.com/amplify_video_thumb/2100981261007507456/img/FLs24JzKRsdrrFER.jpg" alt="Supabase RLS 检查器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/softwarecuddler/status/2100981707105284255">Supabase RLS 检查器</a></b><br><sub>softwarecuddler · X · ♥ 59 · 2026-09-18</sub><br>实验性的 linter，让 Jev 审查 Supabase 行级安全策略并标记问题，还有一个托管的测试页面可以试用。<br><sub>相关: <a href="https://rls-jev-tester.vercel.app/">app</a> · <a href="https://rls-jev-tester.vercel.app">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/kunchenguid/no-mistakes/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/kunchenguid/no-mistakes/main/demo.gif" alt="no-mistakes 的 Jev 审查预简报" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kunchenguid/no-mistakes/tree/main/internal/jev">no-mistakes 的 Jev 审查预简报</a></b><br><sub>kunchenguid · GitHub · ⭐ 8.6k 仓库 · 2026-04-05</sub><br>no-mistakes push 前审查流水线中的一个可选步骤，用一次批量 Jev 调用排出 AI 审查者应该先读哪些周边文件。<br><sub><b>Jev 用法:</b> 仅作建议：它可以添加阅读建议，但从不移除文件或审查义务，出错时回退为空的预简报；实际调用耗时约 470 毫秒。</sub><br><sub>相关: <a href="https://kunchenguid.github.io/no-mistakes/">docs</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/marcusquinn/aidevops"><img src="https://raw.githubusercontent.com/marcusquinn/aidevops/main/docs/assets/og-image.png" alt="aidevops" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/marcusquinn/aidevops">aidevops</a></b><br><sub>marcusquinn · GitHub · ⭐ 401 · 2025-11-09</sub><br>OpenCode 插件和 AI DevOps 框架，提供可选开启的 Jev 类型化决策：营销决策批处理、检索和影子分诊试点，以及私有评测报告。<br><sub><b>Jev 用法:</b> 通过 api.typesafe.ai/v1/systemone 针对最小化的 state 提出 Choice、Score 和 Noul 问题，失败时回退到原有的 LLM 路线。</sub><br><sub>相关: <a href="https://github.com/marcusquinn/aidevops/blob/main/.agents/tools/ai-assistants/jev.md">docs</a> · <a href="https://www.aidevops.sh">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/1jehuang/jcode/blob/master/crates/jcode-base/src/jev.rs"><img src="https://opengraph.githubassets.com/1/1jehuang/jcode" alt="jcode 的 Jev 记忆与浏览器交接" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/1jehuang/jcode/blob/master/crates/jcode-base/src/jev.rs">jcode 的 Jev 记忆与浏览器交接</a></b><br><sub>1jehuang · GitHub · ⭐ 20k 仓库 · 2026-01-05</sub><br>jcode 编程 agent harness 用 Jev 判断记忆召回的相关性，并实现快速的浏览器交接：由 Jev 选择每一个可选操作，遇到需要写代码或文字时再交回主 LLM。<br><sub><b>Jev 用法:</b> 记忆召回会把本地记忆分批发送，获取每个候选的相关性概率，阈值为 0.8；浏览器每一步在操作 ID、done、hand_back、script_needed 或 text_needed 中做选择。</sub><br><sub>相关: <a href="https://jcode.sh">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/delexw/claude-code-trace"><img src="https://opengraph.githubassets.com/1/delexw/claude-code-trace" alt="claude-code-trace" width="240"></a></td>
@@ -132,10 +100,6 @@
 <td valign="top"><b><a href="https://github.com/mohsen1/llm-debugger-vscode-extension">LLM Debugger</a></b><br><sub>mohsen1 · GitHub · ⭐ 359 · 2025-02-06</sub><br>VS Code 扩展，通过驱动真实的调试器来找 bug：每一步“下一步做什么”由 Jev 回答，只有在提出假设、设置断点、编写表达式和修复时才唤醒生成式模型。<br><sub>相关: <a href="https://github.com/user-attachments/assets/51ccb308-a32c-427c-8767-7952f4caf875">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/kunchenguid/firstmate/blob/main/bin/fm-dispatch-resolve.sh"><img src="https://raw.githubusercontent.com/kunchenguid/firstmate/main/assets/banner.png" alt="Firstmate 的 Jev 调度" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kunchenguid/firstmate/blob/main/bin/fm-dispatch-resolve.sh">Firstmate 的 Jev 调度</a></b><br><sub>kunchenguid · GitHub · ⭐ 6.9k 仓库 · 2026-09-17</sub><br>Firstmate 中可选开启的调度解析器。Firstmate 是并行编程 agent 的团队管理器，这个解析器用一个 Jev Choice 把每份任务简报匹配到某条调度规则，再由本地策略选定 agent 配置。<br><sub><b>Jev 用法:</b> 在所有规则的 when 子句外加一个 none 选项上做一个 Choice；置信度下限、审批和配额随后在 jq 中处理，从不展示给模型。</sub><br><sub>相关: <a href="https://github.com/kunchenguid/firstmate">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/evotai/evot"><img src="https://opengraph.githubassets.com/1/evotai/evot" alt="evot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/evotai/evot">evot</a></b><br><sub>evotai · GitHub · ⭐ 328 · 2026-03-09</sub><br>轻量级终端编程 agent，其 Jev 裁剪步骤直接删除过时的上下文而不是对其做摘要，对每个旧的工具调用都问一句任务是否仍依赖它。<br><sub><b>Jev 用法:</b> 每次运行结束后，Jev 先找出哪些请求仍在进行中，再针对每个旧工具调用问两个问题，决定丢弃或截断哪些内容。</sub><br><sub>相关: <a href="https://evot.ai">app</a></sub></td>
 </tr>
@@ -144,24 +108,32 @@
 <td valign="top"><b><a href="https://github.com/iamaamir/pi-bifrost">Pi-Bifrost</a></b><br><sub>iamaamir · GitHub · ⭐ 53 · 2026-07-25</sub><br>Pi 编程 agent 的模型路由器，按档位和策略为每条提示词选择模型，可选的 TypeSafe/Jev 评判档位负责判断每条提示词的复杂度。<br><sub>相关: <a href="https://iamaamir.github.io/pi-bifrost/">app</a> · <a href="https://www.reddit.com/r/PiCodingAgent/comments/1wlczow/i_think_i_found_the_best_use_case_for_jev_and_pi/">discussion</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=7w8eRWnUUA8"><img src="https://i.ytimg.com/vi/7w8eRWnUUA8/hqdefault.jpg" alt="herdr 模型路由器" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=7w8eRWnUUA8">herdr 模型路由器</a></b><br><sub>Nidhi Singh · 视频 · ♥ 320 · 2026-09-17</sub><br>一套终端配置：由模型路由 CLI 询问 Jev 每个任务该交给哪个编程 agent（Claude Code、Codex 或 Cursor）、用哪个模型、给多少推理强度。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/gargpratyush/jev-router"><img src="https://raw.githubusercontent.com/gargpratyush/jev-router/master/docs/model-picker.png" alt="jev-router" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/gargpratyush/jev-router">jev-router</a></b><br><sub>gargpratyush · GitHub · ⭐ 318 · 2026-09-16</sub><br>封装 Claude Code 和 Codex，用一个动态构建的 Choice 把每一轮交给能完成它的最便宜模型档位。<br><sub>相关: <a href="https://x.com/PratyushGa39620/status/2100649976422601076">demo</a> · <a href="https://news.ycombinator.com/item?id=49746321">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dansyu_callenge/status/2101789813443801556"><img src="https://pbs.twimg.com/media/HSsOrA2a8AAw6WE.jpg" alt="给 Codex 和 Claude Code 用的 Jev 记忆过滤器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dansyu_callenge/status/2101789813443801556">给 Codex 和 Claude Code 用的 Jev 记忆过滤器</a></b><br><sub>dansyu_callenge · 文章 · ♥ 84 · 2026-09-20</sub><br>一篇日文文章，介绍用 Jev 把传给 Codex 和 Claude Code 的记忆候选从最多 8 条精简到 3 条（减少 62.5%）的做法，并附有可直接复制粘贴的完整实现提示词。<br><sub><b>Jev 用法:</b> 在每条已存储的记忆或历史对话片段进入编程 agent 上下文之前，先判断它是否相关。</sub></td>
+<td width="260" valign="top"><a href="https://github.com/theonedev/onedev/blob/main/server-core/src/main/java/io/onedev/server/web/component/symboltooltip/SymbolTooltipPanel.java"><img src="https://raw.githubusercontent.com/theonedev/onedev/main/doc/images/code-navigation.gif" alt="OneDev 的 Jev 符号跳转" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/theonedev/onedev/blob/main/server-core/src/main/java/io/onedev/server/web/component/symboltooltip/SymbolTooltipPanel.java">OneDev 的 Jev 符号跳转</a></b><br><sub>theonedev · GitHub · ⭐ 15.3k 仓库 · 2018-11-06</sub><br>在 OneDev 的代码导航里，当某个符号有多个可能的定义时，Jev 读取周围的源码、import 和作用域，直接跳到最可能的那个。<br><sub><b>Jev 用法:</b> 以 JSON 形式给出候选定义，用一个 Choice 从中选择，在管理员的 Jev 设置页里配置。</sub><br><sub>相关: <a href="https://onedev.io">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/LxKus/status/2100611468580323414"><img src="https://pbs.twimg.com/amplify_video_thumb/2100319982433271808/img/Vg2C69AEWtNmsjlL.jpg" alt="Aition 文件过滤" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/LxKus/status/2100611468580323414">Aition 文件过滤</a></b><br><sub>LxKus · X · ♥ 89 · 2026-09-17</sub><br>代码评审工具 Aition 在 Claude 之前放了一层 Jev 来筛选候选文件：发送的文件少 33%，token 少 25%，成本低 23%，给 543 个文件打分只花 $0.037（每个文件 0.38s），召回率没有损失。<br><sub><b>Jev 用法:</b> 在把改动集交给 Claude 之前，先为每个候选文件的相关性打分。</sub><br><sub>相关: <a href="https://aition.app">app</a> · <a href="https://aition.app">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/daniel-farina/nitro"><img src="https://pbs.twimg.com/media/HSrhykQXYAAkMPS.jpg" alt="Nitro" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/daniel-farina/nitro">Nitro</a></b><br><sub>daniel-farina · GitHub · ⭐ 4 · 2026-09-20</sub><br>Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在相同任务上成本降低 22% 到 40%。<br><sub><b>Jev 用法:</b> 每个工具一个 Noul（完成这个请求是否需要该工具？），全部放在一次约 350 毫秒的请求里。</sub><br><sub>相关: <a href="https://x.com/Daniel_Farinax/status/2101749959980728575">write-up</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/tonhowtf/omniget/blob/main/src-tauri/omniget-core/src/core/llm/prune/jev.rs"><img src="https://raw.githubusercontent.com/tonhowtf/omniget/main/assets/readme/hero.gif" alt="OmniGet 的 Jev 上下文裁剪" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tonhowtf/omniget/blob/main/src-tauri/omniget-core/src/core/llm/prune/jev.rs">OmniGet 的 Jev 上下文裁剪</a></b><br><sub>tonhowtf · GitHub · ⭐ 14.1k 仓库 · 2026-02-11</sub><br>面向编程 agent 的桌面应用 OmniGet 中可选的上下文裁剪评判器，询问 Jev 每段上下文是否仍然需要，移植自 fast-jev-compaction 和 yoshi。<br><sub><b>Jev 用法:</b> 只用 Noul 问题，每次请求 16 个候选，上限 24,000 字节；默认关闭，选用时会给出隐私提示。</sub><br><sub>相关: <a href="https://tonho.wtf">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/tinacms/tinacms/blob/main/.github/scripts/dedupe-issue.mts"><img src="https://repository-images.githubusercontent.com/198488459/200ad980-a2be-11eb-8762-156abf2914f7" alt="TinaCMS 的 issue 去重器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tinacms/tinacms/blob/main/.github/scripts/dedupe-issue.mts">TinaCMS 的 issue 去重器</a></b><br><sub>tinacms · GitHub · ⭐ 13.8k 仓库 · 2019-07-23</sub><br>TinaCMS 仓库中的 GitHub Actions 脚本，用 Jev 把每个新 issue 与所有未关闭的 issue 比对，有把握时就发评论附上原 issue，并加上 Duplicate 标签。<br><sub><b>Jev 用法:</b> 先按页用 Choice 筛出候选，再做 Noul 检查，判定重复的阈值为 0.85，相关 issue 为 0.6。</sub><br><sub>相关: <a href="https://tina.io">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/PiCodingAgent/comments/1wjqfyo/i_added_jev_as_a_classifier_for_piautomode_faster/"><img src="https://external-preview.redd.it/oIadTIZOORHQiYYTQOvV-0fNYfvTV19bUtu5pvJjAJU.png?auto=webp&amp;s=f4faf66db18e303bfb109025a4638bbc1519e55e" alt="pi-automode" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/PiCodingAgent/comments/1wjqfyo/i_added_jev_as_a_classifier_for_piautomode_faster/">pi-automode</a></b><br><sub>NotTryingToConYou · Reddit · ▲ 91 · 2026-09-18</sub><br>给 pi-automode 加了一个 Jev 分类器后端；pi-automode 是 Pi 编程 agent 上类似 Claude Code 的自动模式，决定哪些操作可以不经询问直接执行。<br><sub>相关: <a href="https://github.com/czottmann/pi-automode">repo</a> · <a href="https://github.com/czottmann/pi-automode/pull/49">pr</a> · <a href="https://github.com/czottmann/pi-automode">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/metalbear-co/jev-auto-approve"><img src="https://repository-images.githubusercontent.com/454467716/241fe822-e2b4-4f42-9f1c-871e464e13f3" alt="jev-auto-approve" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/metalbear-co/jev-auto-approve">jev-auto-approve</a></b><br><sub>metalbear-co · GitHub · ⭐ 7 · 2026-09-20</sub><br>GitHub Action，判断一个 pull request 是否需要人工评审，只有当每个问题都以足够置信度越过你设定的阈值时才自动批准，否则指出是哪个问题拦住了跳过评审。<br><sub><b>Jev 用法:</b> 一次调用并行问多个 Noul；校准后的阈值（例如 0.95 对比 0.8）是一个真正可调的旋钮。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49775144">demo</a> · <a href="https://github.com/metalbear-co/mirrord/blob/main/.github/workflows/jev-auto-approve.yaml">link</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/DecapodLabs/decapod"><img src="https://opengraph.githubassets.com/1/DecapodLabs/decapod" alt="Decapod" width="240"></a></td>
@@ -176,44 +148,28 @@
 <td valign="top"><b><a href="https://github.com/morganlinton/Albatross">Albatross</a></b><br><sub>morganlinton · GitHub · ⭐ 230 · 2026-04-25</sub><br>终端编程 agent，把有边界的问题先交给 Jev 处理再轮到主 LLM，只有在有把握时才返回固定的直接答案，提供关闭、影子和启用三种模式。<br><sub>相关: <a href="https://github.com/morganlinton/Albatross/blob/main/docs/JEV_HARNESS.md">docs</a> · <a href="https://albatross.sh">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=WBvmtzkJZsY"><img src="https://i.ytimg.com/vi/WBvmtzkJZsY/hqdefault.jpg" alt="Bambooed" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=WBvmtzkJZsY">Bambooed</a></b><br><sub>AICodeKing · 视频 · ♥ 152 · 2026-09-20</sub><br>演示 Bambooed 中“架构师 + 工人”模式的 AI 编程团队：Astra 架构师负责规划，更便宜的工人模型写代码，可选的 Jev 帮忙挑选工人、检索上下文和审查改动。<br><sub><b>Jev 用法:</b> 工人选择、上下文检索、改动审查和浏览器测试相关的决策。</sub><br><sub>相关: <a href="https://bambooed.ai">app</a> · <a href="https://bambooed.ai">project</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/vinilana/jev-gateway"><img src="https://raw.githubusercontent.com/vinilana/jev-gateway-bench/main/charts/comparison-light.svg" alt="jev-gateway" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/vinilana/jev-gateway">jev-gateway</a></b><br><sub>vinilana · GitHub · ⭐ 118 · 2026-09-18</sub><br>面向 Codex、Claude Code、OpenCode 和 Gemini 客户端的本地 LLM 网关，把“该调用哪个工具”的决策交给 Jev，其余流量都转发给你平常用的模型。<br><sub>相关: <a href="https://github.com/vinilana/jev-gateway-bench">link</a> · <a href="https://www.youtube.com/watch?v=rtWCFKg7XEs">video</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/sawyerhood/status/2100994779291259187"><img src="https://pbs.twimg.com/amplify_video_thumb/2100990656252661760/img/ceUStNdfX7n8-khU.jpg" alt="自动填好的 agent 输入框" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/sawyerhood/status/2100994779291259187">自动填好的 agent 输入框</a></b><br><sub>sawyerhood · X · ♥ 203 · 2026-09-18</sub><br>一个提示词输入框，让 Jev 为每个请求挑选编程 agent、模型、机器和文件夹，比如大规模重写用 Fable 配 Claude Code，iOS 改动用 Mac。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/coldteadotai/abide"><img src="https://raw.githubusercontent.com/coldteadotai/abide/master/docs/images/abide.png" alt="Abide" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/coldteadotai/abide">Abide</a></b><br><sub>coldteadotai · GitHub · ⭐ 209 · 2026-09-18</sub><br>适用于 Claude Code、Codex 和 OpenCode 的 hook 插件，由 Jev 对照你的 AGENTS.md 和 CLAUDE.md 规则检查 agent 的每一次编辑，每次检查约 300 毫秒，并让 agent 修正违规之处。<br><sub><b>Jev 用法:</b> 回放 93 个真实会话，Jev 标记了 39 次编辑和 15 个轮次；独立评审分别确认了其中 10 次和 11 个。</sub><br><sub>相关: <a href="https://x.com/OhansEmmanuel/status/2101034822760288452">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/kirodotdev/KiroCrew/tree/main/src/kiro_crew/decisions"><img src="https://raw.githubusercontent.com/kirodotdev/KiroCrew/main/assets/banner.svg" alt="Kiro Crew 的 Jev 决策点" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kirodotdev/KiroCrew/tree/main/src/kiro_crew/decisions">Kiro Crew 的 Jev 决策点</a></b><br><sub>kirodotdev · GitHub · ⭐ 4.1k 仓库 · 2026-07-16</sub><br>Kiro Crew 开发工作区中的一系列决策点，由 Jev 的 Choice 挑选 skill、路由模型、评估工具风险、引导消息、召回记忆，并决定压缩时保留哪些内容。<br><sub><b>Jev 用法:</b> 每个答案在使用前都要经过闸门校验，并由闸门提供降级方案；Jev key 只能来自专用的密钥库条目。</sub><br><sub>相关: <a href="https://kiro.dev/crew/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/openchamber/openchamber/blob/main/packages/web/server/lib/routing/jev.js"><img src="https://raw.githubusercontent.com/openchamber/openchamber/main/docs/references/chat_example.png" alt="OpenChamber 的 Jev 路由器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/openchamber/openchamber/blob/main/packages/web/server/lib/routing/jev.js">OpenChamber 的 Jev 路由器</a></b><br><sub>openchamber · GitHub · ⭐ 10.2k 仓库 · 2026-09-17</sub><br>OpenCode agent 工作区 OpenChamber 中可选的自动模型路由器：Jev 把每条消息归入一个任务类别，每个类别对应一个模型和推理档位，同时它也负责筛查工具权限。<br><sub><b>Jev 用法:</b> 在配置好的路由之间做一个类别 Choice；权限请求会得到一个“是否询问”的 Noul 和一个影响类型的 Choice。</sub><br><sub>相关: <a href="https://github.com/openchamber/openchamber">repo</a> · <a href="https://openchamber.dev/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/liuyanghejerry/Clausura"><img src="https://opengraph.githubassets.com/1/liuyanghejerry/Clausura" alt="Clausura" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/liuyanghejerry/Clausura">Clausura</a></b><br><sub>liuyanghejerry · GitHub · ⭐ 203 · 2026-05-30</sub><br>CI agent CLI，依据结构化的问题清单决定流水线是否放行，可选的 Jev 校验会在放行判断前逐条询问该问题是否真实、是否有其自身证据支撑。<br><sub><b>Jev 用法:</b> 每个问题一个 Noul；低于阈值的问题不参与放行判断，API 出错时放行。</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/sawyerhood/status/2100994779291259187"><img src="https://pbs.twimg.com/amplify_video_thumb/2100990656252661760/img/ceUStNdfX7n8-khU.jpg" alt="自动填好的 agent 输入框" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/sawyerhood/status/2100994779291259187">自动填好的 agent 输入框</a></b><br><sub>sawyerhood · X · ♥ 203 · 2026-09-18</sub><br>一个提示词输入框，让 Jev 为每个请求挑选编程 agent、模型、机器和文件夹，比如大规模重写用 Fable 配 Claude Code，iOS 改动用 Mac。</td>
+</tr>
+<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/AI_Agents/comments/1wkzjtx/i_tested_jev_as_a_subconscious_helper_for_my_ai/">编程 agent 的潜意识检查</a></b><br><sub>Obvious_Unicorn · Reddit · ▲ 65 · 2026-09-19</sub><br>编程 agent 的辅助工具，由 Jev 折叠通过的测试日志、在约 75 毫秒内拦截破坏性 shell 命令，并为笔记搜索做路由，每天花费不到半美分。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.npmjs.com/package/@mizchi/eslint-plugin-jev"><img src="https://pbs.twimg.com/media/HSfSNcab0AAOwet.jpg?name=orig" alt="@mizchi/eslint-plugin-jev" width="240"></a></td>
-<td valign="top"><b><a href="https://www.npmjs.com/package/@mizchi/eslint-plugin-jev">@mizchi/eslint-plugin-jev</a></b><br><sub>mizchi · 软件包 · ♥ 70 · 2026-09-18</sub><br>实验性 ESLint 插件，由 Jev 给出判定：可以用一个节点选择器加一句自然语言写成一条规则，也可以拿到每个函数在 八类具名缺陷上的得分。<br><sub><b>Jev 用法:</b> 文件中的所有函数在一次批量请求里完成判断。</sub><br><sub>相关: <a href="https://github.com/mizchi/jev-playground/tree/main/experiments/eslint-plugin-jev">repo</a> · <a href="https://x.com/mizchi/status/2100879638008594513">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/duolahypercho/codex-router/blob/main/config/openrouter/decisions/jev-latest.json"><img src="https://opengraph.githubassets.com/1/duolahypercho/codex-router" alt="Codex Router 的 Jev 路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/duolahypercho/codex-router/blob/main/config/openrouter/decisions/jev-latest.json">Codex Router 的 Jev 路由</a></b><br><sub>duolahypercho · GitHub · ⭐ 3.8k 仓库 · 2026-07-19</sub><br>Codex Router 为 jev-latest 提供一条不公开列出的 OpenRouter Decisions 路由，它不出现在 Codex 的模型选择器里，专供显式的本地集成使用，比如压缩裁剪器。<br><sub><b>Jev 用法:</b> 使用与对话模型相同的 OpenRouter key，就压缩时保留还是丢弃提出结构化问题，调用 alpha 版 decisions 端点。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=goVDTUd7-J0"><img src="https://i.ytimg.com/vi/goVDTUd7-J0/hqdefault.jpg" alt="Jev Realtime Code Check" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=goVDTUd7-J0">Jev Realtime Code Check</a></b><br><sub>Patrick Desjardins · 视频 · ♥ 43 · 2026-09-17</sub><br>一段简短演示：一个 VS Code 和 Cursor 扩展在每次保存时，用 Jev 对照 370 条 Markdown 编码规则检查本地 Git 改动，耗时不到 2 秒。<br><sub><b>Jev 用法:</b> 针对改动的代码，每条适用的规则做一次判断。</sub><br><sub>相关: <a href="https://github.com/MrDesjardins/jevrealtimecodecheck">repo</a> · <a href="https://patrickdesjardins.com/blog/typesafe-ai-jev-running-370-text-rules-under-2-seconds">article</a> · <a href="https://github.com/mrdesjardins/jevrealtimecodecheck">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/0xNatoshi/jev-codex-router"><img src="https://pbs.twimg.com/media/HSgeLlIX0AAjedL.png" alt="Jev Codex Router" width="240"></a></td>
@@ -228,12 +184,20 @@
 <td valign="top"><b><a href="https://github.com/kunchenguid/compact-adviser">compact-adviser</a></b><br><sub>kunchenguid · GitHub · ⭐ 173 · 2026-09-17</sub><br>适用于 Pi、Claude Code、Codex CLI 和 Grok 的插件，询问 Jev 当前工作单元是否已完成、属于动手执行还是协调沟通，然后在安全的边界处提示或触发 /compact。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/kunchenguid/no-mistakes/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/kunchenguid/no-mistakes/main/demo.gif" alt="no-mistakes 的 Jev 审查预简报" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/kunchenguid/no-mistakes/tree/main/internal/jev">no-mistakes 的 Jev 审查预简报</a></b><br><sub>kunchenguid · GitHub · ⭐ 8.6k 仓库 · 2026-04-05</sub><br>no-mistakes push 前审查流水线中的一个可选步骤，用一次批量 Jev 调用排出 AI 审查者应该先读哪些周边文件。<br><sub><b>Jev 用法:</b> 仅作建议：它可以添加阅读建议，但从不移除文件或审查义务，出错时回退为空的预简报；实际调用耗时约 470 毫秒。</sub><br><sub>相关: <a href="https://kunchenguid.github.io/no-mistakes/">docs</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/lakeday-org/perch"><img src="https://opengraph.githubassets.com/1/lakeday-org/perch" alt="perch" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/lakeday-org/perch">perch</a></b><br><sub>lakeday-org · GitHub · ⭐ 168 · 2026-09-16</sub><br>语义代码扫描器，解析方法及其调用图，就范围内的每个方法向 Jev 提带类型的问题，对可能的缺陷和安全问题排序，支持自定义 YAML 规则、agent skill 和 CI 闸门。<br><sub>相关: <a href="https://x.com/joshuafbrown/status/2102085153015451695">demo</a> · <a href="https://perchscan.com">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/prateekkathal/status/2101084515942965590"><img src="https://pbs.twimg.com/media/HSiM9l8bIAA8Hjj.png?name=orig" alt="Claude Code 提示词打分器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/prateekkathal/status/2101084515942965590">Claude Code 提示词打分器</a></b><br><sub>prateekkathal · X · ♥ 6 · 2026-09-18</sub><br>Claude Code 插件，用 Jev 给你向编程 agent 写提示词的水平打分，且不增加延迟。</td>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=WBvmtzkJZsY"><img src="https://i.ytimg.com/vi/WBvmtzkJZsY/hqdefault.jpg" alt="Bambooed" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=WBvmtzkJZsY">Bambooed</a></b><br><sub>AICodeKing · 视频 · ♥ 152 · 2026-09-20</sub><br>演示 Bambooed 中“架构师 + 工人”模式的 AI 编程团队：Astra 架构师负责规划，更便宜的工人模型写代码，可选的 Jev 帮忙挑选工人、检索上下文和审查改动。<br><sub><b>Jev 用法:</b> 工人选择、上下文检索、改动审查和浏览器测试相关的决策。</sub><br><sub>相关: <a href="https://bambooed.ai">app</a> · <a href="https://bambooed.ai">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/kunchenguid/firstmate/blob/main/bin/fm-dispatch-resolve.sh"><img src="https://raw.githubusercontent.com/kunchenguid/firstmate/main/assets/banner.png" alt="Firstmate 的 Jev 调度" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/kunchenguid/firstmate/blob/main/bin/fm-dispatch-resolve.sh">Firstmate 的 Jev 调度</a></b><br><sub>kunchenguid · GitHub · ⭐ 6.9k 仓库 · 2026-09-17</sub><br>Firstmate 中可选开启的调度解析器。Firstmate 是并行编程 agent 的团队管理器，这个解析器用一个 Jev Choice 把每份任务简报匹配到某条调度规则，再由本地策略选定 agent 配置。<br><sub><b>Jev 用法:</b> 在所有规则的 when 子句外加一个 none 选项上做一个 Choice；置信度下限、审批和配额随后在 jq 中处理，从不展示给模型。</sub><br><sub>相关: <a href="https://github.com/kunchenguid/firstmate">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/skyfireitdiy/Jarvis"><img src="https://raw.githubusercontent.com/skyfireitdiy/Jarvis/main/docs/images/jarvis-logo.svg" alt="Jarvis" width="240"></a></td>
@@ -252,12 +216,16 @@
 <td valign="top"><b><a href="https://github.com/uehaj/jev-semgrep">jev-semgrep</a></b><br><sub>uehaj · GitHub · ⭐ 125 · 2026-09-19</sub><br>跨语言的语义 grep，支持 AND、OR 和 NOT，每一行问一个 Noul。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/softwarecuddler/status/2100981707105284255"><img src="https://pbs.twimg.com/amplify_video_thumb/2100981261007507456/img/FLs24JzKRsdrrFER.jpg" alt="Supabase RLS 检查器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/softwarecuddler/status/2100981707105284255">Supabase RLS 检查器</a></b><br><sub>softwarecuddler · X · ♥ 59 · 2026-09-18</sub><br>实验性的 linter，让 Jev 审查 Supabase 行级安全策略并标记问题，还有一个托管的测试页面可以试用。<br><sub>相关: <a href="https://rls-jev-tester.vercel.app/">app</a> · <a href="https://rls-jev-tester.vercel.app">project</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/devagrawal09/stanley-code"><img src="https://opengraph.githubassets.com/1/devagrawal09/stanley-code" alt="Stanley" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/devagrawal09/stanley-code">Stanley</a></b><br><sub>devagrawal09 · GitHub · ⭐ 111 · 2026-09-17</sub><br>用来检查代码改动的编程 CLI，由 Jev 把每条自然语言请求路由到某个确定性工作流，工作流再针对收集到的证据向 Jev 提固定选项问题；没有合适的工作流时回退到 Pi。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/coder/xum/blob/main/src/constants/autoModelRouting.ts"><img src="https://raw.githubusercontent.com/coder/xum/main/docs/img/black-xum.svg" alt="Xum 的自动模型路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/coder/xum/blob/main/src/constants/autoModelRouting.ts">Xum 的自动模型路由</a></b><br><sub>coder · GitHub · ⭐ 2k 仓库 · 2025-09-17</sub><br>桌面编程 agent 多路复用器 Xum 会把每条 Auto 模式的提示词发给评测模型，做一次难度档位选择，再用该档位对应的模型和思考档位运行这一轮。<br><sub><b>Jev 用法:</b> TypeSafe 是默认的评测 provider，经 AI SDK 的 experimental_evaluate 调用；它不提供聊天模型，也从不出现在模型列表里。</sub><br><sub>相关: <a href="https://xum.coder.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/metalbear-co/jev-auto-approve"><img src="https://repository-images.githubusercontent.com/454467716/241fe822-e2b4-4f42-9f1c-871e464e13f3" alt="jev-auto-approve" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/metalbear-co/jev-auto-approve">jev-auto-approve</a></b><br><sub>metalbear-co · GitHub · ⭐ 7 · 2026-09-20</sub><br>GitHub Action，判断一个 pull request 是否需要人工评审，只有当每个问题都以足够置信度越过你设定的阈值时才自动批准，否则指出是哪个问题拦住了跳过评审。<br><sub><b>Jev 用法:</b> 一次调用并行问多个 Noul；校准后的阈值（例如 0.95 对比 0.8）是一个真正可调的旋钮。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49775144">demo</a> · <a href="https://github.com/metalbear-co/mirrord/blob/main/.github/workflows/jev-auto-approve.yaml">link</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sonnylazuardi/superterminal"><img src="https://raw.githubusercontent.com/sonnylazuardi/superterminal/main/assets/demo.png" alt="superterminal" width="240"></a></td>
@@ -268,20 +236,24 @@
 <td valign="top"><b><a href="https://github.com/supercorp-ai/supercov">Supercov</a></b><br><sub>supercorp-ai · GitHub · ⭐ 94 · 2026-08-23</sub><br>CLI，告诉编程 agent 该修什么、该测什么：用 Jev 给代码质量属性打分（每 MB 源码约一美分），并把你现有测试命令没覆盖到的路径变成目标。<br><sub>相关: <a href="https://supercov.com">website</a> · <a href="https://www.reddit.com/r/AI_Agents/comments/1wjlac0/jev_to_fix_slop_code/">discussion</a> · <a href="https://www.reddit.com/r/typesafe_ai/comments/1wjlvlx/jev_code_quality_for_codex/">discussion 2</a> · <a href="https://supercov.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/whosfranki/status/2102195316829077686"><img src="https://pbs.twimg.com/amplify_video_thumb/2102187393717534721/img/FmGLzXqEYRdC2RGo.jpg" alt="matchcn" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/whosfranki/status/2102195316829077686">matchcn</a></b><br><sub>whosfranki · X · ♥ 38 · 2026-09-22</sub><br>面向编程 agent 的语义组件搜索：描述你需要的 UI，它就从 9 个 shadcn registry 的 1,783 个组件中返回匹配的组件和安装命令。<br><sub><b>Jev 用法:</b> 按六个维度（用途、动效、密度、交互、数据、装饰）给每个组件分类，并在匹配打分时用上置信度。</sub><br><sub>相关: <a href="https://matchcn.dev">app</a> · <a href="https://github.com/francesco0242/matchcn">repo</a> · <a href="https://matchcn.dev">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/LxKus/status/2100611468580323414"><img src="https://pbs.twimg.com/amplify_video_thumb/2100319982433271808/img/Vg2C69AEWtNmsjlL.jpg" alt="Aition 文件过滤" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/LxKus/status/2100611468580323414">Aition 文件过滤</a></b><br><sub>LxKus · X · ♥ 89 · 2026-09-17</sub><br>代码评审工具 Aition 在 Claude 之前放了一层 Jev 来筛选候选文件：发送的文件少 33%，token 少 25%，成本低 23%，给 543 个文件打分只花 $0.037（每个文件 0.38s），召回率没有损失。<br><sub><b>Jev 用法:</b> 在把改动集交给 Claude 之前，先为每个候选文件的相关性打分。</sub><br><sub>相关: <a href="https://aition.app">app</a> · <a href="https://aition.app">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/dansyu_callenge/status/2101789813443801556"><img src="https://pbs.twimg.com/media/HSsOrA2a8AAw6WE.jpg" alt="给 Codex 和 Claude Code 用的 Jev 记忆过滤器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dansyu_callenge/status/2101789813443801556">给 Codex 和 Claude Code 用的 Jev 记忆过滤器</a></b><br><sub>dansyu_callenge · 文章 · ♥ 84 · 2026-09-20</sub><br>一篇日文文章，介绍用 Jev 把传给 Codex 和 Claude Code 的记忆候选从最多 8 条精简到 3 条（减少 62.5%）的做法，并附有可直接复制粘贴的完整实现提示词。<br><sub><b>Jev 用法:</b> 在每条已存储的记忆或历史对话片段进入编程 agent 上下文之前，先判断它是否相关。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/xcjy8bao/baoer_signal_grep"><img src="https://external-preview.redd.it/u6_hLVhxoVuSTK6uhVkkc4kDWWZo2jZOb13mRX3M6yc.png?auto=webp&amp;s=9cfab12129c0d196dfdd61e39fc3629497543e24" alt="baoer_signal_grep" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/xcjy8bao/baoer_signal_grep">baoer_signal_grep</a></b><br><sub>xcjy8bao · GitHub · ⭐ 82 · 2026-08-27</sub><br>基于 ripgrep 的编程 agent 搜索插件和 MCP 服务器，可选用 Jev 做语义判断，对保留下来的概念候选进行分类，以改进结果排序。<br><sub>相关: <a href="https://www.npmjs.com/package/baoer_signal_grep">npm</a> · <a href="https://www.reddit.com/r/mcp/comments/1wm6x5p/jev_mcp_for_coding_agents_baoer_signal_grep_166/">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/nicobailon/pi-mcp-adapter/blob/main/jev-client.ts"><img src="https://raw.githubusercontent.com/nicobailon/pi-mcp-adapter/main/banner.png" alt="Pi MCP Adapter 的 Jev 搜索" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/nicobailon/pi-mcp-adapter/blob/main/jev-client.ts">Pi MCP Adapter 的 Jev 搜索</a></b><br><sub>nicobailon · GitHub · ⭐ 1.5k 仓库 · 2026-01-19</sub><br>面向 Pi 编程 agent、节省 token 的 MCP 适配器中的可选 Jev 层，在显式语义搜索时对所有已启用服务器上的 MCP 工具排序，还能在白名单控制下评估工具结果。<br><sub>相关: <a href="https://github.com/nicobailon/pi-mcp-adapter">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/kirodotdev/KiroCrew/tree/main/src/kiro_crew/decisions"><img src="https://raw.githubusercontent.com/kirodotdev/KiroCrew/main/assets/banner.svg" alt="Kiro Crew 的 Jev 决策点" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/kirodotdev/KiroCrew/tree/main/src/kiro_crew/decisions">Kiro Crew 的 Jev 决策点</a></b><br><sub>kirodotdev · GitHub · ⭐ 4.1k 仓库 · 2026-07-16</sub><br>Kiro Crew 开发工作区中的一系列决策点，由 Jev 的 Choice 挑选 skill、路由模型、评估工具风险、引导消息、召回记忆，并决定压缩时保留哪些内容。<br><sub><b>Jev 用法:</b> 每个答案在使用前都要经过闸门校验，并由闸门提供降级方案；Jev key 只能来自专用的密钥库条目。</sub><br><sub>相关: <a href="https://kiro.dev/crew/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/fujibee/agmsg/tree/main/scripts/drivers/ext-tools/jev"><img src="https://raw.githubusercontent.com/fujibee/agmsg/main/docs/agmsg-demo.gif" alt="agmsg 的 jev 工具" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/fujibee/agmsg/tree/main/scripts/drivers/ext-tools/jev">agmsg 的 jev 工具</a></b><br><sub>fujibee · GitHub · ⭐ 1.5k 仓库 · 2026-04-02</sub><br>agmsg 中的外部工具驱动。agmsg 是面向 CLI 编程 agent 的跨厂商消息层，这个驱动让某个席位可以就一段 state 向 Jev 提出类型化问题，作为决策辅助。<br><sub><b>Jev 用法:</b> 鼓励通过推测式扇出把多个问题打包进一次调用；调用之间没有记忆，也没有副作用。</sub><br><sub>相关: <a href="https://www.producthunt.com/products/agmsg">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/duolahypercho/codex-router/blob/main/config/openrouter/decisions/jev-latest.json"><img src="https://opengraph.githubassets.com/1/duolahypercho/codex-router" alt="Codex Router 的 Jev 路由" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/duolahypercho/codex-router/blob/main/config/openrouter/decisions/jev-latest.json">Codex Router 的 Jev 路由</a></b><br><sub>duolahypercho · GitHub · ⭐ 3.8k 仓库 · 2026-07-19</sub><br>Codex Router 为 jev-latest 提供一条不公开列出的 OpenRouter Decisions 路由，它不出现在 Codex 的模型选择器里，专供显式的本地集成使用，比如压缩裁剪器。<br><sub><b>Jev 用法:</b> 使用与对话模型相同的 OpenRouter key，就压缩时保留还是丢弃提出结构化问题，调用 alpha 版 decisions 端点。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/can1357/jegrep"><img src="https://opengraph.githubassets.com/1/can1357/jegrep" alt="jegrep" width="240"></a></td>
@@ -292,24 +264,16 @@
 <td valign="top"><b><a href="https://github.com/f/jev-leftpad">jev-leftpad</a></b><br><sub>f · GitHub · ⭐ 74 · 2026-09-21</sub><br>一个恶搞 npm 包，通过让 Jev 在 space_0 到 space_10 这些选项中做选择来给字符串左侧补空格，每次调用发一次 API 请求，所以最多只能补 10 个空格，而且比 padStart() 还贵。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49784706">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/remorses/kimaki/tree/main/opencode-auto-mode"><img src="https://opengraph.githubassets.com/1/remorses/kimaki" alt="kimaki 的 opencode 自动模式" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/remorses/kimaki/tree/main/opencode-auto-mode">kimaki 的 opencode 自动模式</a></b><br><sub>remorses · GitHub · ⭐ 1.4k 仓库 · 2025-09-02</sub><br>kimaki 是一个基于 Discord 的 OpenCode 编排器，其中的 opencode-auto-mode 插件运行一个默认全拒绝的旁路会话分类器，用 Jev 决定自动模式下的每一轮。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用 typesafe-ai/jev，与放行概率阈值比较，配置无效时一律拒绝。</sub><br><sub>相关: <a href="https://kimaki.dev">app</a></sub></td>
+<td width="260" valign="top"><a href="https://www.npmjs.com/package/@mizchi/eslint-plugin-jev"><img src="https://pbs.twimg.com/media/HSfSNcab0AAOwet.jpg?name=orig" alt="@mizchi/eslint-plugin-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://www.npmjs.com/package/@mizchi/eslint-plugin-jev">@mizchi/eslint-plugin-jev</a></b><br><sub>mizchi · 软件包 · ♥ 70 · 2026-09-18</sub><br>实验性 ESLint 插件，由 Jev 给出判定：可以用一个节点选择器加一句自然语言写成一条规则，也可以拿到每个函数在 八类具名缺陷上的得分。<br><sub><b>Jev 用法:</b> 文件中的所有函数在一次批量请求里完成判断。</sub><br><sub>相关: <a href="https://github.com/mizchi/jev-playground/tree/main/experiments/eslint-plugin-jev">repo</a> · <a href="https://x.com/mizchi/status/2100879638008594513">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mizchi/jev-lint"><img src="https://opengraph.githubassets.com/1/mizchi/jev-lint" alt="jev-lint" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mizchi/jev-lint">jev-lint</a></b><br><sub>mizchi · GitHub · ⭐ 69 · 2026-09-19</sub><br>每条规则就是一句话的 linter：ast-grep 选出要检查的代码，Jev 针对每处匹配给这句话打分，能抓出注释承诺的行为而函数体并未实现之类的偏差。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/memorax-ai/memorax-code/tree/main/packages/ts/memorax-code-backend/src/provider/jev"><img src="https://raw.githubusercontent.com/memorax-ai/memorax-code/main/docs/assets/memorax-code-lockup-light.svg" alt="Memorax Code 的 Jev 门控" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/memorax-ai/memorax-code/tree/main/packages/ts/memorax-code-backend/src/provider/jev">Memorax Code 的 Jev 门控</a></b><br><sub>memorax-ai · GitHub · ⭐ 1.4k 仓库 · 2026-08-01</sub><br>面向 AI 编程的记忆插件，用 Jev 判断当前提示词是否值得做一次记忆搜索，只在可能有帮助时才检索。<br><sub><b>Jev 用法:</b> 由 jev-1.13.0 给出带概率的“搜索还是跳过”决定，设 2 秒超时并限制输入大小。</sub><br><sub>相关: <a href="https://code.memorax.net/">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/fstandhartinger/chat-seek-vscode"><img src="https://raw.githubusercontent.com/fstandhartinger/chat-seek-vscode/main/media/demo.gif" alt="Chat Seek" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/fstandhartinger/chat-seek-vscode">Chat Seek</a></b><br><sub>fstandhartinger · GitHub · ⭐ 64 · 2026-09-21</sub><br>VS Code 扩展，根据一段大白话描述找回过去的 Claude Code、Codex 和 OpenCode 对话，并用开放的 Laya 决策模型对本地匹配结果重排。<br><sub><b>Jev 用法:</b> 使用在本地运行的开放 Jev 兼容模型 Laya 做重排。</sub><br><sub>相关: <a href="https://x.com/airesearch12/status/2101931275846099315">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/caliber-ai-org/ai-setup/tree/master/plugin/caliber-jev-compaction"><img src="https://repository-images.githubusercontent.com/1178198291/70be5bf9-076a-49fc-aaa7-07cdab8ee077" alt="caliber-jev-compaction" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/caliber-ai-org/ai-setup/tree/master/plugin/caliber-jev-compaction">caliber-jev-compaction</a></b><br><sub>caliber-ai-org · GitHub · ⭐ 1.3k 仓库 · 2026-03-10</sub><br>随 Caliber 发布的 Claude Code 函数 hook 插件，用 Jev 决策取代内置的上下文压缩，以未打包的 TypeScript 形式从磁盘加载。<br><sub><b>Jev 用法:</b> 自带 key（BYOK）的 apiKey 或 gatewayApiKey；压缩 hook 询问 Jev 该保留哪些上下文。</sub><br><sub>相关: <a href="https://trycaliber.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/nidhi-singh02/agent-router"><img src="https://opengraph.githubassets.com/1/nidhi-singh02/agent-router" alt="agent-router" width="240"></a></td>
@@ -328,10 +292,6 @@
 <td valign="top"><b><a href="https://github.com/QAInsights/jmeter-ai">Feather Wand</a></b><br><sub>QAInsights · GitHub · ⭐ 60 · 2025-02-24</sub><br>Apache JMeter 的 AI agent 插件，其可选的 Jev Smart Routing 会对每个请求的意图分类，为 Agent Mode 提供一个聚焦的工具包，并显示路由卡片，必要时回退到完整工具集。<br><sub>相关: <a href="https://jmeter.ai">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/kylejeong/status/2100827289349132657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100827022121713664/img/Bw1G6-A6AyFgOiAD.jpg" alt="带 Jev 记忆压缩的 Nanocode" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kylejeong/status/2100827289349132657">带 Jev 记忆压缩的 Nanocode</a></b><br><sub>kylejeong · X · ♥ 37 · 2026-09-18</sub><br>nanocode agent 的一个 fork，加了在 memory.md 文件里 grep 的工具，以及用 Jev 删掉多余记忆的压缩功能。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/GhalebDweikat/winnow"><img src="https://opengraph.githubassets.com/1/GhalebDweikat/winnow" alt="winnow" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/GhalebDweikat/winnow">winnow</a></b><br><sub>GhalebDweikat · GitHub · ⭐ 56 · 2026-09-16</sub><br>Claude Code 的上下文筛子，评判每个大的 Read、Bash 或 Grep 结果，把有把握确定你用不上的块换成三行占位，需要时再恢复全文。<br><sub><b>Jev 用法:</b> 每个块一个是非 Noul（当前任务是否需要它？）；拿不准的块会保留。</sub></td>
 </tr>
@@ -344,28 +304,12 @@
 <td valign="top"><b><a href="https://github.com/yuzushi-dev/Sando">Sando</a></b><br><sub>yuzushi-dev · GitHub · ⭐ 54 · 2026-08-23</sub><br>面向 Claude Code 和 Codex 的本地上下文管理插件，给过大的工具输出设上限，另有一个可选的 TypeSafe 影子评判器，只做度量，从不改动请求。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/MayDay-wpf/snow-cli/blob/main/source/api/decisionModel.ts"><img src="https://raw.githubusercontent.com/MayDay-wpf/snow-cli/main/docs/images/bloome-home.png" alt="snow-cli 的决策模型" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/MayDay-wpf/snow-cli/blob/main/source/api/decisionModel.ts">snow-cli 的决策模型</a></b><br><sub>MayDay-wpf · GitHub · ⭐ 1.1k 仓库 · 2025-08-16</sub><br>为终端编程 agent snow-cli 加入 TypeSafe Jev 决策模型客户端，在代码库 agent 审查中判断每条搜索结果是否与查询相关。<br><sub><b>Jev 用法:</b> 一个 choice 问题，其裁决直接作为审查结论，不需要再用 LLM 复核。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/lomeshdutta/skill-router"><img src="https://pbs.twimg.com/amplify_video_thumb/2100829690625986560/img/wb4qnROl6fZfpHUS.jpg" alt="skill-router" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lomeshdutta/skill-router">skill-router</a></b><br><sub>lomeshdutta · GitHub · ⭐ 2 · 2026-09-18</sub><br>Claude Code 的命令行工具，用 Jev 判断某个会话需要哪个已安装的 skill，并去 skills.sh 查找你还没装的 skill。<br><sub>相关: <a href="https://x.com/lomeshdutta/status/2100833655518367871">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/ellipsis-dev/blink"><img src="https://opengraph.githubassets.com/1/ellipsis-dev/blink" alt="blink" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ellipsis-dev/blink">blink</a></b><br><sub>ellipsis-dev · GitHub · ⭐ 53 · 2026-09-16</sub><br>代码库搜索 CLI，根据自然语言查询找文件：把一组 walker 沿目录树往下派，由 Jev 给文件名和文件夹名打分。<br><sub><b>Jev 用法:</b> Jev 在每一层给名称打分；概率越高的路径分到越多 walker，结果会报告最终落在该处的 walker 占比。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/wk42worldworld/cybercode/blob/main/src/services/fastJudgment/service.ts"><img src="https://raw.githubusercontent.com/wk42worldworld/cybercode/main/docs/images/cybercode-wordmark.png" alt="CyberCode Fast Judgment" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/wk42worldworld/cybercode/blob/main/src/services/fastJudgment/service.ts">CyberCode Fast Judgment</a></b><br><sub>wk42worldworld · GitHub · ⭐ 1k 仓库 · 2026-04-29</sub><br>CyberCode 是一个把 Claude Code 与 Hermes 自我进化结合起来的 agent，它新增了由 Jev 支撑的 Fast Judgment 服务，用于快速分类和浏览器决策。<br><sub><b>Jev 用法:</b> 通过 api.typesafe.ai（jev-latest）提出 Choice 问题并获取概率和置信度，带缓存、降级方案和较短的超时。</sub><br><sub>相关: <a href="https://wk42worldworld.github.io/cybercode/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/CelestoAI/celesto/tree/main/examples/pr-review-jev"><img src="https://raw.githubusercontent.com/CelestoAI/celesto/main/open-muse/banner-dark.png" alt="Celesto PR Review Lab" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/CelestoAI/celesto/tree/main/examples/pr-review-jev">Celesto PR Review Lab</a></b><br><sub>CelestoAI · GitHub · ⭐ 959 仓库 · 2026-09-17</sub><br>基于 Celesto microVM 沙箱的示例 app：agent 为某个公开的 GitHub PR 准备测试环境、运行检查，并在候选问题上对比 LLM 评审和 Jev 的表现。<br><sub><b>Jev 用法:</b> Jev 判断每个问题是否由本次改动引入、是否有证据支撑、是否值得修复。</sub><br><sub>相关: <a href="https://github.com/CelestoAI/celesto">repo</a> · <a href="https://www.reddit.com/r/OpenAI/comments/1wkr5lz/jev_vs_luna/">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/repoprompt/repoprompt-ce/tree/main/Sources/RepoPrompt/Features/AgentMode/Routing/Backends/Jev"><img src="https://opengraph.githubassets.com/1/repoprompt/repoprompt-ce" alt="RepoPrompt 的 Jev 任务路由器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/repoprompt/repoprompt-ce/tree/main/Sources/RepoPrompt/Features/AgentMode/Routing/Backends/Jev">RepoPrompt 的 Jev 任务路由器</a></b><br><sub>repoprompt · GitHub · ⭐ 935 仓库 · 2026-05-12</sub><br>面向编程 agent 的原生 macOS 上下文工程应用 RepoPrompt CE，为 Agent Mode 的模型路由器加了一个 Jev 后端，无需文本模型就能为每个任务选路。<br><sub><b>Jev 用法:</b> 用经过验证的 TypeSafe API key 启用 Model Router；该后端通过 /v1/systemone 路由 agent 任务。</sub><br><sub>相关: <a href="https://repoprompt.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=goVDTUd7-J0"><img src="https://i.ytimg.com/vi/goVDTUd7-J0/hqdefault.jpg" alt="Jev Realtime Code Check" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=goVDTUd7-J0">Jev Realtime Code Check</a></b><br><sub>Patrick Desjardins · 视频 · ♥ 43 · 2026-09-17</sub><br>一段简短演示：一个 VS Code 和 Cursor 扩展在每次保存时，用 Jev 对照 370 条 Markdown 编码规则检查本地 Git 改动，耗时不到 2 秒。<br><sub><b>Jev 用法:</b> 针对改动的代码，每条适用的规则做一次判断。</sub><br><sub>相关: <a href="https://github.com/MrDesjardins/jevrealtimecodecheck">repo</a> · <a href="https://patrickdesjardins.com/blog/typesafe-ai-jev-running-370-text-rules-under-2-seconds">article</a> · <a href="https://github.com/mrdesjardins/jevrealtimecodecheck">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/nahid-sparktales/agent-dispatcher"><img src="https://i.redd.it/f3il3qf2wiqh1.png" alt="agent-dispatcher" width="240"></a></td>
@@ -384,16 +328,28 @@
 <td valign="top"><b><a href="https://github.com/TannerMidd/specpi-jev-guard">specpi-jev-guard</a></b><br><sub>TannerMidd · GitHub · ⭐ 9 · 2026-09-18</sub><br>Pi 扩展，在 agent 执行有风险的 shell 和文件命令前做检查：明显的情况由本地规则在 0 毫秒内定夺，其余交给 Jev 打分，高分直接拦截，中间区间则询问用户。<br><sub><b>Jev 用法:</b> 经 OpenRouter 获取一个危险程度 Score；没有 key、没有网络或答案无法解析时，命令不会执行。</sub><br><sub>相关: <a href="https://www.reddit.com/r/PiCodingAgent/comments/1wllcjy/a_jev_pi_guard_that_checks_risky_shell_commands/">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/bastani-inc/atomic/tree/main/packages/coding-agent/src/core/structured-output"><img src="https://opengraph.githubassets.com/1/bastani-inc/atomic" alt="Atomic 的 Jev 决策后端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/bastani-inc/atomic/tree/main/packages/coding-agent/src/core/structured-output">Atomic 的 Jev 决策后端</a></b><br><sub>bastani-inc · GitHub · ⭐ 812 仓库 · 2025-10-23</sub><br>Atomic 编程 agent 运行时中可选的 Jev 后端，用于经过 schema 校验的结构化决策；存在 TypeSafe 凭证时默认用它来选择工作流和子 agent 的模型，否则回退到对话模型。<br><sub>相关: <a href="https://github.com/bastani-inc/atomic">repo</a> · <a href="https://bastani.ai/">website</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/coder/xum/blob/main/src/constants/autoModelRouting.ts"><img src="https://raw.githubusercontent.com/coder/xum/main/docs/img/black-xum.svg" alt="Xum 的自动模型路由" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/coder/xum/blob/main/src/constants/autoModelRouting.ts">Xum 的自动模型路由</a></b><br><sub>coder · GitHub · ⭐ 2k 仓库 · 2025-09-17</sub><br>桌面编程 agent 多路复用器 Xum 会把每条 Auto 模式的提示词发给评测模型，做一次难度档位选择，再用该档位对应的模型和思考档位运行这一轮。<br><sub><b>Jev 用法:</b> TypeSafe 是默认的评测 provider，经 AI SDK 的 experimental_evaluate 调用；它不提供聊天模型，也从不出现在模型列表里。</sub><br><sub>相关: <a href="https://xum.coder.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/whosfranki/status/2102195316829077686"><img src="https://pbs.twimg.com/amplify_video_thumb/2102187393717534721/img/FmGLzXqEYRdC2RGo.jpg" alt="matchcn" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/whosfranki/status/2102195316829077686">matchcn</a></b><br><sub>whosfranki · X · ♥ 38 · 2026-09-22</sub><br>面向编程 agent 的语义组件搜索：描述你需要的 UI，它就从 9 个 shadcn registry 的 1,783 个组件中返回匹配的组件和安装命令。<br><sub><b>Jev 用法:</b> 按六个维度（用途、动效、密度、交互、数据、装饰）给每个组件分类，并在匹配打分时用上置信度。</sub><br><sub>相关: <a href="https://matchcn.dev">app</a> · <a href="https://github.com/francesco0242/matchcn">repo</a> · <a href="https://matchcn.dev">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/pedrocivita/tocket"><img src="https://raw.githubusercontent.com/pedrocivita/tocket/main/docs/assets/tocket-dashboard.png" alt="Tocket" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/pedrocivita/tocket">Tocket</a></b><br><sub>pedrocivita · GitHub · ⭐ 38 · 2026-02-24</sub><br>以文件为先的项目笔记本，供多个编程 agent 读写；Jev 只负责在选项中挑出下一步，并在 bash、部署或浏览器操作前记录一个 tool_gate 的 allow/block/ask 决定。<br><sub><b>Jev 用法:</b> tocket decide 让 Jev 在选项中做选择，把结果以 JSON 写入 .context/decisions/，tocket work --apply 会照此执行。</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/kylejeong/status/2100827289349132657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100827022121713664/img/Bw1G6-A6AyFgOiAD.jpg" alt="带 Jev 记忆压缩的 Nanocode" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kylejeong/status/2100827289349132657">带 Jev 记忆压缩的 Nanocode</a></b><br><sub>kylejeong · X · ♥ 37 · 2026-09-18</sub><br>nanocode agent 的一个 fork，加了在 memory.md 文件里 grep 的工具，以及用 Jev 删掉多余记忆的压缩功能。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/accelerate/comments/1wikbwy/jev_solved_local_harnessmodel_routing_i_use_a/"><img src="https://external-preview.redd.it/dXkzdGpxcGFoMHFoMQT370rF_YDmIyi8Xq8HNsDeNrIMDtcsN2uV_Ls25aWJ.png?format=pjpg&amp;auto=webp&amp;s=77fca586f4f9d64d4c03952a95b88ae5abb56ef7" alt="本地 harness 与模型路由" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/accelerate/comments/1wikbwy/jev_solved_local_harnessmodel_routing_i_use_a/">本地 harness 与模型路由</a></b><br><sub>stealthispost · Reddit · ▲ 12 · 2026-09-17</sub><br>Claude Code hook，在委派前让 Jev 给每个任务选路：机械性工作交给 Haiku，较难的交给 Opus 子 agent，长时间的实现任务交给 Codex 或 OpenCode。<br><sub><b>Jev 用法:</b> 用一个在各 harness/模型目标之间选择的 Choice 来判定任务复杂度。</sub><br><sub>相关: <a href="https://x.com/mdlahfir/status/2100314182201802811">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/prateekkathal/status/2101084515942965590"><img src="https://pbs.twimg.com/media/HSiM9l8bIAA8Hjj.png?name=orig" alt="Claude Code 提示词打分器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/prateekkathal/status/2101084515942965590">Claude Code 提示词打分器</a></b><br><sub>prateekkathal · X · ♥ 6 · 2026-09-18</sub><br>Claude Code 插件，用 Jev 给你向编程 agent 写提示词的水平打分，且不增加延迟。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Alurith/jeff"><img src="https://opengraph.githubassets.com/1/Alurith/jeff" alt="jeff" width="240"></a></td>
@@ -404,24 +360,20 @@
 <td valign="top"><b><a href="https://github.com/burnigtm/jev-mcp">jev-mcp</a></b><br><sub>burnigtm · GitHub · ⭐ 35 · 2026-09-17</sub><br>本地 stdio MCP 服务器，把 Jev 放进 Cursor、Codex 等 MCP 客户端的编程循环，提供的工具可以路由下一步、挑选预备好的工具调用、审查补丁、核实说法和筛查内容。<br><sub>相关: <a href="https://x.com/cu30rry_/status/2101108510511530164">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/gmickel/flow-next/blob/main/plugins/flow-next/docs/judge.md"><img src="https://repository-images.githubusercontent.com/1123446919/416d2393-7e8d-4612-97f7-06e82b1a67e4" alt="flow-next 的 Jev 裁判" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gmickel/flow-next/blob/main/plugins/flow-next/docs/judge.md">flow-next 的 Jev 裁判</a></b><br><sub>gmickel · GitHub · ⭐ 698 仓库 · 2025-12-26</sub><br>agent 化工程工作流 flow-next 中可选的 Jev 裁判，在每个决策点用一次请求回答范围很窄的路由、任务档位和记忆类问题。<br><sub><b>Jev 用法:</b> 由代码提供 state 和固定规则；不确定的答案由宿主处理，原有的评审、QA 和合并闸门照常运行。</sub><br><sub>相关: <a href="https://flow-next.dev">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/kevinkern/status/2101032931456168098"><img src="https://pbs.twimg.com/amplify_video_thumb/2101032303396790272/img/RbVCCv2UgU7Jox4h.jpg" alt="用 Jev 做 Android 端到端测试" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kevinkern/status/2101032931456168098">用 Jev 做 Android 端到端测试</a></b><br><sub>kevinkern · X · ♥ 12 · 2026-09-18</sub><br>在真实 Android 设备上做端到端测试：同样的提示词和 15 个测试步骤，Jev 浏览 Wikipedia 的速度比带视觉的 DeepSeek 快约 14.8 倍。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/samuelfaj/distill/tree/main/crates/codegen/distill-workspace/src/jev"><img src="https://raw.githubusercontent.com/samuelfaj/distill/main/screenshot.png" alt="Distill 的 Jev 支持" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/samuelfaj/distill/tree/main/crates/codegen/distill-workspace/src/jev">Distill 的 Jev 支持</a></b><br><sub>samuelfaj · GitHub · ⭐ 683 仓库 · 2026-09-19</sub><br>Distill 中的 Jev 模块。Distill 是面向 Grok、Codex 和 OpenAI 兼容模型的省 token 编程 agent harness 和 TUI，这个模块负责选择模型档位和推理强度、路由有边界的辅助任务，并判断该保留哪些上下文。<br><sub>相关: <a href="https://github.com/samuelfaj/distill">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/devanshbatham/commit-miner"><img src="https://opengraph.githubassets.com/1/devanshbatham/commit-miner" alt="commit-miner" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/devanshbatham/commit-miner">commit-miner</a></b><br><sub>devanshbatham · GitHub · ⭐ 33 · 2026-09-17</sub><br>Rust CLI，把 Git 提交信息和 diff 分类为 bug 修复、带 CWE ID 的安全修复以及各种改动类型，并生成 HTML 或 CSV 报告。<br><sub><b>Jev 用法:</b> 每个提交提出固定类别的 Choice 和 Noul 问题，最多 8 个 worker 并行运行。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TheoOliveira/pi-jev"><img src="https://opengraph.githubassets.com/1/TheoOliveira/pi-jev" alt="pi-jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TheoOliveira/pi-jev">pi-jev</a></b><br><sub>TheoOliveira · GitHub · ⭐ 32 · 2026-09-17</sub><br>Pi 编程 agent 扩展，用 Jev 只激活提示词需要的工具、推荐匹配的 SKILL.md skill，并在 agent 内部运行带类型的 Choice、Noul 和 Score 判断。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/nicobailon/pi-mcp-adapter/blob/main/jev-client.ts"><img src="https://raw.githubusercontent.com/nicobailon/pi-mcp-adapter/main/banner.png" alt="Pi MCP Adapter 的 Jev 搜索" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/nicobailon/pi-mcp-adapter/blob/main/jev-client.ts">Pi MCP Adapter 的 Jev 搜索</a></b><br><sub>nicobailon · GitHub · ⭐ 1.5k 仓库 · 2026-01-19</sub><br>面向 Pi 编程 agent、节省 token 的 MCP 适配器中的可选 Jev 层，在显式语义搜索时对所有已启用服务器上的 MCP 工具排序，还能在白名单控制下评估工具结果。<br><sub>相关: <a href="https://github.com/nicobailon/pi-mcp-adapter">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/fujibee/agmsg/tree/main/scripts/drivers/ext-tools/jev"><img src="https://raw.githubusercontent.com/fujibee/agmsg/main/docs/agmsg-demo.gif" alt="agmsg 的 jev 工具" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/fujibee/agmsg/tree/main/scripts/drivers/ext-tools/jev">agmsg 的 jev 工具</a></b><br><sub>fujibee · GitHub · ⭐ 1.5k 仓库 · 2026-04-02</sub><br>agmsg 中的外部工具驱动。agmsg 是面向 CLI 编程 agent 的跨厂商消息层，这个驱动让某个席位可以就一段 state 向 Jev 提出类型化问题，作为决策辅助。<br><sub><b>Jev 用法:</b> 鼓励通过推测式扇出把多个问题打包进一次调用；调用之间没有记忆，也没有副作用。</sub><br><sub>相关: <a href="https://www.producthunt.com/products/agmsg">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/win4r/jev-skill-suggester"><img src="https://opengraph.githubassets.com/1/win4r/jev-skill-suggester" alt="Jev Skill Suggester" width="240"></a></td>
@@ -432,28 +384,24 @@
 <td valign="top"><b><a href="https://github.com/qkal/Canny">Canny</a></b><br><sub>qkal · GitHub · ⭐ 29 · 2026-09-11</sub><br>Claude Code 和 Codex CLI 的 hook，维护一份只追加的编辑与检查台账，如果自上次代码编辑以来没有任何检查通过，就拒绝接受“已完成”的说法。<br><sub><b>Jev 用法:</b> 由确定性 hook 做决定；可选的 Jev Noul 判断只提供建议性信号。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/autonomous-ai/openharness/tree/main/store/agents/jev-guard"><img src="https://opengraph.githubassets.com/1/autonomous-ai/openharness" alt="Jev Guard (OpenHarness)" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/autonomous-ai/openharness/tree/main/store/agents/jev-guard">Jev Guard (OpenHarness)</a></b><br><sub>autonomous-ai · GitHub · ⭐ 562 仓库 · 2026-08-04</sub><br>OpenHarness 商店中的 Jev Guard agent，监视你的项目文件夹，每次编辑都运行测试，并让 Jev 为每次改动离目标多近、风险多大、可信度多高打分。<br><sub><b>Jev 用法:</b> Jev 对照 goal.json 逐次评判你自己的编辑；代码归你所有，Jev 只负责旁观。</sub><br><sub>相关: <a href="https://www.autonomous.ai/harness">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/remorses/kimaki/tree/main/opencode-auto-mode"><img src="https://opengraph.githubassets.com/1/remorses/kimaki" alt="kimaki 的 opencode 自动模式" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/remorses/kimaki/tree/main/opencode-auto-mode">kimaki 的 opencode 自动模式</a></b><br><sub>remorses · GitHub · ⭐ 1.4k 仓库 · 2025-09-02</sub><br>kimaki 是一个基于 Discord 的 OpenCode 编排器，其中的 opencode-auto-mode 插件运行一个默认全拒绝的旁路会话分类器，用 Jev 决定自动模式下的每一轮。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用 typesafe-ai/jev，与放行概率阈值比较，配置无效时一律拒绝。</sub><br><sub>相关: <a href="https://kimaki.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sharziki/semdecide"><img src="https://opengraph.githubassets.com/1/sharziki/semdecide" alt="SemDecide" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/sharziki/semdecide">SemDecide</a></b><br><sub>sharziki · GitHub · ⭐ 28 · 2026-09-16</sub><br>Python CLI，在 Unix 管道和 CI 里充当按语义匹配的 grep：输入文本或 JSONL，得到由 Jev 支撑的谓词判断、路由、评分、过滤后的数据流和稳定的退出码。<br><sub><b>Jev 用法:</b> 在本地对 Jev 的答案套用概率阈值，决定输出和退出码。</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/memorax-ai/memorax-code/tree/main/packages/ts/memorax-code-backend/src/provider/jev"><img src="https://raw.githubusercontent.com/memorax-ai/memorax-code/main/docs/assets/memorax-code-lockup-light.svg" alt="Memorax Code 的 Jev 门控" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/memorax-ai/memorax-code/tree/main/packages/ts/memorax-code-backend/src/provider/jev">Memorax Code 的 Jev 门控</a></b><br><sub>memorax-ai · GitHub · ⭐ 1.4k 仓库 · 2026-08-01</sub><br>面向 AI 编程的记忆插件，用 Jev 判断当前提示词是否值得做一次记忆搜索，只在可能有帮助时才检索。<br><sub><b>Jev 用法:</b> 由 jev-1.13.0 给出带概率的“搜索还是跳过”决定，设 2 秒超时并限制输入大小。</sub><br><sub>相关: <a href="https://code.memorax.net/">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/boozedog/pi-codemode"><img src="https://opengraph.githubassets.com/1/boozedog/pi-codemode" alt="Pi Codemode" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/boozedog/pi-codemode">Pi Codemode</a></b><br><sub>boozedog · GitHub · ⭐ 27 · 2026-05-08</sub><br>Pi 扩展，把许多零碎的工具调用换成一个在沙箱中运行、经过类型检查的 TypeScript 程序；设置 TypeSafe key 后，程序可以调用 jev.ask 获取 Noul、Choice 和 Score 答案，并在代码里组合阈值。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/BennyKok/omg.dev/blob/main/mobile/scripts/jev.ts"><img src="https://raw.githubusercontent.com/BennyKok/omg.dev/main/docs/images/omg-chat.webp" alt="omg.dev 的 Jev 端到端测试" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/BennyKok/omg.dev/blob/main/mobile/scripts/jev.ts">omg.dev 的 Jev 端到端测试</a></b><br><sub>BennyKok · GitHub · ⭐ 535 仓库 · 2026-09-18</sub><br>为 omg.dev 移动应用做的端到端测试层，Jev 读取屏幕的无障碍树，判断某一步是否完成、是否走进了死胡同，以及下一步该点哪个元素。<br><sub><b>Jev 用法:</b> 每一步用 Noul 判断是否完成、是否走进死胡同，再用一个 Choice 在元素中做选择；精确的字符串检查仍由代码完成。</sub><br><sub>相关: <a href="https://github.com/BennyKok/omg.dev">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/gakonst/nanocodex/blob/master/js/managed/src/jev-reliability.ts"><img src="https://opengraph.githubassets.com/1/gakonst/nanocodex" alt="nanocodex 的 Jev 路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gakonst/nanocodex/blob/master/js/managed/src/jev-reliability.ts">nanocodex 的 Jev 路由</a></b><br><sub>gakonst · GitHub · ⭐ 519 仓库 · 2026-07-15</sub><br>用 Rust 构建 OpenAI agent 的组件库，用 Jev 做线程级模型路由，借助一个固定词表的可靠性与故障分类器为每个线程选择后端。<br><sub><b>Jev 用法:</b> jev-direct-v3 在 Workers AI、OpenRouter、Vercel 等后端之间路由，只保留固定词表里的结果标签，从不保留错误文本。</sub><br><sub>相关: <a href="http://docs.rs/nanocodex">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/jerryfane/omp-jev-compaction"><img src="https://pbs.twimg.com/amplify_video_thumb/2100987052003135488/img/T-qZi4EHQaNbY_Sx.jpg" alt="omp-jev-compaction" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jerryfane/omp-jev-compaction">omp-jev-compaction</a></b><br><sub>jerryfane · GitHub · ⭐ 8 · 2026-09-18</sub><br>Oh My Pi 编程 agent 的上下文缩减扩展，用 Jev 给每次工具调用及其结果打分，把不再需要的截断成开头部分加一条恢复说明，从不改写文字。<br><sub><b>Jev 用法:</b> 打分核心直接内置自 fast-jev-compaction；可走 TypeSafe API 或 OpenRouter，并复用之前做过的裁剪决定。</sub><br><sub>相关: <a href="https://x.com/jerry543/status/2100987079488409741">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/caliber-ai-org/ai-setup/tree/master/plugin/caliber-jev-compaction"><img src="https://repository-images.githubusercontent.com/1178198291/70be5bf9-076a-49fc-aaa7-07cdab8ee077" alt="caliber-jev-compaction" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/caliber-ai-org/ai-setup/tree/master/plugin/caliber-jev-compaction">caliber-jev-compaction</a></b><br><sub>caliber-ai-org · GitHub · ⭐ 1.3k 仓库 · 2026-03-10</sub><br>随 Caliber 发布的 Claude Code 函数 hook 插件，用 Jev 决策取代内置的上下文压缩，以未打包的 TypeScript 形式从磁盘加载。<br><sub><b>Jev 用法:</b> 自带 key（BYOK）的 apiKey 或 gatewayApiKey；压缩 hook 询问 Jev 该保留哪些上下文。</sub><br><sub>相关: <a href="https://trycaliber.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/devtooligan/jevscan-evm"><img src="https://opengraph.githubassets.com/1/devtooligan/jevscan-evm" alt="jevscan-evm" width="240"></a></td>
@@ -464,28 +412,20 @@
 <td valign="top"><b><a href="https://github.com/francesco0242/matchcn">matchcn</a></b><br><sub>francesco0242 · GitHub · ⭐ 25 · 2026-09-20</sub><br>给 shadcn 格式 registry 里 1,783 个组件建立的语义索引，提供 MCP 工具 pick_component，让开发者和编程 agent 按功能找组件；打标签和需求描述解析都通过 classifier.dev 调用 Jev 完成。<br><sub><b>Jev 用法:</b> 每个组件和每份需求描述都按六个标签维度打标，在代码里按各标签的置信度加权排序；最后一次调用负责裁定难分高下的情况，或回答“没有匹配”。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/pulseaiclub/phi/tree/main/internal/llm/jev"><img src="https://repository-images.githubusercontent.com/1321152436/5d921161-b535-437b-aaad-011aa2c8266b" alt="phi Jev provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pulseaiclub/phi/tree/main/internal/llm/jev">phi Jev provider</a></b><br><sub>pulseaiclub · GitHub · ⭐ 493 仓库 · 2026-08-03</sub><br>精简的 Go 终端编程 agent，移植了 TypeSafe SDK 的同步 System One 接口，从而能向 Jev 提带类型的问题，重试策略与它的其他 provider 相同。<br><sub><b>Jev 用法:</b> 通过 POST /v1/systemone 调用 noul、choice 和 score，经 phi 共用的 DoWithRetry 重试。</sub><br><sub>相关: <a href="https://pulseaiclub.github.io/">docs</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/LLMDevs/comments/1wkjufw/tried_using_jev_for_prompt_observability_and_llm/">prompt-oscilloscope</a></b><br><sub>Virtual-Astronaut707 · Reddit · ▲ 8 · 2026-09-19</sub><br>两个实验：一个终端客户端，在提示词送进 GitHub Copilot CLI 之前先用 Jev 检查；一个 PR 审查器，在生成式审查之前用 Jev 精简 diff。<br><sub><b>Jev 用法:</b> 有歧义、自相矛盾或有风险的提示词需要再按一次 Enter；按每个 hunk 算出的“有可操作发现”概率决定是否交给审查器。</sub><br><sub>相关: <a href="https://github.com/shubhangi013/prompt-oscilloscope">repo</a> · <a href="https://github.com/shubhangi013/prune-review">repo2</a> · <a href="https://github.com/shubhangi013/prompt-oscilloscope">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/eltokh7/status/2101016673109016622"><img src="https://pbs.twimg.com/amplify_video_thumb/2101016301875400704/img/TsyOgOGhiMifnGCi.jpg" alt="瞬时生成变量" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/eltokh7/status/2101016673109016622">瞬时生成变量</a></b><br><sub>eltokh7 · X · ♥ 9 · 2026-09-18</sub><br>Jev 几乎瞬间生成变量的演示，来自作者一系列 Jev 开发者工具实验。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/safzanpirani/pi-jev-skill-picker"><img src="https://opengraph.githubassets.com/1/safzanpirani/pi-jev-skill-picker" alt="pi-jev-skill-picker" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/safzanpirani/pi-jev-skill-picker">pi-jev-skill-picker</a></b><br><sub>safzanpirani · GitHub · ⭐ 23 · 2026-09-20</sub><br>Pi 扩展，把系统提示词里约 19,000 token 的 skill 目录移除，改为提供 skill_search 工具，由 Jev 对照任务给每个已启用的 skill 打分，返回匹配的 SKILL.md 文件。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hussi9/skill-router"><img src="https://opengraph.githubassets.com/1/hussi9/skill-router" alt="skill-router" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hussi9/skill-router">skill-router</a></b><br><sub>hussi9 · GitHub · ⭐ 23 · 2026-04-13</sub><br>由 hook 驱动的 Claude Code 路由器，在任何工具触发之前选好 skill、agent、模型和思考深度，由 Jev 在整个 skill 索引上做选择；在它的评测中，Jev 正确路由了 39/63 条提示词，旧流水线为 10/66。<br><sub><b>Jev 用法:</b> 在完整索引上提两个 Choice 问题，耗时约 0.4 秒；置信度 &gt;= 0.8 时才路由（34 次中 32 次正确），1.2 秒超时则回退。</sub><br><sub>相关: <a href="https://github.com/hussi9/skill-router/blob/main/docs/jev-eval-2026-09-21/RESULTS.md">eval</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/lomeshdutta/skill-router"><img src="https://pbs.twimg.com/amplify_video_thumb/2100829690625986560/img/wb4qnROl6fZfpHUS.jpg" alt="skill-router" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lomeshdutta/skill-router">skill-router</a></b><br><sub>lomeshdutta · GitHub · ⭐ 2 · 2026-09-18</sub><br>Claude Code 的命令行工具，用 Jev 判断某个会话需要哪个已安装的 skill，并去 skills.sh 查找你还没装的 skill。<br><sub>相关: <a href="https://x.com/lomeshdutta/status/2100833655518367871">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/naobit_/status/2101682262857363563"><img src="https://pbs.twimg.com/amplify_video_thumb/2101680853948723200/img/ltodSxRRrXSpjG8m.jpg" alt="Jev UX linter 扩展" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/naobit_/status/2101682262857363563">Jev UX linter 扩展</a></b><br><sub>naobit_ · X · ♥ 4 · 2026-09-20</sub><br>日本开发者做的 Chrome 扩展，把 Jev 当作 UX linter 来评估网站体验：对每个组件并行问 Jev 多个问题，例如点击它的结果是否可预期。</td>
+<td width="260" valign="top"><a href="https://github.com/hussi9/skill-router"><img src="https://opengraph.githubassets.com/1/hussi9/skill-router" alt="skill-router" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hussi9/skill-router">skill-router</a></b><br><sub>hussi9 · GitHub · ⭐ 23 · 2026-04-13</sub><br>由 hook 驱动的 Claude Code 路由器，在任何工具触发之前选好 skill、agent、模型和思考深度，由 Jev 在整个 skill 索引上做选择；在它的评测中，Jev 正确路由了 39/63 条提示词，旧流水线为 10/66。<br><sub><b>Jev 用法:</b> 在完整索引上提两个 Choice 问题，耗时约 0.4 秒；置信度 &gt;= 0.8 时才路由（34 次中 32 次正确），1.2 秒超时则回退。</sub><br><sub>相关: <a href="https://github.com/hussi9/skill-router/blob/main/docs/jev-eval-2026-09-21/RESULTS.md">eval</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/jstxn/agentdir"><img src="https://raw.githubusercontent.com/jstxn/agentdir/main/docs/assets/agentdir-agent-trace-demo.gif" alt="AgentDir" width="240"></a></td>
@@ -500,36 +440,28 @@
 <td valign="top"><b><a href="https://github.com/compozy/yoshi">Yoshi</a></b><br><sub>compozy · GitHub · ⭐ 22 · 2026-09-18</sub><br>面向 Claude Code 和 Codex 的概念验证本地代理：超过一定大小后由 Jev 判断哪些对话历史仍然需要，Yoshi 丢弃其余部分，同时保持工具协议完整。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/notque/vexjoy-agent/blob/main/scripts/jev-route.py"><img src="https://raw.githubusercontent.com/notque/vexjoy-agent/main/docs/repo-hero.png" alt="VexJoy 的 Jev 路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/notque/vexjoy-agent/blob/main/scripts/jev-route.py">VexJoy 的 Jev 路由</a></b><br><sub>notque · GitHub · ⭐ 423 仓库 · 2026-09-17</sub><br>Claude Code 与 Codex 工具包 VexJoy 中的 Jev 路由器，把一条自然语言的 /do 请求匹配到 43 个专业 agent、skill 和工作流之一，在模型输出第一个 token 之前由 hook 注入。<br><sub><b>Jev 用法:</b> 先跑确定性的路由守卫；剩下的候选以及所需的工作流组件由 Jev 判断。</sub><br><sub>相关: <a href="https://github.com/notque/vexjoy-agent">repo</a> · <a href="https://vexjoy.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/MayDay-wpf/snow-cli/blob/main/source/api/decisionModel.ts"><img src="https://raw.githubusercontent.com/MayDay-wpf/snow-cli/main/docs/images/bloome-home.png" alt="snow-cli 的决策模型" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/MayDay-wpf/snow-cli/blob/main/source/api/decisionModel.ts">snow-cli 的决策模型</a></b><br><sub>MayDay-wpf · GitHub · ⭐ 1.1k 仓库 · 2025-08-16</sub><br>为终端编程 agent snow-cli 加入 TypeSafe Jev 决策模型客户端，在代码库 agent 审查中判断每条搜索结果是否与查询相关。<br><sub><b>Jev 用法:</b> 一个 choice 问题，其裁决直接作为审查结论，不需要再用 LLM 复核。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/smithersai/smithers/blob/main/apps/server/src/jev.ts"><img src="https://raw.githubusercontent.com/smithersai/smithers/main/apps/site/public/images/app/home.png" alt="Smithers 的 Jev 流程" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/smithersai/smithers/blob/main/apps/server/src/jev.ts">Smithers 的 Jev 流程</a></b><br><sub>smithersai · GitHub · ⭐ 419 仓库 · 2026-01-05</sub><br>代码库维护 agent Smithers 中的 Jev 集成：一个 Vercel AI Gateway 客户端，外加一组基于它的流程，用来给仓库 issue 打分、发现重复和复现报告、检查 wiki 引用并监看 agent 会话。<br><sub>相关: <a href="https://github.com/smithersai/smithers">repo</a> · <a href="https://smithers.sh">website</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/bitsocialnet/seedit/tree/master/scripts/jev"><img src="https://raw.githubusercontent.com/bitsocialnet/seedit/master/public/assets/sprout/sprout.png" alt="Seedit 的 Jev 辅助脚本" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/bitsocialnet/seedit/tree/master/scripts/jev">Seedit 的 Jev 辅助脚本</a></b><br><sub>bitsocialnet · GitHub · ⭐ 416 仓库 · 2023-08-25</sub><br>reddit 替代品 Seedit 仓库中可选的 Jev 开发辅助工具，用于浏览器基准测试、代码审查和翻译审查，在发布的应用之外运行。<br><sub><b>Jev 用法:</b> Node 脚本共用一个本地凭据文件；审查、浏览器和翻译辅助脚本都调用 Jev 做判断。</sub><br><sub>相关: <a href="https://seedit.app">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/wk42worldworld/cybercode/blob/main/src/services/fastJudgment/service.ts"><img src="https://raw.githubusercontent.com/wk42worldworld/cybercode/main/docs/images/cybercode-wordmark.png" alt="CyberCode Fast Judgment" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/wk42worldworld/cybercode/blob/main/src/services/fastJudgment/service.ts">CyberCode Fast Judgment</a></b><br><sub>wk42worldworld · GitHub · ⭐ 1k 仓库 · 2026-04-29</sub><br>CyberCode 是一个把 Claude Code 与 Hermes 自我进化结合起来的 agent，它新增了由 Jev 支撑的 Fast Judgment 服务，用于快速分类和浏览器决策。<br><sub><b>Jev 用法:</b> 通过 api.typesafe.ai（jev-latest）提出 Choice 问题并获取概率和置信度，带缓存、降级方案和较短的超时。</sub><br><sub>相关: <a href="https://wk42worldworld.github.io/cybercode/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rhighs/jev-code"><img src="https://raw.githubusercontent.com/rhighs/jev-code/main/assets/jev-code-logo.png" alt="jev-code" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/rhighs/jev-code">jev-code</a></b><br><sub>rhighs · GitHub · ⭐ 20 · 2026-09-17</sub><br>编程 CLI 和 TypeScript SDK：Jev 通过选择 AST 产生式，一次一条语法规则地写出 Python 或 Bash 程序，然后回读、修复、运行并汇报结果。<br><sub><b>Jev 用法:</b> Jev 只从有界的语法和动作列表中选一个选项；库本身提供决策会话、类型化路由器和有界的语法树构建。</sub><br><sub>相关: <a href="https://www.reddit.com/r/typesafe/comments/1wk0b00/i_made_jev_write_code_and_commands/">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/LTplus-AG/ifc-lite/blob/main/scripts/review/lib/jev-client.mjs"><img src="https://repository-images.githubusercontent.com/1131742715/4840b56c-fb4a-498b-8ac0-5efa03694953" alt="IFClite 评审通道的 Jev 客户端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/LTplus-AG/ifc-lite/blob/main/scripts/review/lib/jev-client.mjs">IFClite 评审通道的 Jev 客户端</a></b><br><sub>LTplus-AG · GitHub · ⭐ 382 仓库 · 2026-01-10</sub><br>一个开源 IFC 工具包的 AI 代码评审通道，用 Jev 把评审问题与评测项做语义匹配并合并重复问题，没有 key 时平稳降级。<br><sub><b>Jev 用法:</b> 以评审文本作为 state 提出 Noul 和 Choice 问题；每次请求约 300 毫秒、2k token。</sub></td>
+<td width="260" valign="top"><a href="https://github.com/CelestoAI/celesto/tree/main/examples/pr-review-jev"><img src="https://raw.githubusercontent.com/CelestoAI/celesto/main/open-muse/banner-dark.png" alt="Celesto PR Review Lab" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/CelestoAI/celesto/tree/main/examples/pr-review-jev">Celesto PR Review Lab</a></b><br><sub>CelestoAI · GitHub · ⭐ 959 仓库 · 2026-09-17</sub><br>基于 Celesto microVM 沙箱的示例 app：agent 为某个公开的 GitHub PR 准备测试环境、运行检查，并在候选问题上对比 LLM 评审和 Jev 的表现。<br><sub><b>Jev 用法:</b> Jev 判断每个问题是否由本次改动引入、是否有证据支撑、是否值得修复。</sub><br><sub>相关: <a href="https://github.com/CelestoAI/celesto">repo</a> · <a href="https://www.reddit.com/r/OpenAI/comments/1wkr5lz/jev_vs_luna/">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/merijjeyn/jive"><img src="https://raw.githubusercontent.com/merijjeyn/jive/main/docs/assets/trace-comparison.gif" alt="Jive" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/merijjeyn/jive">Jive</a></b><br><sub>merijjeyn · GitHub · ⭐ 19 · 2026-09-21</sub><br>终端编程 agent，用图调用取代工具调用：LLM 规划出一个由工具调用和 Jev 调用组成的可执行 DAG，计划中那些快速的直觉判断和批量评估无需额外的 LLM 调用即可完成。<br><sub>相关: <a href="https://www.reddit.com/r/SideProject/comments/1wmp3wn/jive_rethinking_the_agentic_loop_with_system_one/">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/CarolMonroe/status/2101747586126557230"><img src="https://pbs.twimg.com/amplify_video_thumb/2101741811559710720/img/iwCtvJtHgS16n2kL.jpg" alt="JevRLS" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/CarolMonroe/status/2101747586126557230">JevRLS</a></b><br><sub>CarolMonroe · X · ♥ 14 · 2026-09-20</sub><br>Web app：粘贴 Supabase 行级安全（Row Level Security）策略，就能看到 Jev 与 GPT 和 Gemini 在同一套评分标准和判定规则下比赛找漏洞，并排对比速度和成本。<br><sub>相关: <a href="https://jevrls.lovable.app">app</a> · <a href="https://jevrls.lovable.app">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Sidiora-Labs/Paxeer-X-Network/tree/main/tools/jev"><img src="https://raw.githubusercontent.com/Sidiora-Labs/Paxeer-X-Network/main/layerx-network.png" alt="Paxeer X 的 Jev 检查" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Sidiora-Labs/Paxeer-X-Network/tree/main/tools/jev">Paxeer X 的 Jev 检查</a></b><br><sub>Sidiora-Labs · GitHub · ⭐ 371 仓库 · 2026-08-14</sub><br>一个 agent 执行网络里的 CI 建议工具，用 Jev 检查 pull request 与 commit message 是否一致，并对 cargo-deny 安全公告、测试失败和 README 翻译漂移做分诊。</td>
+<td width="260" valign="top"><a href="https://github.com/repoprompt/repoprompt-ce/tree/main/Sources/RepoPrompt/Features/AgentMode/Routing/Backends/Jev"><img src="https://opengraph.githubassets.com/1/repoprompt/repoprompt-ce" alt="RepoPrompt 的 Jev 任务路由器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/repoprompt/repoprompt-ce/tree/main/Sources/RepoPrompt/Features/AgentMode/Routing/Backends/Jev">RepoPrompt 的 Jev 任务路由器</a></b><br><sub>repoprompt · GitHub · ⭐ 935 仓库 · 2026-05-12</sub><br>面向编程 agent 的原生 macOS 上下文工程应用 RepoPrompt CE，为 Agent Mode 的模型路由器加了一个 Jev 后端，无需文本模型就能为每个任务选路。<br><sub><b>Jev 用法:</b> 用经过验证的 TypeSafe API key 启用 Model Router；该后端通过 /v1/systemone 路由 agent 任务。</sub><br><sub>相关: <a href="https://repoprompt.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/CheshiAI/Cheshi"><img src="https://raw.githubusercontent.com/CheshiAI/Cheshi/main/resources/icons/about-logo.png" alt="Cheshi" width="240"></a></td>
@@ -580,8 +512,8 @@
 <td valign="top"><b><a href="https://github.com/Davidcreador/pi-dcp">pi-dcp</a></b><br><sub>Davidcreador · GitHub · ⭐ 17 · 2026-05-13</sub><br>Pi 扩展，在长时间编程会话中通过去重工具调用、剥离出错的载荷、总结已结束的工作流来减少 token 开销，并带有实验性的 Jev 上下文选择，决定保留哪些内容。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/WrongStack/WrongStack/blob/main/docs/jev-settings-and-activity.md"><img src="https://opengraph.githubassets.com/1/WrongStack/WrongStack" alt="WrongStack 的 Jev 决策" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/WrongStack/WrongStack/blob/main/docs/jev-settings-and-activity.md">WrongStack 的 Jev 决策</a></b><br><sub>WrongStack · GitHub · ⭐ 331 仓库 · 2026-09-18</sub><br>编程 agent WrongStack 中的 Jev 集成：一个 agent 可调用的 jev 工具用于有界判断，另有基于 Jev 的专业 agent 分派、skill 推荐和记忆召回，每项功能都可单独配置。<br><sub><b>Jev 用法:</b> 支持 TypeSafe、OpenRouter Decisions 或自定义端点，并提供回放命令来校准分诊和路由决策。</sub><br><sub>相关: <a href="https://github.com/WrongStack/WrongStack">repo</a> · <a href="https://wrongstack.com/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/bastani-inc/atomic/tree/main/packages/coding-agent/src/core/structured-output"><img src="https://opengraph.githubassets.com/1/bastani-inc/atomic" alt="Atomic 的 Jev 决策后端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/bastani-inc/atomic/tree/main/packages/coding-agent/src/core/structured-output">Atomic 的 Jev 决策后端</a></b><br><sub>bastani-inc · GitHub · ⭐ 812 仓库 · 2025-10-23</sub><br>Atomic 编程 agent 运行时中可选的 Jev 后端，用于经过 schema 校验的结构化决策；存在 TypeSafe 凭证时默认用它来选择工作流和子 agent 的模型，否则回退到对话模型。<br><sub>相关: <a href="https://github.com/bastani-inc/atomic">repo</a> · <a href="https://bastani.ai/">website</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/Anthropic/comments/1wizprg/jev_as_orchestrator/"><img src="https://preview.redd.it/t9zgoqj034qh1.png?width=1050&amp;format=png&amp;auto=webp&amp;s=a488a0150a11da141fb3b6d58c80245590a11cf8" alt="用 Jev 做调试编排器" width="240"></a></td>
@@ -596,72 +528,127 @@
 <td valign="top"><b><a href="https://github.com/ZephyrDeng/pi-review">pi-review</a></b><br><sub>ZephyrDeng · GitHub · ⭐ 15 · 2026-06-29</sub><br>CLI、CI 闸门和 agent skill，把代码审查和计划审查交给相互隔离的只读 Pi 审查者；Jev 负责对照缺陷目录做约 1 秒的筛查（1.2 秒，完整一轮则要 30-50 秒），并裁定审查小组是否达成共识。<br><sub><b>Jev 用法:</b> 有歧义的发现对交给 Jev（约 100 毫秒）；落在 0.3-0.7 边界区间的答案再由 Pi 重判一次。</sub><br><sub>相关: <a href="https://www.npmjs.com/package/@zephyrdeng/pi-review">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/qiz029/dscode/tree/main/plugins/jev"><img src="https://opengraph.githubassets.com/1/qiz029/dscode" alt="DSCODE 的 Jev 审批插件" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/qiz029/dscode/tree/main/plugins/jev">DSCODE 的 Jev 审批插件</a></b><br><sub>qiz029 · GitHub · ⭐ 298 仓库 · 2026-09-11</sub><br>终端 DeepSeek 编程 agent 的插件，通过 OpenRouter 的 Decisions API 用 Jev 而不是对话模型来回应自动权限审查。<br><sub>相关: <a href="https://www.npmjs.com/package/@toddzheng024/dscode">npm</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/yonatangross/orchestkit/tree/main/docs/audits/jev-session-category-heldout-2026-09-17"><img src="https://raw.githubusercontent.com/yonatangross/orchestkit/main/docs/banner.png" alt="OrchestKit 的 Jev 会话分类" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yonatangross/orchestkit/tree/main/docs/audits/jev-session-category-heldout-2026-09-17">OrchestKit 的 Jev 会话分类</a></b><br><sub>yonatangross · GitHub · ⭐ 281 仓库 · 2026-09-17</sub><br>对 OrchestKit 中可选启用的 Claude Code Jev 会话分类器做的留出集评测：在 150 个会话上，同样的标准下 Jev 与 Haiku 表现相当（80.0% 对 79.3%），速度快约 58 倍，输入 token 少约 34 倍。<br><sub><b>Jev 用法:</b> 基于分支名和第一条提示词做一个九选一的 Choice；只有置信度超过阈值时才采纳。</sub><br><sub>相关: <a href="https://github.com/yonatangross/orchestkit">repo</a> · <a href="https://orchestkit.yonyon.ai">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/AkashPriyadarshii/jev-superpowers"><img src="https://opengraph.githubassets.com/1/AkashPriyadarshii/jev-superpowers" alt="jev-superpowers" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/AkashPriyadarshii/jev-superpowers">jev-superpowers</a></b><br><sub>AkashPriyadarshii · GitHub · ⭐ 14 · 2026-09-18</sub><br>面向 Claude Code、Codex、Cursor 等编程 agent 的 skill 框架，在工作流检查点调用 Jev：安装前审查依赖、把关任务是否完成，以及引导调试决策。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/mizchi/jev-test-filter"><img src="https://opengraph.githubassets.com/1/mizchi/jev-test-filter" alt="jev-test-filter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mizchi/jev-test-filter">jev-test-filter</a></b><br><sub>mizchi · GitHub · ⭐ 14 · 2026-09-21</sub><br>CLI 和 agent skill，在一次 Jev 往返中对照 git diff 给每个测试打分，并输出 vitest、Jest、node:test、Playwright、cargo test 和 go test 的过滤参数，只运行可能受影响的测试。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/shitianfang/jev-use"><img src="https://raw.githubusercontent.com/shitianfang/jev-use/main/assets/collab.gif" alt="jev-use" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/shitianfang/jev-use">jev-use</a></b><br><sub>shitianfang · GitHub · ⭐ 14 · 2026-09-19</sub><br>适用于 Claude Code、Codex 和 pi 的插件，把不需要输出文本的 agent 步骤交给 Jev，p50 延迟约 230 毫秒，每 1,000 次判断 $0.02，需要写文字时再以类型化方式升级回 LLM。<br><sub>相关: <a href="https://www.npmjs.com/package/jev-use">npm</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/CarolMonroe/status/2101747586126557230"><img src="https://pbs.twimg.com/amplify_video_thumb/2101741811559710720/img/iwCtvJtHgS16n2kL.jpg" alt="JevRLS" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/CarolMonroe/status/2101747586126557230">JevRLS</a></b><br><sub>CarolMonroe · X · ♥ 14 · 2026-09-20</sub><br>Web app：粘贴 Supabase 行级安全（Row Level Security）策略，就能看到 Jev 与 GPT 和 Gemini 在同一套评分标准和判定规则下比赛找漏洞，并排对比速度和成本。<br><sub>相关: <a href="https://jevrls.lovable.app">app</a> · <a href="https://jevrls.lovable.app">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/PanAchy/jevvy"><img src="https://raw.githubusercontent.com/PanAchy/jevvy/main/assets/jevvy-demo.gif" alt="Jevvy" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/PanAchy/jevvy">Jevvy</a></b><br><sub>PanAchy · GitHub · ⭐ 14 · 2026-09-18</sub><br>面向 OpenCode 和 Claude Code 的插件合集，其中的权限插件会自动批准无害的 shell 请求，拿不准的都交回 agent 原有的权限流程处理。<br><sub><b>Jev 用法:</b> 只有所有问询都通过时才批准当前这一个操作；现有的允许和拒绝规则仍具有最终效力。</sub><br><sub>相关: <a href="https://www.reddit.com/r/opencodeCLI/comments/1wl5k2c/i_built_jevvy_autoapprove_harmless_opencode/">demo</a> · <a href="https://www.reddit.com/r/ClaudeCode/comments/1wm062g/jevvy_now_supports_claude_code/">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/tyler-dot-earth/patdown"><img src="https://github.com/user-attachments/assets/f7c73138-3914-4fbd-9e6b-7a37d161334a" alt="patdown" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tyler-dot-earth/patdown">patdown</a></b><br><sub>tyler-dot-earth · GitHub · ⭐ 14 · 2026-09-18</sub><br>模糊 linter，按写在一个 Markdown 文件里的规则评判文件或改动，打包成 CLI、GitHub Action、Pi 写入引导包和 Claude Code Write/Edit hook 等形式，其中的 Jev 评判器可以替换。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/philippdubach/pi-jev-router"><img src="https://opengraph.githubassets.com/1/philippdubach/pi-jev-router" alt="pi-jev-router" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/philippdubach/pi-jev-router">pi-jev-router</a></b><br><sub>philippdubach · GitHub · ⭐ 14 · 2026-09-20</sub><br>pi 编程 agent 的模型路由器，先用 Jev 给每个任务分类，再在 OpenRouter 模型目录上按质量、成本和延迟构成的帕累托前沿选出拐点。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49775968">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/gmickel/flow-next/blob/main/plugins/flow-next/docs/judge.md"><img src="https://repository-images.githubusercontent.com/1123446919/416d2393-7e8d-4612-97f7-06e82b1a67e4" alt="flow-next 的 Jev 裁判" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/gmickel/flow-next/blob/main/plugins/flow-next/docs/judge.md">flow-next 的 Jev 裁判</a></b><br><sub>gmickel · GitHub · ⭐ 698 仓库 · 2025-12-26</sub><br>agent 化工程工作流 flow-next 中可选的 Jev 裁判，在每个决策点用一次请求回答范围很窄的路由、任务档位和记忆类问题。<br><sub><b>Jev 用法:</b> 由代码提供 state 和固定规则；不确定的答案由宿主处理，原有的评审、QA 和合并闸门照常运行。</sub><br><sub>相关: <a href="https://flow-next.dev">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/samuelfaj/distill/tree/main/crates/codegen/distill-workspace/src/jev"><img src="https://raw.githubusercontent.com/samuelfaj/distill/main/screenshot.png" alt="Distill 的 Jev 支持" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/samuelfaj/distill/tree/main/crates/codegen/distill-workspace/src/jev">Distill 的 Jev 支持</a></b><br><sub>samuelfaj · GitHub · ⭐ 683 仓库 · 2026-09-19</sub><br>Distill 中的 Jev 模块。Distill 是面向 Grok、Codex 和 OpenAI 兼容模型的省 token 编程 agent harness 和 TUI，这个模块负责选择模型档位和推理强度、路由有边界的辅助任务，并判断该保留哪些上下文。<br><sub>相关: <a href="https://github.com/samuelfaj/distill">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/BorisLeMeec/jev"><img src="https://raw.githubusercontent.com/BorisLeMeec/jev/main/docs/demo.gif" alt="jev (Claude Code plugin)" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/BorisLeMeec/jev">jev (Claude Code plugin)</a></b><br><sub>BorisLeMeec · GitHub · ⭐ 13 · 2026-09-17</sub><br>用 Go 写的 Claude Code 插件，接管搜索和大文件读取，用 Jev 找出相关文件并回答关于代码的有界问题，让整个文件永远不必进入 agent 的上下文。<br><sub>相关: <a href="https://www.reddit.com/r/PromptEngineering/comments/1wjmhj0/a_jev_claude_code_plugin_that_saves_30_token_usage/">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/vizuh/sabi"><img src="https://raw.githubusercontent.com/vizuh/sabi/main/docs/images/sabi-routing.svg" alt="Sabi" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vizuh/sabi">Sabi</a></b><br><sub>vizuh · GitHub · ⭐ 13 · 2026-09-18</sub><br>面向编程 harness 的逐轮路由器，决定模型、推理力度和 provider：根据轨迹证据选择便宜、中档或强力档位，只在某一轮拿不准时才问 Jev。<br><sub><b>Jev 用法:</b> 可选的 Jev 评判器在合法的档位选项中做选择；超时、答案无效或缺少凭据时回退到确定性策略。每次 6k token 的判断约 $0.00025。</sub><br><sub>相关: <a href="https://www.npmjs.com/package/@vizuh/sabi">npm</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Ray0907/security-scan"><img src="https://opengraph.githubassets.com/1/Ray0907/security-scan" alt="security-scan" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Ray0907/security-scan">security-scan</a></b><br><sub>Ray0907 · GitHub · ⭐ 13 · 2026-01-18</sub><br>做只读安全扫描（依赖审计、Semgrep、密钥、IaC、GitHub Actions）的 agent skill，带一个可选的 Jev 步骤，为尚未审阅的发现建议结论。<br><sub><b>Jev 用法:</b> 每条脱敏后的 Semgrep 发现一个 Choice，在 confirmed、needs_validation 和 rejected 之间选择；建议单独存放，直到有人补上理由。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/kevinkern/status/2101032931456168098"><img src="https://pbs.twimg.com/amplify_video_thumb/2101032303396790272/img/RbVCCv2UgU7Jox4h.jpg" alt="用 Jev 做 Android 端到端测试" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kevinkern/status/2101032931456168098">用 Jev 做 Android 端到端测试</a></b><br><sub>kevinkern · X · ♥ 12 · 2026-09-18</sub><br>在真实 Android 设备上做端到端测试：同样的提示词和 15 个测试步骤，Jev 浏览 Wikipedia 的速度比带视觉的 DeepSeek 快约 14.8 倍。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/mejiasd3v/pi-jev-router"><img src="https://opengraph.githubassets.com/1/mejiasd3v/pi-jev-router" alt="Jev Router for Pi" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mejiasd3v/pi-jev-router">Jev Router for Pi</a></b><br><sub>mejiasd3v · GitHub · ⭐ 12 · 2026-09-17</sub><br>Pi 编程 agent 扩展，通过 Vercel AI Gateway 让 Jev 选定模型和推理强度，然后在整个会话中固定这一选择，生成仍使用你现有的 Pi provider。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sting9k/seatworks"><img src="https://raw.githubusercontent.com/sting9k/seatworks/v2/docs/images/slp-graph.svg" alt="Seatworks" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sting9k/seatworks">Seatworks</a></b><br><sub>sting9k · GitHub · ⭐ 12 · 2026-09-16</sub><br>Paseo 插件，运行一支由监督者、负责人、同伴、审查者和观察者组成的编程 agent 团队，并可选用经 OpenRouter 调用的 Jev 作为付费旁读者，标记工作方式上出现的问题。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/autonomous-ai/openharness/tree/main/store/agents/jev-guard"><img src="https://opengraph.githubassets.com/1/autonomous-ai/openharness" alt="Jev Guard (OpenHarness)" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/autonomous-ai/openharness/tree/main/store/agents/jev-guard">Jev Guard (OpenHarness)</a></b><br><sub>autonomous-ai · GitHub · ⭐ 562 仓库 · 2026-08-04</sub><br>OpenHarness 商店中的 Jev Guard agent，监视你的项目文件夹，每次编辑都运行测试，并让 Jev 为每次改动离目标多近、风险多大、可信度多高打分。<br><sub><b>Jev 用法:</b> Jev 对照 goal.json 逐次评判你自己的编辑；代码归你所有，Jev 只负责旁观。</sub><br><sub>相关: <a href="https://www.autonomous.ai/harness">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/iamtoomas/JevLint"><img src="https://opengraph.githubassets.com/1/iamtoomas/JevLint" alt="JevLint" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/iamtoomas/JevLint">JevLint</a></b><br><sub>iamtoomas · GitHub · ⭐ 11 · 2026-09-17</sub><br>语义 linter，对照用大白话写的编码规范检查源文件，报告每个文件违反某条规则的概率，适用于 agent 的“写-查-改”循环或 CI。<br><sub><b>Jev 用法:</b> 每条规则在文件级别做 Noul 判断，另有一个检查魔法字符串的插件。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/alexhawat/mergeCraft"><img src="https://raw.githubusercontent.com/alexhawat/mergeCraft/main/assets/brand/mark-light.svg" alt="mergeCraft" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/alexhawat/mergeCraft">mergeCraft</a></b><br><sub>alexhawat · GitHub · ⭐ 11 · 2026-07-27</sub><br>自托管、自带密钥的 AI PR 审查 GitHub Action，在生成式审查器和校验器运行之前加了一道 Jev 筛选闸门，对 diff 单元排序和过滤。<br><sub><b>Jev 用法:</b> 对切分后的 diff 单元提一组组问题，结果交给只在影子模式下运行的“排序加标注”策略；生成式审查器始终照常运行。</sub><br><sub>相关: <a href="https://github.com/alexhawat/mergeCraft/blob/main/docs/jev-gate-patterns.md">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/opencrew-ai/opencrew"><img src="https://opengraph.githubassets.com/1/opencrew-ai/opencrew" alt="OpenCrew" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/opencrew-ai/opencrew">OpenCrew</a></b><br><sub>opencrew-ai · GitHub · ⭐ 11 · 2026-08-29</sub><br>本地的 Slack 风格指挥部，运行一组带审批闸门的 Claude Code agent，用 Jev 做快速路由判断，比如某条命令是否安全、某个计划是否完整。<br><sub><b>Jev 用法:</b> 每个类型化判断约 100 毫秒，取代一轮 Claude Code：确认回执、通道路由、快速模型聊天、只读命令审批和跳过审查者；答案不确定时仍走原来的路径。</sub><br><sub>相关: <a href="https://opencrew.run">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/madeye/pi-jev"><img src="https://pbs.twimg.com/media/HSk5Xyeb0AA2JSI.jpg?name=orig" alt="pi-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/madeye/pi-jev">pi-jev</a></b><br><sub>madeye · GitHub · ⭐ 11 · 2026-09-18</sub><br>Pi 编程 agent 扩展，由 Jev 挑选要发送的文件片段，由 Qwen 或 DeepSeek 等本地模型写代码，并对完全相同的结果做缓存，以降低端到端延迟。<br><sub>相关: <a href="https://x.com/m0d8ye/status/2101101008650989747">demo</a></sub></td>
 </tr>
 </table>
 
 <details><summary>还有 365 条</summary>
 
-- **[jev-test-filter](https://github.com/mizchi/jev-test-filter)** · <sub>mizchi · GitHub · ⭐ 14 · 2026-09-21</sub><br>CLI 和 agent skill，在一次 Jev 往返中对照 git diff 给每个测试打分，并输出 vitest、Jest、node:test、Playwright、cargo test 和 go test 的过滤参数，只运行可能受影响的测试。
-- **[jev-use](https://github.com/shitianfang/jev-use)** · <sub>shitianfang · GitHub · ⭐ 14 · 2026-09-19</sub><br>适用于 Claude Code、Codex 和 pi 的插件，把不需要输出文本的 agent 步骤交给 Jev，p50 延迟约 230 毫秒，每 1,000 次判断 $0.02，需要写文字时再以类型化方式升级回 LLM。
-- **[Jevvy](https://github.com/PanAchy/jevvy)** · <sub>PanAchy · GitHub · ⭐ 14 · 2026-09-18</sub><br>面向 OpenCode 和 Claude Code 的插件合集，其中的权限插件会自动批准无害的 shell 请求，拿不准的都交回 agent 原有的权限流程处理。
-- **[patdown](https://github.com/tyler-dot-earth/patdown)** · <sub>tyler-dot-earth · GitHub · ⭐ 14 · 2026-09-18</sub><br>模糊 linter，按写在一个 Markdown 文件里的规则评判文件或改动，打包成 CLI、GitHub Action、Pi 写入引导包和 Claude Code Write/Edit hook 等形式，其中的 Jev 评判器可以替换。
-- **[pi-jev-router](https://github.com/philippdubach/pi-jev-router)** · <sub>philippdubach · GitHub · ⭐ 14 · 2026-09-20</sub><br>pi 编程 agent 的模型路由器，先用 Jev 给每个任务分类，再在 OpenRouter 模型目录上按质量、成本和延迟构成的帕累托前沿选出拐点。
-- **[jev (Claude Code plugin)](https://github.com/BorisLeMeec/jev)** · <sub>BorisLeMeec · GitHub · ⭐ 13 · 2026-09-17</sub><br>用 Go 写的 Claude Code 插件，接管搜索和大文件读取，用 Jev 找出相关文件并回答关于代码的有界问题，让整个文件永远不必进入 agent 的上下文。
-- **[Sabi](https://github.com/vizuh/sabi)** · <sub>vizuh · GitHub · ⭐ 13 · 2026-09-18</sub><br>面向编程 harness 的逐轮路由器，决定模型、推理力度和 provider：根据轨迹证据选择便宜、中档或强力档位，只在某一轮拿不准时才问 Jev。
-- **[security-scan](https://github.com/Ray0907/security-scan)** · <sub>Ray0907 · GitHub · ⭐ 13 · 2026-01-18</sub><br>做只读安全扫描（依赖审计、Semgrep、密钥、IaC、GitHub Actions）的 agent skill，带一个可选的 Jev 步骤，为尚未审阅的发现建议结论。
-- **[Roomote 的判断后端](https://github.com/RooCodeInc/Roomote/blob/develop/packages/cloud-agents/src/server/typesafe-judgment.ts)** · <sub>RooCodeInc · GitHub · ⭐ 253 仓库 · 2026-07-07</sub><br>可自托管的云端编程 agent，带一个可选的 Jev 判断后端，用于范围受限的辅助决策，另有一个影子模式，衡量自己部署的判断模型与 Jev 的一致程度。
-- **[pi-fabric 的 Jev 程序](https://github.com/monotykamary/pi-fabric/blob/main/docs/jev.md)** · <sub>monotykamary · GitHub · ⭐ 244 仓库 · 2026-09-17</sub><br>Pi 编程 agent 的可编程工具运行时 pi-fabric 中的 Jev 支持：推理模型写一段 TypeScript 程序，在 QuickJS 里观察、询问 Jev、执行并循环，不再额外占用 LLM 轮次。
-- **[Jev Router for Pi](https://github.com/mejiasd3v/pi-jev-router)** · <sub>mejiasd3v · GitHub · ⭐ 12 · 2026-09-17</sub><br>Pi 编程 agent 扩展，通过 Vercel AI Gateway 让 Jev 选定模型和推理强度，然后在整个会话中固定这一选择，生成仍使用你现有的 Pi provider。
-- **[Seatworks](https://github.com/sting9k/seatworks)** · <sub>sting9k · GitHub · ⭐ 12 · 2026-09-16</sub><br>Paseo 插件，运行一支由监督者、负责人、同伴、审查者和观察者组成的编程 agent 团队，并可选用经 OpenRouter 调用的 Jev 作为付费旁读者，标记工作方式上出现的问题。
-- **[JevLint](https://github.com/iamtoomas/JevLint)** · <sub>iamtoomas · GitHub · ⭐ 11 · 2026-09-17</sub><br>语义 linter，对照用大白话写的编码规范检查源文件，报告每个文件违反某条规则的概率，适用于 agent 的“写-查-改”循环或 CI。
-- **[LeanKG judge](https://github.com/FreePeak/LeanKG/tree/main/internal/judge)** · <sub>FreePeak · GitHub · ⭐ 220 仓库 · 2026-04-13</sub><br>面向 AI 编程 agent 的代码知识图谱，加了一层 System One 判断层，调用 Jev 或自托管的 Laya 服务器，其中还包括一条对话分类路径。
-- **[mergeCraft](https://github.com/alexhawat/mergeCraft)** · <sub>alexhawat · GitHub · ⭐ 11 · 2026-07-27</sub><br>自托管、自带密钥的 AI PR 审查 GitHub Action，在生成式审查器和校验器运行之前加了一道 Jev 筛选闸门，对 diff 单元排序和过滤。
-- **[OpenCrew](https://github.com/opencrew-ai/opencrew)** · <sub>opencrew-ai · GitHub · ⭐ 11 · 2026-08-29</sub><br>本地的 Slack 风格指挥部，运行一组带审批闸门的 Claude Code agent，用 Jev 做快速路由判断，比如某条命令是否安全、某个计划是否完整。
-- **[pi-jev](https://github.com/madeye/pi-jev)** · <sub>madeye · GitHub · ⭐ 11 · 2026-09-18</sub><br>Pi 编程 agent 扩展，由 Jev 挑选要发送的文件片段，由 Qwen 或 DeepSeek 等本地模型写代码，并对完全相同的结果做缓存，以降低端到端延迟。
+- **[omg.dev 的 Jev 端到端测试](https://github.com/BennyKok/omg.dev/blob/main/mobile/scripts/jev.ts)** · <sub>BennyKok · GitHub · ⭐ 535 仓库 · 2026-09-18</sub><br>为 omg.dev 移动应用做的端到端测试层，Jev 读取屏幕的无障碍树，判断某一步是否完成、是否走进了死胡同，以及下一步该点哪个元素。
+- **[nanocodex 的 Jev 路由](https://github.com/gakonst/nanocodex/blob/master/js/managed/src/jev-reliability.ts)** · <sub>gakonst · GitHub · ⭐ 519 仓库 · 2026-07-15</sub><br>用 Rust 构建 OpenAI agent 的组件库，用 Jev 做线程级模型路由，借助一个固定词表的可靠性与故障分类器为每个线程选择后端。
 - **[Azdaja](https://github.com/kubet/azdaja)** · <sub>kubet · GitHub · ⭐ 10 · 2026-08-11</sub><br>面向 Claude Code、Codex、Gemini CLI、OpenCode 和 Jcode 的递归语言模型层，把完整源码保存在本地 Python 求值器中，可选 Jev 判断和有预算限制的批处理。
 - **[DeliveryGuard](https://github.com/wzf1997/delivery-harness)** · <sub>wzf1997 · GitHub · ⭐ 10 · 2026-08-22</sub><br>面向编程 agent、以证据驱动的交付闸门，覆盖规格、验收、修复和发布，可选的 Jev 适配器为普通交付候选额外提供一个基于摘要的自动评审信号。
 - **[Helm](https://github.com/Jimuelle07/Helm)** · <sub>Jimuelle07 · GitHub · ⭐ 10 · 2026-09-20</sub><br>编程 agent 路由器兼监管器，可作为 Claude Code 插件、Gemini 扩展或 agent skill 安装，它会探测你装了哪些 agent，让 Jev 为每个任务挑选一个，并判断工人是否已完成任务。
 - **[Lockstep](https://github.com/lockstep-team-agent/lockstep)** · <sub>lockstep-team-agent · GitHub · ⭐ 10 · 2026-06-07</sub><br>团队编程 agent 共享的决策记录，检查改动的代码是否可能与已采纳的决策相矛盾，其漏斗中的召回和复查两个阶段由 Jev 完成。
 - **[pi-quiet-ask](https://github.com/HyunjunJeon/pi-quiet-ask)** · <sub>HyunjunJeon · GitHub · ⭐ 10 · 2026-09-17</sub><br>Pi 编程 agent 的规则引擎，规则包把 hook 绑定到 Jev 问题上，比如某条命令是否具有破坏性、输出是否泄露了密钥、某个说法是否经过验证；每个答案都会记录，出错时放行。
+- **[phi Jev provider](https://github.com/pulseaiclub/phi/tree/main/internal/llm/jev)** · <sub>pulseaiclub · GitHub · ⭐ 493 仓库 · 2026-08-03</sub><br>精简的 Go 终端编程 agent，移植了 TypeSafe SDK 的同步 System One 接口，从而能向 Jev 提带类型的问题，重试策略与它的其他 provider 相同。
 - **[Clean Code Review](https://github.com/frostney/clean-code-review)** · <sub>frostney · GitHub · ⭐ 9 · 2026-09-17</sub><br>公开 GitHub pull request 的评审工具：Jev 针对每个改动文件回答一组源自 Robert C. Martin《Clean Code》的问题，再由 Luna 根据这些答案写出评审；基于 eve 和 Next.js 构建。
 - **[herdr-mcp](https://github.com/whshang/herdr-mcp)** · <sub>whshang · GitHub · ⭐ 9 · 2026-08-20</sub><br>MCP/OAuth 边缘层，让 ChatGPT 等 Web 端规划工具通过 Herdr 在本地机器上运行代码、Git 和测试；每轮结束后的语义判断优先走 Jev 路由，再回退到 LLM 和脚本。
+- **[瞬时生成变量](https://x.com/eltokh7/status/2101016673109016622)** · <sub>eltokh7 · X · ♥ 9 · 2026-09-18</sub><br>Jev 几乎瞬间生成变量的演示，来自作者一系列 Jev 开发者工具实验。
 - **[jev-commit](https://github.com/valentynkit/jev-commit)** · <sub>valentynkit · GitHub · ⭐ 9 · 2026-09-18</sub><br>pre-commit hook，一次调用就提交信息和暂存的 diff 向 Jev 问五个问题，例如空洞的提交信息、前后矛盾、调试残留和范围蔓延，每一千次提交约四美分。
 - **[Lintus](https://github.com/virolea/lintus)** · <sub>virolea · GitHub · ⭐ 9 · 2026-09-20</sub><br>Ruby linter，规则是 YAML 文件里的自然语言问题；每条规则都以 Jev Noul 的形式对每个文件提问，可作用于整个代码树、改动过的文件，或在 pre-commit hook 中只检查暂存文件。
 - **[musts](https://github.com/bitomule/musts)** · <sub>bitomule · GitHub · ⭐ 9 · 2026-05-13</sub><br>编程 agent 的验证循环，所有声明的检查都通过之前任务不会关闭，其中包括 <code>uses: jev</code> 检查，让 Jev 判断改动的文件是否违反某条文字规则。
 - **[Pi Jev Router](https://github.com/win4r/pi-jev-router)** · <sub>win4r · GitHub · ⭐ 9 · 2026-09-20</sub><br>Pi Coding Agent 在任务边界处做模型路由的扩展：Jev 判断任务档位、上下文是否充足以及后果，再由代码从 Pi 实际可用的模型中挑选。
 - **[pi-fast-jev-compaction](https://github.com/joelhooks/pi-fast-jev-compaction)** · <sub>joelhooks · GitHub · ⭐ 9 · 2026-09-18</sub><br>Pi 扩展，对话文本逐字保留，通过对每次工具调用问 Jev 两个 Noul（是否保留调用、是否保留结果）来裁剪过时的工具历史，必要时回退到 Pi 的摘要式压缩。
-- **[interlinked-cli 的 Jev 检查](https://github.com/QuentinCody/interlinked-cli/tree/main/src/harness/jev)** · <sub>QuentinCody · GitHub · ⭐ 177 仓库 · 2026-09-17</sub><br>interlinked 中可选开启的 Jev 检查。interlinked 是编程 agent 的本地防护层，这些检查会标记测试内容与标题不符的测试，以及声称某模块已上线、实际却没有任何地方引用它的文档。
-- **[Glowbom OSS 的 Jev 工具](https://github.com/glowbom/glowbom-oss/tree/main/extras/jev)** · <sub>glowbom · GitHub · ⭐ 163 仓库 · 2023-04-07</sub><br>Project Book 编程 agent 工作流中的可选工具，让 agent 通过 OpenCode 向 Jev 询问一些小决策，例如构建和测试结果看起来是否正常、是否还需要再修一次。
-- **[SpecWeave sw:jev](https://github.com/anton-abyzov/specweave/blob/develop/docs-site/docs/guides/jev-system-one.md)** · <sub>anton-abyzov · GitHub · ⭐ 163 仓库 · 2025-10-25</sub><br>面向 Claude Code、Codex 和 Cursor 的规格优先 AI 开发工具包，内置 sw:jev skill，借助 Jev 在约 250 毫秒内做封闭集合内的决策。
-- **[Epistemic Protocols Route](https://github.com/jongwony/epistemic-protocols/tree/main/route)** · <sub>jongwony · GitHub · ⭐ 162 仓库 · 2025-12-25</sub><br>Claude Code 插件，根据会话上下文的缺陷把它路由到相应的认知协议，可选开启的 Jev 建议通道最多会提示三个协议。
+- **[VexJoy 的 Jev 路由](https://github.com/notque/vexjoy-agent/blob/main/scripts/jev-route.py)** · <sub>notque · GitHub · ⭐ 423 仓库 · 2026-09-17</sub><br>Claude Code 与 Codex 工具包 VexJoy 中的 Jev 路由器，把一条自然语言的 /do 请求匹配到 43 个专业 agent、skill 和工作流之一，在模型输出第一个 token 之前由 hook 注入。
+- **[Smithers 的 Jev 流程](https://github.com/smithersai/smithers/blob/main/apps/server/src/jev.ts)** · <sub>smithersai · GitHub · ⭐ 419 仓库 · 2026-01-05</sub><br>代码库维护 agent Smithers 中的 Jev 集成：一个 Vercel AI Gateway 客户端，外加一组基于它的流程，用来给仓库 issue 打分、发现重复和复现报告、检查 wiki 引用并监看 agent 会话。
+- **[Seedit 的 Jev 辅助脚本](https://github.com/bitsocialnet/seedit/tree/master/scripts/jev)** · <sub>bitsocialnet · GitHub · ⭐ 416 仓库 · 2023-08-25</sub><br>reddit 替代品 Seedit 仓库中可选的 Jev 开发辅助工具，用于浏览器基准测试、代码审查和翻译审查，在发布的应用之外运行。
 - **[jevgate](https://jevgate.dev)** · <sub>remotehost · 应用 · ⬇ 804 · 2026-09-18</sub><br>Claude Code 和 Codex 的权限 hook，约 300 毫秒 内自动批准常规的 agent 请求，记录每一个决策，并把任何有风险或不明确的请求交给你平常的审查流程。
 - **[Better TypeScript 语义检查](https://github.com/andrueandersoncs/better-typescript)** · <sub>andrueandersoncs · GitHub · ⭐ 8 · 2026-06-10</sub><br>面向 TypeScript 项目的 Go linter，其 semantic 命令用有边界的 TypeSafe 判断，把自然语言写的工程规范与工作区改动或某个 Git 区间进行比对检查。
 - **[bounce-router](https://github.com/richet/bounce-router)** · <sub>richet · GitHub · ⭐ 8 · 2026-09-07</sub><br>架在 Claude Code、Codex 和 Muse 之上的 TUI，触发用量限制时在各服务商之间切换，可选的 Jev 层负责给出评审结论，并按等级把工作路由到不同的工人配置。
 - **[Calliope CLI](https://github.com/calliopeai/calliope-cli)** · <sub>calliopeai · GitHub · ⭐ 8 · 2026-01-09</sub><br>支持多后端的终端编程 agent，其 judgments 功能会提出类型化问题，返回可用于分支判断的概率和置信度，可来自任意后端或原生 TypeSafe 引擎。
 - **[JevPR](https://github.com/HexyeDEV/JevPR)** · <sub>HexyeDEV · GitHub · ⭐ 8 · 2026-09-20</sub><br>GitHub App，把每个新开或更新的 pull request 发给 Jev，得到 LOW、NORMAL 或 SPECIALIST 三档风险结论，再由确定性策略映射为自动批准、请求评审或一次 check run。
 - **[MCode 增强包](https://github.com/drowzeys/keys-mcode-continuous-context-browser-decision-enhancement-pack)** · <sub>drowzeys · GitHub · ⭐ 8 · 2026-09-20</sub><br>给在 DGX Spark 上搭配本地 GLM 模型运行的 MiniMax Code CLI 打的一组补丁：上下文用量指示、持续上下文续期、一个上下文压缩的修复，以及一个接到本地 /v1/systemone 兼容策略上的 jev-ultrafast 浏览器 agent。
+- **[omp-jev-compaction](https://github.com/jerryfane/omp-jev-compaction)** · <sub>jerryfane · GitHub · ⭐ 8 · 2026-09-18</sub><br>Oh My Pi 编程 agent 的上下文缩减扩展，用 Jev 给每次工具调用及其结果打分，把不再需要的截断成开头部分加一条恢复说明，从不改写文字。
 - **[Pattern MCP](https://github.com/donaldrichard19-LVD/pattern-mcp)** · <sub>donaldrichard19-LVD · GitHub · ⭐ 8 · 2026-08-24</sub><br>MCP 服务器，在编程 agent 动手构建前对照产品需求检查 UI 组件库，带一个实验性的 Jev 打分器，对照检查清单给每个 Figma 组件页面打分。
+- **[IFClite 评审通道的 Jev 客户端](https://github.com/LTplus-AG/ifc-lite/blob/main/scripts/review/lib/jev-client.mjs)** · <sub>LTplus-AG · GitHub · ⭐ 382 仓库 · 2026-01-10</sub><br>一个开源 IFC 工具包的 AI 代码评审通道，用 Jev 把评审问题与评测项做语义匹配并合并重复问题，没有 key 时平稳降级。
+- **[Paxeer X 的 Jev 检查](https://github.com/Sidiora-Labs/Paxeer-X-Network/tree/main/tools/jev)** · <sub>Sidiora-Labs · GitHub · ⭐ 371 仓库 · 2026-08-14</sub><br>一个 agent 执行网络里的 CI 建议工具，用 Jev 检查 pull request 与 commit message 是否一致，并对 cargo-deny 安全公告、测试失败和 README 翻译漂移做分诊。
 - **[any-auto](https://github.com/jjyr/any-auto)** · <sub>jjyr · GitHub · ⭐ 7 · 2026-08-20</sub><br>Pi 和 Antigravity 编程 agent 的自动审批守护进程：本地规则直接放行只读工具、拦截危险命令，其余请求交给 Jev、Pi、agy 或某个 API 模型等评审后端。
 - **[bro](https://github.com/JustSuperHuman/bro-cli)** · <sub>JustSuperHuman · GitHub · ⭐ 7 · 2026-06-22</sub><br>启动器，可让 Claude Code、omp、Pi、Codex 或 DeepSeek Harness 对接任意模型服务商，有一个开关可在前面加上 Jev Router，逐轮选择 Haiku 或 Opus。
 - **[Jevies](https://github.com/Ezbaze/jevies)** · <sub>Ezbaze · GitHub · ⭐ 7 · 2026-09-18</sub><br>用 Jev 来设计和审查 Jev 配置的 Python 辅助工具：建议该用 Noul、Score 还是 Choice，审查指令和选项，检查评分标准，并用预设规则测试输入。
 - **[lcc](https://github.com/lucasmartins-ai/lcc)** · <sub>lucasmartins-ai · GitHub · ⭐ 7 · 2026-06-19</sub><br>本地上下文编译器（Local Context Compiler），在提示词上下文送进模型之前做清洗、去重和压缩；<code>lcc compact --provider jev</code> 让 Jev 给每个块打出保留概率，按块原样丢弃，不做摘要。
-- **[octomind evaluate](https://github.com/Muvon/octomind/blob/master/src/commands/evaluate.rs)** · <sub>Muvon · GitHub · ⭐ 140 仓库 · 2025-06-01</sub><br>CLI 优先的 AI 编程 agent 运行时，带一个 evaluate 命令，把 JSON state 和带类型的问题发给 Jev 这类评测模型，其中包括校准过的检查。
 - **[omp-jev](https://github.com/thejorgg/omp-jev)** · <sub>thejorgg · GitHub · ⭐ 7 · 2026-09-17</sub><br>Oh My Pi 插件，给这个编程 agent 加上 Jev 路由判断，外加一个可选启用的检查点编排器，通过可编辑的 XDG 文件和 <code>/jev</code> 命令配置，默认关闭。
 - **[pi-codemcp](https://github.com/yolonir/pi-codemcp)** · <sub>yolonir · GitHub · ⭐ 7 · 2026-07-17</sub><br>Pi 编程 agent 中面向 MCP 服务器的沙箱化 Code Mode；可选的 Jev 路由取代搜索，按子任务意图给已启用的工具打分，最多挑出八个，并附上组合使用的指引。
 - **[zcode-gatekeeper](https://github.com/luoxiaoxin123/zcode-gatekeeper)** · <sub>luoxiaoxin123 · GitHub · ⭐ 7 · 2026-09-13</sub><br>ZCode 编程 agent 的外部工具调用审批器，仿照 Claude Code 自动模式设计：结合任务审查 shell、文件和 MCP 操作，对破坏性命令用确定性黑名单，并可选接入 Jev 后端。
 - **[pi-jev-compaction](https://www.npmjs.com/package/pi-jev-compaction)** · <sub>each1024 · 软件包 · ⬇ 690 · 2026-09-18</sub><br>Pi 编程 agent 扩展，用 Jev 对工具调用和结果做保留、丢弃或截断的决定，取代 LLM 摘要式压缩，出错时回退到 Pi 内置的摘要。
-- **[5chan 的 Jev 开发辅助脚本](https://github.com/bitsocialnet/5chan/tree/master/scripts/jev)** · <sub>bitsocialnet · GitHub · ⭐ 132 仓库 · 2023-01-29</sub><br>一个点对点图片论坛的可选 Node 脚本，用 Jev 做浏览器测试规划和基准测试、盲审交接以及对比式翻译评测。
-- **[pi-maestro-flow 的 JEV 分类器](https://github.com/catlog22/pi-maestro-flow/tree/master/packages/pi-maestro-teammate/src/classify)** · <sub>catlog22 · GitHub · ⭐ 126 仓库 · 2026-07-07</sub><br>Pi 编程 agent 的多 agent 编排，带一个统一的 JEV 分类器，把 provider 故障归入不同的重试类型，并把交接文件标记为必需、视情况而定或跳过。
+- **[WrongStack 的 Jev 决策](https://github.com/WrongStack/WrongStack/blob/main/docs/jev-settings-and-activity.md)** · <sub>WrongStack · GitHub · ⭐ 331 仓库 · 2026-09-18</sub><br>编程 agent WrongStack 中的 Jev 集成：一个 agent 可调用的 jev 工具用于有界判断，另有基于 Jev 的专业 agent 分派、skill 推荐和记忆召回，每项功能都可单独配置。
 - **[algal-skills](https://www.npmjs.com/package/algal-skills)** · <sub>benzguo · 软件包 · ⬇ 624 · 2026-09-19</sub><br>面向 Devin、Claude Code 和 Codex 的省 token agent skill，把原始工具输出挡在上下文之外，可选由 Jev 回答关于 diff、来源和草稿的类型化分诊问题。
 - **[auto-model-router](https://github.com/fstandhartinger/auto-model-router)** · <sub>fstandhartinger · GitHub · ⭐ 6 · 2026-09-17</sub><br>兼顾成本、缓存和配额的 LLM 路由器，带一个 Claude Code 网关垫片：由 Jev 类模型（托管的 Jev 或本地的 Laya）对每一轮的主题、难度和工具需求分类，再选出能胜任的最便宜模型。
 - **[Cairn](https://github.com/eas4ai/cairn)** · <sub>eas4ai · GitHub · ⭐ 6 · 2026-08-10</sub><br>基于 Git 的记录体系，把 AI 辅助开发与约定好的需求挂钩；在关键抉择点，编程 agent 可以先让 Jev 从五个维度给自己的草案打分再做决定。
@@ -678,11 +665,10 @@
 - **[SAYACODE](https://github.com/saya-ch/sayacode)** · <sub>saya-ch · GitHub · ⭐ 6 · 2026-04-30</sub><br>基于 LangChain 和 LangGraph 的本地终端编程 agent，其 <code>jev</code> 信任级别会自动批准低风险工具调用，把拿不准的交给用户，并拒绝明显越权的操作，使用官方 TypeSafe SDK。
 - **[softlint](https://github.com/blazejkustra/softlint)** · <sub>blazejkustra · GitHub · ⭐ 6 · 2026-09-19</sub><br>GitHub Action 兼 CLI，用 Jev 按英文规则检查 pull request 里的每一处改动，并标出违规的行；在示例 PR 中抓到了 10/10 处违规，每个 PR 约 $0.001。
 - **[Switchyard](https://github.com/LeonardSEO/switchyard)** · <sub>LeonardSEO · GitHub · ⭐ 6 · 2026-09-14</sub><br>能感知订阅情况的模型路由器，支持 Pi、Oh My Pi 和 OpenCode，通过 OpenRouter Decisions 让 Jev 判断每个编程任务的类型和复杂度，再挑选能胜任的最便宜模型和推理力度。
-- **[Claude Lane Stack 的 Jev skill](https://github.com/VKirill/claude-lane-stack/blob/main/bin/jev_decisions.py)** · <sub>VKirill · GitHub · ⭐ 116 仓库 · 2026-07-11</sub><br>面向 Claude Code 的单人多 agent 编程工厂，其中的 Jev skill 通过 TypeSafe 或 OpenRouter 审查 git diff 片段，并基于 DOM 表格做浏览器 QA。
-- **[Radiant 决策](https://github.com/templetongroup/radiant/blob/master/server/decide.js)** · <sub>templetongroup · GitHub · ⭐ 106 仓库 · 2026-08-19</sub><br>本地 Mac 编程 harness，通过 OpenRouter 用 Jev 挑选一条消息需要哪些 MCP 服务器；起因是发现单个 Linear 服务器就给每次调用加了 69 个工具 schema 和 16.6k token。
-- **[SuperQode SystemOne Tune](https://x.com/Shashikant86/status/2101668569201160634)** · <sub>Shashikant86 · 文章 · ♥ 1 · 2026-09-20</sub><br>为类 Jev 模型打造的 SuperQode SystemOne harness 新增了基于 GEPA 的调优，能利用无标注的历史记录改进 Jev 在工具闸门和工单路由上的类型化答案，同时不会悄悄改写受信任的决策包。
-- **[Harness MCP 的故障分诊](https://github.com/harness/mcp-server/blob/main/src/client/typesafe-client.ts)** · <sub>harness · GitHub · ⭐ 102 仓库 · 2025-05-14</sub><br>官方 Harness.io MCP 服务器，其 harness_diagnose 工具用单个 TypeSafe Choice 为流水线故障增加建议性的故障类别分诊。
-- **[Eva 的 Jev 功能](https://github.com/vvedantb/eva/tree/main/packages/backend/convex/_jev)** · <sub>vvedantb · GitHub · ⭐ 101 仓库 · 2026-01-11</sub><br>云沙箱编程 agent 编排器，用 Jev 处理任务标签、问题分诊、草稿就绪判断、提及的紧急程度和 skill 标签，答案缺失时读取逻辑会回退处理。
+- **[DSCODE 的 Jev 审批插件](https://github.com/qiz029/dscode/tree/main/plugins/jev)** · <sub>qiz029 · GitHub · ⭐ 298 仓库 · 2026-09-11</sub><br>终端 DeepSeek 编程 agent 的插件，通过 OpenRouter 的 Decisions API 用 Jev 而不是对话模型来回应自动权限审查。
+- **[Jev UX linter 扩展](https://x.com/naobit_/status/2101682262857363563)** · <sub>naobit_ · X · ♥ 4 · 2026-09-20</sub><br>日本开发者做的 Chrome 扩展，把 Jev 当作 UX linter 来评估网站体验：对每个组件并行问 Jev 多个问题，例如点击它的结果是否可预期。
+- **[OrchestKit 的 Jev 会话分类](https://github.com/yonatangross/orchestkit/tree/main/docs/audits/jev-session-category-heldout-2026-09-17)** · <sub>yonatangross · GitHub · ⭐ 281 仓库 · 2026-09-17</sub><br>对 OrchestKit 中可选启用的 Claude Code Jev 会话分类器做的留出集评测：在 150 个会话上，同样的标准下 Jev 与 Haiku 表现相当（80.0% 对 79.3%），速度快约 58 倍，输入 token 少约 34 倍。
+- **[Roomote 的判断后端](https://github.com/RooCodeInc/Roomote/blob/develop/packages/cloud-agents/src/server/typesafe-judgment.ts)** · <sub>RooCodeInc · GitHub · ⭐ 253 仓库 · 2026-07-07</sub><br>可自托管的云端编程 agent，带一个可选的 Jev 判断后端，用于范围受限的辅助决策，另有一个影子模式，衡量自己部署的判断模型与 Jev 的一致程度。
 - **[Bicameral](https://github.com/AbdelStark/bicameral)** · <sub>AbdelStark · GitHub · ⭐ 5 · 2026-09-16</sub><br>面向 Pi 的混合式编程 harness：任意 LLM 负责写代码，Jev 给工具调用和编辑打分，再由确定性策略把分数转成放行、确认、拦截、警告或纠偏。
 - **[claude-jev](https://github.com/buchmark/claude-jev)** · <sub>buchmark · GitHub · ⭐ 5 · 2026-09-18</sub><br>Claude Code 插件，把 Claude 的评审意见、调试假设和设计方案交给 Jev 作为独立裁判过一遍，剔除概率低于阈值的误报。
 - **[coderelay](https://github.com/AlkaidSTART/coderelay)** · <sub>AlkaidSTART · GitHub · ⭐ 5 · 2026-09-12</sub><br>路由器，扫描本机已安装的编程 agent CLI（Claude Code、Codex、pi、omp），把每个任务派给最合适的那个，依据本地规则和打分，或在 <code>jev</code> 模式下由 Jev 解读任务意图来决定。
@@ -697,10 +683,10 @@
 - **[Pi Jev Guard](https://github.com/Reindeer-AI/pi-jev-guard)** · <sub>Reindeer-AI · GitHub · ⭐ 5 · 2026-09-19</sub><br>Pi 扩展，在代码修改写入之前对照仓库里的 Markdown 规则检查，对每处违规报告具体是哪条指令、哪段行号范围，在强制模式下则直接拦截。
 - **[pi-jev-context-curator](https://github.com/Shashank-H/pi-jev-context-curator)** · <sub>Shashank-H · GitHub · ⭐ 5 · 2026-09-18</sub><br>Pi 扩展，在每次调用 LLM 前整理上下文：对每个新的消息单元问 Jev 一个 Noul，看它对后续回复是否必不可少，并按内容指纹复用以往的判断。
 - **[S1Code](https://github.com/mertcicekci0/S1Code)** · <sub>mertcicekci0 · GitHub · ⭐ 5 · 2026-09-18</sub><br>Rust 终端编程 agent，由 Claude 或 OpenAI 规划并写代码，可选的 Jev 集成负责在完全确定的动作之间做选择，并帮助决定哪些证据留在活动上下文中。
-- **[shell.online 的 Jev 评估](https://github.com/TeoSlayer/shell.online/tree/main/app/server/lib/jev)** · <sub>TeoSlayer · GitHub · ⭐ 99 仓库 · 2026-08-22</sub><br>把任意终端进程分享为加密浏览器链接的服务，新增可选启用的 Jev 建议性评估，只针对所有者从会话中明确公开的片段。
+- **[pi-fabric 的 Jev 程序](https://github.com/monotykamary/pi-fabric/blob/main/docs/jev.md)** · <sub>monotykamary · GitHub · ⭐ 244 仓库 · 2026-09-17</sub><br>Pi 编程 agent 的可编程工具运行时 pi-fabric 中的 Jev 支持：推理模型写一段 TypeScript 程序，在 QuickJS 里观察、询问 Jev、执行并循环，不再额外占用 LLM 轮次。
 - **[jev-kit](https://www.npmjs.com/package/jev-kit)** · <sub>nikheal25 · 软件包 · ⬇ 480 · 2026-09-20</sub><br>agent 优先的 CLI，适用于 Cursor、Claude Code、Codex 和 Pi，把日志、diff 或文件通过管道交给 Jev，用 Noul、Choice 或 Score 参数提问，并输出 JSON 供 agent 或 jq 处理。
-- **[deletion-test skill](https://github.com/obie/skills/tree/main/skills/deletion-test)** · <sub>obie · GitHub · ⭐ 95 仓库 · 2026-02-06</sub><br>Claude Code skill，检验一个模块能否根据其规格重新生成，在行为 diff 打分之后可选用 Jev 对存活的变异体做分诊。
 - **[Milo](https://www.npmjs.com/package/usemilo)** · <sub>banana.man · 软件包 · ⬇ 466 · 2026-09-20</sub><br>面向 pi、Codex、Claude Code 等编程 harness 的路由网关：把模型设为 milo/auto，每个请求都会经 Jev 路由到 OpenRouter 上的快速、中档或前沿模型。
+- **[LeanKG judge](https://github.com/FreePeak/LeanKG/tree/main/internal/judge)** · <sub>FreePeak · GitHub · ⭐ 220 仓库 · 2026-04-13</sub><br>面向 AI 编程 agent 的代码知识图谱，加了一层 System One 判断层，调用 Jev 或自托管的 Laya 服务器，其中还包括一条对话分类路径。
 - **[@elyracode/jev-tools](https://www.npmjs.com/package/@elyracode/jev-tools)** · <sub>Knut W. Horne · 软件包 · ⬇ 405 · 2026-09-18</sub><br>Elyra 编程 agent 的扩展，新增一个 decide 工具，可向 Jev 提出是/否、Choice 和 Score 问题，另有一个可选开启的 bash 闸门，在运行看起来具有破坏性的命令前先询问。
 - **[claude-code-jev](https://github.com/RahulBalakavi/claude-code-jev)** · <sub>RahulBalakavi · GitHub · ⭐ 4 · 2026-09-18</sub><br>实验性的 PreToolUse hook，通过 OpenRouter 让 Jev 来执行 Claude Code 的放行/拦截/询问权限闸门，实测每次调用 264 毫秒、$0.0000227，在 18 个用例的测试集上放行危险操作 0 次。
 - **[dsh-jev](https://github.com/zhangxaochen/dsh-jev)** · <sub>zhangxaochen · GitHub · ⭐ 4 · 2026-09-18</sub><br>DeepSeek Harness 的插件套件，包括工具结果裁剪、循环防护、安全防护和无头模式下的询问处理；其 20 个任务的 DeepSWE A/B 试点结果显示既没有优势，也没有稳定的负面影响。
@@ -717,11 +703,10 @@
 - **[PiJev](https://github.com/tonyzdev/pijev)** · <sub>tonyzdev · GitHub · ⭐ 4 · 2026-09-17</sub><br>基于 Pi 的终端编程 agent，由 Jev 筛选候选 skill、给文件片段排序、对工具故障做分诊，代码则由你的编程模型来写；在 SWE-bench 的 django 任务上，工具调用次数比原版 Pi 少。
 - **[Taste Lint](https://github.com/mblode/taste-lint)** · <sub>mblode · GitHub · ⭐ 4 · 2026-09-19</sub><br>CLI，在发布前揪出 UI 代码、文案和 agent 指令中 AI 粗制滥造的痕迹（AI slop），在本地跑机械性检查，并通过 Vercel AI Gateway 为语义层面的品味规则加上 Jev 审查意见。
 - **[tenet](https://github.com/zoidsh/tenet)** · <sub>zoidsh · GitHub · ⭐ 4 · 2026-09-17</sub><br>给 agent 写的代码设的提交时审查闸门，每条规则只需用自然语言写一次，Jev 按规则评判每次提交，速度快到 agent 能在你看到 diff 之前就修好违规。
-- **[Snow App 的决策模型](https://github.com/MayDay-wpf/snow-app/blob/main/native/src/api/jev.rs)** · <sub>MayDay-wpf · GitHub · ⭐ 76 仓库 · 2026-06-10</sub><br>集 AI 聊天、终端和 SSH 于一体的开发者桌面应用，在 agent 审查循环中用 Jev 过滤搜索结果，并决定敏感命令能否不经确认直接执行。
-- **[SztuCode 的 LLM + Jev agent 模式](https://github.com/rojim666/SztuCode/blob/main/packages/runtime-ts/src/jev.ts)** · <sub>rojim666 · GitHub · ⭐ 71 仓库 · 2026-07-24</sub><br>面向高校的本地优先编程与办公 agent，其实验模式让 LLM 负责推理，在关键的选择点上请 Jev 从备选的下一步动作中选一个。
-- **[autoloop 的 Jev 路由](https://github.com/mikeyobrien/autoloop/blob/main/packages/harness/src/jev-routing.ts)** · <sub>mikeyobrien · GitHub · ⭐ 70 仓库 · 2026-03-28</sub><br>从 ralph-orchestrator 分出来的循环 harness，用于长时间运行的 agent 工作，可选开启 Jev 工作流选择，在置信度高于下限时把请求路由到某个预设或 no_match。
-- **[PLang 的 Typesafe 决策器](https://github.com/PLangHQ/plang/blob/main/PLang/Services/Typesafe/TypesafeDecider.cs)** · <sub>PLangHQ · GitHub · ⭐ 65 仓库 · 2023-12-03</sub><br>一门自然语言编程语言，其构建器可以让 Jev 为每一步决定用哪个模块、方法和参数，每次请求批量提多个问题。
-- **[Mjolnir 的 Jev 轮次裁决](https://github.com/BrokkAi/mjolnir/tree/master/services/jev-proxy)** · <sub>BrokkAi · GitHub · ⭐ 63 仓库 · 2026-05-18</sub><br>面向 Codex、Claude Code 和其他 ACP 编程 agent 的元 harness，用 Jev 判断某一轮是需要用户输入还是属于后台工作，并给帮助搜索的条目排序。
+- **[interlinked-cli 的 Jev 检查](https://github.com/QuentinCody/interlinked-cli/tree/main/src/harness/jev)** · <sub>QuentinCody · GitHub · ⭐ 177 仓库 · 2026-09-17</sub><br>interlinked 中可选开启的 Jev 检查。interlinked 是编程 agent 的本地防护层，这些检查会标记测试内容与标题不符的测试，以及声称某模块已上线、实际却没有任何地方引用它的文档。
+- **[Glowbom OSS 的 Jev 工具](https://github.com/glowbom/glowbom-oss/tree/main/extras/jev)** · <sub>glowbom · GitHub · ⭐ 163 仓库 · 2023-04-07</sub><br>Project Book 编程 agent 工作流中的可选工具，让 agent 通过 OpenCode 向 Jev 询问一些小决策，例如构建和测试结果看起来是否正常、是否还需要再修一次。
+- **[SpecWeave sw:jev](https://github.com/anton-abyzov/specweave/blob/develop/docs-site/docs/guides/jev-system-one.md)** · <sub>anton-abyzov · GitHub · ⭐ 163 仓库 · 2025-10-25</sub><br>面向 Claude Code、Codex 和 Cursor 的规格优先 AI 开发工具包，内置 sw:jev skill，借助 Jev 在约 250 毫秒内做封闭集合内的决策。
+- **[Epistemic Protocols Route](https://github.com/jongwony/epistemic-protocols/tree/main/route)** · <sub>jongwony · GitHub · ⭐ 162 仓库 · 2025-12-25</sub><br>Claude Code 插件，根据会话上下文的缺陷把它路由到相应的认知协议，可选开启的 Jev 建议通道最多会提示三个协议。
 - **[Context Diet](https://github.com/konstantinosbotonakis/codex-context-diet)** · <sub>konstantinosbotonakis · GitHub · ⭐ 3 · 2026-09-18</sub><br>Codex 插件，询问 Jev 会话还需要哪些体积庞大的工具结果（如测试日志、构建输出和大文件读取），其余的替换为截断后的开头部分加一行说明。
 - **[deepseek-harness-jev-pre-compaction](https://github.com/wjw66/deepseek-harness-jev-pre-compaction)** · <sub>wjw66 · GitHub · ⭐ 3 · 2026-09-21</sub><br>DeepSeek Harness 的预压缩顾问，在达到压缩阈值之前，从模型可见的上下文中裁掉低价值的工具结果，原始事件仍保留在只追加日志里。
 - **[dsh-jev-prune](https://github.com/yangyu666/dsh-jev-prune)** · <sub>yangyu666 · GitHub · ⭐ 3 · 2026-09-21</sub><br>DeepSeek Harness 插件，用 Jev 的保留/丢弃判断取代按大小裁剪工具结果和基于摘要的压缩，另有确定性的回执压缩，判断后端可插拔。
@@ -743,17 +728,15 @@
 - **[JMP](https://github.com/morcoan/JMP)** · <sub>morcoan · GitHub · ⭐ 3 · 2026-09-18</sub><br>本地桌面编程 agent：Jev 根据请求和真实历史选择下一个动作，选定的生成模型（DeepSeek、OpenAI 或本地 Bonsai）填充参数，再由 OpenHands 或 MCP 工具执行。
 - **[Leanest](https://github.com/baronunread/leanest)** · <sub>baronunread · GitHub · ⭐ 3 · 2026-09-17</sub><br>本地优先的测试选择器，挡在现有测试运行器前面，跳过被判定不受代码改动影响的测试，默认使用 classifier.dev，也可以用 Jev/Laya。
 - **[opencode-jev-orchestrator](https://github.com/aaronshaf/opencode-jev-orchestrator)** · <sub>aaronshaf · GitHub · ⭐ 3 · 2026-09-18</sub><br>OpenCode 插件，让会话固定在一个便宜的父模型上以保持缓存热度，只把难的轮次升级给临时子 agent 里更强的模型。
-- **[Parcha recall 的 Jev 判断](https://github.com/Parcha-ai/parcha-skills/tree/main/recall)** · <sub>Parcha-ai · GitHub · ⭐ 60 仓库 · 2026-07-13</sub><br>用于回忆过往编程 agent 会话的 agent skill，正在把基于正则的日期解析、重复检测和内容分诊迁移到 Jev 判断上，第一步是一个尚未启用的边界层和一个回放 harness。
 - **[semantic-assert](https://github.com/mondaychen/semantic-assert)** · <sub>mondaychen · GitHub · ⭐ 3 · 2026-09-19</sub><br>测试库，用于断言关于捕获到的 UI 或文本 state 的英文陈述（比如某条提示是否告诉用户如何恢复），默认由 Jev 评判，通过阈值写在代码里，另附 Playwright 辅助函数。
 - **[software-factory](https://github.com/stratonext/software-factory)** · <sub>stratonext · GitHub · ⭐ 3 · 2026-09-21</sub><br>本地软件工厂，让需求沿着由编程 agent、shell 和 Jev 步骤组成的 YAML 流水线推进，其中 typesafe 步骤用带类型的问题评判 diff，再把它送去审查或打回重新编码。
-- **[EntropyLab 的 Jev 对抗测试](https://github.com/OogaBoogaX/entropylab/blob/rock/test/adversarial/jev.mjs)** · <sub>OogaBoogaX · GitHub · ⭐ 58 仓库 · 2026-08-25</sub><br>一个离线比特币钱包计算器的定时 CI 任务，用恶意输入探索构建出的页面，并让 Jev 评判结果；没有 key 时降级为不变量检查。
-- **[AIOS 判断闸门](https://github.com/rexleimo/aios/tree/main/scripts/lib/judgment)** · <sub>rexleimo · GitHub · ⭐ 54 仓库 · 2026-03-01</sub><br>面向长周期编程 agent 的本地优先控制平面，带一个可选的 System One 判断闸门，以 CLI 和 MCP 工具形式提供，除非显式启用否则保持关闭，出错时默认拒绝。
-- **[SuperQode 的 Jev 决策 harness](https://github.com/SuperagenticAI/superqode/blob/main/docs/advanced/jev-tool-routing.md)** · <sub>SuperagenticAI · GitHub · ⭐ 53 仓库 · 2026-01-19</sub><br>基于 ACP、A2A 和 MCP 的编程 agent harness 层，加入一个用于工具路由和工具权限检查的 Jev 决策 harness，附带基准测试和可部署的 Jev 后端。
-- **[PZ_Optimization Jev harness](https://github.com/xD3I/PZ_Optimization/blob/master/harness/typesafe_client.py)** · <sub>xD3I · GitHub · ⭐ 52 仓库 · 2026-09-15</sub><br>Project Zomboid 的性能补丁项目，其基准测试 harness 用 Jev 判断运行性能提升和画面一致性，并通过 OCR 加 Jev 操作游戏的 Workshop 界面，每步约 1.5 秒。
-- **[delegate](https://github.com/lahfir/claude-plugins/tree/main/delegate)** · <sub>lahfir · GitHub · ⭐ 49 仓库 · 2026-09-17</sub><br>Claude Code 插件，决定由谁来执行任务：当前会话、子 agent 还是外部 CLI harness。它检测已安装的 harness，维护一份由用户控制的允许列表，询问 Jev 哪一项合适，然后打印出对应命令。
-- **[Forgewright 的 Jev skill 路由器](https://github.com/buiphucminhtam/forgewright/blob/main/scripts/runtime/jev_adapter.py)** · <sub>buiphucminhtam · GitHub · ⭐ 49 仓库 · 2026-03-06</sub><br>Forgewright AI 工程 harness 中可选、默认关闭的 Jev 适配器，在任务路由不明确时从严格限定的候选名单中挑选一个 skill，带预算上限、固定的模型版本，并可回退到本地路由器。
-- **[cc-settings 的 Jev hook](https://github.com/darkroomengineering/cc-settings/blob/main/docs/hooks-reference.md)** · <sub>darkroomengineering · GitHub · ⭐ 45 仓库 · 2026-01-12</sub><br>团队共用的 Claude Code 和 Codex 配置，其中的 hook 使用 Jev：针对多文件提示词的委派检测、无人值守轮次的偏航熔断，以及逐字保留式压缩。在 1,102 条真实提示词上，阈值 0.7 的 Jev 正确触发 53 次，正则只有 10 次。
-- **[Kit 的评测工具](https://github.com/speakeasy-api/kit/blob/main/docs/user/evaluations.md)** · <sub>speakeasy-api · GitHub · ⭐ 41 仓库 · 2026-08-24</sub><br>Kit 中的实验性评测工具。Kit 是只有一个 compose 工具的 Rust 编程 agent 运行时，agent 程序可以借助这个工具把一段 state 连同多个具名的 Noul、Choice 或 Score 问题发给 TypeSafe，并拿回具名的答案。
+- **[octomind evaluate](https://github.com/Muvon/octomind/blob/master/src/commands/evaluate.rs)** · <sub>Muvon · GitHub · ⭐ 140 仓库 · 2025-06-01</sub><br>CLI 优先的 AI 编程 agent 运行时，带一个 evaluate 命令，把 JSON state 和带类型的问题发给 Jev 这类评测模型，其中包括校准过的检查。
+- **[5chan 的 Jev 开发辅助脚本](https://github.com/bitsocialnet/5chan/tree/master/scripts/jev)** · <sub>bitsocialnet · GitHub · ⭐ 132 仓库 · 2023-01-29</sub><br>一个点对点图片论坛的可选 Node 脚本，用 Jev 做浏览器测试规划和基准测试、盲审交接以及对比式翻译评测。
+- **[pi-maestro-flow 的 JEV 分类器](https://github.com/catlog22/pi-maestro-flow/tree/master/packages/pi-maestro-teammate/src/classify)** · <sub>catlog22 · GitHub · ⭐ 126 仓库 · 2026-07-07</sub><br>Pi 编程 agent 的多 agent 编排，带一个统一的 JEV 分类器，把 provider 故障归入不同的重试类型，并把交接文件标记为必需、视情况而定或跳过。
+- **[Claude Lane Stack 的 Jev skill](https://github.com/VKirill/claude-lane-stack/blob/main/bin/jev_decisions.py)** · <sub>VKirill · GitHub · ⭐ 116 仓库 · 2026-07-11</sub><br>面向 Claude Code 的单人多 agent 编程工厂，其中的 Jev skill 通过 TypeSafe 或 OpenRouter 审查 git diff 片段，并基于 DOM 表格做浏览器 QA。
+- **[Radiant 决策](https://github.com/templetongroup/radiant/blob/master/server/decide.js)** · <sub>templetongroup · GitHub · ⭐ 106 仓库 · 2026-08-19</sub><br>本地 Mac 编程 harness，通过 OpenRouter 用 Jev 挑选一条消息需要哪些 MCP 服务器；起因是发现单个 Linear 服务器就给每次调用加了 69 个工具 schema 和 16.6k token。
+- **[Harness MCP 的故障分诊](https://github.com/harness/mcp-server/blob/main/src/client/typesafe-client.ts)** · <sub>harness · GitHub · ⭐ 102 仓库 · 2025-05-14</sub><br>官方 Harness.io MCP 服务器，其 harness_diagnose 工具用单个 TypeSafe Choice 为流水线故障增加建议性的故障类别分诊。
+- **[Eva 的 Jev 功能](https://github.com/vvedantb/eva/tree/main/packages/backend/convex/_jev)** · <sub>vvedantb · GitHub · ⭐ 101 仓库 · 2026-01-11</sub><br>云沙箱编程 agent 编排器，用 Jev 处理任务标签、问题分诊、草稿就绪判断、提及的紧急程度和 skill 标签，答案缺失时读取逻辑会回退处理。
 - **[clear-head](https://github.com/VladyslavHontar/clear-head)** · <sub>VladyslavHontar · GitHub · ⭐ 2 · 2026-09-18</sub><br>Claude Code 的 Stop hook，把助手回答中的事实性说法与本次会话中它实际读过的工具输出进行比对，一旦说法被反驳或缺乏支撑就拦下这一轮。
 - **[codex-jev-compaction](https://github.com/Wang-auspicious/codex-jev-compaction)** · <sub>Wang-auspicious · GitHub · ⭐ 2 · 2026-09-18</sub><br>Codex 插件，包含 skill、MCP 工具和 CLI，通过让 Jev 挑选哪些旧的只读工具记录需要原样保留，为下一个任务或会话构建紧凑、可追溯的交接包。
 - **[git-jev-stage](https://github.com/ibrahemid/git-jev-stage)** · <sub>ibrahemid · GitHub · ⭐ 2 · 2026-09-18</sub><br>Git CLI，依据一句话描述的暂存意图对每个改动片段分类，展示暂存计划，确认后把选中的片段加入暂存区。
@@ -788,22 +771,19 @@
 - **[TypeSafe-as-a-Judge](https://github.com/E-FL/typesafe-as-a-judge)** · <sub>E-FL · GitHub · ⭐ 2 · 2026-09-21</sub><br>非官方的 Codex 与 Claude Code MCP 插件，为编程 agent 提供范围受限的 Jev 工具，用于分派工作、给候选排序、抽取信息、核验证据以及决定何时升级给人工审查，决定权仍在 agent 手里。
 - **[typesafe-mod](https://github.com/BeLazy167/typesafe-mod)** · <sub>BeLazy167 · GitHub · ⭐ 2 · 2026-09-17</sub><br>Claude Code 函数 hook，为每条提示词给已安装的 skill 排序；agent 提出二选一的问题时，显示 Jev 对每个选项给出的概率，还可以选择自动作答。
 - **[windows-save-token-jev-setup](https://github.com/455-dIAO/windows-save-token-jev-setup)** · <sub>455-dIAO · GitHub · ⭐ 2 · 2026-09-20</sub><br>Windows 版 Codex skill，负责安装并验证 save-token-jev hook：PreCompact hook 让 Jev 挑出值得保留的工具记录，SessionStart hook 在原生压缩之后把它们恢复回来。
-- **[Jauvex](https://x.com/diegoaraos/status/2101782639854186747)** · <sub>diegoaraos · X · ▶ 97 · 2026-09-20</sub><br>双向语音聊天 app，可以在 Claude 和 Codex 编程 agent 工作时与其对话并加以引导，由 Jev 对指令和意图进行分类。
-- **[lisptc 的 AGENTS.md 检查器](https://github.com/1hachem/lisptc/blob/main/scripts/check-agents.ts)** · <sub>1hachem · GitHub · ⭐ 38 仓库 · 2026-07-23</sub><br>面向 agent 的 Lisp monorepo lisptc 中的 CI 脚本，通过 OpenRouter 调用 Jev，标记出那些在讲解代码如何工作、而不是陈述规则和指引的 AGENTS.md 文件，按设定的概率阈值判为失败或给出警告。
-- **[pi-approve-for-me](https://github.com/baggiiiie/pi-stuff/tree/main/packages/approve-for-me)** · <sub>baggiiiie · GitHub · ⭐ 38 仓库 · 2026-04-01</sub><br>给 bash 工具加闸门的 Pi 编程 agent 扩展：快速的 TypeSafe 风险评分让低风险命令自动执行，风险升高或内容有变的命令则先交给能理解上下文的 Jev 审查器，再交给人工确认。
-- **[Xal 的 TypeSafe 插件](https://github.com/xal-sh/xal/blob/main/docs/providers.md)** · <sub>xal-sh · GitHub · ⭐ 37 仓库 · 2026-08-05</sub><br>Xal 终端编程 harness 内置的 TypeSafe 决策 provider；打开一个开关，就能启用 Jev 驱动的上下文压缩、Jev 预读取和一个通用的分类工具。
-- **[KnoxCoder 的 Jev 层](https://github.com/knoxchat/knoxcoder/tree/main/extensions/knox/core/jev)** · <sub>knoxchat · GitHub · ⭐ 36 仓库 · 2026-07-17</sub><br>基于 VS Code 的编辑器 KnoxCoder 内置编程 agent 中的 Jev 模块：评判 agent 的每一轮，为工具调用和上下文段落把关，检测语义层面的死循环，为压缩重新给消息打分，并给 agent 轨迹打分。
-- **[Conflux 的判断命令](https://github.com/tumf/conflux/blob/main/src/judge_command.rs)** · <sub>tumf · GitHub · ⭐ 27 仓库 · 2026-01-10</sub><br>Conflux 中的判断命令边界。Conflux 是一个规格驱动的编排器，在并行的 worktree 中运行 AI 编程 agent，这个边界以非权威观察者的身份，询问兼容 jev-cli 的命令各改动之间是否相互依赖。
-- **[Koru 不变量闸门](https://github.com/korulang/koru/tree/main/invariants)** · <sub>korulang · GitHub · ⭐ 27 仓库 · 2025-12-28</sub><br>Koru 事件续延语言的 pre-commit 闸门：在声明了确定性检查的地方运行这些检查，需要判断的不变量则由 Jev 对照暂存的 diff 评判，除非设置 GATE_BLOCK=1，否则仅作建议。
-- **[&jev 测试文件分类器](https://github.com/and-rs/dotfiles/blob/main/dot_config/nushell/execs/executable_%26jev)** · <sub>and-rs · GitHub · ⭐ 26 仓库 · 2023-11-13</sub><br>个人 dotfiles 仓库里的一个 Nushell 脚本，把每个源文件发给 Jev，返回它包含测试、fixture 或快照的概率。
-- **[ThumbGate 的类型化问题](https://github.com/IgorGanapolsky/ThumbGate/blob/main/docs/agents/typesafe-typed-questions.md)** · <sub>IgorGanapolsky · GitHub · ⭐ 26 仓库 · 2026-03-03</sub><br>AI 编程 agent 的行动前防火墙，把 Jev 的问题格式映射到它的 PreToolUse 风险检查上（原子化的风险 Noul、一个风险类别 Choice、严重程度），并提供 --live 模式，让整套检查对着 Jev API 以影子方式运行。
-- **[AIOSON jev:review](https://github.com/jaimevalasek/aioson/blob/main/.aioson/docs/jev-review.md)** · <sub>jaimevalasek · GitHub · ⭐ 25 仓库 · 2026-03-01</sub><br>AIOSON 软件项目 AI 运行框架中的 Jev 命令：jev:review 为 UI 交付的 QA 和原型评审加入类型化的语义判断，与 jev:judge 和 jev:agent-review 并列。
-- **[Specflow 的 TypeSafe 建议功能](https://github.com/Hulupeep/Specflow/blob/main/docs/specs/typesafe-advisory/prd.md)** · <sub>Hulupeep · GitHub · ⭐ 25 仓库 · 2025-12-02</sub><br>面向编程 agent 的规格转契约工具包 Specflow 中的建议功能，在 duo-build 审查时询问 Jev：测试是否真正覆盖了验收标准，证据是否支撑“已完成”的说法。
-- **[XM8M 验收顾问](https://github.com/bubio/xm8m/blob/main/scripts/ra_acceptance.py)** · <sub>bubio · GitHub · ⭐ 25 仓库 · 2023-02-20</sub><br>PC-8801 模拟器 XM8M 的验收台账，由 Jev 把操作者的测试报告分为一致、有问题、未运行或证据不足；这些建议从不决定是否验收。
-- **[Esposter 的 Jev 仓库自动化](https://github.com/Esposter/Esposter/tree/main/scripts/src/services/jev)** · <sub>Esposter · GitHub · ⭐ 23 仓库 · 2022-06-28</sub><br>Esposter Nuxt monorepo 里的仓库脚本，用 Jev 给 issue 分诊打标签，并读取 CodeRabbit 问题的严重程度和发布闸门，置信度下限为 0.6，在 checkout 之外写入时要求 0.85。
-- **[dure jev](https://github.com/hebbianai/dure/blob/main/cli/lib/jev-command.mjs)** · <sub>hebbianai · GitHub · ⭐ 22 仓库 · 2026-07-30</sub><br>Dure 中的 CLI 命令。Dure 是一个跨项目协调 Claude Code、Codex 和 Pi agent 的开源工作区，这个命令可以在任意机器上，把包含类型化 Noul、Choice 和 Score 问题的 JSON 请求交给 TypeSafe Jev 评估。
-- **[jev-auto](https://github.com/letta-ai/mods/tree/main/packages/jev-auto)** · <sub>letta-ai · GitHub · ⭐ 22 仓库 · 2026-06-23</sub><br>Letta Code 的 mod，通过 OpenRouter 使用 Jev，自动批准影响小的工具调用，遇到有风险或不明确的调用则询问人；默认关闭，仅作用于当前对话。
-- **[Marionette 的 Jev 轮次判断](https://github.com/professorpalmer/marionette/tree/main/harness/jev)** · <sub>professorpalmer · GitHub · ⭐ 22 仓库 · 2026-07-03</sub><br>为基于 Puppetmaster 内核的桌面 AI 编程 harness Marionette 提供可选开启的 Jev 轮次判断：用一次 OpenRouter Decisions 调用选出要加载哪个 skill 正文，取代基于 token 重叠的检索。
+- **[shell.online 的 Jev 评估](https://github.com/TeoSlayer/shell.online/tree/main/app/server/lib/jev)** · <sub>TeoSlayer · GitHub · ⭐ 99 仓库 · 2026-08-22</sub><br>把任意终端进程分享为加密浏览器链接的服务，新增可选启用的 Jev 建议性评估，只针对所有者从会话中明确公开的片段。
+- **[deletion-test skill](https://github.com/obie/skills/tree/main/skills/deletion-test)** · <sub>obie · GitHub · ⭐ 95 仓库 · 2026-02-06</sub><br>Claude Code skill，检验一个模块能否根据其规格重新生成，在行为 diff 打分之后可选用 Jev 对存活的变异体做分诊。
+- **[Snow App 的决策模型](https://github.com/MayDay-wpf/snow-app/blob/main/native/src/api/jev.rs)** · <sub>MayDay-wpf · GitHub · ⭐ 76 仓库 · 2026-06-10</sub><br>集 AI 聊天、终端和 SSH 于一体的开发者桌面应用，在 agent 审查循环中用 Jev 过滤搜索结果，并决定敏感命令能否不经确认直接执行。
+- **[SztuCode 的 LLM + Jev agent 模式](https://github.com/rojim666/SztuCode/blob/main/packages/runtime-ts/src/jev.ts)** · <sub>rojim666 · GitHub · ⭐ 71 仓库 · 2026-07-24</sub><br>面向高校的本地优先编程与办公 agent，其实验模式让 LLM 负责推理，在关键的选择点上请 Jev 从备选的下一步动作中选一个。
+- **[autoloop 的 Jev 路由](https://github.com/mikeyobrien/autoloop/blob/main/packages/harness/src/jev-routing.ts)** · <sub>mikeyobrien · GitHub · ⭐ 70 仓库 · 2026-03-28</sub><br>从 ralph-orchestrator 分出来的循环 harness，用于长时间运行的 agent 工作，可选开启 Jev 工作流选择，在置信度高于下限时把请求路由到某个预设或 no_match。
+- **[PLang 的 Typesafe 决策器](https://github.com/PLangHQ/plang/blob/main/PLang/Services/Typesafe/TypesafeDecider.cs)** · <sub>PLangHQ · GitHub · ⭐ 65 仓库 · 2023-12-03</sub><br>一门自然语言编程语言，其构建器可以让 Jev 为每一步决定用哪个模块、方法和参数，每次请求批量提多个问题。
+- **[SuperQode SystemOne Tune](https://x.com/Shashikant86/status/2101668569201160634)** · <sub>Shashikant86 · 文章 · ♥ 1 · 2026-09-20</sub><br>为类 Jev 模型打造的 SuperQode SystemOne harness 新增了基于 GEPA 的调优，能利用无标注的历史记录改进 Jev 在工具闸门和工单路由上的类型化答案，同时不会悄悄改写受信任的决策包。
+- **[Mjolnir 的 Jev 轮次裁决](https://github.com/BrokkAi/mjolnir/tree/master/services/jev-proxy)** · <sub>BrokkAi · GitHub · ⭐ 63 仓库 · 2026-05-18</sub><br>面向 Codex、Claude Code 和其他 ACP 编程 agent 的元 harness，用 Jev 判断某一轮是需要用户输入还是属于后台工作，并给帮助搜索的条目排序。
+- **[Parcha recall 的 Jev 判断](https://github.com/Parcha-ai/parcha-skills/tree/main/recall)** · <sub>Parcha-ai · GitHub · ⭐ 60 仓库 · 2026-07-13</sub><br>用于回忆过往编程 agent 会话的 agent skill，正在把基于正则的日期解析、重复检测和内容分诊迁移到 Jev 判断上，第一步是一个尚未启用的边界层和一个回放 harness。
+- **[EntropyLab 的 Jev 对抗测试](https://github.com/OogaBoogaX/entropylab/blob/rock/test/adversarial/jev.mjs)** · <sub>OogaBoogaX · GitHub · ⭐ 58 仓库 · 2026-08-25</sub><br>一个离线比特币钱包计算器的定时 CI 任务，用恶意输入探索构建出的页面，并让 Jev 评判结果；没有 key 时降级为不变量检查。
+- **[AIOS 判断闸门](https://github.com/rexleimo/aios/tree/main/scripts/lib/judgment)** · <sub>rexleimo · GitHub · ⭐ 54 仓库 · 2026-03-01</sub><br>面向长周期编程 agent 的本地优先控制平面，带一个可选的 System One 判断闸门，以 CLI 和 MCP 工具形式提供，除非显式启用否则保持关闭，出错时默认拒绝。
+- **[SuperQode 的 Jev 决策 harness](https://github.com/SuperagenticAI/superqode/blob/main/docs/advanced/jev-tool-routing.md)** · <sub>SuperagenticAI · GitHub · ⭐ 53 仓库 · 2026-01-19</sub><br>基于 ACP、A2A 和 MCP 的编程 agent harness 层，加入一个用于工具路由和工具权限检查的 Jev 决策 harness，附带基准测试和可部署的 Jev 后端。
+- **[PZ_Optimization Jev harness](https://github.com/xD3I/PZ_Optimization/blob/master/harness/typesafe_client.py)** · <sub>xD3I · GitHub · ⭐ 52 仓库 · 2026-09-15</sub><br>Project Zomboid 的性能补丁项目，其基准测试 harness 用 Jev 判断运行性能提升和画面一致性，并通过 OCR 加 Jev 操作游戏的 Workshop 界面，每步约 1.5 秒。
 - **[ask-jev](https://github.com/omni-/ask-jev)** · <sub>omni- · GitHub · ⭐ 1 · 2026-09-16</sub><br>Codex 的 PowerShell hook，通过 :jev 命令对本地编程会话的执行记录做一次显式的建议性 Jev 审计，判断其中的说法是否有证据支撑。
 - **[ask-jev](https://github.com/logicrw/ask-jev)** · <sub>logicrw · GitHub · ⭐ 1 · 2026-09-20</sub><br>只用标准库的 Python CLI，为编程 agent 和流水线提供失败时放行（fail-open）的建议性决策，以及逐字的段落选取，推理和行动的决定权仍留在调用方 agent 手里。
 - **[Bouncer](https://github.com/clownware/bouncer)** · <sub>clownware · GitHub · ⭐ 1 · 2026-09-18</sub><br>Claude Code 的 PreToolUse hook，让 Jev 针对每次工具调用回答 YAML 策略里用大白话写的问题，约 100 毫秒 内决定放行或拒绝，每天成本约四美分，另有确定性的“绝不允许”规则。
@@ -840,12 +820,32 @@
 - **[pi-jev-compaction](https://github.com/Wang-auspicious/pi-jev-compaction)** · <sub>Wang-auspicious · GitHub · ⭐ 1 · 2026-09-18</sub><br>Pi 编程 agent 的抽取式上下文压缩：Jev 评判完整的只读工具调用对，由代码丢弃不必要的部分，保留原文而不是生成摘要。
 - **[PR Judge](https://github.com/juanegido/jev-pr-judge)** · <sub>juanegido · GitHub · ⭐ 1 · 2026-09-17</sub><br>Next.js 演示兼 GitHub Action，用一次并行的 Jev 调用判断 pull request 是否做到了它声称的事，再套用由代码维护的策略配置中的权重和硬性规则，并发布一条会原地更新的固定评论。
 - **[pr-sieve](https://github.com/Thestral12/pr-sieve)** · <sub>Thestral12 · GitHub · ⭐ 1 · 2026-09-18</sub><br>GitHub Action，把 .jev.yml 当作 pull request 的语义 linter，把每条规则编译成一个 Jev 问题，再根据数值让检查失败、发评论或通过。
-- **[Shepherd 的 Jev 评判器](https://github.com/erwins-enkel/shepherd/blob/main/src/judge-typesafe.ts)** · <sub>erwins-enkel · GitHub · ⭐ 20 仓库 · 2026-05-30</sub><br>交互式 Claude Code 的自托管任务控制台 Shepherd 中与厂商无关的 Judge 接缝，由 TypeSafe SDK 支撑，每次 agent 停下时跑一次快速的 Jev choice 或 noul，不再为此派生一次 120 秒的 claude 调用。
 - **[Skill Dash](https://github.com/48Nauts-Operator/skill-dash)** · <sub>48Nauts-Operator · GitHub · ⭐ 1 · 2026-09-20</sub><br>本地仪表盘，让 Jev 从有用性、冗余度、清晰度和安全性四方面评判每个 Claude Code 或 Codex skill，给出保留、重写、合并或删除的结论；它也是一次 18,041 个 skill 普查背后的流水线。
 - **[Switchloom](https://github.com/instructa/switchloom)** · <sub>instructa · GitHub · ⭐ 1 · 2026-07-17</sub><br>面向持久 Codex 任务的工作流提示词，把不同能力分配给不同模型，可选 Jev 路由；作者自己的基准测试结论是不建议采用。
 - **[typeful-triage](https://github.com/cephalization/jev-triage)** · <sub>cephalization · GitHub · ⭐ 1 · 2026-09-17</sub><br>面向公开 GitHub 仓库的多人协作分诊仪表盘，Jev 对每个 issue 回答带类型的问题，比如类型、严重度、紧急程度、是否重复和下一步，每一次人工修正都会在之后的运行中反馈回去。
 - **[TypeSafe Code Guard](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi)** · <sub>greenyamao · GitHub · ⭐ 1 · 2026-09-16</sub><br>面向 Antigravity、Cursor 和 Claude Code 的 MCP 服务器，用基于 15 行片段的语义代码发现取代 grep 大扫荡，并加了一道提交前的 diff 合理性检查。
 - **[typesafe-agent-gates](https://github.com/ThiagaoBR/typesafe_agent_gates)** · <sub>ThiagaoBR · GitHub · ⭐ 1 · 2026-09-19</sub><br>面向无人值守编程 agent 的 LangChain 和 Deep Agents 中间件，用 Jev 做 shell 命令闸门、按严重度和紧急程度分诊 issue、识别合并请求，以及审查被削弱的测试。
+- **[delegate](https://github.com/lahfir/claude-plugins/tree/main/delegate)** · <sub>lahfir · GitHub · ⭐ 49 仓库 · 2026-09-17</sub><br>Claude Code 插件，决定由谁来执行任务：当前会话、子 agent 还是外部 CLI harness。它检测已安装的 harness，维护一份由用户控制的允许列表，询问 Jev 哪一项合适，然后打印出对应命令。
+- **[Forgewright 的 Jev skill 路由器](https://github.com/buiphucminhtam/forgewright/blob/main/scripts/runtime/jev_adapter.py)** · <sub>buiphucminhtam · GitHub · ⭐ 49 仓库 · 2026-03-06</sub><br>Forgewright AI 工程 harness 中可选、默认关闭的 Jev 适配器，在任务路由不明确时从严格限定的候选名单中挑选一个 skill，带预算上限、固定的模型版本，并可回退到本地路由器。
+- **[cc-settings 的 Jev hook](https://github.com/darkroomengineering/cc-settings/blob/main/docs/hooks-reference.md)** · <sub>darkroomengineering · GitHub · ⭐ 45 仓库 · 2026-01-12</sub><br>团队共用的 Claude Code 和 Codex 配置，其中的 hook 使用 Jev：针对多文件提示词的委派检测、无人值守轮次的偏航熔断，以及逐字保留式压缩。在 1,102 条真实提示词上，阈值 0.7 的 Jev 正确触发 53 次，正则只有 10 次。
+- **[Kit 的评测工具](https://github.com/speakeasy-api/kit/blob/main/docs/user/evaluations.md)** · <sub>speakeasy-api · GitHub · ⭐ 41 仓库 · 2026-08-24</sub><br>Kit 中的实验性评测工具。Kit 是只有一个 compose 工具的 Rust 编程 agent 运行时，agent 程序可以借助这个工具把一段 state 连同多个具名的 Noul、Choice 或 Score 问题发给 TypeSafe，并拿回具名的答案。
+- **[lisptc 的 AGENTS.md 检查器](https://github.com/1hachem/lisptc/blob/main/scripts/check-agents.ts)** · <sub>1hachem · GitHub · ⭐ 38 仓库 · 2026-07-23</sub><br>面向 agent 的 Lisp monorepo lisptc 中的 CI 脚本，通过 OpenRouter 调用 Jev，标记出那些在讲解代码如何工作、而不是陈述规则和指引的 AGENTS.md 文件，按设定的概率阈值判为失败或给出警告。
+- **[pi-approve-for-me](https://github.com/baggiiiie/pi-stuff/tree/main/packages/approve-for-me)** · <sub>baggiiiie · GitHub · ⭐ 38 仓库 · 2026-04-01</sub><br>给 bash 工具加闸门的 Pi 编程 agent 扩展：快速的 TypeSafe 风险评分让低风险命令自动执行，风险升高或内容有变的命令则先交给能理解上下文的 Jev 审查器，再交给人工确认。
+- **[Xal 的 TypeSafe 插件](https://github.com/xal-sh/xal/blob/main/docs/providers.md)** · <sub>xal-sh · GitHub · ⭐ 37 仓库 · 2026-08-05</sub><br>Xal 终端编程 harness 内置的 TypeSafe 决策 provider；打开一个开关，就能启用 Jev 驱动的上下文压缩、Jev 预读取和一个通用的分类工具。
+- **[KnoxCoder 的 Jev 层](https://github.com/knoxchat/knoxcoder/tree/main/extensions/knox/core/jev)** · <sub>knoxchat · GitHub · ⭐ 36 仓库 · 2026-07-17</sub><br>基于 VS Code 的编辑器 KnoxCoder 内置编程 agent 中的 Jev 模块：评判 agent 的每一轮，为工具调用和上下文段落把关，检测语义层面的死循环，为压缩重新给消息打分，并给 agent 轨迹打分。
+- **[Conflux 的判断命令](https://github.com/tumf/conflux/blob/main/src/judge_command.rs)** · <sub>tumf · GitHub · ⭐ 27 仓库 · 2026-01-10</sub><br>Conflux 中的判断命令边界。Conflux 是一个规格驱动的编排器，在并行的 worktree 中运行 AI 编程 agent，这个边界以非权威观察者的身份，询问兼容 jev-cli 的命令各改动之间是否相互依赖。
+- **[Koru 不变量闸门](https://github.com/korulang/koru/tree/main/invariants)** · <sub>korulang · GitHub · ⭐ 27 仓库 · 2025-12-28</sub><br>Koru 事件续延语言的 pre-commit 闸门：在声明了确定性检查的地方运行这些检查，需要判断的不变量则由 Jev 对照暂存的 diff 评判，除非设置 GATE_BLOCK=1，否则仅作建议。
+- **[&jev 测试文件分类器](https://github.com/and-rs/dotfiles/blob/main/dot_config/nushell/execs/executable_%26jev)** · <sub>and-rs · GitHub · ⭐ 26 仓库 · 2023-11-13</sub><br>个人 dotfiles 仓库里的一个 Nushell 脚本，把每个源文件发给 Jev，返回它包含测试、fixture 或快照的概率。
+- **[ThumbGate 的类型化问题](https://github.com/IgorGanapolsky/ThumbGate/blob/main/docs/agents/typesafe-typed-questions.md)** · <sub>IgorGanapolsky · GitHub · ⭐ 26 仓库 · 2026-03-03</sub><br>AI 编程 agent 的行动前防火墙，把 Jev 的问题格式映射到它的 PreToolUse 风险检查上（原子化的风险 Noul、一个风险类别 Choice、严重程度），并提供 --live 模式，让整套检查对着 Jev API 以影子方式运行。
+- **[AIOSON jev:review](https://github.com/jaimevalasek/aioson/blob/main/.aioson/docs/jev-review.md)** · <sub>jaimevalasek · GitHub · ⭐ 25 仓库 · 2026-03-01</sub><br>AIOSON 软件项目 AI 运行框架中的 Jev 命令：jev:review 为 UI 交付的 QA 和原型评审加入类型化的语义判断，与 jev:judge 和 jev:agent-review 并列。
+- **[Specflow 的 TypeSafe 建议功能](https://github.com/Hulupeep/Specflow/blob/main/docs/specs/typesafe-advisory/prd.md)** · <sub>Hulupeep · GitHub · ⭐ 25 仓库 · 2025-12-02</sub><br>面向编程 agent 的规格转契约工具包 Specflow 中的建议功能，在 duo-build 审查时询问 Jev：测试是否真正覆盖了验收标准，证据是否支撑“已完成”的说法。
+- **[XM8M 验收顾问](https://github.com/bubio/xm8m/blob/main/scripts/ra_acceptance.py)** · <sub>bubio · GitHub · ⭐ 25 仓库 · 2023-02-20</sub><br>PC-8801 模拟器 XM8M 的验收台账，由 Jev 把操作者的测试报告分为一致、有问题、未运行或证据不足；这些建议从不决定是否验收。
+- **[Jauvex](https://x.com/diegoaraos/status/2101782639854186747)** · <sub>diegoaraos · X · ▶ 97 · 2026-09-20</sub><br>双向语音聊天 app，可以在 Claude 和 Codex 编程 agent 工作时与其对话并加以引导，由 Jev 对指令和意图进行分类。
+- **[Esposter 的 Jev 仓库自动化](https://github.com/Esposter/Esposter/tree/main/scripts/src/services/jev)** · <sub>Esposter · GitHub · ⭐ 23 仓库 · 2022-06-28</sub><br>Esposter Nuxt monorepo 里的仓库脚本，用 Jev 给 issue 分诊打标签，并读取 CodeRabbit 问题的严重程度和发布闸门，置信度下限为 0.6，在 checkout 之外写入时要求 0.85。
+- **[dure jev](https://github.com/hebbianai/dure/blob/main/cli/lib/jev-command.mjs)** · <sub>hebbianai · GitHub · ⭐ 22 仓库 · 2026-07-30</sub><br>Dure 中的 CLI 命令。Dure 是一个跨项目协调 Claude Code、Codex 和 Pi agent 的开源工作区，这个命令可以在任意机器上，把包含类型化 Noul、Choice 和 Score 问题的 JSON 请求交给 TypeSafe Jev 评估。
+- **[jev-auto](https://github.com/letta-ai/mods/tree/main/packages/jev-auto)** · <sub>letta-ai · GitHub · ⭐ 22 仓库 · 2026-06-23</sub><br>Letta Code 的 mod，通过 OpenRouter 使用 Jev，自动批准影响小的工具调用，遇到有风险或不明确的调用则询问人；默认关闭，仅作用于当前对话。
+- **[Marionette 的 Jev 轮次判断](https://github.com/professorpalmer/marionette/tree/main/harness/jev)** · <sub>professorpalmer · GitHub · ⭐ 22 仓库 · 2026-07-03</sub><br>为基于 Puppetmaster 内核的桌面 AI 编程 harness Marionette 提供可选开启的 Jev 轮次判断：用一次 OpenRouter Decisions 调用选出要加载哪个 skill 正文，取代基于 token 重叠的检索。
+- **[Shepherd 的 Jev 评判器](https://github.com/erwins-enkel/shepherd/blob/main/src/judge-typesafe.ts)** · <sub>erwins-enkel · GitHub · ⭐ 20 仓库 · 2026-05-30</sub><br>交互式 Claude Code 的自托管任务控制台 Shepherd 中与厂商无关的 Judge 接缝，由 TypeSafe SDK 支撑，每次 agent 停下时跑一次快速的 Jev choice 或 noul，不再为此派生一次 120 秒的 claude 调用。
 - **[Vekil 的 Jev 策略路由](https://github.com/sozercan/vekil/blob/main/examples/policy-routing-typesafe.yaml)** · <sub>sozercan · GitHub · ⭐ 20 仓库 · 2026-02-12</sub><br>一份示例策略，用于 Go 编写的 AI 网关 Vekil（为 Claude Code 和 Codex CLI 代理 GitHub Copilot 及其他 provider）：由 Jev 把每个请求分到轻量或强力的模型路由。
 - **[dsh-jev-decide](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-jev-decide)** · <sub>wingsky-1 · GitHub · ⭐ 19 仓库 · 2026-08-16</sub><br>DeepSeek Harness Web GUI 的插件，为 agent 提供一个 ws_jev_decide 工具，内置计划评审、风险检查、密钥泄露筛查等预设问题集，另有 key 管理、连接测试和决策历史。
 - **[quoin-jev](https://github.com/agent-ix/quoin/tree/main/rust/crates/quoin-jev)** · <sub>agent-ix · GitHub · ⭐ 19 仓库 · 2026-06-14</sub><br>面向 Claude Code 的规格驱动开发套件 Quoin 中的 Rust crate，用一次批量 Jev 请求从验收标准强度的角度审视每条功能需求，并把答案转成类型化的规格审查意见。
@@ -866,7 +866,6 @@
 - **[Varin 的 Jev 快速决策](https://github.com/Youzini-afk/Varin/blob/main/packages/pi-host/src/harness/typesafe-systemone.ts)** · <sub>Youzini-afk · GitHub · ⭐ 14 仓库 · 2026-08-01</sub><br>编程与研究 agent 工作区，其 Fast Decision 能力在主模型运行前调用 Jev 判断材料相关性、挑选下一份要读的内容，并给上下文打分。
 - **[grill-me-with-jev](https://github.com/jon-devlapaz/tink-skills/tree/main/skills/grill-me-with-jev)** · <sub>jon-devlapaz · GitHub · ⭐ 13 仓库 · 2026-08-01</sub><br>agent skill，通过决策树式的面谈对工程计划做压力测试，用 Jev 建议每个疑虑是现在就问、先去调查，还是直接跳过。
 - **[jev-assert](https://github.com/mthines/agent-skills/tree/main/skills/quality/jev-assert)** · <sub>mthines · GitHub · ⭐ 13 仓库 · 2026-04-23</sub><br>agent skill，把一条自然语言描述的 UI 预期转成结论：询问 Jev 在页面捕获的文本状态中该结果是否成立，用于自动化 UI 验证。
-- **[Meaning Diff](https://x.com/johnsandovaI/status/2102222760131101044)** · <sub>johnsandovaI · X · ▶ 31 · 2026-09-22</sub><br>开源补丁审查工具，看的是 diff 的含义而不是逐行改动；在一个有问题的结账流程上，它借助 Jev 在 343 毫秒内发现 agent 隐藏了支付失败、削弱了一条断言，还伪造了收据发送。
 - **[Dev Command Center 的决策 provider](https://github.com/wharley/DevCommandCenter/blob/main/crates/dcc-infra/src/decision_provider.rs)** · <sub>wharley · GitHub · ⭐ 12 仓库 · 2026-01-29</sub><br>本地优先的编程 agent 桌面工作台，可选开启的决策 provider 会让 Jev 判断检索出的 ai-memory 候选中哪些是相关的。
 - **[gray 的 Jev 精简扫描](https://github.com/vstaln/gray/blob/main/typesafe_scan.mjs)** · <sub>vstaln · GitHub · ⭐ 12 仓库 · 2026-08-24</sub><br>用 Jev 扫描 gray agent harness 代码库的脚本，先给各源码片段的可精简程度打分，再深入排名靠前的片段，判断臃肿类型并核查哪些内容不能删。
 - **[IDA Pro MCP 的 Jev 智能分析](https://github.com/GrecAndrei/ida-pro-mcp/blob/master/src/ida_pro_mcp/host/intelligence/providers/jev.py)** · <sub>GrecAndrei · GitHub · ⭐ 12 仓库 · 2025-12-15</sub><br>用于 IDA Pro 逆向工程的 MCP 服务器，可选开启的 Jev provider 会为语义函数搜索的候选池打分，并重新排列下一批分析目标。
@@ -889,6 +888,7 @@
 - **[mikan Jev harness](https://github.com/geminixiang/mikan/blob/main/src/harness/jev.ts)** · <sub>geminixiang · GitHub · ⭐ 8 仓库 · 2026-03-11</sub><br>自托管的 Slack 编程 agent，凡是需要快速分类、路由或护栏决策的调用点都直接调用 Jev，而不是把它当成聊天模型提供方。
 - **[sofar 的类型化评判校准](https://github.com/usesofar/sofar/blob/main/scripts/judge-calibration.mjs)** · <sub>usesofar · GitHub · ⭐ 8 仓库 · 2026-07-03</sub><br>面向编程 agent、基于事件溯源的记忆工具中的一个脚本，对照项目记录校准 Jev：判断各项决策是否属于长期约束、是否与任务相关，然后报告一致率和校准情况。
 - **[SpecPi jev-advisor](https://github.com/TannerMidd/SpecPi/tree/main/extensions/jev-advisor)** · <sub>TannerMidd · GitHub · ⭐ 8 仓库 · 2026-09-19</sub><br>Pi 编程 agent harness SpecPi 中可选启用的 Jev 顾问扩展，评判能力、进度、保留、来源和不可信内容，每项功能都有开关，可选择采纳建议或只做记录。
+- **[Meaning Diff](https://x.com/johnsandovaI/status/2102222760131101044)** · <sub>johnsandovaI · X · ▶ 31 · 2026-09-22</sub><br>开源补丁审查工具，看的是 diff 的含义而不是逐行改动；在一个有问题的结账流程上，它借助 Jev 在 343 毫秒内发现 agent 隐藏了支付失败、削弱了一条断言，还伪造了收据发送。
 - **[面向 Pi、Tau 和记忆的 Jev](https://github.com/grahama1970/agent-skills/tree/main/skills/jev)** · <sub>grahama1970 · GitHub · ⭐ 7 仓库 · 2026-01-11</sub><br>agent skill，把 Jev 接在一个 Pi 扩展和一个 Tau 用的 Python 库后面，在主模型运行前挑选相关代码、记忆证据和 skill，另在错误分诊和 AI 检测类 skill 中加入影子 Jev 分类器。
 - **[omp-fabric 的类型化判断](https://github.com/tickernelz/omp-fabric/blob/main/docs/judgment.md)** · <sub>tickernelz · GitHub · ⭐ 7 仓库 · 2026-09-06</sub><br>Oh My Pi 的可编程工具与 agent 运行时 Fabric 中的类型化判断通道：<code>judgment.ask</code> 把 choice、bool 和 score 问题发给 TypeSafe System One，由四个闸门读取答案。
 - **[OpenGantry 的 Jev 预检](https://github.com/jeger-ai/opengantry/blob/main/src/cli/lib/contract/preflight-jev.ts)** · <sub>jeger-ai · GitHub · ⭐ 7 仓库 · 2026-05-11</sub><br>agent 治理 CLI OpenGantry 中的实验性预检：询问 Jev 编程 agent 的意图归哪个 manifest skill 管、哪些允许的目录与之相关，置信度低时回退到启发式规则。
@@ -918,9 +918,9 @@
 - **[XYZ Forge jev_triage](https://github.com/HiQS-Labs/XYZ-forge/blob/development/utils/py/jev_triage.py)** · <sub>HiQS-Labs · GitHub · ⭐ 5 仓库 · 2026-08-15</sub><br>把编程 agent 当劳动力来运营的系统 XYZ Forge 中的分诊分类器，根据退出码和 stderr 末尾内容，向 Jev 询问 agent 测试运行的状态、严重度和故障类别。
 - **[kamchatka 的 Jev 支持](https://github.com/ljedrz/nachalnik/tree/master/kamchatka)** · <sub>ljedrz · GitHub · ⭐ 4 仓库 · 2026-09-18</sub><br>nachalnik Rust 运行时的终端 agent kamchatka 中的 Jev 集成：包括一个感知内容的上下文压缩示例，以及一个 --advise 模式，为每条拟执行的 shell 命令给出按颜色区分的安全评级。
 - **[oc-auto-perms](https://github.com/OpeOginni/oc-plugins/tree/main/packages/oc-auto-perms)** · <sub>OpeOginni · GitHub · ⭐ 3 仓库 · 2026-09-17</sub><br>OpenCode 插件，用 Jev 按自然语言写的权限规则检查每个拟执行的工具操作，然后放行、拒绝或询问用户。
-- **[用 Jev 为 deepagents 做上下文选择](https://x.com/HiroshiA_AI/status/2102214053489955208)** · <sub>HiroshiA_AI · X · ▶ 3 · 2026-09-22</sub><br>用基于 Jev 的上下文选择替换 LangChain deepagents 的 SummarizationMiddleware；在一个代码基准测试上，GLM-5.3 的成本降低 83.9%，Opus 4.8 降低 91.8%，12 个程序依然全部通过。
 - **[Jackalope 的 Jev 支持](https://github.com/Jackalope-Dev/jackalope/blob/master/apps/desktop/src-tauri/src/commands/tasks/routing/jev.rs)** · <sub>Jackalope-Dev · GitHub · ⭐ 1 仓库 · 2026-09-16</sub><br>编程 agent 桌面工作区 Jackalope 中的 Jev 任务路由：每个候选 agent 和模型针对任务各得到一个推理契合度 Score 和一个工具支持 Noul，再由代码选出工人。
 - **[Paseo 的 Jev 评估插件](https://github.com/HiepPP/hiep-paseo-plugin/tree/main/plugins/jev-evaluator)** · <sub>HiepPP · GitHub · ⭐ 1 仓库 · 2026-09-18</sub><br>Paseo 插件，经 Vercel AI Gateway 把 Jev 包装成 MCP 工具 jev_evaluate，提供给 Paseo 启动的 Codex 和 Claude agent，包括用它的 create_agent 创建的子 agent。
+- **[用 Jev 为 deepagents 做上下文选择](https://x.com/HiroshiA_AI/status/2102214053489955208)** · <sub>HiroshiA_AI · X · ▶ 3 · 2026-09-22</sub><br>用基于 Jev 的上下文选择替换 LangChain deepagents 的 SummarizationMiddleware；在一个代码基准测试上，GLM-5.3 的成本降低 83.9%，Opus 4.8 降低 91.8%，12 个程序依然全部通过。
 - **[Agent Handoff Gate](https://github.com/zsoXi/agent-handoff-gate)** · <sub>zsoXi · GitHub · 2026-09-17</sub><br>面向委派式编程工作的实验性协议，在工作 agent 的 PASS 或 BLOCKED 报告送达主 agent 之前先核查其背后的证据，附带 schema、Jev 集成契约和一个基准测试。
 - **[agent-gate-loop](https://github.com/Ripwords/agent-gate-loop)** · <sub>Ripwords · GitHub · 2026-09-17</sub><br>可复用的 GitHub Action，把 issue 变成 pull request：AI agent 写出改动，再由护栏、你的检查、只读的 Claude 评审和 Jev 层层把关，最多重试 max_rounds 轮。
 - **[Agent-Workflow 的 TypeSafe 路由](https://github.com/ngallodev-software/agent-workflow/blob/master/src/agent_workflow/semantic/typesafe.py)** · <sub>ngallodev-software · GitHub · 2026-09-19</sub><br>编程 agent 编排工具 Agent-Workflow 中可选的 TypeSafe provider，向 Jev 询问任务类别、是否缺少授权以及语义风险等建议性判断，最终决定权仍在确定性策略手里。

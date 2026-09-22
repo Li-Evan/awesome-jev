@@ -38,10 +38,6 @@
 <td valign="top"><b><a href="https://github.com/ainame/swift-typesafe">swift-typesafe</a></b><br><sub>ainame · GitHub · ⭐ 13 · 2026-09-18</sub><br>非官方的 Swift 6.4 SDK，跟随 Python SDK 0.7.0 的 API，带一个生成类型化答案的 @QuestionSet 宏，支持动态问题和 Linux。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client"><img src="https://opengraph.githubassets.com/1/cequence-io/openai-scala-client" alt="openai-scala-client 的 TypeSafe 模块" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client">openai-scala-client 的 TypeSafe 模块</a></b><br><sub>cequence-io · GitHub · ⭐ 248 仓库 · 2026-09-16</sub><br>异步 openai-scala-client 中的 TypeSafe 模块，把共享 state 和类型化问题发给 Jev，附有按置信度把关的路由、语义查找和 OpenAI 风格适配器的示例。<br><sub>相关: <a href="https://github.com/cequence-io/openai-scala-client">repo</a> · <a href="https://github.com/cequence-io/openai-scala-client/tree/master/openai-examples/src/main/scala/io/cequence/openaiscala/examples/typesafe">examples</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/atharvamhaske/typesafe-sdk-go"><img src="https://raw.githubusercontent.com/atharvamhaske/typesafe-sdk-go/main/images/test.png" alt="typesafe-sdk-go (atharvamhaske)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/atharvamhaske/typesafe-sdk-go">typesafe-sdk-go (atharvamhaske)</a></b><br><sub>atharvamhaske · GitHub · ⭐ 12 · 2026-09-18</sub><br>非官方 Go SDK，与官方 Python 和 JavaScript SDK 遵循同一传输协议，支持类型化的 Choice、Score、Noul 问题、类型化的答案联合类型和模型发现。<br><sub>相关: <a href="https://x.com/AtharvaXDevs/status/2102067600947834960">demo</a> · <a href="https://typesafe-sdk-go.mintlify.site/">docs</a></sub></td>
 </tr>
@@ -96,6 +92,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/nshkrdotcom/typesafe_sdk"><img src="https://raw.githubusercontent.com/nshkrdotcom/typesafe_sdk/main/assets/typesafe_sdk.svg" alt="typesafe_sdk (Elixir)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nshkrdotcom/typesafe_sdk">typesafe_sdk (Elixir)</a></b><br><sub>nshkrdotcom · GitHub · ⭐ 5 · 2026-09-17</sub><br>面向 Jev 类型化问题和概率答案的 Elixir SDK，最终版 0.4.1 已指向与服务商无关的后继项目 system_one_sdk，后者提供批处理、遥测和 OTP 集成。<br><sub>相关: <a href="https://github.com/nshkrdotcom/system_one_sdk">successor</a> · <a href="https://hex.pm/packages/typesafe_sdk">hex</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client"><img src="https://opengraph.githubassets.com/1/cequence-io/openai-scala-client" alt="openai-scala-client 的 TypeSafe 模块" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client">openai-scala-client 的 TypeSafe 模块</a></b><br><sub>cequence-io · GitHub · ⭐ 248 仓库 · 2026-09-16</sub><br>异步 openai-scala-client 中的 TypeSafe 模块，把共享 state 和类型化问题发给 Jev，附有按置信度把关的路由、语义查找和 OpenAI 风格适配器的示例。<br><sub>相关: <a href="https://github.com/cequence-io/openai-scala-client">repo</a> · <a href="https://github.com/cequence-io/openai-scala-client/tree/master/openai-examples/src/main/scala/io/cequence/openaiscala/examples/typesafe">examples</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Stumble/jev-go"><img src="https://opengraph.githubassets.com/1/Stumble/jev-go" alt="jev-go" width="240"></a></td>
@@ -170,10 +170,6 @@
 <td valign="top"><b><a href="https://github.com/jamesward/zio-typesafe-ai">zio-typesafe-ai</a></b><br><sub>jamesward · GitHub · ⭐ 3 · 2026-09-17</sub><br>基于 Scala 3 和 ZIO 的 Jev System One API 客户端，一次往返就能问多个类型化的 Noul、Choice 和 Score 问题，并以与问题结构一致的 NamedTuple 返回答案。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/mhrlife/goai-kit/tree/master/jev"><img src="https://opengraph.githubassets.com/1/mhrlife/goai-kit" alt="goai-kit jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mhrlife/goai-kit/tree/master/jev">goai-kit jev</a></b><br><sub>mhrlife · GitHub · ⭐ 45 仓库 · 2025-05-18</sub><br>goai-kit LLM 库中独立的 Jev Go 客户端，只用标准库：经 OpenRouter 或 TypeSafe 提出类型化的 Noul、Choice 和 Score 问题并获取答案，支持 context 取消和按可重试性分类的 HTTP 错误。<br><sub>相关: <a href="https://github.com/mhrlife/goai-kit">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mzainzulifqar/jev-php-sdk"><img src="https://opengraph.githubassets.com/1/mzainzulifqar/jev-php-sdk" alt="Jev SDK for PHP" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mzainzulifqar/jev-php-sdk">Jev SDK for PHP</a></b><br><sub>mzainzulifqar · GitHub · ⭐ 2 · 2026-09-18</sub><br>与框架无关的 PHP 8.1+ System One API 客户端，兼容任意 PSR-18 HTTP 客户端和 Laravel 8-13，提供 Noul、Score 和 Choice 问题构造器。<br><sub>相关: <a href="https://packagist.org/packages/mzainzulifqar/jev-php-sdk">packagist</a></sub></td>
 </tr>
@@ -208,14 +204,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Hawxy/TypeSafeAI.Net"><img src="https://opengraph.githubassets.com/1/Hawxy/TypeSafeAI.Net" alt="TypeSafeAI.Net" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Hawxy/TypeSafeAI.Net">TypeSafeAI.Net</a></b><br><sub>Hawxy · GitHub · ⭐ 2 · 2026-09-17</sub><br>社区版 System One API .NET SDK，支持类型化问题集、重试、HttpClientFactory 和 DI、AOT 安全，并提供 Microsoft.Extensions.AI 的护栏、路由、工具和评估器适配器。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail"><img src="https://repository-images.githubusercontent.com/1064514521/5c945465-b033-4839-9357-182fc39a2503" alt="AILANG decide_jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail">AILANG decide_jev</a></b><br><sub>sunholo-data · GitHub · ⭐ 34 仓库 · 2025-09-26</sub><br>可运行的探索性示例，在纯 AILANG（为 AI 编写代码设计的 effect 类型语言）中通过 OpenRouter 的 Decisions API 调用 Jev，把 Noul、Choice 和 Score 建模为保留完整分布的类型化问题和答案。<br><sub>相关: <a href="https://github.com/sunholo-data/ailang">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/maruel/genai/tree/main/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maruel/genai" alt="genai 的 typesafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/maruel/genai/tree/main/providers/typesafe">genai 的 typesafe 提供方</a></b><br><sub>maruel · GitHub · ⭐ 32 仓库 · 2025-03-06</sub><br>Go AI 包 maruel/genai 的 TypeSafe 提供方：Noul、Choice 和 Score 问题以 Go struct 字段声明，答案连同置信度和完整分布解码回同一个 struct。<br><sub>相关: <a href="https://github.com/maruel/genai">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/anilsenay/jev"><img src="https://opengraph.githubassets.com/1/anilsenay/jev" alt="jev (Go)" width="240"></a></td>
@@ -318,12 +306,24 @@
 <td valign="top"><b><a href="https://github.com/chez-shanpu/typesafeai-go">typesafeai-go</a></b><br><sub>chez-shanpu · GitHub · ⭐ 1 · 2026-09-17</sub><br>独立开发的 TypeSafe AI API Go 客户端，发送 Noul、Choice 和 Score 问题，并以对应的 Go 类型返回答案。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai"><img src="https://opengraph.githubassets.com/1/andrueandersoncs/lion" alt="@lionlang/typesafe-ai" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai">@lionlang/typesafe-ai</a></b><br><sub>andrueandersoncs · GitHub · ⭐ 16 仓库 · 2025-12-11</sub><br>绑定库，把 Jev 的每个问题原语以及 System One 和 models API 暴露为 Lion 中的函数；Lion 是一种基于 JSON 的 Lisp，其求值器运行在 Effect v4 上。<br><sub>相关: <a href="https://github.com/andrueandersoncs/lion">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/mhrlife/goai-kit/tree/master/jev"><img src="https://opengraph.githubassets.com/1/mhrlife/goai-kit" alt="goai-kit jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mhrlife/goai-kit/tree/master/jev">goai-kit jev</a></b><br><sub>mhrlife · GitHub · ⭐ 45 仓库 · 2025-05-18</sub><br>goai-kit LLM 库中独立的 Jev Go 客户端，只用标准库：经 OpenRouter 或 TypeSafe 提出类型化的 Noul、Choice 和 Score 问题并获取答案，支持 context 取消和按可重试性分类的 HTTP 错误。<br><sub>相关: <a href="https://github.com/mhrlife/goai-kit">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail"><img src="https://repository-images.githubusercontent.com/1064514521/5c945465-b033-4839-9357-182fc39a2503" alt="AILANG decide_jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail">AILANG decide_jev</a></b><br><sub>sunholo-data · GitHub · ⭐ 34 仓库 · 2025-09-26</sub><br>可运行的探索性示例，在纯 AILANG（为 AI 编写代码设计的 effect 类型语言）中通过 OpenRouter 的 Decisions API 调用 Jev，把 Noul、Choice 和 Score 建模为保留完整分布的类型化问题和答案。<br><sub>相关: <a href="https://github.com/sunholo-data/ailang">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://gitlab.com/porky11/jev">Rust 客户端</a></b><br><sub>porky11 · GitHub · ⬇ 68 · 2026-09-17</sub><br>发布为 <code>jev</code> 的社区版 Rust crate。<br><sub>相关: <a href="https://crates.io/crates/jev">crates</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/maruel/genai/tree/main/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maruel/genai" alt="genai 的 typesafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/maruel/genai/tree/main/providers/typesafe">genai 的 typesafe 提供方</a></b><br><sub>maruel · GitHub · ⭐ 32 仓库 · 2025-03-06</sub><br>Go AI 包 maruel/genai 的 TypeSafe 提供方：Noul、Choice 和 Score 问题以 Go struct 字段声明，答案连同置信度和完整分布解码回同一个 struct。<br><sub>相关: <a href="https://github.com/maruel/genai">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai"><img src="https://opengraph.githubassets.com/1/andrueandersoncs/lion" alt="@lionlang/typesafe-ai" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai">@lionlang/typesafe-ai</a></b><br><sub>andrueandersoncs · GitHub · ⭐ 16 仓库 · 2025-12-11</sub><br>绑定库，把 Jev 的每个问题原语以及 System One 和 models API 暴露为 Lion 中的函数；Lion 是一种基于 JSON 的 Lisp，其求值器运行在 Effect v4 上。<br><sub>相关: <a href="https://github.com/andrueandersoncs/lion">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sethbang/venice-py/blob/main/src/venice_ai/resources/decisions.py"><img src="https://raw.githubusercontent.com/sethbang/venice-py/main/website/static/img/venice-py-banner.png" alt="venice-py 的 Decisions 资源" width="240"></a></td>

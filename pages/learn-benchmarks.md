@@ -18,6 +18,10 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://www.langchain.com/blog/jev-agent-evals-langsmith">Can Jev Be a Better Agent Evaluator?</a></b><br><sub>LangChain · Article · ♥ 2.9k · 2026-09-20</sub><br>LangChain tests Jev as a judge against LLM judges for agent evaluation in LangSmith, comparing accuracy, repeatability, latency and cost.<br><sub>Also: <a href="https://x.com/LangChain/status/2101454284927959080">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://webmcp.com/benchmark"><img src="https://webmcp.com/blog/img/windtunnel-model-comparison-light.png" alt="WindTunnel" width="240"></a></td>
+<td valign="top"><b><a href="https://webmcp.com/benchmark">WindTunnel</a></b><br><sub>Idan Levin (webmcp.com) · Article · ♥ 2.1k</sub><br>WebMCP browser-agent benchmark of 49 tasks on 8 real sites across 21 configurations, where Jev + Mercury 2.5 tops the composite score, solving 49/49 tasks at $0.0011 median cost per task.<br><sub><b>How it uses Jev:</b> Jev picks actions over the WebMCP interface; 141/147 attempts passed versus 76/147 for the DOM configuration.</sub><br><sub>Also: <a href="https://x.com/0xidanlevin/status/2100937437325205568">demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/MaxRovensky/status/2100706874173575199"><img src="https://pbs.twimg.com/amplify_video_thumb/2100706798533566466/img/RAbrmONSdYbkfjAN.jpg" alt="Trolley problems: humans vs robots" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/MaxRovensky/status/2100706874173575199">Trolley problems: humans vs robots</a></b><br><sub>MaxRovensky · X · ♥ 1.5k · 2026-09-17</sub><br>Video of Jev working through trolley problems, where it chose to sacrifice a human to save robots.</td>
 </tr>
@@ -30,20 +34,12 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/liorshkiller/status/2100936106615140757">Code review benchmark</a></b><br><sub>liorshkiller · X · ♥ 210 · 2026-09-18</sub><br>Benchmark of Jev scoring raw Git diffs against a GLM + Grok + Gemini ensemble reviewer: zero false positives, ~50x faster, ~100x cheaper, with 75% bug recall.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://webmcp.com/benchmark"><img src="https://webmcp.com/blog/img/windtunnel-model-comparison-light.png" alt="WindTunnel" width="240"></a></td>
-<td valign="top"><b><a href="https://webmcp.com/benchmark">WindTunnel</a></b><br><sub>Idan Levin (webmcp.com) · Article · ♥ 2.1k</sub><br>WebMCP browser-agent benchmark of 49 tasks on 8 real sites across 21 configurations, where Jev + Mercury 2.5 tops the composite score, solving 49/49 tasks at $0.0011 median cost per task.<br><sub><b>How it uses Jev:</b> Jev picks actions over the WebMCP interface; 141/147 attempts passed versus 76/147 for the DOM configuration.</sub><br><sub>Also: <a href="https://x.com/0xidanlevin/status/2100937437325205568">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://benchmarkheaven.com/jev-models"><img src="https://benchmarkheaven.com/brand/og-launch.png?v=1" alt="JevBench" width="240"></a></td>
 <td valign="top"><b><a href="https://benchmarkheaven.com/jev-models">JevBench</a></b><br><sub>Benchmark Heaven (Florian S) · App · ♥ 999 · 2026-09-19</sub><br>Benchmark of Jev-class decision models that ranks Jev, its open rebuilds, and instruction models on intelligence, calibration, speed, and cost, 25% each as a geometric mean; Jev led at 75.3 with SemIf second at 74.6.<br><sub>Also: <a href="https://x.com/airesearch12/status/2101311769113178270">x</a> · <a href="https://news.ycombinator.com/item?id=49786635">discussion</a> · <a href="https://x.com/airesearch12/status/2101311992984199580">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/nikhilmudholkar/status/2100604560335139083"><img src="https://pbs.twimg.com/media/HSbYODoWoAAKjJR.jpg?name=orig" alt="Industrial email classification benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/nikhilmudholkar/status/2100604560335139083">Industrial email classification benchmark</a></b><br><sub>nikhilmudholkar · X · ♥ 439 · 2026-09-17</sub><br>Benchmark on 1,565 German and English supplier emails in 10 categories: Jev scored 96.4% vs Gemini's 97.5% and 98.5%, at $0.08 per 1,000 emails, and none of its 737 answers at 99%+ confidence were wrong.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/NFT_Chen/status/2101253568774697099"><img src="https://pbs.twimg.com/amplify_video_thumb/2101252015779373056/img/an3uKosWqfYtwDq9.jpg" alt="Jev vs DeepSeek ticket routing" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/NFT_Chen/status/2101253568774697099">Jev vs DeepSeek ticket routing</a></b><br><sub>NFT_Chen · X · ♥ 170 · 2026-09-19</sub><br>Side-by-side routing of 500 real e-commerce support tickets: Jev cleared them in 83 seconds for $0.01, while DeepSeek V4.1 Flash had done 173 for $0.06 when stopped.</td>
+<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101412965765529853"><img src="https://pbs.twimg.com/media/HSm39ISbsAAEPfg.png?name=orig" alt="OpenRouter Ori Eval judging test" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101412965765529853">OpenRouter Ori Eval judging test</a></b><br><sub>OpenRouter · X · ♥ 965 · 2026-09-19</sub><br>OpenRouter's Ori Eval comparison of Jev with popular LLMs as a judge: Jev was more than 5x faster than the next fastest model, and its slowest requests beat every other model's median.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/grichadev/status/2100437998571860087"><img src="https://pbs.twimg.com/media/HSY_7aXbIAAxJoj.png?name=orig" alt="Jev in a security pipeline" width="240"></a></td>
@@ -54,12 +50,24 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/crislenta/status/2100457614073327754">500 real-time agents in 3D</a></b><br><sub>crislenta · X · ♥ 655 · 2026-09-17</sub><br>Benchmark running 500 real-time agents in parallel in a 3D environment, reporting 500ms average latency and 35 API calls/s with no optimizations.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101412965765529853"><img src="https://pbs.twimg.com/media/HSm39ISbsAAEPfg.png?name=orig" alt="OpenRouter Ori Eval judging test" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101412965765529853">OpenRouter Ori Eval judging test</a></b><br><sub>OpenRouter · X · ♥ 965 · 2026-09-19</sub><br>OpenRouter's Ori Eval comparison of Jev with popular LLMs as a judge: Jev was more than 5x faster than the next fastest model, and its slowest requests beat every other model's median.</td>
+<td width="260" valign="top"><a href="https://x.com/nikhilmudholkar/status/2100604560335139083"><img src="https://pbs.twimg.com/media/HSbYODoWoAAKjJR.jpg?name=orig" alt="Industrial email classification benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/nikhilmudholkar/status/2100604560335139083">Industrial email classification benchmark</a></b><br><sub>nikhilmudholkar · X · ♥ 439 · 2026-09-17</sub><br>Benchmark on 1,565 German and English supplier emails in 10 categories: Jev scored 96.4% vs Gemini's 97.5% and 98.5%, at $0.08 per 1,000 emails, and none of its 737 answers at 99%+ confidence were wrong.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/xjuntaro/status/2101989210362454268"><img src="https://pbs.twimg.com/media/HSvEC5qa8AAHqx3.jpg?name=orig" alt="Jev vs BERT on Kaggle" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/xjuntaro/status/2101989210362454268">Jev vs BERT on Kaggle</a></b><br><sub>xjuntaro · X · ♥ 556 · 2026-09-21</sub><br>Kaggle experiment finding zero-training Jev slightly below a fine-tuned BERT but on par with Fable and Astra and ahead of TF-IDF logistic regression, with Noul plus a tuned threshold scoring best.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/stash_pomichter/status/2101149600044224698"><img src="https://pbs.twimg.com/amplify_video_thumb/2101149070140014592/img/DdmO54VKkiBapiqs.jpg" alt="Jev robotics benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/stash_pomichter/status/2101149600044224698">Jev robotics benchmark</a></b><br><sub>stash_pomichter · X · ♥ 479 · 2026-09-19</sub><br>Benchmark giving Jev a robot body across 120 real and simulated navigation and spatial-reasoning tasks, graded on speed, cost, tokens, collisions and path quality against Dimcode, Astra, Fable, Opus and 5.6.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/NFT_Chen/status/2101253568774697099"><img src="https://pbs.twimg.com/amplify_video_thumb/2101252015779373056/img/an3uKosWqfYtwDq9.jpg" alt="Jev vs DeepSeek ticket routing" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/NFT_Chen/status/2101253568774697099">Jev vs DeepSeek ticket routing</a></b><br><sub>NFT_Chen · X · ♥ 170 · 2026-09-19</sub><br>Side-by-side routing of 500 real e-commerce support tickets: Jev cleared them in 83 seconds for $0.01, while DeepSeek V4.1 Flash had done 173 for $0.06 when stopped.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://quicqdev.github.io/Jev-vs-ML/"><img src="https://quicqdev.github.io/Jev-vs-ML/assets/benchmark-release-blue.png" alt="Jev vs. classical ML" width="240"></a></td>
+<td valign="top"><b><a href="https://quicqdev.github.io/Jev-vs-ML/">Jev vs. classical ML</a></b><br><sub>QuicqDev · Article · ▲ 104 · 2026-09-20</sub><br>Eight datasets against eleven classical pipelines, strong on text such as IMDb reviews and weak on tabular data, with notebooks.<br><sub>Also: <a href="https://github.com/QuicqDev/Jev-vs-ML">repo</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wlc11f/jev_vs_classical_ml_results_from_8_classification/">discussion</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wlc11f/jev_vs_classical_ml_results_from_8_classification/">discussion 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/nateherk/status/2101368457698697511"><img src="https://pbs.twimg.com/media/HSmPYhAXQAAOaLo.jpg" alt="Jev on 12 real use cases" width="240"></a></td>
@@ -74,44 +82,24 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://x.com/enhanced_jp/status/2100741417593430233">Rewriting rules changes Jev's answers</a></b><br><sub>enhanced_jp · Article · ♥ 63 · 2026-09-18</sub><br>Japanese study of Jev as a judgment layer for a design harness, showing how clearer brand-guideline wording flips its answers; 9 test types, 650 calls and 4,819 judgments.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/stash_pomichter/status/2101149600044224698"><img src="https://pbs.twimg.com/amplify_video_thumb/2101149070140014592/img/DdmO54VKkiBapiqs.jpg" alt="Jev robotics benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/stash_pomichter/status/2101149600044224698">Jev robotics benchmark</a></b><br><sub>stash_pomichter · X · ♥ 479 · 2026-09-19</sub><br>Benchmark giving Jev a robot body across 120 real and simulated navigation and spatial-reasoning tasks, graded on speed, cost, tokens, collisions and path quality against Dimcode, Astra, Fable, Opus and 5.6.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/iammrduncan/typesafe-ai-benchmark"><img src="https://opengraph.githubassets.com/1/iammrduncan/typesafe-ai-benchmark" alt="typesafe-ai-benchmark" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/iammrduncan/typesafe-ai-benchmark">typesafe-ai-benchmark</a></b><br><sub>iammrduncan · GitHub · ⭐ 37 · 2026-09-16</sub><br>Side-by-side benchmark of Qwen 3.8 27B structured output on Cerebras versus Jev across seven synthetic workloads, recording mistakes, latency, tokens, and estimated cost.<br><sub>Also: <a href="https://x.com/iamMrDuncan/status/2100467548298899918">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/everythingmeta/status/2101058921989390395"><img src="https://pbs.twimg.com/media/HSh0glmbQAAr0xv.jpg" alt="Jev on real-world search tasks at Parallel" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/everythingmeta/status/2101058921989390395">Jev on real-world search tasks at Parallel</a></b><br><sub>everythingmeta · Article · ♥ 159 · 2026-09-18</sub><br>Parallel's test of Jev on search reranking and related tasks, where zero-shot Jev matched at least one of their fine-tuned internal rerankers on NDCG@10.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/libukai/status/2100984923926728920"><img src="https://pbs.twimg.com/amplify_video_thumb/2100977858718113792/img/1cfiUtsApbmw3_sp.jpg" alt="Jev vs Gemini Flash Lite news tagging" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/libukai/status/2100984923926728920">Jev vs Gemini Flash Lite news tagging</a></b><br><sub>libukai · X · ♥ 163 · 2026-09-18</sub><br>Comparison on a 1,000-article test set of People's Daily news tagged for Hubei relevance: Jev took 0.35 s per article versus 3 s for Gemini Flash Lite, disagreeing on about 15%.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100877682972258619"><img src="https://pbs.twimg.com/amplify_video_thumb/2100877620292583424/img/7Ztuku-R01C1GvlU.jpg" alt="Jev reranking benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100877682972258619">Jev reranking benchmark</a></b><br><sub>GoSailGlobal · X · ♥ 71 · 2026-09-18</sub><br>Benchmark of Jev as a search reranker on 33,047 Agent Skills Hub entries: alone it lifted NDCG@10 by only 0.012 over bge-m3, while RRF fusion of both reached 0.864.<br><sub><b>How it uses Jev:</b> Reranks bge-m3's top 30 results; also tested as a relevance judge against Haiku.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/kubornetes/status/2101709350264025407"><img src="https://res.cloudinary.com/zenn/image/upload/s--Z-HoZ4JJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%252C%2520Gemini%252C%2520DistilBERT%252C%2520LightGBM%25E3%2581%25AE%25E5%2588%2586%25E9%25A1%259E%25E6%2580%25A7%25E8%2583%25BD%25E3%2582%2592%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kubotaka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU4YTA5ZTA2NzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="Jev vs Gemini, DistilBERT and LightGBM" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kubornetes/status/2101709350264025407">Jev vs Gemini, DistilBERT and LightGBM</a></b><br><sub>kubornetes · X · ♥ 204 · 2026-09-20</sub><br>Japanese classification benchmark comparing Jev with Gemini, DistilBERT and LightGBM, concluding Jev is a safe default for classification tasks; experiment code is on GitHub.<br><sub>Also: <a href="https://zenn.dev/xxkuboxx/articles/e232d267a76f43">article</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://quicqdev.github.io/Jev-vs-ML/"><img src="https://quicqdev.github.io/Jev-vs-ML/assets/benchmark-release-blue.png" alt="Jev vs. classical ML" width="240"></a></td>
-<td valign="top"><b><a href="https://quicqdev.github.io/Jev-vs-ML/">Jev vs. classical ML</a></b><br><sub>QuicqDev · Article · ▲ 104 · 2026-09-20</sub><br>Eight datasets against eleven classical pipelines, strong on text such as IMDb reviews and weak on tabular data, with notebooks.<br><sub>Also: <a href="https://github.com/QuicqDev/Jev-vs-ML">repo</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wlc11f/jev_vs_classical_ml_results_from_8_classification/">discussion</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wlc11f/jev_vs_classical_ml_results_from_8_classification/">discussion 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/accelerate/comments/1wik61b/tested_typesafeai_s_claim_that_their_new_model/"><img src="https://preview.redd.it/as1ajixqf0qh1.jpg?width=968&amp;format=pjpg&amp;auto=webp&amp;s=519a8b120c6b94bad81e9442e7deaafde9501f80" alt="Jev vs. Terra on knowledge benchmarks" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/accelerate/comments/1wik61b/tested_typesafeai_s_claim_that_their_new_model/">Jev vs. Terra on knowledge benchmarks</a></b><br><sub>N8Programs · Reddit · ▲ 69 · 2026-09-17</sub><br>Compares Jev with GPT-5.6 Terra (reasoning off) on multiple-choice benchmarks such as MMLU, GPQA, WinoGrande, and HellaSwag; Jev is Terra-tier except on math.<br><sub>Also: <a href="https://x.com/N8Programs/status/2100088523403432357">source</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/punk2898/status/2102218153766125851"><img src="https://pbs.twimg.com/media/HSuELanbUAAN3Kr.jpg" alt="$200 test of Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/punk2898/status/2102218153766125851">$200 test of Jev</a></b><br><sub>punk2898 · Article · ♥ 16 · 2026-09-22</sub><br>Chinese evaluation that spent $200 running Jev against GPT-4.1-mini and GPT-5.6 Sol, Terra and Luna on 2,390 questions, including Chinese-language tasks, concluding the 100x cheaper claim roughly holds but 100x faster does not.</td>
+<td width="260" valign="top"><a href="https://x.com/kubornetes/status/2101709350264025407"><img src="https://res.cloudinary.com/zenn/image/upload/s--Z-HoZ4JJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%252C%2520Gemini%252C%2520DistilBERT%252C%2520LightGBM%25E3%2581%25AE%25E5%2588%2586%25E9%25A1%259E%25E6%2580%25A7%25E8%2583%25BD%25E3%2582%2592%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kubotaka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU4YTA5ZTA2NzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="Jev vs Gemini, DistilBERT and LightGBM" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kubornetes/status/2101709350264025407">Jev vs Gemini, DistilBERT and LightGBM</a></b><br><sub>kubornetes · X · ♥ 204 · 2026-09-20</sub><br>Japanese classification benchmark comparing Jev with Gemini, DistilBERT and LightGBM, concluding Jev is a safe default for classification tasks; experiment code is on GitHub.<br><sub>Also: <a href="https://zenn.dev/xxkuboxx/articles/e232d267a76f43">article</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100973279771246861"><img src="https://pbs.twimg.com/media/HSgn1l4aQAEqqvx.jpg" alt="Six experiments on Jev&#x27;s real limits" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100973279771246861">Six experiments on Jev's real limits</a></b><br><sub>GoSailGlobal · Article · ♥ 50 · 2026-09-18</sub><br>Chinese write-up of six experiments across five open-source repos: Jev hits 0.83 AUC on tables with meaningful columns but 0.46 on hashed CTR data, and works best as a feature added to a baseline.<br><sub>Also: <a href="https://github.com/zhuyansen/jev-cold-start-prior">repo</a> · <a href="https://github.com/zhuyansen/jev-search-rerank-eval">repo2</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">repo3</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/libukai/status/2100984923926728920"><img src="https://pbs.twimg.com/amplify_video_thumb/2100977858718113792/img/1cfiUtsApbmw3_sp.jpg" alt="Jev vs Gemini Flash Lite news tagging" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/libukai/status/2100984923926728920">Jev vs Gemini Flash Lite news tagging</a></b><br><sub>libukai · X · ♥ 163 · 2026-09-18</sub><br>Comparison on a 1,000-article test set of People's Daily news tagged for Hubei relevance: Jev took 0.35 s per article versus 3 s for Gemini Flash Lite, disagreeing on about 15%.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/everythingmeta/status/2101058921989390395"><img src="https://pbs.twimg.com/media/HSh0glmbQAAr0xv.jpg" alt="Jev on real-world search tasks at Parallel" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/everythingmeta/status/2101058921989390395">Jev on real-world search tasks at Parallel</a></b><br><sub>everythingmeta · Article · ♥ 159 · 2026-09-18</sub><br>Parallel's test of Jev on search reranking and related tasks, where zero-shot Jev matched at least one of their fine-tuned internal rerankers on NDCG@10.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/maxim-saplin/llm_chess"><img src="https://github.com/user-attachments/assets/4375a8a8-e226-4ed1-820f-86006d0404e2" alt="LLM Chess: Jev results" width="240"></a></td>
@@ -122,18 +110,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/get-convex/convex-evals">Convex decision model evals</a></b><br><sub>get-convex · GitHub · ⭐ 128 · 2025-01-10</sub><br>Benchmark of 106 decision questions drawn from 90 Convex coding evals that compares Jev via OpenRouter's decisions API against language models, recording probabilities, confidence and cost.<br><sub>Also: <a href="https://convex-evals.netlify.app/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2101259812709535800"><img src="https://pbs.twimg.com/media/HSksmBCbsAAlqY2.jpg" alt="Jev vs the BERT family" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2101259812709535800">Jev vs the BERT family</a></b><br><sub>GoSailGlobal · Article · ♥ 14 · 2026-09-19</sub><br>Chinese open experiment comparing Jev with zero-shot BERT-family classifiers on AG News, SST-2, Banking77, TweetEval, PAWS and a post-launch arXiv set, with 95% confidence intervals; Jev wins all 7 evaluation sets.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/malleshpai/status/2102207238236500096"><img src="https://pbs.twimg.com/media/HSyJp8GXsAAho-G.jpg" alt="Calibrating Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/malleshpai/status/2102207238236500096">Calibrating Jev</a></b><br><sub>malleshpai · Article · ♥ 48 · 2026-09-22</sub><br>Economist's calibration study across five labeled tasks (about 37,000 items, 24 phrasings each), finding Jev's probabilities often overconfident and improved by an online Foster-Hart correction.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/stas_sorokin_/status/2101994942818115738"><img src="https://pbs.twimg.com/media/HSvJOjSWEAEtkH7.jpg?name=orig" alt="1,000 papers sorted then audited" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/stas_sorokin_/status/2101994942818115738">1,000 papers sorted then audited</a></b><br><sub>stas_sorokin_ · X · ♥ 6 · 2026-09-21</sub><br>Open rebuild of a Jev paper map: Jev sorted 1,000 AI papers into 24 topics for $0.0585, and Opus 5 as judge agreed on 85 of 100 labels at 153x the cost and 1.9s versus 57ms per paper.<br><sub><b>How it uses Jev:</b> One Choice over 24 topics per paper; its probability flags which labels an expensive model should recheck.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/vinilana/jev-eval-agent"><img src="https://opengraph.githubassets.com/1/vinilana/jev-eval-agent" alt="jev-eval-agent" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/vinilana/jev-eval-agent">jev-eval-agent</a></b><br><sub>vinilana · GitHub · ⭐ 103 · 2026-09-17</sub><br>Experiment with a personal-assistant agent and 100 mocked tools that counts the steps needed when the LLM picks tools itself versus when Jev picks the tool and the LLM only fills arguments.<br><sub><b>How it uses Jev:</b> Two-stage pruning over the tool catalog before every model step.</sub><br><sub>Also: <a href="https://x.com/oviniciuslana/status/2100610517886771393">demo</a></sub></td>
 </tr>
@@ -142,56 +118,60 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://www.reddit.com/r/LLMDevs/comments/1wkukle/i_tested_jev_on_nasa_kepler_signals/">Jev on NASA Kepler signals</a></b><br><sub>This_Cell_1829 · Reddit · ▲ 34 · 2026-09-19</sub><br>Test of Jev on 8,054 Kepler Objects of Interest, choosing confirmed planet, false positive, or candidate from 21 measurements; 54.2% vs a 64.4% rule baseline, 72.5% after reformatting inputs.<br><sub><b>How it uses Jev:</b> One Choice per signal over three labels; numbers were bucketed into labels in code for the second run.</sub><br><sub>Also: <a href="https://gist.github.com/ipaulsmith/e5c3ae3a492a455435d5bfc161404312">data</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/ShengyaoZhuang/status/2101212268440723895"><img src="https://pbs.twimg.com/media/HSj9xNobQAEf2w7.jpg?name=orig" alt="Jev as a reranker on DL19/DL20" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ShengyaoZhuang/status/2101212268440723895">Jev as a reranker on DL19/DL20</a></b><br><sub>ShengyaoZhuang · X · ♥ 64 · 2026-09-19</sub><br>IR researchers test Jev as a pointwise, pairwise, setwise and listwise reranker over the top 100 BM25 results on TREC DL19 and DL20 and find it good and cheap.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/silverstein/minutes/blob/main/tooling/voice-evals/jev.mjs"><img src="https://raw.githubusercontent.com/silverstein/minutes/main/docs/assets/demo.gif" alt="Minutes Jev voice evals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/silverstein/minutes/blob/main/tooling/voice-evals/jev.mjs">Minutes Jev voice evals</a></b><br><sub>silverstein · GitHub · ⭐ 1.5k repo · 2026-03-18</sub><br>Synthetic qualification script in the Minutes meeting-memory app that tests Jev on seven Choice decisions its voice path needs, such as attendee constraints, semantic recall, verified pastes, stale targets and prompt injection.<br><sub>Also: <a href="https://useminutes.app">app</a> · <a href="https://github.com/silverstein/minutes">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100877682972258619"><img src="https://pbs.twimg.com/amplify_video_thumb/2100877620292583424/img/7Ztuku-R01C1GvlU.jpg" alt="Jev reranking benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100877682972258619">Jev reranking benchmark</a></b><br><sub>GoSailGlobal · X · ♥ 71 · 2026-09-18</sub><br>Benchmark of Jev as a search reranker on 33,047 Agent Skills Hub entries: alone it lifted NDCG@10 by only 0.012 over bge-m3, while RRF fusion of both reached 0.864.<br><sub><b>How it uses Jev:</b> Reranks bge-m3's top 30 results; also tested as a relevance judge against Haiku.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/fstandhartinger/jevbench"><img src="https://raw.githubusercontent.com/fstandhartinger/jevbench/main/results/v1.2/charts/main-score.png" alt="JevBench" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/fstandhartinger/jevbench">JevBench</a></b><br><sub>fstandhartinger · GitHub · ⭐ 69 · 2026-09-19</sub><br>Third-party benchmark that runs 534 frozen decision questions and folds intelligence, calibration, speed, and cost into one score across Jev, open reimplementations, classifiers, and LLM baselines.<br><sub>Also: <a href="https://benchmarkheaven.com/jev-models">results</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/yibie/laya-jev-lab"><img src="https://pbs.twimg.com/media/HSo34y_W4AA1A3-.jpg" alt="laya-jev-lab" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yibie/laya-jev-lab">laya-jev-lab</a></b><br><sub>yibie · GitHub · ⭐ 2 · 2026-09-20</sub><br>Independent measurements of Jev versus the open-weight Laya on an M4 Max, where Jev scored 78% and Laya 57% on 40 Chinese support tickets, plus a local-first cascade matching Jev's accuracy at about 1.8x the speed.<br><sub>Also: <a href="https://x.com/yibie/status/2101553680889598094">write-up</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/ShengyaoZhuang/status/2101212268440723895"><img src="https://pbs.twimg.com/media/HSj9xNobQAEf2w7.jpg?name=orig" alt="Jev as a reranker on DL19/DL20" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ShengyaoZhuang/status/2101212268440723895">Jev as a reranker on DL19/DL20</a></b><br><sub>ShengyaoZhuang · X · ♥ 64 · 2026-09-19</sub><br>IR researchers test Jev as a pointwise, pairwise, setwise and listwise reranker over the top 100 BM25 results on TREC DL19 and DL20 and find it good and cheap.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/danielgshea/jev-as-a-judge"><img src="https://raw.githubusercontent.com/danielgshea/jev-as-a-judge/main/assets/benchmark-jev-luna-terra-sonnet-oracle/6d08df72-c878-458c-b7c5-a7824ee6e721/does-pass-accuracy.svg" alt="Jev as a judge" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/danielgshea/jev-as-a-judge">Jev as a judge</a></b><br><sub>danielgshea · GitHub · ⭐ 62 · 2026-09-17</sub><br>Experiment comparing Jev with GPT-5.6 Luna, GPT-5.6 Terra and Claude Sonnet 4.6 as judges of the same fixed agent runs, measuring binary accuracy, score reliability, cost and latency.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dreadnode/status/2102131162386710885"><img src="https://pbs.twimg.com/media/HSxDXD_WsAAL9_r.jpg?name=orig" alt="Jev on ScopeJudge" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dreadnode/status/2102131162386710885">Jev on ScopeJudge</a></b><br><sub>dreadnode · X · ♥ 25 · 2026-09-21</sub><br>Security firm dreadnode ran Jev against its ScopeJudge benchmark for agent scope violations and found it competitive with leading LLM judges, at pennies per thousand checks and 130 ms average responses.</td>
+<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100973279771246861"><img src="https://pbs.twimg.com/media/HSgn1l4aQAEqqvx.jpg" alt="Six experiments on Jev&#x27;s real limits" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100973279771246861">Six experiments on Jev's real limits</a></b><br><sub>GoSailGlobal · Article · ♥ 50 · 2026-09-18</sub><br>Chinese write-up of six experiments across five open-source repos: Jev hits 0.83 AUC on tables with meaningful columns but 0.46 on hashed CTR data, and works best as a feature added to a baseline.<br><sub>Also: <a href="https://github.com/zhuyansen/jev-cold-start-prior">repo</a> · <a href="https://github.com/zhuyansen/jev-search-rerank-eval">repo2</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">repo3</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/punk2898/status/2102218153766125851"><img src="https://pbs.twimg.com/media/HSuELanbUAAN3Kr.jpg" alt="$200 test of Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/punk2898/status/2102218153766125851">$200 test of Jev</a></b><br><sub>punk2898 · Article · ♥ 16 · 2026-09-22</sub><br>Chinese evaluation that spent $200 running Jev against GPT-4.1-mini and GPT-5.6 Sol, Terra and Luna on 2,390 questions, including Chinese-language tasks, concluding the 100x cheaper claim roughly holds but 100x faster does not.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/malleshpai/status/2102207238236500096"><img src="https://pbs.twimg.com/media/HSyJp8GXsAAho-G.jpg" alt="Calibrating Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/malleshpai/status/2102207238236500096">Calibrating Jev</a></b><br><sub>malleshpai · Article · ♥ 48 · 2026-09-22</sub><br>Economist's calibration study across five labeled tasks (about 37,000 items, 24 phrasings each), finding Jev's probabilities often overconfident and improved by an online Foster-Hart correction.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/machinelearningnews/comments/1wk8lwj/typed_decisions_jev_and_a_frozen_149m_encoder_on/"><img src="https://external-preview.redd.it/yYnCg7p4fjziFlw0ScTc8TfP2KiLGEV0p-BNnYEsjoM.png?auto=webp&amp;s=3d68cc22011896ecaf00d6c5e70f6cddd97feebb" alt="Typed Decisions benchmark" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/machinelearningnews/comments/1wk8lwj/typed_decisions_jev_and_a_frozen_149m_encoder_on/">Typed Decisions benchmark</a></b><br><sub>asankhs · Reddit · ▲ 14 · 2026-09-19</sub><br>New 400-case benchmark for typed decisions where Jev scores 0.727, near the 0.735 teacher ceiling, against 0.646 for a frozen 149M ModernBERT encoder with small heads.<br><sub>Also: <a href="https://latentnode.pages.dev/articles/typed-decisions">article</a> · <a href="https://latentnode.pages.dev/articles/typed-decisions">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/brandonjcarl/status/2102064833256387016"><img src="https://pbs.twimg.com/media/HSwIy4gWgAAHsT-.jpg" alt="Putting Jev through the gauntlet" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/brandonjcarl/status/2102064833256387016">Putting Jev through the gauntlet</a></b><br><sub>brandonjcarl · Article · ♥ 1 · 2026-09-21</sub><br>Test of Jev across five areas and 25 subareas from elementary to PhD level: Jev scored 76% against DeepSeek v4.1 Flash's 93% at roughly 50 times lower cost, strongest at text classification.<br><sub>Also: <a href="https://essays.brandoncarl.com">blog</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://news.ycombinator.com/item?id=49788402"><img src="https://archestra.ai/blog/2026-09-21-jev-model-comparison.webp" alt="Jev on 100 agent tool calls" width="240"></a></td>
 <td valign="top"><b><a href="https://news.ycombinator.com/item?id=49788402">Jev on 100 agent tool calls</a></b><br><sub>arseny_info · Hacker News · ▲ 11 · 2026-09-21</sub><br>Archestra compares Jev, Sonnet 5, and open-weight models on 100 real Claude Code tool calls for its information-flow annotator, where always answering benign already scores 79%.<br><sub>Also: <a href="https://archestra.ai/blog/we-tested-jev-on-100-real-agent-calls">article</a> · <a href="https://archestra.ai/blog/we-tested-jev-on-100-real-agent-calls">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/145k4/status/2100933101966758250"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932546401812480/img/fPV392wDj1Xr1DHo.jpg" alt="Choice vs Noul trolley problems" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/145k4/status/2100933101966758250">Choice vs Noul trolley problems</a></b><br><sub>145k4 · X · ♥ 14 · 2026-09-18</sub><br>Runs a series of trolley problems through Jev as both a Choice and a Noul to test whether the question type changes its judgment.</td>
+<td width="260" valign="top"><a href="https://github.com/silverstein/minutes/blob/main/tooling/voice-evals/jev.mjs"><img src="https://raw.githubusercontent.com/silverstein/minutes/main/docs/assets/demo.gif" alt="Minutes Jev voice evals" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/silverstein/minutes/blob/main/tooling/voice-evals/jev.mjs">Minutes Jev voice evals</a></b><br><sub>silverstein · GitHub · ⭐ 1.5k repo · 2026-03-18</sub><br>Synthetic qualification script in the Minutes meeting-memory app that tests Jev on seven Choice decisions its voice path needs, such as attendee constraints, semantic recall, verified pastes, stale targets and prompt injection.<br><sub>Also: <a href="https://useminutes.app">app</a> · <a href="https://github.com/silverstein/minutes">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/ShenSeanChen/status/2102234040535494876"><img src="https://pbs.twimg.com/amplify_video_thumb/2102216562342309888/img/30v3t9WGnQzugfFu.jpg" alt="Judgment arena" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ShenSeanChen/status/2102234040535494876">Judgment arena</a></b><br><sub>ShenSeanChen · X · ♥ 18 · 2026-09-22</sub><br>Video that explains System 1 vs System 2 and races Jev against Claude Opus, Haiku 4.5 and GPT-5.4 Mini on 15 human-labelled questions; Opus got one more right but took 10x longer and cost 146x more.<br><sub>Also: <a href="https://github.com/ShenSeanChen/waku-agent">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2101259812709535800"><img src="https://pbs.twimg.com/media/HSksmBCbsAAlqY2.jpg" alt="Jev vs the BERT family" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2101259812709535800">Jev vs the BERT family</a></b><br><sub>GoSailGlobal · Article · ♥ 14 · 2026-09-19</sub><br>Chinese open experiment comparing Jev with zero-shot BERT-family classifiers on AG News, SST-2, Banking77, TweetEval, PAWS and a post-launch arXiv set, with 95% confidence intervals; Jev wins all 7 evaluation sets.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/stas_sorokin_/status/2101994942818115738"><img src="https://pbs.twimg.com/media/HSvJOjSWEAEtkH7.jpg?name=orig" alt="1,000 papers sorted then audited" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/stas_sorokin_/status/2101994942818115738">1,000 papers sorted then audited</a></b><br><sub>stas_sorokin_ · X · ♥ 6 · 2026-09-21</sub><br>Open rebuild of a Jev paper map: Jev sorted 1,000 AI papers into 24 topics for $0.0585, and Opus 5 as judge agreed on 85 of 100 labels at 153x the cost and 1.9s versus 57ms per paper.<br><sub><b>How it uses Jev:</b> One Choice over 24 topics per paper; its probability flags which labels an expensive model should recheck.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/dreadnode/status/2102131162386710885"><img src="https://pbs.twimg.com/media/HSxDXD_WsAAL9_r.jpg?name=orig" alt="Jev on ScopeJudge" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dreadnode/status/2102131162386710885">Jev on ScopeJudge</a></b><br><sub>dreadnode · X · ♥ 25 · 2026-09-21</sub><br>Security firm dreadnode ran Jev against its ScopeJudge benchmark for agent scope violations and found it competitive with leading LLM judges, at pennies per thousand checks and 130 ms average responses.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Zaious/jev-capability-atlas"><img src="https://opengraph.githubassets.com/1/Zaious/jev-capability-atlas" alt="Jev Capability Atlas" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Zaious/jev-capability-atlas">Jev Capability Atlas</a></b><br><sub>Zaious · GitHub · ⭐ 24 · 2026-09-18</sub><br>Bilingual, mostly Traditional Chinese evidence map of where Jev's calibrated-decision claim holds and where it breaks, built from real API-call receipts, test suites, and guides for agents.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/backnotprop/status/2101713396966338575"><img src="https://pbs.twimg.com/media/HSrISHhaIAEDxM7.jpg?name=orig" alt="Jev jailbreak benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/backnotprop/status/2101713396966338575">Jev jailbreak benchmark</a></b><br><sub>backnotprop · X · ♥ 20 · 2026-09-20</sub><br>Prompt-injection benchmark pitting Jev against standard guardrail classifiers including Meta's: it wins an open suite and the newest attack set, loses on older sets and cannot hold a tight false-alarm budget.<br><sub>Also: <a href="https://backnotprop.com/blog/jev-guardrails">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/snakajima/bus20"><img src="https://opengraph.githubassets.com/1/snakajima/bus20" alt="Bus 2.0 dispatch benchmark" width="240"></a></td>
@@ -202,16 +182,28 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation">Jev vs Mistral and Gemini for event validation</a></b><br><sub>Near Here · Article · ▲ 7 · 2026-09-16</sub><br>Use-case study pitting Jev against Mistral Small 4 and Gemini 3.5 Flash-Lite at rejecting unsuitable local-event listings; Jev scored 96% (48/50) at 0.59s and $0.043 per 1,000 decisions.<br><sub><b>How it uses Jev:</b> Native Choice with probabilities on a listing's title and description.</sub><br><sub>Also: <a href="https://www.reddit.com/r/typesafe_ai/comments/1whtaq4/near_here_got_early_access_to_typesafe_jev_so_we/">discussion</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/backnotprop/status/2101713396966338575"><img src="https://pbs.twimg.com/media/HSrISHhaIAEDxM7.jpg?name=orig" alt="Jev jailbreak benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/backnotprop/status/2101713396966338575">Jev jailbreak benchmark</a></b><br><sub>backnotprop · X · ♥ 20 · 2026-09-20</sub><br>Prompt-injection benchmark pitting Jev against standard guardrail classifiers including Meta's: it wins an open suite and the newest attack set, loses on older sets and cannot hold a tight false-alarm budget.<br><sub>Also: <a href="https://backnotprop.com/blog/jev-guardrails">article</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/ilijabogunovic/status/2102075332014624819"><img src="https://pbs.twimg.com/media/HSwP1Z3XoAADcnY.png?name=orig" alt="Jev on LLM-Wikirace" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ilijabogunovic/status/2102075332014624819">Jev on LLM-Wikirace</a></b><br><sub>ilijabogunovic · X · ♥ 19 · 2026-09-21</sub><br>Researchers ran Jev on their LLM-Wikirace benchmark (450 games, 8 hours, under $1 total) and found it fast and cheap but short on the world knowledge and planning of frontier LLMs.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/identityTorn/status/2100475121324728615"><img src="https://pbs.twimg.com/media/HSZizHpasAABVQJ.jpg?name=orig" alt="Jev vs fine-tuned Qwen classifier" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/identityTorn/status/2100475121324728615">Jev vs fine-tuned Qwen classifier</a></b><br><sub>identityTorn · X · ♥ 3 · 2026-09-17</sub><br>Field note comparing zero-shot Jev with a fine-tuned Qwen classifier on an internal benchmark: within ~5 points of recall at matched precision, for about $70/mo at full volume.</td>
+<td width="260" valign="top"><a href="https://x.com/ShenSeanChen/status/2102234040535494876"><img src="https://pbs.twimg.com/amplify_video_thumb/2102216562342309888/img/30v3t9WGnQzugfFu.jpg" alt="Judgment arena" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ShenSeanChen/status/2102234040535494876">Judgment arena</a></b><br><sub>ShenSeanChen · X · ♥ 18 · 2026-09-22</sub><br>Video that explains System 1 vs System 2 and races Jev against Claude Opus, Haiku 4.5 and GPT-5.4 Mini on 15 human-labelled questions; Opus got one more right but took 10x longer and cost 146x more.<br><sub>Also: <a href="https://github.com/ShenSeanChen/waku-agent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/yibie/laya-jev-lab"><img src="https://pbs.twimg.com/media/HSo34y_W4AA1A3-.jpg" alt="laya-jev-lab" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yibie/laya-jev-lab">laya-jev-lab</a></b><br><sub>yibie · GitHub · ⭐ 2 · 2026-09-20</sub><br>Independent measurements of Jev versus the open-weight Laya on an M4 Max, where Jev scored 78% and Laya 57% on 40 Chinese support tickets, plus a local-first cascade matching Jev's accuracy at about 1.8x the speed.<br><sub>Also: <a href="https://x.com/yibie/status/2101553680889598094">write-up</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AbdelStark/jev-benchmarks"><img src="https://opengraph.githubassets.com/1/AbdelStark/jev-benchmarks" alt="jev-benchmarks" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/AbdelStark/jev-benchmarks">jev-benchmarks</a></b><br><sub>AbdelStark · GitHub · ⭐ 16 · 2026-09-17</sub><br>Probability-aware benchmark comparing Jev with GLiNER2.5 on zero-shot text classification, measuring calibration, coverage at a fixed error budget and latency on three BTZSC datasets.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/145k4/status/2100933101966758250"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932546401812480/img/fPV392wDj1Xr1DHo.jpg" alt="Choice vs Noul trolley problems" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/145k4/status/2100933101966758250">Choice vs Noul trolley problems</a></b><br><sub>145k4 · X · ♥ 14 · 2026-09-18</sub><br>Runs a series of trolley problems through Jev as both a Choice and a Noul to test whether the question type changes its judgment.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/erendikmenn/jev-rag-benchmark"><img src="https://raw.githubusercontent.com/erendikmenn/jev-rag-benchmark/main/assets/benchmark/retrieval-errors.png" alt="jev-rag-benchmark" width="240"></a></td>
@@ -230,20 +222,12 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/hhilbig/polsci-open-bench">polsci-open-bench</a></b><br><sub>hhilbig · GitHub · ⭐ 11 · 2026-04-27</sub><br>Benchmark of local and commercial LLMs on 33 political science classification tasks where Jev 1.13 scores a mean F1 of 0.661 versus 0.714 for Claude Opus 5, at $0.036 per 1,000 items and 0.27 s median latency.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/LargitData1/status/2101679703673454669"><img src="https://pbs.twimg.com/media/HSqqjJebkAA1Xbm.jpg?name=orig" alt="RAG agent routing benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/LargitData1/status/2101679703673454669">RAG agent routing benchmark</a></b><br><sub>LargitData1 · X · ♥ 8 · 2026-09-20</sub><br>Chinese benchmark of 100 multi-turn dialogs on whether an agent picks the right source (knowledge base, docs, web, tools, ask user): Gemma 4 31B 77.0%, Jev 61.4%, djev-spark 32.2%, SemIf 24.0%, Laya 0%.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://huggingface.co/datasets/Praveenrajus/jev-bench"><img src="https://huggingface.co/datasets/Praveenrajus/jev-bench/resolve/main/results/jev-1.13.0/figures/calibration_map.png" alt="jev-bench" width="240"></a></td>
 <td valign="top"><b><a href="https://huggingface.co/datasets/Praveenrajus/jev-bench">jev-bench</a></b><br><sub>Praveenrajus · Hugging Face · ♥ 1 · 2026-09-20</sub><br>Human-labeled datasets reformatted into System One questions (22 configs, 166,054 rows), keeping human label distributions where they exist, with accuracy and calibration results for jev-1.13.0.<br><sub>Also: <a href="https://github.com/uspraveen/Jevify">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/ielab/llm-rankers/tree/main/jev"><img src="https://opengraph.githubassets.com/1/ielab/llm-rankers" alt="llm-rankers Jev experiments" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ielab/llm-rankers/tree/main/jev">llm-rankers Jev experiments</a></b><br><sub>ielab · GitHub · ⭐ 212 repo · 2023-10-14</sub><br>Zero-shot TREC DL19/DL20 experiments using Jev as a pointwise, pairwise, setwise and listwise reranker; listwise Score over all 100 BM25 passages in one request reached nDCG@10 0.728 on DL19 at $0.0009 per query.<br><sub><b>How it uses Jev:</b> Score questions beat Choice questions everywhere; all 100 candidates fit in a single request because output is free.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_CALIBRATION.md"><img src="https://opengraph.githubassets.com/1/chunxiaoxx/nautilus-compass" alt="Hosted Jev calibration study" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_CALIBRATION.md">Hosted Jev calibration study</a></b><br><sub>chunxiaoxx · GitHub · ⭐ 207 repo · 2026-04-27</sub><br>Reproducible calibration study of hosted jev-1.13.0 on 240 seeded questions (92.2% accuracy, Brier 0.048, ECE 0.041 on Noul items), plus a 200-question adversarial follow-up with ECE 0.012.<br><sub>Also: <a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_ADVCAL.md">adversarial</a> · <a href="https://github.com/chunxiaoxx/nautilus-compass/tree/main/runtime/jev_advcal_20260922">code</a> · <a href="https://github.com/chunxiaoxx/nautilus-compass">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/brandonjcarl/status/2102064833256387016"><img src="https://pbs.twimg.com/media/HSwIy4gWgAAHsT-.jpg" alt="Putting Jev through the gauntlet" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/brandonjcarl/status/2102064833256387016">Putting Jev through the gauntlet</a></b><br><sub>brandonjcarl · Article · ♥ 1 · 2026-09-21</sub><br>Test of Jev across five areas and 25 subareas from elementary to PhD level: Jev scored 76% against DeepSeek v4.1 Flash's 93% at roughly 50 times lower cost, strongest at text classification.<br><sub>Also: <a href="https://essays.brandoncarl.com">blog</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.ramonov.com/blog/64-tiny-benchmarks-for-jev/"><img src="https://ramonov.com/og-default.png" alt="64 tiny benchmarks for Jev" width="240"></a></td>
@@ -266,16 +250,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://www.southbridge.ai/blog/jev-entity-resolution">System One models in high-throughput data pipelines</a></b><br><sub>Southbridge AI · Article · ▲ 3 · 2026-09-20</sub><br>Entity resolution with Jev doing the bulk work and an LLM reviewing, at 226x lower cost; rewriting criteria as "what counts as sufficient evidence" fixed the dev set.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49771931">discussion</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/LargitData1/status/2101679703673454669"><img src="https://pbs.twimg.com/media/HSqqjJebkAA1Xbm.jpg?name=orig" alt="RAG agent routing benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/LargitData1/status/2101679703673454669">RAG agent routing benchmark</a></b><br><sub>LargitData1 · X · ♥ 8 · 2026-09-20</sub><br>Chinese benchmark of 100 multi-turn dialogs on whether an agent picks the right source (knowledge base, docs, web, tools, ask user): Gemma 4 31B 77.0%, Jev 61.4%, djev-spark 32.2%, SemIf 24.0%, Laya 0%.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/akafukusou/status/2100643727178092903"><img src="https://pbs.twimg.com/amplify_video_thumb/2100642936119836672/img/iQ5xCV_Yd2Z9QfUN.jpg" alt="Jev retrieval on QASPER" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/akafukusou/status/2100643727178092903">Jev retrieval on QASPER</a></b><br><sub>akafukusou · X · ♥ 7 · 2026-09-17</sub><br>Retrieval test on 34 QASPER questions where Jev beat pgvector with OpenAI text-embedding-3-small 17-3 (14 ties) on gold evidence coverage.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/carlaiau/jev-reranking"><img src="https://opengraph.githubassets.com/1/carlaiau/jev-reranking" alt="jev-reranking" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/carlaiau/jev-reranking">jev-reranking</a></b><br><sub>carlaiau · GitHub · ⭐ 7 · 2026-03-13</sub><br>Zero-shot reranking experiments comparing Jev with monoBERT and published TREC runs on MS MARCO and TREC-1 WSJ; on TREC DL 2021 documents Jev scored MAP 0.2790 and P@10 0.8930.<br><sub><b>How it uses Jev:</b> Scores overlapping windows of each document for relevance and keeps the highest window score (MaxP).</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/dhruv_ko/status/2102185971332878453"><img src="https://pbs.twimg.com/media/HSx241aacAAAYyH.jpg" alt="Jev vs LLMs, BERT and Laya" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dhruv_ko/status/2102185971332878453">Jev vs LLMs, BERT and Laya</a></b><br><sub>dhruv_ko · Article · ♥ 1 · 2026-09-21</sub><br>Healthcare voice-AI team benchmarks Jev against Claude Sonnet 5, GPT-5-mini, a fine-tuned BERT and two open-weight models on 1,500 examples, finding near-frontier accuracy at 1/50th the cost.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mahlernim/jev-korean-benchmark"><img src="https://raw.githubusercontent.com/mahlernim/jev-korean-benchmark/main/docs/figures/korean-check.png" alt="Jev in Korean" width="240"></a></td>
@@ -302,10 +286,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/goodrahstar/pdf-race">PDF Race</a></b><br><sub>goodrahstar · GitHub · ⭐ 6 · 2026-09-20</sub><br>Race of three document pipelines on 12 arXiv papers: Docling with Jev, Docling with Gemini 3.8 Flash, and Gemini reading the PDF; all scored 12/12, but the Jev lane cost $0.0022 versus $0.0882.<br><sub><b>How it uses Jev:</b> Jev's median decision was 388 ms per document versus 3,134 ms for Gemini on the same parsed text.</sub><br><sub>Also: <a href="https://pdf-race.vercel.app">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/miptgirl/miptgirl_medium/tree/main/jev"><img src="https://opengraph.githubassets.com/1/miptgirl/miptgirl_medium" alt="Jev classification benchmarks" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/miptgirl/miptgirl_medium/tree/main/jev">Jev classification benchmarks</a></b><br><sub>miptgirl · GitHub · ⭐ 109 repo · 2023-01-28</sub><br>Notebooks benchmarking Jev on Banking77 intent classification and StackExchange data against GPT models; on 1,000 Banking77 samples Jev scored 0.790 accuracy versus 0.862 for gpt-5.6-luna.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/gemanor/jev-code-review-benchmark"><img src="https://raw.githubusercontent.com/gemanor/jev-code-review-benchmark/main/docs/results/comparison.png" alt="Jev code review benchmark" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/gemanor/jev-code-review-benchmark">Jev code review benchmark</a></b><br><sub>gemanor · GitHub · ⭐ 5 · 2026-09-17</sub><br>Benchmark of Jev, Gemini Flash and Claude Fable checking Python code against four review rules over 360 calls each: Jev cost 45x less than Flash with a 0.75 s median, but scored 98% correctness versus 100%.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49744021">demo</a></sub></td>
 </tr>
@@ -314,16 +294,24 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/anessbelbati/jev-rerank-bench">jev-rerank-bench</a></b><br><sub>anessbelbati · GitHub · ⭐ 5 · 2026-09-16</sub><br>Reranking benchmark of Jev against Cohere Rerank 4, ZeroEntropy zerank-2 and a chat-model baseline on 14 datasets; Jev's rubric averaged 0.692 against 0.691 for Cohere Pro, with no clear winner.<br><sub>Also: <a href="https://anessbelbati.com/lab/jev-reranking">write-up</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/identityTorn/status/2100475121324728615"><img src="https://pbs.twimg.com/media/HSZizHpasAABVQJ.jpg?name=orig" alt="Jev vs fine-tuned Qwen classifier" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/identityTorn/status/2100475121324728615">Jev vs fine-tuned Qwen classifier</a></b><br><sub>identityTorn · X · ♥ 3 · 2026-09-17</sub><br>Field note comparing zero-shot Jev with a fine-tuned Qwen classifier on an internal benchmark: within ~5 points of recall at matched precision, for about $70/mo at full volume.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ielab/llm-rankers/tree/main/jev"><img src="https://opengraph.githubassets.com/1/ielab/llm-rankers" alt="llm-rankers Jev experiments" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ielab/llm-rankers/tree/main/jev">llm-rankers Jev experiments</a></b><br><sub>ielab · GitHub · ⭐ 212 repo · 2023-10-14</sub><br>Zero-shot TREC DL19/DL20 experiments using Jev as a pointwise, pairwise, setwise and listwise reranker; listwise Score over all 100 BM25 passages in one request reached nDCG@10 0.728 on DL19 at $0.0009 per query.<br><sub><b>How it uses Jev:</b> Score questions beat Choice questions everywhere; all 100 candidates fit in a single request because output is free.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_CALIBRATION.md"><img src="https://opengraph.githubassets.com/1/chunxiaoxx/nautilus-compass" alt="Hosted Jev calibration study" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_CALIBRATION.md">Hosted Jev calibration study</a></b><br><sub>chunxiaoxx · GitHub · ⭐ 207 repo · 2026-04-27</sub><br>Reproducible calibration study of hosted jev-1.13.0 on 240 seeded questions (92.2% accuracy, Brier 0.048, ECE 0.041 on Noul items), plus a 200-question adversarial follow-up with ECE 0.012.<br><sub>Also: <a href="https://github.com/chunxiaoxx/nautilus-compass/blob/main/docs/wall/GENESIS_HOSTED_JEV_ADVCAL.md">adversarial</a> · <a href="https://github.com/chunxiaoxx/nautilus-compass/tree/main/runtime/jev_advcal_20260922">code</a> · <a href="https://github.com/chunxiaoxx/nautilus-compass">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/scienthoon/jev-ood-calibration"><img src="https://opengraph.githubassets.com/1/scienthoon/jev-ood-calibration" alt="Does Jev know when it does not know?" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/scienthoon/jev-ood-calibration">Does Jev know when it does not know?</a></b><br><sub>scienthoon · GitHub · ⭐ 4 · 2026-09-19</sub><br>Calibration test of Jev on 900 rule-generated support tickets it cannot have seen plus three public benchmarks, with raw responses: near calibrated on the public sets, overconfident where the rule is unknowable.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/chenmingtang830/jevarena"><img src="https://jevarena-lab.vercel.app/og-image.png" alt="JevArena" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/chenmingtang830/jevarena">JevArena</a></b><br><sub>chenmingtang830 · GitHub · ⭐ 4 · 2026-09-19</sub><br>Bring-your-own-key arena that pits Jev against another judge model from OpenRouter on your question and takes your vote before revealing which was which, along with latency and cost.<br><sub>Also: <a href="https://jevarena-lab.vercel.app">app</a> · <a href="https://jevarena-lab.vercel.app">app 2</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/nekuda-ai/WindTunnel/tree/main/experiments/jev"><img src="https://raw.githubusercontent.com/nekuda-ai/WindTunnel/main/assets/charts/balanced-leaderboard.svg" alt="WindTunnel Jev experiments" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/nekuda-ai/WindTunnel/tree/main/experiments/jev">WindTunnel Jev experiments</a></b><br><sub>nekuda-ai · GitHub · ⭐ 76 repo · 2026-07-27</sub><br>WebMCP benchmark runs where Jev picks browser actions and Mercury writes arguments and answers: via WebMCP the pair solved 49/49 tasks at a $0.0011 median per run, versus 25/49 through DOM control.<br><sub>Also: <a href="https://github.com/nekuda-ai/WindTunnel">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/LocalLLM/comments/1wl0wyr/benchmarked_typesafes_decision_model_jev_vs/"><img src="https://external-preview.redd.it/nGd0jUCYN79vEjP-jsIWFeaYmT1rlyOztmJb1MN8jcM.png?auto=webp&amp;s=212db4efbf345f508cce40389cae7198a105d8f9" alt="DecaState Jev vs frontier LLMs" width="240"></a></td>
@@ -362,8 +350,8 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://www.southbridge.ai/blog/jev-watching-the-agents">Models watching models</a></b><br><sub>Southbridge AI · Article · ▲ 1 · 2026-09-19</sub><br>Flags risky calls across 220,000 agent tool calls, shows that encoding tricks slip past it, and finds worded scales beat 1-to-100 ratings.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49783694">discussion</a> · <a href="https://x.com/hrishioa/status/2101842370052669903">post</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/phuryn/experiments/tree/main/jev-decisions-api"><img src="https://opengraph.githubassets.com/1/phuryn/experiments" alt="Is Jev cheaper and better?" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/phuryn/experiments/tree/main/jev-decisions-api">Is Jev cheaper and better?</a></b><br><sub>phuryn · GitHub · ⭐ 52 repo · 2026-06-10</sub><br>Reproducible invoice-classification test on 50 documents built so surface cues mislead: Jev scored 50/50 at $0.025 per 1,000 decisions, tied with Claude Haiku 4.5, while two open models scored 48/50.<br><sub>Also: <a href="https://github.com/phuryn/experiments">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/miptgirl/miptgirl_medium/tree/main/jev"><img src="https://opengraph.githubassets.com/1/miptgirl/miptgirl_medium" alt="Jev classification benchmarks" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/miptgirl/miptgirl_medium/tree/main/jev">Jev classification benchmarks</a></b><br><sub>miptgirl · GitHub · ⭐ 109 repo · 2023-01-28</sub><br>Notebooks benchmarking Jev on Banking77 intent classification and StackExchange data against GPT models; on 1,000 Banking77 samples Jev scored 0.790 accuracy versus 0.862 for gpt-5.6-luna.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TokenTrim/jev-agent-failure-benchmark"><img src="https://raw.githubusercontent.com/TokenTrim/jev-agent-failure-benchmark/main/figures/whowhen_jev_vs_llm.png" alt="jev-agent-failure-benchmark" width="240"></a></td>
@@ -382,24 +370,16 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/Gaurav-Gosain/jev-sec-bench">jev-sec-bench</a></b><br><sub>Gaurav-Gosain · GitHub · ⭐ 2 · 2026-09-16</sub><br>Blind security benchmarks for jev-1.13.0 with a Go runner and TUI: 96.5% accuracy on all 662 deepset prompt-injection messages at a plain 0.50 cut, plus 200 vulnerable-code pairs.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/alp82/goodwatch-monorepo/tree/main/docs/benchmarks/fingerprint/jev"><img src="https://opengraph.githubassets.com/1/alp82/goodwatch-monorepo" alt="GoodWatch Jev fingerprint experiment" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/alp82/goodwatch-monorepo/tree/main/docs/benchmarks/fingerprint/jev">GoodWatch Jev fingerprint experiment</a></b><br><sub>alp82 · GitHub · ⭐ 38 repo · 2026-09-17</sub><br>Case study from the GoodWatch movie-discovery app testing Jev for 74 per-title trait scores: 10 to 25 times faster but a 2.65-point mean gap to reviewed Qwen scores, so the team decided not to adopt it.<br><sub><b>How it uses Jev:</b> Compared ten-level and six-level Score ladders, presence Nouls and batch sizes from 1 to 222 questions per request.</sub><br><sub>Also: <a href="https://github.com/alp82/goodwatch-monorepo">repo</a> · <a href="https://github.com/alp82/goodwatch-monorepo/blob/main/docs/adr/0001-no-jev-for-fingerprint-scoring.md">adr</a> · <a href="https://goodwatch.app/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/dhruv_ko/status/2102185971332878453"><img src="https://pbs.twimg.com/media/HSx241aacAAAYyH.jpg" alt="Jev vs LLMs, BERT and Laya" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dhruv_ko/status/2102185971332878453">Jev vs LLMs, BERT and Laya</a></b><br><sub>dhruv_ko · Article · ♥ 1 · 2026-09-21</sub><br>Healthcare voice-AI team benchmarks Jev against Claude Sonnet 5, GPT-5-mini, a fine-tuned BERT and two open-weight models on 1,500 examples, finding near-frontier accuracy at 1/50th the cost.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hakari-bench/hakari-bench/blob/main/docs/typesafe_reranker_evaluation.md"><img src="https://opengraph.githubassets.com/1/hakari-bench/hakari-bench" alt="HAKARI-Bench Jev reranker" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hakari-bench/hakari-bench/blob/main/docs/typesafe_reranker_evaluation.md">HAKARI-Bench Jev reranker</a></b><br><sub>hakari-bench · GitHub · ⭐ 32 repo · 2026-04-30</sub><br>Jev integration in HAKARI-Bench, a lightweight IR benchmark over 35+ benchmark groups, that ranks documents by Noul relevance probabilities in listwise or pointwise mode with jev-1.13.0 pinned.<br><sub>Also: <a href="https://github.com/hakari-bench/hakari-bench">repo</a> · <a href="https://huggingface.co/spaces/hakari-bench/leaderboard">leaderboard</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/nekuda-ai/WindTunnel/tree/main/experiments/jev"><img src="https://raw.githubusercontent.com/nekuda-ai/WindTunnel/main/assets/charts/balanced-leaderboard.svg" alt="WindTunnel Jev experiments" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/nekuda-ai/WindTunnel/tree/main/experiments/jev">WindTunnel Jev experiments</a></b><br><sub>nekuda-ai · GitHub · ⭐ 76 repo · 2026-07-27</sub><br>WebMCP benchmark runs where Jev picks browser actions and Mercury writes arguments and answers: via WebMCP the pair solved 49/49 tasks at a $0.0011 median per run, versus 25/49 through DOM control.<br><sub>Also: <a href="https://github.com/nekuda-ai/WindTunnel">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/henrylove0/status/2102239256093794663"><img src="https://pbs.twimg.com/media/HSynVzubYAAgXmA.png?name=orig" alt="Jev vs Laya head to head" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/henrylove0/status/2102239256093794663">Jev vs Laya head to head</a></b><br><sub>henrylove0 · X · ♥ 1 · 2026-09-22</sub><br>Side-by-side run of Jev against the open Laya model showing Laya is much faster while Jev makes much better judgments.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/brcampidelli/chimera-agent/blob/main/bench/jev_decisions/RESULTS.md"><img src="https://opengraph.githubassets.com/1/brcampidelli/chimera-agent" alt="Chimera Jev governance benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/brcampidelli/chimera-agent/blob/main/bench/jev_decisions/RESULTS.md">Chimera Jev governance benchmark</a></b><br><sub>brcampidelli · GitHub · ⭐ 26 repo · 2026-06-30</sub><br>Preregistered benchmark in the Chimera agent repo comparing Jev (a danger Noul plus a block/review/allow Choice) with a DeepSeek judge and verbalized probabilities; Jev reached 0.903 AUROC on ambiguous items.<br><sub>Also: <a href="https://github.com/brcampidelli/chimera-agent">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md"><img src="https://opengraph.githubassets.com/1/ucsandman/claude-harness" alt="Jev skill suggestion on real transcripts" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md">Jev skill suggestion on real transcripts</a></b><br><sub>ucsandman · GitHub · ⭐ 24 repo · 2026-08-13</sub><br>Measurement of Jev picking the right skill per turn over 407 skills and 356 turns mined from 838 Claude Code transcripts: 73.3% wrong loads vs 96.5% for a keyword baseline, with first-call recall identified as the ceiling.<br><sub>Also: <a href="https://github.com/ucsandman/claude-harness">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/phuryn/experiments/tree/main/jev-decisions-api"><img src="https://opengraph.githubassets.com/1/phuryn/experiments" alt="Is Jev cheaper and better?" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/phuryn/experiments/tree/main/jev-decisions-api">Is Jev cheaper and better?</a></b><br><sub>phuryn · GitHub · ⭐ 52 repo · 2026-06-10</sub><br>Reproducible invoice-classification test on 50 documents built so surface cues mislead: Jev scored 50/50 at $0.025 per 1,000 decisions, tied with Claude Haiku 4.5, while two open models scored 48/50.<br><sub>Also: <a href="https://github.com/phuryn/experiments">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Adkid-Zephyr/chinese-workflow-decision-bench"><img src="https://raw.githubusercontent.com/Adkid-Zephyr/chinese-workflow-decision-bench/main/assets/xiaohongshu-scorecard-3x4.png" alt="chinese-workflow-decision-bench" width="240"></a></td>
@@ -420,6 +400,10 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/jjd-lab/jev-synthetic-survey"><img src="https://jjd-lab.github.io/jev-synthetic-survey/assets/og.png" alt="Jev synthetic survey" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/jjd-lab/jev-synthetic-survey">Jev synthetic survey</a></b><br><sub>jjd-lab · GitHub · ⭐ 1 · 2026-09-20</sub><br>Study running Jev and GPT-4.1 as the same 300 synthetic respondents over 24,596 Twin-2K-500 cells, finding that asking yes/no items as a Noul mattered more than the model gap, at a thirty-fourth of the cost.<br><sub>Also: <a href="https://jjd-lab.github.io/jev-synthetic-survey/">article</a> · <a href="https://jjd-lab.github.io/jev-synthetic-survey">write-up</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/henrylove0/status/2102239256093794663"><img src="https://pbs.twimg.com/media/HSynVzubYAAgXmA.png?name=orig" alt="Jev vs Laya head to head" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/henrylove0/status/2102239256093794663">Jev vs Laya head to head</a></b><br><sub>henrylove0 · X · ♥ 1 · 2026-09-22</sub><br>Side-by-side run of Jev against the open Laya model showing Laya is much faster while Jev makes much better judgments.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/cruzex100/status/2102202098968666432"><img src="https://pbs.twimg.com/media/HSyFqylbgAAxJYA.jpg?name=orig" alt="Jev vs Laya smoke test" width="240"></a></td>
@@ -454,6 +438,22 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/markfive-proto/typesafe-vs-deepseek">typesafe-vs-deepseek</a></b><br><sub>markfive-proto · GitHub · ⭐ 1 · 2026-09-18</sub><br>Side-by-side comparison of Jev and DeepSeek flash on speed, tokens, cost and accuracy across invoice extraction, email classification and reranking, plus fraud, guardrail and reconciliation pipelines.<br><sub>Also: <a href="https://typesafe-vs-deepseek.vercel.app">app</a> · <a href="https://typesafe-vs-deepseek.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/alp82/goodwatch-monorepo/tree/main/docs/benchmarks/fingerprint/jev"><img src="https://opengraph.githubassets.com/1/alp82/goodwatch-monorepo" alt="GoodWatch Jev fingerprint experiment" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/alp82/goodwatch-monorepo/tree/main/docs/benchmarks/fingerprint/jev">GoodWatch Jev fingerprint experiment</a></b><br><sub>alp82 · GitHub · ⭐ 38 repo · 2026-09-17</sub><br>Case study from the GoodWatch movie-discovery app testing Jev for 74 per-title trait scores: 10 to 25 times faster but a 2.65-point mean gap to reviewed Qwen scores, so the team decided not to adopt it.<br><sub><b>How it uses Jev:</b> Compared ten-level and six-level Score ladders, presence Nouls and batch sizes from 1 to 222 questions per request.</sub><br><sub>Also: <a href="https://github.com/alp82/goodwatch-monorepo">repo</a> · <a href="https://github.com/alp82/goodwatch-monorepo/blob/main/docs/adr/0001-no-jev-for-fingerprint-scoring.md">adr</a> · <a href="https://goodwatch.app/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/hakari-bench/hakari-bench/blob/main/docs/typesafe_reranker_evaluation.md"><img src="https://opengraph.githubassets.com/1/hakari-bench/hakari-bench" alt="HAKARI-Bench Jev reranker" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hakari-bench/hakari-bench/blob/main/docs/typesafe_reranker_evaluation.md">HAKARI-Bench Jev reranker</a></b><br><sub>hakari-bench · GitHub · ⭐ 32 repo · 2026-04-30</sub><br>Jev integration in HAKARI-Bench, a lightweight IR benchmark over 35+ benchmark groups, that ranks documents by Noul relevance probabilities in listwise or pointwise mode with jev-1.13.0 pinned.<br><sub>Also: <a href="https://github.com/hakari-bench/hakari-bench">repo</a> · <a href="https://huggingface.co/spaces/hakari-bench/leaderboard">leaderboard</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/brcampidelli/chimera-agent/blob/main/bench/jev_decisions/RESULTS.md"><img src="https://opengraph.githubassets.com/1/brcampidelli/chimera-agent" alt="Chimera Jev governance benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/brcampidelli/chimera-agent/blob/main/bench/jev_decisions/RESULTS.md">Chimera Jev governance benchmark</a></b><br><sub>brcampidelli · GitHub · ⭐ 26 repo · 2026-06-30</sub><br>Preregistered benchmark in the Chimera agent repo comparing Jev (a danger Noul plus a block/review/allow Choice) with a DeepSeek judge and verbalized probabilities; Jev reached 0.903 AUROC on ambiguous items.<br><sub>Also: <a href="https://github.com/brcampidelli/chimera-agent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md"><img src="https://opengraph.githubassets.com/1/ucsandman/claude-harness" alt="Jev skill suggestion on real transcripts" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md">Jev skill suggestion on real transcripts</a></b><br><sub>ucsandman · GitHub · ⭐ 24 repo · 2026-08-13</sub><br>Measurement of Jev picking the right skill per turn over 407 skills and 356 turns mined from 838 Claude Code transcripts: 73.3% wrong loads vs 96.5% for a keyword baseline, with first-call recall identified as the ceiling.<br><sub>Also: <a href="https://github.com/ucsandman/claude-harness">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex"><img src="https://opengraph.githubassets.com/1/ibm-client-engineering/output-drift-financial-llms" alt="DFAH-Bench Jev gate condition" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex">DFAH-Bench Jev gate condition</a></b><br><sub>ibm-client-engineering · GitHub · ⭐ 18 repo · 2025-11-02</sub><br>Research extension of IBM Client Engineering's DFAH-Bench for financial agents that compares action gates: structural checks alone, an LLM's allow/block/review JSON judgment, and Jev's typed choice with class probabilities.<br><sub>Also: <a href="https://github.com/ibm-client-engineering/output-drift-financial-llms">repo</a> · <a href="https://ibm-client-engineering.github.io/output-drift-financial-llms/">site</a></sub></td>
 </tr>
@@ -470,8 +470,8 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/daiwk/auto-research/tree/main/src/auto_research/system_one">auto-research System One</a></b><br><sub>daiwk · GitHub · ⭐ 14 repo · 2026-07-13</sub><br>Research module that implements the Choice/Score/Noul contract and runs Banking77 and public-suite evaluations of Jev against a local calibrated scorer and the NanoJev, Nimble and Laya checkpoints.<br><sub><b>How it uses Jev:</b> Dependency-free TypeSafe HTTP provider behind the same contracts as the local and open-checkpoint backends, plus a catalog of 48 community implementations.</sub><br><sub>Also: <a href="https://github.com/daiwk/auto-research">repo</a> · <a href="https://github.com/daiwk/auto-research/blob/main/docs/system-one/README.md">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/hevmind/status/2101110454785614219"><img src="https://hevmind.com/og-image.png" alt="Jev as a reranker (hev mind)" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hevmind/status/2101110454785614219">Jev as a reranker (hev mind)</a></b><br><sub>hevmind · X · ▶ 32 · 2026-09-19</sub><br>Untuned Jev reranker reaches 0.501 mean nDCG@10 versus Voyage rerank-3's 0.504, with a prompt tuned only on SciFact's train split.<br><sub>Also: <a href="https://hevmind.com/writing/jev-as-a-reranker/">article</a></sub></td>
+<td width="260" valign="top"><a href="https://huggingface.co/datasets/emretheus/jev-rag-benchmark"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/emretheus/jev-rag-benchmark.png" alt="Jev RAG Benchmark" width="240"></a></td>
+<td valign="top"><b><a href="https://huggingface.co/datasets/emretheus/jev-rag-benchmark">Jev RAG Benchmark</a></b><br><sub>emretheus · Hugging Face · ⬇ 21 · 2026-09-20</sub><br>Frozen-candidate RAG evaluation of Jev 1.13 as reranker against OpenJev and an NVIDIA cross-encoder: on SciFact Jev reaches 79.29% nDCG@10 vs 78.70%, at about 4 s vs 307 ms p50 latency.<br><sub>Also: <a href="https://github.com/emretheus/jev-rag-benchmark">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bryansparks/armature/tree/main/examples/decision-typesafe"><img src="https://raw.githubusercontent.com/bryansparks/armature/main/demo-hero.gif" alt="Armature TypeSafe decision A/B" width="240"></a></td>
@@ -482,12 +482,12 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/ensemblr-hq/ensemblr/blob/master/docs/considerations/jev-decision-layer.md">Ensemblr Jev decision layer study</a></b><br><sub>ensemblr-hq · Docs · ⭐ 8 repo · 2026-06-04</sub><br>Design proposal and spike for using Jev in a desktop orchestrator for Pi and Claude Code to pick agent roles, rate difficulty and flag duplicates; rejected after a corrected rerun that still did not support production use.<br><sub>Also: <a href="https://github.com/ensemblr-hq/ensemblr">repo</a> · <a href="https://github.com/ensemblr-hq/ensemblr/blob/master/docs/considerations/jev-spike-runbook.md">runbook</a> · <a href="https://www.ensemblr.dev">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/fstandhartinger/model-market-comparison/tree/main/ops/ux-2026-09-12/jevbench"><img src="https://raw.githubusercontent.com/fstandhartinger/model-market-comparison/main/public/brand/wordmark.svg" alt="JevBench (Benchmark Heaven)" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/fstandhartinger/model-market-comparison/tree/main/ops/ux-2026-09-12/jevbench">JevBench (Benchmark Heaven)</a></b><br><sub>fstandhartinger · GitHub · ⭐ 5 repo · 2026-06-15</sub><br>Benchmark for Jev and Jev-like decision models inside Benchmark Heaven, an LLM price and benchmark comparison site, with public and held-out task splits reported separately.<br><sub>Also: <a href="https://github.com/fstandhartinger/model-market-comparison">repo</a> · <a href="https://benchmarkheaven.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/hevmind/status/2101110454785614219"><img src="https://hevmind.com/og-image.png" alt="Jev as a reranker (hev mind)" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hevmind/status/2101110454785614219">Jev as a reranker (hev mind)</a></b><br><sub>hevmind · X · ▶ 32 · 2026-09-19</sub><br>Untuned Jev reranker reaches 0.501 mean nDCG@10 versus Voyage rerank-3's 0.504, with a prompt tuned only on SciFact's train split.<br><sub>Also: <a href="https://hevmind.com/writing/jev-as-a-reranker/">article</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://huggingface.co/datasets/emretheus/jev-rag-benchmark"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/emretheus/jev-rag-benchmark.png" alt="Jev RAG Benchmark" width="240"></a></td>
-<td valign="top"><b><a href="https://huggingface.co/datasets/emretheus/jev-rag-benchmark">Jev RAG Benchmark</a></b><br><sub>emretheus · Hugging Face · ⬇ 21 · 2026-09-20</sub><br>Frozen-candidate RAG evaluation of Jev 1.13 as reranker against OpenJev and an NVIDIA cross-encoder: on SciFact Jev reaches 79.29% nDCG@10 vs 78.70%, at about 4 s vs 307 ms p50 latency.<br><sub>Also: <a href="https://github.com/emretheus/jev-rag-benchmark">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/fstandhartinger/model-market-comparison/tree/main/ops/ux-2026-09-12/jevbench"><img src="https://raw.githubusercontent.com/fstandhartinger/model-market-comparison/main/public/brand/wordmark.svg" alt="JevBench (Benchmark Heaven)" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/fstandhartinger/model-market-comparison/tree/main/ops/ux-2026-09-12/jevbench">JevBench (Benchmark Heaven)</a></b><br><sub>fstandhartinger · GitHub · ⭐ 5 repo · 2026-06-15</sub><br>Benchmark for Jev and Jev-like decision models inside Benchmark Heaven, an LLM price and benchmark comparison site, with public and held-out task splits reported separately.<br><sub>Also: <a href="https://github.com/fstandhartinger/model-market-comparison">repo</a> · <a href="https://benchmarkheaven.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://zenn.dev/acrosstudioblog/articles/a62c066d5d9938"><img src="https://res.cloudinary.com/zenn/image/upload/s--DfX5i98Y--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%2587%25E7%25AB%25A0%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584AI%25E3%2580%258CJev%25E3%2580%258D%25E3%2582%2592%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E3%2581%25A748%25E5%259B%259E%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%25E3%2580%2582%25E9%2580%259F%25E3%2581%2595%25E3%2582%2588%25E3%2582%258A%25E9%259D%25A2%25E7%2599%25BD%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%258C%25E8%25BF%25B7%25E3%2581%2584%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25A6%25E3%2583%2595%25E3%2583%25A0%2528wooheum%2520xin%2529%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQxMjhmMzRjMjIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Acrosstudio%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzgwMjc2NjQyOTMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="48 Japanese calls to Jev" width="240"></a></td>

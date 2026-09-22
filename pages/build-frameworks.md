@@ -10,10 +10,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe"><img src="https://opengraph.githubassets.com/1/openclaw/openclaw" alt="OpenClaw TypeSafe plugin" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe">OpenClaw TypeSafe plugin</a></b><br><sub>openclaw · GitHub · ⭐ 75 · 2025-11-24</sub><br>Official OpenClaw plugin that plugs hosted Jev, or a local Kev server, into OpenClaw's decision-model API for Choice, Score and Boolean judgments, plus an optional typesafe_evaluate tool.<br><sub><b>How it uses Jev:</b> Select typesafe/jev-latest as an agent's decisionModel, globally or per agent.</sub><br><sub>Also: <a href="https://docs.openclaw.ai/plugins/typesafe">docs</a> · <a href="https://docs.openclaw.ai/plugins/typesafe">link</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/langchain-ai/langchain/tree/master/libs/partners/typesafe"><img src="https://repository-images.githubusercontent.com/552661142/7392d590-2716-4261-b623-a0579df67e0d" alt="langchain-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/langchain-ai/langchain/tree/master/libs/partners/typesafe">langchain-typesafe</a></b><br><sub>langchain-ai · GitHub · ⭐ 146.8k repo · 2026-09-17</sub><br>LangChain partner package with a TypeSafeClassifier runnable for Choice, Noul and Score questions, plus experimental auto-mode and model-router middleware.<br><sub>Also: <a href="https://github.com/langchain-ai/langchain">repo</a> · <a href="https://pypi.org/project/langchain-typesafe/">pypi</a></sub></td>
 </tr>
@@ -38,12 +34,24 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe">elizaOS TypeSafe adapter</a></b><br><sub>elizaOS · GitHub · ⭐ 19.4k repo · 2026-09-16</sub><br>Opt-in server-side TypeSafe client in the elizaOS agent package that validates Choice, Score and Noul requests with Zod and sends them only on an explicit systemOne call; it is not registered with the runtime by default.<br><sub>Also: <a href="https://github.com/elizaOS/eliza">repo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev workflow builder" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/CTNicholas/jev-workflow-builder">Jev workflow builder</a></b><br><sub>CTNicholas · GitHub · ⭐ 78 · 2026-09-21</sub><br>Liveblocks demo of a multiplayer visual workflow builder that wires Jev and LLM nodes together, runs workflows through a REST API, and shows test-run previews and live cursors.<br><sub>Also: <a href="https://x.com/ctnicholasdev/status/2102070640589279318">demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe"><img src="https://repository-images.githubusercontent.com/598342280/41cd6da7-4afb-4b7f-b2dd-9fd52b1cc773" alt="LangChain.js" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe">LangChain.js</a></b><br><sub>langchain-ai · GitHub · ⭐ 18.2k repo · 2026-09-18</sub><br>JavaScript version of the classifier and the routing and approval middleware.<br><sub>Also: <a href="https://github.com/langchain-ai/langchainjs">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe"><img src="https://opengraph.githubassets.com/1/Effect-TS/effect" alt="@effect/ai-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe">@effect/ai-typesafe</a></b><br><sub>Effect-TS · GitHub · ⭐ 16.2k repo · 2026-09-18</sub><br>Effect's DecisionModel provider for TypeSafe's System One API, supporting classification, ordered ratings and probabilities through Effect HttpClient, with provider distributions preserved rather than normalized.<br><sub>Also: <a href="https://github.com/lootlog/monorepo/tree/main/repos/effect/packages/ai/typesafe">mirror</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/typesafe-ai/system-one-adapter-python"><img src="https://opengraph.githubassets.com/1/typesafe-ai/system-one-adapter-python" alt="System One adapter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/typesafe-ai/system-one-adapter-python">System One adapter</a></b><br><sub>typesafe-ai · GitHub · ⭐ 245 · 2026-08-08</sub><br>Drop-in <code>TypeSafeClient</code> replacement backed by LLM APIs, for comparing cost, speed, and quality with Jev on your own workflow.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ash-project/ash_ai"><img src="https://opengraph.githubassets.com/1/ash-project/ash_ai" alt="Ash AI evaluate" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ash-project/ash_ai">Ash AI evaluate</a></b><br><sub>ash-project · GitHub · ⭐ 189 · 2024-08-29</sub><br>Elixir Ash framework extension whose evaluate/2 maps an Ash action onto typed questions for evaluation models like Jev, returning typed answers with probabilities and confidence.<br><sub><b>How it uses Jev:</b> run evaluate("typesafe:jev-latest") inside an action, with Noul, Choice and Score question builders.</sub><br><sub>Also: <a href="https://ash-hq.org">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/BoundaryML/baml/tree/canary/baml_language/crates/baml_builtins2/baml_std/typesafeai"><img src="https://opengraph.githubassets.com/1/BoundaryML/baml" alt="BAML Jev support" width="240"></a></td>
@@ -58,8 +66,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/YaoApp/yao/tree/main/agent/decision">Yao decision role</a></b><br><sub>YaoApp · GitHub · ⭐ 8k repo · 2021-09-06</sub><br>Yao Agents adds a decision role connector for typed decision requests, with TypeSafe AI's jev-latest as a preset provider alongside the chat models.<br><sub>Also: <a href="https://yaoagents.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev workflow builder" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/CTNicholas/jev-workflow-builder">Jev workflow builder</a></b><br><sub>CTNicholas · GitHub · ⭐ 78 · 2026-09-21</sub><br>Liveblocks demo of a multiplayer visual workflow builder that wires Jev and LLM nodes together, runs workflows through a REST API, and shows test-run previews and live cursors.<br><sub>Also: <a href="https://x.com/ctnicholasdev/status/2102070640589279318">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/donvito/ai-backends"><img src="https://opengraph.githubassets.com/1/donvito/ai-backends" alt="AI Backends" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/donvito/ai-backends">AI Backends</a></b><br><sub>donvito · GitHub · ⭐ 146 · 2025-05-21</sub><br>Self-hostable API server for common AI tasks that adds a /api/evaluate decision endpoint backed by Jev for Choice, Score and Noul questions.<br><sub>Also: <a href="https://aibackends.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/paolino/status/2102086504986169652"><img src="https://pbs.twimg.com/media/HSwbKb7XwAAT9Wj.jpg?name=orig" alt="RubyLLM::Judge" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/paolino/status/2102086504986169652">RubyLLM::Judge</a></b><br><sub>paolino · X · ♥ 123 · 2026-09-21</sub><br>Judgment API in the RubyLLM framework with support for Jev, for typed evaluations from Ruby and Rails apps.<br><sub>Also: <a href="https://rubyllm.com/next/judgments/">docs</a> · <a href="https://github.com/crmne/ruby_llm">repo</a> · <a href="https://github.com/crmne/ruby_llm">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/samchon/typia/tree/master/packages/jev"><img src="https://repository-images.githubusercontent.com/482949726/ac595228-a409-4c77-99d8-d134b125281d" alt="@typia/jev" width="240"></a></td>
@@ -74,56 +86,8 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/vercel/eve/blob/main/packages/eve/src/ai/evaluate.ts">eve Jev support</a></b><br><sub>vercel · GitHub · ⭐ 5.3k repo · 2026-06-16</sub><br>Jev support in Vercel's eve agent framework: an evaluate helper that asks typed Choice, Score and Boolean questions inside tools, and an auto model router that defaults to Jev through Vercel AI Gateway.<br><sub>Also: <a href="https://github.com/vercel/eve">repo</a> · <a href="https://eve.dev">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/beautyyuyanli/status/2100913383143026873"><img src="https://pbs.twimg.com/media/HSfxfsSasAAvv2h.jpg?name=orig" alt="Dify classifier node with Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/beautyyuyanli/status/2100913383143026873">Dify classifier node with Jev</a></b><br><sub>beautyyuyanli · X · ♥ 29 · 2026-09-18</sub><br>Dify's classifier node now supports Jev as the model, so workflow builders can route inputs with Jev's typed decisions.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/Kiln-AI/Kiln/tree/main/libs/core/kiln_ai/adapters/jev"><img src="https://repository-images.githubusercontent.com/832879402/669449f8-c948-40a0-9f73-866e06cac97a" alt="Kiln Jev provider" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Kiln-AI/Kiln/tree/main/libs/core/kiln_ai/adapters/jev">Kiln Jev provider</a></b><br><sub>Kiln-AI · GitHub · ⭐ 5.1k repo · 2024-07-23</sub><br>Jev provider for the Kiln AI workbench that runs compatible single-turn tasks and evals on Jev by mapping JSON-schema enums, booleans and scores to Jev questions and back.<br><sub><b>How it uses Jev:</b> Aimed at evals: Kiln's 1-5 star and pass/fail schemas fit Jev's question types, and native probabilities replace G-Eval's logprob approximation.</sub><br><sub>Also: <a href="https://kiln.tech">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/typesafe-ai/system-one-adapter-python"><img src="https://opengraph.githubassets.com/1/typesafe-ai/system-one-adapter-python" alt="System One adapter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/typesafe-ai/system-one-adapter-python">System One adapter</a></b><br><sub>typesafe-ai · GitHub · ⭐ 245 · 2026-08-08</sub><br>Drop-in <code>TypeSafeClient</code> replacement backed by LLM APIs, for comparing cost, speed, and quality with Jev on your own workflow.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb"><img src="https://raw.githubusercontent.com/crmne/ruby_llm/main/docs/assets/images/logotype.svg" alt="RubyLLM TypeSafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb">RubyLLM TypeSafe provider</a></b><br><sub>crmne · GitHub · ⭐ 4.4k repo · 2025-01-30</sub><br>TypeSafe provider in RubyLLM, the Ruby and Rails AI framework, connecting Jev judgment models through a dedicated System One protocol alongside the chat providers.<br><sub>Also: <a href="https://rubyllm.com/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev"><img src="https://raw.githubusercontent.com/dromara/liteflow/master/static/img/flow_e1.png" alt="liteflow-agent-jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev">liteflow-agent-jev</a></b><br><sub>dromara · GitHub · ⭐ 3.9k repo · 2020-03-25</sub><br>Jev switch component for the LiteFlow rule engine: JevSwitchComponent routes a flow to a target node id via a Jev Choice, wired into the DSL's SWITCH().to().DEFAULT().<br><sub><b>How it uses Jev:</b> Configured with a min-confidence threshold; supports TypeSafe and OpenRouter's Decisions API.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ash-project/ash_ai"><img src="https://opengraph.githubassets.com/1/ash-project/ash_ai" alt="Ash AI evaluate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ash-project/ash_ai">Ash AI evaluate</a></b><br><sub>ash-project · GitHub · ⭐ 189 · 2024-08-29</sub><br>Elixir Ash framework extension whose evaluate/2 maps an Ash action onto typed questions for evaluation models like Jev, returning typed answers with probabilities and confidence.<br><sub><b>How it uses Jev:</b> run evaluate("typesafe:jev-latest") inside an action, with Noul, Choice and Score question builders.</sub><br><sub>Also: <a href="https://ash-hq.org">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/ndrezn/status/2102088289876418563"><img src="https://pbs.twimg.com/media/HSwd5SWW0AA97cu.jpg?name=orig" alt="LangChain Jev routing middleware" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ndrezn/status/2102088289876418563">LangChain Jev routing middleware</a></b><br><sub>ndrezn · X · ♥ 16 · 2026-09-21</sub><br>LangChain middleware for managed deep agents that lets you define routes and has Jev pick the model for each request.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe"><img src="https://tanstack.com/api/readme/ai.png" alt="TanStack AI Jev adapter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe">TanStack AI Jev adapter</a></b><br><sub>TanStack · GitHub · ⭐ 3.1k repo · 2025-10-08</sub><br>Adapter package for TanStack AI that exposes Jev through a decide() call with typed Choice, Score, and yes/no questions, talking to the API over plain fetch with no TypeSafe SDK dependency.<br><sub>Also: <a href="https://github.com/TanStack/ai">repo</a> · <a href="https://www.npmjs.com/package/@tanstack/ai-typesafe">npm</a> · <a href="https://tanstack.com/ai/latest">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe"><img src="https://opengraph.githubassets.com/1/ax-llm/ax" alt="Ax TypeSafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe">Ax TypeSafe provider</a></b><br><sub>ax-llm · GitHub · ⭐ 2.9k repo · 2026-09-17</sub><br>TypeSafe provider in Ax, the DSPy-style TypeScript framework, mapping boolean and finite-class signatures to Jev questions or native System One requests, also ported to its generated Python, Go, Java, C++ and Rust libraries.<br><sub>Also: <a href="https://github.com/ax-llm/ax">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/donvito/ai-backends"><img src="https://opengraph.githubassets.com/1/donvito/ai-backends" alt="AI Backends" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/donvito/ai-backends">AI Backends</a></b><br><sub>donvito · GitHub · ⭐ 146 · 2025-05-21</sub><br>Self-hostable API server for common AI tasks that adds a /api/evaluate decision endpoint backed by Jev for Choice, Score and Noul questions.<br><sub>Also: <a href="https://aibackends.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/paolino/status/2102086504986169652"><img src="https://pbs.twimg.com/media/HSwbKb7XwAAT9Wj.jpg?name=orig" alt="RubyLLM::Judge" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/paolino/status/2102086504986169652">RubyLLM::Judge</a></b><br><sub>paolino · X · ♥ 123 · 2026-09-21</sub><br>Judgment API in the RubyLLM framework with support for Jev, for typed evaluations from Ruby and Rails apps.<br><sub>Also: <a href="https://rubyllm.com/next/judgments/">docs</a> · <a href="https://github.com/crmne/ruby_llm">repo</a> · <a href="https://github.com/crmne/ruby_llm">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/danvega/jev-spring-boot-starter"><img src="https://opengraph.githubassets.com/1/danvega/jev-spring-boot-starter" alt="Jev Spring Boot Starter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/danvega/jev-spring-boot-starter">Jev Spring Boot Starter</a></b><br><sub>danvega · GitHub · ⭐ 30 · 2026-09-20</sub><br>Community Spring Boot 4 starter that auto-configures an injectable JevClient on Spring MVC and RestClient, so a Java service can ask Jev typed questions after adding one dependency and an API key.<br><sub>Also: <a href="https://www.youtube.com/watch?v=fq_nYo4BnrY">video</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI"><img src="https://repository-images.githubusercontent.com/941562247/8b2db3ba-ba3b-4a74-95cc-da8bbead2b8c" alt="Neuron AI TypeSafe classifier" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI">Neuron AI TypeSafe classifier</a></b><br><sub>neuron-core · GitHub · ⭐ 2.1k repo · 2025-03-02</sub><br>TypeSafe AI classifier for Neuron AI, the PHP agentic framework, mapping its Boolean, Choice and Score classification requests onto Jev's System One API.<br><sub>Also: <a href="https://docs.neuron-ai.dev">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/peterfriese/jev-foundation-models"><img src="https://pbs.twimg.com/media/HSwjl81bkAAlliY.jpg?name=orig" alt="Jev for Apple Foundation Models" width="240"></a></td>
@@ -134,8 +98,20 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/pithings/advocaat">Advocaat</a></b><br><sub>pithings · GitHub · ⭐ 89 · 2026-09-16</sub><br>Small TypeScript client for asking Jev several yes/no, option and score questions about the same data in one request and reading typed values back, with an agent skill that teaches question design.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb"><img src="https://raw.githubusercontent.com/crmne/ruby_llm/main/docs/assets/images/logotype.svg" alt="RubyLLM TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb">RubyLLM TypeSafe provider</a></b><br><sub>crmne · GitHub · ⭐ 4.4k repo · 2025-01-30</sub><br>TypeSafe provider in RubyLLM, the Ruby and Rails AI framework, connecting Jev judgment models through a dedicated System One protocol alongside the chat providers.<br><sub>Also: <a href="https://rubyllm.com/">docs</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/spring-ai-community/spring-ai-typesafe"><img src="https://pbs.twimg.com/media/HSvVraQWUAEukT5.jpg?name=orig" alt="Spring AI TypeSafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/spring-ai-community/spring-ai-typesafe">Spring AI TypeSafe</a></b><br><sub>spring-ai-community · GitHub · ⭐ 19 · 2026-09-20</sub><br>Java client and Spring AI components for judging, guardrails, self-refinement, and RAG filtering and reranking.<br><sub>Also: <a href="https://spring-ai-community.github.io/spring-ai-typesafe">docs</a> · <a href="https://x.com/christzolov/status/2102009563083870575">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev"><img src="https://raw.githubusercontent.com/dromara/liteflow/master/static/img/flow_e1.png" alt="liteflow-agent-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev">liteflow-agent-jev</a></b><br><sub>dromara · GitHub · ⭐ 3.9k repo · 2020-03-25</sub><br>Jev switch component for the LiteFlow rule engine: JevSwitchComponent routes a flow to a target node id via a Jev Choice, wired into the DSL's SWITCH().to().DEFAULT().<br><sub><b>How it uses Jev:</b> Configured with a min-confidence threshold; supports TypeSafe and OpenRouter's Decisions API.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/danvega/jev-spring-boot-starter"><img src="https://opengraph.githubassets.com/1/danvega/jev-spring-boot-starter" alt="Jev Spring Boot Starter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/danvega/jev-spring-boot-starter">Jev Spring Boot Starter</a></b><br><sub>danvega · GitHub · ⭐ 30 · 2026-09-20</sub><br>Community Spring Boot 4 starter that auto-configures an injectable JevClient on Spring MVC and RestClient, so a Java service can ask Jev typed questions after adding one dependency and an API key.<br><sub>Also: <a href="https://www.youtube.com/watch?v=fq_nYo4BnrY">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/hyperspaceai/jevcache"><img src="https://repository-images.githubusercontent.com/1375761817/b17d8cf2-457c-446a-82cf-4bd18e00bb47" alt="jevcache" width="240"></a></td>
@@ -146,20 +122,24 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/cayu-dev/cayu">Cayu TypeSafeProvider</a></b><br><sub>cayu-dev · GitHub · ⭐ 69 · 2026-07-16</sub><br>Production runtime for long-horizon Python agents with an experimental TypeSafeProvider for native Choice, Score and Noul decisions through Cayu sessions and events.<br><sub>Also: <a href="https://cayu.dev/">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/beautyyuyanli/status/2100913383143026873"><img src="https://pbs.twimg.com/media/HSfxfsSasAAvv2h.jpg?name=orig" alt="Dify classifier node with Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/beautyyuyanli/status/2100913383143026873">Dify classifier node with Jev</a></b><br><sub>beautyyuyanli · X · ♥ 29 · 2026-09-18</sub><br>Dify's classifier node now supports Jev as the model, so workflow builders can route inputs with Jev's typed decisions.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://deepclause.substack.com/p/jev-prolog-pi-and-the-dream-of-probabilistic"><img src="https://substackcdn.com/image/fetch/$s_!HKv7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c7a3019-d2dc-4963-86b0-5e1bb06225d4_1220x364.png" alt="DeepClause + Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://deepclause.substack.com/p/jev-prolog-pi-and-the-dream-of-probabilistic">DeepClause + Jev</a></b><br><sub>Andreas (DeepClause) · Article · ▲ 21 · 2026-09-21</sub><br>Announces Jev support in DeepClause and its Pi extension, mapping Jev judgments onto Prolog-style DML predicates for fast, deterministic agent decisions, and asks if this revives probabilistic logic programming.<br><sub><b>How it uses Jev:</b> A judge/2 predicate batches Jev questions over a state; deterministic Prolog relations then select and annotate.</sub><br><sub>Also: <a href="https://github.com/deepclause/deepclause-sdk">repo</a> · <a href="https://www.npmjs.com/package/deepclause-pi">npm</a> · <a href="https://news.ycombinator.com/item?id=49781694">discussion</a> · <a href="https://github.com/deepclause/deepclause-sdk">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe"><img src="https://tanstack.com/api/readme/ai.png" alt="TanStack AI Jev adapter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe">TanStack AI Jev adapter</a></b><br><sub>TanStack · GitHub · ⭐ 3.1k repo · 2025-10-08</sub><br>Adapter package for TanStack AI that exposes Jev through a decide() call with typed Choice, Score, and yes/no questions, talking to the API over plain fetch with no TypeSafe SDK dependency.<br><sub>Also: <a href="https://github.com/TanStack/ai">repo</a> · <a href="https://www.npmjs.com/package/@tanstack/ai-typesafe">npm</a> · <a href="https://tanstack.com/ai/latest">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/typesafeainate/dspy-typesafeify"><img src="https://raw.githubusercontent.com/typesafeainate/dspy-typesafeify/main/examples/typesafe_dspy_ticket_triage/benchmark.svg" alt="dspy-typesafeify" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/typesafeainate/dspy-typesafeify">dspy-typesafeify</a></b><br><sub>typesafeainate · GitHub · ⭐ 61 · 2026-09-15</sub><br>Proof-of-concept DSPy fork with a @typesafeify decorator that routes a Signature's pure-decision outputs to Jev through a hybrid plan while application code keeps calling dspy.Predict as before.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe"><img src="https://opengraph.githubassets.com/1/symfony/ai" alt="Symfony AI TypeSafe bridge" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe">Symfony AI TypeSafe bridge</a></b><br><sub>symfony · GitHub · ⭐ 1.2k repo · 2025-04-17</sub><br>TypeSafe bridge for Symfony AI's Platform component, exposing the Jev model with Question, Answer and Evaluation types so PHP apps can make System One decisions.<br><sub>Also: <a href="https://ai.symfony.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php"><img src="https://pbs.twimg.com/media/HScwRSHXcAAmOGT.jpg" alt="Laravel AI TypeSafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php">Laravel AI TypeSafe provider</a></b><br><sub>laravel · GitHub · ⭐ 1.2k repo · 2026-09-17</sub><br>TypeSafe gateway added to the Laravel AI SDK, giving Laravel apps typed classification backed by Jev's /systemone endpoint, with fake responses for testing.<br><sub>Also: <a href="https://x.com/taylorotwell/status/2100700952923713641">demo</a> · <a href="https://github.com/laravel/ai">repo</a> · <a href="https://github.com/laravel/ai/pull/1010">pr</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe"><img src="https://opengraph.githubassets.com/1/ax-llm/ax" alt="Ax TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe">Ax TypeSafe provider</a></b><br><sub>ax-llm · GitHub · ⭐ 2.9k repo · 2026-09-17</sub><br>TypeSafe provider in Ax, the DSPy-style TypeScript framework, mapping boolean and finite-class signatures to Jev questions or native System One requests, also ported to its generated Python, Go, Java, C++ and Rust libraries.<br><sub>Also: <a href="https://github.com/ax-llm/ax">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caudena/beam_weaver"><img src="https://raw.githubusercontent.com/caudena/beam_weaver/master/docs/assets/weavescope-tracing.png" alt="BeamWeaver" width="240"></a></td>
@@ -174,52 +154,28 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/yusukebe/hono-jev-router">hono-jev-router</a></b><br><sub>yusukebe · GitHub · ⭐ 45 · 2026-09-18</sub><br>Experimental router for the Hono web framework that routes HTTP requests by plain-language descriptions instead of method and path, with Jev scoring which description fits each incoming request.<br><sub>Also: <a href="https://hono-jev-router.yusuke.run">app</a> · <a href="https://hono-jev-router.yusuke.run">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala"><img src="https://raw.githubusercontent.com/getkyo/kyo/main/kyo.png" alt="Kyo TypeSafe decider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala">Kyo TypeSafe decider</a></b><br><sub>getkyo · GitHub · ⭐ 812 repo · 2022-03-08</sub><br>Kyo, a Scala 3 toolkit, adds a TypeSafe decider backend for its AI module that answers every System One question kind with calibrated probabilities in one request.<br><sub>Also: <a href="https://getkyo.io">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/ndrezn/status/2102088289876418563"><img src="https://pbs.twimg.com/media/HSwd5SWW0AA97cu.jpg?name=orig" alt="LangChain Jev routing middleware" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ndrezn/status/2102088289876418563">LangChain Jev routing middleware</a></b><br><sub>ndrezn · X · ♥ 16 · 2026-09-21</sub><br>LangChain middleware for managed deep agents that lets you define routes and has Jev pick the model for each request.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-cli" alt="ai-cli evaluate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts">ai-cli evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 810 repo · 2025-07-28</sub><br>Evaluate command in the ai-cli terminal tool that sends a state and typed questions from flags, files or stdin to an AI Gateway evaluation model such as Jev and prints the typed answers.<br><sub>Also: <a href="https://github.com/vercel-labs/ai-cli">repo</a> · <a href="https://ai-cli.dev">website</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI"><img src="https://repository-images.githubusercontent.com/941562247/8b2db3ba-ba3b-4a74-95cc-da8bbead2b8c" alt="Neuron AI TypeSafe classifier" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI">Neuron AI TypeSafe classifier</a></b><br><sub>neuron-core · GitHub · ⭐ 2.1k repo · 2025-03-02</sub><br>TypeSafe AI classifier for Neuron AI, the PHP agentic framework, mapping its Boolean, Choice and Score classification requests onto Jev's System One API.<br><sub>Also: <a href="https://docs.neuron-ai.dev">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/DevMortimer/pi-typesafe"><img src="https://raw.githubusercontent.com/DevMortimer/pi-typesafe/main/docs/preview.png" alt="pi-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/DevMortimer/pi-typesafe">pi-typesafe</a></b><br><sub>DevMortimer · GitHub · ⭐ 40 · 2026-09-16</sub><br>Pi extension that adds a batched typesafe_evaluate tool for the agent, terminal playground commands and a typed client API so other extensions such as pi-warden share one key and usage record.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation"><img src="https://raw.githubusercontent.com/OpenRouterTeam/ai-sdk-provider/main/assets/banner.png" alt="OpenRouter AI SDK evaluation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation">OpenRouter AI SDK evaluation</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 686 repo · 2024-07-18</sub><br>OpenRouter's Vercel AI SDK provider adds an evaluation model that speaks the Decisions API, so AI SDK's evaluate can call Jev through OpenRouter.<br><sub>Also: <a href="https://www.npmjs.com/package/@openrouter/ai-sdk-provider">npm</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai"><img src="https://opengraph.githubassets.com/1/langgenius/dify-official-plugins" alt="Dify TypeSafe AI plugin" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai">Dify TypeSafe AI plugin</a></b><br><sub>langgenius · GitHub · ⭐ 635 repo · 2024-12-18</sub><br>Official Dify plugin that adds TypeSafe AI as a model provider, letting a Dify Question Classifier node route categories through Jev while branches stay unchanged.<br><sub><b>How it uses Jev:</b> Exposes jev-1.13.0 to the classifier node over a constrained six-message text template, returning category_id and category_name.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe"><img src="https://opengraph.githubassets.com/1/narumiruna/pi-extensions" alt="pi-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe">pi-typesafe</a></b><br><sub>narumiruna · GitHub · ⭐ 599 repo · 2026-05-07</sub><br>Pi Coding Agent extension that gives Pi a typesafe_question tool for narrow typed decisions through TypeSafe's Jev API, with an opt-in OpenRouter fallback.<br><sub><b>How it uses Jev:</b> Multiple Noul, Choice and Score questions per state in one call, validated before answers reach the model; bundles a typesafe-ai skill.</sub><br><sub>Also: <a href="https://www.npmjs.com/package/@narumitw/pi-typesafe">npm</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex"><img src="https://opengraph.githubassets.com/1/agentjido/req_llm" alt="ReqLLM TypeSafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex">ReqLLM TypeSafe provider</a></b><br><sub>agentjido · GitHub · ⭐ 581 repo · 2026-09-17</sub><br>TypeSafe provider for ReqLLM, the Elixir LLM library, that calls Jev through a separate evaluate interface, normalizes answers and keeps the raw provider response.<br><sub>Also: <a href="https://github.com/agentjido/req_llm">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 repo · 2021-04-07</sub><br>Experimental Effect client in the DXOS monorepo for TypeSafe's System One model, where a schema is both the request and response and each struct field compiles to one Jev question.<br><sub><b>How it uses Jev:</b> DecisionModel service mirroring Effect's LanguageModel; all fields ride a single call and decode back to the declared type.</sub><br><sub>Also: <a href="https://dxos.org">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe"><img src="https://opengraph.githubassets.com/1/symfony/ai" alt="Symfony AI TypeSafe bridge" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe">Symfony AI TypeSafe bridge</a></b><br><sub>symfony · GitHub · ⭐ 1.2k repo · 2025-04-17</sub><br>TypeSafe bridge for Symfony AI's Platform component, exposing the Jev model with Question, Answer and Evaluation types so PHP apps can make System One decisions.<br><sub>Also: <a href="https://ai.symfony.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://liteflow.cc/pages/agent-jev-switch/">liteflow-agent-jev</a></b><br><sub>LiteFlow · Docs · ⭐ 24 · 2026-09-20</sub><br>LiteFlow rule-engine module (from 2.16.2, JDK 17+) whose JevSwitchComponent lets Jev pick a SWITCH branch from candidate component IDs, falling to DEFAULT on low confidence; the docs include a customer-service routing demo.<br><sub>Also: <a href="https://github.com/bryan31/liteflow-homepage">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone"><img src="https://opengraph.githubassets.com/1/lnyo-cly/ai4j" alt="ai4j System One" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone">ai4j System One</a></b><br><sub>lnyo-cly · GitHub · ⭐ 429 repo · 2024-08-17</sub><br>Adds System One support to ai4j, a Java 8+ agentic SDK, so JVM apps can call TypeSafe's Jev for typed decisions alongside its unified LLM, tool-calling and RAG features.<br><sub>Also: <a href="https://lnyo-cly.github.io/ai4j/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx"><img src="https://opengraph.githubassets.com/1/langchain-ai/docs" alt="LangChain TypeSafe integration" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx">LangChain TypeSafe integration</a></b><br><sub>langchain-ai · Docs · ⭐ 418 repo · 2025-05-15</sub><br>LangChain's docs for the TypeSafe integration, where TypeSafeClassifier exposes Jev decisions as a Runnable you can invoke, batch or compose, including inside create_agent middleware.<br><sub>Also: <a href="https://docs.langchain.com">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/lukerramsden/status/2101474124292047201"><img src="https://pbs.twimg.com/media/HSnvKhjboAAteyi.jpg?name=orig" alt="system-one" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/lukerramsden/status/2101474124292047201">system-one</a></b><br><sub>lukerramsden · X · ♥ 10 · 2026-09-20</sub><br>Generic TypeScript library for System 1 typed-decision models that works with Jev, Cloudflare AI Gateway and Laya, with Promise and Effect-native clients.<br><sub>Also: <a href="https://github.com/lukeramsden/system-one">repo</a> · <a href="https://www.npmjs.com/package/system-one">npm</a> · <a href="https://github.com/lukeramsden/system-one">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php"><img src="https://pbs.twimg.com/media/HScwRSHXcAAmOGT.jpg" alt="Laravel AI TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php">Laravel AI TypeSafe provider</a></b><br><sub>laravel · GitHub · ⭐ 1.2k repo · 2026-09-17</sub><br>TypeSafe gateway added to the Laravel AI SDK, giving Laravel apps typed classification backed by Jev's /systemone endpoint, with fake responses for testing.<br><sub>Also: <a href="https://x.com/taylorotwell/status/2100700952923713641">demo</a> · <a href="https://github.com/laravel/ai">repo</a> · <a href="https://github.com/laravel/ai/pull/1010">pr</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nasrallah-AL/jev-cli"><img src="https://jevcli.vectorz.app/og.png" alt="jev-cli (jevctl)" width="240"></a></td>
@@ -234,8 +190,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/Ray-Hughes/jevalyn">Jevalyn</a></b><br><sub>Ray-Hughes · GitHub · ⭐ 17 · 2026-09-20</sub><br>Rails-native wrapper that puts typed, calibrated Jev decisions into app control flow, with guardrails, a router, and testing helpers.<br><sub>Also: <a href="https://www.reddit.com/r/rails/comments/1wl4psz/new_gem_wrapping_jev/">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe"><img src="https://raw.githubusercontent.com/cognesy/instructor-php/main/docs/images/concept.png" alt="Instructor PHP TypeSafe driver" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe">Instructor PHP TypeSafe driver</a></b><br><sub>cognesy · GitHub · ⭐ 327 repo · 2026-09-17</sub><br>TypeSafe decision driver in Polyglot, the unified LLM API of Instructor for PHP, that turns application state and typed questions into Jev requests and maps answers to PHP decision objects.<br><sub>Also: <a href="https://github.com/cognesy/instructor-php">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala"><img src="https://raw.githubusercontent.com/getkyo/kyo/main/kyo.png" alt="Kyo TypeSafe decider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala">Kyo TypeSafe decider</a></b><br><sub>getkyo · GitHub · ⭐ 812 repo · 2022-03-08</sub><br>Kyo, a Scala 3 toolkit, adds a TypeSafe decider backend for its AI module that answers every System One question kind with calibrated probabilities in one request.<br><sub>Also: <a href="https://getkyo.io">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-cli" alt="ai-cli evaluate" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts">ai-cli evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 810 repo · 2025-07-28</sub><br>Evaluate command in the ai-cli terminal tool that sends a state and typed questions from flags, files or stdin to an AI Gateway evaluation model such as Jev and prints the typed answers.<br><sub>Also: <a href="https://github.com/vercel-labs/ai-cli">repo</a> · <a href="https://ai-cli.dev">website</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/utk2103/jev-studio"><img src="https://pbs.twimg.com/media/HSu0pXwbwAAGhJp.jpg?name=orig" alt="jev-studio" width="240"></a></td>
@@ -246,8 +206,16 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/saiashirwad/effect-questions">effect-questions</a></b><br><sub>saiashirwad · GitHub · ⭐ 14 · 2026-09-16</sub><br>Effect library that turns semantic judgment into typed Effect operations such as is, choose, rank and branch, failing with UncertainDecision when the model is not confident enough.<br><sub><b>How it uses Jev:</b> Jev is the first QuestionModel provider; Decision adds confidence gates, expected loss and dispatch over evidence.</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation"><img src="https://raw.githubusercontent.com/OpenRouterTeam/ai-sdk-provider/main/assets/banner.png" alt="OpenRouter AI SDK evaluation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation">OpenRouter AI SDK evaluation</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 686 repo · 2024-07-18</sub><br>OpenRouter's Vercel AI SDK provider adds an evaluation model that speaks the Decisions API, so AI SDK's evaluate can call Jev through OpenRouter.<br><sub>Also: <a href="https://www.npmjs.com/package/@openrouter/ai-sdk-provider">npm</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/BoundaryML/feelings"><img src="https://opengraph.githubassets.com/1/BoundaryML/feelings" alt="feelings" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/BoundaryML/feelings">feelings</a></b><br><sub>BoundaryML · GitHub · ⭐ 13 · 2026-09-19</sub><br>About 20 lines of BAML that add .feels(), .how() and .matches() methods to any value, turning Jev probabilities into typed AI if-statements inside ordinary BAML code, with an LLM doing any writing.<br><sub>Also: <a href="https://boundaryml.com/blog/typesafe-ai-jev">article</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai"><img src="https://opengraph.githubassets.com/1/langgenius/dify-official-plugins" alt="Dify TypeSafe AI plugin" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai">Dify TypeSafe AI plugin</a></b><br><sub>langgenius · GitHub · ⭐ 635 repo · 2024-12-18</sub><br>Official Dify plugin that adds TypeSafe AI as a model provider, letting a Dify Question Classifier node route categories through Jev while branches stay unchanged.<br><sub><b>How it uses Jev:</b> Exposes jev-1.13.0 to the classifier node over a constrained six-message text template, returning category_id and category_name.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tumf/jev-cli"><img src="https://raw.githubusercontent.com/tumf/jev-cli/main/assets/jev-cli-thumbnail.png" alt="jev-cli" width="240"></a></td>
@@ -258,6 +226,14 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/southpolesteve/probably">Probably</a></b><br><sub>southpolesteve · GitHub · ⭐ 9 · 2026-09-19</sub><br>Small experimental programming language for LLM workflows where Jev supplies the judgments and probabilities behind if statements and a text model writes prose, with a real parser, interpreter, CLI and playground.<br><sub>Also: <a href="https://probably-lang.southpolesteve.workers.dev">app</a> · <a href="https://probably-lang.southpolesteve.workers.dev">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe"><img src="https://opengraph.githubassets.com/1/narumiruna/pi-extensions" alt="pi-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe">pi-typesafe</a></b><br><sub>narumiruna · GitHub · ⭐ 599 repo · 2026-05-07</sub><br>Pi Coding Agent extension that gives Pi a typesafe_question tool for narrow typed decisions through TypeSafe's Jev API, with an opt-in OpenRouter fallback.<br><sub><b>How it uses Jev:</b> Multiple Noul, Choice and Score questions per state in one call, validated before answers reach the model; bundles a typesafe-ai skill.</sub><br><sub>Also: <a href="https://www.npmjs.com/package/@narumitw/pi-typesafe">npm</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex"><img src="https://opengraph.githubassets.com/1/agentjido/req_llm" alt="ReqLLM TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex">ReqLLM TypeSafe provider</a></b><br><sub>agentjido · GitHub · ⭐ 581 repo · 2026-09-17</sub><br>TypeSafe provider for ReqLLM, the Elixir LLM library, that calls Jev through a separate evaluate interface, normalizes answers and keeps the raw provider response.<br><sub>Also: <a href="https://github.com/agentjido/req_llm">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/shaharia-lab/jev-cli"><img src="https://raw.githubusercontent.com/shaharia-lab/jev-cli/main/assets/banner.png" alt="jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/shaharia-lab/jev-cli">jev</a></b><br><sub>shaharia-lab · GitHub · ⭐ 11 · 2026-09-19</sub><br>Rust command-line tool that asks yes/no, multiple-choice and rubric questions about any text and returns calibrated probabilities as exit codes for shells and CI, JSON for scripts, or MCP tools for agents.</td>
 </tr>
@@ -266,12 +242,16 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/ekizito96/Turn">Turn</a></b><br><sub>ekizito96 · GitHub · ⭐ 11 · 2026-02-17</sub><br>Compiled language and runtime for AI agents where decide(state, questions) is a durable effect, with a bundled TypeSafe System One driver that runs Choice, Score and Noul workflows on Jev.<br><sub><b>How it uses Jev:</b> Provider-neutral decide() with a mock driver for local runs; programs branch on answer confidence, for example sending tickets below 0.8 to a reviewer.</sub><br><sub>Also: <a href="https://github.com/ekizito96/Turn/tree/main/providers/turn-provider-typesafe">code</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 repo · 2021-04-07</sub><br>Experimental Effect client in the DXOS monorepo for TypeSafe's System One model, where a schema is both the request and response and each struct field compiles to one Jev question.<br><sub><b>How it uses Jev:</b> DecisionModel service mirroring Effect's LanguageModel; all fields ride a single call and decode back to the declared type.</sub><br><sub>Also: <a href="https://dxos.org">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/doeixd/discern"><img src="https://raw.githubusercontent.com/doeixd/discern/main/docs/assets/discern-explainer-silent.gif" alt="Discern" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/doeixd/discern">Discern</a></b><br><sub>doeixd · GitHub · ⭐ 10 · 2026-09-21</sub><br>TypeScript library of uncertainty-aware semantic pattern matching, policies and routable procedures over Effect's Decision and DecisionModel, where a maybe result is an explicit branch, with Jev as one provider.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-python" alt="AI SDK for Python evaluate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py">AI SDK for Python evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 184 repo · 2026-01-16</sub><br>Experimental evaluate operation in Vercel's public-beta AI SDK for Python that asks typed Choice, Score and Boolean questions of Jev through AI Gateway, shown in a runnable example.<br><sub>Also: <a href="https://github.com/vercel-labs/ai-python">repo</a> · <a href="https://ai-python.dev">website</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/lukerramsden/status/2101474124292047201"><img src="https://pbs.twimg.com/media/HSnvKhjboAAteyi.jpg?name=orig" alt="system-one" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/lukerramsden/status/2101474124292047201">system-one</a></b><br><sub>lukerramsden · X · ♥ 10 · 2026-09-20</sub><br>Generic TypeScript library for System 1 typed-decision models that works with Jev, Cloudflare AI Gateway and Laya, with Promise and Effect-native clients.<br><sub>Also: <a href="https://github.com/lukeramsden/system-one">repo</a> · <a href="https://www.npmjs.com/package/system-one">npm</a> · <a href="https://github.com/lukeramsden/system-one">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/matthewp/flue-jev-demo"><img src="https://opengraph.githubassets.com/1/matthewp/flue-jev-demo" alt="Flue + Jev" width="240"></a></td>
@@ -286,12 +266,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/AntonioCoppe/jev-harness">jev-harness</a></b><br><sub>AntonioCoppe · GitHub · ⭐ 9 · 2026-09-18</sub><br>TypeScript library that turns Jev answers into shippable actions with a policy map, confidence gate, shadow mode, recipes and an offline eval CLI; a row-filter job took 1.3 s versus 48.9 s with Claude CLI.<br><sub>Also: <a href="https://x.com/Antoniocoppe/status/2100954520356327577">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/hijaidev/status/2101679778801893685"><img src="https://pbs.twimg.com/amplify_video_thumb/2101679740520390656/img/McXbM1E9CZgvK-MZ.jpg" alt="Jev CLI" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hijaidev/status/2101679778801893685">Jev CLI</a></b><br><sub>hijaidev · X · ♥ 4 · 2026-09-20</sub><br>Command-line tool that exposes Jev as verify, screen, classify, extract, match, route, rerank and ask commands, returning verdicts with probabilities for scripts and agents.</td>
+<td width="260" valign="top"><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone"><img src="https://opengraph.githubassets.com/1/lnyo-cly/ai4j" alt="ai4j System One" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone">ai4j System One</a></b><br><sub>lnyo-cly · GitHub · ⭐ 429 repo · 2024-08-17</sub><br>Adds System One support to ai4j, a Java 8+ agentic SDK, so JVM apps can call TypeSafe's Jev for typed decisions alongside its unified LLM, tool-calling and RAG features.<br><sub>Also: <a href="https://lnyo-cly.github.io/ai4j/">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe"><img src="https://opengraph.githubassets.com/1/Michaelliv/runline" alt="Runline TypeSafe plugin" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe">Runline TypeSafe plugin</a></b><br><sub>Michaelliv · GitHub · ⭐ 163 repo · 2026-09-17</sub><br>TypeSafe plugin for Runline, a code-mode runtime for agents, exposing evaluate, choice, score and noul as callable actions from agent JavaScript in its QuickJS sandbox.<br><sub>Also: <a href="https://github.com/Michaelliv/runline">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx"><img src="https://opengraph.githubassets.com/1/langchain-ai/docs" alt="LangChain TypeSafe integration" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx">LangChain TypeSafe integration</a></b><br><sub>langchain-ai · Docs · ⭐ 418 repo · 2025-05-15</sub><br>LangChain's docs for the TypeSafe integration, where TypeSafeClassifier exposes Jev decisions as a Runnable you can invoke, batch or compose, including inside create_agent middleware.<br><sub>Also: <a href="https://docs.langchain.com">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Towow-ai/jpp"><img src="https://raw.githubusercontent.com/Towow-ai/jpp/main/assets/social-card.svg" alt="J++" width="240"></a></td>
@@ -310,10 +290,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/Kevthetech143/super-jev">super-jev</a></b><br><sub>Kevthetech143 · GitHub · ⭐ 8 · 2026-09-17</sub><br>Domain-independent TypeScript harness that links evidence, Jev judgments, permitted tool actions and verified outcomes, with pluggable data sources and tools, argument checks and local JSONL traces.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts"><img src="https://raw.githubusercontent.com/miaotouy/aio-hub/dev/docs/public/assets/产品概念图-1.jpg" alt="AIO Hub System One channel" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts">AIO Hub System One channel</a></b><br><sub>miaotouy · GitHub · ⭐ 144 repo · 2025-10-28</sub><br>Local-first desktop and mobile AI hub that adds TypeSafe System One as a dedicated decision channel, with Jev models listed only where a decision operation is needed.<br><sub>Also: <a href="http://aiohub-app.com">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mattt/AnyDecisionModel"><img src="https://opengraph.githubassets.com/1/mattt/AnyDecisionModel" alt="AnyDecisionModel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mattt/AnyDecisionModel">AnyDecisionModel</a></b><br><sub>mattt · GitHub · ⭐ 7 · 2026-09-21</sub><br>Swift package for typed decisions (probabilities, enum-backed choices, ordinal scores) in the Foundation Models session style, backed either by Jev's System One API or a local MLX model on Apple silicon.</td>
 </tr>
@@ -330,8 +306,8 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/jomatsu/zod-jev">zod-jev</a></b><br><sub>jomatsu · GitHub · ⭐ 7 · 2026-09-17</sub><br>Adds semantic checks to Zod 4 schemas, such as whether a body contains personal data or a price is plausible, while shape rules stay in Zod and results come back as ordinary Zod issues.<br><sub><b>How it uses Jev:</b> All semantic rules in one parseAsync become Noul questions in a single request; thresholds map probabilities to issues.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts"><img src="https://repository-images.githubusercontent.com/993805781/24ad8594-ddb9-4c8d-a4f9-15c3f72f9390" alt="NeuroLink decide" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts">NeuroLink decide</a></b><br><sub>juspay · GitHub · ⭐ 137 repo · 2025-05-31</sub><br>Jev provider in Juspay's NeuroLink TypeScript SDK that adds decide, returning typed boolean, choice and score judgments, as a third inference type beside generate and stream, also used internally for routing and compaction.<br><sub>Also: <a href="https://github.com/juspay/neurolink">repo</a> · <a href="https://neurolink.ink">website</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe"><img src="https://raw.githubusercontent.com/cognesy/instructor-php/main/docs/images/concept.png" alt="Instructor PHP TypeSafe driver" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe">Instructor PHP TypeSafe driver</a></b><br><sub>cognesy · GitHub · ⭐ 327 repo · 2026-09-17</sub><br>TypeSafe decision driver in Polyglot, the unified LLM API of Instructor for PHP, that turns application state and typed questions into Jev requests and maps answers to PHP decision objects.<br><sub>Also: <a href="https://github.com/cognesy/instructor-php">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -342,20 +318,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://www.npmjs.com/package/typesafe-jev-cli">typesafe-jev-cli</a></b><br><sub>lbflow · Package · ⬇ 616 · 2026-09-20</sub><br>Dependency-free Node.js CLI that sends Choice, Noul and Score evaluations to Jev through OpenRouter's decisions endpoint, including batch evaluation of many text files.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision"><img src="https://opengraph.githubassets.com/1/danieljvdm/effect-agent" alt="Effect Agent AutoModel" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision">Effect Agent AutoModel</a></b><br><sub>danieljvdm · GitHub · ⭐ 121 repo · 2026-09-17</sub><br>AutoModel package for Effect Agent that picks a native language model once per thread from an app-approved catalog using a DecisionModel such as TypeSafeDecisionModel with jev-latest.<br><sub>Also: <a href="https://github.com/danieljvdm/effect-agent">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/obie/decide"><img src="https://opengraph.githubassets.com/1/obie/decide" alt="decide" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/obie/decide">decide</a></b><br><sub>obie · GitHub · ⭐ 6 · 2026-09-18</sub><br>Backend-agnostic Ruby layer that turns decision-model answers into named policy verdicts with explicit fail-open or fail-closed handling, with Jev via OpenRouter as the first answer source.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/terryds/jevplayground"><img src="https://opengraph.githubassets.com/1/terryds/jevplayground" alt="Jev Playground" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/terryds/jevplayground">Jev Playground</a></b><br><sub>terryds · GitHub · ⭐ 1 · 2026-09-19</sub><br>Browser-only playground for Jev over Vercel AI Gateway where you build boolean, choice and score questions against text or JSON state and see verdicts, probability bars, latency, tokens and cost.<br><sub>Also: <a href="https://jevplayground.terrydjony.com">app</a> · <a href="https://jevplayground.terrydjony.com/">app 2</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe"><img src="https://opengraph.githubassets.com/1/SamSaffron/term-llm" alt="term-llm classify" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe">term-llm classify</a></b><br><sub>SamSaffron · GitHub · ⭐ 116 repo · 2025-12-31</sub><br>Terminal AI runtime with a classify command backed by TypeSafe System One for intent routing, parallel safety checks and scoring structured state from the shell.<br><sub>Also: <a href="https://term-llm.com/guides/classify/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/hndrr/ComfyUI-Jev"><img src="https://opengraph.githubassets.com/1/hndrr/ComfyUI-Jev" alt="ComfyUI-Jev" width="240"></a></td>
@@ -386,16 +354,20 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/3clyp50/a0-typesafe-ai">TypeSafe AI for Agent Zero</a></b><br><sub>3clyp50 · GitHub · ⭐ 5 · 2026-09-17</sub><br>Agent Zero plugin whose typesafe_query tool combines Choice, Noul and Score questions over the same evidence and renders probability cards in chat; bundles the official TypeSafe agent skill.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/hijaidev/status/2101679778801893685"><img src="https://pbs.twimg.com/amplify_video_thumb/2101679740520390656/img/McXbM1E9CZgvK-MZ.jpg" alt="Jev CLI" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hijaidev/status/2101679778801893685">Jev CLI</a></b><br><sub>hijaidev · X · ♥ 4 · 2026-09-20</sub><br>Command-line tool that exposes Jev as verify, screen, classify, extract, match, route, rerank and ask commands, returning verdicts with probabilities for scripts and agents.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/TypeSafeAI/typesafe-ui"><img src="https://opengraph.githubassets.com/1/TypeSafeAI/typesafe-ui" alt="TypeSafe UI" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TypeSafeAI/typesafe-ui">TypeSafe UI</a></b><br><sub>TypeSafeAI · GitHub · ⭐ 4 · 2026-09-17</sub><br>Community shadcn-style React components and interface blocks for TypeSafe projects, built on Base UI and Tailwind v4, with a Next.js component browser, source previews and an interactive Lab.<br><sub>Also: <a href="https://ui.jev.works">app</a> · <a href="https://typesafe-ui.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts"><img src="https://raw.githubusercontent.com/deepclause/deepclause-sdk/main/docs/DeepClause_AI_Logic_Framework_Overview.png" alt="DeepClause Jev judge backend" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts">DeepClause Jev judge backend</a></b><br><sub>deepclause · GitHub · ⭐ 64 repo · 2026-01-29</sub><br>SDK that compiles Markdown specs into executable logic programs, adding generic judgment primitives with interchangeable LLM, Jev and mock backends.</td>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-python" alt="AI SDK for Python evaluate" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py">AI SDK for Python evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 184 repo · 2026-01-16</sub><br>Experimental evaluate operation in Vercel's public-beta AI SDK for Python that asks typed Choice, Score and Boolean questions of Jev through AI Gateway, shown in a runnable example.<br><sub>Also: <a href="https://github.com/vercel-labs/ai-python">repo</a> · <a href="https://ai-python.dev">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai"><img src="https://raw.githubusercontent.com/betalyra/effect-uai/main/webpage/src/assets/effect-uai-logo-bg.png" alt="@effect-uai/typesafe-ai" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai">@effect-uai/typesafe-ai</a></b><br><sub>betalyra · GitHub · ⭐ 63 repo · 2026-04-26</sub><br>Effect-based building blocks for AI agents with a TypeSafe Jev DecisionModel provider for typed classify, rate and probability questions answered in one call.<br><sub>Also: <a href="https://effect-uai.betalyra.com">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe"><img src="https://opengraph.githubassets.com/1/Michaelliv/runline" alt="Runline TypeSafe plugin" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe">Runline TypeSafe plugin</a></b><br><sub>Michaelliv · GitHub · ⭐ 163 repo · 2026-09-17</sub><br>TypeSafe plugin for Runline, a code-mode runtime for agents, exposing evaluate, choice, score and noul as callable actions from agent JavaScript in its QuickJS sandbox.<br><sub>Also: <a href="https://github.com/Michaelliv/runline">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/soderlind/ai-provider-for-jev"><img src="https://repository-images.githubusercontent.com/1375771750/d0ec3827-1a39-44d6-83e5-85a31e8a15eb" alt="AI Provider for Jev" width="240"></a></td>
@@ -422,20 +394,20 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/mateonunez/jod">jod</a></b><br><sub>mateonunez · GitHub · ⭐ 3 · 2026-09-17</sub><br>TypeScript library that binds a Standard Schema state and a set of questions into one artifact, validates the state locally, then sends all questions in one parallel Jev request and returns typed domain values.<br><sub><b>How it uses Jev:</b> Built on @typesafe-ai/sdk; adds validation, answer projection and fixtures.</sub><br><sub>Also: <a href="https://npmjs.com/package/@mateonunez/jod">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe"><img src="https://opengraph.githubassets.com/1/SEMOSS/Semoss" alt="SEMOSS TypeSafe client" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe">SEMOSS TypeSafe client</a></b><br><sub>SEMOSS · GitHub · ⭐ 54 repo · 2013-05-30</sub><br>Low-code data and AI application platform that adds a TypeSafe Jev client to its GenAI layer, with a how-to guide for using Jev decisions.<br><sub>Also: <a href="https://github.com/SEMOSS/Semoss/blob/dev/docs/how-to-guides/using_typesafe_jev.md">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts"><img src="https://raw.githubusercontent.com/miaotouy/aio-hub/dev/docs/public/assets/产品概念图-1.jpg" alt="AIO Hub System One channel" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts">AIO Hub System One channel</a></b><br><sub>miaotouy · GitHub · ⭐ 144 repo · 2025-10-28</sub><br>Local-first desktop and mobile AI hub that adds TypeSafe System One as a dedicated decision channel, with Jev models listed only where a decision operation is needed.<br><sub>Also: <a href="http://aiohub-app.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe"><img src="https://opengraph.githubassets.com/1/YaoApp/gou" alt="Gou TypeSafe connector" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe">Gou TypeSafe connector</a></b><br><sub>YaoApp · GitHub · ⭐ 51 repo · 2021-08-24</sub><br>Low-code Go app engine framework that adds a TypeSafe connector with a Decide capability for calling Jev from Yao apps.<br><sub>Also: <a href="https://yaoapps.com">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts"><img src="https://repository-images.githubusercontent.com/993805781/24ad8594-ddb9-4c8d-a4f9-15c3f72f9390" alt="NeuroLink decide" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts">NeuroLink decide</a></b><br><sub>juspay · GitHub · ⭐ 137 repo · 2025-05-31</sub><br>Jev provider in Juspay's NeuroLink TypeScript SDK that adds decide, returning typed boolean, choice and score judgments, as a third inference type beside generate and stream, also used internally for routing and compaction.<br><sub>Also: <a href="https://github.com/juspay/neurolink">repo</a> · <a href="https://neurolink.ink">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe"><img src="https://raw.githubusercontent.com/everruns/everruns/main/assets/readme/banner.png" alt="everruns-integrations-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe">everruns-integrations-typesafe</a></b><br><sub>everruns · GitHub · ⭐ 48 repo · 2025-12-14</sub><br>Rust crate that adds a jev capability to the Everruns durable agent harness: one jev_evaluate tool lets an agent ask typed Noul, Score and Choice questions to verify, rate, route or classify content.<br><sub>Also: <a href="https://github.com/everruns/everruns">repo</a> · <a href="https://crates.io/crates/everruns-integrations-typesafe">crate</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision"><img src="https://opengraph.githubassets.com/1/danieljvdm/effect-agent" alt="Effect Agent AutoModel" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision">Effect Agent AutoModel</a></b><br><sub>danieljvdm · GitHub · ⭐ 121 repo · 2026-09-17</sub><br>AutoModel package for Effect Agent that picks a native language model once per thread from an app-approved catalog using a DecisionModel such as TypeSafeDecisionModel with jev-latest.<br><sub>Also: <a href="https://github.com/danieljvdm/effect-agent">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone"><img src="https://opengraph.githubassets.com/1/driftlessaf/go-driftlessaf" alt="DriftlessAF systemone executor" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone">DriftlessAF systemone executor</a></b><br><sub>driftlessaf · GitHub · ⭐ 40 repo · 2026-01-26</sub><br>Go package in Chainguard's DriftlessAF agent framework that calls TypeSafe's System One API with typed Noul, Choice and Score questions, validates every answer and reuses the framework's retries and GenAI metrics.<br><sub>Also: <a href="https://github.com/driftlessaf/go-driftlessaf">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe"><img src="https://opengraph.githubassets.com/1/SamSaffron/term-llm" alt="term-llm classify" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe">term-llm classify</a></b><br><sub>SamSaffron · GitHub · ⭐ 116 repo · 2025-12-31</sub><br>Terminal AI runtime with a classify command backed by TypeSafe System One for intent routing, parallel safety checks and scoring structured state from the shell.<br><sub>Also: <a href="https://term-llm.com/guides/classify/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/molis-ai/jev-workbench"><img src="https://raw.githubusercontent.com/molis-ai/jev-workbench/main/docs/images/workbench.png" alt="Jev Workbench" width="240"></a></td>
@@ -482,28 +454,24 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/GenieRobot/typesafe-ai-rails">typesafe-ai-rails</a></b><br><sub>GenieRobot · GitHub · ⭐ 2 · 2026-09-16</sub><br>Rails integration built on the community Ruby SDK that adds configuration, persisted usage and cost telemetry, and an opt-in confidence policy for Choice and Score answers.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev"><img src="https://opengraph.githubassets.com/1/phenobarbital/ai-parrot" alt="ai-parrot-client-jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev">ai-parrot-client-jev</a></b><br><sub>phenobarbital · GitHub · ⭐ 30 repo · 2024-08-12</sub><br>Jev client package for the AI-Parrot async agent framework that maps System One onto its client interface and turns Pydantic models into questions (bool to Noul, Literal/Enum to Choice, leveled numbers to Score).<br><sub>Also: <a href="https://github.com/phenobarbital/ai-parrot">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe"><img src="https://opengraph.githubassets.com/1/openclaw/openclaw" alt="OpenClaw TypeSafe plugin" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe">OpenClaw TypeSafe plugin</a></b><br><sub>openclaw · GitHub · ⭐ 75 repo · 2025-11-24</sub><br>Official OpenClaw plugin that plugs hosted Jev, or a local Kev server, into OpenClaw's decision-model API for Choice, Score and Boolean judgments, plus an optional typesafe_evaluate tool.<br><sub><b>How it uses Jev:</b> Select typesafe/jev-latest as an agent's decisionModel, globally or per agent.</sub><br><sub>Also: <a href="https://docs.openclaw.ai/plugins/typesafe">docs</a> · <a href="https://docs.openclaw.ai/plugins/typesafe">link</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/gurenjs/guren/tree/main/examples/agents"><img src="https://opengraph.githubassets.com/1/gurenjs/guren" alt="Guren AI evaluation models" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gurenjs/guren/tree/main/examples/agents">Guren AI evaluation models</a></b><br><sub>gurenjs · GitHub · ⭐ 29 repo · 2025-11-01</sub><br>Evaluation-model support in the Guren Bun fullstack framework's AI plugin, where Jev via the AI SDK is the default evaluation provider; the agents example triages support tickets through POST /tickets/:id/triage.<br><sub>Also: <a href="https://github.com/gurenjs/guren">repo</a> · <a href="https://guren.dev">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts"><img src="https://raw.githubusercontent.com/deepclause/deepclause-sdk/main/docs/DeepClause_AI_Logic_Framework_Overview.png" alt="DeepClause Jev judge backend" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts">DeepClause Jev judge backend</a></b><br><sub>deepclause · GitHub · ⭐ 64 repo · 2026-01-29</sub><br>SDK that compiles Markdown specs into executable logic programs, adding generic judgment primitives with interchangeable LLM, Jev and mock backends.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev"><img src="https://opengraph.githubassets.com/1/tale-project/tale" alt="Tale Jev decisions connector" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev">Tale Jev decisions connector</a></b><br><sub>tale-project · GitHub · ⭐ 29 repo · 2025-11-30</sub><br>Workflow connector for Tale, a self-hosted AI agent orchestrator and workspace, that exposes Jev via OpenRouter as a decide action for gating steps such as send, escalate or write on calibrated answers.<br><sub>Also: <a href="https://tale.dev">app</a> · <a href="https://github.com/tale-project/tale">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai"><img src="https://raw.githubusercontent.com/betalyra/effect-uai/main/webpage/src/assets/effect-uai-logo-bg.png" alt="@effect-uai/typesafe-ai" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai">@effect-uai/typesafe-ai</a></b><br><sub>betalyra · GitHub · ⭐ 63 repo · 2026-04-26</sub><br>Effect-based building blocks for AI agents with a TypeSafe Jev DecisionModel provider for typed classify, rate and probability questions answered in one call.<br><sub>Also: <a href="https://effect-uai.betalyra.com">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts"><img src="https://opengraph.githubassets.com/1/SEMOSS/semoss-ui" alt="SEMOSS Jev model engine" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts">SEMOSS Jev model engine</a></b><br><sub>SEMOSS · GitHub · ⭐ 27 repo · 2024-06-20</sub><br>Model-import form in the SEMOSS platform UI that connects Jev by TypeSafe as an evaluation engine for classifying, scoring and evaluating text or structured data, with optional inference-log retention.<br><sub>Also: <a href="https://github.com/SEMOSS/semoss-ui">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe"><img src="https://opengraph.githubassets.com/1/SEMOSS/Semoss" alt="SEMOSS TypeSafe client" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe">SEMOSS TypeSafe client</a></b><br><sub>SEMOSS · GitHub · ⭐ 54 repo · 2013-05-30</sub><br>Low-code data and AI application platform that adds a TypeSafe Jev client to its GenAI layer, with a how-to guide for using Jev decisions.<br><sub>Also: <a href="https://github.com/SEMOSS/Semoss/blob/dev/docs/how-to-guides/using_typesafe_jev.md">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md"><img src="https://raw.githubusercontent.com/Govcraft/emergent/main/docs/images/system-monitor.png" alt="Emergent jev-handler" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md">Emergent jev-handler</a></b><br><sub>Govcraft · GitHub · ⭐ 23 repo · 2026-01-06</sub><br>Handler primitive for Emergent, an event-driven workflow engine that composes CLI tools, that asks Jev a fixed set of typed questions about every event payload and publishes the calibrated answers downstream.<br><sub>Also: <a href="https://github.com/Govcraft/emergent">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py"><img src="https://opengraph.githubassets.com/1/lm15-dev/lm15-python" alt="lm15 typesafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py">lm15 typesafe provider</a></b><br><sub>lm15-dev · GitHub · ⭐ 23 repo · 2026-04-08</sub><br>TypeSafe provider for lm15, a stdlib-only, provider-neutral Python foundation for LLM APIs: messages become Jev's state, judgment properties of a JSON schema become questions, and answers return as a data part with distributions.<br><sub>Also: <a href="https://github.com/lm15-dev/lm15-python">repo</a> · <a href="https://pypi.org/project/lm15/">pypi</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe"><img src="https://opengraph.githubassets.com/1/YaoApp/gou" alt="Gou TypeSafe connector" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe">Gou TypeSafe connector</a></b><br><sub>YaoApp · GitHub · ⭐ 51 repo · 2021-08-24</sub><br>Low-code Go app engine framework that adds a TypeSafe connector with a Decide capability for calling Jev from Yao apps.<br><sub>Also: <a href="https://yaoapps.com">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/juanlentino/jev-connector"><img src="https://opengraph.githubassets.com/1/juanlentino/jev-connector" alt="Connector for TypeSafe Jev" width="240"></a></td>
@@ -568,6 +536,38 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tinystruct/tinystruct-typesafe-sdk"><img src="https://opengraph.githubassets.com/1/tinystruct/tinystruct-typesafe-sdk" alt="tinystruct-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/tinystruct/tinystruct-typesafe-sdk">tinystruct-typesafe</a></b><br><sub>tinystruct · GitHub · ⭐ 1 · 2026-09-21</sub><br>Java integration that lets natural language invoke existing tinystruct @Action methods, with Jev acting as a semantic dispatcher and a confirmation workflow for pending calls.<br><sub><b>How it uses Jev:</b> Arguments are only enum constants, booleans or verbatim spans of the user's input, since Jev only picks among supplied options.</sub><br><sub>Also: <a href="https://tinystruct.org">site</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe"><img src="https://raw.githubusercontent.com/everruns/everruns/main/assets/readme/banner.png" alt="everruns-integrations-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe">everruns-integrations-typesafe</a></b><br><sub>everruns · GitHub · ⭐ 48 repo · 2025-12-14</sub><br>Rust crate that adds a jev capability to the Everruns durable agent harness: one jev_evaluate tool lets an agent ask typed Noul, Score and Choice questions to verify, rate, route or classify content.<br><sub>Also: <a href="https://github.com/everruns/everruns">repo</a> · <a href="https://crates.io/crates/everruns-integrations-typesafe">crate</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone"><img src="https://opengraph.githubassets.com/1/driftlessaf/go-driftlessaf" alt="DriftlessAF systemone executor" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone">DriftlessAF systemone executor</a></b><br><sub>driftlessaf · GitHub · ⭐ 40 repo · 2026-01-26</sub><br>Go package in Chainguard's DriftlessAF agent framework that calls TypeSafe's System One API with typed Noul, Choice and Score questions, validates every answer and reuses the framework's retries and GenAI metrics.<br><sub>Also: <a href="https://github.com/driftlessaf/go-driftlessaf">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev"><img src="https://opengraph.githubassets.com/1/phenobarbital/ai-parrot" alt="ai-parrot-client-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev">ai-parrot-client-jev</a></b><br><sub>phenobarbital · GitHub · ⭐ 30 repo · 2024-08-12</sub><br>Jev client package for the AI-Parrot async agent framework that maps System One onto its client interface and turns Pydantic models into questions (bool to Noul, Literal/Enum to Choice, leveled numbers to Score).<br><sub>Also: <a href="https://github.com/phenobarbital/ai-parrot">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/gurenjs/guren/tree/main/examples/agents"><img src="https://opengraph.githubassets.com/1/gurenjs/guren" alt="Guren AI evaluation models" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/gurenjs/guren/tree/main/examples/agents">Guren AI evaluation models</a></b><br><sub>gurenjs · GitHub · ⭐ 29 repo · 2025-11-01</sub><br>Evaluation-model support in the Guren Bun fullstack framework's AI plugin, where Jev via the AI SDK is the default evaluation provider; the agents example triages support tickets through POST /tickets/:id/triage.<br><sub>Also: <a href="https://github.com/gurenjs/guren">repo</a> · <a href="https://guren.dev">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev"><img src="https://opengraph.githubassets.com/1/tale-project/tale" alt="Tale Jev decisions connector" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev">Tale Jev decisions connector</a></b><br><sub>tale-project · GitHub · ⭐ 29 repo · 2025-11-30</sub><br>Workflow connector for Tale, a self-hosted AI agent orchestrator and workspace, that exposes Jev via OpenRouter as a decide action for gating steps such as send, escalate or write on calibrated answers.<br><sub>Also: <a href="https://tale.dev">app</a> · <a href="https://github.com/tale-project/tale">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts"><img src="https://opengraph.githubassets.com/1/SEMOSS/semoss-ui" alt="SEMOSS Jev model engine" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts">SEMOSS Jev model engine</a></b><br><sub>SEMOSS · GitHub · ⭐ 27 repo · 2024-06-20</sub><br>Model-import form in the SEMOSS platform UI that connects Jev by TypeSafe as an evaluation engine for classifying, scoring and evaluating text or structured data, with optional inference-log retention.<br><sub>Also: <a href="https://github.com/SEMOSS/semoss-ui">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md"><img src="https://raw.githubusercontent.com/Govcraft/emergent/main/docs/images/system-monitor.png" alt="Emergent jev-handler" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md">Emergent jev-handler</a></b><br><sub>Govcraft · GitHub · ⭐ 23 repo · 2026-01-06</sub><br>Handler primitive for Emergent, an event-driven workflow engine that composes CLI tools, that asks Jev a fixed set of typed questions about every event payload and publishes the calibrated answers downstream.<br><sub>Also: <a href="https://github.com/Govcraft/emergent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py"><img src="https://opengraph.githubassets.com/1/lm15-dev/lm15-python" alt="lm15 typesafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py">lm15 typesafe provider</a></b><br><sub>lm15-dev · GitHub · ⭐ 23 repo · 2026-04-08</sub><br>TypeSafe provider for lm15, a stdlib-only, provider-neutral Python foundation for LLM APIs: messages become Jev's state, judgment properties of a JSON schema become questions, and answers return as a data part with distributions.<br><sub>Also: <a href="https://github.com/lm15-dev/lm15-python">repo</a> · <a href="https://pypi.org/project/lm15/">pypi</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bakaphp/kanvas-ecosystem-api/tree/development/src/Domains/Connectors/TypeSafe"><img src="https://cdn.prod.website-files.com/66c9f056ff6b7f7ba51cdf21/66ccb2a881e7036ab59136f2_Logo_Kanvas_3.png" alt="Kanvas TypeSafe connector" width="240"></a></td>

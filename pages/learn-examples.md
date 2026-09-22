@@ -18,6 +18,14 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/typesafe-ai/skills">TypeSafe skills</a></b><br><sub>typesafe-ai · GitHub · ⭐ 1.6k · 2026-08-24</sub><br>Source of the agent skill, installable as a Claude Code plugin or through skills.sh.<br><sub>Also: <a href="https://docs.typesafe.ai/agent-skill">docs</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/dbreunig/building-with-jev-skill"><img src="https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill" alt="Building with Jev skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dbreunig/building-with-jev-skill">Building with Jev skill</a></b><br><sub>dbreunig · GitHub · ⭐ 128 · 2026-09-17</sub><br>Compact agent skill that teaches coding agents to structure programs around Jev.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ryana/jevify"><img src="https://opengraph.githubassets.com/1/ryana/jevify" alt="Jevify" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ryana/jevify">Jevify</a></b><br><sub>ryana · GitHub · ⭐ 109 · 2026-09-19</sub><br>Prompt to paste into a coding agent that has it study the Jev docs and your codebase, then find where cheap semantic judgments could cut cost and latency or enable new features.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/realpython/materials/tree/master/hello-jev"><img src="https://opengraph.githubassets.com/1/realpython/materials" alt="Hello Jev (Real Python)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/realpython/materials/tree/master/hello-jev">Hello Jev (Real Python)</a></b><br><sub>realpython · GitHub · ⭐ 5.2k repo · 2018-05-06</sub><br>Companion code for Real Python's Get Started With Jev in Python video: a train-station help desk that swaps strict Y/N input parsing for a single Noul question.<br><sub><b>How it uses Jev:</b> Thresholds on the Noul probability let replies like 'yeah, I've lost something' work; calls go through OpenRouter.</sub></td>
 </tr>
@@ -34,28 +42,8 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/marktechpost-ai-media-inc/ai-agents-projects-tutorials/blob/main/LLM%20Projects/typesafe_jev_system_one_typed_decisions_tutorial_Marktechpost.ipynb">Jev typed decisions tutorial</a></b><br><sub>marktechpost-ai-media-inc · GitHub · ⭐ 2.9k repo · 2025-05-15</sub><br>Marktechpost notebook that walks through Jev typed decisions: ticket triage, recomputing confidence, resume scoring, intent routing and a home-automation tool picker, tracking cost as it goes.<br><sub><b>How it uses Jev:</b> Uses the Python SDK's Noul, Choice and Score with a typed SystemOneResponse subclass; input priced at $0.042 per million tokens, output free.</sub><br><sub>Also: <a href="https://marktechpost.com/">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dbreunig/building-with-jev-skill"><img src="https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill" alt="Building with Jev skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dbreunig/building-with-jev-skill">Building with Jev skill</a></b><br><sub>dbreunig · GitHub · ⭐ 128 · 2026-09-17</sub><br>Compact agent skill that teaches coding agents to structure programs around Jev.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ryana/jevify"><img src="https://opengraph.githubassets.com/1/ryana/jevify" alt="Jevify" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ryana/jevify">Jevify</a></b><br><sub>ryana · GitHub · ⭐ 109 · 2026-09-19</sub><br>Prompt to paste into a coding agent that has it study the Jev docs and your codebase, then find where cheap semantic judgments could cut cost and latency or enable new features.</td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/mac_eth/status/2101701798968840703">JEV Playground</a></b><br><sub>mac_eth · X · ♥ 35 · 2026-09-20</sub><br>Simple web playground for trying Jev by entering text context and asking Noul, Choice or Score questions.<br><sub>Also: <a href="https://jev-decisions.vercel.app/">app</a> · <a href="https://jev-decisions.vercel.app">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb"><img src="https://opengraph.githubassets.com/1/curiousily/AI-Bootcamp" alt="AI Bootcamp Jev notebook" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb">AI Bootcamp Jev notebook</a></b><br><sub>curiousily · GitHub · ⭐ 946 repo · 2024-04-14</sub><br>A Jev notebook in the Get Shit Done with AI bootcamp that teaches TypeSafe's System One typed decisions with the Python SDK alongside its other GenAI lessons.<br><sub>Also: <a href="https://mlexpert.io">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev intro + 50 open-source use cases" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=im_hLbl6ldU">Jev intro + 50 open-source use cases</a></b><br><sub>Yash Thakker · YouTube · ♥ 12 · 2026-09-20</sub><br>Intro to Jev plus a tour of 50 MIT-licensed demos, from ticket routing to fraud scoring and moderation, each comparing Jev with an OpenAI model on cost and speed.<br><sub>Also: <a href="https://github.com/whyashthakker/awesome-jev-use-cases">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 repo · 2025-12-19</sub><br>Claude Code skill that packages an offline wiki of TypeSafe AI's docs, covering the Jev System One model, the Choice/Score/Noul primitives, patterns and the SDKs and HTTP API.<br><sub><b>How it uses Jev:</b> Answers Jev questions from bundled Markdown with a SHA-256 manifest, checking upstream only when the snapshot is insufficient.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/altryne/jevify"><img src="https://raw.githubusercontent.com/altryne/jevify/main/assets/hero.svg" alt="Jevify" width="240"></a></td>
@@ -70,8 +58,28 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/TypeSafeAI/typesafe-playground">TypeSafe AI Playground</a></b><br><sub>TypeSafeAI · GitHub · ⭐ 19 · 2026-09-16</sub><br>Community web playground with 110 editable Jev use cases, games, dilemmas, and model challenges, covering classification, A/B input comparisons, conversation routing, field extraction, and code-policy checks.<br><sub>Also: <a href="https://jev.works">app</a> · <a href="https://jev.works">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb"><img src="https://opengraph.githubassets.com/1/curiousily/AI-Bootcamp" alt="AI Bootcamp Jev notebook" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb">AI Bootcamp Jev notebook</a></b><br><sub>curiousily · GitHub · ⭐ 946 repo · 2024-04-14</sub><br>A Jev notebook in the Get Shit Done with AI bootcamp that teaches TypeSafe's System One typed decisions with the Python SDK alongside its other GenAI lessons.<br><sub>Also: <a href="https://mlexpert.io">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/nexibeo/jev-cookbook"><img src="https://raw.githubusercontent.com/nexibeo/jev-cookbook/main/assets/banner.svg" alt="Jev Cookbook" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nexibeo/jev-cookbook">Jev Cookbook</a></b><br><sub>nexibeo · GitHub · ⭐ 17 · 2026-09-19</sub><br>Fifteen runnable OpenRouter recipes for Jev, from support triage, dedupe and PII scanning to invoice extraction, search reranking, a browser agent and a Gmail labeler, each with labelled samples and measured results.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/mayank953/Jev"><img src="https://raw.githubusercontent.com/mayank953/Jev/main/docs/screenshot.png" alt="Jev demos" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev demos</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>Six local side-by-side demos where Jev makes the decision and a switchable Claude or Kimi LLM writes the words, showing prices and pipeline steps per tab, with a simulated mode that needs no keys.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 repo · 2025-12-19</sub><br>Claude Code skill that packages an offline wiki of TypeSafe AI's docs, covering the Jev System One model, the Choice/Score/Noul primitives, patterns and the SDKs and HTTP API.<br><sub><b>How it uses Jev:</b> Answers Jev questions from bundled Markdown with a SHA-256 manifest, checking upstream only when the snapshot is insufficient.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev intro + 50 open-source use cases" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=im_hLbl6ldU">Jev intro + 50 open-source use cases</a></b><br><sub>Yash Thakker · YouTube · ♥ 12 · 2026-09-20</sub><br>Intro to Jev plus a tour of 50 MIT-licensed demos, from ticket routing to fraud scoring and moderation, each comparing Jev with an OpenAI model on cost and speed.<br><sub>Also: <a href="https://github.com/whyashthakker/awesome-jev-use-cases">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/GiesN/typesafe-jev-workflow"><img src="https://opengraph.githubassets.com/1/GiesN/typesafe-jev-workflow" alt="Jev email intent workflow" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/GiesN/typesafe-jev-workflow">Jev email intent workflow</a></b><br><sub>GiesN · GitHub · ⭐ 7 · 2026-09-16</sub><br>Async LangGraph example that sends mocked emails to Jev, gets a typed invoice-or-general Choice with both label probabilities, and routes each email to a demo handler node.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rwjdk/agent-framework-samples/tree/main/src/JevClassification"><img src="https://github.com/user-attachments/assets/5909cce1-6191-4c54-8371-234b75ccc059" alt="Microsoft Agent Framework Jev sample" width="240"></a></td>
@@ -80,14 +88,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-eval"><img src="https://opengraph.githubassets.com/1/OneWave-AI/claude-skills" alt="OneWave Jev skills" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-eval">OneWave Jev skills</a></b><br><sub>OneWave-AI · GitHub · ⭐ 301 repo · 2025-10-22</sub><br>Three Claude Code skills for System One models: jev-audit finds LLM calls that are classifications in disguise, jev-integrate wires Jev into features, and jev-eval sweeps criteria against a labelled set.<br><sub>Also: <a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-audit">jev-audit</a> · <a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-integrate">jev-integrate</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/mayank953/Jev"><img src="https://raw.githubusercontent.com/mayank953/Jev/main/docs/screenshot.png" alt="Jev demos" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev demos</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>Six local side-by-side demos where Jev makes the decision and a switchable Claude or Kimi LLM writes the words, showing prices and pipeline steps per tab, with a simulated mode that needs no keys.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/GiesN/typesafe-jev-workflow"><img src="https://opengraph.githubassets.com/1/GiesN/typesafe-jev-workflow" alt="Jev email intent workflow" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/GiesN/typesafe-jev-workflow">Jev email intent workflow</a></b><br><sub>GiesN · GitHub · ⭐ 7 · 2026-09-16</sub><br>Async LangGraph example that sends mocked emails to Jev, gets a typed invoice-or-general Choice with both label probabilities, and routes each email to a demo handler node.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/24601/Augustus"><img src="https://raw.githubusercontent.com/24601/Augustus/main/docs/assets/with-without-augustus.svg" alt="Augustus" width="240"></a></td>
@@ -130,14 +130,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/nickthompson480/typesafe-ai-playground">TypeSafe AI Playground</a></b><br><sub>nickthompson480 · GitHub · ⭐ 3 · 2026-09-16</sub><br>Community playground with 110 runnable Jev examples in 22 categories, including 41 A/B comparisons, where you inspect each example's input and questions, edit them and run them against the API.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities"><img src="https://raw.githubusercontent.com/jpcaparas/skills/main/skills/engineering/jev-opportunities/skill-card.png" alt="jev-opportunities" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities">jev-opportunities</a></b><br><sub>jpcaparas · GitHub · ⭐ 51 repo · 2026-03-25</sub><br>Agent skill that scans an existing app for places where Jev could replace LLM calls or heuristics, mapping costs and fast paths and measuring approved spike experiments.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev"><img src="https://opengraph.githubassets.com/1/arpitbbhayani/prototypes-ai" alt="Applied AI Masterclass Jev prototypes" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev">Applied AI Masterclass Jev prototypes</a></b><br><sub>arpitbbhayani · GitHub · ⭐ 42 repo · 2026-04-28</sub><br>Three course prototypes built on the typesafe_sdk: an Outage Excuse Court that judges why prod went down, a PR risk gatekeeper and a production alert triager, with Jev answering typed questions and Python owning the rules.<br><sub><b>How it uses Jev:</b> Choice, Noul and Score questions per item; sentencing, merge gates and paging policies are plain Python.</sub><br><sub>Also: <a href="https://github.com/arpitbbhayani/prototypes-ai">repo</a> · <a href="https://arpitbhayani.me/applied-ai">course</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harrymunro/decision-first"><img src="https://external-preview.redd.it/ejEweWsycXpiYXFoMWm8FvOt3yXkrriXpGhGkleKCQO-IPjo5omZCfdS9i6W.png?format=pjpg&amp;auto=webp&amp;s=8500144026520769161ade58692060ce563d04f8" alt="decision-first" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harrymunro/decision-first">decision-first</a></b><br><sub>harrymunro · GitHub · ⭐ 2 · 2026-09-18</sub><br>Agent skill that makes a coding agent notice bounded-judgment steps (classify, triage, rank, route, verify), try Jev before a regex or LLM prompt, and record each attempt in a reusable lab directory.<br><sub>Also: <a href="https://www.reddit.com/r/typesafeai/comments/1wjr229/i_made_a_claude_code_skill_that_reaches_for_jev/">demo</a></sub></td>
 </tr>
@@ -162,20 +154,8 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/rajivkuriakose/typesafe-jev-examples">typesafe-jev-examples</a></b><br><sub>rajivkuriakose · GitHub · ⭐ 2 · 2026-09-18</sub><br>Worked Python examples for Jev that run through OpenRouter without an early-access key, showing how state and named typed questions replace prompt-and-parse steps in ordinary code.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev"><img src="https://opengraph.githubassets.com/1/MichelKerkmeester/skilled-agent-harness_spec-driven-loops" alt="cli-jev skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev">cli-jev skill</a></b><br><sub>MichelKerkmeester · GitHub · ⭐ 35 repo · 2025-12-23</sub><br>Agent skill in the Skilled spec-driven harness for Claude Code, Codex, Pi and others that routes decisions needing a number to the jev CLI and returns a probability, option key, score position or batch of keyed answers.<br><sub>Also: <a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle"><img src="https://opengraph.githubassets.com/1/pjt222/agent-almanac" alt="consult-a-decision-oracle skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle">consult-a-decision-oracle skill</a></b><br><sub>pjt222 · GitHub · ⭐ 34 repo · 2025-06-06</sub><br>Agent skill in Agent Almanac that teaches adding a probabilistic classifier to a decision path without letting it take over, using Jev as the worked example: measure confidence separation, pick a threshold, fail open.<br><sub>Also: <a href="https://github.com/pjt222/agent-almanac">repo</a> · <a href="https://pjt222.github.io/agent-almanac/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo"><img src="https://opengraph.githubassets.com/1/zazencodes/zazencodes-season-3" alt="Jev System 1 Decision Engine Demo" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo">Jev System 1 Decision Engine Demo</a></b><br><sub>zazencodes · GitHub · ⭐ 27 repo · 2026-03-19</sub><br>ZazenCodes YouTube demo code for Jev in Python: a script and notebook showing binary triage, categorical routing and calibrated agent guardrails, with saved triage results.<br><sub>Also: <a href="https://github.com/zazencodes/zazencodes-season-3">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision"><img src="https://opengraph.githubassets.com/1/andreasronge/ptc_runner" alt="PtcRunner Jev decision lab" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner Jev decision lab</a></b><br><sub>andreasronge · GitHub · ⭐ 21 repo · 2025-12-01</sub><br>Lab in the PtcRunner agent-workflow harness that calls Jev from PTC-Lisp programs to classify support tickets, returning the refund ticket IDs with the probability behind every classification.<br><sub>Also: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities"><img src="https://raw.githubusercontent.com/jpcaparas/skills/main/skills/engineering/jev-opportunities/skill-card.png" alt="jev-opportunities" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities">jev-opportunities</a></b><br><sub>jpcaparas · GitHub · ⭐ 51 repo · 2026-03-25</sub><br>Agent skill that scans an existing app for places where Jev could replace LLM calls or heuristics, mapping costs and fast paths and measuring approved spike experiments.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TanayPadar/gpt-vs-jev"><img src="https://opengraph.githubassets.com/1/TanayPadar/gpt-vs-jev" alt="GPT vs JEV" width="240"></a></td>
@@ -200,6 +180,26 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/markjaquith/typesafe-ai-playground"><img src="https://opengraph.githubassets.com/1/markjaquith/typesafe-ai-playground" alt="TypeSafe AI Playground" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/markjaquith/typesafe-ai-playground">TypeSafe AI Playground</a></b><br><sub>markjaquith · GitHub · ⭐ 1 · 2026-09-17</sub><br>Rust CLI of small Jev experiments: PHI detection, code-comment review, interactive tone analysis, business and occupation classification, and a file viewer that blurs lines Jev scores as unimportant.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev"><img src="https://opengraph.githubassets.com/1/arpitbbhayani/prototypes-ai" alt="Applied AI Masterclass Jev prototypes" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev">Applied AI Masterclass Jev prototypes</a></b><br><sub>arpitbbhayani · GitHub · ⭐ 42 repo · 2026-04-28</sub><br>Three course prototypes built on the typesafe_sdk: an Outage Excuse Court that judges why prod went down, a PR risk gatekeeper and a production alert triager, with Jev answering typed questions and Python owning the rules.<br><sub><b>How it uses Jev:</b> Choice, Noul and Score questions per item; sentencing, merge gates and paging policies are plain Python.</sub><br><sub>Also: <a href="https://github.com/arpitbbhayani/prototypes-ai">repo</a> · <a href="https://arpitbhayani.me/applied-ai">course</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev"><img src="https://opengraph.githubassets.com/1/MichelKerkmeester/skilled-agent-harness_spec-driven-loops" alt="cli-jev skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev">cli-jev skill</a></b><br><sub>MichelKerkmeester · GitHub · ⭐ 35 repo · 2025-12-23</sub><br>Agent skill in the Skilled spec-driven harness for Claude Code, Codex, Pi and others that routes decisions needing a number to the jev CLI and returns a probability, option key, score position or batch of keyed answers.<br><sub>Also: <a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle"><img src="https://opengraph.githubassets.com/1/pjt222/agent-almanac" alt="consult-a-decision-oracle skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle">consult-a-decision-oracle skill</a></b><br><sub>pjt222 · GitHub · ⭐ 34 repo · 2025-06-06</sub><br>Agent skill in Agent Almanac that teaches adding a probabilistic classifier to a decision path without letting it take over, using Jev as the worked example: measure confidence separation, pick a threshold, fail open.<br><sub>Also: <a href="https://github.com/pjt222/agent-almanac">repo</a> · <a href="https://pjt222.github.io/agent-almanac/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo"><img src="https://opengraph.githubassets.com/1/zazencodes/zazencodes-season-3" alt="Jev System 1 Decision Engine Demo" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo">Jev System 1 Decision Engine Demo</a></b><br><sub>zazencodes · GitHub · ⭐ 27 repo · 2026-03-19</sub><br>ZazenCodes YouTube demo code for Jev in Python: a script and notebook showing binary triage, categorical routing and calibrated agent guardrails, with saved triage results.<br><sub>Also: <a href="https://github.com/zazencodes/zazencodes-season-3">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision"><img src="https://opengraph.githubassets.com/1/andreasronge/ptc_runner" alt="PtcRunner Jev decision lab" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner Jev decision lab</a></b><br><sub>andreasronge · GitHub · ⭐ 21 repo · 2025-12-01</sub><br>Lab in the PtcRunner agent-workflow harness that calls Jev from PTC-Lisp programs to classify support tickets, returning the refund ticket IDs with the probability behind every classification.<br><sub>Also: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py"><img src="https://opengraph.githubassets.com/1/Mellow-Artificial-Intelligence/openextract" alt="openextract Jev fraud-check cookbook" width="240"></a></td>

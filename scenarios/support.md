@@ -12,40 +12,40 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <td valign="top"><b><a href="https://x.com/romanbuildsaas/status/2100891604735099103">Lead and outreach scoring</a></b><br><sub>romanbuildsaas · X · ♥ 3.3k · 2026-09-18</sub><br>Scoring of 700 high-intent leads and personalized outreach messages in 40 seconds for $0.09, predicting each message's performance with a confidence score and flagging lead-message mismatches.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify"><img src="https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b" alt="Twenty Classify workflow action" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify">Twenty Classify workflow action</a></b><br><sub>twentyhq · GitHub · ⭐ 57.2k repo · 2022-12-01</sub><br>Classify step in the open-source Twenty CRM's workflows that asks Jev choice, score or boolean questions about a record, so later steps can branch on the answers and probabilities.<br><sub><b>How it uses Jev:</b> Jev is registered as the 'evaluation' model kind (jev-latest via @ai-sdk/typesafe-ai, 200 ms median latency listed).</sub><br><sub>Also: <a href="https://twenty.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/Box/status/2100993278955188320"><img src="https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg" alt="Box incident triage" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Box/status/2100993278955188320">Box incident triage</a></b><br><sub>Box · X · ♥ 31 · 2026-09-18</sub><br>Box workflow that pulls an incident report, asks Jev whether it is customer-facing and how severe it is, moves the file to Escalate, Monitor or Review, and sends low-confidence cases to a human.<br><sub><b>How it uses Jev:</b> A Noul for customer-facing plus a severity Score, with a confidence threshold for human review.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=CupCEehe2OQ"><img src="https://i.ytimg.com/vi/CupCEehe2OQ/hqdefault.jpg" alt="Sales Copilot with Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://www.youtube.com/watch?v=CupCEehe2OQ">Sales Copilot with Jev</a></b><br><sub>Kelvin Cleto · YouTube · ♥ 1.9k · 2026-09-20</sub><br>Portuguese walkthrough of a sales-meeting copilot that tracks calls and playbook steps, where Jev answers cheap decision questions before any LLM call to cut costs.<br><sub><b>How it uses Jev:</b> Probability questions about the meeting state gate the expensive LLM calls.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify"><img src="https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b" alt="Twenty Classify workflow action" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify">Twenty Classify workflow action</a></b><br><sub>twentyhq · GitHub · ⭐ 57.2k repo · 2022-12-01</sub><br>Classify step in the open-source Twenty CRM's workflows that asks Jev choice, score or boolean questions about a record, so later steps can branch on the answers and probabilities.<br><sub><b>How it uses Jev:</b> Jev is registered as the 'evaluation' model kind (jev-latest via @ai-sdk/typesafe-ai, 200 ms median latency listed).</sub><br><sub>Also: <a href="https://twenty.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/getanyapi-com/lurk"><img src="https://opengraph.githubassets.com/1/getanyapi-com/lurk" alt="lurk" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/getanyapi-com/lurk">lurk</a></b><br><sub>getanyapi-com · GitHub · ⭐ 97 · 2026-09-10</sub><br>Self-hostable Reddit buyer-intent finder that infers what your product solves and has Jev judge every title, post and comment it scans against your product.<br><sub><b>How it uses Jev:</b> Jev via OpenRouter or Vercel AI Gateway scores each item; an LLM handles product profiling and clustering.</sub><br><sub>Also: <a href="https://x.com/mxfp4/status/2101070906852298910">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/Box/status/2100993278955188320"><img src="https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg" alt="Box incident triage" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Box/status/2100993278955188320">Box incident triage</a></b><br><sub>Box · X · ♥ 31 · 2026-09-18</sub><br>Box workflow that pulls an incident report, asks Jev whether it is customer-facing and how severe it is, moves the file to Escalate, Monitor or Review, and sends low-confidence cases to a human.<br><sub><b>How it uses Jev:</b> A Noul for customer-facing plus a severity Score, with a confidence threshold for human review.</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/tarasshyn/status/2101043617649340678"><img src="https://pbs.twimg.com/amplify_video_thumb/2101043565207916544/img/jTZjaCWwP1d9sx6D.jpg" alt="RedReplier buying-signal scoring" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/tarasshyn/status/2101043617649340678">RedReplier buying-signal scoring</a></b><br><sub>tarasshyn · X · ♥ 463 · 2026-09-18</sub><br>Scored 1,759,932 buying signals from 1.7 million mentions across Reddit, X, Bluesky, Hacker News and Facebook in 53 seconds for $0.65, ranking intent, product fit and competitor mentions.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok and Jev lead screener" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok and Jev lead screener</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>Lead-qualification pipeline where Jev answers 6 questions on each of 3,412 leads (20,472 decisions in 15.7 seconds for $0.41) and Grok 4.7 only drafts outreach for the leads worth reading.<br><sub><b>How it uses Jev:</b> Six yes/no, pick-one or score questions per lead gate what the LLM reads.</sub></td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/t0t0_build/status/2101082444577567162">WhatsApp customer group monitor</a></b><br><sub>t0t0_build · X · ♥ 280 · 2026-09-18</sub><br>Monitors 25+ WhatsApp groups with clients in real time, with Jev judging whether anything needs attention, such as urgent problems or unresolved orders, and only then asking an LLM to write a notification.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sotak/status/2100701152824185319"><img src="https://pbs.twimg.com/amplify_video_thumb/2100700282434826240/img/H7dKngwXowyoEgJ6.jpg" alt="Real-time Clippy" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/sotak/status/2100701152824185319">Real-time Clippy</a></b><br><sub>sotak · X · ♥ 176 · 2026-09-17</sub><br>In-product Clippy that watches how someone uses an app and appears only when Jev judges they are hesitating, confused or stuck, with its reactions also chosen by Jev.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="Outreach signals that book demos" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/pierreeliottlal/status/2100912453999587657">Outreach signals that book demos</a></b><br><sub>pierreeliottlal · X · ♥ 114 · 2026-09-18</sub><br>Sales analysis in which Jev read a dataset of thousands of outreach messages and found which intent signals generated the most booked demos, in 40 seconds for under $0.20.</td>
+<td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok and Jev lead screener" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok and Jev lead screener</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>Lead-qualification pipeline where Jev answers 6 questions on each of 3,412 leads (20,472 decisions in 15.7 seconds for $0.41) and Grok 4.7 only drafts outreach for the leads worth reading.<br><sub><b>How it uses Jev:</b> Six yes/no, pick-one or score questions per lead gate what the LLM reads.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/t0t0_build/status/2101082444577567162">WhatsApp customer group monitor</a></b><br><sub>t0t0_build · X · ♥ 280 · 2026-09-18</sub><br>Monitors 25+ WhatsApp groups with clients in real time, with Jev judging whether anything needs attention, such as urgent problems or unresolved orders, and only then asking an LLM to write a notification.</td>
+<td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="Outreach signals that book demos" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/pierreeliottlal/status/2100912453999587657">Outreach signals that book demos</a></b><br><sub>pierreeliottlal · X · ♥ 114 · 2026-09-18</sub><br>Sales analysis in which Jev read a dataset of thousands of outreach messages and found which intent signals generated the most booked demos, in 40 seconds for under $0.20.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/nifinet/status/2102065255694409940"><img src="https://pbs.twimg.com/media/HSwI_zwaQAA9uYF.jpg" alt="signal-ranker" width="240"></a></td>
@@ -64,8 +64,8 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <td valign="top"><b><a href="https://x.com/ENowoslawski/status/2100999124099195377">Instant Clay workflows</a></b><br><sub>ENowoslawski · X · ♥ 65 · 2026-09-18</sub><br>Demo of Jev building Clay go-to-market workflows almost instantly.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe"><img src="https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg" alt="Symfony support triage demo" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe">Symfony support triage demo</a></b><br><sub>yoanbernabeu · GitHub · ⭐ 2 · 2026-09-19</sub><br>French Symfony AI demo that qualifies real requests sent to French public services with one Jev call each: the requester's intent among six, urgency, and whether it is a bug to forward to developers.<br><sub>Also: <a href="https://x.com/yOyO38/status/2101705862008001011">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ZeroGold/call-coach-ai"><img src="https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab" alt="Call Coach" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ZeroGold/call-coach-ai">Call Coach</a></b><br><sub>ZeroGold · GitHub · ⭐ 35 · 2026-09-20</sub><br>Live sales-call assistant that sends the conversation to Jev after every sentence and shows the rep a suggested next action and buying stage with a confidence score, from a microphone or a sample call.<br><sub>Also: <a href="https://www.reddit.com/r/LLMDevs/comments/1wltrsa/i_built_an_opensource_app_that_uses_jev_to_coach/">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sotak/status/2100927660029247538"><img src="https://pbs.twimg.com/amplify_video_thumb/2100925956978294784/img/grFanN32FuhiSULl.jpg" alt="Inline Manual adaptive help" width="240"></a></td>
@@ -76,24 +76,24 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <td valign="top"><b><a href="https://x.com/AIsaOneHQ/status/2100894473085489510">Worth Replying</a></b><br><sub>AIsaOneHQ · X · ♥ 15 · 2026-09-18</sub><br>Takes a company's domain and finds X users already discussing the problems its product solves; on typesafe.ai it found 150 tweets and made 750 Jev decisions in 18.8s for $0.007.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100957577958097199"><img src="https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg" alt="jev-support-pulse" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100957577958097199">jev-support-pulse</a></b><br><sub>GoSailGlobal · X · ♥ 6 · 2026-09-18</sub><br>Chinese experiment labeling 170,400 2017 tweets to seven brands' support accounts with Jev for $1.84: at equal false alarms it caught 17 outages about 4.1 hours before the brand admitted them, versus 10 for tweet volume.<br><sub>Also: <a href="https://github.com/zhuyansen/jev-support-pulse">repo</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe"><img src="https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg" alt="Symfony support triage demo" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe">Symfony support triage demo</a></b><br><sub>yoanbernabeu · GitHub · ⭐ 2 · 2026-09-19</sub><br>French Symfony AI demo that qualifies real requests sent to French public services with one Jev call each: the requester's intent among six, urgency, and whether it is a bug to forward to developers.<br><sub>Also: <a href="https://x.com/yOyO38/status/2101705862008001011">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/ZeroGold/call-coach-ai"><img src="https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab" alt="Call Coach" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ZeroGold/call-coach-ai">Call Coach</a></b><br><sub>ZeroGold · GitHub · ⭐ 35 · 2026-09-20</sub><br>Live sales-call assistant that sends the conversation to Jev after every sentence and shows the rep a suggested next action and buying stage with a confidence score, from a microphone or a sample call.<br><sub>Also: <a href="https://www.reddit.com/r/LLMDevs/comments/1wltrsa/i_built_an_opensource_app_that_uses_jev_to_coach/">discussion</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100957577958097199"><img src="https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg" alt="jev-support-pulse" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100957577958097199">jev-support-pulse</a></b><br><sub>GoSailGlobal · X · ♥ 6 · 2026-09-18</sub><br>Chinese experiment labeling 170,400 2017 tweets to seven brands' support accounts with Jev for $1.84: at equal false alarms it caught 17 outages about 4.1 hours before the brand admitted them, versus 10 for tweet volume.<br><sub>Also: <a href="https://github.com/zhuyansen/jev-support-pulse">repo</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe"><img src="https://raw.githubusercontent.com/warmbly/warmbly/main/docs/assets/dashboard-campaigns.png" alt="Warmbly TypeSafe client" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe">Warmbly TypeSafe client</a></b><br><sub>warmbly · GitHub · ⭐ 308 repo · 2026-01-17</sub><br>Open-source cold outreach and email warmup platform that uses TypeSafe judgments for inbox tagging, reply intent classification, draft gating, bounce causes and form submission triage.<br><sub>Also: <a href="https://warmbly.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/zeetakou/status/2101945022782284192"><img src="https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg" alt="Telemarketing AI with Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/zeetakou/status/2101945022782284192">Telemarketing AI with Jev</a></b><br><sub>zeetakou · X · ♥ 2 · 2026-09-21</sub><br>Outbound calling agent on the GPT Live API that dials a lead list and transfers promising prospects, now testing Jev for calls like whether a lead is promising, when to hand off, and redial priority.<br><sub><b>How it uses Jev:</b> In-call and post-call judgments: prospect quality, hand-off now or not, redial priority.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/malekoo/status/2100439840575684910"><img src="https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig" alt="Jev in-app help for a Mac app" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Jev in-app help for a Mac app</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>In-app help for a Mac app that works with no model loaded: Jev reads the question against the built-in manual and picks the matching article or none, scoring 42/42 with a median 0.93 s.<br><sub><b>How it uses Jev:</b> Choice over manual articles plus a no-match option, with the whole manual as state.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/DECRUX9812/openjev">open-Jev (DECRUX9812)</a></b><br><sub>DECRUX9812 · GitHub · ⭐ 3 · 2026-09-18</sub><br>Local, zero-cost reimplementation of a Jev decision layer that answers seven typed questions about a job posting on your CPU, separating in-house IT requisitions from small businesses that are sales leads.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nine-Minds/alga-psa/blob/main/ee/server/src/services/smartSearch/typesafeClient.ts"><img src="https://www.nineminds.com/imported-media/Overview%20Dashboard.png" alt="Alga PSA smart ticket search" width="240"></a></td>
@@ -104,20 +104,12 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <td valign="top"><b><a href="https://github.com/liulangjietou/customer_work/tree/main/customer-work-starter/src/main/java/com/richard/fyoung/customerwork/capability/typesafe">customer-work Jev decisions</a></b><br><sub>liulangjietou · GitHub · ⭐ 133 repo · 2026-06-13</sub><br>Enterprise customer-service agent platform on AgentScope Java that adds Jev structured decisions to the main conversation path and refund flow, with a circuit breaker and shadow display in the admin console.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/zeetakou/status/2101945022782284192"><img src="https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg" alt="Telemarketing AI with Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/zeetakou/status/2101945022782284192">Telemarketing AI with Jev</a></b><br><sub>zeetakou · X · ♥ 2 · 2026-09-21</sub><br>Outbound calling agent on the GPT Live API that dials a lead list and transfers promising prospects, now testing Jev for calls like whether a lead is promising, when to hand off, and redial priority.<br><sub><b>How it uses Jev:</b> In-call and post-call judgments: prospect quality, hand-off now or not, redial priority.</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent"><img src="https://opengraph.githubassets.com/1/UiPath/uipath-python" alt="UiPath ticket triage agent" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent">UiPath ticket triage agent</a></b><br><sub>UiPath · GitHub · ⭐ 98 repo · 2025-01-31</sub><br>Sample UiPath agent for two-tier support ticket triage where Jev routes each ticket fast, escalating to Action Center human review or an LLM-drafted auto-reply.<br><sub>Also: <a href="https://uipath.github.io/uipath-python/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/DECRUX9812/openjev">open-Jev (DECRUX9812)</a></b><br><sub>DECRUX9812 · GitHub · ⭐ 3 · 2026-09-18</sub><br>Local, zero-cost reimplementation of a Jev decision layer that answers seven typed questions about a job posting on your CPU, separating in-house IT requisitions from small businesses that are sales leads.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts"><img src="https://opengraph.githubassets.com/1/damien-schneider/reflet" alt="Reflet feedback triage" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts">Reflet feedback triage</a></b><br><sub>damien-schneider · GitHub · ⭐ 37 repo · 2026-01-17</sub><br>Feedback triage in Reflet, an open-source product feedback and roadmap platform: Jev decides whether a submission is actionable, withholds junk from the public board, flags items for review and auto-tags them.<br><sub><b>How it uses Jev:</b> Boolean usefulness/junk/needsReview questions plus per-tag questions via the AI SDK evaluate call; junk &gt;= 0.5 is withheld and tags need 0.65, max 3.</sub><br><sub>Also: <a href="https://www.reflet.app">app</a> · <a href="https://github.com/damien-schneider/reflet">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/abhegd/status/2102195682257854602"><img src="https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg" alt="Self-sorting in-app feedback" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/abhegd/status/2102195682257854602">Self-sorting in-app feedback</a></b><br><sub>abhegd · X · ▶ 60 · 2026-09-22</sub><br>Layoutstack demo where typed or spoken (ElevenLabs) in-app feedback is classified by Jev and filed into the right inbox, shipped with a cookbook to remix it with a coding agent.<br><sub>Also: <a href="https://www.layoutstack.com/demo/in-appfeedback">app</a> · <a href="https://layoutstack.com/demo/in-appfeedback">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zhayujie/status/2102009189765881894"><img src="https://pbs.twimg.com/amplify_video_thumb/2102007612569190400/img/Yv_-w6zdmBlVS5Mu.jpg" alt="CowAgent ticket analysis tool" width="240"></a></td>
@@ -136,8 +128,16 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <td valign="top"><b><a href="https://github.com/TheEleventhAvatar/triage-bot">triage-bot</a></b><br><sub>TheEleventhAvatar · GitHub · ⭐ 1 · 2026-09-19</sub><br>Support-ticket bot where Jev routes each ticket to a general, account, billing or technical agent and decides whether a human should take over, then Cerebras drafts the reply; both calls are timed separately.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts"><img src="https://opengraph.githubassets.com/1/damien-schneider/reflet" alt="Reflet feedback triage" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts">Reflet feedback triage</a></b><br><sub>damien-schneider · GitHub · ⭐ 37 repo · 2026-01-17</sub><br>Feedback triage in Reflet, an open-source product feedback and roadmap platform: Jev decides whether a submission is actionable, withholds junk from the public board, flags items for review and auto-tags them.<br><sub><b>How it uses Jev:</b> Boolean usefulness/junk/needsReview questions plus per-tag questions via the AI SDK evaluate call; junk &gt;= 0.5 is withheld and tags need 0.65, max 3.</sub><br><sub>Also: <a href="https://www.reflet.app">app</a> · <a href="https://github.com/damien-schneider/reflet">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs"><img src="https://opengraph.githubassets.com/1/calagopus/bot" alt="Calagopus bot support triage" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs">Calagopus bot support triage</a></b><br><sub>calagopus · GitHub · ⭐ 17 repo · 2025-12-28</sub><br>AI support triage in the Rust Discord bot for the Calagopus community that uses Jev to decide whether a message needs an answer at all and whether a drafted answer holds anything worth posting.<br><sub>Also: <a href="https://github.com/calagopus/bot">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/abhegd/status/2102195682257854602"><img src="https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg" alt="Self-sorting in-app feedback" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/abhegd/status/2102195682257854602">Self-sorting in-app feedback</a></b><br><sub>abhegd · X · ▶ 60 · 2026-09-22</sub><br>Layoutstack demo where typed or spoken (ElevenLabs) in-app feedback is classified by Jev and filed into the right inbox, shipped with a cookbook to remix it with a coding agent.<br><sub>Also: <a href="https://www.layoutstack.com/demo/in-appfeedback">app</a> · <a href="https://layoutstack.com/demo/in-appfeedback">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/upasana1105/UP_Demos/blob/main/it-helpdesk-assistant/judgment_base_agent/backends/typesafe.py"><img src="https://opengraph.githubassets.com/1/upasana1105/UP_Demos" alt="IT Helpdesk judgment backend" width="240"></a></td>

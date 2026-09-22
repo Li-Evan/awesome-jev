@@ -8,16 +8,16 @@ Tutoring, grading, quizzes, and learning tools. 10 entries, ranked by community 
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/hametgholizadeh/status/2101289895624917076"><img src="https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg" alt="Exam question predictor" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hametgholizadeh/status/2101289895624917076">Exam question predictor</a></b><br><sub>hametgholizadeh · X · ♥ 83 · 2026-09-19</sub><br>Ranks 80 real exam questions and 297 practice questions by how likely each is to appear on the actual exam, done in 80 seconds for $0.0256.<br><sub><b>How it uses Jev:</b> Scores each practice question against the real exam set.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/wquguru/dasheng"><img src="https://opengraph.githubassets.com/1/wquguru/dasheng" alt="ReadAloud (dasheng)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/wquguru/dasheng">ReadAloud (dasheng)</a></b><br><sub>wquguru · GitHub · ⭐ 122 · 2026-09-20</sub><br>English read-aloud trainer where the R2T2 streaming ASR transcribes your speech, Jev judges whether each mismatched word was misread and how, and code turns those judgments into a score.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xaniol/status/2101076982373191927"><img src="https://pbs.twimg.com/amplify_video_thumb/2101074153407422464/img/fzFh7BZaZCmGdh8v.jpg" alt="talkr" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/0xaniol/status/2101076982373191927">talkr</a></b><br><sub>0xaniol · X · ♥ 111 · 2026-09-18</sub><br>Speaking-practice app that gives you a topic, records 30 seconds of speech and has Jev score pauses, filler words, repetition, confidence and clarity with feedback.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/hametgholizadeh/status/2101289895624917076"><img src="https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg" alt="Exam question predictor" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hametgholizadeh/status/2101289895624917076">Exam question predictor</a></b><br><sub>hametgholizadeh · X · ♥ 83 · 2026-09-19</sub><br>Ranks 80 real exam questions and 297 practice questions by how likely each is to appear on the actual exam, done in 80 seconds for $0.0256.<br><sub><b>How it uses Jev:</b> Scores each practice question against the real exam set.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AustinAWay/Working-Memory-Jev"><img src="https://raw.githubusercontent.com/AustinAWay/Working-Memory-Jev/main/docs/provisional-estimates-live.png" alt="Working Memory Jev (Passage)" width="240"></a></td>

@@ -30,12 +30,24 @@
 <td valign="top"><b><a href="https://x.com/MakeAI_CEO/status/2101924475814212065">Jev x Codex 实战指南</a></b><br><sub>MakeAI_CEO · 文章 · ♥ 448 · 2026-09-21</sub><br>日文指南，涵盖在 Codex 中安装 TypeSafe skill、把生成与 Jev 判断分开、已公开的实验、工作中的应用，以及提升决策准确率的方法。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100925069765534024"><img src="https://pbs.twimg.com/media/HSf8FmcXMAAKnZ2.jpg" alt="精通 Jev（完整指南）" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chddaniel/status/2100925069765534024">精通 Jev（完整指南）</a></b><br><sub>chddaniel · 文章 · ♥ 1.1k · 2026-09-18</sub><br>长篇指南，涵盖 Jev 擅长什么、如何与现有 LLM 搭配使用、提问模式、用置信度门槛防止错误决策，以及五个赚钱的工作流。</td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/iannuttall/status/2100982108873191861">TypeSafe skill 入门</a></b><br><sub>iannuttall · X · ♥ 2.6k · 2026-09-18</sub><br>两步上手：先安装官方的 typesafe-ai agent skill，再让编程 agent 用 /typesafe-ai 找出可以用 Jev 替换的又慢又贵的 LLM 调用。<br><sub>相关: <a href="https://github.com/typesafe-ai/skills">skill</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/_avichawla/status/2101563610644496464"><img src="https://pbs.twimg.com/media/HSnaCbRbgAA0RG9.png" alt="自己动手做一个 Jev（100% 本地）" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/_avichawla/status/2101563610644496464">自己动手做一个 Jev（100% 本地）</a></b><br><sub>_avichawla · 文章 · ♥ 2.6k · 2026-09-20</sub><br>教程：不重新训练，就把开源 LLM 变成本地决策引擎，借助 SGLang 对固定选项做下一个 token 打分，并与常规文本生成做基准对比。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/DataChaz/status/2101206777924858319"><img src="https://pbs.twimg.com/media/HSj8bdNa0AAPYPc.jpg?name=orig" alt="Jev 工程路线图精简版" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/DataChaz/status/2101206777924858319">Jev 工程路线图精简版</a></b><br><sub>DataChaz · X · ♥ 2.1k · 2026-09-19</sub><br>帖子串，浓缩了一份 10 步 Jev 搭建指南：把 agent 的分岔点变成 Choice、Score 和概率，批量处理决策（一次测试中 13 个问题快了 10 倍、便宜了 12.2 倍），并对整个循环做基准测试。<br><sub>相关: <a href="https://x.com/0xCodila/status/2100984487802708306">source</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/chddaniel/status/2100925069765534024"><img src="https://pbs.twimg.com/media/HSf8FmcXMAAKnZ2.jpg" alt="精通 Jev（完整指南）" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chddaniel/status/2100925069765534024">精通 Jev（完整指南）</a></b><br><sub>chddaniel · 文章 · ♥ 1.1k · 2026-09-18</sub><br>长篇指南，涵盖 Jev 擅长什么、如何与现有 LLM 搭配使用、提问模式、用置信度门槛防止错误决策，以及五个赚钱的工作流。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101061688338575739"><img src="https://pbs.twimg.com/amplify_video_thumb/2101061589038477312/img/Jrat3MGWY4vtlsjL.jpg" alt="决策模型实战" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101061688338575739">决策模型实战</a></b><br><sub>OpenRouter · X · ♥ 1.7k · 2026-09-18</sub><br>OpenRouter 的帖子串，借软件开发中的实际例子解释什么是决策模型：Jev 回答是非题和选择题，并附上置信度。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xRicker/status/2101292455391809670"><img src="https://pbs.twimg.com/media/HSk1-arXgAAPiPp.jpg" alt="给你的 agent 装一个决策大脑" width="240"></a></td>
@@ -46,10 +58,6 @@
 <td valign="top"><b><a href="https://x.com/mvanhorn/status/2100784142850097482">Jev 究竟是什么鬼？</a></b><br><sub>mvanhorn · 文章 · ♥ 1.3k · 2026-09-18</sub><br>用大白话讲解 Jev：它做的是选择题而不是写作文；随后列出人们已经在用它做的九样东西，并逐一对照原帖核实过。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/DataChaz/status/2101206777924858319"><img src="https://pbs.twimg.com/media/HSj8bdNa0AAPYPc.jpg?name=orig" alt="Jev 工程路线图精简版" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/DataChaz/status/2101206777924858319">Jev 工程路线图精简版</a></b><br><sub>DataChaz · X · ♥ 2.1k · 2026-09-19</sub><br>帖子串，浓缩了一份 10 步 Jev 搭建指南：把 agent 的分岔点变成 Choice、Score 和概率，批量处理决策（一次测试中 13 个问题快了 10 倍、便宜了 12.2 倍），并对整个循环做基准测试。<br><sub>相关: <a href="https://x.com/0xCodila/status/2100984487802708306">source</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/xmglab/status/2101932146416075073"><img src="https://pbs.twimg.com/media/HStmlB-aAAE0ixN.jpg" alt="在 Claude Code 和 Codex 中使用 Jev（中文）" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/xmglab/status/2101932146416075073">在 Claude Code 和 Codex 中使用 Jev（中文）</a></b><br><sub>xmglab · 文章 · ♥ 456 · 2026-09-21</sub><br>中文教程，涵盖 API key、向 System One 端点发出第一个 curl 请求、定价，以及在 Claude Code 和 Codex 中安装官方 TypeSafe skill。</td>
 </tr>
@@ -58,24 +66,12 @@
 <td valign="top"><b><a href="https://x.com/29meat_ai/status/2101431162749264219">Codex x Jev 教科书</a></b><br><sub>29meat_ai · 文章 · ♥ 239 · 2026-09-19</sub><br>日文指南：把决策从 Codex 中拆出来交给 Jev，并梳理公开的路由器和集成在模型选择、证据核查和兜底行为上的做法。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/kgsi/status/2100743044698112032"><img src="https://pbs.twimg.com/media/HSdWHhbaUAAGMVn.jpg" alt="写给非工程师和设计师的 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/kgsi/status/2100743044698112032">写给非工程师和设计师的 Jev</a></b><br><sub>kgsi · 文章 · ♥ 340 · 2026-09-18</sub><br>面向非工程师的日文入门，围绕一个演示展开：在 70-150 毫秒内把直播评论分成提问、感想、请求和其他四类。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2101061688338575739"><img src="https://pbs.twimg.com/amplify_video_thumb/2101061589038477312/img/Jrat3MGWY4vtlsjL.jpg" alt="决策模型实战" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/OpenRouter/status/2101061688338575739">决策模型实战</a></b><br><sub>OpenRouter · X · ♥ 1.7k · 2026-09-18</sub><br>OpenRouter 的帖子串，借软件开发中的实际例子解释什么是决策模型：Jev 回答是非题和选择题，并附上置信度。</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/iannuttall/status/2100982108873191861">TypeSafe skill 入门</a></b><br><sub>iannuttall · X · ♥ 2.6k · 2026-09-18</sub><br>两步上手：先安装官方的 typesafe-ai agent skill，再让编程 agent 用 /typesafe-ai 找出可以用 Jev 替换的又慢又贵的 LLM 调用。<br><sub>相关: <a href="https://github.com/typesafe-ai/skills">skill</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/omarsar0/status/2101774405521301681"><img src="https://pbs.twimg.com/media/HSr-innWsAEQPym.jpg" alt="Jev 入门指南" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/omarsar0/status/2101774405521301681">Jev 入门指南</a></b><br><sub>omarsar0 · 文章 · ♥ 889 · 2026-09-20</sub><br>简短的入门指南，把 Jev 解释为做聚焦判断的模型，以一张客服工单作为 state、配一张由类型化问题组成的决策表，并说明它在生产环境中的位置。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/leaf_sanren/status/2101305166721098179"><img src="https://pbs.twimg.com/media/HSlVVQ8bcAAyk-G.jpg" alt="8 个可照抄的 Jev 用例（中文）" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/leaf_sanren/status/2101305166721098179">8 个可照抄的 Jev 用例（中文）</a></b><br><sub>leaf_sanren · 文章 · ♥ 259 · 2026-09-19</sub><br>中文学习笔记，讲解 Jev 是什么、30 分钟跑起来的四种方式、8 个可照抄的真实案例、反直觉的要点，以及什么时候不该用它。</td>
+<td width="260" valign="top"><a href="https://x.com/kgsi/status/2100743044698112032"><img src="https://pbs.twimg.com/media/HSdWHhbaUAAGMVn.jpg" alt="写给非工程师和设计师的 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/kgsi/status/2100743044698112032">写给非工程师和设计师的 Jev</a></b><br><sub>kgsi · 文章 · ♥ 340 · 2026-09-18</sub><br>面向非工程师的日文入门，围绕一个演示展开：在 70-150 毫秒内把直播评论分成提问、感想、请求和其他四类。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/Mileson07/status/2101167448448004249"><img src="https://pbs.twimg.com/media/HSjXgp3bwAAxX95.jpg" alt="Jev 新手教程（中文）" width="240"></a></td>
@@ -86,16 +82,28 @@
 <td valign="top"><b><a href="https://github.com/CopilotKit/CopilotKit/blob/main/showcase/shell-docs/src/content/docs/cookbook/jev-generative-ui.mdx">CopilotKit 的 Jev 生成式 UI 示例</a></b><br><sub>CopilotKit · 文档 · ⭐ 37.5k 仓库 · 2023-06-19</sub><br>Cookbook 示例：一个 Next.js 工作区选择器，由 Jev 决定是先追问澄清还是直接展示选项，并给房间排序，再由 CopilotKit 和 AG-UI 渲染结果。<br><sub><b>Jev 用法:</b> Jev 在预先准备好的面板之间做选择并给候选项排序；只有两个面板都覆盖不了的请求才交给 OpenAI 模型处理。</sub><br><sub>相关: <a href="https://docs.copilotkit.ai">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/AIMevzulari/status/2101362530241188066"><img src="https://pbs.twimg.com/media/HSlqviuW4AAM7G7.jpg" alt="JEV 是什么？" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/AIMevzulari/status/2101362530241188066">JEV 是什么？</a></b><br><sub>AIMevzulari · 文章 · ♥ 164 · 2026-09-19</sub><br>土耳其语讲解，把 Jev 定位为决策引擎而非 LLM，介绍它在 agent 中的位置、对其宣传说法的保留意见，以及在 Claude Code 和 Codex 中的配置步骤。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/yibie/status/2100541283081023936"><img src="https://pbs.twimg.com/media/HSafHbiWYAAIM5j.jpg" alt="三种原语与分级阈值" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/yibie/status/2100541283081023936">三种原语与分级阈值</a></b><br><sub>yibie · 文章 · ♥ 608 · 2026-09-17</sub><br>中文 Jev 使用指南：Noul、Choice 和 Score 原语及其返回结构，五种上手方式（playground、HTTP、SDK），以及如何设置分级置信度阈值。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/leaf_sanren/status/2101305166721098179"><img src="https://pbs.twimg.com/media/HSlVVQ8bcAAyk-G.jpg" alt="8 个可照抄的 Jev 用例（中文）" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/leaf_sanren/status/2101305166721098179">8 个可照抄的 Jev 用例（中文）</a></b><br><sub>leaf_sanren · 文章 · ♥ 259 · 2026-09-19</sub><br>中文学习笔记，讲解 Jev 是什么、30 分钟跑起来的四种方式、8 个可照抄的真实案例、反直觉的要点，以及什么时候不该用它。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/masahirochaen/status/2101312078627659898"><img src="https://pbs.twimg.com/media/HSlHRjMXgAAGdig.jpg" alt="工作中使用 Jev 的 20 种方式" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/masahirochaen/status/2101312078627659898">工作中使用 Jev 的 20 种方式</a></b><br><sub>masahirochaen · 文章 · ♥ 531 · 2026-09-19</sub><br>日语指南，介绍 Jev 能做什么、20 个已公开的演示和 API 用法（从浏览器控制到客服分流）及其在工作中的应用，以及如何通过 Vercel AI Gateway 免费试用。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/AIMevzulari/status/2101362530241188066"><img src="https://pbs.twimg.com/media/HSlqviuW4AAM7G7.jpg" alt="JEV 是什么？" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/AIMevzulari/status/2101362530241188066">JEV 是什么？</a></b><br><sub>AIMevzulari · 文章 · ♥ 164 · 2026-09-19</sub><br>土耳其语讲解，把 Jev 定位为决策引擎而非 LLM，介绍它在 agent 中的位置、对其宣传说法的保留意见，以及在 Claude Code 和 Codex 中的配置步骤。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://ruben.substack.com/p/jev"><img src="https://substackcdn.com/image/fetch/$s_!jina!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49573abc-65a6-4b90-87d6-04d5ec96eff3_2400x1260.png" alt="Jev 使用方法（Ruben Hassid）" width="240"></a></td>
+<td valign="top"><b><a href="https://ruben.substack.com/p/jev">Jev 使用方法（Ruben Hassid）</a></b><br><sub>Ruben Hassid · 文章 · ♥ 360 · 2026-09-20</sub><br>面向非开发者的指南：在 Claude Code 或 Codex 中通过 TypeSafe skill 使用 Jev，附 LinkedIn 分类、Gmail 分拣和论文筛选的案例，每个都配有可直接复制的提示词。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/akshay_pachaar/status/2102087107410002345"><img src="https://pbs.twimg.com/media/HSsB_z2bMAATp-F.jpg" alt="用 Jev 搭建评判器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2102087107410002345">用 Jev 搭建评判器</a></b><br><sub>akshay_pachaar · 文章 · ♥ 332 · 2026-09-21</sub><br>教程：在 agent 评测中用 Jev 替代 LLM 评判器，只问边界明确的问题，比如回答是否依据了政策、声称执行的操作是否真的发生了。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/startupideaspod/status/2101029801821941933"><img src="https://pbs.twimg.com/media/HShbadGaAAAujgB.jpg" alt="Jev 来了，以及怎么用" width="240"></a></td>
@@ -108,14 +116,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://x.com/yupi996/status/2101953504374042658"><img src="https://pbs.twimg.com/media/HSuiiggbAAAZdqO.jpg" alt="Jev 上手实测与教程（中文）" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/yupi996/status/2101953504374042658">Jev 上手实测与教程（中文）</a></b><br><sub>yupi996 · 文章 · ♥ 240 · 2026-09-21</sub><br>中文入门指南兼实测，讲解 System One 模型、Noul/Choice/Score 三种原语（附请求示例），以及在 Jev 开放后如何上手试用。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/akshay_pachaar/status/2102087107410002345"><img src="https://pbs.twimg.com/media/HSsB_z2bMAATp-F.jpg" alt="用 Jev 搭建评判器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2102087107410002345">用 Jev 搭建评判器</a></b><br><sub>akshay_pachaar · 文章 · ♥ 332 · 2026-09-21</sub><br>教程：在 agent 评测中用 Jev 替代 LLM 评判器，只问边界明确的问题，比如回答是否依据了政策、声称执行的操作是否真的发生了。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://ruben.substack.com/p/jev"><img src="https://substackcdn.com/image/fetch/$s_!jina!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49573abc-65a6-4b90-87d6-04d5ec96eff3_2400x1260.png" alt="Jev 使用方法（Ruben Hassid）" width="240"></a></td>
-<td valign="top"><b><a href="https://ruben.substack.com/p/jev">Jev 使用方法（Ruben Hassid）</a></b><br><sub>Ruben Hassid · 文章 · ♥ 360 · 2026-09-20</sub><br>面向非开发者的指南：在 Claude Code 或 Codex 中通过 TypeSafe skill 使用 Jev，附 LinkedIn 分类、Gmail 分拣和论文筛选的案例，每个都配有可直接复制的提示词。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/ericosiu/status/2101737133165924680"><img src="https://pbs.twimg.com/media/HSq8kZTbgAAZ-Q1.jpg" alt="用 Jev 做营销" width="240"></a></td>
@@ -134,16 +134,12 @@
 <td valign="top"><b><a href="https://github.com/davila7/jev-explained">Jev Explained</a></b><br><sub>davila7 · GitHub · ⭐ 23 · 2026-09-19</sub><br>交互式 playground，用你自己的 TypeSafe 或 Vercel AI Gateway key 逐步运行 Noul、Choice 和 Score 问题，讲解 Jev 如何做出类型化的概率决策。<br><sub>相关: <a href="https://x.com/dani_avila7/status/2101484241762603363">demo</a> · <a href="https://jev-explained-repo.vercel.app/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2102199407630500290"><img src="https://pbs.twimg.com/media/HSyBz3lagAAtzmj.jpg" alt="写给开发者的 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MisbahSy/status/2102199407630500290">写给开发者的 Jev</a></b><br><sub>MisbahSy · 文章 · ♥ 8 · 2026-09-22</sub><br>图文并茂的开发者指南，讲如何用 Jev 构建应用：state、类型化问题字典、SDK 配置、LiteLLM 路由和常见模式，写法上也方便 agent 阅读。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Jev 在 agent 中的五个实用场景" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/lgyv5/status/2101860029838303522">Jev 在 agent 中的五个实用场景</a></b><br><sub>lgyv5 · 文章 · ♥ 3 · 2026-09-21</sub><br>中文指南，介绍 Jev 在 agent 流水线中适用的五个位置：内容清洗、固定参数选择、意图路由、RAG 重排和工具调用安全把关，并介绍开源项目 JevShield。<br><sub>相关: <a href="https://github.com/lgy1027/jevshield">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://vercel.com/i/what-is-jev"><img src="https://images.ctfassets.net/e5382hct74si/7x5CA1G7tDV7JSxt9iycsY/841a3891f316cf03bef4f76272a7276e/image.png" alt="Jev 是什么？" width="240"></a></td>
 <td valign="top"><b><a href="https://vercel.com/i/what-is-jev">Jev 是什么？</a></b><br><sub>Vercel (Ben Sabic) · 文章 · ▲ 3 · 2026-09-19</sub><br>Vercel 的讲解文章，说明 Jev 中 state 和类型化问题的含义、Choice、Score 和 Noul 答案如何返回，以及它的类型安全止步于何处。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49787870">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2102199407630500290"><img src="https://pbs.twimg.com/media/HSyBz3lagAAtzmj.jpg" alt="写给开发者的 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MisbahSy/status/2102199407630500290">写给开发者的 Jev</a></b><br><sub>MisbahSy · 文章 · ♥ 8 · 2026-09-22</sub><br>图文并茂的开发者指南，讲如何用 Jev 构建应用：state、类型化问题字典、SDK 配置、LiteLLM 路由和常见模式，写法上也方便 agent 阅读。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk"><img src="https://vercel.com/api/docs-og?title=How%20to%20classify%2C%20route%2C%20and%20score%20with%20Jev%20and%20AI%20SDK&amp;format=kb&amp;sig=447fbc245d38ca20ca0f1ed58f4f6a66df9cd38071d9e75a9526310f6a4c072d" alt="用 Jev 和 AI SDK 做分类、路由和打分" width="240"></a></td>
@@ -154,8 +150,16 @@
 <td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>官方 Jev 文档（docs.typesafe.ai）的非官方中文译本，构建为静态站点。<br><sub>相关: <a href="https://bald0wang.github.io/jev-docs-zh/">site</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Jev 在 agent 中的五个实用场景" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/lgyv5/status/2101860029838303522">Jev 在 agent 中的五个实用场景</a></b><br><sub>lgyv5 · 文章 · ♥ 3 · 2026-09-21</sub><br>中文指南，介绍 Jev 在 agent 流水线中适用的五个位置：内容清洗、固定参数选择、意图路由、RAG 重排和工具调用安全把关，并介绍开源项目 JevShield。<br><sub>相关: <a href="https://github.com/lgy1027/jevshield">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://www.jrzs.dev/blog/what-the-heck-is-jev/">Jev 到底是个啥？</a></b><br><sub>James O&#x27;Reilly · 文章 · ▲ 1 · 2026-09-18</sub><br>简短的新手讲解，把 Jev 介绍为亚秒级决策模型，讲 Choice、Noul 和 Score 三种问题类型，并附一个示例请求和响应。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49753818">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sherajdev/jev-research"><img src="https://opengraph.githubassets.com/1/sherajdev/jev-research" alt="Jev + Herdr" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sherajdev/jev-research">Jev + Herdr</a></b><br><sub>sherajdev · GitHub · ⭐ 1 · 2026-09-18</sub><br>指南：用 Jev 和 Herdr 编排 Claude、Codex、Hermes 等编程 agent，附一个小型路由原型，以及对一个 Jev 浏览器 worker 的评述。<br><sub><b>Jev 用法:</b> Jev 根据任务和仓库的 state 为任务选择执行者，并给风险和派发就绪度打分。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/alarcon7a/youtube-tutorial-sources/blob/main/Notebooks/Typesafe/jev_tutorial.ipynb"><img src="https://opengraph.githubassets.com/1/alarcon7a/youtube-tutorial-sources" alt="从零开始学 Jev" width="240"></a></td>
@@ -164,10 +168,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/earlyaidopters/gumroad-resources/tree/main/resources/jev-starter-kit-explainer-live-playground"><img src="https://i.ytimg.com/vi/zZNm4zP_lEE/maxresdefault.jpg" alt="Jev Starter Kit" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/earlyaidopters/gumroad-resources/tree/main/resources/jev-starter-kit-explainer-live-playground">Jev Starter Kit</a></b><br><sub>earlyaidopters · GitHub · ⭐ 34 仓库 · 2026-08-10</sub><br>Early AI-dopters 的免费入门套件，配合一个 YouTube 讲解视频，包含交互式 Jev 讲解、Ask Jev playground，以及一份编程助手指南，其中有一个酒店细则 API 示例。<br><sub>相关: <a href="https://github.com/earlyaidopters/gumroad-resources">repo</a> · <a href="https://www.youtube.com/watch?v=zZNm4zP_lEE">video</a> · <a href="https://markkashef.gumroad.com/l/jev-starter-kit">gumroad</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sherajdev/jev-research"><img src="https://opengraph.githubassets.com/1/sherajdev/jev-research" alt="Jev + Herdr" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sherajdev/jev-research">Jev + Herdr</a></b><br><sub>sherajdev · GitHub · ⭐ 1 · 2026-09-18</sub><br>指南：用 Jev 和 Herdr 编排 Claude、Codex、Hermes 等编程 agent，附一个小型路由原型，以及对一个 Jev 浏览器 worker 的评述。<br><sub><b>Jev 用法:</b> Jev 根据任务和仓库的 state 为任务选择执行者，并给风险和派发就绪度打分。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/howdeploy/deploychan_mcp/blob/main/content/tools/jev.md"><img src="https://opengraph.githubassets.com/1/howdeploy/deploychan_mcp" alt="deploychan 的 Jev 指南" width="240"></a></td>

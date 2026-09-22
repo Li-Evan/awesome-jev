@@ -38,10 +38,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/ainame/swift-typesafe">swift-typesafe</a></b><br><sub>ainame · GitHub · ⭐ 13 · 2026-09-18</sub><br>Unofficial Swift 6.4 SDK following the Python SDK's 0.7.0 API, with a @QuestionSet macro that generates typed answers, dynamic questions and Linux support.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client"><img src="https://opengraph.githubassets.com/1/cequence-io/openai-scala-client" alt="openai-scala-client TypeSafe module" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client">openai-scala-client TypeSafe module</a></b><br><sub>cequence-io · GitHub · ⭐ 248 repo · 2026-09-16</sub><br>TypeSafe module in the async openai-scala-client that sends shared state and typed questions to Jev, with examples for confidence-gated routing, semantic find and an OpenAI-style adapter.<br><sub>Also: <a href="https://github.com/cequence-io/openai-scala-client">repo</a> · <a href="https://github.com/cequence-io/openai-scala-client/tree/master/openai-examples/src/main/scala/io/cequence/openaiscala/examples/typesafe">examples</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/atharvamhaske/typesafe-sdk-go"><img src="https://raw.githubusercontent.com/atharvamhaske/typesafe-sdk-go/main/images/test.png" alt="typesafe-sdk-go (atharvamhaske)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/atharvamhaske/typesafe-sdk-go">typesafe-sdk-go (atharvamhaske)</a></b><br><sub>atharvamhaske · GitHub · ⭐ 12 · 2026-09-18</sub><br>Unofficial Go SDK built to the same wire contract as the official Python and JavaScript SDKs, with typed choice, score and noul questions, a typed answer union and model discovery.<br><sub>Also: <a href="https://x.com/AtharvaXDevs/status/2102067600947834960">demo</a> · <a href="https://typesafe-sdk-go.mintlify.site/">docs</a></sub></td>
 </tr>
@@ -96,6 +92,10 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/nshkrdotcom/typesafe_sdk"><img src="https://raw.githubusercontent.com/nshkrdotcom/typesafe_sdk/main/assets/typesafe_sdk.svg" alt="typesafe_sdk (Elixir)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nshkrdotcom/typesafe_sdk">typesafe_sdk (Elixir)</a></b><br><sub>nshkrdotcom · GitHub · ⭐ 5 · 2026-09-17</sub><br>Elixir SDK for Jev's typed questions and probabilistic answers whose final 0.4.1 release now points to the provider-neutral successor system_one_sdk for batching, telemetry and OTP integration.<br><sub>Also: <a href="https://github.com/nshkrdotcom/system_one_sdk">successor</a> · <a href="https://hex.pm/packages/typesafe_sdk">hex</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client"><img src="https://opengraph.githubassets.com/1/cequence-io/openai-scala-client" alt="openai-scala-client TypeSafe module" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cequence-io/openai-scala-client/tree/master/typesafe-client">openai-scala-client TypeSafe module</a></b><br><sub>cequence-io · GitHub · ⭐ 248 repo · 2026-09-16</sub><br>TypeSafe module in the async openai-scala-client that sends shared state and typed questions to Jev, with examples for confidence-gated routing, semantic find and an OpenAI-style adapter.<br><sub>Also: <a href="https://github.com/cequence-io/openai-scala-client">repo</a> · <a href="https://github.com/cequence-io/openai-scala-client/tree/master/openai-examples/src/main/scala/io/cequence/openaiscala/examples/typesafe">examples</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Stumble/jev-go"><img src="https://opengraph.githubassets.com/1/Stumble/jev-go" alt="jev-go" width="240"></a></td>
@@ -170,10 +170,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/jamesward/zio-typesafe-ai">zio-typesafe-ai</a></b><br><sub>jamesward · GitHub · ⭐ 3 · 2026-09-17</sub><br>Scala 3 and ZIO client for the Jev System One API that asks several typed Noul, Choice and Score questions in one round-trip and returns the answers as a NamedTuple shaped like the questions.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/mhrlife/goai-kit/tree/master/jev"><img src="https://opengraph.githubassets.com/1/mhrlife/goai-kit" alt="goai-kit jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mhrlife/goai-kit/tree/master/jev">goai-kit jev</a></b><br><sub>mhrlife · GitHub · ⭐ 45 repo · 2025-05-18</sub><br>Standalone Go client for Jev inside the goai-kit LLM library, using only the standard library: typed Noul, Choice and Score questions and answers via OpenRouter or TypeSafe, with context cancellation and retry-classified HTTP errors.<br><sub>Also: <a href="https://github.com/mhrlife/goai-kit">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mzainzulifqar/jev-php-sdk"><img src="https://opengraph.githubassets.com/1/mzainzulifqar/jev-php-sdk" alt="Jev SDK for PHP" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mzainzulifqar/jev-php-sdk">Jev SDK for PHP</a></b><br><sub>mzainzulifqar · GitHub · ⭐ 2 · 2026-09-18</sub><br>Framework-agnostic PHP 8.1+ client for the System One API that works with any PSR-18 HTTP client and Laravel 8-13, with Noul, Score and Choice question builders.<br><sub>Also: <a href="https://packagist.org/packages/mzainzulifqar/jev-php-sdk">packagist</a></sub></td>
 </tr>
@@ -208,14 +204,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Hawxy/TypeSafeAI.Net"><img src="https://opengraph.githubassets.com/1/Hawxy/TypeSafeAI.Net" alt="TypeSafeAI.Net" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Hawxy/TypeSafeAI.Net">TypeSafeAI.Net</a></b><br><sub>Hawxy · GitHub · ⭐ 2 · 2026-09-17</sub><br>Community .NET SDK for the System One API with typed question sets, retries, HttpClientFactory and DI support, AOT safety, and Microsoft.Extensions.AI guardrail, routing, tool, and evaluator adapters.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail"><img src="https://repository-images.githubusercontent.com/1064514521/5c945465-b033-4839-9357-182fc39a2503" alt="AILANG decide_jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail">AILANG decide_jev</a></b><br><sub>sunholo-data · GitHub · ⭐ 34 repo · 2025-09-26</sub><br>Runnable spike that calls Jev through OpenRouter's Decisions API from pure AILANG, the effect-typed language for AI-written code, modeling Noul, Choice and Score as typed questions and answers that keep full distributions.<br><sub>Also: <a href="https://github.com/sunholo-data/ailang">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/maruel/genai/tree/main/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maruel/genai" alt="genai typesafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/maruel/genai/tree/main/providers/typesafe">genai typesafe provider</a></b><br><sub>maruel · GitHub · ⭐ 32 repo · 2025-03-06</sub><br>TypeSafe provider for maruel/genai, a Go AI package: Noul, Choice and Score questions are declared as Go struct fields and answers decode back into the same struct with confidence and full distributions.<br><sub>Also: <a href="https://github.com/maruel/genai">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/anilsenay/jev"><img src="https://opengraph.githubassets.com/1/anilsenay/jev" alt="jev (Go)" width="240"></a></td>
@@ -318,12 +306,24 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/chez-shanpu/typesafeai-go">typesafeai-go</a></b><br><sub>chez-shanpu · GitHub · ⭐ 1 · 2026-09-17</sub><br>Independent Go client for the TypeSafe AI API that sends Noul, Choice and Score questions and returns answers in the matching Go types.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai"><img src="https://opengraph.githubassets.com/1/andrueandersoncs/lion" alt="@lionlang/typesafe-ai" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai">@lionlang/typesafe-ai</a></b><br><sub>andrueandersoncs · GitHub · ⭐ 16 repo · 2025-12-11</sub><br>Bindings that expose every Jev question primitive plus the System One and models APIs as functions in Lion, a JSON-based Lisp whose evaluator runs on Effect v4.<br><sub>Also: <a href="https://github.com/andrueandersoncs/lion">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/mhrlife/goai-kit/tree/master/jev"><img src="https://opengraph.githubassets.com/1/mhrlife/goai-kit" alt="goai-kit jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mhrlife/goai-kit/tree/master/jev">goai-kit jev</a></b><br><sub>mhrlife · GitHub · ⭐ 45 repo · 2025-05-18</sub><br>Standalone Go client for Jev inside the goai-kit LLM library, using only the standard library: typed Noul, Choice and Score questions and answers via OpenRouter or TypeSafe, with context cancellation and retry-classified HTTP errors.<br><sub>Also: <a href="https://github.com/mhrlife/goai-kit">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail"><img src="https://repository-images.githubusercontent.com/1064514521/5c945465-b033-4839-9357-182fc39a2503" alt="AILANG decide_jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sunholo-data/ailang/blob/dev/examples/runnable/decide_jev.ail">AILANG decide_jev</a></b><br><sub>sunholo-data · GitHub · ⭐ 34 repo · 2025-09-26</sub><br>Runnable spike that calls Jev through OpenRouter's Decisions API from pure AILANG, the effect-typed language for AI-written code, modeling Noul, Choice and Score as typed questions and answers that keep full distributions.<br><sub>Also: <a href="https://github.com/sunholo-data/ailang">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://gitlab.com/porky11/jev">Rust client</a></b><br><sub>porky11 · GitHub · ⬇ 68 · 2026-09-17</sub><br>Community Rust crate published as <code>jev</code>.<br><sub>Also: <a href="https://crates.io/crates/jev">crates</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/maruel/genai/tree/main/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maruel/genai" alt="genai typesafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/maruel/genai/tree/main/providers/typesafe">genai typesafe provider</a></b><br><sub>maruel · GitHub · ⭐ 32 repo · 2025-03-06</sub><br>TypeSafe provider for maruel/genai, a Go AI package: Noul, Choice and Score questions are declared as Go struct fields and answers decode back into the same struct with confidence and full distributions.<br><sub>Also: <a href="https://github.com/maruel/genai">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai"><img src="https://opengraph.githubassets.com/1/andrueandersoncs/lion" alt="@lionlang/typesafe-ai" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/andrueandersoncs/lion/tree/main/packages/typesafe-ai">@lionlang/typesafe-ai</a></b><br><sub>andrueandersoncs · GitHub · ⭐ 16 repo · 2025-12-11</sub><br>Bindings that expose every Jev question primitive plus the System One and models APIs as functions in Lion, a JSON-based Lisp whose evaluator runs on Effect v4.<br><sub>Also: <a href="https://github.com/andrueandersoncs/lion">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sethbang/venice-py/blob/main/src/venice_ai/resources/decisions.py"><img src="https://raw.githubusercontent.com/sethbang/venice-py/main/website/static/img/venice-py-banner.png" alt="venice-py Decisions resource" width="240"></a></td>

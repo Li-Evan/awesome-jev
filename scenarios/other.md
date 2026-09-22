@@ -8,10 +8,6 @@ Everything that does not fit a single scenario yet. 46 entries, ranked by commun
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/neogoose_btw/status/2101428888874410069"><img src="https://pbs.twimg.com/amplify_video_thumb/2101427327746093056/img/LiNIpS9HMaBO00kW.jpg" alt="Jevassembler" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/neogoose_btw/status/2101428888874410069">Jevassembler</a></b><br><sub>neogoose_btw · X · ♥ 1.5k · 2026-09-19</sub><br>Satirical experiment that skips writing code: you give it a task and Jev predicts the next CPU instruction to execute at runtime.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/steventey/status/2101788378882863427"><img src="https://pbs.twimg.com/media/HSsNY_ybUAEFIK_.jpg?name=orig" alt="jev-even-odd" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/steventey/status/2101788378882863427">jev-even-odd</a></b><br><sub>steventey · X · ♥ 2.4k · 2026-09-20</sub><br>Tongue-in-cheek npm package that checks whether a number is even or odd by asking Jev through the AI SDK.<br><sub>Also: <a href="https://www.npmjs.com/package/jev-even-odd">npm</a> · <a href="https://npmjs.com/package/jev-even-odd">project</a></sub></td>
 </tr>
@@ -20,36 +16,32 @@ Everything that does not fit a single scenario yet. 46 entries, ranked by commun
 <td valign="top"><b><a href="https://x.com/sarvagya_kul/status/2100980770206879849">Candidate-company job matching</a></b><br><sub>sarvagya_kul · X · ♥ 1.8k · 2026-09-18</sub><br>Matching of one candidate profile against 400 companies in 12 seconds for $0.0005, predicting which jobs they are most likely to land and flagging mismatches.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/narphorium/nl-logic-interpreter"><img src="https://pbs.twimg.com/amplify_video_thumb/2100984200820121600/img/dXya52zCSiVBJVaF.jpg" alt="Natural Language Logic Interpreter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/narphorium/nl-logic-interpreter">Natural Language Logic Interpreter</a></b><br><sub>narphorium · GitHub · ⭐ 6 · 2026-09-19</sub><br>Step-through logic interpreter that proves goals over plain-English facts and rules by SLD resolution as Prolog does, with Jev deciding when two sentences state the same fact so they unify.<br><sub>Also: <a href="https://x.com/narphorium/status/2100985027093749764">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/neogoose_btw/status/2101428888874410069"><img src="https://pbs.twimg.com/amplify_video_thumb/2101427327746093056/img/LiNIpS9HMaBO00kW.jpg" alt="Jevassembler" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/neogoose_btw/status/2101428888874410069">Jevassembler</a></b><br><sub>neogoose_btw · X · ♥ 1.5k · 2026-09-19</sub><br>Satirical experiment that skips writing code: you give it a task and Jev predicts the next CPU instruction to execute at runtime.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/monteduro/killmyidea"><img src="https://killmyidea.stemonte.io/og.png" alt="Kill My Idea" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/monteduro/killmyidea">Kill My Idea</a></b><br><sub>monteduro · GitHub · ⭐ 76 · 2026-09-17</sub><br>Web app that judges a startup idea as KILL IT, FIX IT, or SHIP IT from one request of 10 parallel Jev questions, with local weights and gates computing the verdict.<br><sub><b>How it uses Jev:</b> 8 indie-hacker Score questions on a 0-4 scale, plus a category Choice and an is-it-understandable Noul.</sub><br><sub>Also: <a href="https://killmyidea.stemonte.io">app</a> · <a href="https://killmyidea.stemonte.io">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/TheBalkanHacker/status/2100962091498684848"><img src="https://pbs.twimg.com/amplify_video_thumb/2100960184327688192/img/7zn9b3VwndkLLzWa.jpg" alt="6502 emulator on Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TheBalkanHacker/status/2100962091498684848">6502 emulator on Jev</a></b><br><sub>TheBalkanHacker · X · ♥ 43 · 2026-09-18</sub><br>Experiment that has Jev act as the computer itself, emulating a 6502 CPU in real time; it runs whole short programs but still diverges from a reference emulator now and then.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/hqmank/status/2100933183931900346"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932969602990080/img/VTABbHThpYgbpCjy.jpg" alt="jev-job-hunter" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hqmank/status/2100933183931900346">jev-job-hunter</a></b><br><sub>hqmank · X · ♥ 75 · 2026-09-18</sub><br>Job-crawler skill that starts at a company homepage and has Jev find the Careers page, choose links, spot job pages and score roles against your profile, in about 20 seconds instead of 5 minutes.</td>
+<td width="260" valign="top"><a href="https://github.com/narphorium/nl-logic-interpreter"><img src="https://pbs.twimg.com/amplify_video_thumb/2100984200820121600/img/dXya52zCSiVBJVaF.jpg" alt="Natural Language Logic Interpreter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/narphorium/nl-logic-interpreter">Natural Language Logic Interpreter</a></b><br><sub>narphorium · GitHub · ⭐ 6 · 2026-09-19</sub><br>Step-through logic interpreter that proves goals over plain-English facts and rules by SLD resolution as Prolog does, with Jev deciding when two sentences state the same fact so they unify.<br><sub>Also: <a href="https://x.com/narphorium/status/2100985027093749764">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/accelerate/comments/1wikgsu/lol_this_guy_make_jev_into_an_llm_by_making_it/"><img src="https://external-preview.redd.it/cGpuenlvaTdpMHFoMTdeezDR7UunXxOnTNPat0hOKvg0e0iyHixj9bc90YrA.png?format=pjpg&amp;auto=webp&amp;s=0d23944783b987e05de2a6063831a41d8d8c31d1" alt="Jev as a letter-by-letter LLM" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/accelerate/comments/1wikgsu/lol_this_guy_make_jev_into_an_llm_by_making_it/">Jev as a letter-by-letter LLM</a></b><br><sub>princecaarlo · Reddit · ▲ 81 · 2026-09-17</sub><br>Hack that makes Jev write text by choosing one letter at a time, which set off a debate about using decision models as generators.<br><sub>Also: <a href="https://x.com/princecaarlo/status/2100206177699475560">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/TheBalkanHacker/status/2100962091498684848"><img src="https://pbs.twimg.com/amplify_video_thumb/2100960184327688192/img/7zn9b3VwndkLLzWa.jpg" alt="6502 emulator on Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/TheBalkanHacker/status/2100962091498684848">6502 emulator on Jev</a></b><br><sub>TheBalkanHacker · X · ♥ 43 · 2026-09-18</sub><br>Experiment that has Jev act as the computer itself, emulating a 6502 CPU in real time; it runs whole short programs but still diverges from a reference emulator now and then.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/FerryCorleone/crush-monitor"><img src="https://opengraph.githubassets.com/1/FerryCorleone/crush-monitor" alt="Crush Monitor" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/FerryCorleone/crush-monitor">Crush Monitor</a></b><br><sub>FerryCorleone · GitHub · ⭐ 129 · 2026-09-20</sub><br>Local WeChat-style chat analyzer that asks Jev for the top emotions and intents per message from 12 and 35 classes, scores the other person's affinity, and grades your replies from SSS to D.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/BuilderShivam/status/2101014788575035689"><img src="https://pbs.twimg.com/amplify_video_thumb/2101012936676483072/img/uOa464dc-IxxsOJZ.jpg" alt="Manhattan pathfinding" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/BuilderShivam/status/2101014788575035689">Manhattan pathfinding</a></b><br><sub>BuilderShivam · X · ♥ 9 · 2026-09-18</sub><br>Experiment pitting Jev against Dijkstra's algorithm and A* at finding routes across a Manhattan street map.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/YouWareAI/status/2100984559215247814"><img src="https://pbs.twimg.com/amplify_video_thumb/2100982412926992385/img/h9LjWj9F1kv3ESCd.jpg" alt="YouWare resume screener" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/YouWareAI/status/2100984559215247814">YouWare resume screener</a></b><br><sub>YouWareAI · X · ♥ 21 · 2026-09-18</sub><br>Open-sourced resume screener on YouWare that gave 360 resumes typed scores and shortlist signals in 24.2 seconds for $0.0212.</td>
+<td width="260" valign="top"><a href="https://x.com/hqmank/status/2100933183931900346"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932969602990080/img/VTABbHThpYgbpCjy.jpg" alt="jev-job-hunter" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hqmank/status/2100933183931900346">jev-job-hunter</a></b><br><sub>hqmank · X · ♥ 75 · 2026-09-18</sub><br>Job-crawler skill that starts at a company homepage and has Jev find the Careers page, choose links, spot job pages and score roles against your profile, in about 20 seconds instead of 5 minutes.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MarcelMichau/fake-survey-generator"><img src="https://opengraph.githubassets.com/1/MarcelMichau/fake-survey-generator" alt="Fake Survey Generator survey analysis" width="240"></a></td>
@@ -64,20 +56,24 @@ Everything that does not fit a single scenario yet. 46 entries, ranked by commun
 <td valign="top"><b><a href="https://github.com/skeptrunedev/jev-recruiter">Jev Recruiter</a></b><br><sub>skeptrunedev · GitHub · ⭐ 44 · 2026-09-18</sub><br>Local recruiting workspace where Jev, via Browser Use's Jev Ultrafast and Browser Harness, browses LinkedIn for a role, screens titles and checks profile excerpts against your hiring brief, saving matches with evidence.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/punit_arani/status/2102041407372566774"><img src="https://pbs.twimg.com/amplify_video_thumb/2101947212934901760/img/oVoIi7iIDwSPlJDc.jpg" alt="Jeve" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/punit_arani/status/2102041407372566774">Jeve</a></b><br><sub>punit_arani · X · ♥ 24 · 2026-09-21</sub><br>Simulation engine for generative agent-based models driven mostly by Jev, pitched as cheaper and faster than LLM-based GABMs for long-running simulations.<br><sub>Also: <a href="https://github.com/punitarani/jeve">repo</a> · <a href="https://github.com/punitarani/jeve">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/hari_trinay/status/2101118529936519453"><img src="https://pbs.twimg.com/amplify_video_thumb/2101118259076734976/img/JId8Xua4ypyd342R.jpg" alt="Proq plan-set classifier" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hari_trinay/status/2101118529936519453">Proq plan-set classifier</a></b><br><sub>hari_trinay · X · ♥ 18 · 2026-09-19</sub><br>Construction plan-set classifier for Proq's bill-of-materials pipeline: Jev classified a 26-sheet set in 2.9 seconds for $0.0052, matching GPT-4.1 and GPT-6 Astra on 100% of sheets.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/hqman/JevScout"><img src="https://opengraph.githubassets.com/1/hqman/JevScout" alt="JevScout" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/hqman/JevScout">JevScout</a></b><br><sub>hqman · GitHub · ⭐ 29 · 2026-09-18</sub><br>Coding-agent skill and CLI that drives a visible Chrome over CDP from a company homepage to its job listings, screening AI and software roles and saving the results.<br><sub><b>How it uses Jev:</b> Jev scores every link and job posting; the host LLM never picks what to click.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/verbove/status/2100990085340496185"><img src="https://pbs.twimg.com/amplify_video_thumb/2100989867370979328/img/d9ymhOh4c1pNvx4X.jpg" alt="MakerMap" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/verbove/status/2100990085340496185">MakerMap</a></b><br><sub>verbove · X · ♥ 5 · 2026-09-18</sub><br>Map of indie makers that uses Jev to find the makers near you that you should meet.<br><sub>Also: <a href="https://makermap.lol">app</a> · <a href="https://makermap.lol">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/punit_arani/status/2102041407372566774"><img src="https://pbs.twimg.com/amplify_video_thumb/2101947212934901760/img/oVoIi7iIDwSPlJDc.jpg" alt="Jeve" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/punit_arani/status/2102041407372566774">Jeve</a></b><br><sub>punit_arani · X · ♥ 24 · 2026-09-21</sub><br>Simulation engine for generative agent-based models driven mostly by Jev, pitched as cheaper and faster than LLM-based GABMs for long-running simulations.<br><sub>Also: <a href="https://github.com/punitarani/jeve">repo</a> · <a href="https://github.com/punitarani/jeve">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/BuilderShivam/status/2101014788575035689"><img src="https://pbs.twimg.com/amplify_video_thumb/2101012936676483072/img/uOa464dc-IxxsOJZ.jpg" alt="Manhattan pathfinding" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/BuilderShivam/status/2101014788575035689">Manhattan pathfinding</a></b><br><sub>BuilderShivam · X · ♥ 9 · 2026-09-18</sub><br>Experiment pitting Jev against Dijkstra's algorithm and A* at finding routes across a Manhattan street map.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/YouWareAI/status/2100984559215247814"><img src="https://pbs.twimg.com/amplify_video_thumb/2100982412926992385/img/h9LjWj9F1kv3ESCd.jpg" alt="YouWare resume screener" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/YouWareAI/status/2100984559215247814">YouWare resume screener</a></b><br><sub>YouWareAI · X · ♥ 21 · 2026-09-18</sub><br>Open-sourced resume screener on YouWare that gave 360 resumes typed scores and shortlist signals in 24.2 seconds for $0.0212.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/hari_trinay/status/2101118529936519453"><img src="https://pbs.twimg.com/amplify_video_thumb/2101118259076734976/img/JId8Xua4ypyd342R.jpg" alt="Proq plan-set classifier" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hari_trinay/status/2101118529936519453">Proq plan-set classifier</a></b><br><sub>hari_trinay · X · ♥ 18 · 2026-09-19</sub><br>Construction plan-set classifier for Proq's bill-of-materials pipeline: Jev classified a 26-sheet set in 2.9 seconds for $0.0052, matching GPT-4.1 and GPT-6 Astra on 100% of sheets.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mkotlikov/jev-grug"><img src="https://opengraph.githubassets.com/1/mkotlikov/jev-grug" alt="grug.chat" width="240"></a></td>
@@ -100,16 +96,16 @@ Everything that does not fit a single scenario yet. 46 entries, ranked by commun
 <td valign="top"><b><a href="https://github.com/AdamPippert/Anunix">Anunix Jev route</a></b><br><sub>AdamPippert · GitHub · ⭐ 8 · 2026-04-12</sub><br>AI-native operating system written in C and assembly whose shell can send an <code>ask</code> to hosted models including jev/jev-latest, using a sealed Jev credential object through a TLS companion.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/paradax/status/2101621025238917355"><img src="https://pbs.twimg.com/media/HSp0G56aEAAIWCI.jpg" alt="Jev Next Letter Lab" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/paradax/status/2101621025238917355">Jev Next Letter Lab</a></b><br><sub>paradax · Article · ♥ 4 · 2026-09-20</sub><br>Chinese tongue-in-cheek hack that turns Jev into a text generator by asking it to pick the next character from 51 candidates, one step at a time.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/OskarLebuda/precog"><img src="https://opengraph.githubassets.com/1/OskarLebuda/precog" alt="precog" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/OskarLebuda/precog">precog</a></b><br><sub>OskarLebuda · GitHub · ⭐ 7 · 2026-09-19</sub><br>Nuxt and Next.js modules that ask Jev which link a visitor is about to click and prefetch only that one, with an overlay that draws the guesses; its benchmark cut median navigation from 147 ms to 68 ms.<br><sub><b>How it uses Jev:</b> One request per prediction with three questions (next, soon, exit) over candidate link IDs, built from scroll and pointer state.</sub><br><sub>Also: <a href="https://oskarlebuda.github.io/precog/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Tokeii0/Xiaoke-qqbot"><img src="https://opengraph.githubassets.com/1/Tokeii0/Xiaoke-qqbot" alt="Xiaoke-qqbot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Tokeii0/Xiaoke-qqbot">Xiaoke-qqbot</a></b><br><sub>Tokeii0 · GitHub · ⭐ 7 · 2026-09-20</sub><br>Self-hosted QQ group-chat companion bot with long-term memory and a web admin panel, where Jev decides whether to join a conversation, tells jokes from real requests for help, and picks when and in which tone to send voice.<br><sub><b>How it uses Jev:</b> Semantic judgments on each group message gate replies, memory writes and voice-message style; each sub-feature can be switched on separately.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/verbove/status/2100990085340496185"><img src="https://pbs.twimg.com/amplify_video_thumb/2100989867370979328/img/d9ymhOh4c1pNvx4X.jpg" alt="MakerMap" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/verbove/status/2100990085340496185">MakerMap</a></b><br><sub>verbove · X · ♥ 5 · 2026-09-18</sub><br>Map of indie makers that uses Jev to find the makers near you that you should meet.<br><sub>Also: <a href="https://makermap.lol">app</a> · <a href="https://makermap.lol">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Bewinxed/jevgpt"><img src="https://raw.githubusercontent.com/Bewinxed/jevgpt/master/assets/banner.png" alt="JevGPT" width="240"></a></td>
@@ -126,6 +122,10 @@ Everything that does not fit a single scenario yet. 46 entries, ranked by commun
 <tr>
 <td width="260" valign="top"><a href="https://github.com/alxcrt/is-odd-jev"><img src="https://opengraph.githubassets.com/1/alxcrt/is-odd-jev" alt="is-odd-jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/alxcrt/is-odd-jev">is-odd-jev</a></b><br><sub>alxcrt · GitHub · ⭐ 4 · 2026-09-17</sub><br>Deliberately over-engineered joke package that asks Jev whether a number is odd and returns the calibrated probability instead of a boolean.<br><sub><b>How it uses Jev:</b> One Noul per number; the probability is the answer.</sub><br><sub>Also: <a href="https://news.ycombinator.com/item?id=49747934">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/paradax/status/2101621025238917355"><img src="https://pbs.twimg.com/media/HSp0G56aEAAIWCI.jpg" alt="Jev Next Letter Lab" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/paradax/status/2101621025238917355">Jev Next Letter Lab</a></b><br><sub>paradax · Article · ♥ 4 · 2026-09-20</sub><br>Chinese tongue-in-cheek hack that turns Jev into a text generator by asking it to pick the next character from 51 candidates, one step at a time.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AiPersonacademy/jev-resume-disqualifier"><img src="https://raw.githubusercontent.com/AiPersonacademy/jev-resume-disqualifier/main/assets/precision_hero_comp.jpg" alt="Jev Resume Disqualifier" width="240"></a></td>

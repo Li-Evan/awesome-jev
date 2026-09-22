@@ -53,6 +53,8 @@ The READMEs and all gallery pages are generated. Do not edit `README.md`, `READM
 
 4. Open a pull request. One project per pull request is easiest to review.
 
+The website at <https://li-evan.github.io/awesome-jev/> is built from the same data (`index.html` and `site/data.json`), so it updates by itself once a change lands on `main`.
+
 ## Images
 
 - Use an image from the project's own pages: a screenshot in its README, its `og:image`, the media in the original post, or the video thumbnail.

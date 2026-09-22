@@ -28,24 +28,40 @@
 <td valign="top"><b><a href="https://x.com/tarasshyn/status/2101012033340571952">Flowsery 会话回放分拣</a></b><br><sub>tarasshyn · X · ♥ 829 · 2026-09-18</sub><br>用 Jev 跑了 300 万条会话回放事件：40 秒内审阅 3,247 个会话，抓到 132 次愤怒点击、116 次无效点击和 95 个 JavaScript 错误，并开了 213 个修复 PR 草稿，花费 $2.17。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/yyyole/status/2101184012899537092"><img src="https://pbs.twimg.com/amplify_video_thumb/2101182941317787648/img/1Imy25EAcuq8Wllx.jpg" alt="AI 新闻筛选" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yyyole/status/2101184012899537092">AI 新闻筛选</a></b><br><sub>yyyole · X · ♥ 330 · 2026-09-19</sub><br>为挑选内容选题，用 Jev 把过去 7 天近 2,700 条 AI 新闻逐条筛了一遍，用时约 2 分钟，花费 $0.21。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/ramsoma/status/2101851201684042083"><img src="https://pbs.twimg.com/media/HStBFZFbIAAIWyp.jpg" alt="用 Jev 主动监控图表" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ramsoma/status/2101851201684042083">用 Jev 主动监控图表</a></b><br><sub>ramsoma · 文章 · ♥ 48 · 2026-09-21</sub><br>分析实验：用 Jev 标出哪些图表值得深入分析；在一个合成基准测试上，它的成本约为最强的廉价托管基线的 1/3，速度快 5 倍，召回率排第一，但精确率垫底。</td>
+<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2100979972194369925"><img src="https://pbs.twimg.com/amplify_video_thumb/2100978985480167424/img/Qcx8F-7plQRcpzqg.jpg" alt="文档 OCR 路由器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MisbahSy/status/2100979972194369925">文档 OCR 路由器</a></b><br><sub>MisbahSy · X · ♥ 483 · 2026-09-18</sub><br>路由器：逐页查看 PDF，让 Jev 判断哪些页真正需要 OCR，其余页面在本地直接抽取，降低 OCR 成本和耗时。<br><sub><b>Jev 用法:</b> 每页一个 Choice：需要 OCR，还是直接抽取文本。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/different-ai/openwork/blob/dev/evals/packages/testkit/src/verification-jev.ts"><img src="https://github.com/user-attachments/assets/66a8dd9b-5260-488c-957d-e54331e78c1c" alt="OpenWork 的 Jev 验证" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/different-ai/openwork/blob/dev/evals/packages/testkit/src/verification-jev.ts">OpenWork 的 Jev 验证</a></b><br><sub>different-ai · GitHub · ⭐ 23.7k 仓库 · 2026-01-14</sub><br>OpenWork 桌面应用评测 testkit 中的评估器：通过 Vercel AI Gateway 把测试意图和一组 UI 检查项字典发给 Jev，由它在一次调用中选出要运行的检查项，并判断这些检查能否覆盖该意图。<br><sub><b>Jev 用法:</b> 一个表示是否覆盖的 Boolean，加上每个候选检查项各一个 Boolean；选中的检查项会编译成一份持久化的验证计划。</sub><br><sub>相关: <a href="https://github.com/different-ai/openwork">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2100979972194369925"><img src="https://pbs.twimg.com/amplify_video_thumb/2100978985480167424/img/Qcx8F-7plQRcpzqg.jpg" alt="文档 OCR 路由器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MisbahSy/status/2100979972194369925">文档 OCR 路由器</a></b><br><sub>MisbahSy · X · ♥ 483 · 2026-09-18</sub><br>路由器：逐页查看 PDF，让 Jev 判断哪些页真正需要 OCR，其余页面在本地直接抽取，降低 OCR 成本和耗时。<br><sub><b>Jev 用法:</b> 每页一个 Choice：需要 OCR，还是直接抽取文本。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/yyyole/status/2101184012899537092"><img src="https://pbs.twimg.com/amplify_video_thumb/2101182941317787648/img/1Imy25EAcuq8Wllx.jpg" alt="AI 新闻筛选" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yyyole/status/2101184012899537092">AI 新闻筛选</a></b><br><sub>yyyole · X · ♥ 330 · 2026-09-19</sub><br>为挑选内容选题，用 Jev 把过去 7 天近 2,700 条 AI 新闻逐条筛了一遍，用时约 2 分钟，花费 $0.21。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mrmps/classifier-dev"><img src="https://opengraph.githubassets.com/1/mrmps/classifier-dev" alt="classifier.dev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mrmps/classifier-dev">classifier.dev</a></b><br><sub>mrmps · GitHub · ⭐ 408 · 2026-08-13</sub><br>无需 API key 的零样本文本分类，可通过普通 HTTP、CLI 和 MCP 服务器调用，由 Jev 作答；smart 档位会在 Jev 置信度低于 0.7 时再问一次推理模型。<br><sub><b>Jev 用法:</b> 批处理把多条文本打包进一次请求；400 条新闻标题端到端分类只用了 650 毫秒。</sub><br><sub>相关: <a href="https://classifier.dev">app</a> · <a href="https://classifier.dev/">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/ramsoma/status/2101851201684042083"><img src="https://pbs.twimg.com/media/HStBFZFbIAAIWyp.jpg" alt="用 Jev 主动监控图表" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ramsoma/status/2101851201684042083">用 Jev 主动监控图表</a></b><br><sub>ramsoma · 文章 · ♥ 48 · 2026-09-21</sub><br>分析实验：用 Jev 标出哪些图表值得深入分析；在一个合成基准测试上，它的成本约为最强的廉价托管基线的 1/3，速度快 5 倍，召回率排第一，但精确率垫底。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sutro-sh/jev-align"><img src="https://external-preview.redd.it/LyUguT2COJHsL7br_6em8JB9WzRSm8btXeyyt8rmg9I.png?auto=webp&amp;s=ccd844160bd89dae768534357b88bc00db01afed" alt="jev-align" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sutro-sh/jev-align">jev-align</a></b><br><sub>sutro-sh · GitHub · ⭐ 271 · 2026-09-19</sub><br>借助主动学习和提示词优化，把人工标注变成可复用、校准过的判断函数。<br><sub>相关: <a href="https://x.com/sethkimmel3/status/2101357768640987302">demo</a> · <a href="https://news.ycombinator.com/item?id=49770872">discussion</a> · <a href="https://pypi.org/project/jev-align/">pypi</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jerryjliu/docjev"><img src="https://raw.githubusercontent.com/jerryjliu/docjev/main/docs/report/summary.png" alt="DocJev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jerryjliu/docjev">DocJev</a></b><br><sub>jerryjliu · GitHub · ⭐ 206 · 2026-09-19</sub><br>库、CLI 兼本地应用：基于 LiteParse 提取的文本和 Jev 的预测，按自然语言描述的类别规则给 PDF、DOCX 或 PPTX 文件分类，或把一份合订文件拆分成各个组成文档。<br><sub>相关: <a href="https://x.com/jerryjliu0/status/2101738281046294552">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/mmalisper/status/2101001041903009987"><img src="https://pbs.twimg.com/amplify_video_thumb/2100995303935791105/img/eK9B54C5duJ9b-Od.jpg" alt="Jev 查询规划器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mmalisper/status/2101001041903009987">Jev 查询规划器</a></b><br><sub>mmalisper · X · ♥ 164 · 2026-09-18</sub><br>用 Jev 搭的 Postgres 查询规划器，经过一些调优后，在 Join Order Benchmark 上把查询提速 12%。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/yongfook/status/2100801037192024478"><img src="https://pbs.twimg.com/amplify_video_thumb/2100800207256756224/img/qfKKxj1Oh8pHHnD7.jpg" alt="Bannerbear 字段映射" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear 字段映射</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>已上线的 Bannerbear 功能：一键把模板字段映射到名称不同的数据源字段（photo 对应 avatar，company_name 对应 business）。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs"><img src="https://raw.githubusercontent.com/GreptimeTeam/greptimedb/main/docs/overview.png" alt="GreptimeDB 的 jev() SQL 函数" width="240"></a></td>
@@ -60,20 +76,8 @@
 <td valign="top"><b><a href="https://github.com/lightdash/lightdash/tree/main/packages/backend/src/ee/services/ai/decisions">Lightdash 的 AI 决策</a></b><br><sub>lightdash · GitHub · ⭐ 6.2k 仓库 · 2021-03-19</sub><br>嵌在 Lightdash BI agent 里的类型化 Jev 决策，用于目录排序、日期范围检查、图表质量、错误分类、回答论断的证据核查和字段恢复。<br><sub><b>Jev 用法:</b> 一个共享的决策客户端负责校验 Noul、Choice 和 Score 答案；其他调用方用它做项目路由、模型路由和就绪度评分。</sub><br><sub>相关: <a href="https://lightdash.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/yongfook/status/2100801037192024478"><img src="https://pbs.twimg.com/amplify_video_thumb/2100800207256756224/img/qfKKxj1Oh8pHHnD7.jpg" alt="Bannerbear 字段映射" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear 字段映射</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>已上线的 Bannerbear 功能：一键把模板字段映射到名称不同的数据源字段（photo 对应 avatar，company_name 对应 business）。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/mmalisper/status/2101001041903009987"><img src="https://pbs.twimg.com/amplify_video_thumb/2100995303935791105/img/eK9B54C5duJ9b-Od.jpg" alt="Jev 查询规划器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mmalisper/status/2101001041903009987">Jev 查询规划器</a></b><br><sub>mmalisper · X · ♥ 164 · 2026-09-18</sub><br>用 Jev 搭的 Postgres 查询规划器，经过一些调优后，在 Join Order Benchmark 上把查询提速 12%。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit 的 Jev 评委" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx">Harbor rewardkit 的 Jev 评委</a></b><br><sub>harbor-framework · 文档 · ⭐ 5.5k 仓库 · 2025-08-04</sub><br>rewardkit 中的 Jev 评委选项（rewardkit 是 Terminal-Bench 团队 Harbor 评测框架的评分包），按二元标准和评分细则给 agent 输出打分，不产出推理文本。<br><sub><b>Jev 用法:</b> 在标准 TOML 里设置 judge = "jev"；每条标准返回一个概率或评分细则分数，评分又快又便宜。</sub><br><sub>相关: <a href="https://harborframework.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sutro-sh/jev-align"><img src="https://external-preview.redd.it/LyUguT2COJHsL7br_6em8JB9WzRSm8btXeyyt8rmg9I.png?auto=webp&amp;s=ccd844160bd89dae768534357b88bc00db01afed" alt="jev-align" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sutro-sh/jev-align">jev-align</a></b><br><sub>sutro-sh · GitHub · ⭐ 271 · 2026-09-19</sub><br>借助主动学习和提示词优化，把人工标注变成可复用、校准过的判断函数。<br><sub>相关: <a href="https://x.com/sethkimmel3/status/2101357768640987302">demo</a> · <a href="https://news.ycombinator.com/item?id=49770872">discussion</a> · <a href="https://pypi.org/project/jev-align/">pypi</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/langwatch/langwatch/tree/main/platform/app/src/server/app-layer/instant-evals/classifier"><img src="https://opengraph.githubassets.com/1/langwatch/langwatch" alt="基于 Jev 的 LangWatch Instant Evals" width="240"></a></td>
@@ -88,20 +92,8 @@
 <td valign="top"><b><a href="https://x.com/huangyun_122/status/2102112025627476146">公众号文章分类器</a></b><br><sub>huangyun_122 · X · ♥ 84 · 2026-09-21</sub><br>一个中文演示：抓取 148 篇微信公众号长文，让 Jev 在不到 2 分钟内按场景分类，作为一次低成本标注尝试。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jerryjliu/docjev"><img src="https://raw.githubusercontent.com/jerryjliu/docjev/main/docs/report/summary.png" alt="DocJev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jerryjliu/docjev">DocJev</a></b><br><sub>jerryjliu · GitHub · ⭐ 206 · 2026-09-19</sub><br>库、CLI 兼本地应用：基于 LiteParse 提取的文本和 Jev 的预测，按自然语言描述的类别规则给 PDF、DOCX 或 PPTX 文件分类，或把一份合订文件拆分成各个组成文档。<br><sub>相关: <a href="https://x.com/jerryjliu0/status/2101738281046294552">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/dagucloud/dagu/blob/main/specs/071-decision-evaluate.md"><img src="https://opengraph.githubassets.com/1/dagucloud/dagu" alt="Dagu decision.evaluate" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/dagucloud/dagu/blob/main/specs/071-decision-evaluate.md">Dagu decision.evaluate</a></b><br><sub>dagucloud · GitHub · ⭐ 4.1k 仓库 · 2022-04-22</sub><br>内置于 Dagu 工作流的 decision.evaluate 动作：就共享上下文向 Jev 提 choice、score 或是非问题，并根据类型化答案给 DAG 选路。<br><sub><b>Jev 用法:</b> 可对接 TypeSafe 的 /v1/systemone 或 OpenRouter 的 Decisions API，答案记录为步骤输出。</sub><br><sub>相关: <a href="https://github.com/dagucloud/dagu/tree/main/internal/runtime/builtin/decision">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts"><img src="https://github.com/ianarawjo/ChainForge/assets/5251713/570879ef-ef8a-4e00-b37c-b49bc3c1a370" alt="ChainForge 的 Jev 评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts">ChainForge 的 Jev 评委</a></b><br><sub>ianarawjo · GitHub · ⭐ 3k 仓库 · 2023-03-26</sub><br>提示词评测环境 ChainForge 把 Jev 加为决策评委，与文本评委分开调用，并根据它给出的概率与标签的对照生成可靠性表。<br><sub><b>Jev 用法:</b> Jev 这类决策模型返回校准的概率，用于按评委展示的可靠性视图。</sub><br><sub>相关: <a href="https://chainforge.ai/docs">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts"><img src="https://opengraph.githubassets.com/1/MapleTechLabs/maple" alt="Maple 事故分拣" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts">Maple 事故分拣</a></b><br><sub>MapleTechLabs · GitHub · ⭐ 1.8k 仓库 · 2026-02-15</sub><br>OpenTelemetry 可观测性平台 Maple 里的 LLM 前置事故分拣：由一个 Jev 决策把关，判断某个事故是否值得动用完整的模型调查。<br><sub><b>Jev 用法:</b> 在一次不带工具的调用里问一组有边界的问题，其中包括从 low 到 critical 的严重程度评分，并刻意放在 agent 回合之外。</sub><br><sub>相关: <a href="https://maple.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/giuliosmall/pg_typesafe"><img src="https://opengraph.githubassets.com/1/giuliosmall/pg_typesafe" alt="pg_typesafe" width="240"></a></td>
@@ -112,16 +104,12 @@
 <td valign="top"><b><a href="https://github.com/NanmiCoder/jev-arena">Jev Arena</a></b><br><sub>NanmiCoder · GitHub · ⭐ 79 · 2026-09-19</sub><br>并排对比的竞技场，用 Jev 和 DeepSeek 或其他聊天模型给同一批评论打标签；在 10,000 条评论上，Jev 用时 203.2 s、花费 $0.84，对手为 823.5 s 和 $1.50，但 Jev 的准确率略低。<br><sub>相关: <a href="https://nanmicoder.github.io/jev-arena/">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/abhixhek/jevcal"><img src="https://raw.githubusercontent.com/abhixhek/jevcal/main/docs/terminal.png" alt="jevcal" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/abhixhek/jevcal">jevcal</a></b><br><sub>abhixhek · GitHub · ⭐ 10 · 2026-09-18</sub><br>工具包：在你自己的标注数据上，把 Jev 这类类型化决策模型与 LLM 教师模型对比测量，为目标准确率选定置信度阈值，报告还有多少流量需要 LLM，并在出现漂移时让 CI 失败。<br><sub>相关: <a href="https://x.com/thenightshipper/status/2100850610962919551">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/escapeboy/agent-fleet-o"><img src="https://raw.githubusercontent.com/escapeboy/agent-fleet-o/main/screenshots/qa-dashboard.png" alt="FleetQ 决策模型评测 harness" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/escapeboy/agent-fleet-o">FleetQ 决策模型评测 harness</a></b><br><sub>escapeboy · GitHub · ⭐ 70 · 2026-02-08</sub><br>自托管的 agent 编排平台，带 System One 决策驱动和一个 jev:eval harness，可在 JSONL 数据集上从准确率、校准、覆盖率、延迟、成本和确定性几个方面给 Jev 或 LLM 打分。<br><sub>相关: <a href="https://fleetq.net">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts"><img src="https://repository-images.githubusercontent.com/656892015/8d29d9f6-1ac8-4320-9800-bef44bf1d174" alt="Neuronpedia 的 Jev 自动可解释性评分器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts">Neuronpedia 的 Jev 自动可解释性评分器</a></b><br><sub>hijohnnylin · GitHub · ⭐ 1.1k 仓库 · 2023-06-21</sub><br>开放可解释性平台 Neuronpedia 用 Jev 通过检测、模糊测试和 5 级评分给神经元解释的质量打分，每条解释一次请求。<br><sub><b>Jev 用法:</b> jev_detection 和 jev_fuzz 对每个样例问一个是非题，用来计算平衡准确率；jev_score 使用概率加权的 5 级评分。</sub><br><sub>相关: <a href="https://neuronpedia.org">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts"><img src="https://github.com/ianarawjo/ChainForge/assets/5251713/570879ef-ef8a-4e00-b37c-b49bc3c1a370" alt="ChainForge 的 Jev 评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts">ChainForge 的 Jev 评委</a></b><br><sub>ianarawjo · GitHub · ⭐ 3k 仓库 · 2023-03-26</sub><br>提示词评测环境 ChainForge 把 Jev 加为决策评委，与文本评委分开调用，并根据它给出的概率与标签的对照生成可靠性表。<br><sub><b>Jev 用法:</b> Jev 这类决策模型返回校准的概率，用于按评委展示的可靠性视图。</sub><br><sub>相关: <a href="https://chainforge.ai/docs">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/openlayer-ai/jevals"><img src="https://external-preview.redd.it/QQHJgNvAmxL8Jd0CPbw1hzeEW1AIIeVd7V1E2H6Veoo.png?auto=webp&amp;s=fadb40963b005ee61ab72d453710ef95869182af" alt="jevals" width="240"></a></td>
@@ -136,8 +124,8 @@
 <td valign="top"><b><a href="https://github.com/RenaGao/jev-dataops">JEV DataOps</a></b><br><sub>RenaGao · GitHub · ⭐ 37 · 2026-09-21</sub><br>工作台：用 Jev 筛查上传的训练数据、评估数据质量，自动训练 LoRA 并在留出数据上评估结果，可通过浏览器应用、CLI 以及 Python 和 HTTP API 使用。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dayhaysoos/jevals"><img src="https://pbs.twimg.com/amplify_video_thumb/2100965288850145280/img/Ik0MohKW-MEyT6p4.jpg" alt="jevals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dayhaysoos/jevals">jevals</a></b><br><sub>dayhaysoos · GitHub · ⭐ 1 · 2026-09-18</sub><br>本地浏览器工作台，用来编写带示例用例和预期答案的 Jev Noul、Choice 和 Score 问题，运行它们并对比已保存的结果。<br><sub>相关: <a href="https://x.com/Dayhaysoos/status/2100968892591968320">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts"><img src="https://opengraph.githubassets.com/1/MapleTechLabs/maple" alt="Maple 事故分拣" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts">Maple 事故分拣</a></b><br><sub>MapleTechLabs · GitHub · ⭐ 1.8k 仓库 · 2026-02-15</sub><br>OpenTelemetry 可观测性平台 Maple 里的 LLM 前置事故分拣：由一个 Jev 决策把关，判断某个事故是否值得动用完整的模型调查。<br><sub><b>Jev 用法:</b> 在一次不带工具的调用里问一组有边界的问题，其中包括从 low 到 critical 的严重程度评分，并刻意放在 agent 回合之外。</sub><br><sub>相关: <a href="https://maple.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/smkrv/jev-calibrate"><img src="https://opengraph.githubassets.com/1/smkrv/jev-calibrate" alt="jev-calibrate" width="240"></a></td>
@@ -148,12 +136,12 @@
 <td valign="top"><b><a href="https://github.com/KryptSec/oasis">OASIS</a></b><br><sub>KryptSec · GitHub · ⭐ 29 · 2025-12-22</sub><br>开源 CLI，在带 MITRE ATT&amp;CK 映射的进攻性安全 CTF 题目上给 AI 模型做基准测试；可选的 TypeSafe 评委会在运行结束后重新判定每一步是否成功，取代默认的子串正则。<br><sub><b>Jev 用法:</b> 运行结束后，每一步用固定版本 jev-1.13.0 做一次判断并记录 successConfidence；评委调用失败时保留正则的结论。</sub><br><sub>相关: <a href="https://oasis.kryptsec.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/the_cyw/status/2100807905859739779"><img src="https://pbs.twimg.com/amplify_video_thumb/2100807113576693760/img/8lI0CmDrKghq79Z5.jpg" alt="物理 AI 动作标签质检" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/the_cyw/status/2100807905859739779">物理 AI 动作标签质检</a></b><br><sub>the_cyw · X · ♥ 18 · 2026-09-18</sub><br>对物理 AI 的第一人称视角训练数据做质量检查：Jev 不到 3 分钟质检了 58,643 个动作标签，花费 90 美分。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/misbahsy/doc-router"><img src="https://opengraph.githubassets.com/1/misbahsy/doc-router" alt="doc-router" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/misbahsy/doc-router">doc-router</a></b><br><sub>misbahsy · GitHub · ⭐ 26 · 2026-09-18</sub><br>带 Python 绑定的 Rust 库和 CLI，用 Jev 作为页面评判，逐页决定哪些 PDF 页需要 OCR；在 155 页上只对 87 页计费，比全部 OCR 便宜 1.74 倍。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts"><img src="https://repository-images.githubusercontent.com/656892015/8d29d9f6-1ac8-4320-9800-bef44bf1d174" alt="Neuronpedia 的 Jev 自动可解释性评分器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts">Neuronpedia 的 Jev 自动可解释性评分器</a></b><br><sub>hijohnnylin · GitHub · ⭐ 1.1k 仓库 · 2023-06-21</sub><br>开放可解释性平台 Neuronpedia 用 Jev 通过检测、模糊测试和 5 级评分给神经元解释的质量打分，每条解释一次请求。<br><sub><b>Jev 用法:</b> jev_detection 和 jev_fuzz 对每个样例问一个是非题，用来计算平衡准确率；jev_score 使用概率加权的 5 级评分。</sub><br><sub>相关: <a href="https://neuronpedia.org">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/goodrahstar/jev-column-race"><img src="https://raw.githubusercontent.com/goodrahstar/jev-column-race/main/docs/banner.svg" alt="Jev Column Race" width="240"></a></td>
@@ -172,6 +160,14 @@
 <td valign="top"><b><a href="https://github.com/AkashPriyadarshii/jev-curate">jev-curate</a></b><br><sub>AkashPriyadarshii · GitHub · ⭐ 19 · 2026-09-18</sub><br>Rust 流式 CLI 和 Python API，用本地预过滤器加类型化的 Jev Choice、Score 和 Noul 判断来过滤 Parquet 或 JSONL 格式的合成数据集与预训练数据集，按阈值决定每条记录保留还是剔除。<br><sub>相关: <a href="https://jev-curate.vercel.app">app</a> · <a href="https://crates.io/crates/jev-curate">crate</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/abhixhek/jevcal"><img src="https://raw.githubusercontent.com/abhixhek/jevcal/main/docs/terminal.png" alt="jevcal" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/abhixhek/jevcal">jevcal</a></b><br><sub>abhixhek · GitHub · ⭐ 10 · 2026-09-18</sub><br>工具包：在你自己的标注数据上，把 Jev 这类类型化决策模型与 LLM 教师模型对比测量，为目标准确率选定置信度阈值，报告还有多少流量需要 LLM，并在出现漂移时让 CI 失败。<br><sub>相关: <a href="https://x.com/thenightshipper/status/2100850610962919551">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/the_cyw/status/2100807905859739779"><img src="https://pbs.twimg.com/amplify_video_thumb/2100807113576693760/img/8lI0CmDrKghq79Z5.jpg" alt="物理 AI 动作标签质检" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/the_cyw/status/2100807905859739779">物理 AI 动作标签质检</a></b><br><sub>the_cyw · X · ♥ 18 · 2026-09-18</sub><br>对物理 AI 的第一人称视角训练数据做质量检查：Jev 不到 3 分钟质检了 58,643 个动作标签，花费 90 美分。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/keltokhy/jsort"><img src="https://opengraph.githubassets.com/1/keltokhy/jsort" alt="jsort" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/keltokhy/jsort">jsort</a></b><br><sub>keltokhy · GitHub · ⭐ 17 · 2026-09-19</sub><br>按语义排序的命令行工具：每次给 Jev 看两段文本，问在某个用平实英文描述的维度上哪个排更高，再拟合 Bradley-Terry 量表，输出带分数和标准误的行或文档。</td>
 </tr>
@@ -180,8 +176,8 @@
 <td valign="top"><b><a href="https://github.com/rlaope/jeval">jeval</a></b><br><sub>rlaope · GitHub · ⭐ 15 · 2026-09-20</sub><br>Python CLI：在标注数据上衡量分类器（包括 Jev）的置信度与准确率吻合得如何，并设定成本最优的转人工阈值，输出离线 HTML 报告和 YAML 配置。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator"><img src="https://raw.githubusercontent.com/zenml-io/kitaru/develop/assets/kitaru_header.png" alt="Kitaru 的 TypeSafe 评估器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator">Kitaru 的 TypeSafe 评估器</a></b><br><sub>zenml-io · GitHub · ⭐ 292 仓库 · 2026-03-05</sub><br>基于回放的 agent 评测平台的可选评估器包：用 Jev 评判录制下来的会话，每个会话发一次请求，每个问题存一条结果。<br><sub>相关: <a href="https://kitaru.ai">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/dayhaysoos/jevals"><img src="https://pbs.twimg.com/amplify_video_thumb/2100965288850145280/img/Ik0MohKW-MEyT6p4.jpg" alt="jevals" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dayhaysoos/jevals">jevals</a></b><br><sub>dayhaysoos · GitHub · ⭐ 1 · 2026-09-18</sub><br>本地浏览器工作台，用来编写带示例用例和预期答案的 Jev Noul、Choice 和 Score 问题，运行它们并对比已保存的结果。<br><sub>相关: <a href="https://x.com/Dayhaysoos/status/2100968892591968320">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/leonardovida/duckdb-ai"><img src="https://raw.githubusercontent.com/leonardovida/duckdb-ai/main/docs/assets/duckdb-ai-logo.svg" alt="duckdb-ai" width="240"></a></td>
@@ -204,10 +200,6 @@
 <td valign="top"><b><a href="https://github.com/opencx-labs/zevals">zevals 的 Jev 评委</a></b><br><sub>opencx-labs · GitHub · ⭐ 11 · 2025-05-06</sub><br>用于端到端 AI agent 测试的 TypeScript 库，断言可以用 Jev 当评委，每条断言报告一个校准的概率，每次调用约 0.5 s、$0.00005。<br><sub><b>Jev 用法:</b> 针对对话记录问一个 Noul，设通过阈值（默认 0.5）；结果与阈值相差不到 0.05 的标记为临界。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/koladev32/status/2101660768458391816"><img src="https://pbs.twimg.com/amplify_video_thumb/2101653831247388672/img/ym11-1ZkJv7EL_ZP.jpg" alt="jev-classify" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/koladev32/status/2101660768458391816">jev-classify</a></b><br><sub>koladev32 · X · ♥ 6 · 2026-09-20</sub><br>文档分类与路由流水线：不到 4 分钟用 Jev 处理 39,700 份文档，花费 $1.43，准确率 96.38%，总吞吐约 180 份/秒，p95 延迟 485 毫秒。<br><sub>相关: <a href="https://github.com/koladev32/jev-classify">repo</a> · <a href="https://github.com/koladev32/jev-classify">project</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/reachjalil/jevlogs"><img src="https://raw.githubusercontent.com/reachjalil/jevlogs/main/docs/assets/readme-banner.png" alt="Jev Logs" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/reachjalil/jevlogs">Jev Logs</a></b><br><sub>reachjalil · GitHub · ⭐ 9 · 2026-09-17</sub><br>TypeScript 库兼 OpenTelemetry exporter 封装，在进行昂贵的 LLM 分析之前，先用 Jev 给每条日志记录的诊断价值、优先级和路由打分，所有记录都保留在归档中。<br><sub><b>Jev 用法:</b> 每条记录一个 0-100 的诊断价值 Score、一个优先级和一个需处理概率。</sub><br><sub>相关: <a href="https://www.reddit.com/r/SideProject/comments/1wil0gi/made_an_open_source_library_for_working_on_logs/">discussion</a> · <a href="https://huggingface.co/datasets/reachjalil/jevlogs-log-triage-benchmark">model</a> · <a href="https://huggingface.co/datasets/reachjalil/jev-luna-pagerduty-trigger">model 2</a> · <a href="https://huggingface.co/spaces/reachjalil/jevlogs-triage-explorer">app</a></sub></td>
 </tr>
@@ -224,36 +216,24 @@
 <td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>以影子模式对照过往人工决策，审计 AI 评委的校准情况；已发布的 Jev 审计报告显示，受攻击时准确率 95.5%，零错误覆盖率 73%，而 Claude Sonnet 4.5 只有 2%。<br><sub><b>Jev 用法:</b> 通过 Vercel AI Gateway 在邮件分拣、对抗性邮件和廉价/前沿模型任务路由器上运行 Jev，并把原始响应提交到仓库以便重新计算。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts"><img src="https://opengraph.githubassets.com/1/NiceEval/NiceEval" alt="NiceEval 的 TypeSafe 评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts">NiceEval 的 TypeSafe 评委</a></b><br><sub>NiceEval · GitHub · ⭐ 153 仓库 · 2026-06-28</sub><br>本地优先的 agent 评测工具，把 TypeSafe 加为显式的评委 provider，将 Jev 的概率映射为加权分数和批量分类结果。<br><sub>相关: <a href="https://github.com/NiceEval/NiceEval/blob/main/docs/feature/judge/README.md">docs</a> · <a href="https://www.niceeval.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions"><img src="https://raw.githubusercontent.com/AgentEvalHQ/AgentEval/main/assets/AgentEval_bounded.png" alt="AgentEval 决策评测" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions">AgentEval 决策评测</a></b><br><sub>AgentEvalHQ · GitHub · ⭐ 146 仓库 · 2026-01-02</sub><br>.NET AI agent 的评测工具包，通过 TypeSafe 或 OpenRouter 把 Jev 加为第三种评估器，比如针对查询、回复和上下文的一个有据性（groundedness）Noul。<br><sub>相关: <a href="https://github.com/AgentEvalHQ/AgentEval/blob/main/docs/adr/evidence/033-jev-first-calls-2026-09-20.md">evidence</a> · <a href="https://agenteval.dev/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision"><img src="https://opengraph.githubassets.com/1/vogler75/monster-mq" alt="MonsterMQ 主题决策" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision">MonsterMQ 主题决策</a></b><br><sub>vogler75 · GitHub · ⭐ 142 仓库 · 2024-08-03</sub><br>工业物联网 MQTT broker，新增由主题触发的决策：Jev 通过 OpenRouter 评估主题的当前值和历史值，再把答案发布回 MQTT。<br><sub>相关: <a href="https://github.com/vogler75/monster-mq/blob/main/dev/plans/TOPIC_BASED_DECISION_MAKING.md">plan</a> · <a href="https://monstermq.com">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/theyashwanthsai/jevals"><img src="https://opengraph.githubassets.com/1/theyashwanthsai/jevals" alt="Jevals" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/theyashwanthsai/jevals">Jevals</a></b><br><sub>theyashwanthsai · GitHub · ⭐ 7 · 2026-09-18</sub><br>研究预览版评测框架，按代码写成的规则给 LLM 和 agent 的输出（包括完整 trace）打分，借助 Jev 让每个结论都带置信度；32 个答案约 $0.0002。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py"><img src="https://opengraph.githubassets.com/1/AstroVela/vane" alt="Vane 的 Jev 判断" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py">Vane 的 Jev 判断</a></b><br><sub>AstroVela · GitHub · ⭐ 135 仓库 · 2026-07-16</sub><br>基于 DuckDB 分支构建的多模态数据引擎，在 Vane 表达式上加入 Jev 判断，通过异步 TypeSafe SDK 分批处理行。<br><sub>相关: <a href="https://github.com/AstroVela/vane/blob/main/examples/jev_judgments.py">example</a> · <a href="https://vane.astrovela.ai/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai"><img src="https://raw.githubusercontent.com/flyteorg/flyte-sdk/main/static/flyte-tui.gif" alt="Flyte 的 System One 示例" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai">Flyte 的 System One 示例</a></b><br><sub>flyteorg · GitHub · ⭐ 128 仓库 · 2025-07-29</sub><br>Jev 与 LLM 交替工作，把每个任务拆成 11 到 16 个原子问题，再把结果路由到自动处理、复核或升级。<br><sub>相关: <a href="https://flyte.org/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/collapseindex/dinostomp"><img src="https://raw.githubusercontent.com/collapseindex/dinostomp/main/data/exports/readme/20260915_120000_readme_pixel-dino_1200x360_s42.gif" alt="dinostomp" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/collapseindex/dinostomp">dinostomp</a></b><br><sub>collapseindex · GitHub · ⭐ 6 · 2026-08-09</sub><br>本地优先的 AI 评测核验层，审计数据集、评分器、运行记录和结论；对 Jev 用户来说，它像测试 if 语句一样测试一个问题，报告准确率、p(yes) 截断值和校准情况。<br><sub>相关: <a href="https://collapseindex.org/">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/koladev32/status/2101660768458391816"><img src="https://pbs.twimg.com/amplify_video_thumb/2101653831247388672/img/ym11-1ZkJv7EL_ZP.jpg" alt="jev-classify" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/koladev32/status/2101660768458391816">jev-classify</a></b><br><sub>koladev32 · X · ♥ 6 · 2026-09-20</sub><br>文档分类与路由流水线：不到 4 分钟用 Jev 处理 39,700 份文档，花费 $1.43，准确率 96.38%，总吞吐约 180 份/秒，p95 延迟 485 毫秒。<br><sub>相关: <a href="https://github.com/koladev32/jev-classify">repo</a> · <a href="https://github.com/koladev32/jev-classify">project</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/TrustifAI/typed_evals"><img src="https://external-preview.redd.it/24DpejsFjNHwV30AJ5IBmdofmgxNJlw0Mpz2QMkwpew.png?auto=webp&amp;s=3d0cfd96b6591ae30a6ec0aa2512309594e094cb" alt="typed_evals" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TrustifAI/typed_evals">typed_evals</a></b><br><sub>TrustifAI · GitHub · ⭐ 6 · 2026-09-20</sub><br>Python 库兼 CLI，以 Jev 为评委评估 LLM 回复、RAG 数据集和录制的 agent 运行，在工具执行前加一道防护，还能对照人工的通过/失败标注校准指标。<br><sub>相关: <a href="https://www.reddit.com/r/LLMDevs/comments/1wlmeh6/opensource_typed_evals_ai_evaluation_powered_by/">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator"><img src="https://raw.githubusercontent.com/zenml-io/kitaru/develop/assets/kitaru_header.png" alt="Kitaru 的 TypeSafe 评估器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator">Kitaru 的 TypeSafe 评估器</a></b><br><sub>zenml-io · GitHub · ⭐ 292 仓库 · 2026-03-05</sub><br>基于回放的 agent 评测平台的可选评估器包：用 Jev 评判录制下来的会话，每个会话发一次请求，每个问题存一条结果。<br><sub>相关: <a href="https://kitaru.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/opaielsheikh/ai-elo-ranker"><img src="https://opengraph.githubassets.com/1/opaielsheikh/ai-elo-ranker" alt="AI Elo Ranker" width="240"></a></td>
@@ -274,6 +254,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/keltokhy/jlink"><img src="https://opengraph.githubassets.com/1/keltokhy/jlink" alt="jlink" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/keltokhy/jlink">jlink</a></b><br><sub>keltokhy · GitHub · ⭐ 4 · 2026-09-18</sub><br>面向应用经济学研究者的记录链接工具，提供 Python、CLI、Stata 和 R 版本：用平实的英文写匹配规则，Jev 为每个候选对返回一个概率；在其基准测试中，146,119 对花费 $2.49。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts"><img src="https://opengraph.githubassets.com/1/NiceEval/NiceEval" alt="NiceEval 的 TypeSafe 评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts">NiceEval 的 TypeSafe 评委</a></b><br><sub>NiceEval · GitHub · ⭐ 153 仓库 · 2026-06-28</sub><br>本地优先的 agent 评测工具，把 TypeSafe 加为显式的评委 provider，将 Jev 的概率映射为加权分数和批量分类结果。<br><sub>相关: <a href="https://github.com/NiceEval/NiceEval/blob/main/docs/feature/judge/README.md">docs</a> · <a href="https://www.niceeval.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/smithclay/dbt_jev"><img src="https://raw.githubusercontent.com/smithclay/dbt_jev/main/demos/dbt_jev_x_demo.gif" alt="dbt_jev" width="240"></a></td>
@@ -316,8 +300,20 @@
 <td valign="top"><b><a href="https://github.com/Query-farm/vgi-typesafe">vgi-typesafe</a></b><br><sub>Query-farm · GitHub · ⭐ 3 · 2026-09-18</sub><br>通过 VGI 扩展加载的 DuckDB worker，把 Jev 的 Choice、Noul 和 Score 暴露为 SQL 表函数，可与数据表做 LATERAL join，返回带置信度和概率的类型化列。<br><sub>相关: <a href="https://query.farm/vgi/">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py"><img src="https://opengraph.githubassets.com/1/pinecone-io/cultivar" alt="cultivar 的 TypeSafe 评分器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py">cultivar 的 TypeSafe 评分器</a></b><br><sub>pinecone-io · GitHub · ⭐ 40 仓库 · 2026-06-17</sub><br>Pinecone 的 agent skill 测试 CLI 中的可选评分后端：用 Jev 而不是 Claude 按任务标准给沙箱里的 agent 运行打分，据称便宜约 30 倍，面向 CI 卡点。<br><sub>相关: <a href="https://github.com/pinecone-io/cultivar">repo</a> · <a href="https://github.com/pinecone-io/cultivar/blob/main/docs/grader.md">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions"><img src="https://raw.githubusercontent.com/AgentEvalHQ/AgentEval/main/assets/AgentEval_bounded.png" alt="AgentEval 决策评测" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions">AgentEval 决策评测</a></b><br><sub>AgentEvalHQ · GitHub · ⭐ 146 仓库 · 2026-01-02</sub><br>.NET AI agent 的评测工具包，通过 TypeSafe 或 OpenRouter 把 Jev 加为第三种评估器，比如针对查询、回复和上下文的一个有据性（groundedness）Noul。<br><sub>相关: <a href="https://github.com/AgentEvalHQ/AgentEval/blob/main/docs/adr/evidence/033-jev-first-calls-2026-09-20.md">evidence</a> · <a href="https://agenteval.dev/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision"><img src="https://opengraph.githubassets.com/1/vogler75/monster-mq" alt="MonsterMQ 主题决策" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision">MonsterMQ 主题决策</a></b><br><sub>vogler75 · GitHub · ⭐ 142 仓库 · 2024-08-03</sub><br>工业物联网 MQTT broker，新增由主题触发的决策：Jev 通过 OpenRouter 评估主题的当前值和历史值，再把答案发布回 MQTT。<br><sub>相关: <a href="https://github.com/vogler75/monster-mq/blob/main/dev/plans/TOPIC_BASED_DECISION_MAKING.md">plan</a> · <a href="https://monstermq.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py"><img src="https://opengraph.githubassets.com/1/AstroVela/vane" alt="Vane 的 Jev 判断" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py">Vane 的 Jev 判断</a></b><br><sub>AstroVela · GitHub · ⭐ 135 仓库 · 2026-07-16</sub><br>基于 DuckDB 分支构建的多模态数据引擎，在 Vane 表达式上加入 Jev 判断，通过异步 TypeSafe SDK 分批处理行。<br><sub>相关: <a href="https://github.com/AstroVela/vane/blob/main/examples/jev_judgments.py">example</a> · <a href="https://vane.astrovela.ai/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai"><img src="https://raw.githubusercontent.com/flyteorg/flyte-sdk/main/static/flyte-tui.gif" alt="Flyte 的 System One 示例" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai">Flyte 的 System One 示例</a></b><br><sub>flyteorg · GitHub · ⭐ 128 仓库 · 2025-07-29</sub><br>Jev 与 LLM 交替工作，把每个任务拆成 11 到 16 个原子问题，再把结果路由到自动处理、复核或升级。<br><sub>相关: <a href="https://flyte.org/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Vicente-MD/jev-resilience"><img src="https://opengraph.githubassets.com/1/Vicente-MD/jev-resilience" alt="jev-resilience" width="240"></a></td>
@@ -338,34 +334,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TPAteeq/tocsin"><img src="https://raw.githubusercontent.com/TPAteeq/tocsin/main/docs/card.png" alt="tocsin" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TPAteeq/tocsin">tocsin</a></b><br><sub>TPAteeq · GitHub · ⭐ 2 · 2026-09-18</sub><br>在日志摄入阶段做分拣的 Rust 工具：把日志行脱敏并归并成 Drain 模式，每个新模式只问 Jev 一次，再按一条用平实英文写的策略把日志行路由到呼叫值班、建工单或仅记录。<br><sub><b>Jev 用法:</b> 每个新模式一次请求，携带呼叫策略和四个问题，所以一个重复出现一百万次的模式也只判断一次。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md"><img src="https://opengraph.githubassets.com/1/cristianodabc/aludel" alt="Aludel 的 Jev 类型化评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md">Aludel 的 Jev 类型化评委</a></b><br><sub>cristianodabc · GitHub · ⭐ 38 仓库 · 2026-03-20</sub><br>由 Jev 支撑的 typed_judge 断言，属于 Aludel（Phoenix 原生的 Elixir LLM 评测工作台）：生成的输出由 Jev 评判，通过/失败和归一化分数都来自类型化答案，并附带一个预置数据的安全边界演示。<br><sub><b>Jev 用法:</b> 独立应用使用 jev Hex 客户端；Jev 只收到截断到上限的输出和渲染后的输入，从不接触预期答案或元数据。</sub><br><sub>相关: <a href="https://github.com/cristianodabc/aludel">repo</a> · <a href="https://hexdocs.pm/aludel">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/inventur_es/status/2101059512048169306">jev-scraper-chrome-extension</a></b><br><sub>inventur_es · X · ▶ 94 · 2026-09-18</sub><br>Chrome 扩展，尝试用 Jev 把网页转成符合 schema 的 JSON；作者说这是个有趣的实验，但最终失败了，对一个分类器来说野心太大。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py"><img src="https://github.com/user-attachments/assets/8ba6a64f-0819-47bd-9d58-af89ee3e7bad" alt="Overmind 的 Jev 决策评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py">Overmind 的 Jev 决策评委</a></b><br><sub>overmind-core · GitHub · ⭐ 30 仓库 · 2026-03-27</sub><br>决策层，属于 Overmind（把生产环境 agent trace 变成微调模型的平台）：用 Jev 的选择充当评测评委（通过/失败/信息不足，论断得到支持/被反驳），并做数据集的语义检查。<br><sub><b>Jev 用法:</b> Choice 问题在 token 预算内分批发送，配合 Redis 容量预留和 24 h 缓存；state 一律视为不可信证据。</sub><br><sub>相关: <a href="https://github.com/overmind-core/overmind">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md"><img src="https://raw.githubusercontent.com/daviddrummond95/polar_llama/refs/heads/main/PolarLlama.webp" alt="Polar Llama 的 TypeSafe 支持" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md">Polar Llama 的 TypeSafe 支持</a></b><br><sub>pnthn-ai · GitHub · ⭐ 30 仓库 · 2024-05-03</sub><br>Polars LLM 插件中的原生 Rust TypeSafe 层：逐行回答 Noul、Choice 和 Score 问题，或对文档的每一行套用一份 Pydantic 契约，结果都以带类型的 dataframe 列返回。<br><sub>相关: <a href="https://github.com/pnthn-ai/polar_llama">repo</a> · <a href="https://pnthn.ai/polar-llama/">site</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision"><img src="https://opengraph.githubassets.com/1/harness/harness-evals" alt="harness-evals 的决策指标" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision">harness-evals 的决策指标</a></b><br><sub>harness · GitHub · ⭐ 28 仓库 · 2026-04-20</sub><br>Harness 开源 LLM agent 评测框架的可选 decision 扩展，在 provider 抽象层之后加入 TypeSafe 的 Choice、Score 和 Noul 指标，与已有的正确性、有据性和安全性指标并列。<br><sub>相关: <a href="https://github.com/harness/harness-evals">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs"><img src="https://opengraph.githubassets.com/1/asimov-platform/asimov-cli" alt="ASIMOV CLI 的 Jev 过滤器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs">ASIMOV CLI 的 Jev 过滤器</a></b><br><sub>asimov-platform · GitHub · ⭐ 27 仓库 · 2025-02-13</sub><br>由 Jev 支撑的语义过滤器，内置于 ASIMOV（OSINT 与 AI 平台）的命令行工具：把输入记录流式送进 Jev，只保留与一段自然语言评判标准相符的记录。<br><sub><b>Jev 用法:</b> 在分批的 state 中为每行输入问一个 Noul（“rubric 是否描述了 inputs[i]？”），输出匹配度高于阈值的记录。</sub><br><sub>相关: <a href="https://github.com/asimov-platform/asimov-cli">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md"><img src="https://raw.githubusercontent.com/orq-ai/evaluatorq/main/docs/assets/evaluatorq-splash.svg" alt="evaluatorq 的分类评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md">evaluatorq 的分类评委</a></b><br><sub>orq-ai · GitHub · ⭐ 21 仓库 · 2026-06-19</sub><br>orq 的 Python 评测框架 evaluatorq 中的分类评委：在 LLM-as-a-jury 评审团里让 typesafe/jev-latest 与基于提示词的 LLM 评委同席，通过 Orq 路由器的 classify 端点回答是非、标签、量表或两两对比问题。<br><sub>相关: <a href="https://github.com/orq-ai/evaluatorq">repo</a> · <a href="https://orq-ai.github.io/evaluatorq/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zzz1YAO/DataJev"><img src="https://raw.githubusercontent.com/zzz1YAO/DataJev/main/assets/datajev-demo.png" alt="DataJev" width="240"></a></td>
@@ -410,6 +378,38 @@
 <tr>
 <td width="260" valign="top"><a href="https://huggingface.co/spaces/iluvblender/yolo-jev-scene-filter"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/iluvblender/yolo-jev-scene-filter.png" alt="YOLO + Jev 场景过滤器" width="240"></a></td>
 <td valign="top"><b><a href="https://huggingface.co/spaces/iluvblender/yolo-jev-scene-filter">YOLO + Jev 场景过滤器</a></b><br><sub>iluvblender · 应用 · ♥ 1 · 2026-09-20</sub><br>视觉流水线：YOLO-World 提出开放词表的检测框，Jev 对每个框回答一个是非题决定是否保留，得到数量更少、过滤更好的检测结果。<br><sub><b>Jev 用法:</b> 通过 TypeSafe /v1/systemone API，每个检测框问一个 Noul。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py"><img src="https://opengraph.githubassets.com/1/pinecone-io/cultivar" alt="cultivar 的 TypeSafe 评分器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py">cultivar 的 TypeSafe 评分器</a></b><br><sub>pinecone-io · GitHub · ⭐ 40 仓库 · 2026-06-17</sub><br>Pinecone 的 agent skill 测试 CLI 中的可选评分后端：用 Jev 而不是 Claude 按任务标准给沙箱里的 agent 运行打分，据称便宜约 30 倍，面向 CI 卡点。<br><sub>相关: <a href="https://github.com/pinecone-io/cultivar">repo</a> · <a href="https://github.com/pinecone-io/cultivar/blob/main/docs/grader.md">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md"><img src="https://opengraph.githubassets.com/1/cristianodabc/aludel" alt="Aludel 的 Jev 类型化评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md">Aludel 的 Jev 类型化评委</a></b><br><sub>cristianodabc · GitHub · ⭐ 38 仓库 · 2026-03-20</sub><br>由 Jev 支撑的 typed_judge 断言，属于 Aludel（Phoenix 原生的 Elixir LLM 评测工作台）：生成的输出由 Jev 评判，通过/失败和归一化分数都来自类型化答案，并附带一个预置数据的安全边界演示。<br><sub><b>Jev 用法:</b> 独立应用使用 jev Hex 客户端；Jev 只收到截断到上限的输出和渲染后的输入，从不接触预期答案或元数据。</sub><br><sub>相关: <a href="https://github.com/cristianodabc/aludel">repo</a> · <a href="https://hexdocs.pm/aludel">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py"><img src="https://github.com/user-attachments/assets/8ba6a64f-0819-47bd-9d58-af89ee3e7bad" alt="Overmind 的 Jev 决策评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py">Overmind 的 Jev 决策评委</a></b><br><sub>overmind-core · GitHub · ⭐ 30 仓库 · 2026-03-27</sub><br>决策层，属于 Overmind（把生产环境 agent trace 变成微调模型的平台）：用 Jev 的选择充当评测评委（通过/失败/信息不足，论断得到支持/被反驳），并做数据集的语义检查。<br><sub><b>Jev 用法:</b> Choice 问题在 token 预算内分批发送，配合 Redis 容量预留和 24 h 缓存；state 一律视为不可信证据。</sub><br><sub>相关: <a href="https://github.com/overmind-core/overmind">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md"><img src="https://raw.githubusercontent.com/daviddrummond95/polar_llama/refs/heads/main/PolarLlama.webp" alt="Polar Llama 的 TypeSafe 支持" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md">Polar Llama 的 TypeSafe 支持</a></b><br><sub>pnthn-ai · GitHub · ⭐ 30 仓库 · 2024-05-03</sub><br>Polars LLM 插件中的原生 Rust TypeSafe 层：逐行回答 Noul、Choice 和 Score 问题，或对文档的每一行套用一份 Pydantic 契约，结果都以带类型的 dataframe 列返回。<br><sub>相关: <a href="https://github.com/pnthn-ai/polar_llama">repo</a> · <a href="https://pnthn.ai/polar-llama/">site</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision"><img src="https://opengraph.githubassets.com/1/harness/harness-evals" alt="harness-evals 的决策指标" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision">harness-evals 的决策指标</a></b><br><sub>harness · GitHub · ⭐ 28 仓库 · 2026-04-20</sub><br>Harness 开源 LLM agent 评测框架的可选 decision 扩展，在 provider 抽象层之后加入 TypeSafe 的 Choice、Score 和 Noul 指标，与已有的正确性、有据性和安全性指标并列。<br><sub>相关: <a href="https://github.com/harness/harness-evals">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs"><img src="https://opengraph.githubassets.com/1/asimov-platform/asimov-cli" alt="ASIMOV CLI 的 Jev 过滤器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs">ASIMOV CLI 的 Jev 过滤器</a></b><br><sub>asimov-platform · GitHub · ⭐ 27 仓库 · 2025-02-13</sub><br>由 Jev 支撑的语义过滤器，内置于 ASIMOV（OSINT 与 AI 平台）的命令行工具：把输入记录流式送进 Jev，只保留与一段自然语言评判标准相符的记录。<br><sub><b>Jev 用法:</b> 在分批的 state 中为每行输入问一个 Noul（“rubric 是否描述了 inputs[i]？”），输出匹配度高于阈值的记录。</sub><br><sub>相关: <a href="https://github.com/asimov-platform/asimov-cli">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/inventur_es/status/2101059512048169306">jev-scraper-chrome-extension</a></b><br><sub>inventur_es · X · ▶ 94 · 2026-09-18</sub><br>Chrome 扩展，尝试用 Jev 把网页转成符合 schema 的 JSON；作者说这是个有趣的实验，但最终失败了，对一个分类器来说野心太大。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md"><img src="https://raw.githubusercontent.com/orq-ai/evaluatorq/main/docs/assets/evaluatorq-splash.svg" alt="evaluatorq 的分类评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md">evaluatorq 的分类评委</a></b><br><sub>orq-ai · GitHub · ⭐ 21 仓库 · 2026-06-19</sub><br>orq 的 Python 评测框架 evaluatorq 中的分类评委：在 LLM-as-a-jury 评审团里让 typesafe/jev-latest 与基于提示词的 LLM 评委同席，通过 Orq 路由器的 classify 端点回答是非、标签、量表或两两对比问题。<br><sub>相关: <a href="https://github.com/orq-ai/evaluatorq">repo</a> · <a href="https://orq-ai.github.io/evaluatorq/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/valzav/valcraft/blob/main/scripts/jev-grade.py"><img src="https://raw.githubusercontent.com/valzav/valcraft/main/docs/assets/valcraft-banner.png" alt="Valcraft 的 Jev 评分器" width="240"></a></td>

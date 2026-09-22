@@ -28,32 +28,20 @@
 <td valign="top"><b><a href="https://x.com/rothken/status/2102151333193363791">LawAnalyzer</a></b><br><sub>rothken · X · ♥ 51 · 2026-09-21</sub><br>一家律所 AI 实验室推出的免费测试版构建套件，用于在 Jev 上搭建法律分析小程序，输出可复用的 JSON 和 Jev 代码，律师和学生可以保存并改编。<br><sub>相关: <a href="https://lawanalyzer.com/">app</a> · <a href="https://lawanalyzer.com">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch"><img src="https://opengraph.githubassets.com/1/luwill/research-skills" alt="lit-search 的 Jev 筛选" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch">lit-search 的 Jev 筛选</a></b><br><sub>luwill · GitHub · ⭐ 844 仓库 · 2026-01-13</sub><br>这个 research-skills 合集中的 lit-search skill 把文献纳入/排除标准编译成 Jev 问题，并给每条记录筛出一个结论。<br><sub><b>Jev 用法:</b> 每条记录一次请求、一个 Verdict，只打分一次并写入 jev_scores.jsonl，之后调整阈值、分拣和评测都复用同一批分数，无需新的网络调用。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/choxos/jev-reviewer"><img src="https://raw.githubusercontent.com/choxos/jev-reviewer/main/documentation/tour.gif" alt="Jev Reviewer" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/choxos/jev-reviewer">Jev Reviewer</a></b><br><sub>choxos · GitHub · ⭐ 32 · 2026-09-18</sub><br>用于系统综述的浏览器内数据提取工具，回答提取表单或 RoB 2、ROBINS-I、QUADAS-2、TIDieR 模板中的问题，并给出来自试验报告的原文引述和页码位置。<br><sub><b>Jev 用法:</b> Jev 选出候选行 ID，再由代码复制原文，所以每个答案都是可核对的引文。</sub><br><sub>相关: <a href="https://x.com/ASofiMahmudi/status/2100985031703269425">demo</a> · <a href="https://jevreviewer.xera.ac">app</a> · <a href="https://jevreviewer.xera.ac">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts"><img src="https://opengraph.githubassets.com/1/stella/stella" alt="stella 的 System One 决策" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts">stella 的 System One 决策</a></b><br><sub>stella · GitHub · ⭐ 250 仓库 · 2026-05-03</sub><br>开源法律工作台，只在代码做不了判断时才问 Jev，比如引用法院如何对待某个判决、某段文字确定了哪个选项、某个问题指的是哪个提取出的日期。<br><sub>相关: <a href="https://stll.app">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch"><img src="https://opengraph.githubassets.com/1/luwill/research-skills" alt="lit-search 的 Jev 筛选" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch">lit-search 的 Jev 筛选</a></b><br><sub>luwill · GitHub · ⭐ 844 仓库 · 2026-01-13</sub><br>这个 research-skills 合集中的 lit-search skill 把文献纳入/排除标准编译成 Jev 问题，并给每条记录筛出一个结论。<br><sub><b>Jev 用法:</b> 每条记录一次请求、一个 Verdict，只打分一次并写入 jev_scores.jsonl，之后调整阈值、分拣和评测都复用同一批分数，无需新的网络调用。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/JunMa11/MedJev"><img src="https://opengraph.githubassets.com/1/JunMa11/MedJev" alt="MedJev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/JunMa11/MedJev">MedJev</a></b><br><sub>JunMa11 · GitHub · ⭐ 11 · 2026-09-22</sub><br>基于开放的 Kev 代码构建的类 Jev 模型，在医院内部用一张消费级 GPU 从自由文本病历中提取可直接入表的临床变量，并附一个本地应用，将其与托管版 Jev 和基础版 Qwen3.5-0.8B 对比。<br><sub><b>Jev 用法:</b> 每份病历包含 Noul、Choice 和 Score 字段（入院、诊断方式、症状严重程度）；托管版 Jev 作为基线。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py"><img src="https://opengraph.githubassets.com/1/fighthealthinsurance/fighthealthinsurance" alt="Fight Health Insurance 申诉打分" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py">Fight Health Insurance 申诉打分</a></b><br><sub>fighthealthinsurance · GitHub · ⭐ 156 仓库 · 2023-03-16</sub><br>帮助人们对医疗保险拒赔提出申诉的 Django 应用，按 TypeSafe 质量分给生成的申诉草稿排序，并按后端追踪打分的健康状况。<br><sub><b>Jev 用法:</b> 脱敏后的申诉文件只通过 https 发送；从不读取错误响应体。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/DevaiahShrithan/status/2102097862805053950"><img src="https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg" alt="让 Jev 读完每一篇 AI 论文" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">让 Jev 读完每一篇 AI 论文</a></b><br><sub>DevaiahShrithan · 文章 · ♥ 6 · 2026-09-21</sub><br>把 1993 到 2026 年的 464,720 篇 arXiv AI 摘要交给 Jev，每篇问五个问题（是否声称达到 SOTA、是否发布代码、是否像 LLM 写的、论文类型、炒作程度），描绘 AI 论文的变化。<br><sub><b>Jev 用法:</b> 每篇摘要两个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank"><img src="https://opengraph.githubassets.com/1/JamesANZ/medical-mcp" alt="Medical MCP 的 JEV 重排器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank">Medical MCP 的 JEV 重排器</a></b><br><sub>JamesANZ · GitHub · ⭐ 113 仓库 · 2025-07-14</sub><br>提供 FDA、WHO、PubMed 和 RxNorm 数据的 MCP 服务器，可以用 Jev 重排文献检索结果，根据问题判断每篇摘要是保留、降级还是丢弃。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sboghossian/legal-ai-model-router"><img src="https://opengraph.githubassets.com/1/sboghossian/legal-ai-model-router" alt="Legal AI Model Router" width="240"></a></td>
@@ -64,20 +52,32 @@
 <td valign="top"><b><a href="https://github.com/MarissaFamularo/citation-verifier">Paper Trellis Citation Verifier</a></b><br><sub>MarissaFamularo · GitHub · ⭐ 5 · 2026-09-17</sub><br>面向同行评审者和作者的工具，把稿件中的每个引用句与被引论文配对，由 Claude 找出支持段落、Jev 评估它是否支持该论断，最后记录人工结论。<br><sub>相关: <a href="https://verify.papertrellis.com">app</a> · <a href="https://verify.papertrellis.com">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts"><img src="https://opengraph.githubassets.com/1/stella/stella" alt="stella 的 System One 决策" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts">stella 的 System One 决策</a></b><br><sub>stella · GitHub · ⭐ 250 仓库 · 2026-05-03</sub><br>开源法律工作台，只在代码做不了判断时才问 Jev，比如引用法院如何对待某个判决、某段文字确定了哪个选项、某个问题指的是哪个提取出的日期。<br><sub>相关: <a href="https://stll.app">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py"><img src="https://opengraph.githubassets.com/1/fighthealthinsurance/fighthealthinsurance" alt="Fight Health Insurance 申诉打分" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py">Fight Health Insurance 申诉打分</a></b><br><sub>fighthealthinsurance · GitHub · ⭐ 156 仓库 · 2023-03-16</sub><br>帮助人们对医疗保险拒赔提出申诉的 Django 应用，按 TypeSafe 质量分给生成的申诉草稿排序，并按后端追踪打分的健康状况。<br><sub><b>Jev 用法:</b> 脱敏后的申诉文件只通过 https 发送；从不读取错误响应体。</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/doitrous/hx"><img src="https://opengraph.githubassets.com/1/doitrous/hx" alt="Hx" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/doitrous/hx">Hx</a></b><br><sub>doitrous · GitHub · ⭐ 3 · 2026-09-20</sub><br>面向病史、体格检查和手术记录的自动打勾清单：按病历需要展开相应问题，用 Jev 对照医生写下的内容逐项打勾，并显示哪些还没记录。<br><sub>相关: <a href="https://hx.semicoded.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank"><img src="https://opengraph.githubassets.com/1/JamesANZ/medical-mcp" alt="Medical MCP 的 JEV 重排器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank">Medical MCP 的 JEV 重排器</a></b><br><sub>JamesANZ · GitHub · ⭐ 113 仓库 · 2025-07-14</sub><br>提供 FDA、WHO、PubMed 和 RxNorm 数据的 MCP 服务器，可以用 Jev 重排文献检索结果，根据问题判断每篇摘要是保留、降级还是丢弃。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/thenewpotato/privacy-facts"><img src="https://opengraph.githubassets.com/1/thenewpotato/privacy-facts" alt="Privacy Facts" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/thenewpotato/privacy-facts">Privacy Facts</a></b><br><sub>thenewpotato · GitHub · ⭐ 2 · 2026-09-18</sub><br>Web 应用，把粘贴进来的隐私政策 URL 或文本变成类似营养成分表的标签，用大白话回答问题，每条都附 Jev 置信度分数和可展开的原文摘录。<br><sub>相关: <a href="https://tigrw.com/privacy-facts/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets 的 TypeSafe 公式检查" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py">IPFS Datasets 的 TypeSafe 公式检查</a></b><br><sub>endomorphosis · GitHub · ⭐ 23 仓库 · 2024-04-07</sub><br>建议性的 TypeSafe lint，位于 IPFS Datasets 逻辑模块中，给从法律文本自动形式化得到的公式打分，判断它是否准确表达了原条款，并检查引用，但不会改写公式，也不会认定证明成立。<br><sub>相关: <a href="https://github.com/endomorphosis/ipfs_datasets_py">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/PistachioAIHQ/jev-synergy-screening"><img src="https://opengraph.githubassets.com/1/PistachioAIHQ/jev-synergy-screening" alt="Jev × Cohen ADHD 摘要筛选" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD 摘要筛选</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 标题和摘要的纳入或排除，并以 Cohen et al. 2006 的标签评分；在 200 篇摘要的集合上准确率 92.0%、召回率 80.0%。<br><sub><b>Jev 用法:</b> 把 Choice 和 Noul 资格问题合成纳入/排除决策，每次调用约 523 毫秒。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets 的 TypeSafe 公式检查" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py">IPFS Datasets 的 TypeSafe 公式检查</a></b><br><sub>endomorphosis · GitHub · ⭐ 23 仓库 · 2024-04-07</sub><br>建议性的 TypeSafe lint，位于 IPFS Datasets 逻辑模块中，给从法律文本自动形式化得到的公式打分，判断它是否准确表达了原条款，并检查引用，但不会改写公式，也不会认定证明成立。<br><sub>相关: <a href="https://github.com/endomorphosis/ipfs_datasets_py">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/longkou1988/cnki-skills/tree/main/skills/cnki-jev"><img src="https://opengraph.githubassets.com/1/longkou1988/cnki-skills" alt="cnki-jev" width="240"></a></td>

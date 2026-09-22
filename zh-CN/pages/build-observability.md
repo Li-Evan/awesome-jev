@@ -14,12 +14,12 @@
 <td valign="top"><b><a href="https://github.com/comet-ml/opik/tree/main/sdks/python/src/opik/integrations/typesafe">Opik 的 TypeSafe 集成</a></b><br><sub>comet-ml · GitHub · ⭐ 22.2k 仓库 · 2023-05-10</sub><br>Opik Python SDK 的集成，包装同步和异步 TypeSafe 客户端，让每次 Jev 调用都在 Opik 的 LLM 可观测性与评测平台中被追踪。<br><sub>相关: <a href="https://www.comet.com/docs/opik/">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Arize-ai/phoenix/tree/main/docs/phoenix/integrations/llm-providers/typesafe"><img src="https://repository-images.githubusercontent.com/564072810/f3666cdf-cb3e-4056-8a25-27cb3e6b5848" alt="Phoenix 的 TypeSafe 追踪" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Arize-ai/phoenix/tree/main/docs/phoenix/integrations/llm-providers/typesafe">Phoenix 的 TypeSafe 追踪</a></b><br><sub>Arize-ai · 文档 · ⭐ 11.6k 仓库 · 2022-11-09</sub><br>面向 TypeSafe Python 和 TypeScript SDK 的 OpenInference 埋点，把每次 System One 调用的 state、问题和类型化答案记录为 Arize Phoenix 中的 span。<br><sub>相关: <a href="https://pypi.org/project/openinference-instrumentation-typesafe">pypi</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://langfuse.com/integrations/model-providers/typesafe"><img src="https://langfuse.com/api/og?title=Observability+for+TypeSafe+Jev+with+Langfuse&amp;description=Trace+TypeSafe+Jev+System+One+decisions+with+Langfuse+using+OpenInference+auto-instrumentation.+No+client+wrapper+required.&amp;section=Integrations" alt="Langfuse 的 TypeSafe 集成" width="240"></a></td>
 <td valign="top"><b><a href="https://langfuse.com/integrations/model-providers/typesafe">Langfuse 的 TypeSafe 集成</a></b><br><sub>Langfuse · 文档 · ⭐ 244 · 2026-09-19</sub><br>集成指南和 notebook，介绍如何通过 OpenInference 自动埋点在 Langfuse 中追踪 Jev System One 调用，无需包装客户端。<br><sub>相关: <a href="https://github.com/langfuse/langfuse-docs/blob/main/content/integrations/model-providers/typesafe.mdx">repo</a> · <a href="https://github.com/langfuse/langfuse-docs/blob/main/cookbook/integration_typesafe.ipynb">cookbook</a> · <a href="https://langfuse.com/blog/2026-09-18-using-typesafes-jev-for-evals">blog</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Arize-ai/phoenix/tree/main/docs/phoenix/integrations/llm-providers/typesafe"><img src="https://repository-images.githubusercontent.com/564072810/f3666cdf-cb3e-4056-8a25-27cb3e6b5848" alt="Phoenix 的 TypeSafe 追踪" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Arize-ai/phoenix/tree/main/docs/phoenix/integrations/llm-providers/typesafe">Phoenix 的 TypeSafe 追踪</a></b><br><sub>Arize-ai · 文档 · ⭐ 11.6k 仓库 · 2022-11-09</sub><br>面向 TypeSafe Python 和 TypeScript SDK 的 OpenInference 埋点，把每次 System One 调用的 state、问题和类型化答案记录为 Arize Phoenix 中的 span。<br><sub>相关: <a href="https://pypi.org/project/openinference-instrumentation-typesafe">pypi</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Arize-ai/openinference/tree/main/python/instrumentation/openinference-instrumentation-typesafe"><img src="https://opengraph.githubassets.com/1/Arize-ai/openinference" alt="OpenInference 的 TypeSafe 埋点" width="240"></a></td>

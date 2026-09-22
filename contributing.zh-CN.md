@@ -58,6 +58,8 @@ README 和各场景页都是自动生成的，请不要手改 `README.md`、`REA
 
 4. 提 PR。一个 PR 放一个项目最好审。
 
+在线画廊 <https://li-evan.github.io/awesome-jev/?lang=zh> 用的是同一份数据（`index.html` 和 `site/data.json`），改动合并到 `main` 后会自动更新。
+
 ## 图片
 
 - 用项目自己页面上的图：README 里的截图、网页的 `og:image`、原帖里的图片，或视频封面。

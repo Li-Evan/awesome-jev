@@ -18,6 +18,14 @@
 <td valign="top"><b><a href="https://github.com/typesafe-ai/skills">TypeSafe 官方 skill</a></b><br><sub>typesafe-ai · GitHub · ⭐ 1.6k · 2026-08-24</sub><br>agent skill 的源码，可以作为 Claude Code 插件安装，也可以通过 skills.sh 安装。<br><sub>相关: <a href="https://docs.typesafe.ai/agent-skill">docs</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/dbreunig/building-with-jev-skill"><img src="https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill" alt="Building with Jev skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dbreunig/building-with-jev-skill">Building with Jev skill</a></b><br><sub>dbreunig · GitHub · ⭐ 128 · 2026-09-17</sub><br>精简的 agent skill，教编程 agent 围绕 Jev 来组织程序结构。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ryana/jevify"><img src="https://opengraph.githubassets.com/1/ryana/jevify" alt="Jevify" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ryana/jevify">Jevify</a></b><br><sub>ryana · GitHub · ⭐ 109 · 2026-09-19</sub><br>一段粘贴进编程 agent 的提示词，让它研读 Jev 文档和你的代码库，找出哪些地方能用廉价的语义判断降低成本和延迟，或解锁新功能。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/realpython/materials/tree/master/hello-jev"><img src="https://opengraph.githubassets.com/1/realpython/materials" alt="Hello Jev (Real Python)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/realpython/materials/tree/master/hello-jev">Hello Jev (Real Python)</a></b><br><sub>realpython · GitHub · ⭐ 5.2k 仓库 · 2018-05-06</sub><br>Real Python 视频 Get Started With Jev in Python 的配套代码：一个火车站服务台，把严格的 Y/N 输入解析换成单个 Noul 问题。<br><sub><b>Jev 用法:</b> 对 Noul 概率设阈值，让“yeah, I've lost something”这类回复也能被正确处理；调用经由 OpenRouter。</sub></td>
 </tr>
@@ -34,28 +42,8 @@
 <td valign="top"><b><a href="https://github.com/marktechpost-ai-media-inc/ai-agents-projects-tutorials/blob/main/LLM%20Projects/typesafe_jev_system_one_typed_decisions_tutorial_Marktechpost.ipynb">Jev 类型化决策教程</a></b><br><sub>marktechpost-ai-media-inc · GitHub · ⭐ 2.9k 仓库 · 2025-05-15</sub><br>Marktechpost 的 notebook，逐步演示 Jev 类型化决策：工单分流、重新计算置信度、简历打分、意图路由和家居自动化工具选择器，全程跟踪成本。<br><sub><b>Jev 用法:</b> 使用 Python SDK 的 Noul、Choice 和 Score，以及一个类型化的 SystemOneResponse 子类；输入价格为每百万 token $0.042，输出免费。</sub><br><sub>相关: <a href="https://marktechpost.com/">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dbreunig/building-with-jev-skill"><img src="https://opengraph.githubassets.com/1/dbreunig/building-with-jev-skill" alt="Building with Jev skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dbreunig/building-with-jev-skill">Building with Jev skill</a></b><br><sub>dbreunig · GitHub · ⭐ 128 · 2026-09-17</sub><br>精简的 agent skill，教编程 agent 围绕 Jev 来组织程序结构。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ryana/jevify"><img src="https://opengraph.githubassets.com/1/ryana/jevify" alt="Jevify" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ryana/jevify">Jevify</a></b><br><sub>ryana · GitHub · ⭐ 109 · 2026-09-19</sub><br>一段粘贴进编程 agent 的提示词，让它研读 Jev 文档和你的代码库，找出哪些地方能用廉价的语义判断降低成本和延迟，或解锁新功能。</td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/mac_eth/status/2101701798968840703">JEV Playground</a></b><br><sub>mac_eth · X · ♥ 35 · 2026-09-20</sub><br>简单的网页 playground，输入文本上下文，就能向 Jev 提 Noul、Choice 或 Score 问题来试用。<br><sub>相关: <a href="https://jev-decisions.vercel.app/">app</a> · <a href="https://jev-decisions.vercel.app">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb"><img src="https://opengraph.githubassets.com/1/curiousily/AI-Bootcamp" alt="AI Bootcamp 的 Jev notebook" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb">AI Bootcamp 的 Jev notebook</a></b><br><sub>curiousily · GitHub · ⭐ 946 仓库 · 2024-04-14</sub><br>Get Shit Done with AI 训练营中的一个 Jev notebook，与其他 GenAI 课程并列，用 Python SDK 讲解 TypeSafe 的 System One 类型化决策。<br><sub>相关: <a href="https://mlexpert.io">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev 入门 + 50 个开源用例" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=im_hLbl6ldU">Jev 入门 + 50 个开源用例</a></b><br><sub>Yash Thakker · 视频 · ♥ 12 · 2026-09-20</sub><br>Jev 入门介绍，外加 50 个 MIT 许可演示的导览，涵盖工单路由、欺诈评分和内容审核等，每个都在成本和速度上对比 Jev 与一个 OpenAI 模型。<br><sub>相关: <a href="https://github.com/whyashthakker/awesome-jev-use-cases">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 仓库 · 2025-12-19</sub><br>Claude Code skill，打包了一份 TypeSafe AI 文档的离线 wiki，涵盖 Jev System One 模型、Choice/Score/Noul 原语、模式、SDK 和 HTTP API。<br><sub><b>Jev 用法:</b> 依据内置的 Markdown 和 SHA-256 清单回答 Jev 相关问题，只有快照不够用时才去查上游。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/altryne/jevify"><img src="https://raw.githubusercontent.com/altryne/jevify/main/assets/hero.svg" alt="Jevify" width="240"></a></td>
@@ -70,8 +58,28 @@
 <td valign="top"><b><a href="https://github.com/TypeSafeAI/typesafe-playground">TypeSafe AI Playground</a></b><br><sub>TypeSafeAI · GitHub · ⭐ 19 · 2026-09-16</sub><br>社区网页 playground，含 110 个可编辑的 Jev 用例、游戏、两难问题和模型挑战，涵盖分类、A/B 输入对比、对话路由、字段提取和代码策略检查。<br><sub>相关: <a href="https://jev.works">app</a> · <a href="https://jev.works">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb"><img src="https://opengraph.githubassets.com/1/curiousily/AI-Bootcamp" alt="AI Bootcamp 的 Jev notebook" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/curiousily/AI-Bootcamp/blob/master/jev.ipynb">AI Bootcamp 的 Jev notebook</a></b><br><sub>curiousily · GitHub · ⭐ 946 仓库 · 2024-04-14</sub><br>Get Shit Done with AI 训练营中的一个 Jev notebook，与其他 GenAI 课程并列，用 Python SDK 讲解 TypeSafe 的 System One 类型化决策。<br><sub>相关: <a href="https://mlexpert.io">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/nexibeo/jev-cookbook"><img src="https://raw.githubusercontent.com/nexibeo/jev-cookbook/main/assets/banner.svg" alt="Jev Cookbook" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nexibeo/jev-cookbook">Jev Cookbook</a></b><br><sub>nexibeo · GitHub · ⭐ 17 · 2026-09-19</sub><br>十五个可运行的 Jev OpenRouter 食谱，从客服分流、去重、PII 扫描到发票提取、搜索重排、浏览器 agent 和 Gmail 打标签工具，每个都附带标注样本和实测结果。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/mayank953/Jev"><img src="https://raw.githubusercontent.com/mayank953/Jev/main/docs/screenshot.png" alt="Jev 演示集" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev 演示集</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>六个本地并排演示，Jev 负责做决策，可切换的 Claude 或 Kimi LLM 负责写文字，每个标签页显示价格和流水线步骤，还有无需 key 的模拟模式。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 仓库 · 2025-12-19</sub><br>Claude Code skill，打包了一份 TypeSafe AI 文档的离线 wiki，涵盖 Jev System One 模型、Choice/Score/Noul 原语、模式、SDK 和 HTTP API。<br><sub><b>Jev 用法:</b> 依据内置的 Markdown 和 SHA-256 清单回答 Jev 相关问题，只有快照不够用时才去查上游。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev 入门 + 50 个开源用例" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=im_hLbl6ldU">Jev 入门 + 50 个开源用例</a></b><br><sub>Yash Thakker · 视频 · ♥ 12 · 2026-09-20</sub><br>Jev 入门介绍，外加 50 个 MIT 许可演示的导览，涵盖工单路由、欺诈评分和内容审核等，每个都在成本和速度上对比 Jev 与一个 OpenAI 模型。<br><sub>相关: <a href="https://github.com/whyashthakker/awesome-jev-use-cases">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/GiesN/typesafe-jev-workflow"><img src="https://opengraph.githubassets.com/1/GiesN/typesafe-jev-workflow" alt="Jev 邮件意图工作流" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/GiesN/typesafe-jev-workflow">Jev 邮件意图工作流</a></b><br><sub>GiesN · GitHub · ⭐ 7 · 2026-09-16</sub><br>异步 LangGraph 示例：把模拟邮件发给 Jev，得到一个“发票还是普通邮件”的类型化 Choice 及两个标签的概率，再把每封邮件路由到对应的演示处理节点。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rwjdk/agent-framework-samples/tree/main/src/JevClassification"><img src="https://github.com/user-attachments/assets/5909cce1-6191-4c54-8371-234b75ccc059" alt="Microsoft Agent Framework 的 Jev 示例" width="240"></a></td>
@@ -80,14 +88,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-eval"><img src="https://opengraph.githubassets.com/1/OneWave-AI/claude-skills" alt="OneWave 的 Jev skill 集" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-eval">OneWave 的 Jev skill 集</a></b><br><sub>OneWave-AI · GitHub · ⭐ 301 仓库 · 2025-10-22</sub><br>三个面向 System One 模型的 Claude Code skill：jev-audit 找出本质上是分类的 LLM 调用，jev-integrate 把 Jev 接入功能，jev-eval 在标注集上批量测试判断标准。<br><sub>相关: <a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-audit">jev-audit</a> · <a href="https://github.com/OneWave-AI/claude-skills/tree/main/jev-integrate">jev-integrate</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/mayank953/Jev"><img src="https://raw.githubusercontent.com/mayank953/Jev/main/docs/screenshot.png" alt="Jev 演示集" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev 演示集</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>六个本地并排演示，Jev 负责做决策，可切换的 Claude 或 Kimi LLM 负责写文字，每个标签页显示价格和流水线步骤，还有无需 key 的模拟模式。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/GiesN/typesafe-jev-workflow"><img src="https://opengraph.githubassets.com/1/GiesN/typesafe-jev-workflow" alt="Jev 邮件意图工作流" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/GiesN/typesafe-jev-workflow">Jev 邮件意图工作流</a></b><br><sub>GiesN · GitHub · ⭐ 7 · 2026-09-16</sub><br>异步 LangGraph 示例：把模拟邮件发给 Jev，得到一个“发票还是普通邮件”的类型化 Choice 及两个标签的概率，再把每封邮件路由到对应的演示处理节点。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/24601/Augustus"><img src="https://raw.githubusercontent.com/24601/Augustus/main/docs/assets/with-without-augustus.svg" alt="Augustus" width="240"></a></td>
@@ -130,14 +130,6 @@
 <td valign="top"><b><a href="https://github.com/nickthompson480/typesafe-ai-playground">TypeSafe AI Playground</a></b><br><sub>nickthompson480 · GitHub · ⭐ 3 · 2026-09-16</sub><br>社区 playground，提供 22 个类别共 110 个可运行的 Jev 示例，其中 41 个是 A/B 对比，你可以查看每个示例的输入和问题，修改后直接调用 API 运行。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities"><img src="https://raw.githubusercontent.com/jpcaparas/skills/main/skills/engineering/jev-opportunities/skill-card.png" alt="jev-opportunities" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities">jev-opportunities</a></b><br><sub>jpcaparas · GitHub · ⭐ 51 仓库 · 2026-03-25</sub><br>扫描现有应用的 agent skill，找出 Jev 可以替代 LLM 调用或启发式规则的地方，梳理成本和快速路径，并对批准的 spike 实验做测量。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev"><img src="https://opengraph.githubassets.com/1/arpitbbhayani/prototypes-ai" alt="Applied AI Masterclass 的 Jev 原型" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev">Applied AI Masterclass 的 Jev 原型</a></b><br><sub>arpitbbhayani · GitHub · ⭐ 42 仓库 · 2026-04-28</sub><br>基于 typesafe_sdk 的三个课程原型：判断生产环境为何宕机的 Outage Excuse Court、PR 风险守门员和生产告警分流器，由 Jev 回答类型化问题，规则由 Python 掌控。<br><sub><b>Jev 用法:</b> 每个条目提 Choice、Noul 和 Score 问题；判罚、合并门禁和呼叫策略都是普通 Python 代码。</sub><br><sub>相关: <a href="https://github.com/arpitbbhayani/prototypes-ai">repo</a> · <a href="https://arpitbhayani.me/applied-ai">course</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harrymunro/decision-first"><img src="https://external-preview.redd.it/ejEweWsycXpiYXFoMWm8FvOt3yXkrriXpGhGkleKCQO-IPjo5omZCfdS9i6W.png?format=pjpg&amp;auto=webp&amp;s=8500144026520769161ade58692060ce563d04f8" alt="decision-first" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harrymunro/decision-first">decision-first</a></b><br><sub>harrymunro · GitHub · ⭐ 2 · 2026-09-18</sub><br>让编程 agent 识别边界明确的判断步骤（分类、分流、排序、路由、校验）的 agent skill，在写正则或 LLM 提示词之前先试 Jev，并把每次尝试记录在可复用的 lab 目录中。<br><sub>相关: <a href="https://www.reddit.com/r/typesafeai/comments/1wjr229/i_made_a_claude_code_skill_that_reaches_for_jev/">demo</a></sub></td>
 </tr>
@@ -162,20 +154,8 @@
 <td valign="top"><b><a href="https://github.com/rajivkuriakose/typesafe-jev-examples">typesafe-jev-examples</a></b><br><sub>rajivkuriakose · GitHub · ⭐ 2 · 2026-09-18</sub><br>Jev 的 Python 完整示例，无需抢先体验 key、通过 OpenRouter 即可运行，展示在普通代码里如何用 state 和具名的类型化问题取代“提示词加解析”的步骤。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev"><img src="https://opengraph.githubassets.com/1/MichelKerkmeester/skilled-agent-harness_spec-driven-loops" alt="cli-jev skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev">cli-jev skill</a></b><br><sub>MichelKerkmeester · GitHub · ⭐ 35 仓库 · 2025-12-23</sub><br>Skilled 规范驱动 harness（面向 Claude Code、Codex、Pi 等）中的 agent skill，把需要给出一个数字的决策交给 jev CLI，返回概率、选项 key、分数位置或一批带 key 的答案。<br><sub>相关: <a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle"><img src="https://opengraph.githubassets.com/1/pjt222/agent-almanac" alt="consult-a-decision-oracle skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle">consult-a-decision-oracle skill</a></b><br><sub>pjt222 · GitHub · ⭐ 34 仓库 · 2025-06-06</sub><br>Agent Almanac 中的 agent skill，以 Jev 为实例，教你在决策路径中加入概率分类器而不让它喧宾夺主：衡量置信度区分度、选定阈值、失败时放行。<br><sub>相关: <a href="https://github.com/pjt222/agent-almanac">repo</a> · <a href="https://pjt222.github.io/agent-almanac/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo"><img src="https://opengraph.githubassets.com/1/zazencodes/zazencodes-season-3" alt="Jev System 1 决策引擎演示" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo">Jev System 1 决策引擎演示</a></b><br><sub>zazencodes · GitHub · ⭐ 27 仓库 · 2026-03-19</sub><br>ZazenCodes YouTube 视频里的 Jev Python 演示代码：一个脚本和一个 notebook，展示二元分流、类别路由和校准的 agent 护栏，并附有保存的分流结果。<br><sub>相关: <a href="https://github.com/zazencodes/zazencodes-season-3">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision"><img src="https://opengraph.githubassets.com/1/andreasronge/ptc_runner" alt="PtcRunner 的 Jev 决策实验室" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner 的 Jev 决策实验室</a></b><br><sub>andreasronge · GitHub · ⭐ 21 仓库 · 2025-12-01</sub><br>PtcRunner agent 工作流 harness 中的实验室，从 PTC-Lisp 程序调用 Jev 给客服工单分类，返回需要退款的工单 ID，以及每次分类背后的概率。<br><sub>相关: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities"><img src="https://raw.githubusercontent.com/jpcaparas/skills/main/skills/engineering/jev-opportunities/skill-card.png" alt="jev-opportunities" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jpcaparas/skills/tree/main/skills/engineering/jev-opportunities">jev-opportunities</a></b><br><sub>jpcaparas · GitHub · ⭐ 51 仓库 · 2026-03-25</sub><br>扫描现有应用的 agent skill，找出 Jev 可以替代 LLM 调用或启发式规则的地方，梳理成本和快速路径，并对批准的 spike 实验做测量。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TanayPadar/gpt-vs-jev"><img src="https://opengraph.githubassets.com/1/TanayPadar/gpt-vs-jev" alt="GPT vs JEV" width="240"></a></td>
@@ -200,6 +180,26 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/markjaquith/typesafe-ai-playground"><img src="https://opengraph.githubassets.com/1/markjaquith/typesafe-ai-playground" alt="TypeSafe AI Playground" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/markjaquith/typesafe-ai-playground">TypeSafe AI Playground</a></b><br><sub>markjaquith · GitHub · ⭐ 1 · 2026-09-17</sub><br>由小型 Jev 实验组成的 Rust CLI：PHI 检测、代码注释审查、交互式语气分析、企业和职业分类，以及一个会把 Jev 评为不重要的行模糊处理的文件查看器。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev"><img src="https://opengraph.githubassets.com/1/arpitbbhayani/prototypes-ai" alt="Applied AI Masterclass 的 Jev 原型" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/arpitbbhayani/prototypes-ai/tree/master/jev">Applied AI Masterclass 的 Jev 原型</a></b><br><sub>arpitbbhayani · GitHub · ⭐ 42 仓库 · 2026-04-28</sub><br>基于 typesafe_sdk 的三个课程原型：判断生产环境为何宕机的 Outage Excuse Court、PR 风险守门员和生产告警分流器，由 Jev 回答类型化问题，规则由 Python 掌控。<br><sub><b>Jev 用法:</b> 每个条目提 Choice、Noul 和 Score 问题；判罚、合并门禁和呼叫策略都是普通 Python 代码。</sub><br><sub>相关: <a href="https://github.com/arpitbbhayani/prototypes-ai">repo</a> · <a href="https://arpitbhayani.me/applied-ai">course</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev"><img src="https://opengraph.githubassets.com/1/MichelKerkmeester/skilled-agent-harness_spec-driven-loops" alt="cli-jev skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops/tree/main/.skilled/skills/cli-jev">cli-jev skill</a></b><br><sub>MichelKerkmeester · GitHub · ⭐ 35 仓库 · 2025-12-23</sub><br>Skilled 规范驱动 harness（面向 Claude Code、Codex、Pi 等）中的 agent skill，把需要给出一个数字的决策交给 jev CLI，返回概率、选项 key、分数位置或一批带 key 的答案。<br><sub>相关: <a href="https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle"><img src="https://opengraph.githubassets.com/1/pjt222/agent-almanac" alt="consult-a-decision-oracle skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pjt222/agent-almanac/tree/main/skills/consult-a-decision-oracle">consult-a-decision-oracle skill</a></b><br><sub>pjt222 · GitHub · ⭐ 34 仓库 · 2025-06-06</sub><br>Agent Almanac 中的 agent skill，以 Jev 为实例，教你在决策路径中加入概率分类器而不让它喧宾夺主：衡量置信度区分度、选定阈值、失败时放行。<br><sub>相关: <a href="https://github.com/pjt222/agent-almanac">repo</a> · <a href="https://pjt222.github.io/agent-almanac/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo"><img src="https://opengraph.githubassets.com/1/zazencodes/zazencodes-season-3" alt="Jev System 1 决策引擎演示" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zazencodes/zazencodes-season-3/tree/main/src/jev-system-one-model-python-demo">Jev System 1 决策引擎演示</a></b><br><sub>zazencodes · GitHub · ⭐ 27 仓库 · 2026-03-19</sub><br>ZazenCodes YouTube 视频里的 Jev Python 演示代码：一个脚本和一个 notebook，展示二元分流、类别路由和校准的 agent 护栏，并附有保存的分流结果。<br><sub>相关: <a href="https://github.com/zazencodes/zazencodes-season-3">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision"><img src="https://opengraph.githubassets.com/1/andreasronge/ptc_runner" alt="PtcRunner 的 Jev 决策实验室" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner 的 Jev 决策实验室</a></b><br><sub>andreasronge · GitHub · ⭐ 21 仓库 · 2025-12-01</sub><br>PtcRunner agent 工作流 harness 中的实验室，从 PTC-Lisp 程序调用 Jev 给客服工单分类，返回需要退款的工单 ID，以及每次分类背后的概率。<br><sub>相关: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py"><img src="https://opengraph.githubassets.com/1/Mellow-Artificial-Intelligence/openextract" alt="openextract 的 Jev 欺诈核查 cookbook" width="240"></a></td>

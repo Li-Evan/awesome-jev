@@ -28,24 +28,40 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://x.com/tarasshyn/status/2101012033340571952">Flowsery session replay triage</a></b><br><sub>tarasshyn · X · ♥ 829 · 2026-09-18</sub><br>Ran Jev over 3 million session-replay events: in 40 seconds it reviewed 3,247 sessions, caught 132 rage clicks, 116 dead clicks and 95 JavaScript errors, and opened 213 draft fix PRs for $2.17.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/yyyole/status/2101184012899537092"><img src="https://pbs.twimg.com/amplify_video_thumb/2101182941317787648/img/1Imy25EAcuq8Wllx.jpg" alt="AI news filtering" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yyyole/status/2101184012899537092">AI news filtering</a></b><br><sub>yyyole · X · ♥ 330 · 2026-09-19</sub><br>Screened nearly 2,700 AI news items from the past 7 days one by one with Jev in about 2 minutes for $0.21, to pick content topics.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/ramsoma/status/2101851201684042083"><img src="https://pbs.twimg.com/media/HStBFZFbIAAIWyp.jpg" alt="Jev for proactive chart monitoring" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ramsoma/status/2101851201684042083">Jev for proactive chart monitoring</a></b><br><sub>ramsoma · Article · ♥ 48 · 2026-09-21</sub><br>Analytics experiment using Jev to flag which charts deserve deeper analysis: on a synthetic benchmark it cost about 1/3 as much and ran 5x faster than the strongest cheap hosted baseline, first in recall but last in precision.</td>
+<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2100979972194369925"><img src="https://pbs.twimg.com/amplify_video_thumb/2100978985480167424/img/Qcx8F-7plQRcpzqg.jpg" alt="Doc-OCR router" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MisbahSy/status/2100979972194369925">Doc-OCR router</a></b><br><sub>MisbahSy · X · ♥ 483 · 2026-09-18</sub><br>Router that looks at a PDF page by page, has Jev decide which pages actually need OCR, and extracts the rest locally, cutting OCR cost and time.<br><sub><b>How it uses Jev:</b> Per-page Choice: needs OCR or plain text extraction.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/different-ai/openwork/blob/dev/evals/packages/testkit/src/verification-jev.ts"><img src="https://github.com/user-attachments/assets/66a8dd9b-5260-488c-957d-e54331e78c1c" alt="OpenWork Jev verification" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/different-ai/openwork/blob/dev/evals/packages/testkit/src/verification-jev.ts">OpenWork Jev verification</a></b><br><sub>different-ai · GitHub · ⭐ 23.7k repo · 2026-01-14</sub><br>Evaluator in the OpenWork desktop app's eval testkit that sends a test intent and a dictionary of UI checks to Jev via Vercel AI Gateway, which picks the checks to run and whether they cover the intent in one call.<br><sub><b>How it uses Jev:</b> A coverage Boolean plus one Boolean per candidate check; the chosen checks are compiled into a persistent verification plan.</sub><br><sub>Also: <a href="https://github.com/different-ai/openwork">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MisbahSy/status/2100979972194369925"><img src="https://pbs.twimg.com/amplify_video_thumb/2100978985480167424/img/Qcx8F-7plQRcpzqg.jpg" alt="Doc-OCR router" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MisbahSy/status/2100979972194369925">Doc-OCR router</a></b><br><sub>MisbahSy · X · ♥ 483 · 2026-09-18</sub><br>Router that looks at a PDF page by page, has Jev decide which pages actually need OCR, and extracts the rest locally, cutting OCR cost and time.<br><sub><b>How it uses Jev:</b> Per-page Choice: needs OCR or plain text extraction.</sub></td>
+<td width="260" valign="top"><a href="https://x.com/yyyole/status/2101184012899537092"><img src="https://pbs.twimg.com/amplify_video_thumb/2101182941317787648/img/1Imy25EAcuq8Wllx.jpg" alt="AI news filtering" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yyyole/status/2101184012899537092">AI news filtering</a></b><br><sub>yyyole · X · ♥ 330 · 2026-09-19</sub><br>Screened nearly 2,700 AI news items from the past 7 days one by one with Jev in about 2 minutes for $0.21, to pick content topics.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mrmps/classifier-dev"><img src="https://opengraph.githubassets.com/1/mrmps/classifier-dev" alt="classifier.dev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mrmps/classifier-dev">classifier.dev</a></b><br><sub>mrmps · GitHub · ⭐ 408 · 2026-08-13</sub><br>Keyless zero-shot text classification over plain HTTP, a CLI, and an MCP server, answered by Jev, with a smart tier that re-asks a reasoning model when Jev's confidence is below 0.7.<br><sub><b>How it uses Jev:</b> Batches pack many texts into one request; 400 news headlines classified in 650ms end to end.</sub><br><sub>Also: <a href="https://classifier.dev">app</a> · <a href="https://classifier.dev/">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/ramsoma/status/2101851201684042083"><img src="https://pbs.twimg.com/media/HStBFZFbIAAIWyp.jpg" alt="Jev for proactive chart monitoring" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ramsoma/status/2101851201684042083">Jev for proactive chart monitoring</a></b><br><sub>ramsoma · Article · ♥ 48 · 2026-09-21</sub><br>Analytics experiment using Jev to flag which charts deserve deeper analysis: on a synthetic benchmark it cost about 1/3 as much and ran 5x faster than the strongest cheap hosted baseline, first in recall but last in precision.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/sutro-sh/jev-align"><img src="https://external-preview.redd.it/LyUguT2COJHsL7br_6em8JB9WzRSm8btXeyyt8rmg9I.png?auto=webp&amp;s=ccd844160bd89dae768534357b88bc00db01afed" alt="jev-align" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/sutro-sh/jev-align">jev-align</a></b><br><sub>sutro-sh · GitHub · ⭐ 271 · 2026-09-19</sub><br>Turns human labels into reusable, calibrated judgment functions with active learning and prompt optimization.<br><sub>Also: <a href="https://x.com/sethkimmel3/status/2101357768640987302">demo</a> · <a href="https://news.ycombinator.com/item?id=49770872">discussion</a> · <a href="https://pypi.org/project/jev-align/">pypi</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jerryjliu/docjev"><img src="https://raw.githubusercontent.com/jerryjliu/docjev/main/docs/report/summary.png" alt="DocJev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jerryjliu/docjev">DocJev</a></b><br><sub>jerryjliu · GitHub · ⭐ 206 · 2026-09-19</sub><br>Library, CLI and local app that classifies PDF, DOCX or PPTX files against natural-language category rules or splits a packet into its component documents, using LiteParse text and Jev predictions.<br><sub>Also: <a href="https://x.com/jerryjliu0/status/2101738281046294552">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/mmalisper/status/2101001041903009987"><img src="https://pbs.twimg.com/amplify_video_thumb/2100995303935791105/img/eK9B54C5duJ9b-Od.jpg" alt="Jev query planner" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mmalisper/status/2101001041903009987">Jev query planner</a></b><br><sub>mmalisper · X · ♥ 164 · 2026-09-18</sub><br>Postgres query planner built with Jev that, after some tuning, sped up queries on the Join Order Benchmark by 12%.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/yongfook/status/2100801037192024478"><img src="https://pbs.twimg.com/amplify_video_thumb/2100800207256756224/img/qfKKxj1Oh8pHHnD7.jpg" alt="Bannerbear field mapping" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear field mapping</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>Live Bannerbear feature that maps template fields to differently named data-source fields (photo to avatar, company_name to business) in one click.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs"><img src="https://raw.githubusercontent.com/GreptimeTeam/greptimedb/main/docs/overview.png" alt="GreptimeDB jev() SQL function" width="240"></a></td>
@@ -60,20 +76,8 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/lightdash/lightdash/tree/main/packages/backend/src/ee/services/ai/decisions">Lightdash AI decisions</a></b><br><sub>lightdash · GitHub · ⭐ 6.2k repo · 2021-03-19</sub><br>Typed Jev decisions inside Lightdash's BI agent for catalog ranking, date-range checks, chart quality, error classification, answer-claim evidence and field recovery.<br><sub><b>How it uses Jev:</b> A shared decision client validates Noul, Choice and Score answers; other callers use it for project routing, model routing and readiness scoring.</sub><br><sub>Also: <a href="https://lightdash.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/yongfook/status/2100801037192024478"><img src="https://pbs.twimg.com/amplify_video_thumb/2100800207256756224/img/qfKKxj1Oh8pHHnD7.jpg" alt="Bannerbear field mapping" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear field mapping</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>Live Bannerbear feature that maps template fields to differently named data-source fields (photo to avatar, company_name to business) in one click.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/mmalisper/status/2101001041903009987"><img src="https://pbs.twimg.com/amplify_video_thumb/2100995303935791105/img/eK9B54C5duJ9b-Od.jpg" alt="Jev query planner" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mmalisper/status/2101001041903009987">Jev query planner</a></b><br><sub>mmalisper · X · ♥ 164 · 2026-09-18</sub><br>Postgres query planner built with Jev that, after some tuning, sped up queries on the Join Order Benchmark by 12%.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit Jev judge" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx">Harbor rewardkit Jev judge</a></b><br><sub>harbor-framework · Docs · ⭐ 5.5k repo · 2025-08-04</sub><br>Jev judge option in rewardkit, the grading package of the Terminal-Bench team's Harbor eval framework, scoring agent output against binary and rubric criteria with no reasoning text.<br><sub><b>How it uses Jev:</b> Set judge = "jev" in a criteria TOML; each criterion returns a probability or rubric score, making grading fast and cheap.</sub><br><sub>Also: <a href="https://harborframework.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sutro-sh/jev-align"><img src="https://external-preview.redd.it/LyUguT2COJHsL7br_6em8JB9WzRSm8btXeyyt8rmg9I.png?auto=webp&amp;s=ccd844160bd89dae768534357b88bc00db01afed" alt="jev-align" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sutro-sh/jev-align">jev-align</a></b><br><sub>sutro-sh · GitHub · ⭐ 271 · 2026-09-19</sub><br>Turns human labels into reusable, calibrated judgment functions with active learning and prompt optimization.<br><sub>Also: <a href="https://x.com/sethkimmel3/status/2101357768640987302">demo</a> · <a href="https://news.ycombinator.com/item?id=49770872">discussion</a> · <a href="https://pypi.org/project/jev-align/">pypi</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/langwatch/langwatch/tree/main/platform/app/src/server/app-layer/instant-evals/classifier"><img src="https://opengraph.githubassets.com/1/langwatch/langwatch" alt="LangWatch Instant Evals on Jev" width="240"></a></td>
@@ -88,20 +92,8 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://x.com/huangyun_122/status/2102112025627476146">WeChat article classifier</a></b><br><sub>huangyun_122 · X · ♥ 84 · 2026-09-21</sub><br>Chinese demo that scrapes 148 long-form WeChat official-account articles and has Jev classify them by scenario in under 2 minutes, as a low-cost labeling run.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jerryjliu/docjev"><img src="https://raw.githubusercontent.com/jerryjliu/docjev/main/docs/report/summary.png" alt="DocJev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jerryjliu/docjev">DocJev</a></b><br><sub>jerryjliu · GitHub · ⭐ 206 · 2026-09-19</sub><br>Library, CLI and local app that classifies PDF, DOCX or PPTX files against natural-language category rules or splits a packet into its component documents, using LiteParse text and Jev predictions.<br><sub>Also: <a href="https://x.com/jerryjliu0/status/2101738281046294552">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/dagucloud/dagu/blob/main/specs/071-decision-evaluate.md"><img src="https://opengraph.githubassets.com/1/dagucloud/dagu" alt="Dagu decision.evaluate" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/dagucloud/dagu/blob/main/specs/071-decision-evaluate.md">Dagu decision.evaluate</a></b><br><sub>dagucloud · GitHub · ⭐ 4.1k repo · 2022-04-22</sub><br>Built-in decision.evaluate action for Dagu workflows that asks Jev choice, score or yes/no questions about shared context and routes the DAG on the typed answers.<br><sub><b>How it uses Jev:</b> Works against TypeSafe's /v1/systemone or OpenRouter's Decisions API, with answers captured as step outputs.</sub><br><sub>Also: <a href="https://github.com/dagucloud/dagu/tree/main/internal/runtime/builtin/decision">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts"><img src="https://github.com/ianarawjo/ChainForge/assets/5251713/570879ef-ef8a-4e00-b37c-b49bc3c1a370" alt="ChainForge Jev judge" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts">ChainForge Jev judge</a></b><br><sub>ianarawjo · GitHub · ⭐ 3k repo · 2023-03-26</sub><br>ChainForge's prompt-evaluation environment adds Jev as a decision judge, querying it separately from text judges and building reliability tables from its stated probabilities against labels.<br><sub><b>How it uses Jev:</b> Decision models like Jev return calibrated probabilities that feed a per-judge reliability view.</sub><br><sub>Also: <a href="https://chainforge.ai/docs">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts"><img src="https://opengraph.githubassets.com/1/MapleTechLabs/maple" alt="Maple incident triage" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts">Maple incident triage</a></b><br><sub>MapleTechLabs · GitHub · ⭐ 1.8k repo · 2026-02-15</sub><br>Pre-LLM incident triage in the Maple OpenTelemetry observability platform: one Jev decision gates whether an incident is worth spending a full model investigation on.<br><sub><b>How it uses Jev:</b> Bounded questions in a single tool-less call, including a low-to-critical severity score, deliberately outside an agent turn.</sub><br><sub>Also: <a href="https://maple.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/giuliosmall/pg_typesafe"><img src="https://opengraph.githubassets.com/1/giuliosmall/pg_typesafe" alt="pg_typesafe" width="240"></a></td>
@@ -112,16 +104,12 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/NanmiCoder/jev-arena">Jev Arena</a></b><br><sub>NanmiCoder · GitHub · ⭐ 79 · 2026-09-19</sub><br>Side-by-side arena that labels the same comments with Jev and DeepSeek or another chat model; on 10,000 comments Jev took 203.2 s and $0.84 versus 823.5 s and $1.50, at slightly lower accuracy.<br><sub>Also: <a href="https://nanmicoder.github.io/jev-arena/">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/abhixhek/jevcal"><img src="https://raw.githubusercontent.com/abhixhek/jevcal/main/docs/terminal.png" alt="jevcal" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/abhixhek/jevcal">jevcal</a></b><br><sub>abhixhek · GitHub · ⭐ 10 · 2026-09-18</sub><br>Toolkit that measures a typed decision model like Jev on your own labeled data against an LLM teacher, picks the confidence threshold for a target accuracy, reports how much traffic still needs an LLM, and fails CI on drift.<br><sub>Also: <a href="https://x.com/thenightshipper/status/2100850610962919551">demo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/escapeboy/agent-fleet-o"><img src="https://raw.githubusercontent.com/escapeboy/agent-fleet-o/main/screenshots/qa-dashboard.png" alt="FleetQ decision-model eval harness" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/escapeboy/agent-fleet-o">FleetQ decision-model eval harness</a></b><br><sub>escapeboy · GitHub · ⭐ 70 · 2026-02-08</sub><br>Self-hosted agent orchestration platform with a System One decision driver and a jev:eval harness that scores Jev or LLMs on JSONL datasets for accuracy, calibration, coverage, latency, cost and determinism.<br><sub>Also: <a href="https://fleetq.net">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts"><img src="https://repository-images.githubusercontent.com/656892015/8d29d9f6-1ac8-4320-9800-bef44bf1d174" alt="Neuronpedia Jev autointerp scorer" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts">Neuronpedia Jev autointerp scorer</a></b><br><sub>hijohnnylin · GitHub · ⭐ 1.1k repo · 2023-06-21</sub><br>Neuronpedia, an open interpretability platform, scores neuron-explanation quality with Jev via detection, fuzzing and a 5-level rating, one request per explanation.<br><sub><b>How it uses Jev:</b> jev_detection and jev_fuzz use one yes/no per example for balanced accuracy; jev_score uses a probability-weighted 5-level rating.</sub><br><sub>Also: <a href="https://neuronpedia.org">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts"><img src="https://github.com/ianarawjo/ChainForge/assets/5251713/570879ef-ef8a-4e00-b37c-b49bc3c1a370" alt="ChainForge Jev judge" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ianarawjo/chainforge/blob/main/chainforge/react-server/src/backend/models.ts">ChainForge Jev judge</a></b><br><sub>ianarawjo · GitHub · ⭐ 3k repo · 2023-03-26</sub><br>ChainForge's prompt-evaluation environment adds Jev as a decision judge, querying it separately from text judges and building reliability tables from its stated probabilities against labels.<br><sub><b>How it uses Jev:</b> Decision models like Jev return calibrated probabilities that feed a per-judge reliability view.</sub><br><sub>Also: <a href="https://chainforge.ai/docs">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/openlayer-ai/jevals"><img src="https://external-preview.redd.it/QQHJgNvAmxL8Jd0CPbw1hzeEW1AIIeVd7V1E2H6Veoo.png?auto=webp&amp;s=fadb40963b005ee61ab72d453710ef95869182af" alt="jevals" width="240"></a></td>
@@ -136,8 +124,8 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/RenaGao/jev-dataops">JEV DataOps</a></b><br><sub>RenaGao · GitHub · ⭐ 37 · 2026-09-21</sub><br>Workbench that screens uploaded training data with Jev, evaluates data quality, trains a LoRA automatically and evaluates the result on held-out data, via a browser app, CLI and Python and HTTP APIs.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dayhaysoos/jevals"><img src="https://pbs.twimg.com/amplify_video_thumb/2100965288850145280/img/Ik0MohKW-MEyT6p4.jpg" alt="jevals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dayhaysoos/jevals">jevals</a></b><br><sub>dayhaysoos · GitHub · ⭐ 1 · 2026-09-18</sub><br>Local browser workbench for authoring Jev Noul, Choice and Score questions with example cases and expected answers, running them and comparing saved results.<br><sub>Also: <a href="https://x.com/Dayhaysoos/status/2100968892591968320">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts"><img src="https://opengraph.githubassets.com/1/MapleTechLabs/maple" alt="Maple incident triage" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/MapleTechLabs/maple/blob/main/apps/ai/src/triage/incident-classifier.ts">Maple incident triage</a></b><br><sub>MapleTechLabs · GitHub · ⭐ 1.8k repo · 2026-02-15</sub><br>Pre-LLM incident triage in the Maple OpenTelemetry observability platform: one Jev decision gates whether an incident is worth spending a full model investigation on.<br><sub><b>How it uses Jev:</b> Bounded questions in a single tool-less call, including a low-to-critical severity score, deliberately outside an agent turn.</sub><br><sub>Also: <a href="https://maple.dev">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/smkrv/jev-calibrate"><img src="https://opengraph.githubassets.com/1/smkrv/jev-calibrate" alt="jev-calibrate" width="240"></a></td>
@@ -148,12 +136,12 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/KryptSec/oasis">OASIS</a></b><br><sub>KryptSec · GitHub · ⭐ 29 · 2025-12-22</sub><br>Open-source CLI that benchmarks AI models on offensive-security CTF challenges with MITRE ATT&amp;CK mapping; an opt-in TypeSafe judge re-scores each step's success after the run instead of the default substring regex.<br><sub><b>How it uses Jev:</b> One pinned jev-1.13.0 judgment per step after the run, recording successConfidence; failed judge calls keep the regex verdict.</sub><br><sub>Also: <a href="https://oasis.kryptsec.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/the_cyw/status/2100807905859739779"><img src="https://pbs.twimg.com/amplify_video_thumb/2100807113576693760/img/8lI0CmDrKghq79Z5.jpg" alt="Physical-AI action label QA" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/the_cyw/status/2100807905859739779">Physical-AI action label QA</a></b><br><sub>the_cyw · X · ♥ 18 · 2026-09-18</sub><br>Quality checks on egocentric training data for physical AI, where Jev QA'd 58,643 action labels in under 3 minutes for 90 cents.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/misbahsy/doc-router"><img src="https://opengraph.githubassets.com/1/misbahsy/doc-router" alt="doc-router" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/misbahsy/doc-router">doc-router</a></b><br><sub>misbahsy · GitHub · ⭐ 26 · 2026-09-18</sub><br>Rust library and CLI with Python bindings that decides page by page which PDF pages need OCR, using Jev as the page judge; on 155 pages it billed 87 and ran 1.74x cheaper than OCRing everything.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts"><img src="https://repository-images.githubusercontent.com/656892015/8d29d9f6-1ac8-4320-9800-bef44bf1d174" alt="Neuronpedia Jev autointerp scorer" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hijohnnylin/neuronpedia/blob/main/apps/webapp/lib/external/autointerp-scorer-jev.ts">Neuronpedia Jev autointerp scorer</a></b><br><sub>hijohnnylin · GitHub · ⭐ 1.1k repo · 2023-06-21</sub><br>Neuronpedia, an open interpretability platform, scores neuron-explanation quality with Jev via detection, fuzzing and a 5-level rating, one request per explanation.<br><sub><b>How it uses Jev:</b> jev_detection and jev_fuzz use one yes/no per example for balanced accuracy; jev_score uses a probability-weighted 5-level rating.</sub><br><sub>Also: <a href="https://neuronpedia.org">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/goodrahstar/jev-column-race"><img src="https://raw.githubusercontent.com/goodrahstar/jev-column-race/main/docs/banner.svg" alt="Jev Column Race" width="240"></a></td>
@@ -172,6 +160,14 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/AkashPriyadarshii/jev-curate">jev-curate</a></b><br><sub>AkashPriyadarshii · GitHub · ⭐ 19 · 2026-09-18</sub><br>Rust streaming CLI and Python API that filters synthetic and pretraining datasets in Parquet or JSONL with local prefilters and typed Jev Choice, Score and Noul judgments, keeping or rejecting each record by threshold.<br><sub>Also: <a href="https://jev-curate.vercel.app">app</a> · <a href="https://crates.io/crates/jev-curate">crate</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/abhixhek/jevcal"><img src="https://raw.githubusercontent.com/abhixhek/jevcal/main/docs/terminal.png" alt="jevcal" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/abhixhek/jevcal">jevcal</a></b><br><sub>abhixhek · GitHub · ⭐ 10 · 2026-09-18</sub><br>Toolkit that measures a typed decision model like Jev on your own labeled data against an LLM teacher, picks the confidence threshold for a target accuracy, reports how much traffic still needs an LLM, and fails CI on drift.<br><sub>Also: <a href="https://x.com/thenightshipper/status/2100850610962919551">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/the_cyw/status/2100807905859739779"><img src="https://pbs.twimg.com/amplify_video_thumb/2100807113576693760/img/8lI0CmDrKghq79Z5.jpg" alt="Physical-AI action label QA" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/the_cyw/status/2100807905859739779">Physical-AI action label QA</a></b><br><sub>the_cyw · X · ♥ 18 · 2026-09-18</sub><br>Quality checks on egocentric training data for physical AI, where Jev QA'd 58,643 action labels in under 3 minutes for 90 cents.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/keltokhy/jsort"><img src="https://opengraph.githubassets.com/1/keltokhy/jsort" alt="jsort" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/keltokhy/jsort">jsort</a></b><br><sub>keltokhy · GitHub · ⭐ 17 · 2026-09-19</sub><br>Command-line sort by meaning that shows Jev two texts at a time, asks which ranks higher on a plain-English dimension, and fits a Bradley-Terry scale to print lines or documents with scores and standard errors.</td>
 </tr>
@@ -180,8 +176,8 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/rlaope/jeval">jeval</a></b><br><sub>rlaope · GitHub · ⭐ 15 · 2026-09-20</sub><br>Python CLI that measures how well a classifier's confidence, including Jev's, matches its accuracy on labeled data and sets the cost-optimal human hand-off threshold, outputting an offline HTML report and a YAML config.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator"><img src="https://raw.githubusercontent.com/zenml-io/kitaru/develop/assets/kitaru_header.png" alt="Kitaru TypeSafe evaluator" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator">Kitaru TypeSafe evaluator</a></b><br><sub>zenml-io · GitHub · ⭐ 292 repo · 2026-03-05</sub><br>Opt-in evaluator package for a replay-based agent eval platform that judges recorded sessions with Jev, sending one request per session and storing one result per question.<br><sub>Also: <a href="https://kitaru.ai">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/dayhaysoos/jevals"><img src="https://pbs.twimg.com/amplify_video_thumb/2100965288850145280/img/Ik0MohKW-MEyT6p4.jpg" alt="jevals" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dayhaysoos/jevals">jevals</a></b><br><sub>dayhaysoos · GitHub · ⭐ 1 · 2026-09-18</sub><br>Local browser workbench for authoring Jev Noul, Choice and Score questions with example cases and expected answers, running them and comparing saved results.<br><sub>Also: <a href="https://x.com/Dayhaysoos/status/2100968892591968320">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/leonardovida/duckdb-ai"><img src="https://raw.githubusercontent.com/leonardovida/duckdb-ai/main/docs/assets/duckdb-ai-logo.svg" alt="duckdb-ai" width="240"></a></td>
@@ -204,10 +200,6 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/opencx-labs/zevals">zevals Jev judge</a></b><br><sub>opencx-labs · GitHub · ⭐ 11 · 2025-05-06</sub><br>TypeScript library for end-to-end AI agent tests whose assertions can use Jev as the judge, reporting a calibrated probability per assertion at about 0.5 s and $0.00005 per call.<br><sub><b>How it uses Jev:</b> One Noul over the transcript with a pass threshold (default 0.5); results within 0.05 of the threshold are flagged as borderline.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/koladev32/status/2101660768458391816"><img src="https://pbs.twimg.com/amplify_video_thumb/2101653831247388672/img/ym11-1ZkJv7EL_ZP.jpg" alt="jev-classify" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/koladev32/status/2101660768458391816">jev-classify</a></b><br><sub>koladev32 · X · ♥ 6 · 2026-09-20</sub><br>Document classification and routing pipeline that pushes 39,700 documents through Jev in under 4 minutes for $1.43 at 96.38% accuracy, about 180 docs/sec aggregate and 485ms p95.<br><sub>Also: <a href="https://github.com/koladev32/jev-classify">repo</a> · <a href="https://github.com/koladev32/jev-classify">project</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/reachjalil/jevlogs"><img src="https://raw.githubusercontent.com/reachjalil/jevlogs/main/docs/assets/readme-banner.png" alt="Jev Logs" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/reachjalil/jevlogs">Jev Logs</a></b><br><sub>reachjalil · GitHub · ⭐ 9 · 2026-09-17</sub><br>TypeScript library and OpenTelemetry exporter wrapper that scores each log record's diagnostic value, priority and routing with Jev before any expensive LLM analysis, keeping every record in the archive.<br><sub><b>How it uses Jev:</b> A 0-100 diagnostic-value Score, a priority and an actionable probability per record.</sub><br><sub>Also: <a href="https://www.reddit.com/r/SideProject/comments/1wil0gi/made_an_open_source_library_for_working_on_logs/">discussion</a> · <a href="https://huggingface.co/datasets/reachjalil/jevlogs-log-triage-benchmark">model</a> · <a href="https://huggingface.co/datasets/reachjalil/jev-luna-pagerduty-trigger">model 2</a> · <a href="https://huggingface.co/spaces/reachjalil/jevlogs-triage-explorer">app</a></sub></td>
 </tr>
@@ -224,36 +216,24 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>Shadow-mode calibration audits for AI judges against past human decisions; its published Jev audits report 95.5% accuracy under attack and 73% zero-error coverage, versus 2% for Claude Sonnet 4.5.<br><sub><b>How it uses Jev:</b> Runs Jev via Vercel AI Gateway on email triage, adversarial emails and a cheap-vs-frontier task router, with raw responses committed for recomputation.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts"><img src="https://opengraph.githubassets.com/1/NiceEval/NiceEval" alt="NiceEval TypeSafe judge" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts">NiceEval TypeSafe judge</a></b><br><sub>NiceEval · GitHub · ⭐ 153 repo · 2026-06-28</sub><br>Local-first agent eval tool that adds TypeSafe as an explicit judge provider, mapping Jev probabilities into weighted scores and batch classifications.<br><sub>Also: <a href="https://github.com/NiceEval/NiceEval/blob/main/docs/feature/judge/README.md">docs</a> · <a href="https://www.niceeval.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions"><img src="https://raw.githubusercontent.com/AgentEvalHQ/AgentEval/main/assets/AgentEval_bounded.png" alt="AgentEval decision evals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions">AgentEval decision evals</a></b><br><sub>AgentEvalHQ · GitHub · ⭐ 146 repo · 2026-01-02</sub><br>Evaluation toolkit for .NET AI agents that adds Jev as a third evaluator kind, for example a groundedness Noul over query, response and context, via TypeSafe or OpenRouter.<br><sub>Also: <a href="https://github.com/AgentEvalHQ/AgentEval/blob/main/docs/adr/evidence/033-jev-first-calls-2026-09-20.md">evidence</a> · <a href="https://agenteval.dev/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision"><img src="https://opengraph.githubassets.com/1/vogler75/monster-mq" alt="MonsterMQ topic decisions" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision">MonsterMQ topic decisions</a></b><br><sub>vogler75 · GitHub · ⭐ 142 repo · 2024-08-03</sub><br>Industrial IoT MQTT broker that adds topic-triggered decisions: Jev via OpenRouter evaluates current and historical topic values and publishes the answer back to MQTT.<br><sub>Also: <a href="https://github.com/vogler75/monster-mq/blob/main/dev/plans/TOPIC_BASED_DECISION_MAKING.md">plan</a> · <a href="https://monstermq.com">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/theyashwanthsai/jevals"><img src="https://opengraph.githubassets.com/1/theyashwanthsai/jevals" alt="Jevals" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/theyashwanthsai/jevals">Jevals</a></b><br><sub>theyashwanthsai · GitHub · ⭐ 7 · 2026-09-18</sub><br>Research-preview eval framework that grades LLM and agent outputs, including full traces, against rules written in code, using Jev so each verdict carries a confidence; 32 answers cost about $0.0002.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py"><img src="https://opengraph.githubassets.com/1/AstroVela/vane" alt="Vane Jev judgments" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py">Vane Jev judgments</a></b><br><sub>AstroVela · GitHub · ⭐ 135 repo · 2026-07-16</sub><br>Multimodal data engine built on a DuckDB fork that adds Jev judgments over Vane expressions, batching rows through the async TypeSafe SDK.<br><sub>Also: <a href="https://github.com/AstroVela/vane/blob/main/examples/jev_judgments.py">example</a> · <a href="https://vane.astrovela.ai/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai"><img src="https://raw.githubusercontent.com/flyteorg/flyte-sdk/main/static/flyte-tui.gif" alt="Flyte System One example" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai">Flyte System One example</a></b><br><sub>flyteorg · GitHub · ⭐ 128 repo · 2025-07-29</sub><br>Alternates Jev and an LLM, splitting each task into 11 to 16 atomic questions and routing results to auto, review, or escalate.<br><sub>Also: <a href="https://flyte.org/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/collapseindex/dinostomp"><img src="https://raw.githubusercontent.com/collapseindex/dinostomp/main/data/exports/readme/20260915_120000_readme_pixel-dino_1200x360_s42.gif" alt="dinostomp" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/collapseindex/dinostomp">dinostomp</a></b><br><sub>collapseindex · GitHub · ⭐ 6 · 2026-08-09</sub><br>Local-first verification layer for AI evaluations that audits datasets, scorers, runs and claims; for Jev users it tests a question like an if-statement, reporting accuracy, the p(yes) cutoff and calibration.<br><sub>Also: <a href="https://collapseindex.org/">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/koladev32/status/2101660768458391816"><img src="https://pbs.twimg.com/amplify_video_thumb/2101653831247388672/img/ym11-1ZkJv7EL_ZP.jpg" alt="jev-classify" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/koladev32/status/2101660768458391816">jev-classify</a></b><br><sub>koladev32 · X · ♥ 6 · 2026-09-20</sub><br>Document classification and routing pipeline that pushes 39,700 documents through Jev in under 4 minutes for $1.43 at 96.38% accuracy, about 180 docs/sec aggregate and 485ms p95.<br><sub>Also: <a href="https://github.com/koladev32/jev-classify">repo</a> · <a href="https://github.com/koladev32/jev-classify">project</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/TrustifAI/typed_evals"><img src="https://external-preview.redd.it/24DpejsFjNHwV30AJ5IBmdofmgxNJlw0Mpz2QMkwpew.png?auto=webp&amp;s=3d0cfd96b6591ae30a6ec0aa2512309594e094cb" alt="typed_evals" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TrustifAI/typed_evals">typed_evals</a></b><br><sub>TrustifAI · GitHub · ⭐ 6 · 2026-09-20</sub><br>Python library and CLI that evaluates LLM responses, RAG datasets, and recorded agent runs with Jev as the judge, guards tools before they execute, and can calibrate metrics against human pass/fail labels.<br><sub>Also: <a href="https://www.reddit.com/r/LLMDevs/comments/1wlmeh6/opensource_typed_evals_ai_evaluation_powered_by/">discussion</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator"><img src="https://raw.githubusercontent.com/zenml-io/kitaru/develop/assets/kitaru_header.png" alt="Kitaru TypeSafe evaluator" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zenml-io/kitaru/tree/develop/plugins/packages/typesafe-evaluator">Kitaru TypeSafe evaluator</a></b><br><sub>zenml-io · GitHub · ⭐ 292 repo · 2026-03-05</sub><br>Opt-in evaluator package for a replay-based agent eval platform that judges recorded sessions with Jev, sending one request per session and storing one result per question.<br><sub>Also: <a href="https://kitaru.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/opaielsheikh/ai-elo-ranker"><img src="https://opengraph.githubassets.com/1/opaielsheikh/ai-elo-ranker" alt="AI Elo Ranker" width="240"></a></td>
@@ -274,6 +254,10 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <tr>
 <td width="260" valign="top"><a href="https://github.com/keltokhy/jlink"><img src="https://opengraph.githubassets.com/1/keltokhy/jlink" alt="jlink" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/keltokhy/jlink">jlink</a></b><br><sub>keltokhy · GitHub · ⭐ 4 · 2026-09-18</sub><br>Record-linkage tool for applied economists, in Python, CLI, Stata and R, where you write the match rule in plain English and Jev returns a probability per candidate pair; 146,119 pairs cost $2.49 in its benchmarks.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts"><img src="https://opengraph.githubassets.com/1/NiceEval/NiceEval" alt="NiceEval TypeSafe judge" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/NiceEval/NiceEval/blob/main/packages/niceeval/src/judge/provider.ts">NiceEval TypeSafe judge</a></b><br><sub>NiceEval · GitHub · ⭐ 153 repo · 2026-06-28</sub><br>Local-first agent eval tool that adds TypeSafe as an explicit judge provider, mapping Jev probabilities into weighted scores and batch classifications.<br><sub>Also: <a href="https://github.com/NiceEval/NiceEval/blob/main/docs/feature/judge/README.md">docs</a> · <a href="https://www.niceeval.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/smithclay/dbt_jev"><img src="https://raw.githubusercontent.com/smithclay/dbt_jev/main/demos/dbt_jev_x_demo.gif" alt="dbt_jev" width="240"></a></td>
@@ -316,8 +300,20 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/Query-farm/vgi-typesafe">vgi-typesafe</a></b><br><sub>Query-farm · GitHub · ⭐ 3 · 2026-09-18</sub><br>DuckDB worker, loaded through the VGI extension, that exposes Jev Choice, Noul and Score as SQL table functions you LATERAL join against a table, returning typed columns with confidence and probabilities.<br><sub>Also: <a href="https://query.farm/vgi/">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py"><img src="https://opengraph.githubassets.com/1/pinecone-io/cultivar" alt="cultivar TypeSafe grader" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py">cultivar TypeSafe grader</a></b><br><sub>pinecone-io · GitHub · ⭐ 40 repo · 2026-06-17</sub><br>Optional grading backend in Pinecone's agent-skill testing CLI that scores sandboxed agent runs against task criteria with Jev instead of Claude, reported as about 30x cheaper and aimed at CI gates.<br><sub>Also: <a href="https://github.com/pinecone-io/cultivar">repo</a> · <a href="https://github.com/pinecone-io/cultivar/blob/main/docs/grader.md">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions"><img src="https://raw.githubusercontent.com/AgentEvalHQ/AgentEval/main/assets/AgentEval_bounded.png" alt="AgentEval decision evals" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AgentEvalHQ/AgentEval/tree/main/src/AgentEval.Core/Decisions">AgentEval decision evals</a></b><br><sub>AgentEvalHQ · GitHub · ⭐ 146 repo · 2026-01-02</sub><br>Evaluation toolkit for .NET AI agents that adds Jev as a third evaluator kind, for example a groundedness Noul over query, response and context, via TypeSafe or OpenRouter.<br><sub>Also: <a href="https://github.com/AgentEvalHQ/AgentEval/blob/main/docs/adr/evidence/033-jev-first-calls-2026-09-20.md">evidence</a> · <a href="https://agenteval.dev/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision"><img src="https://opengraph.githubassets.com/1/vogler75/monster-mq" alt="MonsterMQ topic decisions" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vogler75/monster-mq/tree/main/broker/src/main/kotlin/genai/decision">MonsterMQ topic decisions</a></b><br><sub>vogler75 · GitHub · ⭐ 142 repo · 2024-08-03</sub><br>Industrial IoT MQTT broker that adds topic-triggered decisions: Jev via OpenRouter evaluates current and historical topic values and publishes the answer back to MQTT.<br><sub>Also: <a href="https://github.com/vogler75/monster-mq/blob/main/dev/plans/TOPIC_BASED_DECISION_MAKING.md">plan</a> · <a href="https://monstermq.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py"><img src="https://opengraph.githubassets.com/1/AstroVela/vane" alt="Vane Jev judgments" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AstroVela/vane/blob/main/vane/ai/_jev.py">Vane Jev judgments</a></b><br><sub>AstroVela · GitHub · ⭐ 135 repo · 2026-07-16</sub><br>Multimodal data engine built on a DuckDB fork that adds Jev judgments over Vane expressions, batching rows through the async TypeSafe SDK.<br><sub>Also: <a href="https://github.com/AstroVela/vane/blob/main/examples/jev_judgments.py">example</a> · <a href="https://vane.astrovela.ai/">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai"><img src="https://raw.githubusercontent.com/flyteorg/flyte-sdk/main/static/flyte-tui.gif" alt="Flyte System One example" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/flyteorg/flyte-sdk/tree/main/examples/typesafe_ai">Flyte System One example</a></b><br><sub>flyteorg · GitHub · ⭐ 128 repo · 2025-07-29</sub><br>Alternates Jev and an LLM, splitting each task into 11 to 16 atomic questions and routing results to auto, review, or escalate.<br><sub>Also: <a href="https://flyte.org/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Vicente-MD/jev-resilience"><img src="https://opengraph.githubassets.com/1/Vicente-MD/jev-resilience" alt="jev-resilience" width="240"></a></td>
@@ -338,34 +334,6 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <tr>
 <td width="260" valign="top"><a href="https://github.com/TPAteeq/tocsin"><img src="https://raw.githubusercontent.com/TPAteeq/tocsin/main/docs/card.png" alt="tocsin" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TPAteeq/tocsin">tocsin</a></b><br><sub>TPAteeq · GitHub · ⭐ 2 · 2026-09-18</sub><br>Rust log triage at ingest that masks and groups log lines into Drain patterns, asks Jev about each new pattern once, and routes lines to page, ticket or log under a plain-English policy.<br><sub><b>How it uses Jev:</b> One request per new pattern carries the paging policy and four questions, so a pattern repeated a million times is judged once.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md"><img src="https://opengraph.githubassets.com/1/cristianodabc/aludel" alt="Aludel Jev typed judges" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md">Aludel Jev typed judges</a></b><br><sub>cristianodabc · GitHub · ⭐ 38 repo · 2026-03-20</sub><br>Jev-backed typed_judge assertions in Aludel, a Phoenix-native LLM evaluation workbench for Elixir: generated outputs are judged by Jev and pass/fail and normalized scores come from the typed answer, with a seeded safety-boundary demo.<br><sub><b>How it uses Jev:</b> The standalone app uses the jev Hex client; Jev receives only bounded output and rendered input, never expected answers or metadata.</sub><br><sub>Also: <a href="https://github.com/cristianodabc/aludel">repo</a> · <a href="https://hexdocs.pm/aludel">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/inventur_es/status/2101059512048169306">jev-scraper-chrome-extension</a></b><br><sub>inventur_es · X · ▶ 94 · 2026-09-18</sub><br>Chrome extension that tries to turn web pages into JSON matching a schema using Jev; the author calls it an interesting experiment but ultimately a failure, too ambitious for a classifier.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py"><img src="https://github.com/user-attachments/assets/8ba6a64f-0819-47bd-9d58-af89ee3e7bad" alt="Overmind Jev decision judges" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py">Overmind Jev decision judges</a></b><br><sub>overmind-core · GitHub · ⭐ 30 repo · 2026-03-27</sub><br>Decision layer in Overmind, a platform that turns production agent traces into fine-tuned models, using Jev choices as eval judges (pass/fail/insufficient, claim supported/contradicted) and for semantic dataset checks.<br><sub><b>How it uses Jev:</b> Choice questions batched under token budgets with Redis capacity reservation and a 24 h cache; state is treated as untrusted evidence.</sub><br><sub>Also: <a href="https://github.com/overmind-core/overmind">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md"><img src="https://raw.githubusercontent.com/daviddrummond95/polar_llama/refs/heads/main/PolarLlama.webp" alt="Polar Llama TypeSafe support" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md">Polar Llama TypeSafe support</a></b><br><sub>pnthn-ai · GitHub · ⭐ 30 repo · 2024-05-03</sub><br>Native Rust TypeSafe layer in the Polars LLM plugin that answers Noul, Choice, and Score questions per row, or applies a Pydantic contract to every line of a document, as typed dataframe columns.<br><sub>Also: <a href="https://github.com/pnthn-ai/polar_llama">repo</a> · <a href="https://pnthn.ai/polar-llama/">site</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision"><img src="https://opengraph.githubassets.com/1/harness/harness-evals" alt="harness-evals decision metrics" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision">harness-evals decision metrics</a></b><br><sub>harness · GitHub · ⭐ 28 repo · 2026-04-20</sub><br>Optional decision extra for Harness's open-source eval framework for LLM agents that adds TypeSafe Choice, Score and Noul metrics behind a provider abstraction, alongside its correctness, groundedness and safety metrics.<br><sub>Also: <a href="https://github.com/harness/harness-evals">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs"><img src="https://opengraph.githubassets.com/1/asimov-platform/asimov-cli" alt="ASIMOV CLI Jev filter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs">ASIMOV CLI Jev filter</a></b><br><sub>asimov-platform · GitHub · ⭐ 27 repo · 2025-02-13</sub><br>Jev-backed semantic filter in the ASIMOV command-line interface for the ASIMOV OSINT and AI platform that streams input records through Jev and keeps only those a plain-language rubric describes.<br><sub><b>How it uses Jev:</b> One Noul per input line ('Does rubric describe inputs[i]?') in batched state, yielding records above a match threshold.</sub><br><sub>Also: <a href="https://github.com/asimov-platform/asimov-cli">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md"><img src="https://raw.githubusercontent.com/orq-ai/evaluatorq/main/docs/assets/evaluatorq-splash.svg" alt="evaluatorq classify judges" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md">evaluatorq classify judges</a></b><br><sub>orq-ai · GitHub · ⭐ 21 repo · 2026-06-19</sub><br>Classify judges in orq's evaluatorq Python eval framework that seat typesafe/jev-latest beside prompted LLM judges in an LLM-as-a-jury, answering yes/no, label, scale or pairwise questions through the Orq router's classify endpoint.<br><sub>Also: <a href="https://github.com/orq-ai/evaluatorq">repo</a> · <a href="https://orq-ai.github.io/evaluatorq/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zzz1YAO/DataJev"><img src="https://raw.githubusercontent.com/zzz1YAO/DataJev/main/assets/datajev-demo.png" alt="DataJev" width="240"></a></td>
@@ -410,6 +378,38 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <tr>
 <td width="260" valign="top"><a href="https://huggingface.co/spaces/iluvblender/yolo-jev-scene-filter"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/iluvblender/yolo-jev-scene-filter.png" alt="YOLO + Jev scene filter" width="240"></a></td>
 <td valign="top"><b><a href="https://huggingface.co/spaces/iluvblender/yolo-jev-scene-filter">YOLO + Jev scene filter</a></b><br><sub>iluvblender · App · ♥ 1 · 2026-09-20</sub><br>Vision pipeline where YOLO-World proposes open-vocabulary boxes and Jev answers a yes/no per box on whether to keep it, producing fewer, better-filtered detections.<br><sub><b>How it uses Jev:</b> One Noul per detected box via the TypeSafe /v1/systemone API.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py"><img src="https://opengraph.githubassets.com/1/pinecone-io/cultivar" alt="cultivar TypeSafe grader" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pinecone-io/cultivar/blob/main/evals/framework/typesafe_grader.py">cultivar TypeSafe grader</a></b><br><sub>pinecone-io · GitHub · ⭐ 40 repo · 2026-06-17</sub><br>Optional grading backend in Pinecone's agent-skill testing CLI that scores sandboxed agent runs against task criteria with Jev instead of Claude, reported as about 30x cheaper and aimed at CI gates.<br><sub>Also: <a href="https://github.com/pinecone-io/cultivar">repo</a> · <a href="https://github.com/pinecone-io/cultivar/blob/main/docs/grader.md">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md"><img src="https://opengraph.githubassets.com/1/cristianodabc/aludel" alt="Aludel Jev typed judges" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cristianodabc/aludel/blob/main/guides/evaluations.md">Aludel Jev typed judges</a></b><br><sub>cristianodabc · GitHub · ⭐ 38 repo · 2026-03-20</sub><br>Jev-backed typed_judge assertions in Aludel, a Phoenix-native LLM evaluation workbench for Elixir: generated outputs are judged by Jev and pass/fail and normalized scores come from the typed answer, with a seeded safety-boundary demo.<br><sub><b>How it uses Jev:</b> The standalone app uses the jev Hex client; Jev receives only bounded output and rendered input, never expected answers or metadata.</sub><br><sub>Also: <a href="https://github.com/cristianodabc/aludel">repo</a> · <a href="https://hexdocs.pm/aludel">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py"><img src="https://github.com/user-attachments/assets/8ba6a64f-0819-47bd-9d58-af89ee3e7bad" alt="Overmind Jev decision judges" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/overmind-core/overmind/blob/main/overbae/services/eval/decisions.py">Overmind Jev decision judges</a></b><br><sub>overmind-core · GitHub · ⭐ 30 repo · 2026-03-27</sub><br>Decision layer in Overmind, a platform that turns production agent traces into fine-tuned models, using Jev choices as eval judges (pass/fail/insufficient, claim supported/contradicted) and for semantic dataset checks.<br><sub><b>How it uses Jev:</b> Choice questions batched under token budgets with Redis capacity reservation and a 24 h cache; state is treated as untrusted evidence.</sub><br><sub>Also: <a href="https://github.com/overmind-core/overmind">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md"><img src="https://raw.githubusercontent.com/daviddrummond95/polar_llama/refs/heads/main/PolarLlama.webp" alt="Polar Llama TypeSafe support" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/pnthn-ai/polar_llama/blob/main/docs/TYPESAFE.md">Polar Llama TypeSafe support</a></b><br><sub>pnthn-ai · GitHub · ⭐ 30 repo · 2024-05-03</sub><br>Native Rust TypeSafe layer in the Polars LLM plugin that answers Noul, Choice, and Score questions per row, or applies a Pydantic contract to every line of a document, as typed dataframe columns.<br><sub>Also: <a href="https://github.com/pnthn-ai/polar_llama">repo</a> · <a href="https://pnthn.ai/polar-llama/">site</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision"><img src="https://opengraph.githubassets.com/1/harness/harness-evals" alt="harness-evals decision metrics" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/harness/harness-evals/tree/main/src/harness_evals/decision">harness-evals decision metrics</a></b><br><sub>harness · GitHub · ⭐ 28 repo · 2026-04-20</sub><br>Optional decision extra for Harness's open-source eval framework for LLM agents that adds TypeSafe Choice, Score and Noul metrics behind a provider abstraction, alongside its correctness, groundedness and safety metrics.<br><sub>Also: <a href="https://github.com/harness/harness-evals">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs"><img src="https://opengraph.githubassets.com/1/asimov-platform/asimov-cli" alt="ASIMOV CLI Jev filter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/asimov-platform/asimov-cli/blob/master/src/shared.rs">ASIMOV CLI Jev filter</a></b><br><sub>asimov-platform · GitHub · ⭐ 27 repo · 2025-02-13</sub><br>Jev-backed semantic filter in the ASIMOV command-line interface for the ASIMOV OSINT and AI platform that streams input records through Jev and keeps only those a plain-language rubric describes.<br><sub><b>How it uses Jev:</b> One Noul per input line ('Does rubric describe inputs[i]?') in batched state, yielding records above a match threshold.</sub><br><sub>Also: <a href="https://github.com/asimov-platform/asimov-cli">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/inventur_es/status/2101059512048169306">jev-scraper-chrome-extension</a></b><br><sub>inventur_es · X · ▶ 94 · 2026-09-18</sub><br>Chrome extension that tries to turn web pages into JSON matching a schema using Jev; the author calls it an interesting experiment but ultimately a failure, too ambitious for a classifier.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md"><img src="https://raw.githubusercontent.com/orq-ai/evaluatorq/main/docs/assets/evaluatorq-splash.svg" alt="evaluatorq classify judges" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/orq-ai/evaluatorq/blob/main/docs/classify-judges.md">evaluatorq classify judges</a></b><br><sub>orq-ai · GitHub · ⭐ 21 repo · 2026-06-19</sub><br>Classify judges in orq's evaluatorq Python eval framework that seat typesafe/jev-latest beside prompted LLM judges in an LLM-as-a-jury, answering yes/no, label, scale or pairwise questions through the Orq router's classify endpoint.<br><sub>Also: <a href="https://github.com/orq-ai/evaluatorq">repo</a> · <a href="https://orq-ai.github.io/evaluatorq/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/valzav/valcraft/blob/main/scripts/jev-grade.py"><img src="https://raw.githubusercontent.com/valzav/valcraft/main/docs/assets/valcraft-banner.png" alt="Valcraft Jev grader" width="240"></a></td>

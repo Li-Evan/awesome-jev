@@ -18,10 +18,6 @@
 <td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2101037514945597645">把 Jev 讲清楚</a></b><br><sub>akshay_pachaar · 文章 · ♥ 5k · 2026-09-18</sub><br>一篇 X 长文，把 Jev 解释为毫秒级决策层：类型化问题如何取代“生成、解析、重试”式的 LLM 调用，以及它在应用中如何与 LLM 并列。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/0xSuman/status/2100030221189874015"><img src="https://pbs.twimg.com/media/HSTOW1GagAA0xlK.jpg?name=orig" alt="用 Jev 生成文本" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xSuman/status/2100030221189874015">用 Jev 生成文本</a></b><br><sub>0xSuman · X · ♥ 4.2k · 2026-09-16</sub><br>一个 hack：每个字符位置问一个 Choice 问题（带 STOP 选项），读出概率最高的字母，让 Jev 写出文本。<br><sub><b>Jev 用法:</b> 每个字符一个 Choice，选项为字母表加 STOP。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/NathanFlurry/status/2100036101809619314">把 Jev 当作聪明的 switch 语句</a></b><br><sub>NathanFlurry · X · ♥ 7.5k · 2026-09-16</sub><br>不吹不黑的讲解，认为 Jev 就是一个非常聪明的 switch 语句：它能在预定义选项上做分类、路由、打分和核验，但写不了代码或文字。</td>
 </tr>
@@ -30,12 +26,16 @@
 <td valign="top"><b><a href="https://x.com/k_grajeda/status/2099952715430596710">LLM 与 Jev 判断提示词难度的对比</a></b><br><sub>k_grajeda · X · ♥ 5.7k · 2026-09-15</sub><br>简化的并排对比，展示 LLM 和 Jev 如何给一个提示词的难度分类：一个逐 token 生成文本，一个并行算出每个选项的概率。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/theo/status/2100762304862384257"><img src="https://pbs.twimg.com/amplify_video_thumb/2100694537672998912/img/OF8vottg6-45ZgNl.jpg" alt="对 Jev 上下文压缩的批评" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/theo/status/2100762304862384257">对 Jev 上下文压缩的批评</a></b><br><sub>theo · X · ♥ 2.6k · 2026-09-18</sub><br>批评观点：用 Jev 按工具调用逐条过滤并不是好的上下文压缩策略，因为压缩应当重建历史，而模型并不掌握之前发生过什么的上下文。<br><sub>相关: <a href="https://github.com/tamaratran/fast-jev-compaction">related</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/0xSuman/status/2100030221189874015"><img src="https://pbs.twimg.com/media/HSTOW1GagAA0xlK.jpg?name=orig" alt="用 Jev 生成文本" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/0xSuman/status/2100030221189874015">用 Jev 生成文本</a></b><br><sub>0xSuman · X · ♥ 4.2k · 2026-09-16</sub><br>一个 hack：每个字符位置问一个 Choice 问题（带 STOP 选项），读出概率最高的字母，让 Jev 写出文本。<br><sub><b>Jev 用法:</b> 每个字符一个 Choice，选项为字母表加 STOP。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/servasyy_ai/status/2101132667056185544"><img src="https://pbs.twimg.com/media/HSi3JD0bcAEhil0.jpg" alt="Jev 到底能做什么" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/servasyy_ai/status/2101132667056185544">Jev 到底能做什么</a></b><br><sub>servasyy_ai · 文章 · ♥ 779 · 2026-09-19</sub><br>中文的 Jev 现实检验：解释它是什么、不是什么，按用例整理真正能跑通的演示，并列出速度和准确率宣称背后的注意事项。</td>
+<td width="260" valign="top"><a href="https://x.com/NielsRogge/status/2100239244501430438"><img src="https://pbs.twimg.com/media/HSWLYi3WcAAOPBs.jpg?name=orig" alt="Jev 式解码的工作原理" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/NielsRogge/status/2100239244501430438">Jev 式解码的工作原理</a></b><br><sub>NielsRogge · X · ♥ 3.8k · 2026-09-16</sub><br>基于开源 Qwen2.5-RLCD 模型的图解：从一次带缓存的解码器前向传播中读出各字段的概率，而不是逐 token 生成 JSON。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/theo/status/2100762304862384257"><img src="https://pbs.twimg.com/amplify_video_thumb/2100694537672998912/img/OF8vottg6-45ZgNl.jpg" alt="对 Jev 上下文压缩的批评" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/theo/status/2100762304862384257">对 Jev 上下文压缩的批评</a></b><br><sub>theo · X · ♥ 2.6k · 2026-09-18</sub><br>批评观点：用 Jev 按工具调用逐条过滤并不是好的上下文压缩策略，因为压缩应当重建历史，而模型并不掌握之前发生过什么的上下文。<br><sub>相关: <a href="https://github.com/tamaratran/fast-jev-compaction">related</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -46,16 +46,16 @@
 <td valign="top"><b><a href="https://x.com/akshay_pachaar/status/2101309986156712025">把 LLM 与 Jev 的区别讲清楚</a></b><br><sub>akshay_pachaar · X · ♥ 2.9k · 2026-09-19</sub><br>解释 Jev 并不是生成得更快，而是根本不生成：相互独立的 Choice、Score 和 Noul 问题（比如一次失败部署的紧急程度、负责团队和命令风险）会被并行评估。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/NielsRogge/status/2100239244501430438"><img src="https://pbs.twimg.com/media/HSWLYi3WcAAOPBs.jpg?name=orig" alt="Jev 式解码的工作原理" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/NielsRogge/status/2100239244501430438">Jev 式解码的工作原理</a></b><br><sub>NielsRogge · X · ♥ 3.8k · 2026-09-16</sub><br>基于开源 Qwen2.5-RLCD 模型的图解：从一次带缓存的解码器前向传播中读出各字段的概率，而不是逐 token 生成 JSON。</td>
+<td width="260" valign="top"><a href="https://x.com/servasyy_ai/status/2101132667056185544"><img src="https://pbs.twimg.com/media/HSi3JD0bcAEhil0.jpg" alt="Jev 到底能做什么" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/servasyy_ai/status/2101132667056185544">Jev 到底能做什么</a></b><br><sub>servasyy_ai · 文章 · ♥ 779 · 2026-09-19</sub><br>中文的 Jev 现实检验：解释它是什么、不是什么，按用例整理真正能跑通的演示，并列出速度和准确率宣称背后的注意事项。</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/paarangatrai/status/2100113737097367896">LLM 负责生成，Jev 负责决策</a></b><br><sub>paarangatrai · X · ♥ 2.3k · 2026-09-16</sub><br>用一个高风险账户的例子讲解：不再提示 LLM 给出结论，而是预先声明风险等级和人工复核标记，拿回的是 risk = high（96%）这样的概率。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816"><img src="https://cdn.image.st-hatena.com/image/scale/5ed4f6e73205d082af7a8a0518536c4ad98d0eb3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyuu2634%2F20260918%2F20260918191032.png" alt="LayerX 内部 Jev 学习会" width="240"></a></td>
-<td valign="top"><b><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816">LayerX 内部 Jev 学习会</a></b><br><sub>LayerX (pon) · 文章 · ♥ 959 · 2026-09-18</sub><br>日文记录：LayerX 内部一场 30 分钟的 Jev 学习会，吸引了 50 多名工程师参加，产出了 50 多个把它融入自家产品的点子。<br><sub>相关: <a href="https://x.com/hatebu100/status/2101094920778129466">x</a> · <a href="https://x.com/LayerX_tech/status/2100887864594895154">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/gregisenberg/status/2101018750916948237"><img src="https://pbs.twimg.com/amplify_video_thumb/2101018301409202176/img/HP2Ycx2G3KjqvxJw.jpg" alt="Jev 能催生的生意" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/gregisenberg/status/2101018750916948237">Jev 能催生的生意</a></b><br><sub>gregisenberg · X · ♥ 1.5k · 2026-09-18</sub><br>用大白话把 Jev 解释为分拣器（18 美分处理 1,700 封邮件），并给出一些创业点子：把它放在昂贵队列的最前端，比如即时报价和线索打分。<br><sub>相关: <a href="https://www.youtube.com/watch?v=4mTLpuQpB80">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -66,24 +66,20 @@
 <td valign="top"><b><a href="https://x.com/0xMovez/status/2102049863449858053">Jev Harness 蓝图摘要</a></b><br><sub>0xMovez · X · ♥ 1.3k · 2026-09-21</sub><br>帖子串，总结 TypeSafe 一份 12 页的 PDF，内容是面向编程 agent 的 Jev harness，例如 Opus→Sonnet→Opus 交接的成本为 6.19，纯 Opus 为 4.15，读取和搜索占了 56.2% 的工具轮次。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816"><img src="https://cdn.image.st-hatena.com/image/scale/5ed4f6e73205d082af7a8a0518536c4ad98d0eb3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyuu2634%2F20260918%2F20260918191032.png" alt="LayerX 内部 Jev 学习会" width="240"></a></td>
+<td valign="top"><b><a href="https://tech.layerx.co.jp/entry/2026/09/18/185816">LayerX 内部 Jev 学习会</a></b><br><sub>LayerX (pon) · 文章 · ♥ 959 · 2026-09-18</sub><br>日文记录：LayerX 内部一场 30 分钟的 Jev 学习会，吸引了 50 多名工程师参加，产出了 50 多个把它融入自家产品的点子。<br><sub>相关: <a href="https://x.com/hatebu100/status/2101094920778129466">x</a> · <a href="https://x.com/LayerX_tech/status/2100887864594895154">demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/ryanvogel/status/2100218045549412499"><img src="https://pbs.twimg.com/amplify_video_thumb/2100217973000617984/img/AFareJummI08B_QB.jpg" alt="用分类器造一个 LLM" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ryanvogel/status/2100218045549412499">用分类器造一个 LLM</a></b><br><sub>ryanvogel · X · ♥ 889 · 2026-09-16</sub><br>用 Jev 搭出一个自回归文本生成器：每个字符问 29 个是非题来选出下一个键（a-z、空格、逗号、句号），再把文本回灌进去循环往复。<br><sub><b>Jev 用法:</b> 每个字符问 29 个 Noul 问题，追加概率最高的那个键。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/gregisenberg/status/2101018750916948237"><img src="https://pbs.twimg.com/amplify_video_thumb/2101018301409202176/img/HP2Ycx2G3KjqvxJw.jpg" alt="Jev 能催生的生意" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/gregisenberg/status/2101018750916948237">Jev 能催生的生意</a></b><br><sub>gregisenberg · X · ♥ 1.5k · 2026-09-18</sub><br>用大白话把 Jev 解释为分拣器（18 美分处理 1,700 封邮件），并给出一些创业点子：把它放在昂贵队列的最前端，比如即时报价和线索打分。<br><sub>相关: <a href="https://www.youtube.com/watch?v=4mTLpuQpB80">video</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/mvanhorn/status/2100788572316139655"><img src="https://pbs.twimg.com/media/HSdxN5LbUAAMq_w.png" alt="Jev 究竟是什么鬼" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mvanhorn/status/2100788572316139655">Jev 究竟是什么鬼</a></b><br><sub>mvanhorn · X · ♥ 418 · 2026-09-18</sub><br>讲解文章，把 Jev 定位为做选择题而不是写作文的 AI，并整理了开发者在头 72 小时里用它搭出的九种模式。<br><sub>相关: <a href="https://x.com/i/article/2100772231462961152">article</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/omarsar0/status/2100693601021997193"><img src="https://pbs.twimg.com/media/HScpisJbEAAMxZb.jpg?name=orig" alt="值得用 Jev 试试的事" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/omarsar0/status/2100693601021997193">值得用 Jev 试试的事</a></b><br><sub>omarsar0 · X · ♥ 679 · 2026-09-17</sub><br>实践者列出的 Jev 潜力用法：LLM 评判式评测、agent harness 中的路由、创建子 agent 和动态生成 harness，作者自己把它用作一个元 harness 的路由器。</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/da_fant/status/2100659471257366766">Jev 如何让 agent 更便宜</a></b><br><sub>da_fant · X · ♥ 634 · 2026-09-17</sub><br>帖子串，列出 Jev 能给 agent 提速的地方：从模型路由、电脑操控（computer use）和动作安全审查，到判断每个事件应当唤醒昂贵的编排器、交给子 agent 还是排进队列。</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/jiayuan_jy/status/2100876273061102006">用了一天 Jev 后的质疑笔记</a></b><br><sub>jiayuan_jy · X · ♥ 339 · 2026-09-18</sub><br>一天测试后的中文笔记：Jev 更像一个更快的通用分类器，适合 DOM 操作或上下文压缩这类有边界、低延迟的选择，但替代不了带参数的 agent 工具调用。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/anderslie/status/2100388704644919662"><img src="https://pbs.twimg.com/amplify_video_thumb/2100384704868601856/img/TSBG-jeFfuLlRSOS.jpg" alt="在开源权重模型上实现类 Jev API" width="240"></a></td>
@@ -94,40 +90,44 @@
 <td valign="top"><b><a href="https://x.com/trycua/status/2101437979180904640">Jev 与电脑操控的未来</a></b><br><sub>trycua · 文章 · ♥ 559 · 2026-09-19</sub><br>Cua 的深度文章，分析电脑操控（computer use）agent 内部哪些决策真正需要通用 LLM，并把屏幕转成打好分的候选动作，交给 Jev 以及他们自己的 CUA-S1-FORMS 这类纯文本决策模型。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Bewinxed/status/2100519569307640097"><img src="https://pbs.twimg.com/amplify_video_thumb/2100519508943228928/img/Vl5XWMF9MjLBasxD.jpg" alt="让 Jev 生成文本" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Bewinxed/status/2100519569307640097">让 Jev 生成文本</a></b><br><sub>Bewinxed · X · ♥ 320 · 2026-09-17</sub><br>一个 hack：让本不具备生成能力的 Jev 产出文本，花 $0.5 最多能写出 20 个词。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/JoshARosen/status/2101645894818857272"><img src="https://pbs.twimg.com/media/HSqLJdJWoAA4aNR.jpg" alt="Jev 项目实地观察" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/JoshARosen/status/2101645894818857272">Jev 项目实地观察</a></b><br><sub>JoshARosen · 文章 · ♥ 182 · 2026-09-20</sub><br>梳理 Jev 项目中早期出现的架构模式，比如模型、skill 和工具路由、监督者和安全层，它们都是在其余部分相当常规的软件里，于某一个决策点插入 Jev。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/annabellschfr/status/2100962787094597807"><img src="https://pbs.twimg.com/media/HSgRvklXgAA33Rx.jpg" alt="偏科天才 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/annabellschfr/status/2100962787094597807">偏科天才 Jev</a></b><br><sub>annabellschfr · 文章 · ♥ 64 · 2026-09-18</sub><br>讲解 Jev 在流水线和评测 harness 中的位置，逐一介绍 Choice、Score 和 Noul，并给出一个完整示例：在一次请求里对一次已完成的 agent 运行提出三个判断。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/omarsar0/status/2100693601021997193"><img src="https://pbs.twimg.com/media/HScpisJbEAAMxZb.jpg?name=orig" alt="值得用 Jev 试试的事" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/omarsar0/status/2100693601021997193">值得用 Jev 试试的事</a></b><br><sub>omarsar0 · X · ♥ 679 · 2026-09-17</sub><br>实践者列出的 Jev 潜力用法：LLM 评判式评测、agent harness 中的路由、创建子 agent 和动态生成 harness，作者自己把它用作一个元 harness 的路由器。</td>
+<td width="260" valign="top"><a href="https://x.com/mvanhorn/status/2100788572316139655"><img src="https://pbs.twimg.com/media/HSdxN5LbUAAMq_w.png" alt="Jev 究竟是什么鬼" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mvanhorn/status/2100788572316139655">Jev 究竟是什么鬼</a></b><br><sub>mvanhorn · X · ♥ 418 · 2026-09-18</sub><br>讲解文章，把 Jev 定位为做选择题而不是写作文的 AI，并整理了开发者在头 72 小时里用它搭出的九种模式。<br><sub>相关: <a href="https://x.com/i/article/2100772231462961152">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://archerhume.com/posts/jevs-architecture-unmasked/"><img src="https://archerhume.com/og-image/jevs-architecture-unmasked.png" alt="揭开 Jev 的架构" width="240"></a></td>
 <td valign="top"><b><a href="https://archerhume.com/posts/jevs-architecture-unmasked/">揭开 Jev 的架构</a></b><br><sub>Archer Hume · 文章 · ♥ 437 · 2026-09-17</sub><br>架构拆解：用 10,000 次 API 调用探测 Jev，推断它的构造，从共享 state 加相互隔离的问题分支，到选项之间的相互作用和置信度读出。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49766351">discussion</a> · <a href="https://x.com/iwashi86/status/2100713337436930288">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/jiayuan_jy/status/2100876273061102006">用了一天 Jev 后的质疑笔记</a></b><br><sub>jiayuan_jy · X · ♥ 339 · 2026-09-18</sub><br>一天测试后的中文笔记：Jev 更像一个更快的通用分类器，适合 DOM 操作或上下文压缩这类有边界、低延迟的选择，但替代不了带参数的 agent 工具调用。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/Bewinxed/status/2100519569307640097"><img src="https://pbs.twimg.com/amplify_video_thumb/2100519508943228928/img/Vl5XWMF9MjLBasxD.jpg" alt="让 Jev 生成文本" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Bewinxed/status/2100519569307640097">让 Jev 生成文本</a></b><br><sub>Bewinxed · X · ♥ 320 · 2026-09-17</sub><br>一个 hack：让本不具备生成能力的 Jev 产出文本，花 $0.5 最多能写出 20 个词。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/Sumanth_077/status/2101639788961112279"><img src="https://pbs.twimg.com/media/HSqGNyCacAAhUYd.jpg" alt="把 Jev 讲清楚" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/Sumanth_077/status/2101639788961112279">把 Jev 讲清楚</a></b><br><sub>Sumanth_077 · 文章 · ♥ 324 · 2026-09-20</sub><br>讲解 agent 一次运行中的许多小决策（模型选择、高风险工具调用、循环、是否完成），以及 Jev 如何用类型化概率而非生成文本来回答它们。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/JoshARosen/status/2101645894818857272"><img src="https://pbs.twimg.com/media/HSqLJdJWoAA4aNR.jpg" alt="Jev 项目实地观察" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/JoshARosen/status/2101645894818857272">Jev 项目实地观察</a></b><br><sub>JoshARosen · 文章 · ♥ 182 · 2026-09-20</sub><br>梳理 Jev 项目中早期出现的架构模式，比如模型、skill 和工具路由、监督者和安全层，它们都是在其余部分相当常规的软件里，于某一个决策点插入 Jev。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/aparnadhinak/status/2100979688072224957"><img src="https://pbs.twimg.com/media/HSgtobXaEAAaDhD.jpg" alt="TypeSafe 的 Jev 会改变我们构建 AI 应用的方式吗？" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/aparnadhinak/status/2100979688072224957">TypeSafe 的 Jev 会改变我们构建 AI 应用的方式吗？</a></b><br><sub>aparnadhinak · 文章 · ♥ 197 · 2026-09-18</sub><br>Arize AI 的分析，讲一个只做决策的模型能带来什么、要付出什么代价，重点关注 LLM 评判式评测以及它所隐含的架构选择。</td>
 </tr>
 <tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/DalinHuang/status/2101839381589884965">Jev 在生产中哪里划算</a></b><br><sub>DalinHuang · X · ♥ 27 · 2026-09-21</sub><br>中文一线笔记：把 Gemini Flash 或 GPT Luna 做的判断换成 Jev 后，成本降了 20 到 60 倍，延迟降了一个数量级，做法是把置信度低于 80% 的答案升级给小型生成模型。</td>
+<td width="260" valign="top"><a href="https://x.com/annabellschfr/status/2100962787094597807"><img src="https://pbs.twimg.com/media/HSgRvklXgAA33Rx.jpg" alt="偏科天才 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/annabellschfr/status/2100962787094597807">偏科天才 Jev</a></b><br><sub>annabellschfr · 文章 · ♥ 64 · 2026-09-18</sub><br>讲解 Jev 在流水线和评测 harness 中的位置，逐一介绍 Choice、Score 和 Noul，并给出一个完整示例：在一次请求里对一次已完成的 agent 运行提出三个判断。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/Kedr_bit/status/2102132700119191832"><img src="https://pbs.twimg.com/media/HSxGi5rWgAAbZhF.jpg?name=orig" alt="让 Jev 开口说话" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/Kedr_bit/status/2102132700119191832">让 Jev 开口说话</a></b><br><sub>Kedr_bit · X · ♥ 151 · 2026-09-21</sub><br>聊天实验，诱导 Jev 用文字回复，产出简短、混乱但挺好玩的对话。</td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/DalinHuang/status/2101839381589884965">Jev 在生产中哪里划算</a></b><br><sub>DalinHuang · X · ♥ 27 · 2026-09-21</sub><br>中文一线笔记：把 Gemini Flash 或 GPT Luna 做的判断换成 Jev 后，成本降了 20 到 60 倍，延迟降了一个数量级，做法是把置信度低于 80% 的答案升级给小型生成模型。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wkd1dz/digitlogitsbased_classifier_with_llamacpp/"><img src="https://external-preview.redd.it/WB3qVqzuW2bIGtkMVrOZ0TihcSnHaV-pareGCkJDiXs.png?auto=webp&amp;s=19b1cd738d385b0222b357df4dc720a2fdb24a88" alt="用 llama.cpp 做数字 logits 分类器" width="240"></a></td>
@@ -166,10 +166,6 @@
 <td valign="top"><b><a href="https://rajveerbachkaniwala.com/blog/2026/09/19/jev-is-to-tool-use-what-rag-is-to-context/">Jev 之于工具使用，正如 RAG 之于上下文</a></b><br><sub>Rajveer Bachkaniwala · 文章 · ▲ 4 · 2026-09-19</sub><br>短文，把 Jev 看作 RAG 的镜像：开发者预先固定的是模型可以选哪些选项（包括工具），而不是模型读取哪些上下文。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49770295">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact"><img src="https://opengraph.githubassets.com/1/Siddhant-K-code/distill" alt="上下文是一种构建产物" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact">上下文是一种构建产物</a></b><br><sub>Siddhant-K-code · GitHub · ⭐ 180 仓库 · 2025-12-31</sub><br>一份预注册的研究设计，附离线试点 harness 和 TypeSafe 适配器，检验字节级稳定的上下文编译能否提升 Jev 决策的一致性、校准和成本表现。<br><sub>相关: <a href="https://github.com/Siddhant-K-code/distill">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://inlevel9.com/en/issues/jev-judgment-not-writing"><img src="https://inlevel9.com/api/og/en/jev-judgment-not-writing?v=6-inlevel9-5" alt="Jev 一行字都写不了，但 13% 的付费团队在用它" width="240"></a></td>
 <td valign="top"><b><a href="https://inlevel9.com/en/issues/jev-judgment-not-writing">Jev 一行字都写不了，但 13% 的付费团队在用它</a></b><br><sub>Oswarld (Kwangseob Ahn) · 文章 · ▲ 3 · 2026-09-21</sub><br>一期 newsletter 随笔，谈为“判断”而非文本定价揭示了 Jev 的什么，以及作者为什么要做一个只干五件事的模型。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49784782">discussion</a></sub></td>
 </tr>
@@ -206,16 +202,16 @@
 <td valign="top"><b><a href="https://patmcguinness.substack.com/p/jev-makes-fast-and-cheap-decisions">Jev 做出又快又便宜的决策</a></b><br><sub>Patrick McGuinness · 文章 · ♥ 6 · 2026-09-18</sub><br>newsletter 分析，把 Jev 定位为分类器式的生产模型而非通用模型，介绍其设计以及早期社区作品，比如自动驾驶模拟器和开源复刻。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md"><img src="https://raw.githubusercontent.com/cookiespiggy/agentic-rl/main/assets/25-01-playground-overview.png" alt="有了 Jev 之后何时不该用 RL" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md">有了 Jev 之后何时不该用 RL</a></b><br><sub>cookiespiggy · GitHub · ⭐ 107 仓库 · 2026-06-03</sub><br>一份中文 agentic RL 教程中的一章，认为判别类任务可以外包给 Jev，而策略类任务仍然需要 RL，并用梯度扫描测量它的分辨率。<br><sub>相关: <a href="https://github.com/cookiespiggy/agentic-rl">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/y0usaf/jev-lm"><img src="https://opengraph.githubassets.com/1/y0usaf/jev-lm" alt="jev-lm" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/y0usaf/jev-lm">jev-lm</a></b><br><sub>y0usaf · GitHub · ⭐ 5 · 2026-09-16</sub><br>以 Jev 作为输出层的词级语言模型，配有 n-gram 起草器和 Noul 分块校验；在留出文本上，Jev 的得分为 6.92 bits/token，unigram 表为 6.18。<br><sub><b>Jev 用法:</b> 每次往返问一个 229 个选项的下一个词 Choice，外加一个判断是否结束的 Noul，中位耗时约 0.25 秒。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://x.com/sermakarevich/status/2101374291640213785">state 语气敏感性测试</a></b><br><sub>sermakarevich · X · ♥ 4 · 2026-09-19</sub><br>展示 Jev 的答案严重依赖 state 的语气：同一个关于 Python 类型注解的问题，在 state 写明团队不喜欢类型注解后，置信度从 0.97 降到了 0.07。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/y0usaf/jev-lm"><img src="https://opengraph.githubassets.com/1/y0usaf/jev-lm" alt="jev-lm" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/y0usaf/jev-lm">jev-lm</a></b><br><sub>y0usaf · GitHub · ⭐ 5 · 2026-09-16</sub><br>以 Jev 作为输出层的词级语言模型，配有 n-gram 起草器和 Noul 分块校验；在留出文本上，Jev 的得分为 6.92 bits/token，unigram 表为 6.18。<br><sub><b>Jev 用法:</b> 每次往返问一个 229 个选项的下一个词 Choice，外加一个判断是否结束的 Noul，中位耗时约 0.25 秒。</sub></td>
+<td width="260" valign="top"><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact"><img src="https://opengraph.githubassets.com/1/Siddhant-K-code/distill" alt="上下文是一种构建产物" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Siddhant-K-code/distill/tree/main/research/context-is-a-build-artifact">上下文是一种构建产物</a></b><br><sub>Siddhant-K-code · GitHub · ⭐ 180 仓库 · 2025-12-31</sub><br>一份预注册的研究设计，附离线试点 harness 和 TypeSafe 适配器，检验字节级稳定的上下文编译能否提升 Jev 决策的一致性、校准和成本表现。<br><sub>相关: <a href="https://github.com/Siddhant-K-code/distill">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://stacktoheap.com/blog/2026/09/21/the-state-machine-is-the-agent/"><img src="https://stacktoheap.com/images/jev-state-machine-hero.png" alt="让 Jev 只管岔路口" width="240"></a></td>
@@ -224,6 +220,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/adhyaay-karnwal/jev-chat"><img src="https://opengraph.githubassets.com/1/adhyaay-karnwal/jev-chat" alt="jev-chat" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/adhyaay-karnwal/jev-chat">jev-chat</a></b><br><sub>adhyaay-karnwal · GitHub · ⭐ 3 · 2026-09-17</sub><br>一个研究性解码器，在由短语和词构成的分层码本上用 Jev 的 Choice 搭出聊天机器人，并附一篇论文比较逐步解码与直接选择完整回复。<br><sub><b>Jev 用法:</b> 推测式扇出在同一个 state 里同时询问下一个单元和假设的后续单元；朴素的自回归会陷入循环，而整句选择能保持语法通顺。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md"><img src="https://raw.githubusercontent.com/cookiespiggy/agentic-rl/main/assets/25-01-playground-overview.png" alt="有了 Jev 之后何时不该用 RL" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cookiespiggy/agentic-rl/blob/main/25-%E5%88%A4%E5%88%AB%E8%83%BD%E5%8A%9B%E5%A4%96%E7%BD%AE-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8D%E8%AF%A5%E7%94%A8RL.md">有了 Jev 之后何时不该用 RL</a></b><br><sub>cookiespiggy · GitHub · ⭐ 107 仓库 · 2026-06-03</sub><br>一份中文 agentic RL 教程中的一章，认为判别类任务可以外包给 Jev，而策略类任务仍然需要 RL，并用梯度扫描测量它的分辨率。<br><sub>相关: <a href="https://github.com/cookiespiggy/agentic-rl">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -246,16 +246,16 @@
 <td valign="top"><b><a href="https://x.com/ranjankumar/status/2101953564834934999">Jev 在 agent harness 中的位置</a></b><br><sub>ranjankumar · X · ▶ 47 · 2026-09-21</sub><br>认为 Jev 给出的排序可信，但置信度数值不可信，因此路由和排序可以直接使用它，而像批准转账这样的阈值关卡需要先做校准。<br><sub>相关: <a href="https://ranjankumar.in/jev-system-one-model-agent-harness-placement">article</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/0xthe0/status/2102213100174741995"><img src="https://pbs.twimg.com/media/HSrq8uWXoAAQ7FF.jpg" alt="Jev 剪枝不是记忆" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xthe0/status/2102213100174741995">Jev 剪枝不是记忆</a></b><br><sub>0xthe0 · X · ▶ 24 · 2026-09-22</sub><br>批评基于 Jev 为 Claude Code 做上下文压缩：在一秒内把 1M token 的会话剪到 86K，本质是打分再删除，一次回放就删掉了 16 个后来还要用到的片段。<br><sub>相关: <a href="https://x.com/0xthe0/status/2101751238509400153">article</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/ZataZhang/ZataTree/tree/hugo/content/post/DeepLearning/models_and_strategies/Jev：不写字的决策模型，和它真正适合解决的问题"><img src="https://opengraph.githubassets.com/1/ZataZhang/ZataTree" alt="Jev：不写字的决策模型" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ZataZhang/ZataTree/tree/hugo/content/post/DeepLearning/models_and_strategies/Jev：不写字的决策模型，和它真正适合解决的问题">Jev：不写字的决策模型</a></b><br><sub>ZataZhang · 文章 · ⭐ 8 仓库 · 2026-09-20</sub><br>个人知识博客上的中文长文，讲解 Jev 和 System One 这两个名字的由来、它的类型化输出与 LLM 生成有何不同，以及它真正适合解决哪些问题。<br><sub>相关: <a href="https://github.com/ZataZhang/ZataTree">repo</a> · <a href="https://www.zata.cc/">site</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/shimo4228/contemplative-agent/blob/main/rfcs/0040-jev-system-one-local-decision-backend.md"><img src="https://opengraph.githubassets.com/1/shimo4228/contemplative-agent" alt="把 Jev 作为本地决策后端（RFC）" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/shimo4228/contemplative-agent/blob/main/rfcs/0040-jev-system-one-local-decision-backend.md">把 Jev 作为本地决策后端（RFC）</a></b><br><sub>shimo4228 · GitHub · ⭐ 6 仓库 · 2026-03-08</sub><br>Contemplative Agent 项目中的一份 RFC 和由使用者自行运行的评测分支，讨论把只做判断的 LLM 调用迁移到 Jev 或本地的类 Jev 模型上；按照 TypeSafe 的客户协议，Jev 的评测数据不放进公开代码树。<br><sub>相关: <a href="https://github.com/shimo4228/contemplative-agent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/0xthe0/status/2102213100174741995"><img src="https://pbs.twimg.com/media/HSrq8uWXoAAQ7FF.jpg" alt="Jev 剪枝不是记忆" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/0xthe0/status/2102213100174741995">Jev 剪枝不是记忆</a></b><br><sub>0xthe0 · X · ▶ 24 · 2026-09-22</sub><br>批评基于 Jev 为 Claude Code 做上下文压缩：在一秒内把 1M token 的会话剪到 86K，本质是打分再删除，一次回放就删掉了 16 个后来还要用到的片段。<br><sub>相关: <a href="https://x.com/0xthe0/status/2101751238509400153">article</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>

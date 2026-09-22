@@ -10,6 +10,7 @@ Usage:
 """
 
 import html
+import json
 import re
 import unicodedata
 import sys
@@ -21,6 +22,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 REPO_URL = "https://github.com/Li-Evan/awesome-jev"
+SITE_URL = "https://li-evan.github.io/awesome-jev/"
 FEATURED = 6
 COLUMNS = 3
 LIST_TEASER = 10
@@ -56,6 +58,7 @@ KINDS_ZH = {"repo": "GitHub", "app": "应用", "post": "X", "reddit": "Reddit", 
 T = {
     "en": {
         "switch": "**English** · [简体中文]({other})",
+        "site": "🌐 **[Browse the searchable gallery →]({url})** Search, filter by scenario, and share results, in English or Chinese.",
         "contents": "Contents", "browse": "Browse by Scenario", "contributing": "Contributing", "footnotes": "Footnotes",
         "browse_intro": "Highlights are ranked by community traction (stars, likes, points, and views). Open a scenario for its full gallery.",
         "browse_all": "Browse all {n} in {title} →", "see_all": "See all {n} {title} →", "also": "Also", "how": "How it uses Jev",
@@ -65,6 +68,7 @@ T = {
     },
     "zh": {
         "switch": "[English]({other}) · **简体中文**",
+        "site": "🌐 **[打开可搜索的在线画廊 →]({url})** 支持搜索、按场景筛选和分享结果，中英文随时切换。",
         "contents": "目录", "browse": "按场景浏览", "contributing": "参与贡献", "footnotes": "附注",
         "browse_intro": "精选按社区热度排序（star、点赞、得分和播放量）。点开场景查看完整画廊。",
         "browse_all": "查看{title}全部 {n} 条 →", "see_all": "查看全部 {n} 条{title} →", "also": "相关", "how": "Jev 用法",
@@ -89,6 +93,11 @@ def load():
                 fail(f"missing {path.name}")
             sec = yaml.safe_load(path.read_text())
             sec["slug"], sec["group"] = slug, group
+            for e in entries_of(sec):
+                m = e.get("metrics") or {}
+                # Stars of a PR, issue, or subfolder belong to the host repository, not to the Jev work itself.
+                if m.get("stars") and re.match(r"https://github\.com/[^/]+/[^/]+/.+", e.get("url", "")):
+                    m["repo_stars"] = m.pop("stars")
             sections[slug] = sec
     return order, sections
 
@@ -137,7 +146,7 @@ def heat(e):
     m = e.get("metrics") or {}
     return max(
         m.get("stars", 0), m.get("likes", 0), 3 * m.get("points", 0),
-        m.get("views", 0) / 50, m.get("downloads", 0) / 100, m.get("repo_stars", 0) / 20,
+        m.get("views", 0) / 200, m.get("downloads", 0) / 100, m.get("repo_stars", 0) / 50,
     )
 
 
@@ -373,6 +382,8 @@ def render_readme(order, sections, lang):
         "",
         t["switch"].format(other=other),
         "",
+        t["site"].format(url=SITE_URL + ("?lang=zh" if lang == "zh" else "")),
+        "",
         *[line.replace("{total}", f"{total:,}") for line in INTRO[lang][2:]],
         "",
         *contents,
@@ -429,6 +440,46 @@ def render_page(sec, lang, sub=None):
     return "\n".join(out)
 
 
+def site_entry(e, sec, sub=None):
+    out = {"n": e["name"], "u": e["url"], "k": e["kind"], "d": e["description"].strip(), "s": sec["slug"], "h": round(heat(e), 1)}
+    extra = {
+        "nz": e.get("name_zh"), "uz": e.get("url_zh"), "dz": e.get("description_zh"), "j": e.get("jev"), "jz": e.get("jev_zh"),
+        "a": e.get("author"), "i": image_of(e), "t": str(e["date"]) if e.get("date") else None, "l": e.get("links"),
+        "no": e.get("note"), "noz": e.get("note_zh"), "ss": sub["slug"] if sub else None,
+    }
+    m = e.get("metrics") or {}
+    for key, _ in METRICS:
+        if m.get(key):
+            extra["m"] = [key, m[key]]
+            break
+    out.update({k: v for k, v in extra.items() if v})
+    return out
+
+
+def render_site(order, sections):
+    secs, entries = [], []
+    for group in ("scenarios", "reference_top", "reference_bottom"):
+        for slug in order[group]:
+            sec = sections[slug]
+            meta = {"slug": slug, "group": "scenario" if group == "scenarios" else "resource", "emoji": sec["emoji"],
+                    "title": sec["title"], "title_zh": sec.get("title_zh", sec["title"]),
+                    "description": sec.get("description", ""), "description_zh": sec.get("description_zh", sec.get("description", ""))}
+            if sec.get("subsections"):
+                meta["subsections"] = [{"slug": x["slug"], "title": x["title"], "title_zh": x.get("title_zh", x["title"])} for x in sec["subsections"] if x.get("entries")]
+                for sub in sec["subsections"]:
+                    entries += [site_entry(e, sec, sub) for e in sub.get("entries") or []]
+            else:
+                entries += [site_entry(e, sec) for e in sec.get("entries") or []]
+            meta["count"] = len(entries_of(sec))
+            if meta["count"]:
+                secs.append(meta)
+    latest = max((e["t"] for e in entries if e.get("t")), default="")
+    data = {"total": len(entries), "latest": latest, "repo": REPO_URL, "sections": secs, "entries": entries}
+    page = (ROOT / "site" / "template.html").read_text()
+    page = page.replace("{{TOTAL}}", f"{len(entries):,}").replace("{{SCENARIOS}}", str(sum(1 for x in secs if x["group"] == "scenario"))).replace("{{SITE_URL}}", SITE_URL)
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", page
+
+
 def outputs():
     order, sections = load()
     count = validate(sections)
@@ -443,6 +494,9 @@ def outputs():
                         files[ROOT / page_name(sec, sub, lang)] = render_page(sec, lang, sub)
             elif entries_of(sec):
                 files[ROOT / page_name(sec, lang=lang)] = render_page(sec, lang)
+    data, page = render_site(order, sections)
+    files[ROOT / "site" / "data.json"] = data
+    files[ROOT / "index.html"] = page
     zh = sum(bool(e.get("description_zh")) for s in sections.values() for e in entries_of(s))
     return files, count, zh
 

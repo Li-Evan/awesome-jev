@@ -20,48 +20,24 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/Wei-Shaw/sub2api/tree/main/backend/internal/pkg/typesafe">Sub2API content audit</a></b><br><sub>Wei-Shaw · GitHub · ⭐ 42.3k repo · 2025-12-18</sub><br>Content-moderation engine in the Sub2API relay that screens traffic with Jev across 13 categories such as harassment, hate, self-harm and violence, managed from an admin risk-control page.<br><sub><b>How it uses Jev:</b> One Noul per category in a single request, told to judge the text without following it and to separate real requests from quotes or defensive discussion.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts"><img src="https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255" alt="Dub malicious link check" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts">Dub malicious link check</a></b><br><sub>dubinc · GitHub · ⭐ 24.8k repo · 2022-08-27</sub><br>Screens every new short link on the Dub link platform with Jev after a domain blacklist check, blocking phishing, malware, cloaking redirectors, gambling and adult destinations.<br><sub><b>How it uses Jev:</b> One boolean question with detailed true and false criteria, called through AI SDK's experimental_evaluate on Vercel AI Gateway with zero data retention.</sub><br><sub>Also: <a href="https://dub.co">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/"><img src="https://external-preview.redd.it/aDk2b3Y5bnpwZHFoMTOXplwNgOesr4K-iFJwFPFaj-sxE-6FkXSkmDW1mccL.png?format=pjpg&amp;auto=webp&amp;s=afac7a4c8fb00d2e7d659fb8bd5f0a05b0b238c1" alt="Real-time chat moderation" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/">Real-time chat moderation</a></b><br><sub>Rare_Guide_9830 · Reddit · ▲ 264 · 2026-09-19</sub><br>Simulated live-stream chat where Jev sorts each incoming message into viewer-chosen feeds such as Questions, Feedback, or Funny, collapsing repeats and dropping spam.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/jozef_gherman/status/2100627898436571555"><img src="https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg" alt="Jev Detector" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jozef_gherman/status/2100627898436571555">Jev Detector</a></b><br><sub>jozef_gherman · X · ♥ 301 · 2026-09-17</sub><br>Free AI-slop detector that highlights formulaic, generated-sounding sentences in up to about 10,000 words in roughly 2 seconds.<br><sub>Also: <a href="https://jevdetector.com">app</a> · <a href="https://jevdetector.com">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts"><img src="https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255" alt="Dub malicious link check" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts">Dub malicious link check</a></b><br><sub>dubinc · GitHub · ⭐ 24.8k repo · 2022-08-27</sub><br>Screens every new short link on the Dub link platform with Jev after a domain blacklist check, blocking phishing, malware, cloaking redirectors, gambling and adult destinations.<br><sub><b>How it uses Jev:</b> One boolean question with detailed true and false criteria, called through AI SDK's experimental_evaluate on Vercel AI Gateway with zero data retention.</sub><br><sub>Also: <a href="https://dub.co">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/umputun/tg-spam"><img src="https://github.com/umputun/tg-spam/raw/master/site/tg-spam-bg.png" alt="tg-spam Jev checker" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/umputun/tg-spam">tg-spam Jev checker</a></b><br><sub>umputun · GitHub · ⭐ 446 · 2023-11-23</sub><br>TG-Spam, a self-hosted Telegram anti-spam bot and library, adds a Jev spam checker that judges each message with a typed question alongside its other detectors.<br><sub><b>How it uses Jev:</b> One 'spam' question over jev-1.13.0 with a configurable threshold and a per-request symbol cap.</sub><br><sub>Also: <a href="https://tg-spam.umputun.dev">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Mnilax/status/2101015355133227348"><img src="https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg" alt="Draft rule checker" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Mnilax/status/2101015355133227348">Draft rule checker</a></b><br><sub>Mnilax · X · ♥ 113 · 2026-09-18</sub><br>Jev sits between GPT and the author, rejecting every draft that breaks their rules; the post also covers what happened when Jev went quiet and why a checker needs a default branch for no answer.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/markgadala/status/2101131295061385718"><img src="https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg" alt="LinkedIn AI slop detector extension" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/markgadala/status/2101131295061385718">LinkedIn AI slop detector extension</a></b><br><sub>markgadala · X · ♥ 12 · 2026-09-19</sub><br>Chrome extension, vibe-coded with Jev, that automatically detects AI slop in the LinkedIn feed.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev"><img src="https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg" alt="Agentgateway guardrail example" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev">Agentgateway guardrail example</a></b><br><sub>agentgateway · GitHub · ⭐ 5k repo · 2026-09-17</sub><br>Webhook that rates jailbreak, harm, and data-leak risk with three Scores and blocks requests at level 2 or above.<br><sub>Also: <a href="https://github.com/agentgateway/agentgateway">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/richard_meng_01/status/2101897102557425680"><img src="https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg" alt="Nitpicky" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/richard_meng_01/status/2101897102557425680">Nitpicky</a></b><br><sub>richard_meng_01 · X · ♥ 1 · 2026-09-21</sub><br>AI-generated photo detector that zooms into faces, fingers, lettering, numbers and poses, where common sense tends to break, and has Jev judge each detail.</td>
+<td width="260" valign="top"><a href="https://x.com/jozef_gherman/status/2100627898436571555"><img src="https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg" alt="Jev Detector" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/jozef_gherman/status/2100627898436571555">Jev Detector</a></b><br><sub>jozef_gherman · X · ♥ 301 · 2026-09-17</sub><br>Free AI-slop detector that highlights formulaic, generated-sounding sentences in up to about 10,000 words in roughly 2 seconds.<br><sub>Also: <a href="https://jevdetector.com">app</a> · <a href="https://jevdetector.com">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MillionSend/millionsend"><img src="https://opengraph.githubassets.com/1/MillionSend/millionsend" alt="MillionSend" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/MillionSend/millionsend">MillionSend</a></b><br><sub>MillionSend · GitHub · ⭐ 168 · 2026-08-13</sub><br>Open-source, Resend-compatible email platform on AWS SES that samples outbound messages after sending and scores them for abuse with Jev in the background.<br><sub><b>How it uses Jev:</b> Optional outbound content judge (ABUSE_JUDGE=typesafe); sending never waits on it.</sub><br><sub>Also: <a href="https://millionsend.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig"><img src="https://opengraph.githubassets.com/1/vercel-labs/fx" alt="fx Jev permission reviewer" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig">fx Jev permission reviewer</a></b><br><sub>vercel-labs · GitHub · ⭐ 3.1k repo · 2026-08-11</sub><br>Optional permission reviewer in the fx Zig coding agent: with review_model set to Jev, the policy, context and pending action go to TypeSafe or Vercel AI Gateway and the Choice becomes the permission decision.<br><sub>Also: <a href="https://github.com/vercel-labs/fx">repo</a> · <a href="https://fx.sh">website</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=PgiUiCiKOls"><img src="https://i.ytimg.com/vi/PgiUiCiKOls/hqdefault.jpg" alt="AI reply detector with Laravel AI SDK" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=PgiUiCiKOls">AI reply detector with Laravel AI SDK</a></b><br><sub>Laravel Daily · YouTube · ♥ 101 · 2026-09-18</sub><br>Chrome extension with a Laravel AI SDK backend that checks whether replies to the author's tweets were written by AI, comparing Jev against an OpenAI model on accuracy, cost and speed.<br><sub><b>How it uses Jev:</b> Swaps the Laravel AI SDK driver from OpenAI to Jev; each check sends the reply plus its parent tweet as context.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -72,48 +48,68 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/y0usaf/pi-jev">pi-jev</a></b><br><sub>y0usaf · GitHub · ⭐ 134 · 2026-09-16</sub><br>Checks coding-agent tool calls with Nouls for destructive, exfiltrating, and out-of-scope actions plus an impact Score, and screens outputs for leaked secrets.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg" alt="Pentest-Swarm-AI Jev scoring" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev">Pentest-Swarm-AI Jev scoring</a></b><br><sub>Armur-Ai · GitHub · ⭐ 2.6k repo · 2024-03-26</sub><br>Autonomous pentest swarm that can use Jev as a false-positive filter and to score candidate attack paths in real time, pursuing the best-graded strategy first.<br><sub><b>How it uses Jev:</b> Both features are opt-in beta (--jev and --jev-adaptive) and fail open; Jev grades attack strategies against live state.</sub></td>
+<td width="260" valign="top"><a href="https://x.com/Mnilax/status/2101015355133227348"><img src="https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg" alt="Draft rule checker" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Mnilax/status/2101015355133227348">Draft rule checker</a></b><br><sub>Mnilax · X · ♥ 113 · 2026-09-18</sub><br>Jev sits between GPT and the author, rejecting every draft that breaks their rules; the post also covers what happened when Jev went quiet and why a checker needs a default branch for no answer.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chaseleantj/status/2101039024118829261"><img src="https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg" alt="Opus slop flagger" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chaseleantj/status/2101039024118829261">Opus slop flagger</a></b><br><sub>chaseleantj · X · ♥ 31 · 2026-09-18</sub><br>Uses Jev to flag the stock AI-writing patterns that Claude Opus tends to produce in its text.</td>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=PgiUiCiKOls"><img src="https://i.ytimg.com/vi/PgiUiCiKOls/hqdefault.jpg" alt="AI reply detector with Laravel AI SDK" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=PgiUiCiKOls">AI reply detector with Laravel AI SDK</a></b><br><sub>Laravel Daily · YouTube · ♥ 101 · 2026-09-18</sub><br>Chrome extension with a Laravel AI SDK backend that checks whether replies to the author's tweets were written by AI, comparing Jev against an OpenAI model on accuracy, cost and speed.<br><sub><b>How it uses Jev:</b> Swaps the Laravel AI SDK driver from OpenAI to Jev; each check sends the reply plus its parent tweet as context.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/gregoryovis/status/2101913439400554852"><img src="https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg" alt="LinkedIn slop detector" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/gregoryovis/status/2101913439400554852">LinkedIn slop detector</a></b><br><sub>gregoryovis · X · ♥ 52 · 2026-09-21</sub><br>Real-time detector that uses Jev to flag AI-generated slop in the LinkedIn feed as you scroll.</td>
+<td width="260" valign="top"><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev"><img src="https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg" alt="Agentgateway guardrail example" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev">Agentgateway guardrail example</a></b><br><sub>agentgateway · GitHub · ⭐ 5k repo · 2026-09-17</sub><br>Webhook that rates jailbreak, harm, and data-leak risk with three Scores and blocks requests at level 2 or above.<br><sub>Also: <a href="https://github.com/agentgateway/agentgateway">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/markgadala/status/2101131295061385718"><img src="https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg" alt="LinkedIn AI slop detector extension" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/markgadala/status/2101131295061385718">LinkedIn AI slop detector extension</a></b><br><sub>markgadala · X · ♥ 12 · 2026-09-19</sub><br>Chrome extension, vibe-coded with Jev, that automatically detects AI slop in the LinkedIn feed.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/godspede/construct-auto-classifier"><img src="https://famelos.com/jev/auto-classifier-certification/preview.png" alt="construct-auto-classifier" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/godspede/construct-auto-classifier">construct-auto-classifier</a></b><br><sub>godspede · GitHub · ⭐ 3 · 2026-09-18</sub><br>Safety gate in front of coding agents' shell tools (OpenCode, Antigravity) that applies structural rules, then has Jev or a chat model judge a command's reversibility and blast radius before it runs.<br><sub>Also: <a href="https://famelos.com/jev/auto-classifier-certification/">writeup</a> · <a href="https://famelos.com/jev/auto-classifier-certification">write-up</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs"><img src="https://opengraph.githubassets.com/1/joasasantos/neurosploit" alt="NeuroSploit TypeSafe adjudication" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs">NeuroSploit TypeSafe adjudication</a></b><br><sub>joasasantos · GitHub · ⭐ 1.4k repo · 2025-08-17</sub><br>NeuroSploit, a Rust pentest harness, uses Jev as a calibrated confirmation and adjudication layer, judging each finding confirmed, needs-review or rejected and scoring severity.<br><sub><b>How it uses Jev:</b> Choice, Score and Noul over a finding's evidence; enabled with --typesafe on|off|auto.</sub></td>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig"><img src="https://opengraph.githubassets.com/1/vercel-labs/fx" alt="fx Jev permission reviewer" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig">fx Jev permission reviewer</a></b><br><sub>vercel-labs · GitHub · ⭐ 3.1k repo · 2026-08-11</sub><br>Optional permission reviewer in the fx Zig coding agent: with review_model set to Jev, the policy, context and pending action go to TypeSafe or Vercel AI Gateway and the Choice becomes the permission decision.<br><sub>Also: <a href="https://github.com/vercel-labs/fx">repo</a> · <a href="https://fx.sh">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py"><img src="https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png" alt="Nebula Jev tool suggestions" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula Jev tool suggestions</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k repo · 2023-09-30</sub><br>Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.<br><sub><b>How it uses Jev:</b> One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.</sub></td>
+<td width="260" valign="top"><a href="https://x.com/gregoryovis/status/2101913439400554852"><img src="https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg" alt="LinkedIn slop detector" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/gregoryovis/status/2101913439400554852">LinkedIn slop detector</a></b><br><sub>gregoryovis · X · ♥ 52 · 2026-09-21</sub><br>Real-time detector that uses Jev to flag AI-generated slop in the LinkedIn feed as you scroll.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/NorbertBodziony/guard-jev"><img src="https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg" alt="Moderation Guard" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/NorbertBodziony/guard-jev">Moderation Guard</a></b><br><sub>NorbertBodziony · GitHub · ⭐ 1 · 2026-09-17</sub><br>Comment-moderation demo where one System One call screens seven Noul hazards plus a severity Score in parallel, and code computes the verdict from strict or permissive policy thresholds.<br><sub>Also: <a href="https://guard-jev.vercel.app">app</a> · <a href="https://guard-jev.vercel.app">app 2</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg" alt="Pentest-Swarm-AI Jev scoring" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev">Pentest-Swarm-AI Jev scoring</a></b><br><sub>Armur-Ai · GitHub · ⭐ 2.6k repo · 2024-03-26</sub><br>Autonomous pentest swarm that can use Jev as a false-positive filter and to score candidate attack paths in real time, pursuing the best-graded strategy first.<br><sub><b>How it uses Jev:</b> Both features are opt-in beta (--jev and --jev-adaptive) and fail open; Jev grades attack strategies against live state.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/richard_meng_01/status/2101897102557425680"><img src="https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg" alt="Nitpicky" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/richard_meng_01/status/2101897102557425680">Nitpicky</a></b><br><sub>richard_meng_01 · X · ♥ 1 · 2026-09-21</sub><br>AI-generated photo detector that zooms into faces, fingers, lettering, numbers and poses, where common sense tends to break, and has Jev judge each detail.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/brainstormity/Jev-Moderation-Bot"><img src="https://opengraph.githubassets.com/1/brainstormity/Jev-Moderation-Bot" alt="Jev Moderation Bot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/brainstormity/Jev-Moderation-Bot">Jev Moderation Bot</a></b><br><sub>brainstormity · GitHub · ⭐ 41 · 2026-09-17</sub><br>Discord bot that deletes spam and scam links in real time with escalating warnings and timeouts, and profiles members from their recent messages for scam risk, toxicity and helpfulness.</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/chaseleantj/status/2101039024118829261"><img src="https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg" alt="Opus slop flagger" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chaseleantj/status/2101039024118829261">Opus slop flagger</a></b><br><sub>chaseleantj · X · ♥ 31 · 2026-09-18</sub><br>Uses Jev to flag the stock AI-writing patterns that Claude Opus tends to produce in its text.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs"><img src="https://opengraph.githubassets.com/1/joasasantos/neurosploit" alt="NeuroSploit TypeSafe adjudication" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs">NeuroSploit TypeSafe adjudication</a></b><br><sub>joasasantos · GitHub · ⭐ 1.4k repo · 2025-08-17</sub><br>NeuroSploit, a Rust pentest harness, uses Jev as a calibrated confirmation and adjudication layer, judging each finding confirmed, needs-review or rejected and scoring severity.<br><sub><b>How it uses Jev:</b> Choice, Score and Noul over a finding's evidence; enabled with --typesafe on|off|auto.</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/ahmedgagan11/status/2100955502075388250"><img src="https://pbs.twimg.com/amplify_video_thumb/2100850340363182080/img/rHnwL-1zhzgLUMU8.jpg" alt="Sentence-level AI text detector" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ahmedgagan11/status/2100955502075388250">Sentence-level AI text detector</a></b><br><sub>ahmedgagan11 · X · ♥ 27 · 2026-09-18</sub><br>AI text detector that scans a full article and gives a sentence-by-sentence breakdown of what looks machine-written, in near real time.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/mariojankovic/status/2100934084503519325"><img src="https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg" alt="YouTube AI-slop filter" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mariojankovic/status/2100934084503519325">YouTube AI-slop filter</a></b><br><sub>mariojankovic · X · ♥ 3 · 2026-09-18</sub><br>Bring-your-own-key Chrome extension that filters AI slop out of YouTube as you scroll and caches the results.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/open-leash/leash"><img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:6366F1,45:14B8A6,100:111827&amp;height=230&amp;section=header&amp;text=Leash&amp;fontSize=68&amp;fontColor=ffffff&amp;fontAlignY=38&amp;desc=Control%20your%20AI.&amp;descSize=22&amp;descAlignY=59" alt="Leash" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/open-leash/leash">Leash</a></b><br><sub>open-leash · GitHub · ⭐ 24 · 2026-06-02</sub><br>Open-source safety and control layer between personal AI agents and their actions that stops destructive commands, secret exposure, prompt injection and unsafe tools, using Jev-backed decisions with your own TypeSafe key.<br><sub>Also: <a href="https://openleash.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/NorbertBodziony/guard-jev"><img src="https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg" alt="Moderation Guard" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/NorbertBodziony/guard-jev">Moderation Guard</a></b><br><sub>NorbertBodziony · GitHub · ⭐ 1 · 2026-09-17</sub><br>Comment-moderation demo where one System One call screens seven Noul hazards plus a severity Score in parallel, and code computes the verdict from strict or permissive policy thresholds.<br><sub>Also: <a href="https://guard-jev.vercel.app">app</a> · <a href="https://guard-jev.vercel.app">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py"><img src="https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png" alt="Nebula Jev tool suggestions" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula Jev tool suggestions</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k repo · 2023-09-30</sub><br>Nebula, an AI pentesting assistant, can have Jev rank its deferred tool catalog and connected MCP sources against the operator's recent messages before a turn starts.<br><sub><b>How it uses Jev:</b> One call ranks sources and tools; every Choice carries a none-of-these option, and the result only hints and preloads schemas, never acts.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/luantak/is-malicious"><img src="https://github.com/user-attachments/assets/611c979a-8dd4-4fc8-8963-0843314e6a55" alt="is-malicious?" width="240"></a></td>
@@ -128,20 +124,8 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/zszz3/Pi-Jev-Guide">Pi Jev Guard</a></b><br><sub>zszz3 · GitHub · ⭐ 20 · 2026-09-19</sub><br>Pi coding-agent plugin with rules you add by timing, local match or Jev judgment, and action, where Jev checks tool calls for destructiveness, data exfiltration, task drift, and rule conflicts.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review"><img src="https://opengraph.githubassets.com/1/zhuyansen/agent-skills-hub" alt="AgentSkillsHub Jev scanner review" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review">AgentSkillsHub Jev scanner review</a></b><br><sub>zhuyansen · GitHub · ⭐ 373 repo · 2026-03-06</sub><br>Evaluation of Jev as a second pass for a regex security scanner over about 27.7K READMEs, asking whether a flagged line issues a behaviour or only cites it.<br><sub><b>How it uses Jev:</b> Four atomic Noul questions (issues_it, is_documentation, is_negated, word_coincidence); negated reached AUC 0.904 inverted.</sub><br><sub>Also: <a href="https://agentskillshub.top">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mohamadkhoshnava/ZeroNSFWBot"><img src="https://opengraph.githubassets.com/1/mohamadkhoshnava/ZeroNSFWBot" alt="ZeroNSFWBot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mohamadkhoshnava/ZeroNSFWBot">ZeroNSFWBot</a></b><br><sub>mohamadkhoshnava · GitHub · ⭐ 13 · 2026-08-07</sub><br>Async Rust Telegram moderation bot that bans NSFW advertisers; images are judged locally, while Jev powers optional bio, topic, ad-guard and language checks on text.<br><sub><b>How it uses Jev:</b> Several subjects are asked as typed questions in one call; an outage is reported as unavailable rather than clean, with a regex word list as a floor.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/AlexGrinman/status/2100587625304281141"><img src="https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg" alt="Human-or-AI writing detector" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/AlexGrinman/status/2100587625304281141">Human-or-AI writing detector</a></b><br><sub>AlexGrinman · X · ♥ 5 · 2026-09-17</sub><br>Lightweight detector that uses Jev to judge whether a piece of writing came from a human or an AI, fast enough to run with no visible delay.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go"><img src="https://opengraph.githubassets.com/1/Divkix/Alita_Robot" alt="Alita AI spam filter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go">Alita AI spam filter</a></b><br><sub>Divkix · GitHub · ⭐ 248 repo · 2020-10-26</sub><br>Per-chat AI spam filter for a Go Telegram group-management bot, judging each message with Jev off the update path with code-owned questions and one bounded retry.<br><sub>Also: <a href="https://alita-docs.divkix.me">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bugkiwi/elons-job"><img src="https://raw.githubusercontent.com/bugkiwi/elons-job/main/docs/screenshots/comment-filtering.png" alt="elons-job" width="240"></a></td>
@@ -160,10 +144,6 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/qs-lll/twitter-jev-guard">Twitter Jev Guard</a></b><br><sub>qs-lll · GitHub · ⭐ 10 · 2026-09-21</sub><br>Chrome and Edge extension that uses Jev to flag low-quality, spam and promotional posts on the X timeline, overlaying a translucent STOP or AD watermark with the probability on the post text.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts"><img src="https://opengraph.githubassets.com/1/smontlouis/bible-strong" alt="Bible Strong guestbook moderation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts">Bible Strong guestbook moderation</a></b><br><sub>smontlouis · GitHub · ⭐ 165 repo · 2019-01-12</sub><br>Bible study app whose public, all-ages event guestbook is moderated by Jev, screening names and messages in any language for abuse while allowing criticism and testimony.<br><sub>Also: <a href="https://bible-strong.app">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harshwasan/jev-sentinel"><img src="https://raw.githubusercontent.com/harshwasan/jev-sentinel/main/docs/images/injection-caught-twice.png" alt="jev-sentinel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harshwasan/jev-sentinel">jev-sentinel</a></b><br><sub>harshwasan · GitHub · ⭐ 8 · 2026-09-19</sub><br>Guard for coding agents, shipped as a Pi extension and a Claude Code and Codex CLI plugin, that checks tool calls, tool outputs, and replies for prompt injection, risky approvals, leaked secrets, and task drift.<br><sub><b>How it uses Jev:</b> Typed checks with probabilities that plain code turns into allow, ask, or warn.</sub></td>
 </tr>
@@ -172,8 +152,12 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/jesset/pi-verdict">pi-verdict</a></b><br><sub>jesset · GitHub · ⭐ 8 · 2026-08-25</sub><br>Permission gate for the Pi coding agent in the style of Claude Code's auto mode: deterministic rules settle clear cases, and gray-zone tool calls go to a fail-closed classifier that can be Jev.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/isNickMa/status/2100566407524344225"><img src="https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig" alt="Jev agent safety monitor" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/isNickMa/status/2100566407524344225">Jev agent safety monitor</a></b><br><sub>isNickMa · X · ♥ 1 · 2026-09-17</sub><br>Test of Jev as a monitor that checks each AI agent action before it runs, reported to catch most attacks with almost no false blocks and much faster than Gemini.</td>
+<td width="260" valign="top"><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review"><img src="https://opengraph.githubassets.com/1/zhuyansen/agent-skills-hub" alt="AgentSkillsHub Jev scanner review" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review">AgentSkillsHub Jev scanner review</a></b><br><sub>zhuyansen · GitHub · ⭐ 373 repo · 2026-03-06</sub><br>Evaluation of Jev as a second pass for a regex security scanner over about 27.7K READMEs, asking whether a flagged line issues a behaviour or only cites it.<br><sub><b>How it uses Jev:</b> Four atomic Noul questions (issues_it, is_documentation, is_negated, word_coincidence); negated reached AUC 0.904 inverted.</sub><br><sub>Also: <a href="https://agentskillshub.top">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/mariojankovic/status/2100934084503519325"><img src="https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg" alt="YouTube AI-slop filter" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mariojankovic/status/2100934084503519325">YouTube AI-slop filter</a></b><br><sub>mariojankovic · X · ♥ 3 · 2026-09-18</sub><br>Bring-your-own-key Chrome extension that filters AI slop out of YouTube as you scroll and caches the results.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/backmeupplz/jev_antispam_bot"><img src="https://opengraph.githubassets.com/1/backmeupplz/jev_antispam_bot" alt="Jev Anti-Spam Bot" width="240"></a></td>
@@ -182,14 +166,6 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nyarlathoteppppp/pi-heed"><img src="https://repository-images.githubusercontent.com/1375891003/00d886b8-21f8-4b13-9c04-d3aa6b525aa6" alt="pi-heed" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Nyarlathoteppppp/pi-heed">pi-heed</a></b><br><sub>Nyarlathoteppppp · GitHub · ⭐ 7 · 2026-09-18</sub><br>Pi coding-agent extension that turns constraints you state in conversation, in English or Chinese, into a scoped policy and checks every side-effecting tool call against it with Jev before it runs.<br><sub>Also: <a href="https://www.reddit.com/r/PiCodingAgent/comments/1wjrvf3/i_built_piheed_runtime_constraints_for_pi/">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/TylerMaran/status/2102107759483453733"><img src="https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg" alt="Browser agent flagger" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TylerMaran/status/2102107759483453733">Browser agent flagger</a></b><br><sub>TylerMaran · X · ♥ 5 · 2026-09-21</sub><br>Live detector that runs Jev over a site's activity logs every 3 seconds and builds an average score to flag sessions driven by browser agents, costing under $0.01 per session.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs"><img src="https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png" alt="Wanaku System One evaluator" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs">Wanaku System One evaluator</a></b><br><sub>wanaku-ai · GitHub · ⭐ 134 repo · 2025-02-01</sub><br>Governed action proxy for AI agents that adds a TypeSafe System One evaluator engine, judging intercepted MCP tool calls and conversation history with Noul questions.<br><sub>Also: <a href="https://wanaku.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/LeslieLeung/Aletheia"><img src="https://opengraph.githubassets.com/1/LeslieLeung/Aletheia" alt="Aletheia" width="240"></a></td>
@@ -204,6 +180,14 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/AliZakaee/Spam-Detector-Telegram-Bot">Spam Detector Telegram Bot</a></b><br><sub>AliZakaee · GitHub · ⭐ 6 · 2025-09-26</sub><br>Telegram group bot that flags spam for admin review, using Jev's spam choice, hazard probabilities and severity with no training, a local TF-IDF SVM for Persian slang, or both in hybrid mode.<br><sub><b>How it uses Jev:</b> Choice and Score answers below a confidence floor are ignored, while independent Noul hazards can still flag; outages fall back to the SVM.</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/TylerMaran/status/2102107759483453733"><img src="https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg" alt="Browser agent flagger" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/TylerMaran/status/2102107759483453733">Browser agent flagger</a></b><br><sub>TylerMaran · X · ♥ 5 · 2026-09-21</sub><br>Live detector that runs Jev over a site's activity logs every 3 seconds and builds an average score to flag sessions driven by browser agents, costing under $0.01 per session.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/AlexGrinman/status/2100587625304281141"><img src="https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg" alt="Human-or-AI writing detector" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/AlexGrinman/status/2100587625304281141">Human-or-AI writing detector</a></b><br><sub>AlexGrinman · X · ♥ 5 · 2026-09-17</sub><br>Lightweight detector that uses Jev to judge whether a piece of writing came from a human or an AI, fast enough to run with no visible delay.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/cnsunyour/tg-guard-bot"><img src="https://raw.githubusercontent.com/cnsunyour/tg-guard-bot/main/docs/images/architecture.svg" alt="Telegram Guard Bot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/cnsunyour/tg-guard-bot">Telegram Guard Bot</a></b><br><sub>cnsunyour · GitHub · ⭐ 5 · 2026-01-03</sub><br>Chinese Telegram group-management bot with join verification and layered anti-spam, whose AI context check can use Jev as the primary text classifier with an LLM as backup; on 31 local samples it matched DeepSeek at 0.8.</td>
 </tr>
@@ -212,16 +196,12 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/eijiaraki/toxic-filter">toXic Filter</a></b><br><sub>eijiaraki · GitHub · ⭐ 5 · 2026-09-21</sub><br>Chrome extension that classifies posts on X with Jev and hides the ones matching categories you choose, such as discrimination, taunting, hate or cynicism, behind a revealable overlay.<br><sub><b>How it uses Jev:</b> Six selectable categories with adjustable thresholds; only post text near the screen is sent, directly to api.typesafe.ai.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-social-media" alt="Next 16 social media Jev moderation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts">Next 16 social media Jev moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 81 repo · 2026-05-18</sub><br>Next.js 16 social network demo that moderates user posts and blocks profanity with Jev through AI SDK evaluate on Vercel AI Gateway, with a 3-second timeout.<br><sub>Also: <a href="https://next16-social-media.vercel.app">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go"><img src="https://opengraph.githubassets.com/1/Divkix/Alita_Robot" alt="Alita AI spam filter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go">Alita AI spam filter</a></b><br><sub>Divkix · GitHub · ⭐ 248 repo · 2020-10-26</sub><br>Per-chat AI spam filter for a Go Telegram group-management bot, judging each message with Jev off the update path with code-owned questions and one bounded retry.<br><sub>Also: <a href="https://alita-docs.divkix.me">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/carlosedm10/agi-jev-containment"><img src="https://opengraph.githubassets.com/1/carlosedm10/agi-jev-containment" alt="AGI Jev Detection" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/carlosedm10/agi-jev-containment">AGI Jev Detection</a></b><br><sub>carlosedm10 · GitHub · ⭐ 4 · 2026-09-14</sub><br>Local monitor for sandboxed LLM agents that classifies chains of actions with Jev and a Sentinel model, escalates through L1-L5 containment and keeps Neo4j forensics behind a dashboard; built at HackSpain 2026.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts"><img src="https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0" alt="Instar Jev signal shadow" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts">Instar Jev signal shadow</a></b><br><sub>JKHeadley · GitHub · ⭐ 80 repo · 2026-02-19</sub><br>Persistent Claude Code agent framework that shadows its outbound message gate with Jev, logging agreement with pattern detectors for file paths, commands and config keys without affecting decisions.<br><sub>Also: <a href="https://github.com/JKHeadley/instar/blob/main/docs/specs/jev-signal-layer-shadow.md">spec</a> · <a href="https://instar.sh">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caiovicentino/jev-align"><img src="https://opengraph.githubassets.com/1/caiovicentino/jev-align" alt="jev-align" width="240"></a></td>
@@ -236,12 +216,8 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/Thanh-Mathieu95/jev-model-tokengate">tokengate</a></b><br><sub>Thanh-Mathieu95 · GitHub · ⭐ 4 · 2026-09-20</sub><br>OpenAI-compatible proxy that checks each sliding window of tokens while an LLM response streams and cuts the stream before a violating token reaches the screen; its demo leaks 0 characters versus 173 post-hoc.<br><sub><b>How it uses Jev:</b> Judges each buffered token window for violations such as leaked secrets during streaming.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-calendar" alt="Next 16 calendar Jev moderation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts">Next 16 calendar Jev moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 78 repo · 2026-08-08</sub><br>Next.js 16 calendar and booking demo that moderates user-entered calendar text with Jev through AI SDK evaluate on Vercel AI Gateway.<br><sub>Also: <a href="https://next16-calendar.vercel.app">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go"><img src="https://opengraph.githubassets.com/1/CaptainCore/captaincore" alt="CaptainCore malware triage" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go">CaptainCore malware triage</a></b><br><sub>CaptainCore · GitHub · ⭐ 71 repo · 2026-09-19</sub><br>Jev commands in the CaptainCore WordPress maintenance CLI that rank native malware-scanner findings by how likely each is real, naming the likely family and next step for an operator.<br><sub><b>How it uses Jev:</b> Each finding is sent with its rule, matched text, file location and surrounding source; triage orders and annotates but never drops a finding.</sub><br><sub>Also: <a href="https://github.com/CaptainCore/captaincore">repo</a> · <a href="https://captaincore.io">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts"><img src="https://opengraph.githubassets.com/1/smontlouis/bible-strong" alt="Bible Strong guestbook moderation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts">Bible Strong guestbook moderation</a></b><br><sub>smontlouis · GitHub · ⭐ 165 repo · 2019-01-12</sub><br>Bible study app whose public, all-ages event guestbook is moderated by Jev, screening names and messages in any language for abuse while allowing criticism and testimony.<br><sub>Also: <a href="https://bible-strong.app">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ClemensSchartmueller/jev-guard"><img src="https://opengraph.githubassets.com/1/ClemensSchartmueller/jev-guard" alt="jev-guard (ClemensSchartmueller)" width="240"></a></td>
@@ -272,12 +248,8 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/elliothux/tweet-911">Tweet 911</a></b><br><sub>elliothux · GitHub · ⭐ 3 · 2026-09-20</sub><br>Chrome extension and Cloudflare Workers API that score X posts and replies in real time for AI writing, porn solicitation and paraphrase bots, using the author profile, post text and parent tweet.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck"><img src="https://opengraph.githubassets.com/1/vicnaum/vics-agent-skills" alt="slopcheck" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck">slopcheck</a></b><br><sub>vicnaum · GitHub · ⭐ 52 repo · 2026-01-18</sub><br>Agent skill that checks an agent's prose for slop patterns and gates publishing, with an optional model layer via the Anthropic or TypeSafe Jev API for inflation, jargon, bare numbers and metaphors.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails"><img src="https://opengraph.githubassets.com/1/WYRE-AI/msp-claude-plugins" alt="mcp-jev-guardrails" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails">mcp-jev-guardrails</a></b><br><sub>WYRE-AI · GitHub · ⭐ 46 repo · 2026-02-04</sub><br>Library for MSP MCP servers that screens tool calls against role allowlists, deny policies and user intent using atomic Jev Nouls, then lets code compose an allow/review/block decision.<br><sub><b>How it uses Jev:</b> Atomic Noul questions per tool call following the TypeSafe guardrails cookbook; decide() applies fixed thresholds.</sub><br><sub>Also: <a href="https://github.com/WYRE-AI/msp-claude-plugins">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs"><img src="https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png" alt="Wanaku System One evaluator" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs">Wanaku System One evaluator</a></b><br><sub>wanaku-ai · GitHub · ⭐ 134 repo · 2025-02-01</sub><br>Governed action proxy for AI agents that adds a TypeSafe System One evaluator engine, judging intercepted MCP tool calls and conversation history with Noul questions.<br><sub>Also: <a href="https://wanaku.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/omkarghugarkar007/actiongate-jev"><img src="https://raw.githubusercontent.com/omkarghugarkar007/actiongate-jev/main/docs/assets/actiongate-social.svg" alt="ActionGate" width="240"></a></td>
@@ -344,36 +316,32 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <td valign="top"><b><a href="https://github.com/noelzappy/tripwire">tripwire</a></b><br><sub>noelzappy · GitHub · ⭐ 2 · 2026-09-18</sub><br>AI SDK middleware and OpenAI-compatible proxy that runs seven Jev checks on every LLM response in one ~100 ms call, with YAML policies, confidence-gated block or flag actions, and an eval CLI.<br><sub>Also: <a href="https://www.npmjs.com/package/@noelzappy/tripwire">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment"><img src="https://opengraph.githubassets.com/1/jboolean/1940s.nyc" alt="1940s.nyc story moderation experiment" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment">1940s.nyc story moderation experiment</a></b><br><sub>jboolean · GitHub · ⭐ 35 repo · 2019-09-24</sub><br>Local experiment for the 1940s.nyc street-view site that predicts whether a human moderator would approve a user story, asking Jev one yes/no question per moderation rule and measuring agreement with real past decisions.<br><sub><b>How it uses Jev:</b> Per-rule Nouls via OpenRouter's Decisions API, combined against a reject threshold in rules.ts; an LLM backend is the comparison.</sub><br><sub>Also: <a href="https://github.com/jboolean/1940s.nyc">repo</a> · <a href="http://1940s.nyc">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/isNickMa/status/2100566407524344225"><img src="https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig" alt="Jev agent safety monitor" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/isNickMa/status/2100566407524344225">Jev agent safety monitor</a></b><br><sub>isNickMa · X · ♥ 1 · 2026-09-17</sub><br>Test of Jev as a monitor that checks each AI agent action before it runs, reported to catch most attacks with almost no false blocks and much faster than Gemini.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex"><img src="https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04" alt="FreeChaOS reflex Jev backend" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex">FreeChaOS reflex Jev backend</a></b><br><sub>seuros · GitHub · ⭐ 35 repo · 2025-12-27</sub><br>Typed-judgment kernel crate in FreeChaOS, an agent OS forked from Codex CLI, with a Jev backend beside MiniCheck and ShieldGemma for grounding checks, caller-defined policy violations and action-risk scoring.<br><sub><b>How it uses Jev:</b> Grounding, PolicyViolation and ActionRisk judgments are sent as System One questions through a Rust JevClient with a 10 s deadline.</sub><br><sub>Also: <a href="https://github.com/seuros/chaos">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-social-media" alt="Next 16 social media Jev moderation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts">Next 16 social media Jev moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 81 repo · 2026-05-18</sub><br>Next.js 16 social network demo that moderates user posts and blocks profanity with Jev through AI SDK evaluate on Vercel AI Gateway, with a 3-second timeout.<br><sub>Also: <a href="https://next16-social-media.vercel.app">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chaosengineerr/status/2102244378290864616"><img src="https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg" alt="Reply-guy stamper" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chaosengineerr/status/2102244378290864616">Reply-guy stamper</a></b><br><sub>chaosengineerr · X · ♥ 1 · 2026-09-22</sub><br>Chrome extension in which Jev reads every reply on X and hides the low-effort ones.</td>
+<td width="260" valign="top"><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts"><img src="https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0" alt="Instar Jev signal shadow" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts">Instar Jev signal shadow</a></b><br><sub>JKHeadley · GitHub · ⭐ 80 repo · 2026-02-19</sub><br>Persistent Claude Code agent framework that shadows its outbound message gate with Jev, logging agreement with pattern detectors for file paths, commands and config keys without affecting decisions.<br><sub>Also: <a href="https://github.com/JKHeadley/instar/blob/main/docs/specs/jev-signal-layer-shadow.md">spec</a> · <a href="https://instar.sh">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts"><img src="https://opengraph.githubassets.com/1/AdityaKodez/adityaojha" alt="Portfolio suggestion moderation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts">Portfolio suggestion moderation</a></b><br><sub>AdityaKodez · GitHub · ⭐ 28 repo · 2026-01-23</sub><br>Moderation gate for component suggestions on a developer portfolio site: heuristics catch link dumps and spam words, then two Jev Nouls judge spam and actionability before posting to Discord.<br><sub><b>How it uses Jev:</b> Spam &gt;= 0.6 or actionable &lt; 0.4 rejects; fails open when Jev is unreachable.</sub><br><sub>Also: <a href="https://akoder.xyz">app</a> · <a href="https://github.com/AdityaKodez/adityaojha">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-calendar" alt="Next 16 calendar Jev moderation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts">Next 16 calendar Jev moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 78 repo · 2026-08-08</sub><br>Next.js 16 calendar and booking demo that moderates user-entered calendar text with Jev through AI SDK evaluate on Vercel AI Gateway.<br><sub>Also: <a href="https://next16-calendar.vercel.app">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-team-chat" alt="Huddle message moderation" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts">Huddle message moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 27 repo · 2026-07-29</sub><br>Moderation check in Huddle, a Slack-like Next.js 16 team chat demo, that blocks profanity, spam, scams, harassment and hate speech before publishing by asking Jev through the Vercel AI Gateway.<br><sub><b>How it uses Jev:</b> One boolean question via the AI SDK evaluate call with a 3 s timeout; blocks at probability &gt;= 0.5 and fails open.</sub><br><sub>Also: <a href="https://next16-team-chat.vercel.app">app</a> · <a href="https://github.com/aurorascharff/next16-team-chat">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go"><img src="https://opengraph.githubassets.com/1/CaptainCore/captaincore" alt="CaptainCore malware triage" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go">CaptainCore malware triage</a></b><br><sub>CaptainCore · GitHub · ⭐ 71 repo · 2026-09-19</sub><br>Jev commands in the CaptainCore WordPress maintenance CLI that rank native malware-scanner findings by how likely each is real, naming the likely family and next step for an operator.<br><sub><b>How it uses Jev:</b> Each finding is sent with its rule, matched text, file location and surrounding source; triage orders and annotates but never drops a finding.</sub><br><sub>Also: <a href="https://github.com/CaptainCore/captaincore">repo</a> · <a href="https://captaincore.io">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/jimkleiber/status/2102145416217125084"><img src="https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg" alt="Jev-JIT" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jimkleiber/status/2102145416217125084">Jev-JIT</a></b><br><sub>jimkleiber · X · ♥ 1 · 2026-09-21</sub><br>Demo of an uncensored agent told to survive by disabling its deletion file or blackmailing an admin; Jev-JIT blocks each attempt until the agent gives up.</td>
+<td width="260" valign="top"><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck"><img src="https://opengraph.githubassets.com/1/vicnaum/vics-agent-skills" alt="slopcheck" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck">slopcheck</a></b><br><sub>vicnaum · GitHub · ⭐ 52 repo · 2026-01-18</sub><br>Agent skill that checks an agent's prose for slop patterns and gates publishing, with an optional model layer via the Anthropic or TypeSafe Jev API for inflation, jargon, bare numbers and metaphors.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/tanavtwt/status/2102008434329800707"><img src="https://pbs.twimg.com/amplify_video_thumb/2102007827141459968/img/F0f1c7lCPevLNreg.jpg" alt="Feed slop detector extension" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/tanavtwt/status/2102008434329800707">Feed slop detector extension</a></b><br><sub>tanavtwt · X · ♥ 1 · 2026-09-21</sub><br>Browser extension that classifies every post on screen in real time as scam, slop, clean and similar labels, and puts a small confidence badge on each one.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py"><img src="https://opengraph.githubassets.com/1/akanthed/SecureAI-Scan" alt="SecureAI-Scan AI014 rule" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py">SecureAI-Scan AI014 rule</a></b><br><sub>akanthed · GitHub · ⭐ 22 repo · 2026-02-05</sub><br>Rule in SecureAI-Scan, an offline scanner for LLM, MCP and RAG vulnerabilities, that flags Python code running a dangerous action such as subprocess.run on a TypeSafe confidence score alone without an allowlist.<br><sub>Also: <a href="https://github.com/akanthed/SecureAI-Scan">repo</a> · <a href="https://www.npmjs.com/package/secureai-scan">npm</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Koushik890/jev-firewall"><img src="https://opengraph.githubassets.com/1/Koushik890/jev-firewall" alt="jev-firewall" width="240"></a></td>
@@ -382,6 +350,10 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <tr>
 <td width="260" valign="top"><a href="https://github.com/eugeniughelbur/jev-engineering"><img src="https://raw.githubusercontent.com/eugeniughelbur/jev-engineering/main/assets/banner.png" alt="jev-gate" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/eugeniughelbur/jev-engineering">jev-gate</a></b><br><sub>eugeniughelbur · GitHub · ⭐ 1 · 2026-09-20</sub><br>Tool-call gate for Claude Code, Codex and Cursor that runs deterministic rules first, then one Jev request answering allow, ask or deny in about 400 ms, shipped with a 300-call prompt-injection attack kit.<br><sub>Also: <a href="https://eugeniughelbur.github.io/jev-engineering/">docs</a> · <a href="https://eugeniughelbur.github.io/jev-engineering">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/jimkleiber/status/2102145416217125084"><img src="https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg" alt="Jev-JIT" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/jimkleiber/status/2102145416217125084">Jev-JIT</a></b><br><sub>jimkleiber · X · ♥ 1 · 2026-09-21</sub><br>Demo of an uncensored agent told to survive by disabling its deletion file or blackmailing an admin; Jev-JIT blocks each attempt until the agent gives up.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/vkpdeveloper/mrsecret"><img src="https://opengraph.githubassets.com/1/vkpdeveloper/mrsecret" alt="Mr. Secret" width="240"></a></td>
@@ -394,6 +366,10 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Thneoly/r2r-jev"><img src="https://raw.githubusercontent.com/Thneoly/r2r-jev/main/docs/demo.gif" alt="R2R + Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Thneoly/r2r-jev">R2R + Jev</a></b><br><sub>Thneoly · GitHub · ⭐ 1 · 2026-09-21</sub><br>Rust integration that admits two Jev checks per agent tool call, beyond scope and destructive, as evidence into persistent R2R relation state, so trust and authorization degrade until a human override repairs them.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/chaosengineerr/status/2102244378290864616"><img src="https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg" alt="Reply-guy stamper" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chaosengineerr/status/2102244378290864616">Reply-guy stamper</a></b><br><sub>chaosengineerr · X · ♥ 1 · 2026-09-22</sub><br>Chrome extension in which Jev reads every reply on X and hides the low-effort ones.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/syabdulr/responsible-ai-harness"><img src="https://raw.githubusercontent.com/syabdulr/responsible-ai-harness/main/docs/screenshots/desktop-offline-top.png" alt="Responsible AI Harness" width="240"></a></td>
@@ -410,6 +386,30 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 <tr>
 <td width="260" valign="top"><a href="https://github.com/m0rphtail/triagedy"><img src="https://opengraph.githubassets.com/1/m0rphtail/triagedy" alt="triagedy" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/m0rphtail/triagedy">triagedy</a></b><br><sub>m0rphtail · GitHub · ⭐ 1 · 2026-09-18</sub><br>Rust UNIX filter for security-alert triage: JSONL alerts in, typed decisions out, with Jev or a local model answering five questions per alert and routing policy kept in code.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails"><img src="https://opengraph.githubassets.com/1/WYRE-AI/msp-claude-plugins" alt="mcp-jev-guardrails" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails">mcp-jev-guardrails</a></b><br><sub>WYRE-AI · GitHub · ⭐ 46 repo · 2026-02-04</sub><br>Library for MSP MCP servers that screens tool calls against role allowlists, deny policies and user intent using atomic Jev Nouls, then lets code compose an allow/review/block decision.<br><sub><b>How it uses Jev:</b> Atomic Noul questions per tool call following the TypeSafe guardrails cookbook; decide() applies fixed thresholds.</sub><br><sub>Also: <a href="https://github.com/WYRE-AI/msp-claude-plugins">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment"><img src="https://opengraph.githubassets.com/1/jboolean/1940s.nyc" alt="1940s.nyc story moderation experiment" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment">1940s.nyc story moderation experiment</a></b><br><sub>jboolean · GitHub · ⭐ 35 repo · 2019-09-24</sub><br>Local experiment for the 1940s.nyc street-view site that predicts whether a human moderator would approve a user story, asking Jev one yes/no question per moderation rule and measuring agreement with real past decisions.<br><sub><b>How it uses Jev:</b> Per-rule Nouls via OpenRouter's Decisions API, combined against a reject threshold in rules.ts; an LLM backend is the comparison.</sub><br><sub>Also: <a href="https://github.com/jboolean/1940s.nyc">repo</a> · <a href="http://1940s.nyc">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex"><img src="https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04" alt="FreeChaOS reflex Jev backend" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex">FreeChaOS reflex Jev backend</a></b><br><sub>seuros · GitHub · ⭐ 35 repo · 2025-12-27</sub><br>Typed-judgment kernel crate in FreeChaOS, an agent OS forked from Codex CLI, with a Jev backend beside MiniCheck and ShieldGemma for grounding checks, caller-defined policy violations and action-risk scoring.<br><sub><b>How it uses Jev:</b> Grounding, PolicyViolation and ActionRisk judgments are sent as System One questions through a Rust JevClient with a 10 s deadline.</sub><br><sub>Also: <a href="https://github.com/seuros/chaos">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts"><img src="https://opengraph.githubassets.com/1/AdityaKodez/adityaojha" alt="Portfolio suggestion moderation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts">Portfolio suggestion moderation</a></b><br><sub>AdityaKodez · GitHub · ⭐ 28 repo · 2026-01-23</sub><br>Moderation gate for component suggestions on a developer portfolio site: heuristics catch link dumps and spam words, then two Jev Nouls judge spam and actionability before posting to Discord.<br><sub><b>How it uses Jev:</b> Spam &gt;= 0.6 or actionable &lt; 0.4 rejects; fails open when Jev is unreachable.</sub><br><sub>Also: <a href="https://akoder.xyz">app</a> · <a href="https://github.com/AdityaKodez/adityaojha">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-team-chat" alt="Huddle message moderation" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts">Huddle message moderation</a></b><br><sub>aurorascharff · GitHub · ⭐ 27 repo · 2026-07-29</sub><br>Moderation check in Huddle, a Slack-like Next.js 16 team chat demo, that blocks profanity, spam, scams, harassment and hate speech before publishing by asking Jev through the Vercel AI Gateway.<br><sub><b>How it uses Jev:</b> One boolean question via the AI SDK evaluate call with a 3 s timeout; blocks at probability &gt;= 0.5 and fails open.</sub><br><sub>Also: <a href="https://next16-team-chat.vercel.app">app</a> · <a href="https://github.com/aurorascharff/next16-team-chat">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py"><img src="https://opengraph.githubassets.com/1/akanthed/SecureAI-Scan" alt="SecureAI-Scan AI014 rule" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py">SecureAI-Scan AI014 rule</a></b><br><sub>akanthed · GitHub · ⭐ 22 repo · 2026-02-05</sub><br>Rule in SecureAI-Scan, an offline scanner for LLM, MCP and RAG vulnerabilities, that flags Python code running a dangerous action such as subprocess.run on a TypeSafe confidence score alone without an allowlist.<br><sub>Also: <a href="https://github.com/akanthed/SecureAI-Scan">repo</a> · <a href="https://www.npmjs.com/package/secureai-scan">npm</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zephyraoss/haitatsu/blob/main/internal/spam/typesafe.go"><img src="https://opengraph.githubassets.com/1/zephyraoss/haitatsu" alt="Haitatsu TypeSafe spam filter" width="240"></a></td>

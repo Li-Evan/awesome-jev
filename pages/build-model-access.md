@@ -10,16 +10,20 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2100744709589316009"><img src="https://pbs.twimg.com/amplify_video_thumb/2100744692048818176/img/lnRQ8fZbTFSI0YuV.jpg" alt="Jev on OpenRouter" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/OpenRouter/status/2100744709589316009">Jev on OpenRouter</a></b><br><sub>OpenRouter · X · ♥ 3.9k · 2026-09-18</sub><br>OpenRouter's announcement that Jev is available in beta through its API, returning a typed decision with a probability instead of generated text.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx"><img src="https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/src/assets/lander/screenshot.png" alt="OpenCode Zen Jev endpoint" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx">OpenCode Zen Jev endpoint</a></b><br><sub>anomalyco · Docs · ⭐ 209.2k repo · 2025-04-30</sub><br>OpenCode's Zen gateway serves Jev 1.13 at a /v1/systemone endpoint with the Zen API key, plus a limited-time free jev-1.13-free model.<br><sub>Also: <a href="https://opencode.ai/docs/zen">docs</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2100744709589316009"><img src="https://pbs.twimg.com/amplify_video_thumb/2100744692048818176/img/lnRQ8fZbTFSI0YuV.jpg" alt="Jev on OpenRouter" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/OpenRouter/status/2100744709589316009">Jev on OpenRouter</a></b><br><sub>OpenRouter · X · ♥ 3.9k · 2026-09-18</sub><br>OpenRouter's announcement that Jev is available in beta through its API, returning a typed decision with a probability instead of generated text.</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/get-convex/convex-backend/blob/main/npm-packages/docs/docs/ai-gateway/api.mdx"><img src="https://opengraph.githubassets.com/1/get-convex/convex-backend" alt="Convex AI Gateway Jev support" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/get-convex/convex-backend/blob/main/npm-packages/docs/docs/ai-gateway/api.mdx">Convex AI Gateway Jev support</a></b><br><sub>get-convex · Docs · ⭐ 12.6k repo · 2024-03-08</sub><br>Convex's AI Gateway serves Jev as typesafe/jev-1.13 through a decisions endpoint, callable from Convex actions via AI SDK's evaluate and the @convex-dev/ai-sdk-provider package.<br><sub><b>How it uses Jev:</b> Authentication uses a short-lived deployment token, and the dollar cost of each decision is returned in provider metadata.</sub><br><sub>Also: <a href="https://github.com/get-convex/convex-backend/tree/main/npm-packages/@convex-dev/ai-sdk-provider">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/sabrinaesaquino/status/2101102660997017747"><img src="https://pbs.twimg.com/amplify_video_thumb/2101101845225865216/img/cubmkjzFZ8i2sPKp.jpg" alt="Jev on the Venice API" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/sabrinaesaquino/status/2101102660997017747">Jev on the Venice API</a></b><br><sub>sabrinaesaquino · X · ♥ 221 · 2026-09-19</sub><br>Demo marking Jev's beta launch on the Venice API, classifying 24,000 Hacker News posts into 12 categories in about 2 minutes.<br><sub>Also: <a href="https://x.com/AskVenice/status/2101095644467511578">announcement</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/maximhq/bifrost/tree/dev/core/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maximhq/bifrost" alt="Bifrost TypeSafe provider" width="240"></a></td>
@@ -28,10 +32,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tbphp/gpt-load/blob/main/internal/channel/modules/jev.go"><img src="https://repository-images.githubusercontent.com/997490512/48207872-b9e0-4e70-8006-0becdc6507ff" alt="GPT-Load Jev channel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/tbphp/gpt-load/blob/main/internal/channel/modules/jev.go">GPT-Load Jev channel</a></b><br><sub>tbphp · GitHub · ⭐ 6.9k repo · 2025-06-06</sub><br>Jev channel module for the self-hosted GPT-Load AI gateway, adding TypeSafe's official API as a provider with batch key import, scheduling and failover.<br><sub>Also: <a href="https://www.gpt-load.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/sabrinaesaquino/status/2101102660997017747"><img src="https://pbs.twimg.com/amplify_video_thumb/2101101845225865216/img/cubmkjzFZ8i2sPKp.jpg" alt="Jev on the Venice API" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/sabrinaesaquino/status/2101102660997017747">Jev on the Venice API</a></b><br><sub>sabrinaesaquino · X · ♥ 221 · 2026-09-19</sub><br>Demo marking Jev's beta launch on the Venice API, classifying 24,000 Hacker News posts into 12 categories in about 2 minutes.<br><sub>Also: <a href="https://x.com/AskVenice/status/2101095644467511578">announcement</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/experientiallabs/experiential/blob/main/exp/runtime/models/providers/typesafe.py"><img src="https://raw.githubusercontent.com/experientiallabs/experiential/main/assets/experiential-workflow.png" alt="Experiential TypeSafe provider" width="240"></a></td>
@@ -50,8 +50,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://x.com/flydotio/status/2102076230183035081">Jev on Fly.io Sprites</a></b><br><sub>flydotio · X · ♥ 81 · 2026-09-21</sub><br>Fly.io's TypeSafe connector for Sprites, which injects your Jev API key at a gateway so agents running inside hardware-isolated Sprites can call Jev without the key entering the sandbox.<br><sub>Also: <a href="https://fly.io/sprites/jev">docs</a> · <a href="https://fly.io/sprites/jev">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dgrid_ai/status/2102231668040040687"><img src="https://pbs.twimg.com/media/HSyghV2bQAAKh8Q.jpg?name=orig" alt="Jev on DGrid" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dgrid_ai/status/2102231668040040687">Jev on DGrid</a></b><br><sub>dgrid_ai · X · ♥ 17 · 2026-09-22</sub><br>DGrid added Jev 1.13 to its model catalog, serving routing, classification and scoring requests with multiple typed questions per call.<br><sub>Also: <a href="https://dgrid.ai/models/typesafe/jev-1.13">app</a> · <a href="https://dgrid.ai/models/typesafe/jev-1.13">project</a></sub></td>
+<td width="260" valign="top"><a href="https://zenmux.ai/docs/api/typesafe/systemone"><img src="https://cdn.marmot-cloud.com/storage/zenmux/2025/09/16/lAK3vlZ/banner.png" alt="ZenMux TypeSafe System One API" width="240"></a></td>
+<td valign="top"><b><a href="https://zenmux.ai/docs/api/typesafe/systemone">ZenMux TypeSafe System One API</a></b><br><sub>ZenMux · Docs · ⭐ 75 · 2026-09-20</sub><br>API reference for calling TypeSafe System One evaluation requests with Jev through the ZenMux model gateway.<br><sub>Also: <a href="https://github.com/ZenMux/zenmux-doc/blob/main/docs_source/en/api/typesafe/systemone.md">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://docs.venice.ai/api-reference/endpoint/decisions/systemone">Venice System One compatibility</a></b><br><sub>Venice · Docs · ⭐ 65 · 2026-09-18</sub><br>API reference for Venice's TypeSafe-compatible POST /systemone alias of its Decisions API, letting System One clients call Jev through Venice.<br><sub>Also: <a href="https://github.com/veniceai/api-docs/blob/main/api-reference/endpoint/decisions/systemone.mdx">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/theagentrouter/agent-router/tree/main/internal/apischema/typesafe"><img src="https://raw.githubusercontent.com/theagentrouter/agent-router/main/site/static/img/brand/ar-horizontal-primary.svg" alt="Agent Router TypeSafe schema" width="240"></a></td>
@@ -74,32 +78,28 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/theopenco/llmgateway/blob/main/packages/models/src/models/typesafe.ts">LLM Gateway TypeSafe model</a></b><br><sub>theopenco · GitHub · ⭐ 1.7k repo · 2025-04-12</sub><br>LLM Gateway registers Jev 1.13 as a TypeSafe decision model, routing state-plus-questions requests to the /v1/systemone endpoint through its unified gateway.<br><sub>Also: <a href="https://llmgateway.io">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://zenmux.ai/docs/api/typesafe/systemone"><img src="https://cdn.marmot-cloud.com/storage/zenmux/2025/09/16/lAK3vlZ/banner.png" alt="ZenMux TypeSafe System One API" width="240"></a></td>
-<td valign="top"><b><a href="https://zenmux.ai/docs/api/typesafe/systemone">ZenMux TypeSafe System One API</a></b><br><sub>ZenMux · Docs · ⭐ 75 · 2026-09-20</sub><br>API reference for calling TypeSafe System One evaluation requests with Jev through the ZenMux model gateway.<br><sub>Also: <a href="https://github.com/ZenMux/zenmux-doc/blob/main/docs_source/en/api/typesafe/systemone.md">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md"><img src="https://raw.githubusercontent.com/astaxie/TokenHub/main/frontend/public/brand/tokenhub-logo.png" alt="TokenHub Jev semantic routing" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md">TokenHub Jev semantic routing</a></b><br><sub>astaxie · GitHub · ⭐ 1.3k repo · 2026-06-10</sub><br>TokenHub, an enterprise AI gateway, can use Jev to choose the provider and upstream model for eligible Chat Completions requests among the candidates its base routing produced.<br><sub><b>How it uses Jev:</b> One Choice per request returning a candidate or no_preference; observe and enforce modes with a 0.65 confidence threshold, called at most once per request.</sub><br><sub>Also: <a href="https://thinkinai-labs.github.io/tokenhome/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://docs.venice.ai/api-reference/endpoint/decisions/systemone">Venice System One compatibility</a></b><br><sub>Venice · Docs · ⭐ 65 · 2026-09-18</sub><br>API reference for Venice's TypeSafe-compatible POST /systemone alias of its Decisions API, letting System One clients call Jev through Venice.<br><sub>Also: <a href="https://github.com/veniceai/api-docs/blob/main/api-reference/endpoint/decisions/systemone.mdx">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api TypeSafe backend" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api TypeSafe backend</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k repo · 2024-07-04</sub><br>Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.<br><sub>Also: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://docs.litellm.ai/blog/typesafe_jev">TypeSafe Jev on LiteLLM</a></b><br><sub>LiteLLM · Article · ⭐ 32 · 2026-09-20</sub><br>LiteLLM announcement that its proxy (v1.103.0-rc) passes through TypeSafe's /v1/systemone endpoint with logging and cost tracking, so clients call Jev with a LiteLLM virtual key.<br><sub>Also: <a href="https://github.com/BerriAI/litellm-docs/tree/main/blog/typesafe_jev">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/dgrid_ai/status/2102231668040040687"><img src="https://pbs.twimg.com/media/HSyghV2bQAAKh8Q.jpg?name=orig" alt="Jev on DGrid" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dgrid_ai/status/2102231668040040687">Jev on DGrid</a></b><br><sub>dgrid_ai · X · ♥ 17 · 2026-09-22</sub><br>DGrid added Jev 1.13 to its model catalog, serving routing, classification and scoring requests with multiple typed questions per call.<br><sub>Also: <a href="https://dgrid.ai/models/typesafe/jev-1.13">app</a> · <a href="https://dgrid.ai/models/typesafe/jev-1.13">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://docs.aimlapi.com/api-references/decision-models/typesafe/jev">AI/ML API Jev</a></b><br><sub>AI/ML API · Docs · ⭐ 28 · 2024-05-28</sub><br>AI/ML API documentation for serving TypeSafe Jev as typesafe/jev under its decision-models API, with a playground and Python/Node.js snippets for state-plus-questions requests.<br><sub>Also: <a href="https://github.com/aimlapi/api-docs/tree/main/docs/api-references/decision-models/TypeSafe">repo</a> · <a href="https://aimlapi.com/app/typesafe/jev">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md"><img src="https://raw.githubusercontent.com/astaxie/TokenHub/main/frontend/public/brand/tokenhub-logo.png" alt="TokenHub Jev semantic routing" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md">TokenHub Jev semantic routing</a></b><br><sub>astaxie · GitHub · ⭐ 1.3k repo · 2026-06-10</sub><br>TokenHub, an enterprise AI gateway, can use Jev to choose the provider and upstream model for eligible Chat Completions requests among the candidates its base routing produced.<br><sub><b>How it uses Jev:</b> One Choice per request returning a candidate or no_preference; observe and enforce modes with a 0.65 confidence threshold, called at most once per request.</sub><br><sub>Also: <a href="https://thinkinai-labs.github.io/tokenhome/">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/yym68686/uni-api-web"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api-web" alt="uni-api TypeSafe channel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/yym68686/uni-api-web">uni-api TypeSafe channel</a></b><br><sub>yym68686 · GitHub · ⭐ 26 · 2025-03-11</sub><br>Web console for the self-hosted uni-api LLM gateway that can add a typesafe engine channel, proxying POST /v1/systemone so Jev's Choice, Noul and Score questions go through the gateway.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api TypeSafe backend" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api TypeSafe backend</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k repo · 2024-07-04</sub><br>Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.<br><sub>Also: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/croit/aiplane"><img src="https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg" alt="croit AIplane" width="240"></a></td>
@@ -110,24 +110,12 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/unorouter/new-api-sync">new-api-sync TypeSafe provider</a></b><br><sub>unorouter · GitHub · ⭐ 21 · 2026-01-15</sub><br>Sync engine for new-api gateways (used by UnoRouter) with a typesafe provider type that syncs Jev from OpenRouter's decisions route into the gateway with its own sell price and 32,000-token context.<br><sub>Also: <a href="https://unorouter.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts"><img src="https://opengraph.githubassets.com/1/braintrustdata/braintrust-proxy" alt="Braintrust AI Proxy TypeSafe provider" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts">Braintrust AI Proxy TypeSafe provider</a></b><br><sub>braintrustdata · GitHub · ⭐ 410 repo · 2023-11-22</sub><br>Adds TypeSafe as a provider in the Braintrust AI proxy, with a script that syncs Jev model IDs, aliases and per-token pricing from the TypeSafe models API and docs.<br><sub>Also: <a href="https://www.braintrustdata.com/docs/guides/proxy">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx"><img src="https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/main/assets/banner.png" alt="OpenRouter TypeScript SDK System One" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx">OpenRouter TypeScript SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 254 repo · 2025-08-21</sub><br>Official OpenRouter TypeScript SDK resource that sends state and typed questions to System One models such as Jev, mapping bare IDs like jev-latest onto the typesafe/ namespace.<br><sub>Also: <a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/src/sdk/systemone.ts">code</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts"><img src="https://raw.githubusercontent.com/mcowger/plexus/main/assets/readme/hero.svg" alt="Plexus decisions gateway" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts">Plexus decisions gateway</a></b><br><sub>mcowger · GitHub · ⭐ 234 repo · 2025-12-01</sub><br>Unified LLM API gateway that adds a Jev-style decisions endpoint, routing state-plus-questions requests to TypeSafe /v1/systemone or OpenRouter's decisions API.</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/top-think/think-ai"><img src="https://opengraph.githubassets.com/1/top-think/think-ai" alt="ThinkAI decision API" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/top-think/think-ai">ThinkAI decision API</a></b><br><sub>top-think · GitHub · ⭐ 9 · 2023-12-28</sub><br>PHP SDK for the ThinkAI model aggregation service whose decision() resource evaluates Jev noul and choice questions (model jev-latest) next to chat, image and voice APIs.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py"><img src="https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/assets/banner.png" alt="OpenRouter Python SDK System One" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py">OpenRouter Python SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 160 repo · 2025-08-22</sub><br>Official OpenRouter Python SDK module for sending state and typed questions to System One models like Jev through OpenRouter.</td>
+<td width="260" valign="top"><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts"><img src="https://opengraph.githubassets.com/1/braintrustdata/braintrust-proxy" alt="Braintrust AI Proxy TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts">Braintrust AI Proxy TypeSafe provider</a></b><br><sub>braintrustdata · GitHub · ⭐ 410 repo · 2023-11-22</sub><br>Adds TypeSafe as a provider in the Braintrust AI proxy, with a script that syncs Jev model IDs, aliases and per-token pricing from the TypeSafe models API and docs.<br><sub>Also: <a href="https://www.braintrustdata.com/docs/guides/proxy">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/genlayerlabs/unhardcoded"><img src="https://opengraph.githubassets.com/1/genlayerlabs/unhardcoded" alt="unhardcoded" width="240"></a></td>
@@ -142,20 +130,20 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/Muvon/octohub">OctoHub</a></b><br><sub>Muvon · GitHub · ⭐ 7 · 2026-03-19</sub><br>Rust LLM proxy with one OpenAI-style API over 20+ providers, multi-tenant keys and request logging, whose config can map an evaluation model "jev" to TypeSafe or Cloudflare.<br><sub>Also: <a href="https://octomind.run/product/octohub/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts"><img src="https://opengraph.githubassets.com/1/hackclub/ai" alt="Hack Club AI Jev endpoint" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts">Hack Club AI Jev endpoint</a></b><br><sub>hackclub · GitHub · ⭐ 133 repo · 2026-09-17</sub><br>Jev forwarding route in Hack Club's free AI proxy for teens, reusing its Hack Club auth, API keys, spending limits and usage logging.<br><sub>Also: <a href="https://github.com/hackclub/ai">repo</a> · <a href="https://ai.hackclub.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx"><img src="https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/main/assets/banner.png" alt="OpenRouter TypeScript SDK System One" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx">OpenRouter TypeScript SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 254 repo · 2025-08-21</sub><br>Official OpenRouter TypeScript SDK resource that sends state and typed questions to System One models such as Jev, mapping bare IDs like jev-latest onto the typesafe/ namespace.<br><sub>Also: <a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/src/sdk/systemone.ts">code</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/RyanKung/rotom"><img src="https://raw.githubusercontent.com/RyanKung/rotom/master/demos/claude-grok-4.3.gif" alt="rotom" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/RyanKung/rotom">rotom</a></b><br><sub>RyanKung · GitHub · ⭐ 5 · 2026-04-27</sub><br>Local OpenAI- and Anthropic-compatible API gateway in Rust that reuses Codex, Grok, Kiro or Vercel AI Gateway logins for any client, and also carries Jev through its model catalog and evaluation endpoint.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py"><img src="https://opengraph.githubassets.com/1/Routstr/routstr-core" alt="Routstr TypeSafe upstream" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py">Routstr TypeSafe upstream</a></b><br><sub>Routstr · GitHub · ⭐ 81 repo · 2025-04-08</sub><br>Decentralized pay-per-request AI inference proxy, paid with Cashu Bitcoin micropayments, that adds a TypeSafe System One decision endpoint and Jev model catalog.<br><sub>Also: <a href="http://docs.routstr.com/">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts"><img src="https://raw.githubusercontent.com/mcowger/plexus/main/assets/readme/hero.svg" alt="Plexus decisions gateway" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts">Plexus decisions gateway</a></b><br><sub>mcowger · GitHub · ⭐ 234 repo · 2025-12-01</sub><br>Unified LLM API gateway that adds a Jev-style decisions endpoint, routing state-plus-questions requests to TypeSafe /v1/systemone or OpenRouter's decisions API.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go"><img src="https://raw.githubusercontent.com/OpenRouterTeam/go-sdk/main/assets/banner.png" alt="OpenRouter Go SDK System One" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go">OpenRouter Go SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 70 repo · 2025-11-13</sub><br>Official OpenRouter Go SDK support for sending state and typed questions to System One models like Jev through OpenRouter.</td>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py"><img src="https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/assets/banner.png" alt="OpenRouter Python SDK System One" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py">OpenRouter Python SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 160 repo · 2025-08-22</sub><br>Official OpenRouter Python SDK module for sending state and typed questions to System One models like Jev through OpenRouter.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/t0ng7u/status/2102062876819374482"><img src="https://pbs.twimg.com/amplify_video_thumb/2102062812709449728/img/SVBMGP0wAoKqO6J1.jpg" alt="New API Jev plugin" width="240"></a></td>
@@ -164,6 +152,18 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/FFatTiger/new-api-plugin-typesafe"><img src="https://opengraph.githubassets.com/1/FFatTiger/new-api-plugin-typesafe" alt="new-api-plugin-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/FFatTiger/new-api-plugin-typesafe">new-api-plugin-typesafe</a></b><br><sub>FFatTiger · GitHub · ⭐ 3 · 2026-09-18</sub><br>Task plugin for the self-hosted QuantumNous new-api gateway that serves Jev over the native /v1/systemone protocol with token billing, using TypeSafe or Vercel AI Gateway as the upstream.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts"><img src="https://opengraph.githubassets.com/1/hackclub/ai" alt="Hack Club AI Jev endpoint" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts">Hack Club AI Jev endpoint</a></b><br><sub>hackclub · GitHub · ⭐ 133 repo · 2026-09-17</sub><br>Jev forwarding route in Hack Club's free AI proxy for teens, reusing its Hack Club auth, API keys, spending limits and usage logging.<br><sub>Also: <a href="https://github.com/hackclub/ai">repo</a> · <a href="https://ai.hackclub.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py"><img src="https://opengraph.githubassets.com/1/Routstr/routstr-core" alt="Routstr TypeSafe upstream" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py">Routstr TypeSafe upstream</a></b><br><sub>Routstr · GitHub · ⭐ 81 repo · 2025-04-08</sub><br>Decentralized pay-per-request AI inference proxy, paid with Cashu Bitcoin micropayments, that adds a TypeSafe System One decision endpoint and Jev model catalog.<br><sub>Also: <a href="http://docs.routstr.com/">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go"><img src="https://raw.githubusercontent.com/OpenRouterTeam/go-sdk/main/assets/banner.png" alt="OpenRouter Go SDK System One" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go">OpenRouter Go SDK System One</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 70 repo · 2025-11-13</sub><br>Official OpenRouter Go SDK support for sending state and typed questions to System One models like Jev through OpenRouter.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AntSeed/antseed/tree/main/plugins/provider-typesafe"><img src="https://opengraph.githubassets.com/1/AntSeed/antseed" alt="AntSeed TypeSafe provider" width="240"></a></td>

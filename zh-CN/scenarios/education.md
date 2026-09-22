@@ -8,16 +8,16 @@
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/hametgholizadeh/status/2101289895624917076"><img src="https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg" alt="考题预测器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hametgholizadeh/status/2101289895624917076">考题预测器</a></b><br><sub>hametgholizadeh · X · ♥ 83 · 2026-09-19</sub><br>按出现在真实考试中的可能性，给 80 道真题和 297 道练习题排序，用时 80 秒，花费 $0.0256。<br><sub><b>Jev 用法:</b> 对照真题集给每道练习题打分。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/wquguru/dasheng"><img src="https://opengraph.githubassets.com/1/wquguru/dasheng" alt="ReadAloud (dasheng)" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/wquguru/dasheng">ReadAloud (dasheng)</a></b><br><sub>wquguru · GitHub · ⭐ 122 · 2026-09-20</sub><br>英语朗读训练工具：R2T2 流式 ASR 转写你的朗读，Jev 判断每个对不上的词是否读错、怎么读错的，再由代码把这些判断换算成分数。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xaniol/status/2101076982373191927"><img src="https://pbs.twimg.com/amplify_video_thumb/2101074153407422464/img/fzFh7BZaZCmGdh8v.jpg" alt="talkr" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/0xaniol/status/2101076982373191927">talkr</a></b><br><sub>0xaniol · X · ♥ 111 · 2026-09-18</sub><br>口语练习应用：给你一个话题，录下 30 秒发言，由 Jev 给停顿、口头禅、重复、自信度和清晰度打分并给出反馈。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/hametgholizadeh/status/2101289895624917076"><img src="https://pbs.twimg.com/amplify_video_thumb/2101289673591021568/img/opei88xzp3DDGrcF.jpg" alt="考题预测器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hametgholizadeh/status/2101289895624917076">考题预测器</a></b><br><sub>hametgholizadeh · X · ♥ 83 · 2026-09-19</sub><br>按出现在真实考试中的可能性，给 80 道真题和 297 道练习题排序，用时 80 秒，花费 $0.0256。<br><sub><b>Jev 用法:</b> 对照真题集给每道练习题打分。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AustinAWay/Working-Memory-Jev"><img src="https://raw.githubusercontent.com/AustinAWay/Working-Memory-Jev/main/docs/provisional-estimates-live.png" alt="Working Memory Jev (Passage)" width="240"></a></td>

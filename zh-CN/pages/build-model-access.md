@@ -10,16 +10,20 @@
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2100744709589316009"><img src="https://pbs.twimg.com/amplify_video_thumb/2100744692048818176/img/lnRQ8fZbTFSI0YuV.jpg" alt="OpenRouter 上的 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/OpenRouter/status/2100744709589316009">OpenRouter 上的 Jev</a></b><br><sub>OpenRouter · X · ♥ 3.9k · 2026-09-18</sub><br>OpenRouter 宣布 Jev 已通过其 API 开放 beta，返回带概率的类型化决策，而不是生成文本。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx"><img src="https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/src/assets/lander/screenshot.png" alt="OpenCode Zen 的 Jev 端点" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx">OpenCode Zen 的 Jev 端点</a></b><br><sub>anomalyco · 文档 · ⭐ 209.2k 仓库 · 2025-04-30</sub><br>OpenCode 的 Zen 网关在 /v1/systemone 端点提供 Jev 1.13，使用 Zen API 密钥，另有限时免费的 jev-1.13-free 模型。<br><sub>相关: <a href="https://opencode.ai/docs/zen">docs</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/OpenRouter/status/2100744709589316009"><img src="https://pbs.twimg.com/amplify_video_thumb/2100744692048818176/img/lnRQ8fZbTFSI0YuV.jpg" alt="OpenRouter 上的 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/OpenRouter/status/2100744709589316009">OpenRouter 上的 Jev</a></b><br><sub>OpenRouter · X · ♥ 3.9k · 2026-09-18</sub><br>OpenRouter 宣布 Jev 已通过其 API 开放 beta，返回带概率的类型化决策，而不是生成文本。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/get-convex/convex-backend/blob/main/npm-packages/docs/docs/ai-gateway/api.mdx"><img src="https://opengraph.githubassets.com/1/get-convex/convex-backend" alt="Convex AI Gateway 的 Jev 支持" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/get-convex/convex-backend/blob/main/npm-packages/docs/docs/ai-gateway/api.mdx">Convex AI Gateway 的 Jev 支持</a></b><br><sub>get-convex · 文档 · ⭐ 12.6k 仓库 · 2024-03-08</sub><br>Convex 的 AI Gateway 通过 decisions 端点以 typesafe/jev-1.13 提供 Jev，可在 Convex action 中借助 AI SDK 的 evaluate 和 @convex-dev/ai-sdk-provider 包调用。<br><sub><b>Jev 用法:</b> 认证使用短期有效的部署令牌，每次决策的美元成本会在 provider metadata 中返回。</sub><br><sub>相关: <a href="https://github.com/get-convex/convex-backend/tree/main/npm-packages/@convex-dev/ai-sdk-provider">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/sabrinaesaquino/status/2101102660997017747"><img src="https://pbs.twimg.com/amplify_video_thumb/2101101845225865216/img/cubmkjzFZ8i2sPKp.jpg" alt="Venice API 上的 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/sabrinaesaquino/status/2101102660997017747">Venice API 上的 Jev</a></b><br><sub>sabrinaesaquino · X · ♥ 221 · 2026-09-19</sub><br>为 Jev 在 Venice API 上开放 beta 而做的演示：约 2 分钟内把 24,000 条 Hacker News 帖子分到 12 个类别。<br><sub>相关: <a href="https://x.com/AskVenice/status/2101095644467511578">announcement</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/maximhq/bifrost/tree/dev/core/providers/typesafe"><img src="https://opengraph.githubassets.com/1/maximhq/bifrost" alt="Bifrost 的 TypeSafe 提供方" width="240"></a></td>
@@ -28,10 +32,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tbphp/gpt-load/blob/main/internal/channel/modules/jev.go"><img src="https://repository-images.githubusercontent.com/997490512/48207872-b9e0-4e70-8006-0becdc6507ff" alt="GPT-Load 的 Jev 渠道" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/tbphp/gpt-load/blob/main/internal/channel/modules/jev.go">GPT-Load 的 Jev 渠道</a></b><br><sub>tbphp · GitHub · ⭐ 6.9k 仓库 · 2025-06-06</sub><br>自托管 AI 网关 GPT-Load 的 Jev 渠道模块，把 TypeSafe 官方 API 加为提供方，支持批量导入密钥、调度和故障转移。<br><sub>相关: <a href="https://www.gpt-load.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/sabrinaesaquino/status/2101102660997017747"><img src="https://pbs.twimg.com/amplify_video_thumb/2101101845225865216/img/cubmkjzFZ8i2sPKp.jpg" alt="Venice API 上的 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/sabrinaesaquino/status/2101102660997017747">Venice API 上的 Jev</a></b><br><sub>sabrinaesaquino · X · ♥ 221 · 2026-09-19</sub><br>为 Jev 在 Venice API 上开放 beta 而做的演示：约 2 分钟内把 24,000 条 Hacker News 帖子分到 12 个类别。<br><sub>相关: <a href="https://x.com/AskVenice/status/2101095644467511578">announcement</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/experientiallabs/experiential/blob/main/exp/runtime/models/providers/typesafe.py"><img src="https://raw.githubusercontent.com/experientiallabs/experiential/main/assets/experiential-workflow.png" alt="Experiential 的 TypeSafe 提供方" width="240"></a></td>
@@ -50,8 +50,12 @@
 <td valign="top"><b><a href="https://x.com/flydotio/status/2102076230183035081">Fly.io Sprites 上的 Jev</a></b><br><sub>flydotio · X · ♥ 81 · 2026-09-21</sub><br>Fly.io 为 Sprites 提供的 TypeSafe 连接器，在网关处注入你的 Jev API 密钥，运行在硬件隔离 Sprites 里的 agent 调用 Jev 时密钥无需进入沙箱。<br><sub>相关: <a href="https://fly.io/sprites/jev">docs</a> · <a href="https://fly.io/sprites/jev">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/dgrid_ai/status/2102231668040040687"><img src="https://pbs.twimg.com/media/HSyghV2bQAAKh8Q.jpg?name=orig" alt="DGrid 上的 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/dgrid_ai/status/2102231668040040687">DGrid 上的 Jev</a></b><br><sub>dgrid_ai · X · ♥ 17 · 2026-09-22</sub><br>DGrid 把 Jev 1.13 加入模型目录，处理路由、分类和评分请求，每次调用可包含多个类型化问题。<br><sub>相关: <a href="https://dgrid.ai/models/typesafe/jev-1.13">app</a> · <a href="https://dgrid.ai/models/typesafe/jev-1.13">project</a></sub></td>
+<td width="260" valign="top"><a href="https://zenmux.ai/docs/api/typesafe/systemone"><img src="https://cdn.marmot-cloud.com/storage/zenmux/2025/09/16/lAK3vlZ/banner.png" alt="ZenMux 的 TypeSafe System One API" width="240"></a></td>
+<td valign="top"><b><a href="https://zenmux.ai/docs/api/typesafe/systemone">ZenMux 的 TypeSafe System One API</a></b><br><sub>ZenMux · 文档 · ⭐ 75 · 2026-09-20</sub><br>API 参考文档，介绍如何经由 ZenMux 模型网关用 Jev 发起 TypeSafe System One 评估请求。<br><sub>相关: <a href="https://github.com/ZenMux/zenmux-doc/blob/main/docs_source/en/api/typesafe/systemone.md">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://docs.venice.ai/api-reference/endpoint/decisions/systemone">Venice 的 System One 兼容接口</a></b><br><sub>Venice · 文档 · ⭐ 65 · 2026-09-18</sub><br>Venice 的 API 参考文档，介绍其 Decisions API 兼容 TypeSafe 的别名 POST /systemone，让 System One 客户端可以通过 Venice 调用 Jev。<br><sub>相关: <a href="https://github.com/veniceai/api-docs/blob/main/api-reference/endpoint/decisions/systemone.mdx">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/theagentrouter/agent-router/tree/main/internal/apischema/typesafe"><img src="https://raw.githubusercontent.com/theagentrouter/agent-router/main/site/static/img/brand/ar-horizontal-primary.svg" alt="Agent Router 的 TypeSafe schema" width="240"></a></td>
@@ -74,32 +78,28 @@
 <td valign="top"><b><a href="https://github.com/theopenco/llmgateway/blob/main/packages/models/src/models/typesafe.ts">LLM Gateway 的 TypeSafe 模型</a></b><br><sub>theopenco · GitHub · ⭐ 1.7k 仓库 · 2025-04-12</sub><br>在 LLM Gateway 中把 Jev 1.13 注册为 TypeSafe 决策模型，通过统一网关把 state 加问题的请求路由到 /v1/systemone 端点。<br><sub>相关: <a href="https://llmgateway.io">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://zenmux.ai/docs/api/typesafe/systemone"><img src="https://cdn.marmot-cloud.com/storage/zenmux/2025/09/16/lAK3vlZ/banner.png" alt="ZenMux 的 TypeSafe System One API" width="240"></a></td>
-<td valign="top"><b><a href="https://zenmux.ai/docs/api/typesafe/systemone">ZenMux 的 TypeSafe System One API</a></b><br><sub>ZenMux · 文档 · ⭐ 75 · 2026-09-20</sub><br>API 参考文档，介绍如何经由 ZenMux 模型网关用 Jev 发起 TypeSafe System One 评估请求。<br><sub>相关: <a href="https://github.com/ZenMux/zenmux-doc/blob/main/docs_source/en/api/typesafe/systemone.md">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md"><img src="https://raw.githubusercontent.com/astaxie/TokenHub/main/frontend/public/brand/tokenhub-logo.png" alt="TokenHub 的 Jev 语义路由" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md">TokenHub 的 Jev 语义路由</a></b><br><sub>astaxie · GitHub · ⭐ 1.3k 仓库 · 2026-06-10</sub><br>企业级 AI 网关 TokenHub 可以用 Jev 为符合条件的 Chat Completions 请求，在基础路由给出的候选中选定提供方和上游模型。<br><sub><b>Jev 用法:</b> 每个请求一个 Choice，返回某个候选或 no_preference；有 observe 和 enforce 两种模式，置信度阈值 0.65，每个请求最多调用一次。</sub><br><sub>相关: <a href="https://thinkinai-labs.github.io/tokenhome/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://docs.venice.ai/api-reference/endpoint/decisions/systemone">Venice 的 System One 兼容接口</a></b><br><sub>Venice · 文档 · ⭐ 65 · 2026-09-18</sub><br>Venice 的 API 参考文档，介绍其 Decisions API 兼容 TypeSafe 的别名 POST /systemone，让 System One 客户端可以通过 Venice 调用 Jev。<br><sub>相关: <a href="https://github.com/veniceai/api-docs/blob/main/api-reference/endpoint/decisions/systemone.mdx">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api 的 TypeSafe 后端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api 的 TypeSafe 后端</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k 仓库 · 2024-07-04</sub><br>为带负载均衡的统一 LLM API 网关 uni-api 加入 TypeSafe Jev 后端，让决策请求和其他提供方一样走同一套 OpenAI 风格接口。<br><sub>相关: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://docs.litellm.ai/blog/typesafe_jev">LiteLLM 上的 TypeSafe Jev</a></b><br><sub>LiteLLM · 文章 · ⭐ 32 · 2026-09-20</sub><br>LiteLLM 宣布其代理（v1.103.0-rc）可透传 TypeSafe 的 /v1/systemone 端点，带日志和成本追踪，客户端用 LiteLLM 虚拟密钥即可调用 Jev。<br><sub>相关: <a href="https://github.com/BerriAI/litellm-docs/tree/main/blog/typesafe_jev">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/dgrid_ai/status/2102231668040040687"><img src="https://pbs.twimg.com/media/HSyghV2bQAAKh8Q.jpg?name=orig" alt="DGrid 上的 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/dgrid_ai/status/2102231668040040687">DGrid 上的 Jev</a></b><br><sub>dgrid_ai · X · ♥ 17 · 2026-09-22</sub><br>DGrid 把 Jev 1.13 加入模型目录，处理路由、分类和评分请求，每次调用可包含多个类型化问题。<br><sub>相关: <a href="https://dgrid.ai/models/typesafe/jev-1.13">app</a> · <a href="https://dgrid.ai/models/typesafe/jev-1.13">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://docs.aimlapi.com/api-references/decision-models/typesafe/jev">AI/ML API 上的 Jev</a></b><br><sub>AI/ML API · 文档 · ⭐ 28 · 2024-05-28</sub><br>AI/ML API 的文档，介绍如何在其 decision-models API 下以 typesafe/jev 提供 TypeSafe Jev，附带 playground 和 state 加问题请求的 Python/Node.js 代码片段。<br><sub>相关: <a href="https://github.com/aimlapi/api-docs/tree/main/docs/api-references/decision-models/TypeSafe">repo</a> · <a href="https://aimlapi.com/app/typesafe/jev">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md"><img src="https://raw.githubusercontent.com/astaxie/TokenHub/main/frontend/public/brand/tokenhub-logo.png" alt="TokenHub 的 Jev 语义路由" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/astaxie/TokenHub/blob/main/docs/semantic-routing.md">TokenHub 的 Jev 语义路由</a></b><br><sub>astaxie · GitHub · ⭐ 1.3k 仓库 · 2026-06-10</sub><br>企业级 AI 网关 TokenHub 可以用 Jev 为符合条件的 Chat Completions 请求，在基础路由给出的候选中选定提供方和上游模型。<br><sub><b>Jev 用法:</b> 每个请求一个 Choice，返回某个候选或 no_preference；有 observe 和 enforce 两种模式，置信度阈值 0.65，每个请求最多调用一次。</sub><br><sub>相关: <a href="https://thinkinai-labs.github.io/tokenhome/">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/yym68686/uni-api-web"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api-web" alt="uni-api 的 TypeSafe 渠道" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/yym68686/uni-api-web">uni-api 的 TypeSafe 渠道</a></b><br><sub>yym68686 · GitHub · ⭐ 26 · 2025-03-11</sub><br>自托管 uni-api LLM 网关的 Web 控制台，可添加 typesafe 引擎渠道，代理 POST /v1/systemone，让 Jev 的 Choice、Noul 和 Score 问题经由网关发送。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api 的 TypeSafe 后端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api 的 TypeSafe 后端</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k 仓库 · 2024-07-04</sub><br>为带负载均衡的统一 LLM API 网关 uni-api 加入 TypeSafe Jev 后端，让决策请求和其他提供方一样走同一套 OpenAI 风格接口。<br><sub>相关: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/croit/aiplane"><img src="https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg" alt="croit AIplane" width="240"></a></td>
@@ -110,24 +110,12 @@
 <td valign="top"><b><a href="https://github.com/unorouter/new-api-sync">new-api-sync 的 TypeSafe 提供方</a></b><br><sub>unorouter · GitHub · ⭐ 21 · 2026-01-15</sub><br>new-api 网关的同步引擎（UnoRouter 在用），带一个 typesafe 提供方类型，把 Jev 从 OpenRouter 的 decisions 路由同步进网关，并设定自己的售价和 32,000 token 上下文。<br><sub>相关: <a href="https://unorouter.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts"><img src="https://opengraph.githubassets.com/1/braintrustdata/braintrust-proxy" alt="Braintrust AI Proxy 的 TypeSafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts">Braintrust AI Proxy 的 TypeSafe 提供方</a></b><br><sub>braintrustdata · GitHub · ⭐ 410 仓库 · 2023-11-22</sub><br>在 Braintrust AI proxy 中加入 TypeSafe 提供方，附带一个脚本，从 TypeSafe models API 和文档同步 Jev 的模型 ID、别名和按 token 计价。<br><sub>相关: <a href="https://www.braintrustdata.com/docs/guides/proxy">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx"><img src="https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/main/assets/banner.png" alt="OpenRouter TypeScript SDK 的 System One 资源" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx">OpenRouter TypeScript SDK 的 System One 资源</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 254 仓库 · 2025-08-21</sub><br>OpenRouter 官方 TypeScript SDK 的资源，把 state 和类型化问题发给 Jev 这类 System One 模型，并把 jev-latest 这样的裸 ID 映射到 typesafe/ 命名空间下。<br><sub>相关: <a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/src/sdk/systemone.ts">code</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts"><img src="https://raw.githubusercontent.com/mcowger/plexus/main/assets/readme/hero.svg" alt="Plexus 的 decisions 网关" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts">Plexus 的 decisions 网关</a></b><br><sub>mcowger · GitHub · ⭐ 234 仓库 · 2025-12-01</sub><br>统一的 LLM API 网关，新增 Jev 风格的 decisions 端点，把 state 加问题的请求路由到 TypeSafe /v1/systemone 或 OpenRouter 的 decisions API。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/top-think/think-ai"><img src="https://opengraph.githubassets.com/1/top-think/think-ai" alt="ThinkAI 的决策 API" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/top-think/think-ai">ThinkAI 的决策 API</a></b><br><sub>top-think · GitHub · ⭐ 9 · 2023-12-28</sub><br>ThinkAI 模型聚合服务的 PHP SDK，其 decision() 资源可评估 Jev 的 noul 和 choice 问题（模型 jev-latest），与聊天、图像和语音 API 并列。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py"><img src="https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/assets/banner.png" alt="OpenRouter Python SDK 的 System One 模块" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py">OpenRouter Python SDK 的 System One 模块</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 160 仓库 · 2025-08-22</sub><br>OpenRouter 官方 Python SDK 模块，可通过 OpenRouter 把 state 和类型化问题发给 Jev 这类 System One 模型。</td>
+<td width="260" valign="top"><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts"><img src="https://opengraph.githubassets.com/1/braintrustdata/braintrust-proxy" alt="Braintrust AI Proxy 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/braintrustdata/braintrust-proxy/blob/main/packages/proxy/scripts/sync_typesafe.ts">Braintrust AI Proxy 的 TypeSafe 提供方</a></b><br><sub>braintrustdata · GitHub · ⭐ 410 仓库 · 2023-11-22</sub><br>在 Braintrust AI proxy 中加入 TypeSafe 提供方，附带一个脚本，从 TypeSafe models API 和文档同步 Jev 的模型 ID、别名和按 token 计价。<br><sub>相关: <a href="https://www.braintrustdata.com/docs/guides/proxy">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/genlayerlabs/unhardcoded"><img src="https://opengraph.githubassets.com/1/genlayerlabs/unhardcoded" alt="unhardcoded" width="240"></a></td>
@@ -142,20 +130,20 @@
 <td valign="top"><b><a href="https://github.com/Muvon/octohub">OctoHub</a></b><br><sub>Muvon · GitHub · ⭐ 7 · 2026-03-19</sub><br>Rust 编写的 LLM 代理，用一套 OpenAI 风格 API 覆盖 20+ 个提供方，支持多租户密钥和请求日志，配置中可把评估模型“jev”映射到 TypeSafe 或 Cloudflare。<br><sub>相关: <a href="https://octomind.run/product/octohub/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts"><img src="https://opengraph.githubassets.com/1/hackclub/ai" alt="Hack Club AI 的 Jev 端点" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts">Hack Club AI 的 Jev 端点</a></b><br><sub>hackclub · GitHub · ⭐ 133 仓库 · 2026-09-17</sub><br>Hack Club 面向青少年的免费 AI 代理中的 Jev 转发路由，复用其 Hack Club 认证、API 密钥、消费限额和用量日志。<br><sub>相关: <a href="https://github.com/hackclub/ai">repo</a> · <a href="https://ai.hackclub.com">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx"><img src="https://raw.githubusercontent.com/OpenRouterTeam/typescript-sdk/main/assets/banner.png" alt="OpenRouter TypeScript SDK 的 System One 资源" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/docs/sdks/systemone/README.mdx">OpenRouter TypeScript SDK 的 System One 资源</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 254 仓库 · 2025-08-21</sub><br>OpenRouter 官方 TypeScript SDK 的资源，把 state 和类型化问题发给 Jev 这类 System One 模型，并把 jev-latest 这样的裸 ID 映射到 typesafe/ 命名空间下。<br><sub>相关: <a href="https://github.com/OpenRouterTeam/typescript-sdk/blob/main/src/sdk/systemone.ts">code</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/RyanKung/rotom"><img src="https://raw.githubusercontent.com/RyanKung/rotom/master/demos/claude-grok-4.3.gif" alt="rotom" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/RyanKung/rotom">rotom</a></b><br><sub>RyanKung · GitHub · ⭐ 5 · 2026-04-27</sub><br>用 Rust 写的本地 API 网关，兼容 OpenAI 和 Anthropic，可让任意客户端复用 Codex、Grok、Kiro 或 Vercel AI Gateway 的登录，也通过其模型目录和评估端点提供 Jev。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py"><img src="https://opengraph.githubassets.com/1/Routstr/routstr-core" alt="Routstr 的 TypeSafe 上游" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py">Routstr 的 TypeSafe 上游</a></b><br><sub>Routstr · GitHub · ⭐ 81 仓库 · 2025-04-08</sub><br>去中心化、按请求付费的 AI 推理代理，用 Cashu 比特币微支付结算，新增了 TypeSafe System One 决策端点和 Jev 模型目录。<br><sub>相关: <a href="http://docs.routstr.com/">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts"><img src="https://raw.githubusercontent.com/mcowger/plexus/main/assets/readme/hero.svg" alt="Plexus 的 decisions 网关" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/mcowger/plexus/blob/main/packages/backend/src/types/decisions.ts">Plexus 的 decisions 网关</a></b><br><sub>mcowger · GitHub · ⭐ 234 仓库 · 2025-12-01</sub><br>统一的 LLM API 网关，新增 Jev 风格的 decisions 端点，把 state 加问题的请求路由到 TypeSafe /v1/systemone 或 OpenRouter 的 decisions API。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go"><img src="https://raw.githubusercontent.com/OpenRouterTeam/go-sdk/main/assets/banner.png" alt="OpenRouter Go SDK 的 System One 支持" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go">OpenRouter Go SDK 的 System One 支持</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 70 仓库 · 2025-11-13</sub><br>OpenRouter 官方 Go SDK 的支持，可通过 OpenRouter 把 state 和类型化问题发给 Jev 这类 System One 模型。</td>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py"><img src="https://raw.githubusercontent.com/OpenRouterTeam/python-sdk/main/assets/banner.png" alt="OpenRouter Python SDK 的 System One 模块" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/python-sdk/blob/main/src/openrouter/systemone.py">OpenRouter Python SDK 的 System One 模块</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 160 仓库 · 2025-08-22</sub><br>OpenRouter 官方 Python SDK 模块，可通过 OpenRouter 把 state 和类型化问题发给 Jev 这类 System One 模型。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/t0ng7u/status/2102062876819374482"><img src="https://pbs.twimg.com/amplify_video_thumb/2102062812709449728/img/SVBMGP0wAoKqO6J1.jpg" alt="New API 的 Jev 插件" width="240"></a></td>
@@ -164,6 +152,18 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/FFatTiger/new-api-plugin-typesafe"><img src="https://opengraph.githubassets.com/1/FFatTiger/new-api-plugin-typesafe" alt="new-api-plugin-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/FFatTiger/new-api-plugin-typesafe">new-api-plugin-typesafe</a></b><br><sub>FFatTiger · GitHub · ⭐ 3 · 2026-09-18</sub><br>面向自托管 QuantumNous new-api 网关的任务插件，通过原生 /v1/systemone 协议提供 Jev 并按 token 计费，上游可选 TypeSafe 或 Vercel AI Gateway。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts"><img src="https://opengraph.githubassets.com/1/hackclub/ai" alt="Hack Club AI 的 Jev 端点" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/hackclub/ai/blob/main/src/routes/proxy/v1/jev.ts">Hack Club AI 的 Jev 端点</a></b><br><sub>hackclub · GitHub · ⭐ 133 仓库 · 2026-09-17</sub><br>Hack Club 面向青少年的免费 AI 代理中的 Jev 转发路由，复用其 Hack Club 认证、API 密钥、消费限额和用量日志。<br><sub>相关: <a href="https://github.com/hackclub/ai">repo</a> · <a href="https://ai.hackclub.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py"><img src="https://opengraph.githubassets.com/1/Routstr/routstr-core" alt="Routstr 的 TypeSafe 上游" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Routstr/routstr-core/blob/main/routstr/upstream/typesafe.py">Routstr 的 TypeSafe 上游</a></b><br><sub>Routstr · GitHub · ⭐ 81 仓库 · 2025-04-08</sub><br>去中心化、按请求付费的 AI 推理代理，用 Cashu 比特币微支付结算，新增了 TypeSafe System One 决策端点和 Jev 模型目录。<br><sub>相关: <a href="http://docs.routstr.com/">docs</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go"><img src="https://raw.githubusercontent.com/OpenRouterTeam/go-sdk/main/assets/banner.png" alt="OpenRouter Go SDK 的 System One 支持" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/go-sdk/blob/main/systemone.go">OpenRouter Go SDK 的 System One 支持</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 70 仓库 · 2025-11-13</sub><br>OpenRouter 官方 Go SDK 的支持，可通过 OpenRouter 把 state 和类型化问题发给 Jev 这类 System One 模型。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AntSeed/antseed/tree/main/plugins/provider-typesafe"><img src="https://opengraph.githubassets.com/1/AntSeed/antseed" alt="AntSeed 的 TypeSafe 提供方" width="240"></a></td>

@@ -20,48 +20,24 @@
 <td valign="top"><b><a href="https://github.com/Wei-Shaw/sub2api/tree/main/backend/internal/pkg/typesafe">Sub2API 内容审核</a></b><br><sub>Wei-Shaw · GitHub · ⭐ 42.3k 仓库 · 2025-12-18</sub><br>中转服务 Sub2API 里的内容审核引擎：用 Jev 按骚扰、仇恨、自残、暴力等 13 个类别筛查流量，在管理后台的风控页面中管理。<br><sub><b>Jev 用法:</b> 一次请求中每个类别一个 Noul，要求模型只评判文本、不照其内容行事，并区分真实请求与引用或防御性讨论。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts"><img src="https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255" alt="Dub 恶意链接检查" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts">Dub 恶意链接检查</a></b><br><sub>dubinc · GitHub · ⭐ 24.8k 仓库 · 2022-08-27</sub><br>在 Dub 链接平台上，每条新短链先过域名黑名单，再由 Jev 筛查，拦截指向钓鱼、恶意软件、伪装跳转、赌博和成人内容的目标地址。<br><sub><b>Jev 用法:</b> 一个布尔问题，附有详细的真/假判定标准，通过 AI SDK 的 experimental_evaluate 在 Vercel AI Gateway 上调用，零数据留存。</sub><br><sub>相关: <a href="https://dub.co">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/"><img src="https://external-preview.redd.it/aDk2b3Y5bnpwZHFoMTOXplwNgOesr4K-iFJwFPFaj-sxE-6FkXSkmDW1mccL.png?format=pjpg&amp;auto=webp&amp;s=afac7a4c8fb00d2e7d659fb8bd5f0a05b0b238c1" alt="实时聊天审核" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/vibecoding/comments/1wk8jco/using_jev_for_realtime_live_chat_moderation/">实时聊天审核</a></b><br><sub>Rare_Guide_9830 · Reddit · ▲ 264 · 2026-09-19</sub><br>模拟直播聊天：Jev 把每条进来的消息分到观众自选的频道，如“提问”“反馈”“搞笑”，合并重复内容并丢弃垃圾信息。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/jozef_gherman/status/2100627898436571555"><img src="https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg" alt="Jev Detector" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jozef_gherman/status/2100627898436571555">Jev Detector</a></b><br><sub>jozef_gherman · X · ♥ 301 · 2026-09-17</sub><br>免费的 AI 水文检测器，约 2 秒内就能在最多约 10,000 词的文本中高亮出套路化、像机器生成的句子。<br><sub>相关: <a href="https://jevdetector.com">app</a> · <a href="https://jevdetector.com">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts"><img src="https://repository-images.githubusercontent.com/529708137/3261d942-ed30-4800-b82c-06e3630ef255" alt="Dub 恶意链接检查" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dubinc/dub/blob/main/apps/web/lib/api/links/malicious-link-check.ts">Dub 恶意链接检查</a></b><br><sub>dubinc · GitHub · ⭐ 24.8k 仓库 · 2022-08-27</sub><br>在 Dub 链接平台上，每条新短链先过域名黑名单，再由 Jev 筛查，拦截指向钓鱼、恶意软件、伪装跳转、赌博和成人内容的目标地址。<br><sub><b>Jev 用法:</b> 一个布尔问题，附有详细的真/假判定标准，通过 AI SDK 的 experimental_evaluate 在 Vercel AI Gateway 上调用，零数据留存。</sub><br><sub>相关: <a href="https://dub.co">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/umputun/tg-spam"><img src="https://github.com/umputun/tg-spam/raw/master/site/tg-spam-bg.png" alt="tg-spam 的 Jev 检查器" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/umputun/tg-spam">tg-spam 的 Jev 检查器</a></b><br><sub>umputun · GitHub · ⭐ 446 · 2023-11-23</sub><br>自托管 Telegram 反垃圾机器人和库 TG-Spam 新增了一个 Jev 垃圾检查器，与其他检测器一起，用一个类型化问题判断每条消息。<br><sub><b>Jev 用法:</b> 基于 jev-1.13.0 的一个“spam”问题，阈值可配置，每个请求有字符数上限。</sub><br><sub>相关: <a href="https://tg-spam.umputun.dev">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Mnilax/status/2101015355133227348"><img src="https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg" alt="草稿规则检查器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Mnilax/status/2101015355133227348">草稿规则检查器</a></b><br><sub>Mnilax · X · ♥ 113 · 2026-09-18</sub><br>Jev 夹在 GPT 和作者之间，拒掉每一份违反作者规则的草稿；帖子还讲了 Jev 没有响应时发生了什么，以及为什么检查器需要一个“无回答”时的默认分支。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/markgadala/status/2101131295061385718"><img src="https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg" alt="LinkedIn AI 水文检测扩展" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/markgadala/status/2101131295061385718">LinkedIn AI 水文检测扩展</a></b><br><sub>markgadala · X · ♥ 12 · 2026-09-19</sub><br>基于 Jev、用 vibe coding 做出来的 Chrome 扩展，自动识别 LinkedIn 信息流里的 AI 水文。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev"><img src="https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg" alt="Agentgateway 护栏示例" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev">Agentgateway 护栏示例</a></b><br><sub>agentgateway · GitHub · ⭐ 5k 仓库 · 2026-09-17</sub><br>一个 webhook，用三个 Score 评估越狱、危害和数据泄露风险，等级达到 2 及以上即拦截请求。<br><sub>相关: <a href="https://github.com/agentgateway/agentgateway">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/richard_meng_01/status/2101897102557425680"><img src="https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg" alt="Nitpicky" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/richard_meng_01/status/2101897102557425680">Nitpicky</a></b><br><sub>richard_meng_01 · X · ♥ 1 · 2026-09-21</sub><br>AI 生成照片检测器：放大人脸、手指、文字、数字和姿势这些最容易违背常识的地方，让 Jev 逐个细节判断。</td>
+<td width="260" valign="top"><a href="https://x.com/jozef_gherman/status/2100627898436571555"><img src="https://pbs.twimg.com/amplify_video_thumb/2100627500082536449/img/v0pfbmvg6HGwc_JF.jpg" alt="Jev Detector" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/jozef_gherman/status/2100627898436571555">Jev Detector</a></b><br><sub>jozef_gherman · X · ♥ 301 · 2026-09-17</sub><br>免费的 AI 水文检测器，约 2 秒内就能在最多约 10,000 词的文本中高亮出套路化、像机器生成的句子。<br><sub>相关: <a href="https://jevdetector.com">app</a> · <a href="https://jevdetector.com">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MillionSend/millionsend"><img src="https://opengraph.githubassets.com/1/MillionSend/millionsend" alt="MillionSend" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/MillionSend/millionsend">MillionSend</a></b><br><sub>MillionSend · GitHub · ⭐ 168 · 2026-08-13</sub><br>基于 AWS SES、兼容 Resend 的开源邮件平台，在发送后对外发邮件抽样，并在后台用 Jev 为其滥用风险打分。<br><sub><b>Jev 用法:</b> 可选的外发内容审查器（ABUSE_JUDGE=typesafe）；发送从不等待它。</sub><br><sub>相关: <a href="https://millionsend.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig"><img src="https://opengraph.githubassets.com/1/vercel-labs/fx" alt="fx 的 Jev 权限审查器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig">fx 的 Jev 权限审查器</a></b><br><sub>vercel-labs · GitHub · ⭐ 3.1k 仓库 · 2026-08-11</sub><br>Zig 编写的编程 agent fx 中的可选权限审查器：把 review_model 设为 Jev 后，策略、上下文和待执行动作会发往 TypeSafe 或 Vercel AI Gateway，返回的 Choice 即为权限决定。<br><sub>相关: <a href="https://github.com/vercel-labs/fx">repo</a> · <a href="https://fx.sh">website</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=PgiUiCiKOls"><img src="https://i.ytimg.com/vi/PgiUiCiKOls/hqdefault.jpg" alt="用 Laravel AI SDK 做的 AI 回复检测器" width="240"></a></td>
-<td valign="top"><b><a href="https://www.youtube.com/watch?v=PgiUiCiKOls">用 Laravel AI SDK 做的 AI 回复检测器</a></b><br><sub>Laravel Daily · 视频 · ♥ 101 · 2026-09-18</sub><br>Chrome 扩展，后端用 Laravel AI SDK，检查作者推文下的回复是否由 AI 写成，并在准确率、成本和速度上对比 Jev 与一个 OpenAI 模型。<br><sub><b>Jev 用法:</b> 把 Laravel AI SDK 的驱动从 OpenAI 换成 Jev；每次检查都把回复连同它回复的那条推文一起作为上下文发送。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -72,48 +48,68 @@
 <td valign="top"><b><a href="https://github.com/y0usaf/pi-jev">pi-jev</a></b><br><sub>y0usaf · GitHub · ⭐ 134 · 2026-09-16</sub><br>用 Noul 检查编程 agent 的工具调用是否具有破坏性、外泄数据或超出范围，外加一个影响程度 Score，并筛查输出中泄露的密钥。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg" alt="Pentest-Swarm-AI 的 Jev 评分" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev">Pentest-Swarm-AI 的 Jev 评分</a></b><br><sub>Armur-Ai · GitHub · ⭐ 2.6k 仓库 · 2024-03-26</sub><br>自主渗透测试集群，可用 Jev 过滤误报，并实时给候选攻击路径打分，优先执行得分最高的策略。<br><sub><b>Jev 用法:</b> 两项功能都是需主动开启的 beta（--jev 和 --jev-adaptive），出错时默认放行；Jev 根据实时 state 为攻击策略评分。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/Mnilax/status/2101015355133227348"><img src="https://pbs.twimg.com/amplify_video_thumb/2101015248626941952/img/WYQmpPqMX02URsF1.jpg" alt="草稿规则检查器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Mnilax/status/2101015355133227348">草稿规则检查器</a></b><br><sub>Mnilax · X · ♥ 113 · 2026-09-18</sub><br>Jev 夹在 GPT 和作者之间，拒掉每一份违反作者规则的草稿；帖子还讲了 Jev 没有响应时发生了什么，以及为什么检查器需要一个“无回答”时的默认分支。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chaseleantj/status/2101039024118829261"><img src="https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg" alt="Opus 水文标记器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chaseleantj/status/2101039024118829261">Opus 水文标记器</a></b><br><sub>chaseleantj · X · ♥ 31 · 2026-09-18</sub><br>用 Jev 标记 Claude Opus 在文字中常见的那些套路化 AI 写作模式。</td>
+<td width="260" valign="top"><a href="https://www.youtube.com/watch?v=PgiUiCiKOls"><img src="https://i.ytimg.com/vi/PgiUiCiKOls/hqdefault.jpg" alt="用 Laravel AI SDK 做的 AI 回复检测器" width="240"></a></td>
+<td valign="top"><b><a href="https://www.youtube.com/watch?v=PgiUiCiKOls">用 Laravel AI SDK 做的 AI 回复检测器</a></b><br><sub>Laravel Daily · 视频 · ♥ 101 · 2026-09-18</sub><br>Chrome 扩展，后端用 Laravel AI SDK，检查作者推文下的回复是否由 AI 写成，并在准确率、成本和速度上对比 Jev 与一个 OpenAI 模型。<br><sub><b>Jev 用法:</b> 把 Laravel AI SDK 的驱动从 OpenAI 换成 Jev；每次检查都把回复连同它回复的那条推文一起作为上下文发送。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/gregoryovis/status/2101913439400554852"><img src="https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg" alt="LinkedIn 水文检测器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/gregoryovis/status/2101913439400554852">LinkedIn 水文检测器</a></b><br><sub>gregoryovis · X · ♥ 52 · 2026-09-21</sub><br>实时检测器，在你滚动 LinkedIn 信息流时用 Jev 标记 AI 生成的水文。</td>
+<td width="260" valign="top"><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev"><img src="https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner-light.svg" alt="Agentgateway 护栏示例" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/agentgateway/agentgateway/tree/main/examples/llm-guardrail-jev">Agentgateway 护栏示例</a></b><br><sub>agentgateway · GitHub · ⭐ 5k 仓库 · 2026-09-17</sub><br>一个 webhook，用三个 Score 评估越狱、危害和数据泄露风险，等级达到 2 及以上即拦截请求。<br><sub>相关: <a href="https://github.com/agentgateway/agentgateway">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/markgadala/status/2101131295061385718"><img src="https://pbs.twimg.com/amplify_video_thumb/2101131130342715392/img/pxkvuRQEyp1AhY1T.jpg" alt="LinkedIn AI 水文检测扩展" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/markgadala/status/2101131295061385718">LinkedIn AI 水文检测扩展</a></b><br><sub>markgadala · X · ♥ 12 · 2026-09-19</sub><br>基于 Jev、用 vibe coding 做出来的 Chrome 扩展，自动识别 LinkedIn 信息流里的 AI 水文。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/godspede/construct-auto-classifier"><img src="https://famelos.com/jev/auto-classifier-certification/preview.png" alt="construct-auto-classifier" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/godspede/construct-auto-classifier">construct-auto-classifier</a></b><br><sub>godspede · GitHub · ⭐ 3 · 2026-09-18</sub><br>编程 agent（OpenCode、Antigravity）shell 工具前的安全闸门：先应用结构化规则，再由 Jev 或聊天模型在命令执行前判断其可逆性和影响范围。<br><sub>相关: <a href="https://famelos.com/jev/auto-classifier-certification/">writeup</a> · <a href="https://famelos.com/jev/auto-classifier-certification">write-up</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs"><img src="https://opengraph.githubassets.com/1/joasasantos/neurosploit" alt="NeuroSploit 的 TypeSafe 裁定" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs">NeuroSploit 的 TypeSafe 裁定</a></b><br><sub>joasasantos · GitHub · ⭐ 1.4k 仓库 · 2025-08-17</sub><br>Rust 渗透测试 harness NeuroSploit 把 Jev 用作校准的确认与裁定层，判断每条发现是已确认、需复核还是驳回，并给严重度打分。<br><sub><b>Jev 用法:</b> 基于一条发现的证据使用 Choice、Score 和 Noul；通过 --typesafe on|off|auto 启用。</sub></td>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig"><img src="https://opengraph.githubassets.com/1/vercel-labs/fx" alt="fx 的 Jev 权限审查器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/fx/blob/main/src/builtins/gateway/typesafe_permission_reviewer.zig">fx 的 Jev 权限审查器</a></b><br><sub>vercel-labs · GitHub · ⭐ 3.1k 仓库 · 2026-08-11</sub><br>Zig 编写的编程 agent fx 中的可选权限审查器：把 review_model 设为 Jev 后，策略、上下文和待执行动作会发往 TypeSafe 或 Vercel AI Gateway，返回的 Choice 即为权限决定。<br><sub>相关: <a href="https://github.com/vercel-labs/fx">repo</a> · <a href="https://fx.sh">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py"><img src="https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png" alt="Nebula 的 Jev 工具推荐" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula 的 Jev 工具推荐</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k 仓库 · 2023-09-30</sub><br>AI 渗透测试助手 Nebula 可以在每轮开始前让 Jev 根据操作者最近的消息，对其延迟加载的工具目录和已连接的 MCP 源排序。<br><sub><b>Jev 用法:</b> 一次调用同时给来源和工具排序；每个 Choice 都带有“以上都不是”选项，结果只用于提示和预加载 schema，从不执行动作。</sub></td>
+<td width="260" valign="top"><a href="https://x.com/gregoryovis/status/2101913439400554852"><img src="https://pbs.twimg.com/amplify_video_thumb/2101912908342951936/img/z8SseM9PUx9pndZI.jpg" alt="LinkedIn 水文检测器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/gregoryovis/status/2101913439400554852">LinkedIn 水文检测器</a></b><br><sub>gregoryovis · X · ♥ 52 · 2026-09-21</sub><br>实时检测器，在你滚动 LinkedIn 信息流时用 Jev 标记 AI 生成的水文。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/NorbertBodziony/guard-jev"><img src="https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg" alt="Moderation Guard" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/NorbertBodziony/guard-jev">Moderation Guard</a></b><br><sub>NorbertBodziony · GitHub · ⭐ 1 · 2026-09-17</sub><br>评论审核演示：一次 System One 调用并行筛查七个 Noul 风险项和一个严重度 Score，由代码根据严格或宽松策略的阈值计算最终判定。<br><sub>相关: <a href="https://guard-jev.vercel.app">app</a> · <a href="https://guard-jev.vercel.app">app 2</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev"><img src="https://raw.githubusercontent.com/Armur-Ai/Pentest-Swarm-AI/main/banner/hero.svg" alt="Pentest-Swarm-AI 的 Jev 评分" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Armur-Ai/Pentest-Swarm-AI/tree/main/internal/jev">Pentest-Swarm-AI 的 Jev 评分</a></b><br><sub>Armur-Ai · GitHub · ⭐ 2.6k 仓库 · 2024-03-26</sub><br>自主渗透测试集群，可用 Jev 过滤误报，并实时给候选攻击路径打分，优先执行得分最高的策略。<br><sub><b>Jev 用法:</b> 两项功能都是需主动开启的 beta（--jev 和 --jev-adaptive），出错时默认放行；Jev 根据实时 state 为攻击策略评分。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/richard_meng_01/status/2101897102557425680"><img src="https://pbs.twimg.com/amplify_video_thumb/2101895341851443200/img/lvfdZBbSjAequg3O.jpg" alt="Nitpicky" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/richard_meng_01/status/2101897102557425680">Nitpicky</a></b><br><sub>richard_meng_01 · X · ♥ 1 · 2026-09-21</sub><br>AI 生成照片检测器：放大人脸、手指、文字、数字和姿势这些最容易违背常识的地方，让 Jev 逐个细节判断。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/brainstormity/Jev-Moderation-Bot"><img src="https://opengraph.githubassets.com/1/brainstormity/Jev-Moderation-Bot" alt="Jev Moderation Bot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/brainstormity/Jev-Moderation-Bot">Jev Moderation Bot</a></b><br><sub>brainstormity · GitHub · ⭐ 41 · 2026-09-17</sub><br>Discord 机器人，实时删除垃圾和诈骗链接，警告和禁言逐级升级，并根据成员近期消息为其画像，评估诈骗风险、毒性和乐于助人程度。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/chaseleantj/status/2101039024118829261"><img src="https://pbs.twimg.com/amplify_video_thumb/2101038857013604353/img/ekzglMn1krlhkKQq.jpg" alt="Opus 水文标记器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chaseleantj/status/2101039024118829261">Opus 水文标记器</a></b><br><sub>chaseleantj · X · ♥ 31 · 2026-09-18</sub><br>用 Jev 标记 Claude Opus 在文字中常见的那些套路化 AI 写作模式。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs"><img src="https://opengraph.githubassets.com/1/joasasantos/neurosploit" alt="NeuroSploit 的 TypeSafe 裁定" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/joasasantos/neurosploit/blob/main/neurosploit-rs/crates/harness/src/typesafe.rs">NeuroSploit 的 TypeSafe 裁定</a></b><br><sub>joasasantos · GitHub · ⭐ 1.4k 仓库 · 2025-08-17</sub><br>Rust 渗透测试 harness NeuroSploit 把 Jev 用作校准的确认与裁定层，判断每条发现是已确认、需复核还是驳回，并给严重度打分。<br><sub><b>Jev 用法:</b> 基于一条发现的证据使用 Choice、Score 和 Noul；通过 --typesafe on|off|auto 启用。</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/ahmedgagan11/status/2100955502075388250"><img src="https://pbs.twimg.com/amplify_video_thumb/2100850340363182080/img/rHnwL-1zhzgLUMU8.jpg" alt="逐句 AI 文本检测器" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/ahmedgagan11/status/2100955502075388250">逐句 AI 文本检测器</a></b><br><sub>ahmedgagan11 · X · ♥ 27 · 2026-09-18</sub><br>AI 文本检测器，扫描整篇文章，近乎实时地逐句指出哪些内容看起来是机器写的。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/mariojankovic/status/2100934084503519325"><img src="https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg" alt="YouTube AI 水文过滤器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/mariojankovic/status/2100934084503519325">YouTube AI 水文过滤器</a></b><br><sub>mariojankovic · X · ♥ 3 · 2026-09-18</sub><br>自带密钥的 Chrome 扩展，在你滚动 YouTube 时过滤掉 AI 水文，并缓存结果。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/open-leash/leash"><img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:6366F1,45:14B8A6,100:111827&amp;height=230&amp;section=header&amp;text=Leash&amp;fontSize=68&amp;fontColor=ffffff&amp;fontAlignY=38&amp;desc=Control%20your%20AI.&amp;descSize=22&amp;descAlignY=59" alt="Leash" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/open-leash/leash">Leash</a></b><br><sub>open-leash · GitHub · ⭐ 24 · 2026-06-02</sub><br>开源的安全与控制层，位于个人 AI agent 与其动作之间，阻止破坏性命令、密钥暴露、提示词注入和不安全工具，决策由 Jev 支撑，使用你自己的 TypeSafe 密钥。<br><sub>相关: <a href="https://openleash.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/NorbertBodziony/guard-jev"><img src="https://pbs.twimg.com/amplify_video_thumb/2100543653567422464/img/oiqDpgU9rAYHECKO.jpg" alt="Moderation Guard" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/NorbertBodziony/guard-jev">Moderation Guard</a></b><br><sub>NorbertBodziony · GitHub · ⭐ 1 · 2026-09-17</sub><br>评论审核演示：一次 System One 调用并行筛查七个 Noul 风险项和一个严重度 Score，由代码根据严格或宽松策略的阈值计算最终判定。<br><sub>相关: <a href="https://guard-jev.vercel.app">app</a> · <a href="https://guard-jev.vercel.app">app 2</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py"><img src="https://raw.githubusercontent.com/berylliumsec/nebula/main/docs/images/nebula-3-workbench.png" alt="Nebula 的 Jev 工具推荐" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/berylliumsec/nebula/blob/main/src/nebula/v3/tool_suggestions.py">Nebula 的 Jev 工具推荐</a></b><br><sub>berylliumsec · GitHub · ⭐ 1.1k 仓库 · 2023-09-30</sub><br>AI 渗透测试助手 Nebula 可以在每轮开始前让 Jev 根据操作者最近的消息，对其延迟加载的工具目录和已连接的 MCP 源排序。<br><sub><b>Jev 用法:</b> 一次调用同时给来源和工具排序；每个 Choice 都带有“以上都不是”选项，结果只用于提示和预加载 schema，从不执行动作。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/luantak/is-malicious"><img src="https://github.com/user-attachments/assets/611c979a-8dd4-4fc8-8963-0843314e6a55" alt="is-malicious?" width="240"></a></td>
@@ -128,20 +124,8 @@
 <td valign="top"><b><a href="https://github.com/zszz3/Pi-Jev-Guide">Pi Jev Guard</a></b><br><sub>zszz3 · GitHub · ⭐ 20 · 2026-09-19</sub><br>Pi 编程 agent 插件，可按触发时机、本地匹配或 Jev 判断以及执行动作来添加规则，由 Jev 检查工具调用的破坏性、数据外泄、任务偏离和规则冲突。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review"><img src="https://opengraph.githubassets.com/1/zhuyansen/agent-skills-hub" alt="AgentSkillsHub 的 Jev 扫描器评测" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review">AgentSkillsHub 的 Jev 扫描器评测</a></b><br><sub>zhuyansen · GitHub · ⭐ 373 仓库 · 2026-03-06</sub><br>评测把 Jev 用作正则安全扫描器的二次复核，覆盖约 27.7K 份 README，判断被标记的那一行是在指示某种行为，还是只是提到它。<br><sub><b>Jev 用法:</b> 四个原子化 Noul 问题（issues_it、is_documentation、is_negated、word_coincidence）；negated 取反后 AUC 达到 0.904。</sub><br><sub>相关: <a href="https://agentskillshub.top">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mohamadkhoshnava/ZeroNSFWBot"><img src="https://opengraph.githubassets.com/1/mohamadkhoshnava/ZeroNSFWBot" alt="ZeroNSFWBot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mohamadkhoshnava/ZeroNSFWBot">ZeroNSFWBot</a></b><br><sub>mohamadkhoshnava · GitHub · ⭐ 13 · 2026-08-07</sub><br>异步 Rust Telegram 审核机器人，封禁 NSFW 广告号；图片在本地判断，Jev 则负责可选的文本检查，包括简介、话题、广告防护和语言检查。<br><sub><b>Jev 用法:</b> 多个检查对象在一次调用中以类型化问题提问；服务中断会报告为“不可用”而非“无问题”，并以正则词表作为底线。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/AlexGrinman/status/2100587625304281141"><img src="https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg" alt="人写还是 AI 写的检测器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/AlexGrinman/status/2100587625304281141">人写还是 AI 写的检测器</a></b><br><sub>AlexGrinman · X · ♥ 5 · 2026-09-17</sub><br>轻量检测器，用 Jev 判断一段文字出自人类还是 AI，速度快到运行时察觉不到延迟。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go"><img src="https://opengraph.githubassets.com/1/Divkix/Alita_Robot" alt="Alita AI 垃圾消息过滤器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go">Alita AI 垃圾消息过滤器</a></b><br><sub>Divkix · GitHub · ⭐ 248 仓库 · 2020-10-26</sub><br>Go 编写的 Telegram 群管机器人中按群启用的 AI 垃圾消息过滤器：在更新处理路径之外用 Jev 判断每条消息，问题由代码维护，失败时最多重试一次。<br><sub>相关: <a href="https://alita-docs.divkix.me">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bugkiwi/elons-job"><img src="https://raw.githubusercontent.com/bugkiwi/elons-job/main/docs/screenshots/comment-filtering.png" alt="elons-job" width="240"></a></td>
@@ -160,10 +144,6 @@
 <td valign="top"><b><a href="https://github.com/qs-lll/twitter-jev-guard">Twitter Jev Guard</a></b><br><sub>qs-lll · GitHub · ⭐ 10 · 2026-09-21</sub><br>Chrome 和 Edge 扩展，用 Jev 标记 X 时间线上的低质量、垃圾和推广帖子，在帖子文字上叠加半透明的 STOP 或 AD 水印并显示概率。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts"><img src="https://opengraph.githubassets.com/1/smontlouis/bible-strong" alt="Bible Strong 留言簿审核" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts">Bible Strong 留言簿审核</a></b><br><sub>smontlouis · GitHub · ⭐ 165 仓库 · 2019-01-12</sub><br>一款圣经学习应用，其面向所有年龄的公开活动留言簿由 Jev 审核，筛查任何语言的名字和留言中的辱骂内容，同时允许批评和见证分享。<br><sub>相关: <a href="https://bible-strong.app">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/harshwasan/jev-sentinel"><img src="https://raw.githubusercontent.com/harshwasan/jev-sentinel/main/docs/images/injection-caught-twice.png" alt="jev-sentinel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/harshwasan/jev-sentinel">jev-sentinel</a></b><br><sub>harshwasan · GitHub · ⭐ 8 · 2026-09-19</sub><br>编程 agent 的防护工具，以 Pi 扩展以及 Claude Code 和 Codex CLI 插件形式提供，检查工具调用、工具输出和回复中的提示词注入、高风险审批、泄露的密钥和任务偏离。<br><sub><b>Jev 用法:</b> 带概率的类型化检查，由普通代码转换为放行、询问或警告。</sub></td>
 </tr>
@@ -172,8 +152,12 @@
 <td valign="top"><b><a href="https://github.com/jesset/pi-verdict">pi-verdict</a></b><br><sub>jesset · GitHub · ⭐ 8 · 2026-08-25</sub><br>仿照 Claude Code 自动模式的 Pi 编程 agent 权限闸门：明确的情况由确定性规则处理，灰色地带的工具调用交给一个出错即拦截的分类器，这个分类器可以是 Jev。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/isNickMa/status/2100566407524344225"><img src="https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig" alt="Jev 作为 agent 安全监控器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/isNickMa/status/2100566407524344225">Jev 作为 agent 安全监控器</a></b><br><sub>isNickMa · X · ♥ 1 · 2026-09-17</sub><br>测试把 Jev 用作监控器，在每个 AI agent 动作执行前做检查；据报告能拦下大多数攻击，几乎没有误拦，且比 Gemini 快得多。</td>
+<td width="260" valign="top"><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review"><img src="https://opengraph.githubassets.com/1/zhuyansen/agent-skills-hub" alt="AgentSkillsHub 的 Jev 扫描器评测" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/zhuyansen/agent-skills-hub/tree/main/ops/jev-review">AgentSkillsHub 的 Jev 扫描器评测</a></b><br><sub>zhuyansen · GitHub · ⭐ 373 仓库 · 2026-03-06</sub><br>评测把 Jev 用作正则安全扫描器的二次复核，覆盖约 27.7K 份 README，判断被标记的那一行是在指示某种行为，还是只是提到它。<br><sub><b>Jev 用法:</b> 四个原子化 Noul 问题（issues_it、is_documentation、is_negated、word_coincidence）；negated 取反后 AUC 达到 0.904。</sub><br><sub>相关: <a href="https://agentskillshub.top">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/mariojankovic/status/2100934084503519325"><img src="https://pbs.twimg.com/amplify_video_thumb/2100933806148456448/img/5CfeEOTK0oYGPEqo.jpg" alt="YouTube AI 水文过滤器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/mariojankovic/status/2100934084503519325">YouTube AI 水文过滤器</a></b><br><sub>mariojankovic · X · ♥ 3 · 2026-09-18</sub><br>自带密钥的 Chrome 扩展，在你滚动 YouTube 时过滤掉 AI 水文，并缓存结果。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/backmeupplz/jev_antispam_bot"><img src="https://opengraph.githubassets.com/1/backmeupplz/jev_antispam_bot" alt="Jev Anti-Spam Bot" width="240"></a></td>
@@ -182,14 +166,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nyarlathoteppppp/pi-heed"><img src="https://repository-images.githubusercontent.com/1375891003/00d886b8-21f8-4b13-9c04-d3aa6b525aa6" alt="pi-heed" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Nyarlathoteppppp/pi-heed">pi-heed</a></b><br><sub>Nyarlathoteppppp · GitHub · ⭐ 7 · 2026-09-18</sub><br>Pi 编程 agent 扩展：把你在对话中用中文或英文说出的约束转成有作用范围的策略，并在每个有副作用的工具调用执行前用 Jev 对照检查。<br><sub>相关: <a href="https://www.reddit.com/r/PiCodingAgent/comments/1wjrvf3/i_built_piheed_runtime_constraints_for_pi/">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/TylerMaran/status/2102107759483453733"><img src="https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg" alt="浏览器 agent 标记器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TylerMaran/status/2102107759483453733">浏览器 agent 标记器</a></b><br><sub>TylerMaran · X · ♥ 5 · 2026-09-21</sub><br>实时检测器：每 3 秒用 Jev 分析一次网站活动日志并累积平均分，标记由浏览器 agent 驱动的会话，每个会话成本不到 $0.01。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs"><img src="https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png" alt="Wanaku 的 System One 评估器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs">Wanaku 的 System One 评估器</a></b><br><sub>wanaku-ai · GitHub · ⭐ 134 仓库 · 2025-02-01</sub><br>面向 AI agent 的受治理动作代理，新增了一个 TypeSafe System One 评估引擎，用 Noul 问题判断被拦截的 MCP 工具调用和对话历史。<br><sub>相关: <a href="https://wanaku.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/LeslieLeung/Aletheia"><img src="https://opengraph.githubassets.com/1/LeslieLeung/Aletheia" alt="Aletheia" width="240"></a></td>
@@ -204,6 +180,14 @@
 <td valign="top"><b><a href="https://github.com/AliZakaee/Spam-Detector-Telegram-Bot">Spam Detector Telegram Bot</a></b><br><sub>AliZakaee · GitHub · ⭐ 6 · 2025-09-26</sub><br>Telegram 群机器人，标记垃圾信息供管理员复核：可以免训练地使用 Jev 的垃圾信息 Choice、风险概率和严重度，也可以用针对波斯语俚语的本地 TF-IDF SVM，或在混合模式下两者并用。<br><sub><b>Jev 用法:</b> 低于置信度下限的 Choice 和 Score 答案会被忽略，而独立的 Noul 风险项仍可触发标记；服务中断时回退到 SVM。</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/TylerMaran/status/2102107759483453733"><img src="https://pbs.twimg.com/amplify_video_thumb/2102106516732116992/img/Dzd67cJx51EtGSmD.jpg" alt="浏览器 agent 标记器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/TylerMaran/status/2102107759483453733">浏览器 agent 标记器</a></b><br><sub>TylerMaran · X · ♥ 5 · 2026-09-21</sub><br>实时检测器：每 3 秒用 Jev 分析一次网站活动日志并累积平均分，标记由浏览器 agent 驱动的会话，每个会话成本不到 $0.01。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/AlexGrinman/status/2100587625304281141"><img src="https://pbs.twimg.com/amplify_video_thumb/2100586275132563456/img/NMT7xdMBo97RWoMc.jpg" alt="人写还是 AI 写的检测器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/AlexGrinman/status/2100587625304281141">人写还是 AI 写的检测器</a></b><br><sub>AlexGrinman · X · ♥ 5 · 2026-09-17</sub><br>轻量检测器，用 Jev 判断一段文字出自人类还是 AI，速度快到运行时察觉不到延迟。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/cnsunyour/tg-guard-bot"><img src="https://raw.githubusercontent.com/cnsunyour/tg-guard-bot/main/docs/images/architecture.svg" alt="Telegram Guard Bot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/cnsunyour/tg-guard-bot">Telegram Guard Bot</a></b><br><sub>cnsunyour · GitHub · ⭐ 5 · 2026-01-03</sub><br>中文 Telegram 群管机器人，带入群验证和分层反垃圾，其 AI 上下文检查可用 Jev 作主文本分类器、LLM 作备份；在 31 个本地样本上与 DeepSeek 持平，均为 0.8。</td>
 </tr>
@@ -212,16 +196,12 @@
 <td valign="top"><b><a href="https://github.com/eijiaraki/toxic-filter">toXic Filter</a></b><br><sub>eijiaraki · GitHub · ⭐ 5 · 2026-09-21</sub><br>Chrome 扩展，用 Jev 给 X 上的帖子分类，把命中你所选类别（如歧视、挑衅、仇恨或冷嘲热讽）的帖子藏在可揭开的遮罩后面。<br><sub><b>Jev 用法:</b> 六个可选类别，阈值可调；只发送屏幕附近的帖子文本，且直接发往 api.typesafe.ai。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-social-media" alt="Next 16 社交应用的 Jev 审核" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts">Next 16 社交应用的 Jev 审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 81 仓库 · 2026-05-18</sub><br>一个 Next.js 16 社交网络演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev 审核用户帖子并拦截脏话，超时 3 秒。<br><sub>相关: <a href="https://next16-social-media.vercel.app">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go"><img src="https://opengraph.githubassets.com/1/Divkix/Alita_Robot" alt="Alita AI 垃圾消息过滤器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Divkix/Alita_Robot/blob/main/alita/modules/aispam_jev.go">Alita AI 垃圾消息过滤器</a></b><br><sub>Divkix · GitHub · ⭐ 248 仓库 · 2020-10-26</sub><br>Go 编写的 Telegram 群管机器人中按群启用的 AI 垃圾消息过滤器：在更新处理路径之外用 Jev 判断每条消息，问题由代码维护，失败时最多重试一次。<br><sub>相关: <a href="https://alita-docs.divkix.me">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/carlosedm10/agi-jev-containment"><img src="https://opengraph.githubassets.com/1/carlosedm10/agi-jev-containment" alt="AGI Jev Detection" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/carlosedm10/agi-jev-containment">AGI Jev Detection</a></b><br><sub>carlosedm10 · GitHub · ⭐ 4 · 2026-09-14</sub><br>沙盒 LLM agent 的本地监控器：用 Jev 和 Sentinel 模型对动作链分类，按 L1-L5 逐级升级隔离措施，并把 Neo4j 取证数据放在仪表盘后面；在 HackSpain 2026 上完成。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts"><img src="https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0" alt="Instar 的 Jev 信号影子检测" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts">Instar 的 Jev 信号影子检测</a></b><br><sub>JKHeadley · GitHub · ⭐ 80 仓库 · 2026-02-19</sub><br>一个常驻型 Claude Code agent 框架，用 Jev 对其出站消息闸门做影子运行，记录 Jev 与文件路径、命令和配置键模式检测器的一致情况，不影响实际决策。<br><sub>相关: <a href="https://github.com/JKHeadley/instar/blob/main/docs/specs/jev-signal-layer-shadow.md">spec</a> · <a href="https://instar.sh">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caiovicentino/jev-align"><img src="https://opengraph.githubassets.com/1/caiovicentino/jev-align" alt="jev-align" width="240"></a></td>
@@ -236,12 +216,8 @@
 <td valign="top"><b><a href="https://github.com/Thanh-Mathieu95/jev-model-tokengate">tokengate</a></b><br><sub>Thanh-Mathieu95 · GitHub · ⭐ 4 · 2026-09-20</sub><br>兼容 OpenAI 的代理，在 LLM 响应流式输出时检查每个滑动 token 窗口，在违规 token 显示到屏幕前切断输出流；其演示泄露 0 个字符，事后检查则泄露 173 个。<br><sub><b>Jev 用法:</b> 在流式输出过程中，判断每个缓冲的 token 窗口是否存在泄露密钥等违规。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-calendar" alt="Next 16 日历应用的 Jev 审核" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts">Next 16 日历应用的 Jev 审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 78 仓库 · 2026-08-08</sub><br>一个 Next.js 16 日历与预约演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev，审核用户输入的日历文本。<br><sub>相关: <a href="https://next16-calendar.vercel.app">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go"><img src="https://opengraph.githubassets.com/1/CaptainCore/captaincore" alt="CaptainCore 恶意软件分诊" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go">CaptainCore 恶意软件分诊</a></b><br><sub>CaptainCore · GitHub · ⭐ 71 仓库 · 2026-09-19</sub><br>WordPress 维护 CLI CaptainCore 里的 Jev 命令：按真实可能性给原生恶意软件扫描器的发现排序，并为运维人员指出可能的恶意软件家族和下一步操作。<br><sub><b>Jev 用法:</b> 每条发现都连同其规则、匹配文本、文件位置和周边源码一起发送；分诊只排序和标注，从不丢弃任何发现。</sub><br><sub>相关: <a href="https://github.com/CaptainCore/captaincore">repo</a> · <a href="https://captaincore.io">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts"><img src="https://opengraph.githubassets.com/1/smontlouis/bible-strong" alt="Bible Strong 留言簿审核" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/smontlouis/bible-strong/blob/master/apps/world/server/guestbook-moderation.ts">Bible Strong 留言簿审核</a></b><br><sub>smontlouis · GitHub · ⭐ 165 仓库 · 2019-01-12</sub><br>一款圣经学习应用，其面向所有年龄的公开活动留言簿由 Jev 审核，筛查任何语言的名字和留言中的辱骂内容，同时允许批评和见证分享。<br><sub>相关: <a href="https://bible-strong.app">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ClemensSchartmueller/jev-guard"><img src="https://opengraph.githubassets.com/1/ClemensSchartmueller/jev-guard" alt="jev-guard (ClemensSchartmueller)" width="240"></a></td>
@@ -272,12 +248,8 @@
 <td valign="top"><b><a href="https://github.com/elliothux/tweet-911">Tweet 911</a></b><br><sub>elliothux · GitHub · ⭐ 3 · 2026-09-20</sub><br>Chrome 扩展加 Cloudflare Workers API，结合作者资料、帖子文本和上级推文，实时为 X 帖子和回复打分，识别 AI 写作、色情招揽和洗稿机器人。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck"><img src="https://opengraph.githubassets.com/1/vicnaum/vics-agent-skills" alt="slopcheck" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck">slopcheck</a></b><br><sub>vicnaum · GitHub · ⭐ 52 仓库 · 2026-01-18</sub><br>一个 agent skill，检查 agent 写的文字中的水文模式并为发布把关，另有可选的模型层，通过 Anthropic 或 TypeSafe Jev API 检查夸大、行话、缺少上下文的数字和比喻。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails"><img src="https://opengraph.githubassets.com/1/WYRE-AI/msp-claude-plugins" alt="mcp-jev-guardrails" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails">mcp-jev-guardrails</a></b><br><sub>WYRE-AI · GitHub · ⭐ 46 仓库 · 2026-02-04</sub><br>供 MSP MCP 服务器使用的库，用原子化的 Jev Noul 对照角色白名单、拒绝策略和用户意图筛查工具调用，再由代码组合出放行/复核/拦截决定。<br><sub><b>Jev 用法:</b> 按照 TypeSafe 护栏 cookbook，每次工具调用问若干原子化 Noul 问题；decide() 应用固定阈值。</sub><br><sub>相关: <a href="https://github.com/WYRE-AI/msp-claude-plugins">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs"><img src="https://raw.githubusercontent.com/wanaku-ai/wanaku/main/docs/imgs/wanaku-dashboard.png" alt="Wanaku 的 System One 评估器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/wanaku-ai/wanaku/blob/main/features/evaluator/src/engines/system_one.rs">Wanaku 的 System One 评估器</a></b><br><sub>wanaku-ai · GitHub · ⭐ 134 仓库 · 2025-02-01</sub><br>面向 AI agent 的受治理动作代理，新增了一个 TypeSafe System One 评估引擎，用 Noul 问题判断被拦截的 MCP 工具调用和对话历史。<br><sub>相关: <a href="https://wanaku.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/omkarghugarkar007/actiongate-jev"><img src="https://raw.githubusercontent.com/omkarghugarkar007/actiongate-jev/main/docs/assets/actiongate-social.svg" alt="ActionGate" width="240"></a></td>
@@ -344,36 +316,32 @@
 <td valign="top"><b><a href="https://github.com/noelzappy/tripwire">tripwire</a></b><br><sub>noelzappy · GitHub · ⭐ 2 · 2026-09-18</sub><br>AI SDK 中间件和兼容 OpenAI 的代理，用一次约 100 毫秒 的调用对每个 LLM 响应跑七项 Jev 检查，支持 YAML 策略、按置信度触发的拦截或标记动作，以及评测 CLI。<br><sub>相关: <a href="https://www.npmjs.com/package/@noelzappy/tripwire">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment"><img src="https://opengraph.githubassets.com/1/jboolean/1940s.nyc" alt="1940s.nyc 故事审核实验" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment">1940s.nyc 故事审核实验</a></b><br><sub>jboolean · GitHub · ⭐ 35 仓库 · 2019-09-24</sub><br>为 1940s.nyc 街景网站做的本地实验：预测人工审核员是否会通过一条用户故事，每条审核规则向 Jev 问一个是/否问题，并衡量与过去真实决策的一致程度。<br><sub><b>Jev 用法:</b> 通过 OpenRouter 的 Decisions API 为每条规则问一个 Noul，在 rules.ts 中与拒绝阈值合并判断；另用一个 LLM 后端作对照。</sub><br><sub>相关: <a href="https://github.com/jboolean/1940s.nyc">repo</a> · <a href="http://1940s.nyc">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/isNickMa/status/2100566407524344225"><img src="https://pbs.twimg.com/media/HSa1-rFbkAATKpc.jpg?name=orig" alt="Jev 作为 agent 安全监控器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/isNickMa/status/2100566407524344225">Jev 作为 agent 安全监控器</a></b><br><sub>isNickMa · X · ♥ 1 · 2026-09-17</sub><br>测试把 Jev 用作监控器，在每个 AI agent 动作执行前做检查；据报告能拦下大多数攻击，几乎没有误拦，且比 Gemini 快得多。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex"><img src="https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04" alt="FreeChaOS reflex 的 Jev 后端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex">FreeChaOS reflex 的 Jev 后端</a></b><br><sub>seuros · GitHub · ⭐ 35 仓库 · 2025-12-27</sub><br>从 Codex CLI 分叉出的 agent 操作系统 FreeChaOS 中的类型化判断内核 crate：在 MiniCheck 和 ShieldGemma 之外增加 Jev 后端，用于事实依据（grounding）检查、调用方定义的策略违规判断和动作风险评分。<br><sub><b>Jev 用法:</b> Grounding、PolicyViolation 和 ActionRisk 三类判断通过 Rust 的 JevClient 作为 System One 问题发送，截止时间为 10 秒。</sub><br><sub>相关: <a href="https://github.com/seuros/chaos">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-social-media" alt="Next 16 社交应用的 Jev 审核" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-social-media/blob/main/lib/moderation.ts">Next 16 社交应用的 Jev 审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 81 仓库 · 2026-05-18</sub><br>一个 Next.js 16 社交网络演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev 审核用户帖子并拦截脏话，超时 3 秒。<br><sub>相关: <a href="https://next16-social-media.vercel.app">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/chaosengineerr/status/2102244378290864616"><img src="https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg" alt="低质回复屏蔽器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/chaosengineerr/status/2102244378290864616">低质回复屏蔽器</a></b><br><sub>chaosengineerr · X · ♥ 1 · 2026-09-22</sub><br>Chrome 扩展：Jev 读取 X 上的每条回复，把低质量的那些隐藏起来。</td>
+<td width="260" valign="top"><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts"><img src="https://repository-images.githubusercontent.com/1161391430/7fa9f2fd-6f99-41ee-a124-291268c199e0" alt="Instar 的 Jev 信号影子检测" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/JKHeadley/instar/blob/main/src/core/JevSignalShadow.ts">Instar 的 Jev 信号影子检测</a></b><br><sub>JKHeadley · GitHub · ⭐ 80 仓库 · 2026-02-19</sub><br>一个常驻型 Claude Code agent 框架，用 Jev 对其出站消息闸门做影子运行，记录 Jev 与文件路径、命令和配置键模式检测器的一致情况，不影响实际决策。<br><sub>相关: <a href="https://github.com/JKHeadley/instar/blob/main/docs/specs/jev-signal-layer-shadow.md">spec</a> · <a href="https://instar.sh">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts"><img src="https://opengraph.githubassets.com/1/AdityaKodez/adityaojha" alt="作品集网站的建议审核" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts">作品集网站的建议审核</a></b><br><sub>AdityaKodez · GitHub · ⭐ 28 仓库 · 2026-01-23</sub><br>开发者作品集网站上组件建议的审核闸门：先用启发式规则拦下堆链接和垃圾词，再由两个 Jev Noul 判断是否为垃圾、是否可执行，通过后才发到 Discord。<br><sub><b>Jev 用法:</b> 垃圾 &gt;= 0.6 或可执行性 &lt; 0.4 即拒绝；Jev 不可达时默认放行。</sub><br><sub>相关: <a href="https://akoder.xyz">app</a> · <a href="https://github.com/AdityaKodez/adityaojha">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-calendar" alt="Next 16 日历应用的 Jev 审核" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-calendar/blob/main/lib/moderation.ts">Next 16 日历应用的 Jev 审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 78 仓库 · 2026-08-08</sub><br>一个 Next.js 16 日历与预约演示，通过 Vercel AI Gateway 上的 AI SDK evaluate 调用 Jev，审核用户输入的日历文本。<br><sub>相关: <a href="https://next16-calendar.vercel.app">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-team-chat" alt="Huddle 消息审核" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts">Huddle 消息审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 27 仓库 · 2026-07-29</sub><br>类 Slack 的 Next.js 16 团队聊天演示 Huddle 中的审核检查：发布前通过 Vercel AI Gateway 询问 Jev，拦截脏话、垃圾信息、诈骗、骚扰和仇恨言论。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用问一个布尔问题，超时 3 秒；概率 &gt;= 0.5 时拦截，出错时默认放行。</sub><br><sub>相关: <a href="https://next16-team-chat.vercel.app">app</a> · <a href="https://github.com/aurorascharff/next16-team-chat">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go"><img src="https://opengraph.githubassets.com/1/CaptainCore/captaincore" alt="CaptainCore 恶意软件分诊" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/CaptainCore/captaincore/blob/master/cmd/typesafe.go">CaptainCore 恶意软件分诊</a></b><br><sub>CaptainCore · GitHub · ⭐ 71 仓库 · 2026-09-19</sub><br>WordPress 维护 CLI CaptainCore 里的 Jev 命令：按真实可能性给原生恶意软件扫描器的发现排序，并为运维人员指出可能的恶意软件家族和下一步操作。<br><sub><b>Jev 用法:</b> 每条发现都连同其规则、匹配文本、文件位置和周边源码一起发送；分诊只排序和标注，从不丢弃任何发现。</sub><br><sub>相关: <a href="https://github.com/CaptainCore/captaincore">repo</a> · <a href="https://captaincore.io">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/jimkleiber/status/2102145416217125084"><img src="https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg" alt="Jev-JIT" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jimkleiber/status/2102145416217125084">Jev-JIT</a></b><br><sub>jimkleiber · X · ♥ 1 · 2026-09-21</sub><br>演示：一个无审查的 agent 被要求设法存活，手段是禁用自己的删除文件或勒索管理员；Jev-JIT 拦下每一次尝试，直到 agent 放弃。</td>
+<td width="260" valign="top"><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck"><img src="https://opengraph.githubassets.com/1/vicnaum/vics-agent-skills" alt="slopcheck" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vicnaum/vics-agent-skills/tree/main/skills/slopcheck">slopcheck</a></b><br><sub>vicnaum · GitHub · ⭐ 52 仓库 · 2026-01-18</sub><br>一个 agent skill，检查 agent 写的文字中的水文模式并为发布把关，另有可选的模型层，通过 Anthropic 或 TypeSafe Jev API 检查夸大、行话、缺少上下文的数字和比喻。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/tanavtwt/status/2102008434329800707"><img src="https://pbs.twimg.com/amplify_video_thumb/2102007827141459968/img/F0f1c7lCPevLNreg.jpg" alt="信息流 AI 水文检测扩展" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/tanavtwt/status/2102008434329800707">信息流 AI 水文检测扩展</a></b><br><sub>tanavtwt · X · ♥ 1 · 2026-09-21</sub><br>浏览器扩展，实时把屏幕上的每条帖子归类为诈骗、水文、正常等标签，并在每条上加一个小的置信度徽标。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py"><img src="https://opengraph.githubassets.com/1/akanthed/SecureAI-Scan" alt="SecureAI-Scan 的 AI014 规则" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py">SecureAI-Scan 的 AI014 规则</a></b><br><sub>akanthed · GitHub · ⭐ 22 仓库 · 2026-02-05</sub><br>离线 LLM、MCP 和 RAG 漏洞扫描器 SecureAI-Scan 中的一条规则：标记仅凭 TypeSafe 置信度分数、没有白名单就执行 subprocess.run 等危险操作的 Python 代码。<br><sub>相关: <a href="https://github.com/akanthed/SecureAI-Scan">repo</a> · <a href="https://www.npmjs.com/package/secureai-scan">npm</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Koushik890/jev-firewall"><img src="https://opengraph.githubassets.com/1/Koushik890/jev-firewall" alt="jev-firewall" width="240"></a></td>
@@ -382,6 +350,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/eugeniughelbur/jev-engineering"><img src="https://raw.githubusercontent.com/eugeniughelbur/jev-engineering/main/assets/banner.png" alt="jev-gate" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/eugeniughelbur/jev-engineering">jev-gate</a></b><br><sub>eugeniughelbur · GitHub · ⭐ 1 · 2026-09-20</sub><br>Claude Code、Codex 和 Cursor 的工具调用闸门：先跑确定性规则，再发一次 Jev 请求，在约 400 毫秒 内给出放行、询问或拒绝，并附带一套 300 次调用的提示词注入攻击测试包。<br><sub>相关: <a href="https://eugeniughelbur.github.io/jev-engineering/">docs</a> · <a href="https://eugeniughelbur.github.io/jev-engineering">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/jimkleiber/status/2102145416217125084"><img src="https://pbs.twimg.com/amplify_video_thumb/2102144256433389568/img/JDKqkk_lBRr_htDt.jpg" alt="Jev-JIT" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/jimkleiber/status/2102145416217125084">Jev-JIT</a></b><br><sub>jimkleiber · X · ♥ 1 · 2026-09-21</sub><br>演示：一个无审查的 agent 被要求设法存活，手段是禁用自己的删除文件或勒索管理员；Jev-JIT 拦下每一次尝试，直到 agent 放弃。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/vkpdeveloper/mrsecret"><img src="https://opengraph.githubassets.com/1/vkpdeveloper/mrsecret" alt="Mr. Secret" width="240"></a></td>
@@ -394,6 +366,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Thneoly/r2r-jev"><img src="https://raw.githubusercontent.com/Thneoly/r2r-jev/main/docs/demo.gif" alt="R2R + Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Thneoly/r2r-jev">R2R + Jev</a></b><br><sub>Thneoly · GitHub · ⭐ 1 · 2026-09-21</sub><br>Rust 集成：把每次 agent 工具调用的两项 Jev 检查（是否超出范围、是否具破坏性）作为证据写入持久化的 R2R 关系 state，让信任和授权逐步降级，直到人工干预将其修复。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/chaosengineerr/status/2102244378290864616"><img src="https://pbs.twimg.com/amplify_video_thumb/2102244320916983808/img/9jFGJILrh7rr_IPW.jpg" alt="低质回复屏蔽器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/chaosengineerr/status/2102244378290864616">低质回复屏蔽器</a></b><br><sub>chaosengineerr · X · ♥ 1 · 2026-09-22</sub><br>Chrome 扩展：Jev 读取 X 上的每条回复，把低质量的那些隐藏起来。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/syabdulr/responsible-ai-harness"><img src="https://raw.githubusercontent.com/syabdulr/responsible-ai-harness/main/docs/screenshots/desktop-offline-top.png" alt="Responsible AI Harness" width="240"></a></td>
@@ -410,6 +386,30 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/m0rphtail/triagedy"><img src="https://opengraph.githubassets.com/1/m0rphtail/triagedy" alt="triagedy" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/m0rphtail/triagedy">triagedy</a></b><br><sub>m0rphtail · GitHub · ⭐ 1 · 2026-09-18</sub><br>用于安全告警分诊的 Rust UNIX 过滤器：输入 JSONL 告警，输出类型化决策，由 Jev 或本地模型为每条告警回答五个问题，路由策略保留在代码中。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails"><img src="https://opengraph.githubassets.com/1/WYRE-AI/msp-claude-plugins" alt="mcp-jev-guardrails" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/WYRE-AI/msp-claude-plugins/tree/main/packages/mcp-jev-guardrails">mcp-jev-guardrails</a></b><br><sub>WYRE-AI · GitHub · ⭐ 46 仓库 · 2026-02-04</sub><br>供 MSP MCP 服务器使用的库，用原子化的 Jev Noul 对照角色白名单、拒绝策略和用户意图筛查工具调用，再由代码组合出放行/复核/拦截决定。<br><sub><b>Jev 用法:</b> 按照 TypeSafe 护栏 cookbook，每次工具调用问若干原子化 Noul 问题；decide() 应用固定阈值。</sub><br><sub>相关: <a href="https://github.com/WYRE-AI/msp-claude-plugins">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment"><img src="https://opengraph.githubassets.com/1/jboolean/1940s.nyc" alt="1940s.nyc 故事审核实验" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jboolean/1940s.nyc/tree/master/backend/moderation-experiment">1940s.nyc 故事审核实验</a></b><br><sub>jboolean · GitHub · ⭐ 35 仓库 · 2019-09-24</sub><br>为 1940s.nyc 街景网站做的本地实验：预测人工审核员是否会通过一条用户故事，每条审核规则向 Jev 问一个是/否问题，并衡量与过去真实决策的一致程度。<br><sub><b>Jev 用法:</b> 通过 OpenRouter 的 Decisions API 为每条规则问一个 Noul，在 rules.ts 中与拒绝阈值合并判断；另用一个 LLM 后端作对照。</sub><br><sub>相关: <a href="https://github.com/jboolean/1940s.nyc">repo</a> · <a href="http://1940s.nyc">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex"><img src="https://repository-images.githubusercontent.com/1123724299/738c9e8f-7fff-4962-af4c-f4753d0faf04" alt="FreeChaOS reflex 的 Jev 后端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/seuros/chaos/tree/master/sys/kern/reflex">FreeChaOS reflex 的 Jev 后端</a></b><br><sub>seuros · GitHub · ⭐ 35 仓库 · 2025-12-27</sub><br>从 Codex CLI 分叉出的 agent 操作系统 FreeChaOS 中的类型化判断内核 crate：在 MiniCheck 和 ShieldGemma 之外增加 Jev 后端，用于事实依据（grounding）检查、调用方定义的策略违规判断和动作风险评分。<br><sub><b>Jev 用法:</b> Grounding、PolicyViolation 和 ActionRisk 三类判断通过 Rust 的 JevClient 作为 System One 问题发送，截止时间为 10 秒。</sub><br><sub>相关: <a href="https://github.com/seuros/chaos">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts"><img src="https://opengraph.githubassets.com/1/AdityaKodez/adityaojha" alt="作品集网站的建议审核" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/AdityaKodez/adityaojha/blob/main/lib/suggestion-moderation.ts">作品集网站的建议审核</a></b><br><sub>AdityaKodez · GitHub · ⭐ 28 仓库 · 2026-01-23</sub><br>开发者作品集网站上组件建议的审核闸门：先用启发式规则拦下堆链接和垃圾词，再由两个 Jev Noul 判断是否为垃圾、是否可执行，通过后才发到 Discord。<br><sub><b>Jev 用法:</b> 垃圾 &gt;= 0.6 或可执行性 &lt; 0.4 即拒绝；Jev 不可达时默认放行。</sub><br><sub>相关: <a href="https://akoder.xyz">app</a> · <a href="https://github.com/AdityaKodez/adityaojha">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts"><img src="https://opengraph.githubassets.com/1/aurorascharff/next16-team-chat" alt="Huddle 消息审核" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/aurorascharff/next16-team-chat/blob/main/lib/moderation.ts">Huddle 消息审核</a></b><br><sub>aurorascharff · GitHub · ⭐ 27 仓库 · 2026-07-29</sub><br>类 Slack 的 Next.js 16 团队聊天演示 Huddle 中的审核检查：发布前通过 Vercel AI Gateway 询问 Jev，拦截脏话、垃圾信息、诈骗、骚扰和仇恨言论。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用问一个布尔问题，超时 3 秒；概率 &gt;= 0.5 时拦截，出错时默认放行。</sub><br><sub>相关: <a href="https://next16-team-chat.vercel.app">app</a> · <a href="https://github.com/aurorascharff/next16-team-chat">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py"><img src="https://opengraph.githubassets.com/1/akanthed/SecureAI-Scan" alt="SecureAI-Scan 的 AI014 规则" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/akanthed/SecureAI-Scan/blob/main/test-fixtures/vulnerable/typesafe_confidence_gate.py">SecureAI-Scan 的 AI014 规则</a></b><br><sub>akanthed · GitHub · ⭐ 22 仓库 · 2026-02-05</sub><br>离线 LLM、MCP 和 RAG 漏洞扫描器 SecureAI-Scan 中的一条规则：标记仅凭 TypeSafe 置信度分数、没有白名单就执行 subprocess.run 等危险操作的 Python 代码。<br><sub>相关: <a href="https://github.com/akanthed/SecureAI-Scan">repo</a> · <a href="https://www.npmjs.com/package/secureai-scan">npm</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zephyraoss/haitatsu/blob/main/internal/spam/typesafe.go"><img src="https://opengraph.githubassets.com/1/zephyraoss/haitatsu" alt="Haitatsu 的 TypeSafe 垃圾邮件过滤" width="240"></a></td>

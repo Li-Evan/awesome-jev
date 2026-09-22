@@ -8,10 +8,6 @@
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/neogoose_btw/status/2101428888874410069"><img src="https://pbs.twimg.com/amplify_video_thumb/2101427327746093056/img/LiNIpS9HMaBO00kW.jpg" alt="Jevassembler" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/neogoose_btw/status/2101428888874410069">Jevassembler</a></b><br><sub>neogoose_btw · X · ♥ 1.5k · 2026-09-19</sub><br>讽刺性实验，干脆不写代码：你给它一个任务，Jev 在运行时预测下一条要执行的 CPU 指令。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/steventey/status/2101788378882863427"><img src="https://pbs.twimg.com/media/HSsNY_ybUAEFIK_.jpg?name=orig" alt="jev-even-odd" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/steventey/status/2101788378882863427">jev-even-odd</a></b><br><sub>steventey · X · ♥ 2.4k · 2026-09-20</sub><br>玩笑性质的 npm 包，通过 AI SDK 询问 Jev 来判断一个数字是偶数还是奇数。<br><sub>相关: <a href="https://www.npmjs.com/package/jev-even-odd">npm</a> · <a href="https://npmjs.com/package/jev-even-odd">project</a></sub></td>
 </tr>
@@ -20,36 +16,32 @@
 <td valign="top"><b><a href="https://x.com/sarvagya_kul/status/2100980770206879849">候选人与公司岗位匹配</a></b><br><sub>sarvagya_kul · X · ♥ 1.8k · 2026-09-18</sub><br>用 12 秒、$0.0005 把一份候选人档案与 400 家公司做匹配，预测最有可能拿到的职位，并标出不匹配项。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/narphorium/nl-logic-interpreter"><img src="https://pbs.twimg.com/amplify_video_thumb/2100984200820121600/img/dXya52zCSiVBJVaF.jpg" alt="Natural Language Logic Interpreter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/narphorium/nl-logic-interpreter">Natural Language Logic Interpreter</a></b><br><sub>narphorium · GitHub · ⭐ 6 · 2026-09-19</sub><br>可单步执行的逻辑解释器，像 Prolog 一样用 SLD 归结在纯英文事实和规则上证明目标，由 Jev 判断两句话是否陈述同一事实，从而完成合一。<br><sub>相关: <a href="https://x.com/narphorium/status/2100985027093749764">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/neogoose_btw/status/2101428888874410069"><img src="https://pbs.twimg.com/amplify_video_thumb/2101427327746093056/img/LiNIpS9HMaBO00kW.jpg" alt="Jevassembler" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/neogoose_btw/status/2101428888874410069">Jevassembler</a></b><br><sub>neogoose_btw · X · ♥ 1.5k · 2026-09-19</sub><br>讽刺性实验，干脆不写代码：你给它一个任务，Jev 在运行时预测下一条要执行的 CPU 指令。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/monteduro/killmyidea"><img src="https://killmyidea.stemonte.io/og.png" alt="Kill My Idea" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/monteduro/killmyidea">Kill My Idea</a></b><br><sub>monteduro · GitHub · ⭐ 76 · 2026-09-17</sub><br>Web 应用，用一次请求并行问 Jev 10 个问题，把创业点子判为 KILL IT、FIX IT 或 SHIP IT，最终结论由本地权重和关卡计算得出。<br><sub><b>Jev 用法:</b> 8 个独立开发者视角的 Score 问题（0-4 分），外加一个类别 Choice 和一个“是否易懂”的 Noul。</sub><br><sub>相关: <a href="https://killmyidea.stemonte.io">app</a> · <a href="https://killmyidea.stemonte.io">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/TheBalkanHacker/status/2100962091498684848"><img src="https://pbs.twimg.com/amplify_video_thumb/2100960184327688192/img/7zn9b3VwndkLLzWa.jpg" alt="用 Jev 模拟 6502" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TheBalkanHacker/status/2100962091498684848">用 Jev 模拟 6502</a></b><br><sub>TheBalkanHacker · X · ♥ 43 · 2026-09-18</sub><br>让 Jev 直接充当计算机本身、实时模拟 6502 CPU 的实验；能跑完整的短程序，但仍会不时与参考模拟器的结果出现偏差。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/hqmank/status/2100933183931900346"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932969602990080/img/VTABbHThpYgbpCjy.jpg" alt="jev-job-hunter" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hqmank/status/2100933183931900346">jev-job-hunter</a></b><br><sub>hqmank · X · ♥ 75 · 2026-09-18</sub><br>求职爬虫 skill：从公司主页出发，由 Jev 找到招聘页面、选择链接、识别职位页面，并根据你的个人资料为岗位打分，耗时约 20 秒，而不是 5 分钟。</td>
+<td width="260" valign="top"><a href="https://github.com/narphorium/nl-logic-interpreter"><img src="https://pbs.twimg.com/amplify_video_thumb/2100984200820121600/img/dXya52zCSiVBJVaF.jpg" alt="Natural Language Logic Interpreter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/narphorium/nl-logic-interpreter">Natural Language Logic Interpreter</a></b><br><sub>narphorium · GitHub · ⭐ 6 · 2026-09-19</sub><br>可单步执行的逻辑解释器，像 Prolog 一样用 SLD 归结在纯英文事实和规则上证明目标，由 Jev 判断两句话是否陈述同一事实，从而完成合一。<br><sub>相关: <a href="https://x.com/narphorium/status/2100985027093749764">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.reddit.com/r/accelerate/comments/1wikgsu/lol_this_guy_make_jev_into_an_llm_by_making_it/"><img src="https://external-preview.redd.it/cGpuenlvaTdpMHFoMTdeezDR7UunXxOnTNPat0hOKvg0e0iyHixj9bc90YrA.png?format=pjpg&amp;auto=webp&amp;s=0d23944783b987e05de2a6063831a41d8d8c31d1" alt="把 Jev 变成逐字母输出的 LLM" width="240"></a></td>
 <td valign="top"><b><a href="https://www.reddit.com/r/accelerate/comments/1wikgsu/lol_this_guy_make_jev_into_an_llm_by_making_it/">把 Jev 变成逐字母输出的 LLM</a></b><br><sub>princecaarlo · Reddit · ▲ 81 · 2026-09-17</sub><br>让 Jev 每次选一个字母来写出文本的 hack，引发了关于把决策模型当生成器使用的争论。<br><sub>相关: <a href="https://x.com/princecaarlo/status/2100206177699475560">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/TheBalkanHacker/status/2100962091498684848"><img src="https://pbs.twimg.com/amplify_video_thumb/2100960184327688192/img/7zn9b3VwndkLLzWa.jpg" alt="用 Jev 模拟 6502" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/TheBalkanHacker/status/2100962091498684848">用 Jev 模拟 6502</a></b><br><sub>TheBalkanHacker · X · ♥ 43 · 2026-09-18</sub><br>让 Jev 直接充当计算机本身、实时模拟 6502 CPU 的实验；能跑完整的短程序，但仍会不时与参考模拟器的结果出现偏差。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/FerryCorleone/crush-monitor"><img src="https://opengraph.githubassets.com/1/FerryCorleone/crush-monitor" alt="Crush Monitor" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/FerryCorleone/crush-monitor">Crush Monitor</a></b><br><sub>FerryCorleone · GitHub · ⭐ 129 · 2026-09-20</sub><br>本地的微信风格聊天分析器，让 Jev 从 12 类情绪和 35 类意图中找出每条消息最主要的情绪和意图，为对方的好感度打分，并把你的回复评为 SSS 到 D 级。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/BuilderShivam/status/2101014788575035689"><img src="https://pbs.twimg.com/amplify_video_thumb/2101012936676483072/img/uOa464dc-IxxsOJZ.jpg" alt="曼哈顿寻路" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/BuilderShivam/status/2101014788575035689">曼哈顿寻路</a></b><br><sub>BuilderShivam · X · ♥ 9 · 2026-09-18</sub><br>让 Jev 与 Dijkstra 算法和 A* 比拼在曼哈顿街道地图上寻路的实验。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/YouWareAI/status/2100984559215247814"><img src="https://pbs.twimg.com/amplify_video_thumb/2100982412926992385/img/h9LjWj9F1kv3ESCd.jpg" alt="YouWare 简历筛选器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/YouWareAI/status/2100984559215247814">YouWare 简历筛选器</a></b><br><sub>YouWareAI · X · ♥ 21 · 2026-09-18</sub><br>在 YouWare 上开源的简历筛选器，用 24.2 秒、$0.0212 为 360 份简历给出类型化评分和入围信号。</td>
+<td width="260" valign="top"><a href="https://x.com/hqmank/status/2100933183931900346"><img src="https://pbs.twimg.com/amplify_video_thumb/2100932969602990080/img/VTABbHThpYgbpCjy.jpg" alt="jev-job-hunter" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hqmank/status/2100933183931900346">jev-job-hunter</a></b><br><sub>hqmank · X · ♥ 75 · 2026-09-18</sub><br>求职爬虫 skill：从公司主页出发，由 Jev 找到招聘页面、选择链接、识别职位页面，并根据你的个人资料为岗位打分，耗时约 20 秒，而不是 5 分钟。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MarcelMichau/fake-survey-generator"><img src="https://opengraph.githubassets.com/1/MarcelMichau/fake-survey-generator" alt="Fake Survey Generator 的问卷分析" width="240"></a></td>
@@ -64,20 +56,24 @@
 <td valign="top"><b><a href="https://github.com/skeptrunedev/jev-recruiter">Jev Recruiter</a></b><br><sub>skeptrunedev · GitHub · ⭐ 44 · 2026-09-18</sub><br>本地招聘工作台：Jev 借助 Browser Use 的 Jev Ultrafast 和 Browser Harness 在 LinkedIn 上按岗位浏览，筛选职位名称，并对照你的招聘需求检查个人资料摘录，把匹配结果连同证据保存下来。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/punit_arani/status/2102041407372566774"><img src="https://pbs.twimg.com/amplify_video_thumb/2101947212934901760/img/oVoIi7iIDwSPlJDc.jpg" alt="Jeve" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/punit_arani/status/2102041407372566774">Jeve</a></b><br><sub>punit_arani · X · ♥ 24 · 2026-09-21</sub><br>主要由 Jev 驱动的生成式 agent 建模（GABM）仿真引擎，定位是在长时间运行的仿真中比基于 LLM 的 GABM 更便宜、更快。<br><sub>相关: <a href="https://github.com/punitarani/jeve">repo</a> · <a href="https://github.com/punitarani/jeve">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/hari_trinay/status/2101118529936519453"><img src="https://pbs.twimg.com/amplify_video_thumb/2101118259076734976/img/JId8Xua4ypyd342R.jpg" alt="Proq 图纸集分类器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hari_trinay/status/2101118529936519453">Proq 图纸集分类器</a></b><br><sub>hari_trinay · X · ♥ 18 · 2026-09-19</sub><br>用于 Proq 物料清单流水线的施工图纸集分类器：Jev 用 2.9 秒、$0.0052 完成一套 26 张图纸的分类，在 100% 的图纸上与 GPT-4.1 和 GPT-6 Astra 结果一致。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/hqman/JevScout"><img src="https://opengraph.githubassets.com/1/hqman/JevScout" alt="JevScout" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/hqman/JevScout">JevScout</a></b><br><sub>hqman · GitHub · ⭐ 29 · 2026-09-18</sub><br>编程 agent 的 skill 和 CLI，通过 CDP 驱动一个可见的 Chrome，从公司主页一路走到职位列表，筛选 AI 和软件岗位并保存结果。<br><sub><b>Jev 用法:</b> 每个链接和职位发布都由 Jev 打分；宿主 LLM 从不决定点击什么。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/verbove/status/2100990085340496185"><img src="https://pbs.twimg.com/amplify_video_thumb/2100989867370979328/img/d9ymhOh4c1pNvx4X.jpg" alt="MakerMap" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/verbove/status/2100990085340496185">MakerMap</a></b><br><sub>verbove · X · ♥ 5 · 2026-09-18</sub><br>独立创作者地图，用 Jev 找出你附近值得见一见的创作者。<br><sub>相关: <a href="https://makermap.lol">app</a> · <a href="https://makermap.lol">project</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/punit_arani/status/2102041407372566774"><img src="https://pbs.twimg.com/amplify_video_thumb/2101947212934901760/img/oVoIi7iIDwSPlJDc.jpg" alt="Jeve" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/punit_arani/status/2102041407372566774">Jeve</a></b><br><sub>punit_arani · X · ♥ 24 · 2026-09-21</sub><br>主要由 Jev 驱动的生成式 agent 建模（GABM）仿真引擎，定位是在长时间运行的仿真中比基于 LLM 的 GABM 更便宜、更快。<br><sub>相关: <a href="https://github.com/punitarani/jeve">repo</a> · <a href="https://github.com/punitarani/jeve">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/BuilderShivam/status/2101014788575035689"><img src="https://pbs.twimg.com/amplify_video_thumb/2101012936676483072/img/uOa464dc-IxxsOJZ.jpg" alt="曼哈顿寻路" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/BuilderShivam/status/2101014788575035689">曼哈顿寻路</a></b><br><sub>BuilderShivam · X · ♥ 9 · 2026-09-18</sub><br>让 Jev 与 Dijkstra 算法和 A* 比拼在曼哈顿街道地图上寻路的实验。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/YouWareAI/status/2100984559215247814"><img src="https://pbs.twimg.com/amplify_video_thumb/2100982412926992385/img/h9LjWj9F1kv3ESCd.jpg" alt="YouWare 简历筛选器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/YouWareAI/status/2100984559215247814">YouWare 简历筛选器</a></b><br><sub>YouWareAI · X · ♥ 21 · 2026-09-18</sub><br>在 YouWare 上开源的简历筛选器，用 24.2 秒、$0.0212 为 360 份简历给出类型化评分和入围信号。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/hari_trinay/status/2101118529936519453"><img src="https://pbs.twimg.com/amplify_video_thumb/2101118259076734976/img/JId8Xua4ypyd342R.jpg" alt="Proq 图纸集分类器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hari_trinay/status/2101118529936519453">Proq 图纸集分类器</a></b><br><sub>hari_trinay · X · ♥ 18 · 2026-09-19</sub><br>用于 Proq 物料清单流水线的施工图纸集分类器：Jev 用 2.9 秒、$0.0052 完成一套 26 张图纸的分类，在 100% 的图纸上与 GPT-4.1 和 GPT-6 Astra 结果一致。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mkotlikov/jev-grug"><img src="https://opengraph.githubassets.com/1/mkotlikov/jev-grug" alt="grug.chat" width="240"></a></td>
@@ -100,16 +96,16 @@
 <td valign="top"><b><a href="https://github.com/AdamPippert/Anunix">Anunix 的 Jev 路由</a></b><br><sub>AdamPippert · GitHub · ⭐ 8 · 2026-04-12</sub><br>用 C 和汇编编写的 AI 原生操作系统，其 shell 可以向包括 jev/jev-latest 在内的托管模型发送 <code>ask</code>，通过 TLS 辅助程序使用密封的 Jev 凭证对象。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/paradax/status/2101621025238917355"><img src="https://pbs.twimg.com/media/HSp0G56aEAAIWCI.jpg" alt="Jev Next Letter Lab" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/paradax/status/2101621025238917355">Jev Next Letter Lab</a></b><br><sub>paradax · 文章 · ♥ 4 · 2026-09-20</sub><br>带点戏谑的中文 hack：每一步让 Jev 从 51 个候选字符中选出下一个，把它变成文本生成器。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/OskarLebuda/precog"><img src="https://opengraph.githubassets.com/1/OskarLebuda/precog" alt="precog" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/OskarLebuda/precog">precog</a></b><br><sub>OskarLebuda · GitHub · ⭐ 7 · 2026-09-19</sub><br>Nuxt 和 Next.js 模块，让 Jev 预测访客接下来要点哪个链接，只预取那一个，并用浮层画出猜测结果；其基准测试把导航中位耗时从 147 毫秒 降到 68 毫秒。<br><sub><b>Jev 用法:</b> 每次预测发一个请求，基于滚动和指针状态，针对候选链接 ID 问三个问题（下一个、即将、离开）。</sub><br><sub>相关: <a href="https://oskarlebuda.github.io/precog/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Tokeii0/Xiaoke-qqbot"><img src="https://opengraph.githubassets.com/1/Tokeii0/Xiaoke-qqbot" alt="Xiaoke-qqbot" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Tokeii0/Xiaoke-qqbot">Xiaoke-qqbot</a></b><br><sub>Tokeii0 · GitHub · ⭐ 7 · 2026-09-20</sub><br>自托管的 QQ 群聊陪伴机器人，带长期记忆和 Web 管理后台，由 Jev 决定是否加入对话、区分玩笑和真实求助，并选择何时以何种语气发送语音。<br><sub><b>Jev 用法:</b> 对每条群消息做语义判断，以此控制回复、记忆写入和语音消息风格；每个子功能都可以单独开启。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/verbove/status/2100990085340496185"><img src="https://pbs.twimg.com/amplify_video_thumb/2100989867370979328/img/d9ymhOh4c1pNvx4X.jpg" alt="MakerMap" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/verbove/status/2100990085340496185">MakerMap</a></b><br><sub>verbove · X · ♥ 5 · 2026-09-18</sub><br>独立创作者地图，用 Jev 找出你附近值得见一见的创作者。<br><sub>相关: <a href="https://makermap.lol">app</a> · <a href="https://makermap.lol">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Bewinxed/jevgpt"><img src="https://raw.githubusercontent.com/Bewinxed/jevgpt/master/assets/banner.png" alt="JevGPT" width="240"></a></td>
@@ -126,6 +122,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/alxcrt/is-odd-jev"><img src="https://opengraph.githubassets.com/1/alxcrt/is-odd-jev" alt="is-odd-jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/alxcrt/is-odd-jev">is-odd-jev</a></b><br><sub>alxcrt · GitHub · ⭐ 4 · 2026-09-17</sub><br>故意过度设计的玩笑包，让 Jev 判断一个数字是不是奇数，返回的是校准概率而不是布尔值。<br><sub><b>Jev 用法:</b> 每个数字一个 Noul；概率本身就是答案。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49747934">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/paradax/status/2101621025238917355"><img src="https://pbs.twimg.com/media/HSp0G56aEAAIWCI.jpg" alt="Jev Next Letter Lab" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/paradax/status/2101621025238917355">Jev Next Letter Lab</a></b><br><sub>paradax · 文章 · ♥ 4 · 2026-09-20</sub><br>带点戏谑的中文 hack：每一步让 Jev 从 51 个候选字符中选出下一个，把它变成文本生成器。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/AiPersonacademy/jev-resume-disqualifier"><img src="https://raw.githubusercontent.com/AiPersonacademy/jev-resume-disqualifier/main/assets/precision_hero_comp.jpg" alt="Jev Resume Disqualifier" width="240"></a></td>

@@ -12,40 +12,40 @@
 <td valign="top"><b><a href="https://x.com/romanbuildsaas/status/2100891604735099103">线索与外联消息评分</a></b><br><sub>romanbuildsaas · X · ♥ 3.3k · 2026-09-18</sub><br>在 40 秒内花 $0.09 为 700 条高意向线索和个性化外联消息打分，用置信度分数预测每条消息的效果，并标记线索与消息不匹配的情况。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify"><img src="https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b" alt="Twenty 的 Classify 工作流动作" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify">Twenty 的 Classify 工作流动作</a></b><br><sub>twentyhq · GitHub · ⭐ 57.2k 仓库 · 2022-12-01</sub><br>开源 CRM Twenty 工作流中的 Classify 步骤，就一条记录向 Jev 问 choice、score 或布尔问题，让后续步骤根据答案和概率分支。<br><sub><b>Jev 用法:</b> Jev 注册为“evaluation”模型类型（通过 @ai-sdk/typesafe-ai 使用 jev-latest，标注的中位延迟为 200 毫秒）。</sub><br><sub>相关: <a href="https://twenty.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/Box/status/2100993278955188320"><img src="https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg" alt="Box 事件分诊" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Box/status/2100993278955188320">Box 事件分诊</a></b><br><sub>Box · X · ♥ 31 · 2026-09-18</sub><br>一个 Box 工作流：拉取一份事件报告，询问 Jev 它是否影响客户、严重程度如何，把文件移到 Escalate、Monitor 或 Review，并把低置信度的情况交给人工。<br><sub><b>Jev 用法:</b> 一个判断是否影响客户的 Noul，加一个严重度 Score，并用置信度阈值决定是否转人工复核。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=CupCEehe2OQ"><img src="https://i.ytimg.com/vi/CupCEehe2OQ/hqdefault.jpg" alt="用 Jev 做销售 Copilot" width="240"></a></td>
 <td valign="top"><b><a href="https://www.youtube.com/watch?v=CupCEehe2OQ">用 Jev 做销售 Copilot</a></b><br><sub>Kelvin Cleto · 视频 · ♥ 1.9k · 2026-09-20</sub><br>葡萄牙语讲解视频：一个追踪通话和销售剧本步骤的销售会议 copilot，在调用任何 LLM 之前先让 Jev 回答低成本的决策问题，以降低成本。<br><sub><b>Jev 用法:</b> 关于会议 state 的概率问题决定是否发起昂贵的 LLM 调用。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify"><img src="https://repository-images.githubusercontent.com/572984571/ef151ee9-3060-418b-bf88-cb689ab78c7b" alt="Twenty 的 Classify 工作流动作" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/twentyhq/twenty/tree/main/packages/twenty-server/src/modules/workflow/workflow-executor/workflow-actions/classify">Twenty 的 Classify 工作流动作</a></b><br><sub>twentyhq · GitHub · ⭐ 57.2k 仓库 · 2022-12-01</sub><br>开源 CRM Twenty 工作流中的 Classify 步骤，就一条记录向 Jev 问 choice、score 或布尔问题，让后续步骤根据答案和概率分支。<br><sub><b>Jev 用法:</b> Jev 注册为“evaluation”模型类型（通过 @ai-sdk/typesafe-ai 使用 jev-latest，标注的中位延迟为 200 毫秒）。</sub><br><sub>相关: <a href="https://twenty.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/getanyapi-com/lurk"><img src="https://opengraph.githubassets.com/1/getanyapi-com/lurk" alt="lurk" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/getanyapi-com/lurk">lurk</a></b><br><sub>getanyapi-com · GitHub · ⭐ 97 · 2026-09-10</sub><br>可自托管的 Reddit 购买意向发现工具：推断你的产品解决什么问题，让 Jev 针对你的产品评判扫描到的每个标题、帖子和评论。<br><sub><b>Jev 用法:</b> 通过 OpenRouter 或 Vercel AI Gateway 调用 Jev 为每个条目打分；产品画像和聚类由 LLM 负责。</sub><br><sub>相关: <a href="https://x.com/mxfp4/status/2101070906852298910">demo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/Box/status/2100993278955188320"><img src="https://pbs.twimg.com/amplify_video_thumb/2100986163511357440/img/o0Yzl7VqISwchxkk.jpg" alt="Box 事件分诊" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/Box/status/2100993278955188320">Box 事件分诊</a></b><br><sub>Box · X · ♥ 31 · 2026-09-18</sub><br>一个 Box 工作流：拉取一份事件报告，询问 Jev 它是否影响客户、严重程度如何，把文件移到 Escalate、Monitor 或 Review，并把低置信度的情况交给人工。<br><sub><b>Jev 用法:</b> 一个判断是否影响客户的 Noul，加一个严重度 Score，并用置信度阈值决定是否转人工复核。</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://x.com/tarasshyn/status/2101043617649340678"><img src="https://pbs.twimg.com/amplify_video_thumb/2101043565207916544/img/jTZjaCWwP1d9sx6D.jpg" alt="RedReplier 购买信号评分" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/tarasshyn/status/2101043617649340678">RedReplier 购买信号评分</a></b><br><sub>tarasshyn · X · ♥ 463 · 2026-09-18</sub><br>在 53 秒内花 $0.65，为来自 Reddit、X、Bluesky、Hacker News 和 Facebook 的 170 万条提及中的 1,759,932 个购买信号打分，按意向、产品匹配度和竞品提及排序。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok 与 Jev 线索筛选器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok 与 Jev 线索筛选器</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>线索资格判断管线：Jev 对 3,412 条线索每条回答 6 个问题（15.7 秒内完成 20,472 个决策，花费 $0.41），Grok 4.7 只为值得看的线索起草外联消息。<br><sub><b>Jev 用法:</b> 每条线索六个是/否、单选或打分问题，决定 LLM 要读哪些内容。</sub></td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/t0t0_build/status/2101082444577567162">WhatsApp 客户群监控</a></b><br><sub>t0t0_build · X · ♥ 280 · 2026-09-18</sub><br>实时监控 25+ 个有客户在的 WhatsApp 群，由 Jev 判断是否有需要处理的事，比如紧急问题或未解决的订单，只有这时才让 LLM 写通知。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sotak/status/2100701152824185319"><img src="https://pbs.twimg.com/amplify_video_thumb/2100700282434826240/img/H7dKngwXowyoEgJ6.jpg" alt="实时 Clippy" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/sotak/status/2100701152824185319">实时 Clippy</a></b><br><sub>sotak · X · ♥ 176 · 2026-09-17</sub><br>产品内的 Clippy，观察用户如何使用应用，只有在 Jev 判断用户犹豫、困惑或卡住时才出现，其反应也由 Jev 选择。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="能约到演示的外联信号" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/pierreeliottlal/status/2100912453999587657">能约到演示的外联信号</a></b><br><sub>pierreeliottlal · X · ♥ 114 · 2026-09-18</sub><br>销售分析：Jev 读完一个包含数千条外联消息的数据集，找出哪些意向信号带来的演示预约最多，用时 40 秒，花费不到 $0.20。</td>
+<td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok 与 Jev 线索筛选器" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok 与 Jev 线索筛选器</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>线索资格判断管线：Jev 对 3,412 条线索每条回答 6 个问题（15.7 秒内完成 20,472 个决策，花费 $0.41），Grok 4.7 只为值得看的线索起草外联消息。<br><sub><b>Jev 用法:</b> 每条线索六个是/否、单选或打分问题，决定 LLM 要读哪些内容。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/t0t0_build/status/2101082444577567162">WhatsApp 客户群监控</a></b><br><sub>t0t0_build · X · ♥ 280 · 2026-09-18</sub><br>实时监控 25+ 个有客户在的 WhatsApp 群，由 Jev 判断是否有需要处理的事，比如紧急问题或未解决的订单，只有这时才让 LLM 写通知。</td>
+<td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="能约到演示的外联信号" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/pierreeliottlal/status/2100912453999587657">能约到演示的外联信号</a></b><br><sub>pierreeliottlal · X · ♥ 114 · 2026-09-18</sub><br>销售分析：Jev 读完一个包含数千条外联消息的数据集，找出哪些意向信号带来的演示预约最多，用时 40 秒，花费不到 $0.20。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/nifinet/status/2102065255694409940"><img src="https://pbs.twimg.com/media/HSwI_zwaQAA9uYF.jpg" alt="signal-ranker" width="240"></a></td>
@@ -64,8 +64,8 @@
 <td valign="top"><b><a href="https://x.com/ENowoslawski/status/2100999124099195377">即时生成 Clay 工作流</a></b><br><sub>ENowoslawski · X · ♥ 65 · 2026-09-18</sub><br>演示 Jev 几乎瞬间搭建出 Clay 的市场拓展（go-to-market）工作流。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe"><img src="https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg" alt="Symfony 客服分诊演示" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe">Symfony 客服分诊演示</a></b><br><sub>yoanbernabeu · GitHub · ⭐ 2 · 2026-09-19</sub><br>法语的 Symfony AI 演示：对发给法国公共服务机构的真实请求，每条用一次 Jev 调用做判定，包括请求者属于六种意图中的哪一种、紧急程度，以及是否是需要转给开发者的 bug。<br><sub>相关: <a href="https://x.com/yOyO38/status/2101705862008001011">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ZeroGold/call-coach-ai"><img src="https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab" alt="Call Coach" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ZeroGold/call-coach-ai">Call Coach</a></b><br><sub>ZeroGold · GitHub · ⭐ 35 · 2026-09-20</sub><br>实时销售通话助手：每说完一句话就把对话发给 Jev，向销售代表显示建议的下一步动作和购买阶段，并附置信度分数；音源可以是麦克风或示例通话。<br><sub>相关: <a href="https://www.reddit.com/r/LLMDevs/comments/1wltrsa/i_built_an_opensource_app_that_uses_jev_to_coach/">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sotak/status/2100927660029247538"><img src="https://pbs.twimg.com/amplify_video_thumb/2100925956978294784/img/grFanN32FuhiSULl.jpg" alt="Inline Manual 自适应帮助" width="240"></a></td>
@@ -76,24 +76,24 @@
 <td valign="top"><b><a href="https://x.com/AIsaOneHQ/status/2100894473085489510">Worth Replying</a></b><br><sub>AIsaOneHQ · X · ♥ 15 · 2026-09-18</sub><br>输入一家公司的域名，找出已经在讨论其产品所解决问题的 X 用户；以 typesafe.ai 为例，它找到 150 条推文，在 18.8s 内做了 750 个 Jev 决策，花费 $0.007。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100957577958097199"><img src="https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg" alt="jev-support-pulse" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100957577958097199">jev-support-pulse</a></b><br><sub>GoSailGlobal · X · ♥ 6 · 2026-09-18</sub><br>中文实验：用 Jev 给 170,400 条 2017 年发给七个品牌客服账号的推文打标签，花费 $1.84；在误报相同的情况下，它发现了 17 次故障，比品牌官方承认早约 4.1 小时，而按推文量只能发现 10 次。<br><sub>相关: <a href="https://github.com/zhuyansen/jev-support-pulse">repo</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe"><img src="https://raw.githubusercontent.com/yoanbernabeu/demo-symfony-typesafe/main/docs/qualification.jpg" alt="Symfony 客服分诊演示" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yoanbernabeu/demo-symfony-typesafe">Symfony 客服分诊演示</a></b><br><sub>yoanbernabeu · GitHub · ⭐ 2 · 2026-09-19</sub><br>法语的 Symfony AI 演示：对发给法国公共服务机构的真实请求，每条用一次 Jev 调用做判定，包括请求者属于六种意图中的哪一种、紧急程度，以及是否是需要转给开发者的 bug。<br><sub>相关: <a href="https://x.com/yOyO38/status/2101705862008001011">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/ZeroGold/call-coach-ai"><img src="https://github.com/user-attachments/assets/b1d3768f-ae61-45a7-a68b-644367ef24ab" alt="Call Coach" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ZeroGold/call-coach-ai">Call Coach</a></b><br><sub>ZeroGold · GitHub · ⭐ 35 · 2026-09-20</sub><br>实时销售通话助手：每说完一句话就把对话发给 Jev，向销售代表显示建议的下一步动作和购买阶段，并附置信度分数；音源可以是麦克风或示例通话。<br><sub>相关: <a href="https://www.reddit.com/r/LLMDevs/comments/1wltrsa/i_built_an_opensource_app_that_uses_jev_to_coach/">discussion</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/GoSailGlobal/status/2100957577958097199"><img src="https://pbs.twimg.com/amplify_video_thumb/2100957554293751809/img/Jfl8lu536UlBOyqr.jpg" alt="jev-support-pulse" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/GoSailGlobal/status/2100957577958097199">jev-support-pulse</a></b><br><sub>GoSailGlobal · X · ♥ 6 · 2026-09-18</sub><br>中文实验：用 Jev 给 170,400 条 2017 年发给七个品牌客服账号的推文打标签，花费 $1.84；在误报相同的情况下，它发现了 17 次故障，比品牌官方承认早约 4.1 小时，而按推文量只能发现 10 次。<br><sub>相关: <a href="https://github.com/zhuyansen/jev-support-pulse">repo</a> · <a href="https://github.com/zhuyansen/jev-support-pulse">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe"><img src="https://raw.githubusercontent.com/warmbly/warmbly/main/docs/assets/dashboard-campaigns.png" alt="Warmbly 的 TypeSafe 客户端" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/warmbly/warmbly/tree/main/internal/pkg/typesafe">Warmbly 的 TypeSafe 客户端</a></b><br><sub>warmbly · GitHub · ⭐ 308 仓库 · 2026-01-17</sub><br>开源冷外联与邮箱预热平台，用 TypeSafe 判断做收件箱打标签、回复意图分类、草稿把关、退信原因分析和表单提交分诊。<br><sub>相关: <a href="https://warmbly.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/zeetakou/status/2101945022782284192"><img src="https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg" alt="用 Jev 做电话营销 AI" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/zeetakou/status/2101945022782284192">用 Jev 做电话营销 AI</a></b><br><sub>zeetakou · X · ♥ 2 · 2026-09-21</sub><br>基于 GPT Live API 的外呼 agent，按线索名单拨号并转接有潜力的潜在客户，目前正在测试用 Jev 判断线索是否有潜力、何时转接以及重拨优先级。<br><sub><b>Jev 用法:</b> 通话中和通话后的判断：潜在客户质量、是否立即转接、重拨优先级。</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/malekoo/status/2100439840575684910"><img src="https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig" alt="Mac 应用里的 Jev 应用内帮助" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Mac 应用里的 Jev 应用内帮助</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>无需加载任何模型就能用的 Mac 应用内帮助：Jev 对照内置手册理解问题，选出匹配的文章或判定没有匹配，测试 42/42 全对，中位耗时 0.93 秒。<br><sub><b>Jev 用法:</b> 以整本手册作为 state，在手册文章加一个“无匹配”选项中做 Choice。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/DECRUX9812/openjev">open-Jev (DECRUX9812)</a></b><br><sub>DECRUX9812 · GitHub · ⭐ 3 · 2026-09-18</sub><br>在本地零成本复刻的 Jev 决策层，在你的 CPU 上就一则招聘启事回答七个类型化问题，把企业内部 IT 招聘与可作为销售线索的小企业区分开。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nine-Minds/alga-psa/blob/main/ee/server/src/services/smartSearch/typesafeClient.ts"><img src="https://www.nineminds.com/imported-media/Overview%20Dashboard.png" alt="Alga PSA 智能工单搜索" width="240"></a></td>
@@ -104,20 +104,12 @@
 <td valign="top"><b><a href="https://github.com/liulangjietou/customer_work/tree/main/customer-work-starter/src/main/java/com/richard/fyoung/customerwork/capability/typesafe">customer-work 的 Jev 决策</a></b><br><sub>liulangjietou · GitHub · ⭐ 133 仓库 · 2026-06-13</sub><br>基于 AgentScope Java 的企业客服 agent 平台，在主对话路径和退款流程中加入 Jev 结构化决策，带熔断器，并在管理后台中影子展示。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/zeetakou/status/2101945022782284192"><img src="https://pbs.twimg.com/amplify_video_thumb/2101930224544104448/img/KJiNk6RfkI8mPRNs.jpg" alt="用 Jev 做电话营销 AI" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/zeetakou/status/2101945022782284192">用 Jev 做电话营销 AI</a></b><br><sub>zeetakou · X · ♥ 2 · 2026-09-21</sub><br>基于 GPT Live API 的外呼 agent，按线索名单拨号并转接有潜力的潜在客户，目前正在测试用 Jev 判断线索是否有潜力、何时转接以及重拨优先级。<br><sub><b>Jev 用法:</b> 通话中和通话后的判断：潜在客户质量、是否立即转接、重拨优先级。</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent"><img src="https://opengraph.githubassets.com/1/UiPath/uipath-python" alt="UiPath 工单分诊 agent" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/UiPath/uipath-python/tree/main/packages/uipath/samples/ticket-triage-agent">UiPath 工单分诊 agent</a></b><br><sub>UiPath · GitHub · ⭐ 98 仓库 · 2025-01-31</sub><br>一个 UiPath 示例 agent，做两级客服工单分诊：Jev 快速路由每张工单，升级到 Action Center 人工复核，或由 LLM 起草自动回复。<br><sub>相关: <a href="https://uipath.github.io/uipath-python/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/DECRUX9812/openjev">open-Jev (DECRUX9812)</a></b><br><sub>DECRUX9812 · GitHub · ⭐ 3 · 2026-09-18</sub><br>在本地零成本复刻的 Jev 决策层，在你的 CPU 上就一则招聘启事回答七个类型化问题，把企业内部 IT 招聘与可作为销售线索的小企业区分开。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts"><img src="https://opengraph.githubassets.com/1/damien-schneider/reflet" alt="Reflet 反馈分诊" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts">Reflet 反馈分诊</a></b><br><sub>damien-schneider · GitHub · ⭐ 37 仓库 · 2026-01-17</sub><br>开源产品反馈与路线图平台 Reflet 中的反馈分诊：Jev 判断一条提交是否可执行，把垃圾内容挡在公开看板之外，标记需复核的条目并自动打标签。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用问 usefulness/junk/needsReview 三个布尔问题，外加每个标签一个问题；junk &gt;= 0.5 即隐藏，标签需达到 0.65，最多 3 个。</sub><br><sub>相关: <a href="https://www.reflet.app">app</a> · <a href="https://github.com/damien-schneider/reflet">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/abhegd/status/2102195682257854602"><img src="https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg" alt="自动分拣的应用内反馈" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/abhegd/status/2102195682257854602">自动分拣的应用内反馈</a></b><br><sub>abhegd · X · ▶ 60 · 2026-09-22</sub><br>Layoutstack 演示：打字或语音（ElevenLabs）提交的应用内反馈由 Jev 分类并归入正确的收件箱，附带一份 cookbook，可以让编程 agent 改造复用。<br><sub>相关: <a href="https://www.layoutstack.com/demo/in-appfeedback">app</a> · <a href="https://layoutstack.com/demo/in-appfeedback">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zhayujie/status/2102009189765881894"><img src="https://pbs.twimg.com/amplify_video_thumb/2102007612569190400/img/Yv_-w6zdmBlVS5Mu.jpg" alt="CowAgent 工单分析工具" width="240"></a></td>
@@ -136,8 +128,16 @@
 <td valign="top"><b><a href="https://github.com/TheEleventhAvatar/triage-bot">triage-bot</a></b><br><sub>TheEleventhAvatar · GitHub · ⭐ 1 · 2026-09-19</sub><br>客服工单机器人：Jev 把每张工单路由给通用、账户、账单或技术 agent，并判断是否应由人工接手，然后由 Cerebras 起草回复；两次调用分别计时。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts"><img src="https://opengraph.githubassets.com/1/damien-schneider/reflet" alt="Reflet 反馈分诊" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/damien-schneider/reflet/blob/main/packages/backend/convex/feedback/triage_evaluation.ts">Reflet 反馈分诊</a></b><br><sub>damien-schneider · GitHub · ⭐ 37 仓库 · 2026-01-17</sub><br>开源产品反馈与路线图平台 Reflet 中的反馈分诊：Jev 判断一条提交是否可执行，把垃圾内容挡在公开看板之外，标记需复核的条目并自动打标签。<br><sub><b>Jev 用法:</b> 通过 AI SDK 的 evaluate 调用问 usefulness/junk/needsReview 三个布尔问题，外加每个标签一个问题；junk &gt;= 0.5 即隐藏，标签需达到 0.65，最多 3 个。</sub><br><sub>相关: <a href="https://www.reflet.app">app</a> · <a href="https://github.com/damien-schneider/reflet">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs"><img src="https://opengraph.githubassets.com/1/calagopus/bot" alt="Calagopus 机器人的客服分诊" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/calagopus/bot/blob/main/src/ai/decisions.rs">Calagopus 机器人的客服分诊</a></b><br><sub>calagopus · GitHub · ⭐ 17 仓库 · 2025-12-28</sub><br>为 Calagopus 社区打造的 Rust Discord 机器人中的 AI 客服分诊：用 Jev 判断一条消息是否需要回答，以及起草的回答是否有值得发出的内容。<br><sub>相关: <a href="https://github.com/calagopus/bot">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/abhegd/status/2102195682257854602"><img src="https://pbs.twimg.com/amplify_video_thumb/2102194961856798720/img/WhzCgL1LVnYAq-R9.jpg" alt="自动分拣的应用内反馈" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/abhegd/status/2102195682257854602">自动分拣的应用内反馈</a></b><br><sub>abhegd · X · ▶ 60 · 2026-09-22</sub><br>Layoutstack 演示：打字或语音（ElevenLabs）提交的应用内反馈由 Jev 分类并归入正确的收件箱，附带一份 cookbook，可以让编程 agent 改造复用。<br><sub>相关: <a href="https://www.layoutstack.com/demo/in-appfeedback">app</a> · <a href="https://layoutstack.com/demo/in-appfeedback">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/upasana1105/UP_Demos/blob/main/it-helpdesk-assistant/judgment_base_agent/backends/typesafe.py"><img src="https://opengraph.githubassets.com/1/upasana1105/UP_Demos" alt="IT 服务台判断后端" width="240"></a></td>

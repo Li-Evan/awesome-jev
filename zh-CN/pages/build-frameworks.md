@@ -10,10 +10,6 @@
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe"><img src="https://opengraph.githubassets.com/1/openclaw/openclaw" alt="OpenClaw 的 TypeSafe 插件" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe">OpenClaw 的 TypeSafe 插件</a></b><br><sub>openclaw · GitHub · ⭐ 75 · 2025-11-24</sub><br>OpenClaw 官方插件，把托管的 Jev 或本地 Kev 服务器接入 OpenClaw 的决策模型 API，用于 Choice、Score 和 Boolean 判断，另有可选的 typesafe_evaluate 工具。<br><sub><b>Jev 用法:</b> 把 typesafe/jev-latest 选为 agent 的 decisionModel，可全局设置，也可按 agent 设置。</sub><br><sub>相关: <a href="https://docs.openclaw.ai/plugins/typesafe">docs</a> · <a href="https://docs.openclaw.ai/plugins/typesafe">link</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/langchain-ai/langchain/tree/master/libs/partners/typesafe"><img src="https://repository-images.githubusercontent.com/552661142/7392d590-2716-4261-b623-a0579df67e0d" alt="langchain-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/langchain-ai/langchain/tree/master/libs/partners/typesafe">langchain-typesafe</a></b><br><sub>langchain-ai · GitHub · ⭐ 146.8k 仓库 · 2026-09-17</sub><br>LangChain 合作方包，提供用于 Choice、Noul 和 Score 问题的 TypeSafeClassifier runnable，以及实验性的 auto-mode 和模型路由中间件。<br><sub>相关: <a href="https://github.com/langchain-ai/langchain">repo</a> · <a href="https://pypi.org/project/langchain-typesafe/">pypi</a></sub></td>
 </tr>
@@ -38,12 +34,24 @@
 <td valign="top"><b><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe">elizaOS 的 TypeSafe 适配器</a></b><br><sub>elizaOS · GitHub · ⭐ 19.4k 仓库 · 2026-09-16</sub><br>elizaOS agent 包中需主动启用的服务端 TypeSafe 客户端，用 Zod 校验 Choice、Score 和 Noul 请求，只在显式调用 systemOne 时才发送；默认不注册到运行时。<br><sub>相关: <a href="https://github.com/elizaOS/eliza">repo</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev 工作流构建器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/CTNicholas/jev-workflow-builder">Jev 工作流构建器</a></b><br><sub>CTNicholas · GitHub · ⭐ 78 · 2026-09-21</sub><br>Liveblocks 的多人可视化工作流构建器演示，把 Jev 和 LLM 节点连在一起，通过 REST API 运行工作流，并展示试运行预览和实时光标。<br><sub>相关: <a href="https://x.com/ctnicholasdev/status/2102070640589279318">demo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe"><img src="https://repository-images.githubusercontent.com/598342280/41cd6da7-4afb-4b7f-b2dd-9fd52b1cc773" alt="LangChain.js" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe">LangChain.js</a></b><br><sub>langchain-ai · GitHub · ⭐ 18.2k 仓库 · 2026-09-18</sub><br>分类器以及路由和审批中间件的 JavaScript 版本。<br><sub>相关: <a href="https://github.com/langchain-ai/langchainjs">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe"><img src="https://opengraph.githubassets.com/1/Effect-TS/effect" alt="@effect/ai-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe">@effect/ai-typesafe</a></b><br><sub>Effect-TS · GitHub · ⭐ 16.2k 仓库 · 2026-09-18</sub><br>Effect 为 TypeSafe System One API 提供的 DecisionModel 提供方，通过 Effect HttpClient 支持分类、有序评级和概率，并保留提供方返回的分布而不做归一化。<br><sub>相关: <a href="https://github.com/lootlog/monorepo/tree/main/repos/effect/packages/ai/typesafe">mirror</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/typesafe-ai/system-one-adapter-python"><img src="https://opengraph.githubassets.com/1/typesafe-ai/system-one-adapter-python" alt="System One 适配器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/typesafe-ai/system-one-adapter-python">System One 适配器</a></b><br><sub>typesafe-ai · GitHub · ⭐ 245 · 2026-08-08</sub><br>由 LLM API 支撑、可直接替换 <code>TypeSafeClient</code> 的实现，用来在你自己的工作流上对比它与 Jev 的成本、速度和质量。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/ash-project/ash_ai"><img src="https://opengraph.githubassets.com/1/ash-project/ash_ai" alt="Ash AI 的 evaluate" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ash-project/ash_ai">Ash AI 的 evaluate</a></b><br><sub>ash-project · GitHub · ⭐ 189 · 2024-08-29</sub><br>Elixir Ash 框架扩展，其 evaluate/2 把一个 Ash action 映射成面向 Jev 这类评估模型的类型化问题，返回带概率和置信度的类型化答案。<br><sub><b>Jev 用法:</b> 在 action 内调用 evaluate("typesafe:jev-latest")，配有 Noul、Choice 和 Score 问题构造器。</sub><br><sub>相关: <a href="https://ash-hq.org">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/BoundaryML/baml/tree/canary/baml_language/crates/baml_builtins2/baml_std/typesafeai"><img src="https://opengraph.githubassets.com/1/BoundaryML/baml" alt="BAML 的 Jev 支持" width="240"></a></td>
@@ -58,8 +66,12 @@
 <td valign="top"><b><a href="https://github.com/YaoApp/yao/tree/main/agent/decision">Yao 的决策角色</a></b><br><sub>YaoApp · GitHub · ⭐ 8k 仓库 · 2021-09-06</sub><br>Yao Agents 新增决策角色连接器，用于类型化决策请求，TypeSafe AI 的 jev-latest 与聊天模型一起作为预置提供方。<br><sub>相关: <a href="https://yaoagents.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev 工作流构建器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/CTNicholas/jev-workflow-builder">Jev 工作流构建器</a></b><br><sub>CTNicholas · GitHub · ⭐ 78 · 2026-09-21</sub><br>Liveblocks 的多人可视化工作流构建器演示，把 Jev 和 LLM 节点连在一起，通过 REST API 运行工作流，并展示试运行预览和实时光标。<br><sub>相关: <a href="https://x.com/ctnicholasdev/status/2102070640589279318">demo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/donvito/ai-backends"><img src="https://opengraph.githubassets.com/1/donvito/ai-backends" alt="AI Backends" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/donvito/ai-backends">AI Backends</a></b><br><sub>donvito · GitHub · ⭐ 146 · 2025-05-21</sub><br>可自托管的通用 AI 任务 API 服务器，新增由 Jev 支撑的 /api/evaluate 决策端点，用于 Choice、Score 和 Noul 问题。<br><sub>相关: <a href="https://aibackends.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://x.com/paolino/status/2102086504986169652"><img src="https://pbs.twimg.com/media/HSwbKb7XwAAT9Wj.jpg?name=orig" alt="RubyLLM::Judge" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/paolino/status/2102086504986169652">RubyLLM::Judge</a></b><br><sub>paolino · X · ♥ 123 · 2026-09-21</sub><br>RubyLLM 框架中支持 Jev 的判断 API，让 Ruby 和 Rails 应用做类型化评估。<br><sub>相关: <a href="https://rubyllm.com/next/judgments/">docs</a> · <a href="https://github.com/crmne/ruby_llm">repo</a> · <a href="https://github.com/crmne/ruby_llm">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/samchon/typia/tree/master/packages/jev"><img src="https://repository-images.githubusercontent.com/482949726/ac595228-a409-4c77-99d8-d134b125281d" alt="@typia/jev" width="240"></a></td>
@@ -74,56 +86,8 @@
 <td valign="top"><b><a href="https://github.com/vercel/eve/blob/main/packages/eve/src/ai/evaluate.ts">eve 的 Jev 支持</a></b><br><sub>vercel · GitHub · ⭐ 5.3k 仓库 · 2026-06-16</sub><br>Vercel 的 eve agent 框架对 Jev 的支持：一个在工具内部提出类型化 Choice、Score 和 Boolean 问题的 evaluate 辅助函数，以及一个默认通过 Vercel AI Gateway 使用 Jev 的自动模型路由器。<br><sub>相关: <a href="https://github.com/vercel/eve">repo</a> · <a href="https://eve.dev">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/beautyyuyanli/status/2100913383143026873"><img src="https://pbs.twimg.com/media/HSfxfsSasAAvv2h.jpg?name=orig" alt="Dify 分类器节点接入 Jev" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/beautyyuyanli/status/2100913383143026873">Dify 分类器节点接入 Jev</a></b><br><sub>beautyyuyanli · X · ♥ 29 · 2026-09-18</sub><br>Dify 的分类器节点现在支持以 Jev 为模型，搭工作流的人可以用 Jev 的类型化决策来路由输入。</td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/Kiln-AI/Kiln/tree/main/libs/core/kiln_ai/adapters/jev"><img src="https://repository-images.githubusercontent.com/832879402/669449f8-c948-40a0-9f73-866e06cac97a" alt="Kiln 的 Jev 提供方" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Kiln-AI/Kiln/tree/main/libs/core/kiln_ai/adapters/jev">Kiln 的 Jev 提供方</a></b><br><sub>Kiln-AI · GitHub · ⭐ 5.1k 仓库 · 2024-07-23</sub><br>Kiln AI 工作台的 Jev 提供方，把 JSON schema 中的枚举、布尔值和评分映射成 Jev 问题再映射回来，从而在 Jev 上运行兼容的单轮任务和评测。<br><sub><b>Jev 用法:</b> 主要面向评测：Kiln 的 1-5 星和 pass/fail schema 正好契合 Jev 的问题类型，原生概率取代了 G-Eval 基于 logprob 的近似。</sub><br><sub>相关: <a href="https://kiln.tech">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/typesafe-ai/system-one-adapter-python"><img src="https://opengraph.githubassets.com/1/typesafe-ai/system-one-adapter-python" alt="System One 适配器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/typesafe-ai/system-one-adapter-python">System One 适配器</a></b><br><sub>typesafe-ai · GitHub · ⭐ 245 · 2026-08-08</sub><br>由 LLM API 支撑、可直接替换 <code>TypeSafeClient</code> 的实现，用来在你自己的工作流上对比它与 Jev 的成本、速度和质量。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb"><img src="https://raw.githubusercontent.com/crmne/ruby_llm/main/docs/assets/images/logotype.svg" alt="RubyLLM 的 TypeSafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb">RubyLLM 的 TypeSafe 提供方</a></b><br><sub>crmne · GitHub · ⭐ 4.4k 仓库 · 2025-01-30</sub><br>Ruby 和 Rails AI 框架 RubyLLM 中的 TypeSafe 提供方，在聊天提供方之外，通过专门的 System One 协议接入 Jev 判断模型。<br><sub>相关: <a href="https://rubyllm.com/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev"><img src="https://raw.githubusercontent.com/dromara/liteflow/master/static/img/flow_e1.png" alt="liteflow-agent-jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev">liteflow-agent-jev</a></b><br><sub>dromara · GitHub · ⭐ 3.9k 仓库 · 2020-03-25</sub><br>LiteFlow 规则引擎的 Jev switch 组件：JevSwitchComponent 通过一次 Jev Choice 把流程路由到目标节点 id，接入 DSL 的 SWITCH().to().DEFAULT()。<br><sub><b>Jev 用法:</b> 可配置最低置信度阈值；支持 TypeSafe 和 OpenRouter 的 Decisions API。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ash-project/ash_ai"><img src="https://opengraph.githubassets.com/1/ash-project/ash_ai" alt="Ash AI 的 evaluate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ash-project/ash_ai">Ash AI 的 evaluate</a></b><br><sub>ash-project · GitHub · ⭐ 189 · 2024-08-29</sub><br>Elixir Ash 框架扩展，其 evaluate/2 把一个 Ash action 映射成面向 Jev 这类评估模型的类型化问题，返回带概率和置信度的类型化答案。<br><sub><b>Jev 用法:</b> 在 action 内调用 evaluate("typesafe:jev-latest")，配有 Noul、Choice 和 Score 问题构造器。</sub><br><sub>相关: <a href="https://ash-hq.org">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/ndrezn/status/2102088289876418563"><img src="https://pbs.twimg.com/media/HSwd5SWW0AA97cu.jpg?name=orig" alt="LangChain 的 Jev 路由中间件" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/ndrezn/status/2102088289876418563">LangChain 的 Jev 路由中间件</a></b><br><sub>ndrezn · X · ♥ 16 · 2026-09-21</sub><br>面向托管 deep agent 的 LangChain 中间件，你定义好路由，由 Jev 为每个请求挑选模型。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe"><img src="https://tanstack.com/api/readme/ai.png" alt="TanStack AI 的 Jev 适配器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe">TanStack AI 的 Jev 适配器</a></b><br><sub>TanStack · GitHub · ⭐ 3.1k 仓库 · 2025-10-08</sub><br>TanStack AI 的适配器包，通过 decide() 调用暴露 Jev，支持类型化的 Choice、Score 和是/否问题，直接用 fetch 调 API，不依赖 TypeSafe SDK。<br><sub>相关: <a href="https://github.com/TanStack/ai">repo</a> · <a href="https://www.npmjs.com/package/@tanstack/ai-typesafe">npm</a> · <a href="https://tanstack.com/ai/latest">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe"><img src="https://opengraph.githubassets.com/1/ax-llm/ax" alt="Ax 的 TypeSafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe">Ax 的 TypeSafe 提供方</a></b><br><sub>ax-llm · GitHub · ⭐ 2.9k 仓库 · 2026-09-17</sub><br>DSPy 风格 TypeScript 框架 Ax 中的 TypeSafe 提供方，把布尔和有限类别签名映射成 Jev 问题或原生 System One 请求，也移植到了其生成的 Python、Go、Java、C++ 和 Rust 库。<br><sub>相关: <a href="https://github.com/ax-llm/ax">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/donvito/ai-backends"><img src="https://opengraph.githubassets.com/1/donvito/ai-backends" alt="AI Backends" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/donvito/ai-backends">AI Backends</a></b><br><sub>donvito · GitHub · ⭐ 146 · 2025-05-21</sub><br>可自托管的通用 AI 任务 API 服务器，新增由 Jev 支撑的 /api/evaluate 决策端点，用于 Choice、Score 和 Noul 问题。<br><sub>相关: <a href="https://aibackends.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/paolino/status/2102086504986169652"><img src="https://pbs.twimg.com/media/HSwbKb7XwAAT9Wj.jpg?name=orig" alt="RubyLLM::Judge" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/paolino/status/2102086504986169652">RubyLLM::Judge</a></b><br><sub>paolino · X · ♥ 123 · 2026-09-21</sub><br>RubyLLM 框架中支持 Jev 的判断 API，让 Ruby 和 Rails 应用做类型化评估。<br><sub>相关: <a href="https://rubyllm.com/next/judgments/">docs</a> · <a href="https://github.com/crmne/ruby_llm">repo</a> · <a href="https://github.com/crmne/ruby_llm">project</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/danvega/jev-spring-boot-starter"><img src="https://opengraph.githubassets.com/1/danvega/jev-spring-boot-starter" alt="Jev Spring Boot Starter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/danvega/jev-spring-boot-starter">Jev Spring Boot Starter</a></b><br><sub>danvega · GitHub · ⭐ 30 · 2026-09-20</sub><br>社区版 Spring Boot 4 starter，在 Spring MVC 和 RestClient 上自动配置可注入的 JevClient，Java 服务只需添加一个依赖和 API 密钥就能向 Jev 提出类型化问题。<br><sub>相关: <a href="https://www.youtube.com/watch?v=fq_nYo4BnrY">video</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI"><img src="https://repository-images.githubusercontent.com/941562247/8b2db3ba-ba3b-4a74-95cc-da8bbead2b8c" alt="Neuron AI 的 TypeSafe 分类器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI">Neuron AI 的 TypeSafe 分类器</a></b><br><sub>neuron-core · GitHub · ⭐ 2.1k 仓库 · 2025-03-02</sub><br>PHP agent 框架 Neuron AI 的 TypeSafe AI 分类器，把其 Boolean、Choice 和 Score 分类请求映射到 Jev 的 System One API。<br><sub>相关: <a href="https://docs.neuron-ai.dev">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/peterfriese/jev-foundation-models"><img src="https://pbs.twimg.com/media/HSwjl81bkAAlliY.jpg?name=orig" alt="Jev for Apple Foundation Models" width="240"></a></td>
@@ -134,8 +98,20 @@
 <td valign="top"><b><a href="https://github.com/pithings/advocaat">Advocaat</a></b><br><sub>pithings · GitHub · ⭐ 89 · 2026-09-16</sub><br>小巧的 TypeScript 客户端，一次请求就能针对同一份数据向 Jev 问多个是/否、选项和评分问题，并读回类型化的值；附带一个教你设计问题的 agent skill。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb"><img src="https://raw.githubusercontent.com/crmne/ruby_llm/main/docs/assets/images/logotype.svg" alt="RubyLLM 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/crmne/ruby_llm/blob/main/lib/ruby_llm/providers/typesafe.rb">RubyLLM 的 TypeSafe 提供方</a></b><br><sub>crmne · GitHub · ⭐ 4.4k 仓库 · 2025-01-30</sub><br>Ruby 和 Rails AI 框架 RubyLLM 中的 TypeSafe 提供方，在聊天提供方之外，通过专门的 System One 协议接入 Jev 判断模型。<br><sub>相关: <a href="https://rubyllm.com/">docs</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/spring-ai-community/spring-ai-typesafe"><img src="https://pbs.twimg.com/media/HSvVraQWUAEukT5.jpg?name=orig" alt="Spring AI TypeSafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/spring-ai-community/spring-ai-typesafe">Spring AI TypeSafe</a></b><br><sub>spring-ai-community · GitHub · ⭐ 19 · 2026-09-20</sub><br>Java 客户端及 Spring AI 组件，用于评判、护栏、自我改进，以及 RAG 过滤和重排。<br><sub>相关: <a href="https://spring-ai-community.github.io/spring-ai-typesafe">docs</a> · <a href="https://x.com/christzolov/status/2102009563083870575">demo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev"><img src="https://raw.githubusercontent.com/dromara/liteflow/master/static/img/flow_e1.png" alt="liteflow-agent-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dromara/liteflow/tree/master/liteflow-agent/liteflow-agent-jev">liteflow-agent-jev</a></b><br><sub>dromara · GitHub · ⭐ 3.9k 仓库 · 2020-03-25</sub><br>LiteFlow 规则引擎的 Jev switch 组件：JevSwitchComponent 通过一次 Jev Choice 把流程路由到目标节点 id，接入 DSL 的 SWITCH().to().DEFAULT()。<br><sub><b>Jev 用法:</b> 可配置最低置信度阈值；支持 TypeSafe 和 OpenRouter 的 Decisions API。</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/danvega/jev-spring-boot-starter"><img src="https://opengraph.githubassets.com/1/danvega/jev-spring-boot-starter" alt="Jev Spring Boot Starter" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/danvega/jev-spring-boot-starter">Jev Spring Boot Starter</a></b><br><sub>danvega · GitHub · ⭐ 30 · 2026-09-20</sub><br>社区版 Spring Boot 4 starter，在 Spring MVC 和 RestClient 上自动配置可注入的 JevClient，Java 服务只需添加一个依赖和 API 密钥就能向 Jev 提出类型化问题。<br><sub>相关: <a href="https://www.youtube.com/watch?v=fq_nYo4BnrY">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/hyperspaceai/jevcache"><img src="https://repository-images.githubusercontent.com/1375761817/b17d8cf2-457c-446a-82cf-4bd18e00bb47" alt="jevcache" width="240"></a></td>
@@ -146,20 +122,24 @@
 <td valign="top"><b><a href="https://github.com/cayu-dev/cayu">Cayu TypeSafeProvider</a></b><br><sub>cayu-dev · GitHub · ⭐ 69 · 2026-07-16</sub><br>面向长周期 Python agent 的生产级运行时，带一个实验性的 TypeSafeProvider，可通过 Cayu 的 session 和事件做原生的 Choice、Score 和 Noul 决策。<br><sub>相关: <a href="https://cayu.dev/">app</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/beautyyuyanli/status/2100913383143026873"><img src="https://pbs.twimg.com/media/HSfxfsSasAAvv2h.jpg?name=orig" alt="Dify 分类器节点接入 Jev" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/beautyyuyanli/status/2100913383143026873">Dify 分类器节点接入 Jev</a></b><br><sub>beautyyuyanli · X · ♥ 29 · 2026-09-18</sub><br>Dify 的分类器节点现在支持以 Jev 为模型，搭工作流的人可以用 Jev 的类型化决策来路由输入。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://deepclause.substack.com/p/jev-prolog-pi-and-the-dream-of-probabilistic"><img src="https://substackcdn.com/image/fetch/$s_!HKv7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c7a3019-d2dc-4963-86b0-5e1bb06225d4_1220x364.png" alt="DeepClause + Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://deepclause.substack.com/p/jev-prolog-pi-and-the-dream-of-probabilistic">DeepClause + Jev</a></b><br><sub>Andreas (DeepClause) · 文章 · ▲ 21 · 2026-09-21</sub><br>宣布 DeepClause 及其 Pi 扩展支持 Jev，把 Jev 的判断映射到 Prolog 风格的 DML 谓词上，实现快速、确定性的 agent 决策，并发问这能否让概率逻辑编程重获新生。<br><sub><b>Jev 用法:</b> judge/2 谓词针对一个 state 批量发出 Jev 问题；再由确定性的 Prolog 关系做选择和标注。</sub><br><sub>相关: <a href="https://github.com/deepclause/deepclause-sdk">repo</a> · <a href="https://www.npmjs.com/package/deepclause-pi">npm</a> · <a href="https://news.ycombinator.com/item?id=49781694">discussion</a> · <a href="https://github.com/deepclause/deepclause-sdk">project</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe"><img src="https://tanstack.com/api/readme/ai.png" alt="TanStack AI 的 Jev 适配器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/TanStack/ai/tree/main/packages/ai-typesafe">TanStack AI 的 Jev 适配器</a></b><br><sub>TanStack · GitHub · ⭐ 3.1k 仓库 · 2025-10-08</sub><br>TanStack AI 的适配器包，通过 decide() 调用暴露 Jev，支持类型化的 Choice、Score 和是/否问题，直接用 fetch 调 API，不依赖 TypeSafe SDK。<br><sub>相关: <a href="https://github.com/TanStack/ai">repo</a> · <a href="https://www.npmjs.com/package/@tanstack/ai-typesafe">npm</a> · <a href="https://tanstack.com/ai/latest">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/typesafeainate/dspy-typesafeify"><img src="https://raw.githubusercontent.com/typesafeainate/dspy-typesafeify/main/examples/typesafe_dspy_ticket_triage/benchmark.svg" alt="dspy-typesafeify" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/typesafeainate/dspy-typesafeify">dspy-typesafeify</a></b><br><sub>typesafeainate · GitHub · ⭐ 61 · 2026-09-15</sub><br>概念验证性质的 DSPy 分支，提供 @typesafeify 装饰器，通过混合计划把 Signature 中纯决策类的输出交给 Jev，应用代码照常调用 dspy.Predict。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe"><img src="https://opengraph.githubassets.com/1/symfony/ai" alt="Symfony AI 的 TypeSafe 桥接" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe">Symfony AI 的 TypeSafe 桥接</a></b><br><sub>symfony · GitHub · ⭐ 1.2k 仓库 · 2025-04-17</sub><br>Symfony AI Platform 组件的 TypeSafe 桥接，通过 Question、Answer 和 Evaluation 类型暴露 Jev 模型，让 PHP 应用做 System One 决策。<br><sub>相关: <a href="https://ai.symfony.com/">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php"><img src="https://pbs.twimg.com/media/HScwRSHXcAAmOGT.jpg" alt="Laravel AI 的 TypeSafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php">Laravel AI 的 TypeSafe 提供方</a></b><br><sub>laravel · GitHub · ⭐ 1.2k 仓库 · 2026-09-17</sub><br>Laravel AI SDK 新增的 TypeSafe 网关，为 Laravel 应用提供由 Jev 的 /systemone 端点支撑的类型化分类，并提供用于测试的假响应。<br><sub>相关: <a href="https://x.com/taylorotwell/status/2100700952923713641">demo</a> · <a href="https://github.com/laravel/ai">repo</a> · <a href="https://github.com/laravel/ai/pull/1010">pr</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe"><img src="https://opengraph.githubassets.com/1/ax-llm/ax" alt="Ax 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/ax-llm/ax/tree/main/src/ax/ai/typesafe">Ax 的 TypeSafe 提供方</a></b><br><sub>ax-llm · GitHub · ⭐ 2.9k 仓库 · 2026-09-17</sub><br>DSPy 风格 TypeScript 框架 Ax 中的 TypeSafe 提供方，把布尔和有限类别签名映射成 Jev 问题或原生 System One 请求，也移植到了其生成的 Python、Go、Java、C++ 和 Rust 库。<br><sub>相关: <a href="https://github.com/ax-llm/ax">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caudena/beam_weaver"><img src="https://raw.githubusercontent.com/caudena/beam_weaver/master/docs/assets/weavescope-tracing.png" alt="BeamWeaver" width="240"></a></td>
@@ -174,52 +154,28 @@
 <td valign="top"><b><a href="https://github.com/yusukebe/hono-jev-router">hono-jev-router</a></b><br><sub>yusukebe · GitHub · ⭐ 45 · 2026-09-18</sub><br>Hono Web 框架的实验性路由器，按自然语言描述而非方法和路径来路由 HTTP 请求，由 Jev 为每个进来的请求打分，判断哪条描述最匹配。<br><sub>相关: <a href="https://hono-jev-router.yusuke.run">app</a> · <a href="https://hono-jev-router.yusuke.run">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala"><img src="https://raw.githubusercontent.com/getkyo/kyo/main/kyo.png" alt="Kyo 的 TypeSafe 决策器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala">Kyo 的 TypeSafe 决策器</a></b><br><sub>getkyo · GitHub · ⭐ 812 仓库 · 2022-03-08</sub><br>Scala 3 工具包 Kyo 为其 AI 模块加入 TypeSafe decider 后端，一次请求即可对各类 System One 问题返回校准概率。<br><sub>相关: <a href="https://getkyo.io">app</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/ndrezn/status/2102088289876418563"><img src="https://pbs.twimg.com/media/HSwd5SWW0AA97cu.jpg?name=orig" alt="LangChain 的 Jev 路由中间件" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/ndrezn/status/2102088289876418563">LangChain 的 Jev 路由中间件</a></b><br><sub>ndrezn · X · ♥ 16 · 2026-09-21</sub><br>面向托管 deep agent 的 LangChain 中间件，你定义好路由，由 Jev 为每个请求挑选模型。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-cli" alt="ai-cli 的 evaluate 命令" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts">ai-cli 的 evaluate 命令</a></b><br><sub>vercel-labs · GitHub · ⭐ 810 仓库 · 2025-07-28</sub><br>ai-cli 终端工具的 evaluate 命令，从命令行参数、文件或 stdin 读取 state 和类型化问题，发给 Jev 这类 AI Gateway 评估模型，并打印类型化答案。<br><sub>相关: <a href="https://github.com/vercel-labs/ai-cli">repo</a> · <a href="https://ai-cli.dev">website</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI"><img src="https://repository-images.githubusercontent.com/941562247/8b2db3ba-ba3b-4a74-95cc-da8bbead2b8c" alt="Neuron AI 的 TypeSafe 分类器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/neuron-core/neuron-ai/tree/3.x/src/Classifier/TypeSafeAI">Neuron AI 的 TypeSafe 分类器</a></b><br><sub>neuron-core · GitHub · ⭐ 2.1k 仓库 · 2025-03-02</sub><br>PHP agent 框架 Neuron AI 的 TypeSafe AI 分类器，把其 Boolean、Choice 和 Score 分类请求映射到 Jev 的 System One API。<br><sub>相关: <a href="https://docs.neuron-ai.dev">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/DevMortimer/pi-typesafe"><img src="https://raw.githubusercontent.com/DevMortimer/pi-typesafe/main/docs/preview.png" alt="pi-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/DevMortimer/pi-typesafe">pi-typesafe</a></b><br><sub>DevMortimer · GitHub · ⭐ 40 · 2026-09-16</sub><br>Pi 扩展，为 agent 加入可批量调用的 typesafe_evaluate 工具、终端 playground 命令，以及类型化的客户端 API，让 pi-warden 等其他扩展共用同一个密钥和用量记录。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation"><img src="https://raw.githubusercontent.com/OpenRouterTeam/ai-sdk-provider/main/assets/banner.png" alt="OpenRouter AI SDK 的评估模型" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation">OpenRouter AI SDK 的评估模型</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 686 仓库 · 2024-07-18</sub><br>OpenRouter 的 Vercel AI SDK 提供方新增一个支持 Decisions API 的评估模型，AI SDK 的 evaluate 由此可以通过 OpenRouter 调用 Jev。<br><sub>相关: <a href="https://www.npmjs.com/package/@openrouter/ai-sdk-provider">npm</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai"><img src="https://opengraph.githubassets.com/1/langgenius/dify-official-plugins" alt="Dify 的 TypeSafe AI 插件" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai">Dify 的 TypeSafe AI 插件</a></b><br><sub>langgenius · GitHub · ⭐ 635 仓库 · 2024-12-18</sub><br>Dify 官方插件，把 TypeSafe AI 加为模型提供方，让 Dify 的问题分类器节点通过 Jev 路由类别，分支保持不变。<br><sub><b>Jev 用法:</b> 通过一个受约束的六条消息文本模板把 jev-1.13.0 提供给分类器节点，返回 category_id 和 category_name。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe"><img src="https://opengraph.githubassets.com/1/narumiruna/pi-extensions" alt="pi-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe">pi-typesafe</a></b><br><sub>narumiruna · GitHub · ⭐ 599 仓库 · 2026-05-07</sub><br>Pi Coding Agent 扩展，为 Pi 提供 typesafe_question 工具，通过 TypeSafe 的 Jev API 做范围很窄的类型化决策，可选择开启 OpenRouter 回退。<br><sub><b>Jev 用法:</b> 一次调用可针对一个 state 问多个 Noul、Choice 和 Score 问题，答案先经校验再交给模型；内置一个 typesafe-ai skill。</sub><br><sub>相关: <a href="https://www.npmjs.com/package/@narumitw/pi-typesafe">npm</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex"><img src="https://opengraph.githubassets.com/1/agentjido/req_llm" alt="ReqLLM 的 TypeSafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex">ReqLLM 的 TypeSafe 提供方</a></b><br><sub>agentjido · GitHub · ⭐ 581 仓库 · 2026-09-17</sub><br>Elixir LLM 库 ReqLLM 的 TypeSafe 提供方，通过独立的 evaluate 接口调用 Jev，对答案做归一化，并保留提供方的原始响应。<br><sub>相关: <a href="https://github.com/agentjido/req_llm">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 仓库 · 2021-04-07</sub><br>DXOS monorepo 中面向 TypeSafe System One 模型的实验性 Effect 客户端，schema 同时就是请求和响应，每个 struct 字段编译成一个 Jev 问题。<br><sub><b>Jev 用法:</b> DecisionModel 服务仿照 Effect 的 LanguageModel；所有字段在一次调用中完成，并解码回声明的类型。</sub><br><sub>相关: <a href="https://dxos.org">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe"><img src="https://opengraph.githubassets.com/1/symfony/ai" alt="Symfony AI 的 TypeSafe 桥接" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/symfony/ai/tree/main/src/platform/src/Bridge/TypeSafe">Symfony AI 的 TypeSafe 桥接</a></b><br><sub>symfony · GitHub · ⭐ 1.2k 仓库 · 2025-04-17</sub><br>Symfony AI Platform 组件的 TypeSafe 桥接，通过 Question、Answer 和 Evaluation 类型暴露 Jev 模型，让 PHP 应用做 System One 决策。<br><sub>相关: <a href="https://ai.symfony.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
 <td valign="top"><b><a href="https://liteflow.cc/pages/agent-jev-switch/">liteflow-agent-jev</a></b><br><sub>LiteFlow · 文档 · ⭐ 24 · 2026-09-20</sub><br>LiteFlow 规则引擎模块（2.16.2 起，需 JDK 17+），其 JevSwitchComponent 让 Jev 从候选组件 ID 中选出 SWITCH 分支，置信度低时落到 DEFAULT；文档附有客服路由演示。<br><sub>相关: <a href="https://github.com/bryan31/liteflow-homepage">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone"><img src="https://opengraph.githubassets.com/1/lnyo-cly/ai4j" alt="ai4j 的 System One 支持" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone">ai4j 的 System One 支持</a></b><br><sub>lnyo-cly · GitHub · ⭐ 429 仓库 · 2024-08-17</sub><br>为 Java 8+ agent SDK ai4j 加入 System One 支持，JVM 应用除了使用其统一 LLM、工具调用和 RAG 功能，还能调用 TypeSafe 的 Jev 做类型化决策。<br><sub>相关: <a href="https://lnyo-cly.github.io/ai4j/">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx"><img src="https://opengraph.githubassets.com/1/langchain-ai/docs" alt="LangChain 的 TypeSafe 集成" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx">LangChain 的 TypeSafe 集成</a></b><br><sub>langchain-ai · 文档 · ⭐ 418 仓库 · 2025-05-15</sub><br>LangChain 关于 TypeSafe 集成的文档，其中 TypeSafeClassifier 把 Jev 决策暴露为 Runnable，可调用、批处理或组合，也可用在 create_agent 中间件里。<br><sub>相关: <a href="https://docs.langchain.com">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://x.com/lukerramsden/status/2101474124292047201"><img src="https://pbs.twimg.com/media/HSnvKhjboAAteyi.jpg?name=orig" alt="system-one" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/lukerramsden/status/2101474124292047201">system-one</a></b><br><sub>lukerramsden · X · ♥ 10 · 2026-09-20</sub><br>面向 System 1 类型化决策模型的通用 TypeScript 库，支持 Jev、Cloudflare AI Gateway 和 Laya，提供 Promise 和 Effect 原生两种客户端。<br><sub>相关: <a href="https://github.com/lukeramsden/system-one">repo</a> · <a href="https://www.npmjs.com/package/system-one">npm</a> · <a href="https://github.com/lukeramsden/system-one">project</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php"><img src="https://pbs.twimg.com/media/HScwRSHXcAAmOGT.jpg" alt="Laravel AI 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/laravel/ai/blob/1.x/src/Gateway/TypeSafeGateway.php">Laravel AI 的 TypeSafe 提供方</a></b><br><sub>laravel · GitHub · ⭐ 1.2k 仓库 · 2026-09-17</sub><br>Laravel AI SDK 新增的 TypeSafe 网关，为 Laravel 应用提供由 Jev 的 /systemone 端点支撑的类型化分类，并提供用于测试的假响应。<br><sub>相关: <a href="https://x.com/taylorotwell/status/2100700952923713641">demo</a> · <a href="https://github.com/laravel/ai">repo</a> · <a href="https://github.com/laravel/ai/pull/1010">pr</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nasrallah-AL/jev-cli"><img src="https://jevcli.vectorz.app/og.png" alt="jev-cli (jevctl)" width="240"></a></td>
@@ -234,8 +190,12 @@
 <td valign="top"><b><a href="https://github.com/Ray-Hughes/jevalyn">Jevalyn</a></b><br><sub>Ray-Hughes · GitHub · ⭐ 17 · 2026-09-20</sub><br>Rails 原生封装，把类型化、校准的 Jev 决策放进应用控制流，附带护栏、路由器和测试辅助工具。<br><sub>相关: <a href="https://www.reddit.com/r/rails/comments/1wl4psz/new_gem_wrapping_jev/">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe"><img src="https://raw.githubusercontent.com/cognesy/instructor-php/main/docs/images/concept.png" alt="Instructor PHP 的 TypeSafe 驱动" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe">Instructor PHP 的 TypeSafe 驱动</a></b><br><sub>cognesy · GitHub · ⭐ 327 仓库 · 2026-09-17</sub><br>Instructor for PHP 的统一 LLM API Polyglot 中的 TypeSafe 决策驱动，把应用 state 和类型化问题转成 Jev 请求，并把答案映射为 PHP 决策对象。<br><sub>相关: <a href="https://github.com/cognesy/instructor-php">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala"><img src="https://raw.githubusercontent.com/getkyo/kyo/main/kyo.png" alt="Kyo 的 TypeSafe 决策器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/getkyo/kyo/blob/main/kyo-ai/shared/src/main/scala/kyo/ai/decider/TypeSafeDecider.scala">Kyo 的 TypeSafe 决策器</a></b><br><sub>getkyo · GitHub · ⭐ 812 仓库 · 2022-03-08</sub><br>Scala 3 工具包 Kyo 为其 AI 模块加入 TypeSafe decider 后端，一次请求即可对各类 System One 问题返回校准概率。<br><sub>相关: <a href="https://getkyo.io">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-cli" alt="ai-cli 的 evaluate 命令" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/ai-cli/blob/main/packages/ai-cli/src/commands/evaluate.ts">ai-cli 的 evaluate 命令</a></b><br><sub>vercel-labs · GitHub · ⭐ 810 仓库 · 2025-07-28</sub><br>ai-cli 终端工具的 evaluate 命令，从命令行参数、文件或 stdin 读取 state 和类型化问题，发给 Jev 这类 AI Gateway 评估模型，并打印类型化答案。<br><sub>相关: <a href="https://github.com/vercel-labs/ai-cli">repo</a> · <a href="https://ai-cli.dev">website</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/utk2103/jev-studio"><img src="https://pbs.twimg.com/media/HSu0pXwbwAAGhJp.jpg?name=orig" alt="jev-studio" width="240"></a></td>
@@ -246,8 +206,16 @@
 <td valign="top"><b><a href="https://github.com/saiashirwad/effect-questions">effect-questions</a></b><br><sub>saiashirwad · GitHub · ⭐ 14 · 2026-09-16</sub><br>Effect 库，把语义判断变成 is、choose、rank、branch 等类型化的 Effect 操作，模型置信度不足时以 UncertainDecision 失败。<br><sub><b>Jev 用法:</b> Jev 是第一个 QuestionModel 提供方；Decision 在其上加入置信度门控、期望损失和基于证据的分派。</sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation"><img src="https://raw.githubusercontent.com/OpenRouterTeam/ai-sdk-provider/main/assets/banner.png" alt="OpenRouter AI SDK 的评估模型" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/tree/main/src/evaluation">OpenRouter AI SDK 的评估模型</a></b><br><sub>OpenRouterTeam · GitHub · ⭐ 686 仓库 · 2024-07-18</sub><br>OpenRouter 的 Vercel AI SDK 提供方新增一个支持 Decisions API 的评估模型，AI SDK 的 evaluate 由此可以通过 OpenRouter 调用 Jev。<br><sub>相关: <a href="https://www.npmjs.com/package/@openrouter/ai-sdk-provider">npm</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/BoundaryML/feelings"><img src="https://opengraph.githubassets.com/1/BoundaryML/feelings" alt="feelings" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/BoundaryML/feelings">feelings</a></b><br><sub>BoundaryML · GitHub · ⭐ 13 · 2026-09-19</sub><br>约 20 行 BAML 代码，给任意值加上 .feels()、.how() 和 .matches() 方法，把 Jev 的概率变成普通 BAML 代码里的类型化 AI if 语句，需要写文字时交给 LLM。<br><sub>相关: <a href="https://boundaryml.com/blog/typesafe-ai-jev">article</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai"><img src="https://opengraph.githubassets.com/1/langgenius/dify-official-plugins" alt="Dify 的 TypeSafe AI 插件" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/langgenius/dify-official-plugins/tree/main/models/typesafe_ai">Dify 的 TypeSafe AI 插件</a></b><br><sub>langgenius · GitHub · ⭐ 635 仓库 · 2024-12-18</sub><br>Dify 官方插件，把 TypeSafe AI 加为模型提供方，让 Dify 的问题分类器节点通过 Jev 路由类别，分支保持不变。<br><sub><b>Jev 用法:</b> 通过一个受约束的六条消息文本模板把 jev-1.13.0 提供给分类器节点，返回 category_id 和 category_name。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tumf/jev-cli"><img src="https://raw.githubusercontent.com/tumf/jev-cli/main/assets/jev-cli-thumbnail.png" alt="jev-cli" width="240"></a></td>
@@ -258,6 +226,14 @@
 <td valign="top"><b><a href="https://github.com/southpolesteve/probably">Probably</a></b><br><sub>southpolesteve · GitHub · ⭐ 9 · 2026-09-19</sub><br>面向 LLM 工作流的小型实验性编程语言，if 语句背后的判断和概率由 Jev 提供，文字由文本模型撰写，配有真正的解析器、解释器、CLI 和 playground。<br><sub>相关: <a href="https://probably-lang.southpolesteve.workers.dev">app</a> · <a href="https://probably-lang.southpolesteve.workers.dev">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe"><img src="https://opengraph.githubassets.com/1/narumiruna/pi-extensions" alt="pi-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/narumiruna/pi-extensions/tree/main/packages/pi-typesafe">pi-typesafe</a></b><br><sub>narumiruna · GitHub · ⭐ 599 仓库 · 2026-05-07</sub><br>Pi Coding Agent 扩展，为 Pi 提供 typesafe_question 工具，通过 TypeSafe 的 Jev API 做范围很窄的类型化决策，可选择开启 OpenRouter 回退。<br><sub><b>Jev 用法:</b> 一次调用可针对一个 state 问多个 Noul、Choice 和 Score 问题，答案先经校验再交给模型；内置一个 typesafe-ai skill。</sub><br><sub>相关: <a href="https://www.npmjs.com/package/@narumitw/pi-typesafe">npm</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex"><img src="https://opengraph.githubassets.com/1/agentjido/req_llm" alt="ReqLLM 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/agentjido/req_llm/blob/main/lib/req_llm/providers/typesafe.ex">ReqLLM 的 TypeSafe 提供方</a></b><br><sub>agentjido · GitHub · ⭐ 581 仓库 · 2026-09-17</sub><br>Elixir LLM 库 ReqLLM 的 TypeSafe 提供方，通过独立的 evaluate 接口调用 Jev，对答案做归一化，并保留提供方的原始响应。<br><sub>相关: <a href="https://github.com/agentjido/req_llm">repo</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/shaharia-lab/jev-cli"><img src="https://raw.githubusercontent.com/shaharia-lab/jev-cli/main/assets/banner.png" alt="jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/shaharia-lab/jev-cli">jev</a></b><br><sub>shaharia-lab · GitHub · ⭐ 11 · 2026-09-19</sub><br>Rust 命令行工具，可就任意文本提出是/否、多选和评分细则问题，返回校准概率：对 shell 和 CI 以退出码返回，对脚本以 JSON 返回，对 agent 以 MCP 工具形式提供。</td>
 </tr>
@@ -266,12 +242,16 @@
 <td valign="top"><b><a href="https://github.com/ekizito96/Turn">Turn</a></b><br><sub>ekizito96 · GitHub · ⭐ 11 · 2026-02-17</sub><br>面向 AI agent 的编译型语言及运行时，其中 decide(state, questions) 是一个持久化的 effect，内置 TypeSafe System One 驱动，可在 Jev 上运行 Choice、Score 和 Noul 工作流。<br><sub><b>Jev 用法:</b> decide() 与提供方无关，本地运行可用 mock 驱动；程序按答案置信度分支，例如把置信度低于 0.8 的工单转给审核人。</sub><br><sub>相关: <a href="https://github.com/ekizito96/Turn/tree/main/providers/turn-provider-typesafe">code</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 仓库 · 2021-04-07</sub><br>DXOS monorepo 中面向 TypeSafe System One 模型的实验性 Effect 客户端，schema 同时就是请求和响应，每个 struct 字段编译成一个 Jev 问题。<br><sub><b>Jev 用法:</b> DecisionModel 服务仿照 Effect 的 LanguageModel；所有字段在一次调用中完成，并解码回声明的类型。</sub><br><sub>相关: <a href="https://dxos.org">app</a></sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/doeixd/discern"><img src="https://raw.githubusercontent.com/doeixd/discern/main/docs/assets/discern-explainer-silent.gif" alt="Discern" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/doeixd/discern">Discern</a></b><br><sub>doeixd · GitHub · ⭐ 10 · 2026-09-21</sub><br>TypeScript 库，基于 Effect 的 Decision 和 DecisionModel 提供能感知不确定性的语义模式匹配、策略和可路由的流程，“maybe”结果是一条显式分支，Jev 是提供方之一。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-python" alt="AI SDK for Python 的 evaluate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py">AI SDK for Python 的 evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 184 仓库 · 2026-01-16</sub><br>Vercel 公测版 AI SDK for Python 中的实验性 evaluate 操作，通过 AI Gateway 向 Jev 提出类型化的 Choice、Score 和 Boolean 问题，附可运行示例。<br><sub>相关: <a href="https://github.com/vercel-labs/ai-python">repo</a> · <a href="https://ai-python.dev">website</a></sub></td>
+<td width="260" valign="top"><a href="https://x.com/lukerramsden/status/2101474124292047201"><img src="https://pbs.twimg.com/media/HSnvKhjboAAteyi.jpg?name=orig" alt="system-one" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/lukerramsden/status/2101474124292047201">system-one</a></b><br><sub>lukerramsden · X · ♥ 10 · 2026-09-20</sub><br>面向 System 1 类型化决策模型的通用 TypeScript 库，支持 Jev、Cloudflare AI Gateway 和 Laya，提供 Promise 和 Effect 原生两种客户端。<br><sub>相关: <a href="https://github.com/lukeramsden/system-one">repo</a> · <a href="https://www.npmjs.com/package/system-one">npm</a> · <a href="https://github.com/lukeramsden/system-one">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/matthewp/flue-jev-demo"><img src="https://opengraph.githubassets.com/1/matthewp/flue-jev-demo" alt="Flue + Jev" width="240"></a></td>
@@ -286,12 +266,12 @@
 <td valign="top"><b><a href="https://github.com/AntonioCoppe/jev-harness">jev-harness</a></b><br><sub>AntonioCoppe · GitHub · ⭐ 9 · 2026-09-18</sub><br>TypeScript 库，借助策略映射、置信度门控、影子模式、配方和离线评测 CLI，把 Jev 的答案变成可上线的动作；一个行过滤任务耗时 1.3 秒，而用 Claude CLI 需要 48.9 秒。<br><sub>相关: <a href="https://x.com/Antoniocoppe/status/2100954520356327577">demo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/hijaidev/status/2101679778801893685"><img src="https://pbs.twimg.com/amplify_video_thumb/2101679740520390656/img/McXbM1E9CZgvK-MZ.jpg" alt="Jev CLI" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/hijaidev/status/2101679778801893685">Jev CLI</a></b><br><sub>hijaidev · X · ♥ 4 · 2026-09-20</sub><br>命令行工具，把 Jev 封装成 verify、screen、classify、extract、match、route、rerank 和 ask 等命令，为脚本和 agent 返回带概率的判定。</td>
+<td width="260" valign="top"><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone"><img src="https://opengraph.githubassets.com/1/lnyo-cly/ai4j" alt="ai4j 的 System One 支持" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lnyo-cly/ai4j/tree/main/ai4j/src/main/java/io/github/lnyocly/ai4j/systemone">ai4j 的 System One 支持</a></b><br><sub>lnyo-cly · GitHub · ⭐ 429 仓库 · 2024-08-17</sub><br>为 Java 8+ agent SDK ai4j 加入 System One 支持，JVM 应用除了使用其统一 LLM、工具调用和 RAG 功能，还能调用 TypeSafe 的 Jev 做类型化决策。<br><sub>相关: <a href="https://lnyo-cly.github.io/ai4j/">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe"><img src="https://opengraph.githubassets.com/1/Michaelliv/runline" alt="Runline 的 TypeSafe 插件" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe">Runline 的 TypeSafe 插件</a></b><br><sub>Michaelliv · GitHub · ⭐ 163 仓库 · 2026-09-17</sub><br>面向 agent 的 code-mode 运行时 Runline 的 TypeSafe 插件，把 evaluate、choice、score 和 noul 暴露为动作，可在其 QuickJS 沙箱中由 agent 的 JavaScript 调用。<br><sub>相关: <a href="https://github.com/Michaelliv/runline">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx"><img src="https://opengraph.githubassets.com/1/langchain-ai/docs" alt="LangChain 的 TypeSafe 集成" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/langchain-ai/docs/blob/main/src/oss/python/integrations/providers/typesafe.mdx">LangChain 的 TypeSafe 集成</a></b><br><sub>langchain-ai · 文档 · ⭐ 418 仓库 · 2025-05-15</sub><br>LangChain 关于 TypeSafe 集成的文档，其中 TypeSafeClassifier 把 Jev 决策暴露为 Runnable，可调用、批处理或组合，也可用在 create_agent 中间件里。<br><sub>相关: <a href="https://docs.langchain.com">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Towow-ai/jpp"><img src="https://raw.githubusercontent.com/Towow-ai/jpp/main/assets/social-card.svg" alt="J++" width="240"></a></td>
@@ -310,10 +290,6 @@
 <td valign="top"><b><a href="https://github.com/Kevthetech143/super-jev">super-jev</a></b><br><sub>Kevthetech143 · GitHub · ⭐ 8 · 2026-09-17</sub><br>与领域无关的 TypeScript harness，把证据、Jev 判断、允许的工具动作和经过验证的结果串联起来，支持可插拔的数据源和工具、参数检查和本地 JSONL 轨迹。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts"><img src="https://raw.githubusercontent.com/miaotouy/aio-hub/dev/docs/public/assets/产品概念图-1.jpg" alt="AIO Hub 的 System One 渠道" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts">AIO Hub 的 System One 渠道</a></b><br><sub>miaotouy · GitHub · ⭐ 144 仓库 · 2025-10-28</sub><br>本地优先的桌面和移动端 AI 中心，把 TypeSafe System One 加为专门的决策渠道，Jev 模型只在需要决策操作的地方出现。<br><sub>相关: <a href="http://aiohub-app.com">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/mattt/AnyDecisionModel"><img src="https://opengraph.githubassets.com/1/mattt/AnyDecisionModel" alt="AnyDecisionModel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mattt/AnyDecisionModel">AnyDecisionModel</a></b><br><sub>mattt · GitHub · ⭐ 7 · 2026-09-21</sub><br>Swift 包，以 Foundation Models session 的风格提供类型化决策（概率、基于 enum 的选择、序数评分），后端可以是 Jev 的 System One API，也可以是 Apple silicon 上的本地 MLX 模型。</td>
 </tr>
@@ -330,8 +306,8 @@
 <td valign="top"><b><a href="https://github.com/jomatsu/zod-jev">zod-jev</a></b><br><sub>jomatsu · GitHub · ⭐ 7 · 2026-09-17</sub><br>为 Zod 4 schema 加上语义检查，比如正文是否包含个人数据、价格是否合理，结构规则仍由 Zod 负责，结果以普通 Zod issue 返回。<br><sub><b>Jev 用法:</b> 一次 parseAsync 中的所有语义规则会在单个请求里变成 Noul 问题；由阈值把概率映射为 issue。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts"><img src="https://repository-images.githubusercontent.com/993805781/24ad8594-ddb9-4c8d-a4f9-15c3f72f9390" alt="NeuroLink 的 decide 能力" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts">NeuroLink 的 decide 能力</a></b><br><sub>juspay · GitHub · ⭐ 137 仓库 · 2025-05-31</sub><br>Juspay 的 NeuroLink TypeScript SDK 中的 Jev 提供方，新增 decide 作为与 generate、stream 并列的第三种推理类型，返回类型化的 boolean、choice 和 score 判断，内部也用于路由和上下文压缩。<br><sub>相关: <a href="https://github.com/juspay/neurolink">repo</a> · <a href="https://neurolink.ink">website</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe"><img src="https://raw.githubusercontent.com/cognesy/instructor-php/main/docs/images/concept.png" alt="Instructor PHP 的 TypeSafe 驱动" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cognesy/instructor-php/tree/main/packages/polyglot/src/Decision/Drivers/TypeSafe">Instructor PHP 的 TypeSafe 驱动</a></b><br><sub>cognesy · GitHub · ⭐ 327 仓库 · 2026-09-17</sub><br>Instructor for PHP 的统一 LLM API Polyglot 中的 TypeSafe 决策驱动，把应用 state 和类型化问题转成 Jev 请求，并把答案映射为 PHP 决策对象。<br><sub>相关: <a href="https://github.com/cognesy/instructor-php">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -342,20 +318,12 @@
 <td valign="top"><b><a href="https://www.npmjs.com/package/typesafe-jev-cli">typesafe-jev-cli</a></b><br><sub>lbflow · 软件包 · ⬇ 616 · 2026-09-20</sub><br>无依赖的 Node.js CLI，通过 OpenRouter 的 decisions 端点把 Choice、Noul 和 Score 评估发给 Jev，支持批量评估大量文本文件。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision"><img src="https://opengraph.githubassets.com/1/danieljvdm/effect-agent" alt="Effect Agent AutoModel" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision">Effect Agent AutoModel</a></b><br><sub>danieljvdm · GitHub · ⭐ 121 仓库 · 2026-09-17</sub><br>Effect Agent 的 AutoModel 包，借助 DecisionModel（例如配 jev-latest 的 TypeSafeDecisionModel），从应用批准的目录中为每个线程选定一次原生语言模型。<br><sub>相关: <a href="https://github.com/danieljvdm/effect-agent">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/obie/decide"><img src="https://opengraph.githubassets.com/1/obie/decide" alt="decide" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/obie/decide">decide</a></b><br><sub>obie · GitHub · ⭐ 6 · 2026-09-18</sub><br>与后端无关的 Ruby 层，把决策模型的答案转成具名的策略裁决，并显式处理 fail-open 或 fail-closed；首个答案来源是通过 OpenRouter 调用的 Jev。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/terryds/jevplayground"><img src="https://opengraph.githubassets.com/1/terryds/jevplayground" alt="Jev Playground" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/terryds/jevplayground">Jev Playground</a></b><br><sub>terryds · GitHub · ⭐ 1 · 2026-09-19</sub><br>纯浏览器端的 Jev playground，经由 Vercel AI Gateway 调用，可针对文本或 JSON state 构建 boolean、choice 和 score 问题，查看判定、概率条、延迟、token 用量和成本。<br><sub>相关: <a href="https://jevplayground.terrydjony.com">app</a> · <a href="https://jevplayground.terrydjony.com/">app 2</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe"><img src="https://opengraph.githubassets.com/1/SamSaffron/term-llm" alt="term-llm 的 classify 命令" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe">term-llm 的 classify 命令</a></b><br><sub>SamSaffron · GitHub · ⭐ 116 仓库 · 2025-12-31</sub><br>终端 AI 运行时，带一个由 TypeSafe System One 支撑的 classify 命令，可在 shell 中做意图路由、并行安全检查和结构化 state 评分。<br><sub>相关: <a href="https://term-llm.com/guides/classify/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/hndrr/ComfyUI-Jev"><img src="https://opengraph.githubassets.com/1/hndrr/ComfyUI-Jev" alt="ComfyUI-Jev" width="240"></a></td>
@@ -386,16 +354,20 @@
 <td valign="top"><b><a href="https://github.com/3clyp50/a0-typesafe-ai">TypeSafe AI for Agent Zero</a></b><br><sub>3clyp50 · GitHub · ⭐ 5 · 2026-09-17</sub><br>Agent Zero 插件，其 typesafe_query 工具可针对同一份证据组合 Choice、Noul 和 Score 问题，并在聊天中渲染概率卡片；内置官方 TypeSafe agent skill。</td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://x.com/hijaidev/status/2101679778801893685"><img src="https://pbs.twimg.com/amplify_video_thumb/2101679740520390656/img/McXbM1E9CZgvK-MZ.jpg" alt="Jev CLI" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/hijaidev/status/2101679778801893685">Jev CLI</a></b><br><sub>hijaidev · X · ♥ 4 · 2026-09-20</sub><br>命令行工具，把 Jev 封装成 verify、screen、classify、extract、match、route、rerank 和 ask 等命令，为脚本和 agent 返回带概率的判定。</td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/TypeSafeAI/typesafe-ui"><img src="https://opengraph.githubassets.com/1/TypeSafeAI/typesafe-ui" alt="TypeSafe UI" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/TypeSafeAI/typesafe-ui">TypeSafe UI</a></b><br><sub>TypeSafeAI · GitHub · ⭐ 4 · 2026-09-17</sub><br>面向 TypeSafe 项目的社区版 shadcn 风格 React 组件和界面区块，基于 Base UI 和 Tailwind v4 构建，附 Next.js 组件浏览器、源码预览和交互式 Lab。<br><sub>相关: <a href="https://ui.jev.works">app</a> · <a href="https://typesafe-ui.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts"><img src="https://raw.githubusercontent.com/deepclause/deepclause-sdk/main/docs/DeepClause_AI_Logic_Framework_Overview.png" alt="DeepClause 的 Jev 评判后端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts">DeepClause 的 Jev 评判后端</a></b><br><sub>deepclause · GitHub · ⭐ 64 仓库 · 2026-01-29</sub><br>把 Markdown 规格编译成可执行逻辑程序的 SDK，新增通用的判断原语，后端可在 LLM、Jev 和 mock 之间互换。</td>
+<td width="260" valign="top"><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py"><img src="https://opengraph.githubassets.com/1/vercel-labs/ai-python" alt="AI SDK for Python 的 evaluate" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/vercel-labs/ai-python/blob/main/examples/models/gateway/evaluation.py">AI SDK for Python 的 evaluate</a></b><br><sub>vercel-labs · GitHub · ⭐ 184 仓库 · 2026-01-16</sub><br>Vercel 公测版 AI SDK for Python 中的实验性 evaluate 操作，通过 AI Gateway 向 Jev 提出类型化的 Choice、Score 和 Boolean 问题，附可运行示例。<br><sub>相关: <a href="https://github.com/vercel-labs/ai-python">repo</a> · <a href="https://ai-python.dev">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai"><img src="https://raw.githubusercontent.com/betalyra/effect-uai/main/webpage/src/assets/effect-uai-logo-bg.png" alt="@effect-uai/typesafe-ai" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai">@effect-uai/typesafe-ai</a></b><br><sub>betalyra · GitHub · ⭐ 63 仓库 · 2026-04-26</sub><br>基于 Effect 的 AI agent 构建模块，带一个 TypeSafe Jev DecisionModel 提供方，可在一次调用中回答类型化的分类、评级和概率问题。<br><sub>相关: <a href="https://effect-uai.betalyra.com">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe"><img src="https://opengraph.githubassets.com/1/Michaelliv/runline" alt="Runline 的 TypeSafe 插件" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Michaelliv/runline/tree/main/packages/runline-plugins/typesafe">Runline 的 TypeSafe 插件</a></b><br><sub>Michaelliv · GitHub · ⭐ 163 仓库 · 2026-09-17</sub><br>面向 agent 的 code-mode 运行时 Runline 的 TypeSafe 插件，把 evaluate、choice、score 和 noul 暴露为动作，可在其 QuickJS 沙箱中由 agent 的 JavaScript 调用。<br><sub>相关: <a href="https://github.com/Michaelliv/runline">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/soderlind/ai-provider-for-jev"><img src="https://repository-images.githubusercontent.com/1375771750/d0ec3827-1a39-44d6-83e5-85a31e8a15eb" alt="AI Provider for Jev" width="240"></a></td>
@@ -422,20 +394,20 @@
 <td valign="top"><b><a href="https://github.com/mateonunez/jod">jod</a></b><br><sub>mateonunez · GitHub · ⭐ 3 · 2026-09-17</sub><br>TypeScript 库，把 Standard Schema state 和一组问题绑定成一个产物，先在本地校验 state，再用一次并行的 Jev 请求发出所有问题，返回类型化的领域值。<br><sub><b>Jev 用法:</b> 基于 @typesafe-ai/sdk 构建；新增校验、答案投影和测试夹具。</sub><br><sub>相关: <a href="https://npmjs.com/package/@mateonunez/jod">npm</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe"><img src="https://opengraph.githubassets.com/1/SEMOSS/Semoss" alt="SEMOSS 的 TypeSafe 客户端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe">SEMOSS 的 TypeSafe 客户端</a></b><br><sub>SEMOSS · GitHub · ⭐ 54 仓库 · 2013-05-30</sub><br>低代码数据与 AI 应用平台，在其 GenAI 层加入 TypeSafe Jev 客户端，并附有使用 Jev 决策的操作指南。<br><sub>相关: <a href="https://github.com/SEMOSS/Semoss/blob/dev/docs/how-to-guides/using_typesafe_jev.md">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts"><img src="https://raw.githubusercontent.com/miaotouy/aio-hub/dev/docs/public/assets/产品概念图-1.jpg" alt="AIO Hub 的 System One 渠道" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/miaotouy/aio-hub/blob/dev/packages/llm-core/src/providers/typesafe-system-one.ts">AIO Hub 的 System One 渠道</a></b><br><sub>miaotouy · GitHub · ⭐ 144 仓库 · 2025-10-28</sub><br>本地优先的桌面和移动端 AI 中心，把 TypeSafe System One 加为专门的决策渠道，Jev 模型只在需要决策操作的地方出现。<br><sub>相关: <a href="http://aiohub-app.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe"><img src="https://opengraph.githubassets.com/1/YaoApp/gou" alt="Gou 的 TypeSafe 连接器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe">Gou 的 TypeSafe 连接器</a></b><br><sub>YaoApp · GitHub · ⭐ 51 仓库 · 2021-08-24</sub><br>低代码 Go 应用引擎框架，新增带 Decide 能力的 TypeSafe 连接器，可在 Yao 应用中调用 Jev。<br><sub>相关: <a href="https://yaoapps.com">docs</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts"><img src="https://repository-images.githubusercontent.com/993805781/24ad8594-ddb9-4c8d-a4f9-15c3f72f9390" alt="NeuroLink 的 decide 能力" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/juspay/neurolink/blob/release/src/lib/providers/typesafe.ts">NeuroLink 的 decide 能力</a></b><br><sub>juspay · GitHub · ⭐ 137 仓库 · 2025-05-31</sub><br>Juspay 的 NeuroLink TypeScript SDK 中的 Jev 提供方，新增 decide 作为与 generate、stream 并列的第三种推理类型，返回类型化的 boolean、choice 和 score 判断，内部也用于路由和上下文压缩。<br><sub>相关: <a href="https://github.com/juspay/neurolink">repo</a> · <a href="https://neurolink.ink">website</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe"><img src="https://raw.githubusercontent.com/everruns/everruns/main/assets/readme/banner.png" alt="everruns-integrations-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe">everruns-integrations-typesafe</a></b><br><sub>everruns · GitHub · ⭐ 48 仓库 · 2025-12-14</sub><br>Rust crate，为 Everruns 持久化 agent harness 加入 jev 能力：一个 jev_evaluate 工具让 agent 向 Jev 提出类型化的 Noul、Score 和 Choice 问题，用于验证、评级、路由或分类内容。<br><sub>相关: <a href="https://github.com/everruns/everruns">repo</a> · <a href="https://crates.io/crates/everruns-integrations-typesafe">crate</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision"><img src="https://opengraph.githubassets.com/1/danieljvdm/effect-agent" alt="Effect Agent AutoModel" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/danieljvdm/effect-agent/tree/main/packages/ai-decision">Effect Agent AutoModel</a></b><br><sub>danieljvdm · GitHub · ⭐ 121 仓库 · 2026-09-17</sub><br>Effect Agent 的 AutoModel 包，借助 DecisionModel（例如配 jev-latest 的 TypeSafeDecisionModel），从应用批准的目录中为每个线程选定一次原生语言模型。<br><sub>相关: <a href="https://github.com/danieljvdm/effect-agent">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone"><img src="https://opengraph.githubassets.com/1/driftlessaf/go-driftlessaf" alt="DriftlessAF 的 systemone 执行器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone">DriftlessAF 的 systemone 执行器</a></b><br><sub>driftlessaf · GitHub · ⭐ 40 仓库 · 2026-01-26</sub><br>Chainguard 的 DriftlessAF agent 框架中的 Go 包，用类型化的 Noul、Choice 和 Score 问题调用 TypeSafe 的 System One API，校验每个答案，并复用框架的重试和 GenAI 指标。<br><sub>相关: <a href="https://github.com/driftlessaf/go-driftlessaf">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe"><img src="https://opengraph.githubassets.com/1/SamSaffron/term-llm" alt="term-llm 的 classify 命令" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SamSaffron/term-llm/tree/main/internal/typesafe">term-llm 的 classify 命令</a></b><br><sub>SamSaffron · GitHub · ⭐ 116 仓库 · 2025-12-31</sub><br>终端 AI 运行时，带一个由 TypeSafe System One 支撑的 classify 命令，可在 shell 中做意图路由、并行安全检查和结构化 state 评分。<br><sub>相关: <a href="https://term-llm.com/guides/classify/">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/molis-ai/jev-workbench"><img src="https://raw.githubusercontent.com/molis-ai/jev-workbench/main/docs/images/workbench.png" alt="Jev Workbench" width="240"></a></td>
@@ -482,28 +454,24 @@
 <td valign="top"><b><a href="https://github.com/GenieRobot/typesafe-ai-rails">typesafe-ai-rails</a></b><br><sub>GenieRobot · GitHub · ⭐ 2 · 2026-09-16</sub><br>基于社区 Ruby SDK 的 Rails 集成，提供配置、持久化的用量和成本遥测，以及针对 Choice 和 Score 答案、可选开启的置信度策略。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev"><img src="https://opengraph.githubassets.com/1/phenobarbital/ai-parrot" alt="ai-parrot-client-jev" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev">ai-parrot-client-jev</a></b><br><sub>phenobarbital · GitHub · ⭐ 30 仓库 · 2024-08-12</sub><br>AI-Parrot 异步 agent 框架的 Jev 客户端包，把 System One 映射到其客户端接口，并把 Pydantic 模型转成问题（bool 对应 Noul，Literal/Enum 对应 Choice，分级数值对应 Score）。<br><sub>相关: <a href="https://github.com/phenobarbital/ai-parrot">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe"><img src="https://opengraph.githubassets.com/1/openclaw/openclaw" alt="OpenClaw 的 TypeSafe 插件" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/openclaw/openclaw/tree/main/extensions/typesafe">OpenClaw 的 TypeSafe 插件</a></b><br><sub>openclaw · GitHub · ⭐ 75 仓库 · 2025-11-24</sub><br>OpenClaw 官方插件，把托管的 Jev 或本地 Kev 服务器接入 OpenClaw 的决策模型 API，用于 Choice、Score 和 Boolean 判断，另有可选的 typesafe_evaluate 工具。<br><sub><b>Jev 用法:</b> 把 typesafe/jev-latest 选为 agent 的 decisionModel，可全局设置，也可按 agent 设置。</sub><br><sub>相关: <a href="https://docs.openclaw.ai/plugins/typesafe">docs</a> · <a href="https://docs.openclaw.ai/plugins/typesafe">link</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/gurenjs/guren/tree/main/examples/agents"><img src="https://opengraph.githubassets.com/1/gurenjs/guren" alt="Guren AI 的评估模型支持" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gurenjs/guren/tree/main/examples/agents">Guren AI 的评估模型支持</a></b><br><sub>gurenjs · GitHub · ⭐ 29 仓库 · 2025-11-01</sub><br>Guren（基于 Bun 的全栈框架）AI 插件中的评估模型支持，默认评估提供方是通过 AI SDK 调用的 Jev；agents 示例通过 POST /tickets/:id/triage 对客服工单做分诊。<br><sub>相关: <a href="https://github.com/gurenjs/guren">repo</a> · <a href="https://guren.dev">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts"><img src="https://raw.githubusercontent.com/deepclause/deepclause-sdk/main/docs/DeepClause_AI_Logic_Framework_Overview.png" alt="DeepClause 的 Jev 评判后端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/deepclause/deepclause-sdk/blob/main/src/judge/jev.ts">DeepClause 的 Jev 评判后端</a></b><br><sub>deepclause · GitHub · ⭐ 64 仓库 · 2026-01-29</sub><br>把 Markdown 规格编译成可执行逻辑程序的 SDK，新增通用的判断原语，后端可在 LLM、Jev 和 mock 之间互换。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev"><img src="https://opengraph.githubassets.com/1/tale-project/tale" alt="Tale 的 Jev 决策连接器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev">Tale 的 Jev 决策连接器</a></b><br><sub>tale-project · GitHub · ⭐ 29 仓库 · 2025-11-30</sub><br>Tale（自托管 AI agent 编排器和工作区）的工作流连接器，经 OpenRouter 把 Jev 暴露为 decide 动作，依据校准后的答案为发送、升级、写入等步骤把关。<br><sub>相关: <a href="https://tale.dev">app</a> · <a href="https://github.com/tale-project/tale">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai"><img src="https://raw.githubusercontent.com/betalyra/effect-uai/main/webpage/src/assets/effect-uai-logo-bg.png" alt="@effect-uai/typesafe-ai" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai">@effect-uai/typesafe-ai</a></b><br><sub>betalyra · GitHub · ⭐ 63 仓库 · 2026-04-26</sub><br>基于 Effect 的 AI agent 构建模块，带一个 TypeSafe Jev DecisionModel 提供方，可在一次调用中回答类型化的分类、评级和概率问题。<br><sub>相关: <a href="https://effect-uai.betalyra.com">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts"><img src="https://opengraph.githubassets.com/1/SEMOSS/semoss-ui" alt="SEMOSS 的 Jev 模型引擎" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts">SEMOSS 的 Jev 模型引擎</a></b><br><sub>SEMOSS · GitHub · ⭐ 27 仓库 · 2024-06-20</sub><br>SEMOSS 平台 UI 中的模型导入表单，把 TypeSafe 的 Jev 接入为评估引擎，用于对文本或结构化数据做分类、评分和评估，可选保留推理日志。<br><sub>相关: <a href="https://github.com/SEMOSS/semoss-ui">repo</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe"><img src="https://opengraph.githubassets.com/1/SEMOSS/Semoss" alt="SEMOSS 的 TypeSafe 客户端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SEMOSS/Semoss/tree/dev/py/genai_client/typesafe">SEMOSS 的 TypeSafe 客户端</a></b><br><sub>SEMOSS · GitHub · ⭐ 54 仓库 · 2013-05-30</sub><br>低代码数据与 AI 应用平台，在其 GenAI 层加入 TypeSafe Jev 客户端，并附有使用 Jev 决策的操作指南。<br><sub>相关: <a href="https://github.com/SEMOSS/Semoss/blob/dev/docs/how-to-guides/using_typesafe_jev.md">docs</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md"><img src="https://raw.githubusercontent.com/Govcraft/emergent/main/docs/images/system-monitor.png" alt="Emergent jev-handler" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md">Emergent jev-handler</a></b><br><sub>Govcraft · GitHub · ⭐ 23 仓库 · 2026-01-06</sub><br>Emergent（组合 CLI 工具的事件驱动工作流引擎）的处理器原语，对每个事件载荷向 Jev 提出一组固定的类型化问题，并把校准后的答案发布给下游。<br><sub>相关: <a href="https://github.com/Govcraft/emergent">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py"><img src="https://opengraph.githubassets.com/1/lm15-dev/lm15-python" alt="lm15 的 typesafe 提供方" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py">lm15 的 typesafe 提供方</a></b><br><sub>lm15-dev · GitHub · ⭐ 23 仓库 · 2026-04-08</sub><br>lm15（仅依赖标准库、与提供方无关的 Python LLM API 基础库）的 TypeSafe 提供方：消息变成 Jev 的 state，JSON schema 中的判断类属性变成问题，答案以带分布的数据部分返回。<br><sub>相关: <a href="https://github.com/lm15-dev/lm15-python">repo</a> · <a href="https://pypi.org/project/lm15/">pypi</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe"><img src="https://opengraph.githubassets.com/1/YaoApp/gou" alt="Gou 的 TypeSafe 连接器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/YaoApp/gou/tree/main/connector/typesafe">Gou 的 TypeSafe 连接器</a></b><br><sub>YaoApp · GitHub · ⭐ 51 仓库 · 2021-08-24</sub><br>低代码 Go 应用引擎框架，新增带 Decide 能力的 TypeSafe 连接器，可在 Yao 应用中调用 Jev。<br><sub>相关: <a href="https://yaoapps.com">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/juanlentino/jev-connector"><img src="https://opengraph.githubassets.com/1/juanlentino/jev-connector" alt="Connector for TypeSafe Jev" width="240"></a></td>
@@ -568,6 +536,38 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tinystruct/tinystruct-typesafe-sdk"><img src="https://opengraph.githubassets.com/1/tinystruct/tinystruct-typesafe-sdk" alt="tinystruct-typesafe" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/tinystruct/tinystruct-typesafe-sdk">tinystruct-typesafe</a></b><br><sub>tinystruct · GitHub · ⭐ 1 · 2026-09-21</sub><br>Java 集成，让自然语言可以调用已有的 tinystruct @Action 方法，由 Jev 充当语义分发器，并为待执行的调用提供确认流程。<br><sub><b>Jev 用法:</b> 参数只能是枚举常量、布尔值或用户输入的原文片段，因为 Jev 只会在给定的选项中做选择。</sub><br><sub>相关: <a href="https://tinystruct.org">site</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe"><img src="https://raw.githubusercontent.com/everruns/everruns/main/assets/readme/banner.png" alt="everruns-integrations-typesafe" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/everruns/everruns/tree/main/integrations/typesafe">everruns-integrations-typesafe</a></b><br><sub>everruns · GitHub · ⭐ 48 仓库 · 2025-12-14</sub><br>Rust crate，为 Everruns 持久化 agent harness 加入 jev 能力：一个 jev_evaluate 工具让 agent 向 Jev 提出类型化的 Noul、Score 和 Choice 问题，用于验证、评级、路由或分类内容。<br><sub>相关: <a href="https://github.com/everruns/everruns">repo</a> · <a href="https://crates.io/crates/everruns-integrations-typesafe">crate</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone"><img src="https://opengraph.githubassets.com/1/driftlessaf/go-driftlessaf" alt="DriftlessAF 的 systemone 执行器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/driftlessaf/go-driftlessaf/tree/main/agents/executor/systemone">DriftlessAF 的 systemone 执行器</a></b><br><sub>driftlessaf · GitHub · ⭐ 40 仓库 · 2026-01-26</sub><br>Chainguard 的 DriftlessAF agent 框架中的 Go 包，用类型化的 Noul、Choice 和 Score 问题调用 TypeSafe 的 System One API，校验每个答案，并复用框架的重试和 GenAI 指标。<br><sub>相关: <a href="https://github.com/driftlessaf/go-driftlessaf">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev"><img src="https://opengraph.githubassets.com/1/phenobarbital/ai-parrot" alt="ai-parrot-client-jev" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/phenobarbital/ai-parrot/tree/main/packages/ai-parrot-client-jev">ai-parrot-client-jev</a></b><br><sub>phenobarbital · GitHub · ⭐ 30 仓库 · 2024-08-12</sub><br>AI-Parrot 异步 agent 框架的 Jev 客户端包，把 System One 映射到其客户端接口，并把 Pydantic 模型转成问题（bool 对应 Noul，Literal/Enum 对应 Choice，分级数值对应 Score）。<br><sub>相关: <a href="https://github.com/phenobarbital/ai-parrot">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/gurenjs/guren/tree/main/examples/agents"><img src="https://opengraph.githubassets.com/1/gurenjs/guren" alt="Guren AI 的评估模型支持" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/gurenjs/guren/tree/main/examples/agents">Guren AI 的评估模型支持</a></b><br><sub>gurenjs · GitHub · ⭐ 29 仓库 · 2025-11-01</sub><br>Guren（基于 Bun 的全栈框架）AI 插件中的评估模型支持，默认评估提供方是通过 AI SDK 调用的 Jev；agents 示例通过 POST /tickets/:id/triage 对客服工单做分诊。<br><sub>相关: <a href="https://github.com/gurenjs/guren">repo</a> · <a href="https://guren.dev">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev"><img src="https://opengraph.githubassets.com/1/tale-project/tale" alt="Tale 的 Jev 决策连接器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tale-project/tale/tree/main/configs/platform/system/connectors/jev">Tale 的 Jev 决策连接器</a></b><br><sub>tale-project · GitHub · ⭐ 29 仓库 · 2025-11-30</sub><br>Tale（自托管 AI agent 编排器和工作区）的工作流连接器，经 OpenRouter 把 Jev 暴露为 decide 动作，依据校准后的答案为发送、升级、写入等步骤把关。<br><sub>相关: <a href="https://tale.dev">app</a> · <a href="https://github.com/tale-project/tale">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts"><img src="https://opengraph.githubassets.com/1/SEMOSS/semoss-ui" alt="SEMOSS 的 Jev 模型引擎" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/SEMOSS/semoss-ui/blob/dev/packages/client/src/components/import/model/jev-model-import.constants.ts">SEMOSS 的 Jev 模型引擎</a></b><br><sub>SEMOSS · GitHub · ⭐ 27 仓库 · 2024-06-20</sub><br>SEMOSS 平台 UI 中的模型导入表单，把 TypeSafe 的 Jev 接入为评估引擎，用于对文本或结构化数据做分类、评分和评估，可选保留推理日志。<br><sub>相关: <a href="https://github.com/SEMOSS/semoss-ui">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md"><img src="https://raw.githubusercontent.com/Govcraft/emergent/main/docs/images/system-monitor.png" alt="Emergent jev-handler" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md">Emergent jev-handler</a></b><br><sub>Govcraft · GitHub · ⭐ 23 仓库 · 2026-01-06</sub><br>Emergent（组合 CLI 工具的事件驱动工作流引擎）的处理器原语，对每个事件载荷向 Jev 提出一组固定的类型化问题，并把校准后的答案发布给下游。<br><sub>相关: <a href="https://github.com/Govcraft/emergent">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py"><img src="https://opengraph.githubassets.com/1/lm15-dev/lm15-python" alt="lm15 的 typesafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/lm15-dev/lm15-python/blob/main/lm15/providers/typesafe.py">lm15 的 typesafe 提供方</a></b><br><sub>lm15-dev · GitHub · ⭐ 23 仓库 · 2026-04-08</sub><br>lm15（仅依赖标准库、与提供方无关的 Python LLM API 基础库）的 TypeSafe 提供方：消息变成 Jev 的 state，JSON schema 中的判断类属性变成问题，答案以带分布的数据部分返回。<br><sub>相关: <a href="https://github.com/lm15-dev/lm15-python">repo</a> · <a href="https://pypi.org/project/lm15/">pypi</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/bakaphp/kanvas-ecosystem-api/tree/development/src/Domains/Connectors/TypeSafe"><img src="https://cdn.prod.website-files.com/66c9f056ff6b7f7ba51cdf21/66ccb2a881e7036ab59136f2_Logo_Kanvas_3.png" alt="Kanvas 的 TypeSafe 连接器" width="240"></a></td>

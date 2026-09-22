@@ -28,32 +28,20 @@ Compliance checks, medical and scientific screening, and research workflows. 28 
 <td valign="top"><b><a href="https://x.com/rothken/status/2102151333193363791">LawAnalyzer</a></b><br><sub>rothken · X · ♥ 51 · 2026-09-21</sub><br>Free beta construction set from a law firm's AI lab for building legal-analysis applets on Jev, with reusable JSON and Jev code outputs that lawyers and students can save and adapt.<br><sub>Also: <a href="https://lawanalyzer.com/">app</a> · <a href="https://lawanalyzer.com">project</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch"><img src="https://opengraph.githubassets.com/1/luwill/research-skills" alt="lit-search Jev screening" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch">lit-search Jev screening</a></b><br><sub>luwill · GitHub · ⭐ 844 repo · 2026-01-13</sub><br>The lit-search skill in this research-skills collection compiles literature inclusion/exclusion criteria into Jev questions and screens each record into a single verdict.<br><sub><b>How it uses Jev:</b> One request and one Verdict per record, scored once into jev_scores.jsonl so thresholds, triage and evaluation re-route the same scores with no new network calls.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/choxos/jev-reviewer"><img src="https://raw.githubusercontent.com/choxos/jev-reviewer/main/documentation/tour.gif" alt="Jev Reviewer" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/choxos/jev-reviewer">Jev Reviewer</a></b><br><sub>choxos · GitHub · ⭐ 32 · 2026-09-18</sub><br>In-browser data extraction tool for systematic reviews that answers extraction-form or RoB 2, ROBINS-I, QUADAS-2, and TIDieR template questions with verbatim quotes and page locations from trial reports.<br><sub><b>How it uses Jev:</b> Jev selects candidate line IDs; code copies the original text so every answer is a checkable quote.</sub><br><sub>Also: <a href="https://x.com/ASofiMahmudi/status/2100985031703269425">demo</a> · <a href="https://jevreviewer.xera.ac">app</a> · <a href="https://jevreviewer.xera.ac">app 2</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts"><img src="https://opengraph.githubassets.com/1/stella/stella" alt="stella System One decisions" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts">stella System One decisions</a></b><br><sub>stella · GitHub · ⭐ 250 repo · 2026-05-03</sub><br>Open-source legal workspace that asks Jev only for judgments code cannot make, such as how a citing court treats a decision, which option a passage settles, and which extracted date a question names.<br><sub>Also: <a href="https://stll.app">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch"><img src="https://opengraph.githubassets.com/1/luwill/research-skills" alt="lit-search Jev screening" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/luwill/research-skills/tree/main/lit-search/src/litsearch">lit-search Jev screening</a></b><br><sub>luwill · GitHub · ⭐ 844 repo · 2026-01-13</sub><br>The lit-search skill in this research-skills collection compiles literature inclusion/exclusion criteria into Jev questions and screens each record into a single verdict.<br><sub><b>How it uses Jev:</b> One request and one Verdict per record, scored once into jev_scores.jsonl so thresholds, triage and evaluation re-route the same scores with no new network calls.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/JunMa11/MedJev"><img src="https://opengraph.githubassets.com/1/JunMa11/MedJev" alt="MedJev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/JunMa11/MedJev">MedJev</a></b><br><sub>JunMa11 · GitHub · ⭐ 11 · 2026-09-22</sub><br>Jev-like model built on the open Kev code that extracts table-ready clinical variables from free-text notes on one consumer GPU inside a hospital, with a local app comparing it against hosted Jev and base Qwen3.5-0.8B.<br><sub><b>How it uses Jev:</b> Noul, Choice and Score fields per note (admission, diagnostic modality, symptom severity); hosted Jev serves as a baseline.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py"><img src="https://opengraph.githubassets.com/1/fighthealthinsurance/fighthealthinsurance" alt="Fight Health Insurance appeal scoring" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py">Fight Health Insurance appeal scoring</a></b><br><sub>fighthealthinsurance · GitHub · ⭐ 156 repo · 2023-03-16</sub><br>Django app that helps people appeal health insurance denials, ordering generated appeal drafts by a TypeSafe quality score and tracking scoring health per backend.<br><sub><b>How it uses Jev:</b> Redacted appeal documents are sent over https only; error bodies are never read.</sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/DevaiahShrithan/status/2102097862805053950"><img src="https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg" alt="Jev reads every AI paper" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">Jev reads every AI paper</a></b><br><sub>DevaiahShrithan · Article · ♥ 6 · 2026-09-21</sub><br>Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.<br><sub><b>How it uses Jev:</b> Two Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank"><img src="https://opengraph.githubassets.com/1/JamesANZ/medical-mcp" alt="Medical MCP JEV ranker" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank">Medical MCP JEV ranker</a></b><br><sub>JamesANZ · GitHub · ⭐ 113 repo · 2025-07-14</sub><br>MCP server for FDA, WHO, PubMed and RxNorm data that can rerank literature hits with Jev, judging each abstract against the question and keeping, demoting or dropping it.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sboghossian/legal-ai-model-router"><img src="https://opengraph.githubassets.com/1/sboghossian/legal-ai-model-router" alt="Legal AI Model Router" width="240"></a></td>
@@ -64,20 +52,32 @@ Compliance checks, medical and scientific screening, and research workflows. 28 
 <td valign="top"><b><a href="https://github.com/MarissaFamularo/citation-verifier">Paper Trellis Citation Verifier</a></b><br><sub>MarissaFamularo · GitHub · ⭐ 5 · 2026-09-17</sub><br>Tool for peer reviewers and authors that pairs each citing sentence in a manuscript with the cited paper, has Claude locate the supporting passage and Jev score whether it supports the claim, then records a human verdict.<br><sub>Also: <a href="https://verify.papertrellis.com">app</a> · <a href="https://verify.papertrellis.com">app 2</a></sub></td>
 </tr>
 <tr>
+<td width="260" valign="top"><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts"><img src="https://opengraph.githubassets.com/1/stella/stella" alt="stella System One decisions" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/stella/stella/blob/main/apps/api/src/lib/workflow/decisions/system-one.ts">stella System One decisions</a></b><br><sub>stella · GitHub · ⭐ 250 repo · 2026-05-03</sub><br>Open-source legal workspace that asks Jev only for judgments code cannot make, such as how a citing court treats a decision, which option a passage settles, and which extracted date a question names.<br><sub>Also: <a href="https://stll.app">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py"><img src="https://opengraph.githubassets.com/1/fighthealthinsurance/fighthealthinsurance" alt="Fight Health Insurance appeal scoring" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/fighthealthinsurance/fighthealthinsurance/blob/main/fighthealthinsurance/ml/typesafe.py">Fight Health Insurance appeal scoring</a></b><br><sub>fighthealthinsurance · GitHub · ⭐ 156 repo · 2023-03-16</sub><br>Django app that helps people appeal health insurance denials, ordering generated appeal drafts by a TypeSafe quality score and tracking scoring health per backend.<br><sub><b>How it uses Jev:</b> Redacted appeal documents are sent over https only; error bodies are never read.</sub></td>
+</tr>
+<tr>
 <td width="260" valign="top"><a href="https://github.com/doitrous/hx"><img src="https://opengraph.githubassets.com/1/doitrous/hx" alt="Hx" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/doitrous/hx">Hx</a></b><br><sub>doitrous · GitHub · ⭐ 3 · 2026-09-20</sub><br>Self-ticking checklist for clinical histories, examinations and operative notes: it opens the questions a note calls for, ticks them against what the doctor wrote using Jev, and shows what is still undocumented.<br><sub>Also: <a href="https://hx.semicoded.com">app</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank"><img src="https://opengraph.githubassets.com/1/JamesANZ/medical-mcp" alt="Medical MCP JEV ranker" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/JamesANZ/medical-mcp/tree/main/src/rank">Medical MCP JEV ranker</a></b><br><sub>JamesANZ · GitHub · ⭐ 113 repo · 2025-07-14</sub><br>MCP server for FDA, WHO, PubMed and RxNorm data that can rerank literature hits with Jev, judging each abstract against the question and keeping, demoting or dropping it.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/thenewpotato/privacy-facts"><img src="https://opengraph.githubassets.com/1/thenewpotato/privacy-facts" alt="Privacy Facts" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/thenewpotato/privacy-facts">Privacy Facts</a></b><br><sub>thenewpotato · GitHub · ⭐ 2 · 2026-09-18</sub><br>Web app that turns a pasted privacy policy URL or text into a nutrition-style label of plain-language answers, each with a Jev confidence score and expandable source excerpts.<br><sub>Also: <a href="https://tigrw.com/privacy-facts/">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets TypeSafe formula lint" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py">IPFS Datasets TypeSafe formula lint</a></b><br><sub>endomorphosis · GitHub · ⭐ 23 repo · 2024-04-07</sub><br>Advisory TypeSafe lint in the IPFS Datasets logic module that scores whether a formula autoformalized from legal text captures its source clause and checks citations, without rewriting or admitting proofs.<br><sub>Also: <a href="https://github.com/endomorphosis/ipfs_datasets_py">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/PistachioAIHQ/jev-synergy-screening"><img src="https://opengraph.githubassets.com/1/PistachioAIHQ/jev-synergy-screening" alt="Jev × Cohen ADHD Abstract Triage" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD Abstract Triage</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>Systematic-review screening demo that asks Jev to include or exclude MEDLINE titles and abstracts for an ADHD drug review, scored against Cohen et al. 2006 labels; 92.0% accuracy and 80.0% recall on a 200-abstract set.<br><sub><b>How it uses Jev:</b> Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.</sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets TypeSafe formula lint" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py">IPFS Datasets TypeSafe formula lint</a></b><br><sub>endomorphosis · GitHub · ⭐ 23 repo · 2024-04-07</sub><br>Advisory TypeSafe lint in the IPFS Datasets logic module that scores whether a formula autoformalized from legal text captures its source clause and checks citations, without rewriting or admitting proofs.<br><sub>Also: <a href="https://github.com/endomorphosis/ipfs_datasets_py">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/longkou1988/cnki-skills/tree/main/skills/cnki-jev"><img src="https://opengraph.githubassets.com/1/longkou1988/cnki-skills" alt="cnki-jev" width="240"></a></td>
