@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md) · **简体中文**
 
-代码审查、编程 agent 的模型路由、上下文压缩、代码语义搜索和 CI 检查。共 515 条，按社区热度排序。
+代码审查、编程 agent 的模型路由、上下文压缩、代码语义搜索和 CI 检查。共 516 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -609,7 +609,7 @@
 </tr>
 </table>
 
-<details><summary>还有 365 条</summary>
+<details><summary>还有 366 条</summary>
 
 - **[omg.dev 的 Jev 端到端测试](https://github.com/BennyKok/omg.dev/blob/main/mobile/scripts/jev.ts)** · <sub>BennyKok · GitHub · ⭐ 535 仓库 · 2026-09-18</sub><br>为 omg.dev 移动应用做的端到端测试层，Jev 读取屏幕的无障碍树，判断某一步是否完成、是否走进了死胡同，以及下一步该点哪个元素。
 - **[nanocodex 的 Jev 路由](https://github.com/gakonst/nanocodex/blob/master/js/managed/src/jev-reliability.ts)** · <sub>gakonst · GitHub · ⭐ 519 仓库 · 2026-07-15</sub><br>用 Rust 构建 OpenAI agent 的组件库，用 Jev 做线程级模型路由，借助一个固定词表的可靠性与故障分类器为每个线程选择后端。
@@ -788,6 +788,7 @@
 - **[ask-jev](https://github.com/logicrw/ask-jev)** · <sub>logicrw · GitHub · ⭐ 1 · 2026-09-20</sub><br>只用标准库的 Python CLI，为编程 agent 和流水线提供失败时放行（fail-open）的建议性决策，以及逐字的段落选取，推理和行动的决定权仍留在调用方 agent 手里。
 - **[Bouncer](https://github.com/clownware/bouncer)** · <sub>clownware · GitHub · ⭐ 1 · 2026-09-18</sub><br>Claude Code 的 PreToolUse hook，让 Jev 针对每次工具调用回答 YAML 策略里用大白话写的问题，约 100 毫秒 内决定放行或拒绝，每天成本约四美分，另有确定性的“绝不允许”规则。
 - **[claude-jev-mod](https://github.com/chrishan17/claude-jev-mod)** · <sub>chrishan17 · GitHub · ⭐ 1 · 2026-09-19</sub><br>Claude Code 的 mod，向其他插件暴露 $.jev，让 hook 能向 Jev 提出 Choice、Score 和 Noul 问题并读取校准过的概率，支持包括 OpenRouter 和 Vercel AI Gateway 在内的六个 provider。
+- **[Codex Jev Router](https://github.com/suenot/codex-jev-router)** · <sub>suenot · GitHub · ⭐ 1 · 2026-09-23</sub><br>使用 Jev 的 Choice 和 Noul 判断，通过本地置信度门槛选择 Codex 子代理的模型与推理档位；判断不确定时回退到 Sol。
 - **[commentcop](https://github.com/ntedvs/commentcop)** · <sub>ntedvs · GitHub · ⭐ 1 · 2026-09-17</sub><br>CLI，读取 JS/TS 注释及其周围代码，从准确性和有用性两方面打分（满分 100），把最差的注释排在最前；检查 159 条注释花费约 $0.008。
 - **[cursor-clijev-compaction](https://github.com/kleosr/cursor-clijev-compaction)** · <sub>kleosr · GitHub · ⭐ 1 · 2026-09-18</sub><br>Cursor CLI agent 的上下文恢复插件，记录工具调用及其结果，让 Jev 用原子化的 Noul 问题逐条打分，并在原生压缩之后把保留下来的事实原样重新注入。
 - **[hush](https://github.com/emreozyoruk/hush)** · <sub>emreozyoruk · GitHub · ⭐ 1 · 2026-09-20</sub><br>GitHub Action，一次 Jev 调用即可给新 issue 打标签，并标记垃圾内容、需要更多信息和疑似重复，只有超过维护者设定的阈值才会执行对应动作，低于阈值则保持沉默；每个 issue 耗时 202-530 毫秒。

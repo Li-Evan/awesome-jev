@@ -2521,6 +2521,18 @@ entries:
   - codex
   - model-routing
   - kanban
+- name: Codex Jev Router
+  url: https://github.com/suenot/codex-jev-router
+  kind: repo
+  author: suenot
+  description: Uses Jev Choice and Noul answers to select Codex subagent models and reasoning effort through local confidence gates, with a Sol fallback.
+  description_zh: 使用 Jev 的 Choice 和 Noul 判断，通过本地置信度门槛选择 Codex 子代理的模型与推理档位；判断不确定时回退到 Sol。
+  metrics:
+    stars: 1
+  date: '2026-09-23'
+  tags:
+  - model-routing
+  - codex
 - name: Jev Codex Router
   url: https://github.com/0xNatoshi/jev-codex-router
   kind: repo
