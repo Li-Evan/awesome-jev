@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md)
 
-Code review, model routing for coding agents, context compaction, semantic search over code, and CI checks. 515 entries, ranked by community traction.
+Code review, model routing for coding agents, context compaction, semantic search over code, and CI checks. 516 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -609,7 +609,7 @@ Code review, model routing for coding agents, context compaction, semantic searc
 </tr>
 </table>
 
-<details><summary>365 more</summary>
+<details><summary>366 more</summary>
 
 - **[omg.dev Jev e2e tests](https://github.com/BennyKok/omg.dev/blob/main/mobile/scripts/jev.ts)** · <sub>BennyKok · GitHub · ⭐ 535 repo · 2026-09-18</sub><br>End-to-end test layer for the omg.dev mobile app where Jev reads the screen's accessibility tree and answers whether a step is done, whether it hit a dead end and which element to tap next.
 - **[nanocodex Jev routing](https://github.com/gakonst/nanocodex/blob/master/js/managed/src/jev-reliability.ts)** · <sub>gakonst · GitHub · ⭐ 519 repo · 2026-07-15</sub><br>Building blocks for Rust OpenAI agents that use Jev for thread model routing, choosing the backend per thread with a fixed-vocabulary reliability and failure classifier.
@@ -788,6 +788,7 @@ Code review, model routing for coding agents, context compaction, semantic searc
 - **[ask-jev](https://github.com/logicrw/ask-jev)** · <sub>logicrw · GitHub · ⭐ 1 · 2026-09-20</sub><br>Standard-library Python CLI that gives coding agents and pipelines fail-open advisory decisions and verbatim passage selection, while the calling agent keeps reasoning and action authority.
 - **[Bouncer](https://github.com/clownware/bouncer)** · <sub>clownware · GitHub · ⭐ 1 · 2026-09-18</sub><br>Claude Code PreToolUse hook that has Jev answer plain-English questions from a YAML policy about every tool call, allowing or denying in about 100 ms for about four cents a day, with deterministic never-okay rules.
 - **[claude-jev-mod](https://github.com/chrishan17/claude-jev-mod)** · <sub>chrishan17 · GitHub · ⭐ 1 · 2026-09-19</sub><br>Claude Code mod that exposes $.jev to other plugins so hooks can ask Jev Choice, Score and Noul questions and read calibrated probabilities, via six providers including OpenRouter and Vercel AI Gateway.
+- **[Codex Jev Router](https://github.com/suenot/codex-jev-router)** · <sub>suenot · GitHub · ⭐ 1 · 2026-09-23</sub><br>Uses Jev Choice and Noul answers to select Codex subagent models and reasoning effort through local confidence gates, with a Sol fallback.
 - **[commentcop](https://github.com/ntedvs/commentcop)** · <sub>ntedvs · GitHub · ⭐ 1 · 2026-09-17</sub><br>CLI that reads JS/TS comments with their surrounding code and scores accuracy and usefulness out of 100, listing the weakest comments first; 159 comments were checked for about $0.008.
 - **[cursor-clijev-compaction](https://github.com/kleosr/cursor-clijev-compaction)** · <sub>kleosr · GitHub · ⭐ 1 · 2026-09-18</sub><br>Context recovery plugin for the Cursor CLI agent that captures tool calls and results, has Jev score each with atomic noul questions, and re-injects the kept facts verbatim after native compaction.
 - **[hush](https://github.com/emreozyoruk/hush)** · <sub>emreozyoruk · GitHub · ⭐ 1 · 2026-09-20</sub><br>GitHub Action that labels new issues and flags spam, needs-more-info and possible duplicates in one Jev call, applying each only above a maintainer-set threshold and saying nothing below it; 202-530 ms per issue.
