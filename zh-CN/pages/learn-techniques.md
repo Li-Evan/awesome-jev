@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) · **简体中文**
 
-官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 102 条，按社区热度排序。
+官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 103 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#技巧与分析)
 
@@ -308,6 +308,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://zenn.dev/meijin/articles/jev-impressions"><img src="https://res.cloudinary.com/zenn/image/upload/s--W4LKp311--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%2520%25E6%2589%2580%25E6%2584%259F%2520%25E3%2583%2580%25E3%2583%25A9%25E3%2583%2580%25E3%2583%25A9%25E3%2581%25A8%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:meijin%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pPWmtyWk1nS3djRXl5a2w1X2lVTFZFVmtVVUpkNzkzcjlfejhERjRzPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="Jev 使用感想" width="240"></a></td>
 <td valign="top"><b><a href="https://zenn.dev/meijin/articles/jev-impressions">Jev 使用感想</a></b><br><sub>meijin · 文章 · 2026-09-18</sub><br>日文笔记，谈 Jev 适合用在哪里：在 Browser Use 这类工具里与读取 state 的 LLM 搭配，由 Jev 选下一步动作；以及根据用户上下文选择下一个 UI，并以 LLM 兜底。</td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://arxiv.org/abs/2609.30216">Jev in the Wild：Jev 模型应用生态的数据驱动综述与分析</a></b><br><sub>Guoming Ling, Muen Xue, and Zijian Ye · 文章 · 2026-09-24</sub><br>首个基于数据的 Jev 应用生态综述与分析：研究 2,170 个公开 GitHub 项目，记录早期快速增长、应用领域和决策用途分布。</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>

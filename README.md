@@ -6,7 +6,7 @@
 
 🌐 **[Browse the searchable gallery →](https://li-evan.github.io/awesome-jev/)** Search, filter by scenario, and share results, in English or Chinese.
 
-The most complete collection of what people build with Jev: **3,426 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
+The most complete collection of what people build with Jev: **3,427 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
 
 This list is community-maintained and not affiliated with TypeSafe. The official sites are `typesafe.ai` and `docs.typesafe.ai`, and the official GitHub organization is `typesafe-ai`. Be careful with look-alike domains that claim to be official.
 
@@ -571,7 +571,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - [LLMs vs. Jev, clearly explained](https://x.com/akshay_pachaar/status/2101309986156712025) - Explains that Jev does not generate faster, it does not generate at all: independent Choice, Score and Noul questions, like urgency, owning team and command risk for a failed deploy, are evaluated in parallel.
 - [What Jev can really do](https://x.com/servasyy_ai/status/2101132667056185544) - Chinese-language reality check on Jev that explains what it is and is not, sorts demos that actually work by use case, and lays out the caveats behind the speed and accuracy claims.
 
-**[See all 102 Techniques and Analysis →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md)**
+**[See all 103 Techniques and Analysis →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md)**
 
 ### Benchmarks and Case Studies
 
