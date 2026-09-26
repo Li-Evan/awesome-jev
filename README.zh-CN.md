@@ -6,7 +6,7 @@
 
 🌐 **[打开可搜索的在线画廊 →](https://li-evan.github.io/awesome-jev/?lang=zh)** 支持搜索、按场景筛选和分享结果，中英文随时切换。
 
-这里是最全的 Jev 用例合集：**3,426 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
+这里是最全的 Jev 用例合集：**3,427 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
 
 本列表由社区维护，与 TypeSafe 官方无关。官方网站是 `typesafe.ai` 和 `docs.typesafe.ai`，官方 GitHub 组织是 `typesafe-ai`。请警惕自称官方的仿冒域名。
 
@@ -571,7 +571,7 @@
 - [把 LLM 与 Jev 的区别讲清楚](https://x.com/akshay_pachaar/status/2101309986156712025) - 解释 Jev 并不是生成得更快，而是根本不生成：相互独立的 Choice、Score 和 Noul 问题（比如一次失败部署的紧急程度、负责团队和命令风险）会被并行评估。
 - [Jev 到底能做什么](https://x.com/servasyy_ai/status/2101132667056185544) - 中文的 Jev 现实检验：解释它是什么、不是什么，按用例整理真正能跑通的演示，并列出速度和准确率宣称背后的注意事项。
 
-**[查看全部 102 条技巧与分析 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)**
+**[查看全部 103 条技巧与分析 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)**
 
 ### 评测与案例
 
