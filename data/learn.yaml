@@ -3336,6 +3336,17 @@ subsections:
     tags:
     - tool-use
     - essay
+  - name: "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem"
+    name_zh: "Jev in the Wild：Jev 模型应用生态的数据驱动综述与分析"
+    url: https://arxiv.org/abs/2609.30216
+    kind: article
+    author: Guoming Ling, Muen Xue, and Zijian Ye
+    description: "The first data-driven survey and analysis of Jev's application ecosystem, based on 2,170 public GitHub projects, documenting rapid early growth, application domains, and decision-use patterns."
+    description_zh: "首个基于数据的 Jev 应用生态综述与分析：研究 2,170 个公开 GitHub 项目，记录早期快速增长、应用领域和决策用途分布。"
+    date: '2026-09-24'
+    tags:
+    - research
+    - ecosystem
   - name: Jev launch thread
     name_zh: Jev 发布帖子串
     url: https://x.com/CompleteSkeptic/status/2099925682726002904

@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)
 
-Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 102 entries, ranked by community traction.
+Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 103 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#techniques-and-analysis)
 
@@ -308,6 +308,10 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://zenn.dev/meijin/articles/jev-impressions"><img src="https://res.cloudinary.com/zenn/image/upload/s--W4LKp311--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%2520%25E6%2589%2580%25E6%2584%259F%2520%25E3%2583%2580%25E3%2583%25A9%25E3%2583%2580%25E3%2583%25A9%25E3%2581%25A8%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:meijin%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pPWmtyWk1nS3djRXl5a2w1X2lVTFZFVmtVVUpkNzkzcjlfejhERjRzPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="Jev impressions" width="240"></a></td>
 <td valign="top"><b><a href="https://zenn.dev/meijin/articles/jev-impressions">Jev impressions</a></b><br><sub>meijin · Article · 2026-09-18</sub><br>Japanese notes on where Jev fits: pairing with an LLM that reads the state while Jev picks the next action in tools like Browser Use, and choosing the next UI from user context with an LLM fallback.</td>
+</tr>
+<tr>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://arxiv.org/abs/2609.30216">Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem</a></b><br><sub>Guoming Ling, Muen Xue, and Zijian Ye · Article · 2026-09-24</sub><br>The first data-driven survey and analysis of Jev's application ecosystem, based on 2,170 public GitHub projects, documenting rapid early growth, application domains, and decision-use patterns.</td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
