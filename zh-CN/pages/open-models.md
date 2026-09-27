@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/open-models.md) · **简体中文**
 
-模仿 Jev 接口的社区模型和服务。它们的准确率和校准都是自报数据，普遍不如 Jev，请用自己的数据评估。共 240 条，按社区热度排序。
+模仿 Jev 接口的社区模型和服务。它们的准确率和校准都是自报数据，普遍不如 Jev，请用自己的数据评估。共 241 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#开源模型与兼容服务)
 
@@ -70,6 +70,10 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mizorewww/laya-coreml"><img src="https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif" alt="Laya-CoreML" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mizorewww/laya-coreml">Laya-CoreML</a></b><br><sub>mizorewww · GitHub · ⭐ 989 · 2026-09-19</sub><br>类 Jev 的 Laya 模型到 Apple Core ML 和神经引擎的开放权重移植，在本地提供 System One 契约，附一个根据实时概率玩贪吃蛇的演示。<br><sub><b>Jev 用法:</b> 在 Choice、Score 和 Noul 上实现 system_one；在 M3 Max 上用 ANE FP16 做一次简短决策，P50 约 4.98 毫秒。</sub><br><sub>相关: <a href="https://pypi.org/project/laya-coreml/">pypi</a> · <a href="https://huggingface.co/aac6fef/laya-multilingual-coreml-ane">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/feder-cr/jev"><img src="https://opengraph.githubassets.com/1/feder-cr/jev" alt="jevos" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/feder-cr/jev">jevos</a></b><br><sub>feder-cr · GitHub · ⭐ 880 · 2026-09-27</sub><br>Open-source, MIT-licensed alternative to Jev for yes/no questions, running fully offline on a laptop CPU in one forward pass with no text generation.<br><sub><b>Jev 用法:</b> Jev-compatible /v1/systemone wire format so TypeSafe's official SDK works unchanged for yes/no (noul) questions; choice and score are not implemented and return 422.</sub><br><sub>相关: <a href="https://github.com/feder-cr/jev/releases/tag/jevos">release</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -603,14 +607,11 @@
 <td width="260" valign="top"><a href="https://github.com/khimaros/verdict"><img src="https://opengraph.githubassets.com/1/khimaros/verdict" alt="verdict" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/khimaros/verdict">verdict</a></b><br><sub>khimaros · GitHub · ⭐ 5 · 2026-09-20</sub><br>自托管服务器，通过一次前向读取每个选项标签的概率，把任意 llama-server 或 llama-swap 端点变成 Jev 兼容的 System One API，Jev 客户端只需修改 base URL。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49783288">demo</a></sub></td>
 </tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/anthony-maio/eve-rlcd"><img src="https://raw.githubusercontent.com/anthony-maio/eve-rlcd/main/docs/img/reliability.png" alt="eve-rlcd" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/anthony-maio/eve-rlcd">eve-rlcd</a></b><br><sub>anthony-maio · GitHub · ⭐ 4 · 2026-09-18</sub><br>受 Jev 启发的 0.6B 决策模型，基于 Qwen3-0.6B-Base，用对/错反馈做强化学习训练，让选项概率与准确率相匹配；包含训练循环、消融实验、评测和开放权重。<br><sub><b>Jev 用法:</b> 针对同一个 state 回答类型化的 Choice/Score/Noul 式问题，通过对选项字母 token 做 softmax 得出结果，不生成文本。</sub><br><sub>相关: <a href="https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision">model</a> · <a href="https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision">model 2</a></sub></td>
-</tr>
 </table>
 
-<details><summary>还有 90 条</summary>
+<details><summary>还有 91 条</summary>
 
+- **[eve-rlcd](https://github.com/anthony-maio/eve-rlcd)** · <sub>anthony-maio · GitHub · ⭐ 4 · 2026-09-18</sub><br>受 Jev 启发的 0.6B 决策模型，基于 Qwen3-0.6B-Base，用对/错反馈做强化学习训练，让选项概率与准确率相匹配；包含训练循环、消融实验、评测和开放权重。
 - **[hearim](https://github.com/ziozzang/hearim)** · <sub>ziozzang · GitHub · ⭐ 4 · 2026-09-21</sub><br>Go 网关，在 Ollama、llama.cpp、vLLM 等普通 LLM 后端上提供 Jev 的 /v1/systemone 契约，把每个问题当作单 token 选择，根据 logprobs 打分。
 - **[Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible)** · <sub>David-Lolly · GitHub · ⭐ 4 · 2026-09-21</sub><br>HTTP 网关，通过给候选 token 打分来回答 noul、choice 和 score 问题，把现有的 SGLang 或 vLLM 部署变成兼容 Jev 的决策服务，无需训练或改动模型。
 - **[jev-rs](https://github.com/yijunyu/jev-rs)** · <sub>yijunyu · GitHub · ⭐ 4 · 2026-09-21</sub><br>Rust 引擎，一次 prefill 就能用 llama-server 背后的任意 GGUF 模型回答 Noul、Choice 和 Score 问题，与 Jev 的 /v1/systemone 在协议层兼容，并以 MCP 工具的形式提供。

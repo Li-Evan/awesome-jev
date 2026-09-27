@@ -1527,6 +1527,22 @@ entries:
   - lfm
   - lora
   - local-server
+- name: jevos
+  url: https://github.com/feder-cr/jev
+  kind: repo
+  author: feder-cr
+  description: Open-source, MIT-licensed alternative to Jev for yes/no questions, running fully offline on a laptop CPU in one forward pass with no text generation.
+  jev: Jev-compatible /v1/systemone wire format so TypeSafe's official SDK works unchanged for yes/no (noul) questions; choice and score are not implemented and return 422.
+  metrics:
+    stars: 880
+  date: '2026-09-27'
+  links:
+    release: https://github.com/feder-cr/jev/releases/tag/jevos
+  tags:
+  - jev-compatible
+  - local
+  - gguf
+  - cpu
 - name: JevTuner
   url: https://github.com/liushiliushi/JevTuner
   kind: repo
