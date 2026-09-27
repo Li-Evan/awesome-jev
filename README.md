@@ -6,7 +6,7 @@
 
 🌐 **[Browse the searchable gallery →](https://li-evan.github.io/awesome-jev/)** Search, filter by scenario, and share results, in English or Chinese.
 
-The most complete collection of what people build with Jev: **3,426 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
+The most complete collection of what people build with Jev: **3,427 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
 
 This list is community-maintained and not affiliated with TypeSafe. The official sites are `typesafe.ai` and `docs.typesafe.ai`, and the official GitHub organization is `typesafe-ai`. Be careful with look-alike domains that claim to be official.
 
@@ -410,7 +410,7 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 </tr>
 </table>
 
-**[Browse all 240 in Open Models and Compatible Servers →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/open-models.md)**
+**[Browse all 241 in Open Models and Compatible Servers →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/open-models.md)**
 
 ## Build with Jev
 

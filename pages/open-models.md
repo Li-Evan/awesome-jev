@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/open-models.md)
 
-Community models and servers that imitate Jev's interface. Their accuracy and calibration are self-reported and generally below Jev's, so evaluate them on your own data. 240 entries, ranked by community traction.
+Community models and servers that imitate Jev's interface. Their accuracy and calibration are self-reported and generally below Jev's, so evaluate them on your own data. 241 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#open-models-and-compatible-servers)
 
@@ -70,6 +70,10 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 <tr>
 <td width="260" valign="top"><a href="https://github.com/mizorewww/laya-coreml"><img src="https://raw.githubusercontent.com/mizorewww/laya-coreml/main/docs/assets/snake-demo.gif" alt="Laya-CoreML" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/mizorewww/laya-coreml">Laya-CoreML</a></b><br><sub>mizorewww · GitHub · ⭐ 989 · 2026-09-19</sub><br>Open-weight port of the Jev-like Laya model to Apple Core ML and the Neural Engine, serving the System One contract locally, with a Snake demo playing on live probabilities.<br><sub><b>How it uses Jev:</b> Implements system_one over Choice, Score and Noul; about 4.98 ms P50 for one short decision on an M3 Max with ANE FP16.</sub><br><sub>Also: <a href="https://pypi.org/project/laya-coreml/">pypi</a> · <a href="https://huggingface.co/aac6fef/laya-multilingual-coreml-ane">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/feder-cr/jev"><img src="https://opengraph.githubassets.com/1/feder-cr/jev" alt="jevos" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/feder-cr/jev">jevos</a></b><br><sub>feder-cr · GitHub · ⭐ 880 · 2026-09-27</sub><br>Open-source, MIT-licensed alternative to Jev for yes/no questions, running fully offline on a laptop CPU in one forward pass with no text generation.<br><sub><b>How it uses Jev:</b> Jev-compatible /v1/systemone wire format so TypeSafe's official SDK works unchanged for yes/no (noul) questions; choice and score are not implemented and return 422.</sub><br><sub>Also: <a href="https://github.com/feder-cr/jev/releases/tag/jevos">release</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -603,14 +607,11 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 <td width="260" valign="top"><a href="https://github.com/khimaros/verdict"><img src="https://opengraph.githubassets.com/1/khimaros/verdict" alt="verdict" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/khimaros/verdict">verdict</a></b><br><sub>khimaros · GitHub · ⭐ 5 · 2026-09-20</sub><br>Self-hosted server that turns any llama-server or llama-swap endpoint into a Jev-compatible System One API by reading the probability on each option label in one forward pass, so Jev clients only change the base URL.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49783288">demo</a></sub></td>
 </tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/anthony-maio/eve-rlcd"><img src="https://raw.githubusercontent.com/anthony-maio/eve-rlcd/main/docs/img/reliability.png" alt="eve-rlcd" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/anthony-maio/eve-rlcd">eve-rlcd</a></b><br><sub>anthony-maio · GitHub · ⭐ 4 · 2026-09-18</sub><br>Jev-inspired 0.6B decision model on Qwen3-0.6B-Base trained with RL from right/wrong feedback so its option probabilities match accuracy; includes training loop, ablation, eval and open weights.<br><sub><b>How it uses Jev:</b> Answers typed Choice/Score/Noul-style questions over one state via a softmax over option letter tokens, no text generation.</sub><br><sub>Also: <a href="https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision">model</a> · <a href="https://huggingface.co/anthonym21/qwen3-0.6b-rlcd-decision">model 2</a></sub></td>
-</tr>
 </table>
 
-<details><summary>90 more</summary>
+<details><summary>91 more</summary>
 
+- **[eve-rlcd](https://github.com/anthony-maio/eve-rlcd)** · <sub>anthony-maio · GitHub · ⭐ 4 · 2026-09-18</sub><br>Jev-inspired 0.6B decision model on Qwen3-0.6B-Base trained with RL from right/wrong feedback so its option probabilities match accuracy; includes training loop, ablation, eval and open weights.
 - **[hearim](https://github.com/ziozzang/hearim)** · <sub>ziozzang · GitHub · ⭐ 4 · 2026-09-21</sub><br>Go gateway that serves the Jev /v1/systemone contract on ordinary LLM backends like Ollama, llama.cpp and vLLM by scoring each question as a single-token choice from logprobs.
 - **[Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible)** · <sub>David-Lolly · GitHub · ⭐ 4 · 2026-09-21</sub><br>HTTP gateway that turns an existing SGLang or vLLM deployment into a Jev-compatible decision service by scoring candidate tokens for noul, choice, and score questions, with no training or model changes.
 - **[jev-rs](https://github.com/yijunyu/jev-rs)** · <sub>yijunyu · GitHub · ⭐ 4 · 2026-09-21</sub><br>Rust engine that answers Noul, Choice, and Score questions from any GGUF model behind llama-server in one prefill, wire-compatible with Jev's /v1/systemone and exposed as an MCP tool.

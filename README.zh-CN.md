@@ -6,7 +6,7 @@
 
 🌐 **[打开可搜索的在线画廊 →](https://li-evan.github.io/awesome-jev/?lang=zh)** 支持搜索、按场景筛选和分享结果，中英文随时切换。
 
-这里是最全的 Jev 用例合集：**3,426 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
+这里是最全的 Jev 用例合集：**3,427 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
 
 本列表由社区维护，与 TypeSafe 官方无关。官方网站是 `typesafe.ai` 和 `docs.typesafe.ai`，官方 GitHub 组织是 `typesafe-ai`。请警惕自称官方的仿冒域名。
 
@@ -410,7 +410,7 @@
 </tr>
 </table>
 
-**[查看开源模型与兼容服务全部 240 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/open-models.md)**
+**[查看开源模型与兼容服务全部 241 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/open-models.md)**
 
 ## 用 Jev 开发
 
