@@ -363,6 +363,7 @@ footer a:hover { color: var(--signal-ink); }
       <li><a id="fReadme" href="https://github.com/Li-Evan/awesome-jev#readme" target="_blank" rel="noopener" data-i18n="fReadme">README</a></li>
       <li><a id="fCheat" href="https://github.com/Li-Evan/awesome-jev/blob/main/cheatsheet.md" target="_blank" rel="noopener" data-i18n="fCheat">Jev cheatsheet</a></li>
       <li><a id="fContrib" href="https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md" target="_blank" rel="noopener" data-i18n="fContrib">Contribution guidelines</a></li>
+      <li><a id="fBadge" href="https://github.com/Li-Evan/awesome-jev/blob/main/contributing.md#badge-for-listed-projects" target="_blank" rel="noopener" data-i18n="fBadge">Badge for listed projects</a></li>
       <li><a href="https://docs.typesafe.ai" target="_blank" rel="noopener" data-i18n="fDocs">Official Jev docs</a></li>
     </ul>
   </div>
@@ -395,7 +396,7 @@ footer a:hover { color: var(--signal-ink); }
       more: "Show more ({n} left)", empty: "Nothing matches yet. Try another word, or submit it.",
       how: "Jev", bandTitle: "Built something with Jev?", bandText: "Add it in a minute. A demo post on X counts too. Entries show up here with a picture in their scenario.",
       bandCta: "Submit a project →", about: "A community-maintained gallery, not affiliated with TypeSafe. The official sites are typesafe.ai and docs.typesafe.ai. Every entry links to its original source; images load from each project's own pages and belong to their owners. The list text is released under CC0.",
-      fRepo: "GitHub repository", fReadme: "README", fCheat: "Jev cheatsheet", fContrib: "Contribution guidelines", fDocs: "Official Jev docs", all: "All"
+      fRepo: "GitHub repository", fReadme: "README", fCheat: "Jev cheatsheet", fContrib: "Contribution guidelines", fDocs: "Official Jev docs", fBadge: "Badge for listed projects", all: "All"
     },
     zh: {
       skip: "跳到条目", star: "Star", submit: "提交你的项目", submitShort: "+ 提交", eyebrow: "类型化判断 · 校准过的概率",
@@ -407,7 +408,7 @@ footer a:hover { color: var(--signal-ink); }
       more: "显示更多（还有 {n} 条）", empty: "暂时没有匹配的条目。换个词试试，或者提交一个。",
       how: "Jev 用法", bandTitle: "你也用 Jev 做过东西？", bandText: "一分钟就能提交，X 上的一条演示帖也算。收录后会带着截图出现在对应场景里。",
       bandCta: "提交项目 →", about: "由社区维护，与 TypeSafe 官方无关。官方网站是 typesafe.ai 和 docs.typesafe.ai。每一条都链接到原始出处；图片直接加载自各项目自己的页面，版权归原作者所有。列表文字以 CC0 发布。",
-      fRepo: "GitHub 仓库", fReadme: "README（中文）", fCheat: "Jev 速查表", fContrib: "贡献指南", fDocs: "Jev 官方文档", all: "全部"
+      fRepo: "GitHub 仓库", fReadme: "README（中文）", fCheat: "Jev 速查表", fContrib: "贡献指南", fDocs: "Jev 官方文档", fBadge: "被收录项目的徽章", all: "全部"
     }
   };
 
@@ -460,6 +461,7 @@ footer a:hover { color: var(--signal-ink); }
     $("fReadme").href = zh ? data.repo + "/blob/main/README.zh-CN.md" : data.repo + "#readme";
     $("fCheat").href = data.repo + "/blob/main/" + (zh ? "cheatsheet.zh-CN.md" : "cheatsheet.md");
     $("fContrib").href = data.repo + "/blob/main/" + (zh ? "contributing.zh-CN.md" : "contributing.md");
+    $("fBadge").href = data.repo + "/blob/main/" + (zh ? "contributing.zh-CN.md#给被收录项目的徽章" : "contributing.md#badge-for-listed-projects");
     document.title = zh ? "Awesome Jev · " + data.total.toLocaleString("en-US") + " 个用 Jev 做的东西" : "Awesome Jev · " + data.total.toLocaleString("en-US") + " things people build with Jev";
     renderFilters();
   }

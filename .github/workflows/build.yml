@@ -1,0 +1,42 @@
+name: Build
+
+# Regenerates the READMEs, gallery pages, and website data whenever the data
+# changes on main, so contributors can edit data/*.yaml without running the build.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/build.py"
+      - "site/template.html"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: build-main
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - run: uv run scripts/build.py
+      - name: Commit regenerated files and redeploy the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Generated files are already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Regenerate README, gallery pages, and site data"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds"

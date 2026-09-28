@@ -7,6 +7,7 @@
 Usage:
   uv run scripts/build.py          # write files
   uv run scripts/build.py --check  # fail if generated files are stale or data is invalid
+  uv run scripts/build.py --validate  # only check the data (used on pull requests)
 """
 
 import html
@@ -339,13 +340,15 @@ INTRO = {
 }
 OUTRO = {
     "en": [
-        "Contributions welcome! Add an entry to the matching file in `data/`, run `uv run scripts/build.py`, and open a pull request. "
-        "Read the [contribution guidelines](contributing.md) first, or [suggest a resource](https://github.com/Li-Evan/awesome-jev/issues/new/choose) through an issue.",
+        "Contributions welcome! Add an entry to the matching file in `data/` (editing it right on GitHub is fine) and open a pull request; the READMEs and the website regenerate automatically after merge. "
+        "Read the [contribution guidelines](contributing.md) first, or [suggest a resource](https://github.com/Li-Evan/awesome-jev/issues/new/choose) through an issue.\n\n"
+        "Listed here? Show it on your project:\n\n```md\n[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)\n```",
         "Images are loaded from each project's own pages and belong to their owners. The list text is released under CC0.",
     ],
     "zh": [
         "欢迎贡献！不会写代码也没关系，[填一个表单](https://github.com/Li-Evan/awesome-jev/issues/new/choose)就能提交，X 上的一条演示也算。"
-        "想直接改数据的话，在 `data/` 里对应场景的文件中加一条，运行 `uv run scripts/build.py`，然后提 PR。详见[贡献指南](contributing.zh-CN.md)。",
+        "想直接改数据的话，在 `data/` 里对应场景的文件中加一条（直接在 GitHub 网页上改就行），然后提 PR，合并后 README 和网站会自动更新。详见[贡献指南](contributing.zh-CN.md)。\n\n"
+        "项目被收录了？欢迎在你的 README 里挂上徽章：\n\n```md\n[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)\n```",
         "图片直接引用各项目自己的页面，版权归原作者所有。列表文字以 CC0 发布。",
     ],
 }
@@ -502,6 +505,10 @@ def outputs():
 
 
 def main():
+    if "--validate" in sys.argv:
+        _, sections = load()
+        print(f"ok: {validate(sections)} entries are valid")
+        return
     files, count, zh = outputs()
     stale = [p for p, text in files.items() if not p.exists() or p.read_text() != text]
     expected = set(files)

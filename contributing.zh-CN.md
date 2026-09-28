@@ -50,15 +50,17 @@ README 和各场景页都是自动生成的，请不要手改 `README.md`、`REA
 
    `description` 用英文写；`description_zh` 可以不填，不填时中文页面显示英文描述。
 
-3. 运行构建，然后提交生成的文件：
+3. 提 PR。直接在 GitHub 网页上改 YAML 文件就行，一个 PR 放一个项目最好审。
 
-   ```bash
-   uv run scripts/build.py
-   ```
+PR 合并后，GitHub Action 会根据 `data/` 自动重新生成 README、各场景页和在线画廊（<https://li-evan.github.io/awesome-jev/?lang=zh>）。本地运行 `uv run scripts/build.py` 是可选的，只在你想预览效果时才需要。
 
-4. 提 PR。一个 PR 放一个项目最好审。
+## 给被收录项目的徽章
 
-在线画廊 <https://li-evan.github.io/awesome-jev/?lang=zh> 用的是同一份数据（`index.html` 和 `site/data.json`），改动合并到 `main` 后会自动更新。
+如果你的项目被收录了，欢迎在 README 里挂上这个徽章：
+
+```md
+[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)
+```
 
 ## 图片
 

@@ -43,17 +43,17 @@ The READMEs and all gallery pages are generated. Do not edit `README.md`, `READM
      links: {demo: https://x.com/user/status/123}   # optional secondary links
    ```
 
-3. Run the build and commit the result:
+3. Open a pull request. Editing the YAML file right on GitHub is fine; one project per pull request is easiest to review.
 
-   ```bash
-   uv run scripts/build.py
-   ```
+After a pull request is merged, a GitHub Action regenerates the READMEs, the gallery pages, and the website (<https://li-evan.github.io/awesome-jev/>) from `data/`. Running `uv run scripts/build.py` locally is optional and only needed if you want to preview the result. `description_zh` (a Chinese description) is optional; the Chinese pages fall back to the English text.
 
-   `description_zh` (a Chinese description) is optional; the Chinese pages fall back to the English text.
+## Badge for listed projects
 
-4. Open a pull request. One project per pull request is easiest to review.
+If your project is listed, you are welcome to show it:
 
-The website at <https://li-evan.github.io/awesome-jev/> is built from the same data (`index.html` and `site/data.json`), so it updates by itself once a change lands on `main`.
+```md
+[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)
+```
 
 ## Images
 

@@ -620,7 +620,13 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 
 ## Contributing
 
-Contributions welcome! Add an entry to the matching file in `data/`, run `uv run scripts/build.py`, and open a pull request. Read the [contribution guidelines](contributing.md) first, or [suggest a resource](https://github.com/Li-Evan/awesome-jev/issues/new/choose) through an issue.
+Contributions welcome! Add an entry to the matching file in `data/` (editing it right on GitHub is fine) and open a pull request; the READMEs and the website regenerate automatically after merge. Read the [contribution guidelines](contributing.md) first, or [suggest a resource](https://github.com/Li-Evan/awesome-jev/issues/new/choose) through an issue.
+
+Listed here? Show it on your project:
+
+```md
+[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)
+```
 
 ## Footnotes
 

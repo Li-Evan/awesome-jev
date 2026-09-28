@@ -620,7 +620,13 @@
 
 ## 参与贡献
 
-欢迎贡献！不会写代码也没关系，[填一个表单](https://github.com/Li-Evan/awesome-jev/issues/new/choose)就能提交，X 上的一条演示也算。想直接改数据的话，在 `data/` 里对应场景的文件中加一条，运行 `uv run scripts/build.py`，然后提 PR。详见[贡献指南](contributing.zh-CN.md)。
+欢迎贡献！不会写代码也没关系，[填一个表单](https://github.com/Li-Evan/awesome-jev/issues/new/choose)就能提交，X 上的一条演示也算。想直接改数据的话，在 `data/` 里对应场景的文件中加一条（直接在 GitHub 网页上改就行），然后提 PR，合并后 README 和网站会自动更新。详见[贡献指南](contributing.zh-CN.md)。
+
+项目被收录了？欢迎在你的 README 里挂上徽章：
+
+```md
+[![Mentioned in Awesome Jev](https://awesome.re/mentioned-badge.svg)](https://github.com/Li-Evan/awesome-jev)
+```
 
 ## 附注
 
