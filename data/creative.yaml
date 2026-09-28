@@ -1163,10 +1163,10 @@ entries:
   url: https://github.com/ChetasLua/jevmeter
   kind: repo
   author: ChetasLua
-  description: CLI that transcribes any video, has Jev score every sentence against a chosen rubric, such as dodging a debate question, and renders the scores as live meters in a 16:9 edit you can post.
-  description_zh: CLI，转写任意视频，让 Jev 按选定的评分标准（比如是否在辩论中回避问题）给每句话打分，并把分数渲染成 16:9 剪辑里的实时仪表，可以直接发布。
-  jev: Preset Score questions per transcript sentence, aligned to the timeline.
-  jev_zh: 对转写稿的每句话提预设的 Score 问题，并与时间轴对齐。
+  description: CLI that transcribes any video, asks Jev five yes/no questions about every sentence from a chosen preset, such as dodging a debate question, and renders the probabilities as live meters in a 16:9 edit you can post.
+  description_zh: CLI，转写任意视频，按选定的预设就每句话向 Jev 问五个是非题（比如是否在辩论中回避问题），并把概率渲染成 16:9 剪辑里的实时仪表，可以直接发布。
+  jev: Five preset Noul questions per transcript sentence, with the speaker's earlier lines and the last moderator question as context, aligned to the timeline.
+  jev_zh: 转写稿的每句话问五个预设的 Noul 问题，以说话人之前的话和主持人最近一次提问作为上下文，并与时间轴对齐。
   image: https://raw.githubusercontent.com/ChetasLua/jevmeter/main/docs/banner.jpg
   metrics:
     stars: 81
@@ -2062,8 +2062,8 @@ entries:
   url: https://x.com/iannuttall/status/2100668908227162567
   kind: post
   author: iannuttall
-  description: 'Analysis of 3,282 of the author''s X posts, asking Jev 8 questions each about topic, hook and tone: 4,252,330 tokens for $0.1282, finding how-to posts drew 150 median likes versus 44.'
-  description_zh: 分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，其他帖子为 44。
+  description: 'Analysis of 3,282 of the author''s X posts, asking Jev 8 questions each about topic, hook and tone: 4,252,330 tokens for $0.1282, finding how-to posts drew 150 median likes versus a 44 overall median.'
+  description_zh: 分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，全部帖子的基准中位数为 44。
   image: https://pbs.twimg.com/amplify_video_thumb/2100668725737213952/img/m210oIkCyuGX5Dqr.jpg
   metrics:
     likes: 745

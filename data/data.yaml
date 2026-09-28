@@ -1371,8 +1371,8 @@ entries:
   url: https://github.com/kunko-ai-labs/judge-audit
   kind: repo
   author: kunko-ai-labs
-  description: Shadow-mode calibration audits for AI judges against past human decisions; its published Jev audits report 95.5% accuracy under attack and 73% zero-error coverage, versus 2% for Claude Sonnet 4.5.
-  description_zh: 以影子模式对照过往人工决策，审计 AI 评委的校准情况；已发布的 Jev 审计报告显示，受攻击时准确率 95.5%，零错误覆盖率 73%，而 Claude Sonnet 4.5 只有 2%。
+  description: Shadow-mode calibration audits of AI judges against human decisions; on 200 partly adversarial emails Jev scored 95.5% versus 96.5% for Claude Sonnet 4.5, but auto-approved 73% before its first error versus 2%.
+  description_zh: 以影子模式对照过往人工决策、审计 AI 评委校准情况的工具；在 200 封商业邮件（其中 140 封加了对抗干扰）上 Jev 准确率 95.5%，Claude Sonnet 4.5 为 96.5%，但在出现第一个错误前 Jev 能自动放行 73%，Sonnet 只有 2%。
   jev: Runs Jev via Vercel AI Gateway on email triage, adversarial emails and a cheap-vs-frontier task router, with raw responses committed for recomputation.
   jev_zh: 通过 Vercel AI Gateway 在邮件分拣、对抗性邮件和廉价/前沿模型任务路由器上运行 Jev，并把原始响应提交到仓库以便重新计算。
   image: https://raw.githubusercontent.com/kunko-ai-labs/judge-audit/main/docs/assets/hero-arena.png

@@ -484,8 +484,8 @@ entries:
   url: https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer
   kind: repo
   author: elvisun
-  description: Demo in the Newsjack PR-agent repo that has Jev and Claude Opus 5 judge the same Google News headlines side by side for desk, story type and newsworthiness scores; live Jev ran about 190 ms per call versus 4 to 6 s for Opus.
-  description_zh: Newsjack PR agent 仓库中的演示，让 Jev 和 Claude Opus 5 并排评判同一批 Google News 标题，给出版面、报道类型和新闻价值评分；实测 Jev 每次调用约 190 毫秒，Opus 要 4 到 6 秒。
+  description: Demo in the NewsJack repo that has Jev and Claude Opus 5 judge the same Google News headlines side by side; it runs a mock engine by default, and in live mode Jev took about 190 ms per call versus 4 to 6 s for Opus.
+  description_zh: NewsJack 仓库里的演示，让 Jev 和 Claude Opus 5 并排评判同一批 Google News 标题；默认跑的是模拟引擎，切到真实模式时 Jev 每次调用约 190 毫秒，Opus 要 4 到 6 秒。
   image: https://repository-images.githubusercontent.com/1243618131/31c6d55a-1dd4-4fff-be6b-d43ac5f53fe5
   metrics:
     repo_stars: 1295
@@ -501,8 +501,8 @@ entries:
   url: https://x.com/elvissun/status/2101003509734977816
   kind: post
   author: elvissun
-  description: Open-source PR agent skills whose Jev mode judges every monitored headline before expensive steps run, handling ~200 signals in 8 seconds for about a cent with zero dropped stories in their eval.
-  description_zh: 开源的 PR agent skill 集，其 Jev 模式会在昂贵步骤运行前先评判每条被监控的标题，8 秒处理约 200 条信号，花费约一美分，在他们的评测中没有漏掉任何一条新闻。
+  description: 'Post announcing NewsJack''s Jev mode, which judges each monitored headline before costlier steps: 176 signals in 8.3 s for about $0.013, with only 76.7% keep-or-drop agreement with the Haiku worker, below the 85% bar.'
+  description_zh: 宣布 NewsJack 的 Jev 模式：在昂贵步骤之前先由 Jev 评判每条被监控的标题；评测中 176 条信号用时 8.3 秒、约 $0.013，但与原 Haiku 流程的留/丢一致率只有 76.7%，低于团队自定的 85% 上线线。
   image: https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg
   metrics:
     likes: 162
@@ -520,10 +520,10 @@ entries:
   url: https://x.com/elvissun/status/2100951347080421409
   kind: post
   author: elvissun
-  description: Reads 384 morning news stories and tells 15 brands which ones to jump on, in 24.9 seconds for $0.19, while Claude Opus 5 got through 4 stories for $0.77; the demo ships with 30+ PR agent skills.
-  description_zh: 读完早上的 384 条新闻，告诉 15 个品牌各自该蹭哪几条，用时 24.9 秒、花费 $0.19，而 Claude Opus 5 花 $0.77 只处理了 4 条；演示附带 30+ 个 PR agent skill。
-  jev: One relevance question per story-brand pair.
-  jev_zh: 每个新闻-品牌组合一个相关性问题。
+  description: Viral demo claiming Jev read 384 morning stories for 15 brands in 24.9 s for $0.19 while Claude Opus 5 got through 4 for $0.77; the linked demo runs a mock engine by default, so the figures are the author's own.
+  description_zh: 爆火演示，称 Jev 用 24.9 秒、$0.19 读完一早上的 384 条新闻并为 15 个品牌挑出该蹭的新闻，而 Claude Opus 5 只处理了 4 条、花了 $0.77；所附演示默认跑的是模拟引擎，这些数字只是作者自己的说法。
+  jev: 'Two requests per story: one rates the story itself (desk, type, six 0-4 scores), one asks 90 questions for 15 companies; the per-company text is identical and question IDs never reach the model.'
+  jev_zh: 每条新闻两次请求：第一次只评新闻本身（编辑部、报道类型、六个 0-4 分数），第二次为 15 家公司一共问 90 个问题；各公司的题目文字一字不差，而问题 ID 不会发给模型。
   image: https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg
   metrics:
     likes: 3918
@@ -725,10 +725,10 @@ entries:
   url: https://x.com/TheMattBerman/status/2101439340588974096
   kind: post
   author: TheMattBerman
-  description: Synthetic focus group where Jev scrolled 723 ads as 30 buyer personas, making 21,690 stop-or-scroll decisions for 22 cents.
-  description_zh: 合成焦点小组：Jev 扮演 30 个买家画像刷了 723 条广告，做出 21,690 次“停下还是划走”的决定，花费 22 美分。
-  jev: One stop/scroll decision per ad per persona.
-  jev_zh: 每个画像对每条广告做一次停下/划走决定。
+  description: Post claiming Jev scrolled 723 ads as 30 buyer personas, making 21,690 stop-or-scroll calls for 22 cents; the code is unpublished and the calls were not checked against real ad results, so treat it as a first screen.
+  description_zh: 帖子称 Jev 以 30 种买家画像刷了 723 条广告，做出 21,690 次“停下还是划走”的判断，花费 22 美分；代码未公开，也没有拿这些判断对照真实投放数据，只能当初筛参考。
+  jev: Per the post, one stop-or-scroll judgment per ad per persona; Jev reads text only, so each ad must first be turned into words.
+  jev_zh: 据帖子描述，每个画像对每条广告做一次停下/划走判断；Jev 只读文字，广告要先转成文字描述。
   image: https://pbs.twimg.com/amplify_video_thumb/2101439290186051584/img/hHD8XIvbYFKj0Bdp.jpg
   metrics:
     likes: 1140

@@ -1701,8 +1701,8 @@ entries:
   url: https://github.com/tamaratran/fast-jev-compaction
   kind: repo
   author: tamaratran
-  description: Claude Code plugin that replaces the compaction summary with a keep-or-drop Noul per tool call; install it from GitHub, because the npm package with the same name comes from another publisher.
-  description_zh: Claude Code 插件，用针对每个工具调用的保留/丢弃 Noul 取代压缩摘要；请从 GitHub 安装，因为 npm 上同名的包来自另一个发布者。
+  description: Claude Code plugin that replaces the compaction summary with two Nouls per tool call, keep the call and keep its result; Nous Research found the 0.5 default kept none of 851 calls. The npm package is another publisher's.
+  description_zh: Claude Code 插件，用每个工具调用两个 Noul（是否保留调用、是否保留结果）取代压缩摘要；Nous Research 实测默认阈值 0.5 下 851 个调用一个都没留。npm 上的同名包来自另一个发布者，请从 GitHub 安装。
   image: https://external-preview.redd.it/MGlnNDRiMG1xYXFoMV6tliTw1N13OJYLOxukOcY6kypXBn-V9gWyZw5eTACt.png?format=pjpg&auto=webp&s=fb4a34a2ae0aa5577c81ee2b59363e6950096c7c
   metrics:
     stars: 6069
@@ -2338,8 +2338,8 @@ entries:
   url: https://github.com/adarshmishra07/jcm-router
   kind: repo
   author: adarshmishra07
-  description: Local proxy between Claude Code and the Anthropic API that uses Jev to pick model and effort per message; it routes only subagents after logs showed main-chat switches lost $19.53 to cache rewrites.
-  description_zh: 位于 Claude Code 和 Anthropic API 之间的本地代理，用 Jev 为每条消息选择模型和推理强度；日志显示主对话中切换模型会因缓存重写损失 $19.53，因此它只对子 agent 做路由。
+  description: Local proxy that uses Jev to pick model and effort per Claude Code message; after main-chat switches caused $17.12 of a $19.53 loss in cache rewrites, it routes subagents freely and the main chat only when a switch is cheap.
+  description_zh: 位于 Claude Code 和 Anthropic API 之间的本地代理，用 Jev 为每条消息选择模型和推理强度；早期版本整体多花 $19.53，其中 $17.12 来自主对话切换模型导致的缓存重写，现在子 agent 照常路由，主对话只在切换划算时才换。
   image: https://raw.githubusercontent.com/adarshmishra07/jcm-router/main/docs/screenshots/dashboard-saving.png
   metrics:
     stars: 3
@@ -5136,8 +5136,8 @@ entries:
   url: https://github.com/daniel-farina/nitro
   kind: repo
   author: daniel-farina
-  description: Grok Build variant where Jev decides once per turn which of the 25 tools the request will need, trimming tool schemas from about 11K to 2.9K tokens and costing 22 to 40% less on the same tasks.
-  description_zh: Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在相同任务上成本降低 22% 到 40%。
+  description: Grok Build variant where Jev decides once per turn which of the 25 tools a request needs, trimming tool schemas from about 11K to 2.9K tokens and costing 14 to 40% less on three tasks, two runs each.
+  description_zh: Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在三个任务上成本降低 14% 到 40%（每项只跑两次）。
   jev: One Noul per tool (will finishing this request need this tool?), all in one request of about 350 ms.
   jev_zh: 每个工具一个 Noul（完成这个请求是否需要该工具？），全部放在一次约 350 毫秒的请求里。
   image: https://pbs.twimg.com/media/HSrhykQXYAAkMPS.jpg

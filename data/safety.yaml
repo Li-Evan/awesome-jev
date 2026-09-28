@@ -898,8 +898,8 @@ entries:
   url: https://github.com/caiovicentino/jev-shield
   kind: repo
   author: caiovicentino
-  description: Semantic MCP firewall between any stdio MCP client and server that screens every tool call, result, and description, reporting 94% block recall with 0 false positives at about $0.00002 per check.
-  description_zh: 位于任意 stdio MCP 客户端与服务器之间的语义 MCP 防火墙，筛查每次工具调用、结果和描述；报告的拦截召回率为 94%，误报为 0，每次检查约 $0.00002。
+  description: Semantic MCP firewall between any stdio MCP client and server that screens tool calls, results and descriptions; on 56 author-built cases it blocked 33 of 35 attacks with no false positives, at about $0.00003 per check.
+  description_zh: 位于任意 stdio MCP 客户端与服务器之间的语义 MCP 防火墙，筛查工具调用、结果和描述；在作者自建的 56 个用例上拦下 35 个攻击中的 33 个、无误报，每次检查约 $0.00003。
   jev: Calibrated System One verification layered on deterministic structural checks.
   jev_zh: 在确定性结构检查之上叠加一层校准的 System One 验证。
   metrics:

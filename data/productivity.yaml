@@ -411,8 +411,8 @@ entries:
   url: https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts
   kind: repo
   author: elie222
-  description: Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.
-  description_zh: 把每封邮件的两次 LLM 调用换成一次 Jev 请求：一个 Choice，加上每条用户规则一个是/否判断，出错时回退到 LLM。
+  description: Opt-in decision-model layer in Inbox Zero that routes single-rule selection, cold email, categorization and other email decisions to Jev, keeping multi-rule selection on the LLM and falling back to it when Jev is unsure.
+  description_zh: Inbox Zero 中可选启用的决策模型层：把单规则选择、冷邮件判断、发件人分类等邮件决策交给 Jev，多条规则之间的选择仍留给 LLM，Jev 不可用或拿不准时回退到 LLM。
   image: https://raw.githubusercontent.com/elie222/inbox-zero/main/apps/web/app/opengraph-image.jpg
   metrics:
     repo_stars: 12278
@@ -442,10 +442,10 @@ entries:
   url: https://github.com/dabit3/intern
   kind: repo
   author: dabit3
-  description: Native macOS launcher that finds files, apps and Chrome history the way you remember them, such as 'the pdf I just downloaded', with Jev judging which candidate you mean on every keystroke in about 100 ms.
-  description_zh: 原生 macOS 启动器，能按你记忆中的方式找文件、应用和 Chrome 历史记录，比如“我刚下载的那个 pdf”，每敲一个键都由 Jev 在约 100 毫秒 内判断你指的是哪个候选。
-  jev: Ranks locally found candidates per keystroke; one clear winner is preselected, several can be opened together or saved as a workspace.
-  jev_zh: 每次按键时对本地找到的候选排序；有明显赢家就预先选中，多个候选可以一起打开或保存为工作区。
+  description: Native macOS launcher that finds files, apps and Chrome history the way you remember them, such as 'the pdf I just downloaded'; Jev re-ranks the local candidates after each 150 ms typing pause, in about 100 ms.
+  description_zh: 原生 macOS 启动器，能按你记忆中的方式找文件、应用和 Chrome 历史记录，比如“我刚下载的那个 pdf”；输入停顿 150 毫秒后由 Jev 对本地候选重新排序，约 100 毫秒返回。
+  jev: Asked after a typing pause, never twice for the same query; local results update per keystroke, one clear winner is preselected, several can be opened together or saved as a workspace.
+  jev_zh: 输入停顿后才发请求，同样的问题不问第二次；本地结果每次按键都更新，有明显赢家就预先选中，多个候选可以一起打开或保存为工作区。
   image: https://raw.githubusercontent.com/dabit3/intern/main/docs/homepage.png
   metrics:
     stars: 6
@@ -948,10 +948,10 @@ entries:
   url: https://github.com/valentynkit/jev-skip
   kind: repo
   author: valentynkit
-  description: Browser extension that has Jev classify YouTube caption segments at watch time, paints sponsor probabilities on the seek bar and auto-skips them; it caught 77% of SponsorBlock's sponsor seconds across 23 videos.
-  description_zh: 浏览器扩展，在观看时让 Jev 对 YouTube 字幕片段分类，把赞助内容的概率画在进度条上并自动跳过；在 23 个视频上捕获了 SponsorBlock 所标赞助秒数的 77%。
-  jev: One Choice per caption segment among five categories, split across requests when over budget; about $0.0008 a video.
-  jev_zh: 每个字幕片段在五个类别中做一个 Choice，超出预算时拆分成多个请求；每个视频约 $0.0008。
+  description: Browser extension that has Jev classify YouTube caption segments, paints sponsor probabilities on the seek bar and auto-skips confident ones; on recorded answers it caught 77% of SponsorBlock's sponsor seconds over 23 videos.
+  description_zh: 浏览器扩展，让 Jev 对 YouTube 字幕片段分类，把赞助内容的概率画在进度条上，并自动跳过把握高的片段；在录制好的答案上回放，它捕获了 23 个视频中 SponsorBlock 所标赞助秒数的 77%。
+  jev: One Choice per caption segment among seven categories (content, sponsor, intro, outro, self-promo, recap, other); answers were recorded through a gateway shim, about $0.0008 a video.
+  jev_zh: 每个字幕片段在七个类别（正片、赞助、片头、片尾、自我推广、回顾、其他）中做一个 Choice；答案经网关转接录制，每个视频约 $0.0008。
   image: https://raw.githubusercontent.com/valentynkit/jev-skip/main/demo/demo.gif
   metrics:
     stars: 3

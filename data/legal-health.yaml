@@ -186,8 +186,8 @@ entries:
   author: DevaiahShrithan
   description: Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.
   description_zh: 把 1993 到 2026 年的 464,720 篇 arXiv AI 摘要交给 Jev，每篇问五个问题（是否声称达到 SOTA、是否发布代码、是否像 LLM 写的、论文类型、炒作程度），描绘 AI 论文的变化。
-  jev: Two Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call.
-  jev_zh: 每篇摘要两个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案。
+  jev: Three Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call; the full run took 27.6 minutes and $11.20.
+  jev_zh: 每篇摘要三个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案；整轮用时 27.6 分钟，花费 $11.20。
   image: https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg
   metrics:
     likes: 6
@@ -222,8 +222,8 @@ entries:
   url: https://github.com/PistachioAIHQ/jev-synergy-screening
   kind: repo
   author: PistachioAIHQ
-  description: Systematic-review screening demo that asks Jev to include or exclude MEDLINE titles and abstracts for an ADHD drug review, scored against Cohen et al. 2006 labels; 92.0% accuracy and 80.0% recall on a 200-abstract set.
-  description_zh: 系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 标题和摘要的纳入或排除，并以 Cohen et al. 2006 的标签评分；在 200 篇摘要的集合上准确率 92.0%、召回率 80.0%。
+  description: Systematic-review screening demo that has Jev include or exclude MEDLINE abstracts for an ADHD drug review; on all 851 Cohen et al. 2006 abstracts it reached 83.3% recall and 68.6% precision, tuned on that same set.
+  description_zh: 系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 摘要的纳入或排除；在 Cohen et al. 2006 的全部 851 篇摘要上召回率 83.3%、精确率 68.6%，问题和阈值是在同一批数据上调出来的。
   jev: Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.
   jev_zh: 把 Choice 和 Noul 资格问题合成纳入/排除决策，每次调用约 523 毫秒。
   metrics:

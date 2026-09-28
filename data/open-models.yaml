@@ -1652,8 +1652,8 @@ entries:
   url: https://github.com/NandhaKishorM/laya
   kind: repo
   author: NandhaKishorM
-  description: Open, local non-autoregressive decision models on ModernBERT-style encoders, from a 421M English checkpoint to multilingual ones, answering Choice, Score and Noul questions in 33 ms per question with a per-request router.
-  description_zh: 基于 ModernBERT 式编码器的开放本地非自回归决策模型，从 421M 的英文检查点到多语言检查点都有，回答 Choice、Score 和 Noul 问题每个问题 33 毫秒，并带有按请求分流的路由器。
+  description: Open, local non-autoregressive decision models on ModernBERT-style encoders answering Choice, Score and Noul in about 33 ms per question; base weights score below majority zero-shot and ship over-confident, so fine-tune first.
+  description_zh: 基于 ModernBERT 式编码器的开放本地非自回归决策模型，回答 Choice、Score 和 Noul 问题每个约 33 毫秒；基础权重零样本准确率低于“总选最常见答案”的基线，出厂概率过于自信，需先用自己的数据微调。
   image: https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png
   metrics:
     stars: 12037

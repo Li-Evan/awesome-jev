@@ -125,8 +125,8 @@ entries:
   url: https://x.com/SUOHA_AI/status/2102091983292358839
   kind: post
   author: SUOHA_AI
-  description: Browser automation that completed an Alibaba Cloud AI engineer mock exam on an unseen page in 21 seconds, answering 25 questions at 80% accuracy, with Jev deciding each step and DeepSeek filling text.
-  description_zh: 浏览器自动化在一个从未见过的页面上用 21 秒完成了阿里云 AI 工程师模拟考试，回答 25 道题，准确率 80%，由 Jev 决定每一步，DeepSeek 负责填写文字。
+  description: Demo post in which, the author says, his Jev plus DeepSeek browser agent answered 25 questions of an Alibaba Cloud AI engineer mock exam in 21 seconds at 80%; the agent's code has not been released.
+  description_zh: 演示帖：作者称他的 Jev 加 DeepSeek 浏览器 agent 用 21 秒答完阿里云 AI 工程师认证模拟考的 25 道题，正确率 80%；这个 agent 的代码尚未公开。
   image: https://pbs.twimg.com/amplify_video_thumb/2102088489231609856/img/AJle7-1PDPdXWJ6d.jpg
   metrics:
     likes: 755
@@ -171,8 +171,8 @@ entries:
   url: https://x.com/SSHCodes/status/2101026313871970721
   kind: post
   author: SSHCodes
-  description: Non-cheated browser-use test in which Jev completed about 5 actions before collapsing, with the author concluding it is not suited to browser agents.
-  description_zh: 一次不作弊的浏览器操控测试，Jev 完成了大约 5 个动作后就崩了，作者的结论是它不适合做浏览器 agent。
+  description: Post reporting that Jev completed about 5 actions before collapsing in a non-cheated browser test, concluding it is not suited to browser agents; the post does not describe the task or setup.
+  description_zh: 帖子称在一次不作弊的浏览器测试里，Jev 完成大约 5 个动作后就崩了，结论是它不适合做浏览器 agent；帖子没有交代具体任务和做法。
   image: https://pbs.twimg.com/amplify_video_thumb/2101026173631217664/img/icEy9hbMZ8lMNbQV.jpg
   metrics:
     likes: 26
@@ -677,10 +677,10 @@ entries:
   url: https://x.com/SUOHA_AI/status/2101640575812239406
   kind: post
   author: SUOHA_AI
-  description: Browser agent that filled a 16-question application form on an unfamiliar site in 38 seconds, with Jev choosing each action and DeepSeek V4.1 Flash writing the text answers.
-  description_zh: 浏览器 agent，在一个陌生网站上用 38 秒填完一份 16 题的申请表，Jev 选择每个动作，DeepSeek V4.1 Flash 撰写文字答案。
-  jev: Choice of click, check or submit per page; a small LLM only fills text fields.
-  jev_zh: 每个页面做一次点击、勾选或提交的 Choice；小型 LLM 只填写文本字段。
+  description: Demo post in which, the author says, a Jev plus DeepSeek V4.1 Flash browser agent filled a 16-question form on an unfamiliar site in 38 seconds; no code has been released, so the setup cannot be checked.
+  description_zh: 演示帖：作者称用 Jev 加 DeepSeek V4.1 Flash 的浏览器 agent 在一个陌生网站上 38 秒填完 16 道题的申请表；代码至今没有公开，具体怎么问无法核对。
+  jev: Per the post, Jev decides whether to check, click or submit on each new page and DeepSeek writes the fill-in answers.
+  jev_zh: 据帖子描述，遇到新页面由 Jev 判断该勾选、点击还是提交，需要填空时由 DeepSeek 写答案。
   image: https://pbs.twimg.com/amplify_video_thumb/2101632970717007872/img/lcQeA281BT79Pjt5.jpg
   metrics:
     likes: 173
@@ -1834,10 +1834,10 @@ entries:
   url: https://github.com/awlevin/typesafe-computer-use
   kind: repo
   author: awlevin
-  description: Computer-use agent for macOS that OCRs the screen, has Jev classify the next action from the extracted controls and clicks, for about $0.0002 a step, calling a writing model only for free-text fields.
-  description_zh: macOS 电脑操控 agent：先对屏幕做 OCR，再让 Jev 从提取出的控件中判定下一步动作并点击，每步约 $0.0002，只有自由文本字段才调用写作模型。
-  jev: A Choice over up to 255 deterministically extracted actions per step, gated on its confidence.
-  jev_zh: 每一步在最多 255 个确定性提取的动作上做一个 Choice，并按其置信度设门槛。
+  description: Computer-use agent for macOS that reads the screen with OCR and the accessibility tree, has Jev pick the next action and target, and clicks, for about $0.0002 a step, calling a writing model only for free-text fields.
+  description_zh: macOS 电脑操控 agent：用 OCR 加无障碍树读取屏幕，让 Jev 选出下一步动作和目标再点击，每步约 $0.0002，只有自由文本字段才调用写作模型。
+  jev: One request per step with three Choices (action kind, screen item, site), plus one for off-screen controls; a click's confidence is the lower of two answers, and the loop stops below 0.4.
+  jev_zh: 每步一次请求，问三个 Choice（动作类型、屏幕上的项、网站），有屏幕外控件时再加一个；一次点击的置信度取两个相关答案中较低的那个，低于 0.4 就停。
   image: https://raw.githubusercontent.com/awlevin/typesafe-computer-use/main/docs/banner.svg
   metrics:
     stars: 769

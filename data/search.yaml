@@ -1163,8 +1163,8 @@ entries:
   url: https://github.com/dabit3/macos-experiments/tree/main/turbo-rerank
   kind: repo
   author: dabit3
-  description: Search workspace demo that reranks 50 candidates in one ~170 ms Jev request, raising top-1 accuracy from 50% to 100% on a 40-query labeled benchmark.
-  description_zh: 搜索工作区演示：用一次约 170 毫秒 的 Jev 请求重排 50 个候选，在 40 个查询的标注基准上把 top-1 准确率从 50% 提到 100%。
+  description: Search workspace demo that reranks 50 candidates in one ~170 ms Jev request; on 40 queries the author labeled over a generated 598-passage corpus, top-1 rose from 50% to 100% (98% in a browser rerun).
+  description_zh: 搜索工作区演示：用一次约 170 毫秒的 Jev 请求重排 50 个候选；在作者自己标注的 40 个查询、代码生成的 598 段语料上，top-1 准确率从 50% 提到 100%（浏览器里重跑一次为 98%）。
   jev: One request judges every candidate against the query plus an answer-exists check, optionally split into parallel batches.
   jev_zh: 一次请求针对查询评判每个候选，并检查答案是否存在，也可拆成并行批次。
   image: https://raw.githubusercontent.com/dabit3/macos-experiments/main/turbo-rerank/screenshots/turbo-rerank-home.jpg

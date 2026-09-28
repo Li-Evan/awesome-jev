@@ -1215,8 +1215,8 @@ entries:
   url: https://github.com/anpicasso/hermes-jev-approvals
   kind: repo
   author: anpicasso
-  description: Provider for Hermes Agent's smart command approvals in which Jev returns APPROVE, DENY or ESCALATE from six typed questions in one request, measured 8.7x faster with 4.4x fewer prompts on 153 real commands.
-  description_zh: Hermes Agent 智能命令审批的提供方：Jev 在一次请求中根据六个类型化问题返回 APPROVE、DENY 或 ESCALATE，在 153 条真实命令上实测快 8.7 倍，确认提示少 4.4 倍。
+  description: Provider for Hermes Agent's smart command approvals where Jev returns APPROVE, DENY or ESCALATE from six typed questions; the author's corrected 156-command run shows 9.8x faster, 4.2x fewer prompts, a retest 1.24x.
+  description_zh: Hermes Agent 智能命令审批的提供方：Jev 在一次请求中根据六个类型化问题返回 APPROVE、DENY 或 ESCALATE；作者修正后在 156 条命令上测得快 9.8 倍、确认提示少 4.2 倍，独立复测只快 1.24 倍。
   metrics:
     stars: 12
   date: '2026-09-17'
@@ -2822,10 +2822,10 @@ entries:
   url: https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev
   kind: repo
   author: tinyhumansai
-  description: Tool-search ranker for the OpenHuman agent harness that shortlists deferred tools with BM25 and lets one Jev Choice pick the right one, falling back to BM25 when signed out.
-  description_zh: OpenHuman agent harness 的工具搜索排序器，先用 BM25 为延迟加载的工具列出候选清单，再让一个 Jev Choice 选出正确的工具，未登录时回退到 BM25。
-  jev: BM25 to 20 candidates, then one Choice with a 3 s deadline, routed through the backend's OpenRouter System One proxy.
-  jev_zh: BM25 先筛到 20 个候选，再做一个 3 秒时限的 Choice，经后端的 OpenRouter System One 代理转发。
+  description: 'Tool-search ranker for the OpenHuman agent harness: embedding search shortlists 20 tools and one Jev request picks one or none and checks whether a tool is needed; without an embedding provider it skips Jev for BM25.'
+  description_zh: OpenHuman agent harness 的工具搜索排序器：先用向量检索筛出 20 个候选工具，再用一次 Jev 请求挑出一个或判定都不合适，并判断到底要不要调用工具；没有向量模型时不调 Jev，直接退回 BM25。
+  jev: A Choice over the shortlist plus none and a needs_tool Noul, 6 s deadline; on 160 hand-written requests top-1 rose from 22.5% (BM25 alone) to 62.0%, with false tool picks down from 26 to 1.
+  jev_zh: 在候选清单加 none 上做一个 Choice，再问一个 needs_tool Noul，时限 6 秒；在 160 条手写请求上，首选命中率从只用 BM25 的 22.5% 升到 62.0%，误推荐从 26 条降到 1 条。
   image: https://raw.githubusercontent.com/tinyhumansai/openhuman/main/gitbooks/.gitbook/assets/demo.png
   metrics:
     repo_stars: 40024

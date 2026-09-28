@@ -114,13 +114,13 @@ entries:
   - arbitrage
   - trading
   - defi
-- name: Autonomous onchain trading bot
-  name_zh: 全自动链上交易机器人
+- name: '"Lost $31,680" trading-bot post'
+  name_zh: “亏了 $31,680”的交易机器人帖子
   url: https://x.com/MoonGotchi/status/2101320141065609294
   kind: post
   author: MoonGotchi
-  description: Fully autonomous real-time trading bot built in an evening that ingests onchain and offchain data to make rapid trade decisions; the author reports it has lost $31,680 so far.
-  description_zh: 一个晚上搭出来的全自动实时交易机器人，读取链上和链下数据快速做交易决策；作者自述目前已亏损 $31,680。
+  description: Viral post claiming a trading bot built in an evening has lost $31,680; the attached video is Jarrod Watts's jev-trader demo in dry-run mode with simulated fills, so the loss is unverified and likely a joke.
+  description_zh: 爆火帖子，声称一晚上搭出的交易机器人已亏损 $31,680；所附视频其实是 Jarrod Watts 的 jev-trader 在 dry-run 模式下的演示录像，成交全是模拟的，亏损数字无法核实，更可能是玩笑。
   image: https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg
   metrics:
     likes: 23930
@@ -455,8 +455,8 @@ entries:
   url: https://x.com/0xKaspie/status/2102052707024466181
   kind: post
   author: 0xKaspie
-  description: Autonomous trading bot that watches on-chain and off-chain data in real time and lets Jev make each trade decision, reporting 90 fills at a 74.6% hit rate.
-  description_zh: 自主交易机器人，实时监控链上和链下数据，每笔交易决策都交给 Jev；报告显示成交 90 笔，胜率 74.6%。
+  description: Post showing a jev-trader-style bot on Solana's Phoenix SOL/USDC book; the video's dashboard is in dry-run mode, so its 90 fills and 74.6% hit rate are simulated, not real trades.
+  description_zh: 帖子展示一个 jev-trader 风格的机器人，交易 Solana 上 Phoenix 的 SOL/USDC；视频里的看板处于 dry-run 模式，90 笔成交和 74.6% 的命中率都是模拟结果，不是真实交易。
   image: https://pbs.twimg.com/amplify_video_thumb/2102051838132473856/img/FXE7gWkLy1n96My3.jpg
   metrics:
     likes: 12
@@ -628,8 +628,8 @@ entries:
   url: https://x.com/SUOHA_AI/status/2101275294451515740
   kind: post
   author: SUOHA_AI
-  description: Inverse version of the Monad Jev trading demo that mirrors every order, selling when the original buys and buying when it sells, one decision per block.
-  description_zh: Monad Jev 交易演示的反向版本：镜像每一笔订单，原版买入时卖出、卖出时买入，每个区块做一次决策。
+  description: Inverse copy of the Monad jev-trader demo that takes the opposite side of every decision, one per block; its dashboard runs in dry-run mode, so the fills are simulated rather than real orders.
+  description_zh: Monad 上 jev-trader 演示的反向版本：每个区块都与原版的决策反着来；它的看板运行在 dry-run 模式，成交是模拟的，并非真实下单。
   image: https://pbs.twimg.com/amplify_video_thumb/2101274788513693696/img/Gj7UchuQIdpkqvAz.jpg
   metrics:
     likes: 454
@@ -829,21 +829,20 @@ entries:
   url: https://github.com/jarrodwatts/jev-trader
   kind: repo
   author: jarrodwatts
-  description: Market-making bot on Kuru's MON-USDC order book on Monad where Jev answers buy or sell every block, about every 300 ms, and each block posts a post-only limit order one tick inside the touch.
-  description_zh: Monad 上 Kuru 的 MON-USDC 订单簿做市机器人：Jev 每个区块（约每 300 毫秒）回答一次买还是卖，每个区块都在最优报价内侧一个 tick 处挂一张 post-only 限价单。
+  description: Demo bot on Kuru's MON-USDC order book on Monad where Jev answers buy or sell every block (about 300 ms) and code posts a post-only limit order; its spec says it is not trying to be profitable and runs no backtests.
+  description_zh: Monad 上 Kuru 的 MON-USDC 订单簿演示机器人：Jev 每个区块（约 300 毫秒）回答一次买还是卖，由代码挂一张只做 maker 的限价单；项目说明写明模型不追求盈利，也不做回测。
   jev: One buy/sell decision per block from the live book; dry-run mode keeps real decisions with simulated fills.
   jev_zh: 每个区块根据实时订单簿做一次买/卖决策；dry-run 模式保留真实决策，但成交是模拟的。
-  image: https://pbs.twimg.com/amplify_video_thumb/2100843717791813632/img/BJXB5D_XC7MmmqdN.jpg
+  image: https://pbs.twimg.com/amplify_video_thumb/2100355999064379392/img/BiAbeDjN57avf2VK.jpg
   metrics:
     stars: 1899
-    views: 9408
-    likes: 83
+    views: 1279504
+    likes: 5146
   date: '2026-09-16'
   links:
+    demo: https://x.com/jarrodwatts/status/2100356151468585346
     app: https://jev-trader.vercel.app
     video: https://www.youtube.com/watch?v=YIEHGt-9cS4
-    app 2: https://jev-trader.vercel.app
-    demo: https://x.com/tonnoz/status/2100844854490103835
   tags:
   - market-making
   - crypto
@@ -1152,8 +1151,8 @@ entries:
   url: https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py
   kind: repo
   author: OpenByteInc
-  description: Opt-in live pre-trade gate in QuantDinger, a self-hosted AI trading platform, that sends strategy, market, position and exposure state to Jev Choice questions and blocks rejected entries, with an LLM fallback.
-  description_zh: 自托管 AI 交易平台 QuantDinger 中可选的实盘交易前闸门：把策略、市场、持仓和敞口 state 交给 Jev 的 Choice 问题判断，拦下被否决的入场，并有 LLM 兜底。
+  description: 'Opt-in pre-trade gate in the self-hosted QuantDinger platform: six Jev Choices review each live entry or add and rejected ones are blocked; if Jev and the LLM fallback both fail, the order goes through (fail-open).'
+  description_zh: 自托管交易平台 QuantDinger 中可选的实盘交易前闸门：用六个 Jev Choice 审查每次开仓或加仓，被否决的拦下；Jev 和兜底 LLM 都失败时订单照常放行（fail-open）。
   image: https://repository-images.githubusercontent.com/1124295269/0b9abcd4-9cb2-4f7c-8401-7a53b1bc2362
   metrics:
     repo_stars: 11963
@@ -1235,8 +1234,8 @@ entries:
   url: https://x.com/shortaktien/status/2100921927241998496
   kind: post
   author: shortaktien
-  description: Trading bot reworked around Jev with a live viewer for its trades; the author reports smaller losses but no clear performance gain.
-  description_zh: 围绕 Jev 重做的交易机器人，附带实时查看交易的界面；作者表示亏损变小了，但表现没有明显提升。
+  description: Rework of the jev-trader demo around Jev with a live viewer that runs in paper mode; the author reports smaller losses but no clear performance gain.
+  description_zh: 围绕 Jev 改造的 jev-trader 演示，带一个实时查看页，运行在模拟盘（paper）模式；作者称亏损变小了，但看不出明显的表现提升。
   metrics:
     views: 847
   date: '2026-09-18'

@@ -526,8 +526,8 @@ subsections:
     url: https://docs.typesafe.ai/cookbooks/parallel_questions
     kind: docs
     author: TypeSafe AI
-    description: Batches 13 questions over one long document into a single request, 12.2x cheaper and 10.0x faster with no change in answers.
-    description_zh: 把针对同一份长文档的 13 个问题合并成一次请求，便宜 12.2 倍、快 10.0 倍，答案没有任何变化。
+    description: Batches 13 questions over one long document into a single request, 12.2x cheaper and 10.0x faster than 13 sequential calls with no change in answers; firing the calls concurrently narrows the speed gap.
+    description_zh: 把一篇长文档上的 13 个问题合进一次请求，比依次发 13 次便宜 12.2 倍、快 10.0 倍，答案不变；如果并发发出，速度差距会缩小。
     image: https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBatching%26title%3DParallel%2Bquestions%26description%3DRuns%2Ba%2B13-question%2Bregulatory%2Bbriefing%2Bover%2Bthe%2BGDPR%2BWikipedia%2Barticle%252C%2Bshowing%2Bthat%2Bbatching%2Bevery%2Bquestion%2Binto%2Bone%2BTypeSafe%2Bcall%2Bis%2B12.2x%2Bcheaper%2Band%2B10.0x%2Bf%26theme%3Df0580ae664a0195833f0555d&w=1200&q=100
     tags:
     - official

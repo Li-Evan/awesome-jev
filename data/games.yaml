@@ -2722,10 +2722,10 @@ entries:
   url: https://github.com/trungdq88/jev-tetris
   kind: repo
   author: trungdq88
-  description: Real-time Tetris battle where Jev plays Claude Haiku 4.5, Gemini 3.8 Flash or the open-weight Laya on the same piece sequence, and a missed deadline locks the piece wherever it falls.
-  description_zh: 实时俄罗斯方块对战：Jev 与 Claude Haiku 4.5、Gemini 3.8 Flash 或开放权重的 Laya 在相同的方块序列上对决，没赶上截止时间的方块会就地锁定。
-  jev: One Choice over column and rotation as soon as each piece spawns.
-  jev_zh: 每个方块一出现，就对列和旋转做一个 Choice。
+  description: Real-time Tetris battle where Jev plays Claude Haiku 4.5, Gemini 3.8 Flash or open Laya on the same pieces; the harness pre-computes legal placements, and the author says Jev is nearly useless left to press keys.
+  description_zh: 实时俄罗斯方块对战：Jev 与 Claude Haiku 4.5、Gemini 3.8 Flash 或开放权重的 Laya 在相同方块序列上对决；合法落点由框架预先算好，作者自己更正说只让 Jev 按键时它基本没用。
+  jev: One Choice over code-enumerated placements, each described by its outcome, asked as soon as each piece spawns; a missed deadline locks the piece where it falls.
+  jev_zh: 每个方块一出现，就在代码枚举并写好后果的合法落点中做一个 Choice；没赶上截止时间的方块会就地锁定。
   image: https://raw.githubusercontent.com/trungdq88/jev-tetris/main/docs/battle.png
   metrics:
     stars: 12
