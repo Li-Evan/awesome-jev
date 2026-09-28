@@ -45,7 +45,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev"><img src="https://raw.githubusercontent.com/tinyhumansai/openhuman/main/gitbooks/.gitbook/assets/demo.png" alt="OpenHuman Jev tool ranker" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev">OpenHuman Jev tool ranker</a></b><br><sub>tinyhumansai · GitHub · ⭐ 40k 仓库 · 2026-02-18</sub><br>OpenHuman agent harness 的工具搜索排序器，先用 BM25 为延迟加载的工具列出候选清单，再让一个 Jev Choice 选出正确的工具，未登录时回退到 BM25。<br><sub><b>Jev 用法:</b> BM25 先筛到 20 个候选，再做一个 3 秒时限的 Choice，经后端的 OpenRouter System One 代理转发。</sub><br><sub>相关: <a href="https://tinyhumans.ai/openhuman">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev">OpenHuman Jev tool ranker</a></b><br><sub>tinyhumansai · GitHub · ⭐ 40k 仓库 · 2026-02-18</sub><br>OpenHuman agent harness 的工具搜索排序器：先用向量检索筛出 20 个候选工具，再用一次 Jev 请求挑出一个或判定都不合适，并判断到底要不要调用工具；没有向量模型时不调 Jev，直接退回 BM25。<br><sub><b>Jev 用法:</b> 在候选清单加 none 上做一个 Choice，再问一个 needs_tool Noul，时限 6 秒；在 160 条手写请求上，首选命中率从只用 BM25 的 22.5% 升到 62.0%，误推荐从 26 条降到 1 条。</sub><br><sub>相关: <a href="https://tinyhumans.ai/openhuman">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/experimental/transforms/jev_search.py"><img src="https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f-watercolor-waves-2.png" alt="FastMCP Jev tool search" width="240"></a></td>
@@ -325,7 +325,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/anpicasso/hermes-jev-approvals"><img src="https://opengraph.githubassets.com/1/anpicasso/hermes-jev-approvals" alt="hermes-jev-approvals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/anpicasso/hermes-jev-approvals">hermes-jev-approvals</a></b><br><sub>anpicasso · GitHub · ⭐ 12 · 2026-09-17</sub><br>Hermes Agent 智能命令审批的提供方：Jev 在一次请求中根据六个类型化问题返回 APPROVE、DENY 或 ESCALATE，在 153 条真实命令上实测快 8.7 倍，确认提示少 4.4 倍。</td>
+<td valign="top"><b><a href="https://github.com/anpicasso/hermes-jev-approvals">hermes-jev-approvals</a></b><br><sub>anpicasso · GitHub · ⭐ 12 · 2026-09-17</sub><br>Hermes Agent 智能命令审批的提供方：Jev 在一次请求中根据六个类型化问题返回 APPROVE、DENY 或 ESCALATE；作者修正后在 156 条命令上测得快 9.8 倍、确认提示少 4.2 倍，独立复测只快 1.24 倍。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tidepool-heavy-industries/tidepool"><img src="https://opengraph.githubassets.com/1/tidepool-heavy-industries/tidepool" alt="Tidepool" width="240"></a></td>

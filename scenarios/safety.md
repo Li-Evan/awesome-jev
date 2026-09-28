@@ -225,7 +225,7 @@ Guardrails, jailbreak and injection screening, content moderation, and policy ch
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caiovicentino/jev-shield"><img src="https://opengraph.githubassets.com/1/caiovicentino/jev-shield" alt="jev-shield" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/caiovicentino/jev-shield">jev-shield</a></b><br><sub>caiovicentino · GitHub · ⭐ 3 · 2026-09-17</sub><br>Semantic MCP firewall between any stdio MCP client and server that screens every tool call, result, and description, reporting 94% block recall with 0 false positives at about $0.00002 per check.<br><sub><b>How it uses Jev:</b> Calibrated System One verification layered on deterministic structural checks.</sub></td>
+<td valign="top"><b><a href="https://github.com/caiovicentino/jev-shield">jev-shield</a></b><br><sub>caiovicentino · GitHub · ⭐ 3 · 2026-09-17</sub><br>Semantic MCP firewall between any stdio MCP client and server that screens tool calls, results and descriptions; on 56 author-built cases it blocked 33 of 35 attacks with no false positives, at about $0.00003 per check.<br><sub><b>How it uses Jev:</b> Calibrated System One verification layered on deterministic structural checks.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/CodeAlive-AI/mastra-jev-moderation"><img src="https://opengraph.githubassets.com/1/CodeAlive-AI/mastra-jev-moderation" alt="mastra-jev-moderation" width="240"></a></td>

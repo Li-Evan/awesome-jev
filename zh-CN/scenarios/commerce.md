@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/elvissun/status/2100951347080421409"><img src="https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg" alt="NewsJack 品牌新闻匹配" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/elvissun/status/2100951347080421409">NewsJack 品牌新闻匹配</a></b><br><sub>elvissun · X · ♥ 3.9k · 2026-09-18</sub><br>读完早上的 384 条新闻，告诉 15 个品牌各自该蹭哪几条，用时 24.9 秒、花费 $0.19，而 Claude Opus 5 花 $0.77 只处理了 4 条；演示附带 30+ 个 PR agent skill。<br><sub><b>Jev 用法:</b> 每个新闻-品牌组合一个相关性问题。</sub><br><sub>相关: <a href="http://newsjack.sh">site</a> · <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/elvissun/status/2100951347080421409">NewsJack 品牌新闻匹配</a></b><br><sub>elvissun · X · ♥ 3.9k · 2026-09-18</sub><br>爆火演示，称 Jev 用 24.9 秒、$0.19 读完一早上的 384 条新闻并为 15 个品牌挑出该蹭的新闻，而 Claude Opus 5 只处理了 4 条、花了 $0.77；所附演示默认跑的是模拟引擎，这些数字只是作者自己的说法。<br><sub><b>Jev 用法:</b> 每条新闻两次请求：第一次只评新闻本身（编辑部、报道类型、六个 0-4 分数），第二次为 15 家公司一共问 90 个问题；各公司的题目文字一字不差，而问题 ID 不会发给模型。</sub><br><sub>相关: <a href="http://newsjack.sh">site</a> · <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/irabukht/status/2101090579127951694"><img src="https://pbs.twimg.com/amplify_video_thumb/2101089408099516416/img/Smzn-jtE8prvdY90.jpg" alt="基于 Jev 的 Ryze SEO/GEO agent" width="240"></a></td>
@@ -41,7 +41,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/TheMattBerman/status/2101439340588974096"><img src="https://pbs.twimg.com/amplify_video_thumb/2101439290186051584/img/hHD8XIvbYFKj0Bdp.jpg" alt="合成广告焦点小组" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TheMattBerman/status/2101439340588974096">合成广告焦点小组</a></b><br><sub>TheMattBerman · X · ♥ 1.1k · 2026-09-19</sub><br>合成焦点小组：Jev 扮演 30 个买家画像刷了 723 条广告，做出 21,690 次“停下还是划走”的决定，花费 22 美分。<br><sub><b>Jev 用法:</b> 每个画像对每条广告做一次停下/划走决定。</sub></td>
+<td valign="top"><b><a href="https://x.com/TheMattBerman/status/2101439340588974096">合成广告焦点小组</a></b><br><sub>TheMattBerman · X · ♥ 1.1k · 2026-09-19</sub><br>帖子称 Jev 以 30 种买家画像刷了 723 条广告，做出 21,690 次“停下还是划走”的判断，花费 22 美分；代码未公开，也没有拿这些判断对照真实投放数据，只能当初筛参考。<br><sub><b>Jev 用法:</b> 据帖子描述，每个画像对每条广告做一次停下/划走判断；Jev 只读文字，广告要先转成文字描述。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/AlanDaitch/status/2100757989212754085"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2100757808484438017/pu/img/bydnTNNexLUnwB63.jpg" alt="二手购物 agent" width="240"></a></td>
@@ -69,7 +69,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/elvissun/status/2101003509734977816"><img src="https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg" alt="newsjack" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/elvissun/status/2101003509734977816">newsjack</a></b><br><sub>elvissun · X · ♥ 162 · 2026-09-18</sub><br>开源的 PR agent skill 集，其 Jev 模式会在昂贵步骤运行前先评判每条被监控的标题，8 秒处理约 200 条信号，花费约一美分，在他们的评测中没有漏掉任何一条新闻。<br><sub>相关: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/elvissun/status/2101003509734977816">newsjack</a></b><br><sub>elvissun · X · ♥ 162 · 2026-09-18</sub><br>宣布 NewsJack 的 Jev 模式：在昂贵步骤之前先由 Jev 评判每条被监控的标题；评测中 176 条信号用时 8.3 秒、约 $0.013，但与原 Haiku 流程的留/丢一致率只有 76.7%，低于团队自定的 85% 上线线。<br><sub>相关: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/aresotik/status/2100949805573030378"><img src="https://pbs.twimg.com/amplify_video_thumb/2100949769858478080/img/VXs1HGHyqEXK0_oP.jpg" alt="Maxfusion 广告分类" width="240"></a></td>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer"><img src="https://repository-images.githubusercontent.com/1243618131/31c6d55a-1dd4-4fff-be6b-d43ac5f53fe5" alt="News Desk Dealer" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer">News Desk Dealer</a></b><br><sub>elvisun · GitHub · ⭐ 1.3k 仓库 · 2026-05-19</sub><br>Newsjack PR agent 仓库中的演示，让 Jev 和 Claude Opus 5 并排评判同一批 Google News 标题，给出版面、报道类型和新闻价值评分；实测 Jev 每次调用约 190 毫秒，Opus 要 4 到 6 秒。<br><sub>相关: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer">News Desk Dealer</a></b><br><sub>elvisun · GitHub · ⭐ 1.3k 仓库 · 2026-05-19</sub><br>NewsJack 仓库里的演示，让 Jev 和 Claude Opus 5 并排评判同一批 Google News 标题；默认跑的是模拟引擎，切到真实模式时 Jev 每次调用约 190 毫秒，Opus 要 4 到 6 秒。<br><sub>相关: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/stas4000/jev-linkmap"><img src="https://raw.githubusercontent.com/stas4000/jev-linkmap/main/docs/report.png" alt="jev-linkmap" width="240"></a></td>

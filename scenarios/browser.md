@@ -21,7 +21,7 @@ Agents that click, type, and navigate real browsers, desktops, and phones. 128 e
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/awlevin/typesafe-computer-use"><img src="https://raw.githubusercontent.com/awlevin/typesafe-computer-use/main/docs/banner.svg" alt="typesafe-computer-use" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/awlevin/typesafe-computer-use">typesafe-computer-use</a></b><br><sub>awlevin · GitHub · ⭐ 769 · 2026-09-16</sub><br>Computer-use agent for macOS that OCRs the screen, has Jev classify the next action from the extracted controls and clicks, for about $0.0002 a step, calling a writing model only for free-text fields.<br><sub><b>How it uses Jev:</b> A Choice over up to 255 deterministically extracted actions per step, gated on its confidence.</sub><br><sub>Also: <a href="https://news.ycombinator.com/item?id=49733647">discussion</a> · <a href="https://x.com/awlevin/status/2100262612428894676">demo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/awlevin/typesafe-computer-use">typesafe-computer-use</a></b><br><sub>awlevin · GitHub · ⭐ 769 · 2026-09-16</sub><br>Computer-use agent for macOS that reads the screen with OCR and the accessibility tree, has Jev pick the next action and target, and clicks, for about $0.0002 a step, calling a writing model only for free-text fields.<br><sub><b>How it uses Jev:</b> One request per step with three Choices (action kind, screen item, site), plus one for off-screen controls; a click's confidence is the lower of two answers, and the loop stops below 0.4.</sub><br><sub>Also: <a href="https://news.ycombinator.com/item?id=49733647">discussion</a> · <a href="https://x.com/awlevin/status/2100262612428894676">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/milind-soni/tiptour-macos"><img src="https://raw.githubusercontent.com/milind-soni/tiptour-macos/main/gemnew.png" alt="TipTour" width="240"></a></td>
@@ -37,7 +37,7 @@ Agents that click, type, and navigate real browsers, desktops, and phones. 128 e
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2101640575812239406"><img src="https://pbs.twimg.com/amplify_video_thumb/2101632970717007872/img/lcQeA281BT79Pjt5.jpg" alt="Jev + DeepSeek form-filling agent" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101640575812239406">Jev + DeepSeek form-filling agent</a></b><br><sub>SUOHA_AI · X · ♥ 173 · 2026-09-20</sub><br>Browser agent that filled a 16-question application form on an unfamiliar site in 38 seconds, with Jev choosing each action and DeepSeek V4.1 Flash writing the text answers.<br><sub><b>How it uses Jev:</b> Choice of click, check or submit per page; a small LLM only fills text fields.</sub></td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101640575812239406">Jev + DeepSeek form-filling agent</a></b><br><sub>SUOHA_AI · X · ♥ 173 · 2026-09-20</sub><br>Demo post in which, the author says, a Jev plus DeepSeek V4.1 Flash browser agent filled a 16-question form on an unfamiliar site in 38 seconds; no code has been released, so the setup cannot be checked.<br><sub><b>How it uses Jev:</b> Per the post, Jev decides whether to check, click or submit on each new page and DeepSeek writes the fill-in answers.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sarah_edo/status/2102025642862600634"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2102025557969862656/pu/img/TDga5vamGpk6CRqZ.jpg" alt="WebMCP side panel" width="240"></a></td>
@@ -49,7 +49,7 @@ Agents that click, type, and navigate real browsers, desktops, and phones. 128 e
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2102091983292358839"><img src="https://pbs.twimg.com/amplify_video_thumb/2102088489231609856/img/AJle7-1PDPdXWJ6d.jpg" alt="Automated mock certification exam" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2102091983292358839">Automated mock certification exam</a></b><br><sub>SUOHA_AI · X · ♥ 755 · 2026-09-21</sub><br>Browser automation that completed an Alibaba Cloud AI engineer mock exam on an unseen page in 21 seconds, answering 25 questions at 80% accuracy, with Jev deciding each step and DeepSeek filling text.</td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2102091983292358839">Automated mock certification exam</a></b><br><sub>SUOHA_AI · X · ♥ 755 · 2026-09-21</sub><br>Demo post in which, the author says, his Jev plus DeepSeek browser agent answered 25 questions of an Alibaba Cloud AI engineer mock exam in 21 seconds at 80%; the agent's code has not been released.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/cline/plugins/tree/main/plugins/jev-browser"><img src="https://github.com/user-attachments/assets/063c98fa-0067-40fb-af96-3714d8e017a5" alt="Cline jev-browser plugin" width="240"></a></td>
@@ -149,7 +149,7 @@ Agents that click, type, and navigate real browsers, desktops, and phones. 128 e
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SSHCodes/status/2101026313871970721"><img src="https://pbs.twimg.com/amplify_video_thumb/2101026173631217664/img/icEy9hbMZ8lMNbQV.jpg" alt="Browser-agent stress test" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SSHCodes/status/2101026313871970721">Browser-agent stress test</a></b><br><sub>SSHCodes · X · ♥ 26 · 2026-09-18</sub><br>Non-cheated browser-use test in which Jev completed about 5 actions before collapsing, with the author concluding it is not suited to browser agents.</td>
+<td valign="top"><b><a href="https://x.com/SSHCodes/status/2101026313871970721">Browser-agent stress test</a></b><br><sub>SSHCodes · X · ♥ 26 · 2026-09-18</sub><br>Post reporting that Jev completed about 5 actions before collapsing in a non-cheated browser test, concluding it is not suited to browser agents; the post does not describe the task or setup.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/affirmitv/ghosthands"><img src="https://opengraph.githubassets.com/1/affirmitv/ghosthands" alt="ghosthands" width="240"></a></td>

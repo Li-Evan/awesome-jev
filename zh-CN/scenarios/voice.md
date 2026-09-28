@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/jackcheng/status/2100729670991802386"><img src="https://pbs.twimg.com/amplify_video_thumb/2100729243185324032/img/YNw8njfnSXu-Tbyr.jpg" alt="指点加语音的画布" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jackcheng/status/2100729670991802386">指点加语音的画布</a></b><br><sub>jackcheng · X · ♥ 5k · 2026-09-17</sub><br>用摄像头指点加说话来控制的白板画布：语音、手指位置和画布形状都发给 Jev，由它在约 167 毫秒 内选出动作、目标和位置。<br><sub><b>Jev 用法:</b> 每段话语七个问题，覆盖动作、目标形状和区域，以语音、手指和画布作为 state。</sub></td>
+<td valign="top"><b><a href="https://x.com/jackcheng/status/2100729670991802386">指点加语音的画布</a></b><br><sub>jackcheng · X · ♥ 5k · 2026-09-17</sub><br>用摄像头指点加说话来控制的白板画布，由 Jev 选出动作、目标和位置；帖子只有一段视频，没有附代码和数据，其中一帧显示这一轮判断用了 262 毫秒。<br><sub><b>Jev 用法:</b> 没有公开说明；视频画面显示 Jev 为每句话选出动作和画布上的位置。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/moritzkremb/status/2100577979021832365"><img src="https://pbs.twimg.com/amplify_video_thumb/2100577954338373633/img/tbH43kHpUotE3hzK.jpg" alt="实时语音控制浏览器" width="240"></a></td>
@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/uezochan/status/2100608556823388486"><img src="https://pbs.twimg.com/amplify_video_thumb/2100607043837321217/img/mx7Fv1mctyBoigHx.jpg" alt="AIAvatarKit 话轮结束闸门" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/uezochan/status/2100608556823388486">AIAvatarKit 话轮结束闸门</a></b><br><sub>uezochan · X · ♥ 443 · 2026-09-17</sub><br>语音对话的话轮结束检测：语音停止 0.5 秒后，Jev 为用户是否说完打分，分数决定额外的保持时间，Jev 耗时约 0.22 秒。<br><sub><b>Jev 用法:</b> 每次停顿后给话轮完成度打一个 Score，映射为额外的保持超时。</sub><br><sub>相关: <a href="https://github.com/uezo/aiavatarkit">repo</a> · <a href="https://github.com/uezo/aiavatarkit">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/uezochan/status/2100608556823388486">AIAvatarKit 话轮结束闸门</a></b><br><sub>uezochan · X · ♥ 443 · 2026-09-17</sub><br>语音对话的话轮结束检测：语音停止 0.5 秒后，Jev 给出助手应继续保持沉默、把话轮留给用户的概率，并据此决定额外等待时间，Jev 耗时约 0.22 秒。<br><sub><b>Jev 用法:</b> 基于转录文本、已录时长和静音时长的“保持话轮”Noul，按概率区间（0.6、0.8、0.9）映射为额外等待时间。</sub><br><sub>相关: <a href="https://github.com/uezo/aiavatarkit">repo</a> · <a href="https://github.com/uezo/aiavatarkit">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zain_hoda/status/2100720719470494126"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720243693789185/img/TnF1XmT4r9kx3jSM.jpg" alt="演讲时实时切换幻灯片" width="240"></a></td>
@@ -173,7 +173,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/gaborishka/jev-canvas"><img src="https://raw.githubusercontent.com/gaborishka/jev-canvas/main/docs/demo.gif" alt="jev-canvas" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gaborishka/jev-canvas">jev-canvas</a></b><br><sub>gaborishka · GitHub · ⭐ 2 · 2026-09-19</sub><br>浏览器演示：一边对着摄像头指点，一边说“在这里画一个黄色圆”之类的命令，Jev 在 tldraw 画布上决定动作、形状、颜色、目标和位置，每个口述词约 350 毫秒。<br><sub><b>Jev 用法:</b> 每次得到部分转录时问八个类型化问题（是否是命令、是否说完、动作、形状、颜色、目标、位置、大小），由代码中的阈值把关。</sub></td>
+<td valign="top"><b><a href="https://github.com/gaborishka/jev-canvas">jev-canvas</a></b><br><sub>gaborishka · GitHub · ⭐ 2 · 2026-09-19</sub><br>浏览器演示：一边对着摄像头指点，一边说“在这里画一个黄色圆”之类的命令，Jev 在 tldraw 画布上决定动作、形状、颜色、目标和位置，每次判断 300 到 550 毫秒。<br><sub><b>Jev 用法:</b> 每次得到部分转录时问八个类型化问题（是否是命令、是否说完、动作、形状、颜色、目标、位置、大小），由代码中的阈值把关。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/opencues/opencues/tree/master/packages/opencues-core/src/decisions"><img src="https://opengraph.githubassets.com/1/opencues/opencues" alt="OpenCues 的决策接入点" width="240"></a></td>

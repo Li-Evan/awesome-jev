@@ -8,8 +8,12 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MoonGotchi/status/2101320141065609294"><img src="https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg" alt="Autonomous onchain trading bot" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MoonGotchi/status/2101320141065609294">Autonomous onchain trading bot</a></b><br><sub>MoonGotchi · X · ♥ 23.9k · 2026-09-19</sub><br>Fully autonomous real-time trading bot built in an evening that ingests onchain and offchain data to make rapid trade decisions; the author reports it has lost $31,680 so far.</td>
+<td width="260" valign="top"><a href="https://x.com/MoonGotchi/status/2101320141065609294"><img src="https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg" alt="&quot;Lost $31,680&quot; trading-bot post" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MoonGotchi/status/2101320141065609294">"Lost $31,680" trading-bot post</a></b><br><sub>MoonGotchi · X · ♥ 23.9k · 2026-09-19</sub><br>Viral post claiming a trading bot built in an evening has lost $31,680; the attached video is Jarrod Watts's jev-trader demo in dry-run mode with simulated fills, so the loss is unverified and likely a joke.</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jarrodwatts/jev-trader"><img src="https://pbs.twimg.com/amplify_video_thumb/2100355999064379392/img/BiAbeDjN57avf2VK.jpg" alt="jev-trader" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jarrodwatts/jev-trader">jev-trader</a></b><br><sub>jarrodwatts · GitHub · ⭐ 1.9k · 2026-09-16</sub><br>Demo bot on Kuru's MON-USDC order book on Monad where Jev answers buy or sell every block (about 300 ms) and code posts a post-only limit order; its spec says it is not trying to be profitable and runs no backtests.<br><sub><b>How it uses Jev:</b> One buy/sell decision per block from the live book; dry-run mode keeps real decisions with simulated fills.</sub><br><sub>Also: <a href="https://x.com/jarrodwatts/status/2100356151468585346">demo</a> · <a href="https://jev-trader.vercel.app">app</a> · <a href="https://www.youtube.com/watch?v=YIEHGt-9cS4">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/abolbuild/status/2100523868913807410"><img src="https://pbs.twimg.com/amplify_video_thumb/2100523731923722240/img/b6b47us-K3FIDHDC.jpg" alt="Jev trading with $10,000" width="240"></a></td>
@@ -18,10 +22,6 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kyotofin/tax-doc-classifier"><img src="https://pbs.twimg.com/amplify_video_thumb/2100973360989773825/img/yMtL6CxrKMVXQEHV.jpg" alt="tax-doc-classifier" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/kyotofin/tax-doc-classifier">tax-doc-classifier</a></b><br><sub>kyotofin · GitHub · ⭐ 351 · 2026-09-18</sub><br>Sorts PDF pages into IRS form types with two Choices for about a tenth of a cent per page, with error rates on labeled test sets.<br><sub>Also: <a href="https://x.com/nedwize/status/2100973868324417852">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/jarrodwatts/jev-trader"><img src="https://pbs.twimg.com/amplify_video_thumb/2100843717791813632/img/BJXB5D_XC7MmmqdN.jpg" alt="jev-trader" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jarrodwatts/jev-trader">jev-trader</a></b><br><sub>jarrodwatts · GitHub · ⭐ 1.9k · 2026-09-16</sub><br>Market-making bot on Kuru's MON-USDC order book on Monad where Jev answers buy or sell every block, about every 300 ms, and each block posts a post-only limit order one tick inside the touch.<br><sub><b>How it uses Jev:</b> One buy/sell decision per block from the live book; dry-run mode keeps real decisions with simulated fills.</sub><br><sub>Also: <a href="https://jev-trader.vercel.app">app</a> · <a href="https://www.youtube.com/watch?v=YIEHGt-9cS4">video</a> · <a href="https://jev-trader.vercel.app">app 2</a> · <a href="https://x.com/tonnoz/status/2100844854490103835">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/virattt/ai-hedge-fund/blob/main/hedge_fund/llm/client.py"><img src="https://opengraph.githubassets.com/1/virattt/ai-hedge-fund" alt="AI Hedge Fund Jev adapter" width="240"></a></td>
@@ -37,7 +37,7 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2101275294451515740"><img src="https://pbs.twimg.com/amplify_video_thumb/2101274788513693696/img/Gj7UchuQIdpkqvAz.jpg" alt="Jev Trader (Inverse)" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101275294451515740">Jev Trader (Inverse)</a></b><br><sub>SUOHA_AI · X · ♥ 454 · 2026-09-19</sub><br>Inverse version of the Monad Jev trading demo that mirrors every order, selling when the original buys and buying when it sells, one decision per block.<br><sub>Also: <a href="https://suoha-jev-trader.vercel.app/">app</a> · <a href="https://github.com/jarrodwatts/jev-trader">original</a> · <a href="https://suoha-jev-trader.vercel.app">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101275294451515740">Jev Trader (Inverse)</a></b><br><sub>SUOHA_AI · X · ♥ 454 · 2026-09-19</sub><br>Inverse copy of the Monad jev-trader demo that takes the opposite side of every decision, one per block; its dashboard runs in dry-run mode, so the fills are simulated rather than real orders.<br><sub>Also: <a href="https://suoha-jev-trader.vercel.app/">app</a> · <a href="https://github.com/jarrodwatts/jev-trader">original</a> · <a href="https://suoha-jev-trader.vercel.app">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nutlope/jev-fraud"><img src="https://pbs.twimg.com/amplify_video_thumb/2100608348219478016/img/23vFEVMegwLrMa8g.jpg" alt="Jev + Kimi K3 fraud detection" width="240"></a></td>
@@ -77,7 +77,7 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py"><img src="https://repository-images.githubusercontent.com/1124295269/0b9abcd4-9cb2-4f7c-8401-7a53b1bc2362" alt="QuantDinger Jev pre-trade gate" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py">QuantDinger Jev pre-trade gate</a></b><br><sub>OpenByteInc · GitHub · ⭐ 12k repo · 2026-09-19</sub><br>Opt-in live pre-trade gate in QuantDinger, a self-hosted AI trading platform, that sends strategy, market, position and exposure state to Jev Choice questions and blocks rejected entries, with an LLM fallback.<br><sub>Also: <a href="https://github.com/OpenByteInc/QuantDinger">repo</a> · <a href="https://ai.quantdinger.com">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py">QuantDinger Jev pre-trade gate</a></b><br><sub>OpenByteInc · GitHub · ⭐ 12k repo · 2026-09-19</sub><br>Opt-in pre-trade gate in the self-hosted QuantDinger platform: six Jev Choices review each live entry or add and rejected ones are blocked; if Jev and the LLM fallback both fail, the order goes through (fail-open).<br><sub>Also: <a href="https://github.com/OpenByteInc/QuantDinger">repo</a> · <a href="https://ai.quantdinger.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zway_ai/status/2100921636597969361"><img src="https://pbs.twimg.com/media/HSf2_s-aMAAMXwh.jpg" alt="Jev for financial research" width="240"></a></td>
@@ -173,7 +173,7 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xKaspie/status/2102052707024466181"><img src="https://pbs.twimg.com/amplify_video_thumb/2102051838132473856/img/FXE7gWkLy1n96My3.jpg" alt="Jev autonomous trading bot" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xKaspie/status/2102052707024466181">Jev autonomous trading bot</a></b><br><sub>0xKaspie · X · ♥ 12 · 2026-09-21</sub><br>Autonomous trading bot that watches on-chain and off-chain data in real time and lets Jev make each trade decision, reporting 90 fills at a 74.6% hit rate.</td>
+<td valign="top"><b><a href="https://x.com/0xKaspie/status/2102052707024466181">Jev autonomous trading bot</a></b><br><sub>0xKaspie · X · ♥ 12 · 2026-09-21</sub><br>Post showing a jev-trader-style bot on Solana's Phoenix SOL/USDC book; the video's dashboard is in dry-run mode, so its 90 fills and 74.6% hit rate are simulated, not real trades.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sosopop/jev_stock"><img src="https://raw.githubusercontent.com/sosopop/jev_stock/main/assets/jev-prediction-report-example.png" alt="jev_stock" width="240"></a></td>
@@ -217,7 +217,7 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 </tr>
 <tr>
 <td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/shortaktien/status/2100921927241998496">Revamped Jev trading bot</a></b><br><sub>shortaktien · X · ▶ 847 · 2026-09-18</sub><br>Trading bot reworked around Jev with a live viewer for its trades; the author reports smaller losses but no clear performance gain.<br><sub>Also: <a href="https://jev-trader-live-viewer.mrypcv7pwh.chatgpt.site/?v=9">app</a></sub></td>
+<td valign="top"><b><a href="https://x.com/shortaktien/status/2100921927241998496">Revamped Jev trading bot</a></b><br><sub>shortaktien · X · ▶ 847 · 2026-09-18</sub><br>Rework of the jev-trader demo around Jev with a live viewer that runs in paper mode; the author reports smaller losses but no clear performance gain.<br><sub>Also: <a href="https://jev-trader-live-viewer.mrypcv7pwh.chatgpt.site/?v=9">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rthomas24/jev-realtime-trading"><img src="https://raw.githubusercontent.com/rthomas24/jev-realtime-trading/main/docs/media/hero.png" alt="Jev Realtime" width="240"></a></td>

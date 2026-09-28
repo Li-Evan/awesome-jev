@@ -9,7 +9,7 @@
 <table>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tamaratran/fast-jev-compaction"><img src="https://external-preview.redd.it/MGlnNDRiMG1xYXFoMV6tliTw1N13OJYLOxukOcY6kypXBn-V9gWyZw5eTACt.png?format=pjpg&amp;auto=webp&amp;s=fb4a34a2ae0aa5577c81ee2b59363e6950096c7c" alt="fast-jev-compaction" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tamaratran/fast-jev-compaction">fast-jev-compaction</a></b><br><sub>tamaratran · GitHub · ⭐ 6.1k · 2026-09-17</sub><br>Claude Code 插件，用针对每个工具调用的保留/丢弃 Noul 取代压缩摘要；请从 GitHub 安装，因为 npm 上同名的包来自另一个发布者。<br><sub>相关: <a href="https://x.com/Elizaium/status/2101081763812360471">demo</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wjjpk0/compaction_isnt_summarization_anymore_but/">discussion</a> · <a href="https://www.reddit.com/r/accelerate/comments/1wjt68i/found_the_perfect_use_case_for_typesafeai_jev/">discussion 2</a> · <a href="https://x.com/tamarajtran/status/2100694549362553153">demo 2</a> · <a href="https://x.com/altryne/status/2100739055923425589">demo 3</a></sub></td>
+<td valign="top"><b><a href="https://github.com/tamaratran/fast-jev-compaction">fast-jev-compaction</a></b><br><sub>tamaratran · GitHub · ⭐ 6.1k · 2026-09-17</sub><br>Claude Code 插件，用每个工具调用两个 Noul（是否保留调用、是否保留结果）取代压缩摘要；Nous Research 实测默认阈值 0.5 下 851 个调用一个都没留。npm 上的同名包来自另一个发布者，请从 GitHub 安装。<br><sub>相关: <a href="https://x.com/Elizaium/status/2101081763812360471">demo</a> · <a href="https://www.reddit.com/r/LLMDevs/comments/1wjjpk0/compaction_isnt_summarization_anymore_but/">discussion</a> · <a href="https://www.reddit.com/r/accelerate/comments/1wjt68i/found_the_perfect_use_case_for_typesafeai_jev/">discussion 2</a> · <a href="https://x.com/tamarajtran/status/2100694549362553153">demo 2</a> · <a href="https://x.com/altryne/status/2100739055923425589">demo 3</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/rafalwilinski/status/2100882207879434359"><img src="https://pbs.twimg.com/amplify_video_thumb/2100881920343105536/img/c1y4THiGwA2GfXGa.jpg" alt="对抗式浏览器发布测试" width="240"></a></td>
@@ -121,7 +121,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/daniel-farina/nitro"><img src="https://pbs.twimg.com/media/HSrhykQXYAAkMPS.jpg" alt="Nitro" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/daniel-farina/nitro">Nitro</a></b><br><sub>daniel-farina · GitHub · ⭐ 4 · 2026-09-20</sub><br>Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在相同任务上成本降低 22% 到 40%。<br><sub><b>Jev 用法:</b> 每个工具一个 Noul（完成这个请求是否需要该工具？），全部放在一次约 350 毫秒的请求里。</sub><br><sub>相关: <a href="https://x.com/Daniel_Farinax/status/2101749959980728575">write-up</a></sub></td>
+<td valign="top"><b><a href="https://github.com/daniel-farina/nitro">Nitro</a></b><br><sub>daniel-farina · GitHub · ⭐ 4 · 2026-09-20</sub><br>Grok Build 的一个变体，每轮由 Jev 判断一次这个请求会用到 25 个工具中的哪些，把工具 schema 从约 11K token 压到 2.9K，在三个任务上成本降低 14% 到 40%（每项只跑两次）。<br><sub><b>Jev 用法:</b> 每个工具一个 Noul（完成这个请求是否需要该工具？），全部放在一次约 350 毫秒的请求里。</sub><br><sub>相关: <a href="https://x.com/Daniel_Farinax/status/2101749959980728575">write-up</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tinacms/tinacms/blob/main/.github/scripts/dedupe-issue.mts"><img src="https://repository-images.githubusercontent.com/198488459/200ad980-a2be-11eb-8762-156abf2914f7" alt="TinaCMS 的 issue 去重器" width="240"></a></td>
@@ -708,7 +708,7 @@
 - **[dsh-jev-prune](https://github.com/yangyu666/dsh-jev-prune)** · <sub>yangyu666 · GitHub · ⭐ 3 · 2026-09-21</sub><br>DeepSeek Harness 插件，用 Jev 的保留/丢弃判断取代按大小裁剪工具结果和基于摘要的压缩，另有确定性的回执压缩，判断后端可插拔。
 - **[fast-compaction-dsh](https://github.com/kolawong/fast-compaction-dsh)** · <sub>kolawong · GitHub · ⭐ 3 · 2026-09-20</sub><br>fast-jev-compaction 的 DeepSeek Harness 移植版，用逐次调用的保留、截断或丢弃决策取代有损的摘要，保留下来的内容全部原样保存。
 - **[fast-dev-compaction](https://github.com/leonaaardob/fast-dev-compaction)** · <sub>leonaaardob · GitHub · ⭐ 3 · 2026-09-18</sub><br>fast-jev-compaction 的 Codex 移植版：在 Codex 压缩之前，由 Jev 给每个工具调用及其结果打分，压缩后再把保留下来的原始历史重新注入；作者称其为实验性的概念验证。
-- **[jcm-router](https://github.com/adarshmishra07/jcm-router)** · <sub>adarshmishra07 · GitHub · ⭐ 3 · 2026-09-17</sub><br>位于 Claude Code 和 Anthropic API 之间的本地代理，用 Jev 为每条消息选择模型和推理强度；日志显示主对话中切换模型会因缓存重写损失 $19.53，因此它只对子 agent 做路由。
+- **[jcm-router](https://github.com/adarshmishra07/jcm-router)** · <sub>adarshmishra07 · GitHub · ⭐ 3 · 2026-09-17</sub><br>位于 Claude Code 和 Anthropic API 之间的本地代理，用 Jev 为每条消息选择模型和推理强度；早期版本整体多花 $19.53，其中 $17.12 来自主对话切换模型导致的缓存重写，现在子 agent 照常路由，主对话只在切换划算时才换。
 - **[Jev Auto Router](https://github.com/miniLV/Jev-Auto-Router)** · <sub>miniLV · GitHub · ⭐ 3 · 2026-08-01</sub><br>Codex 本地 Responses 代理的原型，由 Jev 为每次模型调用选择 GPT 模型和推理强度，之后再独立检查任务是否真的完成。
 - **[Jev Codex Token Saver](https://github.com/jcressler/jev-codex-token-saver)** · <sub>jcressler · GitHub · ⭐ 3 · 2026-09-19</sub><br>Codex 插件，其 MCP 服务器在本地收集搜索和日志证据，让 Jev 给一个有界的候选包打相关性分数，只返回选中的原文片段，把大体积结果挡在上下文之外。
 - **[Jev Workflows for Codex](https://github.com/integrate-your-mind/jev-codex-plugin)** · <sub>integrate-your-mind · GitHub · ⭐ 3 · 2026-09-18</sub><br>Codex 插件，包含一个 MCP 服务器、十二个生命周期适配器和三个 skill，会就工具、模型、skill 和策略征询 Jev，诊断失败的命令，并对照证据核查“已完成”的说法。

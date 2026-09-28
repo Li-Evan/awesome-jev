@@ -21,7 +21,7 @@ Product catalogs, ads, reviews, pricing, and marketing workflows. 45 entries, ra
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/elvissun/status/2100951347080421409"><img src="https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg" alt="NewsJack brand news matching" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/elvissun/status/2100951347080421409">NewsJack brand news matching</a></b><br><sub>elvissun · X · ♥ 3.9k · 2026-09-18</sub><br>Reads 384 morning news stories and tells 15 brands which ones to jump on, in 24.9 seconds for $0.19, while Claude Opus 5 got through 4 stories for $0.77; the demo ships with 30+ PR agent skills.<br><sub><b>How it uses Jev:</b> One relevance question per story-brand pair.</sub><br><sub>Also: <a href="http://newsjack.sh">site</a> · <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/elvissun/status/2100951347080421409">NewsJack brand news matching</a></b><br><sub>elvissun · X · ♥ 3.9k · 2026-09-18</sub><br>Viral demo claiming Jev read 384 morning stories for 15 brands in 24.9 s for $0.19 while Claude Opus 5 got through 4 for $0.77; the linked demo runs a mock engine by default, so the figures are the author's own.<br><sub><b>How it uses Jev:</b> Two requests per story: one rates the story itself (desk, type, six 0-4 scores), one asks 90 questions for 15 companies; the per-company text is identical and question IDs never reach the model.</sub><br><sub>Also: <a href="http://newsjack.sh">site</a> · <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/irabukht/status/2101090579127951694"><img src="https://pbs.twimg.com/amplify_video_thumb/2101089408099516416/img/Smzn-jtE8prvdY90.jpg" alt="Ryze SEO/GEO agents on Jev" width="240"></a></td>
@@ -41,7 +41,7 @@ Product catalogs, ads, reviews, pricing, and marketing workflows. 45 entries, ra
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/TheMattBerman/status/2101439340588974096"><img src="https://pbs.twimg.com/amplify_video_thumb/2101439290186051584/img/hHD8XIvbYFKj0Bdp.jpg" alt="Synthetic ad focus group" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/TheMattBerman/status/2101439340588974096">Synthetic ad focus group</a></b><br><sub>TheMattBerman · X · ♥ 1.1k · 2026-09-19</sub><br>Synthetic focus group where Jev scrolled 723 ads as 30 buyer personas, making 21,690 stop-or-scroll decisions for 22 cents.<br><sub><b>How it uses Jev:</b> One stop/scroll decision per ad per persona.</sub></td>
+<td valign="top"><b><a href="https://x.com/TheMattBerman/status/2101439340588974096">Synthetic ad focus group</a></b><br><sub>TheMattBerman · X · ♥ 1.1k · 2026-09-19</sub><br>Post claiming Jev scrolled 723 ads as 30 buyer personas, making 21,690 stop-or-scroll calls for 22 cents; the code is unpublished and the calls were not checked against real ad results, so treat it as a first screen.<br><sub><b>How it uses Jev:</b> Per the post, one stop-or-scroll judgment per ad per persona; Jev reads text only, so each ad must first be turned into words.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/AlanDaitch/status/2100757989212754085"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2100757808484438017/pu/img/bydnTNNexLUnwB63.jpg" alt="Second-hand shopping agent" width="240"></a></td>
@@ -69,7 +69,7 @@ Product catalogs, ads, reviews, pricing, and marketing workflows. 45 entries, ra
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/elvissun/status/2101003509734977816"><img src="https://pbs.twimg.com/amplify_video_thumb/2100951319108567040/img/AZ1jFv9ySdRV-JYE.jpg" alt="newsjack" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/elvissun/status/2101003509734977816">newsjack</a></b><br><sub>elvissun · X · ♥ 162 · 2026-09-18</sub><br>Open-source PR agent skills whose Jev mode judges every monitored headline before expensive steps run, handling ~200 signals in 8 seconds for about a cent with zero dropped stories in their eval.<br><sub>Also: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/elvissun/status/2101003509734977816">newsjack</a></b><br><sub>elvissun · X · ♥ 162 · 2026-09-18</sub><br>Post announcing NewsJack's Jev mode, which judges each monitored headline before costlier steps: 176 signals in 8.3 s for about $0.013, with only 76.7% keep-or-drop agreement with the Haiku worker, below the 85% bar.<br><sub>Also: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a> · <a href="https://github.com/elvisun/newsjack">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/aresotik/status/2100949805573030378"><img src="https://pbs.twimg.com/amplify_video_thumb/2100949769858478080/img/VXs1HGHyqEXK0_oP.jpg" alt="Maxfusion ad classification" width="240"></a></td>
@@ -117,7 +117,7 @@ Product catalogs, ads, reviews, pricing, and marketing workflows. 45 entries, ra
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer"><img src="https://repository-images.githubusercontent.com/1243618131/31c6d55a-1dd4-4fff-be6b-d43ac5f53fe5" alt="News Desk Dealer" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer">News Desk Dealer</a></b><br><sub>elvisun · GitHub · ⭐ 1.3k repo · 2026-05-19</sub><br>Demo in the Newsjack PR-agent repo that has Jev and Claude Opus 5 judge the same Google News headlines side by side for desk, story type and newsworthiness scores; live Jev ran about 190 ms per call versus 4 to 6 s for Opus.<br><sub>Also: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/elvisun/newsjack/tree/main/demos/news-desk-dealer">News Desk Dealer</a></b><br><sub>elvisun · GitHub · ⭐ 1.3k repo · 2026-05-19</sub><br>Demo in the NewsJack repo that has Jev and Claude Opus 5 judge the same Google News headlines side by side; it runs a mock engine by default, and in live mode Jev took about 190 ms per call versus 4 to 6 s for Opus.<br><sub>Also: <a href="https://github.com/elvisun/newsjack">repo</a> · <a href="https://newsjack.sh">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/stas4000/jev-linkmap"><img src="https://raw.githubusercontent.com/stas4000/jev-linkmap/main/docs/report.png" alt="jev-linkmap" width="240"></a></td>

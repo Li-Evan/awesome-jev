@@ -225,7 +225,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/caiovicentino/jev-shield"><img src="https://opengraph.githubassets.com/1/caiovicentino/jev-shield" alt="jev-shield" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/caiovicentino/jev-shield">jev-shield</a></b><br><sub>caiovicentino · GitHub · ⭐ 3 · 2026-09-17</sub><br>位于任意 stdio MCP 客户端与服务器之间的语义 MCP 防火墙，筛查每次工具调用、结果和描述；报告的拦截召回率为 94%，误报为 0，每次检查约 $0.00002。<br><sub><b>Jev 用法:</b> 在确定性结构检查之上叠加一层校准的 System One 验证。</sub></td>
+<td valign="top"><b><a href="https://github.com/caiovicentino/jev-shield">jev-shield</a></b><br><sub>caiovicentino · GitHub · ⭐ 3 · 2026-09-17</sub><br>位于任意 stdio MCP 客户端与服务器之间的语义 MCP 防火墙，筛查工具调用、结果和描述；在作者自建的 56 个用例上拦下 35 个攻击中的 33 个、无误报，每次检查约 $0.00003。<br><sub><b>Jev 用法:</b> 在确定性结构检查之上叠加一层校准的 System One 验证。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/CodeAlive-AI/mastra-jev-moderation"><img src="https://opengraph.githubassets.com/1/CodeAlive-AI/mastra-jev-moderation" alt="mastra-jev-moderation" width="240"></a></td>

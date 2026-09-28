@@ -41,7 +41,7 @@ Ticket routing, email triage, lead scoring, and CRM automation. 43 entries, rank
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok and Jev lead screener" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok and Jev lead screener</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>Lead-qualification pipeline where Jev answers 6 questions on each of 3,412 leads (20,472 decisions in 15.7 seconds for $0.41) and Grok 4.7 only drafts outreach for the leads worth reading.<br><sub><b>How it uses Jev:</b> Six yes/no, pick-one or score questions per lead gate what the LLM reads.</sub></td>
+<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok and Jev lead screener</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>Post claiming Jev answered 6 questions on each of 3,412 leads in 15.7 s for $0.41 before Grok 4.7 drafted outreach; no code was shared and that speed exceeds TypeSafe's default rate limits, so it is unverified.<br><sub><b>How it uses Jev:</b> Six yes/no, pick-one or score questions per lead gate what the LLM reads.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="Outreach signals that book demos" width="240"></a></td>
@@ -89,7 +89,7 @@ Ticket routing, email triage, lead scoring, and CRM automation. 43 entries, rank
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/malekoo/status/2100439840575684910"><img src="https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig" alt="Jev in-app help for a Mac app" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Jev in-app help for a Mac app</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>In-app help for a Mac app that works with no model loaded: Jev reads the question against the built-in manual and picks the matching article or none, scoring 42/42 with a median 0.93 s.<br><sub><b>How it uses Jev:</b> Choice over manual articles plus a no-match option, with the whole manual as state.</sub></td>
+<td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Jev in-app help for a Mac app</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>In-app help for a Mac app that works with no model loaded: Jev reads the question against the built-in manual and picks the matching article or none, routing 42/42 held-out prompts correctly with a median 0.93 s.<br><sub><b>How it uses Jev:</b> One request per turn with the whole 11-article manual as state: eight Nouls plus one Choice over the articles or none; code routes on the probabilities, so a low 'documented' Noul overrides the Choice.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>

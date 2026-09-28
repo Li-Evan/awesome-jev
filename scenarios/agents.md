@@ -45,7 +45,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev"><img src="https://raw.githubusercontent.com/tinyhumansai/openhuman/main/gitbooks/.gitbook/assets/demo.png" alt="OpenHuman Jev tool ranker" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev">OpenHuman Jev tool ranker</a></b><br><sub>tinyhumansai · GitHub · ⭐ 40k repo · 2026-02-18</sub><br>Tool-search ranker for the OpenHuman agent harness that shortlists deferred tools with BM25 and lets one Jev Choice pick the right one, falling back to BM25 when signed out.<br><sub><b>How it uses Jev:</b> BM25 to 20 candidates, then one Choice with a 3 s deadline, routed through the backend's OpenRouter System One proxy.</sub><br><sub>Also: <a href="https://tinyhumans.ai/openhuman">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/tinyhumansai/openhuman/tree/main/crates/openhuman-tinyhumans/src/jev">OpenHuman Jev tool ranker</a></b><br><sub>tinyhumansai · GitHub · ⭐ 40k repo · 2026-02-18</sub><br>Tool-search ranker for the OpenHuman agent harness: embedding search shortlists 20 tools and one Jev request picks one or none and checks whether a tool is needed; without an embedding provider it skips Jev for BM25.<br><sub><b>How it uses Jev:</b> A Choice over the shortlist plus none and a needs_tool Noul, 6 s deadline; on 160 hand-written requests top-1 rose from 22.5% (BM25 alone) to 62.0%, with false tool picks down from 26 to 1.</sub><br><sub>Also: <a href="https://tinyhumans.ai/openhuman">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/PrefectHQ/fastmcp/blob/main/fastmcp_slim/fastmcp/experimental/transforms/jev_search.py"><img src="https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f-watercolor-waves-2.png" alt="FastMCP Jev tool search" width="240"></a></td>
@@ -325,7 +325,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/anpicasso/hermes-jev-approvals"><img src="https://opengraph.githubassets.com/1/anpicasso/hermes-jev-approvals" alt="hermes-jev-approvals" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/anpicasso/hermes-jev-approvals">hermes-jev-approvals</a></b><br><sub>anpicasso · GitHub · ⭐ 12 · 2026-09-17</sub><br>Provider for Hermes Agent's smart command approvals in which Jev returns APPROVE, DENY or ESCALATE from six typed questions in one request, measured 8.7x faster with 4.4x fewer prompts on 153 real commands.</td>
+<td valign="top"><b><a href="https://github.com/anpicasso/hermes-jev-approvals">hermes-jev-approvals</a></b><br><sub>anpicasso · GitHub · ⭐ 12 · 2026-09-17</sub><br>Provider for Hermes Agent's smart command approvals where Jev returns APPROVE, DENY or ESCALATE from six typed questions; the author's corrected 156-command run shows 9.8x faster, 4.2x fewer prompts, a retest 1.24x.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/tidepool-heavy-industries/tidepool"><img src="https://opengraph.githubassets.com/1/tidepool-heavy-industries/tidepool" alt="Tidepool" width="240"></a></td>

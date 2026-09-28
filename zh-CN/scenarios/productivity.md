@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts"><img src="https://raw.githubusercontent.com/elie222/inbox-zero/main/apps/web/app/opengraph-image.jpg" alt="Inbox Zero 的分类器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts">Inbox Zero 的分类器</a></b><br><sub>elie222 · GitHub · ⭐ 12.3k 仓库 · 2023-07-12</sub><br>把每封邮件的两次 LLM 调用换成一次 Jev 请求：一个 Choice，加上每条用户规则一个是/否判断，出错时回退到 LLM。<br><sub>相关: <a href="https://getinboxzero.com">app</a> · <a href="https://github.com/elie222/inbox-zero">repo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts">Inbox Zero 的分类器</a></b><br><sub>elie222 · GitHub · ⭐ 12.3k 仓库 · 2023-07-12</sub><br>Inbox Zero 中可选启用的决策模型层：把单规则选择、冷邮件判断、发件人分类等邮件决策交给 Jev，多条规则之间的选择仍留给 LLM，Jev 不可用或拿不准时回退到 LLM。<br><sub>相关: <a href="https://getinboxzero.com">app</a> · <a href="https://github.com/elie222/inbox-zero">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/nateherk/status/2101330780702068969"><img src="https://pbs.twimg.com/amplify_video_thumb/2101330596077109249/img/rHj6drEozG36RhLy.jpg" alt="X 信息流实时打标签" width="240"></a></td>
@@ -245,7 +245,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/dabit3/intern"><img src="https://raw.githubusercontent.com/dabit3/intern/main/docs/homepage.png" alt="Intern" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dabit3/intern">Intern</a></b><br><sub>dabit3 · GitHub · ⭐ 6 · 2026-09-19</sub><br>原生 macOS 启动器，能按你记忆中的方式找文件、应用和 Chrome 历史记录，比如“我刚下载的那个 pdf”，每敲一个键都由 Jev 在约 100 毫秒 内判断你指的是哪个候选。<br><sub><b>Jev 用法:</b> 每次按键时对本地找到的候选排序；有明显赢家就预先选中，多个候选可以一起打开或保存为工作区。</sub></td>
+<td valign="top"><b><a href="https://github.com/dabit3/intern">Intern</a></b><br><sub>dabit3 · GitHub · ⭐ 6 · 2026-09-19</sub><br>原生 macOS 启动器，能按你记忆中的方式找文件、应用和 Chrome 历史记录，比如“我刚下载的那个 pdf”；输入停顿 150 毫秒后由 Jev 对本地候选重新排序，约 100 毫秒返回。<br><sub><b>Jev 用法:</b> 输入停顿后才发请求，同样的问题不问第二次；本地结果每次按键都更新，有明显赢家就预先选中，多个候选可以一起打开或保存为工作区。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/vammu920/status/2100591409447174261"><img src="https://pbs.twimg.com/amplify_video_thumb/2100591334474076160/img/hjDNUy7WtIa07suU.jpg" alt="Jev 求职申请扩展" width="240"></a></td>
@@ -309,7 +309,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/valentynkit/jev-skip"><img src="https://raw.githubusercontent.com/valentynkit/jev-skip/main/demo/demo.gif" alt="jev-skip" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/valentynkit/jev-skip">jev-skip</a></b><br><sub>valentynkit · GitHub · ⭐ 3 · 2026-09-18</sub><br>浏览器扩展，在观看时让 Jev 对 YouTube 字幕片段分类，把赞助内容的概率画在进度条上并自动跳过；在 23 个视频上捕获了 SponsorBlock 所标赞助秒数的 77%。<br><sub><b>Jev 用法:</b> 每个字幕片段在五个类别中做一个 Choice，超出预算时拆分成多个请求；每个视频约 $0.0008。</sub></td>
+<td valign="top"><b><a href="https://github.com/valentynkit/jev-skip">jev-skip</a></b><br><sub>valentynkit · GitHub · ⭐ 3 · 2026-09-18</sub><br>浏览器扩展，让 Jev 对 YouTube 字幕片段分类，把赞助内容的概率画在进度条上，并自动跳过把握高的片段；在录制好的答案上回放，它捕获了 23 个视频中 SponsorBlock 所标赞助秒数的 77%。<br><sub><b>Jev 用法:</b> 每个字幕片段在七个类别（正片、赞助、片头、片尾、自我推广、回顾、其他）中做一个 Choice；答案经网关转接录制，每个视频约 $0.0008。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/kalyandechiraju/status/2101338153294635151"><img src="https://pbs.twimg.com/amplify_video_thumb/2101337620911685632/img/CnS-n40rIw1vWwRm.jpg" alt="resume-fit" width="240"></a></td>

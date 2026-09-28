@@ -281,7 +281,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/dabit3/macos-experiments/tree/main/turbo-rerank"><img src="https://raw.githubusercontent.com/dabit3/macos-experiments/main/turbo-rerank/screenshots/turbo-rerank-home.jpg" alt="Turbo Rerank" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dabit3/macos-experiments/tree/main/turbo-rerank">Turbo Rerank</a></b><br><sub>dabit3 · GitHub · ⭐ 8 仓库 · 2026-09-07</sub><br>搜索工作区演示：用一次约 170 毫秒 的 Jev 请求重排 50 个候选，在 40 个查询的标注基准上把 top-1 准确率从 50% 提到 100%。<br><sub><b>Jev 用法:</b> 一次请求针对查询评判每个候选，并检查答案是否存在，也可拆成并行批次。</sub><br><sub>相关: <a href="https://github.com/dabit3/macos-experiments">repo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/dabit3/macos-experiments/tree/main/turbo-rerank">Turbo Rerank</a></b><br><sub>dabit3 · GitHub · ⭐ 8 仓库 · 2026-09-07</sub><br>搜索工作区演示：用一次约 170 毫秒的 Jev 请求重排 50 个候选；在作者自己标注的 40 个查询、代码生成的 598 段语料上，top-1 准确率从 50% 提到 100%（浏览器里重跑一次为 98%）。<br><sub><b>Jev 用法:</b> 一次请求针对查询评判每个候选，并检查答案是否存在，也可拆成并行批次。</sub><br><sub>相关: <a href="https://github.com/dabit3/macos-experiments">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/serpapi/tutorials/tree/master/python_projects/jev-serpapi-fact-checker"><img src="https://opengraph.githubassets.com/1/serpapi/tutorials" alt="Jev 与 SerpApi 事实核查器" width="240"></a></td>

@@ -165,7 +165,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/trungdq88/jev-tetris"><img src="https://raw.githubusercontent.com/trungdq88/jev-tetris/main/docs/battle.png" alt="jev-tetris" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/trungdq88/jev-tetris">jev-tetris</a></b><br><sub>trungdq88 · GitHub · ⭐ 12 · 2026-09-18</sub><br>实时俄罗斯方块对战：Jev 与 Claude Haiku 4.5、Gemini 3.8 Flash 或开放权重的 Laya 在相同的方块序列上对决，没赶上截止时间的方块会就地锁定。<br><sub><b>Jev 用法:</b> 每个方块一出现，就对列和旋转做一个 Choice。</sub><br><sub>相关: <a href="https://jev-tetris.vercel.app">app</a> · <a href="https://jev-tetris.vercel.app">app 2</a> · <a href="https://x.com/tdinh_me/status/2101958041986068848">demo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/trungdq88/jev-tetris">jev-tetris</a></b><br><sub>trungdq88 · GitHub · ⭐ 12 · 2026-09-18</sub><br>实时俄罗斯方块对战：Jev 与 Claude Haiku 4.5、Gemini 3.8 Flash 或开放权重的 Laya 在相同方块序列上对决；合法落点由框架预先算好，作者自己更正说只让 Jev 按键时它基本没用。<br><sub><b>Jev 用法:</b> 每个方块一出现，就在代码枚举并写好后果的合法落点中做一个 Choice；没赶上截止时间的方块会就地锁定。</sub><br><sub>相关: <a href="https://jev-tetris.vercel.app">app</a> · <a href="https://jev-tetris.vercel.app">app 2</a> · <a href="https://x.com/tdinh_me/status/2101958041986068848">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/CharlieMolthrop/status/2100946286136406421"><img src="https://pbs.twimg.com/amplify_video_thumb/2100945687059869696/img/yQvtfBF64zQfczMI.jpg" alt="Whose Jev Is It Anyway?" width="240"></a></td>

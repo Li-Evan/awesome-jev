@@ -21,7 +21,7 @@ Writing feedback, generative UI, music, art, and social media tools. 133 entries
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ChetasLua/jevmeter"><img src="https://raw.githubusercontent.com/ChetasLua/jevmeter/main/docs/banner.jpg" alt="jevmeter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ChetasLua/jevmeter">jevmeter</a></b><br><sub>ChetasLua · GitHub · ⭐ 81 · 2026-09-17</sub><br>CLI that transcribes any video, has Jev score every sentence against a chosen rubric, such as dodging a debate question, and renders the scores as live meters in a 16:9 edit you can post.<br><sub><b>How it uses Jev:</b> Preset Score questions per transcript sentence, aligned to the timeline.</sub><br><sub>Also: <a href="https://x.com/chetaslua/status/2100602714204049588">demo</a> · <a href="https://x.com/chetaslua/status/2100473581251748216">demo 2</a></sub></td>
+<td valign="top"><b><a href="https://github.com/ChetasLua/jevmeter">jevmeter</a></b><br><sub>ChetasLua · GitHub · ⭐ 81 · 2026-09-17</sub><br>CLI that transcribes any video, asks Jev five yes/no questions about every sentence from a chosen preset, such as dodging a debate question, and renders the probabilities as live meters in a 16:9 edit you can post.<br><sub><b>How it uses Jev:</b> Five preset Noul questions per transcript sentence, with the speaker's earlier lines and the last moderator question as context, aligned to the timeline.</sub><br><sub>Also: <a href="https://x.com/chetaslua/status/2100602714204049588">demo</a> · <a href="https://x.com/chetaslua/status/2100473581251748216">demo 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/robj3d3/status/2100722975645598191"><img src="https://pbs.twimg.com/amplify_video_thumb/2100722766362406912/img/pH0lahpfd-qTj_nE.jpg" alt="SuperX post scorer" width="240"></a></td>
@@ -53,7 +53,7 @@ Writing feedback, generative UI, music, art, and social media tools. 133 entries
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/iannuttall/status/2100668908227162567"><img src="https://pbs.twimg.com/amplify_video_thumb/2100668725737213952/img/m210oIkCyuGX5Dqr.jpg" alt="X growth analysis of 3,282 posts" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/iannuttall/status/2100668908227162567">X growth analysis of 3,282 posts</a></b><br><sub>iannuttall · X · ♥ 745 · 2026-09-17</sub><br>Analysis of 3,282 of the author's X posts, asking Jev 8 questions each about topic, hook and tone: 4,252,330 tokens for $0.1282, finding how-to posts drew 150 median likes versus 44.</td>
+<td valign="top"><b><a href="https://x.com/iannuttall/status/2100668908227162567">X growth analysis of 3,282 posts</a></b><br><sub>iannuttall · X · ♥ 745 · 2026-09-17</sub><br>Analysis of 3,282 of the author's X posts, asking Jev 8 questions each about topic, hook and tone: 4,252,330 tokens for $0.1282, finding how-to posts drew 150 median likes versus a 44 overall median.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/albicodes/status/2100720936852857271"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720525739687936/img/2Kp3WYXT1muLjThU.jpg" alt="Visual reference finder" width="240"></a></td>

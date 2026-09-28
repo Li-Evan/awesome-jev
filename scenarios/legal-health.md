@@ -41,7 +41,7 @@ Compliance checks, medical and scientific screening, and research workflows. 28 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/DevaiahShrithan/status/2102097862805053950"><img src="https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg" alt="Jev reads every AI paper" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">Jev reads every AI paper</a></b><br><sub>DevaiahShrithan · Article · ♥ 6 · 2026-09-21</sub><br>Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.<br><sub><b>How it uses Jev:</b> Two Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call.</sub></td>
+<td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">Jev reads every AI paper</a></b><br><sub>DevaiahShrithan · Article · ♥ 6 · 2026-09-21</sub><br>Ran 464,720 arXiv AI abstracts from 1993 to 2026 through Jev with five questions each (state-of-the-art claims, released code, LLM-written style, paper type, hype level) to chart how AI papers changed.<br><sub><b>How it uses Jev:</b> Three Nouls, one Choice and one Score per abstract, 16 abstracts per request for 80 answers per call; the full run took 27.6 minutes and $11.20.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sboghossian/legal-ai-model-router"><img src="https://opengraph.githubassets.com/1/sboghossian/legal-ai-model-router" alt="Legal AI Model Router" width="240"></a></td>
@@ -73,7 +73,7 @@ Compliance checks, medical and scientific screening, and research workflows. 28 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/PistachioAIHQ/jev-synergy-screening"><img src="https://opengraph.githubassets.com/1/PistachioAIHQ/jev-synergy-screening" alt="Jev × Cohen ADHD Abstract Triage" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD Abstract Triage</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>Systematic-review screening demo that asks Jev to include or exclude MEDLINE titles and abstracts for an ADHD drug review, scored against Cohen et al. 2006 labels; 92.0% accuracy and 80.0% recall on a 200-abstract set.<br><sub><b>How it uses Jev:</b> Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.</sub></td>
+<td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD Abstract Triage</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>Systematic-review screening demo that has Jev include or exclude MEDLINE abstracts for an ADHD drug review; on all 851 Cohen et al. 2006 abstracts it reached 83.3% recall and 68.6% precision, tuned on that same set.<br><sub><b>How it uses Jev:</b> Choice and Noul eligibility questions combined into an include/exclude decision, ~523 ms per call.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets TypeSafe formula lint" width="240"></a></td>

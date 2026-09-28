@@ -41,7 +41,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/razeden0/status/2102119174466396250"><img src="https://pbs.twimg.com/amplify_video_thumb/2102119097077006336/img/qrIQdb9RSULrBTqB.jpg" alt="Grok 与 Jev 线索筛选器" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok 与 Jev 线索筛选器</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>线索资格判断管线：Jev 对 3,412 条线索每条回答 6 个问题（15.7 秒内完成 20,472 个决策，花费 $0.41），Grok 4.7 只为值得看的线索起草外联消息。<br><sub><b>Jev 用法:</b> 每条线索六个是/否、单选或打分问题，决定 LLM 要读哪些内容。</sub></td>
+<td valign="top"><b><a href="https://x.com/razeden0/status/2102119174466396250">Grok 与 Jev 线索筛选器</a></b><br><sub>razeden0 · X · ♥ 172 · 2026-09-21</sub><br>帖子称 Jev 在 15.7 秒内对 3,412 条线索各答 6 个问题，花费 $0.41，再由 Grok 4.7 起草外联；没有公开代码，而且这个速度超出 TypeSafe 官方默认限流，数字无法核实。<br><sub><b>Jev 用法:</b> 每条线索六个是/否、单选或打分问题，决定 LLM 要读哪些内容。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/pierreeliottlal/status/2100912453999587657"><img src="https://pbs.twimg.com/amplify_video_thumb/2100911836891660288/img/gqUn5ZSLBlAEMZMT.jpg" alt="能约到演示的外联信号" width="240"></a></td>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/malekoo/status/2100439840575684910"><img src="https://pbs.twimg.com/media/HSZCwYKWMAAC4Tr.jpg?name=orig" alt="Mac 应用里的 Jev 应用内帮助" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Mac 应用里的 Jev 应用内帮助</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>无需加载任何模型就能用的 Mac 应用内帮助：Jev 对照内置手册理解问题，选出匹配的文章或判定没有匹配，测试 42/42 全对，中位耗时 0.93 秒。<br><sub><b>Jev 用法:</b> 以整本手册作为 state，在手册文章加一个“无匹配”选项中做 Choice。</sub></td>
+<td valign="top"><b><a href="https://x.com/malekoo/status/2100439840575684910">Mac 应用里的 Jev 应用内帮助</a></b><br><sub>malekoo · X · ♥ 5 · 2026-09-17</sub><br>无需加载本地模型就能用的 Mac 应用内帮助：Jev 对照内置手册理解问题，选出匹配的文章或判定没有匹配，在 42 条留出请求上全部路由正确，中位耗时 0.93 秒。<br><sub><b>Jev 用法:</b> 每轮一次请求，以整本 11 篇文章的手册作为 state：8 个 Noul 加 1 个在文章和“都不能回答”之间挑选的 Choice；代码按概率决定去向，“手册有答案”的 Noul 偏低时会推翻 Choice 的选择。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/DECRUX9812/openjev"><img src="https://opengraph.githubassets.com/1/DECRUX9812/openjev" alt="open-Jev (DECRUX9812)" width="240"></a></td>

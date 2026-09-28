@@ -209,7 +209,7 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kunko-ai-labs/judge-audit"><img src="https://raw.githubusercontent.com/kunko-ai-labs/judge-audit/main/docs/assets/hero-arena.png" alt="judge-audit" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>Shadow-mode calibration audits for AI judges against past human decisions; its published Jev audits report 95.5% accuracy under attack and 73% zero-error coverage, versus 2% for Claude Sonnet 4.5.<br><sub><b>How it uses Jev:</b> Runs Jev via Vercel AI Gateway on email triage, adversarial emails and a cheap-vs-frontier task router, with raw responses committed for recomputation.</sub></td>
+<td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>Shadow-mode calibration audits of AI judges against human decisions; on 200 partly adversarial emails Jev scored 95.5% versus 96.5% for Claude Sonnet 4.5, but auto-approved 73% before its first error versus 2%.<br><sub><b>How it uses Jev:</b> Runs Jev via Vercel AI Gateway on email triage, adversarial emails and a cheap-vs-frontier task router, with raw responses committed for recomputation.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/theyashwanthsai/jevals"><img src="https://opengraph.githubassets.com/1/theyashwanthsai/jevals" alt="Jevals" width="240"></a></td>

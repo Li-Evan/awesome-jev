@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/awlevin/typesafe-computer-use"><img src="https://raw.githubusercontent.com/awlevin/typesafe-computer-use/main/docs/banner.svg" alt="typesafe-computer-use" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/awlevin/typesafe-computer-use">typesafe-computer-use</a></b><br><sub>awlevin · GitHub · ⭐ 769 · 2026-09-16</sub><br>macOS 电脑操控 agent：先对屏幕做 OCR，再让 Jev 从提取出的控件中判定下一步动作并点击，每步约 $0.0002，只有自由文本字段才调用写作模型。<br><sub><b>Jev 用法:</b> 每一步在最多 255 个确定性提取的动作上做一个 Choice，并按其置信度设门槛。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49733647">discussion</a> · <a href="https://x.com/awlevin/status/2100262612428894676">demo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/awlevin/typesafe-computer-use">typesafe-computer-use</a></b><br><sub>awlevin · GitHub · ⭐ 769 · 2026-09-16</sub><br>macOS 电脑操控 agent：用 OCR 加无障碍树读取屏幕，让 Jev 选出下一步动作和目标再点击，每步约 $0.0002，只有自由文本字段才调用写作模型。<br><sub><b>Jev 用法:</b> 每步一次请求，问三个 Choice（动作类型、屏幕上的项、网站），有屏幕外控件时再加一个；一次点击的置信度取两个相关答案中较低的那个，低于 0.4 就停。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49733647">discussion</a> · <a href="https://x.com/awlevin/status/2100262612428894676">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/milind-soni/tiptour-macos"><img src="https://raw.githubusercontent.com/milind-soni/tiptour-macos/main/gemnew.png" alt="TipTour" width="240"></a></td>
@@ -37,7 +37,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2101640575812239406"><img src="https://pbs.twimg.com/amplify_video_thumb/2101632970717007872/img/lcQeA281BT79Pjt5.jpg" alt="Jev + DeepSeek 表单填写 agent" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101640575812239406">Jev + DeepSeek 表单填写 agent</a></b><br><sub>SUOHA_AI · X · ♥ 173 · 2026-09-20</sub><br>浏览器 agent，在一个陌生网站上用 38 秒填完一份 16 题的申请表，Jev 选择每个动作，DeepSeek V4.1 Flash 撰写文字答案。<br><sub><b>Jev 用法:</b> 每个页面做一次点击、勾选或提交的 Choice；小型 LLM 只填写文本字段。</sub></td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101640575812239406">Jev + DeepSeek 表单填写 agent</a></b><br><sub>SUOHA_AI · X · ♥ 173 · 2026-09-20</sub><br>演示帖：作者称用 Jev 加 DeepSeek V4.1 Flash 的浏览器 agent 在一个陌生网站上 38 秒填完 16 道题的申请表；代码至今没有公开，具体怎么问无法核对。<br><sub><b>Jev 用法:</b> 据帖子描述，遇到新页面由 Jev 判断该勾选、点击还是提交，需要填空时由 DeepSeek 写答案。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/sarah_edo/status/2102025642862600634"><img src="https://pbs.twimg.com/ext_tw_video_thumb/2102025557969862656/pu/img/TDga5vamGpk6CRqZ.jpg" alt="WebMCP 侧边栏" width="240"></a></td>
@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2102091983292358839"><img src="https://pbs.twimg.com/amplify_video_thumb/2102088489231609856/img/AJle7-1PDPdXWJ6d.jpg" alt="自动完成认证模拟考试" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2102091983292358839">自动完成认证模拟考试</a></b><br><sub>SUOHA_AI · X · ♥ 755 · 2026-09-21</sub><br>浏览器自动化在一个从未见过的页面上用 21 秒完成了阿里云 AI 工程师模拟考试，回答 25 道题，准确率 80%，由 Jev 决定每一步，DeepSeek 负责填写文字。</td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2102091983292358839">自动完成认证模拟考试</a></b><br><sub>SUOHA_AI · X · ♥ 755 · 2026-09-21</sub><br>演示帖：作者称他的 Jev 加 DeepSeek 浏览器 agent 用 21 秒答完阿里云 AI 工程师认证模拟考的 25 道题，正确率 80%；这个 agent 的代码尚未公开。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/cline/plugins/tree/main/plugins/jev-browser"><img src="https://github.com/user-attachments/assets/063c98fa-0067-40fb-af96-3714d8e017a5" alt="Cline jev-browser plugin" width="240"></a></td>
@@ -149,7 +149,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SSHCodes/status/2101026313871970721"><img src="https://pbs.twimg.com/amplify_video_thumb/2101026173631217664/img/icEy9hbMZ8lMNbQV.jpg" alt="浏览器 agent 压力测试" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SSHCodes/status/2101026313871970721">浏览器 agent 压力测试</a></b><br><sub>SSHCodes · X · ♥ 26 · 2026-09-18</sub><br>一次不作弊的浏览器操控测试，Jev 完成了大约 5 个动作后就崩了，作者的结论是它不适合做浏览器 agent。</td>
+<td valign="top"><b><a href="https://x.com/SSHCodes/status/2101026313871970721">浏览器 agent 压力测试</a></b><br><sub>SSHCodes · X · ♥ 26 · 2026-09-18</sub><br>帖子称在一次不作弊的浏览器测试里，Jev 完成大约 5 个动作后就崩了，结论是它不适合做浏览器 agent；帖子没有交代具体任务和做法。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/affirmitv/ghosthands"><img src="https://opengraph.githubassets.com/1/affirmitv/ghosthands" alt="ghosthands" width="240"></a></td>

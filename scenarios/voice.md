@@ -13,7 +13,7 @@ Voice assistants and interfaces that react while you type or speak. 53 entries, 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/jackcheng/status/2100729670991802386"><img src="https://pbs.twimg.com/amplify_video_thumb/2100729243185324032/img/YNw8njfnSXu-Tbyr.jpg" alt="Point-and-speak canvas" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/jackcheng/status/2100729670991802386">Point-and-speak canvas</a></b><br><sub>jackcheng · X · ♥ 5k · 2026-09-17</sub><br>Whiteboard canvas controlled by pointing at a webcam and speaking: speech, finger position and canvas shapes go to Jev, which picks the action, target and location in about 167 ms.<br><sub><b>How it uses Jev:</b> Seven questions per utterance covering action, target shape and region, with speech, finger and canvas as state.</sub></td>
+<td valign="top"><b><a href="https://x.com/jackcheng/status/2100729670991802386">Point-and-speak canvas</a></b><br><sub>jackcheng · X · ♥ 5k · 2026-09-17</sub><br>Whiteboard canvas controlled by pointing at a webcam and speaking, where Jev picks the action, target and location; the post shares only a video, with no code or data, and one frame shows a 262 ms judgment.<br><sub><b>How it uses Jev:</b> Not documented; the video overlay shows Jev choosing an action and a canvas location for each utterance.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/moritzkremb/status/2100577979021832365"><img src="https://pbs.twimg.com/amplify_video_thumb/2100577954338373633/img/tbH43kHpUotE3hzK.jpg" alt="Real-time voice browser control" width="240"></a></td>
@@ -49,7 +49,7 @@ Voice assistants and interfaces that react while you type or speak. 53 entries, 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/uezochan/status/2100608556823388486"><img src="https://pbs.twimg.com/amplify_video_thumb/2100607043837321217/img/mx7Fv1mctyBoigHx.jpg" alt="AIAvatarKit turn-end gate" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/uezochan/status/2100608556823388486">AIAvatarKit turn-end gate</a></b><br><sub>uezochan · X · ♥ 443 · 2026-09-17</sub><br>Voice-dialog turn-end detection: 0.5 s after speech stops, Jev scores whether the user finished speaking and the score sets an extra hold time, with Jev taking about 0.22 s.<br><sub><b>How it uses Jev:</b> Score of turn completion after each pause, mapped to an extra hold timeout.</sub><br><sub>Also: <a href="https://github.com/uezo/aiavatarkit">repo</a> · <a href="https://github.com/uezo/aiavatarkit">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/uezochan/status/2100608556823388486">AIAvatarKit turn-end gate</a></b><br><sub>uezochan · X · ♥ 443 · 2026-09-17</sub><br>Voice-dialog turn-end detection: 0.5 s after speech stops, Jev gives the probability that the assistant should keep holding the turn, which maps to extra wait time, with Jev taking about 0.22 s.<br><sub><b>How it uses Jev:</b> A hold-the-turn Noul over the transcript, recorded and silence durations, mapped to extra wait by probability range (0.6, 0.8, 0.9).</sub><br><sub>Also: <a href="https://github.com/uezo/aiavatarkit">repo</a> · <a href="https://github.com/uezo/aiavatarkit">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zain_hoda/status/2100720719470494126"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720243693789185/img/TnF1XmT4r9kx3jSM.jpg" alt="Live slide selection while speaking" width="240"></a></td>
@@ -173,7 +173,7 @@ Voice assistants and interfaces that react while you type or speak. 53 entries, 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/gaborishka/jev-canvas"><img src="https://raw.githubusercontent.com/gaborishka/jev-canvas/main/docs/demo.gif" alt="jev-canvas" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/gaborishka/jev-canvas">jev-canvas</a></b><br><sub>gaborishka · GitHub · ⭐ 2 · 2026-09-19</sub><br>Browser demo where you say commands like 'make a yellow circle here' while pointing at the webcam, and Jev decides action, shape, colour, target and place on a tldraw canvas in about 350 ms per spoken word.<br><sub><b>How it uses Jev:</b> Eight typed questions on every partial transcript (is it a command, is it complete, action, shape, colour, target, place, size), gated by thresholds in code.</sub></td>
+<td valign="top"><b><a href="https://github.com/gaborishka/jev-canvas">jev-canvas</a></b><br><sub>gaborishka · GitHub · ⭐ 2 · 2026-09-19</sub><br>Browser demo where you say commands like 'make a yellow circle here' while pointing at the webcam, and Jev decides action, shape, colour, target and place on a tldraw canvas in 300 to 550 ms per decision.<br><sub><b>How it uses Jev:</b> Eight typed questions on every partial transcript (is it a command, is it complete, action, shape, colour, target, place, size), gated by thresholds in code.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/opencues/opencues/tree/master/packages/opencues-core/src/decisions"><img src="https://opengraph.githubassets.com/1/opencues/opencues" alt="OpenCues decision seam" width="240"></a></td>

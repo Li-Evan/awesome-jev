@@ -209,7 +209,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kunko-ai-labs/judge-audit"><img src="https://raw.githubusercontent.com/kunko-ai-labs/judge-audit/main/docs/assets/hero-arena.png" alt="judge-audit" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>以影子模式对照过往人工决策，审计 AI 评委的校准情况；已发布的 Jev 审计报告显示，受攻击时准确率 95.5%，零错误覆盖率 73%，而 Claude Sonnet 4.5 只有 2%。<br><sub><b>Jev 用法:</b> 通过 Vercel AI Gateway 在邮件分拣、对抗性邮件和廉价/前沿模型任务路由器上运行 Jev，并把原始响应提交到仓库以便重新计算。</sub></td>
+<td valign="top"><b><a href="https://github.com/kunko-ai-labs/judge-audit">judge-audit</a></b><br><sub>kunko-ai-labs · GitHub · ⭐ 8 · 2026-09-18</sub><br>以影子模式对照过往人工决策、审计 AI 评委校准情况的工具；在 200 封商业邮件（其中 140 封加了对抗干扰）上 Jev 准确率 95.5%，Claude Sonnet 4.5 为 96.5%，但在出现第一个错误前 Jev 能自动放行 73%，Sonnet 只有 2%。<br><sub><b>Jev 用法:</b> 通过 Vercel AI Gateway 在邮件分拣、对抗性邮件和廉价/前沿模型任务路由器上运行 Jev，并把原始响应提交到仓库以便重新计算。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/theyashwanthsai/jevals"><img src="https://opengraph.githubassets.com/1/theyashwanthsai/jevals" alt="Jevals" width="240"></a></td>

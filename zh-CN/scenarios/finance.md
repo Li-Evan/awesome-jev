@@ -8,8 +8,12 @@
 
 <table>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/MoonGotchi/status/2101320141065609294"><img src="https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg" alt="全自动链上交易机器人" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/MoonGotchi/status/2101320141065609294">全自动链上交易机器人</a></b><br><sub>MoonGotchi · X · ♥ 23.9k · 2026-09-19</sub><br>一个晚上搭出来的全自动实时交易机器人，读取链上和链下数据快速做交易决策；作者自述目前已亏损 $31,680。</td>
+<td width="260" valign="top"><a href="https://x.com/MoonGotchi/status/2101320141065609294"><img src="https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg" alt="“亏了 $31,680”的交易机器人帖子" width="240"></a></td>
+<td valign="top"><b><a href="https://x.com/MoonGotchi/status/2101320141065609294">“亏了 $31,680”的交易机器人帖子</a></b><br><sub>MoonGotchi · X · ♥ 23.9k · 2026-09-19</sub><br>爆火帖子，声称一晚上搭出的交易机器人已亏损 $31,680；所附视频其实是 Jarrod Watts 的 jev-trader 在 dry-run 模式下的演示录像，成交全是模拟的，亏损数字无法核实，更可能是玩笑。</td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/jarrodwatts/jev-trader"><img src="https://pbs.twimg.com/amplify_video_thumb/2100355999064379392/img/BiAbeDjN57avf2VK.jpg" alt="jev-trader" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/jarrodwatts/jev-trader">jev-trader</a></b><br><sub>jarrodwatts · GitHub · ⭐ 1.9k · 2026-09-16</sub><br>Monad 上 Kuru 的 MON-USDC 订单簿演示机器人：Jev 每个区块（约 300 毫秒）回答一次买还是卖，由代码挂一张只做 maker 的限价单；项目说明写明模型不追求盈利，也不做回测。<br><sub><b>Jev 用法:</b> 每个区块根据实时订单簿做一次买/卖决策；dry-run 模式保留真实决策，但成交是模拟的。</sub><br><sub>相关: <a href="https://x.com/jarrodwatts/status/2100356151468585346">demo</a> · <a href="https://jev-trader.vercel.app">app</a> · <a href="https://www.youtube.com/watch?v=YIEHGt-9cS4">video</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/abolbuild/status/2100523868913807410"><img src="https://pbs.twimg.com/amplify_video_thumb/2100523731923722240/img/b6b47us-K3FIDHDC.jpg" alt="用 1 万美元让 Jev 做交易" width="240"></a></td>
@@ -18,10 +22,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kyotofin/tax-doc-classifier"><img src="https://pbs.twimg.com/amplify_video_thumb/2100973360989773825/img/yMtL6CxrKMVXQEHV.jpg" alt="tax-doc-classifier" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/kyotofin/tax-doc-classifier">tax-doc-classifier</a></b><br><sub>kyotofin · GitHub · ⭐ 351 · 2026-09-18</sub><br>用两个 Choice 把 PDF 页面归入各类 IRS 表格，每页约十分之一美分，并给出在标注测试集上的错误率。<br><sub>相关: <a href="https://x.com/nedwize/status/2100973868324417852">demo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/jarrodwatts/jev-trader"><img src="https://pbs.twimg.com/amplify_video_thumb/2100843717791813632/img/BJXB5D_XC7MmmqdN.jpg" alt="jev-trader" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/jarrodwatts/jev-trader">jev-trader</a></b><br><sub>jarrodwatts · GitHub · ⭐ 1.9k · 2026-09-16</sub><br>Monad 上 Kuru 的 MON-USDC 订单簿做市机器人：Jev 每个区块（约每 300 毫秒）回答一次买还是卖，每个区块都在最优报价内侧一个 tick 处挂一张 post-only 限价单。<br><sub><b>Jev 用法:</b> 每个区块根据实时订单簿做一次买/卖决策；dry-run 模式保留真实决策，但成交是模拟的。</sub><br><sub>相关: <a href="https://jev-trader.vercel.app">app</a> · <a href="https://www.youtube.com/watch?v=YIEHGt-9cS4">video</a> · <a href="https://jev-trader.vercel.app">app 2</a> · <a href="https://x.com/tonnoz/status/2100844854490103835">demo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/virattt/ai-hedge-fund/blob/main/hedge_fund/llm/client.py"><img src="https://opengraph.githubassets.com/1/virattt/ai-hedge-fund" alt="AI Hedge Fund 的 Jev 适配器" width="240"></a></td>
@@ -37,7 +37,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/SUOHA_AI/status/2101275294451515740"><img src="https://pbs.twimg.com/amplify_video_thumb/2101274788513693696/img/Gj7UchuQIdpkqvAz.jpg" alt="Jev Trader (Inverse)" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101275294451515740">Jev Trader (Inverse)</a></b><br><sub>SUOHA_AI · X · ♥ 454 · 2026-09-19</sub><br>Monad Jev 交易演示的反向版本：镜像每一笔订单，原版买入时卖出、卖出时买入，每个区块做一次决策。<br><sub>相关: <a href="https://suoha-jev-trader.vercel.app/">app</a> · <a href="https://github.com/jarrodwatts/jev-trader">original</a> · <a href="https://suoha-jev-trader.vercel.app">project</a></sub></td>
+<td valign="top"><b><a href="https://x.com/SUOHA_AI/status/2101275294451515740">Jev Trader (Inverse)</a></b><br><sub>SUOHA_AI · X · ♥ 454 · 2026-09-19</sub><br>Monad 上 jev-trader 演示的反向版本：每个区块都与原版的决策反着来；它的看板运行在 dry-run 模式，成交是模拟的，并非真实下单。<br><sub>相关: <a href="https://suoha-jev-trader.vercel.app/">app</a> · <a href="https://github.com/jarrodwatts/jev-trader">original</a> · <a href="https://suoha-jev-trader.vercel.app">project</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Nutlope/jev-fraud"><img src="https://pbs.twimg.com/amplify_video_thumb/2100608348219478016/img/23vFEVMegwLrMa8g.jpg" alt="Jev + Kimi K3 欺诈检测" width="240"></a></td>
@@ -77,7 +77,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py"><img src="https://repository-images.githubusercontent.com/1124295269/0b9abcd4-9cb2-4f7c-8401-7a53b1bc2362" alt="QuantDinger 的 Jev 交易前闸门" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py">QuantDinger 的 Jev 交易前闸门</a></b><br><sub>OpenByteInc · GitHub · ⭐ 12k 仓库 · 2026-09-19</sub><br>自托管 AI 交易平台 QuantDinger 中可选的实盘交易前闸门：把策略、市场、持仓和敞口 state 交给 Jev 的 Choice 问题判断，拦下被否决的入场，并有 LLM 兜底。<br><sub>相关: <a href="https://github.com/OpenByteInc/QuantDinger">repo</a> · <a href="https://ai.quantdinger.com">app</a></sub></td>
+<td valign="top"><b><a href="https://github.com/OpenByteInc/QuantDinger/blob/main/backend_api_python/app/services/ai_decision_filter.py">QuantDinger 的 Jev 交易前闸门</a></b><br><sub>OpenByteInc · GitHub · ⭐ 12k 仓库 · 2026-09-19</sub><br>自托管交易平台 QuantDinger 中可选的实盘交易前闸门：用六个 Jev Choice 审查每次开仓或加仓，被否决的拦下；Jev 和兜底 LLM 都失败时订单照常放行（fail-open）。<br><sub>相关: <a href="https://github.com/OpenByteInc/QuantDinger">repo</a> · <a href="https://ai.quantdinger.com">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/zway_ai/status/2100921636597969361"><img src="https://pbs.twimg.com/media/HSf2_s-aMAAMXwh.jpg" alt="用 Jev 做金融研究" width="240"></a></td>
@@ -173,7 +173,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/0xKaspie/status/2102052707024466181"><img src="https://pbs.twimg.com/amplify_video_thumb/2102051838132473856/img/FXE7gWkLy1n96My3.jpg" alt="Jev 自主交易机器人" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/0xKaspie/status/2102052707024466181">Jev 自主交易机器人</a></b><br><sub>0xKaspie · X · ♥ 12 · 2026-09-21</sub><br>自主交易机器人，实时监控链上和链下数据，每笔交易决策都交给 Jev；报告显示成交 90 笔，胜率 74.6%。</td>
+<td valign="top"><b><a href="https://x.com/0xKaspie/status/2102052707024466181">Jev 自主交易机器人</a></b><br><sub>0xKaspie · X · ♥ 12 · 2026-09-21</sub><br>帖子展示一个 jev-trader 风格的机器人，交易 Solana 上 Phoenix 的 SOL/USDC；视频里的看板处于 dry-run 模式，90 笔成交和 74.6% 的命中率都是模拟结果，不是真实交易。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sosopop/jev_stock"><img src="https://raw.githubusercontent.com/sosopop/jev_stock/main/assets/jev-prediction-report-example.png" alt="jev_stock" width="240"></a></td>
@@ -217,7 +217,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://x.com/shortaktien/status/2100921927241998496">改版后的 Jev 交易机器人</a></b><br><sub>shortaktien · X · ▶ 847 · 2026-09-18</sub><br>围绕 Jev 重做的交易机器人，附带实时查看交易的界面；作者表示亏损变小了，但表现没有明显提升。<br><sub>相关: <a href="https://jev-trader-live-viewer.mrypcv7pwh.chatgpt.site/?v=9">app</a></sub></td>
+<td valign="top"><b><a href="https://x.com/shortaktien/status/2100921927241998496">改版后的 Jev 交易机器人</a></b><br><sub>shortaktien · X · ▶ 847 · 2026-09-18</sub><br>围绕 Jev 改造的 jev-trader 演示，带一个实时查看页，运行在模拟盘（paper）模式；作者称亏损变小了，但看不出明显的表现提升。<br><sub>相关: <a href="https://jev-trader-live-viewer.mrypcv7pwh.chatgpt.site/?v=9">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rthomas24/jev-realtime-trading"><img src="https://raw.githubusercontent.com/rthomas24/jev-realtime-trading/main/docs/media/hero.png" alt="Jev Realtime" width="240"></a></td>

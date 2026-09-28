@@ -71,7 +71,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/cookbooks/parallel_questions"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBatching%26title%3DParallel%2Bquestions%26description%3DRuns%2Ba%2B13-question%2Bregulatory%2Bbriefing%2Bover%2Bthe%2BGDPR%2BWikipedia%2Barticle%252C%2Bshowing%2Bthat%2Bbatching%2Bevery%2Bquestion%2Binto%2Bone%2BTypeSafe%2Bcall%2Bis%2B12.2x%2Bcheaper%2Band%2B10.0x%2Bf%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="并行提问" width="240"></a></td>
-<td valign="top"><b><a href="https://docs.typesafe.ai/cookbooks/parallel_questions">并行提问</a></b><br><sub>TypeSafe AI · 文档</sub><br>把针对同一份长文档的 13 个问题合并成一次请求，便宜 12.2 倍、快 10.0 倍，答案没有任何变化。</td>
+<td valign="top"><b><a href="https://docs.typesafe.ai/cookbooks/parallel_questions">并行提问</a></b><br><sub>TypeSafe AI · 文档</sub><br>把一篇长文档上的 13 个问题合进一次请求，比依次发 13 次便宜 12.2 倍、快 10.0 倍，答案不变；如果并发发出，速度差距会缩小。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DSelf-consistency%26title%3DSelf-consistency%253A%2Bnouls%26description%3DRoute%2Buncertain%2Bprobabilities%2Bto%2Bhuman%2Breview%2Bwhile%2Bkeeping%2Bthe%2Bunderlying%2Bnoul%2Bvalues%2Bvisible.%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="用 Noul 做自一致性" width="240"></a></td>

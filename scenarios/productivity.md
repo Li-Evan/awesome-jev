@@ -73,7 +73,7 @@ Email, notes, calendars, browsing, and everyday automation. 126 entries, ranked 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts"><img src="https://raw.githubusercontent.com/elie222/inbox-zero/main/apps/web/app/opengraph-image.jpg" alt="Inbox Zero classifier" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts">Inbox Zero classifier</a></b><br><sub>elie222 · GitHub · ⭐ 12.3k repo · 2023-07-12</sub><br>Replaces two LLM calls per email with one Jev request, a Choice plus a yes-or-no per user rule, with an LLM fallback on errors.<br><sub>Also: <a href="https://getinboxzero.com">app</a> · <a href="https://github.com/elie222/inbox-zero">repo</a></sub></td>
+<td valign="top"><b><a href="https://github.com/elie222/inbox-zero/blob/main/apps/web/utils/decision-model/typesafe.ts">Inbox Zero classifier</a></b><br><sub>elie222 · GitHub · ⭐ 12.3k repo · 2023-07-12</sub><br>Opt-in decision-model layer in Inbox Zero that routes single-rule selection, cold email, categorization and other email decisions to Jev, keeping multi-rule selection on the LLM and falling back to it when Jev is unsure.<br><sub>Also: <a href="https://getinboxzero.com">app</a> · <a href="https://github.com/elie222/inbox-zero">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/nateherk/status/2101330780702068969"><img src="https://pbs.twimg.com/amplify_video_thumb/2101330596077109249/img/rHj6drEozG36RhLy.jpg" alt="Real-time X feed tagger" width="240"></a></td>
@@ -245,7 +245,7 @@ Email, notes, calendars, browsing, and everyday automation. 126 entries, ranked 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/dabit3/intern"><img src="https://raw.githubusercontent.com/dabit3/intern/main/docs/homepage.png" alt="Intern" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dabit3/intern">Intern</a></b><br><sub>dabit3 · GitHub · ⭐ 6 · 2026-09-19</sub><br>Native macOS launcher that finds files, apps and Chrome history the way you remember them, such as 'the pdf I just downloaded', with Jev judging which candidate you mean on every keystroke in about 100 ms.<br><sub><b>How it uses Jev:</b> Ranks locally found candidates per keystroke; one clear winner is preselected, several can be opened together or saved as a workspace.</sub></td>
+<td valign="top"><b><a href="https://github.com/dabit3/intern">Intern</a></b><br><sub>dabit3 · GitHub · ⭐ 6 · 2026-09-19</sub><br>Native macOS launcher that finds files, apps and Chrome history the way you remember them, such as 'the pdf I just downloaded'; Jev re-ranks the local candidates after each 150 ms typing pause, in about 100 ms.<br><sub><b>How it uses Jev:</b> Asked after a typing pause, never twice for the same query; local results update per keystroke, one clear winner is preselected, several can be opened together or saved as a workspace.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/vammu920/status/2100591409447174261"><img src="https://pbs.twimg.com/amplify_video_thumb/2100591334474076160/img/hjDNUy7WtIa07suU.jpg" alt="Jev job-application extension" width="240"></a></td>
@@ -309,7 +309,7 @@ Email, notes, calendars, browsing, and everyday automation. 126 entries, ranked 
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/valentynkit/jev-skip"><img src="https://raw.githubusercontent.com/valentynkit/jev-skip/main/demo/demo.gif" alt="jev-skip" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/valentynkit/jev-skip">jev-skip</a></b><br><sub>valentynkit · GitHub · ⭐ 3 · 2026-09-18</sub><br>Browser extension that has Jev classify YouTube caption segments at watch time, paints sponsor probabilities on the seek bar and auto-skips them; it caught 77% of SponsorBlock's sponsor seconds across 23 videos.<br><sub><b>How it uses Jev:</b> One Choice per caption segment among five categories, split across requests when over budget; about $0.0008 a video.</sub></td>
+<td valign="top"><b><a href="https://github.com/valentynkit/jev-skip">jev-skip</a></b><br><sub>valentynkit · GitHub · ⭐ 3 · 2026-09-18</sub><br>Browser extension that has Jev classify YouTube caption segments, paints sponsor probabilities on the seek bar and auto-skips confident ones; on recorded answers it caught 77% of SponsorBlock's sponsor seconds over 23 videos.<br><sub><b>How it uses Jev:</b> One Choice per caption segment among seven categories (content, sponsor, intro, outro, self-promo, recap, other); answers were recorded through a gateway shim, about $0.0008 a video.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/kalyandechiraju/status/2101338153294635151"><img src="https://pbs.twimg.com/amplify_video_thumb/2101337620911685632/img/CnS-n40rIw1vWwRm.jpg" alt="resume-fit" width="240"></a></td>

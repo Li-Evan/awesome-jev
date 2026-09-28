@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ChetasLua/jevmeter"><img src="https://raw.githubusercontent.com/ChetasLua/jevmeter/main/docs/banner.jpg" alt="jevmeter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ChetasLua/jevmeter">jevmeter</a></b><br><sub>ChetasLua · GitHub · ⭐ 81 · 2026-09-17</sub><br>CLI，转写任意视频，让 Jev 按选定的评分标准（比如是否在辩论中回避问题）给每句话打分，并把分数渲染成 16:9 剪辑里的实时仪表，可以直接发布。<br><sub><b>Jev 用法:</b> 对转写稿的每句话提预设的 Score 问题，并与时间轴对齐。</sub><br><sub>相关: <a href="https://x.com/chetaslua/status/2100602714204049588">demo</a> · <a href="https://x.com/chetaslua/status/2100473581251748216">demo 2</a></sub></td>
+<td valign="top"><b><a href="https://github.com/ChetasLua/jevmeter">jevmeter</a></b><br><sub>ChetasLua · GitHub · ⭐ 81 · 2026-09-17</sub><br>CLI，转写任意视频，按选定的预设就每句话向 Jev 问五个是非题（比如是否在辩论中回避问题），并把概率渲染成 16:9 剪辑里的实时仪表，可以直接发布。<br><sub><b>Jev 用法:</b> 转写稿的每句话问五个预设的 Noul 问题，以说话人之前的话和主持人最近一次提问作为上下文，并与时间轴对齐。</sub><br><sub>相关: <a href="https://x.com/chetaslua/status/2100602714204049588">demo</a> · <a href="https://x.com/chetaslua/status/2100473581251748216">demo 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/robj3d3/status/2100722975645598191"><img src="https://pbs.twimg.com/amplify_video_thumb/2100722766362406912/img/pH0lahpfd-qTj_nE.jpg" alt="SuperX 帖子评分器" width="240"></a></td>
@@ -53,7 +53,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/iannuttall/status/2100668908227162567"><img src="https://pbs.twimg.com/amplify_video_thumb/2100668725737213952/img/m210oIkCyuGX5Dqr.jpg" alt="3,282 条 X 帖子的增长分析" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/iannuttall/status/2100668908227162567">3,282 条 X 帖子的增长分析</a></b><br><sub>iannuttall · X · ♥ 745 · 2026-09-17</sub><br>分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，其他帖子为 44。</td>
+<td valign="top"><b><a href="https://x.com/iannuttall/status/2100668908227162567">3,282 条 X 帖子的增长分析</a></b><br><sub>iannuttall · X · ♥ 745 · 2026-09-17</sub><br>分析作者自己的 3,282 条 X 帖子，每条就主题、开头钩子和语气向 Jev 问 8 个问题：共 4,252,330 个 token，花费 $0.1282；结论是教程类帖子的点赞中位数为 150，全部帖子的基准中位数为 44。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/albicodes/status/2100720936852857271"><img src="https://pbs.twimg.com/amplify_video_thumb/2100720525739687936/img/2Kp3WYXT1muLjThU.jpg" alt="视觉参考查找器" width="240"></a></td>

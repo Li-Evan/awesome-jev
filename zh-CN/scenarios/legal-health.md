@@ -41,7 +41,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/DevaiahShrithan/status/2102097862805053950"><img src="https://pbs.twimg.com/media/HSwmC5JawAArib5.jpg" alt="让 Jev 读完每一篇 AI 论文" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">让 Jev 读完每一篇 AI 论文</a></b><br><sub>DevaiahShrithan · 文章 · ♥ 6 · 2026-09-21</sub><br>把 1993 到 2026 年的 464,720 篇 arXiv AI 摘要交给 Jev，每篇问五个问题（是否声称达到 SOTA、是否发布代码、是否像 LLM 写的、论文类型、炒作程度），描绘 AI 论文的变化。<br><sub><b>Jev 用法:</b> 每篇摘要两个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案。</sub></td>
+<td valign="top"><b><a href="https://x.com/DevaiahShrithan/status/2102097862805053950">让 Jev 读完每一篇 AI 论文</a></b><br><sub>DevaiahShrithan · 文章 · ♥ 6 · 2026-09-21</sub><br>把 1993 到 2026 年的 464,720 篇 arXiv AI 摘要交给 Jev，每篇问五个问题（是否声称达到 SOTA、是否发布代码、是否像 LLM 写的、论文类型、炒作程度），描绘 AI 论文的变化。<br><sub><b>Jev 用法:</b> 每篇摘要三个 Noul、一个 Choice 和一个 Score，每次请求 16 篇摘要，单次调用得到 80 个答案；整轮用时 27.6 分钟，花费 $11.20。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/sboghossian/legal-ai-model-router"><img src="https://opengraph.githubassets.com/1/sboghossian/legal-ai-model-router" alt="Legal AI Model Router" width="240"></a></td>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/PistachioAIHQ/jev-synergy-screening"><img src="https://opengraph.githubassets.com/1/PistachioAIHQ/jev-synergy-screening" alt="Jev × Cohen ADHD 摘要筛选" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD 摘要筛选</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 标题和摘要的纳入或排除，并以 Cohen et al. 2006 的标签评分；在 200 篇摘要的集合上准确率 92.0%、召回率 80.0%。<br><sub><b>Jev 用法:</b> 把 Choice 和 Noul 资格问题合成纳入/排除决策，每次调用约 523 毫秒。</sub></td>
+<td valign="top"><b><a href="https://github.com/PistachioAIHQ/jev-synergy-screening">Jev × Cohen ADHD 摘要筛选</a></b><br><sub>PistachioAIHQ · GitHub · ⭐ 1 · 2026-09-16</sub><br>系统综述筛选演示，让 Jev 决定一项 ADHD 药物综述中 MEDLINE 摘要的纳入或排除；在 Cohen et al. 2006 的全部 851 篇摘要上召回率 83.3%、精确率 68.6%，问题和阈值是在同一批数据上调出来的。<br><sub><b>Jev 用法:</b> 把 Choice 和 Noul 资格问题合成纳入/排除决策，每次调用约 523 毫秒。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/endomorphosis/ipfs_datasets_py/blob/main/ipfs_datasets_py/logic/integrations/typesafe_advisor.py"><img src="https://opengraph.githubassets.com/1/endomorphosis/ipfs_datasets_py" alt="IPFS Datasets 的 TypeSafe 公式检查" width="240"></a></td>
