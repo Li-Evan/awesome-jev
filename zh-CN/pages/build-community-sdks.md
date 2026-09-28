@@ -6,7 +6,7 @@
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#社区-sdk)
 
-[模型访问](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md) (68) · [框架适配](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md) (174) · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · **社区 SDK**
+[模型访问](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md) (66) · [框架适配](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md) (172) · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · **社区 SDK**
 
 <table>
 <tr>

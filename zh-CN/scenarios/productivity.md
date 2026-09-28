@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md) · **简体中文**
 
-邮件、笔记、日历、浏览和日常自动化。共 127 条，按社区热度排序。
+邮件、笔记、日历、浏览和日常自动化。共 126 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -374,10 +374,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MithrilMan/your-signal"><img src="https://raw.githubusercontent.com/MithrilMan/your-signal/master/artifacts/your-signal-demo-thumbnail-1280x688.jpg" alt="Your Signal" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/MithrilMan/your-signal">Your Signal</a></b><br><sub>MithrilMan · GitHub · ⭐ 2 · 2026-09-18</sub><br>自带 key 的 Chrome 扩展，用 Jev 从相关性、实质内容、实用价值、推广和骗互动几方面给可见的 X 帖子打分，再按你的设置高亮、变暗、折叠或隐藏。<br><sub>相关: <a href="https://www.reddit.com/r/SideProject/comments/1wjykoj/i_built_an_opensource_chrome_extension_that_uses/">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sysadarsh/zerosweep"><img src="https://opengraph.githubassets.com/1/sysadarsh/zerosweep" alt="ZeroSweep" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sysadarsh/zerosweep">ZeroSweep</a></b><br><sub>sysadarsh · GitHub · ⭐ 2 · 2026-09-18</sub><br>收件箱清零（inbox zero）式网页邮箱演示和基准测试，用 Jev 分拣 50 到 1,000 封生成的邮件，并根据校准置信度把模棱两可的邮件送去人工复核。<br><sub>相关: <a href="https://sysadarsh-zerosweep.vercel.app/">app</a> · <a href="https://sysadarsh-zerosweep.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rokcso/bluenoise/blob/main/src/contracts/ai.ts"><img src="https://opengraph.githubassets.com/1/rokcso/bluenoise" alt="BlueNoise 的 Jev 二次判断" width="240"></a></td>

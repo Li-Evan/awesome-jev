@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md)
 
-Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs. 68 entries, ranked by community traction.
+Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs. 66 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#model-access)
 
-**Model Access** · [Framework Adapters](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md) (174) · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · [Community SDKs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-community-sdks.md) (107)
+**Model Access** · [Framework Adapters](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md) (172) · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · [Community SDKs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-community-sdks.md) (107)
 
 <table>
 <tr>
@@ -98,8 +98,8 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td valign="top"><b><a href="https://github.com/yym68686/uni-api-web">uni-api TypeSafe channel</a></b><br><sub>yym68686 · GitHub · ⭐ 26 · 2025-03-11</sub><br>Web console for the self-hosted uni-api LLM gateway that can add a typesafe engine channel, proxying POST /v1/systemone so Jev's Choice, Noul and Score questions go through the gateway.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api TypeSafe backend" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api TypeSafe backend</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k repo · 2024-07-04</sub><br>Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.<br><sub>Also: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/tests/http/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api TypeSafe backend" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/tests/http/verify_typesafe.py">uni-api TypeSafe backend</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k repo · 2024-07-04</sub><br>Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/croit/aiplane"><img src="https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg" alt="croit AIplane" width="240"></a></td>
@@ -120,10 +120,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/genlayerlabs/unhardcoded"><img src="https://opengraph.githubassets.com/1/genlayerlabs/unhardcoded" alt="unhardcoded" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/genlayerlabs/unhardcoded">unhardcoded</a></b><br><sub>genlayerlabs · GitHub · ⭐ 8 · 2026-06-22</sub><br>OpenAI-compatible LLM router that picks a model per request from a caller-supplied policy, and serves decision models including Jev through POST /v1/decisions with the same selection and fallback.<br><sub>Also: <a href="https://github.com/genlayerlabs/unhardcoded/blob/main/docs/DECISION-MODELS.md">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AgentsDanceAI/AIStore"><img src="https://opengraph.githubassets.com/1/AgentsDanceAI/AIStore" alt="AI Store" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AgentsDanceAI/AIStore">AI Store</a></b><br><sub>AgentsDanceAI · GitHub · ⭐ 7 · 2026-08-21</sub><br>Accounts, credits and workspace layer for thirty hosted open-source AI products that offers both a self-hosted Laya decision model and TypeSafe's hosted Jev as metered slots.<br><sub>Also: <a href="https://aistore.best">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Muvon/octohub"><img src="https://opengraph.githubassets.com/1/Muvon/octohub" alt="OctoHub" width="240"></a></td>
@@ -188,10 +184,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Lore-Hex/quill-router/blob/main/src/trusted_router/data/provider_models/typesafe.json"><img src="https://opengraph.githubassets.com/1/Lore-Hex/quill-router" alt="TrustedRouter Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Lore-Hex/quill-router/blob/main/src/trusted_router/data/provider_models/typesafe.json">TrustedRouter Jev</a></b><br><sub>Lore-Hex · GitHub · ⭐ 23 repo · 2026-05-02</sub><br>TrustedRouter, an end-to-end encrypted LLM gateway running in hardware enclaves, lists TypeSafe AI Jev as typesafe-ai/jev on a decide endpoint, with input pricing refreshed hourly from TypeSafe's models page.<br><sub>Also: <a href="https://github.com/Lore-Hex/quill-router">repo</a> · <a href="https://trustedrouter.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts"><img src="https://opengraph.githubassets.com/1/sapiom/sapiom-js" alt="Sapiom llm.decide" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts">Sapiom llm.decide</a></b><br><sub>sapiom · GitHub · ⭐ 20 repo · 2025-11-11</sub><br>The llm.decide capability in the Sapiom agent SDK routes Jev through Sapiom's Capability Router and returns calibrated probabilities over caller-defined answers for typed Noul, Choice and Score questions.<br><sub>Also: <a href="https://github.com/sapiom/sapiom-js">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/QuantumNous/new-api-plugins/tree/main/plugins/tasks/typesafe"><img src="https://opengraph.githubassets.com/1/QuantumNous/new-api-plugins" alt="new-api TypeSafe plugin" width="240"></a></td>

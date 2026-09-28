@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md) · **简体中文**
 
-交易 agent、市场信号、欺诈与风险检查，以及财务文档处理。共 89 条，按社区热度排序。
+交易 agent、市场信号、欺诈与风险检查，以及财务文档处理。共 88 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -148,8 +148,8 @@
 <td valign="top"><b><a href="https://www.youtube.com/watch?v=cV6pxlXgCv8">把 Jev 用于交易机器人</a></b><br><sub>Moon Dev · 视频 · ♥ 31 · 2026-09-21</sub><br>演示如何把 Jev 用在实盘加密交易配置上：一次请求问六个问题，为抢币机器人的入场把关，而不是去解析 LLM 文本。<br><sub><b>Jev 用法:</b> 每次请求并行回答六个类型化问题，用校准的概率作为入场阈值。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Arbistocks/status/2101864009955946573"><img src="https://arbistocks.com/og.png" alt="arbistocks" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Arbistocks/status/2101864009955946573">arbistocks</a></b><br><sub>Arbistocks · X · ♥ 30 · 2026-09-21</sub><br>套利扫描器，覆盖 136 个池子里的 49 只股票，把 Jev 放进扫描循环，判断价差是否真实、报哪条路由、仓位规模是否已过峰值，以及出手还是跳过。<br><sub>相关: <a href="https://arbistocks.com/app">app</a> · <a href="https://arbistocks.com/app">project</a></sub></td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/Arbistocks/status/2101864009955946573">arbistocks</a></b><br><sub>Arbistocks · X · ♥ 30 · 2026-09-21</sub><br>套利扫描器，覆盖 136 个池子里的 49 只股票，把 Jev 放进扫描循环，判断价差是否真实、报哪条路由、仓位规模是否已过峰值，以及出手还是跳过。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zadescoxp/Jev-Trades"><img src="https://raw.githubusercontent.com/zadescoxp/Jev-Trades/master/assets/Jev_making_trade.gif" alt="Jev Trades" width="240"></a></td>
@@ -342,10 +342,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Eric-Zhou-0302/jev-A-share-trader"><img src="https://opengraph.githubassets.com/1/Eric-Zhou-0302/jev-A-share-trader" alt="jev-A-share-trader" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Eric-Zhou-0302/jev-A-share-trader">jev-A-share-trader</a></b><br><sub>Eric-Zhou-0302 · GitHub · 2026-09-20</sub><br>面向 A 股的本地技术分析工作区：拉取 AKShare 或 Tushare 数据，让 Jev 评估八个维度，再合成针对 2-5 或 5-20 个交易日的买入、持有或卖出判断；不执行下单。</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/adhamelhayek-lab/jev-connector"><img src="https://opengraph.githubassets.com/1/adhamelhayek-lab/jev-connector" alt="jev-connector" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/adhamelhayek-lab/jev-connector">jev-connector</a></b><br><sub>adhamelhayek-lab · GitHub · 2026-09-18</sub><br>面向模拟交易的市场与交易评估服务器：通过 OpenRouter 的 Decisions API 把结构化市场 state 发给 Jev，同时做确定性的市场状态和订单流检查，从不执行交易。<br><sub>相关: <a href="https://jev-connector.vercel.app">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/renatosousa/jev-trader"><img src="https://opengraph.githubassets.com/1/renatosousa/jev-trader" alt="jev-trader (renatosousa)" width="240"></a></td>

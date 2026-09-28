@@ -599,25 +599,6 @@ entries:
   - orchestration
   - routing
   - workflow
-- name: GreptimeDB jev() SQL function
-  name_zh: GreptimeDB 的 jev() SQL 函数
-  url: https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs
-  kind: repo
-  author: GreptimeTeam
-  description: Experimental SQL predicate jev(text, statement, threshold) in the GreptimeDB observability database that filters log rows by whether a plain-language statement holds.
-  description_zh: 可观测性数据库 GreptimeDB 中的实验性 SQL 谓词 jev(text, statement, threshold)，按一句自然语言陈述是否成立来过滤日志行。
-  jev: Each non-null row becomes a Noul question, and its probability is compared with the threshold.
-  jev_zh: 每个非空行变成一个 Noul 问题，再用其概率与阈值比较。
-  image: https://raw.githubusercontent.com/GreptimeTeam/greptimedb/main/docs/overview.png
-  metrics:
-    repo_stars: 6698
-  date: '2022-04-11'
-  links:
-    app: https://greptime.com/product/db
-  tags:
-  - sql
-  - logs
-  - database
 - name: Ground Zero
   url: https://github.com/zavocc/ground-zero
   kind: repo
@@ -642,7 +623,7 @@ entries:
   - analytics
 - name: Harbor rewardkit Jev judge
   name_zh: Harbor rewardkit 的 Jev 评委
-  url: https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx
+  url: https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/core-concepts/rewardkit/judge-criteria.mdx
   kind: docs
   author: harbor-framework
   description: Jev judge option in rewardkit, the grading package of the Terminal-Bench team's Harbor eval framework, scoring agent output against binary and rubric criteria with no reasoning text.

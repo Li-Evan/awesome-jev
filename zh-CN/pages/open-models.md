@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/feder-cr/jev"><img src="https://opengraph.githubassets.com/1/feder-cr/jev" alt="jevos" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/feder-cr/jev">jevos</a></b><br><sub>feder-cr · GitHub · ⭐ 880 · 2026-09-27</sub><br>Open-source, MIT-licensed alternative to Jev for yes/no questions, running fully offline on a laptop CPU in one forward pass with no text generation.<br><sub><b>Jev 用法:</b> Jev-compatible /v1/systemone wire format so TypeSafe's official SDK works unchanged for yes/no (noul) questions; choice and score are not implemented and return 422.</sub><br><sub>相关: <a href="https://github.com/feder-cr/jev/releases/tag/jevos">release</a></sub></td>
+<td valign="top"><b><a href="https://github.com/feder-cr/jev">jevos</a></b><br><sub>feder-cr · GitHub · ⭐ 880 · 2026-09-27</sub><br>开源的 Jev 替代品，采用 MIT 许可，专门回答是非题，在笔记本 CPU 上完全离线运行，一次前向计算出结果，不生成文本。<br><sub><b>Jev 用法:</b> 兼容 Jev 的 <code>/v1/systemone</code> 接口格式，官方 SDK 不改代码就能用来问是非题（Noul）；Choice 和 Score 尚未实现，会返回 422。</sub><br><sub>相关: <a href="https://github.com/feder-cr/jev/releases/tag/jevos">release</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"></td>
@@ -408,7 +408,7 @@
 <td valign="top"><b><a href="https://github.com/zhangcy122/OpenJev">OpenJevPro</a></b><br><sub>zhangcy122 · GitHub · ⭐ 18 · 2026-09-20</sub><br>用约束 logprob 校准，把 Qwen3、DeepSeek、Gemma 和 gpt-oss 等开放权重 LLM 变成类型化 Choice、Noul 和 Score 决策服务的框架。<br><sub>相关: <a href="https://openjev.pro">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hunkim/solar-mini4-jev"><img src="https://raw.githubusercontent.com/hunkim/solar-mini4-jev/main/bench/infographic_grok46_judge.png" alt="solar-mini4-jev" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/hunkim/solar-mini4-jev"><img src="https://opengraph.githubassets.com/1/hunkim/solar-mini4-jev" alt="solar-mini4-jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/hunkim/solar-mini4-jev">solar-mini4-jev</a></b><br><sub>hunkim · GitHub · ⭐ 16 · 2026-09-21</sub><br>即插即用的封装，以 Jev System One API 的形式提供 Upstage Solar Mini4 服务，附带自带 key 的托管端点和正面对比基准测试。<br><sub><b>Jev 用法:</b> 以 Grok 4.6 作为评判，在 447 个答案字段中 Solar Mini4 错了 7 个，Jev 错了 26 个，但 Jev 快约 3.2 倍。</sub><br><sub>相关: <a href="https://solar-mini4-jev.vercel.app">app</a> · <a href="https://hunkim.github.io/solar-mini4-jev/">docs</a></sub></td>
 </tr>
 <tr>

@@ -1507,21 +1507,6 @@ entries:
   - deepseek-harness
   - plugins
   - guardrails
-- name: dsh-jev-decide
-  url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-jev-decide
-  kind: repo
-  author: wingsky-1
-  description: Plugin for the DeepSeek Harness web GUI that gives the agent a ws_jev_decide tool with preset question sets such as plan review, risk check and secret-leak screening, plus key management, connection tests and decision history.
-  description_zh: DeepSeek Harness Web GUI 的插件，为 agent 提供一个 ws_jev_decide 工具，内置计划评审、风险检查、密钥泄露筛查等预设问题集，另有 key 管理、连接测试和决策历史。
-  metrics:
-    repo_stars: 19
-  date: '2026-08-16'
-  links:
-    repo: https://github.com/wingsky-1/dsh-plugin-hub
-  tags:
-  - deepseek-harness
-  - plugin
-  - decisions
 - name: dsh-jev-prune
   url: https://github.com/yangyu666/dsh-jev-prune
   kind: repo
@@ -2019,27 +2004,8 @@ entries:
   - claude-code
   - codex
   - diagrams
-- name: gray Jev simplification scan
-  name_zh: gray 的 Jev 精简扫描
-  url: https://github.com/vstaln/gray/blob/main/typesafe_scan.mjs
-  kind: repo
-  author: vstaln
-  description: Scripts that scan the gray agent harness codebase with Jev to score source chunks for simplification, then drill into the top chunks to classify bloat and check what must not be cut.
-  description_zh: 用 Jev 扫描 gray agent harness 代码库的脚本，先给各源码片段的可精简程度打分，再深入排名靠前的片段，判断臃肿类型并核查哪些内容不能删。
-  jev: A Choice for the kind of bloat plus Nouls for helper-extraction payoff, deletable code and guard code such as validation or security checks.
-  jev_zh: 用一个 Choice 判断臃肿的类型，再用若干 Noul 判断抽取辅助函数是否划算、代码能否删除，以及是否属于校验或安全检查之类的防护代码。
-  image: https://raw.githubusercontent.com/vstaln/gray/main/assets/gray-demo.gif
-  metrics:
-    repo_stars: 12
-  date: '2026-08-24'
-  links:
-    repo: https://github.com/vstaln/gray
-  tags:
-  - refactoring
-  - code-analysis
-  - rust
 - name: grill-me-with-jev
-  url: https://github.com/jon-devlapaz/tink-skills/tree/main/skills/grill-me-with-jev
+  url: https://github.com/jon-devlapaz/tink-skills
   kind: repo
   author: jon-devlapaz
   description: Agent skill that stress-tests an engineering plan through a decision-tree interview, using Jev to advise whether each concern should be asked now, investigated first, or skipped.
@@ -2604,25 +2570,6 @@ entries:
   tags:
   - model-routing
   - benchmark
-- name: Jev for Pi, Tau and Memory
-  name_zh: 面向 Pi、Tau 和记忆的 Jev
-  url: https://github.com/grahama1970/agent-skills/tree/main/skills/jev
-  kind: repo
-  author: grahama1970
-  description: Agent skill that puts Jev behind a Pi extension and a Python library for Tau, selecting relevant code, memory evidence and skills before the main model runs, plus shadow Jev classifiers in error-triage and AI-detection skills.
-  description_zh: agent skill，把 Jev 接在一个 Pi 扩展和一个 Tau 用的 Python 库后面，在主模型运行前挑选相关代码、记忆证据和 skill，另在错误分诊和 AI 检测类 skill 中加入影子 Jev 分类器。
-  jev: Relevance decisions over recalled code symbols, lessons and skill chains feed a deterministic context budget; question packs cover answerability, goal drift and error triage.
-  jev_zh: 对召回的代码符号、经验教训和 skill 链做相关性判断，结果输入一个确定性的上下文预算；问题包覆盖可回答性、目标偏移和错误分诊。
-  image: https://raw.githubusercontent.com/grahama1970/agent-skills/main/docs/assets/agent-skills-header.webp
-  metrics:
-    repo_stars: 7
-  date: '2026-01-11'
-  links:
-    repo: https://github.com/grahama1970/agent-skills
-  tags:
-  - pi
-  - context-selection
-  - skills
 - name: Jev Frontend QA
   url: https://github.com/Nainish-Rai/jev-frontend-qa
   kind: repo
@@ -3913,7 +3860,7 @@ entries:
   - ci
   - pre-commit
 - name: jev-stop-guard
-  url: https://github.com/coil398/dotfiles/blob/master/etc/jev-stop-guard-codex-hook.py
+  url: https://github.com/coil398/dotfiles
   kind: repo
   author: coil398
   description: Stop hook for Codex, Cursor and Devin CLI that asks Jev whether the main agent is stopping with requested work still undone, and blocks the stop when the evidence is strong.
@@ -4485,7 +4432,7 @@ entries:
   - eval
 - name: KnoxCoder Jev layer
   name_zh: KnoxCoder 的 Jev 层
-  url: https://github.com/knoxchat/knoxcoder/tree/main/extensions/knox/core/jev
+  url: https://github.com/knoxchat/knoxcoder/tree/main/extensions/knox/src/core/jev
   kind: repo
   author: knoxchat
   description: 'Jev module in the built-in coding agent of KnoxCoder, a VS Code-based editor: it judges each agent turn, gates tool calls and context passages, detects semantic doom loops, rescores messages for compaction and scores agent traces.'
@@ -5218,25 +5165,6 @@ entries:
   tags:
   - semantic-grep
   - cli
-- name: no-mistakes Jev review pre-brief
-  name_zh: no-mistakes 的 Jev 审查预简报
-  url: https://github.com/kunchenguid/no-mistakes/tree/main/internal/jev
-  kind: repo
-  author: kunchenguid
-  description: Opt-in step in the no-mistakes pre-push review pipeline where one batched Jev call ranks which surrounding files the AI reviewer should read first.
-  description_zh: no-mistakes push 前审查流水线中的一个可选步骤，用一次批量 Jev 调用排出 AI 审查者应该先读哪些周边文件。
-  jev: 'Advisory only: it can add reading suggestions but never remove files or obligations, and fails closed to an empty pre-brief; live calls took about 470 ms.'
-  jev_zh: 仅作建议：它可以添加阅读建议，但从不移除文件或审查义务，出错时回退为空的预简报；实际调用耗时约 470 毫秒。
-  image: https://raw.githubusercontent.com/kunchenguid/no-mistakes/main/demo.gif
-  metrics:
-    repo_stars: 8596
-  date: '2026-04-05'
-  links:
-    docs: https://kunchenguid.github.io/no-mistakes/
-  tags:
-  - code-review
-  - git
-  - context-ranking
 - name: nouls
   url: https://github.com/benomahony/nouls
   kind: repo
@@ -5394,25 +5322,6 @@ entries:
   tags:
   - e2e-testing
   - mobile
-- name: OmniGet Jev context pruning
-  name_zh: OmniGet 的 Jev 上下文裁剪
-  url: https://github.com/tonhowtf/omniget/blob/main/src-tauri/omniget-core/src/core/llm/prune/jev.rs
-  kind: repo
-  author: tonhowtf
-  description: Optional context-pruning judge in OmniGet's desktop app for coding agents that asks Jev whether each context span is still needed, ported from fast-jev-compaction and yoshi.
-  description_zh: 面向编程 agent 的桌面应用 OmniGet 中可选的上下文裁剪评判器，询问 Jev 每段上下文是否仍然需要，移植自 fast-jev-compaction 和 yoshi。
-  jev: Noul questions only, 16 candidates per request under a 24,000-byte cap; off by default, with a privacy warning when selected.
-  jev_zh: 只用 Noul 问题，每次请求 16 个候选，上限 24,000 字节；默认关闭，选用时会给出隐私提示。
-  image: https://raw.githubusercontent.com/tonhowtf/omniget/main/assets/readme/hero.gif
-  metrics:
-    repo_stars: 14137
-  date: '2026-02-11'
-  links:
-    app: https://tonho.wtf
-  tags:
-  - context-pruning
-  - coding-agent
-  - rust
 - name: omp-fabric typed judgment
   name_zh: omp-fabric 的类型化判断
   url: https://github.com/tickernelz/omp-fabric/blob/main/docs/judgment.md
@@ -5554,23 +5463,6 @@ entries:
   tags:
   - opencode
   - model-routing
-- name: OpenCrew
-  url: https://github.com/opencrew-ai/opencrew
-  kind: repo
-  author: opencrew-ai
-  description: Local Slack-style HQ that runs a crew of Claude Code agents with approval gates, using Jev for fast routing judgments such as whether a command is safe or a plan is complete.
-  description_zh: 本地的 Slack 风格指挥部，运行一组带审批闸门的 Claude Code agent，用 Jev 做快速路由判断，比如某条命令是否安全、某个计划是否完整。
-  jev: 'About 100 ms per typed judgment in place of a Claude Code turn: acks, lane routing, fast-model chat, read-only command approval and reviewer skips; unsure answers keep the old path.'
-  jev_zh: 每个类型化判断约 100 毫秒，取代一轮 Claude Code：确认回执、通道路由、快速模型聊天、只读命令审批和跳过审查者；答案不确定时仍走原来的路径。
-  metrics:
-    stars: 11
-  date: '2026-08-29'
-  links:
-    app: https://opencrew.run
-  tags:
-  - claude-code
-  - multi-agent
-  - approvals
 - name: OpenGantry Jev preflight
   name_zh: OpenGantry 的 Jev 预检
   url: https://github.com/jeger-ai/opengantry/blob/main/src/cli/lib/contract/preflight-jev.ts
@@ -6802,7 +6694,6 @@ entries:
   author: sting9k
   description: Paseo plugin that runs a supervisor, lead, peer, reviewer and watcher team of coding agents, with Jev via OpenRouter as an optional paid reader that flags incidents in how the work is being done.
   description_zh: Paseo 插件，运行一支由监督者、负责人、同伴、审查者和观察者组成的编程 agent 团队，并可选用经 OpenRouter 调用的 Jev 作为付费旁读者，标记工作方式上出现的问题。
-  image: https://raw.githubusercontent.com/sting9k/seatworks/v2/docs/images/slp-graph.svg
   metrics:
     stars: 12
   date: '2026-09-16'
@@ -7480,19 +7371,6 @@ entries:
   - linter
   - design-review
   - ai-slop
-- name: tenet
-  url: https://github.com/zoidsh/tenet
-  kind: repo
-  author: zoidsh
-  description: Commit-time review gate for agent-written code where each rule is written once in plain language and Jev judges every commit against it, fast enough for the agent to fix violations before you see the diff.
-  description_zh: 给 agent 写的代码设的提交时审查闸门，每条规则只需用自然语言写一次，Jev 按规则评判每次提交，速度快到 agent 能在你看到 diff 之前就修好违规。
-  metrics:
-    stars: 4
-  date: '2026-09-17'
-  tags:
-  - code-review
-  - pre-commit
-  - agents-md
 - name: Tester Army e2e
   url: https://tester.army/e2e
   kind: app
@@ -7811,22 +7689,6 @@ entries:
   tags:
   - routing
   - claude-code
-- name: WatchTower jev-triage
-  url: https://github.com/amirfish1/watchtower/blob/main/scripts/jev-triage.py
-  kind: repo
-  author: amirfish1
-  description: Read-only script for the WatchTower coding-agent fleet queue that asks Jev, for each parked in-progress ticket, whether it needs the human owner, can be resolved by an agent from evidence, or needs someone external.
-  description_zh: 为 WatchTower 编程 agent 集群队列写的只读脚本，对每个搁置中的进行中工单询问 Jev：它需要人类负责人处理，能由 agent 根据证据解决，还是需要外部人员介入。
-  jev: One Choice (who_can_resolve) per ticket, run in parallel across queues.
-  jev_zh: 每个工单一个 Choice（who_can_resolve），跨队列并行运行。
-  metrics:
-    repo_stars: 6
-  date: '2026-06-26'
-  links:
-    repo: https://github.com/amirfish1/watchtower
-  tags:
-  - coding-agents
-  - ticket-triage
 - name: wcode Jev agent-context decisions
   name_zh: wcode 的 Jev agent 上下文决策
   url: https://github.com/francis-du/wcode/blob/main/src/intelligence/jev.rs

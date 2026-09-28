@@ -263,7 +263,6 @@ entries:
   description_zh: 个人 Hacker News 阅读器，按你保存的兴趣筛选新文章，只在 HN 风格的信息流中显示相关内容。
   jev: Runs on Codiv's OpenJev model by default, with TypeSafe Jev as a switchable provider; thresholds of 0.7 for titles and 0.9 for article relevance.
   jev_zh: 默认运行在 Codiv 的 OpenJev 模型上，TypeSafe Jev 可作为可切换的提供方；标题阈值 0.7，文章相关性阈值 0.9。
-  image: https://external-preview.redd.it/cGZkd252YzFheXFoMeTpqXMSfpCE94rmVlGr8pZ7_z3kfZQqelwwzt-Id7ds.png?format=pjpg&auto=webp&s=e90f071fd20387c7898145a4feed6ca91dc9360f
   metrics:
     stars: 1
     views: 4
@@ -638,24 +637,6 @@ entries:
   - rerank
   - tagging
   - cloudflare-workers
-- name: Knowhere TOC anchor eval
-  name_zh: Knowhere 目录锚点评测
-  url: https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py
-  kind: repo
-  author: Ontos-AI
-  description: Offline eval in the Knowhere document-parsing system comparing Jev against the current model at confirming a table-of-contents start page during PDF parsing.
-  description_zh: 文档解析系统 Knowhere 中的离线评测，比较 Jev 与当前模型在 PDF 解析时确认目录起始页的表现。
-  jev: A per-page Choice of true/false on cached page text; Jev cannot take screenshots, so both arms get the same text.
-  jev_zh: 基于缓存的页面文本，每页一个真/假 Choice；Jev 不能看截图，所以两组拿到的都是同样的文本。
-  metrics:
-    repo_stars: 3433
-  date: '2026-04-30'
-  links:
-    app: https://knowhereto.ai
-  tags:
-  - document-parsing
-  - rag
-  - evaluation
 - name: Kody Jev search rerank
   name_zh: Kody 的 Jev 搜索重排
   url: https://github.com/kentcdodds/kody/blob/main/packages/worker/src/mcp/tools/search-jev-rerank.ts

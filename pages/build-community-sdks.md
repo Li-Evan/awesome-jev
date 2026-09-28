@@ -6,7 +6,7 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#community-sdks)
 
-[Model Access](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md) (68) · [Framework Adapters](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md) (174) · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · **Community SDKs**
+[Model Access](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md) (66) · [Framework Adapters](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md) (172) · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · **Community SDKs**
 
 <table>
 <tr>

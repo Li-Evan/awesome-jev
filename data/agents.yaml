@@ -118,7 +118,6 @@ entries:
   description_zh: 原生 macOS agent 应用 Agent! 中的 Jev 顾问：对已经通过模式规则的 shell 命令再给一次第二意见，数据销毁概率超过用户设定阈值的命令会被拒绝。
   jev: Uses the bundled TypeSafeKit Swift client and fails open so an outage never stalls the tool loop.
   jev_zh: 使用内置的 TypeSafeKit Swift 客户端，并采用失败放行（fail open）策略，服务中断也不会卡住工具循环。
-  image: https://raw.githubusercontent.com/AgentiLoop/Agent/main/agent-demo.gif
   metrics:
     repo_stars: 623
   date: '2026-09-18'
@@ -1349,7 +1348,7 @@ entries:
   - cost
   - calibration
 - name: iii-directory Jev search
-  url: https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs
+  url: https://github.com/iii-hq/workers
   kind: repo
   author: iii-hq
   description: Worker for the iii engine that searches registered functions, installed skills and triggers with Jev relevance judgments, falling back to hybrid search.
@@ -1522,17 +1521,6 @@ entries:
   - tool-calling
   - mcp
   - no-llm
-- name: Jev Checkpoint
-  url: https://github.com/ashishakkumar/Jev-Checkpoint
-  kind: repo
-  author: ashishakkumar
-  description: Local MCP server that turns an agent's bounded next-step decision, such as proceed, inspect callers or ask the user, into one Jev Choice and returns the route, probabilities and a thresholded recommendation.
-  description_zh: 本地 MCP 服务器，把 agent 有边界的下一步决策（例如继续、检查调用方或询问用户）转成一个 Jev Choice，返回路由、概率和按阈值给出的建议。
-  date: '2026-09-21'
-  tags:
-  - mcp
-  - confidence-gate
-  - routing
 - name: Jev Decisions
   url: https://github.com/bojansandhaus/jev-decisions
   kind: repo
@@ -2950,7 +2938,7 @@ entries:
   date: '2026-05-01'
   links:
     app: https://phantombot.bot/
-    docs: https://github.com/phantomyard/phantombot/blob/main/docs/jev.md
+    docs: https://github.com/phantomyard/phantombot
   tags:
   - assistant
   - model-routing

@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md) · **简体中文**
 
-从你的技术栈调用 Jev 的方式：托管访问、框架适配、可观测性和社区 SDK。共 68 条，按社区热度排序。
+从你的技术栈调用 Jev 的方式：托管访问、框架适配、可观测性和社区 SDK。共 66 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#模型访问)
 
-**模型访问** · [框架适配](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md) (174) · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · [社区 SDK](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-community-sdks.md) (107)
+**模型访问** · [框架适配](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md) (172) · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · [社区 SDK](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-community-sdks.md) (107)
 
 <table>
 <tr>
@@ -98,8 +98,8 @@
 <td valign="top"><b><a href="https://github.com/yym68686/uni-api-web">uni-api 的 TypeSafe 渠道</a></b><br><sub>yym68686 · GitHub · ⭐ 26 · 2025-03-11</sub><br>自托管 uni-api LLM 网关的 Web 控制台，可添加 typesafe 引擎渠道，代理 POST /v1/systemone，让 Jev 的 Choice、Noul 和 Score 问题经由网关发送。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api 的 TypeSafe 后端" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py">uni-api 的 TypeSafe 后端</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k 仓库 · 2024-07-04</sub><br>为带负载均衡的统一 LLM API 网关 uni-api 加入 TypeSafe Jev 后端，让决策请求和其他提供方一样走同一套 OpenAI 风格接口。<br><sub>相关: <a href="https://0-0.pro/r/uniapi">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/yym68686/uni-api/blob/main/tests/http/verify_typesafe.py"><img src="https://opengraph.githubassets.com/1/yym68686/uni-api" alt="uni-api 的 TypeSafe 后端" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/yym68686/uni-api/blob/main/tests/http/verify_typesafe.py">uni-api 的 TypeSafe 后端</a></b><br><sub>yym68686 · GitHub · ⭐ 1.3k 仓库 · 2024-07-04</sub><br>为带负载均衡的统一 LLM API 网关 uni-api 加入 TypeSafe Jev 后端，让决策请求和其他提供方一样走同一套 OpenAI 风格接口。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/croit/aiplane"><img src="https://raw.githubusercontent.com/croit/aiplane/main/docs/img/architecture.svg" alt="croit AIplane" width="240"></a></td>
@@ -120,10 +120,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/genlayerlabs/unhardcoded"><img src="https://opengraph.githubassets.com/1/genlayerlabs/unhardcoded" alt="unhardcoded" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/genlayerlabs/unhardcoded">unhardcoded</a></b><br><sub>genlayerlabs · GitHub · ⭐ 8 · 2026-06-22</sub><br>兼容 OpenAI 的 LLM 路由器，按调用方提供的策略为每个请求挑选模型，并以同样的选择和回退逻辑通过 POST /v1/decisions 提供 Jev 等决策模型。<br><sub>相关: <a href="https://github.com/genlayerlabs/unhardcoded/blob/main/docs/DECISION-MODELS.md">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/AgentsDanceAI/AIStore"><img src="https://opengraph.githubassets.com/1/AgentsDanceAI/AIStore" alt="AI Store" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/AgentsDanceAI/AIStore">AI Store</a></b><br><sub>AgentsDanceAI · GitHub · ⭐ 7 · 2026-08-21</sub><br>为三十款托管的开源 AI 产品提供账号、积分和工作区的一层服务，同时把自托管的 Laya 决策模型和 TypeSafe 托管的 Jev 作为按量计费的槽位提供。<br><sub>相关: <a href="https://aistore.best">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Muvon/octohub"><img src="https://opengraph.githubassets.com/1/Muvon/octohub" alt="OctoHub" width="240"></a></td>
@@ -188,10 +184,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Lore-Hex/quill-router/blob/main/src/trusted_router/data/provider_models/typesafe.json"><img src="https://opengraph.githubassets.com/1/Lore-Hex/quill-router" alt="TrustedRouter 上的 Jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Lore-Hex/quill-router/blob/main/src/trusted_router/data/provider_models/typesafe.json">TrustedRouter 上的 Jev</a></b><br><sub>Lore-Hex · GitHub · ⭐ 23 仓库 · 2026-05-02</sub><br>运行在硬件 enclave 中的端到端加密 LLM 网关 TrustedRouter，在 decide 端点上以 typesafe-ai/jev 列出 TypeSafe AI Jev，输入价格每小时从 TypeSafe 的模型页面刷新一次。<br><sub>相关: <a href="https://github.com/Lore-Hex/quill-router">repo</a> · <a href="https://trustedrouter.com">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts"><img src="https://opengraph.githubassets.com/1/sapiom/sapiom-js" alt="Sapiom llm.decide" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts">Sapiom llm.decide</a></b><br><sub>sapiom · GitHub · ⭐ 20 仓库 · 2025-11-11</sub><br>Sapiom agent SDK 中的 llm.decide 能力，经 Sapiom 的 Capability Router 调用 Jev，对类型化的 Noul、Choice 和 Score 问题返回调用方自定义答案上的校准概率。<br><sub>相关: <a href="https://github.com/sapiom/sapiom-js">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/QuantumNous/new-api-plugins/tree/main/plugins/tasks/typesafe"><img src="https://opengraph.githubassets.com/1/QuantumNous/new-api-plugins" alt="new-api 的 TypeSafe 插件" width="240"></a></td>

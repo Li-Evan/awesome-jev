@@ -478,7 +478,7 @@ entries:
   - ai-gateway
 - name: Covel Jev choice demo
   name_zh: Covel 的 Jev Choice 演示
-  url: https://github.com/ackness/covel/tree/main/plugins/jev-choice-demo
+  url: https://github.com/ackness/covel
   kind: repo
   author: ackness
   description: Optional plugin for an agentic AI RPG framework that shows the evaluation model's recommendation probability for each quick-reply option each turn, without choosing for the player.
@@ -1109,16 +1109,6 @@ entries:
   - nes
   - doom
   - emulators
-- name: Jev Games
-  url: https://game-plan.adriaansendennis.workers.dev/play
-  kind: app
-  author: adriaansendennis
-  description: Word puzzle where you connect two seemingly unrelated things in as few steps as possible, with Jev judging each link, plus a leaderboard and speedrun mode.
-  description_zh: 文字解谜游戏：用尽可能少的步数把两个看似无关的事物连起来，由 Jev 评判每一环，另有排行榜和速通模式。
-  image: https://game-plan.adriaansendennis.workers.dev/og.png
-  tags:
-  - word-game
-  - puzzle
 - name: Jev gladiator arena
   name_zh: Jev 角斗场
   url: https://www.reddit.com/r/aigamedev/comments/1wkd96v/jev_plays_both_sides_of_a_gladiator_arena_game/
@@ -3229,18 +3219,6 @@ entries:
   tags:
   - toy
   - yes-no
-- name: Loophole
-  url: https://loophole-city.vercel.app/
-  kind: app
-  author: loophole-city.vercel.app
-  description: Simulation toy where you write a rule for a tiny town and watch 100 residents try to find loopholes in it, with Jev as the referee deciding which plans are allowed or blocked.
-  description_zh: 模拟小玩具：你给一个小镇写一条规则，看 100 位居民想方设法钻它的空子，Jev 当裁判，决定哪些计划被允许、哪些被拦下。
-  jev: Jev judges each resident's plan against the rule text as allowed or blocked.
-  jev_zh: Jev 对照规则文本，把每位居民的计划判为允许或拦截。
-  tags:
-  - simulation
-  - rules
-  - toy
 - name: Magic-8-Jev
   url: https://github.com/willprout/magic-8-ball
   kind: repo
@@ -3316,20 +3294,6 @@ entries:
   - mario
   - sandbox
   - game-agent
-- name: MineAI Jev decisions
-  name_zh: MineAI 的 Jev 决策
-  url: https://github.com/ailiujiarui/MineAI/blob/main/src/main/java/com/mineai/llm/TypesafeDecisionProvider.java
-  kind: repo
-  author: ailiujiarui
-  description: Minecraft Forge mod with an autonomous fake-player agent that adds a TypeSafe Jev judgment layer beside a deterministic compiler and executable skills.
-  description_zh: Minecraft Forge mod，内含自主假玩家 agent，在确定性编译器和可执行技能之外加了一层 TypeSafe Jev 判断。
-  metrics:
-    repo_stars: 65
-  date: '2026-04-22'
-  tags:
-  - minecraft
-  - agent
-  - mod
 - name: Minesweeper AI agent benchmark
   name_zh: 扫雷 AI agent 基准测试
   url: https://github.com/buddy/minesweeper
@@ -3611,20 +3575,6 @@ entries:
   tags:
   - toy
   - captcha
-- name: River Oaks District
-  url: https://github.com/BunsDev/river-oaks
-  kind: repo
-  author: BunsDev
-  description: Walkable 3D interpretation of Houston's River Oaks District whose residents and visitors use Jev for immediate reactions, where to walk and whom to help, batched up to 32 questions with a 750 ms deadline.
-  description_zh: 可步行漫游的 3D 版休斯敦 River Oaks District，居民和访客用 Jev 决定即时反应、往哪走和帮谁，每批最多 32 个问题，截止时间 750 毫秒。
-  date: '2026-09-17'
-  links:
-    app: https://river-oaks-one.vercel.app
-    app 2: https://river-oaks-one.vercel.app
-  tags:
-  - npcs
-  - simulation
-  - 3d
 - name: River Run
   url: https://github.com/ashaazami/river-run-typesafe
   kind: repo
@@ -3988,13 +3938,11 @@ entries:
   description_zh: 在 AzerothCore 服务器上聊天和玩 World of Warcraft 3.3.5a 的终端客户端，其中的 fight 命令由 Jev 从一套精简的技能组里选择战斗战术。
   jev: Jev chooses among observed-state actions such as spells and directional moves; unsupported kits stop with a reason.
   jev_zh: Jev 从基于观察到的状态可执行的动作（如法术和方向移动）中做选择；不支持的技能组会停止并说明原因。
-  image: https://raw.githubusercontent.com/tvararu/tuicraft/main/docs/screenshot.png
   metrics:
     stars: 9
   date: '2026-02-17'
   links:
-    app: https://tuicraft.vararu.org/
-    code: https://github.com/tvararu/tuicraft/blob/main/src/wow/jev.ts
+    code: https://github.com/tvararu/peon
   tags:
   - world-of-warcraft
   - game-agent

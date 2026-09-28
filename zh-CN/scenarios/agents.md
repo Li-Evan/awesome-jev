@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md) · **简体中文**
 
-通用 agent 的工具与 skill 选择、审批、规划、记忆和 harness 决策。共 246 条，按社区热度排序。
+通用 agent 的工具与 skill 选择、审批、规划、记忆和 harness 决策。共 245 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -261,7 +261,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/phantomyard/phantombot"><img src="https://opengraph.githubassets.com/1/phantomyard/phantombot" alt="Phantombot" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/phantomyard/phantombot">Phantombot</a></b><br><sub>phantomyard · GitHub · ⭐ 16 · 2026-05-01</sub><br>围绕终端 harness 构建的持久身份 AI 助手，在 PhantomChat、Telegram 和编辑器之间共享长期记忆；可选的 Jev 筛查器充当威胁评判者，并在约 300 毫秒内把每轮路由到主模型或编程模型。<br><sub><b>Jev 用法:</b> 类型化的 primary|coder Choice 取代关键词打分来做换脑路由；出错时回退到打分器，并由 phantombot doctor 报告。</sub><br><sub>相关: <a href="https://phantombot.bot/">app</a> · <a href="https://github.com/phantomyard/phantombot/blob/main/docs/jev.md">docs</a></sub></td>
+<td valign="top"><b><a href="https://github.com/phantomyard/phantombot">Phantombot</a></b><br><sub>phantomyard · GitHub · ⭐ 16 · 2026-05-01</sub><br>围绕终端 harness 构建的持久身份 AI 助手，在 PhantomChat、Telegram 和编辑器之间共享长期记忆；可选的 Jev 筛查器充当威胁评判者，并在约 300 毫秒内把每轮路由到主模型或编程模型。<br><sub><b>Jev 用法:</b> 类型化的 primary|coder Choice 取代关键词打分来做换脑路由；出错时回退到打分器，并由 phantombot doctor 报告。</sub><br><sub>相关: <a href="https://phantombot.bot/">app</a> · <a href="https://github.com/phantomyard/phantombot">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/lioensky/VCPChat/blob/main/modules/services/globalJevService.js"><img src="https://raw.githubusercontent.com/lioensky/VCPChat/main/assets/E1-Vchat%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg" alt="VCPChat global Jev service" width="240"></a></td>
@@ -308,7 +308,7 @@
 <td valign="top"><b><a href="https://github.com/jon-devlapaz/jev-me">jev-me</a></b><br><sub>jon-devlapaz · GitHub · ⭐ 13 · 2026-09-17</sub><br>agent skill，以设计树访谈的方式拷问一份计划，每轮列出所有已解锁的决策并给出推荐答案，需要类型化判断时临时调用 Jev。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift"><img src="https://raw.githubusercontent.com/AgentiLoop/Agent/main/agent-demo.gif" alt="Agent! Jev advisor" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift"><img src="https://opengraph.githubassets.com/1/AgentiLoop/Agent" alt="Agent! Jev advisor" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift">Agent! Jev advisor</a></b><br><sub>AgentiLoop · GitHub · ⭐ 623 仓库 · 2026-09-18</sub><br>原生 macOS agent 应用 Agent! 中的 Jev 顾问：对已经通过模式规则的 shell 命令再给一次第二意见，数据销毁概率超过用户设定阈值的命令会被拒绝。<br><sub><b>Jev 用法:</b> 使用内置的 TypeSafeKit Swift 客户端，并采用失败放行（fail open）策略，服务中断也不会卡住工具循环。</sub><br><sub>相关: <a href="https://github.com/AgentiLoop/Agent">repo</a> · <a href="https://github.com/AgentiLoop/Agent/tree/main/TypeSafeKit">sdk</a> · <a href="https://agentiloop.ai">app</a></sub></td>
 </tr>
 <tr>
@@ -528,8 +528,8 @@
 <td valign="top"><b><a href="https://github.com/iamvatsalpatel/tiershift">tiershift</a></b><br><sub>iamvatsalpatel · GitHub · ⭐ 3 · 2026-09-17</sub><br>面向 TypeScript 和 Python 的模型路由器，把每个 LLM 请求发给能胜任的最便宜档位，遇到多步推理、高难度、高风险或安全问题时升级，策略用纯 YAML 编写。<br><sub><b>Jev 用法:</b> 路由判断约 180 毫秒，每千次路由四美分；每个决策都会打印理由。</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs"><img src="https://opengraph.githubassets.com/1/iii-hq/workers" alt="iii-directory Jev search" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs">iii-directory Jev search</a></b><br><sub>iii-hq · GitHub · ⭐ 109 仓库 · 2026-03-18</sub><br>iii 引擎的 worker，用 Jev 相关性判断搜索已注册的函数、已安装的 skill 和触发器，并可回退到混合搜索。<br><sub>相关: <a href="https://workers.iii.dev/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/iii-hq/workers"><img src="https://opengraph.githubassets.com/1/iii-hq/workers" alt="iii-directory Jev search" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/iii-hq/workers">iii-directory Jev search</a></b><br><sub>iii-hq · GitHub · ⭐ 109 仓库 · 2026-03-18</sub><br>iii 引擎的 worker，用 Jev 相关性判断搜索已注册的函数、已安装的 skill 和触发器，并可回退到混合搜索。<br><sub>相关: <a href="https://workers.iii.dev/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/JulesLiu390/PetGPT/blob/main/src/utils/social/jevClient.js"><img src="https://repository-images.githubusercontent.com/952838031/91883b7f-7f2b-412f-a048-8eae41b0de5a" alt="PetGPT Jev social signals" width="240"></a></td>
@@ -609,7 +609,7 @@
 </tr>
 </table>
 
-<details><summary>还有 96 条</summary>
+<details><summary>还有 95 条</summary>
 
 - **[Hersona decide](https://github.com/shiro-0x/hersona/blob/main/hersona/integrations/decision/typesafe.py)** · <sub>shiro-0x · GitHub · ⭐ 52 仓库 · 2026-06-04</sub><br>面向 AI agent 的人设属性库，其 hersona decide 命令用 TypeSafe Jev 推荐回复、追问、搜索、调用工具或暂缓，并给出置信度、人设一致度和风险。
 - **[Grok 机器人的 ask-jev 前置关卡](https://x.com/ChuckHTF/status/2102187054381617367)** · <sub>ChuckHTF · X · ♥ 1 · 2026-09-22</sub><br>由一批 Grok 机器人和助手组成的个人工作台，现在遇到小型的是/否、分桶和 1-5 打分判断时，会先通过 OpenRouter 的 Decisions API 询问 Jev，而不是唤醒 Grok。
@@ -684,7 +684,6 @@
 - **[Decision Graph Protocol](https://github.com/numerous-com/dgp)** · <sub>numerous-com · GitHub · 2026-09-19</sub><br>面向决策型 agent 的开放协议：应用暴露不可变的证据帧、类型化决策和受保护的操作，由 Jev 适配器给出评估，而副作用始终由应用代码掌控。
 - **[Frost](https://github.com/marcus/frost)** · <sub>marcus · GitHub · 2026-09-17</sub><br>用 Go 写的 CLI，输入提示词或 markdown 文档，推荐模型、harness 或 API 以及推理强度：先发一次 Jev 分析请求，再在本地确定性地选出满足质量底线的最便宜配置。
 - **[HarnessJudge](https://github.com/ndolinschi/harnessjudge)** · <sub>ndolinschi · GitHub · 2026-09-17</sub><br>给 agent 开发者用的工具：粘贴一段 agent 步骤轨迹，得到通过、重试、升级或停止的决策。
-- **[Jev Checkpoint](https://github.com/ashishakkumar/Jev-Checkpoint)** · <sub>ashishakkumar · GitHub · 2026-09-21</sub><br>本地 MCP 服务器，把 agent 有边界的下一步决策（例如继续、检查调用方或询问用户）转成一个 Jev Choice，返回路由、概率和按阈值给出的建议。
 - **[JEV plugins](https://github.com/Pinutss/jev-plugins)** · <sub>Pinutss · GitHub · 2026-09-18</sub><br>Cursor 和 Hermes 插件市场，收录 JEV Labs 的四个选择器，分别针对记忆、agent、模型和 MCP 工具，按任务和预算筛选候选，默认在本地运行，Jev 作为可选的评判者。
 - **[jev-agent-tool](https://github.com/nandansrikrishna/jev-agent-tool)** · <sub>nandansrikrishna · GitHub · 2026-09-19</sub><br>基于官方 Python SDK 构建、自带 key 的 CLI、Python API 和本地 MCP 服务器，让 agent 在运行时自行设计类型化问题，并拿到带概率的 Jev 决策。
 - **[jev-decision-gateway](https://github.com/kuldeepsinh19/jev-decision-gateway)** · <sub>kuldeepsinh19 · GitHub · 2026-09-19</sub><br>挡在昂贵 LLM 前面、不绑定提供方的网关：Jev 回答是否继续、用哪个工具、是否相关、是否通过验证这类小问题，策略层只在确实需要生成时才调用生成模型。

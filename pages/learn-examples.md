@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md)
 
-Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 74 entries, ranked by community traction.
+Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 72 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#examples-and-skills)
 
-[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (15) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · **Examples and Skills** · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (102) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (173) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
+[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (14) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · **Examples and Skills** · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (101) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (171) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -70,8 +70,8 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev demos</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>Six local side-by-side demos where Jev makes the decision and a switchable Claude or Kimi LLM writes the words, showing prices and pipeline steps per tab, with a simulated mode that needs no keys.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 repo · 2025-12-19</sub><br>Claude Code skill that packages an offline wiki of TypeSafe AI's docs, covering the Jev System One model, the Choice/Score/Noul primitives, patterns and the SDKs and HTTP API.<br><sub><b>How it uses Jev:</b> Answers Jev questions from bundled Markdown with a SHA-256 manifest, checking upstream only when the snapshot is insufficient.</sub></td>
+<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 repo · 2025-12-19</sub><br>Claude Code skill that packages an offline wiki of TypeSafe AI's docs, covering the Jev System One model, the Choice/Score/Noul primitives, patterns and the SDKs and HTTP API.<br><sub><b>How it uses Jev:</b> Answers Jev questions from bundled Markdown with a SHA-256 manifest, checking upstream only when the snapshot is insufficient.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev intro + 50 open-source use cases" width="240"></a></td>
@@ -202,10 +202,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner Jev decision lab</a></b><br><sub>andreasronge · GitHub · ⭐ 21 repo · 2025-12-01</sub><br>Lab in the PtcRunner agent-workflow harness that calls Jev from PTC-Lisp programs to classify support tickets, returning the refund ticket IDs with the probability behind every classification.<br><sub>Also: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py"><img src="https://opengraph.githubassets.com/1/Mellow-Artificial-Intelligence/openextract" alt="openextract Jev fraud-check cookbook" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py">openextract Jev fraud-check cookbook</a></b><br><sub>Mellow-Artificial-Intelligence · GitHub · ⭐ 18 repo · 2025-07-28</sub><br>Cookbook in the openextract document-extraction library that extracts metadata and risk signals from a memo, PDF or image and posts them as state to Jev on OpenRouter's Decisions API for a fraud decision.<br><sub>Also: <a href="https://github.com/Mellow-Artificial-Intelligence/openextract">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/smturtle2/codex-skills/tree/main/skills/jev-developer"><img src="https://raw.githubusercontent.com/smturtle2/codex-skills/main/docs/assets/catalog-banner.svg" alt="jev-developer" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/smturtle2/codex-skills/tree/main/skills/jev-developer">jev-developer</a></b><br><sub>smturtle2 · GitHub · ⭐ 13 repo · 2026-03-21</sub><br>Codex skill for designing and debugging Jev-backed software: how to represent evidence as state, choose judgment units and answer spaces, and compose typed judgments into results.<br><sub>Also: <a href="https://github.com/smturtle2/codex-skills">repo</a></sub></td>
 </tr>
@@ -232,10 +228,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kevintsai1202/ai-agent-dev-guide/blob/main/skills/embabel-agent-backend/references/system-one-integration.md"><img src="https://opengraph.githubassets.com/1/kevintsai1202/ai-agent-dev-guide" alt="AI Agent Dev Guide System One integration" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/kevintsai1202/ai-agent-dev-guide/blob/main/skills/embabel-agent-backend/references/system-one-integration.md">AI Agent Dev Guide System One integration</a></b><br><sub>kevintsai1202 · GitHub · ⭐ 5 repo · 2026-06-28</sub><br>Reference in a Claude Code skill suite for building Embabel and Spring AI agent apps that shows how to use Jev as fast judgment nodes: semantic @Condition gates, type-driven routing, guardrails and parallel fan-out.<br><sub>Also: <a href="https://github.com/kevintsai1202/ai-agent-dev-guide">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/v60samurai/jev-atlas"><img src="https://raw.githubusercontent.com/v60samurai/jev-atlas/main/assets/jev-atlas-banner.png" alt="Jev Atlas" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/v60samurai/jev-atlas">Jev Atlas</a></b><br><sub>v60samurai · GitHub · 2026-09-21</sub><br>Claude Code and Codex skill that reads your repository, maps where semantic decisions happen, argues which ones a System One model like Jev should own versus code, LLMs or humans, and opens a local review UI.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Menny1337/jev-lab"><img src="https://opengraph.githubassets.com/1/Menny1337/jev-lab" alt="Jev lab (TypeScript CLI)" width="240"></a></td>

@@ -172,8 +172,8 @@ Embodied control, driving simulators, and decisions in the physical world. 61 en
 <td valign="top"><b><a href="https://github.com/RobotKitAI/piper-astra-jev">piper-astra-jev</a></b><br><sub>RobotKitAI · GitHub · ⭐ 5 · 2026-09-19</sub><br>Eight demo runs on a real AgileX PiPER robot arm comparing GPT-6 Astra seeing camera images with Jev as the decider over Grounding DINO or SAM 3 perception, up to sliding a pipe fitting over a standing box.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py"><img src="https://opengraph.githubassets.com/1/rokbenko/quackd" alt="quackd Jev stepper" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py">quackd Jev stepper</a></b><br><sub>rokbenko · GitHub · ⭐ 225 repo · 2026-09-18</sub><br>Optional Jev stepper in quackd, a CLI that orchestrates hobby and ROS robots with an LLM brain, where Jev picks among the permitted discrete calls for cheaper steps while the LLM still writes poses and safety gates apply.<br><sub>Also: <a href="https://github.com/rokbenko/quackd">repo</a> · <a href="https://www.quackd.org">site</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/rokbenko/quackd"><img src="https://opengraph.githubassets.com/1/rokbenko/quackd" alt="quackd Jev stepper" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/rokbenko/quackd">quackd Jev stepper</a></b><br><sub>rokbenko · GitHub · ⭐ 225 repo · 2026-09-18</sub><br>Optional Jev stepper in quackd, a CLI that orchestrates hobby and ROS robots with an LLM brain, where Jev picks among the permitted discrete calls for cheaper steps while the LLM still writes poses and safety gates apply.<br><sub>Also: <a href="https://github.com/rokbenko/quackd">repo</a> · <a href="https://www.quackd.org">site</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/hotragn/status/2101251578610974952"><img src="https://pbs.twimg.com/amplify_video_thumb/2101248543117701120/img/n1AWqrdoj_OtGSqW.jpg" alt="Jev driving handoff" width="240"></a></td>

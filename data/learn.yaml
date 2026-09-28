@@ -152,17 +152,6 @@ subsections:
     - official
     - limitations
     pinned: true
-  - name: Migrating to v1
-    name_zh: 迁移到 v1
-    url: https://docs.typesafe.ai/migrating-to-v1
-    kind: docs
-    author: TypeSafe AI
-    description: Changes from the preview API and the old `typesafe-client` package.
-    description_zh: 相对预览版 API 和旧的 `typesafe-client` 包有哪些变化。
-    tags:
-    - docs
-    - migration
-    pinned: true
   - name: Python SDK docs
     name_zh: Python SDK 文档
     url: https://docs.typesafe.ai/sdk/python
@@ -846,18 +835,6 @@ subsections:
     tags:
     - agent-skills
     - design
-  - name: Jev Atlas
-    url: https://github.com/v60samurai/jev-atlas
-    kind: repo
-    author: v60samurai
-    description: Claude Code and Codex skill that reads your repository, maps where semantic decisions happen, argues which ones a System One model like Jev should own versus code, LLMs or humans, and opens a local review UI.
-    description_zh: Claude Code 和 Codex skill：读取你的仓库，梳理语义决策发生在哪里，论证哪些应交给 Jev 这类 System One 模型、哪些该留给代码、LLM 或人，并打开一个本地评审界面。
-    image: https://raw.githubusercontent.com/v60samurai/jev-atlas/main/assets/jev-atlas-banner.png
-    date: '2026-09-21'
-    tags:
-    - agent-skill
-    - claude-code
-    - codex
   - name: Jev Cookbook
     url: https://github.com/nexibeo/jev-cookbook
     kind: repo
@@ -1378,22 +1355,6 @@ subsections:
     - claude-code
     - skills
     - evals
-  - name: openextract Jev fraud-check cookbook
-    name_zh: openextract 的 Jev 欺诈核查 cookbook
-    url: https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py
-    kind: repo
-    author: Mellow-Artificial-Intelligence
-    description: Cookbook in the openextract document-extraction library that extracts metadata and risk signals from a memo, PDF or image and posts them as state to Jev on OpenRouter's Decisions API for a fraud decision.
-    description_zh: 文档提取库 openextract 中的 cookbook：从备忘录、PDF 或图片中提取元数据和风险信号，作为 state 发给 OpenRouter Decisions API 上的 Jev 做欺诈判定。
-    metrics:
-      repo_stars: 18
-    date: '2025-07-28'
-    links:
-      repo: https://github.com/Mellow-Artificial-Intelligence/openextract
-    tags:
-    - fraud
-    - extraction
-    - cookbook
   - name: Prompt to questions
     name_zh: 把提示词变成问题
     url: https://openrouter.ai/labs/jev/compile
@@ -1615,7 +1576,7 @@ subsections:
     - openrouter
     - python
   - name: typesafe-wiki skill
-    url: https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki
+    url: https://github.com/chujianyun/skills/tree/main/skills/typesafe-wiki
     kind: repo
     author: chujianyun
     description: Claude Code skill that packages an offline wiki of TypeSafe AI's docs, covering the Jev System One model, the Choice/Score/Noul primitives, patterns and the SDKs and HTTP API.
@@ -2456,8 +2417,6 @@ subsections:
     metrics:
       stars: 4
     date: '2026-09-20'
-    links:
-      site: https://bald0wang.github.io/jev-docs-zh/
     tags:
     - chinese
     - docs
@@ -3305,22 +3264,6 @@ subsections:
     - pricing
     - metering
     - opinion
-  - name: Jev is the missing piece in production AI systems
-    name_zh: Jev 是生产级 AI 系统缺的那块拼图
-    url: https://blog.nimendra.xyz/blog/jev-decision-layer-for-production-ai/
-    kind: article
-    author: Nimendra
-    description: Walks through a 2 AM production incident to show Jev as a bounded decision layer that picks the owning team, urgency, and whether to auto-act before an incident agent or LLM starts reasoning.
-    description_zh: 借一次凌晨 2 点的生产事故，展示 Jev 作为有边界的决策层，在事故 agent 或 LLM 开始推理之前，先选出负责的团队、判断紧急程度以及是否自动处理。
-    metrics:
-      points: 2
-    date: '2026-09-17'
-    links:
-      discussion: https://news.ycombinator.com/item?id=49737892
-    tags:
-    - incident-response
-    - architecture
-    - routing
   - name: Jev is to tool use what RAG is to context
     name_zh: Jev 之于工具使用，正如 RAG 之于上下文
     url: https://rajveerbachkaniwala.com/blog/2026/09/19/jev-is-to-tool-use-what-rag-is-to-context/
@@ -4613,23 +4556,6 @@ subsections:
     - benchmark
     - latency
     - cost
-  - name: DFAH-Bench Jev gate condition
-    name_zh: DFAH-Bench 的 Jev 关卡条件
-    url: https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex
-    kind: repo
-    author: ibm-client-engineering
-    description: 'Research extension of IBM Client Engineering''s DFAH-Bench for financial agents that compares action gates: structural checks alone, an LLM''s allow/block/review JSON judgment, and Jev''s typed choice with class probabilities.'
-    description_zh: IBM Client Engineering 面向金融 agent 的 DFAH-Bench 的研究扩展，比较几种动作关卡：仅做结构检查、由 LLM 输出 allow/block/review 的 JSON 判断，以及 Jev 带类别概率的类型化选择。
-    metrics:
-      repo_stars: 18
-    date: '2025-11-02'
-    links:
-      repo: https://github.com/ibm-client-engineering/output-drift-financial-llms
-      site: https://ibm-client-engineering.github.io/output-drift-financial-llms/
-    tags:
-    - finance
-    - agent-gating
-    - benchmark
   - name: Does Jev have politics? (Yes)
     name_zh: Jev 有政治立场吗？（有）
     url: https://idlerambling.substack.com/p/does-jev-have-politics-yes
@@ -6728,17 +6654,6 @@ subsections:
     tags:
     - benchmark
     - structured-output
-  - name: typesafe-oracles
-    url: https://github.com/trophee-bot/typesafe-oracles
-    kind: repo
-    author: trophee-bot
-    description: Measurement rig for typed oracles; on a commit-message versus diff reconciliation task over two repos, Jev matched Haiku 4.5 on accuracy while running ~4x faster at ~26x lower cost with a usable confidence signal.
-    description_zh: 类型化 oracle 的测量装置；在两个仓库上核对提交信息与 diff 是否一致的任务中，Jev 的准确率与 Haiku 4.5 持平，速度快约 4 倍，成本低约 26 倍，还提供可用的置信度信号。
-    date: '2026-09-16'
-    tags:
-    - evaluation
-    - calibration
-    - haiku
   - name: typesafe-vs-deepseek
     url: https://github.com/markfive-proto/typesafe-vs-deepseek
     kind: repo

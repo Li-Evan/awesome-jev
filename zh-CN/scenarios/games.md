@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md) · **简体中文**
 
-会玩游戏的 agent、实时决策，以及好玩的互动演示。共 276 条，按社区热度排序。
+会玩游戏的 agent、实时决策，以及好玩的互动演示。共 272 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -460,8 +460,8 @@
 <td valign="top"><b><a href="https://askjev.net/">AskJev</a></b><br><sub>robherley · 应用 · ▲ 3</sub><br>致敬 Ask Jeeves 的早期网页风格站点：输入一个问题，Jev 回答是或否、从选项中挑一个，或给出一个分数。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49782388">discussion</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/tvararu/tuicraft"><img src="https://raw.githubusercontent.com/tvararu/tuicraft/main/docs/screenshot.png" alt="tuicraft 的 Jev 战术" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/tvararu/tuicraft">tuicraft 的 Jev 战术</a></b><br><sub>tvararu · GitHub · ⭐ 9 · 2026-02-17</sub><br>在 AzerothCore 服务器上聊天和玩 World of Warcraft 3.3.5a 的终端客户端，其中的 fight 命令由 Jev 从一套精简的技能组里选择战斗战术。<br><sub><b>Jev 用法:</b> Jev 从基于观察到的状态可执行的动作（如法术和方向移动）中做选择；不支持的技能组会停止并说明原因。</sub><br><sub>相关: <a href="https://tuicraft.vararu.org/">app</a> · <a href="https://github.com/tvararu/tuicraft/blob/main/src/wow/jev.ts">code</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/tvararu/tuicraft"><img src="https://opengraph.githubassets.com/1/tvararu/tuicraft" alt="tuicraft 的 Jev 战术" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/tvararu/tuicraft">tuicraft 的 Jev 战术</a></b><br><sub>tvararu · GitHub · ⭐ 9 · 2026-02-17</sub><br>在 AzerothCore 服务器上聊天和玩 World of Warcraft 3.3.5a 的终端客户端，其中的 fight 命令由 Jev 从一套精简的技能组里选择战斗战术。<br><sub><b>Jev 用法:</b> Jev 从基于观察到的状态可执行的动作（如法术和方向移动）中做选择；不支持的技能组会停止并说明原因。</sub><br><sub>相关: <a href="https://github.com/tvararu/peon">code</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/comoc/jev-minesweeper"><img src="https://opengraph.githubassets.com/1/comoc/jev-minesweeper" alt="Jev Minesweeper" width="240"></a></td>
@@ -609,7 +609,7 @@
 </tr>
 </table>
 
-<details><summary>还有 126 条</summary>
+<details><summary>还有 122 条</summary>
 
 - **[JevEmon](https://github.com/daniel4x/JevEmon)** · <sub>daniel4x · GitHub · ⭐ 3 · 2026-09-21</sub><br>Jev 在真实的 Pokémon FireRed ROM 里跑图：代码从 RAM 读取大地图并列出可达目的地，Jev 选一个并应对野外遭遇战，目前已到达 Viridian City。
 - **[和 Jev 实时下棋](https://x.com/itspraveeny/status/2101333228808499692)** · <sub>itspraveeny · X · ♥ 3 · 2026-09-19</sub><br>Chrome 扩展抓取实时棋盘和走棋历史，发给本地后端，由 Jev 选择下一步，不借助 Stockfish；之后还拿更强的机器人测试过。
@@ -637,12 +637,11 @@
 - **[tsai-civ2](https://github.com/phyous/tsai-civ2)** · <sub>phyous · GitHub · ⭐ 2 · 2026-09-16</sub><br>实验性 harness，让 Jev 在浏览器中通过屏幕像素和键鼠输入玩初代 Civilization II，观众可实时看到各个动作的概率。
 - **[TypeSafe Chess](https://github.com/Dimesio/typesafe-chess)** · <sub>Dimesio · GitHub · ⭐ 2 · 2026-09-19</sub><br>测试 Jev 下棋水平的本地应用：chess.js 列出合法走法，Jev 挑一个，Stockfish 给每次选择打分，还有可选的课程等级，把 Jev 自己被打过分的失误喂回给它。
 - **[大规模 Jev 解谜器](https://x.com/ashkans_dev/status/2101014737383206914)** · <sub>ashkans_dev · X · ♥ 1 · 2026-09-18</sub><br>Jev 大规模批量解逻辑游戏，其中数独明显比其他游戏耗时更长。
-- **[MineAI 的 Jev 决策](https://github.com/ailiujiarui/MineAI/blob/main/src/main/java/com/mineai/llm/TypesafeDecisionProvider.java)** · <sub>ailiujiarui · GitHub · ⭐ 65 仓库 · 2026-04-22</sub><br>Minecraft Forge mod，内含自主假玩家 agent，在确定性编译器和可执行技能之外加了一层 TypeSafe Jev 判断。
 - **[Jeven Doors](https://x.com/uehaj/status/2101928834820165661)** · <sub>uehaj · X · ♥ 1 · 2026-09-21</sub><br>猜谜游戏：你有 7 个是非题来找出 Jev 心里想的答案；这次更新支持创建和上传自己的题材，并接入 WebMCP，让 agent 也能生成题材。
 - **[Temporal 井字棋 agent](https://github.com/temporal-community/temporal-agent-harness/tree/main/examples/tictactoe)** · <sub>temporal-community · GitHub · ⭐ 58 仓库 · 2026-06-18</sub><br>没有 LLM 的游戏 agent：一个 Choice 选格子，几个 Noul 发现威胁，一个 Score 评估局面。
 - **[vibedgames 模型试玩器](https://github.com/kyh/vibedgames/tree/main/apps/cli/src/lib/playtest)** · <sub>kyh · GitHub · ⭐ 57 仓库 · 2020-01-26</sub><br>面向编程 agent 的游戏工作室工具包，其中 vg playtest run 用 TypeSafe System One 驱动游戏角色，每个 tick 一次决策，经服务器代理转发。
 - **[HarnessRouter 的超级马里奥套件](https://github.com/HarnessRouter/starter-kit/tree/main/kits/mario)** · <sub>HarnessRouter · GitHub · ⭐ 54 仓库 · 2026-08-03</sub><br>入门套件：一个 System One 模型在无头浏览器里玩 Full Screen Mario，每秒决策数次，把游戏 state 当作几句字面描述来读，并选择一个操作。
-- **[Covel 的 Jev Choice 演示](https://github.com/ackness/covel/tree/main/plugins/jev-choice-demo)** · <sub>ackness · GitHub · ⭐ 51 仓库 · 2026-03-24</sub><br>agent 化 AI RPG 框架的可选插件：每回合显示评估模型对每个快捷回复选项的推荐概率，但不替玩家做选择。
+- **[Covel 的 Jev Choice 演示](https://github.com/ackness/covel)** · <sub>ackness · GitHub · ⭐ 51 仓库 · 2026-03-24</sub><br>agent 化 AI RPG 框架的可选插件：每回合显示评估模型对每个快捷回复选项的推荐概率，但不替玩家做选择。
 - **[Agent JEV Tetris](https://github.com/Yasserbhb/Agent-JEV-Tetris)** · <sub>Yasserbhb · GitHub · ⭐ 1 · 2026-09-17</sub><br>俄罗斯方块：每一步都是 Jev 在七个合法走法中做的一个 Choice，计算交给游戏代码；演示中放下 363 块、消除 114 行，且没有留下一个空洞。
 - **[Fly vs Jev: Minesweeper](https://github.com/EnesYilmazcode/JevMinesweeper)** · <sub>EnesYilmazcode · GitHub · ⭐ 1 · 2026-09-20</sub><br>让一个含 166,700 个神经元的模拟果蝇连接组和 Jev 比赛初级扫雷，双方都只能看到已翻开的线索。
 - **[Jev 读心精灵](https://x.com/builderix/status/2101972512644948169)** · <sub>builderix · X · ♥ 1 · 2026-09-21</sub><br>Akinator 式猜人游戏：花 9 分钟、$1.13 预先算好 2,125,999 个 Jev 判断（16,229 个角色 x 131 个是非题），之后游玩只需简单算术。
@@ -698,7 +697,6 @@
 - **[Jev Chat](https://jev-chat.gigabitmillion-games.workers.dev/)** · <sub>gigabitmillion-games · 应用</sub><br>日语聊天游戏：你和一个小小的居民聊天，它的表情、天气和房间会随 Jev 对你话语情绪的解读而变化。
 - **[Jev Chess (loomens)](https://chess-jev.loomens.com)** · <sub>loomens · 应用</sub><br>3D 棋盘：Jev 可以分饰两种性格自己和自己下，也可以由你执一方，走棋理念可切换，每一步背后的概率都会显示出来。
 - **[Jev Games](https://github.com/shantanugoel/jev-games)** · <sub>shantanugoel · GitHub · 2026-09-17</sub><br>可视化实验室：Jev 玩 Super Mario Bros.、Kung Fu（NES）和 Doom（ViZDoom），通过插件系统接入新游戏和模拟器，支持逐步回放；按键和按住时长由代码负责。
-- **[Jev Games](https://game-plan.adriaansendennis.workers.dev/play)** · <sub>adriaansendennis · 应用</sub><br>文字解谜游戏：用尽可能少的步数把两个看似无关的事物连起来，由 Jev 评判每一环，另有排行榜和速通模式。
 - **[Jev Plays](https://jevboardgames.everpaper.app/)** · <sub>everpaper · 应用</sub><br>和 Jev 下井字棋和四子棋，每一步由模型选择，规则由代码保证。
 - **[Jev 玩 Pac-Man](https://jev-pacman.ephraimduncan.com)** · <sub>Ephraim Duncan · 应用</sub><br>由 Jev 操控的 Pac-Man 复刻版：每到路口前，它都会收到结构化的迷宫、角色和合法方向数据，并实时选择转向。
 - **[Jev 玩俄罗斯方块](https://github.com/MachineLearning-Nerd/jev-tetris)** · <sub>MachineLearning-Nerd · GitHub · 2026-09-17</sub><br>街机版俄罗斯方块：引擎枚举所有合法且经过碰撞检测的最终落点，Jev 把它们当作类型化选项挑一个，物理由 Python 负责；附带一段讲解视频。
@@ -719,11 +717,9 @@
 - **[Kiru Hai Coach](https://github.com/smilior/kiru-hai-coach)** · <sub>smilior · GitHub · 2026-09-19</sub><br>日语单人麻将教练：Jev 从 14 张手牌里选出该打哪张，并从效率、安全性和听牌角度解释，附带课程和练习局。
 - **[Last Exit](https://github.com/0x963D/last-exit)** · <sub>0x963D · GitHub · 2026-09-17</sub><br>赛博朋克风格的边境过关遭遇战，你要骗过一个由 Jev 驱动的检查员；在 100 次脚本化过关中，走私者逃脱了 29/90 次，这批测试的输入成本估计为 $0.057。
 - **[实时追逐对手](https://openrouter.ai/labs/jev/game)** · <sub>OpenRouter · 应用</sub><br>OpenRouter Labs 的游戏：你跑，Jev 追，它每秒两到三次、每次用一个请求选出追击者的下一步，同时有一个聊天模型作为影子回答同一个问题；每小时约 $0.16。
-- **[Loophole](https://loophole-city.vercel.app/)** · <sub>loophole-city.vercel.app · 应用</sub><br>模拟小玩具：你给一个小镇写一条规则，看 100 位居民想方设法钻它的空子，Jev 当裁判，决定哪些计划被允许、哪些被拦下。
 - **[Naimono Lab](https://github.com/mocchalera/naimono-lab)** · <sub>mocchalera · GitHub · 2026-09-18</sub><br>日语家庭文字游戏，玩法是说出不存在的词：Cloudflare Worker 通过 Workers AI 问 Jev 每个词有多像真词、像名字或像句子，达到 0.85 及以上就判出局。
 - **[Node Royale](https://github.com/JanDalhuysen/jev-clash-royale-test)** · <sub>JanDalhuysen · GitHub · 2026-09-19</sub><br>Node.js 实时 Clash Royale 风格沙盒，带 canvas 客户端和 MCP 服务器，你可以对战一个 Jev 机器人和一个 Ollama 提示词加解析的机器人。
 - **[pong-jev](https://github.com/safzanpirani/pong-jev)** · <sub>safzanpirani · GitHub · 2026-09-17</sub><br>Atari Pong agent，每一帧根据五个短语问 Jev 一个 Choice（上、下或不动），不发送坐标，因为 jev-1.13 不擅长比较数值大小。
-- **[River Oaks District](https://github.com/BunsDev/river-oaks)** · <sub>BunsDev · GitHub · 2026-09-17</sub><br>可步行漫游的 3D 版休斯敦 River Oaks District，居民和访客用 Jev 决定即时反应、往哪走和帮谁，每批最多 32 个问题，截止时间 750 毫秒。
 - **[River Run](https://github.com/ashaazami/river-run-typesafe)** · <sub>ashaazami · GitHub · 2026-09-17</sub><br>用 pygame-ce 做的纵向卷轴河道射击游戏，灵感来自 Atari 的 River Raid，AI 飞行员用 Jev 实时游玩。
 - **[Shady Town](https://github.com/tpaulshippy/shady-town)** · <sub>tpaulshippy · GitHub · 2026-09-17</sub><br>黑手党风格的社交推理聚会游戏，在客厅电视上玩、用手机当手柄，Jev 取代人类主持人，驱动实时怀疑度计量条，并识别虚张声势或循环论证。
 - **[Snake Jev](https://github.com/siroccomask/snake-jev)** · <sub>siroccomask · GitHub · 2026-09-17</sub><br>桌面贪吃蛇实验：Python 把 Jev 对棋盘的并行评估合成一个走法，每个 tick 一次 API 调用；一次录制的运行在 461 个 tick 内吃到 29 个食物。

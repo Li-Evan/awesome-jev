@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md) · **简体中文**
 
-重排、检索过滤、语义搜索和知识图谱。共 86 条，按社区热度排序。
+重排、检索过滤、语义搜索和知识图谱。共 85 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -74,10 +74,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/jexp/neo4jev"><img src="https://opengraph.githubassets.com/1/jexp/neo4jev" alt="neo4jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/jexp/neo4jev">neo4jev</a></b><br><sub>jexp · GitHub · ⭐ 81 · 2026-09-16</sub><br>演示：朝着一个自然语言目标在 Neo4j 图上一跳一跳地导航，由 Jev 选择沿哪条关系走，并用集束搜索保留最佳路径。<br><sub><b>Jev 用法:</b> 同一次调用里包含一个在出边关系中挑选的 Choice 和一个判断是否到达目标的 Noul，所以每一跳只需一次往返。</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py"><img src="https://opengraph.githubassets.com/1/Ontos-AI/knowhere" alt="Knowhere 目录锚点评测" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py">Knowhere 目录锚点评测</a></b><br><sub>Ontos-AI · GitHub · ⭐ 3.4k 仓库 · 2026-04-30</sub><br>文档解析系统 Knowhere 中的离线评测，比较 Jev 与当前模型在 PDF 解析时确认目录起始页的表现。<br><sub><b>Jev 用法:</b> 基于缓存的页面文本，每页一个真/假 Choice；Jev 不能看截图，所以两组拿到的都是同样的文本。</sub><br><sub>相关: <a href="https://knowhereto.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/neural_avb/status/2100881974780993668"><img src="https://pbs.twimg.com/amplify_video_thumb/2100879106078568449/img/nCefxS323PhF_n7f.jpg" alt="Paper Breakdown 的推荐" width="240"></a></td>
@@ -224,7 +220,7 @@
 <td valign="top"><b><a href="https://github.com/tedliou/decision-model-playground">decision-model-playground</a></b><br><sub>tedliou · GitHub · ⭐ 1 · 2026-09-19</sub><br>本地浏览器试验场：由 Laya 或 Jev 为一个问题挑选最匹配的 vervecode.dev 文章，展示每个选项的原始概率、一个“无匹配”选项，以及加载和推理耗时。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/raahelpie/hn-for-me"><img src="https://external-preview.redd.it/cGZkd252YzFheXFoMeTpqXMSfpCE94rmVlGr8pZ7_z3kfZQqelwwzt-Id7ds.png?format=pjpg&amp;auto=webp&amp;s=e90f071fd20387c7898145a4feed6ca91dc9360f" alt="Hacker News For Me" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/raahelpie/hn-for-me"><img src="https://opengraph.githubassets.com/1/raahelpie/hn-for-me" alt="Hacker News For Me" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/raahelpie/hn-for-me">Hacker News For Me</a></b><br><sub>raahelpie · GitHub · ⭐ 1 · 2026-09-20</sub><br>个人 Hacker News 阅读器，按你保存的兴趣筛选新文章，只在 HN 风格的信息流中显示相关内容。<br><sub><b>Jev 用法:</b> 默认运行在 Codiv 的 OpenJev 模型上，TypeSafe Jev 可作为可切换的提供方；标题阈值 0.7，文章相关性阈值 0.9。</sub><br><sub>相关: <a href="https://news.ycombinator.com/item?id=49788260">demo</a> · <a href="https://www.reddit.com/r/SideProject/comments/1wmruft/hn_for_me_hacker_news_stories_curated_by_jev/">discussion</a> · <a href="https://x.com/RaahelSaidWhat/status/2102162969656475973">demo 2</a></sub></td>
 </tr>
 <tr>

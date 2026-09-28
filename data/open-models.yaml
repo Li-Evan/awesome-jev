@@ -1532,7 +1532,9 @@ entries:
   kind: repo
   author: feder-cr
   description: Open-source, MIT-licensed alternative to Jev for yes/no questions, running fully offline on a laptop CPU in one forward pass with no text generation.
+  description_zh: 开源的 Jev 替代品，采用 MIT 许可，专门回答是非题，在笔记本 CPU 上完全离线运行，一次前向计算出结果，不生成文本。
   jev: Jev-compatible /v1/systemone wire format so TypeSafe's official SDK works unchanged for yes/no (noul) questions; choice and score are not implemented and return 422.
+  jev_zh: 兼容 Jev 的 `/v1/systemone` 接口格式，官方 SDK 不改代码就能用来问是非题（Noul）；Choice 和 Score 尚未实现，会返回 422。
   metrics:
     stars: 880
   date: '2026-09-27'
@@ -3225,7 +3227,6 @@ entries:
   description_zh: 即插即用的封装，以 Jev System One API 的形式提供 Upstage Solar Mini4 服务，附带自带 key 的托管端点和正面对比基准测试。
   jev: Under a Grok 4.6 judge, Solar Mini4 missed 7 of 447 answer fields and Jev missed 26, while Jev was about 3.2x faster.
   jev_zh: 以 Grok 4.6 作为评判，在 447 个答案字段中 Solar Mini4 错了 7 个，Jev 错了 26 个，但 Jev 快约 3.2 倍。
-  image: https://raw.githubusercontent.com/hunkim/solar-mini4-jev/main/bench/infographic_grok46_judge.png
   metrics:
     stars: 16
   date: '2026-09-21'

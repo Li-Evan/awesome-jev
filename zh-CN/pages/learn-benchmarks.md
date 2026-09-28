@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) · **简体中文**
 
-官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 173 条，按社区热度排序。
+官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 171 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#评测与案例)
 
-[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (15) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (74) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (102) · **评测与案例** · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
+[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (14) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (72) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (101) · **评测与案例** · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -454,10 +454,6 @@
 <td valign="top"><b><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md">在真实对话记录上用 Jev 推荐 skill</a></b><br><sub>ucsandman · GitHub · ⭐ 24 仓库 · 2026-08-13</sub><br>测量 Jev 每轮挑选正确 skill 的效果：从 838 份 Claude Code 对话记录中挖出 407 个 skill 和 356 轮，错误加载率 73.3%，关键词基线为 96.5%，并指出首次调用的召回率是上限所在。<br><sub>相关: <a href="https://github.com/ucsandman/claude-harness">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex"><img src="https://opengraph.githubassets.com/1/ibm-client-engineering/output-drift-financial-llms" alt="DFAH-Bench 的 Jev 关卡条件" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex">DFAH-Bench 的 Jev 关卡条件</a></b><br><sub>ibm-client-engineering · GitHub · ⭐ 18 仓库 · 2025-11-02</sub><br>IBM Client Engineering 面向金融 agent 的 DFAH-Bench 的研究扩展，比较几种动作关卡：仅做结构检查、由 LLM 输出 allow/block/review 的 JSON 判断，以及 Jev 带类别概率的类型化选择。<br><sub>相关: <a href="https://github.com/ibm-client-engineering/output-drift-financial-llms">repo</a> · <a href="https://ibm-client-engineering.github.io/output-drift-financial-llms/">site</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/getaskclaw/amber/tree/main/decision-axis"><img src="https://opengraph.githubassets.com/1/getaskclaw/amber" alt="AMBER 决策轴评测" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/getaskclaw/amber/tree/main/decision-axis">AMBER 决策轴评测</a></b><br><sub>getaskclaw · GitHub · ⭐ 15 仓库 · 2026-08-20</sub><br>AMBER 回放基准中针对 Jev 等决策模型的评测流水线，基于 HMAC 签名的记录报告各类别准确率、校准分箱、ECE、阈值扫描以及成本/延迟。<br><sub>相关: <a href="https://github.com/getaskclaw/amber">repo</a></sub></td>
 </tr>
@@ -609,11 +605,14 @@
 <td width="260" valign="top"><a href="https://github.com/nikkoxgonzales/jev-certify"><img src="https://raw.githubusercontent.com/nikkoxgonzales/jev-certify/main/docs/risk-coverage.svg" alt="jev-certify" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nikkoxgonzales/jev-certify">jev-certify</a></b><br><sub>nikkoxgonzales · GitHub · 2026-09-21</sub><br>工具包加一项 CLINC150 研究：通过保形风险控制（conformal risk control）把 Jev 的概率转成路由阈值，并用预测驱动推断（prediction-powered inference）审计这些阈值：2,412 次决策花费 $0.23，也展示了界限在哪里失效。</td>
 </tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Bud-ro/jev-demos"><img src="https://opengraph.githubassets.com/1/Bud-ro/jev-demos" alt="jev-demos" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Bud-ro/jev-demos">jev-demos</a></b><br><sub>Bud-ro · GitHub · 2026-09-17</sub><br>用 Dart 写的迷宫实验，测试 Jev 的空间前瞻能力：每次请求让它给出多达 100 步后续走法时，它一个迷宫也没解出来；但给出相邻格子的提示、只问下一步时，它解出了 6/10 个 5x5 迷宫。<br><sub><b>Jev 用法:</b> 在同一个请求里为每个后续步骤各问一个 Choice；非法走法计为失败。</sub></td>
+</tr>
 </table>
 
-<details><summary>还有 23 条</summary>
+<details><summary>还有 21 条</summary>
 
-- **[jev-demos](https://github.com/Bud-ro/jev-demos)** · <sub>Bud-ro · GitHub · 2026-09-17</sub><br>用 Dart 写的迷宫实验，测试 Jev 的空间前瞻能力：每次请求让它给出多达 100 步后续走法时，它一个迷宫也没解出来；但给出相邻格子的提示、只问下一步时，它解出了 6/10 个 5x5 迷宫。
 - **[jev-eval](https://github.com/Shogo-nfrealmusic/jev-eval)** · <sub>Shogo-nfrealmusic · GitHub · 2026-09-18</sub><br>第三方在相同条件下比较 Jev 与 gpt-4o-mini、Claude Sonnet 4.5，任务是为日本一家摄影服务路由 60 条 4 种语言的合成预约咨询。
 - **[jev-headline-bench](https://github.com/Gaurav-Gosain/jev-headline-bench)** · <sub>Gaurav-Gosain · GitHub · 2026-09-16</sub><br>测试 jev-1.13.0 仅凭两个标题能否挑出真实 Upworthy A/B 测试的胜者：在 10,984 个随机实验上正确率 64.5%，在差距明显的实验上升到 74.7%。
 - **[jev-measured](https://github.com/WallerChen/jev-measured)** · <sub>WallerChen · GitHub · 2026-09-19</sub><br>通过 OpenRouter 在八个用例上对真实 Jev API 的成本、延迟和原始输出做的可复现测量，外加 27 张客服工单上的小规模正面对比；整轮运行花费不到一美分。
@@ -634,7 +633,6 @@
 - **[类型化判断还是 agent 循环？](https://blog.r6i.it/typesafe-jev-vs-agentic-loop.html)** · <sub>samreghenzi · 文章 · 2026-09-21</sub><br>用带扇出的分层 Choice 对比 GPT 工具调用 agent，平均延迟从 9.62 秒降到 1.38 秒。
 - **[TypeSafe Jev 下国际象棋](https://dev.to/maximsaplin/typesafe-jev-played-chess-and-landed-next-to-reasoning-models-28ga)** · <sub>Maxim Saplin · 文章 · 2026-09-17</sub><br>让 Jev 跑 LLM Chess 基准，把合法走法作为 Choice，最终排在约第 59 名，Elo 约 243，与中游的推理模型相当，每局约 $0.0015。
 - **[TypeSafe Jev 对比 Claude Code：4 个模型、2 项真实任务](https://primeline.cc/blog/typesafe-jev-pre-registered-test)** · <sub>Robin (PrimeLine) · 文章 · 2026-09-18</sub><br>对 Jev、GPT-5.6、Opus 5 和 Haiku 4.5 的预注册测试，任务是两项真实的 Claude Code 工作，两项任务上的排名互相颠倒，作者解释了原因。
-- **[typesafe-oracles](https://github.com/trophee-bot/typesafe-oracles)** · <sub>trophee-bot · GitHub · 2026-09-16</sub><br>类型化 oracle 的测量装置；在两个仓库上核对提交信息与 diff 是否一致的任务中，Jev 的准确率与 Haiku 4.5 持平，速度快约 4 倍，成本低约 26 倍，还提供可用的置信度信号。
 - **[我们在搜索重排和分类上测试了 Jev](https://parallel.ai/blog/testing-jev)** · <sub>Vlad Shulman (Parallel) · 文章 · 2026-09-18</sub><br>一家搜索 API 公司以零样本方式在重排、主题分类和查询时效性上测试 Jev：在 NDCG@10 上它以 0.7 追平了一个定制重排器，但落后于专门的内部分类器。
 
 </details>

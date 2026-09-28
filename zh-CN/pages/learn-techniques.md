@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) · **简体中文**
 
-官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 102 条，按社区热度排序。
+官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 101 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#技巧与分析)
 
-[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (15) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (74) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · **技巧与分析** · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (173) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
+[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (14) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (72) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · **技巧与分析** · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (171) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -192,10 +192,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://bernoulli.app/articles/is-jev-confident"><img src="https://bernoulli.app/og-confidence.png" alt="Jev 有把握吗？" width="240"></a></td>
 <td valign="top"><b><a href="https://bernoulli.app/articles/is-jev-confident">Jev 有把握吗？</a></b><br><sub>Stanislav Yurin · 文章 · ▲ 2 · 2026-09-18</sub><br>基于数十万条线上答案，逆向推出 Choice 置信度的计算方式，并展示往选项列表里塞填充项会如何抬高置信度。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49765813">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://blog.nimendra.xyz/blog/jev-decision-layer-for-production-ai/">Jev 是生产级 AI 系统缺的那块拼图</a></b><br><sub>Nimendra · 文章 · ▲ 2 · 2026-09-17</sub><br>借一次凌晨 2 点的生产事故，展示 Jev 作为有边界的决策层，在事故 agent 或 LLM 开始推理之前，先选出负责的团队、判断紧急程度以及是否自动处理。<br><sub>相关: <a href="https://news.ycombinator.com/item?id=49737892">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://patmcguinness.substack.com/p/jev-makes-fast-and-cheap-decisions"><img src="https://substackcdn.com/image/fetch/$s_!3sHt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92400f8-6f41-44c7-9233-a2449f4c413e_936x537.png" alt="Jev 做出又快又便宜的决策" width="240"></a></td>

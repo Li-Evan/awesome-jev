@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md)
 
-Writing feedback, generative UI, music, art, and social media tools. 134 entries, ranked by community traction.
+Writing feedback, generative UI, music, art, and social media tools. 133 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -490,10 +490,6 @@ Writing feedback, generative UI, music, art, and social media tools. 134 entries
 <tr>
 <td width="260" valign="top"><a href="https://docs.copilotkit.ai/cookbook/jev-generative-ui"><img src="https://docs.copilotkit.ai/og/cookbook/jev-generative-ui/og.png" alt="CopilotKit generative UI cookbook" width="240"></a></td>
 <td valign="top"><b><a href="https://docs.copilotkit.ai/cookbook/jev-generative-ui">CopilotKit generative UI cookbook</a></b><br><sub>CopilotKit · Article</sub><br>A Choice decides which panel to show and per-candidate Scores order what goes in it.<br><sub>Also: <a href="https://github.com/CopilotKit/CopilotKit">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://crowdcheck-ai.vercel.app/">Crowdcheck</a></b><br><sub>crowdcheck-ai · App</sub><br>Tests a short social post on 10,000 persistent synthetic personas before it goes live, estimating how each persona group would react.<br><sub><b>How it uses Jev:</b> Code decides who sees the post; batched Jev calls return read, like/dislike, agreement, repost, follow and block probabilities per persona group.</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/lirantal/discoprint"><img src="https://opengraph.githubassets.com/1/lirantal/discoprint" alt="discoprint" width="240"></a></td>

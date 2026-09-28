@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md) · **简体中文**
 
-写作反馈、生成式 UI、音乐、艺术和社交媒体工具。共 134 条，按社区热度排序。
+写作反馈、生成式 UI、音乐、艺术和社交媒体工具。共 133 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -490,10 +490,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://docs.copilotkit.ai/cookbook/jev-generative-ui"><img src="https://docs.copilotkit.ai/og/cookbook/jev-generative-ui/og.png" alt="CopilotKit 生成式 UI 指南" width="240"></a></td>
 <td valign="top"><b><a href="https://docs.copilotkit.ai/cookbook/jev-generative-ui">CopilotKit 生成式 UI 指南</a></b><br><sub>CopilotKit · 文章</sub><br>由一个 Choice 决定展示哪个面板，再用针对每个候选的 Score 给面板里的内容排序。<br><sub>相关: <a href="https://github.com/CopilotKit/CopilotKit">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://crowdcheck-ai.vercel.app/">Crowdcheck</a></b><br><sub>crowdcheck-ai · 应用</sub><br>在短社交帖子发布前，先在 10,000 个持久存在的合成人格上测试，估算各个人群会如何反应。<br><sub><b>Jev 用法:</b> 由代码决定谁能看到帖子；批量 Jev 调用返回每个人群阅读、点赞/点踩、认同、转发、关注和拉黑的概率。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/lirantal/discoprint"><img src="https://opengraph.githubassets.com/1/lirantal/discoprint" alt="discoprint" width="240"></a></td>

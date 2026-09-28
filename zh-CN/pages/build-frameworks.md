@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md) · **简体中文**
 
-从你的技术栈调用 Jev 的方式：托管访问、框架适配、可观测性和社区 SDK。共 174 条，按社区热度排序。
+从你的技术栈调用 Jev 的方式：托管访问、框架适配、可观测性和社区 SDK。共 172 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#框架适配)
 
-[模型访问](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md) (68) · **框架适配** · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · [社区 SDK](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-community-sdks.md) (107)
+[模型访问](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md) (66) · **框架适配** · [可观测性](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-observability.md) (14) · [社区 SDK](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-community-sdks.md) (107)
 
 <table>
 <tr>
@@ -28,10 +28,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py"><img src="https://pydantic.dev/docs/ai/img/pydantic-ai-light.svg" alt="Pydantic AI TypeSafeModel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py">Pydantic AI TypeSafeModel</a></b><br><sub>pydantic · GitHub · ⭐ 20.1k 仓库 · 2026-09-18</sub><br>Pydantic AI 的模型类，在 Jev 上运行决策类 agent：output_type 的每个字段对应一个问题，答案填入输出，只需换模型名就能对比 Jev 和 LLM。<br><sub>相关: <a href="https://github.com/pydantic/pydantic-ai">repo</a> · <a href="https://github.com/pydantic/pydantic-ai/blob/main/docs/models/typesafe.md">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe"><img src="https://raw.githubusercontent.com/elizaOS/eliza/develop/packages/shared/assets/banners/elizaos_banner.svg" alt="elizaOS 的 TypeSafe 适配器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe">elizaOS 的 TypeSafe 适配器</a></b><br><sub>elizaOS · GitHub · ⭐ 19.4k 仓库 · 2026-09-16</sub><br>elizaOS agent 包中需主动启用的服务端 TypeSafe 客户端，用 Zod 校验 Choice、Score 和 Noul 请求，只在显式调用 systemOne 时才发送；默认不注册到运行时。<br><sub>相关: <a href="https://github.com/elizaOS/eliza">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev 工作流构建器" width="240"></a></td>
@@ -240,10 +236,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ekizito96/Turn"><img src="https://opengraph.githubassets.com/1/ekizito96/Turn" alt="Turn" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ekizito96/Turn">Turn</a></b><br><sub>ekizito96 · GitHub · ⭐ 11 · 2026-02-17</sub><br>面向 AI agent 的编译型语言及运行时，其中 decide(state, questions) 是一个持久化的 effect，内置 TypeSafe System One 驱动，可在 Jev 上运行 Choice、Score 和 Noul 工作流。<br><sub><b>Jev 用法:</b> decide() 与提供方无关，本地运行可用 mock 驱动；程序按答案置信度分支，例如把置信度低于 0.8 的工单转给审核人。</sub><br><sub>相关: <a href="https://github.com/ekizito96/Turn/tree/main/providers/turn-provider-typesafe">code</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 仓库 · 2021-04-07</sub><br>DXOS monorepo 中面向 TypeSafe System One 模型的实验性 Effect 客户端，schema 同时就是请求和响应，每个 struct 字段编译成一个 Jev 问题。<br><sub><b>Jev 用法:</b> DecisionModel 服务仿照 Effect 的 LanguageModel；所有字段在一次调用中完成，并解码回声明的类型。</sub><br><sub>相关: <a href="https://dxos.org">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/doeixd/discern"><img src="https://raw.githubusercontent.com/doeixd/discern/main/docs/assets/discern-explainer-silent.gif" alt="Discern" width="240"></a></td>
@@ -609,12 +601,18 @@
 <td width="260" valign="top"><a href="https://github.com/redwood-labs-ai/cambium/blob/main/packages/cambium-runner/src/providers/typesafe.ts"><img src="https://opengraph.githubassets.com/1/redwood-labs-ai/cambium" alt="Cambium 的决策模式" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/redwood-labs-ai/cambium/blob/main/packages/cambium-runner/src/providers/typesafe.ts">Cambium 的决策模式</a></b><br><sub>redwood-labs-ai · GitHub · ⭐ 5 仓库 · 2026-04-20</sub><br>Ruby DSL Cambium（把 LLM 程序编译成可审计的 JSON）中的决策模式，通过内置的 typesafe 提供方把强制选择和是/否类的 gen 发给 Jev，并用 returns 块作为问题集。<br><sub>相关: <a href="https://github.com/redwood-labs-ai/cambium">repo</a></sub></td>
 </tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md"><img src="https://opengraph.githubassets.com/1/cargo-ai/cargo-ai" alt="cargo-ai 的 TypeSafe 提供方" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md">cargo-ai 的 TypeSafe 提供方</a></b><br><sub>cargo-ai · GitHub · ⭐ 5 仓库 · 2025-07-21</sub><br>Rust 框架 cargo-ai（用 JSON 声明轻量 AI agent）的 TypeSafe 提供方，把 agent 的输出 schema 映射成 Jev 问题：字符串枚举变成 Choice，有界数值变成 Score。<br><sub>相关: <a href="https://cargo-ai.org">app</a> · <a href="https://github.com/cargo-ai/cargo-ai">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev"><img src="https://opengraph.githubassets.com/1/npipeline/NPipeline" alt="NPipeline 的 Jev 决策扩展" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev">NPipeline 的 Jev 决策扩展</a></b><br><sub>npipeline · GitHub · ⭐ 5 仓库 · 2025-09-02</sub><br>NPipeline .NET 流式数据管道库的 NPipeline.Extensions.AI.Decisions.Jev 包，把 Jev Choice 问题接入类型化路由，Score 和 Noul 则可通过更底层的客户端使用。<br><sub>相关: <a href="https://www.npipeline.net">app</a> · <a href="https://github.com/npipeline/NPipeline">repo</a></sub></td>
+</tr>
 </table>
 
-<details><summary>还有 24 条</summary>
+<details><summary>还有 22 条</summary>
 
-- **[cargo-ai 的 TypeSafe 提供方](https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md)** · <sub>cargo-ai · GitHub · ⭐ 5 仓库 · 2025-07-21</sub><br>Rust 框架 cargo-ai（用 JSON 声明轻量 AI agent）的 TypeSafe 提供方，把 agent 的输出 schema 映射成 Jev 问题：字符串枚举变成 Choice，有界数值变成 Score。
-- **[NPipeline 的 Jev 决策扩展](https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev)** · <sub>npipeline · GitHub · ⭐ 5 仓库 · 2025-09-02</sub><br>NPipeline .NET 流式数据管道库的 NPipeline.Extensions.AI.Decisions.Jev 包，把 Jev Choice 问题接入类型化路由，Score 和 Noul 则可通过更底层的客户端使用。
 - **[goodall 的 typesafe 包](https://github.com/bensyverson/goodall/tree/main/typesafe)** · <sub>bensyverson · GitHub · ⭐ 2 仓库 · 2026-09-15</sub><br>小型 Go agent 循环库 goodall 中的可选 typesafe 包，把 Jev 用作工具或轮次路由的评判者，与聊天模型并用，附一个邮件分诊示例。
 - **[ai-cli](https://ai-cli.dev)** · <sub>Vercel Labs · 应用</sub><br>AI SDK 的终端 CLI，其 evaluate 命令把文本通过管道送进类型化的 boolean、choice 和 score 问题，返回概率供 shell 脚本使用。
 - **[BAML](https://boundaryml.com/blog/typesafe-ai-jev)** · <sub>BoundaryML · 文章 · 2026-09-17</sub><br>根据函数的返回类型推导出 Jev 问题，布尔值和浮点数变成 Noul，枚举变成 Choice。

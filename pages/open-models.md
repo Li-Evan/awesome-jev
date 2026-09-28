@@ -408,7 +408,7 @@ Community models and servers that imitate Jev's interface. Their accuracy and ca
 <td valign="top"><b><a href="https://github.com/zhangcy122/OpenJev">OpenJevPro</a></b><br><sub>zhangcy122 · GitHub · ⭐ 18 · 2026-09-20</sub><br>Framework that turns open-weight LLMs such as Qwen3, DeepSeek, Gemma and gpt-oss into typed Choice, Noul and Score decision services using constrained logprob calibration.<br><sub>Also: <a href="https://openjev.pro">site</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/hunkim/solar-mini4-jev"><img src="https://raw.githubusercontent.com/hunkim/solar-mini4-jev/main/bench/infographic_grok46_judge.png" alt="solar-mini4-jev" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/hunkim/solar-mini4-jev"><img src="https://opengraph.githubassets.com/1/hunkim/solar-mini4-jev" alt="solar-mini4-jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/hunkim/solar-mini4-jev">solar-mini4-jev</a></b><br><sub>hunkim · GitHub · ⭐ 16 · 2026-09-21</sub><br>Drop-in wrapper that serves Upstage Solar Mini4 through the Jev System One API shape, with a hosted bring-your-own-key endpoint and a head-to-head benchmark.<br><sub><b>How it uses Jev:</b> Under a Grok 4.6 judge, Solar Mini4 missed 7 of 447 answer fields and Jev missed 26, while Jev was about 3.2x faster.</sub><br><sub>Also: <a href="https://solar-mini4-jev.vercel.app">app</a> · <a href="https://hunkim.github.io/solar-mini4-jev/">docs</a></sub></td>
 </tr>
 <tr>

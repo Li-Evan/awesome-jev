@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md)
 
-Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 173 entries, ranked by community traction.
+Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 171 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#benchmarks-and-case-studies)
 
-[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (15) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (74) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (102) · **Benchmarks and Case Studies** · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
+[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (14) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (72) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (101) · **Benchmarks and Case Studies** · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -454,10 +454,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td valign="top"><b><a href="https://github.com/ucsandman/claude-harness/blob/main/labs/claude-mods/experiments/jev/FINDINGS.md">Jev skill suggestion on real transcripts</a></b><br><sub>ucsandman · GitHub · ⭐ 24 repo · 2026-08-13</sub><br>Measurement of Jev picking the right skill per turn over 407 skills and 356 turns mined from 838 Claude Code transcripts: 73.3% wrong loads vs 96.5% for a keyword baseline, with first-call recall identified as the ceiling.<br><sub>Also: <a href="https://github.com/ucsandman/claude-harness">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex"><img src="https://opengraph.githubassets.com/1/ibm-client-engineering/output-drift-financial-llms" alt="DFAH-Bench Jev gate condition" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/ibm-client-engineering/output-drift-financial-llms/blob/main/paper/arxiv_dfah_bench_v3/v3_extension.tex">DFAH-Bench Jev gate condition</a></b><br><sub>ibm-client-engineering · GitHub · ⭐ 18 repo · 2025-11-02</sub><br>Research extension of IBM Client Engineering's DFAH-Bench for financial agents that compares action gates: structural checks alone, an LLM's allow/block/review JSON judgment, and Jev's typed choice with class probabilities.<br><sub>Also: <a href="https://github.com/ibm-client-engineering/output-drift-financial-llms">repo</a> · <a href="https://ibm-client-engineering.github.io/output-drift-financial-llms/">site</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/getaskclaw/amber/tree/main/decision-axis"><img src="https://opengraph.githubassets.com/1/getaskclaw/amber" alt="AMBER decision-axis evals" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/getaskclaw/amber/tree/main/decision-axis">AMBER decision-axis evals</a></b><br><sub>getaskclaw · GitHub · ⭐ 15 repo · 2026-08-20</sub><br>Evaluation pipeline in the AMBER replay benchmark for decision models such as Jev, reporting per-family accuracy, calibration bins, ECE, threshold sweeps and cost/latency from HMAC-signed records.<br><sub>Also: <a href="https://github.com/getaskclaw/amber">repo</a></sub></td>
 </tr>
@@ -609,11 +605,14 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <td width="260" valign="top"><a href="https://github.com/nikkoxgonzales/jev-certify"><img src="https://raw.githubusercontent.com/nikkoxgonzales/jev-certify/main/docs/risk-coverage.svg" alt="jev-certify" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/nikkoxgonzales/jev-certify">jev-certify</a></b><br><sub>nikkoxgonzales · GitHub · 2026-09-21</sub><br>Toolkit and CLINC150 study that turns Jev's probabilities into routing thresholds via conformal risk control and audits them with prediction-powered inference: 2,412 decisions for $0.23, including where the bound breaks.</td>
 </tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/Bud-ro/jev-demos"><img src="https://opengraph.githubassets.com/1/Bud-ro/jev-demos" alt="jev-demos" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/Bud-ro/jev-demos">jev-demos</a></b><br><sub>Bud-ro · GitHub · 2026-09-17</sub><br>Dart maze experiments testing Jev's spatial lookahead: asked for up to 100 future moves per request it solved zero mazes, but with adjacent-tile hints and one next-move question it solved 6/10 5x5 mazes.<br><sub><b>How it uses Jev:</b> One Choice per future step in the same request; invalid moves count as failures.</sub></td>
+</tr>
 </table>
 
-<details><summary>23 more</summary>
+<details><summary>21 more</summary>
 
-- **[jev-demos](https://github.com/Bud-ro/jev-demos)** · <sub>Bud-ro · GitHub · 2026-09-17</sub><br>Dart maze experiments testing Jev's spatial lookahead: asked for up to 100 future moves per request it solved zero mazes, but with adjacent-tile hints and one next-move question it solved 6/10 5x5 mazes.
 - **[jev-eval](https://github.com/Shogo-nfrealmusic/jev-eval)** · <sub>Shogo-nfrealmusic · GitHub · 2026-09-18</sub><br>Third-party comparison of Jev with gpt-4o-mini and Claude Sonnet 4.5 under identical conditions on routing 60 synthetic booking inquiries in 4 languages for a photo-shoot service in Japan.
 - **[jev-headline-bench](https://github.com/Gaurav-Gosain/jev-headline-bench)** · <sub>Gaurav-Gosain · GitHub · 2026-09-16</sub><br>Tests whether jev-1.13.0, seeing only the two headlines, can pick the winner of real Upworthy A/B tests: 64.5% on 10,984 randomized experiments, rising to 74.7% when the difference was decisive.
 - **[jev-measured](https://github.com/WallerChen/jev-measured)** · <sub>WallerChen · GitHub · 2026-09-19</sub><br>Reproducible measurements of cost, latency and raw output from the live Jev API via OpenRouter across eight use cases, plus a small head-to-head on 27 support tickets; the whole run cost under one cent.
@@ -634,7 +633,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - **[Typed judgments or agentic loops?](https://blog.r6i.it/typesafe-jev-vs-agentic-loop.html)** · <sub>samreghenzi · Article · 2026-09-21</sub><br>Hierarchical Choices with fan-out against a GPT tool-calling agent, cutting average latency from 9.62 s to 1.38 s.
 - **[TypeSafe Jev played chess](https://dev.to/maximsaplin/typesafe-jev-played-chess-and-landed-next-to-reasoning-models-28ga)** · <sub>Maxim Saplin · Article · 2026-09-17</sub><br>Runs Jev through the LLM Chess benchmark with legal moves as a Choice, landing around #59 at Elo ~243 next to mid-pack reasoning models for ~$0.0015 per game.
 - **[TypeSafe Jev vs Claude Code: 4 models, 2 real jobs](https://primeline.cc/blog/typesafe-jev-pre-registered-test)** · <sub>Robin (PrimeLine) · Article · 2026-09-18</sub><br>Pre-registered test of Jev, GPT-5.6, Opus 5 and Haiku 4.5 on two real Claude Code jobs, where the ranking flips between the jobs and the author explains why.
-- **[typesafe-oracles](https://github.com/trophee-bot/typesafe-oracles)** · <sub>trophee-bot · GitHub · 2026-09-16</sub><br>Measurement rig for typed oracles; on a commit-message versus diff reconciliation task over two repos, Jev matched Haiku 4.5 on accuracy while running ~4x faster at ~26x lower cost with a usable confidence signal.
 - **[We tested Jev on search reranking and classification](https://parallel.ai/blog/testing-jev)** · <sub>Vlad Shulman (Parallel) · Article · 2026-09-18</sub><br>Search API company tests Jev zero-shot on reranking, topic classification and query freshness: it matched a custom reranker at NDCG@10 of 0.7 but trailed specialized internal classifiers.
 
 </details>

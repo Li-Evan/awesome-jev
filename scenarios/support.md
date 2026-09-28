@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md)
 
-Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, ranked by community traction.
+Ticket routing, email triage, lead scoring, and CRM automation. 43 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -146,10 +146,6 @@ Ticket routing, email triage, lead scoring, and CRM automation. 44 entries, rank
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rszhd/signalscout/blob/dev/packages/engine/src/ai/provider.ts"><img src="https://opengraph.githubassets.com/1/rszhd/signalscout" alt="SignalScout" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/rszhd/signalscout/blob/dev/packages/engine/src/ai/provider.ts">SignalScout</a></b><br><sub>rszhd · GitHub · ⭐ 8 repo · 2026-09-08</sub><br>Open-source intent monitoring that searches Reddit, X, LinkedIn, YouTube, TikTok and Instagram for people describing a problem your product solves and scores each conversation for fit and buyer intent.<br><sub><b>How it uses Jev:</b> The AI SDK TypeSafe provider supplies an evaluation model (jev-latest, $0.042 per million input tokens) for the scoring questions.</sub><br><sub>Also: <a href="https://github.com/rszhd/signalscout">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py"><img src="https://opengraph.githubassets.com/1/sumitrevolt/leadgenrationaivoiceagent" alt="LeadGen AI TypeSafe integration" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py">LeadGen AI TypeSafe integration</a></b><br><sub>sumitrevolt · GitHub · ⭐ 1 repo · 2026-09-17</sub><br>Experimental Jev layer in LeadGen AI, a marketing and voice-calling SaaS for small Indian businesses, that picks specialization labels for agent roles and validates worker outputs such as cold emails.<br><sub>Also: <a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/promptgtm-shared/clay-jev-people-ranker"><img src="https://opengraph.githubassets.com/1/promptgtm-shared/clay-jev-people-ranker" alt="clay-jev-people-ranker" width="240"></a></td>

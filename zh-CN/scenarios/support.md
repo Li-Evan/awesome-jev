@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md) · **简体中文**
 
-工单路由、邮件分拣、线索打分和 CRM 自动化。共 44 条，按社区热度排序。
+工单路由、邮件分拣、线索打分和 CRM 自动化。共 43 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -146,10 +146,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rszhd/signalscout/blob/dev/packages/engine/src/ai/provider.ts"><img src="https://opengraph.githubassets.com/1/rszhd/signalscout" alt="SignalScout" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/rszhd/signalscout/blob/dev/packages/engine/src/ai/provider.ts">SignalScout</a></b><br><sub>rszhd · GitHub · ⭐ 8 仓库 · 2026-09-08</sub><br>开源意向监控工具，在 Reddit、X、LinkedIn、YouTube、TikTok 和 Instagram 上搜索正在描述你的产品所解决问题的人，并为每段对话的匹配度和购买意向打分。<br><sub><b>Jev 用法:</b> AI SDK 的 TypeSafe provider 为评分问题提供评估模型（jev-latest，每百万输入 token $0.042）。</sub><br><sub>相关: <a href="https://github.com/rszhd/signalscout">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py"><img src="https://opengraph.githubassets.com/1/sumitrevolt/leadgenrationaivoiceagent" alt="LeadGen AI 的 TypeSafe 集成" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py">LeadGen AI 的 TypeSafe 集成</a></b><br><sub>sumitrevolt · GitHub · ⭐ 1 仓库 · 2026-09-17</sub><br>面向印度小企业的营销与语音外呼 SaaS LeadGen AI 中的实验性 Jev 层，为 agent 角色挑选专业方向标签，并校验冷邮件等工作产出。<br><sub>相关: <a href="https://github.com/sumitrevolt/leadgenrationaivoiceagent">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/promptgtm-shared/clay-jev-people-ranker"><img src="https://opengraph.githubassets.com/1/promptgtm-shared/clay-jev-people-ranker" alt="clay-jev-people-ranker" width="240"></a></td>

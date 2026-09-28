@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)
 
-Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 102 entries, ranked by community traction.
+Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 101 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#techniques-and-analysis)
 
-[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (15) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (74) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · **Techniques and Analysis** · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (173) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
+[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (14) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (72) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · **Techniques and Analysis** · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (171) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -192,10 +192,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://bernoulli.app/articles/is-jev-confident"><img src="https://bernoulli.app/og-confidence.png" alt="Is Jev confident?" width="240"></a></td>
 <td valign="top"><b><a href="https://bernoulli.app/articles/is-jev-confident">Is Jev confident?</a></b><br><sub>Stanislav Yurin · Article · ▲ 2 · 2026-09-18</sub><br>Reverse-engineers how Choice confidence is computed from hundreds of thousands of live answers and shows how padding the option list inflates it.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49765813">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://blog.nimendra.xyz/blog/jev-decision-layer-for-production-ai/">Jev is the missing piece in production AI systems</a></b><br><sub>Nimendra · Article · ▲ 2 · 2026-09-17</sub><br>Walks through a 2 AM production incident to show Jev as a bounded decision layer that picks the owning team, urgency, and whether to auto-act before an incident agent or LLM starts reasoning.<br><sub>Also: <a href="https://news.ycombinator.com/item?id=49737892">discussion</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://patmcguinness.substack.com/p/jev-makes-fast-and-cheap-decisions"><img src="https://substackcdn.com/image/fetch/$s_!3sHt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92400f8-6f41-44c7-9233-a2449f4c413e_936x537.png" alt="Jev makes fast and cheap decisions" width="240"></a></td>

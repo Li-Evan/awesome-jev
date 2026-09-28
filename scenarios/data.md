@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md)
 
-Labeling, classification at scale, data pipelines, observability, and LLM evals. 135 entries, ranked by community traction.
+Labeling, classification at scale, data pipelines, observability, and LLM evals. 134 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -64,10 +64,6 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear field mapping</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>Live Bannerbear feature that maps template fields to differently named data-source fields (photo to avatar, company_name to business) in one click.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs"><img src="https://raw.githubusercontent.com/GreptimeTeam/greptimedb/main/docs/overview.png" alt="GreptimeDB jev() SQL function" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs">GreptimeDB jev() SQL function</a></b><br><sub>GreptimeTeam · GitHub · ⭐ 6.7k repo · 2022-04-11</sub><br>Experimental SQL predicate jev(text, statement, threshold) in the GreptimeDB observability database that filters log rows by whether a plain-language statement holds.<br><sub><b>How it uses Jev:</b> Each non-null row becomes a Noul question, and its probability is compared with the threshold.</sub><br><sub>Also: <a href="https://greptime.com/product/db">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/hamiltonulmer/status/2102074494655627281"><img src="https://pbs.twimg.com/amplify_video_thumb/2102071614506713088/img/aed3GJoW29Fq1EG0.jpg" alt="MotherDuck prompt_jev()" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/hamiltonulmer/status/2102074494655627281">MotherDuck prompt_jev()</a></b><br><sub>hamiltonulmer · X · ♥ 127 · 2026-09-21</sub><br>SQL function in MotherDuck that runs Jev text classification inside queries, including meaning-based filters in a WHERE clause, reported at 50x the speed and 1% the cost of comparable frontier models.<br><sub>Also: <a href="https://motherduck.com">app</a></sub></td>
 </tr>
@@ -76,8 +72,8 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 <td valign="top"><b><a href="https://github.com/lightdash/lightdash/tree/main/packages/backend/src/ee/services/ai/decisions">Lightdash AI decisions</a></b><br><sub>lightdash · GitHub · ⭐ 6.2k repo · 2021-03-19</sub><br>Typed Jev decisions inside Lightdash's BI agent for catalog ranking, date-range checks, chart quality, error classification, answer-claim evidence and field recovery.<br><sub><b>How it uses Jev:</b> A shared decision client validates Noul, Choice and Score answers; other callers use it for project routing, model routing and readiness scoring.</sub><br><sub>Also: <a href="https://lightdash.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit Jev judge" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx">Harbor rewardkit Jev judge</a></b><br><sub>harbor-framework · Docs · ⭐ 5.5k repo · 2025-08-04</sub><br>Jev judge option in rewardkit, the grading package of the Terminal-Bench team's Harbor eval framework, scoring agent output against binary and rubric criteria with no reasoning text.<br><sub><b>How it uses Jev:</b> Set judge = "jev" in a criteria TOML; each criterion returns a probability or rubric score, making grading fast and cheap.</sub><br><sub>Also: <a href="https://harborframework.com/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/core-concepts/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit Jev judge" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/core-concepts/rewardkit/judge-criteria.mdx">Harbor rewardkit Jev judge</a></b><br><sub>harbor-framework · Docs · ⭐ 5.5k repo · 2025-08-04</sub><br>Jev judge option in rewardkit, the grading package of the Terminal-Bench team's Harbor eval framework, scoring agent output against binary and rubric criteria with no reasoning text.<br><sub><b>How it uses Jev:</b> Set judge = "jev" in a criteria TOML; each criterion returns a probability or rubric score, making grading fast and cheap.</sub><br><sub>Also: <a href="https://harborframework.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/langwatch/langwatch/tree/main/platform/app/src/server/app-layer/instant-evals/classifier"><img src="https://opengraph.githubassets.com/1/langwatch/langwatch" alt="LangWatch Instant Evals on Jev" width="240"></a></td>

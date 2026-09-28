@@ -319,20 +319,6 @@ entries:
   - call-screening
   - twilio
   - go
-- name: Jev Mac Voice
-  url: https://github.com/brudarko/jev-mac-voice
-  kind: repo
-  author: brudarko
-  description: Electron app for full-duplex English voice control of macOS via OpenAI Realtime and a native Accessibility bridge, with an optional browser mode where Jev picks the action, target and completion check for Playwright.
-  description_zh: Electron 应用，通过 OpenAI Realtime 和原生辅助功能（Accessibility）桥接，用英语全双工语音控制 macOS；可选的浏览器模式中由 Jev 为 Playwright 选择动作、目标和完成检查。
-  image: https://raw.githubusercontent.com/brudarko/jev-mac-voice/main/docs/app-preview.png
-  metrics:
-    stars: 20
-  date: '2026-09-19'
-  tags:
-  - macos
-  - voice-control
-  - electron
 - name: Jev teleprompter
   name_zh: Jev 提词器
   url: https://x.com/I_am_oil_oil/status/2102066556486427133

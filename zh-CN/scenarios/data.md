@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md) · **简体中文**
 
-数据标注、大规模分类、数据管道、可观测性和 LLM 评测。共 135 条，按社区热度排序。
+数据标注、大规模分类、数据管道、可观测性和 LLM 评测。共 134 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -64,10 +64,6 @@
 <td valign="top"><b><a href="https://x.com/yongfook/status/2100801037192024478">Bannerbear 字段映射</a></b><br><sub>yongfook · X · ♥ 134 · 2026-09-18</sub><br>已上线的 Bannerbear 功能：一键把模板字段映射到名称不同的数据源字段（photo 对应 avatar，company_name 对应 business）。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs"><img src="https://raw.githubusercontent.com/GreptimeTeam/greptimedb/main/docs/overview.png" alt="GreptimeDB 的 jev() SQL 函数" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/GreptimeTeam/greptimedb/blob/main/src/common/function/src/scalars/jev.rs">GreptimeDB 的 jev() SQL 函数</a></b><br><sub>GreptimeTeam · GitHub · ⭐ 6.7k 仓库 · 2022-04-11</sub><br>可观测性数据库 GreptimeDB 中的实验性 SQL 谓词 jev(text, statement, threshold)，按一句自然语言陈述是否成立来过滤日志行。<br><sub><b>Jev 用法:</b> 每个非空行变成一个 Noul 问题，再用其概率与阈值比较。</sub><br><sub>相关: <a href="https://greptime.com/product/db">app</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://x.com/hamiltonulmer/status/2102074494655627281"><img src="https://pbs.twimg.com/amplify_video_thumb/2102071614506713088/img/aed3GJoW29Fq1EG0.jpg" alt="MotherDuck prompt_jev()" width="240"></a></td>
 <td valign="top"><b><a href="https://x.com/hamiltonulmer/status/2102074494655627281">MotherDuck prompt_jev()</a></b><br><sub>hamiltonulmer · X · ♥ 127 · 2026-09-21</sub><br>一个 MotherDuck SQL 函数，在查询内部运行 Jev 文本分类，包括在 WHERE 子句中按语义过滤；据称速度是同类前沿模型的 50 倍，成本只有其 1%。<br><sub>相关: <a href="https://motherduck.com">app</a></sub></td>
 </tr>
@@ -76,8 +72,8 @@
 <td valign="top"><b><a href="https://github.com/lightdash/lightdash/tree/main/packages/backend/src/ee/services/ai/decisions">Lightdash 的 AI 决策</a></b><br><sub>lightdash · GitHub · ⭐ 6.2k 仓库 · 2021-03-19</sub><br>嵌在 Lightdash BI agent 里的类型化 Jev 决策，用于目录排序、日期范围检查、图表质量、错误分类、回答论断的证据核查和字段恢复。<br><sub><b>Jev 用法:</b> 一个共享的决策客户端负责校验 Noul、Choice 和 Score 答案；其他调用方用它做项目路由、模型路由和就绪度评分。</sub><br><sub>相关: <a href="https://lightdash.com">app</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit 的 Jev 评委" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/rewardkit/judge-criteria.mdx">Harbor rewardkit 的 Jev 评委</a></b><br><sub>harbor-framework · 文档 · ⭐ 5.5k 仓库 · 2025-08-04</sub><br>rewardkit 中的 Jev 评委选项（rewardkit 是 Terminal-Bench 团队 Harbor 评测框架的评分包），按二元标准和评分细则给 agent 输出打分，不产出推理文本。<br><sub><b>Jev 用法:</b> 在标准 TOML 里设置 judge = "jev"；每条标准返回一个概率或评分细则分数，评分又快又便宜。</sub><br><sub>相关: <a href="https://harborframework.com/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/core-concepts/rewardkit/judge-criteria.mdx"><img src="https://opengraph.githubassets.com/1/harbor-framework/harbor" alt="Harbor rewardkit 的 Jev 评委" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/core-concepts/rewardkit/judge-criteria.mdx">Harbor rewardkit 的 Jev 评委</a></b><br><sub>harbor-framework · 文档 · ⭐ 5.5k 仓库 · 2025-08-04</sub><br>rewardkit 中的 Jev 评委选项（rewardkit 是 Terminal-Bench 团队 Harbor 评测框架的评分包），按二元标准和评分细则给 agent 输出打分，不产出推理文本。<br><sub><b>Jev 用法:</b> 在标准 TOML 里设置 judge = "jev"；每条标准返回一个概率或评分细则分数，评分又快又便宜。</sub><br><sub>相关: <a href="https://harborframework.com/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/langwatch/langwatch/tree/main/platform/app/src/server/app-layer/instant-evals/classifier"><img src="https://opengraph.githubassets.com/1/langwatch/langwatch" alt="基于 Jev 的 LangWatch Instant Evals" width="240"></a></td>

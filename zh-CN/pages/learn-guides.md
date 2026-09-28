@@ -6,7 +6,7 @@
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#教程)
 
-[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (15) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (74) · **教程** · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (102) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (173) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
+[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (14) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (72) · **教程** · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (101) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (171) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -147,7 +147,7 @@
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Bald0Wang/jev-docs-zh"><img src="https://opengraph.githubassets.com/1/Bald0Wang/jev-docs-zh" alt="jev-docs-zh" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>官方 Jev 文档（docs.typesafe.ai）的非官方中文译本，构建为静态站点。<br><sub>相关: <a href="https://bald0wang.github.io/jev-docs-zh/">site</a></sub></td>
+<td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>官方 Jev 文档（docs.typesafe.ai）的非官方中文译本，构建为静态站点。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Jev 在 agent 中的五个实用场景" width="240"></a></td>

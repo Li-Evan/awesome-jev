@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md)
 
-Voice assistants and interfaces that react while you type or speak. 54 entries, ranked by community traction.
+Voice assistants and interfaces that react while you type or speak. 53 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -114,10 +114,6 @@ Voice assistants and interfaces that react while you type or speak. 54 entries, 
 <tr>
 <td width="260" valign="top"><a href="https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev"><img src="https://raw.githubusercontent.com/vellum-ai/vellum-assistant/main/assets/banner.png" alt="Vellum voice judges" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev">Vellum voice judges</a></b><br><sub>vellum-ai · GitHub · ⭐ 1.3k repo · 2026-09-16</sub><br>Jev provider in the Vellum personal assistant used by live-voice judges: one decides whether a barged-in request should keep running in the background, another overrules the fast front door when a turn needs tools.<br><sub><b>How it uses Jev:</b> One bounded yes/no Noul per judge; every failure falls back to the default behavior.</sub><br><sub>Also: <a href="https://github.com/vellum-ai/vellum-assistant">repo</a> · <a href="https://vellum.ai">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/brudarko/jev-mac-voice"><img src="https://raw.githubusercontent.com/brudarko/jev-mac-voice/main/docs/app-preview.png" alt="Jev Mac Voice" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/brudarko/jev-mac-voice">Jev Mac Voice</a></b><br><sub>brudarko · GitHub · ⭐ 20 · 2026-09-19</sub><br>Electron app for full-duplex English voice control of macOS via OpenAI Realtime and a native Accessibility bridge, with an optional browser mode where Jev picks the action, target and completion check for Playwright.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/BryceWG/BiBi-Keyboard/blob/main/app/src/main/java/com/brycewg/asrkb/asr/JevClassifier.kt"><img src="https://raw.githubusercontent.com/BryceWG/BiBi-Keyboard/main/images/icon_new.svg" alt="BiBi Keyboard Jev classifier" width="240"></a></td>

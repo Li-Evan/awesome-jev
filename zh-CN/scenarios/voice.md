@@ -2,7 +2,7 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md) · **简体中文**
 
-语音助手，以及随你打字或说话实时反应的界面。共 54 条，按社区热度排序。
+语音助手，以及随你打字或说话实时反应的界面。共 53 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#按场景浏览)
 
@@ -114,10 +114,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev"><img src="https://raw.githubusercontent.com/vellum-ai/vellum-assistant/main/assets/banner.png" alt="Vellum 的语音评判" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/vellum-ai/vellum-assistant/tree/main/assistant/src/providers/jev">Vellum 的语音评判</a></b><br><sub>vellum-ai · GitHub · ⭐ 1.3k 仓库 · 2026-09-16</sub><br>个人助手 Vellum 中的 Jev 提供方，供实时语音评判使用：一个决定被插话打断的请求是否应在后台继续运行，另一个在某轮需要工具时推翻快速入口的判断。<br><sub><b>Jev 用法:</b> 每个评判一个有边界的是/否 Noul；任何失败都回退到默认行为。</sub><br><sub>相关: <a href="https://github.com/vellum-ai/vellum-assistant">repo</a> · <a href="https://vellum.ai">app</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/brudarko/jev-mac-voice"><img src="https://raw.githubusercontent.com/brudarko/jev-mac-voice/main/docs/app-preview.png" alt="Jev Mac Voice" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/brudarko/jev-mac-voice">Jev Mac Voice</a></b><br><sub>brudarko · GitHub · ⭐ 20 · 2026-09-19</sub><br>Electron 应用，通过 OpenAI Realtime 和原生辅助功能（Accessibility）桥接，用英语全双工语音控制 macOS；可选的浏览器模式中由 Jev 为 Playwright 选择动作、目标和完成检查。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/BryceWG/BiBi-Keyboard/blob/main/app/src/main/java/com/brycewg/asrkb/asr/JevClassifier.kt"><img src="https://raw.githubusercontent.com/BryceWG/BiBi-Keyboard/main/images/icon_new.svg" alt="BiBi 输入法的 Jev 分类器" width="240"></a></td>

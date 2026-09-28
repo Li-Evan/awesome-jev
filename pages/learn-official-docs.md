@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md)
 
-Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 15 entries.
+Official docs and cookbooks, plus the best guides, analyses, benchmarks, and talks from the community. 14 entries.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#official-docs)
 
-**Official Docs** · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (74) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (102) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (173) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
+**Official Docs** · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (72) · [Guides](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-guides.md) (76) · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (101) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (171) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -56,10 +56,6 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/model-jaggedness/jev-1.13"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DModel%2Bjaggedness%26title%3DJev%2B1.13%2Bjaggedness%26description%3DJev%2Bisn%2527t%2Bperfect.%2BHere%2Bare%2Bsome%2Bjagged%2Bedges%2Bwe%2Bare%2Baware%2Bof%2Bwith%2Bjev-1.13.%2BMany%2Bof%2Bthese%2Bwill%2Bbe%2Bfixed%2Bin%2Blater%2Bversions.%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="Jev 1.13 jaggedness" width="240"></a></td>
 <td valign="top"><b><a href="https://docs.typesafe.ai/model-jaggedness/jev-1.13">Jev 1.13 jaggedness</a></b><br><sub>TypeSafe AI · Docs</sub><br>Known weak spots of the current model, such as counting and date comparison, with workarounds.</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://docs.typesafe.ai/migrating-to-v1">Migrating to v1</a></b><br><sub>TypeSafe AI · Docs</sub><br>Changes from the preview API and the old <code>typesafe-client</code> package.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/sdk/python"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DPython%2BSDK%26title%3DTypeSafe%2BPython%2BSDK%26description%3DInstall%2Bthe%2BTypeSafe%2BPython%2BSDK%2Band%2Bget%2Bstarted%2Bwith%2Basynchronous%2Bor%2Bsynchronous%2BAPI%2Bcalls.%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="Python SDK docs" width="240"></a></td>

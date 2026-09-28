@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) · **简体中文**
 
-官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 15 条。
+官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 14 条。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#官方文档)
 
-**官方文档** · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (74) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (102) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (173) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
+**官方文档** · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · [示例与 Skill](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md) (72) · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (101) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (171) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -56,10 +56,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/model-jaggedness/jev-1.13"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DModel%2Bjaggedness%26title%3DJev%2B1.13%2Bjaggedness%26description%3DJev%2Bisn%2527t%2Bperfect.%2BHere%2Bare%2Bsome%2Bjagged%2Bedges%2Bwe%2Bare%2Baware%2Bof%2Bwith%2Bjev-1.13.%2BMany%2Bof%2Bthese%2Bwill%2Bbe%2Bfixed%2Bin%2Blater%2Bversions.%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="Jev 1.13 的能力短板" width="240"></a></td>
 <td valign="top"><b><a href="https://docs.typesafe.ai/model-jaggedness/jev-1.13">Jev 1.13 的能力短板</a></b><br><sub>TypeSafe AI · 文档</sub><br>当前模型已知的薄弱点，例如计数和日期比较，并附有应对办法。</td>
-</tr>
-<tr>
-<td width="260" valign="top"></td>
-<td valign="top"><b><a href="https://docs.typesafe.ai/migrating-to-v1">迁移到 v1</a></b><br><sub>TypeSafe AI · 文档</sub><br>相对预览版 API 和旧的 <code>typesafe-client</code> 包有哪些变化。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://docs.typesafe.ai/sdk/python"><img src="https://ts-docs.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DPython%2BSDK%26title%3DTypeSafe%2BPython%2BSDK%26description%3DInstall%2Bthe%2BTypeSafe%2BPython%2BSDK%2Band%2Bget%2Bstarted%2Bwith%2Basynchronous%2Bor%2Bsynchronous%2BAPI%2Bcalls.%26theme%3Df0580ae664a0195833f0555d&amp;w=1200&amp;q=100" alt="Python SDK 文档" width="240"></a></td>

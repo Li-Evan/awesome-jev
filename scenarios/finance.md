@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md)
 
-Trading agents, market signals, fraud and risk checks, and financial document processing. 89 entries, ranked by community traction.
+Trading agents, market signals, fraud and risk checks, and financial document processing. 88 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -148,8 +148,8 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 <td valign="top"><b><a href="https://www.youtube.com/watch?v=cV6pxlXgCv8">Jev for trading bots</a></b><br><sub>Moon Dev · YouTube · ♥ 31 · 2026-09-21</sub><br>Walkthrough of applying Jev to a live crypto trading setup, asking six questions in one request to gate a token-sniper bot's entries instead of parsing LLM text.<br><sub><b>How it uses Jev:</b> Six typed questions answered in parallel per request, with calibrated probabilities used as entry thresholds.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://x.com/Arbistocks/status/2101864009955946573"><img src="https://arbistocks.com/og.png" alt="arbistocks" width="240"></a></td>
-<td valign="top"><b><a href="https://x.com/Arbistocks/status/2101864009955946573">arbistocks</a></b><br><sub>Arbistocks · X · ♥ 30 · 2026-09-21</sub><br>Arbitrage scanner over 49 stocks across 136 pools that puts Jev in its scan loop to decide whether a gap is real, which route to quote, whether size is past the peak, and fire or skip.<br><sub>Also: <a href="https://arbistocks.com/app">app</a> · <a href="https://arbistocks.com/app">project</a></sub></td>
+<td width="260" valign="top"></td>
+<td valign="top"><b><a href="https://x.com/Arbistocks/status/2101864009955946573">arbistocks</a></b><br><sub>Arbistocks · X · ♥ 30 · 2026-09-21</sub><br>Arbitrage scanner over 49 stocks across 136 pools that puts Jev in its scan loop to decide whether a gap is real, which route to quote, whether size is past the peak, and fire or skip.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/zadescoxp/Jev-Trades"><img src="https://raw.githubusercontent.com/zadescoxp/Jev-Trades/master/assets/Jev_making_trade.gif" alt="Jev Trades" width="240"></a></td>
@@ -342,10 +342,6 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Eric-Zhou-0302/jev-A-share-trader"><img src="https://opengraph.githubassets.com/1/Eric-Zhou-0302/jev-A-share-trader" alt="jev-A-share-trader" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/Eric-Zhou-0302/jev-A-share-trader">jev-A-share-trader</a></b><br><sub>Eric-Zhou-0302 · GitHub · 2026-09-20</sub><br>Local technical-analysis workspace for China A-shares that pulls AKShare or Tushare data, has Jev assess eight dimensions and combines them into a Buy, Hold or Sell call for 2-5 or 5-20 trading days; no order execution.</td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/adhamelhayek-lab/jev-connector"><img src="https://opengraph.githubassets.com/1/adhamelhayek-lab/jev-connector" alt="jev-connector" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/adhamelhayek-lab/jev-connector">jev-connector</a></b><br><sub>adhamelhayek-lab · GitHub · 2026-09-18</sub><br>Paper-trading market and trade evaluation server that sends structured market state to Jev through OpenRouter's Decisions API alongside deterministic regime and order-flow checks, and never executes trades.<br><sub>Also: <a href="https://jev-connector.vercel.app">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/renatosousa/jev-trader"><img src="https://opengraph.githubassets.com/1/renatosousa/jev-trader" alt="jev-trader (renatosousa)" width="240"></a></td>

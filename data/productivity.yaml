@@ -1923,22 +1923,6 @@ entries:
   - youtube
   - browser-extension
   - focus
-- name: ZeroSweep
-  url: https://github.com/sysadarsh/zerosweep
-  kind: repo
-  author: sysadarsh
-  description: Inbox-zero webmail demo and benchmark that triages 50 to 1,000 generated emails with Jev, sending ambiguous items to human review based on calibrated confidence.
-  description_zh: 收件箱清零（inbox zero）式网页邮箱演示和基准测试，用 Jev 分拣 50 到 1,000 封生成的邮件，并根据校准置信度把模棱两可的邮件送去人工复核。
-  metrics:
-    stars: 2
-  date: '2026-09-18'
-  links:
-    app: https://sysadarsh-zerosweep.vercel.app/
-    app 2: https://sysadarsh-zerosweep.vercel.app
-  tags:
-  - email
-  - triage
-  - benchmark
 - name: 메일살핌 (gmail-mail-triage)
   url: https://github.com/kijung4290/gmail-mail-triage
   kind: repo

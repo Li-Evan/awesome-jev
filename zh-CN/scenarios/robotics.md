@@ -172,8 +172,8 @@
 <td valign="top"><b><a href="https://github.com/RobotKitAI/piper-astra-jev">piper-astra-jev</a></b><br><sub>RobotKitAI · GitHub · ⭐ 5 · 2026-09-19</sub><br>在真实 AgileX PiPER 机械臂上的八次演示运行，对比直接看摄像头画面的 GPT-6 Astra 与基于 Grounding DINO 或 SAM 3 感知做决策的 Jev，任务难度一直到把管件套到立着的盒子上。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py"><img src="https://opengraph.githubassets.com/1/rokbenko/quackd" alt="quackd 的 Jev 步进器" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py">quackd 的 Jev 步进器</a></b><br><sub>rokbenko · GitHub · ⭐ 225 仓库 · 2026-09-18</sub><br>用 LLM 大脑编排业余机器人和 ROS 机器人的 CLI quackd 中可选的 Jev 步进器：在允许的离散调用中做选择，让这类步骤更便宜，位姿仍由 LLM 编写，安全关卡照常生效。<br><sub>相关: <a href="https://github.com/rokbenko/quackd">repo</a> · <a href="https://www.quackd.org">site</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/rokbenko/quackd"><img src="https://opengraph.githubassets.com/1/rokbenko/quackd" alt="quackd 的 Jev 步进器" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/rokbenko/quackd">quackd 的 Jev 步进器</a></b><br><sub>rokbenko · GitHub · ⭐ 225 仓库 · 2026-09-18</sub><br>用 LLM 大脑编排业余机器人和 ROS 机器人的 CLI quackd 中可选的 Jev 步进器：在允许的离散调用中做选择，让这类步骤更便宜，位姿仍由 LLM 编写，安全关卡照常生效。<br><sub>相关: <a href="https://github.com/rokbenko/quackd">repo</a> · <a href="https://www.quackd.org">site</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/hotragn/status/2101251578610974952"><img src="https://pbs.twimg.com/amplify_video_thumb/2101248543117701120/img/n1AWqrdoj_OtGSqW.jpg" alt="Jev 驾驶交接" width="240"></a></td>

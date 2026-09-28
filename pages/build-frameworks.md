@@ -2,11 +2,11 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md)
 
-Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs. 174 entries, ranked by community traction.
+Ways to call Jev from your stack: hosted access, framework adapters, observability, and community SDKs. 172 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#framework-adapters)
 
-[Model Access](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md) (68) · **Framework Adapters** · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · [Community SDKs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-community-sdks.md) (107)
+[Model Access](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md) (66) · **Framework Adapters** · [Observability](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-observability.md) (14) · [Community SDKs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-community-sdks.md) (107)
 
 <table>
 <tr>
@@ -28,10 +28,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py"><img src="https://pydantic.dev/docs/ai/img/pydantic-ai-light.svg" alt="Pydantic AI TypeSafeModel" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py">Pydantic AI TypeSafeModel</a></b><br><sub>pydantic · GitHub · ⭐ 20.1k repo · 2026-09-18</sub><br>Pydantic AI model class that runs decision agents on Jev: each field of the output_type becomes one question and the answers fill the output, so swapping the model name compares Jev with an LLM.<br><sub>Also: <a href="https://github.com/pydantic/pydantic-ai">repo</a> · <a href="https://github.com/pydantic/pydantic-ai/blob/main/docs/models/typesafe.md">docs</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe"><img src="https://raw.githubusercontent.com/elizaOS/eliza/develop/packages/shared/assets/banners/elizaos_banner.svg" alt="elizaOS TypeSafe adapter" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe">elizaOS TypeSafe adapter</a></b><br><sub>elizaOS · GitHub · ⭐ 19.4k repo · 2026-09-16</sub><br>Opt-in server-side TypeSafe client in the elizaOS agent package that validates Choice, Score and Noul requests with Zod and sends them only on an explicit systemOne call; it is not registered with the runtime by default.<br><sub>Also: <a href="https://github.com/elizaOS/eliza">repo</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/CTNicholas/jev-workflow-builder"><img src="https://pbs.twimg.com/amplify_video_thumb/2102070615926771715/img/PueMU1HUq0WB86ZG.jpg" alt="Jev workflow builder" width="240"></a></td>
@@ -240,10 +236,6 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <tr>
 <td width="260" valign="top"><a href="https://github.com/ekizito96/Turn"><img src="https://opengraph.githubassets.com/1/ekizito96/Turn" alt="Turn" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/ekizito96/Turn">Turn</a></b><br><sub>ekizito96 · GitHub · ⭐ 11 · 2026-02-17</sub><br>Compiled language and runtime for AI agents where decide(state, questions) is a durable effect, with a bundled TypeSafe System One driver that runs Choice, Score and Noul workflows on Jev.<br><sub><b>How it uses Jev:</b> Provider-neutral decide() with a mock driver for local runs; programs branch on answer confidence, for example sending tickets below 0.8 to a reviewer.</sub><br><sub>Also: <a href="https://github.com/ekizito96/Turn/tree/main/providers/turn-provider-typesafe">code</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe"><img src="https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png" alt="@dxos/ai-typesafe" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe">@dxos/ai-typesafe</a></b><br><sub>dxos · GitHub · ⭐ 522 repo · 2021-04-07</sub><br>Experimental Effect client in the DXOS monorepo for TypeSafe's System One model, where a schema is both the request and response and each struct field compiles to one Jev question.<br><sub><b>How it uses Jev:</b> DecisionModel service mirroring Effect's LanguageModel; all fields ride a single call and decode back to the declared type.</sub><br><sub>Also: <a href="https://dxos.org">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/doeixd/discern"><img src="https://raw.githubusercontent.com/doeixd/discern/main/docs/assets/discern-explainer-silent.gif" alt="Discern" width="240"></a></td>
@@ -609,12 +601,18 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 <td width="260" valign="top"><a href="https://github.com/redwood-labs-ai/cambium/blob/main/packages/cambium-runner/src/providers/typesafe.ts"><img src="https://opengraph.githubassets.com/1/redwood-labs-ai/cambium" alt="Cambium decision mode" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/redwood-labs-ai/cambium/blob/main/packages/cambium-runner/src/providers/typesafe.ts">Cambium decision mode</a></b><br><sub>redwood-labs-ai · GitHub · ⭐ 5 repo · 2026-04-20</sub><br>Decision mode in Cambium, a Ruby DSL for LLM programs compiled to auditable JSON, that sends forced-choice and yes/no gens to Jev through a built-in typesafe provider, using the returns block as the question set.<br><sub>Also: <a href="https://github.com/redwood-labs-ai/cambium">repo</a></sub></td>
 </tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md"><img src="https://opengraph.githubassets.com/1/cargo-ai/cargo-ai" alt="cargo-ai TypeSafe provider" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md">cargo-ai TypeSafe provider</a></b><br><sub>cargo-ai · GitHub · ⭐ 5 repo · 2025-07-21</sub><br>TypeSafe provider for cargo-ai, a Rust framework for lightweight AI agents declared in JSON, that maps an agent's output schema to Jev questions: string enums become Choices and bounded numbers become Scores.<br><sub>Also: <a href="https://cargo-ai.org">app</a> · <a href="https://github.com/cargo-ai/cargo-ai">repo</a></sub></td>
+</tr>
+<tr>
+<td width="260" valign="top"><a href="https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev"><img src="https://opengraph.githubassets.com/1/npipeline/NPipeline" alt="NPipeline Jev decisions extension" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev">NPipeline Jev decisions extension</a></b><br><sub>npipeline · GitHub · ⭐ 5 repo · 2025-09-02</sub><br>NPipeline.Extensions.AI.Decisions.Jev package for the NPipeline .NET streaming data-pipeline library that plugs Jev Choice questions into typed routing, with Score and Noul available through a lower-level client.<br><sub>Also: <a href="https://www.npipeline.net">app</a> · <a href="https://github.com/npipeline/NPipeline">repo</a></sub></td>
+</tr>
 </table>
 
-<details><summary>24 more</summary>
+<details><summary>22 more</summary>
 
-- **[cargo-ai TypeSafe provider](https://github.com/cargo-ai/cargo-ai/blob/develop/docs/providers/typesafe.md)** · <sub>cargo-ai · GitHub · ⭐ 5 repo · 2025-07-21</sub><br>TypeSafe provider for cargo-ai, a Rust framework for lightweight AI agents declared in JSON, that maps an agent's output schema to Jev questions: string enums become Choices and bounded numbers become Scores.
-- **[NPipeline Jev decisions extension](https://github.com/npipeline/NPipeline/tree/main/src/NPipeline.Extensions.AI.Decisions.Jev)** · <sub>npipeline · GitHub · ⭐ 5 repo · 2025-09-02</sub><br>NPipeline.Extensions.AI.Decisions.Jev package for the NPipeline .NET streaming data-pipeline library that plugs Jev Choice questions into typed routing, with Score and Noul available through a lower-level client.
 - **[goodall typesafe package](https://github.com/bensyverson/goodall/tree/main/typesafe)** · <sub>bensyverson · GitHub · ⭐ 2 repo · 2026-09-15</sub><br>Optional typesafe package in goodall, a small Go agent-loop library, that uses Jev as a tool or turn-routing judge alongside chat models, with a mail-triage example.
 - **[ai-cli](https://ai-cli.dev)** · <sub>Vercel Labs · App</sub><br>Terminal CLI for the AI SDK whose evaluate command pipes text into typed boolean, choice, and score questions and returns probabilities for use in shell scripts.
 - **[BAML](https://boundaryml.com/blog/typesafe-ai-jev)** · <sub>BoundaryML · Article · 2026-09-17</sub><br>Derives Jev questions from a function's return type, turning booleans and floats into Nouls and enums into Choices.

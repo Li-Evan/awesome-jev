@@ -6,7 +6,7 @@
 
 🌐 **[打开可搜索的在线画廊 →](https://li-evan.github.io/awesome-jev/?lang=zh)** 支持搜索、按场景筛选和分享结果，中英文随时切换。
 
-这里是最全的 Jev 用例合集：**3,427 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
+这里是最全的 Jev 用例合集：**3,397 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
 
 本列表由社区维护，与 TypeSafe 官方无关。官方网站是 `typesafe.ai` 和 `docs.typesafe.ai`，官方 GitHub 组织是 `typesafe-ai`。请警惕自称官方的仿冒域名。
 
@@ -63,10 +63,10 @@
 精选按社区热度排序（star、点赞、得分和播放量）。点开场景查看完整画廊。
 
 <table>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md">💰 金融与交易</a> <sub>89</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md">💻 编程与开发工具</a> <sub>516</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/browser.md">🌐 浏览器与电脑操控</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md">🤖 Agent 与编排</a> <sub>246</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md">🎮 游戏与互动</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/robotics.md">🦾 机器人与仿真</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md">🔎 搜索与 RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md">🔒 安全与审核</a> <sub>128</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md">📊 数据与评测</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md">🎧 客服与销售</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md">🔬 法律、医疗与科研</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md">🛒 电商与营销</a> <sub>45</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md">🎨 写作、媒体与创意</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md">🎤 语音与实时交互</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md">🧰 个人效率</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/education.md">🎓 教育</a> <sub>10</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md">💰 金融与交易</a> <sub>88</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md">💻 编程与开发工具</a> <sub>508</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/browser.md">🌐 浏览器与电脑操控</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md">🤖 Agent 与编排</a> <sub>245</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md">🎮 游戏与互动</a> <sub>272</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/robotics.md">🦾 机器人与仿真</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md">🔎 搜索与 RAG</a> <sub>85</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/safety.md">🔒 安全与审核</a> <sub>128</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md">📊 数据与评测</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md">🎧 客服与销售</a> <sub>43</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/legal-health.md">🔬 法律、医疗与科研</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/commerce.md">🛒 电商与营销</a> <sub>45</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md">🎨 写作、媒体与创意</a> <sub>133</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md">🎤 语音与实时交互</a> <sub>53</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md">🧰 个人效率</a> <sub>126</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/education.md">🎓 教育</a> <sub>10</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/other.md">🧪 其他实验</a> <sub>46</sub></td></tr>
 </table>
 
@@ -87,7 +87,7 @@
 </tr>
 </table>
 
-**[查看金融与交易全部 89 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md)**
+**[查看金融与交易全部 88 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/finance.md)**
 
 ### 💻 编程与开发工具
 
@@ -106,7 +106,7 @@
 </tr>
 </table>
 
-**[查看编程与开发工具全部 516 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md)**
+**[查看编程与开发工具全部 508 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/coding.md)**
 
 ### 🌐 浏览器与电脑操控
 
@@ -144,7 +144,7 @@
 </tr>
 </table>
 
-**[查看Agent 与编排全部 246 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md)**
+**[查看Agent 与编排全部 245 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md)**
 
 ### 🎮 游戏与互动
 
@@ -163,7 +163,7 @@
 </tr>
 </table>
 
-**[查看游戏与互动全部 276 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md)**
+**[查看游戏与互动全部 272 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/games.md)**
 
 ### 🦾 机器人与仿真
 
@@ -201,7 +201,7 @@
 </tr>
 </table>
 
-**[查看搜索与 RAG全部 86 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md)**
+**[查看搜索与 RAG全部 85 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md)**
 
 ### 🔒 安全与审核
 
@@ -239,7 +239,7 @@
 </tr>
 </table>
 
-**[查看数据与评测全部 135 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md)**
+**[查看数据与评测全部 134 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/data.md)**
 
 ### 🎧 客服与销售
 
@@ -258,7 +258,7 @@
 </tr>
 </table>
 
-**[查看客服与销售全部 44 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md)**
+**[查看客服与销售全部 43 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/support.md)**
 
 ### 🔬 法律、医疗与科研
 
@@ -315,7 +315,7 @@
 </tr>
 </table>
 
-**[查看写作、媒体与创意全部 134 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md)**
+**[查看写作、媒体与创意全部 133 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/creative.md)**
 
 ### 🎤 语音与实时交互
 
@@ -334,7 +334,7 @@
 </tr>
 </table>
 
-**[查看语音与实时交互全部 54 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md)**
+**[查看语音与实时交互全部 53 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/voice.md)**
 
 ### 🧰 个人效率
 
@@ -353,7 +353,7 @@
 </tr>
 </table>
 
-**[查看个人效率全部 127 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md)**
+**[查看个人效率全部 126 条 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md)**
 
 ### 🎓 教育
 
@@ -429,7 +429,7 @@
 - [Pollinations 的 Jev API](https://github.com/pollinations/pollinations/blob/main/gen.pollinations.ai/src/text/systemOneClient.ts) - Pollinations 的 gen API 通过类型化的 POST /alpha/decisions 端点和 Chat Completions 以 typesafe/jev-1.13 提供 Jev，另有一个带 jev_decide 工具的 Ask Jev MCP 服务器。
 - [Fly.io Sprites 上的 Jev](https://x.com/flydotio/status/2102076230183035081) - Fly.io 为 Sprites 提供的 TypeSafe 连接器，在网关处注入你的 Jev API 密钥，运行在硬件隔离 Sprites 里的 agent 调用 Jev 时密钥无需进入沙箱。
 
-**[查看全部 68 条模型访问 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md)**
+**[查看全部 66 条模型访问 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-model-access.md)**
 
 ### 框架适配
 
@@ -438,13 +438,13 @@
 - [Composio](https://github.com/ComposioHQ/composio/tree/next/ts/packages/providers/typesafe) - TypeScript 提供方，用一个 Choice 选择并把关工具调用，并在执行前绑定取值范围封闭的参数。
 - [AI SDK 的 TypeSafe 提供方](https://github.com/vercel/ai/tree/main/packages/typesafe-ai) - AI SDK 官方提供方包 @ai-sdk/typesafe-ai，通过实验性的 evaluate API 向 Jev 运行 Choice、Score 和 Boolean 问题。
 - [Pydantic AI TypeSafeModel](https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py) - Pydantic AI 的模型类，在 Jev 上运行决策类 agent：output_type 的每个字段对应一个问题，答案填入输出，只需换模型名就能对比 Jev 和 LLM。
-- [elizaOS 的 TypeSafe 适配器](https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe) - elizaOS agent 包中需主动启用的服务端 TypeSafe 客户端，用 Zod 校验 Choice、Score 和 Noul 请求，只在显式调用 systemOne 时才发送；默认不注册到运行时。
 - [Jev 工作流构建器](https://github.com/CTNicholas/jev-workflow-builder) - Liveblocks 的多人可视化工作流构建器演示，把 Jev 和 LLM 节点连在一起，通过 REST API 运行工作流，并展示试运行预览和实时光标。
 - [LangChain.js](https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe) - 分类器以及路由和审批中间件的 JavaScript 版本。
 - [@effect/ai-typesafe](https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe) - Effect 为 TypeSafe System One API 提供的 DecisionModel 提供方，通过 Effect HttpClient 支持分类、有序评级和概率，并保留提供方返回的分布而不做归一化。
 - [System One 适配器](https://github.com/typesafe-ai/system-one-adapter-python) - 由 LLM API 支撑、可直接替换 `TypeSafeClient` 的实现，用来在你自己的工作流上对比它与 Jev 的成本、速度和质量。
+- [Ash AI 的 evaluate](https://github.com/ash-project/ash_ai) - Elixir Ash 框架扩展，其 evaluate/2 把一个 Ash action 映射成面向 Jev 这类评估模型的类型化问题，返回带概率和置信度的类型化答案。
 
-**[查看全部 174 条框架适配 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md)**
+**[查看全部 172 条框架适配 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/build-frameworks.md)**
 
 ### 可观测性
 
@@ -493,7 +493,7 @@
 - [置信度](https://docs.typesafe.ai/confidence) - 置信度和概率有什么不同，以及如何按风险高低用它来决定动作是否执行。
 - [用例示例](https://docs.typesafe.ai/concepts/use-case-map) - 覆盖 18 个领域的应用思路，从客服分流、招聘到金融犯罪和知识图谱。
 
-**[查看全部 15 条官方文档 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md)**
+**[查看全部 14 条官方文档 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md)**
 
 ### 官方 SDK 与工具
 
@@ -541,7 +541,7 @@
 - [JEV Playground](https://x.com/mac_eth/status/2101701798968840703) - 简单的网页 playground，输入文本上下文，就能向 Jev 提 Noul、Choice 或 Score 问题来试用。
 - [Jevify](https://github.com/altryne/jevify) - agent skill，教编程 agent 识别 Jev 能处理的工作、设计 Noul、Choice 和 Score 问题包，并从最近的社区实验中学习，附带调用 API 做测试运行的客户端脚本。
 
-**[查看全部 74 条示例与 Skill →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md)**
+**[查看全部 72 条示例与 Skill →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-examples.md)**
 
 ### 教程
 
@@ -571,7 +571,7 @@
 - [把 LLM 与 Jev 的区别讲清楚](https://x.com/akshay_pachaar/status/2101309986156712025) - 解释 Jev 并不是生成得更快，而是根本不生成：相互独立的 Choice、Score 和 Noul 问题（比如一次失败部署的紧急程度、负责团队和命令风险）会被并行评估。
 - [Jev 到底能做什么](https://x.com/servasyy_ai/status/2101132667056185544) - 中文的 Jev 现实检验：解释它是什么、不是什么，按用例整理真正能跑通的演示，并列出速度和准确率宣称背后的注意事项。
 
-**[查看全部 102 条技巧与分析 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)**
+**[查看全部 101 条技巧与分析 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md)**
 
 ### 评测与案例
 
@@ -586,7 +586,7 @@
 - [安全流水线中的 Jev](https://x.com/grichadev/status/2100437998571860087) - 某生产安全流水线的结果表：Jev 准确率达到 99.3%，延迟 0.259s，每 1K 次 $0.026，而 Gemini 和开源模型更慢也更贵。
 - [3D 场景中的 500 个实时 agent](https://x.com/crislenta/status/2100457614073327754) - 基准测试：在 3D 环境中并行运行 500 个实时 agent，未做任何优化，平均延迟 500 毫秒，每秒 35 次 API 调用。
 
-**[查看全部 173 条评测与案例 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md)**
+**[查看全部 171 条评测与案例 →](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md)**
 
 ### 视频与演讲
 

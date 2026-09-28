@@ -6,7 +6,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#guides)
 
-[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (15) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (74) · **Guides** · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (102) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (173) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
+[Official Docs](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md) (14) · [Official SDKs and Tools](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-tools.md) (3) · [Announcements](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-announcements.md) (2) · [Patterns](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-patterns.md) (4) · [Official Cookbooks](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-cookbooks.md) (18) · [Examples and Skills](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) (72) · **Guides** · [Techniques and Analysis](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md) (101) · [Benchmarks and Case Studies](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md) (171) · [Talks and Videos](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-videos.md) (178) · [Discussions](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Bald0Wang/jev-docs-zh"><img src="https://opengraph.githubassets.com/1/Bald0Wang/jev-docs-zh" alt="jev-docs-zh" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>Unofficial Chinese translation of the official Jev documentation at docs.typesafe.ai, built into a static site.<br><sub>Also: <a href="https://bald0wang.github.io/jev-docs-zh/">site</a></sub></td>
+<td valign="top"><b><a href="https://github.com/Bald0Wang/jev-docs-zh">jev-docs-zh</a></b><br><sub>Bald0Wang · GitHub · ⭐ 4 · 2026-09-20</sub><br>Unofficial Chinese translation of the official Jev documentation at docs.typesafe.ai, built into a static site.</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/lgyv5/status/2101860029838303522"><img src="https://pbs.twimg.com/media/HStFeVXbAAAQgIf.jpg" alt="Five practical Jev agent scenarios" width="240"></a></td>

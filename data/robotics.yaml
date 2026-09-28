@@ -801,7 +801,7 @@ entries:
   - grounding-dino
 - name: quackd Jev stepper
   name_zh: quackd 的 Jev 步进器
-  url: https://github.com/rokbenko/quackd/blob/main/quackd/agent/jev.py
+  url: https://github.com/rokbenko/quackd
   kind: repo
   author: rokbenko
   description: Optional Jev stepper in quackd, a CLI that orchestrates hobby and ROS robots with an LLM brain, where Jev picks among the permitted discrete calls for cheaper steps while the LLM still writes poses and safety gates apply.

@@ -2,11 +2,11 @@
 
 [English](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md) · **简体中文**
 
-官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 74 条，按社区热度排序。
+官方文档和 cookbook，以及社区里最好的教程、分析、评测和演讲。共 72 条，按社区热度排序。
 
 [← 返回 Awesome Jev](https://github.com/Li-Evan/awesome-jev/blob/main/README.zh-CN.md#示例与-skill)
 
-[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (15) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · **示例与 Skill** · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (102) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (173) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
+[官方文档](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-docs.md) (14) · [官方 SDK 与工具](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-official-tools.md) (3) · [官方公告](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-announcements.md) (2) · [设计模式](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-patterns.md) (4) · [官方 Cookbook](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-cookbooks.md) (18) · **示例与 Skill** · [教程](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-guides.md) (76) · [技巧与分析](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-techniques.md) (101) · [评测与案例](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-benchmarks.md) (171) · [视频与演讲](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-videos.md) (178) · [社区讨论](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/pages/learn-discussions.md) (20)
 
 <table>
 <tr>
@@ -70,8 +70,8 @@
 <td valign="top"><b><a href="https://github.com/mayank953/Jev">Jev 演示集</a></b><br><sub>mayank953 · GitHub · ⭐ 15 · 2026-09-20</sub><br>六个本地并排演示，Jev 负责做决策，可切换的 Claude 或 Kimi LLM 负责写文字，每个标签页显示价格和流水线步骤，还有无需 key 的模拟模式。</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/knowledge/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 仓库 · 2025-12-19</sub><br>Claude Code skill，打包了一份 TypeSafe AI 文档的离线 wiki，涵盖 Jev System One 模型、Choice/Score/Noul 原语、模式、SDK 和 HTTP API。<br><sub><b>Jev 用法:</b> 依据内置的 Markdown 和 SHA-256 清单回答 Jev 相关问题，只有快照不够用时才去查上游。</sub></td>
+<td width="260" valign="top"><a href="https://github.com/chujianyun/skills/tree/main/skills/typesafe-wiki"><img src="https://opengraph.githubassets.com/1/chujianyun/skills" alt="typesafe-wiki skill" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/chujianyun/skills/tree/main/skills/typesafe-wiki">typesafe-wiki skill</a></b><br><sub>chujianyun · GitHub · ⭐ 737 仓库 · 2025-12-19</sub><br>Claude Code skill，打包了一份 TypeSafe AI 文档的离线 wiki，涵盖 Jev System One 模型、Choice/Score/Noul 原语、模式、SDK 和 HTTP API。<br><sub><b>Jev 用法:</b> 依据内置的 Markdown 和 SHA-256 清单回答 Jev 相关问题，只有快照不够用时才去查上游。</sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://www.youtube.com/watch?v=im_hLbl6ldU"><img src="https://i.ytimg.com/vi/im_hLbl6ldU/hqdefault.jpg" alt="Jev 入门 + 50 个开源用例" width="240"></a></td>
@@ -202,10 +202,6 @@
 <td valign="top"><b><a href="https://github.com/andreasronge/ptc_runner/tree/main/scripts/labs/jev-decision">PtcRunner 的 Jev 决策实验室</a></b><br><sub>andreasronge · GitHub · ⭐ 21 仓库 · 2025-12-01</sub><br>PtcRunner agent 工作流 harness 中的实验室，从 PTC-Lisp 程序调用 Jev 给客服工单分类，返回需要退款的工单 ID，以及每次分类背后的概率。<br><sub>相关: <a href="https://github.com/andreasronge/ptc_runner">repo</a></sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py"><img src="https://opengraph.githubassets.com/1/Mellow-Artificial-Intelligence/openextract" alt="openextract 的 Jev 欺诈核查 cookbook" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Mellow-Artificial-Intelligence/openextract/blob/main/examples/advanced/openrouter_jev_fraud.py">openextract 的 Jev 欺诈核查 cookbook</a></b><br><sub>Mellow-Artificial-Intelligence · GitHub · ⭐ 18 仓库 · 2025-07-28</sub><br>文档提取库 openextract 中的 cookbook：从备忘录、PDF 或图片中提取元数据和风险信号，作为 state 发给 OpenRouter Decisions API 上的 Jev 做欺诈判定。<br><sub>相关: <a href="https://github.com/Mellow-Artificial-Intelligence/openextract">repo</a></sub></td>
-</tr>
-<tr>
 <td width="260" valign="top"><a href="https://github.com/smturtle2/codex-skills/tree/main/skills/jev-developer"><img src="https://raw.githubusercontent.com/smturtle2/codex-skills/main/docs/assets/catalog-banner.svg" alt="jev-developer" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/smturtle2/codex-skills/tree/main/skills/jev-developer">jev-developer</a></b><br><sub>smturtle2 · GitHub · ⭐ 13 仓库 · 2026-03-21</sub><br>用于设计和调试基于 Jev 的软件的 Codex skill：如何把证据表示为 state、如何选择判断单元和答案空间，以及如何把类型化判断组合成结果。<br><sub>相关: <a href="https://github.com/smturtle2/codex-skills">repo</a></sub></td>
 </tr>
@@ -232,10 +228,6 @@
 <tr>
 <td width="260" valign="top"><a href="https://github.com/kevintsai1202/ai-agent-dev-guide/blob/main/skills/embabel-agent-backend/references/system-one-integration.md"><img src="https://opengraph.githubassets.com/1/kevintsai1202/ai-agent-dev-guide" alt="AI Agent Dev Guide 的 System One 集成" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/kevintsai1202/ai-agent-dev-guide/blob/main/skills/embabel-agent-backend/references/system-one-integration.md">AI Agent Dev Guide 的 System One 集成</a></b><br><sub>kevintsai1202 · GitHub · ⭐ 5 仓库 · 2026-06-28</sub><br>一套用于构建 Embabel 和 Spring AI agent 应用的 Claude Code skill 中的参考文档，演示如何把 Jev 当作快速判断节点：语义化的 @Condition 门控、类型驱动路由、护栏以及并行扇出。<br><sub>相关: <a href="https://github.com/kevintsai1202/ai-agent-dev-guide">repo</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/v60samurai/jev-atlas"><img src="https://raw.githubusercontent.com/v60samurai/jev-atlas/main/assets/jev-atlas-banner.png" alt="Jev Atlas" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/v60samurai/jev-atlas">Jev Atlas</a></b><br><sub>v60samurai · GitHub · 2026-09-21</sub><br>Claude Code 和 Codex skill：读取你的仓库，梳理语义决策发生在哪里，论证哪些应交给 Jev 这类 System One 模型、哪些该留给代码、LLM 或人，并打开一个本地评审界面。</td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/Menny1337/jev-lab"><img src="https://opengraph.githubassets.com/1/Menny1337/jev-lab" alt="Jev lab (TypeScript CLI)" width="240"></a></td>

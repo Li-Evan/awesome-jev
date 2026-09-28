@@ -337,18 +337,6 @@ entries:
   - generative-ui
   - copilotkit
   - cookbook
-- name: Crowdcheck
-  url: https://crowdcheck-ai.vercel.app/
-  kind: app
-  author: crowdcheck-ai
-  description: Tests a short social post on 10,000 persistent synthetic personas before it goes live, estimating how each persona group would react.
-  description_zh: 在短社交帖子发布前，先在 10,000 个持久存在的合成人格上测试，估算各个人群会如何反应。
-  jev: Code decides who sees the post; batched Jev calls return read, like/dislike, agreement, repost, follow and block probabilities per persona group.
-  jev_zh: 由代码决定谁能看到帖子；批量 Jev 调用返回每个人群阅读、点赞/点踩、认同、转发、关注和拉黑的概率。
-  tags:
-  - social-media
-  - simulation
-  - personas
 - name: discoprint
   url: https://github.com/lirantal/discoprint
   kind: repo

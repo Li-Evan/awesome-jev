@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/search.md)
 
-Reranking, retrieval filtering, semantic search, and knowledge graphs. 86 entries, ranked by community traction.
+Reranking, retrieval filtering, semantic search, and knowledge graphs. 85 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -74,10 +74,6 @@ Reranking, retrieval filtering, semantic search, and knowledge graphs. 86 entrie
 <tr>
 <td width="260" valign="top"><a href="https://github.com/jexp/neo4jev"><img src="https://opengraph.githubassets.com/1/jexp/neo4jev" alt="neo4jev" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/jexp/neo4jev">neo4jev</a></b><br><sub>jexp · GitHub · ⭐ 81 · 2026-09-16</sub><br>Demo that navigates a Neo4j graph one hop at a time toward a natural-language goal, with Jev choosing which relationship to follow and a beam search keeping the best paths.<br><sub><b>How it uses Jev:</b> A Choice over outgoing relationships plus a goal-reached Noul in the same call, so each hop is one round-trip.</sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py"><img src="https://opengraph.githubassets.com/1/Ontos-AI/knowhere" alt="Knowhere TOC anchor eval" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/Ontos-AI/knowhere/blob/main/apps/worker/scripts/page_memory/eval_jev_toc_anchor_confirm.py">Knowhere TOC anchor eval</a></b><br><sub>Ontos-AI · GitHub · ⭐ 3.4k repo · 2026-04-30</sub><br>Offline eval in the Knowhere document-parsing system comparing Jev against the current model at confirming a table-of-contents start page during PDF parsing.<br><sub><b>How it uses Jev:</b> A per-page Choice of true/false on cached page text; Jev cannot take screenshots, so both arms get the same text.</sub><br><sub>Also: <a href="https://knowhereto.ai">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://x.com/neural_avb/status/2100881974780993668"><img src="https://pbs.twimg.com/amplify_video_thumb/2100879106078568449/img/nCefxS323PhF_n7f.jpg" alt="Paper Breakdown recommendations" width="240"></a></td>
@@ -224,7 +220,7 @@ Reranking, retrieval filtering, semantic search, and knowledge graphs. 86 entrie
 <td valign="top"><b><a href="https://github.com/tedliou/decision-model-playground">decision-model-playground</a></b><br><sub>tedliou · GitHub · ⭐ 1 · 2026-09-19</sub><br>Local browser playground where Laya or Jev picks the best-matching vervecode.dev article for a question, showing every option's raw probability, a no-match option and load and inference timings.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/raahelpie/hn-for-me"><img src="https://external-preview.redd.it/cGZkd252YzFheXFoMeTpqXMSfpCE94rmVlGr8pZ7_z3kfZQqelwwzt-Id7ds.png?format=pjpg&amp;auto=webp&amp;s=e90f071fd20387c7898145a4feed6ca91dc9360f" alt="Hacker News For Me" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/raahelpie/hn-for-me"><img src="https://opengraph.githubassets.com/1/raahelpie/hn-for-me" alt="Hacker News For Me" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/raahelpie/hn-for-me">Hacker News For Me</a></b><br><sub>raahelpie · GitHub · ⭐ 1 · 2026-09-20</sub><br>Personal Hacker News reader that screens new stories against your saved interests and shows only the relevant ones in an HN-style feed.<br><sub><b>How it uses Jev:</b> Runs on Codiv's OpenJev model by default, with TypeSafe Jev as a switchable provider; thresholds of 0.7 for titles and 0.9 for article relevance.</sub><br><sub>Also: <a href="https://news.ycombinator.com/item?id=49788260">demo</a> · <a href="https://www.reddit.com/r/SideProject/comments/1wmruft/hn_for_me_hacker_news_stories_curated_by_jev/">discussion</a> · <a href="https://x.com/RaahelSaidWhat/status/2102162969656475973">demo 2</a></sub></td>
 </tr>
 <tr>

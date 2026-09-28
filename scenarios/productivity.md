@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/productivity.md)
 
-Email, notes, calendars, browsing, and everyday automation. 127 entries, ranked by community traction.
+Email, notes, calendars, browsing, and everyday automation. 126 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -374,10 +374,6 @@ Email, notes, calendars, browsing, and everyday automation. 127 entries, ranked 
 <tr>
 <td width="260" valign="top"><a href="https://github.com/MithrilMan/your-signal"><img src="https://raw.githubusercontent.com/MithrilMan/your-signal/master/artifacts/your-signal-demo-thumbnail-1280x688.jpg" alt="Your Signal" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/MithrilMan/your-signal">Your Signal</a></b><br><sub>MithrilMan · GitHub · ⭐ 2 · 2026-09-18</sub><br>Bring-your-own-key Chrome extension that scores visible X posts for relevance, substance, practical value, promotion and engagement bait with Jev, then highlights, dims, collapses or hides them per your settings.<br><sub>Also: <a href="https://www.reddit.com/r/SideProject/comments/1wjykoj/i_built_an_opensource_chrome_extension_that_uses/">discussion</a></sub></td>
-</tr>
-<tr>
-<td width="260" valign="top"><a href="https://github.com/sysadarsh/zerosweep"><img src="https://opengraph.githubassets.com/1/sysadarsh/zerosweep" alt="ZeroSweep" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/sysadarsh/zerosweep">ZeroSweep</a></b><br><sub>sysadarsh · GitHub · ⭐ 2 · 2026-09-18</sub><br>Inbox-zero webmail demo and benchmark that triages 50 to 1,000 generated emails with Jev, sending ambiguous items to human review based on calibrated confidence.<br><sub>Also: <a href="https://sysadarsh-zerosweep.vercel.app/">app</a> · <a href="https://sysadarsh-zerosweep.vercel.app">app 2</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/rokcso/bluenoise/blob/main/src/contracts/ai.ts"><img src="https://opengraph.githubassets.com/1/rokcso/bluenoise" alt="BlueNoise Jev second pass" width="240"></a></td>

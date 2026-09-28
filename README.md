@@ -6,7 +6,7 @@
 
 🌐 **[Browse the searchable gallery →](https://li-evan.github.io/awesome-jev/)** Search, filter by scenario, and share results, in English or Chinese.
 
-The most complete collection of what people build with Jev: **3,427 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
+The most complete collection of what people build with Jev: **3,397 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
 
 This list is community-maintained and not affiliated with TypeSafe. The official sites are `typesafe.ai` and `docs.typesafe.ai`, and the official GitHub organization is `typesafe-ai`. Be careful with look-alike domains that claim to be official.
 
@@ -63,10 +63,10 @@ This list is community-maintained and not affiliated with TypeSafe. The official
 Highlights are ranked by community traction (stars, likes, points, and views). Open a scenario for its full gallery.
 
 <table>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md">💰 Finance and Trading</a> <sub>89</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md">💻 Coding and Developer Tools</a> <sub>516</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/browser.md">🌐 Browser and Computer Use</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md">🤖 Agents and Orchestration</a> <sub>246</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md">🎮 Games and Interactive</a> <sub>276</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/robotics.md">🦾 Robotics and Simulation</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md">🔎 Search and RAG</a> <sub>86</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md">🔒 Safety and Moderation</a> <sub>128</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md">📊 Data and Evaluation</a> <sub>135</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md">🎧 Customer Support and Sales</a> <sub>44</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md">🔬 Legal, Health, and Science</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md">🛒 Commerce and Marketing</a> <sub>45</sub></td></tr>
-<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">🎨 Writing, Media, and Creative</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🎤 Voice and Real-Time Interfaces</a> <sub>54</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>127</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md">💰 Finance and Trading</a> <sub>88</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md">💻 Coding and Developer Tools</a> <sub>508</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/browser.md">🌐 Browser and Computer Use</a> <sub>128</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md">🤖 Agents and Orchestration</a> <sub>245</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md">🎮 Games and Interactive</a> <sub>272</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/robotics.md">🦾 Robotics and Simulation</a> <sub>61</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md">🔎 Search and RAG</a> <sub>85</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/safety.md">🔒 Safety and Moderation</a> <sub>128</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md">📊 Data and Evaluation</a> <sub>134</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md">🎧 Customer Support and Sales</a> <sub>43</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/legal-health.md">🔬 Legal, Health, and Science</a> <sub>28</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/commerce.md">🛒 Commerce and Marketing</a> <sub>45</sub></td></tr>
+<tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md">🎨 Writing, Media, and Creative</a> <sub>133</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md">🎤 Voice and Real-Time Interfaces</a> <sub>53</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md">🧰 Personal Productivity</a> <sub>126</sub></td><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/education.md">🎓 Education</a> <sub>10</sub></td></tr>
 <tr><td><a href="https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/other.md">🧪 Other Experiments</a> <sub>46</sub></td></tr>
 </table>
 
@@ -87,7 +87,7 @@ Trading agents, market signals, fraud and risk checks, and financial document pr
 </tr>
 </table>
 
-**[Browse all 89 in Finance and Trading →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md)**
+**[Browse all 88 in Finance and Trading →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/finance.md)**
 
 ### 💻 Coding and Developer Tools
 
@@ -106,7 +106,7 @@ Code review, model routing for coding agents, context compaction, semantic searc
 </tr>
 </table>
 
-**[Browse all 516 in Coding and Developer Tools →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md)**
+**[Browse all 508 in Coding and Developer Tools →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/coding.md)**
 
 ### 🌐 Browser and Computer Use
 
@@ -144,7 +144,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 </table>
 
-**[Browse all 246 in Agents and Orchestration →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md)**
+**[Browse all 245 in Agents and Orchestration →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/agents.md)**
 
 ### 🎮 Games and Interactive
 
@@ -163,7 +163,7 @@ Game-playing agents, real-time decisions, and playful interactive demos.
 </tr>
 </table>
 
-**[Browse all 276 in Games and Interactive →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md)**
+**[Browse all 272 in Games and Interactive →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/games.md)**
 
 ### 🦾 Robotics and Simulation
 
@@ -201,7 +201,7 @@ Reranking, retrieval filtering, semantic search, and knowledge graphs.
 </tr>
 </table>
 
-**[Browse all 86 in Search and RAG →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md)**
+**[Browse all 85 in Search and RAG →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/search.md)**
 
 ### 🔒 Safety and Moderation
 
@@ -239,7 +239,7 @@ Labeling, classification at scale, data pipelines, observability, and LLM evals.
 </tr>
 </table>
 
-**[Browse all 135 in Data and Evaluation →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md)**
+**[Browse all 134 in Data and Evaluation →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/data.md)**
 
 ### 🎧 Customer Support and Sales
 
@@ -258,7 +258,7 @@ Ticket routing, email triage, lead scoring, and CRM automation.
 </tr>
 </table>
 
-**[Browse all 44 in Customer Support and Sales →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md)**
+**[Browse all 43 in Customer Support and Sales →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/support.md)**
 
 ### 🔬 Legal, Health, and Science
 
@@ -315,7 +315,7 @@ Writing feedback, generative UI, music, art, and social media tools.
 </tr>
 </table>
 
-**[Browse all 134 in Writing, Media, and Creative →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md)**
+**[Browse all 133 in Writing, Media, and Creative →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/creative.md)**
 
 ### 🎤 Voice and Real-Time Interfaces
 
@@ -334,7 +334,7 @@ Voice assistants and interfaces that react while you type or speak.
 </tr>
 </table>
 
-**[Browse all 54 in Voice and Real-Time Interfaces →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md)**
+**[Browse all 53 in Voice and Real-Time Interfaces →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/voice.md)**
 
 ### 🧰 Personal Productivity
 
@@ -353,7 +353,7 @@ Email, notes, calendars, browsing, and everyday automation.
 </tr>
 </table>
 
-**[Browse all 127 in Personal Productivity →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md)**
+**[Browse all 126 in Personal Productivity →](https://github.com/Li-Evan/awesome-jev/blob/main/scenarios/productivity.md)**
 
 ### 🎓 Education
 
@@ -429,7 +429,7 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 - [Pollinations Jev API](https://github.com/pollinations/pollinations/blob/main/gen.pollinations.ai/src/text/systemOneClient.ts) - The Pollinations gen API serves Jev as typesafe/jev-1.13 through a typed POST /alpha/decisions endpoint and Chat Completions, plus an Ask Jev MCP server with a jev_decide tool.
 - [Jev on Fly.io Sprites](https://x.com/flydotio/status/2102076230183035081) - Fly.io's TypeSafe connector for Sprites, which injects your Jev API key at a gateway so agents running inside hardware-isolated Sprites can call Jev without the key entering the sandbox.
 
-**[See all 68 Model Access →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md)**
+**[See all 66 Model Access →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-model-access.md)**
 
 ### Framework Adapters
 
@@ -438,13 +438,13 @@ Ways to call Jev from your stack: hosted access, framework adapters, observabili
 - [Composio](https://github.com/ComposioHQ/composio/tree/next/ts/packages/providers/typesafe) - TypeScript provider that picks and gates tool calls with a Choice and binds closed-set arguments before execution.
 - [AI SDK TypeSafe provider](https://github.com/vercel/ai/tree/main/packages/typesafe-ai) - Official AI SDK provider package @ai-sdk/typesafe-ai that runs Choice, Score and Boolean questions against Jev through the experimental evaluate API.
 - [Pydantic AI TypeSafeModel](https://github.com/pydantic/pydantic-ai/blob/main/pydantic_ai_slim/pydantic_ai/models/typesafe.py) - Pydantic AI model class that runs decision agents on Jev: each field of the output_type becomes one question and the answers fill the output, so swapping the model name compares Jev with an LLM.
-- [elizaOS TypeSafe adapter](https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe) - Opt-in server-side TypeSafe client in the elizaOS agent package that validates Choice, Score and Noul requests with Zod and sends them only on an explicit systemOne call; it is not registered with the runtime by default.
 - [Jev workflow builder](https://github.com/CTNicholas/jev-workflow-builder) - Liveblocks demo of a multiplayer visual workflow builder that wires Jev and LLM nodes together, runs workflows through a REST API, and shows test-run previews and live cursors.
 - [LangChain.js](https://github.com/langchain-ai/langchainjs/tree/main/libs/providers/langchain-typesafe) - JavaScript version of the classifier and the routing and approval middleware.
 - [@effect/ai-typesafe](https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe) - Effect's DecisionModel provider for TypeSafe's System One API, supporting classification, ordered ratings and probabilities through Effect HttpClient, with provider distributions preserved rather than normalized.
 - [System One adapter](https://github.com/typesafe-ai/system-one-adapter-python) - Drop-in `TypeSafeClient` replacement backed by LLM APIs, for comparing cost, speed, and quality with Jev on your own workflow.
+- [Ash AI evaluate](https://github.com/ash-project/ash_ai) - Elixir Ash framework extension whose evaluate/2 maps an Ash action onto typed questions for evaluation models like Jev, returning typed answers with probabilities and confidence.
 
-**[See all 174 Framework Adapters →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md)**
+**[See all 172 Framework Adapters →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/build-frameworks.md)**
 
 ### Observability
 
@@ -493,7 +493,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - [Confidence](https://docs.typesafe.ai/confidence) - How confidence differs from probability and how to gate actions on it by risk.
 - [Example use cases](https://docs.typesafe.ai/concepts/use-case-map) - Ideas across 18 areas, from support triage and recruiting to financial crime and knowledge graphs.
 
-**[See all 15 Official Docs →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md)**
+**[See all 14 Official Docs →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-official-docs.md)**
 
 ### Official SDKs and Tools
 
@@ -541,7 +541,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - [JEV Playground](https://x.com/mac_eth/status/2101701798968840703) - Simple web playground for trying Jev by entering text context and asking Noul, Choice or Score questions.
 - [Jevify](https://github.com/altryne/jevify) - Agent skill that teaches a coding agent to spot work Jev can handle, design Noul, Choice and Score question packs, and learn from recent community experiments, with a client script for API-backed test runs.
 
-**[See all 74 Examples and Skills →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md)**
+**[See all 72 Examples and Skills →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-examples.md)**
 
 ### Guides
 
@@ -571,7 +571,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - [LLMs vs. Jev, clearly explained](https://x.com/akshay_pachaar/status/2101309986156712025) - Explains that Jev does not generate faster, it does not generate at all: independent Choice, Score and Noul questions, like urgency, owning team and command risk for a failed deploy, are evaluated in parallel.
 - [What Jev can really do](https://x.com/servasyy_ai/status/2101132667056185544) - Chinese-language reality check on Jev that explains what it is and is not, sorts demos that actually work by use case, and lays out the caveats behind the speed and accuracy claims.
 
-**[See all 102 Techniques and Analysis →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md)**
+**[See all 101 Techniques and Analysis →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-techniques.md)**
 
 ### Benchmarks and Case Studies
 
@@ -586,7 +586,7 @@ Official docs and cookbooks, plus the best guides, analyses, benchmarks, and tal
 - [Jev in a security pipeline](https://x.com/grichadev/status/2100437998571860087) - Results table from a production security pipeline: Jev reached 99.3% accuracy at 0.259s latency and $0.026 per 1K, versus Gemini and open models that were slower and costlier.
 - [500 real-time agents in 3D](https://x.com/crislenta/status/2100457614073327754) - Benchmark running 500 real-time agents in parallel in a 3D environment, reporting 500ms average latency and 35 API calls/s with no optimizations.
 
-**[See all 173 Benchmarks and Case Studies →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md)**
+**[See all 171 Benchmarks and Case Studies →](https://github.com/Li-Evan/awesome-jev/blob/main/pages/learn-benchmarks.md)**
 
 ### Talks and Videos
 

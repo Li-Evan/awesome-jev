@@ -333,21 +333,6 @@ entries:
   - lead-scoring
   - sales
   - outreach
-- name: LeadGen AI TypeSafe integration
-  name_zh: LeadGen AI 的 TypeSafe 集成
-  url: https://github.com/sumitrevolt/leadgenrationaivoiceagent/blob/main/app/platform/typesafe_integration.py
-  kind: repo
-  author: sumitrevolt
-  description: Experimental Jev layer in LeadGen AI, a marketing and voice-calling SaaS for small Indian businesses, that picks specialization labels for agent roles and validates worker outputs such as cold emails.
-  description_zh: 面向印度小企业的营销与语音外呼 SaaS LeadGen AI 中的实验性 Jev 层，为 agent 角色挑选专业方向标签，并校验冷邮件等工作产出。
-  metrics:
-    repo_stars: 1
-  date: '2026-09-17'
-  links:
-    repo: https://github.com/sumitrevolt/leadgenrationaivoiceagent
-  tags:
-  - lead-generation
-  - sales
 - name: lurk
   url: https://github.com/getanyapi-com/lurk
   kind: repo

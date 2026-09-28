@@ -2,7 +2,7 @@
 
 **English** · [简体中文](https://github.com/Li-Evan/awesome-jev/blob/main/zh-CN/scenarios/agents.md)
 
-Tool and skill selection, approvals, planning, memory, and harness decisions for general-purpose agents. 246 entries, ranked by community traction.
+Tool and skill selection, approvals, planning, memory, and harness decisions for general-purpose agents. 245 entries, ranked by community traction.
 
 [← Back to Awesome Jev](https://github.com/Li-Evan/awesome-jev#browse-by-scenario)
 
@@ -261,7 +261,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/phantomyard/phantombot"><img src="https://opengraph.githubassets.com/1/phantomyard/phantombot" alt="Phantombot" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/phantomyard/phantombot">Phantombot</a></b><br><sub>phantomyard · GitHub · ⭐ 16 · 2026-05-01</sub><br>Persistent-identity AI assistant around terminal harnesses with long-term memory across PhantomChat, Telegram and editors; an optional Jev screener acts as a threat judge and routes each turn to the primary or coder model in ~300 ms.<br><sub><b>How it uses Jev:</b> A typed primary|coder Choice replaces keyword scoring for brain-swap routing; errors fall back to the scorer and are reported by phantombot doctor.</sub><br><sub>Also: <a href="https://phantombot.bot/">app</a> · <a href="https://github.com/phantomyard/phantombot/blob/main/docs/jev.md">docs</a></sub></td>
+<td valign="top"><b><a href="https://github.com/phantomyard/phantombot">Phantombot</a></b><br><sub>phantomyard · GitHub · ⭐ 16 · 2026-05-01</sub><br>Persistent-identity AI assistant around terminal harnesses with long-term memory across PhantomChat, Telegram and editors; an optional Jev screener acts as a threat judge and routes each turn to the primary or coder model in ~300 ms.<br><sub><b>How it uses Jev:</b> A typed primary|coder Choice replaces keyword scoring for brain-swap routing; errors fall back to the scorer and are reported by phantombot doctor.</sub><br><sub>Also: <a href="https://phantombot.bot/">app</a> · <a href="https://github.com/phantomyard/phantombot">docs</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/lioensky/VCPChat/blob/main/modules/services/globalJevService.js"><img src="https://raw.githubusercontent.com/lioensky/VCPChat/main/assets/E1-Vchat%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg" alt="VCPChat global Jev service" width="240"></a></td>
@@ -308,7 +308,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 <td valign="top"><b><a href="https://github.com/jon-devlapaz/jev-me">jev-me</a></b><br><sub>jon-devlapaz · GitHub · ⭐ 13 · 2026-09-17</sub><br>Agent skill that grills a plan as a design-tree interview, printing every unlocked decision each round with a recommended answer, and calling Jev ad hoc when a typed judgment helps.</td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift"><img src="https://raw.githubusercontent.com/AgentiLoop/Agent/main/agent-demo.gif" alt="Agent! Jev advisor" width="240"></a></td>
+<td width="260" valign="top"><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift"><img src="https://opengraph.githubassets.com/1/AgentiLoop/Agent" alt="Agent! Jev advisor" width="240"></a></td>
 <td valign="top"><b><a href="https://github.com/AgentiLoop/Agent/blob/main/Agent/Services/JevAdvisor.swift">Agent! Jev advisor</a></b><br><sub>AgentiLoop · GitHub · ⭐ 623 repo · 2026-09-18</sub><br>Jev advisor in Agent!, a native macOS agent app, that gives a second opinion on shell commands already passed by pattern rules and refuses those whose data-destruction probability exceeds a user-set threshold.<br><sub><b>How it uses Jev:</b> Uses the bundled TypeSafeKit Swift client and fails open so an outage never stalls the tool loop.</sub><br><sub>Also: <a href="https://github.com/AgentiLoop/Agent">repo</a> · <a href="https://github.com/AgentiLoop/Agent/tree/main/TypeSafeKit">sdk</a> · <a href="https://agentiloop.ai">app</a></sub></td>
 </tr>
 <tr>
@@ -528,8 +528,8 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 <td valign="top"><b><a href="https://github.com/iamvatsalpatel/tiershift">tiershift</a></b><br><sub>iamvatsalpatel · GitHub · ⭐ 3 · 2026-09-17</sub><br>Model router for TypeScript and Python that sends each LLM request to the cheapest capable tier and escalates on multi-step reasoning, difficulty, stakes, or safety, with policy in plain YAML.<br><sub><b>How it uses Jev:</b> Routing judgments in about 180 ms at four cents per thousand routes; every decision prints its reason.</sub></td>
 </tr>
 <tr>
-<td width="260" valign="top"><a href="https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs"><img src="https://opengraph.githubassets.com/1/iii-hq/workers" alt="iii-directory Jev search" width="240"></a></td>
-<td valign="top"><b><a href="https://github.com/iii-hq/workers/blob/main/iii-directory/src/functions/search_jev.rs">iii-directory Jev search</a></b><br><sub>iii-hq · GitHub · ⭐ 109 repo · 2026-03-18</sub><br>Worker for the iii engine that searches registered functions, installed skills and triggers with Jev relevance judgments, falling back to hybrid search.<br><sub>Also: <a href="https://workers.iii.dev/">app</a></sub></td>
+<td width="260" valign="top"><a href="https://github.com/iii-hq/workers"><img src="https://opengraph.githubassets.com/1/iii-hq/workers" alt="iii-directory Jev search" width="240"></a></td>
+<td valign="top"><b><a href="https://github.com/iii-hq/workers">iii-directory Jev search</a></b><br><sub>iii-hq · GitHub · ⭐ 109 repo · 2026-03-18</sub><br>Worker for the iii engine that searches registered functions, installed skills and triggers with Jev relevance judgments, falling back to hybrid search.<br><sub>Also: <a href="https://workers.iii.dev/">app</a></sub></td>
 </tr>
 <tr>
 <td width="260" valign="top"><a href="https://github.com/JulesLiu390/PetGPT/blob/main/src/utils/social/jevClient.js"><img src="https://repository-images.githubusercontent.com/952838031/91883b7f-7f2b-412f-a048-8eae41b0de5a" alt="PetGPT Jev social signals" width="240"></a></td>
@@ -609,7 +609,7 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 </tr>
 </table>
 
-<details><summary>96 more</summary>
+<details><summary>95 more</summary>
 
 - **[Hersona decide](https://github.com/shiro-0x/hersona/blob/main/hersona/integrations/decision/typesafe.py)** · <sub>shiro-0x · GitHub · ⭐ 52 repo · 2026-06-04</sub><br>Persona attribute library for AI agents whose hersona decide command uses TypeSafe Jev to recommend reply, ask, search, use a tool or hold, with confidence, persona alignment and risk.
 - **[ask-jev gate for Grok bots](https://x.com/ChuckHTF/status/2102187054381617367)** · <sub>ChuckHTF · X · ♥ 1 · 2026-09-22</sub><br>Personal desk of Grok bots and assistants that now asks Jev first, via OpenRouter's Decisions API, for small yes/no, bucket and 1-5 score calls instead of waking Grok.
@@ -684,7 +684,6 @@ Tool and skill selection, approvals, planning, memory, and harness decisions for
 - **[Decision Graph Protocol](https://github.com/numerous-com/dgp)** · <sub>numerous-com · GitHub · 2026-09-19</sub><br>Open protocol for decision-based agents: apps expose immutable evidence frames, typed decisions and guarded actions, and a Jev adapter produces assessments while application code keeps control of effects.
 - **[Frost](https://github.com/marcus/frost)** · <sub>marcus · GitHub · 2026-09-17</sub><br>Go CLI that takes a prompt or markdown doc and recommends a model, harness or API and effort level, using one Jev analysis request and then deterministic local selection of the cheapest profile meeting the quality floor.
 - **[HarnessJudge](https://github.com/ndolinschi/harnessjudge)** · <sub>ndolinschi · GitHub · 2026-09-17</sub><br>Paste an agent step trace and get an ok, retry, escalate or stop decision for agent builders.
-- **[Jev Checkpoint](https://github.com/ashishakkumar/Jev-Checkpoint)** · <sub>ashishakkumar · GitHub · 2026-09-21</sub><br>Local MCP server that turns an agent's bounded next-step decision, such as proceed, inspect callers or ask the user, into one Jev Choice and returns the route, probabilities and a thresholded recommendation.
 - **[JEV plugins](https://github.com/Pinutss/jev-plugins)** · <sub>Pinutss · GitHub · 2026-09-18</sub><br>Cursor and Hermes plugin marketplace for four JEV Labs selectors, for memories, agents, models, and MCP tools, that filter candidates by task and budget, locally by default with Jev as an optional judge.
 - **[jev-agent-tool](https://github.com/nandansrikrishna/jev-agent-tool)** · <sub>nandansrikrishna · GitHub · 2026-09-19</sub><br>Bring-your-own-key CLI, Python API and local MCP server built on the official Python SDK, letting agents invent typed questions at runtime and get Jev decisions with probabilities.
 - **[jev-decision-gateway](https://github.com/kuldeepsinh19/jev-decision-gateway)** · <sub>kuldeepsinh19 · GitHub · 2026-09-19</sub><br>Provider-agnostic gateway in front of expensive LLMs: Jev answers small continue, tool, relevance, and verification questions, and a policy layer calls a generative model only when generation is needed.

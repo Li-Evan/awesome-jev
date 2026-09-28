@@ -106,14 +106,10 @@ entries:
   author: Arbistocks
   description: Arbitrage scanner over 49 stocks across 136 pools that puts Jev in its scan loop to decide whether a gap is real, which route to quote, whether size is past the peak, and fire or skip.
   description_zh: 套利扫描器，覆盖 136 个池子里的 49 只股票，把 Jev 放进扫描循环，判断价差是否真实、报哪条路由、仓位规模是否已过峰值，以及出手还是跳过。
-  image: https://arbistocks.com/og.png
   metrics:
     likes: 30
     views: 5232
   date: '2026-09-21'
-  links:
-    app: https://arbistocks.com/app
-    project: https://arbistocks.com/app
   tags:
   - arbitrage
   - trading
@@ -800,18 +796,6 @@ entries:
   - bookkeeping
   - computer-use
   - invoices
-- name: jev-connector
-  url: https://github.com/adhamelhayek-lab/jev-connector
-  kind: repo
-  author: adhamelhayek-lab
-  description: Paper-trading market and trade evaluation server that sends structured market state to Jev through OpenRouter's Decisions API alongside deterministic regime and order-flow checks, and never executes trades.
-  description_zh: 面向模拟交易的市场与交易评估服务器：通过 OpenRouter 的 Decisions API 把结构化市场 state 发给 Jev，同时做确定性的市场状态和订单流检查，从不执行交易。
-  date: '2026-09-18'
-  links:
-    app: https://jev-connector.vercel.app
-  tags:
-  - paper-trading
-  - openrouter
 - name: jev-paper-trader
   url: https://www.npmjs.com/package/jev-paper-trader
   kind: package

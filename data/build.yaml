@@ -44,21 +44,6 @@ subsections:
     - gateway
     - envoy
     - schema
-  - name: AI Store
-    url: https://github.com/AgentsDanceAI/AIStore
-    kind: repo
-    author: AgentsDanceAI
-    description: Accounts, credits and workspace layer for thirty hosted open-source AI products that offers both a self-hosted Laya decision model and TypeSafe's hosted Jev as metered slots.
-    description_zh: 为三十款托管的开源 AI 产品提供账号、积分和工作区的一层服务，同时把自托管的 Laya 决策模型和 TypeSafe 托管的 Jev 作为按量计费的槽位提供。
-    metrics:
-      stars: 7
-    date: '2026-08-21'
-    links:
-      app: https://aistore.best
-    tags:
-    - hosting
-    - credits
-    - laya
   - name: AI/ML API Jev
     name_zh: AI/ML API 上的 Jev
     url: https://docs.aimlapi.com/api-references/decision-models/typesafe/jev
@@ -835,21 +820,6 @@ subsections:
     - gateway
     - routing
     - cashu
-  - name: Sapiom llm.decide
-    url: https://github.com/sapiom/sapiom-js/blob/main/packages/tools/src/llm/decide.ts
-    kind: repo
-    author: sapiom
-    description: The llm.decide capability in the Sapiom agent SDK routes Jev through Sapiom's Capability Router and returns calibrated probabilities over caller-defined answers for typed Noul, Choice and Score questions.
-    description_zh: Sapiom agent SDK 中的 llm.decide 能力，经 Sapiom 的 Capability Router 调用 Jev，对类型化的 Noul、Choice 和 Score 问题返回调用方自定义答案上的校准概率。
-    metrics:
-      repo_stars: 20
-    date: '2025-11-11'
-    links:
-      repo: https://github.com/sapiom/sapiom-js
-    tags:
-    - sdk
-    - agents
-    - capability-router
   - name: System One API
     url: https://docs.typesafe.ai/api
     kind: docs
@@ -953,7 +923,7 @@ subsections:
     - policy
   - name: uni-api TypeSafe backend
     name_zh: uni-api 的 TypeSafe 后端
-    url: https://github.com/yym68686/uni-api/blob/main/scripts/verify_typesafe.py
+    url: https://github.com/yym68686/uni-api/blob/main/tests/http/verify_typesafe.py
     kind: repo
     author: yym68686
     description: Adds TypeSafe Jev as a backend to uni-api, a unified LLM API gateway with load balancing, so decision requests route through the same OpenAI-style interface as its other providers.
@@ -961,8 +931,6 @@ subsections:
     metrics:
       repo_stars: 1261
     date: '2024-07-04'
-    links:
-      app: https://0-0.pro/r/uniapi
     tags:
     - gateway
     - load-balancing
@@ -1046,24 +1014,6 @@ subsections:
   title: Framework Adapters
   title_zh: 框架适配
   entries:
-  - name: '@dxos/ai-typesafe'
-    url: https://github.com/dxos/dxos/tree/main/packages/experimental/ai-typesafe
-    kind: repo
-    author: dxos
-    description: Experimental Effect client in the DXOS monorepo for TypeSafe's System One model, where a schema is both the request and response and each struct field compiles to one Jev question.
-    description_zh: DXOS monorepo 中面向 TypeSafe System One 模型的实验性 Effect 客户端，schema 同时就是请求和响应，每个 struct 字段编译成一个 Jev 问题。
-    jev: DecisionModel service mirroring Effect's LanguageModel; all fields ride a single call and decode back to the declared type.
-    jev_zh: DecisionModel 服务仿照 Effect 的 LanguageModel；所有字段在一次调用中完成，并解码回声明的类型。
-    image: https://raw.githubusercontent.com/dxos/dxos/main/assets/images/github-repo-banner.png
-    metrics:
-      repo_stars: 522
-    date: '2021-04-07'
-    links:
-      app: https://dxos.org
-    tags:
-    - effect
-    - decision-model
-    - sdk
   - name: '@effect-uai/typesafe-ai'
     url: https://github.com/betalyra/effect-uai/tree/main/packages/providers/typesafe-ai
     kind: repo
@@ -1737,22 +1687,6 @@ subsections:
     - effect
     - typescript
     - library
-  - name: elizaOS TypeSafe adapter
-    name_zh: elizaOS 的 TypeSafe 适配器
-    url: https://github.com/elizaOS/eliza/tree/develop/packages/agent/src/services/typesafe
-    kind: repo
-    author: elizaOS
-    description: Opt-in server-side TypeSafe client in the elizaOS agent package that validates Choice, Score and Noul requests with Zod and sends them only on an explicit systemOne call; it is not registered with the runtime by default.
-    description_zh: elizaOS agent 包中需主动启用的服务端 TypeSafe 客户端，用 Zod 校验 Choice、Score 和 Noul 请求，只在显式调用 systemOne 时才发送；默认不注册到运行时。
-    image: https://raw.githubusercontent.com/elizaOS/eliza/develop/packages/shared/assets/banners/elizaos_banner.svg
-    metrics:
-      repo_stars: 19406
-    date: '2026-09-16'
-    links:
-      repo: https://github.com/elizaOS/eliza
-    tags:
-    - elizaos
-    - adapter
   - name: Emergent jev-handler
     url: https://github.com/Govcraft/emergent/blob/main/skills/emergent/references/primitives.md
     kind: repo
