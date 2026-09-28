@@ -11,6 +11,18 @@ entries:
   description: One-page field guide to primitives, question design, confidence handling, limits, and tested SDK snippets.
   description_zh: 一页纸的实战指南，涵盖原语、问题设计、置信度处理、限制，以及经过测试的 SDK 代码片段。
   pinned: true
+- name: Jev in Practice (Chinese book)
+  name_zh: Jev 实战手册
+  url: https://li-evan.github.io/jev-handbook/
+  kind: docs
+  author: Evan
+  description: 'Free Chinese book built from this gallery: 17 chapters on where Jev fits in real software, with every case checked against its source and EPUB and PDF downloads.'
+  description_zh: 根据这份列表写成的免费中文书，17 章按场景讲 Jev 该放在软件的哪里，每个案例都回到原始出处核实过，可下载 EPUB 和 PDF。
+  image: https://li-evan.github.io/jev-handbook/cover.png
+  links:
+    repo: https://github.com/Li-Evan/jev-handbook
+    epub: https://li-evan.github.io/jev-handbook/jev-handbook.epub
+  pinned: true
 - name: Quick start
   name_zh: 快速开始
   url: https://docs.typesafe.ai/introduction/quickstart

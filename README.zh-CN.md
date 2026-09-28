@@ -6,7 +6,7 @@
 
 🌐 **[打开可搜索的在线画廊 →](https://li-evan.github.io/awesome-jev/?lang=zh)** 支持搜索、按场景筛选和分享结果，中英文随时切换。
 
-这里是最全的 Jev 用例合集：**3,397 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
+这里是最全的 Jev 用例合集：**3,398 个项目、演示、帖子和实测文章**，从 GitHub、X、Reddit、Hacker News、YouTube 和各类网站收集而来，按应用场景整理。每一条都链接到原始出处，并说明它具体做了什么。Jev 有三种原语：**Choice** 从选项中选一个，**Score** 在有序等级上打分，**Noul** 给出某个陈述为真的概率。
 
 本列表由社区维护，与 TypeSafe 官方无关。官方网站是 `typesafe.ai` 和 `docs.typesafe.ai`，官方 GitHub 组织是 `typesafe-ai`。请警惕自称官方的仿冒域名。
 
@@ -53,6 +53,7 @@
 ## 快速上手
 
 - [Jev 速查表](https://github.com/Li-Evan/awesome-jev/blob/main/cheatsheet.zh-CN.md) - 一页纸的实战指南，涵盖原语、问题设计、置信度处理、限制，以及经过测试的 SDK 代码片段。
+- [Jev 实战手册](https://li-evan.github.io/jev-handbook/) - 根据这份列表写成的免费中文书，17 章按场景讲 Jev 该放在软件的哪里，每个案例都回到原始出处核实过，可下载 EPUB 和 PDF。
 - [快速开始](https://docs.typesafe.ai/introduction/quickstart) - 通过 Playground、cURL、Python SDK 或编程 agent 发出第一个请求。
 - [Playground](https://console.typesafe.ai/playground) - 写代码之前，先在浏览器里试试一段 state 和一组问题（需要登录）。
 - [如何用 TypeSafe 构建](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) - 核心设计指南：把控制流留在代码里，把判断拆成原子化的问题。

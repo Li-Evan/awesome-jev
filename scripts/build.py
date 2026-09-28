@@ -483,6 +483,15 @@ def render_site(order, sections):
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", page
 
 
+def render_sitemap(sections):
+    urls = [SITE_URL, SITE_URL + "?lang=zh"]
+    for slug, sec in sections.items():
+        if entries_of(sec) and slug != "getting-started":
+            urls += [f"{SITE_URL}?s={slug}", f"{SITE_URL}?lang=zh&amp;s={slug}"]
+    rows = "\n".join(f"  <url><loc>{u}</loc><changefreq>daily</changefreq></url>" for u in urls)
+    return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{rows}\n</urlset>\n'
+
+
 def outputs():
     order, sections = load()
     count = validate(sections)
@@ -500,6 +509,7 @@ def outputs():
     data, page = render_site(order, sections)
     files[ROOT / "site" / "data.json"] = data
     files[ROOT / "index.html"] = page
+    files[ROOT / "sitemap.xml"] = render_sitemap(sections)
     zh = sum(bool(e.get("description_zh")) for s in sections.values() for e in entries_of(s))
     return files, count, zh
 

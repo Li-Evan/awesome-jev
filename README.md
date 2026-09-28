@@ -6,7 +6,7 @@
 
 🌐 **[Browse the searchable gallery →](https://li-evan.github.io/awesome-jev/)** Search, filter by scenario, and share results, in English or Chinese.
 
-The most complete collection of what people build with Jev: **3,397 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
+The most complete collection of what people build with Jev: **3,398 projects, demos, posts, and write-ups**, gathered from GitHub, X, Reddit, Hacker News, YouTube, and the web, and organized by scenario. Every entry links to its original source and says what it does. Jev has three primitives: **Choice** picks one option, **Score** places something on an ordered scale, and **Noul** gives the probability that a statement is true.
 
 This list is community-maintained and not affiliated with TypeSafe. The official sites are `typesafe.ai` and `docs.typesafe.ai`, and the official GitHub organization is `typesafe-ai`. Be careful with look-alike domains that claim to be official.
 
@@ -53,6 +53,7 @@ This list is community-maintained and not affiliated with TypeSafe. The official
 ## Getting Started
 
 - [Jev Cheatsheet](https://github.com/Li-Evan/awesome-jev/blob/main/cheatsheet.md) - One-page field guide to primitives, question design, confidence handling, limits, and tested SDK snippets.
+- [Jev in Practice (Chinese book)](https://li-evan.github.io/jev-handbook/) - Free Chinese book built from this gallery: 17 chapters on where Jev fits in real software, with every case checked against its source and EPUB and PDF downloads.
 - [Quick start](https://docs.typesafe.ai/introduction/quickstart) - First request through the Playground, cURL, the Python SDK, or a coding agent.
 - [Playground](https://console.typesafe.ai/playground) - Try a state and a set of questions in the browser before writing code (sign-in required).
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) - Core design guide on keeping control flow in code and breaking judgments into atomic questions.
