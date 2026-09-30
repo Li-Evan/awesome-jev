@@ -5,6 +5,18 @@ layout: gallery
 description: Game-playing agents, real-time decisions, and playful interactive demos.
 description_zh: 会玩游戏的 agent、实时决策，以及好玩的互动演示。
 entries:
+- name: 1 Million Emojis
+  url: https://chriswijnia.com/lab/emoji
+  kind: app
+  author: cwdx
+  description: Shared 1,000 × 1,000 emoji canvas where people paint and, after each stroke, Jev paints one emoji beside it or finishes the shape.
+  jev: One Choice over candidate emoji, sampled by (1 − confidence), plus a Noul gate on whether to finish the shape.
+  image: https://chriswijnia.com/lab/emoji-card.png
+  links:
+    repo: https://github.com/cwdx/1-million-emojis
+  tags:
+  - canvas
+  - realtime
 - name: 1v100
   url: https://x.com/legitamit/status/2100713197502173373
   kind: post
