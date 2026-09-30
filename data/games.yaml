@@ -354,6 +354,18 @@ entries:
   tags:
   - chess
   - choice
+- name: Chess with Jev
+  url: https://chriswijnia.com/lab/chess
+  kind: app
+  author: cwdx
+  description: Browser chess and Chess960 where you play Jev or a friend, or watch Jev play itself.
+  jev: One Choice over the legal moves each turn.
+  image: https://chriswijnia.com/lab/chess.png
+  links:
+    repo: https://github.com/cwdx/chess-with-jev
+  tags:
+  - chess
+  - chess960
 - name: chess-vs-jev
   url: https://github.com/zebedelu/chess-vs-jev
   kind: repo
