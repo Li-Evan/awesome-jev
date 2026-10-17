@@ -714,6 +714,22 @@ entries:
   - cli
   - json
   - pipelines
+- name: Jev Account Filter
+  url: https://github.com/caiweihan/jev-account-filter
+  kind: repo
+  author: caiweihan
+  description: Screens video-platform accounts for domain datasets and research using title ranking followed by multimodal judgments over selected thumbnails and profile metadata.
+  description_zh: 通过标题初筛与候选封面、账户资料的多模态判别，为领域数据集构建及研究筛选视频平台账户。
+  jev: First-pass Noul probabilities select Top-N titles; a second request returns an independent account-category Choice and account/video Noul probabilities through OpenRouter Jev 1.14.
+  jev_zh: 第一轮用 Noul 概率选择 Top-N 标题，第二轮通过 OpenRouter Jev 1.14 返回独立的账户类别 Choice，以及账户与视频的 Noul 概率。
+  image: https://raw.githubusercontent.com/caiweihan/jev-account-filter/c46e437491c65798bdb372e85b99b5ec9a4822b1/docs/assets/visualization/overview.en.png
+  links:
+    workflow: https://github.com/caiweihan/jev-account-filter/blob/c46e437491c65798bdb372e85b99b5ec9a4822b1/account_filter/screening/classifier.py
+    usage: https://github.com/caiweihan/jev-account-filter/blob/c46e437491c65798bdb372e85b99b5ec9a4822b1/docs/commands.md
+  tags:
+  - multimodal
+  - dataset-curation
+  - account-screening
 - name: Jev Arena
   url: https://github.com/NanmiCoder/jev-arena
   kind: repo
