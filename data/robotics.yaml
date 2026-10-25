@@ -596,6 +596,13 @@ entries:
   - mujoco
   - robot-arm
   - simulation
+- name: jev-tune
+  url: https://github.com/lijiawei255/jev-tune
+  kind: repo
+  author: lijiawei255
+  description: Calibrated decision and safety-shell reference with a PID testbed. A small CPU head answers typed Choice, Score, and Noul questions; the shell can hold and roll back.
+  jev: Typed Choice, Score, and Noul interface. Not the Jev model, and not affiliated with TypeSafe AI.
+  date: 2026-10-25
 - name: JEVCITY
   url: https://01a0b7a9-5619-7ec6-a0d8-fb357ed42aa3.skydive.app/
   kind: app
