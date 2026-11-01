@@ -28,7 +28,7 @@ jobs:
         with:
           args: --no-progress --max-retries 3 --max-concurrency 16 --accept '200..=299,403,429' './**/*.md'
           fail: false
-      - uses: astral-sh/setup-uv@v10.2.0
+      - uses: astral-sh/setup-uv@v10.3.3
         if: github.event_name != 'pull_request'
       - name: Check hotlinked images
         id: images
