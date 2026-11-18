@@ -243,6 +243,24 @@ entries:
   - legal
   - ontology
   - classification
+- name: JEV-Paper-Radar
+  url: https://github.com/Eliot5566/JEV-Paper-Radar
+  kind: repo
+  author: Eliot5566
+  description: Daily arXiv/bioRxiv triage that judges every new paper against plain-English interests and publishes the few worth reading, plus a screening mode for systematic reviews measured against Cochrane reviewers.
+  description_zh: 每天判读 arXiv/bioRxiv 新论文，按白话兴趣筛选出值得读的几篇并发布，另有针对系统综述的筛选模式，以 Cochrane 评审数据实测。
+  jev: One Noul per interest per paper, calibrated probabilities with thresholds; screening mode uses one Noul per PICO criterion per record.
+  jev_zh: 每篇论文每个兴趣一个 Noul，校准机率加门槛分类；筛选模式每条记录每个 PICO 标准一个 Noul。
+  metrics:
+    stars: 43
+  date: '2026-09-23'
+  links:
+    demo: https://eliot5566.github.io/paper-radar-claude-example/
+  tags:
+  - arxiv
+  - research
+  - literature
+  - screening
 - name: LawAnalyzer
   url: https://x.com/rothken/status/2102151333193363791
   kind: post
