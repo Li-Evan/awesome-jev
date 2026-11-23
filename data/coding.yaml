@@ -7882,3 +7882,15 @@ entries:
   - compiler
   - invariants
   - zig
+- name: Qorx Flow on a FastAPI question with no matching file
+  url: https://qorx.idra-ai.com/docs/decide.html
+  kind: article
+  author: bbrainfuckk
+  description: Tests whether Jev selects either of two plausible FastAPI files when six source excerpts do not establish
+    the requested feature. In both option orders the workflow sends the decision for review.
+  description_zh: 这个案例检验六段源码不足以证明某项功能时，Jev 是否会在两个看似合理的 FastAPI 文件中任选其一。两种选项顺序下，工作流均将决定交回人工复核。
+  jev: A Choice includes an explicit none_of_these option. Jev selected it with reported confidence of 0.92 and 0.94 when
+    the file order was reversed.
+  date: '2026-11-04'
+  links:
+    demo: https://youtube.com/shorts/fxwcjU51kFw
